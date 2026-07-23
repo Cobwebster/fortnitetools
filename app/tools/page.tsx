@@ -10,11 +10,16 @@ import { toolIcon } from '@/lib/site-icons'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Tools – Free Calculators',
   description:
-    'Free Fortnite tools: player stats lookup, interactive map, item shop tracker, sensitivity converter, V-Bucks calculator, K/D calculator, zone timer, keybinds, FPS settings, XP calculator, and weapon damage calculator.',
+    'Free Fortnite tools: player stats lookup, skin rarity calculator, interactive map, item shop tracker, sensitivity converter, V-Bucks calculator, K/D calculator, zone timer, keybinds, FPS settings, XP calculator, and weapon damage calculator.',
   path: '/tools',
   keywords: [
     'fortnite tools',
+    'fortnite map codes',
+    'fortnite xp map codes',
+    'fortnite creative codes',
     'fortnite stats',
+    'fortnite rare skins',
+    'fortnite skin rarity calculator',
     'fortnite tracker',
     'fortnite interactive map',
     'fortnite item shop',
@@ -27,6 +32,13 @@ export const metadata: Metadata = createMetadata({
 })
 
 const TOOLS = [
+  {
+    href: '/codes',
+    title: 'Creative Map Codes',
+    description:
+      'Searchable Fortnite Creative island codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more.',
+    tags: ['Codes', 'XP', 'Creative'],
+  },
   {
     href: '/tools/player-stats',
     title: 'Player Stats Lookup',
@@ -54,6 +66,13 @@ const TOOLS = [
     description:
       'Build a C7S3 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK.',
     tags: ['Loadout', 'Weapons', 'TTK'],
+  },
+  {
+    href: '/tools/skin-rarity-calculator',
+    title: 'Skin Rarity Calculator',
+    description:
+      'Look up any outfit and see scarcity from shop history — appearances, last seen, Battle Pass exclusives, and OG vault status.',
+    tags: ['Skins', 'Rarity', 'OG'],
   },
   {
     href: '/tools/sensitivity-calculator',
@@ -170,6 +189,12 @@ export default function ToolsPage() {
               About These Tools
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Skin Rarity Calculator</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  People search &quot;rare Fortnite skins&quot; constantly. This lookup separates shop color tiers from real scarcity using appearance history and exclusive sources.
+                </p>
+              </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Sensitivity Calculator</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">

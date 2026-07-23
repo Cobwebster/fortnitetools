@@ -43,9 +43,20 @@ const nextConfig = {
         destination: '/tools',
         permanent: true,
       },
+      // Old category id was "guides" → /guides/guides/... (awkward). Now "how-to".
       {
         source: '/guides/guides/fortnite-tips-win-more-games',
-        destination: '/guides/guides/fortnite-ranked-mode-guide',
+        destination: '/guides/how-to/fortnite-ranked-mode-guide',
+        permanent: true,
+      },
+      {
+        source: '/guides/guides/:slug',
+        destination: '/guides/how-to/:slug',
+        permanent: true,
+      },
+      {
+        source: '/guides/guides',
+        destination: '/guides/how-to',
         permanent: true,
       },
     ]

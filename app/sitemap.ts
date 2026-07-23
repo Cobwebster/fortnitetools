@@ -9,7 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/fortnite-map',
     '/tools',
     '/tools/player-stats',
+    '/codes',
     '/tools/item-shop',
+    '/tools/skin-rarity-calculator',
     '/tools/loadout-builder',
     '/tools/sensitivity-calculator',
     '/tools/vbucks-calculator',
@@ -23,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: path === '/fortnite-map' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' ? 0.95 : 0.85,
+    priority: path === '/fortnite-map' || path === '/codes' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' || path === '/tools/skin-rarity-calculator' ? 0.95 : 0.85,
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -110,12 +110,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {[
+              { href: '/codes', label: 'Map Codes' },
               { href: '/tools/player-stats', label: 'Stats' },
+              { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
               { href: '/tools/loadout-builder', label: 'Loadout' },
-              { href: '/tools/weapon-damage-calculator', label: 'Damage' },
               { href: '/tools/item-shop', label: 'Item Shop' },
               { href: '/fortnite-map', label: 'Map' },
-              { href: '/tools/vbucks-calculator', label: 'V-Bucks' },
             ].map((tool) => (
               <Link
                 key={tool.href}

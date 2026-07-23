@@ -237,7 +237,7 @@ export default async function PostPage({ params }: Props) {
                 </h2>
                 <nav>
                   <ul className="flex flex-col gap-2" role="list">
-                    {['guides', 'weapons', 'building', 'season', 'map', 'tools'].map((cat) => (
+                    {['how-to', 'weapons', 'season', 'map'].map((cat) => (
                       <li key={cat}>
                         <Link
                           href={`/guides/${cat}`}

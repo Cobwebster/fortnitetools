@@ -53,6 +53,14 @@ export function Navbar() {
             </li>
             <li>
               <Link
+                href="/codes"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+              >
+                Codes
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/fortnite-map"
                 className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
               >
@@ -127,6 +135,15 @@ export function Navbar() {
                   onClick={() => setMobileOpen(false)}
                 >
                   Item Shop
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/codes"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Codes
                 </Link>
               </li>
               <li>

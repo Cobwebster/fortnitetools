@@ -3,7 +3,7 @@
 export const BRAND_ICON = '/images/loadout/striker_pump.png'
 
 export const CATEGORY_ICONS = {
-  guides: '/images/loadout/medkit.png',
+  'how-to': '/images/loadout/medkit.png',
   weapons: '/images/loadout/warforged_ar.png',
   season: '/images/icons/battle_pass.png',
   map: '/images/icons/map.png',
@@ -24,6 +24,8 @@ export const TOOL_ICONS: Record<string, string> = {
   '/tools/keybinds': '/images/icons/pickaxe.png',
   '/tools/weapon-damage-calculator': '/images/loadout/warforged_ar.png',
   '/tools/vbucks-calculator': '/images/icons/vbucks.png',
+  '/tools/skin-rarity-calculator': '/images/icons/vbucks.png',
+  '/codes': '/images/icons/xp.png',
   '/tools/battle-pass-xp-calculator': '/images/icons/xp.png',
 }
 

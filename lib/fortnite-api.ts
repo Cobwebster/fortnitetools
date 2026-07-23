@@ -36,6 +36,8 @@ export type CosmeticItem = {
   gameplayTags?: string[]
   path?: string
   dynamicPakId?: string
+  /** Shop appearance dates (ISO). Empty when exclusive / never sold, or when flags omit history. */
+  shopHistory?: string[]
 }
 
 export type ShopPriceInfo = {
@@ -99,6 +101,7 @@ type ApiCosmetic = {
   gameplayTags?: string[]
   path?: string
   dynamicPakId?: string
+  shopHistory?: string[]
   [key: string]: unknown
 }
 
@@ -160,6 +163,9 @@ export function normalizeCosmetic(raw: ApiCosmetic): CosmeticItem | null {
     gameplayTags: raw.gameplayTags,
     path: raw.path,
     dynamicPakId: raw.dynamicPakId,
+    shopHistory: Array.isArray(raw.shopHistory)
+      ? raw.shopHistory.filter((d): d is string => typeof d === 'string')
+      : undefined,
   }
 }
 
@@ -271,7 +277,11 @@ export async function searchCosmetics(params: {
   set?: string
   matchMethod?: 'full' | 'contains' | 'starts' | 'ends'
 }) {
-  const qs = new URLSearchParams({ language: 'en' })
+  const qs = new URLSearchParams({
+    language: 'en',
+    // Include paths, gameplay tags, and shop history for rarity / source scoring
+    responseFlags: '7',
+  })
   if (params.name) {
     qs.set('name', params.name)
     qs.set('matchMethod', params.matchMethod || 'contains')

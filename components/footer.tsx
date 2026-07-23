@@ -84,9 +84,11 @@ export function Footer() {
               {[
                 { href: '/tools', label: 'All Tools' },
                 { href: '/tools/player-stats', label: 'Player Stats' },
+                { href: '/codes', label: 'Map Codes' },
                 { href: '/fortnite-map', label: 'Interactive Map' },
                 { href: '/tools/loadout-builder', label: 'Loadout Builder' },
                 { href: '/tools/item-shop', label: 'Item Shop' },
+                { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
                 { href: '/tools/weapon-damage-calculator', label: 'Damage Calc' },
                 { href: '/tools/sensitivity-calculator', label: 'Sensitivity' },
                 { href: '/tools/vbucks-calculator', label: 'V-Bucks' },
