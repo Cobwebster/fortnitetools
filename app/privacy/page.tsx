@@ -30,8 +30,9 @@ export default function PrivacyPage() {
         <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">Information we collect</h2>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>
-            <strong className="text-foreground">Usage analytics</strong> — We may use privacy-conscious analytics (such as
-            Vercel Analytics) to see aggregate page views and performance. This helps us fix broken pages and improve tools.
+            <strong className="text-foreground">Usage analytics</strong> — We use Google Analytics and Vercel Analytics to
+            see aggregate page views and performance. This helps us fix broken pages and improve tools. Google may set
+            cookies or similar identifiers as part of that service.
           </li>
           <li>
             <strong className="text-foreground">Technical logs</strong> — Standard hosting logs (IP address, browser type,
