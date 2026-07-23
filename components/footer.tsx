@@ -124,6 +124,16 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://www.craftmc.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Minecraft Tools
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -137,7 +147,16 @@ export function Footer() {
 
         <div className="mt-6 border-t border-border pt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} FortniteTools.com. All rights reserved.
+            &copy; {new Date().getFullYear()} FortniteTools.com. All rights reserved. Also check out our Minecraft site{' '}
+            <a
+              href="https://www.craftmc.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground underline underline-offset-2 hover:text-primary transition-colors"
+            >
+              CraftMC
+            </a>
+            .
           </p>
           <nav aria-label="Legal" className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
             <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
