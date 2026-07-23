@@ -13,7 +13,7 @@ const VBUCKS_PACKS = [
   { vbucks: 13500, price: 79.99, label: '13,500 V-Bucks', tag: 'Best Value' },
 ]
 
-// Real Fortnite item costs (as of Chapter 6)
+// Common Fortnite Item Shop / pack prices (USD storefront examples, 2026)
 const SHOP_ITEMS = [
   { name: 'Battle Pass',               cost: 950,  category: 'pass' },
   { name: 'Crew Pack (monthly)',        cost: 1800, category: 'pass' },
@@ -35,27 +35,52 @@ const SHOP_ITEMS = [
   { name: 'Spray',                     cost: 300,  category: 'cosmetic' },
 ]
 
-function cheapestWayToBuy(needed: number): { packs: { pack: typeof VBUCKS_PACKS[0]; qty: number }[]; total: number; leftover: number } {
-  let remaining = needed
-  const result: { pack: typeof VBUCKS_PACKS[0]; qty: number }[] = []
-  const sorted = [...VBUCKS_PACKS].sort((a, b) => b.vbucks - a.vbucks)
-  for (const pack of sorted) {
-    if (remaining <= 0) break
-    const qty = Math.floor(remaining / pack.vbucks)
-    if (qty > 0) {
-      result.push({ pack, qty })
-      remaining -= qty * pack.vbucks
+function cheapestWayToBuy(needed: number): {
+  packs: { pack: (typeof VBUCKS_PACKS)[0]; qty: number }[]
+  total: number
+  leftover: number
+} {
+  // True min-cost: try every pack combo up to a small qty cap
+  type Combo = { qty: number[]; cost: number; vbucks: number }
+  const state: { best: Combo | null } = { best: null }
+  const caps = VBUCKS_PACKS.map((p) => Math.min(12, Math.ceil(needed / p.vbucks) + 2))
+
+  function search(i: number, qty: number[], cost: number, vbucks: number) {
+    if (vbucks >= needed) {
+      const current = state.best
+      if (!current || cost < current.cost || (cost === current.cost && vbucks < current.vbucks)) {
+        state.best = { qty: [...qty], cost, vbucks }
+      }
+      return
+    }
+    if (i >= VBUCKS_PACKS.length) return
+    for (let q = 0; q <= caps[i]; q++) {
+      qty[i] = q
+      const nextCost = cost + q * VBUCKS_PACKS[i].price
+      const nextV = vbucks + q * VBUCKS_PACKS[i].vbucks
+      if (state.best && nextCost >= state.best.cost) break
+      search(i + 1, qty, nextCost, nextV)
+    }
+    qty[i] = 0
+  }
+
+  search(0, VBUCKS_PACKS.map(() => 0), 0, 0)
+
+  if (!state.best) {
+    const biggest = VBUCKS_PACKS[VBUCKS_PACKS.length - 1]
+    const qty = Math.ceil(needed / biggest.vbucks)
+    return {
+      packs: [{ pack: biggest, qty }],
+      total: biggest.price * qty,
+      leftover: biggest.vbucks * qty - needed,
     }
   }
-  // if leftover, need to buy the smallest pack to cover the rest
-  if (remaining > 0) {
-    const smallest = sorted[sorted.length - 1]
-    const last = result.find(r => r.pack.vbucks === smallest.vbucks)
-    if (last) { last.qty += 1 } else { result.push({ pack: smallest, qty: 1 }) }
-  }
-  const total = result.reduce((acc, r) => acc + r.pack.price * r.qty, 0)
-  const bought = result.reduce((acc, r) => acc + r.pack.vbucks * r.qty, 0)
-  return { packs: result, total, leftover: bought - needed }
+
+  const best = state.best
+  const packs = best.qty
+    .map((qty, i) => ({ pack: VBUCKS_PACKS[i], qty }))
+    .filter((r) => r.qty > 0)
+  return { packs, total: best.cost, leftover: best.vbucks - needed }
 }
 
 function usdPerVBuck(pack: typeof VBUCKS_PACKS[0]) {
@@ -109,7 +134,7 @@ export default function VBucksCalculatorPage() {
               V-Bucks <span className="text-primary">Calculator</span>
             </h1>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-              Build your wishlist and find out exactly how many V-Bucks you need — and the cheapest way to buy them.
+              Build a wishlist, see V-Bucks needed, and estimate a low-cost pack combination (USD storefront examples).
             </p>
           </div>
         </section>

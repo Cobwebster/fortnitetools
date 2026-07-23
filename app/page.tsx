@@ -1,19 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Shield, Sword, Map, Star, Wrench, BookOpen } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { FortniteIcon } from '@/components/fortnite-icon'
 import { PostCard } from '@/components/post-card'
 import { posts, categories, getFeaturedPosts } from '@/lib/posts'
-
-const categoryIcons = {
-  guides: BookOpen,
-  weapons: Sword,
-  building: Shield,
-  season: Star,
-  tools: Wrench,
-  map: Map,
-}
+import { CATEGORY_ICONS, toolIcon } from '@/lib/site-icons'
 
 export default function HomePage() {
   const featuredPosts = getFeaturedPosts()
@@ -23,7 +16,6 @@ export default function HomePage() {
     <>
       <Navbar />
       <main>
-        {/* Hero */}
         <section
           className="relative flex min-h-[520px] items-end overflow-hidden"
           aria-labelledby="hero-heading"
@@ -31,7 +23,7 @@ export default function HomePage() {
           <div className="absolute inset-0">
             <Image
               src="/images/hero-bg.png"
-              alt="Fortnite storm circle over the island"
+              alt="Fortnite island under a storm circle"
               fill
               priority
               className="object-cover"
@@ -42,66 +34,107 @@ export default function HomePage() {
 
           <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-24 sm:px-6 lg:px-8">
             <div className="max-w-xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-                #1 Fortnite Resource
-              </p>
               <h1
                 id="hero-heading"
                 className="font-display text-5xl font-extrabold uppercase leading-none tracking-tight text-foreground sm:text-6xl lg:text-7xl text-balance"
               >
-                Dominate Every<br />
-                <span className="text-primary">Match</span>
+                Fortnite<span className="text-primary">Tools</span>
               </h1>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Guides, weapon tier lists, building tips, and interactive tools — everything you need to win more games in Fortnite.
+              <p className="mt-5 text-lg font-semibold leading-snug text-foreground sm:text-xl">
+                Free calculators and guides for Chapter 7 Season 3.
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                Sensitivity converter, XP planner, keybinds, weapon stats, and
+                practical drop/rotation guides — built for what players actually search.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
-                  href="/guides"
+                  href="/tools"
                   className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
                 >
-                  Browse All Guides <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  Open free tools <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
                 <Link
-                  href="/guides/weapons"
+                  href="/guides/weapons/fortnite-best-weapons-tier-list-2026"
                   className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
                 >
-                  Weapon Tier List
+                  Season 3 weapon tier list
                 </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Category grid */}
         <section
           className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"
           aria-labelledby="categories-heading"
         >
           <h2 id="categories-heading" className="sr-only">Browse by Category</h2>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-            {categories.map((cat) => {
-              const Icon = categoryIcons[cat.id]
-              return (
-                <Link
-                  key={cat.id}
-                  href={`/guides/${cat.id}`}
-                  className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-primary/60 hover:bg-muted"
-                >
-                  <Icon
-                    className="h-6 w-6 text-primary group-hover:scale-110 transition-transform"
-                    aria-hidden="true"
-                  />
-                  <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
-                    {cat.label}
-                  </span>
-                </Link>
-              )
-            })}
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {categories.map((cat) => (
+              <Link
+                key={cat.id}
+                href={cat.id === 'map' ? '/fortnite-map' : `/guides/${cat.id}`}
+                className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-primary/60 hover:bg-muted"
+              >
+                <FortniteIcon
+                  src={CATEGORY_ICONS[cat.id]}
+                  size="md"
+                  frameClassName="border-transparent bg-transparent group-hover:scale-110 transition-transform"
+                />
+                <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
+                  {cat.label}
+                </span>
+              </Link>
+            ))}
           </div>
         </section>
 
-        {/* Featured guides */}
+        <section
+          className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8"
+          aria-labelledby="tools-heading"
+        >
+          <div className="flex items-center justify-between mb-6">
+            <h2
+              id="tools-heading"
+              className="font-display text-2xl font-bold uppercase tracking-tight text-foreground"
+            >
+              Popular Tools
+            </h2>
+            <Link
+              href="/tools"
+              className="flex items-center gap-1 text-sm font-medium text-primary hover:opacity-80 transition-opacity"
+            >
+              All tools <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {[
+              { href: '/tools/loadout-builder', label: 'Loadout' },
+              { href: '/tools/weapon-damage-calculator', label: 'Damage' },
+              { href: '/tools/item-shop', label: 'Item Shop' },
+              { href: '/fortnite-map', label: 'Map' },
+              { href: '/tools/zone-timer', label: 'Zone' },
+              { href: '/tools/vbucks-calculator', label: 'V-Bucks' },
+            ].map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-3 text-center transition-colors hover:border-primary/60 hover:bg-muted"
+              >
+                <FortniteIcon
+                  src={toolIcon(tool.href)}
+                  size="md"
+                  frameClassName="group-hover:border-primary/40 transition-colors"
+                />
+                <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
+                  {tool.label}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section
           className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8"
           aria-labelledby="featured-heading"
@@ -127,7 +160,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Recent posts */}
         <section
           className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8"
           aria-labelledby="recent-heading"
@@ -153,32 +185,34 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SEO content strip */}
         <section className="border-t border-border bg-card">
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               <div>
                 <h2 className="font-display text-lg font-bold uppercase text-foreground">
-                  Fortnite Guides
+                  Tools
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  From beginner basics to advanced competitive tactics, our guides cover every aspect of Fortnite gameplay. Learn building, edits, rotations, and endgame strategy.
+                  Sensitivity converter, Battle Pass XP planner, V-Bucks helper,
+                  zone timer, and more — free and updated for the current season.
                 </p>
               </div>
               <div>
                 <h2 className="font-display text-lg font-bold uppercase text-foreground">
-                  Weapon Tier Lists
+                  Guides
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Stay on top of the meta with updated weapon tier lists every patch. Know which guns are S-tier, which are worth picking up, and which to leave on the ground.
+                  Season-specific weapon, map, Battle Pass, and ranked guides —
+                  no filler listicles.
                 </p>
               </div>
               <div>
                 <h2 className="font-display text-lg font-bold uppercase text-foreground">
-                  Season Updates
+                  Chapter 7 Season 3
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Get the latest on each new season&apos;s battle pass, map changes, new weapons, and patch notes — so you&apos;re always prepared before dropping in.
+                  Runners season coverage for the current loot pool and map —
+                  with dates so you know when something was last checked.
                 </p>
               </div>
             </div>

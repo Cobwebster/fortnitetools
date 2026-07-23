@@ -6,7 +6,7 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { Play, RotateCcw, SkipForward } from 'lucide-react'
 
-// Fortnite Chapter 6 Season 2 — Solo BR zone timings (seconds)
+// Fortnite Chapter 7 Season 3 — Solo BR zone timings (seconds, community reference)
 // waitTime = how long this circle stays open before shrinking starts
 // shrinkTime = how long the shrink takes
 // damage = DPS while outside the zone
@@ -133,7 +133,7 @@ export default function ZoneTimerPage() {
               Fortnite <span className="text-primary">Zone Timer</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Real wait times and shrink durations for every storm circle in Chapter 6 Season 2. Start the timer when a new zone appears to know exactly when to rotate.
+              Approximate wait and shrink times for Chapter 7 Season 3 storm circles. Start the timer when a new zone appears so you know when to rotate. Epic can tweak timings in patches.
             </p>
           </div>
         </section>
@@ -266,7 +266,7 @@ export default function ZoneTimerPage() {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Why Zone Timing Matters</h3>
-                <p>One of the most common ways players die in Fortnite is being caught outside the zone. Knowing exactly how long you have before a zone starts shrinking — and how fast it moves — lets you make informed decisions about when to start rotating rather than guessing.</p>
+                <p>One of the most common ways players die is getting caught outside the storm. A wait/shrink reference helps you decide when to leave a POI instead of guessing from memory — times can still shift with patches, so confirm odd circles in-game.</p>
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">When to Rotate</h3>

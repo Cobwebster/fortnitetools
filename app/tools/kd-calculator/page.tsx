@@ -4,23 +4,23 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
-import { TrendingUp, TrendingDown, Minus } from 'lucide-react'
+import { TrendingUp, Minus } from 'lucide-react'
 
-// Fortnite season average benchmarks (Chapter 6 Season 2 data)
+// Rough public-lobby benchmarks for context (not official Epic stats)
 const BENCHMARKS = {
   kd:  [
-    { label: 'Bottom 25%',  min: 0,    max: 0.5,  color: 'text-red-400',    bg: 'bg-red-400/10',   border: 'border-red-400/30' },
+    { label: 'Low',         min: 0,    max: 0.5,  color: 'text-red-400',    bg: 'bg-red-400/10',   border: 'border-red-400/30' },
     { label: 'Average',     min: 0.5,  max: 1.0,  color: 'text-yellow-400', bg: 'bg-yellow-400/10',border: 'border-yellow-400/30' },
     { label: 'Above Avg',   min: 1.0,  max: 2.0,  color: 'text-primary',    bg: 'bg-primary/10',   border: 'border-primary/30' },
-    { label: 'Good',        min: 2.0,  max: 4.0,  color: 'text-green-400',  bg: 'bg-green-400/10', border: 'border-green-400/30' },
-    { label: 'Elite',       min: 4.0,  max: 999,  color: 'text-accent',     bg: 'bg-accent/10',    border: 'border-accent/30' },
+    { label: 'Strong',      min: 2.0,  max: 4.0,  color: 'text-green-400',  bg: 'bg-green-400/10', border: 'border-green-400/30' },
+    { label: 'Very High',   min: 4.0,  max: 999,  color: 'text-accent',     bg: 'bg-accent/10',    border: 'border-accent/30' },
   ],
   wr: [
-    { label: 'Below Avg',   min: 0,    max: 3,    color: 'text-red-400',    bg: 'bg-red-400/10',   border: 'border-red-400/30' },
+    { label: 'Low',         min: 0,    max: 3,    color: 'text-red-400',    bg: 'bg-red-400/10',   border: 'border-red-400/30' },
     { label: 'Average',     min: 3,    max: 7,    color: 'text-yellow-400', bg: 'bg-yellow-400/10',border: 'border-yellow-400/30' },
     { label: 'Above Avg',   min: 7,    max: 15,   color: 'text-primary',    bg: 'bg-primary/10',   border: 'border-primary/30' },
-    { label: 'Good',        min: 15,   max: 25,   color: 'text-green-400',  bg: 'bg-green-400/10', border: 'border-green-400/30' },
-    { label: 'Elite',       min: 25,   max: 100,  color: 'text-accent',     bg: 'bg-accent/10',    border: 'border-accent/30' },
+    { label: 'Strong',      min: 15,   max: 25,   color: 'text-green-400',  bg: 'bg-green-400/10', border: 'border-green-400/30' },
+    { label: 'Very High',   min: 25,   max: 100,  color: 'text-accent',     bg: 'bg-accent/10',    border: 'border-accent/30' },
   ],
 }
 
@@ -59,13 +59,11 @@ function ResultCard({ label, value, benchmark, sublabel }: { label: string; valu
   )
 }
 
-const PRO_STATS = [
-  { name: 'Bugha',      kd: 8.4,  wr: 28.3, matches: 420 },
-  { name: 'Mongraal',   kd: 9.1,  wr: 31.2, matches: 610 },
-  { name: 'Benjyfishy', kd: 7.8,  wr: 26.5, matches: 505 },
-  { name: 'Clix',       kd: 10.2, wr: 34.1, matches: 390 },
-  { name: 'Average Pro',kd: 7.5,  wr: 24.0, matches: null },
-  { name: 'Average Player',kd:0.78,wr:4.1,  matches: null },
+const CONTEXT_RANGES = [
+  { name: 'Typical pubs', kd: '0.6–1.2', wr: '2–8%' },
+  { name: 'Strong pubs', kd: '2–4', wr: '10–20%' },
+  { name: 'High-level pubs', kd: '5+', wr: '20%+' },
+  { name: 'Ranked (same K/D)', kd: 'Usually lower', wr: 'Placement-weighted' },
 ]
 
 export default function KDCalculatorPage() {
@@ -84,24 +82,27 @@ export default function KDCalculatorPage() {
     const w = parseFloat(wins)
     const m = parseFloat(matches)
 
-    if (!k || !d || d === 0) return null
+    if (Number.isNaN(k) || Number.isNaN(d) || d <= 0) return null
 
-    const kd    = k / d
-    const wr    = m > 0 ? (w / m) * 100 : null
-    const kpg   = m > 0 ? k / m : null
-    const topc  = m > 0 ? (1 / m) * 100 : null
+    const kd = k / d
+    const wr = m > 0 && !Number.isNaN(w) ? (w / m) * 100 : null
+    const kpg = m > 0 ? k / m : null
 
-    return { kd, wr, kpg, topc }
+    return { kd, wr, kpg }
   }, [kills, deaths, wins, matches])
 
   const projected = useMemo(() => {
     const pk = parseFloat(projKills)
     const pm = parseFloat(projMatches)
-    if (!stats || !pk || !pm || pm === 0) return null
-    const newKills  = (stats.kd * parseFloat(deaths || '0')) + pk
-    const newDeaths = parseFloat(deaths || '0') + pm
+    const currentKills = parseFloat(kills)
+    const currentDeaths = parseFloat(deaths)
+    if (!stats || Number.isNaN(pk) || Number.isNaN(pm) || pm <= 0) return null
+    if (Number.isNaN(currentKills) || Number.isNaN(currentDeaths)) return null
+    // Assume ~1 death per future match (solo BR approximation)
+    const newKills = currentKills + pk * pm
+    const newDeaths = currentDeaths + pm
     return newKills / newDeaths
-  }, [projKills, projMatches, stats, deaths])
+  }, [projKills, projMatches, stats, kills, deaths])
 
   return (
     <>
@@ -121,7 +122,7 @@ export default function KDCalculatorPage() {
               Fortnite <span className="text-primary">K/D Calculator</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Calculate your Kill/Death ratio, win rate, and kills per game. See how you rank against the average Fortnite player and compare to pro benchmarks.
+              Calculate your Kill/Death ratio, win rate, and kills per game. Rough public-lobby ranges are shown for context — not official Epic rankings.
             </p>
           </div>
         </section>
@@ -176,7 +177,7 @@ export default function KDCalculatorPage() {
                         label="Win Rate"
                         value={`${stats.wr.toFixed(1)}%`}
                         benchmark={getBenchmark(stats.wr, 'wr')}
-                        sublabel="avg player: 4.1%"
+                        sublabel="rough pub context"
                       />
                     )}
                     {stats.kpg !== null && (
@@ -184,14 +185,8 @@ export default function KDCalculatorPage() {
                         label="Kills / Game"
                         value={stats.kpg.toFixed(2)}
                         benchmark={getBenchmark(stats.kpg, 'kd')}
+                        sublabel="rough range only"
                       />
-                    )}
-                    {stats.topc !== null && (
-                      <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
-                        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Top % (Est.)</span>
-                        <span className="font-display text-5xl font-bold text-foreground">{Math.max(0.1, 100 - (stats.wr ?? 0) * 1.5).toFixed(1)}%</span>
-                        <span className="text-xs text-muted-foreground">of all players</span>
-                      </div>
                     )}
                   </div>
 
@@ -220,24 +215,27 @@ export default function KDCalculatorPage() {
                 </div>
               )}
 
-              {/* Pro comparison */}
+              {/* Context ranges */}
               <div className="rounded-xl border border-border bg-card p-5">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-3">Pro Player Benchmarks</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-3">Rough Context Ranges</h3>
+                <p className="mb-3 text-xs text-muted-foreground">
+                  Not official Epic percentiles — just ballpark ranges so the number has meaning. Ranked and input type change the picture a lot.
+                </p>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-border">
-                        <th className="pb-2 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">Player</th>
+                        <th className="pb-2 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">Context</th>
                         <th className="pb-2 text-right text-xs font-semibold uppercase tracking-wider text-muted-foreground">K/D</th>
                         <th className="pb-2 text-right text-xs font-semibold uppercase tracking-wider text-muted-foreground">Win %</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
-                      {PRO_STATS.map(p => (
-                        <tr key={p.name} className={stats && Math.abs(stats.kd - p.kd) < 1.5 ? 'bg-primary/5' : ''}>
+                      {CONTEXT_RANGES.map(p => (
+                        <tr key={p.name}>
                           <td className="py-2 font-medium text-foreground">{p.name}</td>
-                          <td className={`py-2 text-right font-bold font-display ${getBenchmark(p.kd, 'kd').color}`}>{p.kd}</td>
-                          <td className={`py-2 text-right font-bold font-display ${getBenchmark(p.wr, 'wr').color}`}>{p.wr}%</td>
+                          <td className="py-2 text-right text-muted-foreground">{p.kd}</td>
+                          <td className="py-2 text-right text-muted-foreground">{p.wr}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -253,11 +251,11 @@ export default function KDCalculatorPage() {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">The Average Player</h3>
-                <p>The average Fortnite player has a K/D ratio between 0.7 and 1.0. This accounts for players of all skill levels across all platforms. A K/D below 1.0 means you are dying more than you are eliminating opponents, which is very common in a 100-player battle royale where only one person wins.</p>
+                <p>Many public-lobby players sit around a 0.7–1.0 K/D. Below 1.0 is common in a 100-player battle royale where only one squad (or player) wins. Mode, input, and season matter more than a single career number.</p>
               </div>
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">What Good Looks Like</h3>
-                <p>A K/D of 2.0 or above puts you solidly in the top 25% of players. Professional and competitive players typically maintain K/D ratios between 7 and 12 in public lobbies. In ranked mode, K/D tends to be lower because lobbies are more competitive and players play more conservatively.</p>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">What Strong Looks Like</h3>
+                <p>A 2.0+ K/D in pubs usually means you win a lot of fights. Competitive players can post much higher numbers in soft lobbies and much lower numbers in stacked ranked. Treat tracker pages as snapshots, not permanent skill ranks.</p>
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">How to Find Your Stats</h3>

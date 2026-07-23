@@ -5,13 +5,11 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { Info, CheckCircle2, Circle } from 'lucide-react'
 
-// Chapter 6 Season 3 Battle Pass data (accurate as of 2026)
-// 100 levels in the Battle Pass. Each level requires 80,000 XP.
-// After level 100, "bonus rewards" continue indefinitely at same cost.
+// Chapter 7 Season 3 (Runners) Battle Pass planning model — July 2026
+// 100 reward levels. XP-per-level and weekly sources are estimates; quest values change.
 const XP_PER_LEVEL = 80_000
 const TOTAL_LEVELS = 100
 
-// XP sources per week (approximate real values)
 const WEEKLY_SOURCES = [
   { id: 'quests_weekly',  label: 'Weekly Quests (5 completed)',       xp: 150_000, default: true },
   { id: 'quests_daily',   label: 'Daily Quests (7 days × 5 quests)',  xp: 350_000, default: true },
@@ -25,14 +23,20 @@ const WEEKLY_SOURCES = [
   { id: 'festival',       label: 'Festival concerts / events',         xp:  40_000, default: false },
 ]
 
-// Chapter 6 Season 3 — 10 weeks long
-const SEASON_WEEKS = 10
+// Chapter 7 Season 3: June 6 – August 19, 2026
+const SEASON_END = new Date('2026-08-19T00:00:00Z')
+
+function defaultWeeksRemaining() {
+  const ms = SEASON_END.getTime() - Date.now()
+  const weeks = Math.max(1, Math.ceil(ms / (7 * 24 * 60 * 60 * 1000)))
+  return String(Math.min(12, weeks))
+}
 
 export default function XPCalculatorPage() {
   const [currentLevel, setCurrentLevel] = useState('1')
   const [currentLevelXP, setCurrentLevelXP] = useState('0')
   const [targetLevel, setTargetLevel] = useState('100')
-  const [weeksRemaining, setWeeksRemaining] = useState(String(SEASON_WEEKS))
+  const [weeksRemaining, setWeeksRemaining] = useState(defaultWeeksRemaining)
   const [enabled, setEnabled] = useState<Record<string, boolean>>(
     Object.fromEntries(WEEKLY_SOURCES.map(s => [s.id, s.default]))
   )
@@ -136,7 +140,7 @@ export default function XPCalculatorPage() {
                       id="weeks"
                       type="number"
                       min="1"
-                      max={SEASON_WEEKS}
+                      max={12}
                       value={weeksRemaining}
                       onChange={e => setWeeksRemaining(e.target.value)}
                       className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary text-sm"
@@ -243,10 +247,15 @@ export default function XPCalculatorPage() {
               <div>
                 <h2 className="text-sm font-semibold text-foreground mb-2">How Fortnite Battle Pass XP works</h2>
                 <p className="text-sm leading-relaxed text-muted-foreground mb-3">
-                  Each Battle Pass level requires exactly <strong className="text-foreground">80,000 XP</strong>. The pass has 100 levels and runs for approximately 10 weeks per season. To reach Level 100 from Level 1 you need a total of <strong className="text-foreground">8,000,000 XP</strong> — roughly 800,000 XP per week if you start on day one.
+                  This planner uses a simplified model of about{' '}
+                  <strong className="text-foreground">80,000 XP per level</strong> toward a 100-level pass.
+                  Real quest values, XP boosts, and caps change during the season — use the result as a grind plan, not a guarantee.
+                  Chapter 7 Season 3 (Runners) is scheduled through{' '}
+                  <strong className="text-foreground">August 19, 2026</strong>.
                 </p>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  The fastest legal XP method is completing <strong className="text-foreground">Weekly Quests</strong> (released each Tuesday) followed by <strong className="text-foreground">Daily Quests</strong>. LEGO Fortnite gives the highest passive XP — up to 196,000 per week — simply by playing 2 hours a day in a LEGO world. XP boosts (earned from the Battle Pass itself) multiply all XP gains and are stacked automatically.
+                  Weekly and daily quests are usually the most reliable XP. Modes like LEGO Fortnite can add a lot of
+                  passive XP but are often capped — confirm current rates in-game before relying on them.
                 </p>
               </div>
             </div>

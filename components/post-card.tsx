@@ -13,21 +13,29 @@ export function PostCard({ post, featured = false }: PostCardProps) {
     return (
       <article className="group relative overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-primary/50">
         <Link href={`/guides/${post.category}/${post.slug}`} className="block">
-          <div className="relative h-64 w-full overflow-hidden">
-            <Image
-              src={post.image}
-              alt={post.title}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent" />
-            <div className="absolute top-3 left-3">
+          {post.image ? (
+            <div className="relative h-64 w-full overflow-hidden">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent" />
+              <div className="absolute top-3 left-3">
+                <span className="rounded bg-primary px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
+                  {getCategoryLabel(post.category)}
+                </span>
+              </div>
+            </div>
+          ) : (
+            <div className="px-5 pt-5">
               <span className="rounded bg-primary px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
                 {getCategoryLabel(post.category)}
               </span>
             </div>
-          </div>
+          )}
           <div className="p-5">
             <h2 className="font-display text-2xl font-bold uppercase leading-tight text-foreground group-hover:text-primary transition-colors text-balance">
               {post.title}
@@ -49,15 +57,17 @@ export function PostCard({ post, featured = false }: PostCardProps) {
   return (
     <article className="group flex gap-4 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/50">
       <Link href={`/guides/${post.category}/${post.slug}`} className="flex gap-4 w-full">
-        <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-md sm:h-28 sm:w-28">
-          <Image
-            src={post.image}
-            alt={post.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="112px"
-          />
-        </div>
+        {post.image ? (
+          <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-md sm:h-28 sm:w-28">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="112px"
+            />
+          </div>
+        ) : null}
         <div className="flex flex-col justify-between min-w-0">
           <div>
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">

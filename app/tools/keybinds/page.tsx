@@ -38,7 +38,7 @@ const ACTIONS = [
 const PROS: Player[] = [
   {
     name: 'Bugha',    team: 'Sentinels', input: 'KBM',
-    keybinds: { wall:'Q', floor:'C', ramp:'V', roof:'F', stair:'–', edit:'F', repair:'H', crouch:'L-Ctrl', jump:'Space', sprint:'L-Shift', reload:'R', interact:'E', slot1:'1', slot2:'2', slot3:'3', slot4:'4', slot5:'5', map:'M', inventory:'Tab', ping:'Z' },
+    keybinds: { wall:'Q', floor:'C', ramp:'V', roof:'MB4', stair:'–', edit:'F', repair:'H', crouch:'L-Ctrl', jump:'Space', sprint:'L-Shift', reload:'R', interact:'E', slot1:'1', slot2:'2', slot3:'3', slot4:'4', slot5:'5', map:'M', inventory:'Tab', ping:'Z' },
   },
   {
     name: 'Clix',     team: 'NRG', input: 'KBM',
@@ -98,7 +98,7 @@ export default function KeybindsPage() {
               Fortnite Pro <span className="text-primary">Keybinds</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Real keyboard bindings used by top competitive Fortnite players. Compare building, editing, and combat keybinds side-by-side to find what works for you.
+              Approximate keyboard bindings used by well-known competitive players. Layouts change over time — treat this as a reference, then adjust for hand size and comfort.
             </p>
           </div>
         </section>
@@ -192,15 +192,15 @@ export default function KeybindsPage() {
 
           {/* SEO content */}
           <section className="mt-12 border-t border-border pt-10">
-            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">Choosing the Best Fortnite Keybinds</h2>
+            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">Choosing Fortnite Keybinds</h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Why Keybinds Matter</h3>
-                <p>In Fortnite, you need to switch between movement, building, editing, and shooting within fractions of a second. The faster your hands can execute these transitions, the more responsive your gameplay feels. Poor keybinds — like having builds on number keys far from WASD — create a physical delay that no amount of practice can overcome.</p>
+                <p>You switch between movement, building, editing, and shooting constantly. Binds far from WASD (like number-row builds) slow that loop. Closer keys usually feel better — but comfort beats copying a pro layout you cannot reach cleanly.</p>
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Controller Binds</h3>
-                <p>Controller players use a different system entirely. Builder Pro layout is the most popular competitive controller layout, placing building on the face buttons and making it faster to transition from aiming. Most competitive controller players also use paddles or back buttons to free up their thumbs from ever leaving the sticks.</p>
+                <p>Controller players use a different system. Builder Pro remains a common competitive layout. Many players add paddles so thumbs stay on the sticks. Practice any new binds in Creative before ranked.</p>
               </div>
             </div>
           </section>

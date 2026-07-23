@@ -1,6 +1,8 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
+import { websiteJsonLd } from '@/lib/seo'
+import { siteConfig } from '@/lib/site'
 import './globals.css'
 
 const barlow = Barlow({
@@ -15,42 +17,49 @@ const barlowCondensed = Barlow_Condensed({
   variable: '--font-barlow-condensed',
 })
 
+const ogImage = `${siteConfig.url}${siteConfig.ogImage}`
+
 export const metadata: Metadata = {
   title: {
-    default: 'FortniteTools.com – Guides, Tips & Tools for Fortnite Players',
-    template: '%s | FortniteTools.com',
+    default: 'FortniteTools – Free Fortnite Guides & Tools',
+    template: '%s | FortniteTools',
   },
-  description:
-    'Your #1 resource for Fortnite guides, weapon tier lists, building tips, map locations, and season updates. Level up your game with FortniteTools.com.',
+  description: siteConfig.description,
   keywords: [
-    'Fortnite guides',
-    'Fortnite tips',
     'Fortnite tools',
-    'Fortnite weapons',
-    'Fortnite building',
-    'Fortnite map',
-    'Fortnite season',
-    'battle royale guides',
-    'Fortnite tier list',
-    'Fortnite strategy',
+    'Fortnite guides',
+    'Fortnite XP calculator',
+    'Fortnite sensitivity converter',
+    'Fortnite keybinds',
+    'Chapter 7 Season 3',
   ],
-  authors: [{ name: 'FortniteTools.com' }],
-  creator: 'FortniteTools.com',
-  metadataBase: new URL('https://fortnitetools.com'),
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  metadataBase: new URL(siteConfig.url),
+  alternates: { canonical: siteConfig.url },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://fortnitetools.com',
-    siteName: 'FortniteTools.com',
-    title: 'FortniteTools.com – Guides, Tips & Tools for Fortnite Players',
-    description:
-      'Your #1 resource for Fortnite guides, weapon tier lists, building tips, map locations, and season updates.',
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: 'FortniteTools – Free Fortnite Guides & Tools',
+    description: siteConfig.description,
+    images: [{ url: ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FortniteTools.com – Fortnite Guides & Tips',
-    description:
-      'Your #1 resource for Fortnite guides, weapon tier lists, building tips, and more.',
+    title: 'FortniteTools – Free Fortnite Guides & Tools',
+    description: siteConfig.description,
+    images: [ogImage],
   },
   robots: {
     index: true,
@@ -77,9 +86,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const jsonLd = websiteJsonLd()
+
   return (
     <html lang="en" className={`bg-background ${barlow.variable} ${barlowCondensed.variable}`}>
-      <body className={`antialiased font-sans`}>
+      <body className="antialiased font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

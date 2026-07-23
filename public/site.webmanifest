@@ -1,0 +1,21 @@
+{
+  "name": "FortniteTools",
+  "short_name": "FN Tools",
+  "description": "Free Fortnite tools and guides for Chapter 7 Season 3.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1e",
+  "theme_color": "#0a0f1e",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

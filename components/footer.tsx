@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Crosshair } from 'lucide-react'
 import { categories } from '@/lib/posts'
+import { BRAND_ICON } from '@/lib/site-icons'
 
 export function Footer() {
   return (
@@ -10,13 +10,19 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <Crosshair className="h-6 w-6 text-primary" aria-hidden="true" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={BRAND_ICON}
+                alt=""
+                className="h-9 w-9 object-contain drop-shadow-sm"
+                aria-hidden="true"
+              />
               <span className="font-display text-lg font-bold uppercase tracking-wider text-foreground">
                 Fortnite<span className="text-primary">Tools</span>
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Your #1 resource for Fortnite guides, weapon tier lists, building tips, and season updates.
+              Free Fortnite calculators and guides for the current season.
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
               FortniteTools.com is not affiliated with Epic Games.
@@ -30,7 +36,7 @@ export function Footer() {
               {categories.slice(0, 4).map((cat) => (
                 <li key={cat.id}>
                   <Link
-                    href={`/guides/${cat.id}`}
+                    href={cat.id === 'map' ? '/fortnite-map' : `/guides/${cat.id}`}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     {cat.label}
@@ -40,26 +46,42 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* More categories */}
+          {/* Guides */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">More</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">Guides</h3>
             <ul className="mt-4 flex flex-col gap-2" role="list">
-              {categories.slice(4).map((cat) => (
-                <li key={cat.id}>
-                  <Link
-                    href={`/guides/${cat.id}`}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {cat.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/guides" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  All Guides
+                </Link>
+              </li>
               <li>
                 <Link
-                  href="/guides"
+                  href="/guides/weapons/fortnite-best-weapons-tier-list-2026"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  All Guides
+                  Weapons Tier List
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/map/fortnite-loot-guide-best-spots"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Best Loot Spots
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides/map" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Map Guides
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/season/fortnite-season-battle-pass-guide"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Battle Pass Guide
                 </Link>
               </li>
             </ul>
@@ -70,8 +92,23 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">Tools</h3>
             <ul className="mt-4 flex flex-col gap-2" role="list">
               <li>
+                <Link href="/fortnite-map" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Interactive Map
+                </Link>
+              </li>
+              <li>
                 <Link href="/tools" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   All Tools
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/item-shop" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Item Shop
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/loadout-builder" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Loadout Builder
                 </Link>
               </li>
               <li>

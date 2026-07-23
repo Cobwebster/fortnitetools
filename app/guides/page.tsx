@@ -1,43 +1,38 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PostCard } from '@/components/post-card'
 import { posts, categories } from '@/lib/posts'
+import { createMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Fortnite Guides – Tips, Strategies & Tutorials',
+export const metadata: Metadata = createMetadata({
+  title: 'Fortnite Guides',
   description:
-    'Browse all Fortnite guides covering building, weapons, map locations, season updates, and advanced strategies. Find the tips you need to win.',
-  openGraph: {
-    title: 'Fortnite Guides – Tips, Strategies & Tutorials',
-    description:
-      'Browse all Fortnite guides covering building, weapons, map locations, season updates, and advanced strategies.',
-  },
-}
+    'Chapter 7 Season 3 Fortnite guides — weapons tier list, shotgun loadouts, Shattered Coast drops, Battle Pass XP, and ranked climbing.',
+  path: '/guides',
+  keywords: ['fortnite guides', 'fortnite weapons', 'shattered coast', 'chapter 7 season 3'],
+})
 
 export default function GuidesPage() {
   return (
     <>
       <Navbar />
       <main>
-        {/* Page header */}
         <section className="border-b border-border bg-card">
           <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-              Resource Library
+              Guides
             </p>
             <h1 className="mt-2 font-display text-4xl font-extrabold uppercase tracking-tight text-foreground sm:text-5xl text-balance">
-              All Guides & Articles
+              Fortnite Guides
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Everything you need to improve at Fortnite — from beginner building tips to advanced competitive strategies, weapon tier lists, and season guides.
+              Season-specific guides only — current loot pool, Shattered Coast drops, Runners Battle Pass, and ranked climb habits.
             </p>
           </div>
         </section>
 
-        {/* Category filter pills */}
         <section className="border-b border-border bg-background">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
             <nav aria-label="Filter by category">
@@ -66,46 +61,11 @@ export default function GuidesPage() {
           </div>
         </section>
 
-        {/* Posts grid */}
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <PostCard key={post.slug} post={post} featured />
             ))}
-          </div>
-
-          {/* Category sections */}
-          <div className="mt-16 space-y-14">
-            {categories.map((cat) => {
-              const catPosts = posts.filter((p) => p.category === cat.id)
-              if (catPosts.length === 0) return null
-              return (
-                <section key={cat.id} aria-labelledby={`section-${cat.id}`}>
-                  <div className="flex items-center justify-between mb-5">
-                    <div>
-                      <h2
-                        id={`section-${cat.id}`}
-                        className="font-display text-xl font-bold uppercase tracking-tight text-foreground"
-                      >
-                        {cat.label}
-                      </h2>
-                      <p className="text-sm text-muted-foreground">{cat.description}</p>
-                    </div>
-                    <Link
-                      href={`/guides/${cat.id}`}
-                      className="flex items-center gap-1 text-sm font-medium text-primary hover:opacity-80 transition-opacity shrink-0 ml-4"
-                    >
-                      View all <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
-                    </Link>
-                  </div>
-                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                    {catPosts.map((post) => (
-                      <PostCard key={post.slug} post={post} />
-                    ))}
-                  </div>
-                </section>
-              )
-            })}
           </div>
         </div>
       </main>

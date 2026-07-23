@@ -79,8 +79,8 @@ export default function SensitivityCalculatorPage() {
               Fortnite Sensitivity <span className="text-primary">Calculator</span>
             </h1>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-              Convert your mouse sensitivity from any game to Fortnite — or from Fortnite to any other game.
-              Your aim transfers perfectly when you match your <strong className="text-foreground">cm/360</strong>.
+              Convert mouse sensitivity between Fortnite, Valorant, CS2, Apex, and more using cm/360.
+              Treat the result as a starting point — FOV and ADS settings still differ per game.
             </p>
           </div>
         </section>
@@ -207,7 +207,7 @@ export default function SensitivityCalculatorPage() {
                   </div>
                 </div>
                 <p className="mt-3 text-xs text-muted-foreground">
-                  Set your {toDef.label} sensitivity to <strong className="text-foreground">{result.converted}</strong> at {dpi} DPI to match your existing muscle memory exactly.
+                  Try <strong className="text-foreground">{result.converted}</strong> at {dpi} DPI in {toDef.label}, then fine-tune after a short aim warmup.
                 </p>
               </div>
             )}
@@ -218,24 +218,23 @@ export default function SensitivityCalculatorPage() {
             <div className="flex gap-3">
               <Info className="h-5 w-5 shrink-0 text-primary mt-0.5" aria-hidden="true" />
               <div>
-                <h2 className="text-sm font-semibold text-foreground mb-2">How does this work?</h2>
+                <h2 className="text-sm font-semibold text-foreground mb-2">How this works</h2>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Each game uses a different internal sensitivity scale. This calculator converts your sensitivity
-                  using the <strong className="text-foreground">cm/360 method</strong> — the physical distance your mouse
-                  needs to travel to spin your character 360 degrees. By matching this value across games, your
-                  muscle memory transfers directly.
+                  Games use different sensitivity scales. This tool matches{' '}
+                  <strong className="text-foreground">cm/360</strong> — how far your mouse moves for a full turn.
+                  Matching cm/360 is the closest hipfire feel transfer; scoped sensitivities still need in-game tweaks.
                 </p>
                 <h3 className="mt-4 text-sm font-semibold text-foreground mb-1">What is eDPI?</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  eDPI (effective DPI) = sensitivity × DPI. It&apos;s a universal number to compare aim speed
-                  between players regardless of their individual sens/DPI split. Most Fortnite pro players
-                  use an eDPI between <strong className="text-foreground">40,000 – 80,000</strong>.
+                  eDPI = sensitivity × DPI. For Fortnite, many competitive players sit roughly around{' '}
+                  <strong className="text-foreground">40–100 eDPI</strong> (for example 0.07 × 800 DPI = 56 eDPI).
+                  Numbers in the tens of thousands usually mean someone multiplied wrong.
                 </p>
-                <h3 className="mt-4 text-sm font-semibold text-foreground mb-1">Fortnite recommended settings</h3>
+                <h3 className="mt-4 text-sm font-semibold text-foreground mb-1">Fortnite starting ranges (800 DPI)</h3>
                 <ul className="mt-1 flex flex-col gap-1 text-sm text-muted-foreground">
-                  <li>• <strong className="text-foreground">Low sens</strong>: 0.05–0.08 at 800 DPI — better for long-range accuracy</li>
-                  <li>• <strong className="text-foreground">High sens</strong>: 0.12–0.18 at 800 DPI — faster building/editing reactions</li>
-                  <li>• <strong className="text-foreground">Pro average</strong>: ~0.07–0.10 at 800 DPI (eDPI ~56,000–80,000)</li>
+                  <li>• <strong className="text-foreground">Lower sens</strong>: 0.05–0.08 — steadier mid/long fights</li>
+                  <li>• <strong className="text-foreground">Higher sens</strong>: 0.12–0.18 — quicker camera for builds/edits</li>
+                  <li>• <strong className="text-foreground">Common competitive band</strong>: ~0.07–0.10 (eDPI ~56–80)</li>
                 </ul>
               </div>
             </div>

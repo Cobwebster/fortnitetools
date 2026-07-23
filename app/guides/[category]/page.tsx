@@ -3,8 +3,11 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { FortniteIcon } from '@/components/fortnite-icon'
 import { PostCard } from '@/components/post-card'
 import { categories, getPostsByCategory, type Category } from '@/lib/posts'
+import { createMetadata } from '@/lib/seo'
+import { CATEGORY_ICONS } from '@/lib/site-icons'
 
 interface Props {
   params: Promise<{ category: string }>
@@ -18,14 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params
   const cat = categories.find((c) => c.id === category)
   if (!cat) return {}
-  return {
-    title: `Fortnite ${cat.label} Guides – Tips & Strategies`,
-    description: cat.description + ` Browse all Fortnite ${cat.label.toLowerCase()} guides on FortniteTools.com.`,
-    openGraph: {
-      title: `Fortnite ${cat.label} Guides`,
-      description: cat.description,
-    },
-  }
+  return createMetadata({
+    title: `Fortnite ${cat.label} Guides`,
+    description: `${cat.description} Browse Fortnite ${cat.label.toLowerCase()} guides on FortniteTools.`,
+    path: `/guides/${cat.id}`,
+    keywords: [`fortnite ${cat.label.toLowerCase()}`, 'fortnite guides', 'chapter 7 season 3'],
+  })
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -66,13 +67,21 @@ export default async function CategoryPage({ params }: Props) {
         {/* Page header */}
         <section className="border-b border-border bg-card">
           <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Category</p>
-            <h1 className="mt-2 font-display text-4xl font-extrabold uppercase tracking-tight text-foreground sm:text-5xl text-balance">
-              Fortnite {cat.label} Guides
-            </h1>
-            <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              {cat.description}
-            </p>
+            <div className="flex items-start gap-4">
+              <FortniteIcon
+                src={CATEGORY_ICONS[cat.id as keyof typeof CATEGORY_ICONS] ?? CATEGORY_ICONS.guides}
+                size="lg"
+              />
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Category</p>
+                <h1 className="mt-2 font-display text-4xl font-extrabold uppercase tracking-tight text-foreground sm:text-5xl text-balance">
+                  Fortnite {cat.label} Guides
+                </h1>
+                <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
+                  {cat.description}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -113,7 +122,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           {catPosts.length === 0 ? (
             <div className="rounded-lg border border-border bg-card p-12 text-center">
-              <p className="text-muted-foreground">No guides in this category yet. Check back soon!</p>
+              <p className="text-muted-foreground">No guides in this category yet.</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

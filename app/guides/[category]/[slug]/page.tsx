@@ -6,7 +6,9 @@ import { Clock, Tag, ArrowLeft, ArrowRight } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PostCard } from '@/components/post-card'
+import { GuideMarkdown } from '@/components/guide-markdown'
 import { posts, getPostBySlug, getCategoryLabel, formatDate, type Category } from '@/lib/posts'
+import { articleJsonLd, breadcrumbJsonLd, createMetadata } from '@/lib/seo'
 
 interface Props {
   params: Promise<{ category: string; slug: string }>
@@ -23,29 +25,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return {}
-  return {
+  return createMetadata({
     title: post.title,
     description: post.excerpt,
+    path: `/guides/${post.category}/${post.slug}`,
     keywords: post.tags,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: 'article',
-      publishedTime: post.date,
-      tags: post.tags,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.excerpt,
-    },
-  }
+    type: 'article',
+    publishedTime: post.date,
+    tags: post.tags,
+  })
 }
 
 export default async function PostPage({ params }: Props) {
   const { slug, category } = await params
   const post = getPostBySlug(slug)
   if (!post || post.category !== category) notFound()
+
+  const articleLd = articleJsonLd({
+    title: post.title,
+    description: post.excerpt,
+    path: `/guides/${post.category}/${post.slug}`,
+    datePublished: post.date,
+    image: post.image,
+  })
+
+  const crumbsLd = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Guides', path: '/guides' },
+    { name: getCategoryLabel(post.category as Category), path: `/guides/${post.category}` },
+    { name: post.title, path: `/guides/${post.category}/${post.slug}` },
+  ])
 
   const relatedPosts = posts
     .filter((p) => p.slug !== post.slug && p.category === post.category)
@@ -60,6 +69,14 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
+      />
       <Navbar />
       <main>
         {/* Breadcrumb */}
@@ -85,18 +102,20 @@ export default async function PostPage({ params }: Props) {
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             {/* Main article */}
             <article className="lg:col-span-2" itemScope itemType="https://schema.org/Article">
-              {/* Hero image */}
-              <div className="relative h-64 w-full overflow-hidden rounded-lg sm:h-80">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 66vw"
-                  itemProp="image"
-                />
-              </div>
+              {/* Hero image — only when we have a real asset */}
+              {post.image ? (
+                <div className="relative h-64 w-full overflow-hidden rounded-lg sm:h-80">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    itemProp="image"
+                  />
+                </div>
+              ) : null}
 
               {/* Article header */}
               <header className="mt-6">
@@ -132,53 +151,7 @@ export default async function PostPage({ params }: Props) {
               {/* Article content */}
               <div className="mt-8 prose prose-invert prose-lg max-w-none" itemProp="articleBody">
                 {post.content ? (
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
-                    {post.content.trim().split('\n\n').map((block, i) => {
-                      if (block.startsWith('## ')) {
-                        return (
-                          <h2 key={i} className="font-display text-2xl font-bold uppercase text-foreground mt-8 mb-3">
-                            {block.replace('## ', '')}
-                          </h2>
-                        )
-                      }
-                      if (block.startsWith('### ')) {
-                        return (
-                          <h3 key={i} className="font-display text-xl font-bold uppercase text-foreground mt-6 mb-2">
-                            {block.replace('### ', '')}
-                          </h3>
-                        )
-                      }
-                      if (block.startsWith('- ') || block.includes('\n- ')) {
-                        const items = block.split('\n').filter((l) => l.startsWith('- '))
-                        return (
-                          <ul key={i} className="list-disc pl-5 space-y-1">
-                            {items.map((item, j) => (
-                              <li key={j} className="text-muted-foreground"
-                                dangerouslySetInnerHTML={{ __html: item.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>') }}
-                              />
-                            ))}
-                          </ul>
-                        )
-                      }
-                      if (block.match(/^\d+\./)) {
-                        const items = block.split('\n').filter((l) => l.match(/^\d+\./))
-                        return (
-                          <ol key={i} className="list-decimal pl-5 space-y-1">
-                            {items.map((item, j) => (
-                              <li key={j} className="text-muted-foreground"
-                                dangerouslySetInnerHTML={{ __html: item.replace(/^\d+\.\s/, '').replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>') }}
-                              />
-                            ))}
-                          </ol>
-                        )
-                      }
-                      return (
-                        <p key={i}
-                          dangerouslySetInnerHTML={{ __html: block.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>') }}
-                        />
-                      )
-                    })}
-                  </div>
+                  <GuideMarkdown content={post.content} />
                 ) : (
                   <div className="rounded-lg border border-border bg-muted/30 p-8 text-center">
                     <p className="text-muted-foreground">Full article coming soon. Check back shortly!</p>

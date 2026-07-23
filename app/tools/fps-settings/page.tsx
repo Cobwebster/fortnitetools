@@ -9,9 +9,9 @@ import { Check, Info } from 'lucide-react'
 type Tier = 'competitive' | 'balanced' | 'quality'
 
 const TIERS: { id: Tier; label: string; desc: string }[] = [
-  { id: 'competitive', label: 'Competitive / Max FPS', desc: 'Lowest settings. Prioritises frame rate above everything. Used by every pro player.' },
-  { id: 'balanced',    label: 'Balanced',             desc: 'Good frame rate with reasonable visuals. Best for players with mid-range PCs.' },
-  { id: 'quality',     label: 'Quality / Casual',     desc: 'Higher visuals, lower FPS. Good for players who care more about how the game looks.' },
+  { id: 'competitive', label: 'Competitive / Max FPS', desc: 'Lowest settings. Prioritises frame rate — common among competitive players.' },
+  { id: 'balanced',    label: 'Balanced',             desc: 'Good frame rate with reasonable visuals. Solid default for mid-range PCs.' },
+  { id: 'quality',     label: 'Quality / Casual',     desc: 'Higher visuals, lower FPS. For players who care more about how the game looks.' },
 ]
 
 type Setting = {
@@ -197,7 +197,7 @@ export default function FPSSettingsPage() {
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Why Pros Use Low Settings</h3>
-                <p>Professional players universally use low graphics settings — not because they lack hardware, but because higher FPS means lower input latency. At 240 FPS, a frame is displayed every 4ms. At 60 FPS, every 16ms. This difference is genuinely perceptible and affects how responsive aiming and building feels.</p>
+                <p>Many competitive players use low graphics settings because higher FPS can reduce input latency. At 240 FPS, a frame is ~4ms; at 60 FPS, ~16ms. That difference is noticeable for aim and building — but comfort and visuals still matter if you are not chasing tournament latency.</p>
               </div>
             </div>
           </section>

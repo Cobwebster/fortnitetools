@@ -1,35 +1,11 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
-import { Info, Zap } from 'lucide-react'
-
-// Real Fortnite Chapter 6 Season 3 weapon stats (accurate values)
-// headshot_mult: headshot multiplier
-// fire_rate: shots per second
-// mag: magazine size
-const WEAPONS = [
-  // Assault Rifles
-  { id: 'striker_ar',     name: 'Striker AR',           category: 'AR',         rarity: 'Rare',      dmg: 34,  hs: 1.5, fireRate: 5.5,  mag: 30, reload: 2.5 },
-  { id: 'hammer_ar',      name: 'Hammer Assault Rifle', category: 'AR',         rarity: 'Epic',      dmg: 36,  hs: 1.5, fireRate: 4.0,  mag: 25, reload: 2.3 },
-  { id: 'thunderbolt_ar', name: 'Thunderbolt Assault',  category: 'AR',         rarity: 'Legendary', dmg: 38,  hs: 1.5, fireRate: 3.5,  mag: 20, reload: 2.1 },
-  // Shotguns
-  { id: 'ranger_sg',      name: 'Ranger Shotgun',        category: 'Shotgun',   rarity: 'Uncommon',  dmg: 76,  hs: 1.5, fireRate: 1.2,  mag: 5,  reload: 4.5 },
-  { id: 'thunder_sg',     name: 'Thunderbolt Shotgun',   category: 'Shotgun',   rarity: 'Epic',      dmg: 95,  hs: 1.5, fireRate: 0.9,  mag: 4,  reload: 5.0 },
-  { id: 'havoc_sg',       name: 'Havoc Pump Shotgun',    category: 'Shotgun',   rarity: 'Legendary', dmg: 115, hs: 1.5, fireRate: 0.7,  mag: 4,  reload: 5.2 },
-  // SMGs
-  { id: 'submachine',     name: 'Submachine Gun',        category: 'SMG',       rarity: 'Uncommon',  dmg: 18,  hs: 1.5, fireRate: 13.0, mag: 35, reload: 1.9 },
-  { id: 'runoff_smg',     name: 'Runoff SMG',            category: 'SMG',       rarity: 'Rare',      dmg: 21,  hs: 1.5, fireRate: 10.0, mag: 30, reload: 2.0 },
-  // Snipers
-  { id: 'dmr',            name: 'Hunter Sniper Rifle',   category: 'Sniper',    rarity: 'Rare',      dmg: 105, hs: 2.0, fireRate: 0.85, mag: 4,  reload: 3.0 },
-  { id: 'bolt_action',    name: 'Bolt-Action Sniper',    category: 'Sniper',    rarity: 'Epic',      dmg: 132, hs: 2.5, fireRate: 0.33, mag: 1,  reload: 2.8 },
-  // Pistols
-  { id: 'hand_cannon',    name: 'Hand Cannon',           category: 'Pistol',    rarity: 'Epic',      dmg: 78,  hs: 2.0, fireRate: 1.5,  mag: 7,  reload: 2.1 },
-  { id: 'combat_pistol',  name: 'Combat Pistol',         category: 'Pistol',    rarity: 'Rare',      dmg: 37,  hs: 1.75,fireRate: 4.0,  mag: 15, reload: 2.0 },
-  // MGs
-  { id: 'minigun',        name: 'Minigun',               category: 'Heavy',     rarity: 'Epic',      dmg: 18,  hs: 1.5, fireRate: 12.0, mag: 120,reload: 5.0 },
-]
+import { Info } from 'lucide-react'
+import { WEAPONS, RARITY_TEXT as RARITY_COLORS, RARITY_BORDER, calcWeaponStats } from '@/lib/weapons'
 
 // Fortnite player HP pools
 const HEALTH_PRESETS = [
@@ -39,26 +15,19 @@ const HEALTH_PRESETS = [
   { label: '50 HP (near death)',     hp: 50  },
 ]
 
-const RARITY_COLORS: Record<string, string> = {
-  Uncommon:  'text-green-400',
-  Rare:      'text-blue-400',
-  Epic:      'text-purple-400',
-  Legendary: 'text-amber-400',
-}
-
 const RARITY_BG: Record<string, string> = {
-  Uncommon:  'bg-green-400/10 border-green-400/30',
-  Rare:      'bg-blue-400/10 border-blue-400/30',
-  Epic:      'bg-purple-400/10 border-purple-400/30',
-  Legendary: 'bg-amber-400/10 border-amber-400/30',
+  Uncommon:  RARITY_BORDER.Uncommon,
+  Rare:      RARITY_BORDER.Rare,
+  Epic:      RARITY_BORDER.Epic,
+  Legendary: RARITY_BORDER.Legendary,
 }
 
-const CATEGORIES = ['All', 'AR', 'Shotgun', 'SMG', 'Sniper', 'Pistol', 'Heavy']
+const CATEGORIES = ['All', 'AR', 'Shotgun', 'SMG', 'Pistol', 'Sniper']
 
 function ceil(n: number) { return Math.ceil(n) }
 
 export default function WeaponDamageCalculatorPage() {
-  const [selectedWeapon, setSelectedWeapon] = useState('striker_ar')
+  const [selectedWeapon, setSelectedWeapon] = useState('surgical_burst')
   const [targetHP, setTargetHP] = useState(200)
   const [customHP, setCustomHP] = useState('')
   const [headshot, setHeadshot] = useState(false)
@@ -68,15 +37,13 @@ export default function WeaponDamageCalculatorPage() {
   const hp = customHP ? (parseInt(customHP) || targetHP) : targetHP
 
   const results = useMemo(() => {
-    const effectiveDmg = headshot ? weapon.dmg * weapon.hs : weapon.dmg
-    const shotsToKill = ceil(hp / effectiveDmg)
-    const dps = weapon.dmg * weapon.fireRate
-    const timeToKill = (shotsToKill - 1) / weapon.fireRate  // time in seconds
-    const magCanKill = weapon.mag >= shotsToKill
-    const shotsToBreakWood = ceil(100 / weapon.dmg)   // wood wall = 100 HP
-    const shotsToBreakBrick = ceil(200 / weapon.dmg)  // brick wall = 200 HP
-    const shotsToBreakMetal = ceil(500 / weapon.dmg)  // metal wall = 500 HP (starting HP)
-    return { effectiveDmg, shotsToKill, dps, timeToKill, magCanKill, shotsToBreakWood, shotsToBreakBrick, shotsToBreakMetal }
+    const base = calcWeaponStats(weapon, hp, headshot)
+    return {
+      ...base,
+      shotsToBreakWood: ceil(100 / weapon.dmg),
+      shotsToBreakBrick: ceil(200 / weapon.dmg),
+      shotsToBreakMetal: ceil(500 / weapon.dmg),
+    }
   }, [weapon, hp, headshot])
 
   const filtered = category === 'All' ? WEAPONS : WEAPONS.filter(w => w.category === category)
@@ -89,9 +56,9 @@ export default function WeaponDamageCalculatorPage() {
         <section className="border-b border-border bg-card py-10">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <nav className="mb-4 flex items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
-              <a href="/" className="hover:text-primary transition-colors">Home</a>
+              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <span>/</span>
-              <a href="/tools" className="hover:text-primary transition-colors">Tools</a>
+              <Link href="/tools" className="hover:text-primary transition-colors">Tools</Link>
               <span>/</span>
               <span className="text-foreground">Weapon Damage Calculator</span>
             </nav>
@@ -99,7 +66,7 @@ export default function WeaponDamageCalculatorPage() {
               Weapon Damage <span className="text-primary">Calculator</span>
             </h1>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-              See exactly how many shots it takes to eliminate a player with any Fortnite weapon. Includes headshot, DPS, time-to-kill, and structure damage.
+              Approximate shots-to-kill, DPS, and time-to-kill for Chapter 7 Season 3 weapons. Values are for planning — Epic changes balance mid-season, so confirm in-game after patches.
             </p>
           </div>
         </section>
@@ -135,16 +102,25 @@ export default function WeaponDamageCalculatorPage() {
                       key={w.id}
                       type="button"
                       onClick={() => setSelectedWeapon(w.id)}
-                      className={`rounded-lg border px-3 py-2.5 text-left transition-all ${
+                      className={`flex items-center gap-2.5 rounded-lg border px-3 py-2.5 text-left transition-all ${
                         selectedWeapon === w.id
                           ? `${RARITY_BG[w.rarity]} border-current`
                           : 'border-border bg-muted/30 hover:bg-muted'
                       }`}
                     >
-                      <p className="text-sm font-semibold text-foreground leading-tight">{w.name}</p>
-                      <div className="flex items-center gap-2 mt-0.5">
-                        <span className={`text-xs font-medium ${RARITY_COLORS[w.rarity]}`}>{w.rarity}</span>
-                        <span className="text-xs text-muted-foreground">{w.dmg} dmg</span>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={w.image}
+                        alt=""
+                        className="h-12 w-12 shrink-0 object-contain drop-shadow-sm"
+                        aria-hidden="true"
+                      />
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold text-foreground leading-tight truncate">{w.name}</p>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <span className={`text-xs font-medium ${RARITY_COLORS[w.rarity]}`}>{w.rarity}</span>
+                          <span className="text-xs text-muted-foreground">{w.dmg} dmg</span>
+                        </div>
                       </div>
                     </button>
                   ))}
@@ -207,12 +183,18 @@ export default function WeaponDamageCalculatorPage() {
             <div className="lg:col-span-2 flex flex-col gap-4">
               {/* Selected weapon card */}
               <div className={`rounded-xl border p-5 ${RARITY_BG[weapon.rarity]}`}>
-                <div className="flex items-start justify-between gap-2 mb-3">
-                  <div>
+                <div className="flex items-start gap-3 mb-3">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={weapon.image}
+                    alt=""
+                    className="h-16 w-16 shrink-0 object-contain drop-shadow-md"
+                    aria-hidden="true"
+                  />
+                  <div className="min-w-0">
                     <p className={`text-xs font-bold uppercase tracking-wider ${RARITY_COLORS[weapon.rarity]}`}>{weapon.rarity} · {weapon.category}</p>
-                    <h2 className="font-display text-xl font-bold text-foreground mt-0.5">{weapon.name}</h2>
+                    <h2 className="font-display text-xl font-bold text-foreground mt-0.5 leading-tight">{weapon.name}</h2>
                   </div>
-                  <Zap className="h-5 w-5 shrink-0 text-primary mt-1" />
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {[
@@ -248,9 +230,15 @@ export default function WeaponDamageCalculatorPage() {
                     <span className="font-display text-2xl font-bold text-foreground">{results.timeToKill.toFixed(2)}s</span>
                   </div>
                   <div className="flex justify-between items-baseline">
-                    <span className="text-sm text-muted-foreground">DPS</span>
-                    <span className="font-display text-2xl font-bold text-foreground">{results.dps.toFixed(1)}</span>
+                    <span className="text-sm text-muted-foreground">{headshot ? 'DPS (all HS)' : 'DPS (body)'}</span>
+                    <span className="font-display text-2xl font-bold text-foreground">{results.effectiveDps.toFixed(1)}</span>
                   </div>
+                  {headshot && (
+                    <div className="flex justify-between items-baseline text-xs">
+                      <span className="text-muted-foreground">Body DPS (reference)</span>
+                      <span className="text-muted-foreground">{results.bodyDps.toFixed(1)}</span>
+                    </div>
+                  )}
                   {!results.magCanKill && (
                     <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive">
                       Needs a reload — magazine only holds {weapon.mag} shots ({weapon.mag * weapon.dmg} damage).
@@ -264,9 +252,9 @@ export default function WeaponDamageCalculatorPage() {
                 <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-3">Shots to Destroy Structure</p>
                 <div className="flex flex-col gap-2">
                   {[
-                    { label: 'Wood wall (100 HP)',   shots: results.shotsToBreakWood,  color: 'text-amber-600' },
-                    { label: 'Brick wall (200 HP)',  shots: results.shotsToBreakBrick, color: 'text-stone-400' },
-                    { label: 'Metal wall (500 HP)',  shots: results.shotsToBreakMetal, color: 'text-cyan-400' },
+                    { label: 'Wood wall (~100 HP placed)',   shots: results.shotsToBreakWood,  color: 'text-amber-600' },
+                    { label: 'Brick wall (~200 HP placed)',  shots: results.shotsToBreakBrick, color: 'text-stone-400' },
+                    { label: 'Metal wall (~500 HP max)',  shots: results.shotsToBreakMetal, color: 'text-cyan-400' },
                   ].map(({ label, shots, color }) => (
                     <div key={label} className="flex justify-between items-center">
                       <span className={`text-xs font-medium ${color}`}>{label}</span>
@@ -285,10 +273,10 @@ export default function WeaponDamageCalculatorPage() {
               <div>
                 <h2 className="text-sm font-semibold text-foreground mb-2">How weapon damage works in Fortnite</h2>
                 <p className="text-sm leading-relaxed text-muted-foreground mb-2">
-                  All players have <strong className="text-foreground">100 base HP + up to 100 shield</strong> for a maximum of 200 effective HP. Shields absorb damage before HP, and shields regenerate after 25 seconds without taking damage. The Battle Pass includes shield healing items that can raise max shields beyond 100 in certain limited-time modes.
+                  Players normally have <strong className="text-foreground">100 HP + up to 100 shield</strong> (200 effective). Some limited-time modes or items can change that — use the custom HP field when needed.
                 </p>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  <strong className="text-foreground">Headshots</strong> deal 1.5× base damage for most weapons, 2.0× for DMRs and pistols, and up to 2.5× for bolt-action snipers. Structure damage differs from player damage — weapons deal full base damage to buildings, making shotguns and ARs effective for breaking walls. Metal walls start at 220 HP when built and regenerate to 500 HP over a few seconds.
+                  <strong className="text-foreground">Headshots</strong> multiply body damage (often ~1.5× on many guns; snipers and some precision weapons can be higher). Structure damage uses approximate placed/max wall HP for wood / brick / metal — walls also heal after placement, so live TTK on builds can differ.
                 </p>
               </div>
             </div>

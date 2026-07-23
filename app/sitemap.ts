@@ -1,11 +1,15 @@
 import type { MetadataRoute } from 'next'
 import { posts, categories } from '@/lib/posts'
+import { siteConfig } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://fortnitetools.com'
+  const base = siteConfig.url
 
   const toolRoutes: MetadataRoute.Sitemap = [
+    '/fortnite-map',
     '/tools',
+    '/tools/item-shop',
+    '/tools/loadout-builder',
     '/tools/sensitivity-calculator',
     '/tools/vbucks-calculator',
     '/tools/battle-pass-xp-calculator',
@@ -14,11 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/fps-settings',
     '/tools/keybinds',
     '/tools/zone-timer',
-  ].map(path => ({
+  ].map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: 0.85,
+    priority: path === '/fortnite-map' || path === '/tools/item-shop' || path === '/tools/loadout-builder' ? 0.95 : 0.85,
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [

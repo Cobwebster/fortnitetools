@@ -1,14 +1,20 @@
 import Link from 'next/link'
-import { Crosshair } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { BRAND_ICON } from '@/lib/site-icons'
 
 export default function NotFound() {
   return (
     <>
       <Navbar />
       <main className="flex min-h-[60vh] flex-col items-center justify-center px-4 py-24 text-center">
-        <Crosshair className="h-16 w-16 text-primary mb-6" aria-hidden="true" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={BRAND_ICON}
+          alt=""
+          className="mb-6 h-24 w-24 object-contain drop-shadow-lg opacity-90"
+          aria-hidden="true"
+        />
         <h1 className="font-display text-5xl font-extrabold uppercase tracking-tight text-foreground">
           404
         </h1>
