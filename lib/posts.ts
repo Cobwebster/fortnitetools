@@ -965,7 +965,348 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
 4. Play two real matches before changing five more settings at once — isolate variables
 `,
   },
+  {
+    slug: 'how-to-get-cube-sprites-fortnite',
+    title: 'How to Get Cube Sprites in Fortnite (Chapter 7 Season 3)',
+    excerpt:
+      'Which cube sprite variants are live right now, where they drop from chests and vaults, how the Sprite Locator works, and the best Shattered Coast farm routes.',
+    category: 'how-to',
+    date: '2026-07-23',
+    readTime: 10,
+    featured: true,
+    tags: [
+      'how to get cube sprites in fortnite',
+      'fortnite cube sprites',
+      'cube sprite fortnite',
+      'sprite locator fortnite',
+      'chapter 7 season 3 sprites',
+      'golden grove sprites',
+    ],
+    content: `
+## Cube sprites are live — but not every sprite has a cube yet
+
+In Chapter 7 Season 3 (Runners), Epic added **cube** variants of Sprites. These are rare collectible/combat companions that can appear from the same sprite loot pipeline as normal Sprites — chests, Sprite Chests, rare chests, vaults, and Sprite Locator routes.
+
+Not every Sprite in the catalog has a cube version yet. Epic is rolling variants over time. As of the mid-season cube wave covered in community guides (including [this Chapter 7 Season 3 walkthrough](https://www.youtube.com/watch?v=by7oByl8EO8)), the cube set that is actually obtainable right now is limited.
+
+Last reviewed: July 2026. Patch notes can expand the list — if a Sprite suddenly shows a cube style in-game, treat the live client as the source of truth.
+
+Use the [interactive map](/fortnite-map) and [loot guide](/guides/map/fortnite-loot-guide-best-spots) to plan high-chest drops while you hunt.
+
+## Which cube sprites exist right now?
+
+Community coverage of the current wave lists these **cube variants** as available:
+
+| Cube sprite | Notes |
+| --- | --- |
+| Boss Sprite | High-value combat Sprite; also a common “almost cube” tease when vaults open |
+| Earth Sprite | Elemental / earth-themed cube variant |
+| Fishy Sprite | Aquatic-themed cube variant |
+| Batman Sprite | Collab Sprite cube variant |
+| Grim Sprite | Already a rare family — cube version is a chase piece |
+| Punk Sprite | Style / punk-themed cube variant |
+| Dream Sprite | Dream-themed cube variant |
+| Fire Sprite | Fire-themed cube variant (holofoil fire also exists as a separate foil chase) |
+
+Everything else in the Sprite book is expected later. Do not waste hours assuming every Sprite can roll cube today.
+
+Other foil / special treatments (for example **Holofoil Fire Sprite**) can also drop from the same chest types. Holofoil is not the same as cube — still rare, just a different chase.
+
+## How cube sprites actually drop
+
+Cube Sprites are not a separate questline with a pin on the map. They come from the Sprite loot table with a **low roll chance**:
+
+- Regular chests
+- **Sprite Chests** (priority targets)
+- **Rare chests** (blue-named / high-tier POI loot — higher chance than grey junk, still not guaranteed)
+- Vault loot rooms (often packed with Sprite Chests + rare chests)
+- World Sprite spawns (including some “guaranteed Sprite in the water / set piece” spots)
+
+RNG is brutal. A full Golden Grove clear with zero cubes is normal. Treat every match as a farm attempt, not a guarantee.
+
+## Method 1 — Chest and Sprite Chest farm (primary)
+
+1. Drop on the **outskirts** or a mid-contest POI with dense chests so you can open volume safely.
+2. Prioritize **Sprite Chests** whenever you hear / see them — they are the dedicated Sprite container.
+3. Hit **rare chests** next. Named locations with stronger loot tables (often associated with the “blue name” high-value POI treatment in-season) are better than random woodland greys.
+4. Keep moving. Cubes are a low-percentage roll; **open more chests** beats camping one house forever.
+
+High-chest habits from our Shattered Coast guides still apply: land, clear, rotate to the next dense cluster, extract or bank when inventory is full of Sprites you care about.
+
+## Method 2 — Sprite Locator
+
+The **Sprite Locator** is the seasonal tool that pings Sprite opportunities. Before the cube update, Locator routes mostly fed base Sprites. After Epic’s update, Locator-linked chests can roll **variant Sprites**, including cubes, at a meaningfully better relative rate than ignoring Locator entirely.
+
+Practical use:
+
+1. Grab a Sprite Locator when you find one.
+2. Impulse / rotate to the marked chest or Sprite opportunity.
+3. Clear the ping completely (Sprite Chest + nearby rares) before chasing the next fight.
+
+Locator does not guarantee a cube. It raises the number of *valid Sprite rolls* you take per match.
+
+## Method 3 — Golden Grove underground + rare chest loop
+
+**Golden Grove** is a strong Chapter 7 Season 3 farm pocket for Sprite hunters:
+
+- Underground / interior loot path with a high chest count
+- A reliable world Sprite spawn in the water area (often contested by other collectors)
+- A **guaranteed rare chest** on the back side of the loop in typical match spawns
+
+Clear Grove → leave with mats and Sprite rolls → rotate toward a vault if you found a key. Full POI context: [Shattered Coast locations guide](/guides/map/fortnite-map-all-locations-guide) and live markers on the [Fortnite map](/fortnite-map).
+
+## Method 4 — Vaults
+
+Vault keys turn a normal farm into a jackpot room. Vault interiors commonly stack:
+
+- Sprite Chests
+- Rare chests
+- High-tier loot that keeps you alive for the next rotate
+
+If a vault opens Boss Sprite instead of cube, that is still useful power for fighting other collectors — but it is not the cube chase. Extract or keep hunting.
+
+## Method 5 — Player trades and contested takes
+
+Because cubes just released, ownership is uneven.
+
+**Trading:** Some players swap rare Sprites (cube, Zero Point, Grim, etc.) in lobbies / Discord / friend groups. Only trade with people you trust; Fortnite has no official safe Sprite escrow. Never share account logins for a “trade.”
+
+**Contested takes:** If someone in the pre-game lobby clearly shows a cube Sprite loadout, following their bus exit and winning the fight is a legitimate — if sweaty — method. Safe extraction zones stop fights inside the bubble, so do not expect to third-party someone mid-deposit inside the safe circle.
+
+## Extraction and Sprite Dust
+
+When you decide to bank progress, use **safe extraction** points to deposit Sprites for **Sprite Dust** and collection credit. Extracting a duplicate holofoil or Boss Sprite still progresses dust even if you already own that variant. Cubes you still need should stay in inventory until you are sure you will extract safely — dying with an unextracted cube loses the drop.
+
+## Farm route checklist (one match)
+
+1. Drop Golden Grove, Latte Landing, Wonkeeland, or another dense mid-POI from the [loot guide](/guides/map/fortnite-loot-guide-best-spots)
+2. Open every Sprite Chest first, then rares
+3. Use Sprite Locator pings immediately
+4. If you find a vault key, rotate to the vault before late circle
+5. Extract duplicates for dust; keep missing cubes until a safe extract
+6. Queue again — volume wins
+
+## FAQ
+
+### Are cube sprites guaranteed from rare chests?
+
+No. Rare chests and Sprite Chests improve your odds versus random greys. They do not guarantee a cube.
+
+### Why can’t I find cube versions of every Sprite?
+
+Epic has not shipped cube variants for the full Sprite roster yet. Only the live list above (Boss, Earth, Fishy, Batman, Grim, Punk, Dream, Fire) is confirmed in the current wave.
+
+### Is holofoil the same as cube?
+
+No. Holofoil is a different special treatment. Both can be rare chase drops from the same containers.
+
+### Do Creative maps give cube sprites?
+
+No. This is a Battle Royale / seasonal Sprite systems hunt on Shattered Coast, not a Creative island code. For Creative XP maps see the [codes database](/codes).
+
+### What’s the fastest way if I only have 30 minutes?
+
+Sprint Locator + Sprite Chest volume on high-chest POIs, then vault if keyed. Skip long mid-map third parties unless the enemy is visibly carrying a cube you need.
+
+## Related guides and tools
+
+- [Interactive Fortnite map](/fortnite-map)
+- [Best loot spots](/guides/map/fortnite-loot-guide-best-spots)
+- [All Shattered Coast locations](/guides/map/fortnite-map-all-locations-guide)
+- [Ranked mode tips](/guides/how-to/fortnite-ranked-mode-guide) if you are farming in Ranked lobbies
+
+Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find cube sprites](https://www.youtube.com/watch?v=by7oByl8EO8).
+`,
+  },
+  {
+    slug: 'fortnite-ban-appeal',
+    title: 'Fortnite Ban Appeal Guide — How to Appeal an Epic Account Ban',
+    excerpt:
+      'How to check your Fortnite ban status, find your Sanction ID, submit one official appeal on Epic’s Sanctions and Appeals portal, and what happens after review.',
+    category: 'how-to',
+    date: '2026-07-23',
+    readTime: 11,
+    featured: true,
+    tags: [
+      'fortnite ban appeal',
+      'how to appeal fortnite ban',
+      'epic games sanction appeal',
+      'fortnite banned account',
+      'sanction id fortnite',
+      'epic safety center appeal',
+    ],
+    content: `
+## Short answer: appeal only through Epic’s Sanctions and Appeals portal
+
+If your Fortnite / Epic account is banned or sanctioned, the official path is Epic’s **Sanctions and Appeals** flow on the Safety Center — not random Discord “unban services,” not paid recovery sellers, and usually not a generic Player Support chat asking them to override moderation.
+
+Epic’s own help articles state that player and creator bans can be reviewed and appealed in the [Sanctions and Appeals portal](https://safety.epicgames.com/sanctions-and-appeals), using the **Sanction ID** from your ban email, while signed into the **correct** Epic account. You can check status and duration from [safety.epicgames.com](https://safety.epicgames.com/) → Sanctions and Appeals → My Sanctions & Appeals.
+
+Last reviewed: July 2026. Always trust the live Epic UI and email over third-party summaries if something changed.
+
+## What a Fortnite / Epic ban usually means
+
+Epic issues sanctions when accounts break [community / safety rules](https://safety.epicgames.com/) — cheating, toxicity, fraud, account sharing abuse, and related violations. Players typically get an **email** describing:
+
+- The type of sanction
+- Duration (temporary vs permanent)
+- The rule category violated
+- A **Sanction ID** (Epic’s lookup form expects a **32-character** ID, often UUID-shaped)
+
+An **account ban** can disable the Epic account and remove access to games, virtual items, and balances tied to that account. Epic also notes that action may extend across multiple accounts you own if they enforce multi-account sanctions.
+
+This guide covers **appealing a sanction decision**. It does not teach you how to evade bans with new accounts — that violates Epic rules and can make things worse.
+
+## Step 1 — Confirm you are actually banned (and for how long)
+
+1. Open [https://safety.epicgames.com/](https://safety.epicgames.com/)
+2. Choose **Sanctions and Appeals**
+3. Open **Go to my Sanctions & Appeals** / [My Sanctions and Appeals](https://safety.epicgames.com/sanctions-and-appeals/my-sanctions-and-appeals)
+4. Sign in with the Epic account that received the email
+5. Review active sanctions, status, and duration
+
+**Alternative:** On the same page, paste the **Sanction ID** from your email into the Sanction ID search (must be 32 characters).
+
+Epic also documents this flow in [How can I view my Fortnite ban status or duration?](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_PlayerBehavior/how-can-i-view-my-fortnite-ban-status-or-duration-a000094575).
+
+If nothing appears, you may be on the wrong Epic login (common on consoles with multiple linked emails). Fix the login before writing an appeal.
+
+## Step 2 — Gather what you need before appealing
+
+| Item | Why you need it |
+| --- | --- |
+| Ban / sanction email | Contains Sanction ID, rule category, and timing |
+| Correct Epic login | Appeals must be filed on the sanctioned account |
+| Sanction ID (32 characters) | Lookup / appeal targeting |
+| Honest timeline | What you were doing around the date of the report |
+| Evidence (optional) | Screenshots, match IDs, proof of compromise — only if relevant |
+
+If you believe the account was **stolen** and then banned for cheating, say that clearly and secure the account first: change password, enable [two-factor authentication](/guides/how-to/how-to-enable-2fa-fortnite), revoke unknown devices/sessions.
+
+## Step 3 — Submit the Fortnite ban appeal (one per sanction)
+
+Epic’s Sanctions and Appeals policy ([overview](https://safety.epicgames.com/sanctions-and-appeals)):
+
+- You may submit **one appeal per eligible sanction**
+- Appeals are reviewed by a **human moderator**
+- Epic may contact you for more information
+- Outcomes are notified by **email** and visible on the Sanctions and Appeals page
+- Possible results: **upheld** (ban stands), **lifted** (sanction removed as inaccurate), or **modified** (different/more suitable sanction)
+- Sanctions that were already **modified** after a previous review generally **cannot** be appealed again
+- You can typically appeal during the life of the sanction (or longer if required by law); the decision email/UI states the window
+
+### How to file
+
+1. Sign in at [My Sanctions and Appeals](https://safety.epicgames.com/sanctions-and-appeals/my-sanctions-and-appeals)
+2. Locate the sanction (list view or Sanction ID search)
+3. Choose the appeal option for that eligible sanction
+4. Write a clear, factual appeal (see template below)
+5. Submit once — do not spam duplicate tickets hoping for a different bot answer
+
+Epic’s Fortnite help page on bans ([Why is my Fortnite account banned?](https://www.epicgames.com/help/en-US/fortnite-battle-royale-c-202300000001636/player-behavior-c-202300000001720/why-is-my-fortnite-account-banned-a202300000012186)) also points creators and players to this same portal with the Sanction ID from email.
+
+## What to write in a ban appeal (that does not waste the one shot)
+
+Good appeals are short, factual, and specific. Bad appeals are insults, walls of “I swear I’m innocent,” or pasted ChatGPT essays with no dates.
+
+### Useful structure
+
+1. **Sanction ID** and approximate date of the email
+2. **What you believe happened** in one paragraph (wrongful report, compromised account, mistaken hardware ID, etc.)
+3. **Facts Epic can check** — platforms you play on, whether anyone else had the password, whether you used any third-party software
+4. **What you already fixed** — password reset, 2FA enabled, removed shady overlays
+5. **Polite close** — ask for a human review; do not threaten chargebacks as leverage
+
+### Example tone (edit hard — do not copy blank)
+
+“Sanction ID: [paste]. I received this on [date]. I play on [PC/PS/Xbox] only. I did not knowingly use cheats. Around that date my account email showed [login from unknown region / shared PC / sibling access]. I have since changed my password and enabled authenticator 2FA. Please review whether this sanction was applied in error or due to unauthorized use. Happy to provide more detail if needed.”
+
+If you **did** break the rules, an appeal that lies usually fails. Some players instead wait out a temporary ban and clean up security habits.
+
+## Temporary ban vs permanent ban
+
+| Situation | What to expect |
+| --- | --- |
+| Temporary ban | Status page shows an end date; appeal still possible while active if eligible |
+| Permanent account ban | Access disabled; appeal is the primary official challenge path |
+| Chat / competitive / mode restrictions | May appear as narrower sanctions — still use the same portal |
+| Hardware / device blocks | Harder cases; still use official appeal, not “HWID spoof” sellers |
+
+FortniteTools cannot see your Sanction ID or overturn bans. Only Epic can.
+
+## Scams that target banned players
+
+Heavy search interest around “Fortnite ban appeal” attracts predators:
+
+- Discord/Telegram “admins” who unban for a fee
+- Sites asking for your Epic password to “submit the appeal for you”
+- Fake Epic emails with phishing Sanction portals
+- Account sellers offering a “clean” replacement account
+
+Epic will not ask you to pay a stranger to appeal. Use [safety.epicgames.com](https://safety.epicgames.com/) and your real Epic login only. Related reading: [how to enable 2FA](/guides/how-to/how-to-enable-2fa-fortnite) and [free V-Bucks scam warnings](/guides/season/how-to-get-free-v-bucks-fortnite).
+
+## After you submit — timeline and outcomes
+
+Epic says appeals go to human moderation. Timing varies. Watch:
+
+- The email on the Epic account
+- The Sanctions and Appeals status page
+
+| Outcome | Meaning |
+| --- | --- |
+| Upheld | Original sanction was judged appropriate |
+| Lifted | Sanction removed as inaccurately applied |
+| Modified | Different sanction applied; that modified result may not be appealable again |
+
+Do not create alternate accounts to bypass an active ban while an appeal is pending — that can become additional violations.
+
+## Common problems
+
+### “I never got a ban email”
+
+Check spam, filters, and every email ever linked to Epic / console logins. Use Sanction ID search if you have the ID from an in-game or launcher message. Confirm you are signed into the banned account on the Safety Center.
+
+### “Player Support said they can’t help”
+
+For many sanction appeals, the dedicated Sanctions and Appeals portal is the correct channel. Support may redirect you there rather than reversing moderation in a normal ticket.
+
+### “My appeal button is missing”
+
+Possible reasons: sanction not eligible, appeal already used, sanction is the result of a prior modification, or you are on the wrong account. Re-read the decision email for eligibility language.
+
+### “I was banned for cheating but I only used overlays”
+
+Some overlays and injectors trip anti-cheat. Remove them, appeal with honesty if you believe it was a false positive, and do not install “FPS unlocker” malware marketed to banned players.
+
+## FAQ
+
+### How many times can I appeal a Fortnite ban?
+
+Epic’s policy is **one appeal per eligible sanction**. Use it carefully.
+
+### Can I appeal after the ban ends?
+
+Epic states you can appeal throughout the duration of the sanction unless law requires a longer window. Temporary bans that already expired may no longer need an appeal — check the portal.
+
+### Will appealing refund my V-Bucks or skins?
+
+A successful lift restores access to the account as Epic configures it. Permanent bans that stay upheld generally mean you do not keep that locker. Separate shop refunds are a different system — see [how to refund Fortnite skins](/guides/how-to/how-to-refund-fortnite-skins).
+
+### Is FortniteTools affiliated with Epic?
+
+No. We are an independent fan site. We explain the public process and link official pages; we cannot process appeals.
+
+## Official links checklist
+
+1. [Sanctions and Appeals overview](https://safety.epicgames.com/sanctions-and-appeals)
+2. [My Sanctions and Appeals](https://safety.epicgames.com/sanctions-and-appeals/my-sanctions-and-appeals)
+3. [View ban status / duration (Epic Help)](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_PlayerBehavior/how-can-i-view-my-fortnite-ban-status-or-duration-a000094575)
+4. [Why is my Fortnite account banned? (Epic Help)](https://www.epicgames.com/help/en-US/fortnite-battle-royale-c-202300000001636/player-behavior-c-202300000001720/why-is-my-fortnite-account-banned-a202300000012186)
+5. Secure the account afterward with [Epic 2FA](/guides/how-to/how-to-enable-2fa-fortnite)
+`,
+  },
 ]
+
 
 
 export function getPostBySlug(slug: string): Post | undefined {
