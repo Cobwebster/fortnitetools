@@ -10,10 +10,12 @@ import { toolIcon } from '@/lib/site-icons'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Tools – Free Calculators',
   description:
-    'Free Fortnite tools: interactive map, item shop tracker, sensitivity converter, V-Bucks calculator, K/D calculator, zone timer, keybinds, FPS settings, XP calculator, and weapon damage calculator.',
+    'Free Fortnite tools: player stats lookup, interactive map, item shop tracker, sensitivity converter, V-Bucks calculator, K/D calculator, zone timer, keybinds, FPS settings, XP calculator, and weapon damage calculator.',
   path: '/tools',
   keywords: [
     'fortnite tools',
+    'fortnite stats',
+    'fortnite tracker',
     'fortnite interactive map',
     'fortnite item shop',
     'fortnite sensitivity calculator',
@@ -25,6 +27,13 @@ export const metadata: Metadata = createMetadata({
 })
 
 const TOOLS = [
+  {
+    href: '/tools/player-stats',
+    title: 'Player Stats Lookup',
+    description:
+      'Look up Fortnite K/D, wins, win rate, matches, and Solo/Duo/Squad stats by Epic, PlayStation, or Xbox name.',
+    tags: ['Stats', 'K/D', 'Tracker'],
+  },
   {
     href: '/fortnite-map',
     title: 'Interactive Map',

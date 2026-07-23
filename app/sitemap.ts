@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const toolRoutes: MetadataRoute.Sitemap = [
     '/fortnite-map',
     '/tools',
+    '/tools/player-stats',
     '/tools/item-shop',
     '/tools/loadout-builder',
     '/tools/sensitivity-calculator',
@@ -22,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: path === '/fortnite-map' || path === '/tools/item-shop' || path === '/tools/loadout-builder' ? 0.95 : 0.85,
+    priority: path === '/fortnite-map' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' ? 0.95 : 0.85,
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -37,6 +38,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
+    },
+    {
+      url: `${base}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
+      url: `${base}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: `${base}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
     },
   ]
 

@@ -13,6 +13,7 @@ export type CategoryIconId = keyof typeof CATEGORY_ICONS
 
 /** Tool hub / featured tool sprites — prefer item art over generic Lucide icons. */
 export const TOOL_ICONS: Record<string, string> = {
+  '/tools/player-stats': '/images/icons/crown.png',
   '/fortnite-map': '/images/icons/map.png',
   '/tools/item-shop': '/images/icons/vbucks.png',
   '/tools/loadout-builder': '/images/loadout/striker_pump.png',

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
@@ -138,8 +138,8 @@ export default function KeybindsPage() {
               </thead>
               <tbody>
                 {CATEGORIES.filter(cat => activeCategory === 'All' || cat === activeCategory).map(cat => (
-                  <>
-                    <tr key={`cat-${cat}`} className="bg-muted/30">
+                  <Fragment key={cat}>
+                    <tr className="bg-muted/30">
                       <td colSpan={PROS.length + 1} className="px-5 py-2">
                         <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">{cat}</span>
                       </td>
@@ -165,7 +165,7 @@ export default function KeybindsPage() {
                         })}
                       </tr>
                     ))}
-                  </>
+                  </Fragment>
                 ))}
               </tbody>
             </table>

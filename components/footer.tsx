@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { categories } from '@/lib/posts'
 import { BRAND_ICON } from '@/lib/site-icons'
+import { EPIC_DISCLAIMER } from '@/lib/site'
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card mt-16">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
@@ -22,10 +23,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Free Fortnite calculators and guides for the current season.
-            </p>
-            <p className="mt-4 text-xs text-muted-foreground">
-              FortniteTools.com is not affiliated with Epic Games.
+              Free Fortnite calculators and guides for the current season. Independent fan project.
             </p>
           </div>
 
@@ -76,92 +74,82 @@ export function Footer() {
                   Map Guides
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/guides/season/fortnite-season-battle-pass-guide"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Battle Pass Guide
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Tools */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-2">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">Tools</h3>
+            <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2" role="list">
+              {[
+                { href: '/tools', label: 'All Tools' },
+                { href: '/tools/player-stats', label: 'Player Stats' },
+                { href: '/fortnite-map', label: 'Interactive Map' },
+                { href: '/tools/loadout-builder', label: 'Loadout Builder' },
+                { href: '/tools/item-shop', label: 'Item Shop' },
+                { href: '/tools/weapon-damage-calculator', label: 'Damage Calc' },
+                { href: '/tools/sensitivity-calculator', label: 'Sensitivity' },
+                { href: '/tools/vbucks-calculator', label: 'V-Bucks' },
+                { href: '/tools/battle-pass-xp-calculator', label: 'XP Calculator' },
+                { href: '/tools/kd-calculator', label: 'K/D Calculator' },
+                { href: '/tools/zone-timer', label: 'Zone Timer' },
+                { href: '/tools/fps-settings', label: 'FPS Settings' },
+                { href: '/tools/keybinds', label: 'Keybinds' },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Site */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">Site</h3>
             <ul className="mt-4 flex flex-col gap-2" role="list">
               <li>
-                <Link href="/fortnite-map" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Interactive Map
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  About
                 </Link>
               </li>
               <li>
-                <Link href="/tools" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  All Tools
+                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/tools/item-shop" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Item Shop
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/loadout-builder" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Loadout Builder
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/sensitivity-calculator" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Sensitivity Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/vbucks-calculator" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  V-Bucks Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/battle-pass-xp-calculator" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  XP Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/weapon-damage-calculator" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Damage Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/kd-calculator" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  K/D Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/fps-settings" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  FPS Settings Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/keybinds" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Pro Keybinds
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools/zone-timer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Zone Timer
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 rounded-xl border border-amber-500/30 bg-amber-500/5 px-4 py-4 sm:px-5">
+          <p className="text-xs font-bold uppercase tracking-wider text-amber-200/90 mb-1.5">
+            Independent fan site — not Epic Games
+          </p>
+          <p className="text-sm leading-relaxed text-muted-foreground">{EPIC_DISCLAIMER}</p>
+        </div>
+
+        <div className="mt-6 border-t border-border pt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} FortniteTools.com. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground">
-            Fortnite&reg; is a trademark of Epic Games, Inc. This site is not endorsed by or affiliated with Epic Games.
-          </p>
+          <nav aria-label="Legal" className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+            <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+              Privacy
+            </Link>
+            <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              Contact
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>

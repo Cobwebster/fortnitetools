@@ -37,6 +37,14 @@ export function Navbar() {
             </li>
             <li>
               <Link
+                href="/tools/player-stats"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+              >
+                Player Stats
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/tools/item-shop"
                 className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
               >
@@ -67,10 +75,10 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href="/tools/item-shop"
+              href="/tools/player-stats"
               className="rounded-md border border-border bg-muted px-4 py-2 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors"
             >
-              Item Shop
+              Player Stats
             </Link>
             <Link
               href="/guides"
@@ -101,6 +109,15 @@ export function Navbar() {
                   onClick={() => setMobileOpen(false)}
                 >
                   Tools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tools/player-stats"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Player Stats
                 </Link>
               </li>
               <li>
@@ -136,11 +153,11 @@ export function Navbar() {
                 ))}
               <li className="mt-2 px-3">
                 <Link
-                  href="/tools/item-shop"
+                  href="/tools/player-stats"
                   className="block rounded-md bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Open Item Shop
+                  Look up player stats
                 </Link>
               </li>
             </ul>
