@@ -41,10 +41,10 @@ const TOOLS = [
   },
   {
     href: '/tools/player-stats',
-    title: 'Player Stats Lookup',
+    title: 'Fortnite Tracker & Stats Checker',
     description:
-      'Look up Fortnite K/D, wins, win rate, matches, and Solo/Duo/Squad stats by Epic, PlayStation, or Xbox name.',
-    tags: ['Stats', 'K/D', 'Tracker'],
+      'Free Fortnite tracker — look up K/D, wins, win rate, matches, and Solo/Duo/Squad stats by Epic, PlayStation, or Xbox name.',
+    tags: ['Tracker', 'Stats', 'K/D'],
   },
   {
     href: '/fortnite-map',

@@ -4,13 +4,14 @@ import { CREATIVE_CODES_FAQS } from '@/lib/creative-codes-seo'
 import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Creative Map Codes',
+  title: 'Fortnite XP Map Codes & Creative Island Codes',
   description:
-    'Searchable Fortnite Creative map codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more. Copy island codes, see XP ratings, players, and live engagement.',
+    'Best Fortnite XP map codes (July 2026) plus horror, 1v1, tycoon, and escape room Creative codes. Copy island codes, see XP ratings, and live engagement — defaults to XP Maps.',
   path: '/codes',
   keywords: [
     'fortnite map codes',
     'fortnite xp map codes',
+    'best fortnite xp maps',
     'fortnite horror map codes',
     'fortnite 1v1 map codes',
     'fortnite tycoon codes',

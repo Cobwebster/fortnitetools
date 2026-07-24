@@ -48,6 +48,161 @@ export const STATIC_EXAMPLE_REPORT: SkinRarityReport = {
   neverInShop: true,
 }
 
+/** Renegade Raider — Season Shop classic that has returned (snapshot July 2026). */
+export const RENEGADE_RAIDER_ITEM: CosmeticItem = {
+  id: 'CID_028_Athena_Commando_F',
+  name: 'Renegade Raider',
+  description: 'Rare renegade style.',
+  type: 'Outfit',
+  typeValue: 'outfit',
+  rarity: 'Rare',
+  rarityValue: 'rare',
+  image: 'https://fortnite-api.com/images/cosmetics/br/cid_028_athena_commando_f/icon.png',
+  smallImage: 'https://fortnite-api.com/images/cosmetics/br/cid_028_athena_commando_f/icon.png',
+  featuredImage: null,
+  added: '2019-11-20T12:50:29Z',
+  set: 'Storm Scavenger',
+  setText: 'Part of the Storm Scavenger set.',
+  introduction: 'Introduced in Chapter 1, Season 1.',
+  chapter: '1',
+  season: '1',
+  gameplayTags: ['Cosmetics.Source.ItemShop', 'Cosmetics.Set.StormScavenger'],
+  shopHistory: ['2018-09-23T00:00:00Z', '2026-01-31T00:00:00Z'],
+}
+
+export const RENEGADE_RAIDER_REPORT: SkinRarityReport = {
+  score: 23,
+  tier: 'common-rotation',
+  label: 'Common rotation',
+  summary:
+    'Has returned to the shop 84 times. Still check last-seen date — frequent returns usually mean lower scarcity.',
+  source: 'item-shop',
+  sourceLabel: 'Item Shop',
+  appearances: 84,
+  firstSeen: '2018-09-23T00:00:00Z',
+  lastSeen: '2026-01-31T00:00:00Z',
+  daysSinceLastSeen: 174,
+  shopRarity: 'Rare',
+  shopRarityValue: 'rare',
+  typicalVbucks: 1200,
+  neverInShop: false,
+}
+
+/** Aerial Assault Trooper — same early OG fame, shop returns (snapshot July 2026). */
+export const AERIAL_ASSAULT_ITEM: CosmeticItem = {
+  id: 'CID_017_Athena_Commando_M',
+  name: 'Aerial Assault Trooper',
+  description: 'Rare aerial assault style.',
+  type: 'Outfit',
+  typeValue: 'outfit',
+  rarity: 'Rare',
+  rarityValue: 'rare',
+  image: 'https://fortnite-api.com/images/cosmetics/br/cid_017_athena_commando_m/icon.png',
+  smallImage: 'https://fortnite-api.com/images/cosmetics/br/cid_017_athena_commando_m/icon.png',
+  featuredImage: null,
+  added: '2019-11-20T12:50:29Z',
+  set: 'Aerial Assault',
+  setText: 'Part of the Aerial Assault set.',
+  introduction: 'Introduced in Chapter 1, Season 1.',
+  chapter: '1',
+  season: '1',
+  gameplayTags: ['Cosmetics.Source.ItemShop', 'Cosmetics.Set.AerialAssault'],
+  shopHistory: ['2018-09-23T00:00:00Z', '2026-01-31T00:00:00Z'],
+}
+
+export const AERIAL_ASSAULT_REPORT: SkinRarityReport = {
+  score: 23,
+  tier: 'common-rotation',
+  label: 'Common rotation',
+  summary:
+    'Has returned to the shop 84 times. Still check last-seen date — frequent returns usually mean lower scarcity.',
+  source: 'item-shop',
+  sourceLabel: 'Item Shop',
+  appearances: 84,
+  firstSeen: '2018-09-23T00:00:00Z',
+  lastSeen: '2026-01-31T00:00:00Z',
+  daysSinceLastSeen: 174,
+  shopRarity: 'Rare',
+  shopRarityValue: 'rare',
+  typicalVbucks: 1200,
+  neverInShop: false,
+}
+
+/** Galaxy — Samsung promo exclusive (never normal shop). */
+export const GALAXY_ITEM: CosmeticItem = {
+  id: 'CID_175_Athena_Commando_M_Celestial',
+  name: 'Galaxy',
+  description: 'A skin as vast as the cosmos.',
+  type: 'Outfit',
+  typeValue: 'outfit',
+  rarity: 'Epic',
+  rarityValue: 'epic',
+  image: 'https://fortnite-api.com/images/cosmetics/br/cid_175_athena_commando_m_celestial/icon.png',
+  smallImage: 'https://fortnite-api.com/images/cosmetics/br/cid_175_athena_commando_m_celestial/icon.png',
+  featuredImage: null,
+  added: '2019-11-20T12:50:29Z',
+  set: 'Galaxy',
+  setText: 'Part of the Galaxy set.',
+  introduction: 'Introduced in Chapter 1, Season 5.',
+  chapter: '1',
+  season: '5',
+  gameplayTags: [
+    'Cosmetics.Source.Promo',
+    'Cosmetics.Source.Platform.Samsung',
+    'Cosmetics.Set.Galaxy',
+  ],
+  shopHistory: [],
+}
+
+export const GALAXY_REPORT: SkinRarityReport = {
+  score: 96,
+  tier: 'og-exclusive',
+  label: 'OG / Exclusive',
+  summary:
+    'Never sold in the modern Item Shop rotation — classic early-season exclusive. Extremely scarce in locker terms.',
+  source: 'promo',
+  sourceLabel: 'Promo / exclusive drop',
+  appearances: 0,
+  firstSeen: null,
+  lastSeen: null,
+  daysSinceLastSeen: null,
+  shopRarity: 'Epic',
+  shopRarityValue: 'epic',
+  typicalVbucks: 1500,
+  neverInShop: true,
+}
+
+export const STATIC_SKIN_EXAMPLES = [
+  {
+    heading: 'Example: How rare is Black Knight?',
+    intro:
+      'Black Knight is one of the most-searched rare Fortnite skins. It unlocked from the Chapter 1 Season 2 Battle Pass, sits at Legendary shop-color rarity, and has never been sold as a normal Item Shop outfit.',
+    item: STATIC_EXAMPLE_ITEM,
+    report: STATIC_EXAMPLE_REPORT,
+  },
+  {
+    heading: 'Is Renegade Raider rare?',
+    intro:
+      'Renegade Raider is culturally OG, but Epic has brought it back to the Item Shop many times. Appearance count and last-seen date matter more than the Season 1 name — nostalgia is not the same as current scarcity.',
+    item: RENEGADE_RAIDER_ITEM,
+    report: RENEGADE_RAIDER_REPORT,
+  },
+  {
+    heading: 'Is Aerial Assault Trooper rare?',
+    intro:
+      'Aerial Assault Trooper shares Renegade’s early Chapter 1 fame. It has also returned to the shop repeatedly — treat it as a rotation skin unless the vault gap grows long again.',
+    item: AERIAL_ASSAULT_ITEM,
+    report: AERIAL_ASSAULT_REPORT,
+  },
+  {
+    heading: 'Is Galaxy rare?',
+    intro:
+      'Galaxy was a Samsung promo exclusive, not a normal V-Bucks purchase. Zero recorded Item Shop sales keeps it in OG / Exclusive territory — a true unlock-path scarce skin.',
+    item: GALAXY_ITEM,
+    report: GALAXY_REPORT,
+  },
+] as const
+
 export const SKIN_RARITY_FAQS = [
   {
     question: 'What makes a Fortnite skin rare?',
@@ -62,7 +217,17 @@ export const SKIN_RARITY_FAQS = [
   {
     question: 'Is Renegade Raider still a rare Fortnite skin?',
     answer:
-      'It is iconic, but Epic has brought Renegade Raider back to the Item Shop. Appearance count and last-seen date matter more than the name alone — nostalgia does not equal current scarcity.',
+      'Iconic, yes — scarce today, no. Renegade Raider has dozens of Item Shop returns (80+ appearances in our snapshot) and last appeared in early 2026, so our scarcity score places it in common rotation. Search it above for the live count.',
+  },
+  {
+    question: 'Is Aerial Assault Trooper rare?',
+    answer:
+      'Same story as Renegade: early Chapter 1 nostalgia with many later shop returns. Check last-seen and appearance count in this calculator — the name alone overstates current scarcity.',
+  },
+  {
+    question: 'Is the Galaxy skin rare in Fortnite?',
+    answer:
+      'Yes for unlockability. Galaxy was a Samsung promo exclusive and has never been a normal Item Shop sale, so our score rates it OG / Exclusive — similar scarcity class to classic Battle Pass exclusives.',
   },
   {
     question: 'Does this calculator show skin value in real money?',
@@ -90,12 +255,12 @@ export const RARE_SKIN_EXAMPLES = [
   {
     name: 'Renegade Raider',
     note: 'Season 1 classic. Still famous, but it has returned to the shop in later years.',
-    scarcity: 'Check last seen',
+    scarcity: 'Common rotation (check last seen)',
   },
   {
     name: 'Aerial Assault Trooper',
-    note: 'Early Chapter 1 unlock / exclusive vibes — verify current shop history in the tool.',
-    scarcity: 'High nostalgia',
+    note: 'Early Chapter 1 unlock vibes — many shop returns; verify live history in the tool.',
+    scarcity: 'Common rotation (check last seen)',
   },
   {
     name: 'Galaxy',
@@ -126,14 +291,14 @@ export const SKIN_RARITY_SEO_SECTIONS = [
     heading: 'What this Fortnite skin rarity calculator checks',
     body: [
       'Search any outfit by name. We pull live cosmetics data, including shop appearance history when available, then score scarcity from appearance count, how long the skin has been vaulted, and whether it came from the Item Shop, Battle Pass, Crew, starter packs, or promos.',
-      'The example above uses Black Knight — a Chapter 1 Season 2 Battle Pass Legendary with zero recorded shop sales — so crawlers and first-time visitors see a complete report without needing to type anything.',
+      'Static examples above cover Black Knight, Renegade Raider, Aerial Assault Trooper, and Galaxy so crawlers and first-time visitors see complete reports without typing — then use the live search for any other outfit.',
     ],
   },
   {
     heading: 'OG skins, vaulted shop skins, and Battle Pass exclusives',
     body: [
-      'OG usually means early Chapter 1 cosmetics tied to Season Shop, Battle Pass, or limited unlocks. Some of those names later returned to the Item Shop, which lowers scarcity even if the skin still feels special culturally.',
-      'Vaulted shop skins sit in the middle: they were buyable, but long gaps between appearances make them feel rare again. Battle Pass and many promo outfits often never become standalone shop offers, so their unlock path stays closed after the season or campaign ends.',
+      'OG usually means early Chapter 1 cosmetics tied to Season Shop, Battle Pass, or limited unlocks. Some of those names later returned to the Item Shop (Renegade Raider, Aerial Assault Trooper), which lowers scarcity even if the skin still feels special culturally.',
+      'Vaulted shop skins sit in the middle: they were buyable, but long gaps between appearances make them feel rare again. Battle Pass and many promo outfits (Galaxy) often never become standalone shop offers, so their unlock path stays closed after the season or campaign ends.',
     ],
   },
   {

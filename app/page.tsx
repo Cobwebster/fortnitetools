@@ -44,7 +44,7 @@ export default function HomePage() {
                 Free calculators and guides for Chapter 7 Season 3.
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Sensitivity converter, XP planner, keybinds, weapon stats, and
+                Fortnite tracker &amp; stats checker, XP map codes, Item Shop, sensitivity converter, and
                 practical drop/rotation guides — built for what players actually search.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
@@ -111,7 +111,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {[
               { href: '/codes', label: 'Map Codes' },
-              { href: '/tools/player-stats', label: 'Stats' },
+              { href: '/tools/player-stats', label: 'Tracker' },
               { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
               { href: '/tools/loadout-builder', label: 'Loadout' },
               { href: '/tools/item-shop', label: 'Item Shop' },

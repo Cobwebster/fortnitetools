@@ -6,8 +6,7 @@ import { SkinRarityReportPanel } from '@/components/skin-rarity-report'
 import {
   RARE_SKIN_EXAMPLES,
   SKIN_RARITY_SEO_SECTIONS,
-  STATIC_EXAMPLE_ITEM,
-  STATIC_EXAMPLE_REPORT,
+  STATIC_SKIN_EXAMPLES,
 } from '@/lib/skin-rarity-seo'
 
 export default function SkinRarityCalculatorPage() {
@@ -40,28 +39,30 @@ export default function SkinRarityCalculatorPage() {
         </section>
 
         <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 space-y-10">
-          {/* Static example always in HTML for crawlers — above the fold */}
-          <section aria-labelledby="example-heading" className="space-y-3">
-            <div>
-              <h2
-                id="example-heading"
-                className="font-display text-xl font-bold uppercase tracking-wide text-foreground"
-              >
-                Example: How rare is Black Knight?
-              </h2>
-              <p className="mt-1 text-sm text-muted-foreground leading-relaxed max-w-3xl">
-                Black Knight is one of the most-searched rare Fortnite skins. It unlocked from the Chapter 1 Season 2
-                Battle Pass, sits at Legendary shop-color rarity, and has never been sold as a normal Item Shop outfit —
-                scarcity score <strong className="text-foreground">{STATIC_EXAMPLE_REPORT.score}/100</strong> (
-                {STATIC_EXAMPLE_REPORT.label}).
-              </p>
-            </div>
-            <SkinRarityReportPanel
-              item={STATIC_EXAMPLE_ITEM}
-              report={STATIC_EXAMPLE_REPORT}
-              eyebrow="Static example · crawlable without JavaScript"
-            />
-          </section>
+          {STATIC_SKIN_EXAMPLES.map((ex) => (
+            <section key={ex.heading} aria-labelledby={ex.item.id} className="space-y-3">
+              <div>
+                <h2
+                  id={ex.item.id}
+                  className="font-display text-xl font-bold uppercase tracking-wide text-foreground"
+                >
+                  {ex.heading}
+                </h2>
+                <p className="mt-1 text-sm text-muted-foreground leading-relaxed max-w-3xl">
+                  {ex.intro} Scarcity score{' '}
+                  <strong className="text-foreground">
+                    {ex.report.score}/100
+                  </strong>{' '}
+                  ({ex.report.label}).
+                </p>
+              </div>
+              <SkinRarityReportPanel
+                item={ex.item}
+                report={ex.report}
+                eyebrow="Static example · crawlable without JavaScript"
+              />
+            </section>
+          ))}
 
           <section aria-labelledby="try-heading" className="space-y-3">
             <h2

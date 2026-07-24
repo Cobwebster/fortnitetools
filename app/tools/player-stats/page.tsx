@@ -37,14 +37,15 @@ export default async function PlayerStatsPage({ searchParams }: Props) {
                 Tools
               </Link>
               <span>/</span>
-              <span className="text-foreground">Player Stats</span>
+              <span className="text-foreground">Fortnite Tracker</span>
             </nav>
             <h1 className="font-display text-3xl font-bold uppercase tracking-wide text-foreground sm:text-4xl">
-              Fortnite <span className="text-primary">Player Stats</span>
+              Fortnite <span className="text-primary">Tracker</span> &amp; Stats Checker
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Look up any Fortnite player by Epic username (or PSN / Xbox). See K/D, wins, win rate, matches, kills,
-              Solo / Duo / Squad / LTM splits, input-device breakdowns, and Battle Pass level when available.
+              Free Fortnite stats checker — look up any player by Epic username (or PSN / Xbox). See K/D, wins, win rate,
+              matches, kills, Solo / Duo / Squad / LTM splits, input-device breakdowns, and Battle Pass level when
+              available.
             </p>
           </div>
         </section>

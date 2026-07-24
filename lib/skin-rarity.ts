@@ -80,7 +80,7 @@ export function detectCosmeticSource(tags: string[] | undefined): CosmeticSource
   const joined = list.join(' ').toLowerCase()
   if (/crew/.test(joined)) return 'crew'
   if (/starterpack|starter.?pack/.test(joined)) return 'starter-pack'
-  if (/promo|twitch|giveaway|contest/.test(joined)) return 'promo'
+  if (/promo|twitch|giveaway|contest|platform\.samsung|samsung/.test(joined)) return 'promo'
   if (/itemshop|seasonshop/.test(joined)) return 'item-shop'
   if (/battlepass|battle.?pass|source\.season/.test(joined)) return 'battle-pass'
   return 'unknown'

@@ -5,13 +5,16 @@ import { SKIN_RARITY_FAQS } from '@/lib/skin-rarity-seo'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Skin Rarity Calculator',
   description:
-    'Look up any Fortnite skin and see how rare it really is — shop appearances, last seen date, Battle Pass exclusives, and scarcity score. Includes a Black Knight rarity example.',
+    'Look up any Fortnite skin and see how rare it really is — shop appearances, last seen, Battle Pass exclusives, and scarcity score. Static examples: Black Knight, Renegade Raider, Aerial Assault Trooper, Galaxy.',
   path: '/tools/skin-rarity-calculator',
   keywords: [
     'fortnite rare skins',
     'fortnite skin rarity calculator',
     'how rare is my fortnite skin',
     'how rare is black knight fortnite',
+    'is renegade raider rare',
+    'is aerial assault trooper rare',
+    'is galaxy skin rare fortnite',
     'fortnite og skins',
     'fortnite shop history',
     'rare fortnite skins 2026',

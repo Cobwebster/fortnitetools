@@ -1305,6 +1305,432 @@ No. We are an independent fan site. We explain the public process and link offic
 5. Secure the account afterward with [Epic 2FA](/guides/how-to/how-to-enable-2fa-fortnite)
 `,
   },
+  {
+    slug: 'best-fortnite-xp-maps',
+    title: 'Best Fortnite XP Maps (July 2026) — How to Level Up Fast',
+    excerpt:
+      'Working Creative XP map codes for Chapter 7 Season 3, how to enter island codes, daily/weekly Creative XP caps, and a fast Battle Pass leveling plan.',
+    category: 'season',
+    date: '2026-07-24',
+    readTime: 10,
+    featured: true,
+    tags: [
+      'best fortnite xp maps',
+      'fortnite xp map codes',
+      'how to level up fast fortnite',
+      'fortnite creative xp',
+      'fortm code',
+      'battle pass xp farm',
+    ],
+    content: `
+## Fastest way to level the Battle Pass right now
+
+Creative **XP maps** are still the quickest path to Battle Pass levels in Chapter 7 Season 3 — as long as you respect Epic’s Creative XP caps and rotate maps when gains slow. This guide lists working codes, shows how to enter them, and pairs with our live [Creative map codes](/codes) database and [Battle Pass XP calculator](/tools/battle-pass-xp-calculator).
+
+Last reviewed: July 2026. Codes break after patches — if Discover says an island is unavailable or “XP disabled,” swap to another XP-rated code on [/codes](/codes).
+
+## Best Fortnite XP map codes (July 2026)
+
+| Map | Code | Style | Why use it |
+| --- | --- | --- | --- |
+| FortM | 6163-6465-2983 | Fast NPC / AFK-style | Often the speed pick for hitting the daily Creative cap |
+| 50 Fashion Show | 3399-8889-2099 | Social + XP | High XP without pure AFK boredom |
+| Havoc Hotel 3 | 7962-7087-3391 | Adventure + AFK zone | Rooms to clear plus a chill AFK area |
+| TikToker Tycoon | 9579-5799-5653 | Tycoon clicker | Low-effort AFK farm once set up |
+| Cars Mega Ramp | 5442-4943-3475 | Passive driving | Steady XP while you cruise |
+| Sweaty Red vs Blue | 6531-4403-0726 | Active PvP | XP plus fights if you hate clickers |
+| Island Tycoon | 2778-7440-3172 | Tycoon | Longer session upgrades |
+
+Copy any code from the table, or open the filtered XP list on [Fortnite map codes → XP Maps](/codes).
+
+## How to enter a Fortnite Creative map code
+
+1. Launch Fortnite and open the **Play** / Discover area.
+2. Tap the **search** icon (Discover search).
+3. Paste the island code exactly, including dashes (\`XXXX-XXXX-XXXX\`).
+4. Select the matching island → **Play**.
+5. For AFK / NPC farms, set the lobby to **Private** so randoms cannot grief your setup.
+
+That is not a “redeem code” like a V-Bucks card — you are loading a Creative island. XP awards while you play (until Creative caps).
+
+## Creative XP caps (read this before grinding 4 hours)
+
+Epic calibrates Creative XP. Practical rules players hit every season:
+
+- There is a **daily Creative XP cap** — after it, Creative maps stop advancing the Battle Pass until reset.
+- There is also a larger **weekly Creative XP** allowance (community guides often cite roughly ~60 Battle Pass levels / week when you max Creative — exact numbers shift; watch your pass bar).
+- Playing **one map forever** often slows down. Rotate 2–3 XP maps when returns drop.
+- After Creative is capped for the day, switch to **BR dailies / weeklies**, LEGO / other modes if they still pay XP, or stop.
+
+Use the [XP calculator](/tools/battle-pass-xp-calculator) to see whether your remaining weeks can finish the pass.
+
+## Best leveling plan for a busy day (30–60 minutes)
+
+1. Finish **Battle Royale daily quests** first (they expire).
+2. Load **FortM** (or your current fastest XP code) in a **private** lobby until daily Creative XP slows or stops.
+3. If you still need levels, swap to Fashion Show / Havoc Hotel / a tycoon code.
+4. Check the [Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide) for season end timing.
+
+## AFK vs active XP maps
+
+| Type | Pros | Cons |
+| --- | --- | --- |
+| AFK / tycoon / FortM | Fast cap, low effort | Gets patched; boring; private lobby recommended |
+| Fashion / hotel / combat | More fun, still strong XP | Slower than pure NPC farms |
+| Horror / story maps | Fun, sometimes XP | Not optimized farms — see [horror codes](/codes) |
+
+## FAQ
+
+### What is the best Fortnite XP map right now?
+
+Start with **FortM (\`6163-6465-2983\`)** and verify it still awards XP in Discover. Keep Fashion Show and Havoc Hotel as backups.
+
+### Do XP maps get you banned?
+
+Playing official Creative / UEFN islands for XP is normal. Third-party injectors, “XP glitch” EXEs, and account sharers are not. Stick to Discover codes.
+
+### Why did my XP stop on the map?
+
+You likely hit the daily Creative cap, the map is under Epic calibration (XP disabled), or that island’s payout was nerfed. Switch codes or modes.
+
+### Where do I find more codes?
+
+Browse and filter XP maps on [/codes](/codes), or read our Creative SEO sections there for genre lists.
+`,
+  },
+  {
+    slug: 'how-to-link-epic-games-playstation-xbox-switch',
+    title: 'How to Link Epic Games to PlayStation, Xbox, and Switch',
+    excerpt:
+      'Step-by-step: connect your Epic account to PS5/PS4, Xbox, and Nintendo Switch for cross-progress, shared V-Bucks, and the correct Fortnite locker.',
+    category: 'how-to',
+    date: '2026-07-24',
+    readTime: 9,
+    featured: false,
+    tags: [
+      'how to link epic to playstation',
+      'link epic xbox fortnite',
+      'link nintendo switch epic games',
+      'fortnite cross progress',
+      'epic connected accounts',
+    ],
+    content: `
+## Why linking matters
+
+Fortnite progress lives on your **Epic Games account**. Linking PlayStation, Xbox, or Nintendo lets you:
+
+- Carry the same locker / Battle Pass across devices
+- Sign in with the console account you already use
+- Avoid creating a second empty Epic account by accident
+
+Last reviewed: July 2026. Official connection tools live under Epic account settings — [Connections](https://www.epicgames.com/account/connections) on the web, or the first-time Fortnite console prompt.
+
+## Before you link (read this)
+
+- Decide which Epic account owns the **skins you care about**. Linking does not merge two full lockers into one.
+- Enable [2FA](/guides/how-to/how-to-enable-2fa-fortnite) on the Epic account you will keep.
+- Unlink only when you understand you may lose console access to that Epic until you reconnect.
+- Epic generally allows **one primary connection per platform type** — if another PSN/Xbox/Nintendo was linked before, you may see “another account was previously connected” errors.
+
+## How to link Epic to PlayStation (PS5 / PS4)
+
+1. On PlayStation, launch **Fortnite**.
+2. When prompted to link / sign in to Epic, choose **Sign in with Epic** (or create only if you truly need a new account).
+3. Sign in with the Epic email that owns your skins.
+4. Approve the PlayStation Network connection.
+5. Confirm on [Epic → Connections](https://www.epicgames.com/account/connections) that PlayStation shows as connected.
+
+**Already in Fortnite on PS?** You can also start from the Epic website: Connections → Connect PlayStation → follow Sony’s authorize screen → relaunch Fortnite.
+
+If the wrong Epic account linked: stop playing on it, contact Epic Support / use connection help articles carefully — do not buy a “merge service.”
+
+## How to link Epic to Xbox
+
+1. Launch Fortnite on Xbox and sign in with your **Xbox Gamertag**.
+2. Follow the Epic link prompt and sign into the correct Epic account.
+3. Or use [Epic Connections](https://www.epicgames.com/account/connections) → Connect Xbox → authorize with Microsoft.
+4. Relaunch Fortnite and check the locker matches.
+
+Xbox Game Pass / Microsoft Store PC Fortnite also uses the Xbox ↔ Epic link. Keep the same Microsoft account across devices.
+
+## How to link Epic to Nintendo Switch
+
+1. On Switch, open Fortnite and choose the Epic sign-in / link flow.
+2. You will usually get a **code** or browser page — open it on a phone/PC, sign into Epic, enter the code.
+3. Confirm Nintendo shows under Epic Connections.
+4. Restart Fortnite on Switch.
+
+Switch players often create orphan Epic accounts by mashing through prompts. Always verify the email on epicgames.com matches the locker you expect.
+
+## Fix common link errors
+
+### “Another [platform] account was previously connected”
+
+That Epic ID already used a different PSN/Xbox/Nintendo. You cannot casually attach a second one. Options: sign in with the originally linked console account, or follow Epic’s official unlink / support path for eligible cases.
+
+### “I have two lockers”
+
+You created two Epic accounts. There is **no self-serve locker merge**. Pick one primary account, secure it, and stop progressing the empty one.
+
+### Console name vs Epic display name
+
+Linking does not rename you. Change the Epic display name separately — [how to change Fortnite name](/guides/how-to/how-to-change-fortnite-name).
+
+## After linking checklist
+
+- Confirm skins on each device
+- Turn on 2FA
+- Set the same [creator code](https://www.fortnite.com/) habits / privacy settings
+- Look yourself up on the [Fortnite stats tracker](/tools/player-stats) with the Epic display name
+
+## FAQ
+
+### Does linking share V-Bucks?
+
+V-Bucks balance is on the Epic account (with platform purchase caveats). Purchases made on a console storefront may be restricted to that ecosystem’s rules — but cosmetics unlock on the linked Epic locker for play.
+
+### Can I unlink later?
+
+Yes from Epic Connections, with consequences for how you sign in on that console. Unlink only intentionally.
+`,
+  },
+  {
+    slug: 'how-to-gift-skins-fortnite',
+    title: 'How to Gift Skins in Fortnite (Requirements + Steps)',
+    excerpt:
+      'Gift Item Shop skins in Fortnite: 2FA, friendship timer, daily gift limits, Buy as Gift steps, and why you cannot send locker items.',
+    category: 'how-to',
+    date: '2026-07-24',
+    readTime: 8,
+    featured: false,
+    tags: [
+      'how to gift skins in fortnite',
+      'fortnite gift skin',
+      'buy as a gift fortnite',
+      'fortnite gifting requirements',
+      'gift v-bucks skin',
+    ],
+    content: `
+## You gift from the Item Shop — not from your locker
+
+Fortnite gifting purchases a **currently available Item Shop** cosmetic for a friend. You cannot mail a skin you already own out of your locker.
+
+Official flow is documented in Epic Help: [How do I send a Gift in Battle Royale?](https://www.epicgames.com/help/en-US/c-202300000001636/c-202300000001723/a202300000016633).
+
+Last reviewed: July 2026. Check today’s offerings on the [Item Shop tracker](/tools/item-shop) and budget with the [V-Bucks calculator](/tools/vbucks-calculator).
+
+## Gifting requirements checklist
+
+| Requirement | Detail |
+| --- | --- |
+| Two-factor authentication | Sender must have [2FA enabled](/guides/how-to/how-to-enable-2fa-fortnite) |
+| Account level | Career account level typically **2+** (not Battle Pass tier) |
+| Friendship | Must be **Epic Friends for at least ~48 hours** |
+| Daily limit | Commonly **up to 5 gifts per 24 hours** (confirm in-game if Epic adjusts) |
+| Recipient | Must not already own the item; gifts enabled in their settings |
+| Refunds | Gifts are generally **non-refundable** via Cancel Purchase / Return Tickets |
+
+If **Buy as a Gift** is greyed out, walk this table top to bottom.
+
+## How to gift a skin (step-by-step)
+
+1. Enable 2FA on your Epic account if you have not already.
+2. Add your friend on Epic and wait out the friendship timer if you just connected.
+3. Open Fortnite → **Item Shop**.
+4. Select the outfit / emote / wrap you want to send.
+5. Choose **Gift** / **Buy as a Gift** (wording varies slightly by update).
+6. Pick the recipient — Epic recommends using their **Epic display name**, not only a console gamertag.
+7. Confirm the V-Bucks purchase.
+
+Epic notes that some **dynamically priced bundles** cannot be gifted if the receiver already owns part of the bundle.
+
+## Can they receive gifts?
+
+Recipients can disable gift receiving in settings. If you cannot select them:
+
+- Ask them to enable receiving gifts
+- Confirm you are friends on **Epic**, not only a platform party list
+- Confirm they do not already own the cosmetic
+
+## Gift scams to ignore
+
+- “Gift me first and I’ll gift back” from strangers
+- Discord bots that need your login to “send a gift”
+- Paying real money outside Epic for a “gifted” OG skin
+
+If a gift purchase was a mistake on your side, see [refund rules](/guides/how-to/how-to-refund-fortnite-skins) — gifted items are usually excluded.
+
+## FAQ
+
+### Can I gift V-Bucks directly?
+
+Not as a raw currency transfer. You gift shop items priced in V-Bucks.
+
+### Can I gift Battle Pass?
+
+Passes and many pass-related products are often blocked from the gift tools. Stick to eligible Item Shop cosmetics.
+
+### When does the shop rotate so I can gift a returning skin?
+
+Daily reset — details in [when does the Item Shop reset?](/guides/how-to/when-does-fortnite-item-shop-reset).
+`,
+  },
+  {
+    slug: 'how-to-report-mute-block-fortnite',
+    title: 'How to Report, Mute, and Block in Fortnite',
+    excerpt:
+      'Report toxic players, mute voice/text chat, and block users in Fortnite — plus what happens after a report and how to stay safe.',
+    category: 'how-to',
+    date: '2026-07-24',
+    readTime: 7,
+    featured: false,
+    tags: [
+      'how to report someone fortnite',
+      'how to mute in fortnite',
+      'how to block someone fortnite',
+      'fortnite report player',
+      'fortnite voice chat mute',
+    ],
+    content: `
+## Three different tools: mute, block, report
+
+| Action | What it does | When to use |
+| --- | --- | --- |
+| **Mute** | Stops you hearing / seeing that player’s voice or text | Toxicity you can ignore mid-match |
+| **Block** | Stronger personal filter / friendship barrier | Repeat harassers, scammers in whispers |
+| **Report** | Sends conduct to Epic for review | Cheating, hate speech, harassment, scams |
+
+Reporting does not kick them instantly. Epic reviews signals with their safety systems — see [Epic Safety Center](https://safety.epicgames.com/).
+
+Last reviewed: July 2026. UI labels move slightly between seasons; look for the player card / report flag.
+
+## How to mute someone in Fortnite
+
+### During a match
+
+1. Open the **players / report** menu (console: typically Options/Menu → reporting players list; PC: often Esc or the in-game social/report UI).
+2. Select the player.
+3. Choose **Mute** for voice, text, or both if offered.
+4. Confirm.
+
+You can also lower global voice chat or switch voice channels in **Settings → Audio / Voice Chat** if the whole lobby is unbearable.
+
+### In the lobby / social panel
+
+Open your friends / recent players list → select the player → mute options if available.
+
+## How to block someone
+
+1. Open their player profile from recent players, friends, or party UI.
+2. Choose **Block**.
+3. Confirm.
+
+Blocked players should stop most social contact. Unblock later from Epic account / in-game social settings if you change your mind.
+
+## How to report a player
+
+1. Open the player’s card (in-match report list, career, or recent players).
+2. Select **Report**.
+3. Pick the closest category (cheating, abusive chat, harassment, inappropriate content, etc.).
+4. Add a short optional note if the UI allows — facts beat essays.
+5. Submit.
+
+For cheating, report as soon as you have a clear match context. Do not spam duplicate reports on the same fight expecting faster bans.
+
+## What happens after you report?
+
+Epic may warn, mute, restrict modes, or ban accounts that break rules. You usually will **not** get a public “we banned them” message. That silence is normal.
+
+If **you** were banned and believe it was wrong, use the [ban appeal guide](/guides/how-to/fortnite-ban-appeal) — do not create ban-evasion accounts.
+
+## Extra safety settings worth enabling
+
+- Turn on [2FA](/guides/how-to/how-to-enable-2fa-fortnite)
+- Limit who can whisper / party invite you in privacy settings
+- Never share login codes with “Epic Support” in chat
+- Treat free V-Bucks DMs as scams — [free V-Bucks guide](/guides/season/how-to-get-free-v-bucks-fortnite)
+
+## FAQ
+
+### Can I report after the match?
+
+Yes — use recent players / career when the in-match list is gone.
+
+### Does reporting soft-ban them for me only?
+
+No. Mute/block are personal filters. Report is for Epic enforcement.
+
+### Voice chat still hears them after mute
+
+Double-check you muted the correct player, that party chat is not a different channel, and that game volume vs voice chat sliders are not confused.
+`,
+  },
+  {
+    slug: 'when-does-fortnite-item-shop-reset',
+    title: 'When Does the Fortnite Item Shop Reset? (Time Zones)',
+    excerpt:
+      'Fortnite Item Shop refresh time: 00:00 UTC daily, converted to ET/PT/UK/EU, plus how to check today’s shop and About Shop in-game.',
+    category: 'how-to',
+    date: '2026-07-24',
+    readTime: 6,
+    featured: true,
+    tags: [
+      'when does fortnite item shop reset',
+      'fortnite item shop refresh time',
+      'what time does the item shop update',
+      'fortnite shop reset utc',
+      'item shop time et',
+    ],
+    content: `
+## Short answer
+
+Epic states the in-game Item Shop and Web Shop refresh at around **00:00 GMT / UTC** every day — one global rotation for everyone. Official article: [When does Fortnite’s Item Shop refresh?](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_Gameplay/when-does-fortnite-s-item-shop-refresh-a000094323).
+
+In the shop UI, open **About Shop** for Epic’s timezone notes if you are unsure.
+
+Last reviewed: July 2026. Rare live events can delay a reset; trust the in-game clock if it disagrees with this page.
+
+## Item Shop reset in your time zone
+
+| Region / zone | Typical daily reset |
+| --- | --- |
+| UTC / GMT | 12:00 AM (midnight) |
+| Eastern (ET) | 7:00 PM (previous calendar evening vs UTC day) |
+| Central (CT) | 6:00 PM |
+| Mountain (MT) | 5:00 PM |
+| Pacific (PT) | 4:00 PM |
+| UK (GMT/BST) | Midnight GMT; 1:00 AM during British Summer Time |
+| Central Europe (CET/CEST) | 1:00 AM / 2:00 AM depending on DST |
+
+Because the shop is **global**, players in the Americas often see the new rotation in the afternoon/evening, while Europe sees it overnight/early morning.
+
+## How to see today’s shop immediately after reset
+
+1. Wait for 00:00 UTC (or your local equivalent above).
+2. Open Fortnite → **Item Shop**, or refresh the [Fortnite Item Shop tracker](/tools/item-shop) on this site.
+3. Epic’s Web Shop also updates on the same cadence.
+
+Wishlist mentally, then gift eligible items using [how to gift skins](/guides/how-to/how-to-gift-skins-fortnite).
+
+## Does the shop reset twice a day?
+
+Not as a standard rule. Some special tabs or event modules can update on different schedules, but the main Featured / Daily rotation is the midnight UTC refresh.
+
+## FAQ
+
+### What time does the Item Shop update in EST?
+
+**7:00 PM Eastern** under standard offset from 00:00 UTC (watch daylight saving: Eastern shifts between EST/EDT, but Epic’s anchor stays UTC midnight).
+
+### Why is my shop different from a friend’s?
+
+It should not be — same global catalog. Cache / still loading after reset is the usual cause. Relog or wait a minute past 00:00 UTC.
+
+### Can I refund something I panic-bought after reset?
+
+Maybe — [Cancel Purchase / Return Tickets guide](/guides/how-to/how-to-refund-fortnite-skins).
+`,
+  },
 ]
 
 

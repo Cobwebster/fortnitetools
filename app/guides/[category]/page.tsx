@@ -69,7 +69,7 @@ export default async function CategoryPage({ params }: Props) {
           <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
             <div className="flex items-start gap-4">
               <FortniteIcon
-                src={CATEGORY_ICONS[cat.id as keyof typeof CATEGORY_ICONS] ?? CATEGORY_ICONS.guides}
+                src={CATEGORY_ICONS[cat.id as keyof typeof CATEGORY_ICONS] ?? CATEGORY_ICONS['how-to']}
                 size="lg"
               />
               <div>

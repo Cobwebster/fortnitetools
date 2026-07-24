@@ -13,6 +13,8 @@ import { Check, Copy, ExternalLink, Search, Users } from 'lucide-react'
 
 type Props = {
   maps: CreativeMapLive[]
+  /** Default genre chip — XP maps are the money SEO filter. */
+  initialGenre?: CreativeGenre | 'all'
 }
 
 function GenreArt({ genre, name }: { genre: CreativeGenre; name: string }) {
@@ -129,9 +131,9 @@ function MapCard({ map }: { map: CreativeMapLive }) {
   )
 }
 
-export function CreativeCodesClient({ maps }: Props) {
+export function CreativeCodesClient({ maps, initialGenre = 'xp' }: Props) {
   const [query, setQuery] = useState('')
-  const [genre, setGenre] = useState<CreativeGenre | 'all'>('all')
+  const [genre, setGenre] = useState<CreativeGenre | 'all'>(initialGenre)
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()

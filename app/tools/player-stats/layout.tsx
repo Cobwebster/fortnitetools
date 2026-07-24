@@ -3,16 +3,16 @@ import { breadcrumbJsonLd, createMetadata, faqJsonLd, webApplicationJsonLd } fro
 import { PLAYER_STATS_FAQS } from '@/lib/player-stats-seo'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Player Stats Lookup – K/D, Wins & Tracker',
+  title: 'Fortnite Tracker & Stats Checker – K/D, Wins, Player Lookup',
   description:
-    'Look up Fortnite stats by Epic username: K/D, wins, win rate, matches, kills, Solo/Duo/Squad breakdowns, and Battle Pass level. Free player stats tracker.',
+    'Free Fortnite tracker and stats checker: look up any Epic username for K/D, wins, win rate, matches, kills, Solo/Duo/Squad breakdowns, and Battle Pass level.',
   path: '/tools/player-stats',
   keywords: [
-    'fortnite stats',
     'fortnite tracker',
+    'fortnite stats checker',
+    'fortnite stats',
     'fortnite kd',
     'fortnite player lookup',
-    'fortnite stats checker',
     'fortnite username lookup',
     'fortnite wins',
     'epic games stats',
@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             breadcrumbJsonLd([
               { name: 'Home', path: '/' },
               { name: 'Tools', path: '/tools' },
-              { name: 'Player Stats', path: '/tools/player-stats' },
+              { name: 'Fortnite Tracker', path: '/tools/player-stats' },
             ])
           ),
         }}
@@ -44,9 +44,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             webApplicationJsonLd({
-              name: 'Fortnite Player Stats Lookup',
+              name: 'Fortnite Tracker & Stats Checker',
               description:
-                'Look up Fortnite Battle Royale stats by username — K/D, wins, matches, and mode breakdowns.',
+                'Look up Fortnite Battle Royale stats by username — K/D, wins, matches, and mode breakdowns. Free Fortnite tracker.',
               path: '/tools/player-stats',
             })
           ),

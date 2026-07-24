@@ -40,7 +40,7 @@ export function Navbar() {
                 href="/tools/player-stats"
                 className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
               >
-                Player Stats
+                Player Tracker
               </Link>
             </li>
             <li>
@@ -86,7 +86,7 @@ export function Navbar() {
               href="/tools/player-stats"
               className="rounded-md border border-border bg-muted px-4 py-2 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors"
             >
-              Player Stats
+              Stats Tracker
             </Link>
             <Link
               href="/guides"
@@ -125,7 +125,7 @@ export function Navbar() {
                   className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Player Stats
+                  Stats Tracker
                 </Link>
               </li>
               <li>
@@ -174,7 +174,7 @@ export function Navbar() {
                   className="block rounded-md bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Look up player stats
+                  Look up Fortnite tracker
                 </Link>
               </li>
             </ul>

@@ -83,7 +83,7 @@ export function Footer() {
             <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2" role="list">
               {[
                 { href: '/tools', label: 'All Tools' },
-                { href: '/tools/player-stats', label: 'Player Stats' },
+                { href: '/tools/player-stats', label: 'Fortnite Tracker' },
                 { href: '/codes', label: 'Map Codes' },
                 { href: '/fortnite-map', label: 'Interactive Map' },
                 { href: '/tools/loadout-builder', label: 'Loadout Builder' },

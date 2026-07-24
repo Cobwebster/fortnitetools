@@ -7,7 +7,11 @@ import {
   uniqueMapsByCode,
   type CreativeMapLive,
 } from '@/lib/creative-codes'
-import { CREATIVE_CODES_FAQS, CREATIVE_CODES_SEO_SECTIONS } from '@/lib/creative-codes-seo'
+import {
+  BEST_XP_MAP_CODES_JULY_2026,
+  CREATIVE_CODES_FAQS,
+  CREATIVE_CODES_SEO_SECTIONS,
+} from '@/lib/creative-codes-seo'
 import { fetchIslandMetricsBatch } from '@/lib/fortnite-ecosystem'
 
 export const revalidate = 1800
@@ -56,7 +60,7 @@ export default async function CodesPage() {
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Searchable Creative island database — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more.
               Copy a code, paste it in Discover, and play. Live unique-player metrics refresh when Epic&apos;s public
-              ecosystem API is available.
+              ecosystem API is available. Defaults to XP Maps so Battle Pass grinders land on the money filter first.
             </p>
             <p className="mt-4 text-sm text-muted-foreground">
               <strong className="text-foreground">{totalCodes}</strong> unique codes curated
@@ -66,11 +70,43 @@ export default async function CodesPage() {
                   · <strong className="text-foreground">{withLive}</strong> with live metrics
                 </>
               ) : null}
+              {' '}
+              ·{' '}
+              <Link href="/guides/season/best-fortnite-xp-maps" className="text-primary hover:underline">
+                XP maps leveling guide
+              </Link>
             </p>
           </div>
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 space-y-12">
+          {/* Static XP money block for crawlers — title matches target query */}
+          <section aria-labelledby="best-xp-july-2026" className="space-y-4">
+            <h2
+              id="best-xp-july-2026"
+              className="font-display text-2xl font-bold uppercase tracking-wide text-foreground"
+            >
+              Best Fortnite XP map codes (July 2026)
+            </h2>
+            <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
+              Working Creative XP codes for Chapter 7 Season 3. Paste into Discover, use a private lobby for AFK farms,
+              and rotate when daily Creative XP slows. Full guide:{' '}
+              <Link href="/guides/season/best-fortnite-xp-maps" className="text-primary hover:underline">
+                how to level up fast with XP maps
+              </Link>
+              .
+            </p>
+            <ul className="grid gap-3 sm:grid-cols-2" role="list">
+              {BEST_XP_MAP_CODES_JULY_2026.map((m) => (
+                <li key={m.code} className="rounded-xl border border-border bg-card px-4 py-3">
+                  <p className="font-display text-sm font-bold uppercase tracking-wide text-foreground">{m.name}</p>
+                  <p className="mt-1 font-mono text-sm font-semibold tracking-wider text-primary">{m.code}</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">{m.note}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
           {/* Static featured block for crawlers */}
           <section aria-labelledby="featured-codes" className="space-y-4">
             <h2
@@ -80,8 +116,8 @@ export default async function CodesPage() {
               Featured Fortnite Creative codes
             </h2>
             <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
-              Quick picks for the searches people type every day: XP map codes, horror map codes, 1v1 map codes, and
-              tycoon codes. Full searchable grid is below.
+              Quick picks across genres: XP, horror, 1v1, and tycoon. The searchable grid below starts on the XP Maps
+              filter — switch chips for other genres.
             </p>
             <ul className="grid gap-3 sm:grid-cols-2" role="list">
               {featured.map((m) => (
@@ -107,7 +143,7 @@ export default async function CodesPage() {
             >
               Search the Creative map database
             </h2>
-            <CreativeCodesClient maps={maps} />
+            <CreativeCodesClient maps={maps} initialGenre="xp" />
           </section>
 
           {CREATIVE_CODES_SEO_SECTIONS.map((section) => (
