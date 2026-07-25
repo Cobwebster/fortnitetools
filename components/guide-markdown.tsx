@@ -5,12 +5,37 @@ function isInternalHref(href: string) {
   return href.startsWith('/') && !href.startsWith('//')
 }
 
+function GuideIcon({
+  src,
+  alt,
+  size = 'md',
+}: {
+  src: string
+  alt: string
+  size?: 'sm' | 'md' | 'lg'
+}) {
+  const dim = size === 'sm' ? 'h-8 w-8' : size === 'lg' ? 'h-14 w-14 sm:h-16 sm:w-16' : 'h-11 w-11 sm:h-12 sm:w-12'
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src}
+      alt={alt}
+      className={`${dim} shrink-0 object-contain drop-shadow-md`}
+      loading="lazy"
+      width={size === 'lg' ? 64 : size === 'sm' ? 32 : 48}
+      height={size === 'lg' ? 64 : size === 'sm' ? 32 : 48}
+    />
+  )
+}
+
+const INLINE_TOKEN = /(\*\*[^*]+\*\*|!\[([^\]]*)\]\(([^)]+)\)|\[([^\]]+)\]\(([^)]+)\))/g
+
 function renderInline(text: string): ReactNode[] {
   const nodes: ReactNode[] = []
-  const pattern = /(\*\*[^*]+\*\*|\[([^\]]+)\]\(([^)]+)\))/g
   let last = 0
   let match: RegExpExecArray | null
   let key = 0
+  const pattern = new RegExp(INLINE_TOKEN.source, 'g')
 
   while ((match = pattern.exec(text)) !== null) {
     if (match.index > last) {
@@ -24,9 +49,15 @@ function renderInline(text: string): ReactNode[] {
           {token.slice(2, -2)}
         </strong>
       )
+    } else if (token.startsWith('![')) {
+      const alt = match[2] || ''
+      const src = match[3]
+      nodes.push(
+        <GuideIcon key={key++} src={src} alt={alt} size="sm" />
+      )
     } else {
-      const label = match[2]
-      const href = match[3]
+      const label = match[4]
+      const href = match[5]
       if (isInternalHref(href)) {
         nodes.push(
           <Link key={key++} href={href} className="text-primary underline-offset-2 hover:underline">
@@ -79,6 +110,21 @@ function parseTable(block: string) {
   return { headers, rows }
 }
 
+function parseImageLine(line: string): { alt: string; src: string } | null {
+  const m = line.trim().match(/^!\[([^\]]*)\]\(([^)]+)\)$/)
+  if (!m) return null
+  return { alt: m[1], src: m[2] }
+}
+
+function parseHeadingWithIcon(trimmed: string): { alt: string; src: string; title: string } | null {
+  const m = trimmed.match(/^###\s+!\[([^\]]*)\]\(([^)]+)\)\s*(.*)$/)
+  if (!m) return null
+  const alt = m[1]
+  const src = m[2]
+  const rest = m[3].trim()
+  return { alt, src, title: rest || alt }
+}
+
 export function GuideMarkdown({ content }: { content: string }) {
   const blocks = content.trim().split(/\n\n+/)
 
@@ -96,11 +142,59 @@ export function GuideMarkdown({ content }: { content: string }) {
           )
         }
 
+        const headingIcon = parseHeadingWithIcon(trimmed)
+        if (headingIcon) {
+          return (
+            <h3
+              key={i}
+              className="mt-6 mb-2 flex items-center gap-3 font-display text-xl font-bold uppercase text-foreground"
+            >
+              <span className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-lg border border-border bg-card">
+                <GuideIcon src={headingIcon.src} alt="" size="md" />
+              </span>
+              <span>{headingIcon.title}</span>
+            </h3>
+          )
+        }
+
         if (trimmed.startsWith('### ')) {
           return (
             <h3 key={i} className="font-display text-xl font-bold uppercase text-foreground mt-6 mb-2">
               {trimmed.replace(/^###\s+/, '')}
             </h3>
+          )
+        }
+
+        const lines = trimmed.split('\n').map((l) => l.trim()).filter(Boolean)
+        const imageLines = lines.map(parseImageLine)
+        if (imageLines.length > 0 && imageLines.every(Boolean)) {
+          const icons = imageLines as { alt: string; src: string }[]
+          if (icons.length === 1) {
+            return (
+              <div
+                key={i}
+                className="my-3 flex h-20 w-20 items-center justify-center rounded-xl border border-border bg-card p-2"
+              >
+                <GuideIcon src={icons[0].src} alt={icons[0].alt} size="lg" />
+              </div>
+            )
+          }
+          return (
+            <div
+              key={i}
+              className="my-4 flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card px-4 py-3"
+              role="group"
+              aria-label="Featured loadout icons"
+            >
+              {icons.map((icon) => (
+                <div key={icon.src} className="flex flex-col items-center gap-1.5 min-w-[4.5rem]">
+                  <GuideIcon src={icon.src} alt={icon.alt} size="lg" />
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground text-center leading-tight max-w-[5.5rem]">
+                    {icon.alt}
+                  </span>
+                </div>
+              ))}
+            </div>
           )
         }
 
@@ -139,11 +233,23 @@ export function GuideMarkdown({ content }: { content: string }) {
 
         if (trimmed.startsWith('- ') || trimmed.includes('\n- ')) {
           const items = trimmed.split('\n').filter((l) => l.trim().startsWith('- '))
+          const withIcons = items.some((item) => item.replace(/^\s*-\s+/, '').startsWith('!['))
           return (
-            <ul key={i} className="list-disc pl-5 space-y-1">
-              {items.map((item, j) => (
-                <li key={j}>{renderInline(item.replace(/^\s*-\s+/, ''))}</li>
-              ))}
+            <ul
+              key={i}
+              className={withIcons ? 'list-none pl-0 space-y-2.5' : 'list-disc pl-5 space-y-1'}
+            >
+              {items.map((item, j) => {
+                const body = item.replace(/^\s*-\s+/, '')
+                if (withIcons && body.startsWith('![')) {
+                  return (
+                    <li key={j} className="flex items-start gap-2.5 leading-relaxed">
+                      {renderInline(body)}
+                    </li>
+                  )
+                }
+                return <li key={j}>{renderInline(body)}</li>
+              })}
             </ul>
           )
         }

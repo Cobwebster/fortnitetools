@@ -62,11 +62,11 @@ export const PRESETS: {
   {
     id: 'aggressive',
     name: 'Aggressive',
-    blurb: 'Crack → spray → mid pressure',
+    blurb: 'Striker crack → Flex spray → Surgical mid',
     slots: {
-      shotgun: 'extending_focus',
+      shotgun: 'striker_pump',
       ar: 'surgical_burst',
-      smg: 'stinger_smg',
+      smg: 'flex_smg',
       heal: 'small_pot',
       mobility: 'seven_sliders',
     },
@@ -78,7 +78,7 @@ export const PRESETS: {
     slots: {
       shotgun: 'striker_pump',
       ar: 'warforged_ar',
-      smg: 'lancehead',
+      smg: 'flex_smg',
       heal: 'big_pot',
       mobility: 'shockwave',
     },
@@ -90,7 +90,7 @@ export const PRESETS: {
     slots: {
       shotgun: 'maven_auto',
       ar: 'surgical_burst',
-      smg: 'rapid_fire_smg',
+      smg: 'stinger_smg',
       heal: 'medkit',
       mobility: 'launch_pad',
     },

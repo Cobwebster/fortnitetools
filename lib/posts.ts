@@ -27,113 +27,140 @@ export const posts: Post[] = [
     slug: 'fortnite-best-weapons-tier-list-2026',
     title: 'Fortnite Chapter 7 Season 3 Weapons Tier List',
     excerpt:
-      'Current Shattered Coast loot pool ranked for Runners season — Surgical Burst, Extending Focus Shotgun, Striker Pump, Stinger SMG, and more.',
+      'Current Runners meta on Shattered Coast — Striker Pump, Flex SMG, Surgical Burst Rifle ranked, plus what to skip (Lancehead) after mid-season balance.',
     category: 'weapons',
-    date: '2026-07-18',
+    date: '2026-07-25',
     readTime: 12,
     featured: true,
-    tags: ['weapons', 'tier list', 'meta', 'chapter 7 season 3', 'runners'],
+    tags: ['weapons', 'tier list', 'meta', 'chapter 7 season 3', 'runners', 'striker pump', 'flex smg'],
     content: `
 ## How this tier list is ranked
 
-Weapons are ranked for Chapter 7 Season 3 (Runners) on the Shattered Coast map. Criteria: fight impact, consistency, how often you find them, and how they pair with Seven Sliders / movement plays. Epic patches mid-season — treat this as a living guide, not a permanent meta bible.
+Weapons are ranked for Chapter 7 Season 3 (Runners) on the Shattered Coast map. Criteria: fight impact, consistency, how often you find them, and how they pair with mobility (Seven Sliders / Overdrive-style rotates). Epic has already hotfixed this season — treat this as a living guide.
 
-Last reviewed: July 2026.
+Last reviewed: July 25, 2026.
 
-Pair this with the [loadout builder](/tools/loadout-builder) to sketch a full hotbar, the [weapon damage calculator](/tools/weapon-damage-calculator) for approximate TTK, and the [shotgun guide](/guides/weapons/fortnite-shotgun-guide-best-options) for close-range picks.
+Pair this with the [loadout builder](/tools/loadout-builder), the [weapon damage calculator](/tools/weapon-damage-calculator), and the [shotgun guide](/guides/weapons/fortnite-shotgun-guide-best-options).
+
+![Striker Pump](/images/loadout/striker_pump.png)
+![Flex SMG](/images/loadout/flex_smg.png)
+![Surgical Burst](/images/loadout/surgical_burst.png)
+![Seven Sliders](/images/loadout/seven_sliders.png)
 
 ## S-Tier — prioritize these
 
-### Extending Focus Shotgun
-The season-defining shotgun. Hipfire covers close pressure; ADS tightens the spread for mid-range chip. Pair it with an SMG or Lancehead when someone peeks outside shotgun distance.
+### ![Striker Pump Shotgun](/images/loadout/striker_pump.png) Striker Pump Shotgun
+The close-range king after mid-season balance. High per-shot damage, fast pull-out, two-shot potential on cracked / full-shield targets at Legendary. Short range by design — always pair with a Flex SMG.
 
-### Surgical Burst Rifle
-Low recoil, weak falloff, strong at range. If you can land bursts, this is the cleanest mid/long fight winner in the current pool.
+### ![Flex SMG](/images/loadout/flex_smg.png) Flex SMG
+Best spray / mid-close weapon in the pool. Hipfire melts; ADS slows the fire rate but helps tracking. Prefer this over Stinger when both are available.
 
-### Striker Pump Shotgun
-High per-shot damage for box fights and hard peeks. Rewards first-shot accuracy. Still one of the best "one clean hit then build" options.
+### ![Surgical Burst Rifle](/images/loadout/surgical_burst.png) Surgical Burst Rifle
+Cleanest mid/long AR. Low recoil, weak falloff, rewards burst discipline. Full-auto comfort players can fall back to Warforged if bursts feel awkward.
 
-### Seven Sliders (utility)
-Not a gun, but S-tier for fights. Slide reposition + ADS slow-mo creates free angles. Grab them whenever you can.
+### ![Seven Sliders](/images/loadout/seven_sliders.png) Seven Sliders (utility)
+Not a gun, but fight-changing. Slide reposition + ADS slow-mo. Fuel drain was cut mid-season (~1.5× longer), so they stay S-tier mobility when you find them.
 
 ## A-Tier — strong defaults
 
-- **Maven Auto Shotgun** — Forgiving spray shotgun when you miss the first pump pellet.
-- **Stinger SMG** — Best close-range spray partner after a shotgun crack.
-- **Lancehead Pistol** — High rarity sidearm with a large mag; the reload mag throw adds free chip.
-- **Warforged Assault Rifle** — Reliable full-auto AR when you cannot find Surgical Burst.
-- **Chaos Exploder Rifle** — Explosive pressure against boxed or stacked teams (watch for balance patches).
+- ![Hunting Rifle](/images/loadout/hunting_rifle.png) **Hunting Rifle** — Hitscan-feeling long picks for marksmen; high headshot punish, unforgiving if you miss.
+- ![Maven Auto Shotgun](/images/loadout/maven_auto.png) **Maven Auto Shotgun** — Forgiving spray shotgun; solid Zero Build / messy peeks when you miss Striker’s first pellet.
+- ![Stinger SMG](/images/loadout/stinger_smg.png) **Stinger SMG** — Still a strong shotgun partner; slightly behind Flex on range and overall feel.
+- ![Warforged Assault Rifle](/images/loadout/warforged_ar.png) **Warforged Assault Rifle** — Reliable full-auto AR when Surgical Burst is missing (unvault / hitscan tweaks mid-season made it a real alternative again).
+- ![Shockwave Grenade](/images/loadout/shockwave.png) **Overdrive Grenades / Shockwaves** — Vertical + rotate tools that win endgames as often as a third gun.
 
-## B-Tier — situational
+## B-Tier — usable, not preferred
 
-- **Rapid Fire SMG** — High fire rate, weaker per bullet; good cleanup, worse at range.
-- **Ranger Pistol** — Fine early secondary, usually replaced later.
-- **Bank Shot Pistol** — Niche ricochet pistol; fun in Creative, inconsistent in open BR when available.
-- **Heavy Impact Sniper** — Strong third-party / rotate poke when it is in the pool. (Older “Hunting Rifle” naming shows up in community talk — use the in-game name.)
+- ![Extending Focus Shotgun](/images/loadout/extending_focus.png) **Extending Focus Shotgun** — Best shotgun *range* in the pool, but the three-shot / spread pattern is less consistent than Striker for raw fight wins. Fine for Zero Build peeks; swap to Striker in box fights when you can.
+- ![Rapid Fire SMG](/images/loadout/rapid_fire_smg.png) **Rapid Fire SMG** — High rate, weaker bullets; cleanup only.
+- ![Ranger Pistol](/images/loadout/ranger_pistol.png) **Ranger Pistol** — Early secondary; replace with Flex / Stinger.
+- ![Chaos Exploder Rifle](/images/loadout/chaos_exploder.png) **Chaos Exploder Rifle** — Nerfed hard (weaker up close). Splash flush is still okay; do not force it over Surgical Burst or Warforged.
 
-## C-Tier — early loot only
+## C / D — leave on the floor when you can
 
-Common/uncommon versions of the pool still beat empty slots, but swap up ASAP. Do not hold a grey pistol over a rare Stinger or Maven.
+- ![Lancehead Pistol](/images/loadout/lancehead.png) **Lancehead Pistol** (and Mythic Baba Yaga variants) — Community consensus is avoid: awkward recoil and poor return vs Flex/Stinger.
+- ![Bank Shot Pistol](/images/loadout/bank_shot.png) **Bank Shot Pistol** — Niche ricochet toy; inconsistent in open BR.
+- **Business Turret** — Almost never worth a slot.
+
+## Vault note — Chaos Reloader Shotgun
+
+### ![Chaos Reloader Shotgun](/images/loadout/chaos_reloader.png) Chaos Reloader Shotgun
+
+Chaos Reloader (auto-reload while stowed, huge body DPS, terrible range) dominated early Runners box fights and was **vaulted / pulled from standard BR loot** in a mid-season hotfix. If it appears in an LTM or returns later, it is still a close-range monster — otherwise default **Striker Pump**. Always trust the in-game loot pool over old screenshots.
 
 ## Suggested loadouts
 
-**Aggressive:** Extending Focus or Striker Pump + Stinger SMG + Surgical Burst or Warforged AR + heals + Seven Sliders.
+![Striker Pump](/images/loadout/striker_pump.png)
+![Flex SMG](/images/loadout/flex_smg.png)
+![Surgical Burst](/images/loadout/surgical_burst.png)
 
-**Zone / placement:** Surgical Burst + shotgun of choice + mobility + dual heals. Skip ego peeks; win on positioning.
+**Aggressive / default meta:** Striker Pump + Flex SMG + Surgical Burst + heals + Seven Sliders (or Shockwaves).
+
+**Zone / placement:** Surgical Burst or Hunting Rifle + Maven / Extending Focus + mobility + dual heals. Skip ego peeks.
+
+**If Flex is contested:** Striker + Stinger + Warforged is still a winning hotbar.
 
 ## Notes
 
-Mythics from bosses (Mythic Burst, Mythic Extending Focus, Mythic Lancehead) sit above their base versions when available. Always prefer higher rarity of the same gun when the choice is equal.
+Mythics from bosses sit above their base versions when available. Always prefer higher rarity of the same gun when the choice is equal. Sketch the hotbar in the [loadout builder](/tools/loadout-builder).
 `,
   },
   {
     slug: 'fortnite-shotgun-guide-best-options',
     title: 'Fortnite Shotgun Guide (Chapter 7 Season 3)',
     excerpt:
-      'Which shotgun to run in Runners season: Extending Focus, Striker Pump, Maven Auto, and how to pair them with SMGs.',
+      'Which shotgun to run in Runners season: Striker Pump first, then Maven / Extending Focus — plus Flex SMG pairings and the Chaos Reloader vault note.',
     category: 'weapons',
-    date: '2026-07-03',
+    date: '2026-07-25',
     readTime: 7,
     featured: false,
-    tags: ['shotgun', 'weapons', 'close range', 'chapter 7 season 3', 'loadout'],
+    tags: ['shotgun', 'weapons', 'close range', 'chapter 7 season 3', 'loadout', 'striker pump'],
     content: `
 ## Why shotguns still decide close fights
 
-Most box fights and final-circle collisions still end on a shotgun trade. Chapter 7 Season 3 narrowed the shotgun pool, which makes the choice simpler: learn two guns well instead of five.
+Most box fights and final-circle collisions still end on a shotgun trade. Chapter 7 Season 3’s pool is small: learn **Striker Pump** well, keep Maven / Extending Focus as backups, and always cover mid-range with a **Flex SMG**.
 
-See the full pool ranking in the [weapons tier list](/guides/weapons/fortnite-best-weapons-tier-list-2026), or build a full hotbar in the [loadout builder](/tools/loadout-builder).
+See the full pool ranking in the [weapons tier list](/guides/weapons/fortnite-best-weapons-tier-list-2026), or build a hotbar in the [loadout builder](/tools/loadout-builder).
+
+Last reviewed: July 25, 2026.
 
 ## Current shotgun options
 
-### Extending Focus Shotgun
-Season standout. Hipfire for close pressure; ADS for tighter mid-range pellets. Strong default for both Builds and Zero Build.
+### ![Striker Pump Shotgun](/images/loadout/striker_pump.png) Striker Pump Shotgun
+Default meta shotgun. Highest fight impact on a clean first shot, fast pull-out, poor range. Build or slide after every pump.
 
-**Best for:** Players who want one shotgun that covers push and peek ranges.
+**Best for:** Builds, box fights, and anyone who can land the opener.
 
-### Striker Pump Shotgun
-Classic high-damage pump. Lower fire rate, higher punish on a clean first shot. Build or slide after every shot.
+### ![Maven Auto Shotgun](/images/loadout/maven_auto.png) Maven Auto Shotgun
+Full-auto forgiveness. Lower spike than Striker, better when you are spraying a moving target or playing Zero Build.
 
-**Best for:** Confident first-shot aimers and box fighters.
+**Best for:** Inconsistent aim or messy third-parties.
 
-### Maven Auto Shotgun
-Full-auto forgiveness. Lower per-shot spike than Striker, better when you are spraying a moving target.
+### ![Extending Focus Shotgun](/images/loadout/extending_focus.png) Extending Focus Shotgun
+Longest shotgun reach in the pool (barrel/spread identity). Three-shot pattern is less reliable than Striker for raw deletes — good for mid-range peeks, not the automatic S-tier pick early-season guides claimed.
 
-**Best for:** Aggressive players who miss the first pellet often.
+**Best for:** Zero Build peeks and players who hate pump timing.
 
-### Chaos Reloader Shotgun
-Reload-while-stowed shotgun when it appears in the current pool or LTMs. Useful early if you find it; swap to Extending Focus / Striker when those are available. Always trust the in-game loot pool over older patch notes.
+### ![Chaos Reloader Shotgun](/images/loadout/chaos_reloader.png) Chaos Reloader Shotgun (vault note)
+Was the early-season boxfight king (stowed auto-reload + huge body damage). **Removed from standard BR loot mid-season.** If it shows up in an LTM or returns, take it for endgame boxes; otherwise ignore old tier lists that still rank it S.
 
 ## Fundamentals that still win
 
-- Crack with shotgun, finish with Stinger / Rapid Fire SMG.
+- Crack with shotgun, finish with **Flex SMG** (Stinger if no Flex).
 - Place cover after every pump shot.
-- Do not chase beyond shotgun range without an AR or Lancehead.
+- Do not chase beyond shotgun range without an AR (Surgical Burst / Warforged).
 
 ## Quick pick
 
+![Striker Pump](/images/loadout/striker_pump.png)
+![Maven Auto](/images/loadout/maven_auto.png)
+![Extending Focus](/images/loadout/extending_focus.png)
+![Flex SMG](/images/loadout/flex_smg.png)
+
+- Default meta: **Striker Pump**
 - New / inconsistent aim: **Maven Auto**
-- Default meta pick: **Extending Focus**
-- High mechanical confidence: **Striker Pump**
+- Range-focused / Zero Build: **Extending Focus**
+- Spray partner: **Flex SMG**
 `,
   },
 
