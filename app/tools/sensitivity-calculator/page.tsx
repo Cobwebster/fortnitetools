@@ -1,9 +1,11 @@
 'use client'
 
 import { useState, useCallback } from 'react'
+import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ArrowRight, RotateCcw, Info } from 'lucide-react'
+import { SENSITIVITY_FAQS, SENSITIVITY_SEO_SECTIONS } from '@/lib/sensitivity-seo'
 
 // DPI-independent sensitivity multipliers per game.
 // Fortnite default FOV is 80 (80 degrees). Sens is measured in cm/360.
@@ -69,9 +71,13 @@ export default function SensitivityCalculatorPage() {
         <section className="border-b border-border bg-card py-10">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <nav className="mb-4 flex items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
-              <a href="/" className="hover:text-primary transition-colors">Home</a>
+              <Link href="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
               <span>/</span>
-              <a href="/tools" className="hover:text-primary transition-colors">Tools</a>
+              <Link href="/tools" className="hover:text-primary transition-colors">
+                Tools
+              </Link>
               <span>/</span>
               <span className="text-foreground">Sensitivity Calculator</span>
             </nav>
@@ -239,6 +245,58 @@ export default function SensitivityCalculatorPage() {
               </div>
             </div>
           </div>
+
+          {SENSITIVITY_SEO_SECTIONS.map((section) => (
+            <section key={section.heading} className="mt-12 border-t border-border pt-10 space-y-3">
+              <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                {section.heading}
+              </h2>
+              {section.body.map((para) => (
+                <p key={para.slice(0, 48)} className="text-sm leading-relaxed text-muted-foreground">
+                  {para}
+                </p>
+              ))}
+            </section>
+          ))}
+
+          <section className="mt-12 border-t border-border pt-10">
+            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">
+              Frequently asked questions
+            </h2>
+            <div className="space-y-5">
+              {SENSITIVITY_FAQS.map((faq) => (
+                <div key={faq.question}>
+                  <h3 className="text-sm font-bold text-foreground mb-1.5">{faq.question}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="mt-12 border-t border-border pt-10 space-y-3">
+            <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
+              Related Fortnite tools
+            </h2>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Pair a stable sens with{' '}
+              <Link href="/tools/fps-settings" className="text-primary hover:underline">
+                FPS settings
+              </Link>
+              , check{' '}
+              <Link href="/tools/keybinds" className="text-primary hover:underline">
+                keybinds
+              </Link>
+              , look up your aim outcomes on the{' '}
+              <Link href="/tools/player-stats" className="text-primary hover:underline">
+                Fortnite tracker
+              </Link>
+              , or browse the{' '}
+              <Link href="/tools" className="text-primary hover:underline">
+                full tools hub
+              </Link>
+              .
+            </p>
+          </section>
         </section>
       </main>
       <Footer />
