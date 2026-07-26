@@ -17,6 +17,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/fortnite-map': '/images/icons/map.png',
   '/map-rotation': '/images/icons/storm.png',
   '/map-evolution': '/images/icons/map.png',
+  '/player-count': '/images/icons/crown.png',
   '/tools/item-shop': '/images/icons/vbucks.png',
   '/tools/loadout-builder': '/images/loadout/striker_pump.png',
   '/tools/sensitivity-calculator': '/images/loadout/hunting_rifle.png',

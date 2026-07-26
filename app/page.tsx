@@ -137,6 +137,7 @@ export default function HomePage() {
               { href: '/map-rotation', label: 'Rotation' },
               { href: '/map-evolution', label: 'Map Evolution' },
               { href: '/codes', label: 'Map Codes' },
+              { href: '/player-count', label: 'Player Count' },
               { href: '/tools/player-stats', label: 'Stats Tracker' },
               { href: '/tools/item-shop', label: 'Item Shop' },
               { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },

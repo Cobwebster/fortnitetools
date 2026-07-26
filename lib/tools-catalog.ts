@@ -85,6 +85,14 @@ export const TOOLS: ToolEntry[] = [
     category: 'map',
   },
   {
+    href: '/player-count',
+    title: 'Player Count',
+    description:
+      'Fortnite peak concurrent players for Battle Royale, Reload, OG, Blitz, LEGO, and popular Creative maps — from Epic’s public Data API.',
+    tags: ['Players', 'CCU', 'Popular Maps'],
+    category: 'stats',
+  },
+  {
     href: '/map-evolution',
     title: 'Map Evolution',
     description:

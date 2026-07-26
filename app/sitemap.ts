@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/fortnite-map',
     '/map-rotation',
     '/map-evolution',
+    '/player-count',
     '/tools',
     '/weapons',
     '/weapon-changes',
@@ -32,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: path === '/fortnite-map' || path === '/map-rotation' || path === '/map-evolution' || path === '/codes' || path === '/weapons' || path === '/weapon-changes' || path === '/season-countdown' || path === '/xp-calculator' || path === '/free-cosmetics' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' || path === '/tools/skin-rarity-calculator' ? 0.95 : 0.85,
+    priority: path === '/fortnite-map' || path === '/map-rotation' || path === '/map-evolution' || path === '/player-count' || path === '/codes' || path === '/weapons' || path === '/weapon-changes' || path === '/season-countdown' || path === '/xp-calculator' || path === '/free-cosmetics' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' || path === '/tools/skin-rarity-calculator' ? 0.95 : 0.85,
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [
