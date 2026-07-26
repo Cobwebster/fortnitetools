@@ -116,6 +116,12 @@ export default function HomePage() {
               { href: '/weapons', label: 'Weapons' },
               { href: '/fortnite-map', label: 'Map' },
               { href: '/map-rotation', label: 'Rotation' },
+              { href: '/map-evolution', label: 'Map Evolution' },
+              { href: '/codes', label: 'Map Codes' },
+              { href: '/tools/player-stats', label: 'Stats Tracker' },
+              { href: '/tools/item-shop', label: 'Item Shop' },
+              { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
+              { href: '/tools/loadout-builder', label: 'Loadout' },
             ].map((tool) => (
               <Link
                 key={tool.href}
