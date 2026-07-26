@@ -993,6 +993,154 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
 `,
   },
   {
+    slug: 'how-to-extract-sprites-fortnite',
+    title: 'How to Extract Sprites in Fortnite Chapter 7 Season 3 (Runners)',
+    excerpt:
+      'Chapter 7 Season 3 Sprite extraction on Shattered Coast: when Extraction Sites unlock, the ~30s defend timer, Portable Extractor, Victory Royale auto-extract, and safe Runners site picks.',
+    category: 'how-to',
+    date: '2026-07-26',
+    readTime: 9,
+    featured: true,
+    tags: [
+      'how to extract sprites fortnite',
+      'how to extract sprites chapter 7 season 3',
+      'fortnite chapter 7 season 3 sprites',
+      'fortnite runners sprite extraction',
+      'fortnite extraction sites',
+      'portable extractor fortnite',
+      'sprite dust fortnite',
+      'shattered coast extraction sites',
+      'chapter 7 season 3 sprites',
+      'runners sprites',
+    ],
+    content: `
+## How to extract Sprites in Fortnite Chapter 7 Season 3
+
+In **Chapter 7 Season 3 (Runners)**, finding a Sprite only buffs **this** match. To keep it in your collection (and earn Sprite Dust) on the **Shattered Coast** map, you must **extract** it:
+
+1. Equip the Sprite.
+2. Wait until **after the first storm circle closes** — public Extraction Sites unlock then.
+3. Go to an **unoccupied** Extraction Site (white beacon / sky beam on the map).
+4. Interact with the **control terminal** → survive the ~**30-second** crate inbound window (you broadcast to the lobby).
+5. Interact with the **Extraction Crate** the second it lands and deposit your Sprites.
+
+**Shortcuts:** a **Portable Extractor** does a short, quiet extract anywhere; a **Victory Royale** auto-extracts Sprites you are carrying — no site needed.
+
+Last reviewed: July 26, 2026 (Fortnite Chapter 7 Season 3 / Runners). Trust the live in-game UI if Epic tweaks timers or Dust prices.
+
+Pair with: [cube sprites guide](/guides/how-to/how-to-get-cube-sprites-fortnite), [interactive map](/fortnite-map), [loot spots](/guides/map/fortnite-loot-guide-best-spots), [Runners Battle Pass](/guides/season/fortnite-season-battle-pass-guide).
+
+## Why Sprite extraction matters in Runners (C7S3)
+
+Sprites are the core Chapter 7 Season 3 progression loop. Sprites you only carry die with you. Extraction:
+
+- Banks the Sprite into your **permanent collection**
+- Lets you **summon** it later with Sprite Dust in future Chapter 7 Season 3 matches
+- Awards **Sprite Dust** and feeds **Mastery** progress (duplicates still help)
+
+Variants (Gold, Gummy, Galaxy, Holofoil, Cube, etc.) usually count as separate collection entries — extract the chase pieces carefully. Cube hunting details: [how to get cube sprites](/guides/how-to/how-to-get-cube-sprites-fortnite).
+
+## Chapter 7 Season 3 Extraction Sites — step-by-step
+
+### 1. Get and equip a Sprite
+
+On Shattered Coast, sources include Sprite Chests, regular chests, floor loot, eliminations, bosses (Boss Sprite), vault rooms, and Sprite Locator routes. Equip it — equipped Sprites are the ones that matter for combat buffs and mastery tracking in Runners.
+
+### 2. Wait for first circle (sites unlock)
+
+Chapter 7 Season 3 Extraction Sites are **locked at match start**. Do not waste the drop fighting over a dark terminal. Loot, find a Sprite, then extract after the first storm circle closes.
+
+### 3. Pick an unoccupied Shattered Coast site
+
+Open the map: white beacon icons mark Extraction Sites. A used site is **occupied for the rest of that match** (one successful use per site). Always have a backup pad on your rotate.
+
+Sites sit near named POIs across the Chapter 7 Season 3 island — use the [map](/fortnite-map) and [POI guide](/guides/map/fortnite-map-all-locations-guide) to plan. High-traffic examples: **Sinister Strip** (center / mythic pressure). Quieter examples players favor: **Sunken Shores**, **Wonkeeland**, **Battlewoods**, **Golden Grove** — still scout before you ping the lobby.
+
+### 4. Scout, then activate
+
+The pad is open and loud. Clear campers **before** you touch the terminal. Activating:
+
+- Calls the Extraction Crate (~**30 seconds**)
+- Turns your map presence into an obvious “someone is extracting” signal (red icon + alert)
+
+Build immediately. Treat it like a hold objective, not a quick tap.
+
+### 5. Deposit fast when the crate lands
+
+The deposit window is short. Sprint to the crate, interact, dump **all** Sprites you want to bank in one visit. Do not inventory-fumble while it is open.
+
+You get Sprite Dust when it seals. Then leave — the pad is spent for that match.
+
+## Portable Extractor in Chapter 7 Season 3
+
+Every Extraction Site also has a **Sprite Dust Services** terminal. The important daily buy for Runners collectors:
+
+| Purchase | Typical use |
+| --- | --- |
+| **Portable Extractor** (~2,000 Sprite Dust, often **1/day**) | Short (~5s), **silent** extract from almost anywhere — best for cubes, Mythics, Galaxy / first-time Legendaries |
+| Weapon rarity bumps / daily XP (when offered) | Optional Dust sinks mid-match |
+
+Use Portable Extractor when a public 30-second defend is too risky. Buy it early in a Chapter 7 Season 3 session if you plan a cube / rare hunt — see [how to get cube sprites](/guides/how-to/how-to-get-cube-sprites-fortnite).
+
+Exact Dust prices and daily reset time can shift; confirm on the in-game Services UI.
+
+## Victory Royale = auto-extract (Runners)
+
+If you win a Chapter 7 Season 3 match while carrying Sprites, they bank **automatically**. In endgame with a chase Sprite, playing for the win is often safer than rotating to a lit pad under third parties.
+
+## Safest vs sweatest Extraction Sites (Shattered Coast)
+
+| Prefer when… | Sites / approach |
+| --- | --- |
+| Solo / rare Sprite / low mats | Outer pads (south / northeast loops), or Portable Extractor |
+| You already wiped the POI | Nearby site after a clean vault / Sprite Chest clear |
+| Contested center | Avoid Sinister Strip extracts unless you own the area |
+
+Common Chapter 7 Season 3 mistakes:
+
+- Activating before scouting
+- Standing in the open for the full 30 seconds with no builds
+- Missing the crate interact window
+- Extracting a common duplicate while a cube sits unprotected — bank the chase piece first when you can
+
+## Sprite Dust after you extract (C7S3)
+
+In Runners, Dust is the season currency for summoning banked Sprites next match and for Services buys (Portable Extractor, etc.). You also progress Dust / mastery through chests, elims, and successful extracts.
+
+Spending Dust to **summon** is separate from **extracting**. Extract first → collection entry → summon later when you want that buff again. Pass context: [Fortnite Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide).
+
+## FAQ — Chapter 7 Season 3 Sprite extraction
+
+### Can I extract Sprites before the first storm circle in Chapter 7 Season 3?
+
+No — public Extraction Sites on Shattered Coast stay locked until after the first circle closes.
+
+### Can two squads use the same Extraction Site in one Runners match?
+
+No. Once used successfully, that site is occupied for the match. Rotate to another pad or use a Portable Extractor.
+
+### Do I lose the Sprite if I die during the 30-second wait?
+
+Yes if you have not deposited yet. The Sprite can drop for whoever loots you — they can extract it themselves.
+
+### Does extracting a Sprite I already own still help in C7S3?
+
+Yes — Dust and mastery / quest progress still apply. Chase variants you are missing should get the safer extract method.
+
+### Is Creative / XP maps a way to extract Chapter 7 Season 3 Sprites?
+
+No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative leveling see [XP map codes](/codes) and the [XP maps guide](/guides/season/best-fortnite-xp-maps).
+
+## Related Chapter 7 Season 3 guides
+
+- [How to get cube sprites (Chapter 7 Season 3)](/guides/how-to/how-to-get-cube-sprites-fortnite)
+- [Interactive Fortnite map](/fortnite-map)
+- [Best loot spots on Shattered Coast](/guides/map/fortnite-loot-guide-best-spots)
+- [Shattered Coast POIs](/guides/map/fortnite-map-all-locations-guide)
+- [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide)
+`,
+  },
+  {
     slug: 'how-to-get-cube-sprites-fortnite',
     title: 'How to Get Cube Sprites in Fortnite (Chapter 7 Season 3)',
     excerpt:
@@ -1102,7 +1250,9 @@ Because cubes just released, ownership is uneven.
 
 ## Extraction and Sprite Dust
 
-When you decide to bank progress, use **safe extraction** points to deposit Sprites for **Sprite Dust** and collection credit. Extracting a duplicate holofoil or Boss Sprite still progresses dust even if you already own that variant. Cubes you still need should stay in inventory until you are sure you will extract safely — dying with an unextracted cube loses the drop.
+When you decide to bank progress, follow the full [how to extract Sprites](/guides/how-to/how-to-extract-sprites-fortnite) walkthrough: public pads unlock after the first circle, ~30s defend timer, Portable Extractor for rare / cube pieces, or win the match for auto-extract.
+
+Use quieter pads or a Portable Extractor for cubes you still need — dying with an unextracted cube loses the drop. Extracting a duplicate still progresses Sprite Dust.
 
 ## Farm route checklist (one match)
 
@@ -1110,7 +1260,7 @@ When you decide to bank progress, use **safe extraction** points to deposit Spri
 2. Open every Sprite Chest first, then rares
 3. Use Sprite Locator pings immediately
 4. If you find a vault key, rotate to the vault before late circle
-5. Extract duplicates for dust; keep missing cubes until a safe extract
+5. Extract duplicates for dust; keep missing cubes until a safe extract ([extraction guide](/guides/how-to/how-to-extract-sprites-fortnite))
 6. Queue again — volume wins
 
 ## FAQ
@@ -1137,6 +1287,7 @@ Sprint Locator + Sprite Chest volume on high-chest POIs, then vault if keyed. Sk
 
 ## Related guides and tools
 
+- [How to extract Sprites](/guides/how-to/how-to-extract-sprites-fortnite)
 - [Interactive Fortnite map](/fortnite-map)
 - [Best loot spots](/guides/map/fortnite-loot-guide-best-spots)
 - [All Shattered Coast locations](/guides/map/fortnite-map-all-locations-guide)
