@@ -77,6 +77,22 @@ export const TOOLS: ToolEntry[] = [
     category: 'map',
   },
   {
+    href: '/map-rotation',
+    title: 'Map Rotation Timer',
+    description:
+      'Live Reload map schedule — Venture, Oasis, Elite Stronghold — with countdown to the next island, plus Blitz status.',
+    tags: ['Reload', 'Blitz', 'Timer'],
+    category: 'map',
+  },
+  {
+    href: '/map-evolution',
+    title: 'Map Evolution',
+    description:
+      'Slide to compare Fortnite maps across every chapter and season — Chapter 1 through Chapter 7 side by side.',
+    tags: ['History', 'Compare', 'Chapters'],
+    category: 'map',
+  },
+  {
     href: '/tools/item-shop',
     title: 'Item Shop Tracker',
     description:

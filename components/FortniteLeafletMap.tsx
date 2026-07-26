@@ -31,6 +31,7 @@ import {
   type ResolvedSpawnPoint,
 } from '@/lib/map-spawns'
 import { SPAWN_LAYERS } from '@/lib/map-layers'
+import { findMapById } from '@/lib/map-evolution'
 
 type ApiPoi = {
   id: string
@@ -195,6 +196,7 @@ export function FortniteLeafletMap({
   contestFilter = 'all',
   minLoot = 1,
   query = '',
+  mapVersionId = 'live',
 }: {
   showNamed?: boolean
   showLandmarks?: boolean
@@ -202,19 +204,28 @@ export function FortniteLeafletMap({
   contestFilter?: ContestLevel | 'all'
   minLoot?: number
   query?: string
+  /** `live` = Fortnite-API current island; otherwise a map-evolution catalog id */
+  mapVersionId?: string
 }) {
   const [pois, setPois] = useState<DisplayPoi[]>([])
   const [extracts, setExtracts] = useState<ResolvedExtractionSite[]>([])
   const [spawns, setSpawns] = useState<ResolvedSpawnPoint[]>([])
-  const [mapUrl, setMapUrl] = useState('https://fortnite-api.com/images/map.png')
+  const [liveMapUrl, setLiveMapUrl] = useState('https://fortnite-api.com/images/map.png')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [selection, setSelection] = useState<Selection | null>(null)
   const [flyTo, setFlyTo] = useState<[number, number] | null>(null)
 
-  const showPois = showNamed || showLandmarks
-  const showExtracts = activeSpawns.includes('extraction_sites')
-  const spawnLayerSet = useMemo(() => new Set(activeSpawns), [activeSpawns])
+  const isLive = mapVersionId === 'live'
+  const historical = !isLive ? findMapById(mapVersionId) : null
+  const mapUrl = historical?.image ?? liveMapUrl
+
+  const showPois = isLive && (showNamed || showLandmarks)
+  const showExtracts = isLive && activeSpawns.includes('extraction_sites')
+  const spawnLayerSet = useMemo(
+    () => (isLive ? new Set(activeSpawns) : new Set<SpawnLayerId>()),
+    [activeSpawns, isLive]
+  )
 
   useEffect(() => {
     const markerStyleId = 'fn-poi-marker-style'
@@ -238,7 +249,7 @@ export function FortniteLeafletMap({
         if (!res.ok) throw new Error(`Map API ${res.status}`)
         const json = (await res.json()) as MapApiResponse
         if (cancelled) return
-        setMapUrl(json.data.images.blank || json.data.images.pois)
+        setLiveMapUrl(json.data.images.blank || json.data.images.pois)
         const mapped: DisplayPoi[] = json.data.pois.map((poi) => {
           const enrichment = getEnrichment(poi.name)
           const isNamed =
@@ -377,12 +388,12 @@ export function FortniteLeafletMap({
       <div className="space-y-4">
         <div className="relative overflow-hidden rounded-xl border border-border bg-[#07111f]">
           {loading && (
-            <div className="flex h-[min(70vh,640px)] items-center justify-center text-sm text-muted-foreground">
+            <div className="flex h-[min(85vh,800px)] items-center justify-center text-sm text-muted-foreground">
               Loading live Fortnite map…
             </div>
           )}
           {error && !loading && (
-            <div className="flex h-[min(70vh,640px)] items-center justify-center px-6 text-center text-sm text-muted-foreground">
+            <div className="flex h-[min(85vh,800px)] items-center justify-center px-6 text-center text-sm text-muted-foreground">
               Could not load map data ({error}). Check your connection and refresh.
             </div>
           )}
@@ -393,13 +404,13 @@ export function FortniteLeafletMap({
               zoom={-6}
               minZoom={-8}
               maxZoom={1}
-              className="h-[min(70vh,640px)] w-full bg-[#07111f] z-0"
+              className="h-[min(85vh,800px)] w-full bg-[#07111f] z-0"
               style={{ background: '#07111f' }}
             >
-              <ImageOverlay url={mapUrl} bounds={bounds} />
+              <ImageOverlay key={mapUrl} url={mapUrl} bounds={bounds} />
               <FitBounds />
-              <Recenter latlng={flyTo} />
-              {filteredPois.map((poi) => {
+              <Recenter latlng={isLive ? flyTo : null} />
+              {isLive && filteredPois.map((poi) => {
                 const en = poi.enrichment
                 const color = en ? contestColor[en.contest] : '#c9d7e8'
                 const active = selection?.kind === 'poi' && poi.id === selection.id
@@ -492,7 +503,11 @@ export function FortniteLeafletMap({
               Extract
             </span>
             <span className="ml-auto">
-              {markerCount} markers · {filteredSpawns.length} spawns · {filteredExtracts.length} extracts
+              {isLive
+                ? `${markerCount} markers · ${filteredSpawns.length} spawns · ${filteredExtracts.length} extracts`
+                : historical
+                  ? `${historical.shortLabel} · v${historical.version} preview`
+                  : 'Map preview'}
             </span>
           </div>
         </div>
@@ -500,7 +515,27 @@ export function FortniteLeafletMap({
 
       <aside className="space-y-4">
         <div className="rounded-xl border border-border bg-card p-5">
-          {selectedExtract ? (
+          {!isLive && historical ? (
+            <>
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+                Historical island · v{historical.version}
+              </p>
+              <h2 className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                {historical.label}
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Archive minimap preview for {historical.shortLabel}. Spawn pins, POIs, and Extraction
+                Sites are only available on the <strong className="text-foreground">Live</strong>{' '}
+                current-season map.
+              </p>
+              <Link
+                href="/map-evolution"
+                className="mt-4 inline-flex text-sm font-semibold text-primary hover:opacity-80"
+              >
+                Compare seasons on Map Evolution →
+              </Link>
+            </>
+          ) : selectedExtract ? (
             <>
               <p className="text-xs font-semibold uppercase tracking-wider text-primary">
                 Extraction Site · {extractTrafficLabels[selectedExtract.traffic]}
@@ -684,7 +719,9 @@ export function FortniteLeafletMap({
             ))}
             {markerCount === 0 && (
               <li className="px-2 py-3 text-sm text-muted-foreground">
-                No locations match these filters. Enable a layer or clear search.
+                {isLive
+                  ? 'No locations match these filters. Enable a layer or clear search.'
+                  : 'No markers on historical islands — switch Island version to Live.'}
               </li>
             )}
           </ul>

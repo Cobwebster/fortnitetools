@@ -89,6 +89,8 @@ export function Footer() {
                 { href: '/tools/player-stats', label: 'Fortnite Tracker' },
                 { href: '/codes', label: 'Map Codes' },
                 { href: '/fortnite-map', label: 'Interactive Map' },
+                { href: '/map-rotation', label: 'Map Rotation' },
+                { href: '/map-evolution', label: 'Map Evolution' },
                 { href: '/tools/loadout-builder', label: 'Loadout Builder' },
                 { href: '/tools/item-shop', label: 'Item Shop' },
                 { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },

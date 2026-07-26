@@ -115,7 +115,7 @@ export default function HomePage() {
               { href: '/season-countdown', label: 'Countdown' },
               { href: '/weapons', label: 'Weapons' },
               { href: '/fortnite-map', label: 'Map' },
-              { href: '/codes', label: 'Map Codes' },
+              { href: '/map-rotation', label: 'Rotation' },
             ].map((tool) => (
               <Link
                 key={tool.href}

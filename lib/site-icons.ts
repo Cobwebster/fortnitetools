@@ -15,6 +15,8 @@ export type CategoryIconId = keyof typeof CATEGORY_ICONS
 export const TOOL_ICONS: Record<string, string> = {
   '/tools/player-stats': '/images/icons/crown.png',
   '/fortnite-map': '/images/icons/map.png',
+  '/map-rotation': '/images/icons/storm.png',
+  '/map-evolution': '/images/icons/map.png',
   '/tools/item-shop': '/images/icons/vbucks.png',
   '/tools/loadout-builder': '/images/loadout/striker_pump.png',
   '/tools/sensitivity-calculator': '/images/loadout/hunting_rifle.png',

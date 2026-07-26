@@ -130,7 +130,7 @@ export default function FortniteMapPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+        <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
           <FortniteMapClient />
           <p className="mt-4 text-xs text-muted-foreground">
             Map imagery and coordinates from{' '}
