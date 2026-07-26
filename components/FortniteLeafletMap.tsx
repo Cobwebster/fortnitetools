@@ -14,12 +14,23 @@ import 'leaflet/dist/leaflet.css'
 import {
   MAP_HALF,
   contestLabels,
+  extractTrafficColor,
+  extractTrafficLabels,
   getEnrichment,
   lootLabel,
+  resolveExtractionSites,
   worldToLatLng,
   type ContestLevel,
   type PoiEnrichment,
+  type ResolvedExtractionSite,
 } from '@/lib/map-data'
+import type { SpawnLayerId } from '@/lib/map-layers'
+import {
+  SPAWN_LAYER_COLOR,
+  resolveSpawnPoints,
+  type ResolvedSpawnPoint,
+} from '@/lib/map-spawns'
+import { SPAWN_LAYERS } from '@/lib/map-layers'
 
 type ApiPoi = {
   id: string
@@ -40,7 +51,10 @@ type DisplayPoi = ApiPoi & {
   isNamed: boolean
 }
 
-const CONTEST_FILTERS: Array<ContestLevel | 'all'> = ['all', 'hot', 'balanced', 'edge']
+type Selection =
+  | { kind: 'poi'; id: string }
+  | { kind: 'extract'; id: string }
+  | { kind: 'spawn'; id: string }
 
 const contestColor: Record<ContestLevel, string> = {
   hot: '#ff6b4a',
@@ -48,7 +62,7 @@ const contestColor: Record<ContestLevel, string> = {
   edge: '#7aa2ff',
 }
 
-function makeIcon(color: string, active: boolean, label?: string) {
+function makePoiIcon(color: string, active: boolean, label?: string) {
   const size = active ? 16 : 12
   const safeLabel = label
     ? label
@@ -89,6 +103,67 @@ function makeIcon(color: string, active: boolean, label?: string) {
   })
 }
 
+function makeExtractIcon(color: string, active: boolean, label?: string) {
+  const size = active ? 18 : 14
+  const safeLabel = label
+    ? label
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+    : ''
+
+  const labelHtml = safeLabel
+    ? `<span style="
+        position:absolute;left:50%;bottom:100%;transform:translate(-50%,-6px);
+        white-space:nowrap;pointer-events:none;
+        font:700 10px/1.1 system-ui,sans-serif;letter-spacing:0.02em;
+        color:${active ? '#ffffff' : '#fff7ed'};
+        text-shadow:
+          0 0 4px rgba(0,0,0,.95),
+          0 1px 2px rgba(0,0,0,.9);
+      ">${safeLabel}</span>`
+    : ''
+
+  return L.divIcon({
+    className: 'fn-poi-marker',
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2 - (label ? 14 : 0)],
+    html: `<span style="position:relative;display:block;width:${size}px;height:${size}px;">
+      ${labelHtml}
+      <span style="
+        display:block;width:${size}px;height:${size}px;
+        transform:rotate(45deg);
+        background:${color};
+        border:2px solid ${active ? '#fff' : 'rgba(0,0,0,.5)'};
+        box-shadow:0 0 10px ${color}88, 0 0 0 1px rgba(0,0,0,.2);
+      "></span>
+    </span>`,
+  })
+}
+
+function makeSpawnIcon(color: string, active: boolean, diamond = false, goldRing = false) {
+  const size = active ? 14 : 10
+  const shape = diamond
+    ? `transform:rotate(45deg);border-radius:1px;`
+    : `border-radius:2px;`
+  const ring = goldRing
+    ? `box-shadow:0 0 0 2px #fbbf24, 0 0 0 1px rgba(0,0,0,.35);`
+    : `box-shadow:0 0 0 1px rgba(0,0,0,.35);`
+  return L.divIcon({
+    className: 'fn-poi-marker',
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
+    html: `<span style="
+      display:block;width:${size}px;height:${size}px;
+      background:${color};border:1.5px solid ${active ? '#fff' : 'rgba(0,0,0,.45)'};
+      ${shape}${ring}
+    "></span>`,
+  })
+}
+
 function FitBounds() {
   const map = useMap()
   useEffect(() => {
@@ -107,24 +182,39 @@ function Recenter({ latlng }: { latlng: [number, number] | null }) {
   const map = useMap()
   useEffect(() => {
     if (!latlng) return
-    // Keep a readable zoom without slamming into max detail
     const targetZoom = Math.min(Math.max(map.getZoom(), -3), -1)
     map.flyTo(latlng, targetZoom, { duration: 0.45 })
   }, [latlng, map])
   return null
 }
 
-export function FortniteLeafletMap() {
+export function FortniteLeafletMap({
+  showNamed = true,
+  showLandmarks = false,
+  activeSpawns = ['extraction_sites'] as SpawnLayerId[],
+  contestFilter = 'all',
+  minLoot = 1,
+  query = '',
+}: {
+  showNamed?: boolean
+  showLandmarks?: boolean
+  activeSpawns?: SpawnLayerId[]
+  contestFilter?: ContestLevel | 'all'
+  minLoot?: number
+  query?: string
+}) {
   const [pois, setPois] = useState<DisplayPoi[]>([])
+  const [extracts, setExtracts] = useState<ResolvedExtractionSite[]>([])
+  const [spawns, setSpawns] = useState<ResolvedSpawnPoint[]>([])
   const [mapUrl, setMapUrl] = useState('https://fortnite-api.com/images/map.png')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [selectedId, setSelectedId] = useState<string | null>(null)
-  const [contestFilter, setContestFilter] = useState<ContestLevel | 'all'>('all')
-  const [minLoot, setMinLoot] = useState(1)
-  const [query, setQuery] = useState('')
-  const [namedOnly, setNamedOnly] = useState(true)
+  const [selection, setSelection] = useState<Selection | null>(null)
   const [flyTo, setFlyTo] = useState<[number, number] | null>(null)
+
+  const showPois = showNamed || showLandmarks
+  const showExtracts = activeSpawns.includes('extraction_sites')
+  const spawnLayerSet = useMemo(() => new Set(activeSpawns), [activeSpawns])
 
   useEffect(() => {
     const markerStyleId = 'fn-poi-marker-style'
@@ -151,12 +241,23 @@ export function FortniteLeafletMap() {
         setMapUrl(json.data.images.blank || json.data.images.pois)
         const mapped: DisplayPoi[] = json.data.pois.map((poi) => {
           const enrichment = getEnrichment(poi.name)
-          const isNamed = poi.id.includes('.POI.') || Boolean(enrichment)
+          const isNamed =
+            (poi.id.includes('.Location.POI.') && !poi.id.includes('UnNamed')) ||
+            Boolean(enrichment)
           return { ...poi, enrichment, isNamed }
         })
         setPois(mapped)
+        const resolved = resolveExtractionSites(mapped)
+        setExtracts(resolved)
+        setSpawns(resolveSpawnPoints(mapped))
         const firstNamed = mapped.find((p) => p.isNamed)
-        setSelectedId(firstNamed?.id ?? mapped[0]?.id ?? null)
+        setSelection(
+          firstNamed
+            ? { kind: 'poi', id: firstNamed.id }
+            : resolved[0]
+              ? { kind: 'extract', id: resolved[0].id }
+              : null
+        )
       } catch (e) {
         if (!cancelled) {
           setError(e instanceof Error ? e.message : 'Failed to load map')
@@ -171,10 +272,12 @@ export function FortniteLeafletMap() {
     }
   }, [])
 
-  const filtered = useMemo(() => {
+  const filteredPois = useMemo(() => {
+    if (!showPois) return []
     const q = query.trim().toLowerCase()
     return pois.filter((poi) => {
-      if (namedOnly && !poi.isNamed) return false
+      if (poi.isNamed && !showNamed) return false
+      if (!poi.isNamed && !showLandmarks) return false
       const en = poi.enrichment
       if (contestFilter !== 'all') {
         if (!en || en.contest !== contestFilter) return false
@@ -189,13 +292,61 @@ export function FortniteLeafletMap() {
         en?.tip.toLowerCase().includes(q)
       )
     })
-  }, [pois, namedOnly, contestFilter, minLoot, query])
+  }, [pois, showPois, showNamed, showLandmarks, contestFilter, minLoot, query])
 
-  const selected =
-    filtered.find((p) => p.id === selectedId) ??
-    filtered[0] ??
-    pois.find((p) => p.id === selectedId) ??
-    null
+  const filteredExtracts = useMemo(() => {
+    if (!showExtracts) return []
+    const q = query.trim().toLowerCase()
+    if (!q) return extracts
+    return extracts.filter(
+      (e) =>
+        e.name.toLowerCase().includes(q) ||
+        e.nearPoi.toLowerCase().includes(q) ||
+        e.poiName.toLowerCase().includes(q) ||
+        e.tip.toLowerCase().includes(q) ||
+        e.traffic.includes(q) ||
+        q.includes('extract') ||
+        q.includes('sprite')
+    )
+  }, [extracts, showExtracts, query])
+
+  const filteredSpawns = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return spawns.filter((s) => {
+      if (s.layer === 'extraction_sites') return false
+      if (!spawnLayerSet.has(s.layer)) return false
+      if (!q) return true
+      const layerLabel = SPAWN_LAYERS.find((l) => l.id === s.layer)?.label ?? s.layer
+      return (
+        s.poiName.toLowerCase().includes(q) ||
+        s.nearPoi.toLowerCase().includes(q) ||
+        (s.label?.toLowerCase().includes(q) ?? false) ||
+        layerLabel.toLowerCase().includes(q) ||
+        s.layer.includes(q.replace(/\s+/g, '_'))
+      )
+    })
+  }, [spawns, spawnLayerSet, query])
+
+  const selectedPoi =
+    selection?.kind === 'poi'
+      ? filteredPois.find((p) => p.id === selection.id) ??
+        pois.find((p) => p.id === selection.id) ??
+        null
+      : null
+
+  const selectedExtract =
+    selection?.kind === 'extract'
+      ? filteredExtracts.find((e) => e.id === selection.id) ??
+        extracts.find((e) => e.id === selection.id) ??
+        null
+      : null
+
+  const selectedSpawn =
+    selection?.kind === 'spawn'
+      ? filteredSpawns.find((s) => s.id === selection.id) ??
+        spawns.find((s) => s.id === selection.id) ??
+        null
+      : null
 
   const bounds: L.LatLngBoundsExpression = [
     [MAP_HALF, -MAP_HALF],
@@ -203,68 +354,27 @@ export function FortniteLeafletMap() {
   ]
 
   function selectPoi(poi: DisplayPoi) {
-    setSelectedId(poi.id)
+    setSelection({ kind: 'poi', id: poi.id })
     setFlyTo(worldToLatLng(poi.location.x, poi.location.y))
   }
 
+  function selectExtract(site: ResolvedExtractionSite) {
+    setSelection({ kind: 'extract', id: site.id })
+    setFlyTo(worldToLatLng(site.location.x, site.location.y))
+  }
+
+  function selectSpawn(point: ResolvedSpawnPoint) {
+    setSelection({ kind: 'spawn', id: point.id })
+    setFlyTo(worldToLatLng(point.location.x, point.location.y))
+  }
+
+  const markerCount = filteredPois.length + filteredExtracts.length + filteredSpawns.length
+  const spawnLayerLabel = (id: SpawnLayerId) =>
+    SPAWN_LAYERS.find((l) => l.id === id)?.label ?? id
+
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_320px]">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_220px]">
       <div className="space-y-4">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <label className="block flex-1">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Search locations
-            </span>
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="e.g. Harbor, Lodge, edge…"
-              className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
-            />
-          </label>
-          <div className="flex flex-wrap gap-2">
-            {CONTEST_FILTERS.map((f) => (
-              <button
-                key={f}
-                type="button"
-                onClick={() => setContestFilter(f)}
-                className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${
-                  contestFilter === f
-                    ? 'border-primary bg-primary/15 text-primary'
-                    : 'border-border text-muted-foreground hover:border-primary/50 hover:text-foreground'
-                }`}
-              >
-                {f === 'all' ? 'All drops' : contestLabels[f]}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-4">
-          <label className="flex flex-1 items-center gap-3 text-sm text-muted-foreground min-w-[180px]">
-            <span className="shrink-0 text-xs font-semibold uppercase tracking-wider">Min loot</span>
-            <input
-              type="range"
-              min={1}
-              max={5}
-              value={minLoot}
-              onChange={(e) => setMinLoot(Number(e.target.value))}
-              className="w-full accent-[var(--primary)]"
-            />
-            <span className="w-10 text-right font-semibold text-foreground">{minLoot}+</span>
-          </label>
-          <label className="inline-flex items-center gap-2 text-sm text-muted-foreground">
-            <input
-              type="checkbox"
-              checked={namedOnly}
-              onChange={(e) => setNamedOnly(e.target.checked)}
-              className="rounded border-border"
-            />
-            Named POIs only
-          </label>
-        </div>
-
         <div className="relative overflow-hidden rounded-xl border border-border bg-[#07111f]">
           {loading && (
             <div className="flex h-[min(70vh,640px)] items-center justify-center text-sm text-muted-foreground">
@@ -289,18 +399,17 @@ export function FortniteLeafletMap() {
               <ImageOverlay url={mapUrl} bounds={bounds} />
               <FitBounds />
               <Recenter latlng={flyTo} />
-              {filtered.map((poi) => {
+              {filteredPois.map((poi) => {
                 const en = poi.enrichment
                 const color = en ? contestColor[en.contest] : '#c9d7e8'
-                const active = poi.id === selected?.id
+                const active = selection?.kind === 'poi' && poi.id === selection.id
                 const latlng = worldToLatLng(poi.location.x, poi.location.y)
-                // Label named towns/POIs; keep tiny landmarks unlabeled unless few are shown
-                const showLabel = poi.isNamed || filtered.length <= 20
+                const showLabel = poi.isNamed || filteredPois.length <= 20
                 return (
                   <Marker
                     key={poi.id}
                     position={latlng}
-                    icon={makeIcon(color, active, showLabel ? poi.name : undefined)}
+                    icon={makePoiIcon(color, active, showLabel ? poi.name : undefined)}
                     zIndexOffset={active ? 1000 : poi.isNamed ? 200 : 0}
                     eventHandlers={{
                       click: () => selectPoi(poi),
@@ -317,65 +426,165 @@ export function FortniteLeafletMap() {
                   </Marker>
                 )
               })}
+              {filteredExtracts.map((site) => {
+                const color = extractTrafficColor[site.traffic]
+                const active = selection?.kind === 'extract' && site.id === selection.id
+                const latlng = worldToLatLng(site.location.x, site.location.y)
+                return (
+                  <Marker
+                    key={site.id}
+                    position={latlng}
+                    icon={makeExtractIcon(color, active, site.name.replace(' Extract', ''))}
+                    zIndexOffset={active ? 1100 : 400}
+                    eventHandlers={{
+                      click: () => selectExtract(site),
+                    }}
+                  >
+                    <Popup>
+                      <strong>{site.name}</strong>
+                      <div style={{ marginTop: 4, fontSize: 12 }}>
+                        {extractTrafficLabels[site.traffic]} · near {site.poiName}
+                      </div>
+                    </Popup>
+                  </Marker>
+                )
+              })}
+              {filteredSpawns.map((point) => {
+                const color = SPAWN_LAYER_COLOR[point.layer]
+                const active = selection?.kind === 'spawn' && point.id === selection.id
+                const latlng = worldToLatLng(point.location.x, point.location.y)
+                const label = point.label || spawnLayerLabel(point.layer)
+                return (
+                  <Marker
+                    key={point.id}
+                    position={latlng}
+                    icon={makeSpawnIcon(color, active, false, Boolean(point.guaranteed))}
+                    zIndexOffset={active ? 1050 : point.guaranteed ? 350 : 150}
+                    eventHandlers={{
+                      click: () => selectSpawn(point),
+                    }}
+                  >
+                    <Popup>
+                      <strong>{label}</strong>
+                      <div style={{ marginTop: 4, fontSize: 12 }}>
+                        {spawnLayerLabel(point.layer)} · near {point.poiName}
+                        {point.guaranteed ? ' · high confidence' : ''}
+                      </div>
+                    </Popup>
+                  </Marker>
+                )
+              })}
             </MapContainer>
           )}
 
           <div className="flex flex-wrap items-center gap-3 border-t border-border/60 px-3 py-2 text-[11px] text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full" style={{ background: contestColor.hot }} /> Hot
+              <span className="h-2 w-2 rounded-full" style={{ background: contestColor.hot }} /> Hot POI
             </span>
             <span className="inline-flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full" style={{ background: contestColor.balanced }} /> Balanced
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full" style={{ background: contestColor.edge }} /> Edge
+              <span
+                className="inline-block h-2 w-2 rotate-45"
+                style={{ background: extractTrafficColor.medium }}
+              />{' '}
+              Extract
             </span>
-            <span className="ml-auto">{filtered.length} markers · map via Fortnite-API</span>
+            <span className="ml-auto">
+              {markerCount} markers · {filteredSpawns.length} spawns · {filteredExtracts.length} extracts
+            </span>
           </div>
         </div>
       </div>
 
       <aside className="space-y-4">
         <div className="rounded-xl border border-border bg-card p-5">
-          {selected ? (
+          {selectedExtract ? (
             <>
               <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-                {selected.enrichment
-                  ? contestLabels[selected.enrichment.contest]
-                  : selected.isNamed
+                Extraction Site · {extractTrafficLabels[selectedExtract.traffic]}
+              </p>
+              <h2 className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                {selectedExtract.name}
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Near <span className="font-semibold text-foreground">{selectedExtract.poiName}</span> on
+                Shattered Coast (Chapter 7 Season 3 / Runners).
+              </p>
+              <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">Tip: </span>
+                {selectedExtract.tip}
+              </p>
+              <ul className="mt-4 space-y-1.5 text-sm text-muted-foreground list-disc pl-4">
+                <li>Unlocks after the <strong className="text-foreground">first storm circle</strong> closes</li>
+                <li>~<strong className="text-foreground">30s</strong> defend while the crate inbound (you ping the lobby)</li>
+                <li>One successful use per site per match</li>
+              </ul>
+              <Link
+                href="/guides/how-to/how-to-extract-sprites-fortnite"
+                className="mt-4 inline-flex text-sm font-semibold text-primary hover:opacity-80"
+              >
+                Full Sprite extraction guide →
+              </Link>
+            </>
+          ) : selectedSpawn ? (
+            <>
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+                {spawnLayerLabel(selectedSpawn.layer)}
+                {selectedSpawn.guaranteed ? ' · High confidence' : ''}
+              </p>
+              <h2 className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                {selectedSpawn.label || spawnLayerLabel(selectedSpawn.layer)}
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Near <span className="font-semibold text-foreground">{selectedSpawn.poiName}</span> —
+                POI-anchored planning pin for Chapter 7 Season 3.
+              </p>
+              <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
+                Exact in-match spots can shift slightly. Use this to plan drops and rotates, then
+                confirm on the live minimap.
+              </p>
+            </>
+          ) : selectedPoi ? (
+            <>
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+                {selectedPoi.enrichment
+                  ? contestLabels[selectedPoi.enrichment.contest]
+                  : selectedPoi.isNamed
                     ? 'Named location'
                     : 'Landmark'}
               </p>
               <h2 className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-                {selected.name}
+                {selectedPoi.name}
               </h2>
 
-              {selected.enrichment ? (
+              {selectedPoi.enrichment ? (
                 <>
                   <dl className="mt-4 grid grid-cols-2 gap-3 text-sm">
                     <div>
                       <dt className="text-xs uppercase tracking-wider text-muted-foreground">Loot</dt>
                       <dd className="mt-0.5 font-semibold text-foreground">
-                        {lootLabel(selected.enrichment.loot)}
+                        {lootLabel(selectedPoi.enrichment.loot)}
                       </dd>
                     </div>
                     <div>
                       <dt className="text-xs uppercase tracking-wider text-muted-foreground">Chests</dt>
                       <dd className="mt-0.5 font-semibold text-foreground">
-                        {selected.enrichment.chests}
+                        {selectedPoi.enrichment.chests}
                       </dd>
                     </div>
                     <div className="col-span-2">
                       <dt className="text-xs uppercase tracking-wider text-muted-foreground">Mobility</dt>
-                      <dd className="mt-0.5 text-foreground">{selected.enrichment.mobility}</dd>
+                      <dd className="mt-0.5 text-foreground">{selectedPoi.enrichment.mobility}</dd>
                     </div>
                   </dl>
                   <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
                     <span className="font-semibold text-foreground">Tip: </span>
-                    {selected.enrichment.tip}
+                    {selectedPoi.enrichment.tip}
                   </p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
-                    {selected.enrichment.tags.map((tag) => (
+                    {selectedPoi.enrichment.tags.map((tag) => (
                       <span
                         key={tag}
                         className="rounded px-2 py-0.5 text-[11px] font-medium bg-muted text-muted-foreground"
@@ -384,9 +593,9 @@ export function FortniteLeafletMap() {
                       </span>
                     ))}
                   </div>
-                  {selected.enrichment.guideHref && (
+                  {selectedPoi.enrichment.guideHref && (
                     <Link
-                      href={selected.enrichment.guideHref}
+                      href={selectedPoi.enrichment.guideHref}
                       className="mt-4 inline-flex text-sm font-semibold text-primary hover:opacity-80"
                     >
                       Read map guide →
@@ -395,8 +604,8 @@ export function FortniteLeafletMap() {
                 </>
               ) : (
                 <p className="mt-3 text-sm text-muted-foreground">
-                  Live landmark from the current Fortnite map. Zoom and pan the
-                  real minimap to plan rotates.
+                  Live landmark from the current Fortnite map. Zoom and pan the real minimap to plan
+                  rotates.
                 </p>
               )}
             </>
@@ -409,14 +618,59 @@ export function FortniteLeafletMap() {
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Jump to location
           </p>
-          <ul className="max-h-64 space-y-1 overflow-y-auto" role="list">
-            {filtered.map((poi) => (
+          <ul className="max-h-72 space-y-1 overflow-y-auto" role="list">
+            {showExtracts &&
+              filteredExtracts.map((site) => (
+                <li key={site.id}>
+                  <button
+                    type="button"
+                    onClick={() => selectExtract(site)}
+                    className={`flex w-full items-center justify-between rounded-md px-2.5 py-2 text-left text-sm transition-colors ${
+                      selection?.kind === 'extract' && site.id === selection.id
+                        ? 'bg-primary/15 text-primary'
+                        : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                    }`}
+                  >
+                    <span className="font-medium">{site.name}</span>
+                    <span className="text-[10px] uppercase tracking-wide opacity-80">
+                      {site.traffic}
+                    </span>
+                  </button>
+                </li>
+              ))}
+            {filteredSpawns.slice(0, 80).map((point) => {
+              const label = point.label || spawnLayerLabel(point.layer)
+              return (
+                <li key={point.id}>
+                  <button
+                    type="button"
+                    onClick={() => selectSpawn(point)}
+                    className={`flex w-full items-center justify-between gap-2 rounded-md px-2.5 py-2 text-left text-sm transition-colors ${
+                      selection?.kind === 'spawn' && point.id === selection.id
+                        ? 'bg-primary/15 text-primary'
+                        : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                    }`}
+                  >
+                    <span className="min-w-0 truncate font-medium">{label}</span>
+                    <span className="shrink-0 text-[10px] uppercase tracking-wide opacity-80">
+                      {point.poiName}
+                    </span>
+                  </button>
+                </li>
+              )
+            })}
+            {filteredSpawns.length > 80 ? (
+              <li className="px-2.5 py-1.5 text-[11px] text-muted-foreground">
+                +{filteredSpawns.length - 80} more on the map (narrow filters to list them)
+              </li>
+            ) : null}
+            {filteredPois.map((poi) => (
               <li key={poi.id}>
                 <button
                   type="button"
                   onClick={() => selectPoi(poi)}
                   className={`flex w-full items-center justify-between rounded-md px-2.5 py-2 text-left text-sm transition-colors ${
-                    poi.id === selected?.id
+                    selection?.kind === 'poi' && poi.id === selection.id
                       ? 'bg-primary/15 text-primary'
                       : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                   }`}
@@ -428,8 +682,10 @@ export function FortniteLeafletMap() {
                 </button>
               </li>
             ))}
-            {filtered.length === 0 && (
-              <li className="px-2 py-3 text-sm text-muted-foreground">No locations match these filters.</li>
+            {markerCount === 0 && (
+              <li className="px-2 py-3 text-sm text-muted-foreground">
+                No locations match these filters. Enable a layer or clear search.
+              </li>
             )}
           </ul>
         </div>

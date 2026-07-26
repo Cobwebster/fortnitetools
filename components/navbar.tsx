@@ -61,6 +61,30 @@ export function Navbar() {
             </li>
             <li>
               <Link
+                href="/free-cosmetics"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+              >
+                Free Cosmetics
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/season-countdown"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+              >
+                Countdown
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/weapons"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+              >
+                Weapons
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/fortnite-map"
                 className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
               >
@@ -68,7 +92,7 @@ export function Navbar() {
               </Link>
             </li>
             {categories
-              .filter((cat) => cat.id !== 'map')
+              .filter((cat) => cat.id !== 'map' && cat.id !== 'weapons' && cat.id !== 'season')
               .map((cat) => (
                 <li key={cat.id}>
                   <Link
@@ -148,6 +172,33 @@ export function Navbar() {
               </li>
               <li>
                 <Link
+                  href="/free-cosmetics"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Free Cosmetics
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/season-countdown"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Countdown
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/weapons"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Weapons
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/fortnite-map"
                   className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
                   onClick={() => setMobileOpen(false)}
@@ -156,7 +207,7 @@ export function Navbar() {
                 </Link>
               </li>
               {categories
-                .filter((cat) => cat.id !== 'map')
+                .filter((cat) => cat.id !== 'map' && cat.id !== 'weapons' && cat.id !== 'season')
                 .map((cat) => (
                   <li key={cat.id}>
                     <Link

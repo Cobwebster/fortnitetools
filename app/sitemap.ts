@@ -6,8 +6,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url
 
   const toolRoutes: MetadataRoute.Sitemap = [
+    '/season-countdown',
+    '/xp-calculator',
+    '/free-cosmetics',
     '/fortnite-map',
     '/tools',
+    '/weapons',
     '/tools/player-stats',
     '/codes',
     '/tools/item-shop',
@@ -25,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: path === '/fortnite-map' || path === '/codes' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' || path === '/tools/skin-rarity-calculator' ? 0.95 : 0.85,
+    priority: path === '/fortnite-map' || path === '/codes' || path === '/weapons' || path === '/season-countdown' || path === '/xp-calculator' || path === '/free-cosmetics' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' || path === '/tools/skin-rarity-calculator' ? 0.95 : 0.85,
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [

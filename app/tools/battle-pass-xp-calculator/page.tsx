@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { Info, CheckCircle2, Circle } from 'lucide-react'
+import { seasonEndDate } from '@/lib/season'
 
 // Chapter 7 Season 3 (Runners) Battle Pass planning model — July 2026
 // 100 reward levels. XP-per-level and weekly sources are estimates; quest values change.
@@ -24,7 +25,7 @@ const WEEKLY_SOURCES = [
 ]
 
 // Chapter 7 Season 3: June 6 – August 19, 2026
-const SEASON_END = new Date('2026-08-19T00:00:00Z')
+const SEASON_END = seasonEndDate()
 
 function defaultWeeksRemaining() {
   const ms = SEASON_END.getTime() - Date.now()
