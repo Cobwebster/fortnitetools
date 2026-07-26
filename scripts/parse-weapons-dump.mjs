@@ -184,6 +184,7 @@ const IMAGE_MAP = {
   heavy_impact_sniper: '/images/loadout/heavy_impact.png',
   crash_pad_jr: '/images/loadout/crash_pad.png',
   shockwave_hammer: '/images/loadout/shockwave.png',
+  unstable_bounce_grenade: '/images/loadout/unstable_bounce_grenade.webp',
 }
 
 const CAT_FALLBACK = {

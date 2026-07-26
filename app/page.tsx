@@ -70,11 +70,17 @@ export default function HomePage() {
           aria-labelledby="categories-heading"
         >
           <h2 id="categories-heading" className="sr-only">Browse by Category</h2>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {categories.map((cat) => (
               <Link
                 key={cat.id}
-                href={cat.id === 'map' ? '/fortnite-map' : `/guides/${cat.id}`}
+                href={
+                  cat.id === 'map'
+                    ? '/fortnite-map'
+                    : cat.id === 'weapons'
+                      ? '/weapons'
+                      : `/guides/${cat.id}`
+                }
                 className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-primary/60 hover:bg-muted"
               >
                 <FortniteIcon
@@ -87,6 +93,19 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
+            <Link
+              href="/weapon-changes"
+              className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-primary/60 hover:bg-muted"
+            >
+              <FortniteIcon
+                src={toolIcon('/weapon-changes')}
+                size="md"
+                frameClassName="border-transparent bg-transparent group-hover:scale-110 transition-transform"
+              />
+              <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
+                Weapon Changes
+              </span>
+            </Link>
           </div>
         </section>
 

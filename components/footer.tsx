@@ -95,6 +95,7 @@ export function Footer() {
                 { href: '/tools/item-shop', label: 'Item Shop' },
                 { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
                 { href: '/weapons', label: 'All Weapons' },
+                { href: '/weapon-changes', label: 'Weapon Changes' },
                 { href: '/tools/weapon-damage-calculator', label: 'Damage Calc' },
                 { href: '/tools/sensitivity-calculator', label: 'Sensitivity' },
                 { href: '/tools/vbucks-calculator', label: 'V-Bucks' },

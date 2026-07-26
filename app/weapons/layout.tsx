@@ -15,19 +15,30 @@ const faqs = [
   {
     question: 'Are these Fortnite weapon stats exact?',
     answer:
-      'They are reference values for comparison. Epic balance patches change numbers mid-season — always confirm in-game after updates.',
+      'They are reference values for comparison. Epic balance patches change numbers mid-season — see the Weapon Changes page for Old / New history, and always confirm in-game after updates.',
+  },
+  {
+    question: 'Can I compare Fortnite weapons on this page?',
+    answer:
+      'Yes. Use the Compare weapons panel to pick any two guns and rarities, or tap Compare on a weapon card. Stats are shown side by side with the stronger value highlighted.',
+  },
+  {
+    question: 'Where can I see Fortnite weapon buffs and nerfs?',
+    answer:
+      'Open Weapon Changes for patch-by-patch damage, DPS, fire rate, mag size, reload, and structure damage deltas by rarity.',
   },
 ]
 
 export const metadata: Metadata = createMetadata({
   title: 'All Fortnite Weapons – DPS, Damage & Stats by Rarity',
   description:
-    'Every Fortnite weapon with rarity tables: Assault Rifles, Shotguns, SMGs, Pistols, DMRs, Snipers, Bows, and Explosives — DPS, damage, structure damage, fire rate, mag size, and reload. Includes vaulted history.',
+    'Every Fortnite weapon with rarity tables: Assault Rifles, Shotguns, SMGs, Pistols, DMRs, Snipers, Bows, and Explosives — DPS, damage, structure damage, fire rate, mag size, and reload. Compare any two guns side by side. Includes vaulted history.',
   path: '/weapons',
   keywords: [
     'fortnite weapons',
     'all fortnite weapons',
     'fortnite weapon stats',
+    'fortnite weapon compare',
     'fortnite dps',
     'fortnite shotgun stats',
     'fortnite assault rifle stats',

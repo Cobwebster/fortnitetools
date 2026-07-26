@@ -46,3 +46,6 @@ Desktop.ini
 # misc
 *.pem
 *.local
+
+# local-only scrape input for parse:weapon-changes (generated JSON is committed instead)
+scripts/weapon-changes-source.md

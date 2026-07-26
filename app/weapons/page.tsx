@@ -14,6 +14,10 @@ const faqs = [
     a: 'Body damage × fire rate. Useful for comparing guns on paper; bloom, falloff, and pellet spread still decide real fights.',
   },
   {
+    q: 'Can I compare two Fortnite weapons?',
+    a: 'Yes — use Compare weapons at the top of this page, or tap Compare on any gun card. Pick rarities for each side to see DPS, damage, structure damage, fire rate, mag, and reload.',
+  },
+  {
     q: 'Where can I test shots-to-kill?',
     a: 'Use the Weapon Damage Calculator for TTK against 100/150/200 HP targets, or build a hotbar in the Loadout Builder.',
   },
@@ -41,9 +45,9 @@ export default function WeaponsPage() {
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Complete Fortnite weapons list with rarity tables — DPS, body damage, structure
-              damage, fire rate, mag size, and reload. Browse Assault Rifles, Shotguns, SMGs,
-              Pistols, DMRs, Snipers, Bows, Explosives, and more. Toggle vaulted history for older
-              loot.
+              damage, fire rate, mag size, and reload. Compare any two guns side by side, browse
+              Assault Rifles, Shotguns, SMGs, Pistols, DMRs, Snipers, Bows, Explosives, and more.
+              Toggle vaulted history for older loot.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{liveCount}</strong> current ·{' '}
@@ -53,6 +57,10 @@ export default function WeaponsPage() {
                 className="text-primary hover:underline"
               >
                 Meta tier list
+              </Link>
+              {' · '}
+              <Link href="/weapon-changes" className="text-primary hover:underline">
+                Weapon changes
               </Link>
               {' · '}
               <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
@@ -75,7 +83,11 @@ export default function WeaponsPage() {
             </h2>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Each weapon shows one row per rarity with planning stats. Infinite-magazine mythics
-              display as ∞. Epic balance patches change numbers — confirm in-game after updates. For
+              display as ∞. Epic balance patches change numbers — see{' '}
+              <Link href="/weapon-changes" className="text-primary hover:underline">
+                weapon changes
+              </Link>{' '}
+              for Old / New / Change history, and confirm in-game after updates. For
               current-meta rankings see the{' '}
               <Link
                 href="/guides/weapons/fortnite-best-weapons-tier-list-2026"

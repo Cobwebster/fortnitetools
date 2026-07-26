@@ -1,0 +1,6840 @@
+{
+  "updatedAt": "2026-07-26",
+  "sourceNote": "Compiled from public Fortnite balance history (Epic patch notes / community trackers). Numbers are reference values — always confirm in-game after updates.",
+  "patches": [
+    {
+      "date": "2026-07-15",
+      "label": "July 15, 2026",
+      "entries": [
+        {
+          "rarity": "Exotic",
+          "name": "Unstable Bounce Grenade",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 20,
+              "new": 40,
+              "change": 20
+            },
+            {
+              "stat": "Damage",
+              "old": 10,
+              "new": 40,
+              "change": 30
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 10,
+              "new": 40,
+              "change": 30
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 10,
+              "new": 40,
+              "change": 30
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 40,
+              "new": 75,
+              "change": 35
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2,
+              "new": 1,
+              "change": -1
+            },
+            {
+              "stat": "Impact",
+              "old": 190,
+              "new": 2000,
+              "change": 1810
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "label": "July 3, 2026",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Twinfire Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 143.64,
+              "new": 157.32,
+              "change": 13.68
+            },
+            {
+              "stat": "Damage",
+              "old": 75.6,
+              "new": 82.8,
+              "change": 7.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.465,
+              "new": 3.795,
+              "change": 0.33
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.52,
+              "new": 2.76,
+              "change": 0.24
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 3.9,
+              "new": 4.2,
+              "change": 0.3
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.37,
+              "new": 4.28,
+              "change": -0.09
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Twinfire Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 150.48,
+              "new": 166.44,
+              "change": 15.96
+            },
+            {
+              "stat": "Damage",
+              "old": 79.2,
+              "new": 87.6,
+              "change": 8.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.63,
+              "new": 4.015,
+              "change": 0.385
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.64,
+              "new": 2.92,
+              "change": 0.28
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4.1,
+              "new": 4.4,
+              "change": 0.3
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.14,
+              "new": 4.05,
+              "change": -0.09
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Tactical Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 133,
+              "new": 140,
+              "change": 7
+            },
+            {
+              "stat": "Damage",
+              "old": 19,
+              "new": 20,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 17.1,
+              "new": 18,
+              "change": 0.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 16.15,
+              "new": 17,
+              "change": 0.85
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Tactical Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 140,
+              "new": 147,
+              "change": 7
+            },
+            {
+              "stat": "Damage",
+              "old": 20,
+              "new": 21,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 18,
+              "new": 18.9,
+              "change": 0.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 17,
+              "new": 17.85,
+              "change": 0.85
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Tactical Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 147,
+              "new": 154,
+              "change": 7
+            },
+            {
+              "stat": "Damage",
+              "old": 21,
+              "new": 22,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 18.9,
+              "new": 19.8,
+              "change": 0.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 17.85,
+              "new": 18.7,
+              "change": 0.85
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Tactical Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 154,
+              "new": 161,
+              "change": 7
+            },
+            {
+              "stat": "Damage",
+              "old": 22,
+              "new": 23,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 19.8,
+              "new": 20.7,
+              "change": 0.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 18.7,
+              "new": 19.55,
+              "change": 0.85
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Tactical Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 161,
+              "new": 168,
+              "change": 7
+            },
+            {
+              "stat": "Damage",
+              "old": 23,
+              "new": 24,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 20.7,
+              "new": 21.6,
+              "change": 0.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 19.55,
+              "new": 20.4,
+              "change": 0.85
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Harbinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 161.5,
+              "new": 170,
+              "change": 8.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 9.5,
+              "new": 10,
+              "change": 0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.86,
+              "new": 2.75,
+              "change": -0.11
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Harbinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 171,
+              "new": 180,
+              "change": 9
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 9.5,
+              "new": 10,
+              "change": 0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.73,
+              "new": 2.63,
+              "change": -0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Harbinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 180.5,
+              "new": 190,
+              "change": 9.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 9.5,
+              "new": 10,
+              "change": 0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.6,
+              "new": 2.5,
+              "change": -0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Harbinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 190,
+              "new": 200,
+              "change": 10
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 9.5,
+              "new": 10,
+              "change": 0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.47,
+              "new": 2.38,
+              "change": -0.09
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Harbinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 199.5,
+              "new": 210,
+              "change": 10.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 9.5,
+              "new": 10,
+              "change": 0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.34,
+              "new": 2.25,
+              "change": -0.09
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "label": "July 1, 2026",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Recurve Crossbow",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 5.75,
+              "new": 4.35,
+              "change": -1.4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.15,
+              "new": 0.87,
+              "change": -0.28
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Recurve Crossbow",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 8.05,
+              "new": 6.09,
+              "change": -1.96
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.15,
+              "new": 0.87,
+              "change": -0.28
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Enforcer AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 126.4,
+              "new": 140,
+              "change": 13.6
+            },
+            {
+              "stat": "Damage",
+              "old": 32,
+              "new": 35,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 30.4,
+              "new": 34.3,
+              "change": 3.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 28.8,
+              "new": 33.6,
+              "change": 4.8
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 32,
+              "new": 35,
+              "change": 3
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 3.95,
+              "new": 4,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Enforcer AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 130.35,
+              "new": 148,
+              "change": 17.65
+            },
+            {
+              "stat": "Damage",
+              "old": 33,
+              "new": 37,
+              "change": 4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 31.35,
+              "new": 36.26,
+              "change": 4.91
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 29.7,
+              "new": 35.52,
+              "change": 5.82
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 33,
+              "new": 37,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 3.95,
+              "new": 4,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Enforcer AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 138.25,
+              "new": 156,
+              "change": 17.75
+            },
+            {
+              "stat": "Damage",
+              "old": 35,
+              "new": 39,
+              "change": 4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 33.25,
+              "new": 38.22,
+              "change": 4.97
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 31.5,
+              "new": 37.44,
+              "change": 5.94
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 35,
+              "new": 39,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 3.95,
+              "new": 4,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Enforcer AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 146.15,
+              "new": 164,
+              "change": 17.85
+            },
+            {
+              "stat": "Damage",
+              "old": 37,
+              "new": 41,
+              "change": 4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 35.15,
+              "new": 40.18,
+              "change": 5.03
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 33.3,
+              "new": 39.36,
+              "change": 6.06
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 37,
+              "new": 41,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 3.95,
+              "new": 4,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Enforcer AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 154.05,
+              "new": 172,
+              "change": 17.95
+            },
+            {
+              "stat": "Damage",
+              "old": 39,
+              "new": 43,
+              "change": 4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 37.05,
+              "new": 42.14,
+              "change": 5.09
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 35.1,
+              "new": 41.28,
+              "change": 6.18
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 39,
+              "new": 43,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 3.95,
+              "new": 4,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Oscar's Frenzy Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 195,
+              "new": 171.6,
+              "change": -23.4
+            },
+            {
+              "stat": "Range",
+              "old": 3500,
+              "new": 2000,
+              "change": -1500
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2.5,
+              "new": 2.2,
+              "change": -0.3
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Bait Bucket",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 20.8,
+              "new": 0,
+              "change": -20.8
+            },
+            {
+              "stat": "Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Range",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 0,
+              "change": -1.3
+            },
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 5,
+              "new": 0,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Bait Bucket",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 20.8,
+              "new": 0,
+              "change": -20.8
+            },
+            {
+              "stat": "Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Range",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 0,
+              "change": -1.3
+            },
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 5,
+              "new": 0,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Bait Bucket",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 20.8,
+              "new": 0,
+              "change": -20.8
+            },
+            {
+              "stat": "Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Range",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 0,
+              "change": -1.3
+            },
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 5,
+              "new": 0,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Bait Bucket",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 20.8,
+              "new": 0,
+              "change": -20.8
+            },
+            {
+              "stat": "Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 16,
+              "new": 6,
+              "change": -10
+            },
+            {
+              "stat": "Range",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 0,
+              "change": -1.3
+            },
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 5,
+              "new": 0,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Huntress DMR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 89.06,
+              "new": 90.52,
+              "change": 1.46
+            },
+            {
+              "stat": "Damage",
+              "old": 61,
+              "new": 62,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 57.95,
+              "new": 60.76,
+              "change": 2.81
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 54.9,
+              "new": 59.52,
+              "change": 4.62
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 67,
+              "new": 62,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Huntress DMR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 93.44,
+              "new": 94.9,
+              "change": 1.46
+            },
+            {
+              "stat": "Damage",
+              "old": 64,
+              "new": 65,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 60.8,
+              "new": 63.7,
+              "change": 2.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 57.6,
+              "new": 62.4,
+              "change": 4.8
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 70,
+              "new": 65,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Huntress DMR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 97.82,
+              "new": 99.28,
+              "change": 1.46
+            },
+            {
+              "stat": "Damage",
+              "old": 67,
+              "new": 68,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 63.65,
+              "new": 66.64,
+              "change": 2.99
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 60.3,
+              "new": 65.28,
+              "change": 4.98
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 74,
+              "new": 68,
+              "change": -6
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Huntress DMR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 102.2,
+              "new": 105.12,
+              "change": 2.92
+            },
+            {
+              "stat": "Damage",
+              "old": 70,
+              "new": 72,
+              "change": 2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 66.5,
+              "new": 70.56,
+              "change": 4.06
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 63,
+              "new": 69.12,
+              "change": 6.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 77,
+              "new": 72,
+              "change": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "label": "January 23, 2026",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Snowball Launcher",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 6,
+              "new": 4,
+              "change": -2
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Snowball Launcher",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 6,
+              "new": 4,
+              "change": -2
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Ballistic Shield",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 118.8,
+              "new": 125.4,
+              "change": 6.6
+            },
+            {
+              "stat": "Damage",
+              "old": 18,
+              "new": 19,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 15.3,
+              "new": 16.15,
+              "change": 0.85
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 14.4,
+              "new": 15.2,
+              "change": 0.8
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 194.4,
+              "new": 186.3,
+              "change": -8.1
+            },
+            {
+              "stat": "Damage",
+              "old": 24,
+              "new": 23,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 21.6,
+              "new": 20.7,
+              "change": -0.9
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 19.2,
+              "new": 18.4,
+              "change": -0.8
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 210.6,
+              "new": 194.4,
+              "change": -16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 26,
+              "new": 24,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 23.4,
+              "new": 21.6,
+              "change": -1.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 20.8,
+              "new": 19.2,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 218.7,
+              "new": 202.5,
+              "change": -16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 27,
+              "new": 25,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 24.3,
+              "new": 22.5,
+              "change": -1.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 21.6,
+              "new": 20,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 218.7,
+              "new": 202.5,
+              "change": -16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 27,
+              "new": 25,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 24.3,
+              "new": 22.5,
+              "change": -1.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 21.6,
+              "new": 20,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 226.8,
+              "new": 210.6,
+              "change": -16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 28,
+              "new": 26,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 25.2,
+              "new": 23.4,
+              "change": -1.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 22.4,
+              "new": 20.8,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 243,
+              "new": 226.8,
+              "change": -16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 30,
+              "new": 28,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 27,
+              "new": 25.2,
+              "change": -1.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 24,
+              "new": 22.4,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Nisha's Striker AR",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 251.1,
+              "new": 234.9,
+              "change": -16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 31,
+              "new": 29,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 27.9,
+              "new": 26.1,
+              "change": -1.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 24.8,
+              "new": 23.2,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Ranger Pistol",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 151.8,
+              "new": 158.4,
+              "change": 6.6
+            },
+            {
+              "stat": "Damage",
+              "old": 23,
+              "new": 24,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 19.55,
+              "new": 20.4,
+              "change": 0.85
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 18.4,
+              "new": 19.2,
+              "change": 0.8
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Ranger Pistol",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 158.4,
+              "new": 171.6,
+              "change": 13.2
+            },
+            {
+              "stat": "Damage",
+              "old": 24,
+              "new": 26,
+              "change": 2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 20.4,
+              "new": 22.1,
+              "change": 1.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 19.2,
+              "new": 20.8,
+              "change": 1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Ranger Pistol",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 165,
+              "new": 178.2,
+              "change": 13.2
+            },
+            {
+              "stat": "Damage",
+              "old": 25,
+              "new": 27,
+              "change": 2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 21.25,
+              "new": 22.95,
+              "change": 1.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 20,
+              "new": 21.6,
+              "change": 1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Ranger Pistol",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 171.6,
+              "new": 184.8,
+              "change": 13.2
+            },
+            {
+              "stat": "Damage",
+              "old": 26,
+              "new": 28,
+              "change": 2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 22.1,
+              "new": 23.8,
+              "change": 1.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 20.8,
+              "new": 22.4,
+              "change": 1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Ranger Pistol",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 184.8,
+              "new": 198,
+              "change": 13.2
+            },
+            {
+              "stat": "Damage",
+              "old": 28,
+              "new": 30,
+              "change": 2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 23.8,
+              "new": 25.5,
+              "change": 1.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 22.4,
+              "new": 24,
+              "change": 1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Thunder Burst SMG",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 24,
+              "new": 27,
+              "change": 3
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Thunder Burst SMG",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 24,
+              "new": 27,
+              "change": 3
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Thunder Burst SMG",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 24,
+              "new": 27,
+              "change": 3
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Thunder Burst SMG",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 24,
+              "new": 27,
+              "change": 3
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Thunder Burst SMG",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 24,
+              "new": 27,
+              "change": 3
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Thunder Burst SMG",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 24,
+              "new": 27,
+              "change": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-12-04",
+      "label": "December 4, 2025",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Lock On Pistol",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 300,
+              "new": 375,
+              "change": 75
+            },
+            {
+              "stat": "Damage",
+              "old": 20,
+              "new": 25,
+              "change": 5
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 20,
+              "change": 4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 13.5,
+              "new": 16.875,
+              "change": 3.375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "label": "September 26, 2025",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Rocket Ram",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "label": "September 12, 2025",
+      "entries": [
+        {
+          "rarity": "Exotic",
+          "name": "Heisted Breacher Shotgun",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 759,
+              "new": 255,
+              "change": -504
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Sticky Grenade Launcher",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 65.8,
+              "new": 54.6,
+              "change": -11.2
+            },
+            {
+              "stat": "Damage",
+              "old": 70,
+              "new": 65,
+              "change": -5
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 70,
+              "new": 65,
+              "change": -5
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 70,
+              "new": 65,
+              "change": -5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.94,
+              "new": 0.84,
+              "change": -0.1
+            },
+            {
+              "stat": "Reload Time",
+              "old": 6.27,
+              "new": 7,
+              "change": 0.73
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Sticky Grenade Launcher",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 69.56,
+              "new": 58.8,
+              "change": -10.76
+            },
+            {
+              "stat": "Damage",
+              "old": 74,
+              "new": 70,
+              "change": -4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 74,
+              "new": 7,
+              "change": -67
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 74,
+              "new": 70,
+              "change": -4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.94,
+              "new": 0.84,
+              "change": -0.1
+            },
+            {
+              "stat": "Reload Time",
+              "old": 5.94,
+              "new": 6.5,
+              "change": 0.56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "label": "August 8, 2025",
+      "entries": [
+        {
+          "rarity": "Uncommon",
+          "name": "Explosive Repeater Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 42,
+              "new": 25,
+              "change": -17
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Explosive Repeater Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 44,
+              "new": 26,
+              "change": -18
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Explosive Repeater Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 46,
+              "new": 27,
+              "change": -19
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Explosive Repeater Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 48,
+              "new": 28,
+              "change": -20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-07-26",
+      "label": "July 26, 2025",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 204,
+              "new": 216,
+              "change": 12
+            },
+            {
+              "stat": "Damage",
+              "old": 17,
+              "new": 18,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 13.6,
+              "new": 14.4,
+              "change": 0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 12.24,
+              "new": 12.96,
+              "change": 0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 17,
+              "new": 18,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 216,
+              "new": 228,
+              "change": 12
+            },
+            {
+              "stat": "Damage",
+              "old": 18,
+              "new": 19,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 14.4,
+              "new": 15.2,
+              "change": 0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 12.96,
+              "new": 13.68,
+              "change": 0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 18,
+              "new": 19,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 228,
+              "new": 240,
+              "change": 12
+            },
+            {
+              "stat": "Damage",
+              "old": 19,
+              "new": 20,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 15.2,
+              "new": 16,
+              "change": 0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 13.68,
+              "new": 14.4,
+              "change": 0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 19,
+              "new": 20,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 240,
+              "new": 252,
+              "change": 12
+            },
+            {
+              "stat": "Damage",
+              "old": 20,
+              "new": 21,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 16.8,
+              "change": 0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 14.4,
+              "new": 15.12,
+              "change": 0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 20,
+              "new": 21,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 252,
+              "new": 264,
+              "change": 12
+            },
+            {
+              "stat": "Damage",
+              "old": 21,
+              "new": 22,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16.8,
+              "new": 17.6,
+              "change": 0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 15.12,
+              "new": 15.84,
+              "change": 0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 21,
+              "new": 22,
+              "change": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "label": "June 20, 2025",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Heavy Sniper Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 600,
+              "new": 150,
+              "change": -450
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Heavy Sniper Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 630,
+              "new": 158,
+              "change": -472
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Heavy Sniper Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 660,
+              "new": 165,
+              "change": -495
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-06-09",
+      "label": "June 9, 2025",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 172.8,
+              "new": 151.2,
+              "change": -21.6
+            },
+            {
+              "stat": "Damage",
+              "old": 57.6,
+              "new": 50.4,
+              "change": -7.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.8,
+              "new": 4.2,
+              "change": -0.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.4,
+              "new": 2.1,
+              "change": -0.3
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 3.8,
+              "new": 3.6,
+              "change": -0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 180,
+              "new": 162,
+              "change": -18
+            },
+            {
+              "stat": "Damage",
+              "old": 60,
+              "new": 54,
+              "change": -6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5,
+              "new": 4.5,
+              "change": -0.5
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.5,
+              "new": 2.25,
+              "change": -0.25
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4,
+              "new": 3.8,
+              "change": -0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 190.8,
+              "new": 169.2,
+              "change": -21.6
+            },
+            {
+              "stat": "Damage",
+              "old": 63.6,
+              "new": 56.4,
+              "change": -7.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.3,
+              "new": 4.7,
+              "change": -0.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.65,
+              "new": 2.35,
+              "change": -0.3
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4.3,
+              "new": 4,
+              "change": -0.3
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 201.6,
+              "new": 176.4,
+              "change": -25.2
+            },
+            {
+              "stat": "Damage",
+              "old": 67.2,
+              "new": 58.8,
+              "change": -8.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.6,
+              "new": 4.9,
+              "change": -0.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.8,
+              "new": 2.45,
+              "change": -0.35
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4.5,
+              "new": 4.2,
+              "change": -0.3
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 208.8,
+              "new": 187.2,
+              "change": -21.6
+            },
+            {
+              "stat": "Damage",
+              "old": 69.6,
+              "new": 62.4,
+              "change": -7.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.8,
+              "new": 5.2,
+              "change": -0.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.9,
+              "new": 2.6,
+              "change": -0.3
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4.7,
+              "new": 4.4,
+              "change": -0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-04-11",
+      "label": "April 11, 2025",
+      "entries": [
+        {
+          "rarity": "Mythic",
+          "name": "Overclocked Pulse Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 266,
+              "new": 237.5,
+              "change": -28.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 7,
+              "new": 6.25,
+              "change": -0.75
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Highcard's Havoc Suppressed Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 39,
+              "new": 26,
+              "change": -13
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 1.87,
+              "new": 2.295,
+              "change": 0.425
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Enhanced Havoc Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 108,
+              "new": 103.5,
+              "change": -4.5
+            },
+            {
+              "stat": "Damage",
+              "old": 144,
+              "new": 138,
+              "change": -6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 7.2,
+              "new": 6.9,
+              "change": -0.3
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4.2,
+              "new": 4.025,
+              "change": -0.175
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-03-29",
+      "label": "March 29, 2025",
+      "entries": [
+        {
+          "rarity": "Exotic",
+          "name": "Dragon's Breath Sniper",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 39.93,
+              "new": 90.75,
+              "change": 50.82
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.33,
+              "new": 0.75,
+              "change": 0.42
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.35,
+              "new": 2.7,
+              "change": 0.35
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Havoc Suppressed Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 31,
+              "new": 21,
+              "change": -10
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Havoc Suppressed Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 32,
+              "new": 22,
+              "change": -10
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Havoc Suppressed Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 34,
+              "new": 23,
+              "change": -11
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Havoc Suppressed Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 36,
+              "new": 24,
+              "change": -12
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Havoc Suppressed Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 37,
+              "new": 25,
+              "change": -12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-02-14",
+      "label": "February 14, 2025",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Heavy Sniper Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 39.6,
+              "new": 76.8,
+              "change": 37.2
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.33,
+              "new": 0.64,
+              "change": 0.31
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Heavy Sniper Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 41.58,
+              "new": 80.64,
+              "change": 39.06
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.33,
+              "new": 0.64,
+              "change": 0.31
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Heavy Sniper Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 43.56,
+              "new": 84.48,
+              "change": 40.92
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.33,
+              "new": 0.64,
+              "change": 0.31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-01-31",
+      "label": "January 31, 2025",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Shockwave Hammer",
+          "stats": [
+            {
+              "stat": "Magazine Size",
+              "old": 4,
+              "new": 3,
+              "change": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2025-01-18",
+      "label": "January 18, 2025",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Burst Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 85.25,
+              "new": 74.4,
+              "change": -10.85
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 24.8,
+              "new": 29.45,
+              "change": 4.65
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 20.925,
+              "new": 27.9,
+              "change": 6.975
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2.75,
+              "new": 2.4,
+              "change": -0.35
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.86,
+              "new": 2.75,
+              "change": -0.11
+            },
+            {
+              "stat": "Spread",
+              "old": 0.25,
+              "new": 0.15,
+              "change": -0.1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 1.925,
+              "new": 2.75,
+              "change": 0.825
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.25,
+              "new": 0.4,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Burst Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 88,
+              "new": 76.8,
+              "change": -11.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 25.6,
+              "new": 30.4,
+              "change": 4.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 21.6,
+              "new": 28.8,
+              "change": 7.2
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2.75,
+              "new": 2.4,
+              "change": -0.35
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.73,
+              "new": 2.63,
+              "change": -0.1
+            },
+            {
+              "stat": "Spread",
+              "old": 0.25,
+              "new": 0.15,
+              "change": -0.1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 1.838,
+              "new": 2.625,
+              "change": 0.787
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.25,
+              "new": 0.4,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Burst Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 93.5,
+              "new": 81.6,
+              "change": -11.9
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 27.2,
+              "new": 32.3,
+              "change": 5.1
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 22.95,
+              "new": 30.6,
+              "change": 7.65
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2.75,
+              "new": 2.4,
+              "change": -0.35
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.6,
+              "new": 2.5,
+              "change": -0.1
+            },
+            {
+              "stat": "Spread",
+              "old": 0.25,
+              "new": 0.15,
+              "change": -0.1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 1.75,
+              "new": 2.5,
+              "change": 0.75
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.25,
+              "new": 0.4,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Burst Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 99,
+              "new": 86.4,
+              "change": -12.6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 28.8,
+              "new": 34.2,
+              "change": 5.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 24.3,
+              "new": 32.4,
+              "change": 8.1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2.75,
+              "new": 2.4,
+              "change": -0.35
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.47,
+              "new": 2.38,
+              "change": -0.09
+            },
+            {
+              "stat": "Spread",
+              "old": 0.25,
+              "new": 0.15,
+              "change": -0.1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 1.663,
+              "new": 2.375,
+              "change": 0.712
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.25,
+              "new": 0.4,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Burst Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 101.75,
+              "new": 88.8,
+              "change": -12.95
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 29.6,
+              "new": 35.15,
+              "change": 5.55
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 24.975,
+              "new": 33.3,
+              "change": 8.325
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 2.75,
+              "new": 2.4,
+              "change": -0.35
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.34,
+              "new": 2.25,
+              "change": -0.09
+            },
+            {
+              "stat": "Spread",
+              "old": 0.25,
+              "new": 0.15,
+              "change": -0.1
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 1.575,
+              "new": 2.25,
+              "change": 0.675
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.25,
+              "new": 0.4,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 115.5,
+              "new": 107.8,
+              "change": -7.7
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.5,
+              "new": 1.4,
+              "change": -0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 121.5,
+              "new": 113.4,
+              "change": -8.1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.5,
+              "new": 1.4,
+              "change": -0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 127.5,
+              "new": 119,
+              "change": -8.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.5,
+              "new": 1.4,
+              "change": -0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 133.5,
+              "new": 124.6,
+              "change": -8.9
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.5,
+              "new": 1.4,
+              "change": -0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 141,
+              "new": 131.6,
+              "change": -9.4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.5,
+              "new": 1.4,
+              "change": -0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-12-13",
+      "label": "December 13, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 185.5,
+              "new": 189,
+              "change": 3.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.25,
+              "new": 13.5,
+              "change": 0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 198.75,
+              "new": 202.5,
+              "change": 3.75
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.25,
+              "new": 13.5,
+              "change": 0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 212,
+              "new": 216,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.25,
+              "new": 13.5,
+              "change": 0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 225.25,
+              "new": 229.5,
+              "change": 4.25
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.25,
+              "new": 13.5,
+              "change": 0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 238.5,
+              "new": 243,
+              "change": 4.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.25,
+              "new": 13.5,
+              "change": 0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 100.1,
+              "new": 115.5,
+              "change": 15.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 7.7,
+              "new": 6.16,
+              "change": -1.54
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 5.775,
+              "new": 3.08,
+              "change": -2.695
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 1.5,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 105.3,
+              "new": 121.5,
+              "change": 16.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 8.1,
+              "new": 6.48,
+              "change": -1.62
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6.075,
+              "new": 3.24,
+              "change": -2.835
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 1.5,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 110.5,
+              "new": 127.5,
+              "change": 17
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 8.5,
+              "new": 6.8,
+              "change": -1.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6.375,
+              "new": 3.4,
+              "change": -2.975
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 1.5,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 115.7,
+              "new": 133.5,
+              "change": 17.8
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 8.9,
+              "new": 7.12,
+              "change": -1.78
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6.675,
+              "new": 3.56,
+              "change": -3.115
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 1.5,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Maven Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 122.2,
+              "new": 141,
+              "change": 18.8
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 9.4,
+              "new": 7.52,
+              "change": -1.88
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 7.05,
+              "new": 3.76,
+              "change": -3.29
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.3,
+              "new": 1.5,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Thunder Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 1.1,
+              "change": 0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Thunder Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 1.1,
+              "change": 0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Thunder Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 1.1,
+              "change": 0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Thunder Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 1.1,
+              "change": 0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Thunder Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 1,
+              "new": 1.1,
+              "change": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-12-04",
+      "label": "December 4, 2024",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Assault Rifle",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 2.19,
+              "new": 2.38,
+              "change": 0.19
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Assault Rifle",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 2.07,
+              "new": 2.25,
+              "change": 0.18
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Primal Flame Bow",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Damage",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 47,
+              "new": 53,
+              "change": 6
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Primal Flame Bow",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Damage",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 50,
+              "new": 55,
+              "change": 5
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Primal Stink Bow",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Damage",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 68,
+              "new": 79,
+              "change": 11
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 47,
+              "new": 53,
+              "change": 6
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Primal Stink Bow",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Damage",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 72,
+              "new": 83,
+              "change": 11
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 50,
+              "new": 55,
+              "change": 5
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 202.5,
+              "new": 185.5,
+              "change": -17
+            },
+            {
+              "stat": "Damage",
+              "old": 15,
+              "new": 14,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.5,
+              "new": 13.25,
+              "change": -0.25
+            },
+            {
+              "stat": "Magazine Size",
+              "old": 35,
+              "new": 33,
+              "change": -2
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.48,
+              "new": 2.75,
+              "change": 0.27
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 216,
+              "new": 198.75,
+              "change": -17.25
+            },
+            {
+              "stat": "Damage",
+              "old": 16,
+              "new": 15,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.5,
+              "new": 13.25,
+              "change": -0.25
+            },
+            {
+              "stat": "Magazine Size",
+              "old": 35,
+              "new": 33,
+              "change": -2
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.36,
+              "new": 2.63,
+              "change": 0.27
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 229.5,
+              "new": 212,
+              "change": -17.5
+            },
+            {
+              "stat": "Damage",
+              "old": 17,
+              "new": 16,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.5,
+              "new": 13.25,
+              "change": -0.25
+            },
+            {
+              "stat": "Magazine Size",
+              "old": 35,
+              "new": 33,
+              "change": -2
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.25,
+              "new": 2.5,
+              "change": 0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 243,
+              "new": 225.25,
+              "change": -17.75
+            },
+            {
+              "stat": "Damage",
+              "old": 18,
+              "new": 17,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.5,
+              "new": 13.25,
+              "change": -0.25
+            },
+            {
+              "stat": "Magazine Size",
+              "old": 35,
+              "new": 33,
+              "change": -2
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.14,
+              "new": 2.38,
+              "change": 0.24
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 256.5,
+              "new": 238.5,
+              "change": -18
+            },
+            {
+              "stat": "Damage",
+              "old": 19,
+              "new": 18,
+              "change": -1
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 13.5,
+              "new": 13.25,
+              "change": -0.25
+            },
+            {
+              "stat": "Magazine Size",
+              "old": 35,
+              "new": 33,
+              "change": -2
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.03,
+              "new": 2.25,
+              "change": 0.22
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 10.5,
+              "new": 9.8,
+              "change": -0.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6.75,
+              "new": 6.3,
+              "change": -0.45
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 18,
+              "new": 14,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 11.2,
+              "new": 10.5,
+              "change": -0.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 7.2,
+              "new": 6.75,
+              "change": -0.45
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 19,
+              "new": 15,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 11.9,
+              "new": 11.2,
+              "change": -0.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 7.65,
+              "new": 7.2,
+              "change": -0.45
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 20,
+              "new": 16,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 12.6,
+              "new": 11.9,
+              "change": -0.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 8.1,
+              "new": 7.65,
+              "change": -0.45
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 21,
+              "new": 17,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Machine SMG",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 13.3,
+              "new": 12.6,
+              "change": -0.7
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 8.55,
+              "new": 8.1,
+              "change": -0.45
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 22,
+              "new": 18,
+              "change": -4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-10-18",
+      "label": "October 18, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 115.5,
+              "new": 123,
+              "change": 7.5
+            },
+            {
+              "stat": "Damage",
+              "old": 77,
+              "new": 82,
+              "change": 5
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.62,
+              "new": 4.92,
+              "change": 0.3
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 1.925,
+              "new": 2.05,
+              "change": 0.125
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 121.5,
+              "new": 129,
+              "change": 7.5
+            },
+            {
+              "stat": "Damage",
+              "old": 81,
+              "new": 86,
+              "change": 5
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.86,
+              "new": 5.16,
+              "change": 0.3
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.025,
+              "new": 2.15,
+              "change": 0.125
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 127.5,
+              "new": 136.5,
+              "change": 9
+            },
+            {
+              "stat": "Damage",
+              "old": 85,
+              "new": 91,
+              "change": 6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.1,
+              "new": 5.46,
+              "change": 0.36
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.125,
+              "new": 2.275,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 133.5,
+              "new": 144,
+              "change": 10.5
+            },
+            {
+              "stat": "Damage",
+              "old": 89,
+              "new": 96,
+              "change": 7
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.34,
+              "new": 5.76,
+              "change": 0.42
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.225,
+              "new": 2.4,
+              "change": 0.175
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 141,
+              "new": 150,
+              "change": 9
+            },
+            {
+              "stat": "Damage",
+              "old": 94,
+              "new": 100,
+              "change": 6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.64,
+              "new": 6,
+              "change": 0.36
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.35,
+              "new": 2.5,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 147,
+              "new": 157.5,
+              "change": 10.5
+            },
+            {
+              "stat": "Damage",
+              "old": 98,
+              "new": 105,
+              "change": 7
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.88,
+              "new": 6.3,
+              "change": 0.42
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.45,
+              "new": 2.625,
+              "change": 0.175
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-10-04",
+      "label": "October 4, 2024",
+      "entries": [
+        {
+          "rarity": "Mythic",
+          "name": "Chrome Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 294,
+              "new": 147,
+              "change": -147
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 3,
+              "new": 1.5,
+              "change": -1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-09-18",
+      "label": "September 18, 2024",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Hunter Bolt-Action Sniper",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 57.6,
+              "new": 64,
+              "change": 6.4
+            },
+            {
+              "stat": "Damage",
+              "old": 90,
+              "new": 100,
+              "change": 10
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 90,
+              "new": 100,
+              "change": 10
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 90,
+              "new": 100,
+              "change": 10
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 90,
+              "new": 100,
+              "change": 10
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Hunter Bolt-Action Sniper",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 60.8,
+              "new": 67.2,
+              "change": 6.4
+            },
+            {
+              "stat": "Damage",
+              "old": 95,
+              "new": 105,
+              "change": 10
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 95,
+              "new": 105,
+              "change": 10
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 95,
+              "new": 105,
+              "change": 10
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 95,
+              "new": 105,
+              "change": 10
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Hunter Bolt-Action Sniper",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 63.36,
+              "new": 70.4,
+              "change": 7.04
+            },
+            {
+              "stat": "Damage",
+              "old": 99,
+              "new": 110,
+              "change": 11
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 99,
+              "new": 110,
+              "change": 11
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 99,
+              "new": 110,
+              "change": 11
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 99,
+              "new": 110,
+              "change": 11
+            }
+          ]
+        },
+        {
+          "rarity": "Exotic",
+          "name": "Boom Sniper Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 60,
+              "new": 75,
+              "change": 15
+            },
+            {
+              "stat": "Damage",
+              "old": 60,
+              "new": 75,
+              "change": 15
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 60,
+              "new": 75,
+              "change": 15
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 60,
+              "new": 75,
+              "change": 15
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 120,
+              "new": 150,
+              "change": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-08-30",
+      "label": "August 30, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Charge SMG",
+          "stats": [
+            {
+              "stat": "Vertical Recoil",
+              "old": 3.41,
+              "new": 1.65,
+              "change": -1.76
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Charge SMG",
+          "stats": [
+            {
+              "stat": "Vertical Recoil",
+              "old": 3.255,
+              "new": 1.575,
+              "change": -1.68
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Charge SMG",
+          "stats": [
+            {
+              "stat": "Vertical Recoil",
+              "old": 3.1,
+              "new": 1.5,
+              "change": -1.6
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Charge SMG",
+          "stats": [
+            {
+              "stat": "Vertical Recoil",
+              "old": 2.945,
+              "new": 1.425,
+              "change": -1.52
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Charge SMG",
+          "stats": [
+            {
+              "stat": "Vertical Recoil",
+              "old": 2.79,
+              "new": 1.35,
+              "change": -1.44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-07-18",
+      "label": "July 18, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 25.65,
+              "new": 24.3,
+              "change": -1.35
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 24.3,
+              "new": 22.14,
+              "change": -2.16
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 27.55,
+              "new": 26.1,
+              "change": -1.45
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 26.1,
+              "new": 23.78,
+              "change": -2.32
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 28.5,
+              "new": 27,
+              "change": -1.5
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 27,
+              "new": 24.6,
+              "change": -2.4
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 30.4,
+              "new": 28.8,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 28.8,
+              "new": 26.24,
+              "change": -2.56
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 31.35,
+              "new": 29.7,
+              "change": -1.65
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 29.7,
+              "new": 27.06,
+              "change": -2.64
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Slone's Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "Damage (medium range)",
+              "old": 33.25,
+              "new": 31.5,
+              "change": -1.75
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 31.5,
+              "new": 28.7,
+              "change": -2.8
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 67.08,
+              "new": 59.28,
+              "change": -7.8
+            },
+            {
+              "stat": "Damage",
+              "old": 103.2,
+              "new": 91.2,
+              "change": -12
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 6.88,
+              "new": 6.08,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4.3,
+              "new": 3.8,
+              "change": -0.5
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 70.2,
+              "new": 62.4,
+              "change": -7.8
+            },
+            {
+              "stat": "Damage",
+              "old": 108,
+              "new": 96,
+              "change": -12
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 7.2,
+              "new": 6.4,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4.5,
+              "new": 4,
+              "change": -0.5
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 74.1,
+              "new": 65.52,
+              "change": -8.58
+            },
+            {
+              "stat": "Damage",
+              "old": 114,
+              "new": 100.8,
+              "change": -13.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 7.6,
+              "new": 6.72,
+              "change": -0.88
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4.75,
+              "new": 4.2,
+              "change": -0.55
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 78,
+              "new": 68.64,
+              "change": -9.36
+            },
+            {
+              "stat": "Damage",
+              "old": 120,
+              "new": 105.6,
+              "change": -14.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 8,
+              "new": 7.04,
+              "change": -0.96
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 5,
+              "new": 4.4,
+              "change": -0.6
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 81.9,
+              "new": 71.76,
+              "change": -10.14
+            },
+            {
+              "stat": "Damage",
+              "old": 126,
+              "new": 110.4,
+              "change": -15.6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 8.4,
+              "new": 7.36,
+              "change": -1.04
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 5.25,
+              "new": 4.6,
+              "change": -0.65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-06-21",
+      "label": "June 21, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 70,
+              "new": 67.5,
+              "change": -2.5
+            },
+            {
+              "stat": "Damage",
+              "old": 28,
+              "new": 27,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 26.6,
+              "new": 25.65,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 25.2,
+              "new": 24.3,
+              "change": -0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 28,
+              "new": 27,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 77.5,
+              "new": 75,
+              "change": -2.5
+            },
+            {
+              "stat": "Damage",
+              "old": 31,
+              "new": 30,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 29.45,
+              "new": 28.5,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 27.9,
+              "new": 27,
+              "change": -0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 31,
+              "new": 30,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 82.5,
+              "new": 80,
+              "change": -2.5
+            },
+            {
+              "stat": "Damage",
+              "old": 33,
+              "new": 32,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 31.35,
+              "new": 30.4,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 29.7,
+              "new": 28.8,
+              "change": -0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 33,
+              "new": 32,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 85,
+              "new": 82.5,
+              "change": -2.5
+            },
+            {
+              "stat": "Damage",
+              "old": 34,
+              "new": 33,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 32.3,
+              "new": 31.35,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 30.6,
+              "new": 29.7,
+              "change": -0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 34,
+              "new": 33,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Slone's Striker Burst Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 90,
+              "new": 87.5,
+              "change": -2.5
+            },
+            {
+              "stat": "Damage",
+              "old": 36,
+              "new": 35,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 34.2,
+              "new": 33.25,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 32.4,
+              "new": 31.5,
+              "change": -0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 36,
+              "new": 35,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Two-Shot Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 45.9,
+              "new": 48.45,
+              "change": 2.55
+            },
+            {
+              "stat": "Damage",
+              "old": 54,
+              "new": 57,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.32,
+              "new": 4.56,
+              "change": 0.24
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.16,
+              "new": 2.28,
+              "change": 0.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 2.7,
+              "new": 3.6,
+              "change": 0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Two-Shot Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 48.45,
+              "new": 51,
+              "change": 2.55
+            },
+            {
+              "stat": "Damage",
+              "old": 57,
+              "new": 60,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.56,
+              "new": 4.8,
+              "change": 0.24
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.28,
+              "new": 2.4,
+              "change": 0.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 2.9,
+              "new": 3.8,
+              "change": 0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Two-Shot Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 51,
+              "new": 53.55,
+              "change": 2.55
+            },
+            {
+              "stat": "Damage",
+              "old": 60,
+              "new": 63,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.8,
+              "new": 5.04,
+              "change": 0.24
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.4,
+              "new": 2.52,
+              "change": 0.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 3,
+              "new": 4,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Two-Shot Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 53.55,
+              "new": 56.1,
+              "change": 2.55
+            },
+            {
+              "stat": "Damage",
+              "old": 63,
+              "new": 66,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.04,
+              "new": 5.28,
+              "change": 0.24
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.52,
+              "new": 2.64,
+              "change": 0.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 3.2,
+              "new": 4.2,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Two-Shot Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 56.1,
+              "new": 58.65,
+              "change": 2.55
+            },
+            {
+              "stat": "Damage",
+              "old": 66,
+              "new": 69,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.28,
+              "new": 5.52,
+              "change": 0.24
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.64,
+              "new": 2.76,
+              "change": 0.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 3.3,
+              "new": 4.4,
+              "change": 1.1
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Two-Shot Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 58.65,
+              "new": 61.2,
+              "change": 2.55
+            },
+            {
+              "stat": "Damage",
+              "old": 69,
+              "new": 72,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.52,
+              "new": 5.76,
+              "change": 0.24
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.76,
+              "new": 2.88,
+              "change": 0.12
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 3.5,
+              "new": 4.6,
+              "change": 1.1
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 240,
+              "new": 204,
+              "change": -36
+            },
+            {
+              "stat": "Damage",
+              "old": 20,
+              "new": 17,
+              "change": -3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 13.6,
+              "change": -2.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 14.4,
+              "new": 12.24,
+              "change": -2.16
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 20,
+              "new": 17,
+              "change": -3
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 252,
+              "new": 216,
+              "change": -36
+            },
+            {
+              "stat": "Damage",
+              "old": 21,
+              "new": 18,
+              "change": -3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16.8,
+              "new": 14.4,
+              "change": -2.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 15.12,
+              "new": 12.96,
+              "change": -2.16
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 21,
+              "new": 18,
+              "change": -3
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 264,
+              "new": 228,
+              "change": -36
+            },
+            {
+              "stat": "Damage",
+              "old": 22,
+              "new": 19,
+              "change": -3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 17.6,
+              "new": 15.2,
+              "change": -2.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 15.84,
+              "new": 13.68,
+              "change": -2.16
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 22,
+              "new": 19,
+              "change": -3
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 276,
+              "new": 240,
+              "change": -36
+            },
+            {
+              "stat": "Damage",
+              "old": 23,
+              "new": 20,
+              "change": -3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 18.4,
+              "new": 16,
+              "change": -2.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 16.56,
+              "new": 14.4,
+              "change": -2.16
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 23,
+              "new": 20,
+              "change": -3
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Combat SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 288,
+              "new": 252,
+              "change": -36
+            },
+            {
+              "stat": "Damage",
+              "old": 24,
+              "new": 21,
+              "change": -3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 19.2,
+              "new": 16.8,
+              "change": -2.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 17.28,
+              "new": 15.12,
+              "change": -2.16
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 24,
+              "new": 21,
+              "change": -3
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 192,
+              "new": 180,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 16,
+              "new": 15,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 12.8,
+              "new": 12,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 11.52,
+              "new": 10.8,
+              "change": -0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 23,
+              "new": 18,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 204,
+              "new": 192,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 17,
+              "new": 16,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 13.6,
+              "new": 12.8,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 12.24,
+              "new": 11.52,
+              "change": -0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 24,
+              "new": 19,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 216,
+              "new": 204,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 18,
+              "new": 17,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 14.4,
+              "new": 13.6,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 12.96,
+              "new": 12.24,
+              "change": -0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 25,
+              "new": 20,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 228,
+              "new": 216,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 19,
+              "new": 18,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 15.2,
+              "new": 14.4,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 13.68,
+              "new": 12.96,
+              "change": -0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 26,
+              "new": 21,
+              "change": -5
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 240,
+              "new": 228,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 20,
+              "new": 19,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 15.2,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 14.4,
+              "new": 13.68,
+              "change": -0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 28,
+              "new": 22,
+              "change": -6
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 252,
+              "new": 240,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 21,
+              "new": 20,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16.8,
+              "new": 16,
+              "change": -0.8
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 15.12,
+              "new": 14.4,
+              "change": -0.72
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 29,
+              "new": 23,
+              "change": -6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-05-03",
+      "label": "May 3, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 113.4,
+              "new": 126,
+              "change": 12.6
+            },
+            {
+              "stat": "Damage",
+              "old": 75.6,
+              "new": 84,
+              "change": 8.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.78,
+              "new": 4.2,
+              "change": 0.42
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.52,
+              "new": 2.8,
+              "change": 0.28
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 120.6,
+              "new": 133.2,
+              "change": 12.6
+            },
+            {
+              "stat": "Damage",
+              "old": 80.4,
+              "new": 88.8,
+              "change": 8.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.02,
+              "new": 4.44,
+              "change": 0.42
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.68,
+              "new": 2.96,
+              "change": 0.28
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 126,
+              "new": 140.4,
+              "change": 14.4
+            },
+            {
+              "stat": "Damage",
+              "old": 84,
+              "new": 93.6,
+              "change": 9.6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.2,
+              "new": 4.68,
+              "change": 0.48
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.8,
+              "new": 3.12,
+              "change": 0.32
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 133.2,
+              "new": 147.6,
+              "change": 14.4
+            },
+            {
+              "stat": "Damage",
+              "old": 88.8,
+              "new": 98.4,
+              "change": 9.6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.44,
+              "new": 4.92,
+              "change": 0.48
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 2.96,
+              "new": 3.28,
+              "change": 0.32
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 138.6,
+              "new": 154.8,
+              "change": 16.2
+            },
+            {
+              "stat": "Damage",
+              "old": 92.4,
+              "new": 103.2,
+              "change": 10.8
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 4.62,
+              "new": 5.16,
+              "change": 0.54
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 3.08,
+              "new": 3.44,
+              "change": 0.36
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "Damage (long range)",
+              "old": 4.8,
+              "new": 2.4,
+              "change": -2.4
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "Damage (long range)",
+              "old": 5,
+              "new": 2.5,
+              "change": -2.5
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "Damage (long range)",
+              "old": 5.3,
+              "new": 2.65,
+              "change": -2.65
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "Damage (long range)",
+              "old": 5.6,
+              "new": 2.8,
+              "change": -2.8
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "Damage (long range)",
+              "old": 5.8,
+              "new": 2.9,
+              "change": -2.9
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 56.16,
+              "new": 67.08,
+              "change": 10.92
+            },
+            {
+              "stat": "Damage",
+              "old": 86.4,
+              "new": 103.2,
+              "change": 16.8
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 5.76,
+              "new": 6.88,
+              "change": 1.12
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 3.6,
+              "new": 4.3,
+              "change": 0.7
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 59.28,
+              "new": 70.2,
+              "change": 10.92
+            },
+            {
+              "stat": "Damage",
+              "old": 91.2,
+              "new": 108,
+              "change": 16.8
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 6.08,
+              "new": 7.2,
+              "change": 1.12
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 3.8,
+              "new": 4.5,
+              "change": 0.7
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 62.4,
+              "new": 74.1,
+              "change": 11.7
+            },
+            {
+              "stat": "Damage",
+              "old": 96,
+              "new": 114,
+              "change": 18
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 6.4,
+              "new": 7.6,
+              "change": 1.2
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4,
+              "new": 4.75,
+              "change": 0.75
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 65.52,
+              "new": 78,
+              "change": 12.48
+            },
+            {
+              "stat": "Damage",
+              "old": 100.8,
+              "new": 120,
+              "change": 19.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 6.72,
+              "new": 8,
+              "change": 1.28
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4.2,
+              "new": 5,
+              "change": 0.8
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 68.64,
+              "new": 81.9,
+              "change": 13.26
+            },
+            {
+              "stat": "Damage",
+              "old": 105.6,
+              "new": 126,
+              "change": 20.4
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 7.04,
+              "new": 8.4,
+              "change": 1.36
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 4.4,
+              "new": 5.25,
+              "change": 0.85
+            }
+          ]
+        },
+        {
+          "rarity": "Exotic",
+          "name": "The Dub",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 228,
+              "new": 233.7,
+              "change": 5.7
+            },
+            {
+              "stat": "Damage",
+              "old": 120,
+              "new": 123,
+              "change": 3
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 7.8,
+              "new": 7.995,
+              "change": 0.195
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6,
+              "new": 6.15,
+              "change": 0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Ranger Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 351,
+              "new": 329.4,
+              "change": -21.6
+            },
+            {
+              "stat": "Damage",
+              "old": 117,
+              "new": 109.8,
+              "change": -7.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 9.1,
+              "new": 8.54,
+              "change": -0.56
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 5.2,
+              "new": 4.88,
+              "change": -0.32
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Ranger Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 369.9,
+              "new": 345.6,
+              "change": -24.3
+            },
+            {
+              "stat": "Damage",
+              "old": 123.3,
+              "new": 115.2,
+              "change": -8.1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 9.59,
+              "new": 8.96,
+              "change": -0.63
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 5.48,
+              "new": 5.12,
+              "change": -0.36
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Ranger Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 388.8,
+              "new": 364.5,
+              "change": -24.3
+            },
+            {
+              "stat": "Damage",
+              "old": 129.6,
+              "new": 121.5,
+              "change": -8.1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 10.08,
+              "new": 9.45,
+              "change": -0.63
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 5.76,
+              "new": 5.4,
+              "change": -0.36
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Ranger Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 407.7,
+              "new": 383.4,
+              "change": -24.3
+            },
+            {
+              "stat": "Damage",
+              "old": 135.9,
+              "new": 127.8,
+              "change": -8.1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 10.57,
+              "new": 9.94,
+              "change": -0.63
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6.04,
+              "new": 5.68,
+              "change": -0.36
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Ranger Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 426.6,
+              "new": 402.3,
+              "change": -24.3
+            },
+            {
+              "stat": "Damage",
+              "old": 142.2,
+              "new": 134.1,
+              "change": -8.1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 11.06,
+              "new": 10.43,
+              "change": -0.63
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 6.32,
+              "new": 5.96,
+              "change": -0.36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-03-20",
+      "label": "March 20, 2024",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Thermal Scoped Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 159.5,
+              "new": 116,
+              "change": -43.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 5.5,
+              "new": 4,
+              "change": -1.5
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 3.563,
+              "new": 4.038,
+              "change": 0.475
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.325,
+              "new": 0.5,
+              "change": 0.175
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Thermal Scoped Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 170.5,
+              "new": 124,
+              "change": -46.5
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 5.5,
+              "new": 4,
+              "change": -1.5
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 3.375,
+              "new": 3.825,
+              "change": 0.45
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 0.325,
+              "new": 0.5,
+              "change": 0.175
+            }
+          ]
+        },
+        {
+          "rarity": "Exotic",
+          "name": "Storm Scout",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 76.5,
+              "new": 81,
+              "change": 4.5
+            },
+            {
+              "stat": "Damage",
+              "old": 85,
+              "new": 90,
+              "change": 5
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 85,
+              "new": 90,
+              "change": 5
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 85,
+              "new": 90,
+              "change": 5
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 85,
+              "new": 90,
+              "change": 5
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 180,
+              "new": 172.8,
+              "change": -7.2
+            },
+            {
+              "stat": "Damage",
+              "old": 45,
+              "new": 57.6,
+              "change": 12.6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.375,
+              "new": 4.8,
+              "change": 1.425
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 0.9,
+              "new": 4.8,
+              "change": 3.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4.5,
+              "new": 3.8,
+              "change": -0.7
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 4,
+              "new": 3,
+              "change": -1
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.73,
+              "new": 3.85,
+              "change": -0.88
+            },
+            {
+              "stat": "Impact",
+              "old": 17.1,
+              "new": 50.4,
+              "change": 33.3
+            },
+            {
+              "stat": "Spread",
+              "old": 0.65,
+              "new": 1,
+              "change": 0.35
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 9.9,
+              "new": 6.6,
+              "change": -3.3
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 1.5,
+              "new": 1.25,
+              "change": -0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 192,
+              "new": 180,
+              "change": -12
+            },
+            {
+              "stat": "Damage",
+              "old": 48,
+              "new": 60,
+              "change": 12
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.6,
+              "new": 5,
+              "change": 1.4
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 0.96,
+              "new": 5,
+              "change": 4.04
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 4.8,
+              "new": 4,
+              "change": -0.8
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 4,
+              "new": 3,
+              "change": -1
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.52,
+              "new": 3.68,
+              "change": -0.84
+            },
+            {
+              "stat": "Impact",
+              "old": 18.1,
+              "new": 53.2,
+              "change": 35.1
+            },
+            {
+              "stat": "Spread",
+              "old": 0.65,
+              "new": 1,
+              "change": 0.35
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 9.45,
+              "new": 6.3,
+              "change": -3.15
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 1.5,
+              "new": 1.25,
+              "change": -0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 200,
+              "new": 190.8,
+              "change": -9.2
+            },
+            {
+              "stat": "Damage",
+              "old": 50,
+              "new": 63.6,
+              "change": 13.6
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.75,
+              "new": 5.3,
+              "change": 1.55
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 1,
+              "new": 5.3,
+              "change": 4.3
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 5,
+              "new": 4.3,
+              "change": -0.7
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 4,
+              "new": 3,
+              "change": -1
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.3,
+              "new": 3.5,
+              "change": -0.8
+            },
+            {
+              "stat": "Impact",
+              "old": 19,
+              "new": 56,
+              "change": 37
+            },
+            {
+              "stat": "Spread",
+              "old": 0.65,
+              "new": 1,
+              "change": 0.35
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 9,
+              "new": 6,
+              "change": -3
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 1.5,
+              "new": 1.25,
+              "change": -0.25
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Drum Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 212,
+              "new": 201.6,
+              "change": -10.4
+            },
+            {
+              "stat": "Damage",
+              "old": 53,
+              "new": 67.2,
+              "change": 14.2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 3.975,
+              "new": 5.6,
+              "change": 1.625
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 1.06,
+              "new": 5.6,
+              "change": 4.54
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 5.3,
+              "new": 4.5,
+              "change": -0.8
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 4,
+              "new": 3,
+              "change": -1
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.09,
+              "new": 3.33,
+              "change": -0.76
+            },
+            {
+              "stat": "Impact",
+              "old": 20,
+              "new": 58.8,
+              "change": 38.8
+            },
+            {
+              "stat": "Spread",
+              "old": 0.65,
+              "new": 1,
+              "change": 0.35
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 8.55,
+              "new": 5.7,
+              "change": -2.85
+            },
+            {
+              "stat": "Horizontal Recoil",
+              "old": 1.5,
+              "new": 1.25,
+              "change": -0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-02-01",
+      "label": "February 1, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 189,
+              "new": 180,
+              "change": -9
+            },
+            {
+              "stat": "Damage",
+              "old": 21,
+              "new": 20,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 19.95,
+              "new": 19,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 18.9,
+              "new": 18,
+              "change": -0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 198,
+              "new": 189,
+              "change": -9
+            },
+            {
+              "stat": "Damage",
+              "old": 22,
+              "new": 21,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 20.9,
+              "new": 19.95,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 19.8,
+              "new": 18.9,
+              "change": -0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 207,
+              "new": 198,
+              "change": -9
+            },
+            {
+              "stat": "Damage",
+              "old": 23,
+              "new": 22,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 21.85,
+              "new": 20.9,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 20.7,
+              "new": 19.8,
+              "change": -0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 216,
+              "new": 207,
+              "change": -9
+            },
+            {
+              "stat": "Damage",
+              "old": 24,
+              "new": 23,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 22.8,
+              "new": 21.85,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 21.6,
+              "new": 20.7,
+              "change": -0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 225,
+              "new": 216,
+              "change": -9
+            },
+            {
+              "stat": "Damage",
+              "old": 25,
+              "new": 24,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 23.75,
+              "new": 22.8,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 22.5,
+              "new": 21.6,
+              "change": -0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "The Foundation's MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 260,
+              "new": 250,
+              "change": -10
+            },
+            {
+              "stat": "Damage",
+              "old": 26,
+              "new": 25,
+              "change": -1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 24.7,
+              "new": 23.75,
+              "change": -0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 23.4,
+              "new": 22.5,
+              "change": -0.9
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 8.8,
+              "new": 6.27,
+              "change": -2.53
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 8.4,
+              "new": 5.99,
+              "change": -2.41
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 8,
+              "new": 5.7,
+              "change": -2.3
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 7.6,
+              "new": 5.42,
+              "change": -2.18
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Reload Time",
+              "old": 7.2,
+              "new": 5.13,
+              "change": -2.07
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 216,
+              "new": 192,
+              "change": -24
+            },
+            {
+              "stat": "Damage",
+              "old": 18,
+              "new": 16,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 14.4,
+              "new": 12.8,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 12.96,
+              "new": 11.52,
+              "change": -1.44
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 228,
+              "new": 204,
+              "change": -24
+            },
+            {
+              "stat": "Damage",
+              "old": 19,
+              "new": 17,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 15.2,
+              "new": 13.6,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 13.68,
+              "new": 12.24,
+              "change": -1.44
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 240,
+              "new": 216,
+              "change": -24
+            },
+            {
+              "stat": "Damage",
+              "old": 20,
+              "new": 18,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16,
+              "new": 14.4,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 14.4,
+              "new": 12.96,
+              "change": -1.44
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 252,
+              "new": 228,
+              "change": -24
+            },
+            {
+              "stat": "Damage",
+              "old": 21,
+              "new": 19,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 16.8,
+              "new": 15.2,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 15.12,
+              "new": 13.68,
+              "change": -1.44
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 264,
+              "new": 240,
+              "change": -24
+            },
+            {
+              "stat": "Damage",
+              "old": 22,
+              "new": 20,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 17.6,
+              "new": 16,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 15.84,
+              "new": 14.4,
+              "change": -1.44
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Gunnar's Stinger SMG",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 288,
+              "new": 264,
+              "change": -24
+            },
+            {
+              "stat": "Damage",
+              "old": 24,
+              "new": 22,
+              "change": -2
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 19.2,
+              "new": 17.6,
+              "change": -1.6
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 17.28,
+              "new": 15.84,
+              "change": -1.44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-01-18",
+      "label": "January 18, 2024",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 21,
+              "new": 17,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 22,
+              "new": 18,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 23,
+              "new": 19,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 24,
+              "new": 20,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 25,
+              "new": 21,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "The Foundation's MK-Seven Assault Rifle",
+          "stats": [
+            {
+              "stat": "Structure Damage",
+              "old": 26,
+              "new": 22,
+              "change": -4
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Ranger Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 120,
+              "new": 124,
+              "change": 4
+            },
+            {
+              "stat": "Damage",
+              "old": 30,
+              "new": 31,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 28.5,
+              "new": 29.45,
+              "change": 0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 27,
+              "new": 27.9,
+              "change": 0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 30,
+              "new": 31,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Ranger Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 124,
+              "new": 128,
+              "change": 4
+            },
+            {
+              "stat": "Damage",
+              "old": 31,
+              "new": 32,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 29.45,
+              "new": 30.4,
+              "change": 0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 27.9,
+              "new": 28.8,
+              "change": 0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 31,
+              "new": 32,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Ranger Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 132,
+              "new": 136,
+              "change": 4
+            },
+            {
+              "stat": "Damage",
+              "old": 33,
+              "new": 34,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 31.35,
+              "new": 32.3,
+              "change": 0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 29.7,
+              "new": 30.6,
+              "change": 0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 33,
+              "new": 34,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Ranger Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 140,
+              "new": 144,
+              "change": 4
+            },
+            {
+              "stat": "Damage",
+              "old": 35,
+              "new": 36,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 33.25,
+              "new": 34.2,
+              "change": 0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 31.5,
+              "new": 32.4,
+              "change": 0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 35,
+              "new": 36,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Ranger Assault Rifle",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 144,
+              "new": 148,
+              "change": 4
+            },
+            {
+              "stat": "Damage",
+              "old": 36,
+              "new": 37,
+              "change": 1
+            },
+            {
+              "stat": "Damage (medium range)",
+              "old": 34.2,
+              "new": 35.15,
+              "change": 0.95
+            },
+            {
+              "stat": "Damage (long range)",
+              "old": 32.4,
+              "new": 33.3,
+              "change": 0.9
+            },
+            {
+              "stat": "Structure Damage",
+              "old": 36,
+              "new": 37,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 0.9,
+              "new": 1.1,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 0.9,
+              "new": 1.1,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 0.9,
+              "new": 1.1,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 0.9,
+              "new": 1.1,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Auto Shotgun",
+          "stats": [
+            {
+              "stat": "Equip animation",
+              "old": 0.9,
+              "new": 1.1,
+              "change": 0.2
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 51.84,
+              "new": 56.16,
+              "change": 4.32
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.6,
+              "new": 0.65,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 54.72,
+              "new": 59.28,
+              "change": 4.56
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.6,
+              "new": 0.65,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 57.6,
+              "new": 62.4,
+              "change": 4.8
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.6,
+              "new": 0.65,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 60.48,
+              "new": 65.52,
+              "change": 5.04
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.6,
+              "new": 0.65,
+              "change": 0.05
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "DPS",
+              "old": 63.36,
+              "new": 68.64,
+              "change": 5.28
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 0.6,
+              "new": 0.65,
+              "change": 0.05
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

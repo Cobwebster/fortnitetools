@@ -165,6 +165,14 @@ export const TOOLS: ToolEntry[] = [
     category: 'weapons',
   },
   {
+    href: '/weapon-changes',
+    title: 'Weapon Changes',
+    description:
+      'Fortnite weapon buffs and nerfs by patch — damage, DPS, fire rate, mag, reload, and structure damage with Old / New / Change.',
+    tags: ['Balance', 'Buffs', 'Nerfs'],
+    category: 'weapons',
+  },
+  {
     href: '/tools/weapon-damage-calculator',
     title: 'Weapon Damage Calculator',
     description:

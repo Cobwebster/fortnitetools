@@ -26,6 +26,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/tools/keybinds': '/images/icons/pickaxe.png',
   '/tools/weapon-damage-calculator': '/images/loadout/warforged_ar.png',
   '/weapons': '/images/loadout/striker_pump.png',
+  '/weapon-changes': '/images/loadout/warforged_ar.png',
   '/season-countdown': '/images/icons/battle_pass.png',
   '/xp-calculator': '/images/icons/xp.png',
   '/free-cosmetics': '/images/icons/vbucks.png',
