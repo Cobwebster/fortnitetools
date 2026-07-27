@@ -142,6 +142,7 @@ export default function HomePage() {
               { href: '/tools/item-shop', label: 'Item Shop' },
               { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
               { href: '/tools/loadout-builder', label: 'Loadout' },
+              { href: '/tools/fortnite-build-simulator', label: 'Build Sim' },
             ].map((tool) => (
               <Link
                 key={tool.href}

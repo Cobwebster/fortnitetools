@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/item-shop',
     '/tools/skin-rarity-calculator',
     '/tools/loadout-builder',
+    '/tools/fortnite-build-simulator',
     '/tools/sensitivity-calculator',
     '/tools/vbucks-calculator',
     '/tools/battle-pass-xp-calculator',

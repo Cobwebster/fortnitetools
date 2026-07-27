@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { categories } from '@/lib/posts'
 import { BRAND_ICON } from '@/lib/site-icons'
 
 export function Navbar() {
@@ -91,18 +90,16 @@ export function Navbar() {
                 Map
               </Link>
             </li>
-            {categories
-              .filter((cat) => cat.id !== 'map' && cat.id !== 'weapons' && cat.id !== 'season')
-              .map((cat) => (
-                <li key={cat.id}>
-                  <Link
-                    href={`/guides/${cat.id}`}
-                    className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-                  >
-                    {cat.label}
-                  </Link>
-                </li>
-              ))}
+            <li>
+              <a
+                href="https://discord.gg/Tj9GPyCQC4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+              >
+                Discord
+              </a>
+            </li>
           </ul>
 
           <div className="hidden md:flex items-center gap-3">
@@ -206,19 +203,17 @@ export function Navbar() {
                   Map
                 </Link>
               </li>
-              {categories
-                .filter((cat) => cat.id !== 'map' && cat.id !== 'weapons' && cat.id !== 'season')
-                .map((cat) => (
-                  <li key={cat.id}>
-                    <Link
-                      href={`/guides/${cat.id}`}
-                      className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      {cat.label}
-                    </Link>
-                  </li>
-                ))}
+              <li>
+                <a
+                  href="https://discord.gg/Tj9GPyCQC4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Discord
+                </a>
+              </li>
               <li className="mt-2 px-3">
                 <Link
                   href="/tools/player-stats"

@@ -117,6 +117,14 @@ export const TOOLS: ToolEntry[] = [
     category: 'weapons',
   },
   {
+    href: '/tools/fortnite-build-simulator',
+    title: 'Build Simulator',
+    description:
+      'Practice Fortnite-style building in the browser — walls, floors, ramps, cones, mats, move/jump, and collision.',
+    tags: ['Building', 'Practice', '3D'],
+    category: 'settings',
+  },
+  {
     href: '/tools/skin-rarity-calculator',
     title: 'Skin Rarity Calculator',
     description:

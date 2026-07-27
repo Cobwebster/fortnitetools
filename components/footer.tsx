@@ -93,6 +93,7 @@ export function Footer() {
                 { href: '/map-evolution', label: 'Map Evolution' },
                 { href: '/player-count', label: 'Player Count' },
                 { href: '/tools/loadout-builder', label: 'Loadout Builder' },
+                { href: '/tools/fortnite-build-simulator', label: 'Build Simulator' },
                 { href: '/tools/item-shop', label: 'Item Shop' },
                 { href: '/tools/skin-rarity-calculator', label: 'Skin Rarity' },
                 { href: '/weapons', label: 'All Weapons' },

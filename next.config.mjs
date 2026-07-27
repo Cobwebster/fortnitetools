@@ -6,8 +6,20 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  transpilePackages: ['three', '@react-three/fiber', '@react-three/drei', '@react-three/rapier'],
+  // Next 16 defaults to Turbopack; empty config acknowledges webpack below is webpack-only.
+  turbopack: {},
+  webpack: (config) => {
+    config.experiments = { ...config.experiments, asyncWebAssembly: true }
+    return config
+  },
   async redirects() {
     return [
+      {
+        source: '/fortnite-build-simulator',
+        destination: '/tools/fortnite-build-simulator',
+        permanent: false,
+      },
       {
         source: '/map',
         destination: '/fortnite-map',

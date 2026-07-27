@@ -20,6 +20,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/player-count': '/images/icons/crown.png',
   '/tools/item-shop': '/images/icons/vbucks.png',
   '/tools/loadout-builder': '/images/loadout/striker_pump.png',
+  '/tools/fortnite-build-simulator': '/images/icons/pickaxe.png',
   '/tools/sensitivity-calculator': '/images/loadout/hunting_rifle.png',
   '/tools/kd-calculator': '/images/icons/crown.png',
   '/tools/zone-timer': '/images/icons/storm.png',
