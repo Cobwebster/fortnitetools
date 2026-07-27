@@ -20,6 +20,7 @@ const RARITY_BG: Record<string, string> = {
   Rare:      RARITY_BORDER.Rare,
   Epic:      RARITY_BORDER.Epic,
   Legendary: RARITY_BORDER.Legendary,
+  Mythic:    RARITY_BORDER.Mythic,
 }
 
 const CATEGORIES = ['All', 'AR', 'Shotgun', 'SMG', 'Pistol', 'Sniper']

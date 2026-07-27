@@ -26,9 +26,9 @@ export default function LoadoutBuilderPage() {
               Fortnite <span className="text-primary">Loadout Builder</span>
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Plan a Chapter 7 Season 3 (Runners) hotbar for Shattered Coast — shotgun, AR/rifle, SMG or sidearm, heals,
-              and mobility — with real item icons and estimated shots-to-kill / time-to-kill. Build a kit, then share a
-              loadout link with teammates so they open the same hotbar.
+              Plan a Chapter 7 Season 3 (Runners) hotbar for Shattered Coast — every active shotgun, AR, SMG, pistol,
+              sniper, mythic boss drop, heal, and utility gadget — with item icons and estimated shots-to-kill /
+              time-to-kill. Build a kit, then share a loadout link with teammates.
             </p>
           </div>
         </section>
@@ -47,16 +47,17 @@ export default function LoadoutBuilderPage() {
             </p>
             <ol className="list-decimal pl-5 space-y-2 text-sm leading-relaxed text-muted-foreground max-w-3xl">
               <li>
-                Click a hotbar slot, then pick from the current Runners sample — Extending Focus, Striker Pump, Chaos Reloader,
-                Maven Auto, Surgical Burst, Warforged AR, Stinger, Flex SMG, Lancehead, Shock Rocks, Seven Sliders, and more.
+                Click a hotbar slot, then pick from the full active Runners pool — Extending Focus, Striker Pump, Maven
+                Auto, Surgical Burst, Warforged AR, Stinger, Rapid Fire, Lancehead, Bank Shot, Heavy Impact, mythic boss
+                drops, Overdrive, Rift-To-Go, Seven Sliders, and more.
               </li>
               <li>
                 Set target HP to 100 / 150 / 200 and toggle headshots to see how STK and TTK change for each combat weapon
                 in your kit.
               </li>
               <li>
-                Lock heals (smalls, bigs, Med Kit, Chug Splash, Slap Juice…) and mobility (Shockwave, Seven Sliders, Crash
-                Pad, Launch Pad…) so you do not greed a third gun before shields.
+                Lock heals (smalls, bigs, Med Kit, Chug Splash, Guzzle Juice, Golden Apple…) and utility (Shockwave, Seven
+                Sliders, Overdrive, Crash Pad Jr., Launch Pad…) so you do not greed a third gun before shields.
               </li>
               <li>
                 Compare presets (Aggressive, Box/Pump, Mid-range) or dig into individual guns with the{' '}
@@ -67,7 +68,7 @@ export default function LoadoutBuilderPage() {
               </li>
               <li>
                 Hit <strong className="text-foreground">Copy loadout link</strong> to copy a shareable URL. Teammates open the
-                same shotgun / AR / SMG / heals / mobility combo — the clean landing page stays param-free until you change
+                same shotgun / AR / SMG / heals / utility combo — the clean landing page stays param-free until you change
                 a kit.
               </li>
             </ol>

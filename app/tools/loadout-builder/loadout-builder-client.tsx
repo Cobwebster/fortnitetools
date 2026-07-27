@@ -237,7 +237,13 @@ export function LoadoutBuilderClient() {
             <h2 className="font-display text-xl font-bold uppercase text-foreground">
               Choose {SLOT_META[activeSlot].label}
             </h2>
-            <p className="text-xs text-muted-foreground">{SLOT_META[activeSlot].hint}</p>
+            <p className="text-xs text-muted-foreground">
+              {SLOT_META[activeSlot].hint}
+              {' · '}
+              <span className="text-foreground">
+                {activeWeapons.length + activeUtility.length} options
+              </span>
+            </p>
           </div>
           <div className="flex flex-wrap gap-1.5">
             {LOADOUT_SLOTS.map((slot) => (
@@ -273,9 +279,13 @@ export function LoadoutBuilderClient() {
                 <div className="min-w-0">
                   <p className="text-sm font-semibold text-foreground truncate">{w.name}</p>
                   <p className={`text-[10px] font-bold uppercase ${RARITY_TEXT[w.rarity]}`}>{w.rarity}</p>
-                  <p className="text-[11px] text-muted-foreground">
-                    {w.dmg} dmg · {w.fireRate}/s
-                  </p>
+                  {w.note ? (
+                    <p className="text-[11px] text-muted-foreground line-clamp-1">{w.note}</p>
+                  ) : (
+                    <p className="text-[11px] text-muted-foreground">
+                      {w.dmg} dmg · {w.fireRate}/s
+                    </p>
+                  )}
                 </div>
               </button>
             )
@@ -379,7 +389,7 @@ export function LoadoutBuilderClient() {
           <div className="rounded-lg border border-border bg-muted/30 p-3 flex gap-3 items-center">
             {mobility && <ItemIcon src={mobility.image} alt={mobility.name} className="h-12 w-12" />}
             <div>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">Mobility</p>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">Utility</p>
               <p className="font-semibold text-foreground">{mobility?.name}</p>
               <p className="text-xs text-muted-foreground">{mobility?.note}</p>
             </div>
