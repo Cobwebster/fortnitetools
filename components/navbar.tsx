@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { AuthNavLinks } from '@/components/auth-nav-links'
 import { BRAND_ICON } from '@/lib/site-icons'
 
 export function Navbar() {
@@ -103,12 +104,7 @@ export function Navbar() {
           </ul>
 
           <div className="hidden md:flex items-center gap-3">
-            <Link
-              href="/tools/player-stats"
-              className="rounded-md border border-border bg-muted px-4 py-2 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors"
-            >
-              Stats Tracker
-            </Link>
+            <AuthNavLinks />
             <Link
               href="/guides"
               className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
@@ -214,14 +210,8 @@ export function Navbar() {
                   Discord
                 </a>
               </li>
-              <li className="mt-2 px-3">
-                <Link
-                  href="/tools/player-stats"
-                  className="block rounded-md bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Look up Fortnite tracker
-                </Link>
+              <li className="mt-2 px-3 space-y-1">
+                <AuthNavLinks mobile onNavigate={() => setMobileOpen(false)} />
               </li>
             </ul>
           </nav>
