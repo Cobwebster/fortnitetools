@@ -135,14 +135,40 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
+            </ul>
+
+            <h3 className="mt-6 text-sm font-semibold uppercase tracking-wider text-foreground">
+              Our other sites
+            </h3>
+            <ul className="mt-4 flex flex-col gap-3" role="list">
               <li>
                 <a
                   href="https://www.craftmc.net/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="group block"
                 >
-                  Minecraft Tools
+                  <span className="block text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                    CraftMC.net
+                  </span>
+                  <span className="block text-xs text-muted-foreground">
+                    Free Minecraft tools, seeds, and guides.
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.robloxtools.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
+                  <span className="block text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                    RobloxTools.net
+                  </span>
+                  <span className="block text-xs text-muted-foreground">
+                    Guides, tools, game codes, and a script hub.
+                  </span>
                 </a>
               </li>
             </ul>
@@ -158,16 +184,25 @@ export function Footer() {
 
         <div className="mt-6 border-t border-border pt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} FortniteTools.com. All rights reserved. Also check out our Minecraft site{' '}
+            &copy; {new Date().getFullYear()} FortniteTools.com. All rights reserved. Also check out our{' '}
             <a
               href="https://www.craftmc.net/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground underline underline-offset-2 hover:text-primary transition-colors"
             >
-              CraftMC
-            </a>
-            .
+              Minecraft
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://www.robloxtools.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground underline underline-offset-2 hover:text-primary transition-colors"
+            >
+              Roblox
+            </a>{' '}
+            tools sites.
           </p>
           <nav aria-label="Legal" className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
             <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
