@@ -877,14 +877,16 @@ Last reviewed: July 2026 (Chapter 7 Season 3 / Runners). Patches can change GPU 
 
 ## Step 1 — Turn on Performance Mode
 
+Full walkthrough: [How to turn on Performance Mode in Fortnite](/guides/how-to/how-to-enable-performance-mode-fortnite).
+
 In Fortnite **Settings → Video / Graphics**:
 
-- Set **Rendering Mode** to **Performance** (not DirectX 12) unless you specifically need DX12 features
+- Set **Rendering Mode** to **Performance** (or **DirectX 12 Performance** if that option is available on your build)
 - Apply and **restart** Fortnite when prompted
 
 Performance Mode trades some visual fidelity for a large frame-time improvement on most GPUs, especially mid-range and older cards. Competitive players almost universally prefer it.
 
-DirectX 12 can look nicer and sometimes scale well on high-end GPUs, but if your goal is raw FPS and clarity for aiming, start with Performance Mode.
+DirectX 12 “pretty” modes can look nicer and sometimes scale well on high-end GPUs, but if your goal is raw FPS and clarity for aiming, start with Performance Mode.
 
 ## Step 2 — High-impact video settings
 
@@ -1907,6 +1909,587 @@ It should not be — same global catalog. Cache / still loading after reset is t
 ### Can I refund something I panic-bought after reset?
 
 Maybe — [Cancel Purchase / Return Tickets guide](/guides/how-to/how-to-refund-fortnite-skins).
+`,
+  },
+  {
+    slug: 'how-to-redeem-fortnite-code',
+    title: 'How to Redeem a Fortnite Code (V-Bucks Cards + Creator Codes)',
+    excerpt:
+      'Redeem V-Bucks gift cards on PC, Switch, PlayStation, and Xbox — plus how Support-A-Creator codes work in the Item Shop and how to avoid wrong-account mistakes.',
+    category: 'how-to',
+    date: '2026-07-31',
+    readTime: 11,
+    featured: true,
+    tags: [
+      'how to redeem fortnite code',
+      'redeem v-bucks card',
+      'fortnite gift card redeem',
+      'fortnite creator code',
+      'support a creator code',
+      'vbucks card playstation xbox',
+      'fortnite.com/vbuckscard',
+    ],
+    content: `
+## Two different “Fortnite codes” (do not mix them up)
+
+Players search “redeem Fortnite code” for two totally different systems:
+
+| Code type | What it does | Where you enter it |
+| --- | --- | --- |
+| **V-Bucks / Fortnite gift card PIN** | Adds prepaid V-Bucks to an Epic account (platform rules apply) | Official [V-Bucks Card](https://www.fortnite.com/vbuckscard) site — **not** the in-game Item Shop search box |
+| **Support-A-Creator / creator code** | Tips a creator a cut of eligible purchases; does **not** give you free V-Bucks | Fortnite **Item Shop → Enter Code** (or the creator-code field at checkout) |
+
+If you bought a retail card and try to type the PIN as a creator code, it will fail. If you type a streamer’s creator tag on the V-Bucks card website, that also fails.
+
+Last reviewed: July 31, 2026. Official V-Bucks card help: [How to redeem a V-Bucks card](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_Billingandpayment/how-to-redeem-a-v-bucks-card-a000084845). Keep your receipt until the balance shows correctly.
+
+Related: [free V-Bucks (legit only)](/guides/season/how-to-get-free-v-bucks-fortnite), [gift skins](/guides/how-to/how-to-gift-skins-fortnite), [refunds](/guides/how-to/how-to-refund-fortnite-skins), [link consoles](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch).
+
+## Before you redeem anything
+
+1. Sign into the **Epic account that owns your locker** — check skins on [epicgames.com/account](https://www.epicgames.com/account) before pasting a PIN.
+2. Confirm the console / Microsoft / PlayStation profile you will select is the one [linked](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch) to that Epic ID.
+3. Enable [2FA](/guides/how-to/how-to-enable-2fa-fortnite) so a shared family PC cannot burn your card on the wrong login.
+4. Scratch the PIN carefully; do not buy “code checkers” or Discord “redeem bots.”
+
+## How to redeem a V-Bucks card (all platforms start here)
+
+Epic’s flow is web-first. You generally **cannot** finish a retail V-Bucks card by pasting the PIN inside the Fortnite client alone.
+
+1. Open [fortnite.com/vbuckscard](https://www.fortnite.com/vbuckscard) in a browser.
+2. Click **Get Started** and sign into the correct Epic Games account (use console login buttons if that is how you normally authenticate).
+3. Enter the PIN from the back of the card / digital email — usually **without dashes**.
+4. Click **Next**.
+5. Choose the **platform / device** you play Fortnite on. Only linked platforms appear — if yours is missing, fix Connections first.
+6. Review Epic account name, device, and projected balance, then **Confirm**.
+
+### PC, Nintendo Switch, and mobile
+
+After Confirm, V-Bucks usually post to the Epic wallet for that platform path. Launch Fortnite, open the Item Shop, and verify the balance. Force-quit and relaunch once if the UI lags.
+
+### PlayStation (PS5 / PS4) — secondary code required
+
+Selecting PlayStation generates a **secondary PlayStation Store code** (Epic shows it and/or emails it). You must redeem that code on the **Sony account linked to your Epic**:
+
+1. Finish the fortnite.com/vbuckscard Confirm step with **PlayStation** selected.
+2. Copy the secondary code Epic provides.
+3. Redeem it in the PlayStation Store (console: Settings / PlayStation Store → Redeem Codes, or Sony’s web redeem page while signed into the correct PSN).
+4. Use an **incognito window** if you have multiple PSN logins — redeeming on the wrong Sony ID is the #1 support nightmare.
+5. Relaunch Fortnite on that PSN and check V-Bucks.
+
+### Xbox — secondary Microsoft code required
+
+Same two-step pattern as PlayStation:
+
+1. Confirm on fortnite.com/vbuckscard with **Xbox** selected.
+2. Copy the secondary **Microsoft / Xbox** prepaid-style code Epic generates.
+3. Redeem it on the Microsoft account linked to your Epic (Xbox console redeem UI or Microsoft’s redeem site).
+4. Relaunch Fortnite and verify balance.
+
+Epic’s help page explicitly notes Xbox / PlayStation need this secondary redeem step; PC / Switch / mobile generally do not.
+
+## Creator codes (Support-A-Creator) — how they actually work
+
+A creator code does **not** unlock skins or add V-Bucks. It tells Epic which creator should receive a share of **eligible** purchases you make while the code is active.
+
+### How to enter a creator code
+
+1. Launch Fortnite and open the **Item Shop**.
+2. Find **Enter Code** / Support-A-Creator (wording varies slightly by patch).
+3. Type the creator’s code exactly (often the streamer name or a short tag).
+4. Confirm. You should see the creator name applied for a limited time window (Epic rotates how long a code “sticks” — re-enter before big purchases if unsure).
+5. Buy Battle Pass, V-Bucks packs (when eligible), Crew, or shop cosmetics as normal.
+
+### Creator code FAQ players get wrong
+
+- **It is not a coupon.** Price stays the same.
+- **It is not a V-Bucks card PIN.** Different system.
+- **Gifting / some SKUs may be ineligible** depending on Epic’s current SAC rules — if the code does not apply, the purchase can still succeed without supporting anyone.
+- **You can change codes** before checkout; last confirmed code usually wins for that session/window.
+- Phishing sites that ask you to “verify creator code” with your password are scams — only use the in-game shop field or Epic’s official surfaces.
+
+## Epic Games Store keys vs Fortnite V-Bucks cards
+
+Some retail “Fortnite” products or Epic wallet cards redeem on **epicgames.com** store redeem pages instead of fortnite.com/vbuckscard. If the packaging says **Epic Games Store** / wallet credit, follow the Epic redeem URL printed on the card — do not force it through the V-Bucks card site.
+
+## Common redemption errors and fixes
+
+| Problem | Likely cause | Fix |
+| --- | --- | --- |
+| “Invalid code” | Typo, already used, wrong product type | Re-check PIN; do not reuse; confirm it is a V-Bucks card not a creator tag |
+| Platform missing in list | Console not linked to this Epic | [Link accounts](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch), then retry |
+| Balance missing on PS/Xbox | Secondary code never redeemed | Check email / Epic confirmation for the second code; redeem on correct Sony/Microsoft ID |
+| V-Bucks on “wrong” locker | Signed into the wrong Epic | Stop; contact Epic with receipt — prevent with locker check *before* Confirm |
+| Card says region locked | Regional SKU limits | Redeem from a storefront/account matching the card’s region rules |
+| Kids account / parental controls | Purchase restrictions | Guardian must complete console store redeem steps |
+
+## Safety checklist (scam avoidance)
+
+- Only redeem on **fortnite.com** / **epicgames.com** / official console stores
+- Never send a PIN to “support” in Discord, Instagram DMs, or “giveaway hosts”
+- Never screenshot a full unused PIN publicly
+- If a site asks for your password **and** the card PIN together outside Epic’s login, leave
+- After redeeming, you can spend with the [V-Bucks calculator](/tools/vbucks-calculator) and check the [Item Shop](/tools/item-shop) before impulse buys
+
+## FAQ
+
+### Can I redeem a V-Bucks card inside Fortnite?
+
+Not as the primary flow. Start at [fortnite.com/vbuckscard](https://www.fortnite.com/vbuckscard). Console players then finish on PlayStation Store / Microsoft Store when prompted.
+
+### Do V-Bucks transfer across PC and console?
+
+V-Bucks follow Epic’s platform wallet rules and how you redeemed. Cross-progress cosmetics live on the Epic account, but spending balances can be platform-separated — redeem intentionally for the device you shop on, and read Epic’s on-screen balance preview before Confirm.
+
+### Can I refund a redeemed card?
+
+Generally no once redeemed. Keep the receipt for Epic Support if the PIN fails or posts incorrectly. Cosmetic regret after spending V-Bucks is a different tool — [refunds guide](/guides/how-to/how-to-refund-fortnite-skins).
+
+### How do I support a creator without buying anything?
+
+Entering a code alone does nothing until you make an eligible purchase. Wishlist with the [Item Shop tracker](/tools/item-shop), then buy when ready.
+`,
+  },
+  {
+    slug: 'how-to-fix-fortnite-packet-loss-high-ping',
+    title: 'How to Fix Fortnite Packet Loss and High Ping',
+    excerpt:
+      'Diagnose Fortnite lag with Net Debug Stats, then fix packet loss and high ping: Ethernet, region, Wi-Fi, router, ISP routing, and settings that actually matter.',
+    category: 'how-to',
+    date: '2026-07-31',
+    readTime: 12,
+    featured: true,
+    tags: [
+      'fortnite packet loss',
+      'how to fix fortnite packet loss',
+      'fortnite high ping',
+      'fortnite lag fix',
+      'net debug stats fortnite',
+      'fortnite rubberbanding',
+      'fortnite matchmaking region',
+    ],
+    content: `
+## Packet loss vs high ping (know which one you have)
+
+| Symptom | What the net stats usually show | How it feels |
+| --- | --- | --- |
+| **High ping** | Ping stuck high (often 80–200+ ms depending on region) | Delayed shots, slow peeks, “heavy” movement |
+| **Packet loss** | Loss % climbing; ping can still look “okay” | Rubberbanding, ghost builds, teleporting opponents, shots that don’t register |
+| **Jitter** | Ping swinging wildly | Inconsistent hit reg even when average ping looks fine |
+| **Low FPS / hitching** | Net stats fine; FPS counter drops | Stutters that *feel* like lag but are render/CPU — use the [FPS guide](/guides/how-to/how-to-get-better-fps-fortnite) |
+
+You cannot fix network loss with Shadows Off. You cannot fix a 30 FPS laptop with Ethernet alone. Separate the problems.
+
+Last reviewed: July 31, 2026. Epic server outages happen — check Fortnite status / socials before rebuilding your entire network.
+
+Also useful: [Performance Mode](/guides/how-to/how-to-enable-performance-mode-fortnite), [FPS settings tool](/tools/fps-settings), [crossplay / party issues](/guides/how-to/fortnite-crossplay-party-invite-not-working).
+
+## Step 1 — Turn on Net Debug Stats
+
+1. Open Fortnite **Settings**.
+2. Go to the **Game** / HUD-related tab (labels move slightly by patch).
+3. Enable **Net Debug Stats** (network debug overlay).
+4. Queue a match and watch **Ping**, **Packet Loss %**, and related counters during fights — not only in the lobby.
+
+Write down: average ping, highest spike, and whether loss % is 0 most of the time or constantly ticking.
+
+## Step 2 — Quick triage (2 minutes)
+
+Answer these before changing ten settings:
+
+1. **Wi-Fi or Ethernet?** If Wi-Fi, treat cable as the first experiment.
+2. **Is anyone downloading / streaming 4K on the same connection?** Pause it and retest.
+3. **Is Matchmaking Region on Auto?** Try the closest manual region.
+4. **Do Creative / Reload / Ranked all lag the same?** Same everywhere → your path/ISP. Only one mode → could be lobby population / routing quirks, still start with local fixes.
+5. **Do other online games lag too?** If yes, Fortnite settings will not save you.
+
+## Step 3 — Fixes that actually move the needle
+
+### 1. Switch to wired Ethernet
+
+Wi-Fi interference (neighbors, microwaves, walls, DFS channel hops) is the most common *home* cause of Fortnite packet loss.
+
+- Use Cat5e/Cat6 from router/modem to PC or console
+- Avoid long powerline adapters as a first choice; test direct Ethernet first
+- On laptops, disable Wi-Fi while the cable is connected so Windows does not prefer wireless
+
+### 2. Set Matchmaking Region manually
+
+1. Settings → **Matchmaking Region**
+2. Pick the closest region (examples players use: **NA-East**, **NA-West**, **Europe**, **Brazil**, etc. — use what Fortnite lists for you)
+3. Compare ping *and* loss for 2–3 games each
+
+Sometimes a region with +10 ms ping has cleaner routing (less loss) than Auto’s choice.
+
+### 3. Kill local congestion
+
+- Pause Steam/Epic/Xbox/PlayStation downloads and cloud sync (OneDrive/Google Drive uploading huge folders)
+- Stop VPN / “game booster” overlays while testing baseline — some help routing, many add hops. Test **off** first, then on
+- Close bandwidth-heavy browsers / 4K streams on the same Wi-Fi
+- If your router has **QoS / gaming priority**, enable it for the Fortnite device after baseline testing
+
+### 4. Power-cycle and update the network gear
+
+1. Unplug modem and router for 30–60 seconds
+2. Power modem first, wait until online, then router, then PC/console
+3. Install router firmware updates from the manufacturer
+4. If the ISP gateway is ancient, ask for a replacement or use your own router in proper mode
+
+### 5. Prefer 5 GHz / 6 GHz if you must stay on Wi-Fi
+
+- Sit closer to the AP
+- Use 5 GHz/6 GHz instead of crowded 2.4 GHz
+- Do not game across mesh nodes that backhaul poorly
+- Move the router off the floor and away from microwaves / cordless bases
+
+### 6. DNS is rarely magic — but broken DNS feels like “can’t connect”
+
+If queues fail or shop pages hang while matches are fine, try reputable DNS temporarily (and flush DNS on PC). This does **not** usually fix in-match packet loss.
+
+### 7. Console-specific checks
+
+- **PlayStation / Xbox:** Set a fixed resolution/refresh that is stable; test LAN cable through a USB-C Gigabit adapter if the dock/TV setup is flaky
+- Enable console network test / NAT type check — **Strict NAT** causes party/join pain more than ping, but double-NAT setups often cause both (see [party invite guide](/guides/how-to/fortnite-crossplay-party-invite-not-working))
+- Keep system software updated
+
+### 8. PC checks that look like net lag
+
+- Cap background recording (Instant Replay) if the encoder stutters frames
+- Update NIC drivers / chipset drivers
+- Disable VPN adapters you are not using
+- Confirm you are not thermal-throttling — use [better FPS checklist](/guides/how-to/how-to-get-better-fps-fortnite)
+
+## Step 4 — Interpret Net Debug Stats like a human
+
+| What you see | Likely layer | Next action |
+| --- | --- | --- |
+| Loss 0%, ping 20–40 stable | Healthy | Stop “optimizing”; work on aim/FPS |
+| Loss spikes only in fights | Local Wi-Fi or CPU hitch | Ethernet + FPS stability |
+| Constant 1–5%+ loss | Bad Wi-Fi, bad NIC, ISP path | Cable → router → ISP ticket with timestamps |
+| Ping 150+ always | Wrong region or distant routing | Manual region; ISP route complaint |
+| Fine at 3pm, awful at 8pm | Congestion (home or ISP) | QoS; schedule downloads; document for ISP |
+
+## Step 5 — When it is Epic or your ISP (not you)
+
+- **Everyone in chat lagging / Fortnite status red:** wait it out; changing DNS will not help
+- **Traceroutes die in ISP network:** open a ticket with packet-loss screenshots + times + region
+- **Only one friend is unplayable:** their network — send them this guide
+
+Be skeptical of paid “ping reducers” that require admin rights and weird certificates. If you try a gaming VPN/routing tool, A/B test with Net Debug Stats on the same playlist for several matches.
+
+## Settings myth-busting
+
+- **Performance Mode** improves FPS/clarity; it does not repair packet loss. Still turn it on if your PC hitching *feels* like lag — [enable Performance Mode](/guides/how-to/how-to-enable-performance-mode-fortnite).
+- **Lowering graphics** does not lower ping.
+- **Allow Multithreaded Rendering** / other video toggles are not network fixes.
+- **Port forwarding** sometimes helps Strict NAT / party joins; it is not a guaranteed ping cure.
+
+## FAQ
+
+### Can I have packet loss with low ping?
+
+Yes. Ping is delay; loss is missing data. Low ping + loss is a classic Wi-Fi or bad route pattern.
+
+### Why are my builds delaying with 30 ping?
+
+Often packet loss, high jitter, or FPS hitches — not the ping number alone. Turn on Net Debug Stats and the FPS counter together.
+
+### Does moving closer to the router help?
+
+On Wi-Fi, yes. On Ethernet, distance to the router barely matters compared to distance to Epic’s servers / ISP backbone.
+
+### Should Matchmaking Region be Auto?
+
+Auto is fine when it picks correctly. If you travel, use a VPN exit, or see consistent high ping, set the region manually and retest.
+`,
+  },
+  {
+    slug: 'fortnite-crossplay-party-invite-not-working',
+    title: 'Fortnite Crossplay / Party Invite Not Working (Fixes)',
+    excerpt:
+      'Fix Fortnite party invites, crossplay lobbies, and join failures across PC, PlayStation, Xbox, and Switch — privacy, NAT, links, and platform blocks.',
+    category: 'how-to',
+    date: '2026-07-31',
+    readTime: 11,
+    featured: true,
+    tags: [
+      'fortnite party invite not working',
+      'fortnite crossplay not working',
+      'cant join fortnite party',
+      'fortnite invite greyed out',
+      'fortnite cross platform party',
+      'fortnite nat type',
+      'fortnite switch crossplay',
+    ],
+    content: `
+## What “crossplay not working” usually means
+
+Most complaints are one of these:
+
+1. **Invite button missing / greyed out**
+2. **Invite sends but friend never gets it**
+3. **Friend appears offline / “unavailable”**
+4. **Join fails with connection / party error**
+5. **Different platforms cannot sit in one party** even though Fortnite is crossplay
+
+Crossplay in Fortnite is real — PC, PlayStation, Xbox, Switch, and mobile can party together when accounts, privacy, and network allow it. The failures are almost always settings or linking, not “Epic deleted crossplay.”
+
+Last reviewed: July 31, 2026.
+
+Pair with: [link Epic to consoles](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch), [mute/block/report](/guides/how-to/how-to-report-mute-block-fortnite), [packet loss / ping](/guides/how-to/how-to-fix-fortnite-packet-loss-high-ping).
+
+## Fast checklist (do this in order)
+
+1. Everyone fully **restarts Fortnite** (not just return to lobby).
+2. Confirm you are friends on **Epic** (cross-platform parties key off Epic friends more than console friends alone).
+3. Check **Party privacy** is not Private on the leader if others need to join via browse.
+4. Confirm nobody is in a **match / queue / tournament** lock that blocks invites.
+5. Verify console **cross-platform multiplayer / communications** permissions are allowed (especially Switch / kid accounts).
+6. Test with a **wired connection** or phone hotspot to rule out Strict NAT / double-NAT.
+7. Confirm both lockers are on the Epic accounts you think — wrong link = “who is this person?” chaos.
+
+## Step-by-step: send a crossplay invite that works
+
+1. Add the player as an **Epic friend** (name search / invite link). Console friends lists alone are not always enough for every crossplay path.
+2. Both players sit in the **lobby**, not mid-match.
+3. Party leader opens the friends / party panel and sends **Invite**.
+4. Invitee accepts from the invite toaster / friends panel.
+5. Confirm both names show in the same party widget before queueing.
+
+If invites fail only from one direction, the recipient’s privacy or platform communication settings are the prime suspect.
+
+## Platform settings that block crossplay parties
+
+### PlayStation
+
+- Enable consoles’ cross-platform play / multiplayer permissions for the account
+- Check privacy → who can invite you to games / messages
+- Make sure Fortnite is allowed online for the PSN account
+- If two PSN users share a console, confirm the correct profile launched Fortnite
+
+### Xbox
+
+- Xbox privacy → communication & multiplayer → allow multiplayer / cross-network play as needed
+- Guests / child accounts often need adult permission toggles
+- Confirm the Microsoft account is the one [linked to Epic](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch)
+
+### Nintendo Switch
+
+- Switch online membership active when required for online play
+- User settings → check that cross-platform play for Fortnite is enabled (Nintendo prompts / Epic settings can both matter)
+- Airplane mode off; wired USB Ethernet adapters often fix flaky wireless party joins
+
+### PC (Epic / Xbox PC app)
+
+- Disable overlays that break overlays/invites while testing (GPU overlay, third-party “boosters”)
+- Sign into the Epic account that owns the friends list you expect
+- If using Xbox PC Fortnite builds, keep Microsoft ↔ Epic link healthy
+
+## Party privacy and invite confusion
+
+| Setting | What friends experience |
+| --- | --- |
+| **Public / open-style party** | Easier for friends to join / find you |
+| **Friends only** | Only Epic friends can join — strangers cannot |
+| **Private** | Join usually requires a direct invite; browsing may fail |
+
+If your friend says “I can’t join from the friends list,” send a fresh invite after setting privacy to Friends. If you are streaming and getting random joins, tighten privacy instead.
+
+## NAT types, Strict NAT, and double routers
+
+Party join failures with “connection failed” while solos queue fine often mean **NAT / UPnP** issues.
+
+Try this sequence:
+
+1. Enable **UPnP** on the router (or set proper port forwards only if you know your router)
+2. Avoid **double NAT** (ISP gateway + second router both doing NAT) — set the second device to Access Point mode when possible
+3. Test on a phone **hotspot** — if parties suddenly work, your home NAT/routing is the culprit
+4. Consoles: run the platform network test and note NAT type (Open/Moderate/Strict naming varies)
+
+Packet loss and party failures can travel together — see [packet loss guide](/guides/how-to/how-to-fix-fortnite-packet-loss-high-ping).
+
+## Crossplay playlist / mode gotchas
+
+- Some limited-time modes, tournaments, or competitive sessions have **platform or party size restrictions**
+- If one player is still on an optional update / hotfix, invites can fail until everyone patches
+- A player already queued or in **Fill** with randoms may need to leave party/queue before accepting
+
+## “Invite not working” after blocking / reporting
+
+If you blocked someone, they cannot party with you until unblocked. Review blocks under Fortnite social / Epic settings. Guide: [report, mute, and block](/guides/how-to/how-to-report-mute-block-fortnite).
+
+## Account linking mistakes that look like crossplay bugs
+
+- Friend is on an **alt Epic** created by a rushed console prompt
+- You linked the wrong PSN/Xbox years ago and still play on it
+- Display names changed — you invited the old name. Update names with [change Fortnite name](/guides/how-to/how-to-change-fortnite-name)
+
+Confirm Epic display names in-party, not only Xbox Gamertags / PSN IDs.
+
+## Fix matrix
+
+| Symptom | Try this first |
+| --- | --- |
+| Greyed-out invite | Both in lobby; not already in a full party; privacy/permissions |
+| Invite sends, nothing received | Recipient privacy + platform communications; re-add Epic friend |
+| Join fails immediately | NAT/UPnP; hotspot test; same patch version |
+| PC + console cannot party | Epic friendship + console crossplay toggles + links |
+| Only Switch fails | Switch online + crossplay permission + Wi-Fi/Ethernet |
+| Works yesterday, broken today | Restart, patch, Epic outage check, re-login |
+
+## FAQ
+
+### Is Fortnite crossplay on or off by default?
+
+Fortnite is built around cross-platform play. Individual platform privacy settings can still block you.
+
+### Can PlayStation and Xbox party together?
+
+Yes, through Epic friends / Fortnite party systems when both accounts allow cross-network play.
+
+### Why can we chat but not ready up?
+
+Usually one player is restricted from multiplayer, on a different mode, or soft-locked in a queue. Leave party, reform, select the mode on the leader, then ready.
+
+### Do I need PlayStation Plus / Xbox Game Pass / Nintendo Online?
+
+Online multiplayer on consoles generally needs the platform’s online access requirement for that account. Crossplay does not remove Sony/Microsoft/Nintendo subscription rules.
+`,
+  },
+  {
+    slug: 'how-to-enable-performance-mode-fortnite',
+    title: 'How to Turn On Performance Mode in Fortnite (PC)',
+    excerpt:
+      'Enable Fortnite Performance Mode step-by-step, what DirectX 12 Performance means, best companion settings, and fixes when the option is missing.',
+    category: 'how-to',
+    date: '2026-07-31',
+    readTime: 9,
+    featured: true,
+    tags: [
+      'fortnite performance mode',
+      'how to turn on performance mode fortnite',
+      'fortnite rendering mode',
+      'directx 12 performance fortnite',
+      'fortnite low end pc settings',
+      'fortnite dx12 vs performance',
+    ],
+    content: `
+## What Performance Mode is
+
+**Performance Mode** is a Fortnite **Rendering Mode** on PC that prioritizes frame rate and visual clarity for aiming over cinematic lighting, shadows, and effects. Competitive and low/mid-range PCs use it because:
+
+- Higher average FPS and better 1% lows in endgames
+- Cleaner target visibility (less visual noise)
+- Lower GPU load → less heat / throttling on laptops
+
+It is a **PC setting**. Consoles do not have the same Rendering Mode dropdown.
+
+Last reviewed: July 31, 2026. Epic has iterated naming (**Performance**, legacy paths, **DirectX 12 Performance**, etc.). Pick the Performance-oriented option available in your build, apply, and restart.
+
+Deep dive after enabling: [better FPS guide](/guides/how-to/how-to-get-better-fps-fortnite) and the interactive [FPS settings tool](/tools/fps-settings).
+
+## How to turn on Performance Mode (step-by-step)
+
+1. Launch Fortnite on **PC** (Epic Games Launcher or supported PC storefront).
+2. From the lobby, open **Settings** (gear icon).
+3. Open the **Video** tab.
+4. Find **Rendering Mode**.
+5. Select **Performance** / **Performance - Lower Graphical Fidelity** / **DirectX 12 Performance** (whatever Performance-focused option your patch lists).
+6. Click **Apply**.
+7. **Restart Fortnite** when prompted — Rendering Mode changes do not fully apply mid-session.
+8. Re-open Settings → Video and confirm the mode stuck.
+9. Turn on **Show FPS** and play one real match (not only Creative) to verify stability.
+
+### First companion settings (do these the same session)
+
+| Setting | Recommendation | Why |
+| --- | --- | --- |
+| Window Mode | **Fullscreen** | Lowest display latency |
+| Resolution | Native monitor res (often 1920×1080 competitive) | Clarity without crazy GPU cost |
+| 3D Resolution | **100%** | Dropping this blurs enemies |
+| VSync | **Off** | Removes extra input lag |
+| Frame Rate Limit | Unlimited or a high competitive cap | Stable frame times matter |
+| NVIDIA Reflex | **On + Boost** (NVIDIA) | Cuts system latency |
+| Shadows | **Off** | Huge FPS reclaim |
+| Effects / Post Process | **Low** | Less visual clutter |
+| Motion Blur | **Off** | Always |
+
+Full presets: [FPS settings tool](/tools/fps-settings).
+
+## Performance vs DirectX 12 (how to choose)
+
+| Goal | Prefer |
+| --- | --- |
+| Max FPS / clarity on mid or old GPUs | Performance Mode |
+| Newer GPU, want DX12 feature path + still competitive | **DirectX 12 Performance** when listed |
+| Screenshots / quality showcase | Non-performance quality modes (expect FPS loss) |
+
+Rule of thumb: if you are dropping below your monitor refresh in stacked endgames, stay on a Performance path. If DX12 Performance stutters after a patch, switch back to standard Performance and update GPU drivers.
+
+## Verify it actually enabled
+
+- Settings → Video still shows the Performance rendering selection after restart
+- Visuals look flatter (fewer fancy shadows / effects) — that is expected
+- FPS counter rises in the same Creative map / BR drop as before
+- Input feels snappier in Fullscreen + Reflex On
+
+If FPS is unchanged, you may still be CPU-bound, resolution-bound, or on Wi-Fi hitches that *feel* like FPS. Check [packet loss vs FPS](/guides/how-to/how-to-fix-fortnite-packet-loss-high-ping).
+
+## Fixes when Performance Mode is missing
+
+1. Confirm you are on **PC Fortnite**, not console.
+2. Update Fortnite fully; Rendering Mode options change across seasons.
+3. Update **GPU drivers** (clean install if the dropdown is empty/grey).
+4. Verify game files in the Epic Games Launcher.
+5. Restart the PC after driver installs.
+6. Try another Rendering Mode, Apply, restart, then select Performance again.
+7. Disable overlays temporarily (GPU overlay, Discord hardware accel) if the settings UI glitches.
+8. Ensure Windows is not in a broken GPU fallback (laptop: plug in power; set Fortnite to high-performance GPU).
+
+Unsupported / ancient GPU + OS combos may hide options — that is a hardware limit, not a menu bug.
+
+## Laptop-specific tips
+
+- Plug into power; Windows “Battery saver” tanks clocks
+- Use the discrete NVIDIA/AMD GPU for Fortnite in Windows Graphics settings
+- Cap FPS near a stable number to reduce heat throttling after enabling Performance Mode
+- Elevate the chassis for airflow — Performance Mode cannot beat thermal limits
+
+## Common mistakes
+
+- Changing Rendering Mode **without restarting**
+- Lowering **3D Resolution** under 100% for “more FPS” and wondering why tracking feels worse
+- Leaving **VSync On** and blaming Performance Mode for input delay
+- Expecting Performance Mode to fix **packet loss** — different problem
+- Comparing lobby FPS to Chapter 7 endgame FPS
+
+## After Performance Mode: still not enough FPS?
+
+Work the rest of the stack:
+
+1. Shadows Off, Effects Low
+2. Fullscreen + Reflex On + Boost
+3. Close Chrome / capture overlays
+4. Follow the full [FPS checklist](/guides/how-to/how-to-get-better-fps-fortnite)
+5. Practice settings on a busy Creative map from the [codes list](/codes)
+
+## FAQ
+
+### Does Performance Mode ban you or look like a cheat?
+
+No. It is an official Epic rendering option.
+
+### Is Performance Mode allowed in tournaments?
+
+Yes — it is a standard competitive setting. Always follow the specific cup ruleset for overlays / software.
+
+### Will I lose view distance information?
+
+You can still set View Distance separately. Do not smash it to Near just because you enabled Performance Mode — information matters in Ranked.
+
+### Should every PC use it?
+
+Almost every competitive PC benefits. Ultra-high-end players who prefer DX12 visuals can A/B test, but most still keep a Performance-oriented mode for ranked.
 `,
   },
 ]
