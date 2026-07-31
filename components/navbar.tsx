@@ -1,18 +1,27 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
 import { AuthNavLinks } from '@/components/auth-nav-links'
 import { BRAND_ICON } from '@/lib/site-icons'
 
-export function Navbar() {
-  const [mobileOpen, setMobileOpen] = useState(false)
+const NAV_LINKS = [
+  { href: '/tools', label: 'Tools', emphasis: true },
+  { href: '/tools/player-stats', label: 'Player Tracker' },
+  { href: '/tools/item-shop', label: 'Item Shop' },
+  { href: '/codes', label: 'Codes' },
+  { href: '/free-cosmetics', label: 'Free Cosmetics' },
+  { href: '/season-countdown', label: 'Countdown' },
+  { href: '/weapons', label: 'Weapons' },
+  { href: '/fortnite-map', label: 'Map' },
+  { href: '/guides', label: 'Guides' },
+  { href: 'https://discord.gg/Tj9GPyCQC4', label: 'Discord', external: true },
+] as const
 
+export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <nav className="flex h-16 items-center justify-between" aria-label="Main navigation">
+        <nav className="flex h-16 items-center justify-between gap-3" aria-label="Main navigation">
           <Link href="/" className="flex items-center gap-2 shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -27,80 +36,31 @@ export function Navbar() {
           </Link>
 
           <ul className="hidden md:flex items-center gap-1" role="list">
-            <li>
-              <Link
-                href="/tools"
-                className="px-3 py-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors rounded-md hover:bg-muted"
-              >
-                Tools
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/tools/player-stats"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Player Tracker
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/tools/item-shop"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Item Shop
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/codes"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Codes
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/free-cosmetics"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Free Cosmetics
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/season-countdown"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Countdown
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/weapons"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Weapons
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/fortnite-map"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Map
-              </Link>
-            </li>
-            <li>
-              <a
-                href="https://discord.gg/Tj9GPyCQC4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
-              >
-                Discord
-              </a>
-            </li>
+            {NAV_LINKS.filter((link) => link.href !== '/guides').map((link) => (
+              <li key={link.href}>
+                {'external' in link && link.external ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className={
+                      'emphasis' in link && link.emphasis
+                        ? 'px-3 py-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors rounded-md hover:bg-muted'
+                        : 'px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted'
+                    }
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </li>
+            ))}
           </ul>
 
           <div className="hidden md:flex items-center gap-3">
@@ -113,109 +73,44 @@ export function Navbar() {
             </Link>
           </div>
 
-          <button
-            type="button"
-            className="md:hidden rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-            aria-label="Toggle mobile menu"
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((v) => !v)}
-          >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
+          <div className="md:hidden shrink-0">
+            <AuthNavLinks />
+          </div>
         </nav>
 
-        {mobileOpen && (
-          <nav className="md:hidden border-t border-border pb-4 pt-2" aria-label="Mobile navigation">
-            <ul className="flex flex-col gap-1" role="list">
-              <li>
-                <Link
-                  href="/tools"
-                  className="block px-3 py-2 text-sm font-semibold text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Tools
-                </Link>
+        {/* Always in the HTML (no hamburger) so crawlers and users always see every link */}
+        <nav
+          className="md:hidden border-t border-border py-2"
+          aria-label="Mobile site links"
+        >
+          <ul className="flex flex-wrap gap-1" role="list">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                {'external' in link && link.external ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex rounded-md px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className={
+                      'emphasis' in link && link.emphasis
+                        ? 'inline-flex rounded-md px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-muted transition-colors'
+                        : 'inline-flex rounded-md px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-primary transition-colors'
+                    }
+                  >
+                    {link.label}
+                  </Link>
+                )}
               </li>
-              <li>
-                <Link
-                  href="/tools/player-stats"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Stats Tracker
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/tools/item-shop"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Item Shop
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/codes"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Codes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/free-cosmetics"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Free Cosmetics
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/season-countdown"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Countdown
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/weapons"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Weapons
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/fortnite-map"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Map
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://discord.gg/Tj9GPyCQC4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Discord
-                </a>
-              </li>
-              <li className="mt-2 px-3 space-y-1">
-                <AuthNavLinks mobile onNavigate={() => setMobileOpen(false)} />
-              </li>
-            </ul>
-          </nav>
-        )}
+            ))}
+          </ul>
+        </nav>
       </div>
     </header>
   )
