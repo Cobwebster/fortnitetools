@@ -7,7 +7,7 @@ export const CREATIVE_CODES_FAQS = [
   {
     question: 'What are the best Fortnite XP map codes right now?',
     answer:
-      'In July 2026 start with FortM (6163-6465-2983), then 50 Fashion Show, Havoc Hotel 3, TikToker Tycoon / Island Tycoon, and Cars Mega Ramp. This page defaults to the XP Maps filter — copy a code, load Discover, and rotate when Creative XP slows (daily cap).',
+      'In August 2026 start with FortM (6163-6465-2983), then 50 Fashion Show, Havoc Hotel 3, TikToker Tycoon / Island Tycoon, and Cars Mega Ramp. This page defaults to the XP Maps filter — copy a code, load Discover, and rotate when Creative XP slows (daily cap).',
   },
   {
     question: 'Do Fortnite horror map codes still give XP?',
@@ -31,8 +31,8 @@ export const CREATIVE_CODES_FAQS = [
   },
 ]
 
-/** Crawlable July 2026 XP money-section — keep codes in sync with CREATIVE_MAPS. */
-export const BEST_XP_MAP_CODES_JULY_2026 = [
+/** Crawlable August 2026 XP money-section — keep codes in sync with CREATIVE_MAPS. */
+export const BEST_XP_MAP_CODES_AUGUST_2026 = [
   {
     name: 'FortM',
     code: '6163-6465-2983',

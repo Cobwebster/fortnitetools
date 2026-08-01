@@ -48,7 +48,7 @@ export const STATIC_EXAMPLE_REPORT: SkinRarityReport = {
   neverInShop: true,
 }
 
-/** Renegade Raider — Season Shop classic that has returned (snapshot July 2026). */
+/** Renegade Raider — Season Shop classic that has returned (snapshot August 2026). */
 export const RENEGADE_RAIDER_ITEM: CosmeticItem = {
   id: 'CID_028_Athena_Commando_F',
   name: 'Renegade Raider',
@@ -88,7 +88,7 @@ export const RENEGADE_RAIDER_REPORT: SkinRarityReport = {
   neverInShop: false,
 }
 
-/** Aerial Assault Trooper — same early OG fame, shop returns (snapshot July 2026). */
+/** Aerial Assault Trooper — same early OG fame, shop returns (snapshot August 2026). */
 export const AERIAL_ASSAULT_ITEM: CosmeticItem = {
   id: 'CID_017_Athena_Commando_M',
   name: 'Aerial Assault Trooper',

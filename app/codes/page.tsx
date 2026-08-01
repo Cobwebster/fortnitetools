@@ -8,7 +8,7 @@ import {
   type CreativeMapLive,
 } from '@/lib/creative-codes'
 import {
-  BEST_XP_MAP_CODES_JULY_2026,
+  BEST_XP_MAP_CODES_AUGUST_2026,
   CREATIVE_CODES_FAQS,
   CREATIVE_CODES_SEO_SECTIONS,
 } from '@/lib/creative-codes-seo'
@@ -81,12 +81,12 @@ export default async function CodesPage() {
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 space-y-12">
           {/* Static XP money block for crawlers — title matches target query */}
-          <section aria-labelledby="best-xp-july-2026" className="space-y-4">
+          <section aria-labelledby="best-xp-august-2026" className="space-y-4">
             <h2
-              id="best-xp-july-2026"
+              id="best-xp-august-2026"
               className="font-display text-2xl font-bold uppercase tracking-wide text-foreground"
             >
-              Best Fortnite XP map codes (July 2026)
+              Best Fortnite XP map codes (August 2026)
             </h2>
             <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
               Working Creative XP codes for Chapter 7 Season 3. Paste into Discover, use a private lobby for AFK farms,
@@ -97,7 +97,7 @@ export default async function CodesPage() {
               .
             </p>
             <ul className="grid gap-3 sm:grid-cols-2" role="list">
-              {BEST_XP_MAP_CODES_JULY_2026.map((m) => (
+              {BEST_XP_MAP_CODES_AUGUST_2026.map((m) => (
                 <li key={m.code} className="rounded-xl border border-border bg-card px-4 py-3">
                   <p className="font-display text-sm font-bold uppercase tracking-wide text-foreground">{m.name}</p>
                   <p className="mt-1 font-mono text-sm font-semibold tracking-wider text-primary">{m.code}</p>

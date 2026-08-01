@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer'
 import { Info, CheckCircle2, Circle } from 'lucide-react'
 import { seasonEndDate } from '@/lib/season'
 
-// Chapter 7 Season 3 (Runners) Battle Pass planning model — July 2026
+// Chapter 7 Season 3 (Runners) Battle Pass planning model — August 2026
 // 100 reward levels. XP-per-level and weekly sources are estimates; quest values change.
 const XP_PER_LEVEL = 80_000
 const TOTAL_LEVELS = 100

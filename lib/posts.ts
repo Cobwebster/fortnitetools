@@ -38,7 +38,7 @@ export const posts: Post[] = [
 
 Weapons are ranked for Chapter 7 Season 3 (Runners) on the Shattered Coast map. Criteria: fight impact, consistency, how often you find them, and how they pair with mobility (Seven Sliders / Overdrive-style rotates). Epic has already hotfixed this season — treat this as a living guide.
 
-Last reviewed: July 25, 2026.
+Last reviewed: August 1, 2026.
 
 Pair this with the [loadout builder](/tools/loadout-builder), the [weapon damage calculator](/tools/weapon-damage-calculator), and the [shotgun guide](/guides/weapons/fortnite-shotgun-guide-best-options).
 
@@ -122,7 +122,7 @@ Most box fights and final-circle collisions still end on a shotgun trade. Chapte
 
 See the full pool ranking in the [weapons tier list](/guides/weapons/fortnite-best-weapons-tier-list-2026), or build a hotbar in the [loadout builder](/tools/loadout-builder).
 
-Last reviewed: July 25, 2026.
+Last reviewed: August 1, 2026.
 
 ## Current shotgun options
 
@@ -244,7 +244,7 @@ POI power shifts with hotfixes. Treat in-game labels as truth, and use this page
 
 Chapter 7 Season 3 replaced the mid-chapter island with **Shattered Coast** after the Shattered live event. The Zero Point sits near center, with snow, desert, and coastal biomes around it. Only **Wonkeeland** and **Latte Landing** carried over cleanly from Season 2 — everything else is new or heavily remixed.
 
-Last reviewed: July 2026.
+Last reviewed: August 2026.
 
 Explore live markers on the [interactive map](/fortnite-map), or jump to [best loot spots](/guides/map/fortnite-loot-guide-best-spots) for drop tiers.
 
@@ -456,7 +456,7 @@ There is **no website, Discord bot, or “V-Bucks generator”** that can add cu
 
 What *does* work is slower and official: seasonal Battle Pass V-Bucks nodes, Save the World **Founder** quests (if you already own Founders), occasional Epic promotions, and platform reward programs that pay out in store credit you can spend on V-Bucks packs.
 
-Last reviewed: July 2026. Pack prices and pass totals change — use the [V-Bucks calculator](/tools/vbucks-calculator) when you are budgeting a shop wishlist, and the [Battle Pass XP calculator](/tools/battle-pass-xp-calculator) if you are grinding levels for pass rewards.
+Last reviewed: August 2026. Pack prices and pass totals change — use the [V-Bucks calculator](/tools/vbucks-calculator) when you are budgeting a shop wishlist, and the [Battle Pass XP calculator](/tools/battle-pass-xp-calculator) if you are grinding levels for pass rewards.
 
 ## Method 1 — Free Battle Pass track (everyone)
 
@@ -552,7 +552,7 @@ Fortnite does not have a separate username you edit inside the lobby menu. Your 
 
 This guide covers the Epic display name change that applies across Epic titles, then the console caveats that confuse most players.
 
-Last reviewed: July 2026. Pair this with [2FA setup](/guides/how-to/how-to-enable-2fa-fortnite) so a name change session cannot become an account takeover.
+Last reviewed: August 2026. Pair this with [2FA setup](/guides/how-to/how-to-enable-2fa-fortnite) so a name change session cannot become an account takeover.
 
 ## Rules for Epic display names
 
@@ -655,7 +655,7 @@ Epic lets you reverse many **V-Bucks Item Shop cosmetic purchases** without emai
 
 This guide follows Epic’s Fortnite Battle Royale billing help on canceling or refunding Item Shop purchases made with V-Bucks. Policies can be updated; if the in-game UI disagrees with this page, trust the game and Epic Help.
 
-Last reviewed: July 2026. Related reading: [free V-Bucks methods](/guides/season/how-to-get-free-v-bucks-fortnite) and the [Item Shop tracker](/tools/item-shop).
+Last reviewed: August 2026. Related reading: [free V-Bucks methods](/guides/season/how-to-get-free-v-bucks-fortnite) and the [Item Shop tracker](/tools/item-shop).
 
 ## Quick comparison
 
@@ -770,7 +770,7 @@ Fortnite lockers are phishing targets. Password reuse and fake “free V-Bucks�
 
 Epic documents 2FA under account security: codes can arrive by **authenticator app**, **SMS**, or **email**. Enabling 2FA also unlocks the **Boogie Down** emote in Fortnite as a thank-you reward, and 2FA is required for products like Fortnite competitive / tournament participation, Support-A-Creator tooling, and other Epic developer surfaces.
 
-Last reviewed: July 2026. Official overview: [Epic account security](https://safety.epicgames.com/en-US/policies/account-security).
+Last reviewed: August 2026. Official overview: [Epic account security](https://safety.epicgames.com/en-US/policies/account-security).
 
 ## Before you start
 
@@ -873,7 +873,7 @@ Higher frames per second only help if they are **stable**. A PC that oscillates 
 
 For clickable presets, use the interactive [FPS & settings tool](/tools/fps-settings). This article explains *why* those presets work so you can adapt them to your monitor and hardware.
 
-Last reviewed: July 2026 (Chapter 7 Season 3 / Runners). Patches can change GPU cost — re-test after major updates.
+Last reviewed: August 2026 (Chapter 7 Season 3 / Runners). Patches can change GPU cost — re-test after major updates.
 
 ## Step 1 — Turn on Performance Mode
 
@@ -1028,7 +1028,7 @@ In **Chapter 7 Season 3 (Runners)**, finding a Sprite only buffs **this** match.
 
 **Shortcuts:** a **Portable Extractor** does a short, quiet extract anywhere; a **Victory Royale** auto-extracts Sprites you are carrying — no site needed.
 
-Last reviewed: July 26, 2026 (Fortnite Chapter 7 Season 3 / Runners). Trust the live in-game UI if Epic tweaks timers or Dust prices.
+Last reviewed: August 1, 2026 (Fortnite Chapter 7 Season 3 / Runners). Trust the live in-game UI if Epic tweaks timers or Dust prices.
 
 Pair with: [cube sprites guide](/guides/how-to/how-to-get-cube-sprites-fortnite), [interactive map](/fortnite-map), [loot spots](/guides/map/fortnite-loot-guide-best-spots), [Runners Battle Pass](/guides/season/fortnite-season-battle-pass-guide).
 
@@ -1166,7 +1166,7 @@ In Chapter 7 Season 3 (Runners), Epic added **cube** variants of Sprites. These 
 
 Not every Sprite in the catalog has a cube version yet. Epic is rolling variants over time. As of the mid-season cube wave covered in community guides (including [this Chapter 7 Season 3 walkthrough](https://www.youtube.com/watch?v=by7oByl8EO8)), the cube set that is actually obtainable right now is limited.
 
-Last reviewed: July 2026. Patch notes can expand the list — if a Sprite suddenly shows a cube style in-game, treat the live client as the source of truth.
+Last reviewed: August 2026. Patch notes can expand the list — if a Sprite suddenly shows a cube style in-game, treat the live client as the source of truth.
 
 Use the [interactive map](/fortnite-map) and [loot guide](/guides/map/fortnite-loot-guide-best-spots) to plan high-chest drops while you hunt.
 
@@ -1322,7 +1322,7 @@ If your Fortnite / Epic account is banned or sanctioned, the official path is Ep
 
 Epic’s own help articles state that player and creator bans can be reviewed and appealed in the [Sanctions and Appeals portal](https://safety.epicgames.com/sanctions-and-appeals), using the **Sanction ID** from your ban email, while signed into the **correct** Epic account. You can check status and duration from [safety.epicgames.com](https://safety.epicgames.com/) → Sanctions and Appeals → My Sanctions & Appeals.
 
-Last reviewed: July 2026. Always trust the live Epic UI and email over third-party summaries if something changed.
+Last reviewed: August 2026. Always trust the live Epic UI and email over third-party summaries if something changed.
 
 ## What a Fortnite / Epic ban usually means
 
@@ -1487,11 +1487,11 @@ No. We are an independent fan site. We explain the public process and link offic
   },
   {
     slug: 'best-fortnite-xp-maps',
-    title: 'Best Fortnite XP Maps (July 2026) — How to Level Up Fast',
+    title: 'Best Fortnite XP Maps (August 2026) — How to Level Up Fast',
     excerpt:
       'Working Creative XP map codes for Chapter 7 Season 3, how to enter island codes, daily/weekly Creative XP caps, and a fast Battle Pass leveling plan.',
     category: 'season',
-    date: '2026-07-24',
+    date: '2026-08-01',
     readTime: 10,
     featured: true,
     tags: [
@@ -1507,9 +1507,9 @@ No. We are an independent fan site. We explain the public process and link offic
 
 Creative **XP maps** are still the quickest path to Battle Pass levels in Chapter 7 Season 3 — as long as you respect Epic’s Creative XP caps and rotate maps when gains slow. This guide lists working codes, shows how to enter them, and pairs with our live [Creative map codes](/codes) database and [Battle Pass XP calculator](/tools/battle-pass-xp-calculator).
 
-Last reviewed: July 2026. Codes break after patches — if Discover says an island is unavailable or “XP disabled,” swap to another XP-rated code on [/codes](/codes).
+Last reviewed: August 2026. Codes break after patches — if Discover says an island is unavailable or “XP disabled,” swap to another XP-rated code on [/codes](/codes).
 
-## Best Fortnite XP map codes (July 2026)
+## Best Fortnite XP map codes (August 2026)
 
 | Map | Code | Style | Why use it |
 | --- | --- | --- | --- |
@@ -1603,7 +1603,7 @@ Fortnite progress lives on your **Epic Games account**. Linking PlayStation, Xbo
 - Sign in with the console account you already use
 - Avoid creating a second empty Epic account by accident
 
-Last reviewed: July 2026. Official connection tools live under Epic account settings — [Connections](https://www.epicgames.com/account/connections) on the web, or the first-time Fortnite console prompt.
+Last reviewed: August 2026. Official connection tools live under Epic account settings — [Connections](https://www.epicgames.com/account/connections) on the web, or the first-time Fortnite console prompt.
 
 ## Before you link (read this)
 
@@ -1697,7 +1697,7 @@ Fortnite gifting purchases a **currently available Item Shop** cosmetic for a fr
 
 Official flow is documented in Epic Help: [How do I send a Gift in Battle Royale?](https://www.epicgames.com/help/en-US/c-202300000001636/c-202300000001723/a202300000016633).
 
-Last reviewed: July 2026. Check today’s offerings on the [Item Shop tracker](/tools/item-shop) and budget with the [V-Bucks calculator](/tools/vbucks-calculator).
+Last reviewed: August 2026. Check today’s offerings on the [Item Shop tracker](/tools/item-shop) and budget with the [V-Bucks calculator](/tools/vbucks-calculator).
 
 ## Gifting requirements checklist
 
@@ -1782,7 +1782,7 @@ Daily reset — details in [when does the Item Shop reset?](/guides/how-to/when-
 
 Reporting does not kick them instantly. Epic reviews signals with their safety systems — see [Epic Safety Center](https://safety.epicgames.com/).
 
-Last reviewed: July 2026. UI labels move slightly between seasons; look for the player card / report flag.
+Last reviewed: August 2026. UI labels move slightly between seasons; look for the player card / report flag.
 
 ## How to mute someone in Fortnite
 
@@ -1868,7 +1868,7 @@ Epic states the in-game Item Shop and Web Shop refresh at around **00:00 GMT / U
 
 In the shop UI, open **About Shop** for Epic’s timezone notes if you are unsure.
 
-Last reviewed: July 2026. Rare live events can delay a reset; trust the in-game clock if it disagrees with this page.
+Last reviewed: August 2026. Rare live events can delay a reset; trust the in-game clock if it disagrees with this page.
 
 ## Item Shop reset in your time zone
 
@@ -1941,7 +1941,7 @@ Players search “redeem Fortnite code” for two totally different systems:
 
 If you bought a retail card and try to type the PIN as a creator code, it will fail. If you type a streamer’s creator tag on the V-Bucks card website, that also fails.
 
-Last reviewed: July 31, 2026. Official V-Bucks card help: [How to redeem a V-Bucks card](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_Billingandpayment/how-to-redeem-a-v-bucks-card-a000084845). Keep your receipt until the balance shows correctly.
+Last reviewed: August 1, 2026. Official V-Bucks card help: [How to redeem a V-Bucks card](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_Billingandpayment/how-to-redeem-a-v-bucks-card-a000084845). Keep your receipt until the balance shows correctly.
 
 Related: [free V-Bucks (legit only)](/guides/season/how-to-get-free-v-bucks-fortnite), [gift skins](/guides/how-to/how-to-gift-skins-fortnite), [refunds](/guides/how-to/how-to-refund-fortnite-skins), [link consoles](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch).
 
@@ -2080,7 +2080,7 @@ Entering a code alone does nothing until you make an eligible purchase. Wishlist
 
 You cannot fix network loss with Shadows Off. You cannot fix a 30 FPS laptop with Ethernet alone. Separate the problems.
 
-Last reviewed: July 31, 2026. Epic server outages happen — check Fortnite status / socials before rebuilding your entire network.
+Last reviewed: August 1, 2026. Epic server outages happen — check Fortnite status / socials before rebuilding your entire network.
 
 Also useful: [Performance Mode](/guides/how-to/how-to-enable-performance-mode-fortnite), [FPS settings tool](/tools/fps-settings), [crossplay / party issues](/guides/how-to/fortnite-crossplay-party-invite-not-working).
 
@@ -2234,7 +2234,7 @@ Most complaints are one of these:
 
 Crossplay in Fortnite is real — PC, PlayStation, Xbox, Switch, and mobile can party together when accounts, privacy, and network allow it. The failures are almost always settings or linking, not “Epic deleted crossplay.”
 
-Last reviewed: July 31, 2026.
+Last reviewed: August 1, 2026.
 
 Pair with: [link Epic to consoles](/guides/how-to/how-to-link-epic-games-playstation-xbox-switch), [mute/block/report](/guides/how-to/how-to-report-mute-block-fortnite), [packet loss / ping](/guides/how-to/how-to-fix-fortnite-packet-loss-high-ping).
 
@@ -2384,7 +2384,7 @@ Online multiplayer on consoles generally needs the platform’s online access re
 
 It is a **PC setting**. Consoles do not have the same Rendering Mode dropdown.
 
-Last reviewed: July 31, 2026. Epic has iterated naming (**Performance**, legacy paths, **DirectX 12 Performance**, etc.). Pick the Performance-oriented option available in your build, apply, and restart.
+Last reviewed: August 1, 2026. Epic has iterated naming (**Performance**, legacy paths, **DirectX 12 Performance**, etc.). Pick the Performance-oriented option available in your build, apply, and restart.
 
 Deep dive after enabling: [better FPS guide](/guides/how-to/how-to-get-better-fps-fortnite) and the interactive [FPS settings tool](/tools/fps-settings).
 

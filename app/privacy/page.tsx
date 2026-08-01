@@ -16,7 +16,7 @@ export default function PrivacyPage() {
   return (
     <SitePage
       title="Privacy Policy"
-      description="Plain-language privacy notes for FortniteTools.com. Last updated July 2026."
+      description="Plain-language privacy notes for FortniteTools.com. Last updated August 2026."
     >
       <section className="space-y-3">
         <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">Summary</h2>
