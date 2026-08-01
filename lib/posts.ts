@@ -1140,6 +1140,7 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
 - [Best loot spots on Shattered Coast](/guides/map/fortnite-loot-guide-best-spots)
 - [Shattered Coast POIs](/guides/map/fortnite-map-all-locations-guide)
 - [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide)
+- [Ironmouse Sprite guide](/guides/how-to/how-to-get-ironmouse-sprite-fortnite)
 `,
   },
   {
@@ -1296,6 +1297,145 @@ Sprint Locator + Sprite Chest volume on high-chest POIs, then vault if keyed. Sk
 - [Ranked mode tips](/guides/how-to/fortnite-ranked-mode-guide) if you are farming in Ranked lobbies
 
 Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find cube sprites](https://www.youtube.com/watch?v=by7oByl8EO8).
+`,
+  },
+  {
+    slug: 'how-to-get-ironmouse-sprite-fortnite',
+    title: 'How to Get the Ironmouse Sprite in Fortnite (C7S3)',
+    excerpt:
+      'Ironmouse Fortnite Sprite guide: August 4 return after the early vault, Mythic powers (heal + cloak + low gravity), Relic Chest farm tips, and how to extract her.',
+    category: 'how-to',
+    date: '2026-08-01',
+    readTime: 9,
+    featured: true,
+    tags: [
+      'ironmouse fortnite',
+      'ironmouse sprite',
+      'how to get ironmouse sprite',
+      'fortnite ironmouse collab',
+      'ironmouse sprite powers',
+      'mythic sprite fortnite',
+      'chapter 7 season 3 sprites',
+      'ironmouse fortnite release date',
+    ],
+    content: `
+## Ironmouse is in Fortnite — here’s the short version
+
+**Ironmouse** (the VTuber) got a **Mythic Sprite** collab in Fortnite Chapter 7 Season 3 (Runners). She briefly appeared after the **v41.30** update around **July 30, 2026**, then Epic **vaulted** her because the drop went live too early. Ironmouse herself confirmed the proper launch is her debut anniversary: **Tuesday, August 4, 2026**.
+
+| Fact | Detail |
+| --- | --- |
+| What it is | Mythic **Ironmouse Sprite** (combat companion), not a confirmed Item Shop skin set yet |
+| Official return | **August 4, 2026** |
+| How you get her | Random Sprite loot — especially **Sprite Chests**, **Relic Chests** (Renegade Vaults), rare chests; also eliminations / trades |
+| What she does | When HP is low: **regen**, **Cloak**, and **low gravity** (heal amount scales with Sprite level) |
+| How you keep her | **Extract** in the same match (or win the game while carrying her) |
+
+Last reviewed: August 1, 2026. Trust the live Fortnite client if Epic moves the date or tweaks drop sources.
+
+Pair with: [how to extract Sprites](/guides/how-to/how-to-extract-sprites-fortnite), [cube sprites](/guides/how-to/how-to-get-cube-sprites-fortnite), [interactive map](/fortnite-map), [best loot spots](/guides/map/fortnite-loot-guide-best-spots).
+
+## Why was Ironmouse vaulted?
+
+Players who loaded after the July 30 patch could find and even extract the Ironmouse Sprite for a short window. Epic then removed her from the pool and from collections. Ironmouse said on stream it was an accidental early release / sneak peek, and that she returns on **August 4**.
+
+Dataminer reporting around the vault said early collectors should get her **restored automatically** when she is re-enabled. Epic’s in-game collection UI is the source of truth — if she is missing after August 4, relaunch the client and check again before assuming she is gone forever.
+
+## Ironmouse Sprite powers (why she’s meta)
+
+When your health is low, Ironmouse starts a regen window. During that window you also get:
+
+- **Cloak** (harder to track while you recover)
+- **Low gravity** (float / drift out of peeks instead of standing still)
+
+Community breakdowns of the level scaling (heal amount while the ability is up):
+
+| Sprite level | Health restored (approx.) |
+| --- | --- |
+| Level 1 | 60 |
+| Level 2 | 70 |
+| Level 3 | 80 |
+| Level 4 | 90 |
+| Level 5 | 100 |
+
+That package is why people call her one of the strongest **defensive / survival** Sprites in Chapter 7 Season 3 — heal + invisibility + escape movement in one proc. Exact trigger thresholds and timers can shift with hotfixes; read the in-game Sprite tooltip after she is live.
+
+## How to get the Ironmouse Sprite
+
+She is **Mythic**, so expect a low roll rate. Treat every match as a farm attempt.
+
+### 1. Relic Chests in Renegade Vaults (best volume)
+
+Relic Chests inside **Renegade Vaults** are the farm spot most early players hit for Ironmouse. Plan a vault-heavy drop, clear the room, open every Relic / rare chest, then rotate to the next vault if you have keys / access.
+
+Use the [Shattered Coast map](/fortnite-map) and [loot guide](/guides/map/fortnite-loot-guide-best-spots) to pick vault-adjacent POIs instead of empty coastline.
+
+### 2. Sprite Chests and rare chests
+
+Same pipeline as other chase Sprites:
+
+- Prioritize **Sprite Chests** whenever you hear/see them
+- Hit **rare chests** in strong POIs
+- Keep opening volume — Mythics punish camping one house
+
+### 3. Locators and helper Sprites
+
+If you find a **Sprite Locator** or **Lucky Locator**, use it. Lucky Locator-style tools that bias toward Sprites you do not own are especially valuable for a brand-new Mythic. Some players also equip loot-luck helpers (for example Earth Sprite style bonuses) while chest-routing — treat those as small odds bumps, not guarantees.
+
+### 4. Take it off other players
+
+If someone already has Ironmouse equipped, third-party them. Tracking Sprites (when available in the pool) help you hunt carriers. In squads, call it out the second you see the Mythic icon.
+
+### 5. Trade with friends
+
+Sprite trading (when enabled for her) is the chill path if your duo already extracted one. Trading was reported locked while she was vaulted — expect it to open with the August 4 return.
+
+## Extract immediately — do not die with her
+
+Finding Ironmouse only buffs **this** match until you bank her.
+
+1. Equip her.
+2. Prefer a **Portable Extractor** (~quiet, short channel) if you already bought one with Sprite Dust.
+3. Otherwise wait until **after first circle**, take an **unoccupied Extraction Site**, survive the ~30s defend, and deposit.
+4. Or play for a **Victory Royale** — wins auto-extract carried Sprites.
+
+Full site / Portable Extractor walkthrough: [how to extract Sprites in Chapter 7 Season 3](/guides/how-to/how-to-extract-sprites-fortnite).
+
+In Duos/Trios, if only one of you has a Portable Extractor, hand her off so the safer player banks her — you can trade later.
+
+## Are there Ironmouse skins in the Item Shop?
+
+Dataminers floated possible collab outfits (codenames / mic accessory / LEGO styles) around the same window. **Epic has not firmly confirmed a full Ironmouse skin set** the way the Sprite is confirmed. This guide focuses on the Sprite — check the [Item Shop tracker](/tools/item-shop) on and after August 4 if cosmetics drop.
+
+## FAQ
+
+### When does the Ironmouse Sprite come back?
+
+**August 4, 2026**, tied to Ironmouse’s debut anniversary, after the early vault.
+
+### Is Ironmouse a skin or a Sprite?
+
+The live collab piece players can collect in BR right now is the **Mythic Sprite**. Skins remain unconfirmed / rumored until they appear in the shop UI.
+
+### Can I still get her if I extracted her during the sneak peek?
+
+Likely yes once she is re-enabled — community datamine notes said early collections should restore. Verify in your Sprite book after August 4.
+
+### What’s the fastest way to farm her?
+
+Vault / Relic Chest routes + Sprite Chest volume, then instant extract. Don’t ego-peek with an unextracted Mythic.
+
+### Does she carry into the next season?
+
+Chapter 7 Season 3 Sprite collections are season-scoped. Extract and master her while Runners is live.
+
+## Related guides
+
+- [How to extract Sprites](/guides/how-to/how-to-extract-sprites-fortnite)
+- [How to get cube Sprites](/guides/how-to/how-to-get-cube-sprites-fortnite)
+- [Interactive Fortnite map](/fortnite-map)
+- [Best loot spots](/guides/map/fortnite-loot-guide-best-spots)
+- [Free cosmetics tracker](/free-cosmetics)
 `,
   },
   {

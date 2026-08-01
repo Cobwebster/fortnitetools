@@ -131,6 +131,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </Link>
@@ -210,6 +215,9 @@ export function Footer() {
             </Link>
             <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
               Privacy
+            </Link>
+            <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+              Terms
             </Link>
             <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
               Contact

@@ -36,7 +36,7 @@ export default function AboutPage() {
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Free tools: map, loadout builder, shop browser, sensitivity, XP, V-Bucks helpers, and more</li>
           <li>Season-focused guides with honest disclaimers when data is approximate</li>
-          <li>No accounts required for core tools</li>
+          <li>Core tools work without an account; optional login for feedback and community submissions</li>
           <li>We do not sell V-Bucks, accounts, cheats, or in-game items</li>
           <li>We do not claim to be an official Epic Games product</li>
         </ul>
