@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import {
   COSMETIC_TYPES,
   RARITY_COLORS,
@@ -40,6 +41,8 @@ function ItemCard({
   price,
   footer,
   hasVideo,
+  videoLabel,
+  noImageLabel,
   onClick,
 }: {
   name: string
@@ -50,6 +53,8 @@ function ItemCard({
   price?: number
   footer?: string
   hasVideo?: boolean
+  videoLabel: string
+  noImageLabel: string
   onClick?: () => void
 }) {
   return (
@@ -63,7 +68,7 @@ function ItemCard({
           // eslint-disable-next-line @next/next/no-img-element
           <img src={image} alt={name} className="h-full w-full object-contain p-3" loading="lazy" />
         ) : (
-          <div className="flex h-full items-center justify-center text-xs text-muted-foreground">No image</div>
+          <div className="flex h-full items-center justify-center text-xs text-muted-foreground">{noImageLabel}</div>
         )}
         {typeof price === 'number' && price > 0 && (
           <div className="absolute bottom-2 right-2 rounded-md bg-background/90 border border-border px-2 py-0.5 text-xs font-bold text-foreground">
@@ -72,7 +77,7 @@ function ItemCard({
         )}
         {hasVideo && (
           <div className="absolute top-2 left-2 rounded bg-primary px-1.5 py-0.5 text-[10px] font-bold uppercase text-primary-foreground">
-            Video
+            {videoLabel}
           </div>
         )}
       </div>
@@ -91,6 +96,7 @@ function ItemCard({
 }
 
 export function ItemShopClient() {
+  const t = useTranslations('tools.itemShop')
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -136,15 +142,15 @@ export function ItemShopClient() {
     try {
       const res = await fetch('/api/fortnite/shop')
       const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Failed to load shop')
+      if (!res.ok) throw new Error(data.error || t('errors.loadShop'))
       setShopOffers(data.offers || [])
       setShopDate(data.date || null)
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Failed to load shop')
+      setError(e instanceof Error ? e.message : t('errors.loadShop'))
     } finally {
       setLoading(false)
     }
-  }, [])
+  }, [t])
 
   const loadNew = useCallback(async () => {
     setLoading(true)
@@ -152,23 +158,23 @@ export function ItemShopClient() {
     try {
       const res = await fetch('/api/fortnite/cosmetics/new')
       const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Failed to load new cosmetics')
+      if (!res.ok) throw new Error(data.error || t('errors.loadNew'))
       setNewItems(data.all || [])
       setNewMeta({
         build: data.build,
         lastBr: data.lastAdditions?.br || data.lastAdditions?.all,
       })
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Failed to load new cosmetics')
+      setError(e instanceof Error ? e.message : t('errors.loadNew'))
     } finally {
       setLoading(false)
     }
-  }, [])
+  }, [t])
 
   const runBrowse = useCallback(async () => {
     const name = query.trim()
     if (!name && !browseType) {
-      setError('Enter a search term or pick a type.')
+      setError(t('browse.errorEmpty'))
       return
     }
     setLoading(true)
@@ -180,16 +186,16 @@ export function ItemShopClient() {
       if (browseRarity) params.set('rarity', browseRarity)
       const res = await fetch(`/api/fortnite/cosmetics/search?${params}`)
       const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Search failed')
+      if (!res.ok) throw new Error(data.error || t('errors.search'))
       setBrowseItems(data.items || [])
       setBrowseCount(data.count || 0)
       setBrowseTruncated(Boolean(data.truncated))
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Search failed')
+      setError(e instanceof Error ? e.message : t('errors.search'))
     } finally {
       setLoading(false)
     }
-  }, [query, browseType, browseRarity])
+  }, [query, browseType, browseRarity, t])
 
   useEffect(() => {
     if (tab === 'shop' && shopOffers.length === 0) loadShop()
@@ -227,9 +233,9 @@ export function ItemShopClient() {
   }, [shopOffers])
 
   const tabs: { id: Tab; label: string; icon: typeof ShoppingBag }[] = [
-    { id: 'shop', label: "Today's Shop", icon: ShoppingBag },
-    { id: 'new', label: 'New / Incoming', icon: Sparkles },
-    { id: 'browse', label: 'Browse Catalog', icon: Library },
+    { id: 'shop', label: t('tabs.shop'), icon: ShoppingBag },
+    { id: 'new', label: t('tabs.new'), icon: Sparkles },
+    { id: 'browse', label: t('tabs.browse'), icon: Library },
   ]
 
   return (
@@ -260,13 +266,11 @@ export function ItemShopClient() {
           className="ml-auto inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-semibold text-muted-foreground hover:text-foreground"
         >
           <RefreshCw className={`h-3.5 w-3.5 ${loading ? 'animate-spin' : ''}`} aria-hidden="true" />
-          Refresh
+          {t('refresh')}
         </button>
       </div>
 
-      <p className="text-xs text-muted-foreground">
-        Click any outfit, emote, or cosmetic for the full set, V-Bucks price (if in shop), styles, and dance/emote video when available.
-      </p>
+      <p className="text-xs text-muted-foreground">{t('clickHint')}</p>
 
       {error && (
         <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
@@ -281,12 +285,17 @@ export function ItemShopClient() {
               <p className="text-sm text-muted-foreground">
                 {shopDate ? (
                   <>
-                    Shop date: <span className="text-foreground">{formatDate(shopDate)}</span>
+                    {t('shop.shopDateLabel')} <span className="text-foreground">{formatDate(shopDate)}</span>
                   </>
                 ) : (
-                  'Loading current rotation…'
+                  t('shop.loadingRotation')
                 )}
-                {shopOffers.length > 0 && <> · {shopOffers.length} offers</>}
+                {shopOffers.length > 0 && (
+                  <>
+                    {' '}
+                    · {shopOffers.length} {t('shop.offersSuffix')}
+                  </>
+                )}
               </p>
             </div>
             <div className="flex flex-col gap-2 sm:flex-row">
@@ -295,7 +304,7 @@ export function ItemShopClient() {
                 <input
                   value={shopQuery}
                   onChange={(e) => setShopQuery(e.target.value)}
-                  placeholder="Filter shop…"
+                  placeholder={t('shop.filterPlaceholder')}
                   className="w-full sm:w-56 rounded-lg border border-border bg-muted pl-9 pr-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none"
                 />
               </div>
@@ -304,7 +313,7 @@ export function ItemShopClient() {
                 onChange={(e) => setShopType(e.target.value)}
                 className="rounded-lg border border-border bg-muted px-3 py-2 text-sm text-foreground focus:border-primary focus:outline-none"
               >
-                <option value="all">All types</option>
+                <option value="all">{t('shop.allTypes')}</option>
                 {[...typeCounts.entries()]
                   .sort((a, b) => b[1] - a[1])
                   .map(([value, count]) => (
@@ -317,7 +326,7 @@ export function ItemShopClient() {
           </div>
 
           {loading && shopOffers.length === 0 ? (
-            <p className="text-sm text-muted-foreground">Loading Item Shop…</p>
+            <p className="text-sm text-muted-foreground">{t('shop.loading')}</p>
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {filteredShop.map((offer) => {
@@ -327,13 +336,15 @@ export function ItemShopClient() {
                   <ItemCard
                     key={offer.offerId}
                     name={offer.name}
-                    type={offer.isBundle ? `Bundle · ${offer.section}` : primary?.type || offer.section}
+                    type={offer.isBundle ? `${t('shop.bundlePrefix')} · ${offer.section}` : primary?.type || offer.section}
                     rarity={primary?.rarity || 'Rare'}
                     rarityValue={primary?.rarityValue || 'rare'}
                     image={offer.image}
                     price={offer.price}
-                    footer={offer.outDate ? `Leaves ${formatDate(offer.outDate)}` : offer.section}
+                    footer={offer.outDate ? t('shop.leaves', { date: formatDate(offer.outDate) ?? '' }) : offer.section}
                     hasVideo={offer.items.some((i) => Boolean(i.showcaseVideo))}
+                    videoLabel={t('shop.video')}
+                    noImageLabel={t('drawer.noImage')}
                     onClick={() => openId && openItem(openId)}
                   />
                 )
@@ -341,7 +352,7 @@ export function ItemShopClient() {
             </div>
           )}
           {!loading && filteredShop.length === 0 && (
-            <p className="text-sm text-muted-foreground">No offers match this filter.</p>
+            <p className="text-sm text-muted-foreground">{t('shop.noMatch')}</p>
           )}
         </>
       )}
@@ -350,17 +361,17 @@ export function ItemShopClient() {
         <>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <p className="text-sm text-muted-foreground max-w-2xl">
-              Recently added / datamined cosmetics from Fortnite-API (often includes unreleased items before they hit the shop).
+              {t('new.description')}
               {newMeta.lastBr ? (
                 <>
                   {' '}
-                  Last BR addition: <span className="text-foreground">{formatDate(newMeta.lastBr)}</span>.
+                  {t('new.lastAddition', { date: formatDate(newMeta.lastBr) ?? '' })}
                 </>
               ) : null}
               {newMeta.build ? (
                 <>
                   {' '}
-                  Build: <span className="text-foreground font-mono text-xs">{newMeta.build}</span>.
+                  {t('new.build', { build: newMeta.build })}
                 </>
               ) : null}
             </p>
@@ -369,13 +380,13 @@ export function ItemShopClient() {
               onChange={(e) => setNewType(e.target.value)}
               className="rounded-lg border border-border bg-muted px-3 py-2 text-sm text-foreground focus:border-primary focus:outline-none"
             >
-              <option value="all">All new ({newItems.length})</option>
-              {COSMETIC_TYPES.filter((t) => t.value).map((t) => {
-                const count = newItems.filter((i) => i.typeValue === t.value).length
+              <option value="all">{t('new.allNew', { count: newItems.length })}</option>
+              {COSMETIC_TYPES.filter((ct) => ct.value).map((ct) => {
+                const count = newItems.filter((i) => i.typeValue === ct.value).length
                 if (!count) return null
                 return (
-                  <option key={t.value} value={t.value}>
-                    {t.label} ({count})
+                  <option key={ct.value} value={ct.value}>
+                    {ct.label} ({count})
                   </option>
                 )
               })}
@@ -383,7 +394,7 @@ export function ItemShopClient() {
           </div>
 
           {loading && newItems.length === 0 ? (
-            <p className="text-sm text-muted-foreground">Loading new cosmetics…</p>
+            <p className="text-sm text-muted-foreground">{t('new.loading')}</p>
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {filteredNew.map((item) => (
@@ -394,8 +405,10 @@ export function ItemShopClient() {
                   rarity={item.rarity}
                   rarityValue={item.rarityValue}
                   image={item.image || item.smallImage}
-                  footer={item.added ? `Added ${formatDate(item.added)}` : item.introduction}
+                  footer={item.added ? t('new.added', { date: formatDate(item.added) ?? '' }) : item.introduction}
                   hasVideo={Boolean(item.showcaseVideo)}
+                  videoLabel={t('shop.video')}
+                  noImageLabel={t('drawer.noImage')}
                   onClick={() => openItem(item.id)}
                 />
               ))}
@@ -415,7 +428,7 @@ export function ItemShopClient() {
           >
             <div className="flex-1">
               <label htmlFor="browse-q" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">
-                Search name
+                {t('browse.searchLabel')}
               </label>
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
@@ -423,14 +436,14 @@ export function ItemShopClient() {
                   id="browse-q"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="e.g. Solid Snake, Orange Justice, Renegade…"
+                  placeholder={t('browse.searchPlaceholder')}
                   className="w-full rounded-lg border border-border bg-muted pl-9 pr-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none"
                 />
               </div>
             </div>
             <div>
               <label htmlFor="browse-type" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">
-                Type
+                {t('browse.typeLabel')}
               </label>
               <select
                 id="browse-type"
@@ -438,16 +451,16 @@ export function ItemShopClient() {
                 onChange={(e) => setBrowseType(e.target.value)}
                 className="w-full sm:w-44 rounded-lg border border-border bg-muted px-3 py-2.5 text-sm text-foreground focus:border-primary focus:outline-none"
               >
-                {COSMETIC_TYPES.map((t) => (
-                  <option key={t.value || 'all'} value={t.value}>
-                    {t.label}
+                {COSMETIC_TYPES.map((ct) => (
+                  <option key={ct.value || 'all'} value={ct.value}>
+                    {ct.label}
                   </option>
                 ))}
               </select>
             </div>
             <div>
               <label htmlFor="browse-rarity" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">
-                Rarity
+                {t('browse.rarityLabel')}
               </label>
               <select
                 id="browse-rarity"
@@ -455,7 +468,7 @@ export function ItemShopClient() {
                 onChange={(e) => setBrowseRarity(e.target.value)}
                 className="w-full sm:w-44 rounded-lg border border-border bg-muted px-3 py-2.5 text-sm text-foreground focus:border-primary focus:outline-none"
               >
-                <option value="">Any rarity</option>
+                <option value="">{t('browse.anyRarity')}</option>
                 <option value="common">Common</option>
                 <option value="uncommon">Uncommon</option>
                 <option value="rare">Rare</option>
@@ -474,21 +487,21 @@ export function ItemShopClient() {
               type="submit"
               className="rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90"
             >
-              Search catalog
+              {t('browse.searchBtn')}
             </button>
           </form>
           <p className="text-xs text-muted-foreground">
-            Try &quot;Solid Snake&quot; then open the outfit to see the full Sneaking set. Emotes with a Video badge play the official dance clip.
+            {t('browse.hint')}
             {browseCount > 0 && (
               <>
                 {' '}
-                Showing {browseItems.length} of {browseCount}
-                {browseTruncated ? ' (capped)' : ''}.
+                {t('browse.showing', { shown: browseItems.length, count: browseCount })}
+                {browseTruncated ? t('browse.capped') : ''}.
               </>
             )}
           </p>
           {loading ? (
-            <p className="text-sm text-muted-foreground">Searching…</p>
+            <p className="text-sm text-muted-foreground">{t('browse.searching')}</p>
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {browseItems.map((item) => (
@@ -501,15 +514,15 @@ export function ItemShopClient() {
                   image={item.image || item.smallImage}
                   footer={item.set || item.introduction}
                   hasVideo={Boolean(item.showcaseVideo)}
+                  videoLabel={t('shop.video')}
+                  noImageLabel={t('drawer.noImage')}
                   onClick={() => openItem(item.id)}
                 />
               ))}
             </div>
           )}
           {!loading && browseItems.length === 0 && (
-            <p className="text-sm text-muted-foreground">
-              Search by name (e.g. &quot;Solid Snake&quot;) or pick Outfits / Emotes to browse.
-            </p>
+            <p className="text-sm text-muted-foreground">{t('browse.emptyPrompt')}</p>
           )}
         </>
       )}

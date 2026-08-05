@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
 import Script from 'next/script'
+import { IntlProvider } from '@/components/intl-provider'
 import { websiteJsonLd } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
+import { defaultLocale } from '@/i18n/config'
+import { getMessages } from '@/i18n/get-messages'
 import './globals.css'
 
 const GA_MEASUREMENT_ID = 'G-2XQ18341NM'
@@ -83,12 +86,13 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   const jsonLd = websiteJsonLd()
+  const messages = await getMessages(defaultLocale)
 
   return (
     <html lang="en" className={`bg-background ${barlow.variable} ${barlowCondensed.variable}`}>
@@ -97,7 +101,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <IntlProvider locale={defaultLocale} messages={messages}>
+          {children}
+        </IntlProvider>
         {process.env.NODE_ENV === 'production' && (
           <>
             <Script

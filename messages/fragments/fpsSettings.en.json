@@ -1,0 +1,208 @@
+{
+  "metaTitle": "Best Fortnite Settings – FPS & Graphics Guide (Chapter 7 Season 3)",
+  "metaDescription": "Every Fortnite graphics, display, and audio setting explained, with competitive, balanced, and quality presets to boost FPS and reduce input lag.",
+  "home": "Home",
+  "tools": "Tools",
+  "breadcrumb": "FPS & Settings Guide",
+  "titlePrefix": "Best Fortnite",
+  "titleHighlight": "Settings",
+  "hero": "Every graphics, display, and audio setting explained — with competitive, balanced, and quality presets. Filter by what matters most to your PC and playstyle.",
+  "presetTitle": "Choose Your Preset",
+  "tiers": {
+    "competitive": { "label": "Competitive / Max FPS", "desc": "Lowest settings. Prioritises frame rate — common among competitive players." },
+    "balanced": { "label": "Balanced", "desc": "Good frame rate with reasonable visuals. Solid default for mid-range PCs." },
+    "quality": { "label": "Quality / Casual", "desc": "Higher visuals, lower FPS. For players who care more about how the game looks." }
+  },
+  "categoryAll": "All",
+  "categories": {
+    "display": "Display",
+    "graphics": "Graphics",
+    "advanced": "Advanced",
+    "audio": "Audio"
+  },
+  "impactLabels": {
+    "high": "High Impact",
+    "medium": "Medium Impact",
+    "low": "Low Impact"
+  },
+  "settingsCol": {
+    "competitive": "Competitive",
+    "balanced": "Balanced",
+    "quality": "Quality"
+  },
+  "settings": {
+    "windowMode": {
+      "name": "Window Mode",
+      "competitive": "Fullscreen",
+      "balanced": "Fullscreen",
+      "quality": "Fullscreen",
+      "why": "Fullscreen gives the lowest input latency. Never use Windowed or Borderless in a competitive context."
+    },
+    "resolution": {
+      "name": "Resolution",
+      "competitive": "1920×1080",
+      "balanced": "1920×1080",
+      "quality": "2560×1440",
+      "why": "Higher resolution costs GPU performance. 1080p is the standard for competitive play."
+    },
+    "frameRateLimit": {
+      "name": "Frame Rate Limit",
+      "competitive": "Unlimited or 240",
+      "balanced": "Monitor refresh",
+      "quality": "Monitor refresh",
+      "why": "Uncapped FPS reduces latency even above your monitor's refresh rate due to how GPU rendering buffers work."
+    },
+    "motionBlur": {
+      "name": "Motion Blur",
+      "competitive": "Off",
+      "balanced": "Off",
+      "quality": "Off",
+      "why": "Motion blur has zero gameplay benefit and actively obscures enemies during fast movement. Always turn this off regardless of preset."
+    },
+    "showFps": {
+      "name": "Show FPS",
+      "competitive": "On",
+      "balanced": "On",
+      "quality": "Off",
+      "why": "Knowing your current FPS helps you identify drops during fights or in crowded areas."
+    },
+    "resolution3d": {
+      "name": "3D Resolution",
+      "competitive": "100%",
+      "balanced": "100%",
+      "quality": "100%",
+      "why": "Never lower 3D resolution below 100% — it makes enemies look blurry and is the single biggest visual hit to clarity."
+    },
+    "viewDistance": {
+      "name": "View Distance",
+      "competitive": "Medium or Far",
+      "balanced": "Far",
+      "quality": "Epic",
+      "why": "Medium is fine for most fights. Setting this too low can hide distant players and storm details."
+    },
+    "shadows": {
+      "name": "Shadows",
+      "competitive": "Off",
+      "balanced": "Low",
+      "quality": "Medium",
+      "why": "Shadows are the single biggest FPS cost in Fortnite. Turning them off can gain 30–60 FPS on most GPUs."
+    },
+    "antiAliasing": {
+      "name": "Anti-Aliasing",
+      "competitive": "Off or FXAA",
+      "balanced": "FXAA",
+      "quality": "TAA",
+      "why": "TAA softens the image, which can make spotting enemies slightly harder. FXAA is a good middle ground."
+    },
+    "textures": {
+      "name": "Textures",
+      "competitive": "Low",
+      "balanced": "Medium",
+      "quality": "High or Epic",
+      "why": "Textures mostly cost VRAM, not frame rate. On GPUs with 6GB+ VRAM, Medium textures cost almost nothing."
+    },
+    "effects": {
+      "name": "Effects",
+      "competitive": "Low",
+      "balanced": "Medium",
+      "quality": "Epic",
+      "why": "Effects control explosion and storm visuals. Low is recommended to reduce visual noise during fights."
+    },
+    "postProcessing": {
+      "name": "Post Processing",
+      "competitive": "Low",
+      "balanced": "Low",
+      "quality": "Medium",
+      "why": "Post processing adds lens effects and colour grading. Low improves clarity and saves GPU resources."
+    },
+    "renderingMode": {
+      "name": "Rendering Mode",
+      "competitive": "Performance",
+      "balanced": "Performance",
+      "quality": "DirectX 12",
+      "why": "Performance mode bypasses Unreal Engine's renderer for a massive FPS boost, especially on older hardware. Use it unless you want ray tracing."
+    },
+    "nvidiaReflex": {
+      "name": "NVIDIA Reflex",
+      "competitive": "On + Boost",
+      "balanced": "On",
+      "quality": "On",
+      "why": "NVIDIA Reflex reduces system latency by up to 50ms on supported GPUs (GTX 900 series and above). Always enable it."
+    },
+    "vsync": {
+      "name": "VSync",
+      "competitive": "Off",
+      "balanced": "Off",
+      "quality": "Off",
+      "why": "VSync caps FPS to your monitor refresh and adds input lag. It should be off in all scenarios — screen tearing is preferable to added latency."
+    },
+    "colorblindMode": {
+      "name": "Colorblind Mode",
+      "competitive": "Deuteranope 5–8",
+      "balanced": "Off",
+      "quality": "Off",
+      "why": "Many pros use Deuteranope at strength 5–8 — it makes enemy outlines and loot contrast more visible, even for players without colour blindness."
+    },
+    "soundQuality": {
+      "name": "Sound Quality",
+      "competitive": "Low",
+      "balanced": "Medium",
+      "quality": "High",
+      "why": "Lower sound quality actually makes footsteps and chest audio pop out more clearly. High quality adds reverb that can mask enemy sounds."
+    },
+    "headphones3d": {
+      "name": "3D Headphones",
+      "competitive": "On",
+      "balanced": "On",
+      "quality": "On",
+      "why": "Enables binaural audio processing for accurate directional sound. Critical for hearing exactly which direction footsteps come from."
+    },
+    "subtitles": {
+      "name": "Subtitles",
+      "competitive": "Off",
+      "balanced": "Off",
+      "quality": "Off",
+      "why": "Subtitles add UI clutter with no gameplay benefit in Fortnite."
+    }
+  },
+  "seoTitle": "How to Get More FPS in Fortnite",
+  "seo": {
+    "performance": {
+      "h": "Enable Performance Mode",
+      "p": "The single biggest FPS gain available in Fortnite is switching to Performance rendering mode under Advanced Graphics. This bypasses Unreal Engine's DirectX renderer and can double frame rates on some systems. It requires a one-time asset download of around 3–5 GB."
+    },
+    "shadows": {
+      "h": "Turn Off Shadows First",
+      "p": "Shadows are the most GPU-intensive setting in Fortnite. Disabling shadows entirely — setting them to Off — typically gains 30 to 60 FPS on mid-range hardware. This is the first thing to do if you are experiencing frame rate issues during builds or large team fights."
+    },
+    "windows": {
+      "h": "Windows Settings That Help",
+      "p": "Outside of Fortnite, make sure your GPU is set to Maximum Performance in NVIDIA or AMD control panel, Game Mode is enabled in Windows, and that the game is running with High priority in Task Manager. Also ensure your monitor is set to its maximum refresh rate in Windows Display settings."
+    },
+    "pros": {
+      "h": "Why Pros Use Low Settings",
+      "p": "Many competitive players use low graphics settings because higher FPS can reduce input latency. At 240 FPS, a frame is ~4ms; at 60 FPS, ~16ms. That difference is noticeable for aim and building — but comfort and visuals still matter if you are not chasing tournament latency."
+    }
+  },
+  "faqTitle": "Frequently asked questions",
+  "faqs": {
+    "q1": "What is the single best FPS setting to change in Fortnite?",
+    "a1": "Turning Shadows off gives the biggest single gain — typically 30 to 60 FPS on mid-range hardware. If your GPU supports it, switching Rendering Mode to Performance is the next biggest win.",
+    "q2": "Should I play Fortnite in Performance Mode or DirectX 12?",
+    "a2": "Performance mode bypasses Unreal Engine's standard renderer and runs noticeably faster on most hardware, especially older or lower-end GPUs. DirectX 12 unlocks better visuals and ray tracing but costs frame rate, so it suits Quality/Casual setups more than competitive ones.",
+    "q3": "Does turning off shadows really help FPS?",
+    "a3": "Yes. Shadows are consistently the most expensive graphics setting in Fortnite. Setting Shadows to Off is the first change most competitive players make, and it also removes visual clutter that can hide enemies.",
+    "q4": "What is the best competitive Fortnite settings preset?",
+    "a4": "Most competitive players run low Shadows, Effects, Post Processing, and Textures, 100% 3D Resolution, Fullscreen, VSync off, and NVIDIA Reflex on. Use the Competitive / Max FPS preset above as a starting point, then adjust View Distance and Anti-Aliasing to taste.",
+    "q5": "Do these settings work on console?",
+    "a5": "Console (PS5, Xbox Series X/S) exposes far fewer graphics options than PC — mainly a Performance vs Fidelity mode toggle. Performance mode prioritises frame rate similarly to the PC Competitive preset above; Fidelity mode favours visuals like the Quality preset."
+  },
+  "relatedTitle": "Related Fortnite tools",
+  "relatedBefore": "Pair a stable frame rate with a matching",
+  "relatedSens": "sensitivity conversion",
+  "relatedMid1": ", check",
+  "relatedKeybinds": "pro keybinds",
+  "relatedMid2": ", or browse the",
+  "relatedHub": "full tools hub",
+  "relatedAfter": "."
+}

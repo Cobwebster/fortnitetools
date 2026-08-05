@@ -1,0 +1,697 @@
+{
+  "es": {
+    "metaTitle": "Keybinds pro de Fortnite – Diseños de teclado de jugadores competitivos",
+    "metaDescription": "Compara las asignaciones de teclado aproximadas usadas por jugadores competitivos conocidos de Fortnite para construir, editar y combatir, con consejos para elegir tu propio diseño.",
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "breadcrumb": "Keybinds pro",
+    "titlePrefix": "Fortnite pro",
+    "titleHighlight": "Keybinds",
+    "hero": "Asignaciones de teclado aproximadas usadas por jugadores competitivos conocidos. Los diseños cambian con el tiempo — trátalo como referencia y luego ajústalo según el tamaño de tu mano y tu comodidad.",
+    "categoryAll": "Todos",
+    "categories": {
+      "building": "Construcción",
+      "combat": "Combate",
+      "inventory": "Inventario"
+    },
+    "actions": {
+      "wall": {
+        "label": "Muro"
+      },
+      "floor": {
+        "label": "Suelo"
+      },
+      "ramp": {
+        "label": "Rampa"
+      },
+      "roof": {
+        "label": "Techo / Pirámide"
+      },
+      "stair": {
+        "label": "Escaleras"
+      },
+      "edit": {
+        "label": "Editar"
+      },
+      "repair": {
+        "label": "Reparar / Restablecer"
+      },
+      "crouch": {
+        "label": "Agacharse"
+      },
+      "jump": {
+        "label": "Saltar"
+      },
+      "sprint": {
+        "label": "Correr"
+      },
+      "reload": {
+        "label": "Recargar"
+      },
+      "interact": {
+        "label": "Interactuar"
+      },
+      "slot1": {
+        "label": "Ranura de arma 1"
+      },
+      "slot2": {
+        "label": "Ranura de arma 2"
+      },
+      "slot3": {
+        "label": "Ranura de arma 3"
+      },
+      "slot4": {
+        "label": "Ranura de arma 4"
+      },
+      "slot5": {
+        "label": "Ranura de arma 5"
+      },
+      "map": {
+        "label": "Mapa"
+      },
+      "inventory": {
+        "label": "Inventario"
+      },
+      "ping": {
+        "label": "Ping / Marcador"
+      }
+    },
+    "actionHeader": "Acción",
+    "uniqueHint": "Las teclas con menor opacidad las usa solo un jugador y puede que no representen un patrón común.",
+    "tipsTitle": "Consejos de keybinds",
+    "tips": {
+      "qWall": {
+        "title": "El muro en Q",
+        "body": "Casi todos los mejores jugadores de teclado asignan el muro a Q. Es la tecla accesible más cercana a WASD y te permite levantar un muro al instante sin interrumpir el movimiento."
+      },
+      "sideMouse": {
+        "title": "Construir con los botones laterales del ratón",
+        "body": "Algunos jugadores asignan suelo y rampa a los botones 4 y 5 del ratón (laterales). Así mantienen la mano izquierda libre para moverse y acercan las construcciones a la mano de la puntería."
+      },
+      "editClose": {
+        "title": "Editar en una tecla cercana",
+        "body": "Editar debe ser rápido. La mayoría de los pros usan F, G o T — teclas alcanzables sin alejar mucho la mano izquierda de WASD. Las teclas de edición lentas son uno de los mayores cuellos de botella de habilidad para jugadores nuevos."
+      },
+      "crouchCtrl": {
+        "title": "Agacharse vs L-Ctrl",
+        "body": "Casi todos los pros usan Ctrl izquierdo para agacharse. Algunos lo reasignan para evitar agacharse por accidente. Lo importante es que no entre en conflicto con tus asignaciones de construcción o edición."
+      },
+      "avoidNumbers": {
+        "title": "Evita las teclas numéricas para construir",
+        "body": "Usar 1–4 para construir obliga a un gran movimiento de la mano lejos de WASD y ralentiza mucho tu ritmo de construcción. Cuanto más cerca estén las teclas de construcción del movimiento, más rápido podrás construir mientras te mueves."
+      },
+      "personalise": {
+        "title": "Personaliza con el tiempo",
+        "body": "No copies los keybinds de un pro directamente si te resultan incómodos. Empieza con un diseño lógico y ajústalo durante meses. La memoria muscular lleva tiempo — cambiar los keybinds cada semana reinicia tu progreso."
+      }
+    },
+    "seoTitle": "Cómo elegir keybinds de Fortnite",
+    "seo": {
+      "whyMatter": {
+        "h": "Por qué importan los keybinds",
+        "p": "Cambias constantemente entre movimiento, construcción, edición y disparo. Los keybinds lejos de WASD (como construir en la fila numérica) ralentizan ese ciclo. Las teclas más cercanas suelen sentirse mejor — pero la comodidad gana a copiar un diseño pro que no puedes alcanzar bien."
+      },
+      "controller": {
+        "h": "Keybinds de mando",
+        "p": "Los jugadores de mando usan un sistema distinto. Builder Pro sigue siendo un diseño competitivo habitual. Muchos añaden paletas para que los pulgares permanezcan en los sticks. Practica cualquier keybind nuevo en Creative antes de ranked."
+      }
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faqs": {
+      "q1": "¿Qué keybinds usan la mayoría de los pros de Fortnite para construir?",
+      "a1": "La mayoría de jugadores competitivos asignan el muro a Q, con suelo, rampa y techo en teclas cercanas como C, V, F o T. Editar suele estar en F, G o T — la que no esté ya ocupada por una pieza de construcción.",
+      "q2": "¿Debería copiar los keybinds de un pro concreto?",
+      "a2": "No directamente. Usa un diseño pro como referencia inicial y luego ajústalo según el tamaño de tu mano y tus hábitos. La comodidad y la constancia importan más que igualar la configuración exacta de tu jugador favorito.",
+      "q3": "¿Cuál es la mejor tecla para Editar en Fortnite?",
+      "a3": "F, G y T son las opciones más comunes entre jugadores competitivos porque están cerca de WASD sin interferir con el movimiento u otras teclas de construcción. Elige la que esté libre en tu diseño.",
+      "q4": "¿Por qué tantos jugadores usan Q para el muro?",
+      "a4": "Q está justo al lado de WASD, así que puedes levantar un muro sin quitar la mano izquierda de las teclas de movimiento. Es la asignación más consistente entre jugadores competitivos de teclado.",
+      "q5": "¿Los keybinds de mando son distintos de los de teclado?",
+      "a5": "Sí. Los jugadores de mando usan diseños de botones como Builder Pro en lugar de posiciones de teclas, y muchos añaden paletas para que los pulgares nunca abandonen los sticks. Prueba diseños nuevos en Creative antes de llevarlos a ranked."
+    },
+    "relatedTitle": "Herramientas de Fortnite relacionadas",
+    "relatedBefore": "Combina tus keybinds con una",
+    "relatedSens": "conversión de sensibilidad",
+    "relatedMid1": ", ajusta tus",
+    "relatedFps": "ajustes de FPS",
+    "relatedMid2": ", o explora el",
+    "relatedHub": "catálogo completo de herramientas",
+    "relatedAfter": "."
+  },
+  "de": {
+    "metaTitle": "Fortnite Pro-Keybinds – Tastatur-Layouts von Wettbewerbsspielern",
+    "metaDescription": "Vergleiche die ungefähren Tastaturbelegungen bekannter Fortnite-Wettbewerbsspieler für Bauen, Editieren und Kampf, mit Tipps für dein eigenes Layout.",
+    "home": "Start",
+    "tools": "Tools",
+    "breadcrumb": "Pro-Keybinds",
+    "titlePrefix": "Fortnite Pro",
+    "titleHighlight": "Keybinds",
+    "hero": "Ungefähre Tastaturbelegungen bekannter Wettbewerbsspieler. Layouts ändern sich im Laufe der Zeit — nutze das als Referenz und passe es dann an Handgröße und Komfort an.",
+    "categoryAll": "Alle",
+    "categories": {
+      "building": "Bauen",
+      "combat": "Kampf",
+      "inventory": "Inventar"
+    },
+    "actions": {
+      "wall": {
+        "label": "Wand"
+      },
+      "floor": {
+        "label": "Boden"
+      },
+      "ramp": {
+        "label": "Rampe"
+      },
+      "roof": {
+        "label": "Dach / Pyramide"
+      },
+      "stair": {
+        "label": "Treppe"
+      },
+      "edit": {
+        "label": "Editieren"
+      },
+      "repair": {
+        "label": "Reparieren / Zurücksetzen"
+      },
+      "crouch": {
+        "label": "Ducken"
+      },
+      "jump": {
+        "label": "Springen"
+      },
+      "sprint": {
+        "label": "Sprinten"
+      },
+      "reload": {
+        "label": "Nachladen"
+      },
+      "interact": {
+        "label": "Interagieren"
+      },
+      "slot1": {
+        "label": "Waffen-Slot 1"
+      },
+      "slot2": {
+        "label": "Waffen-Slot 2"
+      },
+      "slot3": {
+        "label": "Waffen-Slot 3"
+      },
+      "slot4": {
+        "label": "Waffen-Slot 4"
+      },
+      "slot5": {
+        "label": "Waffen-Slot 5"
+      },
+      "map": {
+        "label": "Karte"
+      },
+      "inventory": {
+        "label": "Inventar"
+      },
+      "ping": {
+        "label": "Ping / Marker"
+      }
+    },
+    "actionHeader": "Aktion",
+    "uniqueHint": "Tasten mit geringerer Deckkraft werden nur von einem Spieler genutzt und spiegeln möglicherweise kein gängiges Muster wider.",
+    "tipsTitle": "Keybind-Tipps",
+    "tips": {
+      "qWall": {
+        "title": "Die Q-Wand",
+        "body": "Fast jeder Top-Tastaturspieler legt Wand auf Q. Es ist die nächstgelegene erreichbare Taste zu WASD und ermöglicht es dir, sofort eine Wand zu setzen, ohne die Bewegung zu unterbrechen."
+      },
+      "sideMouse": {
+        "title": "Bauen auf den Seitentasten der Maus",
+        "body": "Manche Spieler legen Boden und Rampe auf Maus 4 und Maus 5 (Seitentasten). So bleibt die linke Hand frei für die Bewegung und die Bauten liegen näher an der Zielhand."
+      },
+      "editClose": {
+        "title": "Editieren auf einer nahen Taste",
+        "body": "Editieren muss schnell gehen. Die meisten Pros nutzen F, G oder T — Tasten, die erreichbar sind, ohne die linke Hand weit von WASD zu bewegen. Langsame Edit-Tasten sind einer der größten Skill-Engpässe für neue Spieler."
+      },
+      "crouchCtrl": {
+        "title": "Ducken vs. L-Strg",
+        "body": "Fast alle Pros nutzen linke Strg für Ducken. Manche legen es um, um versehentliches Ducken zu vermeiden. Entscheidend ist, dass es nicht mit deinen Bau- oder Edit-Binds kollidiert."
+      },
+      "avoidNumbers": {
+        "title": "Zahlentasten für Bauten vermeiden",
+        "body": "1–4 für Bauten zu nutzen erzwingt eine große Handbewegung weg von WASD und verlangsamt dein Bautempo deutlich. Je näher deine Bautasten an der Bewegung liegen, desto schneller kannst du bauen, während du dich bewegst."
+      },
+      "personalise": {
+        "title": "Mit der Zeit personalisieren",
+        "body": "Kopiere Pro-Binds nicht direkt, wenn sie sich unangenehm anfühlen. Starte mit einem logischen Layout und passe es über Monate an. Muskelgedächtnis braucht Zeit — wöchentliche Bind-Wechsel setzen deinen Fortschritt zurück."
+      }
+    },
+    "seoTitle": "Fortnite-Keybinds auswählen",
+    "seo": {
+      "whyMatter": {
+        "h": "Warum Keybinds wichtig sind",
+        "p": "Du wechselst ständig zwischen Bewegung, Bauen, Editieren und Schießen. Binds weit von WASD (wie Bauten in der Ziffernreihe) verlangsamen diesen Loop. Nähere Tasten fühlen sich meist besser an — aber Komfort schlägt ein Pro-Layout, das du nicht sauber erreichen kannst."
+      },
+      "controller": {
+        "h": "Controller-Binds",
+        "p": "Controller-Spieler nutzen ein anderes System. Builder Pro bleibt ein gängiges Wettbewerbs-Layout. Viele fügen Paddles hinzu, damit die Daumen auf den Sticks bleiben. Übe neue Binds in Creative, bevor du ranked spielst."
+      }
+    },
+    "faqTitle": "Häufig gestellte Fragen",
+    "faqs": {
+      "q1": "Welche Keybinds nutzen die meisten Fortnite-Pros zum Bauen?",
+      "a1": "Die meisten Wettbewerbsspieler legen Wand auf Q, mit Boden, Rampe und Dach auf nahen Tasten wie C, V, F oder T. Editieren liegt meist auf F, G oder T — je nachdem, welche Taste noch nicht für ein Bauteil belegt ist.",
+      "q2": "Sollte ich die Keybinds eines bestimmten Pros kopieren?",
+      "a2": "Nicht direkt. Nutze ein Pro-Layout als Ausgangspunkt und passe es an deine Handgröße und Gewohnheiten an. Komfort und Konstanz zählen mehr als das exakte Setup deines Lieblingsspielers.",
+      "q3": "Was ist die beste Taste für Editieren in Fortnite?",
+      "a3": "F, G und T sind die häufigsten Wahl unter Wettbewerbsspielern, weil sie nah an WASD liegen, ohne Bewegung oder andere Bautasten zu stören. Nimm die Taste, die in deinem Layout frei ist.",
+      "q4": "Warum nutzen so viele Spieler Q für Wand?",
+      "a4": "Q sitzt direkt neben WASD, sodass du eine Wand setzen kannst, ohne die linke Hand von den Bewegungstasten zu nehmen. Es ist die konsistenteste Bind unter Wettbewerbs-Tastaturspielern.",
+      "q5": "Unterscheiden sich Controller-Keybinds von Tastatur-Binds?",
+      "a5": "Ja. Controller-Spieler nutzen Button-Layouts wie Builder Pro statt Tastenpositionen, und viele fügen Paddles hinzu, damit die Daumen nie die Sticks verlassen. Teste neue Layouts in Creative, bevor du sie in ranked nimmst."
+    },
+    "relatedTitle": "Verwandte Fortnite-Tools",
+    "relatedBefore": "Kombiniere deine Keybinds mit einer passenden",
+    "relatedSens": "Sensitivitäts-Umrechnung",
+    "relatedMid1": ", stelle deine",
+    "relatedFps": "FPS-Einstellungen",
+    "relatedMid2": " ein oder stöbere im",
+    "relatedHub": "vollständigen Tool-Hub",
+    "relatedAfter": "."
+  },
+  "fr": {
+    "metaTitle": "Keybinds pro Fortnite – Dispositions clavier de joueurs compétitifs",
+    "metaDescription": "Compare les assignations clavier approximatives utilisées par des joueurs Fortnite compétitifs connus pour la construction, l'édition et le combat, avec des conseils pour choisir votre propre disposition.",
+    "home": "Accueil",
+    "tools": "Outils",
+    "breadcrumb": "Keybinds pro",
+    "titlePrefix": "Fortnite pro",
+    "titleHighlight": "Keybinds",
+    "hero": "Assignations clavier approximatives utilisées par des joueurs compétitifs connus. Les dispositions évoluent — considérez ceci comme une référence, puis ajustez selon la taille de vos mains et votre confort.",
+    "categoryAll": "Tous",
+    "categories": {
+      "building": "Construction",
+      "combat": "Combat",
+      "inventory": "Inventaire"
+    },
+    "actions": {
+      "wall": {
+        "label": "Mur"
+      },
+      "floor": {
+        "label": "Sol"
+      },
+      "ramp": {
+        "label": "Rampe"
+      },
+      "roof": {
+        "label": "Toit / Pyramide"
+      },
+      "stair": {
+        "label": "Escaliers"
+      },
+      "edit": {
+        "label": "Édition"
+      },
+      "repair": {
+        "label": "Réparer / Réinitialiser"
+      },
+      "crouch": {
+        "label": "S'accroupir"
+      },
+      "jump": {
+        "label": "Sauter"
+      },
+      "sprint": {
+        "label": "Sprint"
+      },
+      "reload": {
+        "label": "Recharger"
+      },
+      "interact": {
+        "label": "Interagir"
+      },
+      "slot1": {
+        "label": "Emplacement d'arme 1"
+      },
+      "slot2": {
+        "label": "Emplacement d'arme 2"
+      },
+      "slot3": {
+        "label": "Emplacement d'arme 3"
+      },
+      "slot4": {
+        "label": "Emplacement d'arme 4"
+      },
+      "slot5": {
+        "label": "Emplacement d'arme 5"
+      },
+      "map": {
+        "label": "Carte"
+      },
+      "inventory": {
+        "label": "Inventaire"
+      },
+      "ping": {
+        "label": "Ping / Marqueur"
+      }
+    },
+    "actionHeader": "Action",
+    "uniqueHint": "Les touches avec une opacité plus faible ne sont utilisées que par un seul joueur et ne représentent peut-être pas un schéma courant.",
+    "tipsTitle": "Conseils keybinds",
+    "tips": {
+      "qWall": {
+        "title": "Le mur sur Q",
+        "body": "Presque tous les meilleurs joueurs clavier assignent Mur à Q. C'est la touche accessible la plus proche de WASD et permet de poser un mur instantanément sans perturber le déplacement."
+      },
+      "sideMouse": {
+        "title": "Construire sur les boutons latéraux de la souris",
+        "body": "Certains joueurs assignent sol et rampe aux boutons 4 et 5 de la souris (latéraux). Cela laisse la main gauche libre pour le déplacement et rapproche les constructions de la main de visée."
+      },
+      "editClose": {
+        "title": "Édition sur une touche proche",
+        "body": "L'édition doit être rapide. La plupart des pros utilisent F, G ou T — des touches accessibles sans éloigner beaucoup la main gauche de WASD. Des touches d'édition lentes sont l'un des plus grands freins de progression pour les nouveaux joueurs."
+      },
+      "crouchCtrl": {
+        "title": "Accroupissement vs L-Ctrl",
+        "body": "Presque tous les pros utilisent Ctrl gauche pour s'accroupir. Certains le réassignent pour éviter les accroupissements accidentels. L'essentiel est qu'il n'entre pas en conflit avec vos binds de construction ou d'édition."
+      },
+      "avoidNumbers": {
+        "title": "Évitez les chiffres pour construire",
+        "body": "Utiliser 1–4 pour construire impose un grand mouvement de main loin de WASD et ralentit nettement votre rythme de construction. Plus vos touches de construction sont proches du déplacement, plus vous construisez vite en bougeant."
+      },
+      "personalise": {
+        "title": "Personnalisez avec le temps",
+        "body": "Ne copiez pas directement les binds d'un pro s'ils sont inconfortables. Commencez avec une disposition logique et ajustez sur plusieurs mois. La mémoire musculaire prend du temps — changer de binds chaque semaine remet votre progression à zéro."
+      }
+    },
+    "seoTitle": "Choisir ses keybinds Fortnite",
+    "seo": {
+      "whyMatter": {
+        "h": "Pourquoi les keybinds comptent",
+        "p": "Vous alternez constamment entre déplacement, construction, édition et tir. Des binds loin de WASD (comme construire sur la rangée des chiffres) ralentissent cette boucle. Des touches plus proches sont souvent plus agréables — mais le confort prime sur copier une disposition pro que vous n'atteignez pas proprement."
+      },
+      "controller": {
+        "h": "Keybinds manette",
+        "p": "Les joueurs manette utilisent un système différent. Builder Pro reste une disposition compétitive courante. Beaucoup ajoutent des palettes pour garder les pouces sur les sticks. Entraînez-vous aux nouveaux binds en Creative avant le ranked."
+      }
+    },
+    "faqTitle": "Questions fréquentes",
+    "faqs": {
+      "q1": "Quels keybinds utilisent la plupart des pros Fortnite pour construire ?",
+      "a1": "La plupart des joueurs compétitifs assignent Mur à Q, avec Sol, Rampe et Toit sur des touches proches comme C, V, F ou T. L'édition est généralement sur F, G ou T — selon celle qui n'est pas déjà utilisée pour une pièce de construction.",
+      "q2": "Dois-je copier les keybinds d'un pro précis ?",
+      "a2": "Pas directement. Utilisez une disposition pro comme point de départ, puis ajustez selon la taille de vos mains et vos habitudes. Confort et régularité comptent plus que reproduire la config exacte de votre joueur préféré.",
+      "q3": "Quelle est la meilleure touche pour Édition dans Fortnite ?",
+      "a3": "F, G et T sont les choix les plus courants chez les joueurs compétitifs car ils sont proches de WASD sans entrer en conflit avec le déplacement ou d'autres touches de construction. Prenez celle qui est libre sur votre disposition.",
+      "q4": "Pourquoi tant de joueurs utilisent-ils Q pour Mur ?",
+      "a4": "Q est juste à côté de WASD, vous pouvez donc poser un mur sans retirer la main gauche des touches de déplacement. C'est le bind le plus cohérent chez les joueurs clavier compétitifs.",
+      "q5": "Les keybinds manette diffèrent-ils des binds clavier ?",
+      "a5": "Oui. Les joueurs manette utilisent des dispositions de boutons comme Builder Pro plutôt que des positions de touches, et beaucoup ajoutent des palettes pour ne jamais quitter les sticks. Testez les nouvelles dispositions en Creative avant de les emmener en ranked."
+    },
+    "relatedTitle": "Outils Fortnite associés",
+    "relatedBefore": "Associez vos keybinds à une",
+    "relatedSens": "conversion de sensibilité",
+    "relatedMid1": ", réglez vos",
+    "relatedFps": "paramètres FPS",
+    "relatedMid2": ", ou parcourez le",
+    "relatedHub": "catalogue complet d'outils",
+    "relatedAfter": "."
+  },
+  "pl": {
+    "metaTitle": "Keybinds pro Fortnite – Układy klawiatury graczy turniejowych",
+    "metaDescription": "Porównaj przybliżone przypisania klawiszy znanych turniejowych graczy Fortnite do budowania, edycji i walki, wraz z poradami dotyczącymi wyboru własnego układu.",
+    "home": "Strona główna",
+    "tools": "Narzędzia",
+    "breadcrumb": "Keybinds pro",
+    "titlePrefix": "Fortnite pro",
+    "titleHighlight": "Keybinds",
+    "hero": "Przybliżone przypisania klawiszy używane przez znanych graczy turniejowych. Układy zmieniają się w czasie — traktuj to jako punkt odniesienia, a potem dopasuj do wielkości dłoni i wygody.",
+    "categoryAll": "Wszystkie",
+    "categories": {
+      "building": "Budowanie",
+      "combat": "Walka",
+      "inventory": "Ekwipunek"
+    },
+    "actions": {
+      "wall": {
+        "label": "Ściana"
+      },
+      "floor": {
+        "label": "Podłoga"
+      },
+      "ramp": {
+        "label": "Rampa"
+      },
+      "roof": {
+        "label": "Dach / Piramida"
+      },
+      "stair": {
+        "label": "Schody"
+      },
+      "edit": {
+        "label": "Edycja"
+      },
+      "repair": {
+        "label": "Naprawa / Reset"
+      },
+      "crouch": {
+        "label": "Kucanie"
+      },
+      "jump": {
+        "label": "Skok"
+      },
+      "sprint": {
+        "label": "Sprint"
+      },
+      "reload": {
+        "label": "Przeładowanie"
+      },
+      "interact": {
+        "label": "Interakcja"
+      },
+      "slot1": {
+        "label": "Slot broni 1"
+      },
+      "slot2": {
+        "label": "Slot broni 2"
+      },
+      "slot3": {
+        "label": "Slot broni 3"
+      },
+      "slot4": {
+        "label": "Slot broni 4"
+      },
+      "slot5": {
+        "label": "Slot broni 5"
+      },
+      "map": {
+        "label": "Mapa"
+      },
+      "inventory": {
+        "label": "Ekwipunek"
+      },
+      "ping": {
+        "label": "Ping / Znacznik"
+      }
+    },
+    "actionHeader": "Akcja",
+    "uniqueHint": "Klawisze o niższej przezroczystości są używane tylko przez jednego gracza i mogą nie odzwierciedlać popularnego wzorca.",
+    "tipsTitle": "Porady dotyczące keybindów",
+    "tips": {
+      "qWall": {
+        "title": "Ściana na Q",
+        "body": "Prawie każdy topowy gracz klawiaturowy przypisuje Ścianę do Q. To najbliższy dostępny klawisz od WASD i pozwala postawić ścianę natychmiast, bez przerywania ruchu."
+      },
+      "sideMouse": {
+        "title": "Budowanie na bocznych przyciskach myszy",
+        "body": "Niektórzy gracze przypisują podłogę i rampę do przycisków 4 i 5 myszy (bocznych). Dzięki temu lewa ręka pozostaje wolna do ruchu, a budowle są bliżej ręki z celowaniem."
+      },
+      "editClose": {
+        "title": "Edycja na bliskim klawiszu",
+        "body": "Edycja musi być szybka. Większość proów używa F, G lub T — klawiszy dostępnych bez dalekiego oddalania lewej ręki od WASD. Wolne klawisze edycji to jeden z największych wąskich gardeł umiejętności dla nowych graczy."
+      },
+      "crouchCtrl": {
+        "title": "Kucanie vs L-Ctrl",
+        "body": "Prawie wszyscy prosi używają lewego Ctrl do kucania. Niektórzy zmieniają przypisanie, by uniknąć przypadkowego kucania. Kluczowe jest, by nie kolidowało z bindami budowania ani edycji."
+      },
+      "avoidNumbers": {
+        "title": "Unikaj cyfr do budowania",
+        "body": "Używanie 1–4 do budowania wymusza duży ruch dłoni z dala od WASD i znacząco spowalnia tempo budowania. Im bliżej klawisze budowania są od ruchu, tym szybciej budujesz w ruchu."
+      },
+      "personalise": {
+        "title": "Personalizuj z czasem",
+        "body": "Nie kopiuj bindów proów wprost, jeśli są niewygodne. Zacznij od logicznego układu i dostosowuj go przez miesiące. Pamięć mięśniowa potrzebuje czasu — zmiana bindów co tydzień resetuje postęp."
+      }
+    },
+    "seoTitle": "Wybór keybindów Fortnite",
+    "seo": {
+      "whyMatter": {
+        "h": "Dlaczego keybindy mają znaczenie",
+        "p": "Ciągle przełączasz się między ruchem, budowaniem, edycją i strzelaniem. Bindy daleko od WASD (np. budowanie na rzędzie cyfr) spowalniają tę pętlę. Bliższe klawisze zwykle lepiej się sprawdzają — ale wygoda wygrywa z kopiowaniem układu pro, którego nie osiągasz wygodnie."
+      },
+      "controller": {
+        "h": "Bindy na padzie",
+        "p": "Gracze na padzie używają innego systemu. Builder Pro pozostaje popularnym układem turniejowym. Wielu dodaje paddles, by kciuki zostawały na drążkach. Ćwicz nowe bindy w Creative przed ranked."
+      }
+    },
+    "faqTitle": "Często zadawane pytania",
+    "faqs": {
+      "q1": "Jakich keybindów do budowania używa większość proów Fortnite?",
+      "a1": "Większość graczy turniejowych przypisuje Ścianę do Q, a Podłogę, Rampę i Dach do pobliskich klawiszy jak C, V, F lub T. Edycja zwykle jest na F, G lub T — na tym, który nie jest już zajęty przez element budowli.",
+      "q2": "Czy powinienem kopiować keybindy konkretnego proa?",
+      "a2": "Nie wprost. Traktuj układ proa jako punkt wyjścia, a potem dostosuj do wielkości dłoni i nawyków. Wygoda i regularność są ważniejsze niż dokładne odwzorowanie setupu ulubionego gracza.",
+      "q3": "Jaki klawisz jest najlepszy do Edycji w Fortnite?",
+      "a3": "F, G i T to najczęstsze wybory wśród graczy turniejowych, bo są blisko WASD bez konfliktu z ruchem ani innymi klawiszami budowania. Wybierz ten, który jest wolny w twoim układzie.",
+      "q4": "Dlaczego tak wielu graczy używa Q do Ściany?",
+      "a4": "Q jest tuż obok WASD, więc możesz postawić ścianę bez zdejmowania lewej ręki z klawiszy ruchu. To najbardziej spójny bind wśród turniejowych graczy klawiaturowych.",
+      "q5": "Czy keybindy na padzie różnią się od klawiaturowych?",
+      "a5": "Tak. Gracze na padzie używają układów przycisków jak Builder Pro zamiast pozycji klawiszy, a wielu dodaje paddles, by kciuki nie opuszczały drążków. Testuj nowe układy w Creative przed ranked."
+    },
+    "relatedTitle": "Powiązane narzędzia Fortnite",
+    "relatedBefore": "Połącz keybindy z pasującą",
+    "relatedSens": "konwersją czułości",
+    "relatedMid1": ", ustaw swoje",
+    "relatedFps": "ustawienia FPS",
+    "relatedMid2": " lub przejrzyj",
+    "relatedHub": "pełny katalog narzędzi",
+    "relatedAfter": "."
+  },
+  "pt-BR": {
+    "metaTitle": "Keybinds pro de Fortnite – Layouts de teclado de jogadores competitivos",
+    "metaDescription": "Compare atribuições de teclado aproximadas usadas por jogadores competitivos conhecidos de Fortnite para construção, edição e combate, com dicas para escolher seu próprio layout.",
+    "home": "Início",
+    "tools": "Ferramentas",
+    "breadcrumb": "Keybinds pro",
+    "titlePrefix": "Fortnite pro",
+    "titleHighlight": "Keybinds",
+    "hero": "Atribuições de teclado aproximadas usadas por jogadores competitivos conhecidos. Os layouts mudam com o tempo — trate isso como referência e depois ajuste conforme o tamanho da mão e o conforto.",
+    "categoryAll": "Todos",
+    "categories": {
+      "building": "Construção",
+      "combat": "Combate",
+      "inventory": "Inventário"
+    },
+    "actions": {
+      "wall": {
+        "label": "Parede"
+      },
+      "floor": {
+        "label": "Chão"
+      },
+      "ramp": {
+        "label": "Rampa"
+      },
+      "roof": {
+        "label": "Teto / Pirâmide"
+      },
+      "stair": {
+        "label": "Escadas"
+      },
+      "edit": {
+        "label": "Editar"
+      },
+      "repair": {
+        "label": "Reparar / Resetar"
+      },
+      "crouch": {
+        "label": "Agachar"
+      },
+      "jump": {
+        "label": "Pular"
+      },
+      "sprint": {
+        "label": "Correr"
+      },
+      "reload": {
+        "label": "Recarregar"
+      },
+      "interact": {
+        "label": "Interagir"
+      },
+      "slot1": {
+        "label": "Slot de arma 1"
+      },
+      "slot2": {
+        "label": "Slot de arma 2"
+      },
+      "slot3": {
+        "label": "Slot de arma 3"
+      },
+      "slot4": {
+        "label": "Slot de arma 4"
+      },
+      "slot5": {
+        "label": "Slot de arma 5"
+      },
+      "map": {
+        "label": "Mapa"
+      },
+      "inventory": {
+        "label": "Inventário"
+      },
+      "ping": {
+        "label": "Ping / Marcador"
+      }
+    },
+    "actionHeader": "Ação",
+    "uniqueHint": "Teclas com opacidade menor são usadas por apenas um jogador e podem não representar um padrão comum.",
+    "tipsTitle": "Dicas de keybinds",
+    "tips": {
+      "qWall": {
+        "title": "A parede no Q",
+        "body": "Quase todo jogador de teclado de alto nível atribui Parede ao Q. É a tecla acessível mais próxima do WASD e permite levantar uma parede instantaneamente sem interromper o movimento."
+      },
+      "sideMouse": {
+        "title": "Construir nos botões laterais do mouse",
+        "body": "Alguns jogadores atribuem chão e rampa aos botões 4 e 5 do mouse (laterais). Isso mantém a mão esquerda livre para movimento e aproxima as construções da mão de mira."
+      },
+      "editClose": {
+        "title": "Editar em uma tecla próxima",
+        "body": "Editar precisa ser rápido. A maioria dos pros usa F, G ou T — teclas alcançáveis sem afastar muito a mão esquerda do WASD. Teclas de edição lentas são um dos maiores gargalos de habilidade para jogadores novos."
+      },
+      "crouchCtrl": {
+        "title": "Agachar vs L-Ctrl",
+        "body": "Quase todos os pros usam Ctrl esquerdo para agachar. Alguns remapeiam para evitar agachamentos acidentais. O importante é que não conflite com seus binds de construção ou edição."
+      },
+      "avoidNumbers": {
+        "title": "Evite teclas numéricas para construir",
+        "body": "Usar 1–4 para construir exige um grande movimento da mão longe do WASD e reduz bastante seu ritmo de construção. Quanto mais perto as teclas de construção estiverem do movimento, mais rápido você constrói enquanto se move."
+      },
+      "personalise": {
+        "title": "Personalize com o tempo",
+        "body": "Não copie binds de pro diretamente se forem desconfortáveis. Comece com um layout lógico e ajuste ao longo de meses. Memória muscular leva tempo — trocar binds toda semana zera seu progresso."
+      }
+    },
+    "seoTitle": "Como escolher keybinds de Fortnite",
+    "seo": {
+      "whyMatter": {
+        "h": "Por que keybinds importam",
+        "p": "Você alterna constantemente entre movimento, construção, edição e tiro. Binds longe do WASD (como construir na fileira numérica) desaceleram esse ciclo. Teclas mais próximas costumam ser melhores — mas conforto vale mais do que copiar um layout pro que você não alcança bem."
+      },
+      "controller": {
+        "h": "Keybinds de controle",
+        "p": "Jogadores de controle usam um sistema diferente. Builder Pro continua sendo um layout competitivo comum. Muitos adicionam paddles para manter os polegares nos analógicos. Pratique binds novos no Creative antes do ranked."
+      }
+    },
+    "faqTitle": "Perguntas frequentes",
+    "faqs": {
+      "q1": "Quais keybinds a maioria dos pros de Fortnite usa para construir?",
+      "a1": "A maioria dos jogadores competitivos atribui Parede ao Q, com Chão, Rampa e Teto em teclas próximas como C, V, F ou T. Editar geralmente fica em F, G ou T — a que não estiver ocupada por uma peça de construção.",
+      "q2": "Devo copiar os keybinds de um pro específico?",
+      "a2": "Não diretamente. Use um layout pro como referência inicial e depois ajuste ao tamanho da sua mão e aos seus hábitos. Conforto e consistência importam mais do que igualar a configuração exata do seu jogador favorito.",
+      "q3": "Qual é a melhor tecla para Editar no Fortnite?",
+      "a3": "F, G e T são as escolhas mais comuns entre jogadores competitivos porque ficam perto do WASD sem conflitar com movimento ou outras teclas de construção. Escolha a que estiver livre no seu layout.",
+      "q4": "Por que tantos jogadores usam Q para Parede?",
+      "a4": "Q fica logo ao lado do WASD, então você pode levantar uma parede sem tirar a mão esquerda das teclas de movimento. É o bind mais consistente entre jogadores competitivos de teclado.",
+      "q5": "Keybinds de controle são diferentes dos de teclado?",
+      "a5": "Sim. Jogadores de controle usam layouts de botões como Builder Pro em vez de posições de teclas, e muitos adicionam paddles para os polegares nunca saírem dos analógicos. Teste layouts novos no Creative antes de levar ao ranked."
+    },
+    "relatedTitle": "Ferramentas de Fortnite relacionadas",
+    "relatedBefore": "Combine seus keybinds com uma",
+    "relatedSens": "conversão de sensibilidade",
+    "relatedMid1": ", ajuste suas",
+    "relatedFps": "configurações de FPS",
+    "relatedMid2": ", ou explore o",
+    "relatedHub": "catálogo completo de ferramentas",
+    "relatedAfter": "."
+  }
+}

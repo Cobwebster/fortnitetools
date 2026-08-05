@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { Search, Loader2 } from 'lucide-react'
 import {
   INPUT_LABELS,
@@ -14,15 +15,15 @@ import {
   type StatsTimeWindow,
 } from '@/lib/fortnite-stats'
 
-const ACCOUNT_OPTIONS: { value: StatsAccountType; label: string }[] = [
-  { value: 'epic', label: 'Epic' },
-  { value: 'psn', label: 'PlayStation' },
-  { value: 'xbl', label: 'Xbox' },
+const ACCOUNT_OPTIONS: { value: StatsAccountType; labelKey: 'accountEpic' | 'accountPsn' | 'accountXbl' }[] = [
+  { value: 'epic', labelKey: 'accountEpic' },
+  { value: 'psn', labelKey: 'accountPsn' },
+  { value: 'xbl', labelKey: 'accountXbl' },
 ]
 
-const WINDOW_OPTIONS: { value: StatsTimeWindow; label: string }[] = [
-  { value: 'lifetime', label: 'Lifetime' },
-  { value: 'season', label: 'Current season' },
+const WINDOW_OPTIONS: { value: StatsTimeWindow; labelKey: 'windowLifetime' | 'windowSeason' }[] = [
+  { value: 'lifetime', labelKey: 'windowLifetime' },
+  { value: 'season', labelKey: 'windowSeason' },
 ]
 
 function StatCell({ label, value, hint }: { label: string; value: string; hint?: string }) {
@@ -35,25 +36,31 @@ function StatCell({ label, value, hint }: { label: string; value: string; hint?:
   )
 }
 
-function PlaylistTable({ stats }: { stats: PlaylistStats }) {
+function PlaylistTable({
+  stats,
+  t,
+}: {
+  stats: PlaylistStats
+  t: ReturnType<typeof useTranslations>
+}) {
   const rows: { label: string; value: string }[] = [
-    { label: 'Wins', value: formatStat(stats.wins) },
-    { label: 'K/D', value: formatStat(stats.kd, 2) },
-    { label: 'Win rate', value: stats.winRate == null ? '—' : `${formatStat(stats.winRate, 1)}%` },
-    { label: 'Matches', value: formatStat(stats.matches) },
-    { label: 'Kills', value: formatStat(stats.kills) },
-    { label: 'Deaths', value: formatStat(stats.deaths) },
-    { label: 'Kills / match', value: formatStat(stats.killsPerMatch, 2) },
-    { label: 'Score', value: formatStat(stats.score) },
-    { label: 'Score / match', value: formatStat(stats.scorePerMatch, 1) },
-    { label: 'Minutes played', value: formatStat(stats.minutesPlayed) },
-    { label: 'Players outlived', value: formatStat(stats.playersOutlived) },
-    { label: 'Top 3', value: formatStat(stats.top3) },
-    { label: 'Top 5', value: formatStat(stats.top5) },
-    { label: 'Top 6', value: formatStat(stats.top6) },
-    { label: 'Top 10', value: formatStat(stats.top10) },
-    { label: 'Top 12', value: formatStat(stats.top12) },
-    { label: 'Top 25', value: formatStat(stats.top25) },
+    { label: t('statWins'), value: formatStat(stats.wins) },
+    { label: t('statKd'), value: formatStat(stats.kd, 2) },
+    { label: t('statWinRate'), value: stats.winRate == null ? '—' : `${formatStat(stats.winRate, 1)}%` },
+    { label: t('statMatches'), value: formatStat(stats.matches) },
+    { label: t('statKills'), value: formatStat(stats.kills) },
+    { label: t('statDeaths'), value: formatStat(stats.deaths) },
+    { label: t('statKillsPerMatch'), value: formatStat(stats.killsPerMatch, 2) },
+    { label: t('statScore'), value: formatStat(stats.score) },
+    { label: t('statScorePerMatch'), value: formatStat(stats.scorePerMatch, 1) },
+    { label: t('statMinutesPlayed'), value: formatStat(stats.minutesPlayed) },
+    { label: t('statPlayersOutlived'), value: formatStat(stats.playersOutlived) },
+    { label: t('statTop3'), value: formatStat(stats.top3) },
+    { label: t('statTop5'), value: formatStat(stats.top5) },
+    { label: t('statTop6'), value: formatStat(stats.top6) },
+    { label: t('statTop10'), value: formatStat(stats.top10) },
+    { label: t('statTop12'), value: formatStat(stats.top12) },
+    { label: t('statTop25'), value: formatStat(stats.top25) },
   ]
 
   return (
@@ -68,9 +75,11 @@ function PlaylistTable({ stats }: { stats: PlaylistStats }) {
 function InputSection({
   title,
   input,
+  t,
 }: {
   title: string
   input: InputStats
+  t: ReturnType<typeof useTranslations>
 }) {
   const playlists = (Object.keys(PLAYLIST_LABELS) as (keyof InputStats)[]).filter((key) => input[key])
 
@@ -90,11 +99,11 @@ function InputSection({
               </h3>
               {playlist.lastModified ? (
                 <p className="text-[11px] text-muted-foreground">
-                  Updated {new Date(playlist.lastModified).toLocaleString()}
+                  {t('updatedPrefix')} {new Date(playlist.lastModified).toLocaleString()}
                 </p>
               ) : null}
             </div>
-            <PlaylistTable stats={playlist} />
+            <PlaylistTable stats={playlist} t={t} />
           </div>
         )
       })}
@@ -113,6 +122,7 @@ export function PlayerStatsClient({
   initialTimeWindow?: StatsTimeWindow
   configured: boolean
 }) {
+  const t = useTranslations('tools.playerStats')
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -128,11 +138,11 @@ export function PlayerStatsClient({
     async (opts: { name: string; accountType: StatsAccountType; timeWindow: StatsTimeWindow; pushUrl: boolean }) => {
       const trimmed = opts.name.trim()
       if (!trimmed) {
-        setError('Enter a Fortnite / Epic display name.')
+        setError(t('errorEnterName'))
         return
       }
       if (!configured) {
-        setError('Player stats need a FORTNITE_API_KEY on the server. Add one from fortnite-api.com, then redeploy.')
+        setError(t('errorNeedApiKey'))
         return
       }
 
@@ -149,7 +159,7 @@ export function PlayerStatsClient({
         const json = await res.json()
         if (!res.ok) {
           setData(null)
-          setError(json.error || 'Lookup failed')
+          setError(json.error || t('lookupFailed'))
           return
         }
         setData(json as PlayerStatsResult)
@@ -164,12 +174,12 @@ export function PlayerStatsClient({
         }
       } catch {
         setData(null)
-        setError('Network error loading stats.')
+        setError(t('networkError'))
       } finally {
         setLoading(false)
       }
     },
-    [configured, pathname, router]
+    [configured, pathname, router, t]
   )
 
   // Auto-load when landing with ?name=
@@ -206,12 +216,12 @@ export function PlayerStatsClient({
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto_auto_auto]">
           <label className="block">
             <span className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              Player name
+              {t('playerNameLabel')}
             </span>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Epic display name"
+              placeholder={t('namePlaceholder')}
               maxLength={32}
               className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               autoComplete="off"
@@ -220,7 +230,7 @@ export function PlayerStatsClient({
           </label>
           <label className="block">
             <span className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              Platform
+              {t('platformLabel')}
             </span>
             <select
               value={accountType}
@@ -229,14 +239,14 @@ export function PlayerStatsClient({
             >
               {ACCOUNT_OPTIONS.map((o) => (
                 <option key={o.value} value={o.value}>
-                  {o.label}
+                  {t(o.labelKey)}
                 </option>
               ))}
             </select>
           </label>
           <label className="block">
             <span className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              Window
+              {t('windowLabel')}
             </span>
             <select
               value={timeWindow}
@@ -245,7 +255,7 @@ export function PlayerStatsClient({
             >
               {WINDOW_OPTIONS.map((o) => (
                 <option key={o.value} value={o.value}>
-                  {o.label}
+                  {t(o.labelKey)}
                 </option>
               ))}
             </select>
@@ -257,28 +267,26 @@ export function PlayerStatsClient({
               className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 disabled:opacity-60 transition-opacity"
             >
               {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Search className="h-4 w-4" />}
-              Look up
+              {t('lookupBtn')}
             </button>
           </div>
         </div>
         {!configured ? (
           <p className="text-xs text-amber-200/90 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3 py-2">
-            Server needs <code className="text-foreground">FORTNITE_API_KEY</code> from{' '}
+            {t('notConfiguredPrefix')} <code className="text-foreground">{t('notConfiguredCode')}</code>{' '}
+            {t('notConfiguredMid')}{' '}
             <a
               href="https://dash.fortnite-api.com/"
               className="text-primary hover:underline"
               target="_blank"
               rel="noreferrer"
             >
-              fortnite-api.com
+              {t('notConfiguredLinkText')}
             </a>{' '}
-            (free Discord login). Shop/map work without it; player stats require the key.
+            {t('notConfiguredSuffix')}
           </p>
         ) : (
-          <p className="text-xs text-muted-foreground">
-            Search updates the URL so you can share a stats link. Default landing page stays clean until you look someone
-            up.
-          </p>
+          <p className="text-xs text-muted-foreground">{t('configuredHint')}</p>
         )}
       </form>
 
@@ -294,19 +302,20 @@ export function PlayerStatsClient({
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
                 <p className="text-xs font-bold uppercase tracking-wider text-primary">
-                  {data.timeWindow === 'season' ? 'Season stats' : 'Lifetime stats'} · {data.accountType.toUpperCase()}
+                  {data.timeWindow === 'season' ? t('seasonStats') : t('lifetimeStats')} ·{' '}
+                  {data.accountType.toUpperCase()}
                 </p>
                 <h2 className="mt-1 font-display text-3xl font-bold uppercase tracking-wide text-foreground">
                   {data.account.name}
                 </h2>
                 {data.battlePass ? (
                   <p className="mt-2 text-sm text-muted-foreground">
-                    Battle Pass level{' '}
+                    {t('battlePassLevel')}{' '}
                     <span className="font-semibold text-foreground">{data.battlePass.level}</span>
                     {data.battlePass.progress > 0 ? (
                       <>
                         {' '}
-                        · {formatStat(data.battlePass.progress, 1)}% to next
+                        · {formatStat(data.battlePass.progress, 1)}% {t('toNext')}
                       </>
                     ) : null}
                   </p>
@@ -314,13 +323,13 @@ export function PlayerStatsClient({
               </div>
               {overall ? (
                 <div className="grid grid-cols-2 gap-2 sm:min-w-[280px]">
-                  <StatCell label="K/D" value={formatStat(overall.kd, 2)} />
-                  <StatCell label="Wins" value={formatStat(overall.wins)} />
+                  <StatCell label={t('statKd')} value={formatStat(overall.kd, 2)} />
+                  <StatCell label={t('statWins')} value={formatStat(overall.wins)} />
                   <StatCell
-                    label="Win rate"
+                    label={t('statWinRate')}
                     value={overall.winRate == null ? '—' : `${formatStat(overall.winRate, 1)}%`}
                   />
-                  <StatCell label="Matches" value={formatStat(overall.matches)} />
+                  <StatCell label={t('statMatches')} value={formatStat(overall.matches)} />
                 </div>
               ) : null}
             </div>
@@ -329,7 +338,7 @@ export function PlayerStatsClient({
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={data.image}
-                  alt={`${data.account.name} Fortnite stats card`}
+                  alt={t('statsImageAlt', { name: data.account.name })}
                   className="mx-auto max-h-[420px] w-auto object-contain"
                 />
               </div>
@@ -338,7 +347,7 @@ export function PlayerStatsClient({
 
           {inputSections.map((section) =>
             section.input ? (
-              <InputSection key={section.key} title={section.label} input={section.input} />
+              <InputSection key={section.key} title={section.label} input={section.input} t={t} />
             ) : null
           )}
         </div>

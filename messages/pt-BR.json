@@ -1,0 +1,1349 @@
+{
+  "nav": {
+    "tools": "Ferramentas",
+    "playerTracker": "Tracker de jogadores",
+    "itemShop": "Loja",
+    "codes": "Códigos",
+    "freeCosmetics": "Cosméticos grátis",
+    "countdown": "Contagem regressiva",
+    "weapons": "Armas",
+    "map": "Mapa",
+    "guides": "Guias",
+    "discord": "Discord",
+    "allGuides": "Todos os guias",
+    "mainNav": "Navegação principal",
+    "mobileNav": "Links do site (mobile)",
+    "kd": "K/D",
+    "sensitivity": "Sensibilidade",
+    "vbucks": "V-Bucks",
+    "zone": "Zona",
+    "damage": "Dano",
+    "bpXp": "XP Passe",
+    "fps": "FPS",
+    "keybinds": "Teclas"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "aria": "Escolher idioma"
+  },
+  "footer": {
+    "tagline": "Calculadoras e guias grátis de Fortnite para a temporada atual. Projeto fã independente.",
+    "categories": "Categorias",
+    "guides": "Guias",
+    "tools": "Ferramentas",
+    "site": "Site",
+    "allGuides": "Todos os guias",
+    "weaponsTier": "Tier list de armas",
+    "bestLoot": "Melhores spots de loot",
+    "mapGuides": "Guias do mapa",
+    "allTools": "Todas as ferramentas",
+    "freeCosmetics": "Cosméticos grátis",
+    "xpCalculator": "Calculadora de XP",
+    "seasonCountdown": "Contagem da temporada",
+    "fortniteTracker": "Fortnite Tracker",
+    "mapCodes": "Códigos de mapas",
+    "interactiveMap": "Mapa interativo",
+    "mapRotation": "Rotação de mapas",
+    "mapEvolution": "Evolução do mapa",
+    "playerCount": "Jogadores online",
+    "loadoutBuilder": "Montador de loadout",
+    "buildSimulator": "Simulador de build",
+    "itemShop": "Loja",
+    "skinRarity": "Raridade de skins",
+    "allWeapons": "Todas as armas",
+    "weaponChanges": "Mudanças de armas",
+    "damageCalc": "Calc. de dano",
+    "sensitivity": "Sensibilidade",
+    "vbucks": "V-Bucks",
+    "kdCalculator": "Calculadora K/D",
+    "zoneTimer": "Timer da zona",
+    "fpsSettings": "Configs de FPS",
+    "keybinds": "Teclas",
+    "about": "Sobre",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de serviço",
+    "contact": "Contato",
+    "otherSites": "Nossos outros sites",
+    "craftmcDesc": "Ferramentas, seeds e guias grátis de Minecraft.",
+    "robloxDesc": "Guias, ferramentas, códigos e script hub de Roblox.",
+    "disclaimerTitle": "Site fã independente — não somos a Epic Games",
+    "copyrightAlso": "Confira também nossos sites de",
+    "minecraft": "Minecraft",
+    "and": "e",
+    "roblox": "Roblox",
+    "toolsSites": ".",
+    "privacyShort": "Privacidade",
+    "termsShort": "Termos",
+    "catHowTo": "Como fazer",
+    "catWeapons": "Armas",
+    "catSeason": "Temporada",
+    "catMap": "Mapa",
+    "refundGuide": "Como reembolsar skins",
+    "redeemGuide": "Como resgatar um código"
+  },
+  "home": {
+    "heroAlt": "Ilha do Fortnite sob o círculo da tempestade",
+    "heroSubtitle": "Calculadoras e guias grátis para o Capítulo 7 Temporada 3.",
+    "heroBody": "Tracker e stats, códigos de XP, Loja de Itens, conversor de sensibilidade e guias práticos de drop/rotação.",
+    "ctaTools": "Abrir ferramentas grátis",
+    "ctaTierList": "Tier list de armas T3",
+    "browseCategories": "Navegar por categoria",
+    "weaponChanges": "Mudanças de armas",
+    "popularTools": "Ferramentas populares",
+    "allTools": "Todas as ferramentas",
+    "featuredGuides": "Guias em destaque",
+    "latestArticles": "Artigos recentes",
+    "viewAll": "Ver tudo",
+    "blurbToolsTitle": "Ferramentas",
+    "blurbTools": "Sensibilidade, XP do Passe, V-Bucks, timer da zona e mais — grátis e atualizado.",
+    "blurbGuidesTitle": "Guias",
+    "blurbGuides": "Guias de armas, mapa, Passe e ranked da temporada — sem enrolação.",
+    "blurbSeasonTitle": "Capítulo 7 Temporada 3",
+    "blurbSeason": "Cobertura Runners do loot e mapa atuais — com datas da última revisão.",
+    "toolFreeCosmetics": "Cosméticos grátis",
+    "toolXpCalc": "Calc. XP",
+    "toolCountdown": "Contagem",
+    "toolWeapons": "Armas",
+    "toolMap": "Mapa",
+    "toolRotation": "Rotação",
+    "toolMapEvolution": "Evolução",
+    "toolMapCodes": "Códigos",
+    "toolPlayerCount": "Jogadores",
+    "toolStatsTracker": "Stats",
+    "toolItemShop": "Loja",
+    "toolSkinRarity": "Raridade",
+    "toolLoadout": "Loadout",
+    "toolBuildSim": "Build Sim",
+    "catHowTo": "Como fazer",
+    "catWeapons": "Armas",
+    "catSeason": "Temporada",
+    "catMap": "Mapa",
+    "ctaGuides": "Ver guias",
+    "toolSensitivity": "Sensibilidade",
+    "toolKd": "K/D",
+    "toolZone": "Zona",
+    "toolVbucks": "V-Bucks",
+    "toolBpXp": "XP do Passe",
+    "toolDamage": "Dano",
+    "toolFps": "FPS",
+    "toolKeybinds": "Teclas"
+  },
+  "toolsPage": {
+    "home": "Início",
+    "breadcrumb": "Ferramentas",
+    "title": "Ferramentas",
+    "titlePrefix": "Fortnite",
+    "description": "Ferramentas interativas grátis para Fortnite. Sensibilidade, V-Bucks, Passe de Batalha e dano — atualizado para a temporada.",
+    "aboutTitle": "Sobre estas ferramentas",
+    "aboutSkinRarityTitle": "Calculadora de raridade",
+    "aboutSkinRarity": "Muita gente busca “skins raras de Fortnite”. Esta busca separa as cores da loja da escassez real.",
+    "aboutSensTitle": "Calculadora de sensibilidade",
+    "aboutSens": "Vindo de Valorant, CS2 ou Apex? Converta com cm/360 e ajuste no Creative.",
+    "aboutVbucksTitle": "Calculadora de V-Bucks",
+    "aboutVbucks": "Pacotes têm tamanhos fixos. Monte uma wishlist e buscamos um combo barato (USD).",
+    "aboutBpTitle": "Calculadora de XP do Passe",
+    "aboutBp": "Temporadas duram ~10 semanas. Informe nível e XP semanal para ver se termina o passe.",
+    "aboutDamageTitle": "Calculadora de dano",
+    "aboutDamage": "Compare STK e TTK do loot Runners e planeje loadouts antes do drop.",
+    "aboutTrackerTitle": "Fortnite Tracker",
+    "aboutTracker": "Busque nomes Epic, PlayStation ou Xbox: K/D, wins, partidas e playlists.",
+    "metaTitle": "Ferramentas Fortnite – Calculadoras grátis",
+    "metaDescription": "Ferramentas grátis de Fortnite: XP, contagem, stats, raridade, mapa, loja, sensibilidade, V-Bucks, K/D, zona, teclas, FPS e dano."
+  },
+  "catalog": {
+    "searchPlaceholder": "Buscar ferramentas…",
+    "openTool": "Abrir ferramenta",
+    "noResults": "Nenhuma ferramenta corresponde aos filtros.",
+    "categories": {
+      "all": "Todas",
+      "cosmetics": "Cosméticos",
+      "stats": "Stats",
+      "map": "Mapa e códigos",
+      "calculators": "Calculadoras",
+      "weapons": "Armas",
+      "settings": "Configurações",
+      "season": "Temporada"
+    },
+    "items": {
+      "free-cosmetics": {
+        "title": "Free Fortnite Cosmetics",
+        "description": "Track free rewards — Twitch drops, quests, Ranked, Sprite mastery, passes, and account links with end dates."
+      },
+      "xp-calculator": {
+        "title": "Fortnite XP Calculator",
+        "description": "Daily XP to hit level 100 or 200, on-pace checkpoints, XP per level, and playtime rates for BR, Reload, LEGO, Festival, and Creative."
+      },
+      "season-countdown": {
+        "title": "Season Countdown",
+        "description": "When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start."
+      },
+      "codes": {
+        "title": "Creative Map Codes",
+        "description": "Searchable Fortnite Creative island codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more."
+      },
+      "player-stats": {
+        "title": "Fortnite Tracker e estatísticas",
+        "description": "Consulte K/D, vitórias, win rate e partidas por nome Epic, PlayStation ou Xbox."
+      },
+      "fortnite-map": {
+        "title": "Mapa interativo",
+        "description": "Mapa de POIs de Shattered Coast com loot, filtros e dicas de drop no Capítulo 7 Temporada 3."
+      },
+      "map-rotation": {
+        "title": "Map Rotation Timer",
+        "description": "Live Reload map schedule — Venture, Oasis, Elite Stronghold — with countdown to the next island, plus Blitz status."
+      },
+      "player-count": {
+        "title": "Player Count",
+        "description": "Fortnite peak concurrent players for Battle Royale, Reload, OG, Blitz, LEGO, and popular Creative maps — from Epic’s public Data API."
+      },
+      "map-evolution": {
+        "title": "Map Evolution",
+        "description": "Slide to compare Fortnite maps across every chapter and season — Chapter 1 through Chapter 7 side by side."
+      },
+      "item-shop": {
+        "title": "Item Shop Tracker",
+        "description": "Live shop rotation plus newly added cosmetics and a searchable catalog of outfits, emotes, and more."
+      },
+      "loadout-builder": {
+        "title": "Loadout Builder",
+        "description": "Build a C7S3 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK."
+      },
+      "fortnite-build-simulator": {
+        "title": "Build Simulator",
+        "description": "Practice Fortnite-style building in the browser — walls, floors, ramps, cones, mats, move/jump, and collision."
+      },
+      "skin-rarity-calculator": {
+        "title": "Skin Rarity Calculator",
+        "description": "Look up any outfit and see scarcity from shop history — appearances, last seen, Battle Pass exclusives, and OG vault status."
+      },
+      "sensitivity-calculator": {
+        "title": "Calculadora de sensibilidade",
+        "description": "Converta sensibilidade de Valorant, CS2, Apex e mais para Fortnite com cm/360."
+      },
+      "kd-calculator": {
+        "title": "Calculadora de K/D",
+        "description": "Calcule K/D, win rate e kills por partida com faixas de referência."
+      },
+      "zone-timer": {
+        "title": "Timer de zona",
+        "description": "Referência de espera e shrink da tempestade no Capítulo 7 Temporada 3."
+      },
+      "fps-settings": {
+        "title": "FPS e configurações",
+        "description": "Presets de gráficos para competitivo, equilíbrio e qualidade."
+      },
+      "keybinds": {
+        "title": "Teclas pro",
+        "description": "Binds de jogadores conhecidos como ponto de partida."
+      },
+      "weapons": {
+        "title": "All Fortnite Weapons",
+        "description": "Full weapon encyclopedia — current pool plus vaulted history with DPS, damage, fire rate, mag, and reload by rarity."
+      },
+      "weapon-changes": {
+        "title": "Weapon Changes",
+        "description": "Fortnite weapon buffs and nerfs by patch — damage, DPS, fire rate, mag, reload, and structure damage with Old / New / Change."
+      },
+      "weapon-damage-calculator": {
+        "title": "Calculadora de dano",
+        "description": "STK, TTK e DPS estimados para armas da Temporada 3."
+      },
+      "vbucks-calculator": {
+        "title": "Calculadora de V-Bucks",
+        "description": "Lista de desejos e packs de V-Bucks com preços USD comuns."
+      },
+      "battle-pass-xp-calculator": {
+        "title": "Calculadora de XP do Passe",
+        "description": "Projete se você termina o Passe antes do fim da temporada."
+      }
+    }
+  },
+  "homeMeta": {
+    "title": "FortniteTools – Guias e ferramentas grátis de Fortnite",
+    "description": "Ferramentas e guias grátis de Fortnite para o Capítulo 7 Temporada 3 — stats, sensibilidade, XP, teclas, armas e estratégia BR."
+  },
+  "tools": {
+    "sensitivityCalculator": {
+      "metaTitle": "Calculadora de sensibilidade Fortnite – Converta de Valorant, CS2, Apex",
+      "metaDescription": "Converta a sensibilidade do mouse para Fortnite a partir de Valorant, CS2, Apex, Warzone e mais usando cm/360. Calculadora eDPI grátis para o Chapter 7 Season 3.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Calculadora de sensibilidade",
+      "titlePrefix": "Sensibilidade Fortnite",
+      "titleHighlight": "Calculadora",
+      "hero": "Converta a sensibilidade do mouse entre Fortnite, Valorant, CS2, Apex e mais usando cm/360. Trate o resultado como ponto de partida — FOV e configurações de mira ainda diferem em cada jogo.",
+      "mouseDpi": "DPI do mouse",
+      "dpiHint": "Valores comuns: 400, 800, 1600. Confira o software do seu mouse.",
+      "dpiPlaceholder": "ex. 800",
+      "convertFrom": "Converter de",
+      "convertTo": "Converter para",
+      "swapAria": "Trocar jogos",
+      "sensLabel": "Sensibilidade {game}",
+      "sensPlaceholder": "Digite sua sensibilidade {game}",
+      "edpiLine": "eDPI: {edpi} (sens x DPI)",
+      "errorSens": "Digite uma sensibilidade válida (deve ser maior que 0).",
+      "errorDpi": "Digite um DPI válido (deve ser maior que 0).",
+      "convertBtn": "Converter sensibilidade",
+      "resetAria": "Redefinir",
+      "result": "Resultado",
+      "resultSens": "Sensibilidade {game}",
+      "cm360": "cm/360 (físico)",
+      "edpiTo": "eDPI ({game})",
+      "fineTune": "Experimente {sens} a {dpi} DPI em {game} e depois ajuste após um breve aquecimento de mira.",
+      "howTitle": "Como isso funciona",
+      "howBody": "Os jogos usam escalas de sensibilidade diferentes. Esta ferramenta equipara o cm/360 — quanto seu mouse se move para um giro completo. Igualar o cm/360 é a transferência de sensação de hipfire mais fiel; sensibilidades com mira ainda precisam de ajustes dentro do jogo.",
+      "edpiTitle": "O que é eDPI?",
+      "edpiBody": "eDPI = sensibilidade x DPI. No Fortnite, muitos jogadores competitivos ficam em torno de 40-100 eDPI (por exemplo, 0,07 x 800 DPI = 56 eDPI). Números nas dezenas de milhares geralmente significam que alguém multiplicou errado.",
+      "rangesTitle": "Faixas iniciais do Fortnite (800 DPI)",
+      "rangeLow": "Sens mais baixa: 0,05-0,08 — lutas de médio/longo alcance mais estáveis",
+      "rangeHigh": "Sens mais alta: 0,12-0,18 — câmera mais rápida para builds/edições",
+      "rangeComp": "Faixa competitiva comum: ~0,07-0,10 (eDPI ~56-80)",
+      "faqTitle": "Perguntas frequentes",
+      "relatedTitle": "Ferramentas relacionadas do Fortnite",
+      "relatedBefore": "Combine uma sens estável com as",
+      "relatedMid1": ", confira as",
+      "relatedMid2": ", veja seus resultados de mira no",
+      "relatedMid3": ", ou explore o",
+      "relatedAfter": ".",
+      "relatedFps": "configurações de FPS",
+      "relatedKeybinds": "keybinds",
+      "relatedTracker": "Fortnite tracker",
+      "relatedHub": "catálogo completo de ferramentas",
+      "seo": {
+        "s1h": "Como usar esta calculadora de sensibilidade do Fortnite",
+        "s1p1": "Digite o DPI do software do seu mouse (Logitech G Hub, Razer Synapse, etc.), escolha o jogo que você já joga, digite a sensibilidade desse jogo e converta para Fortnite. O resultado é um valor inicial de X/Y do Fortnite que mantém a mesma distância física de giro cm/360.",
+        "s1p2": "Depois de converter, abra o Fortnite em Configurações em Mouse e teclado, cole o resultado em Sensibilidade X e Sensibilidade Y, e passe 10-15 minutos em um mapa de mira/edição no Criativo antes de avaliar em partidas públicas ou Ranked.",
+        "s2h": "Valorant, CS2 e Apex para Fortnite (o que se transfere)",
+        "s2p1": "Jogadores que trocam de Valorant, CS2 ou Apex geralmente querem a mesma memória muscular para tracking e flicks. Igualar o cm/360 aproxima a sensação de hipfire. O que não se transfere 1:1: multiplicadores de mira, a câmera de construção do Fortnite, velocidade de edição e o manuseio de câmera mais rápido para controle de peças em comparação a um shooter tático puro.",
+        "s2p2": "Se as construções parecerem travadas após uma conversão do Valorant, aumente um pouco a sens do Fortnite (ou mantenha a sens de hipfire e aumente só os multiplicadores de construção/edição, se você usa valores separados). Se os sprays tremerem, diminua um pouco e aumente o espaço livre do mousepad para os 180.",
+        "s3h": "eDPI do Fortnite e faixas comuns em 800 DPI",
+        "s3p1": "eDPI = sensibilidade no jogo x DPI do mouse. Isso permite comparar configurações entre diferentes escolhas de DPI. Exemplo: 0,08 de sens a 800 DPI = 64 eDPI; 0,04 de sens a 1600 DPI também dá 64 eDPI e o mesmo cm/360 se a escala do jogo corresponder.",
+        "s3p2": "A 800 DPI, uma faixa inicial prática no Fortnite fica em torno de 0,05-0,08 para lutas de médio alcance mais estáveis, 0,12-0,18 para estilos de construção/edição muito rápidos, e ~0,07-0,10 para muitos jogadores competitivos de teclado e mouse. Use a leitura de eDPI da calculadora para conferir — um eDPI do Fortnite nas dezenas de milhares geralmente significa um multiplicador de jogo errado ou um erro de decimal.",
+        "s4h": "Depois de converter — ajuste fino no Criativo",
+        "s4p1": "Faça alguns 180, siga um bot que estrafega e complete um pequeno percurso de edição. Pergunte-se: consigo fazer um giro completo sem levantar o mouse duas vezes? Consigo microajustar sprays sem tremer? Se não, ajuste a sens em ~5-10% e teste de novo. Pequenas mudanças são melhores do que saltar de 0,06 para 0,15 em uma noite.",
+        "s4p2": "Mantenha o DPI fixo enquanto ajusta a sens do Fortnite. Mudar os dois ao mesmo tempo dificulta saber o que corrigiu a sensação. Combine o trabalho de sens com FPS estável — veja nosso guia de configurações de FPS se picos de frame time fizerem a mira parecer uma sens ruim."
+      },
+      "faqs": {
+        "q1": "A sensibilidade convertida vai parecer idêntica no Fortnite?",
+        "a1": "Igualar o cm/360 é a transferência de sensação de hipfire mais fiel entre jogos, mas o FOV, a construção, a edição e as sensibilidades com mira do Fortnite ainda parecem diferentes. Trate o resultado como um ponto de partida para aquecer no Criativo, depois ajuste X/Y até o tracking e os 180 parecerem naturais.",
+        "q2": "Qual faixa de eDPI os jogadores de mouse usam no Fortnite?",
+        "a2": "Muitos jogadores de teclado e mouse ficam aproximadamente na faixa de 40-100 eDPI (sensibilidade x DPI). Uma faixa competitiva comum a 800 DPI é cerca de 0,07-0,10 de sens (eDPI ~56-80). Não existe um valor pro único — conforto e consistência importam mais.",
+        "q3": "Como converter a sensibilidade do Valorant para Fortnite?",
+        "a3": "Digite sua sens do Valorant e o DPI do mouse, defina Converter de como Valorant e Converter para como Fortnite, depois clique em Converter. A ferramenta iguala o cm/360 para que um giro completo use a mesma distância de mouse. Aplique o número do Fortnite em Configurações em Mouse e teclado em Sensibilidade X/Y.",
+        "q4": "Como converter a sensibilidade do CS2 ou Apex para Fortnite?",
+        "a4": "Mesmo processo: escolha CS2 / CS:GO ou Apex Legends como jogo de origem, digite sens + DPI, converta para Fortnite. Apex e CS2 compartilham uma escala de yaw semelhante em muitos conversores; sempre mantenha o mesmo DPI nos dois lados da conversão.",
+        "q5": "O que é cm/360 e por que esta calculadora usa isso?",
+        "a5": "cm/360 é quantos centímetros seu mouse se move para um giro completo de 360 graus. Os jogos usam escalas de sensibilidade bruta diferentes, então igualar o cm/360 é a forma padrão de transferir a sensação de hipfire, em vez de copiar o mesmo número decimal entre os jogos.",
+        "q6": "Minha sensibilidade X e Y do Fortnite devem ser iguais?",
+        "a6": "A maioria dos jogadores começa com X e Y iguais depois de uma conversão. Alguns aumentam um pouco o Y para construções e edições. Se você mudar um eixo, teste novamente o tracking no Criativo antes do Ranked.",
+        "q7": "Isso funciona para sensibilidade de controle?",
+        "a7": "Não — este conversor é para DPI de mouse + sensibilidade de mouse no jogo. Velocidade de mira, deadzones e curvas de aim assist do controle são um sistema diferente. Use as configurações de controle no jogo ou testes no Criativo em vez disso."
+      }
+    },
+    "battlePassXp": {
+      "metaTitle": "Calculadora XP Battle Pass Fortnite – Vai terminar a tempo?",
+      "metaDescription": "Calcule se você vai terminar o Battle Pass do Fortnite antes do fim do Chapter 7 Season 3. Digite seu nível e escolha fontes de XP semanais para ver o nível final projetado.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Calculadora XP Battle Pass",
+      "titlePrefix": "Battle Pass XP",
+      "titleHighlight": "Calculadora",
+      "hero": "Descubra se consegue terminar o Battle Pass antes do fim da temporada. Digite seu nível atual e marque as fontes de XP que você completa toda semana.",
+      "progressTitle": "Seu progresso atual",
+      "currentLevel": "Nível atual",
+      "currentLevelXp": "XP no nível atual",
+      "targetLevel": "Nível alvo",
+      "weeksRemaining": "Semanas restantes",
+      "sourcesTitle": "Fontes de XP semanais",
+      "sourcesHint": "Marque cada fonte que você realmente completa toda semana.",
+      "perWeek": "+{xp}K/sem",
+      "onTrack": "No caminho certo",
+      "behindSchedule": "Atrasado",
+      "onTrackMsg": "Você alcançará o nível {target} com seus hábitos atuais. Projeção: nível {projected}.",
+      "behindMsg": "Você precisa de {xp} XP a mais do que vai ganhar. Ative mais fontes ou jogue com mais consistência.",
+      "xpNeededLabel": "XP necessário para alcançar o nível {level}",
+      "weeklyXpLabel": "XP semanal (fontes selecionadas)",
+      "levelsPerWeek": "{levels} níveis/semana",
+      "totalAvailableLabel": "XP total disponível ({weeks} semanas)",
+      "projectedLabel": "Nível final projetado",
+      "projectedLevelText": "Nível {level}",
+      "bonusSuffix": " (bônus)",
+      "coverageLabel": "Cobertura de XP",
+      "needMorePrefix": "Você precisa de",
+      "needMoreXp": "{xp} XP/semana",
+      "needMoreSuffix": "para terminar a tempo. Tente ativar LEGO Fortnite ou Rocket Racing para XP extra.",
+      "howTitle": "Como funciona o XP do Battle Pass no Fortnite",
+      "howP1": "Este planejador usa um modelo simplificado de cerca de 80.000 XP por nível em um passe de 100 níveis. Valores reais de missões, boosts de XP e limites mudam durante a temporada — use o resultado como plano de grind, não como garantia. O Chapter 7 Season 3 (Runners) vai até 19 de agosto de 2026.",
+      "howP2": "Missões semanais e diárias costumam ser a XP mais confiável. Modos como LEGO Fortnite podem adicionar muita XP passiva, mas muitas vezes têm limites — confirme as taxas atuais no jogo antes de contar com eles.",
+      "relatedTitle": "Ferramentas relacionadas do Fortnite",
+      "relatedBefore": "Acompanhe o progresso da temporada, depois confira a",
+      "relatedMid1": "antes de comprar, veja suas stats no",
+      "relatedMid2": ", ou explore o",
+      "relatedAfter": ".",
+      "relatedVbucks": "calculadora de V-Bucks",
+      "relatedTracker": "Fortnite tracker",
+      "relatedHub": "catálogo completo de ferramentas"
+    },
+    "kdCalculator": {
+      "metaTitle": "Calculadora K/D do Fortnite – Índice Kill/Death e Win Rate",
+      "metaDescription": "Calcule seu índice K/D do Fortnite, win rate e eliminações por partida. Calculadora grátis com faixas de contexto aproximadas de partidas públicas para o Chapter 7 Season 3.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Calculadora K/D",
+      "titlePrefix": "Fortnite",
+      "titleHighlight": "Calculadora K/D",
+      "hero": "Calcule seu índice Kill/Death, win rate e eliminações por partida. Faixas aproximadas de partidas públicas são mostradas como contexto — não são classificações oficiais da Epic.",
+      "yourStats": "Suas estatísticas",
+      "totalKills": "Total de eliminações",
+      "totalDeaths": "Total de mortes",
+      "totalWins": "Total de vitórias",
+      "totalMatches": "Total de partidas",
+      "phKills": "e.g. 1240",
+      "phDeaths": "e.g. 800",
+      "phWins": "e.g. 45 (optional)",
+      "phMatches": "e.g. 600 (optional)",
+      "projector": "K/D Projector",
+      "projectorHint": "What would your K/D be if you avg X kills over Y future games?",
+      "avgKills": "Avg kills / game",
+      "futureGames": "Partidas futuras",
+      "phAvgKills": "e.g. 4",
+      "phFuture": "e.g. 100",
+      "projectedKd": "K/D projetado",
+      "kdRatio": "Índice Kill / Death",
+      "winRate": "Win rate",
+      "killsPerGame": "Eliminações / partida",
+      "subAvg": "avg player: 0.78",
+      "subPub": "rough pub context",
+      "subRange": "rough range only",
+      "breakdown": "K/D Breakdown",
+      "empty": "Digite kills e mortes para ver suas stats",
+      "contextTitle": "Faixas de contexto aproximadas",
+      "contextHint": "Not official Epic percentiles — just ballpark ranges so the number has meaning. Ranked and input type change the picture a lot.",
+      "thContext": "Context",
+      "thKd": "K/D",
+      "thWr": "Win %",
+      "benchLow": "Low",
+      "benchAverage": "Average",
+      "benchAbove": "Above Avg",
+      "benchStrong": "Strong",
+      "benchVeryHigh": "Very High",
+      "ctxTypical": "Typical pubs",
+      "ctxStrong": "Strong pubs",
+      "ctxHigh": "High-level pubs",
+      "ctxRanked": "Ranked (same K/D)",
+      "ctxKdTypical": "0.6–1.2",
+      "ctxKdStrong": "2–4",
+      "ctxKdHigh": "5+",
+      "ctxKdRanked": "Usually lower",
+      "ctxWrTypical": "2–8%",
+      "ctxWrStrong": "10–20%",
+      "ctxWrHigh": "20%+",
+      "ctxWrRanked": "Placement-weighted",
+      "seoTitle": "O que é um bom K/D no Fortnite?",
+      "seoAvgTitle": "The Average Player",
+      "seoAvgBody": "Many public-lobby players sit around a 0.7–1.0 K/D. Below 1.0 is common in a 100-player battle royale where only one squad (or player) wins. Mode, input, and season matter more than a single career number.",
+      "seoStrongTitle": "What Strong Looks Like",
+      "seoStrongBody": "A 2.0+ K/D in pubs usually means you win a lot of fights. Competitive players can post much higher numbers in soft lobbies and much lower numbers in stacked ranked. Treat tracker pages as snapshots, not permanent skill ranks.",
+      "seoFindTitle": "How to Find Your Stats",
+      "seoFindBody": "Your career stats are available in the Fortnite main menu under Career > Profile. You can also use third-party stat trackers like Fortnite Tracker or Tracker.gg to get detailed breakdowns by season, mode, and input type.",
+      "seoVsTitle": "K/D vs Win Rate",
+      "seoVsBody": "K/D and win rate measure different skills. A high K/D with a low win rate means you are aggressive but struggle to close out final circles. A high win rate with a lower K/D means you are playing smart, rotating safely, and picking your fights — which is actually the better approach for ranking up.",
+      "yourStatsTitle": "Suas estatísticas",
+      "totalKillsPlaceholder": "ex. 1240",
+      "totalDeathsPlaceholder": "ex. 800",
+      "totalWinsPlaceholder": "ex. 45 (opcional)",
+      "totalMatchesPlaceholder": "ex. 600 (opcional)",
+      "projectorTitle": "Projetor de K/D",
+      "projectorSubtitle": "Qual seria seu K/D se você fizer em média X eliminações em Y partidas futuras?",
+      "avgKillsGame": "Média de eliminações / partida",
+      "avgKillsPlaceholder": "ex. 4",
+      "futureGamesPlaceholder": "ex. 100",
+      "kdAvgSublabel": "jogador médio: 0,78",
+      "winRateSublabel": "contexto público aproximado",
+      "killsPerGameSublabel": "faixa apenas orientativa",
+      "breakdownTitle": "Detalhamento do K/D",
+      "emptyState": "Digite suas eliminações e mortes para ver suas estatísticas",
+      "contextNote": "Não são percentis oficiais da Epic — apenas faixas aproximadas para dar significado ao número. Ranked e tipo de entrada mudam bastante o quadro.",
+      "colContext": "Contexto",
+      "colKd": "K/D",
+      "colWinPct": "Win %",
+      "benchmarks": {
+        "low": "Baixo",
+        "average": "Médio",
+        "aboveAvg": "Acima da média",
+        "strong": "Forte",
+        "veryHigh": "Muito alto"
+      },
+      "contextRanges": {
+        "typicalPubs": "Partidas públicas típicas",
+        "strongPubs": "Partidas públicas fortes",
+        "highLevelPubs": "Partidas públicas de alto nível",
+        "rankedSameKd": "Ranked (mesmo K/D)"
+      },
+      "seo": {
+        "s1h": "O jogador médio",
+        "s1p": "Muitos jogadores de partidas públicas ficam em torno de um K/D de 0,7–1,0. Ficar abaixo de 1,0 é comum em um battle royale de 100 jogadores, onde apenas um esquadrão (ou jogador) vence. Modo, entrada e temporada importam mais do que um único número de carreira.",
+        "s2h": "Como é um K/D forte",
+        "s2p": "Um K/D de 2,0+ em partidas públicas geralmente significa que você vence muitas lutas. Jogadores competitivos podem ter números muito mais altos em lobbies fracos e muito mais baixos em Ranked carregado. Trate páginas de tracker como fotografias, não como classificações de habilidade permanentes.",
+        "s3h": "Como encontrar suas estatísticas",
+        "s3p": "Suas estatísticas de carreira estão disponíveis no menu principal do Fortnite em Carreira > Perfil. Você também pode usar trackers de terceiros como Fortnite Tracker ou Tracker.gg para detalhamentos por temporada, modo e tipo de entrada.",
+        "s4h": "K/D vs Win Rate",
+        "s4p": "K/D e win rate medem habilidades diferentes. Um K/D alto com win rate baixo significa que você é agressivo, mas tem dificuldade em fechar os círculos finais. Um win rate alto com K/D mais baixo significa que você joga de forma inteligente, rotaciona com segurança e escolhe suas lutas — o que é, na verdade, a melhor abordagem para subir de rank."
+      },
+      "relatedTitle": "Ferramentas relacionadas do Fortnite",
+      "relatedBefore": "Veja seus números de carreira ao vivo no",
+      "relatedTracker": "Fortnite tracker",
+      "relatedMid1": ", pratique o timing de final de partida com o",
+      "relatedZoneTimer": "cronômetro de zona",
+      "relatedMid2": ", ou explore o",
+      "relatedHub": "catálogo completo de ferramentas",
+      "relatedAfter": "."
+    },
+    "playerStats": {
+      "metaTitle": "Fortnite Tracker e verificador de stats – K/D, vitórias e busca de jogadores",
+      "metaDescription": "Fortnite tracker e verificador de stats grátis: busque qualquer usuário Epic por K/D, vitórias, win rate, partidas, eliminações, divisão Solo/Duo/Squad e nível do Battle Pass.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Fortnite Tracker",
+      "titlePrefix": "Fortnite",
+      "titleHighlight": "Tracker",
+      "titleSuffix": "e verificador de stats",
+      "hero": "Verificador de stats do Fortnite grátis — busque qualquer jogador pelo nome Epic (ou PSN / Xbox). Veja K/D, vitórias, win rate, partidas, eliminações, divisões Solo / Duo / Squad / LTM, stats por dispositivo de entrada e nível do Battle Pass quando disponível.",
+      "playerNameLabel": "Nome do jogador",
+      "platformLabel": "Plataforma",
+      "windowLabel": "Período",
+      "accountEpic": "Epic",
+      "accountPsn": "PlayStation",
+      "accountXbl": "Xbox",
+      "windowLifetime": "Carreira completa",
+      "windowSeason": "Temporada atual",
+      "namePlaceholder": "Nome exibido Epic",
+      "lookupBtn": "Buscar",
+      "errorEnterName": "Digite um nome exibido Fortnite / Epic.",
+      "errorNeedApiKey": "Stats de jogadores precisam de FORTNITE_API_KEY no servidor. Adicione uma em fortnite-api.com e faça redeploy.",
+      "notConfiguredPrefix": "O servidor precisa de",
+      "notConfiguredCode": "FORTNITE_API_KEY",
+      "notConfiguredMid": "de",
+      "notConfiguredLinkText": "fortnite-api.com",
+      "notConfiguredSuffix": "(login grátis no Discord). Loja/mapa funcionam sem ela; stats de jogadores exigem a chave.",
+      "configuredHint": "A busca atualiza a URL para você compartilhar um link de stats. A página inicial fica limpa até você buscar alguém.",
+      "lookupFailed": "Falha na busca",
+      "networkError": "Erro de rede ao carregar stats.",
+      "seasonStats": "Stats da temporada",
+      "lifetimeStats": "Stats da carreira",
+      "battlePassLevel": "Nível do Battle Pass",
+      "toNext": "para o próximo",
+      "statKd": "K/D",
+      "statWins": "Vitórias",
+      "statWinRate": "Win rate",
+      "statMatches": "Partidas",
+      "statKills": "Eliminações",
+      "statDeaths": "Mortes",
+      "statKillsPerMatch": "Eliminações / partida",
+      "statScore": "Pontuação",
+      "statScorePerMatch": "Pontuação / partida",
+      "statMinutesPlayed": "Minutos jogados",
+      "statPlayersOutlived": "Jogadores superados",
+      "statTop3": "Top 3",
+      "statTop5": "Top 5",
+      "statTop6": "Top 6",
+      "statTop10": "Top 10",
+      "statTop12": "Top 12",
+      "statTop25": "Top 25",
+      "updatedPrefix": "Atualizado",
+      "statsImageAlt": "Cartão de stats do Fortnite de {name}",
+      "loadingFallback": "Carregando ferramenta de stats…",
+      "trackerTitle": "Tracker de stats Fortnite grátis e busca por nome de usuário",
+      "trackerBody": "Todos os dias jogadores buscam «Fortnite stats», «Fortnite tracker» e «verificar K/D Fortnite». Esta ferramenta resolve um nome exibido via Fortnite-API e mostra o snapshot completo de Battle Royale (carreira ou temporada atual) que a Epic expõe — geral mais divisões por playlist e entrada — para comparar colegas, checar um nick do lobby ou acompanhar seu próprio progresso.",
+      "step1": "Digite o nome exato no jogo (atenção a zeros vs O e sufixos de criador).",
+      "step2": "Escolha Epic, PlayStation ou Xbox se o nome pertence a essa identidade de plataforma.",
+      "step3": "Escolha Carreira completa ou Temporada atual, depois Buscar.",
+      "step4": "Compartilhe a URL — ela mantém o nome do jogador na query após uma busca bem-sucedida.",
+      "showTitle": "Stats que mostramos quando a Epic fornece",
+      "headlineTitle": "Números principais",
+      "headlineBody": "Ratio K/D, vitórias, win rate, partidas, eliminações, mortes, eliminações por partida, pontuação e minutos jogados.",
+      "modeTitle": "Divisões por modo",
+      "modeBody": "Linhas Solo, Duo, Squad e LTM (Trio costuma estar vazio na API). Tops de colocação (Top 3 / 5 / 10 / 25) quando presentes.",
+      "inputTitle": "Dispositivos de entrada",
+      "inputBody": "Todas as entradas, mais Teclado e mouse, Controle e Touch quando a conta jogou nesses dispositivos.",
+      "bpTitle": "Battle Pass",
+      "bpBody": "Nível do Battle Pass da temporada e progresso para o próximo nível quando a API retorna.",
+      "faqTitle": "Perguntas frequentes",
+      "relatedTitle": "Ferramentas relacionadas",
+      "relatedKd": "Calculadora K/D",
+      "relatedLoadout": "Criador de loadout",
+      "relatedMap": "Mapa interativo",
+      "relatedAll": "Todas as ferramentas",
+      "faqs": {
+        "q1": "Como buscar stats do Fortnite por nome de usuário?",
+        "a1": "Digite um nome exibido Epic (ou gamertag PSN / Xbox com a plataforma correta), escolha Carreira completa ou Temporada, depois busque. Carregamos vitórias de Battle Royale, K/D, partidas, win rate, eliminações e divisões por modo da Fortnite-API.",
+        "q2": "Por que algumas stats do Fortnite faltam ou são privadas?",
+        "a2": "Jogadores podem ocultar stats nas configurações de privacidade da conta Epic. Incompatibilidades de nome entre plataformas (Epic vs PSN vs Xbox) também retornam «não encontrado». Tente o outro tipo de conta ou a grafia exata no jogo.",
+        "q3": "Quais stats do Fortnite posso ver?",
+        "a3": "Stats gerais e por modo (Solo, Duo, Squad, LTM), incluindo vitórias, K/D, eliminações, mortes, partidas, win rate, pontuação, minutos jogados, jogadores superados e tops de colocação quando a Epic fornece — mais nível do Battle Pass quando disponível.",
+        "q4": "Isto é um tracker oficial da Epic Games?",
+        "a4": "Não. FortniteTools é um site de fãs independente. As stats vêm de uma API de dados Fortnite de terceiros e podem atrasar ou mudar quando a Epic atualiza seus sistemas."
+      }
+    },
+    "vbucks": {
+      "metaTitle": "Calculadora de V-Bucks Fortnite – Melhor combo de pacotes",
+      "metaDescription": "Monte uma lista de desejos do Fortnite, veja quantos V-Bucks você precisa e encontre a combinação de pacotes mais barata em USD. Calculadora de V-Bucks grátis.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Calculadora de V-Bucks",
+      "titlePrefix": "V-Bucks",
+      "titleHighlight": "Calculadora",
+      "hero": "Monte uma lista de desejos, veja os V-Bucks necessários e estime uma combinação de pacotes de baixo custo (exemplos da loja em USD).",
+      "categories": {
+        "pass": "Battle Pass e Crew",
+        "skin": "Skins",
+        "cosmetic": "Cosméticos",
+        "emote": "Emotes e música"
+      },
+      "items": {
+        "battlePass": "Battle Pass",
+        "crewPack": "Crew Pack (mensal)",
+        "iconSeriesSkin": "Skin da Série Icon",
+        "legendarySkin": "Skin lendária",
+        "epicSkin": "Skin épica",
+        "rareSkin": "Skin rara",
+        "uncommonSkin": "Skin incomum",
+        "legendaryBackBling": "Back Bling lendário",
+        "epicPickaxe": "Picareta épica",
+        "rarePickaxe": "Picareta rara",
+        "legendaryGlider": "Planador lendário",
+        "epicWrap": "Envelopamento épico",
+        "legendaryEmote": "Emote lendário",
+        "epicEmote": "Emote épico",
+        "uncommonEmote": "Emote incomum",
+        "lobbyMusic": "Música do lobby",
+        "loadingScreen": "Tela de carregamento",
+        "spray": "Spray"
+      },
+      "vbucksSuffix": "V-Bucks",
+      "removeAria": "Remover {item}",
+      "addAria": "Adicionar {item}",
+      "customAmountTitle": "Quantidade personalizada de V-Bucks",
+      "customAmountPlaceholder": "ex. 500",
+      "customAmountHint": "Adicione um número específico de V-Bucks não coberto acima.",
+      "yourTotalTitle": "Seu total",
+      "emptyCart": "Adicione itens à esquerda para calcular.",
+      "customLabel": "Personalizado",
+      "vbucksNeeded": "V-Bucks necessários",
+      "cheapestWayTitle": "Forma mais barata de comprar",
+      "totalCost": "Custo total",
+      "leftover": "+{count} V-Bucks sobrando após a compra.",
+      "packPricesTitle": "Preços dos pacotes de V-Bucks",
+      "packs": {
+        "p1000": "1.000 V-Bucks",
+        "p2800": "2.800 V-Bucks",
+        "p5000": "5.000 V-Bucks",
+        "p13500": "13.500 V-Bucks"
+      },
+      "tagPopular": "Mais popular",
+      "tagBestValue": "Melhor custo-benefício",
+      "perVbuck": "{price}¢ por V-Buck",
+      "aboutTitle": "Sobre preços de V-Bucks",
+      "aboutIntro": "V-Bucks são a moeda do Fortnite para comprar cosméticos na Loja de Itens e desbloquear Battle Passes. Os preços refletem a loja padrão em USD a partir de 2026. O",
+      "aboutBestPack": "pacote de 13.500 V-Bucks",
+      "aboutMid": "oferece o melhor valor por V-Buck, cerca de 0,593¢ cada vs 0,799¢ do pacote de 1.000 — economia de 26%.",
+      "aboutOutro": "V-Bucks ganhos no Battle Pass ou na assinatura Crew reduzem ainda mais seu custo por V-Buck.",
+      "relatedTitle": "Ferramentas Fortnite relacionadas",
+      "relatedBefore": "Planeje sua temporada com a",
+      "relatedBattlePass": "calculadora de XP do Battle Pass",
+      "relatedMid1": ", confira a",
+      "relatedItemShop": "Loja de Itens",
+      "relatedMid2": " ou explore o",
+      "relatedHub": "catálogo completo de ferramentas",
+      "relatedAfter": "."
+    },
+    "weaponDamage": {
+      "metaTitle": "Calculadora de dano de armas Fortnite – Tiros para eliminar e DPS",
+      "metaDescription": "Calcule tiros para eliminar, DPS e tempo para eliminar de cada arma do Capítulo 7 Temporada 3 do Fortnite. Compare dano vs escudos, headshots e estruturas.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Calculadora de dano de armas",
+      "titlePrefix": "Dano de armas",
+      "titleHighlight": "Calculadora",
+      "hero": "Tiros aproximados para eliminar, DPS e tempo para eliminar das armas do Capítulo 7 Temporada 3. Valores orientativos — a Epic muda o balanceamento no meio da temporada; confirme no jogo após patches.",
+      "categoryAll": "Todas",
+      "targetOptionsTitle": "Opções de alvo",
+      "targetHp": "HP do alvo",
+      "customHpPlaceholder": "HP personalizado (1–200)",
+      "headshotDamage": "Dano de headshot",
+      "on": "ON",
+      "off": "OFF",
+      "vsPlayer": "vs. jogador de {hp} HP",
+      "damagePerShot": "Dano por tiro",
+      "shotsToKill": "Tiros para eliminar",
+      "timeToKillLabel": "Tempo para eliminar",
+      "timeToKillValue": "{seconds}s",
+      "dpsHeadshot": "DPS (todos HS)",
+      "dpsBody": "DPS (corpo)",
+      "bodyDpsReference": "DPS corpo (referência)",
+      "needsReload": "Precisa recarregar — o pente só comporta {mag} tiros ({dmg} de dano).",
+      "structureTitle": "Tiros para destruir estrutura",
+      "structureWood": "Parede de madeira (~100 HP colocada)",
+      "structureBrick": "Parede de tijolo (~200 HP colocada)",
+      "structureMetal": "Parede de metal (~500 HP máx.)",
+      "shotsUnit": "{shots} tiros",
+      "baseDamage": "Dano base",
+      "hsMultLabel": "Mult. HS",
+      "fireRateLabel": "Cadência",
+      "fireRateValue": "{rate}/s",
+      "magSizeLabel": "Tamanho do pente",
+      "howTitle": "Como funciona o dano de armas no Fortnite",
+      "howP1": "Jogadores normalmente têm 100 HP + até 100 de escudo (200 efetivos). Alguns modos ou itens limitados podem mudar isso — use o campo HP personalizado quando necessário.",
+      "howP2": "Headshots multiplicam o dano no corpo (muitas vezes ~1,5x em várias armas; snipers e armas de precisão podem ser maiores). Dano em estruturas usa HP aproximados de parede colocada/máx. para madeira / tijolo / metal — paredes também se curam após colocação, então o TTK ao vivo em builds pode variar.",
+      "relatedTitle": "Ferramentas Fortnite relacionadas",
+      "relatedBefore": "Combine o cálculo de loadout com uma",
+      "relatedMid1": " estável, confira a",
+      "relatedMid2": " atual ou explore o",
+      "relatedAfter": ".",
+      "relatedFps": "configuração de sensibilidade",
+      "relatedTier": "tier list de armas",
+      "relatedHub": "catálogo completo de ferramentas"
+    },
+    "zoneTimer": {
+      "metaTitle": "Timer de zona Fortnite – Tempos de espera e encolhimento",
+      "metaDescription": "Tempos aproximados de espera e encolhimento para cada fase da tempestade no Fortnite. Timer de zona grátis com dicas de rotação e referência de dano para Capítulo 7 Temporada 3.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Timer de zona",
+      "titlePrefix": "Fortnite",
+      "titleHighlight": "Timer de zona",
+      "hero": "Tempos aproximados de espera e encolhimento dos círculos de tempestade do Capítulo 7 Temporada 3. Inicie o timer quando uma nova zona aparecer para saber quando rotacionar. A Epic pode ajustar tempos em patches.",
+      "selectPhase": "Selecionar fase",
+      "playersSuffix": "jogadores",
+      "hpsSuffix": "HP/s",
+      "legendWait": "Ciano",
+      "legendWaitSuffix": "= tempo de espera",
+      "legendShrink": "Amarelo",
+      "legendShrinkSuffix": "= tempo de encolhimento",
+      "stateWaiting": "Aguardando — zona aberta",
+      "stateShrinking": "A zona está encolhendo!",
+      "stateDone": "Fase concluída",
+      "stateIdle": "Pressione iniciar quando o círculo aparecer",
+      "waitLabel": "Espera",
+      "shrinkLabel": "Encolhimento",
+      "percentComplete": "{percent}% concluído",
+      "outsideDamage": "{damage} HP/s fora",
+      "startCircle": "Iniciar círculo {phase}",
+      "reset": "Reiniciar",
+      "nextZone": "Próxima zona",
+      "strategyTitle": "Estratégia fase {phase}",
+      "phases": {
+        "p1": {
+          "label": "Círculo 1",
+          "players": "100 → ~60",
+          "tip": "Use toda a espera para lootar bem. A zona é enorme — comece a rotacionar quando o timer chegar a 60 segundos."
+        },
+        "p2": {
+          "label": "Círculo 2",
+          "players": "~60 → ~35",
+          "tip": "A tempestade causa 2 HP/s. Se estiver longe, rotacione cedo. Uma rotação longa preso na tempestade pode drenar todo o escudo."
+        },
+        "p3": {
+          "label": "Círculo 3",
+          "players": "~35 → ~20",
+          "tip": "A tempestade já dói. Priorize a zona sobre loot. Qualquer jogador fora nesta fase é um kill grátis."
+        },
+        "p4": {
+          "label": "Círculo 4",
+          "players": "~20 → ~12",
+          "tip": "Começam as lutas de zona. Segure terreno alto dentro da zona e elimine quem rotaciona. Não persiga — deixe a tempestade fazer o trabalho."
+        },
+        "p5": {
+          "label": "Círculo 5",
+          "players": "~12 → ~7",
+          "tip": "Fase crítica. Top 10 vivos. Cada luta importa. Cure-se antes do círculo se mover."
+        },
+        "p6": {
+          "label": "Círculo 6",
+          "players": "~7 → ~4",
+          "tip": "Mantenha escudos cheios. A tempestade nesta fase derrete você em 8 segundos. Fique dentro e lute builds com cuidado."
+        },
+        "p7": {
+          "label": "Círculo 7",
+          "players": "~4 → ~2",
+          "tip": "Círculos finais. A zona é minúscula. Fique no alto, controle o espaço e só entre em lutas que pode vencer limpo."
+        },
+        "p8": {
+          "label": "Zona final",
+          "players": "2–1",
+          "tip": "A zona tem poucos tiles de largura. Não há onde se esconder. Vença ou morra."
+        }
+      },
+      "damageRefTitle": "Referência de dano da tempestade",
+      "circleLabel": "Círculo {phase}",
+      "seoTitle": "Entender o timing da tempestade no Fortnite",
+      "seo": {
+        "s1h": "Por que o timing de zona importa",
+        "s1p": "Uma das mortes mais comuns é ficar preso fora da tempestade. Uma referência de espera/encolhimento ajuda a decidir quando sair de um POI em vez de adivinhar de memória — tempos podem mudar com patches, então confirme círculos estranhos no jogo.",
+        "s2h": "Quando rotacionar",
+        "s2p": "Como regra geral, comece a rotação quando restarem 30–40% do timer de espera. Isso dá tempo suficiente a pé, contando lutas, loot e obstáculos do terreno. Quem espera o encolhimento costuma cair numa luta correndo com dano de tempestade — difícil de recuperar.",
+        "s3h": "Dano de tempestade no late game",
+        "s3p": "O dano da tempestade escala muito nos círculos tardios. O círculo 1 causa só 1 HP por segundo, mas no círculo 6 são 12 HP/s — um jogador com 200 HP sobrevive só 16 segundos fora sem curas. O círculo 8 causa 20 HP/s — eliminação total em 10 segundos.",
+        "s4h": "Storm Surge",
+        "s4p": "Além da tempestade principal, Fortnite tem a mecânica Storm Surge nos círculos tardios que mira jogadores com pouco dano causado. Se você está na metade inferior dos restantes por dano, Storm Surge começa a causar dano extra. Isso pune jogo passivo e força ação no late game."
+      },
+      "relatedTitle": "Ferramentas Fortnite relacionadas",
+      "relatedBefore": "Acompanhe seu K/D e win rate com a",
+      "relatedKd": "calculadora K/D",
+      "relatedMid1": ", ajuste suas",
+      "relatedFps": "configurações FPS",
+      "relatedMid2": " ou explore o",
+      "relatedHub": "catálogo completo de ferramentas",
+      "relatedAfter": "."
+    },
+    "fpsSettings": {
+      "metaTitle": "Melhores configurações de Fortnite – Guia de FPS e gráficos (Capítulo 7 Temporada 3)",
+      "metaDescription": "Cada configuração de gráficos, exibição e áudio do Fortnite explicada, com presets competitivo, equilibrado e qualidade para aumentar FPS e reduzir input lag.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Guia de FPS e configurações",
+      "titlePrefix": "Melhores configurações de",
+      "titleHighlight": "Fortnite",
+      "hero": "Cada configuração de gráficos, exibição e áudio explicada — com presets competitivo, equilibrado e qualidade. Filtre pelo que mais importa para seu PC e estilo de jogo.",
+      "presetTitle": "Escolha seu preset",
+      "tiers": {
+        "competitive": {
+          "label": "Competitivo / Máx. FPS",
+          "desc": "Configurações mais baixas. Prioriza FPS — comum entre jogadores competitivos."
+        },
+        "balanced": {
+          "label": "Equilibrado",
+          "desc": "Bons FPS com visuais razoáveis. Padrão sólido para PCs intermediários."
+        },
+        "quality": {
+          "label": "Qualidade / Casual",
+          "desc": "Visuais melhores, menos FPS. Para quem valoriza mais a aparência do jogo."
+        }
+      },
+      "categoryAll": "Todos",
+      "categories": {
+        "display": "Exibição",
+        "graphics": "Gráficos",
+        "advanced": "Avançado",
+        "audio": "Áudio"
+      },
+      "impactLabels": {
+        "high": "Impacto alto",
+        "medium": "Impacto médio",
+        "low": "Impacto baixo"
+      },
+      "settingsCol": {
+        "competitive": "Competitivo",
+        "balanced": "Equilibrado",
+        "quality": "Qualidade"
+      },
+      "settings": {
+        "windowMode": {
+          "name": "Modo de janela",
+          "competitive": "Fullscreen",
+          "balanced": "Fullscreen",
+          "quality": "Fullscreen",
+          "why": "Fullscreen oferece a menor latência de entrada. Nunca use Windowed ou Borderless em contexto competitivo."
+        },
+        "resolution": {
+          "name": "Resolução",
+          "competitive": "1920×1080",
+          "balanced": "1920×1080",
+          "quality": "2560×1440",
+          "why": "Resolução mais alta consome desempenho da GPU. 1080p é o padrão no jogo competitivo."
+        },
+        "frameRateLimit": {
+          "name": "Limite de FPS",
+          "competitive": "Unlimited or 240",
+          "balanced": "Monitor refresh",
+          "quality": "Monitor refresh",
+          "why": "FPS sem limite reduz a latência mesmo acima da taxa de atualização do monitor por causa dos buffers de renderização da GPU."
+        },
+        "motionBlur": {
+          "name": "Motion Blur",
+          "competitive": "Off",
+          "balanced": "Off",
+          "quality": "Off",
+          "why": "Motion blur não traz benefício de gameplay e esconde inimigos em movimentos rápidos. Desative sempre, independente do preset."
+        },
+        "showFps": {
+          "name": "Mostrar FPS",
+          "competitive": "On",
+          "balanced": "On",
+          "quality": "Off",
+          "why": "Saber seus FPS atuais ajuda a identificar quedas em fights ou em áreas lotadas."
+        },
+        "resolution3d": {
+          "name": "3D Resolution",
+          "competitive": "100%",
+          "balanced": "100%",
+          "quality": "100%",
+          "why": "Nunca abaixe a 3D Resolution abaixo de 100% — inimigos ficam borrados, é o maior impacto visual na clareza."
+        },
+        "viewDistance": {
+          "name": "Distância de visão",
+          "competitive": "Medium or Far",
+          "balanced": "Far",
+          "quality": "Epic",
+          "why": "Medium basta para a maioria das fights. Muito baixo pode esconder jogadores distantes e detalhes da tempestade."
+        },
+        "shadows": {
+          "name": "Sombras",
+          "competitive": "Off",
+          "balanced": "Low",
+          "quality": "Medium",
+          "why": "Sombras são o maior custo de FPS no Fortnite. Desligar pode render 30–60 FPS na maioria das GPUs."
+        },
+        "antiAliasing": {
+          "name": "Anti-Aliasing",
+          "competitive": "Off or FXAA",
+          "balanced": "FXAA",
+          "quality": "TAA",
+          "why": "TAA suaviza a imagem, o que pode dificultar um pouco ver inimigos. FXAA é um bom meio-termo."
+        },
+        "textures": {
+          "name": "Texturas",
+          "competitive": "Low",
+          "balanced": "Medium",
+          "quality": "High or Epic",
+          "why": "Texturas consomem sobretudo VRAM, não FPS. Em GPUs com 6GB+ VRAM, Medium custa quase nada."
+        },
+        "effects": {
+          "name": "Efeitos",
+          "competitive": "Low",
+          "balanced": "Medium",
+          "quality": "Epic",
+          "why": "Efeitos controlam explosões e a tempestade. Low é recomendado para reduzir ruído visual em fights."
+        },
+        "postProcessing": {
+          "name": "Post Processing",
+          "competitive": "Low",
+          "balanced": "Low",
+          "quality": "Medium",
+          "why": "Post Processing adiciona efeitos de lente e graduação de cor. Low melhora a clareza e economiza GPU."
+        },
+        "renderingMode": {
+          "name": "Modo de renderização",
+          "competitive": "Performance",
+          "balanced": "Performance",
+          "quality": "DirectX 12",
+          "why": "Performance mode contorna o renderizador do Unreal Engine para um enorme ganho de FPS, especialmente em hardware antigo. Use a menos que queira ray tracing."
+        },
+        "nvidiaReflex": {
+          "name": "NVIDIA Reflex",
+          "competitive": "On + Boost",
+          "balanced": "On",
+          "quality": "On",
+          "why": "NVIDIA Reflex reduz a latência do sistema em até 50 ms em GPUs compatíveis (série GTX 900 e acima). Sempre ative."
+        },
+        "vsync": {
+          "name": "VSync",
+          "competitive": "Off",
+          "balanced": "Off",
+          "quality": "Off",
+          "why": "VSync limita FPS à taxa do monitor e adiciona input lag. Deve ficar Off em todos os casos — tearing é preferível a mais latência."
+        },
+        "colorblindMode": {
+          "name": "Modo daltônico",
+          "competitive": "Deuteranope 5–8",
+          "balanced": "Off",
+          "quality": "Off",
+          "why": "Muitos pros usam Deuteranope intensidade 5–8 — contornos de inimigos e contraste de loot ficam mais visíveis, mesmo sem daltonismo."
+        },
+        "soundQuality": {
+          "name": "Qualidade de som",
+          "competitive": "Low",
+          "balanced": "Medium",
+          "quality": "High",
+          "why": "Qualidade de som mais baixa faz passos e baús se destacarem melhor. High adiciona reverberação que pode mascarar sons inimigos."
+        },
+        "headphones3d": {
+          "name": "3D Headphones",
+          "competitive": "On",
+          "balanced": "On",
+          "quality": "On",
+          "why": "Ativa processamento de áudio binaural para som direcional preciso. Essencial para ouvir exatamente de onde vêm os passos."
+        },
+        "subtitles": {
+          "name": "Legendas",
+          "competitive": "Off",
+          "balanced": "Off",
+          "quality": "Off",
+          "why": "Legendas adicionam bagunça na UI sem benefício de gameplay no Fortnite."
+        }
+      },
+      "seoTitle": "Como conseguir mais FPS no Fortnite",
+      "seo": {
+        "performance": {
+          "h": "Ative Performance Mode",
+          "p": "O maior ganho de FPS no Fortnite é mudar para Performance rendering mode em Advanced Graphics. Isso contorna o renderizador DirectX do Unreal Engine e pode dobrar FPS em alguns sistemas. Requer download único de cerca de 3–5 GB de assets."
+        },
+        "shadows": {
+          "h": "Desative sombras primeiro",
+          "p": "Sombras são a configuração mais pesada para GPU no Fortnite. Desligar completamente — Off — costuma render de 30 a 60 FPS em hardware intermediário. A primeira coisa se você tiver queda de FPS em builds ou team fights grandes."
+        },
+        "windows": {
+          "h": "Configurações do Windows que ajudam",
+          "p": "Fora do Fortnite, coloque a GPU em Maximum Performance no painel NVIDIA ou AMD, ative Game Mode no Windows e rode o jogo com prioridade High no Gerenciador de Tarefas. Garanta também que o monitor esteja na taxa máxima de atualização nas configurações de exibição do Windows."
+        },
+        "pros": {
+          "h": "Por que pros usam configurações baixas",
+          "p": "Muitos jogadores competitivos usam gráficos baixos porque mais FPS pode reduzir input lag. A 240 FPS, um frame é ~4 ms; a 60 FPS, ~16 ms. A diferença é perceptível em mira e builds — conforto e visuais ainda importam se você não busca latência de torneio."
+        }
+      },
+      "faqTitle": "Perguntas frequentes",
+      "faqs": {
+        "q1": "Qual é a melhor configuração de FPS para mudar no Fortnite?",
+        "a1": "Desligar Shadows dá o maior ganho isolado — normalmente 30 a 60 FPS em hardware intermediário. Se sua GPU permitir, mudar Rendering Mode para Performance é o próximo grande passo.",
+        "q2": "Devo jogar Fortnite em Performance Mode ou DirectX 12?",
+        "a2": "Performance mode contorna o renderizador padrão do Unreal Engine e roda visivelmente mais rápido na maioria do hardware, especialmente GPUs antigas ou de entrada. DirectX 12 desbloqueia melhores visuais e ray tracing, mas custa FPS — mais para presets Qualidade/Casual do que competitivos.",
+        "q3": "Desligar sombras realmente ajuda FPS?",
+        "a3": "Sim. Sombras são consistentemente a configuração gráfica mais cara no Fortnite. Colocar Shadows em Off é a primeira mudança da maioria dos jogadores competitivos, e também remove bagunça visual que pode esconder inimigos.",
+        "q4": "Qual é o melhor preset competitivo do Fortnite?",
+        "a4": "A maioria dos jogadores competitivos usa Shadows, Effects, Post Processing e Textures baixos, 100% 3D Resolution, Fullscreen, VSync off e NVIDIA Reflex on. Use o preset Competitivo / Máx. FPS acima como ponto de partida e ajuste View Distance e Anti-Aliasing ao gosto.",
+        "q5": "Essas configurações funcionam no console?",
+        "a5": "No console (PS5, Xbox Series X/S) há bem menos opções gráficas que no PC — principalmente alternância Performance vs Fidelity. Performance mode prioriza FPS como o preset Competitivo do PC; Fidelity favorece visuais como o preset Qualidade."
+      },
+      "relatedTitle": "Ferramentas relacionadas do Fortnite",
+      "relatedBefore": "Combine FPS estáveis com uma",
+      "relatedSens": "conversão de sensibilidade",
+      "relatedMid1": " compatível, confira",
+      "relatedKeybinds": "keybinds de pros",
+      "relatedMid2": " ou explore o",
+      "relatedHub": "hub completo de ferramentas",
+      "relatedAfter": "."
+    },
+    "keybinds": {
+      "metaTitle": "Keybinds pro de Fortnite – Layouts de teclado de jogadores competitivos",
+      "metaDescription": "Compare atribuições de teclado aproximadas usadas por jogadores competitivos conhecidos de Fortnite para construção, edição e combate, com dicas para escolher seu próprio layout.",
+      "home": "Início",
+      "tools": "Ferramentas",
+      "breadcrumb": "Keybinds pro",
+      "titlePrefix": "Fortnite pro",
+      "titleHighlight": "Keybinds",
+      "hero": "Atribuições de teclado aproximadas usadas por jogadores competitivos conhecidos. Os layouts mudam com o tempo — trate isso como referência e depois ajuste conforme o tamanho da mão e o conforto.",
+      "categoryAll": "Todos",
+      "categories": {
+        "building": "Construção",
+        "combat": "Combate",
+        "inventory": "Inventário"
+      },
+      "actions": {
+        "wall": {
+          "label": "Parede"
+        },
+        "floor": {
+          "label": "Chão"
+        },
+        "ramp": {
+          "label": "Rampa"
+        },
+        "roof": {
+          "label": "Teto / Pirâmide"
+        },
+        "stair": {
+          "label": "Escadas"
+        },
+        "edit": {
+          "label": "Editar"
+        },
+        "repair": {
+          "label": "Reparar / Resetar"
+        },
+        "crouch": {
+          "label": "Agachar"
+        },
+        "jump": {
+          "label": "Pular"
+        },
+        "sprint": {
+          "label": "Correr"
+        },
+        "reload": {
+          "label": "Recarregar"
+        },
+        "interact": {
+          "label": "Interagir"
+        },
+        "slot1": {
+          "label": "Slot de arma 1"
+        },
+        "slot2": {
+          "label": "Slot de arma 2"
+        },
+        "slot3": {
+          "label": "Slot de arma 3"
+        },
+        "slot4": {
+          "label": "Slot de arma 4"
+        },
+        "slot5": {
+          "label": "Slot de arma 5"
+        },
+        "map": {
+          "label": "Mapa"
+        },
+        "inventory": {
+          "label": "Inventário"
+        },
+        "ping": {
+          "label": "Ping / Marcador"
+        }
+      },
+      "actionHeader": "Ação",
+      "uniqueHint": "Teclas com opacidade menor são usadas por apenas um jogador e podem não representar um padrão comum.",
+      "tipsTitle": "Dicas de keybinds",
+      "tips": {
+        "qWall": {
+          "title": "A parede no Q",
+          "body": "Quase todo jogador de teclado de alto nível atribui Parede ao Q. É a tecla acessível mais próxima do WASD e permite levantar uma parede instantaneamente sem interromper o movimento."
+        },
+        "sideMouse": {
+          "title": "Construir nos botões laterais do mouse",
+          "body": "Alguns jogadores atribuem chão e rampa aos botões 4 e 5 do mouse (laterais). Isso mantém a mão esquerda livre para movimento e aproxima as construções da mão de mira."
+        },
+        "editClose": {
+          "title": "Editar em uma tecla próxima",
+          "body": "Editar precisa ser rápido. A maioria dos pros usa F, G ou T — teclas alcançáveis sem afastar muito a mão esquerda do WASD. Teclas de edição lentas são um dos maiores gargalos de habilidade para jogadores novos."
+        },
+        "crouchCtrl": {
+          "title": "Agachar vs L-Ctrl",
+          "body": "Quase todos os pros usam Ctrl esquerdo para agachar. Alguns remapeiam para evitar agachamentos acidentais. O importante é que não conflite com seus binds de construção ou edição."
+        },
+        "avoidNumbers": {
+          "title": "Evite teclas numéricas para construir",
+          "body": "Usar 1–4 para construir exige um grande movimento da mão longe do WASD e reduz bastante seu ritmo de construção. Quanto mais perto as teclas de construção estiverem do movimento, mais rápido você constrói enquanto se move."
+        },
+        "personalise": {
+          "title": "Personalize com o tempo",
+          "body": "Não copie binds de pro diretamente se forem desconfortáveis. Comece com um layout lógico e ajuste ao longo de meses. Memória muscular leva tempo — trocar binds toda semana zera seu progresso."
+        }
+      },
+      "seoTitle": "Como escolher keybinds de Fortnite",
+      "seo": {
+        "whyMatter": {
+          "h": "Por que keybinds importam",
+          "p": "Você alterna constantemente entre movimento, construção, edição e tiro. Binds longe do WASD (como construir na fileira numérica) desaceleram esse ciclo. Teclas mais próximas costumam ser melhores — mas conforto vale mais do que copiar um layout pro que você não alcança bem."
+        },
+        "controller": {
+          "h": "Keybinds de controle",
+          "p": "Jogadores de controle usam um sistema diferente. Builder Pro continua sendo um layout competitivo comum. Muitos adicionam paddles para manter os polegares nos analógicos. Pratique binds novos no Creative antes do ranked."
+        }
+      },
+      "faqTitle": "Perguntas frequentes",
+      "faqs": {
+        "q1": "Quais keybinds a maioria dos pros de Fortnite usa para construir?",
+        "a1": "A maioria dos jogadores competitivos atribui Parede ao Q, com Chão, Rampa e Teto em teclas próximas como C, V, F ou T. Editar geralmente fica em F, G ou T — a que não estiver ocupada por uma peça de construção.",
+        "q2": "Devo copiar os keybinds de um pro específico?",
+        "a2": "Não diretamente. Use um layout pro como referência inicial e depois ajuste ao tamanho da sua mão e aos seus hábitos. Conforto e consistência importam mais do que igualar a configuração exata do seu jogador favorito.",
+        "q3": "Qual é a melhor tecla para Editar no Fortnite?",
+        "a3": "F, G e T são as escolhas mais comuns entre jogadores competitivos porque ficam perto do WASD sem conflitar com movimento ou outras teclas de construção. Escolha a que estiver livre no seu layout.",
+        "q4": "Por que tantos jogadores usam Q para Parede?",
+        "a4": "Q fica logo ao lado do WASD, então você pode levantar uma parede sem tirar a mão esquerda das teclas de movimento. É o bind mais consistente entre jogadores competitivos de teclado.",
+        "q5": "Keybinds de controle são diferentes dos de teclado?",
+        "a5": "Sim. Jogadores de controle usam layouts de botões como Builder Pro em vez de posições de teclas, e muitos adicionam paddles para os polegares nunca saírem dos analógicos. Teste layouts novos no Creative antes de levar ao ranked."
+      },
+      "relatedTitle": "Ferramentas de Fortnite relacionadas",
+      "relatedBefore": "Combine seus keybinds com uma",
+      "relatedSens": "conversão de sensibilidade",
+      "relatedMid1": ", ajuste suas",
+      "relatedFps": "configurações de FPS",
+      "relatedMid2": ", ou explore o",
+      "relatedHub": "catálogo completo de ferramentas",
+      "relatedAfter": "."
+    }
+  },
+  "fortniteMap": {
+    "metaTitle": "Mapa interativo de Fortnite – Extractions, POIs e loot",
+    "metaDescription": "Mapa grátis do Capítulo 7 Temporada 3: minimapa Shattered Coast ao vivo com Extraction Sites, POIs, loot e filtros de drop.",
+    "home": "Início",
+    "breadcrumb": "Mapa de Fortnite",
+    "title": "Mapa interativo de Fortnite",
+    "hero": "Free Chapter 7 Season 3 Shattered Coast map with live minimap imagery, named POIs, Extraction Sites, vaults, Sprite chests, vehicles, and other spawn layers — plus loot ratings and drop filters for landings, rotates, and Runners extracts.",
+    "heroExtractStrong": "Extraction Sites",
+    "preferReading": "Prefere ler?",
+    "linkExtractSprites": "Como extrair Sprites",
+    "linkPoiGuide": "Guia completo de POIs",
+    "linkMapGuides": "Todos os guias do mapa",
+    "linkLandingSpots": "Melhores drops",
+    "apiCreditBefore": "Map imagery and coordinates from",
+    "apiCreditAfter": ". Extraction Sites and other spawn pins are POI-anchored planning markers for Chapter 7 Season 3 / Runners (approximate locations). Not affiliated with Epic Games. Loot/contest tips are editorial and may change with patches.",
+    "howTitle": "Como funciona este mapa de Fortnite",
+    "howBody": "This interactive Fortnite map loads the current Battle Royale minimap and places markers using live POI coordinates. Toggle Spawns layers for Extraction Sites, vaults, Sprite chests, chests, vehicles, reboot vans, and more — or filter named drops by contest and loot.",
+    "howLiveTitle": "Live minimap",
+    "howLiveBody": "Real in-game map imagery for Chapter 7 Season 3, not a fake sketch.",
+    "howExtractTitle": "Extraction Sites",
+    "howExtractBody": "Diamond markers for Sprite extract pads near major POIs (quiet vs hot traffic).",
+    "howPoiTitle": "Named POIs & landmarks",
+    "howPoiBody": "Click Lifty Lodge, Heatwave Harbor, Wonkeeland, and more.",
+    "howLootTitle": "Loot & contest filters",
+    "howLootBody": "Sort hot drops, balanced landings, and quiet edge POIs.",
+    "extractTitle": "Chapter 7 Season 3 Extraction Sites",
+    "extractBodyBefore": "Runners Sprite banking uses fixed Extraction Sites across Shattered Coast. Enable the Extraction Sites layer above to see pads near Lifty Lodge, Sinister Strip, Sunken Shores, Wonkeeland, Golden Grove, and more. Sites unlock after the first storm circle; activating one alerts the lobby for roughly 30 seconds. Full steps:",
+    "extractLink": "how to extract Sprites in Chapter 7 Season 3",
+    "locationsTitle": "Shattered Coast named locations",
+    "locationsBody": "Looking up “Fortnite map locations” or “Shattered Coast POIs”? These are the main named drops players search for in Chapter 7 Season 3. Open them on the map above for markers and tips.",
+    "hotTitle": "Hot drops",
+    "hotBody": "Lifty Lodge, Battlewoods, Sinister Strip, Heatwave Harbor, Frosted Flats — high loot, high contest when the bus is nearby.",
+    "balancedTitle": "Balanced landings",
+    "balancedBody": "Wonkeeland, Latte Landing, Golden Grove, Shaken Sanctuary, Chopped Shop — solid chests without guaranteed early chaos.",
+    "edgeTitle": "Edge / placement",
+    "edgeBody": "Cluster Coast, Sunken Shores, Calamari Canyon — quieter loot with longer rotates into mid-game circles.",
+    "landingTitle": "Best Fortnite landing spots by goal",
+    "landingFight": "Fight practice:",
+    "landingFightBody": "Drop contested named locations under the bus path. You will die more often, but you learn loot speed, first fights, and third-party timing faster.",
+    "landingRanked": "Ranked placement:",
+    "landingRankedBody": "Prefer balanced or edge POIs, leave with mobility, and rotate early. Surviving to top 10 usually beats greed-looting one more chest.",
+    "landingSquads": "Squads:",
+    "landingSquadsBody": "Land in the same building cluster, split floors, and meet on a marked point. Split-landing across a whole city creates free 1v3s.",
+    "landingMoreBefore": "For deeper drop strategy, read the",
+    "landingLootGuide": "best loot spots guide",
+    "landingAnd": "and the",
+    "landingPoiGuide": "full Shattered Coast POI breakdown",
+    "faqTitle": "FAQ do mapa de Fortnite",
+    "faqs": {
+      "q1": "What is the current Fortnite map in Chapter 7 Season 3?",
+      "a1": "Chapter 7 Season 3 (Runners) uses the Shattered Coast island, added after the Shattered live event. Named locations include Lifty Lodge, Battlewoods, Wonkeeland, Latte Landing, Frosted Flats, Sinister Strip, Golden Grove, Shaken Sanctuary, Cluster Coast, Sunken Shores, Heatwave Harbor, Calamari Canyon, and Chopped Shop.",
+      "q2": "Where are Fortnite Extraction Sites in Chapter 7 Season 3?",
+      "a2": "Extraction Sites sit near major Shattered Coast POIs (Lifty Lodge, Sinister Strip, Sunken Shores, Wonkeeland, and more). Toggle the Extraction Sites layer on this map. Sites unlock after the first storm circle closes; activating one broadcasts your location for ~30 seconds while the crate arrives.",
+      "q3": "Where should I land in Fortnite for the best loot?",
+      "a3": "High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and Sinister Strip reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games.",
+      "q4": "How do I use this interactive Fortnite map?",
+      "a4": "Use the left sidebar: pick Battle Royale, search spawns/POIs, toggle spawn layers (vaults, Sprite chests, chests, vehicles, reboot vans, and more), Named Locations / Landmarks, then filter drops by hot / balanced / edge. Click markers for tips. Spawn pins are POI-anchored planning markers. OG, Reload, and Blitz maps are still coming soon.",
+      "q5": "Does this Fortnite map update every season?",
+      "a5": "The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips and Extraction Site overlays are reviewed around major Chapter 7 Season 3 patches."
+    },
+    "moreTitle": "Mais ferramentas Fortnite",
+    "moreBody": "Pair the map with other free FortniteTools utilities while you queue.",
+    "moreZone": "Timer de zona",
+    "moreDamage": "Calculadora de dano",
+    "moreTier": "Season 3 weapon tier list",
+    "moreAll": "Todas as ferramentas",
+    "ui": {
+      "loading": "Carregando mapa…",
+      "map": "Mapa",
+      "badgeNew": " · New",
+      "soon": " (soon)",
+      "islandVersion": "Island version",
+      "liveCurrent": "Live · Current season",
+      "chapter": "Chapter {n}",
+      "viewingArchive": "Viewing {label} archive image — markers stay on Live.",
+      "compareSeasons": "Compare seasons",
+      "search": "Buscar",
+      "searchPlaceholder": "Spawns, POIs, extracts…",
+      "clearSpawns": "Limpar spawns",
+      "keyLayers": "Key layers",
+      "spawns": "Spawns",
+      "spawnsOn": "{count} on",
+      "liveOnly": "só ao vivo",
+      "liveOnlyLabel": "Só ao vivo",
+      "switchLivePins": "Switch to Live for spawn pins",
+      "noSpawnMatch": "No spawn filters match.",
+      "locations": "Locais",
+      "namedLocations": "Named Locations",
+      "landmarks": "Landmarks",
+      "liveMapOnly": "Live map only",
+      "dropFilters": "Filtros de drop",
+      "filterAll": "Todos",
+      "filterHot": "hot",
+      "filterBalanced": "balanced",
+      "filterEdge": "edge",
+      "minLoot": "Min loot",
+      "quests": "Missões",
+      "noQuestMatch": "No quests match.",
+      "extractGuide": "Como extrair Sprites →",
+      "footerLive": "Spawn pins are POI-anchored planning markers for Shattered Coast. Toggle layers in Spawns.",
+      "footerArchive": "Historical versions show the island image only. Switch Island version back to Live for pins."
+    },
+    "spawns": {
+      "extraction_sites": "Extraction Sites",
+      "batmobile": "Batman's Beach Buggy",
+      "vaults": "Vaults",
+      "sprite_chests": "Baús Sprite",
+      "chests": "Baús",
+      "chestsHint": "gold outline = high-confidence / dense POI pins",
+      "rare_chests": "Rare Chests",
+      "ammo_boxes": "Ammo Boxes",
+      "vending_machines": "Vending Machines",
+      "mending_machines": "Mending Machines",
+      "launchpads": "Launch Pads",
+      "cars_sport": "Cars (Whiplash)",
+      "cars_suv": "Cars (TrailSmasher)",
+      "boats": "Motorboats",
+      "offroad_tires": "Off-Road Tires",
+      "ziplines": "Ziplines",
+      "flushers": "Port-a-Potty",
+      "teleporters": "Teleporters",
+      "service_stations": "Service Stations",
+      "campfires": "Campfires",
+      "noms": "Produce Boxes",
+      "mushrooms": "Mushrooms",
+      "slurp_barrels": "Slurp Barrels",
+      "slurp_trucks": "Slurp Trucks",
+      "fishing_rods": "Fishing Rods",
+      "fishing_holes": "Fishing Spots",
+      "reboot_vans": "Vans de reboot",
+      "jobboards_supplydrop": "Job Boards",
+      "jobboards_supplydropHint": "Supply Drop",
+      "jobboards_treasure": "Job Boards",
+      "jobboards_treasureHint": "Treasure",
+      "safes": "Safes",
+      "cash_registers": "Cash Registers",
+      "bushes": "Bushes",
+      "dumpsters": "Dumpsters"
+    },
+    "modes": {
+      "br": "Battle Royale",
+      "og": "OG",
+      "blitz-venture": "Blitz - Venture",
+      "blitz-stranger-things": "Blitz - Stranger Things",
+      "blitz-starfall": "Blitz - Starfall Island",
+      "blitz-stark": "Blitz - Stark Island",
+      "reload-venture": "Reload - Venture",
+      "reload-oasis": "Reload - Oasis",
+      "reload-slurp-rush": "Reload - Slurp Rush",
+      "reload-squid": "Reload - Squid Grounds",
+      "reload-surfcity": "Reload - Surf City",
+      "reload-nitemare": "Reload - Nitemare Island",
+      "reload-elite": "Reload - Elite Stronghold"
+    },
+    "linkLocaleGuides": "Guias práticos de conta",
+    "extractBodyLocale": "Os Extraction Sites liberam após o primeiro fechamento da tempestade. Use os pins do mapa ao vivo para planejar extrações de Sprites em Shattered Coast."
+  },
+  "guides": {
+    "hub": {
+      "metaTitle": "Guias de Fortnite",
+      "metaDescription": "Como reembolsar skins do Fortnite e resgatar V-Bucks / códigos de criador — guias práticos de conta Epic no FortniteTools.",
+      "eyebrow": "Guias",
+      "title": "Guias de Fortnite",
+      "description": "Guias práticos sobre reembolsos, códigos e ações de conta. Os guias de meta de temporada continuam nas ferramentas em inglês e no mapa interativo.",
+      "all": "Todos",
+      "howTo": "Como fazer",
+      "categoryEyebrow": "Categoria",
+      "categoryTitle": "Guias práticos de Fortnite",
+      "categoryDescription": "Conta, reembolsos, códigos e guias práticos",
+      "minRead": "{minutes} min de leitura",
+      "home": "Início",
+      "related": "Você também pode gostar",
+      "browseCategories": "Explorar categorias",
+      "previous": "Anterior",
+      "next": "Próximo",
+      "comingSoon": "Artigo completo em breve. Volte em breve!"
+    },
+    "refund": {
+      "metaTitle": "Como reembolsar skins e compras do Item Shop do Fortnite",
+      "metaDescription": "Regras oficiais de reembolso da Epic: Cancel Purchase em 24 horas, Return Tickets em 30 dias, o que não pode ser reembolsado e como recuperar seus V-Bucks.",
+      "title": "Como reembolsar skins e compras do Item Shop do Fortnite",
+      "excerpt": "Regras oficiais de reembolso da Epic: Cancel Purchase em 24 horas, Return Tickets em 30 dias, o que não pode ser reembolsado e como recuperar seus V-Bucks.",
+      "content": "## Duas ferramentas oficiais: Cancel Purchase e Return Tickets\n\nA Epic permite que você desfaça muitas **compras de cosméticos do Item Shop feitas com V-Bucks** sem precisar entrar em contato com o suporte — se agir dentro dos prazos e o item for elegível.\n\nEste guia segue a ajuda oficial da Epic sobre cobrança no Fortnite Battle Royale para cancelar ou reembolsar compras do Item Shop feitas com V-Bucks. As políticas podem ser atualizadas; se a interface do jogo divergir desta página, confie no jogo e na Ajuda da Epic.\n\nÚltima revisão: agosto de 2026. Leituras relacionadas: o [rastreador do Item Shop](/tools/item-shop) e [como resgatar um código do Fortnite](/guides/how-to/how-to-redeem-fortnite-code).\n\n## Comparação rápida\n\n| Ferramenta | Janela de tempo | Limite extra | Melhor para |\n| --- | --- | --- | --- |\n| **Cancel Purchase** | Dentro de **24 horas** após a compra | O item precisa estar **sem uso / sem equipar** em todos os modos | Compra acidental no mesmo dia |\n| **Return Ticket** | Item comprado nos últimos **30 dias** | Os tickets são limitados (veja abaixo) | Erros percebidos após 24 horas |\n| **Solicitação de reembolso em dinheiro real** | Fluxo de reembolso separado da Epic | Para compras em dinheiro de pacotes de V-Bucks, não todos os cosméticos | Comprou o pacote de V-Bucks errado com dinheiro |\n\nCompras feitas dentro de **ilhas Creative criadas por desenvolvedores** não podem usar Cancel Purchase ou Return Tickets.\n\n## O que geralmente não é possível reembolsar com Cancel Purchase / Return Tickets\n\nO artigo de ajuda da Epic lista categorias que não podem ser devolvidas por essas ferramentas, incluindo:\n\n- Battle Passes / Festival e outros passes\n- Níveis de passe e trilhas de recompensas premium\n- **Pacotes (bundles)** de cosméticos (Return Tickets podem exigir a devolução de todo o pacote elegível junto, quando pacotes são permitidos — siga o aviso no jogo)\n- Compras **presenteadas**\n- Level Up Quest Packs\n- Loot Llamas do Save the World / certos itens da loja do STW\n- Compras em ilhas de desenvolvedores\n\nSe o seu arrependimento é um Battle Pass, as ferramentas de reembolso de cosméticos da Epic não vão desfazê-lo. Gaste seus V-Bucks com cuidado usando a [calculadora de V-Bucks](/tools/vbucks-calculator) antes de confirmar.\n\n## Como usar o Cancel Purchase (desfazer em 24 horas)\n\nUse isso quando comprou a skin errada há alguns minutos e nunca a equipou.\n\n1. Abra o Fortnite e acesse seu **Locker** / o histórico de compras do item (os rótulos podem mostrar **Cancel Purchase** nos detalhes do item).\n2. Selecione o item que você acabou de comprar.\n3. Escolha **Cancel Purchase** se o botão estiver disponível.\n4. Confirme. O cosmético é removido e os V-Bucks voltam para o seu saldo.\n\n### O Cancel Purchase falha quando\n\n- Já passaram mais de 24 horas\n- Você equipou ou usou o item em qualquer modo (incluindo Creative / Festival / LEGO quando aplicável)\n- O tipo de item está na lista de não reembolsáveis\n- Você já cancelou essa compra uma vez (a Epic informa que cada item só pode ser cancelado uma vez; comprar de novo pode mostrar um aviso)\n\n## Como usar um Return Ticket (janela de 30 dias)\n\nSe o Cancel Purchase não estiver mais disponível, verifique se você tem um **Return Ticket**.\n\nRegras de tickets publicadas pela Epic (verifique na sua conta — a Epic ajustou as concessões ao longo dos anos):\n\n- As contas são fornecidas com Return Tickets (geralmente descritas como começando com **3**)\n- Normalmente você recebe **1 ticket novo a cada 365 dias**\n- Você pode manter um máximo limitado por vez (geralmente **3**)\n\n### Passos\n\n1. Abra o item no seu Locker / na interface de reembolso.\n2. Escolha a opção Return Ticket quando oferecida.\n3. Confirme. Os V-Bucks voltam e o item saí da sua conta.\n4. Para pacotes elegíveis, devolva o conjunto completo quando a interface exigir.\n\nReturn Tickets são valiosos. Não use um em um spray de 200 V-Bucks se você puder clicar por engano em um traje de 2.000 V-Bucks depois.\n\n## Compras em dinheiro real (pacotes de V-Bucks, Crew, etc.)\n\nSe você gastou **dinheiro real** em pacotes de V-Bucks ou assinaturas e precisa de um reembolso em dinheiro, use o fluxo de **Solicitação de Reembolso** da Epic no site da Epic Games — não o botão Return Ticket dentro do jogo. As lojas de plataforma (PlayStation, Xbox, Nintendo) também podem exigir reembolsos via Sony / Microsoft / Nintendo em vez da Epic, dependendo de onde você pagou.\n\n## Skins de presente\n\nPresentes geralmente **não são reembolsáveis** via Cancel Purchase / Return Tickets. Se você foi enganado em uma troca de presentes, isso é uma questão de segurança da conta — ative o 2FA da Epic em [epicgames.com/account/password](https://www.epicgames.com/account/password) e contate o Suporte Epic com os detalhes do pedido. Não use \"emprestadores de conta\" para tentar \"forçar um reembolso\".\n\n## Hábitos inteligentes para reembolsar com menos frequência\n\n- Visualize os estilos na loja antes de comprar\n- Confira as peças do conjunto no [rastreador do Item Shop](/tools/item-shop)\n- Evite comprar sob pressão de overlays de stream ou amigos insistindo para \"comprar\"\n- Mantenha ao menos um Return Ticket guardado\n- Nunca equipe uma compra questionável até ter certeza — equipar pode acabar com a elegibilidade para o Cancel Purchase\n\n## Perguntas frequentes\n\n### Os V-Bucks reembolsados voltam instantaneamente?\n\nNormalmente sim, aparecendo na tela após a confirmação. Reinicie o cliente se a interface do saldo demorar.\n\n### Posso reembolsar uma skin da temporada passada?\n\nSomente se ela ainda estiver dentro da janela de compra de **30 dias** do Return Ticket e for elegível. Itens mais antigos do Locker fora dessa janela permanecem na conta.\n\n### Reembolsar afeta o status da minha conta?\n\nUsar as ferramentas oficiais Cancel Purchase / Return Ticket como projetadas é normal. Chargebacks em compras com dinheiro real podem bloquear compras e colocar em risco ações na conta — use a solicitação de reembolso oficial da Epic em vez de contestar com seu banco como primeiro passo."
+    },
+    "redeem": {
+      "metaTitle": "Como resgatar um código do Fortnite (cartões de V-Bucks + códigos de criador)",
+      "metaDescription": "Resgate cartões-presente de V-Bucks em PC, Switch, PlayStation e Xbox — e veja como funcionam os códigos de Support-A-Creator no Item Shop e como evitar erros de conta errada.",
+      "title": "Como resgatar um código do Fortnite (cartões de V-Bucks + códigos de criador)",
+      "excerpt": "Resgate cartões-presente de V-Bucks em PC, Switch, PlayStation e Xbox — e veja como funcionam os códigos de Support-A-Creator no Item Shop e como evitar erros de conta errada.",
+      "content": "## Dois tipos diferentes de \"códigos do Fortnite\" (não confunda)\n\nOs jogadores pesquisam \"resgatar código do Fortnite\" para dois sistemas totalmente diferentes:\n\n| Tipo de código | O que faz | Onde inserir |\n| --- | --- | --- |\n| **PIN do cartão-presente de V-Bucks / Fortnite** | Adiciona V-Bucks pré-pagos a uma conta Epic (aplicam-se regras de plataforma) | O site oficial [V-Bucks Card](https://www.fortnite.com/vbuckscard) — **não** a caixa de busca do Item Shop dentro do jogo |\n| **Código de Support-A-Creator / criador** | Dá a um criador uma porcentagem das compras elegíveis; **não** dá V-Bucks grátis | Fortnite **Item Shop → Enter Code** (ou o campo de código de criador no checkout) |\n\nSe você comprou um cartão físico e tentar digitar o PIN como código de criador, isso vai falhar. Se digitar a tag de criador de um streamer no site do cartão de V-Bucks, isso também vai falhar.\n\nÚltima revisão: 1 de agosto de 2026. Ajuda oficial do cartão de V-Bucks: [Como resgatar um cartão de V-Bucks](https://www.epicgames.com/help/en-US/c-Category_Fortnite/c-Fortnite_Billingandpayment/how-to-redeem-a-v-bucks-card-a000084845). Guarde seu recibo até que o saldo apareça corretamente.\n\nRelacionado: [reembolsos](/guides/how-to/how-to-refund-fortnite-skins), [calculadora de V-Bucks](/tools/vbucks-calculator), [Item Shop](/tools/item-shop).\n\n## Antes de resgatar qualquer coisa\n\n1. Entre na **conta Epic dona do seu Locker** — confira as skins em [epicgames.com/account](https://www.epicgames.com/account) antes de colar um PIN.\n2. Confirme se o perfil de console / Microsoft / PlayStation que você vai selecionar está vinculado a esse ID Epic em Conta → Conexões.\n3. Ative o 2FA da Epic em [epicgames.com/account/password](https://www.epicgames.com/account/password) para que um PC compartilhado da família não gaste seu cartão no login errado.\n4. Raspe o PIN com cuidado; não compre \"verificadores de código\" nem \"bots de resgate\" do Discord.\n\n## Como resgatar um cartão de V-Bucks (todas as plataformas começam aqui)\n\nO fluxo da Epic é principalmente baseado na web. Geralmente você **não pode** concluir um cartão físico de V-Bucks apenas colando o PIN dentro do cliente do Fortnite.\n\n1. Abra [fortnite.com/vbuckscard](https://www.fortnite.com/vbuckscard) em um navegador.\n2. Clique em **Get Started** e entre na conta Epic Games correta (use os botões de login de console se for assim que você normalmente se autentica).\n3. Digite o PIN do verso do cartão / do e-mail digital — geralmente **sem hífens**.\n4. Clique em **Next**.\n5. Escolha a **plataforma / dispositivo** em que você joga Fortnite. Apenas plataformas vinculadas aparecem — se a sua estiver faltando, corrija as Conexões primeiro.\n6. Revise o nome da conta Epic, o dispositivo e o saldo projetado, depois clique em **Confirm**.\n\n### PC, Nintendo Switch e celular\n\nApós o Confirm, os V-Bucks geralmente entram na carteira Epic daquele caminho de plataforma. Abra o Fortnite, vá ao Item Shop e verifique o saldo. Force o encerramento e reabra uma vez se a interface demorar.\n\n### PlayStation (PS5 / PS4) — código secundário necessário\n\nSelecionar PlayStation gera um **código secundário da PlayStation Store** (a Epic o exibe e/ou envia por e-mail). Você precisa resgatar esse código na **conta Sony vinculada à sua Epic**:\n\n1. Termine a etapa Confirm em fortnite.com/vbuckscard com **PlayStation** selecionado.\n2. Copie o código secundário fornecido pela Epic.\n3. Resgate-o na PlayStation Store (console: Configurações / PlayStation Store → Resgatar códigos, ou a página web de resgate da Sony enquanto estiver conectado na PSN correta).\n4. Use uma **janela anônima** se tiver vários logins de PSN — resgatar no ID Sony errado é o pesadelo número um do suporte.\n5. Reabra o Fortnite nessa PSN e verifique os V-Bucks.\n\n### Xbox — código secundário da Microsoft necessário\n\nMesmo padrão de duas etapas do PlayStation:\n\n1. Confirme em fortnite.com/vbuckscard com **Xbox** selecionado.\n2. Copie o código secundário do tipo pré-pago da **Microsoft / Xbox** gerado pela Epic.\n3. Resgate-o na conta Microsoft vinculada à sua Epic (interface de resgate do console Xbox ou site de resgate da Microsoft).\n4. Reabra o Fortnite e verifique o saldo.\n\nA página de ajuda da Epic destaca explicitamente que Xbox / PlayStation precisam dessa etapa secundária de resgate; PC / Switch / celular geralmente não precisam.\n\n## Códigos de criador (Support-A-Creator) — como funcionam de fato\n\nUm código de criador **não** libera skins nem adiciona V-Bucks. Ele informa à Epic qual criador deve receber uma parte das compras **elegíveis** que você faz enquanto o código estiver ativo.\n\n### Como inserir um código de criador\n\n1. Abra o Fortnite e vá ao **Item Shop**.\n2. Encontre **Enter Code** / Support-A-Creator (o texto varia um pouco por patch).\n3. Digite o código do criador exatamente (geralmente o nome do streamer ou uma tag curta).\n4. Confirme. Você deve ver o nome do criador aplicado por uma janela limitada de tempo (a Epic varia por quanto tempo um código \"permanece\" — reinsira-o antes de compras grandes se tiver dúvidas).\n5. Compre Battle Pass, pacotes de V-Bucks (quando elegíveis), Crew ou cosméticos da loja normalmente.\n\n### Perguntas frequentes sobre códigos de criador que os jogadores costumam errar\n\n- **Não é um cupom.** O preço permanece o mesmo.\n- **Não é o PIN de um cartão de V-Bucks.** Sistema diferente.\n- **Presentes / alguns SKUs podem não ser elegíveis** dependendo das regras atuais de SAC da Epic — se o código não se aplicar, a compra ainda pode ser concluída sem apoiar ninguém.\n- **Você pode trocar de código** antes de finalizar a compra; geralmente o último código confirmado vale para aquela sessão/janela.\n- Sites de phishing que pedem para você \"verificar o código de criador\" com sua senha são golpes — use apenas o campo da loja dentro do jogo ou as páginas oficiais da Epic.\n\n## Chaves da Epic Games Store vs. cartões de V-Bucks do Fortnite\n\nAlguns produtos físicos \"Fortnite\" ou cartões de carteira Epic são resgatados nas páginas de resgate da loja **epicgames.com** em vez de fortnite.com/vbuckscard. Se a embalagem disser **Epic Games Store** / crédito de carteira, siga a URL de resgate da Epic impressa no cartão — não force pelo site do cartão de V-Bucks.\n\n## Erros comuns de resgate e soluções\n\n| Problema | Causa provável | Solução |\n| --- | --- | --- |\n| \"Código inválido\" | Erro de digitação, já usado, tipo de produto errado | Verifique o PIN novamente; não reutilize; confirme que é um cartão de V-Bucks e não uma tag de criador |\n| Plataforma ausente na lista | Console não vinculado a essa Epic | Vincule o console em Conta Epic → Conexões e tente novamente |\n| Saldo ausente no PS/Xbox | Código secundário nunca resgatado | Verifique o e-mail / confirmação da Epic para o segundo código; resgate-o no ID Sony/Microsoft correto |\n| V-Bucks no Locker \"errado\" | Conectado na Epic errada | Pare; contate a Epic com o recibo — evite isso conferindo o Locker *antes* do Confirm |\n| Cartão diz bloqueio regional | Limites de SKU regional | Resgate em uma loja/conta compatível com as regras regionais do cartão |\n| Conta infantil / controles parentais | Restrições de compra | O responsável precisa concluir as etapas de resgate na loja do console |\n\n## Lista de segurança (evitar golpes)\n\n- Resgate apenas em **fortnite.com** / **epicgames.com** / lojas oficiais de console\n- Nunca envie um PIN para \"suporte\" via Discord, DM do Instagram ou \"hosts de sorteio\"\n- Nunca publique uma captura de tela de um PIN completo e não usado\n- Se um site pedir sua senha **e** o PIN do cartão juntos fora do login da Epic, saia\n- Depois de resgatar, você pode gastar com a [calculadora de V-Bucks](/tools/vbucks-calculator) e conferir o [Item Shop](/tools/item-shop) antes de compras por impulso\n\n## Perguntas frequentes\n\n### Posso resgatar um cartão de V-Bucks dentro do Fortnite?\n\nNão como fluxo principal. Comece em [fortnite.com/vbuckscard](https://www.fortnite.com/vbuckscard). Jogadores de console terminam depois na PlayStation Store / Microsoft Store quando solicitado.\n\n### Os V-Bucks são transferidos entre PC e console?\n\nOs V-Bucks seguem as regras de carteira de plataforma da Epic e a forma como você os resgatou. Cosméticos de progresso cruzado ficam na conta Epic, mas os saldos para gastar podem ser separados por plataforma — resgate intencionalmente para o dispositivo em que você compra, e leia a pré-visualização do saldo na tela da Epic antes de clicar em Confirm.\n\n### Posso reembolsar um cartão já resgatado?\n\nGeralmente não, depois de resgatado. Guarde o recibo para o Suporte Epic caso o PIN falhe ou seja registrado incorretamente. O arrependimento de um cosmético depois de gastar V-Bucks é outra ferramenta — [guia de reembolsos](/guides/how-to/how-to-refund-fortnite-skins).\n\n### Como apoio um criador sem comprar nada?\n\nInserir um código sozinho não faz nada até você fazer uma compra elegível. Adicione à lista de desejos com o [rastreador do Item Shop](/tools/item-shop) e compre quando estiver pronto."
+    }
+  }
+}

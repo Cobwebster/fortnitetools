@@ -1,9 +1,43 @@
 import type { MetadataRoute } from 'next'
 import { posts, categories } from '@/lib/posts'
 import { siteConfig } from '@/lib/site'
+import { localizedGuidePaths, localizedToolSlugs, prefixedLocales } from '@/i18n/config'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url
+
+  const localeRoutes: MetadataRoute.Sitemap = prefixedLocales.flatMap((locale) => [
+    {
+      url: `${base}/${locale}`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${base}/${locale}/tools`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${base}/${locale}/fortnite-map`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    ...localizedGuidePaths.map((path) => ({
+      url: `${base}/${locale}${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: path === '/guides' ? 0.85 : 0.75,
+    })),
+    ...localizedToolSlugs.map((slug) => ({
+      url: `${base}/${locale}/tools/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
+    })),
+  ])
 
   const toolRoutes: MetadataRoute.Sitemap = [
     '/season-countdown',
@@ -90,5 +124,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticRoutes, ...toolRoutes, ...categoryRoutes, ...postRoutes]
+  return [...staticRoutes, ...localeRoutes, ...toolRoutes, ...categoryRoutes, ...postRoutes]
 }

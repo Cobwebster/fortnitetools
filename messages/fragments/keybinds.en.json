@@ -1,0 +1,99 @@
+{
+  "metaTitle": "Fortnite Pro Keybinds – Competitive Player Keyboard Layouts",
+  "metaDescription": "Compare approximate keyboard bindings used by well-known competitive Fortnite players for building, editing, and combat, with tips for picking your own layout.",
+  "home": "Home",
+  "tools": "Tools",
+  "breadcrumb": "Pro Keybinds",
+  "titlePrefix": "Fortnite Pro",
+  "titleHighlight": "Keybinds",
+  "hero": "Approximate keyboard bindings used by well-known competitive players. Layouts change over time — treat this as a reference, then adjust for hand size and comfort.",
+  "categoryAll": "All",
+  "categories": {
+    "building": "Building",
+    "combat": "Combat",
+    "inventory": "Inventory"
+  },
+  "actions": {
+    "wall": { "label": "Wall" },
+    "floor": { "label": "Floor" },
+    "ramp": { "label": "Ramp" },
+    "roof": { "label": "Roof / Pyramid" },
+    "stair": { "label": "Stairs" },
+    "edit": { "label": "Edit" },
+    "repair": { "label": "Repair / Reset" },
+    "crouch": { "label": "Crouch" },
+    "jump": { "label": "Jump" },
+    "sprint": { "label": "Sprint" },
+    "reload": { "label": "Reload" },
+    "interact": { "label": "Interact" },
+    "slot1": { "label": "Weapon Slot 1" },
+    "slot2": { "label": "Weapon Slot 2" },
+    "slot3": { "label": "Weapon Slot 3" },
+    "slot4": { "label": "Weapon Slot 4" },
+    "slot5": { "label": "Weapon Slot 5" },
+    "map": { "label": "Map" },
+    "inventory": { "label": "Inventory" },
+    "ping": { "label": "Ping / Marker" }
+  },
+  "actionHeader": "Action",
+  "uniqueHint": "Keys with lower opacity are used by only one player and may not represent a common pattern.",
+  "tipsTitle": "Keybind Tips",
+  "tips": {
+    "qWall": {
+      "title": "The Q Wall",
+      "body": "Nearly every top keyboard player binds Wall to Q. It is the closest accessible key to WASD and allows you to throw up a wall instantly without disrupting movement."
+    },
+    "sideMouse": {
+      "title": "Building on Side Mouse Buttons",
+      "body": "Some players bind floor and ramp to mouse 4 and mouse 5 (side buttons). This keeps your left hand free for movement and keeps builds closer to your aim hand."
+    },
+    "editClose": {
+      "title": "Edit on a Close Key",
+      "body": "Edit needs to be fast. Most pros use F, G, or T — keys reachable without moving your left hand far from WASD. Slow edit keys are one of the biggest skill bottlenecks for new players."
+    },
+    "crouchCtrl": {
+      "title": "Crouch vs L-Ctrl",
+      "body": "Almost all pros use Left Ctrl for crouch. Some remap it to avoid accidental crouches. The key point is it should not conflict with your building or editing binds."
+    },
+    "avoidNumbers": {
+      "title": "Avoid Number Keys for Builds",
+      "body": "Using 1–4 for builds forces a large hand movement away from WASD and significantly slows your build pace. The closer your build keys are to movement, the faster you can build while moving."
+    },
+    "personalise": {
+      "title": "Personalise Over Time",
+      "body": "Do not copy pro binds directly if they feel uncomfortable. Start with a logical layout and adjust over months. Muscle memory takes time — changing binds every week resets your progress."
+    }
+  },
+  "seoTitle": "Choosing Fortnite Keybinds",
+  "seo": {
+    "whyMatter": {
+      "h": "Why Keybinds Matter",
+      "p": "You switch between movement, building, editing, and shooting constantly. Binds far from WASD (like number-row builds) slow that loop. Closer keys usually feel better — but comfort beats copying a pro layout you cannot reach cleanly."
+    },
+    "controller": {
+      "h": "Controller Binds",
+      "p": "Controller players use a different system. Builder Pro remains a common competitive layout. Many players add paddles so thumbs stay on the sticks. Practice any new binds in Creative before ranked."
+    }
+  },
+  "faqTitle": "Frequently asked questions",
+  "faqs": {
+    "q1": "What keybinds do most Fortnite pros use for building?",
+    "a1": "Most competitive players bind Wall to Q, with Floor, Ramp, and Roof on nearby keys like C, V, F, or T. Edit is usually on F, G, or T — whichever is not already used for a build piece.",
+    "q2": "Should I copy a specific pro's keybinds?",
+    "a2": "Not directly. Use a pro layout as a starting reference, then adjust for your own hand size and habits. Comfort and consistency matter more than matching a favorite player's exact setup.",
+    "q3": "What is the best key for Edit in Fortnite?",
+    "a3": "F, G, and T are the most common choices among competitive players because they are close to WASD without conflicting with movement or other build keys. Pick whichever is free on your layout.",
+    "q4": "Why do so many players use Q for Wall?",
+    "a4": "Q sits right next to WASD, so you can throw up a wall without moving your left hand off movement keys. It is the single most consistent bind across competitive keyboard players.",
+    "q5": "Are controller keybinds different from keyboard binds?",
+    "a5": "Yes. Controller players use button layouts like Builder Pro rather than key positions, and many add paddles so their thumbs never leave the sticks. Test new layouts in Creative before taking them into ranked."
+  },
+  "relatedTitle": "Related Fortnite tools",
+  "relatedBefore": "Pair your keybinds with a matching",
+  "relatedSens": "sensitivity conversion",
+  "relatedMid1": ", dial in your",
+  "relatedFps": "FPS settings",
+  "relatedMid2": ", or browse the",
+  "relatedHub": "full tools hub",
+  "relatedAfter": "."
+}

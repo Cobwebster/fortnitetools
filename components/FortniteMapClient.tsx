@@ -3,6 +3,7 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
+import { useLocale, useTranslations } from 'next-intl'
 import { ChevronDown } from 'lucide-react'
 import { extractTrafficColor, type ContestLevel } from '@/lib/map-data'
 import {
@@ -20,17 +21,18 @@ import {
   findMapById,
 } from '@/lib/map-evolution'
 
+function MapLoading() {
+  const tu = useTranslations('fortniteMap.ui')
+  return (
+    <div className="flex h-[min(85vh,800px)] items-center justify-center rounded-xl border border-border bg-card text-sm text-muted-foreground">
+      {tu('loading')}
+    </div>
+  )
+}
+
 const FortniteLeafletMap = dynamic(
-  () =>
-    import('@/components/FortniteLeafletMap').then((m) => m.FortniteLeafletMap),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="flex h-[min(85vh,800px)] items-center justify-center rounded-xl border border-border bg-card text-sm text-muted-foreground">
-        Loading interactive map…
-      </div>
-    ),
-  },
+  () => import('@/components/FortniteLeafletMap').then((m) => m.FortniteLeafletMap),
+  { ssr: false, loading: () => <MapLoading /> }
 )
 
 function Accordion({
@@ -71,7 +73,7 @@ function LayerRow({
   hint,
   active,
   available = true,
-  unavailableLabel = 'Soon',
+  unavailableLabel,
   onToggle,
   swatch,
 }: {
@@ -79,7 +81,7 @@ function LayerRow({
   hint?: string
   active: boolean
   available?: boolean
-  unavailableLabel?: string
+  unavailableLabel: string
   onToggle?: () => void
   swatch?: ReactNode
 }) {
@@ -125,6 +127,15 @@ function LayerRow({
 }
 
 export function FortniteMapClient() {
+  const tu = useTranslations('fortniteMap.ui')
+  const locale = useLocale()
+  const extractGuideHref =
+    locale === 'en'
+      ? '/guides/how-to/how-to-extract-sprites-fortnite'
+      : `/${locale}/guides`
+  const ts = useTranslations('fortniteMap.spawns')
+  const tm = useTranslations('fortniteMap.modes')
+
   const [mapMode, setMapMode] = useState<MapModeId>('br')
   const [mapVersionId, setMapVersionId] = useState('live')
   const [query, setQuery] = useState('')
@@ -161,15 +172,26 @@ export function FortniteMapClient() {
     })
   }
 
+  const labeledSpawns = useMemo(
+    () =>
+      SPAWN_LAYERS.map((layer) => {
+        const label = ts.has(layer.id) ? ts(layer.id) : layer.label
+        const hintKey = `${layer.id}Hint`
+        const hint = ts.has(hintKey) ? ts(hintKey) : layer.hint
+        return { ...layer, label, hint }
+      }),
+    [ts]
+  )
+
   const filteredSpawns = useMemo(() => {
-    if (!spawnQuery) return SPAWN_LAYERS
-    return SPAWN_LAYERS.filter(
+    if (!spawnQuery) return labeledSpawns
+    return labeledSpawns.filter(
       (s) =>
         s.label.toLowerCase().includes(spawnQuery) ||
         s.hint?.toLowerCase().includes(spawnQuery) ||
         s.id.includes(spawnQuery.replace(/\s+/g, '_'))
     )
-  }, [spawnQuery])
+  }, [spawnQuery, labeledSpawns])
 
   const filteredQuests = useMemo(() => {
     if (!spawnQuery) return QUEST_LAYERS
@@ -181,6 +203,7 @@ export function FortniteMapClient() {
   }, [spawnQuery])
 
   const activeSpawnList = useMemo(() => [...activeSpawns], [activeSpawns])
+  const liveOnly = tu('liveOnlyLabel')
 
   return (
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-[260px_minmax(0,1fr)]">
@@ -188,7 +211,7 @@ export function FortniteMapClient() {
         <div className="border-b border-border p-3 space-y-3">
           <label className="block">
             <span className="mb-1.5 block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-              Map
+              {tu('map')}
             </span>
             <select
               value={mapMode}
@@ -201,9 +224,9 @@ export function FortniteMapClient() {
             >
               {MAP_MODES.map((m) => (
                 <option key={m.id} value={m.id} disabled={!m.available}>
-                  {m.label}
-                  {m.badge === 'new' ? ' · New' : ''}
-                  {!m.available ? ' (soon)' : ''}
+                  {tm.has(m.id) ? tm(m.id) : m.label}
+                  {m.badge === 'new' ? tu('badgeNew') : ''}
+                  {!m.available ? tu('soon') : ''}
                 </option>
               ))}
             </select>
@@ -211,7 +234,7 @@ export function FortniteMapClient() {
 
           <label className="block">
             <span className="mb-1.5 block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-              Island version
+              {tu('islandVersion')}
             </span>
             <select
               value={mapVersionId}
@@ -219,9 +242,9 @@ export function FortniteMapClient() {
               disabled={mapMode !== 'br'}
               className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 disabled:opacity-50"
             >
-              <option value="live">Live · Current season</option>
+              <option value="live">{tu('liveCurrent')}</option>
               {versionsByChapter.map((group) => (
-                <optgroup key={group.chapter} label={`Chapter ${group.chapter}`}>
+                <optgroup key={group.chapter} label={tu('chapter', { n: group.chapter })}>
                   {group.maps.map((m) => (
                     <option key={m.id} value={m.id}>
                       {m.shortLabel} · v{m.version}
@@ -232,10 +255,9 @@ export function FortniteMapClient() {
             </select>
             {!isLive && historical ? (
               <p className="mt-1.5 text-[11px] leading-snug text-muted-foreground">
-                Viewing <strong className="text-foreground">{historical.shortLabel}</strong> archive
-                image — markers stay on Live.{' '}
+                {tu('viewingArchive', { label: historical.shortLabel })}{' '}
                 <Link href="/map-evolution" className="text-primary hover:underline">
-                  Compare seasons
+                  {tu('compareSeasons')}
                 </Link>
               </p>
             ) : null}
@@ -243,13 +265,13 @@ export function FortniteMapClient() {
 
           <label className="block">
             <span className="mb-1.5 block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-              Search
+              {tu('search')}
             </span>
             <input
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Spawns, POIs, extracts…"
+              placeholder={tu('searchPlaceholder')}
               disabled={!isLive}
               className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 disabled:opacity-50"
             />
@@ -262,7 +284,7 @@ export function FortniteMapClient() {
               disabled={!isLive}
               className="rounded border border-border px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground disabled:opacity-40"
             >
-              Clear spawns
+              {tu('clearSpawns')}
             </button>
             <button
               type="button"
@@ -274,25 +296,25 @@ export function FortniteMapClient() {
               disabled={!isLive}
               className="rounded border border-border px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground disabled:opacity-40"
             >
-              Key layers
+              {tu('keyLayers')}
             </button>
           </div>
         </div>
 
         <div className="max-h-[min(70vh,720px)] overflow-y-auto">
           <Accordion
-            title="Spawns"
+            title={tu('spawns')}
             open={openSpawns}
             onToggle={() => setOpenSpawns((v) => !v)}
-            count={isLive ? `${activeSpawns.size} on` : 'live only'}
+            count={isLive ? tu('spawnsOn', { count: activeSpawns.size }) : tu('liveOnly')}
           >
             {filteredSpawns.map((layer) => (
               <LayerRow
                 key={layer.id}
                 label={layer.label}
-                hint={!isLive ? 'Switch to Live for spawn pins' : layer.hint}
+                hint={!isLive ? tu('switchLivePins') : layer.hint}
                 available={isLive}
-                unavailableLabel="Live only"
+                unavailableLabel={liveOnly}
                 active={isLive && activeSpawns.has(layer.id)}
                 onToggle={() => toggleSpawn(layer.id)}
                 swatch={
@@ -307,31 +329,35 @@ export function FortniteMapClient() {
               />
             ))}
             {filteredSpawns.length === 0 ? (
-              <p className="px-2 py-2 text-xs text-muted-foreground">No spawn filters match.</p>
+              <p className="px-2 py-2 text-xs text-muted-foreground">{tu('noSpawnMatch')}</p>
             ) : null}
           </Accordion>
 
-          <Accordion title="Locations" open={openLocations} onToggle={() => setOpenLocations((v) => !v)}>
+          <Accordion
+            title={tu('locations')}
+            open={openLocations}
+            onToggle={() => setOpenLocations((v) => !v)}
+          >
             <LayerRow
-              label="Named Locations"
+              label={tu('namedLocations')}
               available={isLive}
-              unavailableLabel="Live only"
+              unavailableLabel={liveOnly}
               active={isLive && showNamed}
               onToggle={() => setShowNamed((v) => !v)}
-              hint={!isLive ? 'Live map only' : undefined}
+              hint={!isLive ? tu('liveMapOnly') : undefined}
             />
             <LayerRow
-              label="Landmarks"
+              label={tu('landmarks')}
               available={isLive}
-              unavailableLabel="Live only"
+              unavailableLabel={liveOnly}
               active={isLive && showLandmarks}
               onToggle={() => setShowLandmarks((v) => !v)}
-              hint={!isLive ? 'Live map only' : undefined}
+              hint={!isLive ? tu('liveMapOnly') : undefined}
             />
 
             <div className="mt-2 space-y-2 border-t border-border/60 px-2 pt-3">
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-                Drop filters
+                {tu('dropFilters')}
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {(['all', 'hot', 'balanced', 'edge'] as const).map((f) => (
@@ -346,12 +372,18 @@ export function FortniteMapClient() {
                         : 'border-border text-muted-foreground hover:border-primary/40'
                     }`}
                   >
-                    {f === 'all' ? 'All' : f}
+                    {f === 'all'
+                      ? tu('filterAll')
+                      : f === 'hot'
+                        ? tu('filterHot')
+                        : f === 'balanced'
+                          ? tu('filterBalanced')
+                          : tu('filterEdge')}
                   </button>
                 ))}
               </div>
               <label className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span className="shrink-0">Min loot</span>
+                <span className="shrink-0">{tu('minLoot')}</span>
                 <input
                   type="range"
                   min={1}
@@ -366,35 +398,41 @@ export function FortniteMapClient() {
             </div>
           </Accordion>
 
-          <Accordion title="Quests" open={openQuests} onToggle={() => setOpenQuests((v) => !v)}>
+          <Accordion title={tu('quests')} open={openQuests} onToggle={() => setOpenQuests((v) => !v)}>
             {filteredQuests.map((quest) => (
               <div key={quest.id}>
-                <LayerRow label={quest.label} available={quest.available} active={false} />
+                <LayerRow
+                  label={quest.label}
+                  available={quest.available}
+                  active={false}
+                  unavailableLabel={liveOnly}
+                />
                 {quest.children?.map((child) => (
                   <div key={child.id} className="pl-4">
-                    <LayerRow label={child.label} available={child.available} active={false} />
+                    <LayerRow
+                      label={child.label}
+                      available={child.available}
+                      active={false}
+                      unavailableLabel={liveOnly}
+                    />
                   </div>
                 ))}
               </div>
             ))}
             {filteredQuests.length === 0 ? (
-              <p className="px-2 py-2 text-xs text-muted-foreground">No quests match.</p>
+              <p className="px-2 py-2 text-xs text-muted-foreground">{tu('noQuestMatch')}</p>
             ) : null}
           </Accordion>
         </div>
 
         <div className="border-t border-border px-3 py-2.5 text-[11px] text-muted-foreground">
           <Link
-            href="/guides/how-to/how-to-extract-sprites-fortnite"
+            href={extractGuideHref}
             className="font-semibold text-primary hover:underline"
           >
-            How to extract Sprites →
+            {tu('extractGuide')}
           </Link>
-          <p className="mt-1">
-            {isLive
-              ? 'Spawn pins are POI-anchored planning markers for Shattered Coast. Toggle layers in Spawns.'
-              : 'Historical versions show the island image only. Switch Island version back to Live for pins.'}
-          </p>
+          <p className="mt-1">{isLive ? tu('footerLive') : tu('footerArchive')}</p>
         </div>
       </aside>
 

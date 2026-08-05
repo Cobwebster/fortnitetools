@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import { useLocale, useTranslations } from 'next-intl'
 import { FortniteIcon } from '@/components/fortnite-icon'
 import { toolIcon } from '@/lib/site-icons'
 import {
@@ -12,8 +13,15 @@ import {
   type ToolCategoryId,
   type ToolEntry,
 } from '@/lib/tools-catalog'
+import {
+  defaultLocale,
+  isLocalizablePath,
+  localizeHref,
+  toolMessageId,
+  type AppLocale,
+} from '@/i18n/config'
 
-function ToolCard({ tool }: { tool: ToolEntry }) {
+function ToolCard({ tool, openLabel }: { tool: ToolEntry; openLabel: string }) {
   return (
     <Link
       href={tool.href}
@@ -44,7 +52,7 @@ function ToolCard({ tool }: { tool: ToolEntry }) {
         ))}
       </div>
       <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-primary transition-all group-hover:gap-2">
-        Open tool
+        {openLabel}
         <ArrowRight
           className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
           aria-hidden="true"
@@ -55,18 +63,37 @@ function ToolCard({ tool }: { tool: ToolEntry }) {
 }
 
 export function ToolsCatalogClient() {
+  const t = useTranslations('catalog')
+  const locale = useLocale() as AppLocale
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState<ToolCategoryId>('all')
   const [activeTag, setActiveTag] = useState<string | null>(null)
 
+  const localizedTools = useMemo(() => {
+    const source =
+      locale === defaultLocale
+        ? TOOLS
+        : TOOLS.filter((tool) => isLocalizablePath(tool.href))
+
+    return source.map((tool) => {
+      const id = toolMessageId(tool.href)
+      return {
+        ...tool,
+        href: localizeHref(locale, tool.href),
+        title: t(`items.${id}.title`),
+        description: t(`items.${id}.description`),
+      }
+    })
+  }, [t, locale])
+
   const list = useMemo(
-    () => filterTools(TOOLS, { query, category, tag: activeTag }),
-    [query, category, activeTag]
+    () => filterTools(localizedTools, { query, category, tag: activeTag }),
+    [localizedTools, query, category, activeTag]
   )
 
   const availableTags = useMemo(() => {
     const scoped =
-      category === 'all' ? TOOLS : TOOLS.filter((t) => t.category === category)
+      category === 'all' ? localizedTools : localizedTools.filter((tool) => tool.category === category)
     const counts = new Map<string, number>()
     for (const tool of scoped) {
       for (const tag of tool.tags) {
@@ -76,26 +103,29 @@ export function ToolsCatalogClient() {
     return [...counts.entries()]
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .map(([tag]) => tag)
-  }, [category])
+  }, [category, localizedTools])
 
   return (
     <div className="space-y-6">
       <div className="rounded-xl border border-border bg-card p-4 sm:p-5 space-y-4">
         <label className="block">
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            Search tools
+            {t('searchPlaceholder')}
           </span>
           <input
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="XP, map, skins, K/D, sensitivity…"
+            placeholder={t('searchPlaceholder')}
             className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
           />
         </label>
 
         <div className="flex flex-wrap gap-2" role="group" aria-label="Tool categories">
-          {TOOL_CATEGORY_META.map((c) => {
+          {TOOL_CATEGORY_META.filter(
+            (c) =>
+              c.id === 'all' || localizedTools.some((tool) => tool.category === c.id)
+          ).map((c) => {
             const active = category === c.id
             return (
               <button
@@ -111,7 +141,7 @@ export function ToolsCatalogClient() {
                     : 'border-border text-muted-foreground hover:border-primary/50 hover:text-foreground'
                 }`}
               >
-                {c.label}
+                {t(`categories.${c.id}`)}
               </button>
             )
           })}
@@ -140,7 +170,8 @@ export function ToolsCatalogClient() {
         ) : null}
 
         <p className="text-xs text-muted-foreground">
-          Showing <strong className="text-foreground">{list.length}</strong> of {TOOLS.length} tools
+          Showing <strong className="text-foreground">{list.length}</strong> of {localizedTools.length}{' '}
+          tools
           {activeTag ? (
             <>
               {' '}
@@ -152,13 +183,13 @@ export function ToolsCatalogClient() {
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((tool) => (
-          <ToolCard key={tool.href} tool={tool} />
+          <ToolCard key={tool.href} tool={tool} openLabel={t('openTool')} />
         ))}
       </div>
 
       {list.length === 0 ? (
         <div className="rounded-xl border border-dashed border-border px-5 py-12 text-center text-sm text-muted-foreground">
-          No tools matched. Clear search or reset filters.
+          {t('noResults')}
         </div>
       ) : null}
     </div>

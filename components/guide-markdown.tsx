@@ -1,5 +1,9 @@
+'use client'
+
 import Link from 'next/link'
 import type { ReactNode } from 'react'
+import { useLocale } from 'next-intl'
+import { localizeHref, type AppLocale } from '@/i18n/config'
 
 function isInternalHref(href: string) {
   return href.startsWith('/') && !href.startsWith('//')
@@ -30,7 +34,7 @@ function GuideIcon({
 
 const INLINE_TOKEN = /(\*\*[^*]+\*\*|!\[([^\]]*)\]\(([^)]+)\)|\[([^\]]+)\]\(([^)]+)\))/g
 
-function renderInline(text: string): ReactNode[] {
+function renderInline(text: string, locale: AppLocale): ReactNode[] {
   const nodes: ReactNode[] = []
   let last = 0
   let match: RegExpExecArray | null
@@ -60,7 +64,11 @@ function renderInline(text: string): ReactNode[] {
       const href = match[5]
       if (isInternalHref(href)) {
         nodes.push(
-          <Link key={key++} href={href} className="text-primary underline-offset-2 hover:underline">
+          <Link
+            key={key++}
+            href={localizeHref(locale, href)}
+            className="text-primary underline-offset-2 hover:underline"
+          >
             {label}
           </Link>
         )
@@ -126,6 +134,7 @@ function parseHeadingWithIcon(trimmed: string): { alt: string; src: string; titl
 }
 
 export function GuideMarkdown({ content }: { content: string }) {
+  const locale = useLocale() as AppLocale
   const blocks = content.trim().split(/\n\n+/)
 
   return (
@@ -210,7 +219,7 @@ export function GuideMarkdown({ content }: { content: string }) {
                         key={h}
                         className="px-4 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-foreground"
                       >
-                        {renderInline(h)}
+                        {renderInline(h, locale)}
                       </th>
                     ))}
                   </tr>
@@ -220,7 +229,7 @@ export function GuideMarkdown({ content }: { content: string }) {
                     <tr key={ri} className="border-b border-border/60 last:border-0">
                       {row.map((cell, ci) => (
                         <td key={ci} className="px-4 py-2.5 align-top text-muted-foreground">
-                          {renderInline(cell)}
+                          {renderInline(cell, locale)}
                         </td>
                       ))}
                     </tr>
@@ -244,11 +253,11 @@ export function GuideMarkdown({ content }: { content: string }) {
                 if (withIcons && body.startsWith('![')) {
                   return (
                     <li key={j} className="flex items-start gap-2.5 leading-relaxed">
-                      {renderInline(body)}
+                      {renderInline(body, locale)}
                     </li>
                   )
                 }
-                return <li key={j}>{renderInline(body)}</li>
+                return <li key={j}>{renderInline(body, locale)}</li>
               })}
             </ul>
           )
@@ -259,7 +268,7 @@ export function GuideMarkdown({ content }: { content: string }) {
           return (
             <ol key={i} className="list-decimal pl-5 space-y-1">
               {items.map((item, j) => (
-                <li key={j}>{renderInline(item.replace(/^\s*\d+\.\s+/, ''))}</li>
+                <li key={j}>{renderInline(item.replace(/^\s*\d+\.\s+/, ''), locale)}</li>
               ))}
             </ol>
           )
@@ -267,7 +276,7 @@ export function GuideMarkdown({ content }: { content: string }) {
 
         return (
           <p key={i} className="text-muted-foreground">
-            {renderInline(trimmed.replace(/\n/g, ' '))}
+            {renderInline(trimmed.replace(/\n/g, ' '), locale)}
           </p>
         )
       })}

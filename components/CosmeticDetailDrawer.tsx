@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { X, ExternalLink, Package, Film } from 'lucide-react'
 import {
   RARITY_COLORS,
@@ -31,10 +32,12 @@ function MiniCard({
   item,
   onClick,
   active,
+  noArtLabel,
 }: {
   item: CosmeticItem
   onClick: () => void
   active?: boolean
+  noArtLabel: string
 }) {
   return (
     <button
@@ -54,7 +57,7 @@ function MiniCard({
             loading="lazy"
           />
         ) : (
-          <div className="flex h-full items-center justify-center text-[10px] text-muted-foreground">No art</div>
+          <div className="flex h-full items-center justify-center text-[10px] text-muted-foreground">{noArtLabel}</div>
         )}
       </div>
       <div className="p-2">
@@ -72,6 +75,7 @@ type Props = {
 }
 
 export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props) {
+  const t = useTranslations('tools.itemShop.drawer')
   const [detail, setDetail] = useState<CosmeticDetail | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -94,11 +98,11 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
     fetch(`/api/fortnite/cosmetics/${encodeURIComponent(cosmeticId)}`)
       .then(async (res) => {
         const data = await res.json()
-        if (!res.ok) throw new Error(data.error || 'Failed to load')
+        if (!res.ok) throw new Error(data.error || t('loadError'))
         if (!cancelled) setDetail(data)
       })
       .catch((e) => {
-        if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load')
+        if (!cancelled) setError(e instanceof Error ? e.message : t('loadError'))
       })
       .finally(() => {
         if (!cancelled) setLoading(false)
@@ -107,7 +111,7 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
     return () => {
       cancelled = true
     }
-  }, [cosmeticId])
+  }, [cosmeticId, t])
 
   useEffect(() => {
     if (!cosmeticId) return
@@ -131,27 +135,27 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
       <button
         type="button"
         className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
-        aria-label="Close detail"
+        aria-label={t('closeDetail')}
         onClick={onClose}
       />
       <aside
         role="dialog"
         aria-modal="true"
-        aria-label={detail?.name || 'Cosmetic detail'}
+        aria-label={detail?.name || t('itemTitle')}
         className="relative z-[81] flex h-full w-full max-w-xl flex-col border-l border-border bg-background shadow-2xl"
       >
         <div className="flex items-center justify-between border-b border-border px-4 py-3">
           <div className="min-w-0">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Cosmetic detail</p>
+            <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{t('eyebrow')}</p>
             <h2 className="font-display text-lg font-bold uppercase text-foreground truncate">
-              {detail?.name || (loading ? 'Loading…' : 'Item')}
+              {detail?.name || (loading ? t('loadingTitle') : t('itemTitle'))}
             </h2>
           </div>
           <button
             type="button"
             onClick={onClose}
             className="rounded-md p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
-            aria-label="Close"
+            aria-label={t('close')}
           >
             <X className="h-5 w-5" />
           </button>
@@ -159,7 +163,7 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
 
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">
           {loading && (
-            <p className="text-sm text-muted-foreground">Loading full cosmetic data from Fortnite-API…</p>
+            <p className="text-sm text-muted-foreground">{t('loadingBody')}</p>
           )}
           {error && (
             <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
@@ -177,7 +181,7 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={heroImage} alt={detail.name} className="h-full w-full object-contain p-4" />
                     ) : (
-                      <div className="flex h-full items-center justify-center text-sm text-muted-foreground">No image</div>
+                      <div className="flex h-full items-center justify-center text-sm text-muted-foreground">{t('noImage')}</div>
                     )}
                   </div>
                 </div>
@@ -186,7 +190,7 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                       <Film className="h-4 w-4 text-primary" aria-hidden="true" />
-                      {isEmote ? 'Emote / dance preview' : 'Showcase video'}
+                      {isEmote ? t('emotePreview') : t('showcaseVideo')}
                     </div>
                     <div className="aspect-video overflow-hidden rounded-xl border border-border bg-black">
                       <iframe
@@ -203,21 +207,19 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
                     >
-                      Open on YouTube <ExternalLink className="h-3 w-3" />
+                      {t('openYoutube')} <ExternalLink className="h-3 w-3" />
                     </a>
                   </div>
                 )}
 
                 {!detail.showcaseVideo && isEmote && (
-                  <p className="text-xs text-muted-foreground">
-                    No official showcase video is attached to this emote in the API.
-                  </p>
+                  <p className="text-xs text-muted-foreground">{t('noVideo')}</p>
                 )}
               </div>
 
               {/* Meta */}
               <div className="space-y-2">
-                <p className="text-sm leading-relaxed text-muted-foreground">{detail.description || 'No description.'}</p>
+                <p className="text-sm leading-relaxed text-muted-foreground">{detail.description || t('noDescription')}</p>
                 <div className="flex flex-wrap gap-2">
                   <span className="rounded border border-border px-2 py-0.5 text-[10px] uppercase tracking-wider text-muted-foreground">
                     {detail.type}

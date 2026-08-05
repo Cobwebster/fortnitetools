@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
+import { useLocale } from 'next-intl'
 import {
   MapContainer,
   ImageOverlay,
@@ -207,6 +208,7 @@ export function FortniteLeafletMap({
   /** `live` = Fortnite-API current island; otherwise a map-evolution catalog id */
   mapVersionId?: string
 }) {
+  const locale = useLocale()
   const [pois, setPois] = useState<DisplayPoi[]>([])
   const [extracts, setExtracts] = useState<ResolvedExtractionSite[]>([])
   const [spawns, setSpawns] = useState<ResolvedSpawnPoint[]>([])
@@ -557,10 +559,14 @@ export function FortniteLeafletMap({
                 <li>One successful use per site per match</li>
               </ul>
               <Link
-                href="/guides/how-to/how-to-extract-sprites-fortnite"
+                href={
+                  locale === 'en'
+                    ? '/guides/how-to/how-to-extract-sprites-fortnite'
+                    : `/${locale}/guides`
+                }
                 className="mt-4 inline-flex text-sm font-semibold text-primary hover:opacity-80"
               >
-                Full Sprite extraction guide →
+                {locale === 'en' ? 'Full Sprite extraction guide →' : 'Guides →'}
               </Link>
             </>
           ) : selectedSpawn ? (

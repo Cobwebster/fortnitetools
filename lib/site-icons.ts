@@ -1,5 +1,7 @@
 /** Real Fortnite sprite icons for site chrome (tools hub, categories, brand). */
 
+import { stripLocaleFromPathname } from '@/i18n/config'
+
 export const BRAND_ICON = '/images/loadout/striker_pump.png'
 
 export const CATEGORY_ICONS = {
@@ -13,6 +15,7 @@ export type CategoryIconId = keyof typeof CATEGORY_ICONS
 
 /** Tool hub / featured tool sprites — prefer item art over generic Lucide icons. */
 export const TOOL_ICONS: Record<string, string> = {
+  '/tools': '/images/loadout/striker_pump.png',
   '/tools/player-stats': '/images/icons/crown.png',
   '/fortnite-map': '/images/icons/map.png',
   '/map-rotation': '/images/icons/storm.png',
@@ -39,5 +42,6 @@ export const TOOL_ICONS: Record<string, string> = {
 }
 
 export function toolIcon(href: string): string {
-  return TOOL_ICONS[href] ?? BRAND_ICON
+  const path = stripLocaleFromPathname(href.split('?')[0] || '/')
+  return TOOL_ICONS[path] ?? BRAND_ICON
 }

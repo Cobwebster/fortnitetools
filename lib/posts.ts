@@ -21,6 +21,12 @@ export const categories: { id: Category; label: string; description: string }[] 
   { id: 'map', label: 'Map', description: 'Shattered Coast POIs, drops, and rotations' },
 ]
 
+/** Guides that have translated locale twins. English keeps the full corpus. */
+export const localizedGuideSlugs = [
+  'how-to-refund-fortnite-skins',
+  'how-to-redeem-fortnite-code',
+] as const
+
 export const posts: Post[] = [
   // ─── WEAPONS ───────────────────────────────────────────────────────────────
   {
@@ -2634,7 +2640,11 @@ Almost every competitive PC benefits. Ultra-high-end players who prefer DX12 vis
   },
 ]
 
-
+export function getLocalizedPosts(): Post[] {
+  return posts.filter((p) =>
+    (localizedGuideSlugs as readonly string[]).includes(p.slug)
+  )
+}
 
 export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug)

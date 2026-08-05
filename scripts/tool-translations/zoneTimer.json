@@ -1,0 +1,462 @@
+{
+  "es": {
+    "metaTitle": "Temporizador de zona de Fortnite – Tiempos de espera y contracción",
+    "metaDescription": "Tiempos aproximados de espera y contracción de cada fase de la tormenta de Fortnite. Temporizador de zona gratis con consejos de rotación y referencia de daño para el Capítulo 7 Temporada 3.",
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "breadcrumb": "Temporizador de zona",
+    "titlePrefix": "Fortnite",
+    "titleHighlight": "Temporizador de zona",
+    "hero": "Tiempos aproximados de espera y contracción de los círculos de tormenta del Capítulo 7 Temporada 3. Inicia el temporizador cuando aparezca una nueva zona para saber cuándo rotar. Epic puede ajustar tiempos en parches.",
+    "selectPhase": "Seleccionar fase",
+    "playersSuffix": "jugadores",
+    "hpsSuffix": "HP/s",
+    "legendWait": "Cian",
+    "legendWaitSuffix": "= tiempo de espera",
+    "legendShrink": "Amarillo",
+    "legendShrinkSuffix": "= tiempo de contracción",
+    "stateWaiting": "Esperando — zona abierta",
+    "stateShrinking": "¡La zona se está contrayendo!",
+    "stateDone": "Fase completada",
+    "stateIdle": "Pulsa inicio cuando aparezca el círculo",
+    "waitLabel": "Espera",
+    "shrinkLabel": "Contracción",
+    "percentComplete": "{percent}% completado",
+    "outsideDamage": "{damage} HP/s fuera",
+    "startCircle": "Iniciar círculo {phase}",
+    "reset": "Reiniciar",
+    "nextZone": "Siguiente zona",
+    "strategyTitle": "Estrategia fase {phase}",
+    "phases": {
+      "p1": {
+        "label": "Círculo 1",
+        "players": "100 → ~60",
+        "tip": "Usa toda la espera para lootear bien. La zona es enorme — empieza a rotar cuando el temporizador llegue a 60 segundos."
+      },
+      "p2": {
+        "label": "Círculo 2",
+        "players": "~60 → ~35",
+        "tip": "La tormenta hace 2 HP/s. Si estás lejos, rota pronto. Una rotación larga atrapado en la tormenta puede drenar todo tu escudo."
+      },
+      "p3": {
+        "label": "Círculo 3",
+        "players": "~35 → ~20",
+        "tip": "La tormenta ya duele. Prioriza la zona sobre el loot. Cualquier jugador fuera en esta fase es un kill gratis."
+      },
+      "p4": {
+        "label": "Círculo 4",
+        "players": "~20 → ~12",
+        "tip": "Empiezan las peleas de zona. Mantén terreno elevado dentro de la zona y elimina a quienes rotan. No persigas — deja que la tormenta haga el trabajo."
+      },
+      "p5": {
+        "label": "Círculo 5",
+        "players": "~12 → ~7",
+        "tip": "Fase crítica. Quedan los 10 mejores. Cada pelea importa. Cúrate antes de que el círculo se mueva."
+      },
+      "p6": {
+        "label": "Círculo 6",
+        "players": "~7 → ~4",
+        "tip": "Mantén los escudos llenos. La tormenta en esta fase te derrite en 8 segundos. Quédate dentro y pelea con builds con cuidado."
+      },
+      "p7": {
+        "label": "Círculo 7",
+        "players": "~4 → ~2",
+        "tip": "Círculos finales. La zona es minúscula. Mantente arriba, controla el espacio y solo pelea combates que puedas ganar limpiamente."
+      },
+      "p8": {
+        "label": "Zona final",
+        "players": "2–1",
+        "tip": "La zona tiene unos pocos tiles de ancho. No hay dónde esconderse. Gana o muere."
+      }
+    },
+    "damageRefTitle": "Referencia de daño de tormenta",
+    "circleLabel": "Círculo {phase}",
+    "seoTitle": "Entender el timing de la tormenta en Fortnite",
+    "seo": {
+      "s1h": "Por qué importa el timing de zona",
+      "s1p": "Una de las formas más comunes de morir es quedar atrapado fuera de la tormenta. Una referencia de espera/contracción ayuda a decidir cuándo salir de un POI en lugar de adivinar de memoria — los tiempos pueden cambiar con parches, así que confirma círculos raros en el juego.",
+      "s2h": "Cuándo rotar",
+      "s2p": "Como regla general, empieza tu rotación cuando quede un 30–40 % del temporizador de espera. Esto te da tiempo suficiente para viajar a pie, contando peleas, loot y obstáculos del terreno. Quienes esperan hasta que la zona empiece a contraerse suelen quedar en una pelea corriendo mientras reciben daño de tormenta — un escenario difícil de recuperar.",
+      "s3h": "Daño de tormenta en late game",
+      "s3p": "El daño de tormenta escala mucho en círculos tardíos. El círculo 1 hace solo 1 HP por segundo, pero en el círculo 6 hace 12 HP/s, lo que significa que un jugador con 200 HP solo sobrevive 16 segundos fuera de la zona sin curas. El círculo 8 hace 20 HP/s — eliminación completa en 10 segundos.",
+      "s4h": "Storm Surge",
+      "s4p": "Además de la tormenta principal, Fortnite tiene la mecánica Storm Surge en círculos tardíos que apunta a jugadores con poco daño infligido. Si estás en la mitad inferior de jugadores restantes por daño infligido, Storm Surge empieza a hacerte daño adicional. Esto castiga el juego pasivo y fuerza acción en escenarios de late game."
+    },
+    "relatedTitle": "Herramientas de Fortnite relacionadas",
+    "relatedBefore": "Sigue tu K/D y win rate con la",
+    "relatedKd": "calculadora K/D",
+    "relatedMid1": ", ajusta tu",
+    "relatedFps": "configuración FPS",
+    "relatedMid2": " o explora el",
+    "relatedHub": "catálogo completo de herramientas",
+    "relatedAfter": "."
+  },
+  "de": {
+    "metaTitle": "Fortnite-Zonen-Timer – Warte- & Schrumpfzeiten der Storm Circle",
+    "metaDescription": "Ungefähre Warte- und Schrumpfzeiten für jede Storm-Circle-Phase in Fortnite. Kostenloser Zonen-Timer mit Rotations-Tipps und Storm-Schaden-Referenz für Chapter 7 Season 3.",
+    "home": "Start",
+    "tools": "Tools",
+    "breadcrumb": "Zonen-Timer",
+    "titlePrefix": "Fortnite",
+    "titleHighlight": "Zonen-Timer",
+    "hero": "Ungefähre Warte- und Schrumpfzeiten für Chapter-7-Season-3-Storm-Circles. Starte den Timer, wenn eine neue Zone erscheint, um zu wissen, wann du rotieren musst. Epic kann Zeiten in Patches anpassen.",
+    "selectPhase": "Phase wählen",
+    "playersSuffix": "Spieler",
+    "hpsSuffix": "HP/s",
+    "legendWait": "Cyan",
+    "legendWaitSuffix": "= Wartezeit",
+    "legendShrink": "Gelb",
+    "legendShrinkSuffix": "= Schrumpfzeit",
+    "stateWaiting": "Warten — Zone offen",
+    "stateShrinking": "Zone schrumpft jetzt!",
+    "stateDone": "Phase abgeschlossen",
+    "stateIdle": "Start drücken, wenn der Kreis erscheint",
+    "waitLabel": "Warten",
+    "shrinkLabel": "Schrumpfen",
+    "percentComplete": "{percent} % abgeschlossen",
+    "outsideDamage": "{damage} HP/s draußen",
+    "startCircle": "Kreis {phase} starten",
+    "reset": "Zurücksetzen",
+    "nextZone": "Nächste Zone",
+    "strategyTitle": "Phase-{phase}-Strategie",
+    "phases": {
+      "p1": {
+        "label": "Kreis 1",
+        "players": "100 → ~60",
+        "tip": "Nutze die volle Wartezeit zum Looten. Die Zone ist riesig — starte die Rotation bei 60 Sekunden auf dem Timer."
+      },
+      "p2": {
+        "label": "Kreis 2",
+        "players": "~60 → ~35",
+        "tip": "Storm macht 2 HP/s. Wenn du weit weg bist, rotiere früh. Eine große Rotation im Storm kann deinen ganzen Schild leeren."
+      },
+      "p3": {
+        "label": "Kreis 3",
+        "players": "~35 → ~20",
+        "tip": "Storm tut jetzt weh. Zone vor Loot priorisieren. Jeder Spieler draußen in dieser Phase ist ein Gratis-Kill."
+      },
+      "p4": {
+        "label": "Kreis 4",
+        "players": "~20 → ~12",
+        "tip": "Zonenkämpfe beginnen. Halte Hochgrund in der Zone und pick rotierende Spieler ab. Nicht jagen — lass den Storm die Arbeit machen."
+      },
+      "p5": {
+        "label": "Kreis 5",
+        "players": "~12 → ~7",
+        "tip": "Kritische Phase. Top-10-Spieler leben. Jeder Kampf zählt. Heile dich, bevor der Kreis sich bewegt."
+      },
+      "p6": {
+        "label": "Kreis 6",
+        "players": "~7 → ~4",
+        "tip": "Schild voll halten. Storm in dieser Phase schmilzt dich in 8 Sekunden. Drinnen bleiben und Builds-Kämpfe vorsichtig führen."
+      },
+      "p7": {
+        "label": "Kreis 7",
+        "players": "~4 → ~2",
+        "tip": "Finale Kreise. Die Zone ist winzig. Oben bleiben, Raum kontrollieren und nur Kämpfe eingehen, die du sauber gewinnen kannst."
+      },
+      "p8": {
+        "label": "Finale Zone",
+        "players": "2–1",
+        "tip": "Die Zone ist nur wenige Kacheln breit. Kein Versteck. Gewinnen oder sterben."
+      }
+    },
+    "damageRefTitle": "Storm-Schaden-Referenz",
+    "circleLabel": "Kreis {phase}",
+    "seoTitle": "Fortnite-Storm-Timing verstehen",
+    "seo": {
+      "s1h": "Warum Zonen-Timing wichtig ist",
+      "s1p": "Eine der häufigsten Todesursachen ist, außerhalb des Storms gefangen zu werden. Eine Warte-/Schrumpf-Referenz hilft zu entscheiden, wann du einen POI verlässt, statt aus dem Gedächtnis zu raten — Zeiten können sich mit Patches verschieben, also ungewöhnliche Kreise im Spiel prüfen.",
+      "s2h": "Wann rotieren",
+      "s2p": "Als Faustregel: Starte deine Rotation, wenn noch 30–40 % der Wartezeit übrig sind. Das gibt genug Zeit zu Fuß, inklusive Kämpfe, Looten und Geländehindernisse. Wer wartet, bis die Zone schrumpft, landet oft in einem Laufkampf mit Storm-Schaden — schwer wiederherzustellen.",
+      "s3h": "Late-Game-Storm-Schaden",
+      "s3p": "Storm-Schaden skaliert in späteren Kreisen stark. Kreis 1 macht nur 1 HP pro Sekunde, aber Kreis 6 macht 12 HP/s — ein Spieler mit 200 HP überlebt nur 16 Sekunden außerhalb ohne Heilung. Kreis 8 macht 20 HP/s — volle Elimination in 10 Sekunden.",
+      "s4h": "Storm Surge",
+      "s4p": "Neben dem Hauptstorm hat Fortnite Storm Surge in späteren Kreisen, der Spieler mit wenig verursachtem Schaden trifft. Bist du in der unteren Hälfte der verbleibenden Spieler nach Schaden, beginnt Storm Surge zusätzlichen Schaden. Das bestraft passives Spiel und erzwingt Action im Late Game."
+    },
+    "relatedTitle": "Verwandte Fortnite-Tools",
+    "relatedBefore": "Verfolge K/D und Winrate mit dem",
+    "relatedKd": "K/D-Rechner",
+    "relatedMid1": ", stelle deine",
+    "relatedFps": "FPS-Einstellungen",
+    "relatedMid2": " ein oder stöbere im",
+    "relatedHub": "vollständigen Tools-Hub",
+    "relatedAfter": "."
+  },
+  "fr": {
+    "metaTitle": "Timer de zone Fortnite – Temps d'attente et de rétrécissement",
+    "metaDescription": "Temps approximatifs d'attente et de rétrécissement pour chaque phase de la tempête Fortnite. Timer de zone gratuit avec conseils de rotation et référence de dégâts pour Chapitre 7 Saison 3.",
+    "home": "Accueil",
+    "tools": "Outils",
+    "breadcrumb": "Timer de zone",
+    "titlePrefix": "Fortnite",
+    "titleHighlight": "Timer de zone",
+    "hero": "Temps approximatifs d'attente et de rétrécissement pour les cercles de tempête Chapitre 7 Saison 3. Lancez le timer quand une nouvelle zone apparaît pour savoir quand tourner. Epic peut ajuster les timings dans les patchs.",
+    "selectPhase": "Choisir la phase",
+    "playersSuffix": "joueurs",
+    "hpsSuffix": "HP/s",
+    "legendWait": "Cyan",
+    "legendWaitSuffix": "= temps d'attente",
+    "legendShrink": "Jaune",
+    "legendShrinkSuffix": "= temps de rétrécissement",
+    "stateWaiting": "En attente — zone ouverte",
+    "stateShrinking": "La zone se rétrécit !",
+    "stateDone": "Phase terminée",
+    "stateIdle": "Appuyez sur démarrer quand le cercle apparaît",
+    "waitLabel": "Attente",
+    "shrinkLabel": "Rétrécissement",
+    "percentComplete": "{percent} % terminé",
+    "outsideDamage": "{damage} HP/s dehors",
+    "startCircle": "Démarrer cercle {phase}",
+    "reset": "Réinitialiser",
+    "nextZone": "Zone suivante",
+    "strategyTitle": "Stratégie phase {phase}",
+    "phases": {
+      "p1": {
+        "label": "Cercle 1",
+        "players": "100 → ~60",
+        "tip": "Utilisez toute l'attente pour bien looter. La zone est immense — commencez à tourner quand le timer atteint 60 secondes."
+      },
+      "p2": {
+        "label": "Cercle 2",
+        "players": "~60 → ~35",
+        "tip": "La tempête inflige 2 HP/s. Si vous êtes loin, tournez tôt. Une grande rotation pris dans la tempête peut vider tout votre bouclier."
+      },
+      "p3": {
+        "label": "Cercle 3",
+        "players": "~35 → ~20",
+        "tip": "La tempête fait mal. Priorisez la zone au loot. Tout joueur dehors à cette phase est un kill gratuit."
+      },
+      "p4": {
+        "label": "Cercle 4",
+        "players": "~20 → ~12",
+        "tip": "Les combats de zone commencent. Tenez les hauteurs dans la zone et éliminez les joueurs en rotation. Ne poursuivez pas — laissez la tempête faire le travail."
+      },
+      "p5": {
+        "label": "Cercle 5",
+        "players": "~12 → ~7",
+        "tip": "Phase critique. Le top 10 est en vie. Chaque fight compte. Soignez-vous avant que le cercle bouge."
+      },
+      "p6": {
+        "label": "Cercle 6",
+        "players": "~7 → ~4",
+        "tip": "Gardez les boucliers pleins. La tempête à ce stade vous fond en 8 secondes. Restez dedans et fightez les builds prudemment."
+      },
+      "p7": {
+        "label": "Cercle 7",
+        "players": "~4 → ~2",
+        "tip": "Cercles finaux. La zone est minuscule. Restez en hauteur, contrôlez l'espace et n'engagez que des fights gagnables proprement."
+      },
+      "p8": {
+        "label": "Zone finale",
+        "players": "2–1",
+        "tip": "La zone fait quelques cases de large. Nulle part où se cacher. Gagner ou mourir."
+      }
+    },
+    "damageRefTitle": "Référence des dégâts de tempête",
+    "circleLabel": "Cercle {phase}",
+    "seoTitle": "Comprendre le timing de la tempête Fortnite",
+    "seo": {
+      "s1h": "Pourquoi le timing de zone compte",
+      "s1p": "L'une des morts les plus fréquentes est d'être pris hors tempête. Une référence attente/rétrécissement aide à décider quand quitter un POI au lieu de deviner de mémoire — les temps peuvent changer avec les patchs, confirmez les cercles inhabituels en jeu.",
+      "s2h": "Quand tourner",
+      "s2p": "En règle générale, commencez votre rotation quand il reste 30–40 % du timer d'attente. Cela laisse assez de temps à pied, en comptant les combats, le loot et le terrain. Ceux qui attendent le rétrécissement se retrouvent souvent en fight courant avec dégâts de tempête — difficile à rattraper.",
+      "s3h": "Dégâts de tempête en late game",
+      "s3p": "Les dégâts de tempête augmentent fortement dans les cercles tardifs. Le cercle 1 inflige 1 HP par seconde, mais le cercle 6 inflige 12 HP/s — un joueur à 200 HP ne survit que 16 secondes dehors sans soins. Le cercle 8 inflige 20 HP/s — élimination complète en 10 secondes.",
+      "s4h": "Storm Surge",
+      "s4p": "En plus de la tempête principale, Fortnite a la mécanique Storm Surge dans les cercles tardifs qui cible les joueurs avec peu de dégâts infligés. Si vous êtes dans la moitié basse des joueurs restants par dégâts, Storm Surge inflige des dégâts supplémentaires. Cela punit le jeu passif et force l'action en late game."
+    },
+    "relatedTitle": "Outils Fortnite associés",
+    "relatedBefore": "Suivez votre K/D et win rate avec le",
+    "relatedKd": "calculateur K/D",
+    "relatedMid1": ", réglez vos",
+    "relatedFps": "paramètres FPS",
+    "relatedMid2": " ou parcourez le",
+    "relatedHub": "hub d'outils complet",
+    "relatedAfter": "."
+  },
+  "pl": {
+    "metaTitle": "Timer strefy Fortnite – Czasy oczekiwania i kurczenia",
+    "metaDescription": "Przybliżone czasy oczekiwania i kurczenia dla każdej fazy burzy w Fortnite. Darmowy timer strefy z poradami rotacji i referencją obrażeń burzy dla Rozdział 7 Sezon 3.",
+    "home": "Strona główna",
+    "tools": "Narzędzia",
+    "breadcrumb": "Timer strefy",
+    "titlePrefix": "Fortnite",
+    "titleHighlight": "Timer strefy",
+    "hero": "Przybliżone czasy oczekiwania i kurczenia dla kół burzy Rozdział 7 Sezon 3. Uruchom timer, gdy pojawi się nowa strefa, aby wiedzieć, kiedy rotować. Epic może zmieniać czasy w patchach.",
+    "selectPhase": "Wybierz fazę",
+    "playersSuffix": "graczy",
+    "hpsSuffix": "HP/s",
+    "legendWait": "Cyjan",
+    "legendWaitSuffix": "= czas oczekiwania",
+    "legendShrink": "Żółty",
+    "legendShrinkSuffix": "= czas kurczenia",
+    "stateWaiting": "Oczekiwanie — strefa otwarta",
+    "stateShrinking": "Strefa się kurczy!",
+    "stateDone": "Faza ukończona",
+    "stateIdle": "Naciśnij start, gdy pojawi się koło",
+    "waitLabel": "Oczekiwanie",
+    "shrinkLabel": "Kurczenie",
+    "percentComplete": "{percent}% ukończone",
+    "outsideDamage": "{damage} HP/s na zewnątrz",
+    "startCircle": "Start koło {phase}",
+    "reset": "Reset",
+    "nextZone": "Następna strefa",
+    "strategyTitle": "Strategia fazy {phase}",
+    "phases": {
+      "p1": {
+        "label": "Koło 1",
+        "players": "100 → ~60",
+        "tip": "Wykorzystaj całe oczekiwanie na loot. Strefa jest ogromna — zacznij rotację, gdy timer pokaże 60 sekund."
+      },
+      "p2": {
+        "label": "Koło 2",
+        "players": "~60 → ~35",
+        "tip": "Burza zadaje 2 HP/s. Jeśli jesteś daleko, rotuj wcześnie. Jedna duża rotacja w burzy może opróżnić całą tarczę."
+      },
+      "p3": {
+        "label": "Koło 3",
+        "players": "~35 → ~20",
+        "tip": "Burza już boli. Priorytet strefa nad lootem. Każdy gracz na zewnątrz w tej fazie to darmowy kill."
+      },
+      "p4": {
+        "label": "Koło 4",
+        "players": "~20 → ~12",
+        "tip": "Zaczynają się walki o strefę. Trzymaj wysokość w strefie i eliminuj rotujących. Nie gonić — niech burza robi robotę."
+      },
+      "p5": {
+        "label": "Koło 5",
+        "players": "~12 → ~7",
+        "tip": "Faza krytyczna. Żyje top 10. Każda walka się liczy. Wylecz się, zanim koło się ruszy."
+      },
+      "p6": {
+        "label": "Koło 6",
+        "players": "~7 → ~4",
+        "tip": "Trzymaj tarcze pełne. Burza na tym etanie topi cię w 8 sekund. Zostań w środku i ostrożnie walcz o buildy."
+      },
+      "p7": {
+        "label": "Koło 7",
+        "players": "~4 → ~2",
+        "tip": "Końcowe koła. Strefa jest malutka. Trzymaj wysokość, kontroluj przestrzeń i wchodź tylko w walki, które możesz wygrać czysto."
+      },
+      "p8": {
+        "label": "Strefa finałowa",
+        "players": "2–1",
+        "tip": "Strefa ma kilka kafelków szerokości. Nigdzie się nie schować. Wygraj albo zgiń."
+      }
+    },
+    "damageRefTitle": "Referencja obrażeń burzy",
+    "circleLabel": "Koło {phase}",
+    "seoTitle": "Zrozumienie timingu burzy w Fortnite",
+    "seo": {
+      "s1h": "Dlaczego timing strefy ma znaczenie",
+      "s1p": "Jedną z najczęstszych śmierci jest utknięcie poza burzą. Referencja oczekiwania/kurczenia pomaga zdecydować, kiedy opuścić POI, zamiast zgadywać z pamięci — czasy mogą się zmieniać w patchach, więc potwierdzaj dziwne koła w grze.",
+      "s2h": "Kiedy rotować",
+      "s2p": "Jako reguła, zacznij rotację, gdy zostaje 30–40% timera oczekiwania. To daje czas na pieszą podróż, licząc walki, loot i przeszkody terenu. Gracze czekający do kurczenia często lądują w biegu z obrażeniami burzy — trudno się odrobić.",
+      "s3h": "Obrażenia burzy w late game",
+      "s3p": "Obrażenia burzy rosną w późniejszych kołach. Koło 1 zadaje tylko 1 HP na sekundę, ale koło 6 zadaje 12 HP/s — gracz z 200 HP przeżyje tylko 16 sekund na zewnątrz bez leczenia. Koło 8 zadaje 20 HP/s — pełna eliminacja w 10 sekund.",
+      "s4h": "Storm Surge",
+      "s4p": "Oprócz głównej burzy Fortnite ma mechanikę Storm Surge w późnych kołach, która celuje w graczy z małym zadanym obrażeniem. Jeśli jesteś w dolnej połowie pozostałych graczy wg obrażeń, Storm Surge zadaje dodatkowe obrażenia. To karze pasywną grę i wymusza akcję w late game."
+    },
+    "relatedTitle": "Powiązane narzędzia Fortnite",
+    "relatedBefore": "Śledź K/D i win rate z",
+    "relatedKd": "kalkulatorem K/D",
+    "relatedMid1": ", ustaw swoje",
+    "relatedFps": "ustawienia FPS",
+    "relatedMid2": " lub przeglądaj",
+    "relatedHub": "pełny katalog narzędzi",
+    "relatedAfter": "."
+  },
+  "pt-BR": {
+    "metaTitle": "Timer de zona Fortnite – Tempos de espera e encolhimento",
+    "metaDescription": "Tempos aproximados de espera e encolhimento para cada fase da tempestade no Fortnite. Timer de zona grátis com dicas de rotação e referência de dano para Capítulo 7 Temporada 3.",
+    "home": "Início",
+    "tools": "Ferramentas",
+    "breadcrumb": "Timer de zona",
+    "titlePrefix": "Fortnite",
+    "titleHighlight": "Timer de zona",
+    "hero": "Tempos aproximados de espera e encolhimento dos círculos de tempestade do Capítulo 7 Temporada 3. Inicie o timer quando uma nova zona aparecer para saber quando rotacionar. A Epic pode ajustar tempos em patches.",
+    "selectPhase": "Selecionar fase",
+    "playersSuffix": "jogadores",
+    "hpsSuffix": "HP/s",
+    "legendWait": "Ciano",
+    "legendWaitSuffix": "= tempo de espera",
+    "legendShrink": "Amarelo",
+    "legendShrinkSuffix": "= tempo de encolhimento",
+    "stateWaiting": "Aguardando — zona aberta",
+    "stateShrinking": "A zona está encolhendo!",
+    "stateDone": "Fase concluída",
+    "stateIdle": "Pressione iniciar quando o círculo aparecer",
+    "waitLabel": "Espera",
+    "shrinkLabel": "Encolhimento",
+    "percentComplete": "{percent}% concluído",
+    "outsideDamage": "{damage} HP/s fora",
+    "startCircle": "Iniciar círculo {phase}",
+    "reset": "Reiniciar",
+    "nextZone": "Próxima zona",
+    "strategyTitle": "Estratégia fase {phase}",
+    "phases": {
+      "p1": {
+        "label": "Círculo 1",
+        "players": "100 → ~60",
+        "tip": "Use toda a espera para lootar bem. A zona é enorme — comece a rotacionar quando o timer chegar a 60 segundos."
+      },
+      "p2": {
+        "label": "Círculo 2",
+        "players": "~60 → ~35",
+        "tip": "A tempestade causa 2 HP/s. Se estiver longe, rotacione cedo. Uma rotação longa preso na tempestade pode drenar todo o escudo."
+      },
+      "p3": {
+        "label": "Círculo 3",
+        "players": "~35 → ~20",
+        "tip": "A tempestade já dói. Priorize a zona sobre loot. Qualquer jogador fora nesta fase é um kill grátis."
+      },
+      "p4": {
+        "label": "Círculo 4",
+        "players": "~20 → ~12",
+        "tip": "Começam as lutas de zona. Segure terreno alto dentro da zona e elimine quem rotaciona. Não persiga — deixe a tempestade fazer o trabalho."
+      },
+      "p5": {
+        "label": "Círculo 5",
+        "players": "~12 → ~7",
+        "tip": "Fase crítica. Top 10 vivos. Cada luta importa. Cure-se antes do círculo se mover."
+      },
+      "p6": {
+        "label": "Círculo 6",
+        "players": "~7 → ~4",
+        "tip": "Mantenha escudos cheios. A tempestade nesta fase derrete você em 8 segundos. Fique dentro e lute builds com cuidado."
+      },
+      "p7": {
+        "label": "Círculo 7",
+        "players": "~4 → ~2",
+        "tip": "Círculos finais. A zona é minúscula. Fique no alto, controle o espaço e só entre em lutas que pode vencer limpo."
+      },
+      "p8": {
+        "label": "Zona final",
+        "players": "2–1",
+        "tip": "A zona tem poucos tiles de largura. Não há onde se esconder. Vença ou morra."
+      }
+    },
+    "damageRefTitle": "Referência de dano da tempestade",
+    "circleLabel": "Círculo {phase}",
+    "seoTitle": "Entender o timing da tempestade no Fortnite",
+    "seo": {
+      "s1h": "Por que o timing de zona importa",
+      "s1p": "Uma das mortes mais comuns é ficar preso fora da tempestade. Uma referência de espera/encolhimento ajuda a decidir quando sair de um POI em vez de adivinhar de memória — tempos podem mudar com patches, então confirme círculos estranhos no jogo.",
+      "s2h": "Quando rotacionar",
+      "s2p": "Como regra geral, comece a rotação quando restarem 30–40% do timer de espera. Isso dá tempo suficiente a pé, contando lutas, loot e obstáculos do terreno. Quem espera o encolhimento costuma cair numa luta correndo com dano de tempestade — difícil de recuperar.",
+      "s3h": "Dano de tempestade no late game",
+      "s3p": "O dano da tempestade escala muito nos círculos tardios. O círculo 1 causa só 1 HP por segundo, mas no círculo 6 são 12 HP/s — um jogador com 200 HP sobrevive só 16 segundos fora sem curas. O círculo 8 causa 20 HP/s — eliminação total em 10 segundos.",
+      "s4h": "Storm Surge",
+      "s4p": "Além da tempestade principal, Fortnite tem a mecânica Storm Surge nos círculos tardios que mira jogadores com pouco dano causado. Se você está na metade inferior dos restantes por dano, Storm Surge começa a causar dano extra. Isso pune jogo passivo e força ação no late game."
+    },
+    "relatedTitle": "Ferramentas Fortnite relacionadas",
+    "relatedBefore": "Acompanhe seu K/D e win rate com a",
+    "relatedKd": "calculadora K/D",
+    "relatedMid1": ", ajuste suas",
+    "relatedFps": "configurações FPS",
+    "relatedMid2": " ou explore o",
+    "relatedHub": "catálogo completo de ferramentas",
+    "relatedAfter": "."
+  }
+}
