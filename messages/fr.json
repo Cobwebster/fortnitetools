@@ -1,6 +1,7 @@
 {
   "nav": {
     "tools": "Outils",
+    "buildSim": "Build Sim",
     "playerTracker": "Tracker joueurs",
     "itemShop": "Boutique",
     "codes": "Codes",

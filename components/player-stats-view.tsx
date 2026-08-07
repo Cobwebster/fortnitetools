@@ -4,16 +4,18 @@ import { Suspense } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { localizeHref, type AppLocale } from '@/i18n/config'
+import { FortniteIcon } from '@/components/fortnite-icon'
 import { PlayerStatsClient } from '@/components/PlayerStatsClient'
+import { toolIcon } from '@/lib/site-icons'
 import type { StatsAccountType, StatsTimeWindow } from '@/lib/fortnite-stats'
 
 const STEP_KEYS = ['step1', 'step2', 'step3', 'step4'] as const
 
-const SHOW_KEYS = [
-  { h: 'headlineTitle', b: 'headlineBody' },
-  { h: 'modeTitle', b: 'modeBody' },
-  { h: 'inputTitle', b: 'inputBody' },
-  { h: 'bpTitle', b: 'bpBody' },
+const SHOW_SECTIONS = [
+  { h: 'headlineTitle', b: 'headlineBody', icon: '/images/icons/crown.png' },
+  { h: 'modeTitle', b: 'modeBody', icon: '/images/loadout/pulse_scanner.png' },
+  { h: 'inputTitle', b: 'inputBody', icon: '/images/icons/pickaxe.png' },
+  { h: 'bpTitle', b: 'bpBody', icon: '/images/icons/battle_pass.png' },
 ] as const
 
 const FAQ_KEYS = [
@@ -21,6 +23,13 @@ const FAQ_KEYS = [
   ['faqs.q2', 'faqs.a2'],
   ['faqs.q3', 'faqs.a3'],
   ['faqs.q4', 'faqs.a4'],
+] as const
+
+const RELATED = [
+  { href: '/tools/kd-calculator', labelKey: 'relatedKd' as const, icon: '/images/loadout/heavy_impact.png' },
+  { href: '/tools/loadout-builder', labelKey: 'relatedLoadout' as const, icon: '/images/loadout/flex_smg.png', enOnly: true },
+  { href: '/fortnite-map', labelKey: 'relatedMap' as const, icon: '/images/loadout/pulse_scanner.png' },
+  { href: '/tools', labelKey: 'relatedAll' as const, icon: '/images/loadout/mat_wood.png' },
 ] as const
 
 export function PlayerStatsView({
@@ -54,10 +63,20 @@ export function PlayerStatsView({
             <span>/</span>
             <span className="text-foreground">{t('breadcrumb')}</span>
           </nav>
-          <h1 className="font-display text-3xl font-bold uppercase tracking-wide text-foreground sm:text-4xl">
-            {t('titlePrefix')} <span className="text-primary">{t('titleHighlight')}</span> {t('titleSuffix')}
-          </h1>
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">{t('hero')}</p>
+          <div className="flex items-start gap-4">
+            <FortniteIcon
+              src={toolIcon('/tools/player-stats')}
+              size="lg"
+              frameClassName="mt-1 border-primary/40 bg-primary/10"
+            />
+            <div>
+              <h1 className="font-display text-3xl font-bold uppercase tracking-wide text-foreground sm:text-4xl">
+                {t('titlePrefix')} <span className="text-primary">{t('titleHighlight')}</span>{' '}
+                {t('titleSuffix')}
+              </h1>
+              <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">{t('hero')}</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -78,9 +97,12 @@ export function PlayerStatsView({
         </Suspense>
 
         <section className="mt-14">
-          <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-3">
-            {t('trackerTitle')}
-          </h2>
+          <div className="mb-3 flex items-center gap-3">
+            <FortniteIcon src="/images/icons/crown.png" size="sm" />
+            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+              {t('trackerTitle')}
+            </h2>
+          </div>
           <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground mb-4">{t('trackerBody')}</p>
           <ol className="list-decimal pl-5 space-y-2 text-sm leading-relaxed text-muted-foreground max-w-3xl">
             {STEP_KEYS.map((key) => (
@@ -93,11 +115,19 @@ export function PlayerStatsView({
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">
             {t('showTitle')}
           </h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
-            {SHOW_KEYS.map((section) => (
-              <div key={section.h}>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">{t(section.h)}</h3>
-                <p>{t(section.b)}</p>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {SHOW_SECTIONS.map((section) => (
+              <div
+                key={section.h}
+                className="flex gap-3 rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-muted-foreground"
+              >
+                <FortniteIcon src={section.icon} size="md" frameClassName="mt-0.5" />
+                <div>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">
+                    {t(section.h)}
+                  </h3>
+                  <p>{t(section.b)}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -121,29 +151,21 @@ export function PlayerStatsView({
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground mb-4">
             {t('relatedTitle')}
           </h2>
-          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
-            <li>
-              <Link href={localizeHref(locale, '/tools/kd-calculator')} className="text-primary hover:underline">
-                {t('relatedKd')}
-              </Link>
-            </li>
-            {locale === 'en' ? (
-              <li>
-                <Link href={localizeHref(locale, '/tools/loadout-builder')} className="text-primary hover:underline">
-                  {t('relatedLoadout')}
-                </Link>
-              </li>
-            ) : null}
-            <li>
-              <Link href={localizeHref(locale, '/fortnite-map')} className="text-primary hover:underline">
-                {t('relatedMap')}
-              </Link>
-            </li>
-            <li>
-              <Link href={toolsHref} className="text-primary hover:underline">
-                {t('relatedAll')}
-              </Link>
-            </li>
+          <ul className="flex flex-wrap gap-3">
+            {RELATED.map((item) => {
+              if ('enOnly' in item && item.enOnly && locale !== 'en') return null
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={localizeHref(locale, item.href)}
+                    className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-sm text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                  >
+                    <FortniteIcon src={item.icon} size="sm" frameClassName="border-transparent bg-transparent" />
+                    {t(item.labelKey)}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </section>
       </div>

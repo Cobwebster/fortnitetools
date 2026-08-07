@@ -1,14 +1,12 @@
 import type { Metadata, Viewport } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
-import Script from 'next/script'
+import { CookieConsent } from '@/components/cookie-consent'
 import { IntlProvider } from '@/components/intl-provider'
 import { websiteJsonLd } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
 import { defaultLocale } from '@/i18n/config'
 import { getMessages } from '@/i18n/get-messages'
 import './globals.css'
-
-const GA_MEASUREMENT_ID = 'G-2XQ18341NM'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -103,23 +101,8 @@ export default async function RootLayout({
         />
         <IntlProvider locale={defaultLocale} messages={messages}>
           {children}
+          <CookieConsent />
         </IntlProvider>
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-          </>
-        )}
       </body>
     </html>
   )

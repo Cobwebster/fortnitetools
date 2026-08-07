@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { Search, Loader2 } from 'lucide-react'
+import { FortniteIcon } from '@/components/fortnite-icon'
 import {
   INPUT_LABELS,
   PLAYLIST_LABELS,
@@ -26,10 +27,52 @@ const WINDOW_OPTIONS: { value: StatsTimeWindow; labelKey: 'windowLifetime' | 'wi
   { value: 'season', labelKey: 'windowSeason' },
 ]
 
-function StatCell({ label, value, hint }: { label: string; value: string; hint?: string }) {
+const INPUT_ICONS: Record<keyof typeof INPUT_LABELS, string> = {
+  all: '/images/icons/crown.png',
+  keyboardMouse: '/images/icons/pickaxe.png',
+  gamepad: '/images/loadout/crash_pad.png',
+  touch: '/images/loadout/pulse_scanner.png',
+}
+
+const PLAYLIST_ICONS: Partial<Record<keyof InputStats, string>> = {
+  overall: '/images/icons/crown.png',
+  solo: '/images/loadout/hunting_rifle.png',
+  duo: '/images/loadout/flex_smg.png',
+  trio: '/images/loadout/warforged_ar.png',
+  squad: '/images/loadout/striker_pump.png',
+  ltm: '/images/loadout/seven_sliders.png',
+}
+
+const HIGHLIGHT_ICONS = {
+  kd: '/images/loadout/heavy_impact.png',
+  wins: '/images/icons/crown.png',
+  winRate: '/images/loadout/golden_apple.png',
+  matches: '/images/icons/map.png',
+} as const
+
+function StatCell({
+  label,
+  value,
+  hint,
+  icon,
+}: {
+  label: string
+  value: string
+  hint?: string
+  icon?: string
+}) {
   return (
     <div className="rounded-lg border border-border bg-muted/30 px-3 py-2.5">
-      <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{label}</p>
+      <div className="flex items-center gap-2">
+        {icon ? (
+          <FortniteIcon
+            src={icon}
+            size="sm"
+            frameClassName="h-7 w-7 border-transparent bg-black/30"
+          />
+        ) : null}
+        <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{label}</p>
+      </div>
       <p className="mt-0.5 font-display text-xl font-bold text-foreground tabular-nums">{value}</p>
       {hint ? <p className="text-[11px] text-muted-foreground mt-0.5">{hint}</p> : null}
     </div>
@@ -75,10 +118,12 @@ function PlaylistTable({
 function InputSection({
   title,
   input,
+  inputKey,
   t,
 }: {
   title: string
   input: InputStats
+  inputKey: keyof typeof INPUT_LABELS
   t: ReturnType<typeof useTranslations>
 }) {
   const playlists = (Object.keys(PLAYLIST_LABELS) as (keyof InputStats)[]).filter((key) => input[key])
@@ -87,16 +132,28 @@ function InputSection({
 
   return (
     <section className="rounded-xl border border-border bg-card p-5 space-y-5">
-      <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{title}</h2>
+      <div className="flex items-center gap-3">
+        <FortniteIcon src={INPUT_ICONS[inputKey]} size="md" />
+        <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{title}</h2>
+      </div>
       {playlists.map((key) => {
         const playlist = input[key]
         if (!playlist) return null
         return (
           <div key={key} className="space-y-3">
             <div className="flex flex-wrap items-end justify-between gap-2 border-b border-border pb-2">
-              <h3 className="text-sm font-bold uppercase tracking-wider text-primary">
-                {PLAYLIST_LABELS[key]}
-              </h3>
+              <div className="flex items-center gap-2">
+                {PLAYLIST_ICONS[key] ? (
+                  <FortniteIcon
+                    src={PLAYLIST_ICONS[key]!}
+                    size="sm"
+                    frameClassName="border-transparent bg-transparent"
+                  />
+                ) : null}
+                <h3 className="text-sm font-bold uppercase tracking-wider text-primary">
+                  {PLAYLIST_LABELS[key]}
+                </h3>
+              </div>
               {playlist.lastModified ? (
                 <p className="text-[11px] text-muted-foreground">
                   {t('updatedPrefix')} {new Date(playlist.lastModified).toLocaleString()}
@@ -300,36 +357,63 @@ export function PlayerStatsClient({
         <div className="space-y-6">
           <section className="rounded-xl border border-border bg-card p-5">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wider text-primary">
-                  {data.timeWindow === 'season' ? t('seasonStats') : t('lifetimeStats')} ·{' '}
-                  {data.accountType.toUpperCase()}
-                </p>
-                <h2 className="mt-1 font-display text-3xl font-bold uppercase tracking-wide text-foreground">
-                  {data.account.name}
-                </h2>
-                {data.battlePass ? (
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {t('battlePassLevel')}{' '}
-                    <span className="font-semibold text-foreground">{data.battlePass.level}</span>
-                    {data.battlePass.progress > 0 ? (
-                      <>
-                        {' '}
-                        · {formatStat(data.battlePass.progress, 1)}% {t('toNext')}
-                      </>
-                    ) : null}
+              <div className="flex items-start gap-3">
+                <FortniteIcon
+                  src="/images/icons/crown.png"
+                  size="lg"
+                  frameClassName="border-primary/40 bg-primary/10"
+                />
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-primary">
+                    {data.timeWindow === 'season' ? t('seasonStats') : t('lifetimeStats')} ·{' '}
+                    {data.accountType.toUpperCase()}
                   </p>
-                ) : null}
+                  <h2 className="mt-1 font-display text-3xl font-bold uppercase tracking-wide text-foreground">
+                    {data.account.name}
+                  </h2>
+                  {data.battlePass ? (
+                    <p className="mt-2 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+                      <FortniteIcon
+                        src="/images/icons/battle_pass.png"
+                        size="sm"
+                        frameClassName="border-transparent bg-transparent"
+                      />
+                      <span>
+                        {t('battlePassLevel')}{' '}
+                        <span className="font-semibold text-foreground">{data.battlePass.level}</span>
+                        {data.battlePass.progress > 0 ? (
+                          <>
+                            {' '}
+                            · {formatStat(data.battlePass.progress, 1)}% {t('toNext')}
+                          </>
+                        ) : null}
+                      </span>
+                    </p>
+                  ) : null}
+                </div>
               </div>
               {overall ? (
-                <div className="grid grid-cols-2 gap-2 sm:min-w-[280px]">
-                  <StatCell label={t('statKd')} value={formatStat(overall.kd, 2)} />
-                  <StatCell label={t('statWins')} value={formatStat(overall.wins)} />
+                <div className="grid grid-cols-2 gap-2 sm:min-w-[300px]">
+                  <StatCell
+                    label={t('statKd')}
+                    value={formatStat(overall.kd, 2)}
+                    icon={HIGHLIGHT_ICONS.kd}
+                  />
+                  <StatCell
+                    label={t('statWins')}
+                    value={formatStat(overall.wins)}
+                    icon={HIGHLIGHT_ICONS.wins}
+                  />
                   <StatCell
                     label={t('statWinRate')}
                     value={overall.winRate == null ? '—' : `${formatStat(overall.winRate, 1)}%`}
+                    icon={HIGHLIGHT_ICONS.winRate}
                   />
-                  <StatCell label={t('statMatches')} value={formatStat(overall.matches)} />
+                  <StatCell
+                    label={t('statMatches')}
+                    value={formatStat(overall.matches)}
+                    icon={HIGHLIGHT_ICONS.matches}
+                  />
                 </div>
               ) : null}
             </div>
@@ -347,7 +431,13 @@ export function PlayerStatsClient({
 
           {inputSections.map((section) =>
             section.input ? (
-              <InputSection key={section.key} title={section.label} input={section.input} t={t} />
+              <InputSection
+                key={section.key}
+                title={section.label}
+                input={section.input}
+                inputKey={section.key}
+                t={t}
+              />
             ) : null
           )}
         </div>

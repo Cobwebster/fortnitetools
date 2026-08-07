@@ -67,12 +67,40 @@ export default function SeasonCountdownPage() {
               <span className="text-foreground">Season Countdown</span>
             </nav>
 
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · {CURRENT_SEASON.codename}
-            </p>
-            <h1 className="font-display text-3xl font-extrabold uppercase leading-tight tracking-wide text-foreground sm:text-5xl text-balance">
-              When does Fortnite {CURRENT_SEASON.label} end?
-            </h1>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+              <div className="relative mx-auto w-36 shrink-0 sm:mx-0 sm:w-44">
+                <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg ring-1 ring-primary/20">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={CURRENT_SEASON.mapImage}
+                    alt={`${CURRENT_SEASON.label} Shattered Coast map`}
+                    className="aspect-square w-full object-cover"
+                    width={176}
+                    height={176}
+                  />
+                </div>
+                <div className="absolute -bottom-3 -right-3 flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-card/95 p-2 shadow-md backdrop-blur-sm">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={CURRENT_SEASON.passIcon}
+                    alt=""
+                    className="h-full w-full object-contain"
+                    width={40}
+                    height={40}
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+
+              <div className="min-w-0 flex-1 text-center sm:text-left">
+                <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
+                  {CURRENT_SEASON.shortLabel} · {CURRENT_SEASON.codename}
+                </p>
+                <h1 className="font-display text-3xl font-extrabold uppercase leading-tight tracking-wide text-foreground sm:text-5xl text-balance">
+                  When does Fortnite {CURRENT_SEASON.label} end?
+                </h1>
+              </div>
+            </div>
 
             <div className="mt-8 rounded-2xl border border-border bg-card/70 p-5 backdrop-blur-sm sm:p-8">
               <SeasonCountdownClient />

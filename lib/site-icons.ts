@@ -2,6 +2,7 @@
 
 import { stripLocaleFromPathname } from '@/i18n/config'
 
+/** Brand mark — not reused for individual tools. */
 export const BRAND_ICON = '/images/loadout/striker_pump.png'
 
 export const CATEGORY_ICONS = {
@@ -13,32 +14,36 @@ export const CATEGORY_ICONS = {
 
 export type CategoryIconId = keyof typeof CATEGORY_ICONS
 
-/** Tool hub / featured tool sprites — prefer item art over generic Lucide icons. */
+/**
+ * One unique sprite per tool path (no shared images across tools).
+ * Category icons above may match a related tool intentionally only when
+ * those tiles never share a screen — keep tool map/season distinct from categories.
+ */
 export const TOOL_ICONS: Record<string, string> = {
-  '/tools': '/images/loadout/striker_pump.png',
+  '/tools': '/images/loadout/mat_wood.png',
   '/tools/player-stats': '/images/icons/crown.png',
-  '/fortnite-map': '/images/icons/map.png',
+  '/fortnite-map': '/images/loadout/pulse_scanner.png',
   '/map-rotation': '/images/icons/storm.png',
-  '/map-evolution': '/images/icons/map.png',
-  '/player-count': '/images/icons/crown.png',
-  '/tools/item-shop': '/images/icons/vbucks.png',
-  '/tools/loadout-builder': '/images/loadout/striker_pump.png',
-  '/tools/fortnite-build-simulator': '/images/icons/pickaxe.png',
+  '/map-evolution': '/images/loadout/rift.png',
+  '/player-count': '/images/loadout/business_turret.png',
+  '/tools/item-shop': '/images/loadout/golden_apple.png',
+  '/tools/loadout-builder': '/images/loadout/flex_smg.png',
+  '/tools/fortnite-build-simulator': '/images/loadout/mat_stone.png',
   '/tools/sensitivity-calculator': '/images/loadout/hunting_rifle.png',
-  '/tools/kd-calculator': '/images/icons/crown.png',
-  '/tools/zone-timer': '/images/icons/storm.png',
+  '/tools/kd-calculator': '/images/loadout/heavy_impact.png',
+  '/tools/zone-timer': '/images/loadout/shockwave.png',
   '/tools/fps-settings': '/images/icons/glider.png',
   '/tools/keybinds': '/images/icons/pickaxe.png',
-  '/tools/weapon-damage-calculator': '/images/loadout/warforged_ar.png',
-  '/weapons': '/images/loadout/striker_pump.png',
-  '/weapon-changes': '/images/loadout/warforged_ar.png',
-  '/season-countdown': '/images/icons/battle_pass.png',
+  '/tools/weapon-damage-calculator': '/images/loadout/surgical_burst.png',
+  '/weapons': '/images/loadout/maven_auto.png',
+  '/weapon-changes': '/images/loadout/chaos_exploder.png',
+  '/season-countdown': '/images/loadout/pepper.png',
   '/xp-calculator': '/images/icons/xp.png',
-  '/free-cosmetics': '/images/icons/vbucks.png',
+  '/free-cosmetics': '/images/loadout/flowberry.png',
   '/tools/vbucks-calculator': '/images/icons/vbucks.png',
-  '/tools/skin-rarity-calculator': '/images/icons/vbucks.png',
-  '/codes': '/images/icons/xp.png',
-  '/tools/battle-pass-xp-calculator': '/images/icons/xp.png',
+  '/tools/skin-rarity-calculator': '/images/loadout/seven_sliders.png',
+  '/codes': '/images/loadout/launch_pad.png',
+  '/tools/battle-pass-xp-calculator': '/images/loadout/chug_jug.png',
 }
 
 export function toolIcon(href: string): string {

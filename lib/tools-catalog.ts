@@ -21,43 +21,28 @@ export const TOOL_CATEGORY_META: { id: ToolCategoryId; label: string }[] = [
   { id: 'cosmetics', label: 'Cosmetics' },
   { id: 'stats', label: 'Stats' },
   { id: 'map', label: 'Map & Codes' },
-  { id: 'calculators', label: 'Calculators' },
   { id: 'weapons', label: 'Weapons' },
   { id: 'settings', label: 'Settings' },
   { id: 'season', label: 'Season' },
+  { id: 'calculators', label: 'Calculators' },
 ]
 
+/** Order: interactive / data tools first; calculators last. */
 export const TOOLS: ToolEntry[] = [
   {
-    href: '/free-cosmetics',
-    title: 'Free Fortnite Cosmetics',
+    href: '/tools/fortnite-build-simulator',
+    title: 'Build Simulator',
     description:
-      'Track free rewards — Twitch drops, quests, Ranked, Sprite mastery, passes, and account links with end dates.',
-    tags: ['Free', 'Cosmetics', 'Drops'],
-    category: 'cosmetics',
+      'Practice Fortnite-style building in the browser — walls, floors, ramps, cones, mats, move/jump, and collision.',
+    tags: ['Building', 'Practice', '3D'],
+    category: 'settings',
   },
   {
-    href: '/xp-calculator',
-    title: 'Fortnite XP Calculator',
+    href: '/fortnite-map',
+    title: 'Interactive Map',
     description:
-      'Daily XP to hit level 100 or 200, on-pace checkpoints, XP per level, and playtime rates for BR, Reload, LEGO, Festival, and Creative.',
-    tags: ['XP', 'Levels', 'Battle Pass'],
-    category: 'calculators',
-  },
-  {
-    href: '/season-countdown',
-    title: 'Season Countdown',
-    description:
-      'When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start.',
-    tags: ['Season', 'Countdown', 'End Date'],
-    category: 'season',
-  },
-  {
-    href: '/codes',
-    title: 'Creative Map Codes',
-    description:
-      'Searchable Fortnite Creative island codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more.',
-    tags: ['Codes', 'XP', 'Creative'],
+      'Shattered Coast POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 3.',
+    tags: ['Map', 'Loot', 'POIs'],
     category: 'map',
   },
   {
@@ -69,12 +54,20 @@ export const TOOLS: ToolEntry[] = [
     category: 'stats',
   },
   {
-    href: '/fortnite-map',
-    title: 'Interactive Map',
+    href: '/tools/loadout-builder',
+    title: 'Loadout Builder',
     description:
-      'Shattered Coast POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 3.',
-    tags: ['Map', 'Loot', 'POIs'],
-    category: 'map',
+      'Build a C7S3 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK.',
+    tags: ['Loadout', 'Weapons', 'TTK'],
+    category: 'weapons',
+  },
+  {
+    href: '/tools/item-shop',
+    title: 'Item Shop Tracker',
+    description:
+      'Live shop rotation plus newly added cosmetics and a searchable catalog of outfits, emotes, and more.',
+    tags: ['Shop', 'Skins', 'Emotes'],
+    category: 'cosmetics',
   },
   {
     href: '/map-rotation',
@@ -82,6 +75,46 @@ export const TOOLS: ToolEntry[] = [
     description:
       'Live Reload map schedule — Venture, Oasis, Elite Stronghold — with countdown to the next island, plus Blitz status.',
     tags: ['Reload', 'Blitz', 'Timer'],
+    category: 'map',
+  },
+  {
+    href: '/map-evolution',
+    title: 'Map Evolution',
+    description:
+      'Slide to compare Fortnite maps across every chapter and season — Chapter 1 through Chapter 7 side by side.',
+    tags: ['History', 'Compare', 'Chapters'],
+    category: 'map',
+  },
+  {
+    href: '/weapons',
+    title: 'All Fortnite Weapons',
+    description:
+      'Full weapon encyclopedia — current pool plus vaulted history with DPS, damage, fire rate, mag, and reload by rarity.',
+    tags: ['Weapons', 'DPS', 'Stats'],
+    category: 'weapons',
+  },
+  {
+    href: '/weapon-changes',
+    title: 'Weapon Changes',
+    description:
+      'Fortnite weapon buffs and nerfs by patch — damage, DPS, fire rate, mag, reload, and structure damage with Old / New / Change.',
+    tags: ['Balance', 'Buffs', 'Nerfs'],
+    category: 'weapons',
+  },
+  {
+    href: '/free-cosmetics',
+    title: 'Free Fortnite Cosmetics',
+    description:
+      'Track free rewards — Twitch drops, quests, Ranked, Sprite mastery, passes, and account links with end dates.',
+    tags: ['Free', 'Cosmetics', 'Drops'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/codes',
+    title: 'Creative Map Codes',
+    description:
+      'Searchable Fortnite Creative island codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more.',
+    tags: ['Codes', 'XP', 'Creative'],
     category: 'map',
   },
   {
@@ -93,67 +126,11 @@ export const TOOLS: ToolEntry[] = [
     category: 'stats',
   },
   {
-    href: '/map-evolution',
-    title: 'Map Evolution',
+    href: '/season-countdown',
+    title: 'Season Countdown',
     description:
-      'Slide to compare Fortnite maps across every chapter and season — Chapter 1 through Chapter 7 side by side.',
-    tags: ['History', 'Compare', 'Chapters'],
-    category: 'map',
-  },
-  {
-    href: '/tools/item-shop',
-    title: 'Item Shop Tracker',
-    description:
-      'Live shop rotation plus newly added cosmetics and a searchable catalog of outfits, emotes, and more.',
-    tags: ['Shop', 'Skins', 'Emotes'],
-    category: 'cosmetics',
-  },
-  {
-    href: '/tools/loadout-builder',
-    title: 'Loadout Builder',
-    description:
-      'Build a C7S3 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK.',
-    tags: ['Loadout', 'Weapons', 'TTK'],
-    category: 'weapons',
-  },
-  {
-    href: '/tools/fortnite-build-simulator',
-    title: 'Build Simulator',
-    description:
-      'Practice Fortnite-style building in the browser — walls, floors, ramps, cones, mats, move/jump, and collision.',
-    tags: ['Building', 'Practice', '3D'],
-    category: 'settings',
-  },
-  {
-    href: '/tools/skin-rarity-calculator',
-    title: 'Skin Rarity Calculator',
-    description:
-      'Look up any outfit and see scarcity from shop history — appearances, last seen, Battle Pass exclusives, and OG vault status.',
-    tags: ['Skins', 'Rarity', 'OG'],
-    category: 'cosmetics',
-  },
-  {
-    href: '/tools/sensitivity-calculator',
-    title: 'Sensitivity Calculator',
-    description:
-      'Convert mouse sensitivity from Valorant, CS2, Apex, and more to Fortnite using cm/360 as a starting point.',
-    tags: ['Aim', 'Settings', 'Mouse'],
-    category: 'settings',
-  },
-  {
-    href: '/tools/kd-calculator',
-    title: 'K/D Calculator',
-    description:
-      'Calculate Kill/Death ratio, win rate, and kills per game with rough public-lobby comparison ranges.',
-    tags: ['Stats', 'K/D', 'Win Rate'],
-    category: 'stats',
-  },
-  {
-    href: '/tools/zone-timer',
-    title: 'Zone Timer',
-    description:
-      'Storm circle wait and shrink reference for Chapter 7 Season 3. Start it when a new zone appears so you know when to rotate.',
-    tags: ['Storm', 'Rotation', 'Strategy'],
+      'When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start.',
+    tags: ['Season', 'Countdown', 'End Date'],
     category: 'season',
   },
   {
@@ -173,20 +150,36 @@ export const TOOLS: ToolEntry[] = [
     category: 'settings',
   },
   {
-    href: '/weapons',
-    title: 'All Fortnite Weapons',
+    href: '/tools/zone-timer',
+    title: 'Zone Timer',
     description:
-      'Full weapon encyclopedia — current pool plus vaulted history with DPS, damage, fire rate, mag, and reload by rarity.',
-    tags: ['Weapons', 'DPS', 'Stats'],
-    category: 'weapons',
+      'Storm circle wait and shrink reference for Chapter 7 Season 3. Start it when a new zone appears so you know when to rotate.',
+    tags: ['Storm', 'Rotation', 'Strategy'],
+    category: 'season',
   },
   {
-    href: '/weapon-changes',
-    title: 'Weapon Changes',
+    href: '/tools/sensitivity-calculator',
+    title: 'Sensitivity Calculator',
     description:
-      'Fortnite weapon buffs and nerfs by patch — damage, DPS, fire rate, mag, reload, and structure damage with Old / New / Change.',
-    tags: ['Balance', 'Buffs', 'Nerfs'],
-    category: 'weapons',
+      'Convert mouse sensitivity from Valorant, CS2, Apex, and more to Fortnite using cm/360 as a starting point.',
+    tags: ['Aim', 'Settings', 'Mouse'],
+    category: 'settings',
+  },
+  {
+    href: '/tools/skin-rarity-calculator',
+    title: 'Skin Rarity Calculator',
+    description:
+      'Look up any outfit and see scarcity from shop history — appearances, last seen, Battle Pass exclusives, and OG vault status.',
+    tags: ['Skins', 'Rarity', 'OG'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/tools/kd-calculator',
+    title: 'K/D Calculator',
+    description:
+      'Calculate Kill/Death ratio, win rate, and kills per game with rough public-lobby comparison ranges.',
+    tags: ['Stats', 'K/D', 'Win Rate'],
+    category: 'stats',
   },
   {
     href: '/tools/weapon-damage-calculator',
@@ -195,6 +188,14 @@ export const TOOLS: ToolEntry[] = [
       'Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 3 weapons in the current loot pool sample.',
     tags: ['Weapons', 'Damage', 'TTK'],
     category: 'weapons',
+  },
+  {
+    href: '/xp-calculator',
+    title: 'Fortnite XP Calculator',
+    description:
+      'Daily XP to hit level 100 or 200, on-pace checkpoints, XP per level, and playtime rates for BR, Reload, LEGO, Festival, and Creative.',
+    tags: ['XP', 'Levels', 'Battle Pass'],
+    category: 'calculators',
   },
   {
     href: '/tools/vbucks-calculator',

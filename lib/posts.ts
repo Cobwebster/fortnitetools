@@ -35,6 +35,7 @@ export const posts: Post[] = [
     excerpt:
       'Current Runners meta on Shattered Coast — Striker Pump, Flex SMG, Surgical Burst Rifle ranked, plus what to skip (Lancehead) after mid-season balance.',
     category: 'weapons',
+    image: '/images/hero-bg.png',
     date: '2026-07-25',
     readTime: 12,
     featured: true,
@@ -117,6 +118,7 @@ Mythics from bosses sit above their base versions when available. Always prefer 
     excerpt:
       'Which shotgun to run in Runners season: Striker Pump first, then Maven / Extending Focus — plus Flex SMG pairings and the Chaos Reloader vault note.',
     category: 'weapons',
+    image: '/images/loadout/maven_auto.png',
     date: '2026-07-25',
     readTime: 7,
     featured: false,
@@ -177,6 +179,7 @@ Was the early-season boxfight king (stowed auto-reload + huge body damage). **Re
     excerpt:
       'Practical drop tiers for Shattered Coast — hot, balanced, and edge POIs — plus landing priority and when to leave.',
     category: 'map',
+    image: '/images/map-evolution/41-10.webp',
     date: '2026-07-15',
     readTime: 7,
     featured: true,
@@ -241,6 +244,7 @@ POI power shifts with hotfixes. Treat in-game labels as truth, and use this page
     excerpt:
       'Named locations on the Chapter 7 Season 3 Shattered Coast island — Lifty Lodge, Battlewoods, Wonkeeland, Heatwave Harbor, and more — with drop and rotation notes.',
     category: 'map',
+    image: '/images/map-evolution/40-40.webp',
     date: '2026-07-08',
     readTime: 12,
     featured: false,
@@ -323,6 +327,7 @@ POI names and power spots shift with hotfixes and mid-season map updates. If Epi
     excerpt:
       'Runners Battle Pass cost, skin unlock levels, and a practical XP plan to finish before the season ends.',
     category: 'season',
+    image: '/images/icons/battle_pass.png',
     date: '2026-07-10',
     readTime: 10,
     featured: false,
@@ -380,6 +385,7 @@ If you play a few times a week through August, the pass is usually worth it for 
     excerpt:
       'How Fortnite Ranked LP works, and climb strategies from Bronze through Champion.',
     category: 'how-to',
+    image: '/images/map-evolution/35-20.webp',
     date: '2026-06-28',
     readTime: 11,
     featured: true,
@@ -444,9 +450,10 @@ At Elite and above, the competition knows rotation, positioning, and fighting me
     excerpt:
       'Every real way to earn free V-Bucks in 2026 — free Battle Pass track, Save the World Founders, Microsoft Rewards, and the scams you must avoid.',
     category: 'season',
+    image: '/images/icons/vbucks.png',
     date: '2026-07-23',
     readTime: 11,
-    featured: true,
+    featured: false,
     tags: [
       'free v bucks',
       'how to get free v bucks',
@@ -541,6 +548,7 @@ No — it is a paid subscription that includes monthly V-Bucks and the Battle Pa
     excerpt:
       'Change your Fortnite / Epic display name for free every 14 days, plus what console players must know about PSN, Xbox, and Switch names.',
     category: 'how-to',
+    image: '/images/loadout/pulse_scanner.png',
     date: '2026-07-23',
     readTime: 9,
     featured: false,
@@ -644,6 +652,7 @@ Update creator codes, Discord nicknames, tracker profiles, and clan tags so team
     excerpt:
       'Official Epic refund rules: Cancel Purchase within 24 hours, Return Tickets within 30 days, what cannot be refunded, and how to get V-Bucks back.',
     category: 'how-to',
+    image: '/images/loadout/golden_apple.png',
     date: '2026-07-23',
     readTime: 10,
     featured: false,
@@ -759,6 +768,7 @@ Using the official Cancel Purchase / Return Ticket tools as designed is normal. 
     excerpt:
       'Turn on Epic Games two-factor authentication with an authenticator app, SMS, or email — protect your locker and claim the Boogie Down thank-you reward.',
     category: 'how-to',
+    image: '/images/loadout/shield_breaker_emp.png',
     date: '2026-07-23',
     readTime: 8,
     featured: false,
@@ -857,6 +867,7 @@ Avoid free V-Bucks phishing covered in [how to get free V-Bucks](/guides/season/
     excerpt:
       'Raise Fortnite FPS with Performance Mode, shadow settings, NVIDIA Reflex, resolution choices, and a practical hardware checklist for Chapter 7.',
     category: 'how-to',
+    image: '/images/map-evolution/28-30.webp',
     date: '2026-07-23',
     readTime: 12,
     featured: true,
@@ -1006,9 +1017,10 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
     excerpt:
       'Chapter 7 Season 3 Sprite extraction on Shattered Coast: when Extraction Sites unlock, the ~30s defend timer, Portable Extractor, Victory Royale auto-extract, and safe Runners site picks.',
     category: 'how-to',
+    image: '/images/loadout/flowberry.png',
     date: '2026-07-26',
     readTime: 9,
-    featured: true,
+    featured: false,
     tags: [
       'how to extract sprites fortnite',
       'how to extract sprites chapter 7 season 3',
@@ -1155,9 +1167,10 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
     excerpt:
       'Which cube sprite variants are live right now, where they drop from chests and vaults, how the Sprite Locator works, and the best Shattered Coast farm routes.',
     category: 'how-to',
+    image: '/images/loadout/shock_rocks.png',
     date: '2026-07-23',
     readTime: 10,
-    featured: true,
+    featured: false,
     tags: [
       'how to get cube sprites in fortnite',
       'fortnite cube sprites',
@@ -1311,9 +1324,10 @@ Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find
     excerpt:
       'Ironmouse Fortnite Sprite guide: August 4 return after the early vault, Mythic powers (heal + cloak + low gravity), Relic Chest farm tips, and how to extract her.',
     category: 'how-to',
+    image: '/images/loadout/pepper.png',
     date: '2026-08-01',
     readTime: 9,
-    featured: true,
+    featured: false,
     tags: [
       'ironmouse fortnite',
       'ironmouse sprite',
@@ -1450,9 +1464,10 @@ Chapter 7 Season 3 Sprite collections are season-scoped. Extract and master her 
     excerpt:
       'How to check your Fortnite ban status, find your Sanction ID, submit one official appeal on Epic’s Sanctions and Appeals portal, and what happens after review.',
     category: 'how-to',
+    image: '/images/loadout/self_revive.png',
     date: '2026-07-23',
     readTime: 11,
-    featured: true,
+    featured: false,
     tags: [
       'fortnite ban appeal',
       'how to appeal fortnite ban',
@@ -1637,9 +1652,10 @@ No. We are an independent fan site. We explain the public process and link offic
     excerpt:
       'Working Creative XP map codes for Chapter 7 Season 3, how to enter island codes, daily/weekly Creative XP caps, and a fast Battle Pass leveling plan.',
     category: 'season',
+    image: '/images/icons/xp.png',
     date: '2026-08-01',
     readTime: 10,
-    featured: true,
+    featured: false,
     tags: [
       'best fortnite xp maps',
       'fortnite xp map codes',
@@ -1730,6 +1746,7 @@ Browse and filter XP maps on [/codes](/codes), or read our Creative SEO sections
     excerpt:
       'Step-by-step: connect your Epic account to PS5/PS4, Xbox, and Nintendo Switch for cross-progress, shared V-Bucks, and the correct Fortnite locker.',
     category: 'how-to',
+    image: '/images/loadout/business_turret.png',
     date: '2026-07-24',
     readTime: 9,
     featured: false,
@@ -1826,6 +1843,7 @@ Yes from Epic Connections, with consequences for how you sign in on that console
     excerpt:
       'Gift Item Shop skins in Fortnite: 2FA, friendship timer, daily gift limits, Buy as Gift steps, and why you cannot send locker items.',
     category: 'how-to',
+    image: '/images/loadout/seven_sliders.png',
     date: '2026-07-24',
     readTime: 8,
     featured: false,
@@ -1907,6 +1925,7 @@ Daily reset — details in [when does the Item Shop reset?](/guides/how-to/when-
     excerpt:
       'Report toxic players, mute voice/text chat, and block users in Fortnite — plus what happens after a report and how to stay safe.',
     category: 'how-to',
+    image: '/images/loadout/cluster_clinger.png',
     date: '2026-07-24',
     readTime: 7,
     featured: false,
@@ -1997,9 +2016,10 @@ Double-check you muted the correct player, that party chat is not a different ch
     excerpt:
       'Fortnite Item Shop refresh time: 00:00 UTC daily, converted to ET/PT/UK/EU, plus how to check today’s shop and About Shop in-game.',
     category: 'how-to',
+    image: '/images/loadout/chug_jug.png',
     date: '2026-07-24',
     readTime: 6,
-    featured: true,
+    featured: false,
     tags: [
       'when does fortnite item shop reset',
       'fortnite item shop refresh time',
@@ -2063,9 +2083,10 @@ Maybe — [Cancel Purchase / Return Tickets guide](/guides/how-to/how-to-refund-
     excerpt:
       'Redeem V-Bucks gift cards on PC, Switch, PlayStation, and Xbox — plus how Support-A-Creator codes work in the Item Shop and how to avoid wrong-account mistakes.',
     category: 'how-to',
+    image: '/images/loadout/launch_pad.png',
     date: '2026-07-31',
     readTime: 11,
-    featured: true,
+    featured: false,
     tags: [
       'how to redeem fortnite code',
       'redeem v-bucks card',
@@ -2202,9 +2223,10 @@ Entering a code alone does nothing until you make an eligible purchase. Wishlist
     excerpt:
       'Diagnose Fortnite lag with Net Debug Stats, then fix packet loss and high ping: Ethernet, region, Wi-Fi, router, ISP routing, and settings that actually matter.',
     category: 'how-to',
+    image: '/images/icons/storm.png',
     date: '2026-07-31',
     readTime: 12,
-    featured: true,
+    featured: false,
     tags: [
       'fortnite packet loss',
       'how to fix fortnite packet loss',
@@ -2355,9 +2377,10 @@ Auto is fine when it picks correctly. If you travel, use a VPN exit, or see cons
     excerpt:
       'Fix Fortnite party invites, crossplay lobbies, and join failures across PC, PlayStation, Xbox, and Switch — privacy, NAT, links, and platform blocks.',
     category: 'how-to',
+    image: '/images/loadout/grappler.png',
     date: '2026-07-31',
     readTime: 11,
-    featured: true,
+    featured: false,
     tags: [
       'fortnite party invite not working',
       'fortnite crossplay not working',
@@ -2508,9 +2531,10 @@ Online multiplayer on consoles generally needs the platform’s online access re
     excerpt:
       'Enable Fortnite Performance Mode step-by-step, what DirectX 12 Performance means, best companion settings, and fixes when the option is missing.',
     category: 'how-to',
+    image: '/images/icons/pickaxe.png',
     date: '2026-07-31',
     readTime: 9,
-    featured: true,
+    featured: false,
     tags: [
       'fortnite performance mode',
       'how to turn on performance mode fortnite',

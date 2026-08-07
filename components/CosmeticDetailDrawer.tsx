@@ -316,9 +316,14 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
                     <p className="text-xs text-muted-foreground">{detail.setText}</p>
                   )}
                   <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-                    <MiniCard item={detail} onClick={() => {}} active />
+                    <MiniCard item={detail} onClick={() => {}} active noArtLabel={t('noImage')} />
                     {detail.setItems.map((item) => (
-                      <MiniCard key={item.id} item={item} onClick={() => onSelectId(item.id)} />
+                      <MiniCard
+                        key={item.id}
+                        item={item}
+                        onClick={() => onSelectId(item.id)}
+                        noArtLabel={t('noImage')}
+                      />
                     ))}
                   </div>
                 </section>

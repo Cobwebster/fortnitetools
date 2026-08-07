@@ -13,6 +13,9 @@ export const CURRENT_SEASON = {
    * date is the search-critical signal — time may shift by a few hours.
    */
   endIso: '2026-08-19T08:00:00.000Z',
+  /** Season-specific art we ship (C7S3 Shattered Coast map — no official Runners logo on site). */
+  mapImage: '/images/map-evolution/41-10.webp',
+  passIcon: '/images/icons/battle_pass.png',
   next: {
     chapter: 7,
     season: 4,

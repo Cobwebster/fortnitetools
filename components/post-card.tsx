@@ -14,6 +14,14 @@ interface PostCardProps {
   excerpt?: string
 }
 
+function isCoverArt(src: string) {
+  return (
+    src.includes('/map-evolution/') ||
+    src.includes('hero-bg') ||
+    src.endsWith('.webp')
+  )
+}
+
 export function PostCard({
   post,
   featured = false,
@@ -24,21 +32,30 @@ export function PostCard({
   const href = localizeHref(locale, `/guides/${post.category}/${post.slug}`)
   const displayTitle = title ?? post.title
   const displayExcerpt = excerpt ?? post.excerpt
+  const cover = post.image ? isCoverArt(post.image) : false
 
   if (featured) {
     return (
       <article className="group relative overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-primary/50">
         <Link href={href} className="block">
           {post.image ? (
-            <div className="relative h-64 w-full overflow-hidden">
+            <div
+              className={`relative h-52 w-full overflow-hidden sm:h-64 ${
+                cover ? '' : 'bg-muted/80'
+              }`}
+            >
               <Image
                 src={post.image}
                 alt={displayTitle}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className={
+                  cover
+                    ? 'object-cover transition-transform duration-500 group-hover:scale-105'
+                    : 'object-contain p-8 transition-transform duration-500 group-hover:scale-105'
+                }
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
               <div className="absolute top-3 left-3">
                 <span className="rounded bg-primary px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
                   {getCategoryLabel(post.category)}
@@ -76,12 +93,20 @@ export function PostCard({
     <article className="group flex gap-4 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/50">
       <Link href={href} className="flex gap-4 w-full">
         {post.image ? (
-          <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-md sm:h-28 sm:w-28">
+          <div
+            className={`relative h-24 w-24 shrink-0 overflow-hidden rounded-md sm:h-28 sm:w-28 ${
+              cover ? '' : 'bg-muted/80'
+            }`}
+          >
             <Image
               src={post.image}
               alt={displayTitle}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className={
+                cover
+                  ? 'object-cover transition-transform duration-500 group-hover:scale-105'
+                  : 'object-contain p-3 transition-transform duration-500 group-hover:scale-105'
+              }
               sizes="112px"
             />
           </div>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations, useLocale } from 'next-intl'
 import { FortniteIcon } from '@/components/fortnite-icon'
+import { MapEvolutionTeaser } from '@/components/map-evolution-teaser'
 import { PostCard } from '@/components/post-card'
 import { posts, categories, getFeaturedPosts, getLocalizedPosts } from '@/lib/posts'
 import { CATEGORY_ICONS, toolIcon } from '@/lib/site-icons'
@@ -22,41 +23,38 @@ const CAT_KEYS: Record<string, 'catHowTo' | 'catWeapons' | 'catSeason' | 'catMap
 }
 
 const EN_POPULAR_TOOLS = [
-  { href: '/free-cosmetics', key: 'toolFreeCosmetics' as const },
-  { href: '/xp-calculator', key: 'toolXpCalc' as const },
-  { href: '/season-countdown', key: 'toolCountdown' as const },
-  { href: '/weapons', key: 'toolWeapons' as const },
+  { href: '/tools/fortnite-build-simulator', key: 'toolBuildSim' as const },
   { href: '/fortnite-map', key: 'toolMap' as const },
+  { href: '/tools/player-stats', key: 'toolStatsTracker' as const },
+  { href: '/tools/loadout-builder', key: 'toolLoadout' as const },
+  { href: '/tools/item-shop', key: 'toolItemShop' as const },
   { href: '/map-rotation', key: 'toolRotation' as const },
   { href: '/map-evolution', key: 'toolMapEvolution' as const },
+  { href: '/weapons', key: 'toolWeapons' as const },
+  { href: '/free-cosmetics', key: 'toolFreeCosmetics' as const },
   { href: '/codes', key: 'toolMapCodes' as const },
   { href: '/player-count', key: 'toolPlayerCount' as const },
-  { href: '/tools/player-stats', key: 'toolStatsTracker' as const },
-  { href: '/tools/item-shop', key: 'toolItemShop' as const },
-  { href: '/tools/skin-rarity-calculator', key: 'toolSkinRarity' as const },
-  { href: '/tools/loadout-builder', key: 'toolLoadout' as const },
-  { href: '/tools/fortnite-build-simulator', key: 'toolBuildSim' as const },
+  { href: '/season-countdown', key: 'toolCountdown' as const },
 ]
 
+/** Locale popular strip — lead with map/tracker/settings; skip calc-first impression. */
 const LOCALE_POPULAR_TOOLS = [
   { href: '/fortnite-map', key: 'toolMap' as const },
   { href: '/tools/player-stats', key: 'toolStatsTracker' as const },
-  { href: '/tools/sensitivity-calculator', key: 'toolSensitivity' as const },
-  { href: '/tools/kd-calculator', key: 'toolKd' as const },
-  { href: '/tools/zone-timer', key: 'toolZone' as const },
-  { href: '/tools/vbucks-calculator', key: 'toolVbucks' as const },
-  { href: '/tools/battle-pass-xp-calculator', key: 'toolBpXp' as const },
-  { href: '/tools/weapon-damage-calculator', key: 'toolDamage' as const },
   { href: '/tools/fps-settings', key: 'toolFps' as const },
   { href: '/tools/keybinds', key: 'toolKeybinds' as const },
+  { href: '/tools/zone-timer', key: 'toolZone' as const },
+  { href: '/tools/sensitivity-calculator', key: 'toolSensitivity' as const },
 ]
 
 export function HomePageContent() {
   const t = useTranslations('home')
   const locale = useLocale() as AppLocale
   const isEnglish = locale === defaultLocale
-  const featuredPosts = isEnglish ? getFeaturedPosts() : getLocalizedPosts()
-  const recentPosts = isEnglish ? posts.filter((p) => !p.featured).slice(0, 4) : []
+  const featuredPosts = (isEnglish ? getFeaturedPosts() : getLocalizedPosts()).slice(0, 4)
+  const recentPosts = isEnglish
+    ? posts.filter((p) => !p.featured).slice(0, 2)
+    : []
   const toolsHref = localizeHref(locale, '/tools')
   const guidesHref = localizeHref(locale, '/guides')
   const secondaryCtaHref = isEnglish
@@ -218,6 +216,8 @@ export function HomePageContent() {
           ))}
         </div>
       </section>
+
+      {isEnglish ? <MapEvolutionTeaser /> : null}
 
       <section
         className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8"

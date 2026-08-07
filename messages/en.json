@@ -1,6 +1,7 @@
 {
   "nav": {
     "tools": "Tools",
+    "buildSim": "Build Sim",
     "playerTracker": "Player Tracker",
     "itemShop": "Item Shop",
     "codes": "Codes",
@@ -126,7 +127,16 @@
     "toolBpXp": "BP XP",
     "toolDamage": "Damage",
     "toolFps": "FPS Settings",
-    "toolKeybinds": "Keybinds"
+    "toolKeybinds": "Keybinds",
+    "mapEvoEyebrow": "Interactive preview",
+    "mapEvoTitle": "Map Evolution",
+    "mapEvoBody": "Drag the slider to compare iconic Fortnite islands — Chapter 1 through Shattered Coast. Six highlights here; every season is on the full tool.",
+    "mapEvoCta": "Open full archive",
+    "mapEvoLeft": "Left map",
+    "mapEvoRight": "Right map",
+    "mapEvoHint": "Previewing {count} seasons’ worth of maps — pick two highlights, then open the archive for every chapter.",
+    "mapEvoLink": "Compare every map",
+    "mapEvoDrag": "Drag the handle to reveal the other map"
   },
   "toolsPage": {
     "home": "Home",
@@ -1108,6 +1118,77 @@
       "relatedMid2": ", or browse the",
       "relatedHub": "full tools hub",
       "relatedAfter": "."
+    },
+    "itemShop": {
+      "metaTitle": "Fortnite Item Shop Today – Skins, Emotes & Cosmetic Viewer",
+      "metaDescription": "Browse today's Fortnite Item Shop with live V-Bucks prices, full outfit sets, style variants, emote dance videos, and a searchable catalog of every cosmetic — including newly added and incoming items.",
+      "home": "Home",
+      "tools": "Tools",
+      "breadcrumb": "Item Shop",
+      "titlePrefix": "Fortnite",
+      "titleHighlight": "Item Shop",
+      "hero": "The free Fortnite cosmetic browser for today's shop, full outfit sets, emote dance videos, style variants, and every skin in the catalog — including newly added and incoming items.",
+      "refresh": "Refresh",
+      "clickHint": "Click any outfit, emote, or cosmetic for the full set, V-Bucks price (if in shop), styles, and dance/emote video when available.",
+      "tabs": {
+        "shop": "Today's Shop",
+        "new": "New / Incoming",
+        "browse": "Browse Catalog"
+      },
+      "errors": {
+        "loadShop": "Could not load today's Item Shop. Try again in a moment.",
+        "loadNew": "Could not load newly added cosmetics. Try again in a moment.",
+        "search": "Cosmetic search failed. Check your filters and try again."
+      },
+      "shop": {
+        "shopDateLabel": "Shop date:",
+        "loadingRotation": "Loading current rotation…",
+        "offersSuffix": "offers",
+        "filterPlaceholder": "Filter by name…",
+        "allTypes": "All types",
+        "loading": "Loading shop offers…",
+        "bundlePrefix": "Bundle",
+        "leaves": "Leaves {date}",
+        "video": "Video",
+        "noMatch": "No offers match that filter."
+      },
+      "new": {
+        "description": "Recently added / datamined cosmetics from Fortnite-API (often includes unreleased items before they hit the shop).",
+        "lastAddition": "Last BR addition: {date}.",
+        "build": "Build: {build}.",
+        "allNew": "All new ({count})",
+        "loading": "Loading new cosmetics…",
+        "added": "Added {date}"
+      },
+      "browse": {
+        "errorEmpty": "Enter a name, type, or rarity to search the catalog.",
+        "searchLabel": "Name",
+        "searchPlaceholder": "e.g. Renegade Raider",
+        "typeLabel": "Type",
+        "rarityLabel": "Rarity",
+        "anyRarity": "Any rarity",
+        "searchBtn": "Search catalog",
+        "hint": "Search the full cosmetic catalog by name, type, and rarity.",
+        "showing": "Showing {shown} of {count}",
+        "capped": " (results capped)",
+        "searching": "Searching…",
+        "emptyPrompt": "Run a search to browse outfits, emotes, and more."
+      },
+      "drawer": {
+        "loadError": "Could not load this cosmetic.",
+        "closeDetail": "Close detail panel",
+        "itemTitle": "Cosmetic",
+        "eyebrow": "Cosmetic detail",
+        "loadingTitle": "Loading…",
+        "close": "Close",
+        "loadingBody": "Loading cosmetic details…",
+        "noImage": "No image",
+        "emotePreview": "Emote preview",
+        "showcaseVideo": "Showcase video",
+        "openYoutube": "Open on YouTube",
+        "noVideo": "No showcase video available for this emote.",
+        "noDescription": "No description provided."
+      }
     }
   },
   "fortniteMap": {
