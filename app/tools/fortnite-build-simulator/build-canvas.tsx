@@ -34,6 +34,7 @@ import {
   withDefaultTiles,
 } from '@/lib/build-edits'
 import { getMatTexture, MAT_METALNESS, MAT_ROUGHNESS } from './build-materials'
+import { ArenaEnvironment } from './build-env'
 import { useSim } from './sim-context'
 
 const ARENA = 80
@@ -81,23 +82,23 @@ export function BuildCanvas() {
           className="absolute inset-0 h-full w-full touch-none"
           shadows={{ type: THREE.PCFShadowMap }}
           dpr={[1, 1.75]}
-          camera={{ fov: 75, near: 0.1, far: 250, position: [0, 3, 14] }}
+          camera={{ fov: 75, near: 0.1, far: 360, position: [0, 3, 14] }}
           gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
           onCreated={({ gl, camera }) => {
-            gl.setClearColor('#6fa8d4', 1)
+            gl.setClearColor('#87b7dc', 1)
             gl.toneMapping = THREE.ACESFilmicToneMapping
-            gl.toneMappingExposure = 1.05
+            gl.toneMappingExposure = 1.08
             gl.shadowMap.type = THREE.PCFShadowMap
             camera.lookAt(0, 1, 0)
           }}
         >
-          <color attach="background" args={['#6fa8d4']} />
-          <fog attach="fog" args={['#8eb9d9', 55, 140]} />
-          <hemisphereLight args={['#d8ecff', '#3d5a3a', 0.85]} />
-          <ambientLight intensity={0.45} />
+          <color attach="background" args={['#87b7dc']} />
+          <fog attach="fog" args={['#9ec6e4', 70, 210]} />
+          <hemisphereLight args={['#e8f4ff', '#4a6b3a', 0.9]} />
+          <ambientLight intensity={0.42} />
           <directionalLight
             castShadow
-            intensity={1.25}
+            intensity={1.35}
             position={[28, 42, 18]}
             shadow-mapSize={[1024, 1024]}
             shadow-camera-far={100}
@@ -107,12 +108,8 @@ export function BuildCanvas() {
             shadow-camera-bottom={-50}
           />
 
-          {/* Always-visible ground (no physics wait) */}
-          <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
-            <planeGeometry args={[ARENA, ARENA]} />
-            <meshStandardMaterial color="#3f7a48" roughness={0.95} />
-          </mesh>
-          <gridHelper args={[ARENA, ARENA / CELL, '#2f5a36', '#3a6842']} position={[0, 0.02, 0]} />
+          <ArenaEnvironment arena={ARENA} />
+          <gridHelper args={[ARENA, ARENA / CELL, '#3d6e42', '#4a7c48']} position={[0, 0.03, 0]} />
 
           <Suspense fallback={<LoadingMarker />}>
             <Physics gravity={[0, GRAVITY, 0]}>

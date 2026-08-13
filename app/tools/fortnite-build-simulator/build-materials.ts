@@ -13,14 +13,100 @@ function makeCanvas(size = 256) {
   return { canvas, ctx, size }
 }
 
-function toTexture(canvas: HTMLCanvasElement) {
+function toTexture(canvas: HTMLCanvasElement, wrap: THREE.Wrapping = THREE.RepeatWrapping) {
   const tex = new THREE.CanvasTexture(canvas)
   tex.colorSpace = THREE.SRGBColorSpace
-  tex.wrapS = THREE.RepeatWrapping
-  tex.wrapT = THREE.RepeatWrapping
+  tex.wrapS = wrap
+  tex.wrapT = wrap
   tex.anisotropy = 8
   tex.needsUpdate = true
   return tex
+}
+
+function mulberry32(seed: number) {
+  return () => {
+    seed |= 0
+    seed = (seed + 0x6d2b79f5) | 0
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+function grassMap() {
+  const { canvas, ctx, size } = makeCanvas(512)
+  const rnd = mulberry32(0x6f2a11)
+  ctx.fillStyle = '#4c8f42'
+  ctx.fillRect(0, 0, size, size)
+
+  for (let i = 0; i < 90; i++) {
+    const x = rnd() * size
+    const y = rnd() * size
+    const r = 16 + rnd() * 48
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r)
+    g.addColorStop(0, rnd() > 0.45 ? 'rgba(70, 150, 58, 0.55)' : 'rgba(38, 110, 42, 0.5)')
+    g.addColorStop(1, 'rgba(0,0,0,0)')
+    ctx.fillStyle = g
+    ctx.fillRect(x - r, y - r, r * 2, r * 2)
+  }
+
+  for (let i = 0; i < 2200; i++) {
+    const x = rnd() * size
+    const y = rnd() * size
+    ctx.strokeStyle = rnd() > 0.5 ? 'rgba(32, 82, 28, 0.32)' : 'rgba(196, 220, 110, 0.2)'
+    ctx.lineWidth = 1
+    ctx.beginPath()
+    ctx.moveTo(x, y)
+    ctx.lineTo(x + (rnd() - 0.5) * 5, y - 3 - rnd() * 7)
+    ctx.stroke()
+  }
+
+  const shade = ctx.createLinearGradient(0, 0, size, size)
+  shade.addColorStop(0, 'rgba(255,255,255,0.05)')
+  shade.addColorStop(1, 'rgba(20,50,18,0.1)')
+  ctx.fillStyle = shade
+  ctx.fillRect(0, 0, size, size)
+  return toTexture(canvas)
+}
+
+function cloudMap() {
+  const { canvas, ctx, size } = makeCanvas(512)
+  ctx.clearRect(0, 0, size, size)
+  const blobs: [number, number, number][] = [
+    [0.5, 0.56, 0.3],
+    [0.34, 0.54, 0.22],
+    [0.66, 0.52, 0.24],
+    [0.44, 0.42, 0.17],
+    [0.58, 0.4, 0.15],
+    [0.26, 0.6, 0.13],
+    [0.74, 0.58, 0.14],
+    [0.5, 0.66, 0.16],
+  ]
+  for (const [ux, uy, ur] of blobs) {
+    const x = ux * size
+    const y = uy * size
+    const r = ur * size
+    const g = ctx.createRadialGradient(x, y * 0.96, r * 0.12, x, y, r)
+    g.addColorStop(0, 'rgba(255,255,255,0.95)')
+    g.addColorStop(0.4, 'rgba(236, 244, 255, 0.58)')
+    g.addColorStop(1, 'rgba(255,255,255,0)')
+    ctx.fillStyle = g
+    ctx.fillRect(x - r, y - r, r * 2, r * 2)
+  }
+  return toTexture(canvas, THREE.ClampToEdgeWrapping)
+}
+
+let grassTex: THREE.CanvasTexture | null = null
+let cloudTex: THREE.CanvasTexture | null = null
+
+export function getGrassTexture() {
+  if (!grassTex) grassTex = grassMap()
+  return grassTex
+}
+
+export function getCloudTexture() {
+  if (!cloudTex) cloudTex = cloudMap()
+  return cloudTex
 }
 
 function woodMap() {

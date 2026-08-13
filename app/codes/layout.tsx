@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/site'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite XP Map Codes & Creative Island Codes',
   description:
-    'Best Fortnite XP map codes (August 2026) plus horror, 1v1, tycoon, and escape room Creative codes. Copy island codes, see XP ratings, and live engagement — defaults to XP Maps.',
+    'Working Fortnite Creative map codes with Discover thumbnails — XP farms, horror, 1v1s, tycoons, deathruns. Copy a code and paste it in Discover.',
   path: '/codes',
   keywords: [
     'fortnite map codes',

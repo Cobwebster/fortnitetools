@@ -3,8 +3,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
-import { Check, Info } from 'lucide-react'
+import { Check } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
+import { FortniteIcon } from '@/components/fortnite-icon'
+import { toolIcon } from '@/lib/site-icons'
 
 type Tier = 'competitive' | 'balanced' | 'quality'
 type Impact = 'high' | 'medium' | 'low'
@@ -36,6 +38,55 @@ const SETTING_IDS = [
 ] as const
 
 type SettingId = (typeof SETTING_IDS)[number]
+
+const TIER_ICONS: Record<Tier, string> = {
+  competitive: '/images/loadout/pepper.png',
+  balanced: '/images/loadout/chug_splash.png',
+  quality: '/images/loadout/chug_jug.png',
+}
+
+const CATEGORY_ICONS: Record<Category | 'all', string> = {
+  all: '/images/icons/glider.png',
+  display: '/images/loadout/rift.png',
+  graphics: '/images/loadout/pulse_scanner.png',
+  advanced: '/images/loadout/shield_breaker_emp.png',
+  audio: '/images/loadout/shock_rocks.png',
+}
+
+const SETTING_ICONS: Record<SettingId, string> = {
+  windowMode: '/images/loadout/rift.png',
+  resolution: '/images/loadout/extending_focus.png',
+  frameRateLimit: '/images/loadout/slap_juice.png',
+  motionBlur: '/images/loadout/unstable_bounce_grenade.webp',
+  showFps: '/images/loadout/pulse_scanner.png',
+  resolution3d: '/images/loadout/seven_sliders.png',
+  viewDistance: '/images/icons/map.png',
+  shadows: '/images/icons/storm.png',
+  antiAliasing: '/images/loadout/flowberry.png',
+  textures: '/images/loadout/mat_stone.png',
+  effects: '/images/loadout/chaos_exploder.png',
+  postProcessing: '/images/loadout/golden_apple.png',
+  renderingMode: '/images/loadout/mat_metal.png',
+  nvidiaReflex: '/images/loadout/shockwave.png',
+  vsync: '/images/loadout/crash_pad.png',
+  colorblindMode: '/images/loadout/apple.png',
+  soundQuality: '/images/loadout/cluster_clinger.png',
+  headphones3d: '/images/loadout/impulse.png',
+  subtitles: '/images/loadout/bandages.png',
+}
+
+const SEO_ICONS = {
+  performance: '/images/loadout/slap_juice.png',
+  shadows: '/images/icons/storm.png',
+  windows: '/images/loadout/rift.png',
+  pros: '/images/icons/crown.png',
+} as const
+
+const RELATED = [
+  { href: '/tools/sensitivity-calculator', labelKey: 'relatedSens' as const, icon: '/images/loadout/hunting_rifle.png' },
+  { href: '/tools/keybinds', labelKey: 'relatedKeybinds' as const, icon: '/images/icons/pickaxe.png' },
+  { href: '/tools', labelKey: 'relatedHub' as const, icon: '/images/loadout/mat_wood.png' },
+] as const
 
 const SETTING_CATEGORY: Record<SettingId, Category> = {
   windowMode: 'display',
@@ -124,10 +175,19 @@ export function FpsSettingsView() {
             <span>/</span>
             <span className="text-foreground">{t('breadcrumb')}</span>
           </nav>
-          <h1 className="font-display text-4xl font-bold uppercase tracking-wide text-foreground sm:text-5xl">
-            {t('titlePrefix')} <span className="text-primary">{t('titleHighlight')}</span>
-          </h1>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">{t('hero')}</p>
+          <div className="flex items-start gap-4">
+            <FortniteIcon
+              src={toolIcon('/tools/fps-settings')}
+              size="lg"
+              frameClassName="mt-1 border-primary/40 bg-primary/10"
+            />
+            <div>
+              <h1 className="font-display text-4xl font-bold uppercase tracking-wide text-foreground sm:text-5xl">
+                {t('titlePrefix')} <span className="text-primary">{t('titleHighlight')}</span>
+              </h1>
+              <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">{t('hero')}</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -148,9 +208,10 @@ export function FpsSettingsView() {
                     : 'border-border bg-card text-muted-foreground hover:border-primary/50'
                 }`}
               >
-                <div className="flex items-center justify-between mb-1">
+                <div className="mb-2 flex items-center gap-3">
+                  <FortniteIcon src={TIER_ICONS[id]} size="sm" />
                   <span className="font-display text-sm font-bold uppercase tracking-wide">{t(`tiers.${id}.label`)}</span>
-                  {tier === id && <Check className="h-4 w-4 text-primary" />}
+                  {tier === id ? <Check className="ml-auto h-4 w-4 text-primary" /> : null}
                 </div>
                 <p className="text-xs leading-relaxed">{t(`tiers.${id}.desc`)}</p>
               </button>
@@ -159,27 +220,26 @@ export function FpsSettingsView() {
         </div>
 
         <div className="mb-6 flex flex-wrap gap-2">
-          <button
-            type="button"
-            onClick={() => setActiveCategory('all')}
-            className={`rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
-              activeCategory === 'all' ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'
-            }`}
-          >
-            {t('categoryAll')}
-          </button>
-          {CATEGORY_IDS.map((cat) => (
-            <button
-              key={cat}
-              type="button"
-              onClick={() => setActiveCategory(cat)}
-              className={`rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
-                activeCategory === cat ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              {t(`categories.${cat}`)}
-            </button>
-          ))}
+          {(['all', ...CATEGORY_IDS] as const).map((cat) => {
+            const active = activeCategory === cat
+            return (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setActiveCategory(cat)}
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
+                  active ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                <FortniteIcon
+                  src={CATEGORY_ICONS[cat]}
+                  size="xs"
+                  frameClassName={active ? 'border-white/30 bg-black/30' : ''}
+                />
+                {cat === 'all' ? t('categoryAll') : t(`categories.${cat}`)}
+              </button>
+            )
+          })}
         </div>
 
         <div className="flex flex-col gap-2">
@@ -191,10 +251,11 @@ export function FpsSettingsView() {
               <div key={id} className="rounded-xl border border-border bg-card overflow-hidden">
                 <button
                   type="button"
-                  className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted/30 transition-colors"
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left hover:bg-muted/30 transition-colors sm:gap-4 sm:px-5 sm:py-4"
                   onClick={() => setExpanded(isOpen ? null : id)}
                   aria-expanded={isOpen}
                 >
+                  <FortniteIcon src={SETTING_ICONS[id]} size="sm" />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-sm font-bold text-foreground">{t(`settings.${id}.name`)}</span>
@@ -208,7 +269,6 @@ export function FpsSettingsView() {
                     <span className="rounded-lg border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-bold text-primary">
                       {recommended}
                     </span>
-                    <Info className={`h-4 w-4 transition-colors ${isOpen ? 'text-primary' : 'text-muted-foreground'}`} />
                   </div>
                 </button>
                 {isOpen && (
@@ -234,11 +294,14 @@ export function FpsSettingsView() {
 
         <section className="mt-12 border-t border-border pt-10">
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">{t('seoTitle')}</h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
             {SEO_KEYS.map((key) => (
-              <div key={key}>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">{t(`seo.${key}.h`)}</h3>
-                <p>{t(`seo.${key}.p`)}</p>
+              <div key={key} className="flex gap-3 rounded-xl border border-border bg-card p-4">
+                <FortniteIcon src={SEO_ICONS[key]} size="md" frameClassName="mt-0.5" />
+                <div>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">{t(`seo.${key}.h`)}</h3>
+                  <p>{t(`seo.${key}.p`)}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -256,23 +319,21 @@ export function FpsSettingsView() {
           </div>
         </section>
 
-        <section className="mt-12 border-t border-border pt-10 space-y-3">
-          <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{t('relatedTitle')}</h2>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            {t('relatedBefore')}{' '}
-            <Link href={localizeHref(locale, '/tools/sensitivity-calculator')} className="text-primary hover:underline">
-              {t('relatedSens')}
-            </Link>
-            {t('relatedMid1')}{' '}
-            <Link href={localizeHref(locale, '/tools/keybinds')} className="text-primary hover:underline">
-              {t('relatedKeybinds')}
-            </Link>
-            {t('relatedMid2')}{' '}
-            <Link href={toolsHref} className="text-primary hover:underline">
-              {t('relatedHub')}
-            </Link>
-            {t('relatedAfter')}
-          </p>
+        <section className="mt-12 border-t border-border pt-10">
+          <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground mb-4">{t('relatedTitle')}</h2>
+          <ul className="flex flex-wrap gap-3">
+            {RELATED.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={localizeHref(locale, item.href)}
+                  className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-sm text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                >
+                  <FortniteIcon src={item.icon} size="sm" frameClassName="border-transparent bg-transparent" />
+                  {t(item.labelKey)}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       </div>
     </main>

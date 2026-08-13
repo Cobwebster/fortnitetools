@@ -4,10 +4,11 @@ type FortniteIconProps = {
   className?: string
   /** Extra classes on the wrapping slot (rarity-style frame). */
   frameClassName?: string
-  size?: 'sm' | 'md' | 'lg' | 'xl'
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 }
 
 const SIZE = {
+  xs: 'h-8 w-8',
   sm: 'h-10 w-10',
   md: 'h-14 w-14',
   lg: 'h-16 w-16',
@@ -15,6 +16,7 @@ const SIZE = {
 } as const
 
 const IMG = {
+  xs: 'h-5 w-5',
   sm: 'h-7 w-7',
   md: 'h-11 w-11',
   lg: 'h-14 w-14',

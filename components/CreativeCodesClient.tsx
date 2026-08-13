@@ -13,32 +13,37 @@ import { Check, Copy, ExternalLink, Search, Users } from 'lucide-react'
 
 type Props = {
   maps: CreativeMapLive[]
-  /** Default genre chip — XP maps are the money SEO filter. */
   initialGenre?: CreativeGenre | 'all'
 }
 
-function GenreArt({ genre, name }: { genre: CreativeGenre; name: string }) {
-  const tones: Record<CreativeGenre, string> = {
-    xp: 'from-amber-500/30 via-yellow-600/10 to-background',
-    horror: 'from-red-900/50 via-violet-950/40 to-background',
-    '1v1': 'from-sky-500/25 via-blue-900/20 to-background',
-    tycoon: 'from-emerald-500/25 via-teal-900/20 to-background',
-    escape: 'from-fuchsia-500/20 via-purple-900/25 to-background',
-    deathrun: 'from-orange-500/25 via-rose-900/20 to-background',
-    zonewars: 'from-cyan-500/20 via-slate-900/30 to-background',
-    boxfight: 'from-indigo-500/25 via-slate-900/20 to-background',
-    practice: 'from-lime-500/20 via-slate-900/20 to-background',
-    pvp: 'from-rose-500/25 via-red-950/30 to-background',
-    social: 'from-pink-500/25 via-rose-900/20 to-background',
-    other: 'from-slate-500/20 via-slate-900/30 to-background',
-  }
+function MapThumb({ map }: { map: CreativeMapLive }) {
+  const [broken, setBroken] = useState(false)
+  const showImg = map.screenshot && !broken
+
   return (
-    <div className={`relative aspect-[16/10] bg-gradient-to-br ${tones[genre]} border-b border-border`}>
-      <div className="absolute inset-0 opacity-[0.12] bg-[radial-gradient(circle_at_20%_20%,white,transparent_40%),radial-gradient(circle_at_80%_60%,white,transparent_35%)]" />
-      <div className="absolute bottom-3 left-3 right-3">
-        <p className="text-[10px] font-bold uppercase tracking-wider text-primary">{genreLabel(genre)}</p>
-        <p className="font-display text-lg font-bold uppercase tracking-wide text-foreground line-clamp-2">{name}</p>
-      </div>
+    <div className="relative aspect-video overflow-hidden bg-zinc-900">
+      {showImg ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={map.screenshot!}
+          alt=""
+          className="h-full w-full object-cover"
+          loading="lazy"
+          decoding="async"
+          onError={() => setBroken(true)}
+        />
+      ) : (
+        <div className="flex h-full items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-950 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+          {genreLabel(map.genre)}
+        </div>
+      )}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+      <span className="absolute left-2 top-2 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
+        {genreLabel(map.genre)}
+      </span>
+      <span className="absolute bottom-2 left-2 right-2 truncate font-mono text-[11px] font-semibold tracking-wider text-white drop-shadow">
+        {map.code}
+      </span>
     </div>
   )
 }
@@ -57,35 +62,25 @@ function MapCard({ map }: { map: CreativeMapLive }) {
   }
 
   return (
-    <article className="rounded-xl border border-border bg-card overflow-hidden flex flex-col">
-      {map.screenshot ? (
-        <div className="relative aspect-[16/10] bg-muted/40 border-b border-border">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={map.screenshot} alt={`${map.name} Creative map`} className="h-full w-full object-cover" loading="lazy" />
-        </div>
-      ) : (
-        <GenreArt genre={map.genre} name={map.name} />
-      )}
+    <article className="flex flex-col overflow-hidden rounded-xl border border-border bg-card">
+      <MapThumb map={map} />
 
-      <div className="p-4 flex flex-col gap-3 flex-1">
-        <div className="flex flex-wrap gap-1.5">
-          <span className="rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider border border-border text-muted-foreground">
-            {genreLabel(map.genre)}
-          </span>
-          <span className="rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider border border-primary/30 bg-primary/10 text-primary">
-            XP {xpStars(map.xpRating)}
-          </span>
-          <span className="inline-flex items-center gap-1 rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider border border-border text-muted-foreground">
-            <Users className="h-3 w-3" />
-            {map.players}
-          </span>
-        </div>
-
+      <div className="flex flex-1 flex-col gap-3 p-4">
         <div>
           <h3 className="font-display text-base font-bold uppercase tracking-wide text-foreground leading-snug">
             {map.name}
           </h3>
-          <p className="mt-1 text-sm text-muted-foreground leading-relaxed line-clamp-3">{map.description}</p>
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground line-clamp-2">{map.description}</p>
+        </div>
+
+        <div className="flex flex-wrap gap-1.5">
+          <span className="rounded border border-primary/30 bg-primary/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
+            XP {xpStars(map.xpRating)}
+          </span>
+          <span className="inline-flex items-center gap-1 rounded border border-border px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+            <Users className="h-3 w-3" />
+            {map.players}
+          </span>
         </div>
 
         <div className="mt-auto space-y-2">
@@ -94,7 +89,7 @@ function MapCard({ map }: { map: CreativeMapLive }) {
             <button
               type="button"
               onClick={() => void copyCode()}
-              className="inline-flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs font-semibold text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors"
+              className="inline-flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs font-semibold text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
               aria-label={`Copy code ${map.code}`}
             >
               {copied ? <Check className="h-3.5 w-3.5 text-primary" /> : <Copy className="h-3.5 w-3.5" />}
@@ -105,16 +100,15 @@ function MapCard({ map }: { map: CreativeMapLive }) {
           <div className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
             {typeof map.liveUniquePlayers === 'number' ? (
               <span>
-                <strong className="text-foreground">{map.liveUniquePlayers.toLocaleString()}</strong> unique players
-                (recent)
+                <strong className="text-foreground">{map.liveUniquePlayers.toLocaleString()}</strong> unique
               </span>
             ) : null}
             {typeof map.livePeakCcu === 'number' ? (
               <span>
-                Peak CCU <strong className="text-foreground">{map.livePeakCcu.toLocaleString()}</strong>
+                Peak <strong className="text-foreground">{map.livePeakCcu.toLocaleString()}</strong>
               </span>
             ) : null}
-            {map.creator ? <span>Creator @{map.creator}</span> : null}
+            {map.creator ? <span>@{map.creator}</span> : null}
           </div>
 
           <a
@@ -134,6 +128,11 @@ function MapCard({ map }: { map: CreativeMapLive }) {
 export function CreativeCodesClient({ maps, initialGenre = 'xp' }: Props) {
   const [query, setQuery] = useState('')
   const [genre, setGenre] = useState<CreativeGenre | 'all'>(initialGenre)
+
+  const availableGenres = useMemo(() => {
+    const present = new Set(maps.map((m) => m.genre))
+    return CREATIVE_GENRES.filter((g) => g.id === 'all' || present.has(g.id as CreativeGenre))
+  }, [maps])
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -166,10 +165,10 @@ export function CreativeCodesClient({ maps, initialGenre = 'xp' }: Props) {
 
   return (
     <div className="space-y-6">
-      <form onSubmit={onSubmit} className="rounded-xl border border-border bg-card p-4 sm:p-5 space-y-4">
+      <form onSubmit={onSubmit} className="space-y-4 rounded-xl border border-border bg-card p-4 sm:p-5">
         <div>
           <label htmlFor="codes-search" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-            Search map codes
+            Search
           </label>
           <div className="relative mt-2">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -177,7 +176,7 @@ export function CreativeCodesClient({ maps, initialGenre = 'xp' }: Props) {
               id="codes-search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="XP, horror, 1v1, tycoon, escape room, or paste a code…"
+              placeholder="Name, code, 1v1, horror, tycoon…"
               className="w-full rounded-lg border border-border bg-background py-2.5 pl-10 pr-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               autoComplete="off"
             />
@@ -185,7 +184,7 @@ export function CreativeCodesClient({ maps, initialGenre = 'xp' }: Props) {
         </div>
 
         <div className="flex flex-wrap gap-2" role="group" aria-label="Genre filters">
-          {CREATIVE_GENRES.map((g) => {
+          {availableGenres.map((g) => {
             const active = genre === g.id
             return (
               <button
@@ -205,14 +204,14 @@ export function CreativeCodesClient({ maps, initialGenre = 'xp' }: Props) {
         </div>
 
         <p className="text-xs text-muted-foreground">
-          Showing <strong className="text-foreground">{filtered.length}</strong> maps
-          {genre !== 'all' ? ` in ${genreLabel(genre as CreativeGenre)}` : ''}.
+          <strong className="text-foreground">{filtered.length}</strong>
+          {genre !== 'all' ? ` ${genreLabel(genre as CreativeGenre).toLowerCase()}` : ''} maps
         </p>
       </form>
 
       {filtered.length === 0 ? (
         <div className="rounded-xl border border-dashed border-border px-5 py-12 text-center text-sm text-muted-foreground">
-          No maps matched. Try another genre chip or a shorter search.
+          Nothing matched. Try All, or paste a code.
         </div>
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

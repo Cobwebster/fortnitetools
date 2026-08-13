@@ -7,6 +7,12 @@ export type FreeCosmeticCategory =
   | 'account'
   | 'other'
 
+export type FreeCosmeticReward = {
+  /** Fortnite-API cosmetic id (BR). */
+  id: string
+  name: string
+}
+
 export type FreeCosmeticOffer = {
   id: string
   title: string
@@ -19,6 +25,11 @@ export type FreeCosmeticOffer = {
   href?: string
   hrefLabel?: string
   category: FreeCosmeticCategory
+  rewards?: FreeCosmeticReward[]
+}
+
+export function cosmeticIconUrl(id: string) {
+  return `https://fortnite-api.com/images/cosmetics/br/${id.toLowerCase()}/smallicon.png`
 }
 
 /** Free Fortnite cosmetics / rewards tracker — update when Epic refreshes promos. */
@@ -74,6 +85,10 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsLabel: '30 July',
     howTo: 'Get a Victory Royale in Reload or Zero Build Reload. Win with a crown for an extra emote.',
     category: 'quest',
+    rewards: [
+      { id: 'Solo_Umbrella', name: 'The Umbrella' },
+      { id: 'Emoji_VictoryRoyale', name: 'Victory Royale' },
+    ],
   },
   {
     id: 'thing-from-beneath',
@@ -91,6 +106,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsLabel: '9 August',
     howTo: 'Level up 1 time while in a party on mobile.',
     category: 'quest',
+    rewards: [{ id: 'Character_SnowyCoast', name: 'Kickoff Yeddy' }],
   },
   {
     id: 'parts-power-machinist',
@@ -121,6 +137,13 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     howTo: 'Complete weekly quests to earn rewards.',
     details: ['Do 4 quests from each drop to earn an umbrella.'],
     category: 'quest',
+    rewards: [
+      { id: 'LoadingScreen_CH7S3_KeyArt', name: 'Hot Bat Summer' },
+      { id: 'Glider_DiscoButler', name: 'Zap-Brella' },
+      { id: 'Character_TideCompost', name: 'Beach Bod Batman' },
+      { id: 'Backpack_TideCompost', name: 'Batman Floatie' },
+      { id: 'EID_TideCompost', name: "Surf's Up!" },
+    ],
   },
   {
     id: 'mobile-quests-aug',
@@ -141,10 +164,25 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
       '7 mastered — style',
       '10 / 12 / 14 / 16 / 19 mastered — backblings',
       '21 mastered — glider',
+      '22 / 24 / 28 mastered — backblings',
+      '30 / 60 mastered — gliders',
+      '70 mastered — emote',
     ],
     href: '/guides/how-to/how-to-extract-sprites-fortnite',
     hrefLabel: 'Extract guide',
     category: 'quest',
+    rewards: [
+      { id: 'Backpack_ExtractionFrame', name: 'Extraction Frame' },
+      { id: 'Backpack_ExtractionFrame_PixieParts', name: "The Guardian's Friend Frame!" },
+      { id: 'Backpack_ExtractionFrame_CopperMoggy', name: "Slone's Extraction Frame" },
+      { id: 'Backpack_ExtractionFrame_HydroDrift', name: "Wolfe's Extraction Frame" },
+      { id: 'Backpack_ExtractionFrame_LemonWrath', name: "The Voidblade's Extraction Frame" },
+      { id: 'Backpack_ExtractionFrame_LivelySugar', name: "Dylan's Extraction Frame" },
+      { id: 'Backpack_ExtractionFrame_LocalTalent', name: "PJ's Extraction Frame" },
+      { id: 'Backpack__ExtractionFrame_AlpacaLean', name: "John Wick's Extraction Frame" },
+      { id: 'Backpack_ColdTrophy', name: 'Sprite Mastery Pod' },
+      { id: 'EID_SpriteSender', name: 'Sprite Party' },
+    ],
   },
   {
     id: 'crown-vr-br',
@@ -153,6 +191,10 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsLabel: '20 August',
     howTo: 'Get a Victory Royale in BR or Zero Build BR. Win with a crown for an extra emote.',
     category: 'quest',
+    rewards: [
+      { id: 'Solo_Umbrella', name: 'The Umbrella' },
+      { id: 'Emoji_VictoryRoyale', name: 'Victory Royale' },
+    ],
   },
   {
     id: 'ranked-100-kills',
@@ -179,6 +221,11 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     href: '/xp-calculator',
     hrefLabel: 'XP calculator',
     category: 'pass',
+    rewards: [
+      { id: 'Character_PixieParts_Lava', name: 'The Guardian' },
+      { id: 'Backpack_PixieParts_Lava', name: 'Sprite Seat' },
+      { id: 'LoadingScreen_S41Narrative', name: 'Welcome, The Guardian' },
+    ],
   },
   {
     id: 'ranked-reload-ranks',
@@ -200,6 +247,10 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsLabel: '2 September',
     howTo: 'Get a Victory Royale in OG or Zero Build OG. Win with a crown for an extra emote.',
     category: 'quest',
+    rewards: [
+      { id: 'Solo_Umbrella', name: 'The Umbrella' },
+      { id: 'Emoji_VictoryRoyale', name: 'Victory Royale' },
+    ],
   },
   {
     id: 'og-pass',
@@ -254,6 +305,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsLabel: '31 October',
     howTo: 'Link your MyDisney account with your Epic Games account for a free backbling.',
     category: 'account',
+    rewards: [{ id: 'Backpack_MonkeyPatentRipe', name: 'Mickey Mouse TSUM' }],
   },
   {
     id: 'epic-giftcard-2026',
@@ -272,18 +324,30 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
       '4 challenges — Keytarcade Keytar, pickaxe, and backbling',
     ],
     category: 'quest',
+    rewards: [
+      { id: 'Backpack_VintageConsole_Keytar', name: 'Keytarcade' },
+      { id: 'Pickaxe_VintageConsole_Keytar', name: 'Keytarcade' },
+    ],
   },
   {
     id: 'vr-blitz-1',
     title: 'Victory Royale — Blitz',
     howTo: 'Get a Victory Royale in Blitz Royale.',
     category: 'quest',
+    rewards: [
+      { id: 'Solo_Umbrella', name: 'The Umbrella' },
+      { id: 'Emoji_VictoryRoyale', name: 'Victory Royale' },
+    ],
   },
   {
     id: 'vr-blitz-3',
     title: 'Victory Royale ×3 — Blitz',
     howTo: 'Get a Victory Royale 3 times in Blitz.',
     category: 'quest',
+    rewards: [
+      { id: 'Solo_Umbrella', name: 'The Umbrella' },
+      { id: 'Emoji_VictoryRoyale', name: 'Victory Royale' },
+    ],
   },
   {
     id: 'login-rewards',
@@ -302,6 +366,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     title: 'Survey — Sir Beurre',
     howTo: 'Sign up to receive Epic email surveys to earn the Sir Beurre back bling.',
     category: 'account',
+    rewards: [{ id: 'Backpack_ButterVehicle', name: 'Sir Beurre' }],
   },
   {
     id: 'rl-drops',
@@ -315,30 +380,44 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     title: 'Default',
     howTo: 'Make an Epic account and log into Fortnite for starter defaults.',
     category: 'account',
+    rewards: [
+      { id: 'CID_001_Athena_Commando_F_Default', name: 'Recruit' },
+      { id: 'CID_005_Athena_Commando_M_Default', name: 'Recruit' },
+      { id: 'CID_002_Athena_Commando_F_Default', name: 'Recruit' },
+      { id: 'CID_006_Athena_Commando_M_Default', name: 'Recruit' },
+      { id: 'DefaultPickaxe', name: 'Default Pickaxe' },
+    ],
   },
   {
     id: 'true-explorers',
     title: 'True Explorers Quest Pack',
     howTo: 'Claim the True Explorers Quest Pack in the Item Shop and complete the LEGO Fortnite challenges.',
     category: 'quest',
+    rewards: [{ id: 'Character_VitalInventor', name: 'Trailblazer Tai' }],
   },
   {
     id: 'lego-account-link',
     title: 'LEGO Account',
     howTo: 'Connect your Epic Games and LEGO accounts for 2 free skins and a backbling.',
     category: 'account',
+    rewards: [
+      { id: 'Character_VitalInventorBlock', name: 'Explorer Emilie' },
+      { id: 'CID_978_Athena_Commando_M_FancyCandy', name: 'Mr. Dappermint' },
+    ],
   },
   {
     id: 'postparty-clip',
     title: 'Postparty',
     howTo: 'Share your first clip from the Postparty app.',
     category: 'other',
+    rewards: [{ id: 'SPID_379_PostpartyReward', name: 'Postparty Confetti' }],
   },
   {
     id: '2fa-boogie-down',
     title: 'Free Emote — Enable 2FA',
     howTo: 'Enable two-factor authentication on your Epic account to get the Boogie Down emote.',
     category: 'account',
+    rewards: [{ id: 'EID_BoogieDown', name: 'Boogie Down' }],
   },
   {
     id: 'lego-expert',

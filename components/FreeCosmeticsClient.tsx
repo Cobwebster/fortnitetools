@@ -6,11 +6,13 @@ import { Check } from 'lucide-react'
 import {
   FREE_COSMETIC_CATEGORY_LABEL,
   FREE_COSMETIC_OFFERS,
+  cosmeticIconUrl,
   formatRemaining,
   offerRemaining,
   sortOffersByUrgency,
   type FreeCosmeticCategory,
   type FreeCosmeticOffer,
+  type FreeCosmeticReward,
 } from '@/lib/free-cosmetics'
 
 const STORAGE_KEY = 'ft-free-cosmetics-done'
@@ -31,6 +33,42 @@ function loadDone(): Set<string> {
 
 function saveDone(ids: Set<string>) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...ids]))
+}
+
+function RewardIcons({ rewards }: { rewards: FreeCosmeticReward[] }) {
+  if (!rewards.length) return null
+  return (
+    <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Rewards">
+      {rewards.map((r) => (
+        <li key={r.id}>
+          <span
+            title={r.name}
+            className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border border-border/80 bg-black/40 sm:h-14 sm:w-14"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={cosmeticIconUrl(r.id)}
+              alt={r.name}
+              width={56}
+              height={56}
+              className="h-full w-full object-contain p-0.5"
+              loading="lazy"
+              decoding="async"
+              onError={(e) => {
+                const img = e.currentTarget
+                if (!img.dataset.fallback) {
+                  img.dataset.fallback = '1'
+                  img.src = `https://fortnite-api.com/images/cosmetics/br/${r.id.toLowerCase()}/icon.png`
+                  return
+                }
+                img.closest('li')?.setAttribute('hidden', '')
+              }}
+            />
+          </span>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 function OfferCard({
@@ -101,6 +139,8 @@ function OfferCard({
           {done ? 'Completed' : 'Mark completed'}
         </button>
       </div>
+
+      {offer.rewards?.length ? <RewardIcons rewards={offer.rewards} /> : null}
 
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{offer.howTo}</p>
       {offer.details?.length ? (
