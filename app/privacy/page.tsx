@@ -80,11 +80,10 @@ export default function PrivacyPage() {
           Cookies &amp; local storage
         </h2>
         <p>
-          Signed-in sessions use auth cookies from our auth provider. Optional analytics and advertising cookies (for
-          example Google Analytics, and Google AdSense if ads are shown) only load after you accept the cookie bar. You
-          can decline and still use the site. Browsers may also store small tool preferences (for example shareable
-          loadout params in the URL). You can clear site data anytime in your browser settings — that also resets the
-          cookie choice so the bar can appear again. Signing out clears the session on this device.
+          Signed-in sessions use auth cookies from our auth provider. We use Google Analytics cookies to measure traffic
+          (and Google AdSense cookies if ads are shown). Browsers may also store small tool preferences (for example
+          shareable loadout params in the URL). You can clear site data anytime in your browser settings. Signing out
+          clears the session on this device.
         </p>
       </section>
 
@@ -106,7 +105,6 @@ export default function PrivacyPage() {
         </h2>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>You can use most of the site without creating an account</li>
-          <li>You can accept or decline optional analytics/ads cookies via the cookie bar</li>
           <li>You can update your display name or password from your account page</li>
           <li>You can sign out anytime</li>
           <li>
