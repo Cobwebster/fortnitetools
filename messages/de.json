@@ -192,7 +192,7 @@
       },
       "map-rotation": {
         "title": "Map Rotation Timer",
-        "description": "Live Reload map schedule — Venture, Oasis, Elite Stronghold — with countdown to the next island, plus Blitz status."
+        "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
       },
       "player-count": {
         "title": "Player Count",
@@ -625,6 +625,11 @@
       "vbucksSuffix": "V-Bucks",
       "removeAria": "{item} entfernen",
       "addAria": "{item} hinzufügen",
+      "shopWishlistTitle": "Aus der Item-Shop-Wunschliste",
+      "shopWishlistInclude": "In Summe einbeziehen",
+      "shopWishlistNoPrice": "Kein Preis gespeichert",
+      "shopWishlistHint": "Markiere Items im",
+      "shopWishlistLabel": "Item-Shop-Wunschliste",
       "customAmountTitle": "Individuelle V-Bucks-Menge",
       "customAmountPlaceholder": "z. B. 500",
       "customAmountHint": "Füge eine bestimmte Anzahl V-Bucks hinzu, die oben nicht abgedeckt ist.",

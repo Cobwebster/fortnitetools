@@ -9,12 +9,12 @@ import { extractTrafficColor, type ContestLevel } from '@/lib/map-data'
 import {
   DEFAULT_ACTIVE_SPAWNS,
   MAP_MODES,
-  QUEST_LAYERS,
+  SPAWN_LAYER_GROUPS,
   SPAWN_LAYERS,
   type MapModeId,
   type SpawnLayerId,
 } from '@/lib/map-layers'
-import { SPAWN_LAYER_COLOR } from '@/lib/map-spawns'
+import { SPAWN_LAYER_COLOR, SPAWN_POINTS } from '@/lib/map-spawns'
 import {
   MAP_EVOLUTION,
   MAP_EVOLUTION_CHAPTERS,
@@ -149,7 +149,14 @@ export function FortniteMapClient() {
 
   const [openSpawns, setOpenSpawns] = useState(true)
   const [openLocations, setOpenLocations] = useState(true)
-  const [openQuests, setOpenQuests] = useState(false)
+
+  const layerCounts = useMemo(() => {
+    const counts: Partial<Record<SpawnLayerId, number>> = {}
+    for (const p of SPAWN_POINTS) {
+      counts[p.layer] = (counts[p.layer] ?? 0) + 1
+    }
+    return counts
+  }, [])
 
   const isLive = mapVersionId === 'live'
   const historical = !isLive ? findMapById(mapVersionId) : null
@@ -168,6 +175,19 @@ export function FortniteMapClient() {
       const next = new Set(prev)
       if (next.has(id)) next.delete(id)
       else next.add(id)
+      return next
+    })
+  }
+
+  const toggleSpawnGroup = (ids: SpawnLayerId[]) => {
+    if (!isLive || ids.length === 0) return
+    setActiveSpawns((prev) => {
+      const next = new Set(prev)
+      const allOn = ids.every((id) => next.has(id))
+      for (const id of ids) {
+        if (allOn) next.delete(id)
+        else next.add(id)
+      }
       return next
     })
   }
@@ -193,14 +213,14 @@ export function FortniteMapClient() {
     )
   }, [spawnQuery, labeledSpawns])
 
-  const filteredQuests = useMemo(() => {
-    if (!spawnQuery) return QUEST_LAYERS
-    return QUEST_LAYERS.filter(
-      (q) =>
-        q.label.toLowerCase().includes(spawnQuery) ||
-        q.children?.some((c) => c.label.toLowerCase().includes(spawnQuery))
-    )
-  }, [spawnQuery])
+  const groupedSpawns = useMemo(() => {
+    return SPAWN_LAYER_GROUPS.map((group) => ({
+      ...group,
+      layers: group.layers
+        .map((id) => filteredSpawns.find((s) => s.id === id))
+        .filter((s): s is (typeof filteredSpawns)[number] => Boolean(s)),
+    })).filter((g) => g.layers.length > 0)
+  }, [filteredSpawns])
 
   const activeSpawnList = useMemo(() => [...activeSpawns], [activeSpawns])
   const liveOnly = tu('liveOnlyLabel')
@@ -288,11 +308,7 @@ export function FortniteMapClient() {
             </button>
             <button
               type="button"
-              onClick={() =>
-                setActiveSpawns(
-                  new Set(['extraction_sites', 'vaults', 'sprite_chests', 'reboot_vans'])
-                )
-              }
+              onClick={() => setActiveSpawns(new Set(DEFAULT_ACTIVE_SPAWNS))}
               disabled={!isLive}
               className="rounded border border-border px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground disabled:opacity-40"
             >
@@ -308,25 +324,46 @@ export function FortniteMapClient() {
             onToggle={() => setOpenSpawns((v) => !v)}
             count={isLive ? tu('spawnsOn', { count: activeSpawns.size }) : tu('liveOnly')}
           >
-            {filteredSpawns.map((layer) => (
-              <LayerRow
-                key={layer.id}
-                label={layer.label}
-                hint={!isLive ? tu('switchLivePins') : layer.hint}
-                available={isLive}
-                unavailableLabel={liveOnly}
-                active={isLive && activeSpawns.has(layer.id)}
-                onToggle={() => toggleSpawn(layer.id)}
-                swatch={
-                  <span
-                    className={`mt-1 inline-block h-2.5 w-2.5 shrink-0 border border-black/20 ${
-                      layer.id === 'extraction_sites' ? 'rotate-45' : 'rounded-sm'
-                    }`}
-                    style={{ background: SPAWN_LAYER_COLOR[layer.id] ?? extractTrafficColor.medium }}
-                    aria-hidden
+            {groupedSpawns.map((group) => (
+              <div key={group.id} className="mb-2 last:mb-0">
+                <button
+                  type="button"
+                  onClick={() => toggleSpawnGroup(group.layers.map((l) => l.id))}
+                  disabled={!isLive}
+                  className="flex w-full items-center justify-between px-2 pb-1 pt-1 text-left text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground disabled:opacity-40"
+                >
+                  <span>{group.label}</span>
+                  <span className="font-semibold normal-case tracking-normal">
+                    {group.layers.filter((l) => activeSpawns.has(l.id)).length}/{group.layers.length}
+                  </span>
+                </button>
+                {group.layers.map((layer) => (
+                  <LayerRow
+                    key={layer.id}
+                    label={
+                      layerCounts[layer.id]
+                        ? `${layer.label} (${layerCounts[layer.id]})`
+                        : layer.label
+                    }
+                    hint={!isLive ? tu('switchLivePins') : layer.hint}
+                    available={isLive}
+                    unavailableLabel={liveOnly}
+                    active={isLive && activeSpawns.has(layer.id)}
+                    onToggle={() => toggleSpawn(layer.id)}
+                    swatch={
+                      <span
+                        className={`mt-1 inline-block h-2.5 w-2.5 shrink-0 border border-black/20 ${
+                          layer.id === 'extraction_sites' ? 'rotate-45' : 'rounded-sm'
+                        }`}
+                        style={{
+                          background: SPAWN_LAYER_COLOR[layer.id] ?? extractTrafficColor.medium,
+                        }}
+                        aria-hidden
+                      />
+                    }
                   />
-                }
-              />
+                ))}
+              </div>
             ))}
             {filteredSpawns.length === 0 ? (
               <p className="px-2 py-2 text-xs text-muted-foreground">{tu('noSpawnMatch')}</p>
@@ -398,31 +435,6 @@ export function FortniteMapClient() {
             </div>
           </Accordion>
 
-          <Accordion title={tu('quests')} open={openQuests} onToggle={() => setOpenQuests((v) => !v)}>
-            {filteredQuests.map((quest) => (
-              <div key={quest.id}>
-                <LayerRow
-                  label={quest.label}
-                  available={quest.available}
-                  active={false}
-                  unavailableLabel={liveOnly}
-                />
-                {quest.children?.map((child) => (
-                  <div key={child.id} className="pl-4">
-                    <LayerRow
-                      label={child.label}
-                      available={child.available}
-                      active={false}
-                      unavailableLabel={liveOnly}
-                    />
-                  </div>
-                ))}
-              </div>
-            ))}
-            {filteredQuests.length === 0 ? (
-              <p className="px-2 py-2 text-xs text-muted-foreground">{tu('noQuestMatch')}</p>
-            ) : null}
-          </Accordion>
         </div>
 
         <div className="border-t border-border px-3 py-2.5 text-[11px] text-muted-foreground">

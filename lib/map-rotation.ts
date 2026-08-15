@@ -8,6 +8,8 @@ export type RotationMap = {
   theme: string
   /** Optional accent for cards */
   accent: string
+  /** Island / promo art used as the card background. */
+  image: string
   badge?: 'new'
 }
 
@@ -31,22 +33,25 @@ export const ROTATION_MODES: RotationMode[] = [
     slotMinutes: 20,
     maps: [
       {
-        id: 'venture',
-        name: 'Venture',
-        theme: 'Chapter 1 classic — Tilted, Pleasant, and OG landmarks',
-        accent: '#38bdf8',
-      },
-      {
         id: 'oasis',
         name: 'Oasis',
-        theme: 'Desert hotel hub with mid-range fights across arid POIs',
+        theme: 'Desert island — Paradise Palms, hotel hub, mid-range arid POIs',
         accent: '#fbbf24',
+        image: '/images/map-rotation/oasis.webp',
       },
       {
-        id: 'elite-stronghold',
-        name: 'Elite Stronghold',
-        theme: 'Competitive-focused Reload arena',
-        accent: '#a78bfa',
+        id: 'slurp-rush',
+        name: 'Slurp Rush',
+        theme: 'Chapter 2 Slurp island — Slurpy Swamp, Steamy Stacks, Dirty Docks',
+        accent: '#2dd4bf',
+        image: '/images/map-rotation/slurp-rush.webp',
+      },
+      {
+        id: 'springfield',
+        name: 'Springfield',
+        theme: 'The Simpsons Reload island — The Confidential, 50-player lobbies',
+        accent: '#f59e0b',
+        image: '/images/map-rotation/springfield.webp',
         badge: 'new',
       },
     ],
@@ -61,6 +66,7 @@ export const ROTATION_MODES: RotationMode[] = [
         name: 'Venture',
         theme: 'Blitz Royale — compact no-build Chapter 1 layout',
         accent: '#f87171',
+        image: '/images/map-rotation/venture.webp',
       },
     ],
     note: 'Blitz is currently on a single map. When Epic enables multiple maps, they usually rotate every 10 minutes.',

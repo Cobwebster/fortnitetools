@@ -8,18 +8,18 @@ import { CURRENT_SEASON } from '@/lib/season'
 const SCHEDULE = [
   {
     slot: ':00 – :20',
-    map: 'Venture',
-    theme: 'Chapter 1 island — Tilted Towers, Pleasant Park, Retail Row',
+    map: 'Oasis',
+    theme: 'Desert island — Paradise Palms and the hotel hub',
   },
   {
     slot: ':20 – :40',
-    map: 'Oasis',
-    theme: 'Desert theme built around a large hotel POI',
+    map: 'Slurp Rush',
+    theme: 'Chapter 2 Slurp island — Slurpy Swamp, Steamy Stacks, Dirty Docks',
   },
   {
     slot: ':40 – :00',
-    map: 'Elite Stronghold',
-    theme: 'Newest Reload island, competitive-focused layout',
+    map: 'Springfield',
+    theme: 'The Simpsons Reload island — The Confidential, 50-player lobbies',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function MapRotationPage() {
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               What Reload map is on right now, how many minutes until it changes, and which island is
               next. Reload rotates every <strong className="text-foreground">20 minutes</strong> —
-              Venture, Oasis, then Elite Stronghold — and this page tracks it live so you don&apos;t
+              Oasis, Slurp Rush, then Springfield — and this page tracks it live so you don&apos;t
               have to open the lobby to check.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
@@ -96,7 +96,7 @@ export default function MapRotationPage() {
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Reload slots are tied to minutes past the hour, so the schedule is identical in every
               region and timezone. If it is <strong className="text-foreground">:25</strong> where you
-              are, Oasis is live everywhere.
+              are, Slurp Rush is live everywhere.
             </p>
             <div className="overflow-hidden rounded-xl border border-border">
               <table className="w-full text-left text-sm">
@@ -137,31 +137,32 @@ export default function MapRotationPage() {
             <div className="space-y-5 max-w-3xl">
               <div>
                 <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                  Venture — live at :00
+                  Oasis — live at :00
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  The original Reload island, built from the Chapter 1 map. Tilted Towers pulls a big
-                  chunk of the lobby, so expect fast early fights and quick re-queues. Best pick if
-                  you want kills over placement.
+                  Desert island built around a hotel hub and Paradise Palms-style POIs. Fights spread
+                  out more than Springfield, so positioning and mid-range trades matter more than
+                  raw close-range aim.
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                  Oasis — live at :20
+                  Slurp Rush — live at :20
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  Desert-themed island centred on a large hotel structure with smaller arid POIs
-                  around it. Fights spread out more than Venture, so positioning and mid-range
-                  trades matter more than raw close-range aim.
+                  Chapter 2 Slurp island — Slurpy Swamp, Steamy Stacks, Dirty Docks. Water and Slurp
+                  pickups keep fights going, so expect longer mid-games and a lot of third-partying
+                  around the swamp.
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                  Elite Stronghold — live at :40
+                  Springfield — live at :40
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  The newest island in the pool, with a tighter competitive-style layout. Good window
-                  for practising endgame rotations since the storm closes onto predictable ground.
+                  The Simpsons Reload island with 50-player lobbies and The Confidential, a
+                  no-combat POI. Tight streets, Simpsons loot, and the John Wick Sprite — queue a
+                  couple of minutes early so you don&apos;t miss the window.
                 </p>
               </div>
             </div>
@@ -230,7 +231,7 @@ export default function MapRotationPage() {
               rely on quick re-queues. If every island were selectable at once, the player base would
               split across playlists and queue times would climb — especially in smaller regions and
               off-peak hours. A timed rotation keeps a single healthy queue while still cycling
-              favourites like Venture and Oasis through every hour.
+              favourites like Oasis and Springfield through every hour.
             </p>
           </section>
 

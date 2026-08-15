@@ -201,7 +201,7 @@
       },
       "map-rotation": {
         "title": "Map Rotation Timer",
-        "description": "Live Reload map schedule — Venture, Oasis, Elite Stronghold — with countdown to the next island, plus Blitz status."
+        "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
       },
       "player-count": {
         "title": "Player Count",
@@ -590,6 +590,11 @@
       "vbucksSuffix": "V-Bucks",
       "removeAria": "Remove {item}",
       "addAria": "Add {item}",
+      "shopWishlistTitle": "From item shop wishlist",
+      "shopWishlistInclude": "Include in total",
+      "shopWishlistNoPrice": "No price saved",
+      "shopWishlistHint": "Star items on the",
+      "shopWishlistLabel": "Item shop wishlist",
       "customAmountTitle": "Custom V-Bucks Amount",
       "customAmountPlaceholder": "e.g. 500",
       "customAmountHint": "Add a specific number of V-Bucks not covered above.",
@@ -1133,7 +1138,23 @@
       "tabs": {
         "shop": "Today's Shop",
         "new": "New / Incoming",
-        "browse": "Browse Catalog"
+        "browse": "Browse Catalog",
+        "wishlist": "Wishlist"
+      },
+      "live": {
+        "newItemsIn": "New items in",
+        "resetHint": "Shop refresh · 00:00 UTC",
+        "leavingCount": "{count} leaving tonight",
+        "leavingTonight": "Leaving tonight",
+        "wishlistInShop": "Wishlist in today's shop"
+      },
+      "wishlist": {
+        "description": "Star skins in the shop, New, or catalog. Starred items that return after leaving get a Back badge. Prices roll into the V-Bucks calculator.",
+        "empty": "Nothing starred yet. Open today's shop and tap the star on a skin.",
+        "inShop": "In shop",
+        "notInShop": "Not in today's shop",
+        "back": "It's back",
+        "vbucksLink": "Add these to the V-Bucks calculator"
       },
       "errors": {
         "loadShop": "Could not load today's Item Shop. Try again in a moment.",
@@ -1187,7 +1208,9 @@
         "showcaseVideo": "Showcase video",
         "openYoutube": "Open on YouTube",
         "noVideo": "No showcase video available for this emote.",
-        "noDescription": "No description provided."
+        "noDescription": "No description provided.",
+        "wish": "Add to wishlist",
+        "unwish": "Remove from wishlist"
       }
     }
   },

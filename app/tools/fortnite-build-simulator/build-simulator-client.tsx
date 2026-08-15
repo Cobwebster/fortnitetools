@@ -6,14 +6,16 @@ import {
   BUILD_BINDS,
   DEFAULT_MATS,
   HUD_CONTROLS,
+  MAT_COLORS,
   MAT_ICONS,
   MAT_KEYS,
   MAT_LABELS,
   PHYSICS_PARITY_NOTE,
-  PIECE_COST,
   PIECE_KEYS,
   PIECE_LABELS,
   canAfford,
+  pieceHpNow,
+  pieceMaxHp,
   pieceKey,
   spendMats,
   supportedPieceKeys,
@@ -21,6 +23,7 @@ import {
   type MatType,
   type MatsState,
   type PieceType,
+  type PlacementHint,
 } from '@/lib/build-simulator'
 import {
   applyEditSelection,
@@ -56,6 +59,8 @@ export function BuildSimulatorClient() {
   const [hoverEditTile, setHoverEditTile] = useState(-1)
   const [stats, setStats] = useState<PracticeStats>(EMPTY_STATS)
   const [respawnToken, setRespawnToken] = useState(0)
+  const [aimedPieceId, setAimedPieceId] = useState<string | null>(null)
+  const [pickaxeToken, setPickaxeToken] = useState(0)
 
   const piecesRef = useRef(pieces)
   const matsRef = useRef(mats)
@@ -64,6 +69,7 @@ export function BuildSimulatorClient() {
   const infiniteRef = useRef(infiniteMats)
   const rotOffsetRef = useRef(rotOffset)
   const editSessionRef = useRef(editSession)
+  const placementHintRef = useRef<PlacementHint>({ strafe: 0, forward: 0, airborne: false })
   piecesRef.current = pieces
   matsRef.current = mats
   selectedPieceRef.current = selectedPiece
@@ -147,6 +153,8 @@ export function BuildSimulatorClient() {
       id: key,
       mat,
       tiles: fullEditTiles(draft.type),
+      placedAt: Date.now(),
+      damage: 0,
     }
     setPieces((prev) => [...prev, next])
     setMats((prev) => spendMats(prev, mat, infinite))
@@ -169,6 +177,23 @@ export function BuildSimulatorClient() {
     })
     if (removed) setStats((s) => ({ ...s, broken: s.broken + 1 }))
     return removed
+  }, [])
+
+  const damagePiece = useCallback((pieceId: string, amount: number) => {
+    const piece = piecesRef.current.find((p) => p.id === pieceId)
+    if (!piece) return 0
+    const nextDamage = (piece.damage ?? 0) + amount
+    const hp = pieceHpNow({ ...piece, damage: nextDamage })
+    if (hp <= 0) {
+      destroyPiece(pieceId)
+      return 0
+    }
+    setPieces((prev) => prev.map((p) => (p.id === pieceId ? { ...p, damage: nextDamage } : p)))
+    return hp
+  }, [destroyPiece])
+
+  const swingPickaxe = useCallback(() => {
+    setPickaxeToken((n) => n + 1)
   }, [])
 
   const rotatePiece = useCallback((dir: 1 | -1 = 1) => {
@@ -212,6 +237,11 @@ export function BuildSimulatorClient() {
       rotatePiece,
       tryPlace,
       destroyPiece,
+      damagePiece,
+      aimedPieceId,
+      setAimedPieceId,
+      pickaxeToken,
+      swingPickaxe,
       beginEdit,
       setTileSelected,
       resetEditDraft,
@@ -229,6 +259,7 @@ export function BuildSimulatorClient() {
       infiniteRef,
       rotOffsetRef,
       editSessionRef,
+      placementHintRef,
     }),
     [
       pieces,
@@ -245,6 +276,10 @@ export function BuildSimulatorClient() {
       rotatePiece,
       tryPlace,
       destroyPiece,
+      damagePiece,
+      aimedPieceId,
+      pickaxeToken,
+      swingPickaxe,
       beginEdit,
       setTileSelected,
       resetEditDraft,
@@ -341,7 +376,10 @@ export function BuildSimulatorClient() {
 
   return (
     <SimContext.Provider value={api}>
-      <div className="relative overflow-hidden rounded-xl border border-border bg-[#6fa8d4]">
+      <div
+        data-build-sim
+        className="relative overflow-hidden overscroll-none rounded-xl border border-border bg-[#6fa8d4]"
+      >
         <div className="relative h-[min(72vh,720px)] min-h-[480px] w-full">
           <BuildCanvas />
         </div>
@@ -350,6 +388,54 @@ export function BuildSimulatorClient() {
 
       <p className="mt-4 max-w-3xl text-xs leading-relaxed text-muted-foreground">{PHYSICS_PARITY_NOTE}</p>
     </SimContext.Provider>
+  )
+}
+
+function PieceGlyph({ type, color }: { type: PieceType; color: string }) {
+  if (type === 'wall') {
+    return (
+      <svg viewBox="0 0 40 40" className="h-9 w-9" aria-hidden>
+        <rect x="7" y="5" width="26" height="30" rx="1.5" fill={color} stroke="#111" strokeWidth="1.4" />
+        <rect x="10" y="8" width="20" height="24" fill="none" stroke="#000" strokeOpacity="0.28" />
+        <path d="M7 20h26M20 5v30" stroke="#000" strokeOpacity="0.18" />
+      </svg>
+    )
+  }
+  if (type === 'floor') {
+    return (
+      <svg viewBox="0 0 40 40" className="h-9 w-9" aria-hidden>
+        <rect x="5" y="12" width="30" height="16" rx="1" fill={color} stroke="#111" strokeWidth="1.4" />
+        <path d="M5 20h30M20 12v16" stroke="#000" strokeOpacity="0.2" />
+      </svg>
+    )
+  }
+  if (type === 'ramp') {
+    return (
+      <svg viewBox="0 0 40 40" className="h-9 w-9" aria-hidden>
+        <path d="M6 32 L34 8 v8 L14 32z" fill={color} stroke="#111" strokeWidth="1.4" />
+        <path d="M10 32 L34 12" stroke="#000" strokeOpacity="0.22" />
+      </svg>
+    )
+  }
+  return (
+    <svg viewBox="0 0 40 40" className="h-9 w-9" aria-hidden>
+      <path d="M20 6 L34 32 H6z" fill={color} stroke="#111" strokeWidth="1.4" />
+      <path d="M20 10 L30 30 H10z" fill="none" stroke="#000" strokeOpacity="0.22" />
+    </svg>
+  )
+}
+
+function MatPips({ count, infinite }: { count: number; infinite: boolean }) {
+  const filled = infinite ? 10 : Math.min(10, Math.round(count / 50))
+  return (
+    <div className="flex gap-px">
+      {Array.from({ length: 10 }, (_, i) => (
+        <span
+          key={i}
+          className={`h-1.5 w-1.5 rounded-[1px] ${i < filled ? 'bg-white' : 'bg-white/20'}`}
+        />
+      ))}
+    </div>
   )
 }
 
@@ -363,6 +449,8 @@ function BuildHud() {
     rotOffset,
     editSession,
     stats,
+    pieces: worldPieces,
+    aimedPieceId,
     setSelectedPiece,
     setSelectedMat,
     setInfiniteMats,
@@ -378,13 +466,17 @@ function BuildHud() {
 
   const pieces: PieceType[] = ['wall', 'floor', 'ramp', 'cone']
   const matTypes: MatType[] = ['wood', 'brick', 'metal']
+  const glyphColor = MAT_COLORS[selectedMat]
+  const aimed = worldPieces.find((p) => p.id === aimedPieceId)
+  const aimedHp = aimed ? pieceHpNow(aimed) : 0
+  const aimedMax = aimed ? pieceMaxHp(aimed.mat) : 1
 
   return (
     <>
       {!locked && (
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
           <p className="rounded-lg bg-black/75 px-4 py-2 text-sm font-medium text-white shadow-lg">
-            Click arena to lock mouse — hold click to turbo-build · RMB break · G edit
+            Click arena to lock mouse — hold click to turbo-build · RMB pickaxe · G edit
           </p>
         </div>
       )}
@@ -421,136 +513,154 @@ function BuildHud() {
         </div>
       )}
 
-      {/* Mats + tools */}
-      <div className="pointer-events-none absolute left-3 top-3 right-3 z-20 flex flex-wrap items-start justify-between gap-2">
-        <div className="pointer-events-auto flex flex-wrap gap-2">
-          {matTypes.map((m) => (
-            <button
-              key={m}
-              type="button"
-              onClick={() => setSelectedMat(m)}
-              className={`flex items-center gap-2 rounded-md border px-2 py-1.5 text-xs font-semibold uppercase tracking-wide transition ${
-                selectedMat === m
-                  ? 'border-white/80 bg-black/70 text-white ring-1 ring-white/40'
-                  : 'border-white/20 bg-black/55 text-white/85 hover:bg-black/70'
-              }`}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={MAT_ICONS[m]}
-                alt=""
-                width={28}
-                height={28}
-                className="h-7 w-7 object-contain drop-shadow"
-                draggable={false}
-              />
-              <span className="flex flex-col items-start leading-tight">
-                <span className="text-[10px] text-white/55">{MAT_KEYS[m]}</span>
-                <span>
-                  {MAT_LABELS[m]} {infiniteMats ? '∞' : mats[m]}
-                </span>
-              </span>
-            </button>
-          ))}
+      {locked && aimed && (
+        <div className="pointer-events-none absolute left-1/2 top-[18%] z-20 w-40 -translate-x-1/2">
+          <div className="mb-0.5 flex justify-between text-[10px] font-bold uppercase tracking-wide text-white/80">
+            <span>{MAT_LABELS[aimed.mat]} {PIECE_LABELS[aimed.type]}</span>
+            <span>
+              {aimedHp}/{aimedMax}
+            </span>
+          </div>
+          <div className="h-1.5 overflow-hidden rounded-sm bg-black/70 ring-1 ring-black/50">
+            <div
+              className="h-full bg-lime-400"
+              style={{ width: `${Math.max(0, Math.min(100, (aimedHp / aimedMax) * 100))}%` }}
+            />
+          </div>
         </div>
-        <div className="pointer-events-auto flex flex-wrap gap-2">
+      )}
+
+      <div className="pointer-events-none absolute right-3 top-3 z-20 flex flex-col items-end gap-1.5">
+        <div className="pointer-events-auto flex flex-wrap justify-end gap-1.5">
           <button
             type="button"
             onClick={() => rotatePiece(1)}
-            className="rounded-md border border-white/20 bg-black/55 px-2.5 py-1.5 text-xs font-semibold text-white/85 hover:bg-black/70"
+            className="rounded border border-white/20 bg-black/55 px-2 py-1 text-[10px] font-semibold text-white/80 hover:bg-black/70"
           >
-            Rotate (R) · {rotOffset * 90}°
+            R · {rotOffset * 90}°
           </button>
           <button
             type="button"
             onClick={() => setInfiniteMats(!infiniteMats)}
-            className={`rounded-md border px-2.5 py-1.5 text-xs font-semibold transition ${
+            className={`rounded border px-2 py-1 text-[10px] font-semibold ${
               infiniteMats
                 ? 'border-amber-400/60 bg-amber-400/20 text-amber-100'
-                : 'border-white/20 bg-black/55 text-white/80 hover:bg-black/70'
+                : 'border-white/20 bg-black/55 text-white/75 hover:bg-black/70'
             }`}
           >
-            Infinite mats (I)
+            ∞ mats
           </button>
           <button
             type="button"
             onClick={requestRespawn}
-            className="rounded-md border border-white/20 bg-black/55 px-2.5 py-1.5 text-xs font-semibold text-white/80 hover:bg-black/70"
+            className="rounded border border-white/20 bg-black/55 px-2 py-1 text-[10px] font-semibold text-white/75 hover:bg-black/70"
           >
-            Respawn (B)
+            Respawn
           </button>
           <button
             type="button"
             onClick={refillMats}
-            className="rounded-md border border-white/20 bg-black/55 px-2.5 py-1.5 text-xs font-semibold text-white/80 hover:bg-black/70"
+            className="rounded border border-white/20 bg-black/55 px-2 py-1 text-[10px] font-semibold text-white/75 hover:bg-black/70"
           >
-            Refill (M)
+            Refill
           </button>
           <button
             type="button"
             onClick={resetArena}
-            className="rounded-md border border-white/20 bg-black/55 px-2.5 py-1.5 text-xs font-semibold text-white/80 hover:bg-black/70"
+            className="rounded border border-white/20 bg-black/55 px-2 py-1 text-[10px] font-semibold text-white/75 hover:bg-black/70"
           >
-            Clear builds (X)
+            Clear
           </button>
         </div>
+        {locked && (
+          <div className="rounded border border-white/10 bg-black/55 px-2 py-1 text-[10px] text-white/80">
+            <span className="text-sky-300">{stats.placed}</span>
+            <span className="mx-1 text-white/25">·</span>
+            <span className="text-amber-200">{stats.edited}</span>
+            <span className="mx-1 text-white/25">·</span>
+            <span className="text-red-300">{stats.broken}</span>
+            <button
+              type="button"
+              onClick={resetStats}
+              className="pointer-events-auto ml-2 text-white/40 underline-offset-2 hover:text-white/80 hover:underline"
+            >
+              reset
+            </button>
+          </div>
+        )}
       </div>
 
-      {/* Practice counters */}
-      {locked && (
-        <div className="pointer-events-none absolute right-3 top-14 z-20 rounded-md border border-white/15 bg-black/65 px-2.5 py-1.5 text-[10px] text-white/85">
-          <span className="text-sky-300">{stats.placed}</span> placed
-          <span className="mx-1.5 text-white/30">·</span>
-          <span className="text-amber-200">{stats.edited}</span> edits
-          <span className="mx-1.5 text-white/30">·</span>
-          <span className="text-red-300">{stats.broken}</span> broken
-          <button
-            type="button"
-            onClick={resetStats}
-            className="pointer-events-auto ml-2 text-white/45 underline-offset-2 hover:text-white/80 hover:underline"
-          >
-            reset
-          </button>
+      {!locked && (
+        <div className="pointer-events-none absolute bottom-24 left-3 z-20 hidden max-w-[220px] rounded-md border border-white/10 bg-black/60 p-2 text-[10px] leading-snug text-white/80 sm:block">
+          <ul className="space-y-0.5">
+            {HUD_CONTROLS.slice(0, 6).map((row) => (
+              <li key={row.action} className="flex gap-2">
+                <span className="shrink-0 font-mono text-amber-200">{row.keys}</span>
+                <span className="text-white/65">{row.action}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 
-      {/* On-screen controls */}
-      <div className="pointer-events-none absolute bottom-20 left-3 z-20 hidden max-w-[240px] rounded-lg border border-white/15 bg-black/70 p-2.5 text-[11px] leading-snug text-white/90 sm:block">
-        <p className="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-sky-300">Controls</p>
-        <ul className="space-y-1">
-          {HUD_CONTROLS.map((row) => (
-            <li key={row.action} className="flex gap-2">
-              <span className="shrink-0 font-mono font-semibold text-amber-200">{row.keys}</span>
-              <span className="text-white/75">{row.action}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-2 text-[10px] text-white/45">
-          Blue hologram = place · red = blocked · {PIECE_COST} mats/piece
-        </p>
-      </div>
+      <div className="pointer-events-none absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-end gap-2">
+        <div className="flex flex-col gap-1">
+          {matTypes.map((m) => {
+            const active = selectedMat === m
+            return (
+              <button
+                key={m}
+                type="button"
+                onClick={() => setSelectedMat(m)}
+                className={`pointer-events-auto flex items-center gap-1.5 rounded-sm border px-1.5 py-1 ${
+                  active
+                    ? 'border-white/80 bg-black/75 ring-1 ring-white/50'
+                    : 'border-white/15 bg-black/55 hover:bg-black/70'
+                }`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={MAT_ICONS[m]}
+                  alt=""
+                  width={22}
+                  height={22}
+                  className="h-[22px] w-[22px] object-contain drop-shadow"
+                  draggable={false}
+                />
+                <span className="flex min-w-[2.4rem] flex-col items-start leading-none">
+                  <span className="text-[9px] font-bold text-white/45">{MAT_KEYS[m]}</span>
+                  <span className="text-[11px] font-bold tabular-nums text-white">
+                    {infiniteMats ? '∞' : mats[m]}
+                  </span>
+                  <MatPips count={mats[m]} infinite={infiniteMats} />
+                </span>
+              </button>
+            )
+          })}
+        </div>
 
-      <div className="pointer-events-none absolute bottom-20 left-3 right-3 z-20 rounded-lg border border-white/15 bg-black/70 p-2 text-[10px] text-white/85 sm:hidden">
-        Hold click turbo · Q/F/C/V place · RMB break · G edit · Ctrl crouch
-      </div>
-
-      {/* Piece select */}
-      <div className="pointer-events-none absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 gap-2">
-        {pieces.map((p) => (
-          <button
-            key={p}
-            type="button"
-            onClick={() => setSelectedPiece(p)}
-            className={`pointer-events-auto min-w-[4.25rem] rounded-lg border px-2.5 py-2 text-center transition ${
-              selectedPiece === p
-                ? 'border-sky-400 bg-sky-500/30 text-white'
-                : 'border-white/20 bg-black/60 text-white/75 hover:bg-black/75'
-            }`}
-          >
-            <span className="block text-[10px] font-bold text-amber-200">{PIECE_KEYS[p]}</span>
-            <span className="text-xs font-bold uppercase tracking-wide">{PIECE_LABELS[p]}</span>
-          </button>
-        ))}
+        <div className="flex items-end gap-1 rounded-sm border border-white/15 bg-black/55 p-1">
+          {pieces.map((p) => {
+            const active = selectedPiece === p
+            return (
+              <button
+                key={p}
+                type="button"
+                onClick={() => setSelectedPiece(p)}
+                className={`pointer-events-auto flex w-[4.4rem] flex-col items-center rounded-sm border px-1 py-1.5 ${
+                  active
+                    ? 'border-white bg-white/15 shadow-[0_0_0_1px_rgba(255,255,255,0.35)]'
+                    : 'border-white/10 bg-black/40 hover:bg-black/60'
+                }`}
+              >
+                <PieceGlyph type={p} color={active ? glyphColor : '#9ca3af'} />
+                <span className="mt-0.5 text-[9px] font-bold uppercase tracking-wider text-white/50">
+                  {PIECE_KEYS[p]}
+                </span>
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       {locked && (

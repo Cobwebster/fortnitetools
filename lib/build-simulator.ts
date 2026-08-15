@@ -17,6 +17,10 @@ export type BuildPiece = {
    * `true` = present. Omitted / full = unedited piece.
    */
   tiles?: boolean[]
+  /** Epoch ms when placed — drives HP build-up + yellow phase. */
+  placedAt?: number
+  /** Accumulated pickaxe / break damage. */
+  damage?: number
 }
 
 export type MatsState = Record<MatType, number>
@@ -108,10 +112,46 @@ export const BUILD_BINDS = {
 /** Hold LMB turbo interval — close to Fortnite spam pace for practice. */
 export const TURBO_BUILD_MS = 55
 
+/** Community-known piece HP (not a datamined dump). Wood finishes first. */
+export const MAT_HP: Record<MatType, { max: number; start: number; buildMs: number }> = {
+  wood: { max: 150, start: 100, buildMs: 4000 },
+  brick: { max: 300, start: 90, buildMs: 10000 },
+  metal: { max: 400, start: 90, buildMs: 18000 },
+}
+
+export const PICKAXE_DAMAGE = 50
+export const PICKAXE_SWING_MS = 420
+export const PHASE_MS = 620
+
+export function pieceHpNow(piece: Pick<BuildPiece, 'mat' | 'placedAt' | 'damage'>, now = Date.now()) {
+  const spec = MAT_HP[piece.mat]
+  const age = Math.max(0, now - (piece.placedAt ?? now))
+  const t = Math.min(1, age / spec.buildMs)
+  const built = spec.start + (spec.max - spec.start) * t
+  return Math.max(0, Math.round(built - (piece.damage ?? 0)))
+}
+
+export function pieceMaxHp(mat: MatType) {
+  return MAT_HP[mat].max
+}
+
+export function isPhasing(piece: Pick<BuildPiece, 'placedAt'>, now = Date.now()) {
+  if (!piece.placedAt) return false
+  return now - piece.placedAt < PHASE_MS
+}
+
+export type PlacementHint = {
+  /** Camera-relative strafe: −1 left, +1 right. */
+  strafe: number
+  /** Camera-relative forward: −1 back, +1 forward. */
+  forward: number
+  airborne: boolean
+}
+
 export const HUD_CONTROLS: { keys: string; action: string }[] = [
   { keys: 'Click / hold', action: 'Place · turbo-build while held' },
   { keys: 'Q F C V', action: 'Select piece + place (while locked)' },
-  { keys: 'RMB', action: 'Break aimed piece (cascade unsupported)' },
+  { keys: 'RMB', action: 'Pickaxe — 50 dmg / swing, builds have HP' },
   { keys: 'G hold', action: 'Edit — select tiles to remove, release to confirm' },
   { keys: 'T / Esc', action: 'Reset edit to full · cancel edit' },
   { keys: 'WASD · Shift · Ctrl', action: 'Move · sprint · crouch' },
@@ -227,7 +267,8 @@ export function resolvePlacement(
   eye: Vec3,
   lookDir: Vec3,
   playerFeet: Vec3,
-  rotOffset: number = 0
+  rotOffset: number = 0,
+  hint?: PlacementHint
 ): PlacementResult {
   const aim = aimPointWithinRange(eye, lookDir)
 
@@ -239,55 +280,69 @@ export function resolvePlacement(
   const flat = Math.hypot(lookDir.x, lookDir.z)
   const nx = flat > 0.001 ? lookDir.x / flat : 0
   const nz = flat > 0.001 ? lookDir.z / flat : -1
+  const standCx = snapToCell(playerFeet.x)
+  const standCz = snapToCell(playerFeet.z)
+  const standCy = snapToCell(Math.max(0, playerFeet.y - 0.02))
+  const climbT = (playerFeet.y - standCy * CELL) / CELL
+  const airborne = hint?.airborne ?? false
+  const strafe = hint?.strafe ?? 0
+  const goingFwd = (hint?.forward ?? 0) > 0.25
+  const lookingUp = lookDir.y > 0.16
+  const lookingDown = lookDir.y < -0.38
+  const turning90 = airborne && (Math.abs(strafe) > 0.35 || lookingUp)
 
-  // Walls: tile in front; height follows look for 90s.
-  // Ramps: FN ramp-rush — place ahead, stepping up a tier as you run up.
+  // Walls: on the ground, one tile ahead. In a 90 / retake, snap to the side
+  // of the cell you're in (or the next height) so the box closes as you jump.
   if (type === 'wall') {
-    const ahead = CELL * 0.7
-    cx = snapToCell(playerFeet.x + nx * ahead)
-    cz = snapToCell(playerFeet.z + nz * ahead)
-    if (lookDir.y > 0.18) {
-      const up = eye.y + lookDir.y * CELL * 1.35
-      cy = snapToCell(Math.max(0, up - CELL * 0.35))
-    } else if (lookDir.y < -0.4) {
-      cy = snapToCell(Math.max(0, aim.y))
+    if (turning90) {
+      cx = standCx
+      cz = standCz
+      cy = standCy + (climbT > 0.22 || lookDir.y > 0.22 ? 1 : 0)
+      if (Math.abs(strafe) > 0.55 && !lookingUp) {
+        const rightX = nz
+        const rightZ = -nx
+        const side = Math.sign(strafe)
+        cx = snapToCell(playerFeet.x + rightX * side * CELL * 0.55)
+        cz = snapToCell(playerFeet.z + rightZ * side * CELL * 0.55)
+      }
     } else {
-      cy = snapToCell(Math.max(0, playerFeet.y + 0.2))
+      const ahead = CELL * 0.7
+      cx = snapToCell(playerFeet.x + nx * ahead)
+      cz = snapToCell(playerFeet.z + nz * ahead)
+      if (lookingUp) {
+        const up = eye.y + lookDir.y * CELL * 1.35
+        cy = snapToCell(Math.max(0, up - CELL * 0.35))
+      } else if (lookingDown) {
+        cy = snapToCell(Math.max(0, aim.y))
+      } else {
+        cy = snapToCell(Math.max(0, playerFeet.y + 0.2))
+      }
     }
   } else if (type === 'ramp') {
-    const standCx = snapToCell(playerFeet.x)
-    const standCz = snapToCell(playerFeet.z)
-    const standCy = snapToCell(Math.max(0, playerFeet.y - 0.02))
-    // Place into the next tile in look direction (run-forward ramp rush).
-    const ahead = CELL * 0.85
+    const ahead = turning90 || lookingUp ? CELL * 0.35 : CELL * 0.85
     cx = snapToCell(playerFeet.x + nx * ahead)
     cz = snapToCell(playerFeet.z + nz * ahead)
     const movedHoriz = cx !== standCx || cz !== standCz
-    // How far up the current cell you are (0 = floor, 1 = ceiling).
-    const climbT = (playerFeet.y - standCy * CELL) / CELL
-
-    if (lookDir.y > 0.22) {
-      // Look up → next tier (90s / retakes)
+    if (lookingUp || (airborne && goingFwd)) {
       cy = standCy + 1
-    } else if (lookDir.y < -0.4) {
+      if (!movedHoriz && (turning90 || lookingUp)) {
+        cx = standCx
+        cz = standCz
+      }
+    } else if (lookingDown) {
       cy = Math.max(0, standCy - (climbT < 0.25 ? 1 : 0))
-    } else if (movedHoriz && climbT > 0.28) {
-      // Running up a ramp: next piece is one forward AND one up.
-      cy = standCy + 1
     } else if (movedHoriz && climbT > 0.08) {
-      // Early on the slope — still prefer the upper-forward cell so chains connect.
       cy = standCy + 1
     } else {
       cy = standCy
     }
     if (cy < 0) cy = 0
   } else if (type === 'floor' || type === 'cone') {
-    if (lookDir.y > 0.2) {
-      // Ceiling / cone above — box fight staple
-      cx = snapToCell(playerFeet.x + nx * CELL * 0.15)
-      cz = snapToCell(playerFeet.z + nz * CELL * 0.15)
-      cy = snapToCell(Math.max(0, playerFeet.y + CELL * 0.9))
-    } else if (lookDir.y < -0.2) {
+    if (lookingUp || (airborne && lookDir.y > 0.05)) {
+      cx = standCx
+      cz = standCz
+      cy = standCy + 1
+    } else if (lookingDown) {
       cx = snapToCell(playerFeet.x + nx * CELL * 0.35)
       cz = snapToCell(playerFeet.z + nz * CELL * 0.35)
       cy = snapToCell(Math.max(0, playerFeet.y + 0.05))
@@ -469,12 +524,10 @@ export function evaluateGhost(opts: {
 }
 
 export const BUILD_SIM_V2_NOTES = [
-  'Piece HP build-up + yellow phasing',
   'Timed drills (90s, box-fight scenarios, piece-count goals)',
-  'Edit-on-release setting + stair pattern presets',
-  'Pickaxe harvest for mats',
-  'Custom keybind remapping',
+  'Stair pattern presets + bind remapping',
+  'Pickaxe harvest for mats (not just structure damage)',
 ] as const
 
 export const PHYSICS_PARITY_NOTE =
-  'Practice sandbox tuned for Fortnite building muscle memory: turbo-build (hold click), Q/F/C/V place, RMB break with support cascade, G-edit with drag paint, 3-tile range, grid snap, coyote jump. Not Epic-accurate (no piece HP / turbo settings parity).'
+  'Browser practice sandbox: turbo-build, Q/F/C/V, pickaxe HP (wood 150 / stone 300 / metal 400), yellow phase-through, G-edit, 3-tile range. Movement and 90s snaps are Fortnite-like, not Epic-accurate.'

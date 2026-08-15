@@ -126,8 +126,65 @@ export const SPAWN_LAYERS: SpawnLayer[] = [
   { id: 'dumpsters', label: 'Dumpsters' },
 ]
 
-/** Default layers on when the map loads. */
-export const DEFAULT_ACTIVE_SPAWNS: SpawnLayerId[] = ['extraction_sites']
+/** Default layers on when the map loads — the pins people actually land for. */
+export const DEFAULT_ACTIVE_SPAWNS: SpawnLayerId[] = [
+  'extraction_sites',
+  'vaults',
+  'sprite_chests',
+  'reboot_vans',
+]
+
+export const SPAWN_LAYER_GROUPS: { id: string; label: string; layers: SpawnLayerId[] }[] = [
+  {
+    id: 'loot',
+    label: 'Loot',
+    layers: [
+      'vaults',
+      'sprite_chests',
+      'chests',
+      'rare_chests',
+      'ammo_boxes',
+      'safes',
+      'cash_registers',
+    ],
+  },
+  {
+    id: 'vehicles',
+    label: 'Vehicles',
+    layers: ['cars_sport', 'cars_suv', 'boats', 'batmobile', 'offroad_tires', 'service_stations'],
+  },
+  {
+    id: 'utility',
+    label: 'Utility',
+    layers: [
+      'extraction_sites',
+      'reboot_vans',
+      'launchpads',
+      'ziplines',
+      'vending_machines',
+      'mending_machines',
+      'flushers',
+      'teleporters',
+      'jobboards_supplydrop',
+      'jobboards_treasure',
+    ],
+  },
+  {
+    id: 'world',
+    label: 'World',
+    layers: [
+      'campfires',
+      'noms',
+      'mushrooms',
+      'slurp_barrels',
+      'slurp_trucks',
+      'fishing_rods',
+      'fishing_holes',
+      'bushes',
+      'dumpsters',
+    ],
+  },
+]
 
 export type QuestLayer = {
   id: string

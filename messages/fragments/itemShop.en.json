@@ -12,7 +12,23 @@
   "tabs": {
     "shop": "Today's Shop",
     "new": "New / Incoming",
-    "browse": "Browse Catalog"
+    "browse": "Browse Catalog",
+    "wishlist": "Wishlist"
+  },
+  "live": {
+    "newItemsIn": "New items in",
+    "resetHint": "Shop refresh · 00:00 UTC",
+    "leavingCount": "{count} leaving tonight",
+    "leavingTonight": "Leaving tonight",
+    "wishlistInShop": "Wishlist in today's shop"
+  },
+  "wishlist": {
+    "description": "Star skins in the shop, New, or catalog. Starred items that return after leaving get a Back badge. Prices roll into the V-Bucks calculator.",
+    "empty": "Nothing starred yet. Open today's shop and tap the star on a skin.",
+    "inShop": "In shop",
+    "notInShop": "Not in today's shop",
+    "back": "It's back",
+    "vbucksLink": "Add these to the V-Bucks calculator"
   },
   "errors": {
     "loadShop": "Could not load today's Item Shop. Try again in a moment.",
@@ -66,6 +82,8 @@
     "showcaseVideo": "Showcase video",
     "openYoutube": "Open on YouTube",
     "noVideo": "No showcase video available for this emote.",
-    "noDescription": "No description provided."
+    "noDescription": "No description provided.",
+    "wish": "Add to wishlist",
+    "unwish": "Remove from wishlist"
   }
 }

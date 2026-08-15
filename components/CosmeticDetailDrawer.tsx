@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { X, ExternalLink, Package, Film } from 'lucide-react'
+import { X, ExternalLink, Package, Film, Star } from 'lucide-react'
+import type { ShopWishlistItem } from '@/lib/shop-wishlist'
 import {
   RARITY_COLORS,
   type CosmeticDetail,
@@ -72,9 +73,11 @@ type Props = {
   cosmeticId: string | null
   onClose: () => void
   onSelectId: (id: string) => void
+  wished?: boolean
+  onToggleWish?: (item: Omit<ShopWishlistItem, 'addedAt' | 'missedShop'>) => void
 }
 
-export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props) {
+export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId, wished, onToggleWish }: Props) {
   const t = useTranslations('tools.itemShop.drawer')
   const [detail, setDetail] = useState<CosmeticDetail | null>(null)
   const [loading, setLoading] = useState(false)
@@ -151,14 +154,40 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId }: Props)
               {detail?.name || (loading ? t('loadingTitle') : t('itemTitle'))}
             </h2>
           </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className="rounded-md p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
-            aria-label={t('close')}
-          >
-            <X className="h-5 w-5" />
-          </button>
+          <div className="flex items-center gap-1">
+            {detail && onToggleWish ? (
+              <button
+                type="button"
+                onClick={() =>
+                  onToggleWish({
+                    id: detail.id,
+                    name: detail.name,
+                    type: detail.type,
+                    image: detail.image || detail.smallImage,
+                    price: detail.shop?.price ?? null,
+                    rarityValue: detail.rarityValue,
+                  })
+                }
+                aria-label={wished ? t('unwish') : t('wish')}
+                aria-pressed={wished}
+                className={`rounded-md p-2 ${
+                  wished
+                    ? 'text-amber-200 hover:bg-amber-400/10'
+                    : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                }`}
+              >
+                <Star className={`h-5 w-5 ${wished ? 'fill-current' : ''}`} />
+              </button>
+            ) : null}
+            <button
+              type="button"
+              onClick={onClose}
+              className="rounded-md p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+              aria-label={t('close')}
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
         </div>
 
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">

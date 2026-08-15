@@ -73,7 +73,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/map-rotation',
     title: 'Map Rotation Timer',
     description:
-      'Live Reload map schedule — Venture, Oasis, Elite Stronghold — with countdown to the next island, plus Blitz status.',
+      'Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status.',
     tags: ['Reload', 'Blitz', 'Timer'],
     category: 'map',
   },

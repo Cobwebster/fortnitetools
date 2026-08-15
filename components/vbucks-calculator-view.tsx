@@ -1,9 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
-import { ShoppingCart, TrendingUp, Info } from 'lucide-react'
+import { ShoppingCart, TrendingUp, Info, Star } from 'lucide-react'
+import { loadShopWishlist, type ShopWishlistItem } from '@/lib/shop-wishlist'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 
 // Official Fortnite V-Bucks pack pricing (USD) as of 2026
@@ -101,14 +102,29 @@ export function VBucksCalculatorView() {
 
   const [cart, setCart] = useState<Record<string, number>>({})
   const [customVBucks, setCustomVBucks] = useState('')
+  const [shopWishlist, setShopWishlist] = useState<ShopWishlistItem[]>([])
+  const [includeWishlist, setIncludeWishlist] = useState(true)
+
+  useEffect(() => {
+    const sync = () => setShopWishlist(loadShopWishlist())
+    sync()
+    window.addEventListener('storage', sync)
+    window.addEventListener('focus', sync)
+    return () => {
+      window.removeEventListener('storage', sync)
+      window.removeEventListener('focus', sync)
+    }
+  }, [])
 
   const totalFromCart = Object.entries(cart).reduce((acc, [id, qty]) => {
     const item = SHOP_ITEMS.find((i) => i.id === id)
     return acc + (item ? item.cost * qty : 0)
   }, 0)
 
+  const wishlistTotal = shopWishlist.reduce((acc, item) => acc + (item.price ?? 0), 0)
   const customAmount = parseInt(customVBucks) || 0
-  const totalNeeded = totalFromCart + customAmount
+  const totalNeeded = totalFromCart + customAmount + (includeWishlist ? wishlistTotal : 0)
+  const shopHref = '/tools/item-shop'
 
   const breakdown = totalNeeded > 0 ? cheapestWayToBuy(totalNeeded) : null
 
@@ -188,6 +204,46 @@ export function VBucksCalculatorView() {
               </div>
             ))}
 
+            {shopWishlist.length > 0 && (
+              <div className="rounded-xl border border-border bg-card p-5">
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <Star className="h-4 w-4 text-amber-300" aria-hidden="true" />
+                    <h2 className="text-sm font-bold uppercase tracking-wider text-foreground">
+                      {t('shopWishlistTitle')}
+                    </h2>
+                  </div>
+                  <label className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <input
+                      type="checkbox"
+                      checked={includeWishlist}
+                      onChange={(e) => setIncludeWishlist(e.target.checked)}
+                      className="accent-primary"
+                    />
+                    {t('shopWishlistInclude')}
+                  </label>
+                </div>
+                <div className="flex flex-col gap-2">
+                  {shopWishlist.map((item) => (
+                    <div key={item.id} className="flex items-center justify-between gap-3">
+                      <p className="text-sm font-medium text-foreground truncate">{item.name}</p>
+                      <p className="text-xs text-muted-foreground shrink-0">
+                        {item.price
+                          ? `${item.price.toLocaleString()} ${t('vbucksSuffix')}`
+                          : t('shopWishlistNoPrice')}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  {t('shopWishlistHint')}{' '}
+                  <Link href={shopHref} className="text-primary hover:underline">
+                    {t('relatedItemShop')}
+                  </Link>
+                </p>
+              </div>
+            )}
+
             {/* Custom amount */}
             <div className="rounded-xl border border-border bg-card p-5">
               <h2 className="text-sm font-bold uppercase tracking-wider text-foreground mb-3">{t('customAmountTitle')}</h2>
@@ -213,7 +269,7 @@ export function VBucksCalculatorView() {
                 <h2 className="text-sm font-bold uppercase tracking-wider text-foreground">{t('yourTotalTitle')}</h2>
               </div>
 
-              {Object.keys(cart).length === 0 && !customAmount ? (
+              {Object.keys(cart).length === 0 && !customAmount && !(includeWishlist && wishlistTotal > 0) ? (
                 <p className="text-sm text-muted-foreground">{t('emptyCart')}</p>
               ) : (
                 <>
@@ -230,6 +286,12 @@ export function VBucksCalculatorView() {
                         </div>
                       )
                     })}
+                    {includeWishlist && wishlistTotal > 0 && (
+                      <div className="flex justify-between text-xs gap-2">
+                        <span className="text-muted-foreground">{t('shopWishlistLabel')}</span>
+                        <span className="text-foreground font-medium">{wishlistTotal.toLocaleString()}</span>
+                      </div>
+                    )}
                     {customAmount > 0 && (
                       <div className="flex justify-between text-xs gap-2">
                         <span className="text-muted-foreground">{t('customLabel')}</span>

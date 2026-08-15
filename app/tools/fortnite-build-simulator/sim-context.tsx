@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, type MutableRefObject } from 'react'
-import type { BuildPiece, MatType, MatsState, PieceType } from '@/lib/build-simulator'
+import type { BuildPiece, MatType, MatsState, PieceType, PlacementHint } from '@/lib/build-simulator'
 
 /**
  * Fortnite edit session:
@@ -40,6 +40,12 @@ export type SimApi = {
   rotatePiece: (dir?: 1 | -1) => void
   tryPlace: (draft: Omit<BuildPiece, 'id' | 'mat'>) => boolean
   destroyPiece: (pieceId: string) => boolean
+  /** Pickaxe hit — returns remaining HP, or 0 if the piece (and cascade) died. */
+  damagePiece: (pieceId: string, amount: number) => number
+  aimedPieceId: string | null
+  setAimedPieceId: (id: string | null) => void
+  pickaxeToken: number
+  swingPickaxe: () => void
   beginEdit: (pieceId: string) => boolean
   /** Mark/unmark tile for removal (FN select). */
   setTileSelected: (index: number, selected: boolean) => void
@@ -58,6 +64,7 @@ export type SimApi = {
   infiniteRef: MutableRefObject<boolean>
   rotOffsetRef: MutableRefObject<number>
   editSessionRef: MutableRefObject<EditSession | null>
+  placementHintRef: MutableRefObject<PlacementHint>
 }
 
 export const SimContext = createContext<SimApi | null>(null)

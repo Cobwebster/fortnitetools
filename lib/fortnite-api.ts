@@ -88,7 +88,13 @@ type ApiCosmetic = {
   type?: ApiLabel
   rarity?: ApiLabel
   series?: { value?: string; colors?: string[]; backendValue?: string }
-  images?: { smallIcon?: string; icon?: string; featured?: string }
+  images?: {
+    smallIcon?: string
+    icon?: string
+    featured?: string
+    small?: string
+    large?: string
+  }
   added?: string
   set?: { value?: string; text?: string; backendValue?: string }
   introduction?: { text?: string; chapter?: string; season?: string; backendValue?: number }
@@ -130,7 +136,13 @@ type ApiShopEntry = {
 
 export function normalizeCosmetic(raw: ApiCosmetic): CosmeticItem | null {
   if (!raw?.id || !raw?.name) return null
-  const image = raw.images?.featured || raw.images?.icon || raw.images?.smallIcon || null
+  const image =
+    raw.images?.featured ||
+    raw.images?.icon ||
+    raw.images?.large ||
+    raw.images?.smallIcon ||
+    raw.images?.small ||
+    null
   return {
     id: raw.id,
     name: raw.name,
@@ -140,8 +152,8 @@ export function normalizeCosmetic(raw: ApiCosmetic): CosmeticItem | null {
     rarity: raw.rarity?.displayValue || raw.rarity?.value || 'Unknown',
     rarityValue: (raw.rarity?.value || 'common').toLowerCase(),
     image,
-    smallImage: raw.images?.smallIcon || raw.images?.icon || null,
-    featuredImage: raw.images?.featured || null,
+    smallImage: raw.images?.smallIcon || raw.images?.small || raw.images?.icon || raw.images?.large || null,
+    featuredImage: raw.images?.featured || raw.images?.large || raw.images?.icon || null,
     added: raw.added,
     set: raw.set?.value,
     setText: raw.set?.text,
@@ -179,8 +191,21 @@ export function normalizeShopOffers(entries: ApiShopEntry[] = []): ShopOffer[] {
     .filter((e) => !isPlaceholderEntry(e))
     .map((entry) => {
       const brItems = (entry.brItems || []).map(normalizeCosmetic).filter(Boolean) as CosmeticItem[]
-      const instruments = (entry.instruments || []).map(normalizeCosmetic).filter(Boolean) as CosmeticItem[]
-      const cars = (entry.cars || []).map(normalizeCosmetic).filter(Boolean) as CosmeticItem[]
+      const instruments = (entry.instruments || [])
+        .map(normalizeCosmetic)
+        .filter(Boolean)
+        .map((item) => ({
+          ...item,
+          typeValue: item.typeValue === 'unknown' ? 'instrument' : item.typeValue,
+        })) as CosmeticItem[]
+      const cars = (entry.cars || [])
+        .map(normalizeCosmetic)
+        .filter(Boolean)
+        .map((item) => ({
+          ...item,
+          type: item.type === 'Skin' ? 'Car Skin' : item.type,
+          typeValue: 'car',
+        })) as CosmeticItem[]
       const tracks: CosmeticItem[] = (entry.tracks || []).map((t) => ({
         id: t.id || t.title || 'track',
         name: t.title || 'Jam Track',
@@ -323,52 +348,96 @@ export async function fetchCosmeticById(id: string): Promise<ApiCosmetic | null>
   return (json.data || null) as ApiCosmetic | null
 }
 
-function findShopPrice(cosmeticId: string, offers: ShopOffer[]): ShopPriceInfo | null {
-  for (const offer of offers) {
-    const hit = offer.items.find((i) => i.id.toLowerCase() === cosmeticId.toLowerCase())
-    if (!hit) continue
-    return {
-      price: offer.price,
-      regularPrice: offer.regularPrice,
-      section: offer.section,
-      outDate: offer.outDate,
-      inDate: offer.inDate,
-      offerId: offer.offerId,
-      isBundle: offer.isBundle,
-      bundleName: offer.isBundle ? offer.name : undefined,
-      bundleItems: offer.items.map((i) => ({ id: i.id, name: i.name, type: i.type })),
-      giftable: offer.giftable,
-      refundable: offer.refundable,
-      banner: offer.banner,
-      offerTag: offer.offerTag,
-    }
+function shopPriceFromOffer(offer: ShopOffer): ShopPriceInfo {
+  return {
+    price: offer.price,
+    regularPrice: offer.regularPrice,
+    section: offer.section,
+    outDate: offer.outDate,
+    inDate: offer.inDate,
+    offerId: offer.offerId,
+    isBundle: offer.isBundle,
+    bundleName: offer.isBundle ? offer.name : undefined,
+    bundleItems: offer.items.map((i) => ({ id: i.id, name: i.name, type: i.type })),
+    giftable: offer.giftable,
+    refundable: offer.refundable,
+    banner: offer.banner,
+    offerTag: offer.offerTag,
   }
-  return null
+}
+
+function findShopOffer(cosmeticId: string, offers: ShopOffer[]): ShopOffer | null {
+  const offerKey = cosmeticId.startsWith('offer:') ? cosmeticId.slice(6) : null
+  if (offerKey) {
+    return offers.find((o) => o.offerId === offerKey) || null
+  }
+  return (
+    offers.find((o) => o.items.some((i) => i.id.toLowerCase() === cosmeticId.toLowerCase())) || null
+  )
+}
+
+function findShopPrice(cosmeticId: string, offers: ShopOffer[]): ShopPriceInfo | null {
+  const offer = findShopOffer(cosmeticId, offers)
+  return offer ? shopPriceFromOffer(offer) : null
+}
+
+function detailFromShopOffer(id: string, offer: ShopOffer): CosmeticDetail {
+  const item =
+    offer.items.find((i) => i.id.toLowerCase() === id.toLowerCase()) ||
+    offer.items[0] || {
+      id,
+      name: offer.name,
+      description: offer.section,
+      type: offer.isBundle ? 'Bundle' : 'Shop offer',
+      typeValue: offer.isBundle ? 'bundle' : 'unknown',
+      rarity: 'Rare',
+      rarityValue: 'rare',
+      image: offer.image,
+      smallImage: offer.image,
+      featuredImage: offer.image,
+    }
+  return {
+    ...item,
+    image: item.image || offer.image,
+    featuredImage: item.featuredImage || offer.image,
+    shop: shopPriceFromOffer(offer),
+    setItems: offer.items.filter((s) => s.id !== item.id),
+    raw: { source: 'shop', offerId: offer.offerId, name: offer.name },
+  }
 }
 
 export async function fetchCosmeticDetail(id: string): Promise<CosmeticDetail | null> {
-  const [raw, shop] = await Promise.all([fetchCosmeticById(id), fetchShop().catch(() => null)])
-  if (!raw) return null
+  const shop = await fetchShop().catch(() => null)
+  const raw = id.startsWith('offer:') ? null : await fetchCosmeticById(id)
 
-  const item = normalizeCosmetic(raw)
-  if (!item) return null
-
-  let setItems: CosmeticItem[] = []
-  if (item.set) {
-    setItems = await searchCosmetics({ set: item.set, matchMethod: 'full' })
-    // Prefer set backend if name search is thin
-    if (setItems.length <= 1 && item.setBackend) {
-      const byBackend = await searchCosmetics({ set: item.setBackend, matchMethod: 'full' })
-      if (byBackend.length > setItems.length) setItems = byBackend
+  if (raw) {
+    const item = normalizeCosmetic(raw)
+    if (item) {
+      let setItems: CosmeticItem[] = []
+      if (item.set) {
+        setItems = await searchCosmetics({ set: item.set, matchMethod: 'full' })
+        if (setItems.length <= 1 && item.setBackend) {
+          const byBackend = await searchCosmetics({ set: item.setBackend, matchMethod: 'full' })
+          if (byBackend.length > setItems.length) setItems = byBackend
+        }
+      }
+      return {
+        ...item,
+        shop: shop ? findShopPrice(item.id, shop.offers) : null,
+        setItems: setItems.filter((s) => s.id !== item.id),
+        raw: raw as Record<string, unknown>,
+      }
     }
   }
 
-  return {
-    ...item,
-    shop: shop ? findShopPrice(item.id, shop.offers) : null,
-    setItems: setItems.filter((s) => s.id !== item.id),
-    raw: raw as Record<string, unknown>,
+  // Jam tracks, cars, instruments, and image-only tiles are in the shop payload
+  // but not on /v2/cosmetics/br/{id}.
+  if (shop) {
+    const offer = findShopOffer(id, shop.offers)
+    if (offer) return detailFromShopOffer(id, offer)
   }
+
+  return null
 }
 
 export const COSMETIC_TYPES = [
@@ -385,6 +454,12 @@ export const COSMETIC_TYPES = [
   { value: 'emoji', label: 'Emojis' },
   { value: 'loadingscreen', label: 'Loading Screens' },
   { value: 'music', label: 'Music / Jam Tracks' },
+  { value: 'car', label: 'Cars' },
+  { value: 'guitar', label: 'Guitars' },
+  { value: 'bass', label: 'Bass' },
+  { value: 'drums', label: 'Drums' },
+  { value: 'microphone', label: 'Mics' },
+  { value: 'keytar', label: 'Keytars' },
 ] as const
 
 export const RARITY_COLORS: Record<string, string> = {

@@ -11,7 +11,7 @@ import { MAP_ROTATION_FAQS } from '@/lib/map-rotation-seo'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Map Rotation – What Reload Map Is On Right Now?',
   description:
-    'Live Fortnite Reload map rotation timer. See what map is on right now (Venture, Oasis, Elite Stronghold), minutes remaining, what map is next, and the full hourly schedule. Blitz Royale rotation included.',
+    'Live Fortnite Reload map rotation timer. See what map is on right now (Oasis, Slurp Rush, Springfield), minutes remaining, what map is next, and the full hourly schedule. Blitz Royale rotation included.',
   path: '/map-rotation',
   keywords: [
     'fortnite map rotation',
@@ -24,10 +24,11 @@ export const metadata: Metadata = createMetadata({
     'how often do reload maps change',
     'fortnite reload map timer',
     'next reload map',
-    'fortnite venture map',
     'fortnite oasis map',
-    'elite stronghold fortnite',
     'fortnite slurp rush',
+    'fortnite springfield reload',
+    'when is springfield live fortnite',
+    'elite stronghold fortnite',
     'fortnite squid grounds',
     'fortnite blitz map rotation',
     'what map is blitz royale on',
