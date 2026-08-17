@@ -13,7 +13,13 @@ export function ToolsPageContent() {
 
   const aboutBlocks = [
     ...(isEnglish
-      ? ([{ title: t('aboutSkinRarityTitle'), body: t('aboutSkinRarity') }] as const)
+      ? ([
+          { title: t('aboutMapTitle'), body: t('aboutMap') },
+          { title: t('aboutBuildTitle'), body: t('aboutBuild') },
+          { title: t('aboutShopTitle'), body: t('aboutShop') },
+          { title: t('aboutLoadoutTitle'), body: t('aboutLoadout') },
+          { title: t('aboutSkinRarityTitle'), body: t('aboutSkinRarity') },
+        ] as const)
       : []),
     { title: t('aboutSensTitle'), body: t('aboutSens') },
     { title: t('aboutVbucksTitle'), body: t('aboutVbucks') },

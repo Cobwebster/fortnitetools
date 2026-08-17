@@ -67,6 +67,7 @@ function StatCell({
         {icon ? (
           <FortniteIcon
             src={icon}
+            alt={label}
             size="sm"
             frameClassName="h-7 w-7 border-transparent bg-black/30"
           />
@@ -133,7 +134,7 @@ function InputSection({
   return (
     <section className="rounded-xl border border-border bg-card p-5 space-y-5">
       <div className="flex items-center gap-3">
-        <FortniteIcon src={INPUT_ICONS[inputKey]} size="md" />
+        <FortniteIcon src={INPUT_ICONS[inputKey]} alt={title} size="md" />
         <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{title}</h2>
       </div>
       {playlists.map((key) => {
@@ -146,6 +147,7 @@ function InputSection({
                 {PLAYLIST_ICONS[key] ? (
                   <FortniteIcon
                     src={PLAYLIST_ICONS[key]!}
+                    alt={PLAYLIST_LABELS[key]}
                     size="sm"
                     frameClassName="border-transparent bg-transparent"
                   />
@@ -360,6 +362,7 @@ export function PlayerStatsClient({
               <div className="flex items-start gap-3">
                 <FortniteIcon
                   src="/images/icons/crown.png"
+                  alt={data.account.name}
                   size="lg"
                   frameClassName="border-primary/40 bg-primary/10"
                 />
@@ -375,6 +378,7 @@ export function PlayerStatsClient({
                     <p className="mt-2 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                       <FortniteIcon
                         src="/images/icons/battle_pass.png"
+                        alt={t('battlePassLevel')}
                         size="sm"
                         frameClassName="border-transparent bg-transparent"
                       />

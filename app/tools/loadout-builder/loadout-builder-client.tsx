@@ -526,7 +526,7 @@ export function LoadoutBuilderClient() {
                 <tr key={weapon.id} className="border-b border-border/60 last:border-0">
                   <td className="px-3 py-2">
                     <div className="flex items-center gap-2">
-                      <ItemIcon src={weapon.image} alt="" className="h-10 w-10" />
+                      <ItemIcon src={weapon.image} alt={weapon.name} className="h-10 w-10" />
                       <span className="font-medium text-foreground">{weapon.name}</span>
                     </div>
                   </td>

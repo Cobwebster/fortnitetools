@@ -70,6 +70,62 @@ export const TOOLS: ToolEntry[] = [
     category: 'cosmetics',
   },
   {
+    href: '/season',
+    title: 'Chapter 7 Season 4 Hub',
+    description:
+      'Reset-week season page: live Shattered Coast loot and mythics vs what the August 20 reboot actually confirms. Last reviewed 17 Aug 2026.',
+    tags: ['Season', 'Loot', 'Ranked'],
+    category: 'season',
+  },
+  {
+    href: '/drops',
+    title: 'Best Drops',
+    description:
+      'Named-POI landing pages with contest, extract, third-party, and rotate paths — Heatwave Harbor, Battlewoods, Wonkeeland, Latte Landing, Sunken Shores.',
+    tags: ['Drops', 'POI', 'Map'],
+    category: 'map',
+  },
+  {
+    href: '/sets',
+    title: 'Live Cosmetic Sets',
+    description:
+      'Tonight’s Item Shop sets plus current-build sets, capped, with shop history. Not a page per outfit.',
+    tags: ['Sets', 'Shop', 'Skins'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/news',
+    title: 'Fortnite News',
+    description:
+      'Live Battle Royale lobby MOTDs with notes that point at the map, shop, weapons, and season countdown.',
+    tags: ['News', 'Lobby', 'Season'],
+    category: 'season',
+  },
+  {
+    href: '/modes',
+    title: 'Game Modes',
+    description:
+      'Playlist catalog from game files — BR, Zero Build, Ranked, Reload, OG, LTMs, Festival, LEGO, and Rocket Racing.',
+    tags: ['Modes', 'Ranked', 'Reload'],
+    category: 'season',
+  },
+  {
+    href: '/new-cosmetics',
+    title: 'New Cosmetics',
+    description:
+      'Cosmetics added in the current game build — outfits, emotes, jam tracks, and cars. New is not the same as in the shop tonight.',
+    tags: ['Skins', 'New', 'Leaks'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/creator-code',
+    title: 'Creator Code Checker',
+    description:
+      'Look up a Support-A-Creator slug to see if it is ACTIVE and which Epic account it maps to.',
+    tags: ['Creator', 'Shop', 'Codes'],
+    category: 'cosmetics',
+  },
+  {
     href: '/map-rotation',
     title: 'Map Rotation Timer',
     description:

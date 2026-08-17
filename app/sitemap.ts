@@ -2,9 +2,12 @@ import type { MetadataRoute } from 'next'
 import { posts, categories } from '@/lib/posts'
 import { siteConfig } from '@/lib/site'
 import { localizedGuidePaths, localizedToolSlugs, prefixedLocales } from '@/i18n/config'
+import { fetchLiveSets } from '@/lib/cosmetic-sets'
+import { DROP_GUIDES } from '@/lib/drop-guides'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url
+  const liveSets = await fetchLiveSets()
 
   const localeRoutes: MetadataRoute.Sitemap = prefixedLocales.flatMap((locale) => [
     {
@@ -47,6 +50,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/map-rotation',
     '/map-evolution',
     '/player-count',
+    '/season',
+    '/drops',
+    ...DROP_GUIDES.map((g) => `/drops/${g.slug}`),
+    '/sets',
+    ...liveSets.map((s) => `/sets/${s.slug}`),
+    '/news',
+    '/modes',
+    '/new-cosmetics',
+    '/creator-code',
     '/tools',
     '/weapons',
     '/weapon-changes',
@@ -67,8 +79,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: path === '/fortnite-map' || path === '/map-rotation' || path === '/map-evolution' || path === '/player-count' || path === '/codes' || path === '/weapons' || path === '/weapon-changes' || path === '/season-countdown' || path === '/xp-calculator' || path === '/free-cosmetics' || path === '/tools/item-shop' || path === '/tools/loadout-builder' || path === '/tools/player-stats' || path === '/tools/skin-rarity-calculator' ? 0.95 : 0.85,
+    changeFrequency:
+      path === '/news' || path === '/new-cosmetics' || path === '/season' || path === '/sets' || path.startsWith('/sets/')
+        ? ('daily' as const)
+        : ('weekly' as const),
+    priority:
+      path === '/fortnite-map' ||
+      path === '/map-rotation' ||
+      path === '/map-evolution' ||
+      path === '/player-count' ||
+      path === '/codes' ||
+      path === '/weapons' ||
+      path === '/weapon-changes' ||
+      path === '/season-countdown' ||
+      path === '/xp-calculator' ||
+      path === '/free-cosmetics' ||
+      path === '/tools/item-shop' ||
+      path === '/tools/loadout-builder' ||
+      path === '/tools/player-stats' ||
+      path === '/tools/skin-rarity-calculator' ||
+      path === '/news' ||
+      path === '/modes' ||
+      path === '/new-cosmetics' ||
+      path === '/season' ||
+      path === '/drops' ||
+      path === '/sets'
+        ? 0.95
+        : 0.85,
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [

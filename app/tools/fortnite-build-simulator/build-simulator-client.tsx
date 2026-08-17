@@ -621,7 +621,7 @@ function BuildHud() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={MAT_ICONS[m]}
-                  alt=""
+                  alt={MAT_LABELS[m]}
                   width={22}
                   height={22}
                   className="h-[22px] w-[22px] object-contain drop-shadow"

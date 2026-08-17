@@ -37,7 +37,7 @@ export const poiEnrichment: Record<string, PoiEnrichment> = {
     mobility: 'Short walks to center / Frosted Flats',
     tip: 'Land for mats and fights; do not greed loot when zone pulls opposite.',
     tags: ['wood', 'center', 'contested'],
-    guideHref: '/guides/map/fortnite-loot-guide-best-spots',
+    guideHref: '/drops/battlewoods',
   },
   battlewoods: {
     contest: 'hot',
@@ -46,7 +46,7 @@ export const poiEnrichment: Record<string, PoiEnrichment> = {
     mobility: 'Short walks to center / Frosted Flats',
     tip: 'Land for mats and fights; do not greed loot when zone pulls opposite.',
     tags: ['wood', 'center', 'contested'],
-    guideHref: '/guides/map/fortnite-loot-guide-best-spots',
+    guideHref: '/drops/battlewoods',
   },
   wonkeeland: {
     contest: 'balanced',
@@ -55,7 +55,7 @@ export const poiEnrichment: Record<string, PoiEnrichment> = {
     mobility: 'Reliable landmark routes',
     tip: 'Learn one building split and commit — consistency beats random hot drops.',
     tags: ['returning', 'landmark'],
-    guideHref: '/guides/map/fortnite-map-all-locations-guide',
+    guideHref: '/drops/wonkeeland',
   },
   'latte landing': {
     contest: 'balanced',
@@ -64,7 +64,7 @@ export const poiEnrichment: Record<string, PoiEnrichment> = {
     mobility: 'Coastal rotates inland',
     tip: 'Strong ranked drop when you want fights without full hot-drop chaos.',
     tags: ['returning', 'balanced'],
-    guideHref: '/guides/map/fortnite-loot-guide-best-spots',
+    guideHref: '/drops/latte-landing',
   },
   'sinister strip': {
     contest: 'hot',
@@ -100,7 +100,7 @@ export const poiEnrichment: Record<string, PoiEnrichment> = {
     mobility: 'Port / high-rises / vehicles',
     tip: 'Win one tower, then rotate early; harbor third parties are constant.',
     tags: ['industrial', 'vertical', 'contested'],
-    guideHref: '/guides/map/fortnite-loot-guide-best-spots',
+    guideHref: '/drops/heatwave-harbor',
   },
   'cluster coast': {
     contest: 'edge',
@@ -118,7 +118,7 @@ export const poiEnrichment: Record<string, PoiEnrichment> = {
     mobility: 'South edge rotates',
     tip: 'Best for placement games when zone loves the south.',
     tags: ['south', 'edge', 'placement'],
-    guideHref: '/guides/map/fortnite-loot-guide-best-spots',
+    guideHref: '/drops/sunken-shores',
   },
   'calamari canyon': {
     contest: 'edge',

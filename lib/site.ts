@@ -3,7 +3,7 @@ export const siteConfig = {
   domain: 'www.fortnitetools.com',
   url: 'https://www.fortnitetools.com',
   description:
-    'Free Fortnite tools and guides for Chapter 7 Season 3 — player stats lookup, sensitivity converter, XP calculator, keybinds, weapon stats, and practical Battle Royale strategy.',
+    'Free Fortnite tools and guides for Chapter 7 Season 3 — interactive map, player stats, Item Shop, build practice, weapons, and season strategy.',
   ogImage: '/images/hero-bg.png',
   contactEmail: 'thederpywhale@hotmail.com',
 } as const

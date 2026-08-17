@@ -279,7 +279,7 @@ export async function fetchNewCosmetics() {
   if (!res.ok) throw new Error(`New cosmetics API failed (${res.status})`)
   const json = await res.json()
   const groups = json.data?.items || {}
-  const lastAdditions = json.data?.lastAdditions || {}
+  const lastAdditions = (json.data?.lastAdditions || {}) as Record<string, string>
   const build = json.data?.build as string | undefined
 
   const byType: Record<string, CosmeticItem[]> = {}

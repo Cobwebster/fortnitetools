@@ -15,10 +15,30 @@ export interface Post {
 }
 
 export const categories: { id: Category; label: string; description: string }[] = [
-  { id: 'how-to', label: 'How-To', description: 'Account, settings, and practical how-to guides' },
-  { id: 'weapons', label: 'Weapons', description: 'Current-season weapon tier lists and loadouts' },
-  { id: 'season', label: 'Season', description: 'Battle Pass and season progression' },
-  { id: 'map', label: 'Map', description: 'Shattered Coast POIs, drops, and rotations' },
+  {
+    id: 'how-to',
+    label: 'How-To',
+    description:
+      'Account and settings walkthroughs with the in-game labels Epic actually uses — refunds, creator codes, and the mistakes that waste V-Bucks. Written from doing the steps, not paraphrasing a help article.',
+  },
+  {
+    id: 'weapons',
+    label: 'Weapons',
+    description:
+      'Chapter 7 Season 3 (Runners) loot pool: what to pick up, what to drop, and how mid-season hotfixes changed the shotgun/SMG pair. Pair with the loadout builder when you want a hotbar, not a list.',
+  },
+  {
+    id: 'season',
+    label: 'Season',
+    description:
+      'Battle Pass XP, ranked climb habits, and free reward windows for the live season — with dates so you can tell when a quest line or end date moved.',
+  },
+  {
+    id: 'map',
+    label: 'Map',
+    description:
+      'Shattered Coast drops, contest, extracts, and rotates for Chapter 7 Season 3. Use the interactive map for pins; these guides are the landing/rotate notes that do not fit in a tooltip.',
+  },
 ]
 
 /** Guides that have translated locale twins. English keeps the full corpus. */
@@ -78,7 +98,7 @@ Not a gun, but fight-changing. Slide reposition + ADS slow-mo. Fuel drain was cu
 
 ## B-Tier — usable, not preferred
 
-- ![Extending Focus Shotgun](/images/loadout/extending_focus.png) **Extending Focus Shotgun** — Best shotgun *range* in the pool, but the three-shot / spread pattern is less consistent than Striker for raw fight wins. Fine for Zero Build peeks; swap to Striker in box fights when you can.
+- ![Extending Focus Shotgun](/images/loadout/extending_focus.png) **Extending Focus Shotgun** — Best shotgun *range* in the pool (ADS barrel / tighter spread). Weaker opener than Striker in boxes; keep it for Zero Build peeks and swap to Striker when you can.
 - ![Rapid Fire SMG](/images/loadout/rapid_fire_smg.png) **Rapid Fire SMG** — High rate, weaker bullets; cleanup only.
 - ![Ranger Pistol](/images/loadout/ranger_pistol.png) **Ranger Pistol** — Early secondary; replace with Flex / Stinger.
 - ![Chaos Exploder Rifle](/images/loadout/chaos_exploder.png) **Chaos Exploder Rifle** — Nerfed hard (weaker up close). Splash flush is still okay; do not force it over Surgical Burst or Warforged.
@@ -145,7 +165,7 @@ Full-auto forgiveness. Lower spike than Striker, better when you are spraying a 
 **Best for:** Inconsistent aim or messy third-parties.
 
 ### ![Extending Focus Shotgun](/images/loadout/extending_focus.png) Extending Focus Shotgun
-Longest shotgun reach in the pool (barrel/spread identity). Three-shot pattern is less reliable than Striker for raw deletes — good for mid-range peeks, not the automatic S-tier pick early-season guides claimed.
+Longest shotgun reach in the pool — ADS extends the barrel and tightens spread. Weaker first-shot spike than Striker, so it loses most box trades if you treat it like a pump. Use it for mid-range peeks, not as your default Builds shotgun.
 
 **Best for:** Zero Build peeks and players who hate pump timing.
 

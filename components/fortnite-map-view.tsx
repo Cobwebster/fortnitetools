@@ -61,6 +61,10 @@ export function FortniteMapView() {
               >
                 {t('linkLandingSpots')}
               </Link>
+              {' · '}
+              <Link href="/drops" className="font-semibold text-primary hover:opacity-80">
+                Drop rotate guides
+              </Link>
             </p>
           ) : (
             <p className="mt-3 text-sm text-muted-foreground">
@@ -209,6 +213,10 @@ export function FortniteMapView() {
                     className="font-semibold text-primary hover:opacity-80"
                   >
                     {t('landingPoiGuide')}
+                  </Link>
+                  {' '}and the{' '}
+                  <Link href="/drops" className="font-semibold text-primary hover:opacity-80">
+                    drop rotate guides
                   </Link>
                   .
                 </p>

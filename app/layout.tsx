@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   keywords: [
     'Fortnite tools',
     'Fortnite guides',
-    'Fortnite XP calculator',
-    'Fortnite sensitivity converter',
-    'Fortnite keybinds',
+    'Fortnite map',
+    'Fortnite tracker',
+    'Fortnite Item Shop',
     'Chapter 7 Season 3',
   ],
   authors: [{ name: siteConfig.name }],

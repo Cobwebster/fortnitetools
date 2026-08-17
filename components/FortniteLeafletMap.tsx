@@ -639,7 +639,9 @@ export function FortniteLeafletMap({
                       href={selectedPoi.enrichment.guideHref}
                       className="mt-4 inline-flex text-sm font-semibold text-primary hover:opacity-80"
                     >
-                      Read map guide →
+                      {selectedPoi.enrichment.guideHref.startsWith('/drops/')
+                        ? 'Drop guide →'
+                        : 'Read map guide →'}
                     </Link>
                   )}
                 </>

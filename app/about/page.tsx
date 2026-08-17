@@ -59,6 +59,21 @@ export default function AboutPage() {
       </section>
 
       <section className="space-y-3">
+        <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
+          How pages get updated
+        </h2>
+        <p>
+          When Epic ships a new season or a mid-season loot hotfix, I check the map layers, weapon stats, shop reset,
+          and the guides that name specific guns. Dates in articles are real review dates, not a sitemap stamp. If a
+          number is an estimate (storm timers, TTK, V-Bucks pack math), the page says so.
+        </p>
+        <p>
+          I do not pad the site with extra calculators, translated clones of the same form, or a page per cosmetic.
+          Those look busy and read empty. The indexable corpus is the interactive tools plus the season guides.
+        </p>
+      </section>
+
+      <section className="space-y-3">
         <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">Who runs it</h2>
         <p>
           FortniteTools is a solo fan project. Questions, corrections, bug reports, or partnership ideas are welcome at{' '}

@@ -83,7 +83,7 @@ export default function SeasonCountdownPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={CURRENT_SEASON.passIcon}
-                    alt=""
+                    alt={`${CURRENT_SEASON.label} Battle Pass icon`}
                     className="h-full w-full object-contain"
                     width={40}
                     height={40}
@@ -105,6 +105,14 @@ export default function SeasonCountdownPage() {
             <div className="mt-8 rounded-2xl border border-border bg-card/70 p-5 backdrop-blur-sm sm:p-8">
               <SeasonCountdownClient />
             </div>
+
+            <p className="mt-6 text-sm text-muted-foreground">
+              Reset-week loot, island, ranked, and Battle Pass notes live on the{' '}
+              <Link href="/season" className="text-primary hover:underline">
+                {CURRENT_SEASON.next.label} hub
+              </Link>
+              .
+            </p>
 
             <p className="mt-6 text-sm text-muted-foreground" suppressHydrationWarning>
               Static snapshot for search: {CURRENT_SEASON.label} is about{' '}

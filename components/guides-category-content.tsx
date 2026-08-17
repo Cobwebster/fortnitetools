@@ -44,6 +44,7 @@ export function GuidesCategoryContent({ category }: { category: Category }) {
           <div className="flex items-start gap-4">
             <FortniteIcon
               src={CATEGORY_ICONS[category as keyof typeof CATEGORY_ICONS] ?? CATEGORY_ICONS['how-to']}
+              alt={t('categoryTitle')}
               size="lg"
             />
             <div>

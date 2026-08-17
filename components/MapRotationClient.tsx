@@ -25,7 +25,7 @@ function MapCard({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={map.image}
-        alt=""
+        alt={`${map.name} Fortnite map`}
         className="absolute inset-0 h-full w-full object-cover object-center"
         draggable={false}
       />
@@ -164,7 +164,7 @@ export function MapRotationClient() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={slot.map.image}
-                    alt=""
+                    alt={`${slot.map.name} Fortnite map`}
                     className="absolute inset-0 h-full w-full object-cover object-center"
                     draggable={false}
                   />

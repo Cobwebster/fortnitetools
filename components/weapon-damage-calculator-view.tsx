@@ -113,9 +113,8 @@ export function WeaponDamageCalculatorView() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={w.image}
-                      alt=""
+                      alt={w.name}
                       className="h-12 w-12 shrink-0 object-contain drop-shadow-sm"
-                      aria-hidden="true"
                     />
                     <div className="min-w-0">
                       <p className="text-sm font-semibold text-foreground leading-tight truncate">{w.name}</p>
@@ -189,9 +188,8 @@ export function WeaponDamageCalculatorView() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={weapon.image}
-                  alt=""
+                  alt={weapon.name}
                   className="h-16 w-16 shrink-0 object-contain drop-shadow-md"
-                  aria-hidden="true"
                 />
                 <div className="min-w-0">
                   <p className={`text-xs font-bold uppercase tracking-wider ${RARITY_COLORS[weapon.rarity]}`}>{weapon.rarity} · {weapon.category}</p>

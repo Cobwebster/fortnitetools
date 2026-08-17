@@ -66,6 +66,7 @@ export function PlayerStatsView({
           <div className="flex items-start gap-4">
             <FortniteIcon
               src={toolIcon('/tools/player-stats')}
+              alt={t('breadcrumb')}
               size="lg"
               frameClassName="mt-1 border-primary/40 bg-primary/10"
             />
@@ -98,7 +99,7 @@ export function PlayerStatsView({
 
         <section className="mt-14">
           <div className="mb-3 flex items-center gap-3">
-            <FortniteIcon src="/images/icons/crown.png" size="sm" />
+            <FortniteIcon src="/images/icons/crown.png" alt={t('trackerTitle')} size="sm" />
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               {t('trackerTitle')}
             </h2>
@@ -121,7 +122,7 @@ export function PlayerStatsView({
                 key={section.h}
                 className="flex gap-3 rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-muted-foreground"
               >
-                <FortniteIcon src={section.icon} size="md" frameClassName="mt-0.5" />
+                <FortniteIcon src={section.icon} alt={t(section.h)} size="md" frameClassName="mt-0.5" />
                 <div>
                   <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">
                     {t(section.h)}
@@ -160,7 +161,7 @@ export function PlayerStatsView({
                     href={localizeHref(locale, item.href)}
                     className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-sm text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
                   >
-                    <FortniteIcon src={item.icon} size="sm" frameClassName="border-transparent bg-transparent" />
+                    <FortniteIcon src={item.icon} alt={t(item.labelKey)} size="sm" frameClassName="border-transparent bg-transparent" />
                     {t(item.labelKey)}
                   </Link>
                 </li>

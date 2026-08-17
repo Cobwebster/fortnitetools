@@ -99,6 +99,7 @@ export function MapEvolutionTeaser() {
           <div className="flex items-start gap-3">
             <FortniteIcon
               src={toolIcon('/map-evolution')}
+              alt={t('mapEvoTitle')}
               size="md"
               frameClassName="border-primary/40 bg-primary/10"
             />

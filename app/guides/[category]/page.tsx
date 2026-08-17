@@ -70,6 +70,7 @@ export default async function CategoryPage({ params }: Props) {
             <div className="flex items-start gap-4">
               <FortniteIcon
                 src={CATEGORY_ICONS[cat.id as keyof typeof CATEGORY_ICONS] ?? CATEGORY_ICONS['how-to']}
+                alt={`Fortnite ${cat.label} guides`}
                 size="lg"
               />
               <div>
@@ -79,6 +80,14 @@ export default async function CategoryPage({ params }: Props) {
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
                   {cat.description}
+                </p>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                  {catPosts.length} {catPosts.length === 1 ? 'guide' : 'guides'} in this category · last pass August
+                  2026. Open a card for the full article; the{' '}
+                  <Link href="/tools" className="text-primary hover:underline">
+                    tools hub
+                  </Link>{' '}
+                  has the interactive map, shop, and loadout builder that go with these notes.
                 </p>
               </div>
             </div>

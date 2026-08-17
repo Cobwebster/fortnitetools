@@ -9,6 +9,14 @@ function isInternalHref(href: string) {
   return href.startsWith('/') && !href.startsWith('//')
 }
 
+function imageAlt(alt: string, src: string) {
+  const trimmed = alt.trim()
+  if (trimmed) return trimmed
+  const file = src.split('/').pop()?.replace(/\.\w+$/, '') ?? ''
+  const fromFile = file.replace(/[-_]+/g, ' ').trim()
+  return fromFile || 'Fortnite'
+}
+
 function GuideIcon({
   src,
   alt,
@@ -23,7 +31,7 @@ function GuideIcon({
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
-      alt={alt}
+      alt={imageAlt(alt, src)}
       className={`${dim} shrink-0 object-contain drop-shadow-md`}
       loading="lazy"
       width={size === 'lg' ? 64 : size === 'sm' ? 32 : 48}
@@ -133,6 +141,12 @@ function parseHeadingWithIcon(trimmed: string): { alt: string; src: string; titl
   return { alt, src, title: rest || alt }
 }
 
+function firstLineAndRest(trimmed: string): { first: string; rest: string } {
+  const nl = trimmed.indexOf('\n')
+  if (nl === -1) return { first: trimmed, rest: '' }
+  return { first: trimmed.slice(0, nl).trim(), rest: trimmed.slice(nl + 1).trim() }
+}
+
 export function GuideMarkdown({ content }: { content: string }) {
   const locale = useLocale() as AppLocale
   const blocks = content.trim().split(/\n\n+/)
@@ -144,33 +158,40 @@ export function GuideMarkdown({ content }: { content: string }) {
         if (!trimmed) return null
 
         if (trimmed.startsWith('## ')) {
+          const { first, rest } = firstLineAndRest(trimmed)
           return (
-            <h2 key={i} className="font-display text-2xl font-bold uppercase text-foreground mt-8 mb-3">
-              {trimmed.replace(/^##\s+/, '')}
-            </h2>
-          )
-        }
-
-        const headingIcon = parseHeadingWithIcon(trimmed)
-        if (headingIcon) {
-          return (
-            <h3
-              key={i}
-              className="mt-6 mb-2 flex items-center gap-3 font-display text-xl font-bold uppercase text-foreground"
-            >
-              <span className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-lg border border-border bg-card">
-                <GuideIcon src={headingIcon.src} alt="" size="md" />
-              </span>
-              <span>{headingIcon.title}</span>
-            </h3>
+            <div key={i} className="space-y-4">
+              <h2 className="font-display text-2xl font-bold uppercase text-foreground mt-8 mb-3">
+                {first.replace(/^##\s+/, '')}
+              </h2>
+              {rest ? (
+                <p className="text-muted-foreground">{renderInline(rest.replace(/\n/g, ' '), locale)}</p>
+              ) : null}
+            </div>
           )
         }
 
         if (trimmed.startsWith('### ')) {
+          const { first, rest } = firstLineAndRest(trimmed)
+          const headingIcon = parseHeadingWithIcon(first)
           return (
-            <h3 key={i} className="font-display text-xl font-bold uppercase text-foreground mt-6 mb-2">
-              {trimmed.replace(/^###\s+/, '')}
-            </h3>
+            <div key={i} className="space-y-2">
+              {headingIcon ? (
+                <h3 className="mt-6 mb-2 flex items-center gap-3 font-display text-xl font-bold uppercase text-foreground">
+                  <span className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-lg border border-border bg-card">
+                    <GuideIcon src={headingIcon.src} alt={headingIcon.title} size="md" />
+                  </span>
+                  <span>{headingIcon.title}</span>
+                </h3>
+              ) : (
+                <h3 className="font-display text-xl font-bold uppercase text-foreground mt-6 mb-2">
+                  {renderInline(first.replace(/^###\s+/, ''), locale)}
+                </h3>
+              )}
+              {rest ? (
+                <p className="text-muted-foreground">{renderInline(rest.replace(/\n/g, ' '), locale)}</p>
+              ) : null}
+            </div>
           )
         }
 

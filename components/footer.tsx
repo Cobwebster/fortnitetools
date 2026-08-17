@@ -29,6 +29,13 @@ export function Footer() {
 
   const allToolLinks = [
     { href: toolsHref, label: t('allTools') },
+    { href: '/season', label: t('season') },
+    { href: '/drops', label: t('drops') },
+    { href: '/news', label: t('news') },
+    { href: '/modes', label: t('modes') },
+    { href: '/new-cosmetics', label: t('newCosmetics') },
+    { href: '/sets', label: t('sets') },
+    { href: '/creator-code', label: t('creatorCode') },
     { href: '/free-cosmetics', label: t('freeCosmetics') },
     { href: '/xp-calculator', label: t('xpCalculator') },
     { href: '/season-countdown', label: t('seasonCountdown') },
@@ -76,9 +83,8 @@ export function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={BRAND_ICON}
-                alt=""
+                alt="FortniteTools"
                 className="h-9 w-9 object-contain drop-shadow-sm"
-                aria-hidden="true"
               />
               <span className="font-display text-lg font-bold uppercase tracking-wider text-foreground">
                 Fortnite<span className="text-primary">Tools</span>

@@ -9,6 +9,7 @@ type MetaInput = {
   type?: 'website' | 'article'
   publishedTime?: string
   tags?: string[]
+  index?: boolean
 }
 
 export function createMetadata({
@@ -19,6 +20,7 @@ export function createMetadata({
   type = 'website',
   publishedTime,
   tags,
+  index = true,
 }: MetaInput): Metadata {
   const url = `${siteConfig.url}${path}`
   const ogImage = `${siteConfig.url}${siteConfig.ogImage}`
@@ -28,6 +30,11 @@ export function createMetadata({
     description,
     keywords,
     alternates: { canonical: url },
+    ...(index
+      ? {}
+      : {
+          robots: { index: false, follow: false },
+        }),
     openGraph: {
       title,
       description,

@@ -30,7 +30,7 @@ function ToolCard({ tool, openLabel }: { tool: ToolEntry; openLabel: string }) {
       <div className="flex items-start gap-3">
         <FortniteIcon
           src={toolIcon(tool.href)}
-          alt=""
+          alt={tool.title}
           size="md"
           frameClassName="group-hover:border-primary/40 group-hover:bg-black/70 transition-colors"
         />

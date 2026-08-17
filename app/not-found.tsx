@@ -11,9 +11,8 @@ export default function NotFound() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={BRAND_ICON}
-          alt=""
+          alt="FortniteTools"
           className="mb-6 h-24 w-24 object-contain drop-shadow-lg opacity-90"
-          aria-hidden="true"
         />
         <h1 className="font-display text-5xl font-extrabold uppercase tracking-tight text-foreground">
           404

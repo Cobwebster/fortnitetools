@@ -143,7 +143,7 @@ export function SkinRarityClient() {
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={item.smallImage || item.image || ''}
-                        alt=""
+                        alt={item.name}
                         className="h-full w-full object-contain p-2"
                         loading="lazy"
                       />

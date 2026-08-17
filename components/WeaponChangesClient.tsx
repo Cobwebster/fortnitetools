@@ -67,7 +67,7 @@ function WeaponChangeCard({ entry }: { entry: WeaponChangeEntry }) {
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={entry.image}
-              alt=""
+              alt={entry.name}
               width={40}
               height={40}
               className="h-9 w-9 object-contain"

@@ -178,6 +178,7 @@ export function FpsSettingsView() {
           <div className="flex items-start gap-4">
             <FortniteIcon
               src={toolIcon('/tools/fps-settings')}
+              alt={t('breadcrumb')}
               size="lg"
               frameClassName="mt-1 border-primary/40 bg-primary/10"
             />
@@ -209,7 +210,7 @@ export function FpsSettingsView() {
                 }`}
               >
                 <div className="mb-2 flex items-center gap-3">
-                  <FortniteIcon src={TIER_ICONS[id]} size="sm" />
+                  <FortniteIcon src={TIER_ICONS[id]} alt={t(`tiers.${id}.label`)} size="sm" />
                   <span className="font-display text-sm font-bold uppercase tracking-wide">{t(`tiers.${id}.label`)}</span>
                   {tier === id ? <Check className="ml-auto h-4 w-4 text-primary" /> : null}
                 </div>
@@ -233,6 +234,7 @@ export function FpsSettingsView() {
               >
                 <FortniteIcon
                   src={CATEGORY_ICONS[cat]}
+                  alt={cat === 'all' ? t('categoryAll') : t(`categories.${cat}`)}
                   size="xs"
                   frameClassName={active ? 'border-white/30 bg-black/30' : ''}
                 />
@@ -255,7 +257,7 @@ export function FpsSettingsView() {
                   onClick={() => setExpanded(isOpen ? null : id)}
                   aria-expanded={isOpen}
                 >
-                  <FortniteIcon src={SETTING_ICONS[id]} size="sm" />
+                  <FortniteIcon src={SETTING_ICONS[id]} alt={t(`settings.${id}.name`)} size="sm" />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-sm font-bold text-foreground">{t(`settings.${id}.name`)}</span>
@@ -297,7 +299,7 @@ export function FpsSettingsView() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
             {SEO_KEYS.map((key) => (
               <div key={key} className="flex gap-3 rounded-xl border border-border bg-card p-4">
-                <FortniteIcon src={SEO_ICONS[key]} size="md" frameClassName="mt-0.5" />
+                <FortniteIcon src={SEO_ICONS[key]} alt={t(`seo.${key}.h`)} size="md" frameClassName="mt-0.5" />
                 <div>
                   <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">{t(`seo.${key}.h`)}</h3>
                   <p>{t(`seo.${key}.p`)}</p>
@@ -328,7 +330,7 @@ export function FpsSettingsView() {
                   href={localizeHref(locale, item.href)}
                   className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-sm text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
                 >
-                  <FortniteIcon src={item.icon} size="sm" frameClassName="border-transparent bg-transparent" />
+                  <FortniteIcon src={item.icon} alt={t(item.labelKey)} size="sm" frameClassName="border-transparent bg-transparent" />
                   {t(item.labelKey)}
                 </Link>
               </li>

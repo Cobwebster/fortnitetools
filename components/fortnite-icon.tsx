@@ -31,15 +31,17 @@ export function FortniteIcon({
   frameClassName = '',
   size = 'md',
 }: FortniteIconProps) {
+  const resolvedAlt =
+    alt.trim() || src.split('/').pop()?.replace(/\.\w+$/, '').replace(/[-_]+/g, ' ') || 'Fortnite'
+
   return (
     <span
       className={`inline-flex shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border/80 bg-black/50 ${SIZE[size]} ${frameClassName} ${className}`}
-      aria-hidden={alt ? undefined : true}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
-        alt={alt}
+        alt={resolvedAlt}
         className={`object-contain drop-shadow-md ${IMG[size]}`}
         loading="lazy"
         decoding="async"

@@ -8,6 +8,7 @@ export const metadata: Metadata = createMetadata({
   description: 'Sign in to your FortniteTools account.',
   path: '/login',
   keywords: ['fortnitetools login', 'fortnite tools account'],
+  index: false,
 })
 
 export default async function LoginPage({

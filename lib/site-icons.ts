@@ -43,6 +43,13 @@ export const TOOL_ICONS: Record<string, string> = {
   '/tools/vbucks-calculator': '/images/icons/vbucks.png',
   '/tools/skin-rarity-calculator': '/images/loadout/seven_sliders.png',
   '/codes': '/images/loadout/launch_pad.png',
+  '/news': '/images/loadout/grappler.png',
+  '/modes': '/images/loadout/overdrive_grenade.png',
+  '/new-cosmetics': '/images/loadout/slap_juice.png',
+  '/creator-code': '/images/loadout/chug_splash.png',
+  '/season': '/images/loadout/self_revive.png',
+  '/drops': '/images/loadout/cluster_clinger.png',
+  '/sets': '/images/loadout/apple.png',
   '/tools/battle-pass-xp-calculator': '/images/loadout/chug_jug.png',
 }
 

@@ -8,6 +8,7 @@ export const metadata: Metadata = createMetadata({
   description: 'Create a FortniteTools account to save preferences and access member features.',
   path: '/register',
   keywords: ['fortnitetools register', 'fortnite tools sign up'],
+  index: false,
 })
 
 export default function RegisterPage() {

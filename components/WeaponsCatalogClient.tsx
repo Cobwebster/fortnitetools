@@ -123,7 +123,7 @@ function WeaponPicker({
         {selected ? (
           <>
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-border bg-card">
-              <WeaponIcon src={selected.image} alt="" />
+              <WeaponIcon src={selected.image} alt={selected.name} />
             </div>
             <span className="min-w-0 flex-1 truncate font-display text-sm font-bold uppercase tracking-wide text-foreground">
               {selected.name}
@@ -176,7 +176,7 @@ function WeaponPicker({
                   }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.image} alt="" width={28} height={28} className="h-7 w-7 object-contain" />
+                  <img src={w.image} alt={w.name} width={28} height={28} className="h-7 w-7 object-contain" />
                   <span className="min-w-0 flex-1 truncate text-sm text-foreground">{w.name}</span>
                   {w.vaulted ? (
                     <span className="text-[10px] font-bold uppercase text-rose-300">Vaulted</span>
@@ -328,14 +328,14 @@ function ComparePanel({
                 <th className="px-3 py-2.5 font-semibold text-right">
                   <span className="inline-flex items-center gap-2">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={left.image} alt="" className="h-5 w-5 object-contain" />
+                    <img src={left.image} alt={left.name} className="h-5 w-5 object-contain" />
                     <span className="max-w-[140px] truncate">{left.name}</span>
                   </span>
                 </th>
                 <th className="px-3 py-2.5 font-semibold text-right">
                   <span className="inline-flex items-center gap-2 justify-end">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={right.image} alt="" className="h-5 w-5 object-contain" />
+                    <img src={right.image} alt={right.name} className="h-5 w-5 object-contain" />
                     <span className="max-w-[140px] truncate">{right.name}</span>
                   </span>
                 </th>

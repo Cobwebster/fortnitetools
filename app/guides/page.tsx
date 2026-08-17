@@ -28,7 +28,14 @@ export default function GuidesPage() {
               Fortnite Guides
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Season-specific guides only — current loot pool, Shattered Coast drops, Runners Battle Pass, and ranked climb habits.
+              Season-specific guides only — current loot pool, Shattered Coast drops, Runners Battle Pass, and ranked
+              climb habits. Each article has a last-reviewed date. I rewrite them when Epic hotfixes the pool; I do not
+              keep a graveyard of generic “best skins” listicles.
+            </p>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              Start with the weapons tier list if you want the live meta, or the map guides if you want where to land.
+              How-to covers refunds and codes. Tools (map, shop, loadout, build sim) sit next to these — they are not
+              replacements for the write-ups.
             </p>
           </div>
         </section>

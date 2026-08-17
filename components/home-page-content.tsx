@@ -8,6 +8,7 @@ import { FortniteIcon } from '@/components/fortnite-icon'
 import { MapEvolutionTeaser } from '@/components/map-evolution-teaser'
 import { PostCard } from '@/components/post-card'
 import { posts, categories, getFeaturedPosts, getLocalizedPosts } from '@/lib/posts'
+import { siteConfig } from '@/lib/site'
 import { CATEGORY_ICONS, toolIcon } from '@/lib/site-icons'
 import {
   defaultLocale,
@@ -28,6 +29,12 @@ const EN_POPULAR_TOOLS = [
   { href: '/tools/player-stats', key: 'toolStatsTracker' as const },
   { href: '/tools/loadout-builder', key: 'toolLoadout' as const },
   { href: '/tools/item-shop', key: 'toolItemShop' as const },
+  { href: '/season', key: 'toolSeason' as const },
+  { href: '/drops', key: 'toolDrops' as const },
+  { href: '/news', key: 'toolNews' as const },
+  { href: '/modes', key: 'toolModes' as const },
+  { href: '/new-cosmetics', key: 'toolNewCosmetics' as const },
+  { href: '/sets', key: 'toolSets' as const },
   { href: '/map-rotation', key: 'toolRotation' as const },
   { href: '/map-evolution', key: 'toolMapEvolution' as const },
   { href: '/weapons', key: 'toolWeapons' as const },
@@ -139,6 +146,7 @@ export function HomePageContent() {
             >
               <FortniteIcon
                 src={CATEGORY_ICONS[cat.id]}
+                alt={CAT_KEYS[cat.id] ? t(CAT_KEYS[cat.id]) : cat.label}
                 size="md"
                 frameClassName="border-transparent bg-transparent group-hover:scale-110 transition-transform"
               />
@@ -154,6 +162,7 @@ export function HomePageContent() {
             >
               <FortniteIcon
                 src={toolIcon('/weapon-changes')}
+                alt={t('weaponChanges')}
                 size="md"
                 frameClassName="border-transparent bg-transparent group-hover:scale-110 transition-transform"
               />
@@ -168,6 +177,7 @@ export function HomePageContent() {
             >
               <FortniteIcon
                 src={toolIcon('/tools')}
+                alt={t('allTools')}
                 size="md"
                 frameClassName="border-transparent bg-transparent group-hover:scale-110 transition-transform"
               />
@@ -206,6 +216,7 @@ export function HomePageContent() {
             >
               <FortniteIcon
                 src={toolIcon(tool.href)}
+                alt={t(tool.key)}
                 size="md"
                 frameClassName="group-hover:border-primary/40 transition-colors"
               />
@@ -267,6 +278,32 @@ export function HomePageContent() {
             {recentPosts.map((post) => (
               <PostCard key={post.slug} post={post} locale={locale} />
             ))}
+          </div>
+        </section>
+      ) : null}
+
+      {isEnglish ? (
+        <section className="border-t border-border bg-background">
+          <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Last reviewed 17 Aug 2026</p>
+            <h2 className="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-foreground">
+              Built for the live season — not a widget farm
+            </h2>
+            <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2">
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                FortniteTools is a solo fan project. Pages get a date when the loot pool, island, or shop rules change.
+                The useful stuff is the map, tracker, shop, loadout builder, build practice, and the Chapter 7 Season 3
+                guides — not a new calculator for every search query.
+              </p>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                I do not publish per-skin encyclopedias, leak dumps, or translated copies of the same form. If a helper
+                exists, it is because I use it in-game. Corrections:{' '}
+                <a href={`mailto:${siteConfig.contactEmail}`} className="text-primary hover:underline">
+                  {siteConfig.contactEmail}
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </section>
       ) : null}

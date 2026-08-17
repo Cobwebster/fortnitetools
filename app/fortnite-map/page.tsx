@@ -35,7 +35,7 @@ export default function FortniteMapPage() {
         name: 'Where should I land in Fortnite for the best loot?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and Sinister Strip reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games.',
+          text: 'High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and Sinister Strip reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games. Rotate paths (contest, extract, third-party) for five named POIs are on /drops — not the pin tooltips.',
         },
       },
       {

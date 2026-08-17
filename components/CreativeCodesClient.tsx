@@ -26,7 +26,7 @@ function MapThumb({ map }: { map: CreativeMapLive }) {
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={map.screenshot!}
-          alt=""
+          alt={`${map.name} Fortnite Creative map`}
           className="h-full w-full object-cover"
           loading="lazy"
           decoding="async"

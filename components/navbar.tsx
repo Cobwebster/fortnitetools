@@ -66,6 +66,13 @@ export function Navbar() {
   ]
 
   const englishSecondary: NavLink[] = [
+    { href: '/season', label: t('season') },
+    { href: '/drops', label: t('drops') },
+    { href: '/news', label: t('news') },
+    { href: '/modes', label: t('modes') },
+    { href: '/new-cosmetics', label: t('newCosmetics') },
+    { href: '/sets', label: t('sets') },
+    { href: '/creator-code', label: t('creatorCode') },
     { href: '/codes', label: t('codes') },
     { href: '/free-cosmetics', label: t('freeCosmetics') },
     { href: '/season-countdown', label: t('countdown') },
@@ -107,9 +114,8 @@ export function Navbar() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={BRAND_ICON}
-              alt=""
+              alt="FortniteTools"
               className="h-9 w-9 object-contain drop-shadow-sm sm:h-10 sm:w-10"
-              aria-hidden="true"
             />
             <span className="font-display text-lg font-bold uppercase tracking-wider text-foreground sm:text-xl">
               Fortnite<span className="text-primary">Tools</span>
