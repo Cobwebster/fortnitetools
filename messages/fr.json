@@ -7,6 +7,9 @@
     "codes": "Codes",
     "news": "Actu",
     "modes": "Modes",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Statut",
     "newCosmetics": "Nouveaux cosmétiques",
     "season": "Saison",
     "drops": "Drops",
@@ -56,6 +59,9 @@
     "playerCount": "Joueurs en ligne",
     "news": "Actu",
     "modes": "Modes",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Fortnite est down ?",
     "newCosmetics": "Nouveaux cosmétiques",
     "season": "Saison",
     "drops": "Meilleurs drops",
@@ -102,6 +108,7 @@
     "heroBody": "Carte Shattered Coast, tracker de stats, réglages et guides how-to de la saison — pas une ferme de calculateurs.",
     "ctaTools": "Ouvrir les outils gratuits",
     "ctaTierList": "Tier list armes S3",
+    "ctaLoadout": "Envoyer ton loadout",
     "browseCategories": "Parcourir par catégorie",
     "weaponChanges": "Changements d’armes",
     "popularTools": "Outils populaires",
@@ -128,6 +135,9 @@
     "toolItemShop": "Boutique",
     "toolNews": "Actu",
     "toolModes": "Modes",
+    "toolReload": "Reload",
+    "toolRanked": "Ranked",
+    "toolStatus": "Statut",
     "toolNewCosmetics": "Nouveaux",
     "toolSeason": "Saison",
     "toolDrops": "Drops",
@@ -213,6 +223,18 @@
       "map-rotation": {
         "title": "Map Rotation Timer",
         "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
+      },
+      "reload": {
+        "title": "Fortnite Reload",
+        "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
+      },
+      "ranked": {
+        "title": "Fortnite Ranked Reset",
+        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+      },
+      "status": {
+        "title": "Is Fortnite Down?",
+        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",

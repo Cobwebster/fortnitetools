@@ -134,6 +134,30 @@ export const TOOLS: ToolEntry[] = [
     category: 'map',
   },
   {
+    href: '/reload',
+    title: 'Fortnite Reload',
+    description:
+      'What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer. Last reviewed 18 Aug 2026.',
+    tags: ['Reload', 'Modes', 'Maps'],
+    category: 'season',
+  },
+  {
+    href: '/ranked',
+    title: 'Fortnite Ranked Reset',
+    description:
+      'LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump. Last reviewed 18 Aug 2026.',
+    tags: ['Ranked', 'LP', 'Reset'],
+    category: 'season',
+  },
+  {
+    href: '/status',
+    title: 'Is Fortnite Down?',
+    description:
+      'Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map. Queue is not downtime.',
+    tags: ['Status', 'Servers', 'Downtime'],
+    category: 'season',
+  },
+  {
     href: '/map-evolution',
     title: 'Map Evolution',
     description:

@@ -7,6 +7,9 @@
     "codes": "Codes",
     "news": "News",
     "modes": "Modi",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Status",
     "newCosmetics": "Neue Cosmetics",
     "season": "Season",
     "drops": "Drops",
@@ -56,6 +59,9 @@
     "playerCount": "Spielerzahl",
     "news": "News",
     "modes": "Spielmodi",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Ist Fortnite down?",
     "newCosmetics": "Neue Cosmetics",
     "season": "Season",
     "drops": "Beste Drops",
@@ -102,6 +108,7 @@
     "heroBody": "Shattered-Coast-Karte, Stats-Tracker, Settings und die How-to-Guides der Saison — keine Rechner-Farm.",
     "ctaTools": "Kostenlose Tools öffnen",
     "ctaTierList": "Season-3-Waffen-Tierliste",
+    "ctaLoadout": "Loadout hochladen",
     "browseCategories": "Nach Kategorie browsen",
     "weaponChanges": "Waffen-Änderungen",
     "popularTools": "Beliebte Tools",
@@ -128,6 +135,9 @@
     "toolItemShop": "Shop",
     "toolNews": "News",
     "toolModes": "Modi",
+    "toolReload": "Reload",
+    "toolRanked": "Ranked",
+    "toolStatus": "Status",
     "toolNewCosmetics": "Neu",
     "toolSeason": "Season",
     "toolDrops": "Drops",
@@ -213,6 +223,18 @@
       "map-rotation": {
         "title": "Map Rotation Timer",
         "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
+      },
+      "reload": {
+        "title": "Fortnite Reload",
+        "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
+      },
+      "ranked": {
+        "title": "Fortnite Ranked Reset",
+        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+      },
+      "status": {
+        "title": "Is Fortnite Down?",
+        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",

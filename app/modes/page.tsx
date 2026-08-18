@@ -43,9 +43,26 @@ export default async function ModesPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               {playlists.length} playlists from current game files after dropping bot, test, and QA rows.
-              Ranked ids are labelled even when Epic&apos;s display name is just “Solo.”
+              Ranked ids are labelled even when Epic&apos;s display name is just “Solo.” This is the
+              catalog, not how LP works — use{' '}
+              <Link href="/ranked" className="text-primary hover:underline">
+                ranked reset / LP
+              </Link>{' '}
+              and the{' '}
+              <Link href="/reload" className="text-primary hover:underline">
+                Reload mode page
+              </Link>{' '}
+              for those questions.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
+              <Link href="/reload" className="text-primary hover:underline">
+                Reload
+              </Link>
+              {' · '}
+              <Link href="/ranked" className="text-primary hover:underline">
+                Ranked
+              </Link>
+              {' · '}
               <Link href="/map-rotation" className="text-primary hover:underline">
                 Reload rotation
               </Link>

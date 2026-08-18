@@ -15,7 +15,9 @@ export const SEASON_HUB_LINKS = [
   { href: '/season-countdown', label: 'Countdown' },
   { href: '/news', label: 'Lobby news' },
   { href: '/sets', label: 'Live sets' },
-  { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked guide' },
+  { href: '/ranked', label: 'Ranked reset / LP' },
+  { href: '/status', label: 'Is Fortnite down' },
+  { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked climb guide' },
 ] as const
 
 export const RESET_WEEK_PLAYBOOK = [

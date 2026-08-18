@@ -60,7 +60,7 @@ export const PLAYLIST_FAQS = [
   {
     question: 'What is Reload vs Blitz vs OG?',
     answer:
-      'Reload (BlastBerry) is respawn BR on rotating small islands — see the map rotation timer. OG (Figment) is the Chapter 1-style island. Blitz (Forbidden Fruit) is the faster queue when Epic has it up. Player counts for those modes are on the player-count page.',
+      'Reload (BlastBerry) is respawn BR on rotating small islands — the mode page is /reload; the live clock is the map rotation timer. OG (Figment) is the Chapter 1-style island. Blitz (Forbidden Fruit) is the faster queue when Epic has it up. Ranked LP and the Season 4 reset are /ranked, not this catalog.',
   },
 ]
 

@@ -111,6 +111,14 @@ export default function SeasonCountdownPage() {
               <Link href="/season" className="text-primary hover:underline">
                 {CURRENT_SEASON.next.label} hub
               </Link>
+              . Queue vs downtime is the{' '}
+              <Link href="/status" className="text-primary hover:underline">
+                status page
+              </Link>
+              ; LP reset is{' '}
+              <Link href="/ranked" className="text-primary hover:underline">
+                ranked
+              </Link>
               .
             </p>
 

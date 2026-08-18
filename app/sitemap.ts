@@ -48,6 +48,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/free-cosmetics',
     '/fortnite-map',
     '/map-rotation',
+    '/reload',
+    '/ranked',
+    '/status',
     '/map-evolution',
     '/player-count',
     '/season',
@@ -80,7 +83,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency:
-      path === '/news' || path === '/new-cosmetics' || path === '/season' || path === '/sets' || path.startsWith('/sets/')
+      path === '/news' ||
+      path === '/new-cosmetics' ||
+      path === '/season' ||
+      path === '/sets' ||
+      path.startsWith('/sets/') ||
+      path === '/status'
         ? ('daily' as const)
         : ('weekly' as const),
     priority:
@@ -103,7 +111,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       path === '/new-cosmetics' ||
       path === '/season' ||
       path === '/drops' ||
-      path === '/sets'
+      path === '/sets' ||
+      path === '/reload' ||
+      path === '/ranked' ||
+      path === '/status'
         ? 0.95
         : 0.85,
   }))

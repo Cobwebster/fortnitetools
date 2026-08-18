@@ -16,6 +16,10 @@ import {
 } from '@/lib/map-data'
 import { articleJsonLd, breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
+import { MapPoiCrop } from '@/components/MapPoiCrop'
+import { CONTEST_COLOR, dropMapFocus, loadMapPois } from '@/lib/drop-map'
+
+export const revalidate = 3600
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -55,6 +59,8 @@ export default async function DropGuidePage({ params }: Props) {
 
   const faqs = DROP_GUIDE_FAQS[drop.slug] || []
   const others = DROP_GUIDES.filter((g) => g.slug !== drop.slug)
+  const pois = await loadMapPois()
+  const focus = dropMapFocus(drop.slug, drop.nearPoi, pois)
 
   return (
     <>
@@ -92,12 +98,20 @@ export default async function DropGuidePage({ params }: Props) {
       <Navbar />
       <main className="min-h-screen bg-background">
         <section className="relative overflow-hidden border-b border-border">
+          <div className="pointer-events-none absolute inset-0 opacity-40" aria-hidden="true">
+            <MapPoiCrop
+              focus={focus}
+              alt=""
+              className="h-full min-h-[22rem]"
+              scale={2.2}
+            />
+          </div>
           <div
             className="pointer-events-none absolute inset-0"
             aria-hidden="true"
             style={{
               background:
-                'radial-gradient(ellipse 65% 50% at 10% 0%, color-mix(in oklab, var(--primary) 20%, transparent), transparent 60%), linear-gradient(180deg, var(--card), var(--background))',
+                'linear-gradient(180deg, color-mix(in oklab, var(--background) 40%, transparent), var(--background))',
             }}
           />
           <div className="relative mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-14">
@@ -112,23 +126,38 @@ export default async function DropGuidePage({ params }: Props) {
               <span>/</span>
               <span className="text-foreground">{drop.name}</span>
             </nav>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · last reviewed {formatDropReviewed(drop.reviewed)}
-            </p>
-            <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
-              Best drop <span className="text-primary">{drop.name}</span>
-            </h1>
-            <p className="mt-3 text-base leading-relaxed text-muted-foreground">{drop.excerpt}</p>
-            <div className="mt-5 flex flex-wrap gap-2 text-xs">
-              <span className="rounded-md border border-border bg-card px-2.5 py-1 font-semibold uppercase tracking-wider text-foreground">
-                {contestLabels[drop.contest]}
-              </span>
-              <span className="rounded-md border border-border bg-card px-2.5 py-1 text-primary">
-                Loot {lootLabel(drop.loot)} · {drop.chests}
-              </span>
-              <span className="rounded-md border border-border bg-card px-2.5 py-1 text-muted-foreground">
-                {drop.biome}
-              </span>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+              <div className="mx-auto w-full max-w-xs shrink-0 overflow-hidden rounded-2xl border border-border shadow-lg ring-1 ring-primary/20 sm:mx-0 sm:w-56">
+                <MapPoiCrop
+                  focus={focus}
+                  alt={`${drop.name} on the live Shattered Coast map`}
+                  className="aspect-square h-auto"
+                  scale={3}
+                />
+              </div>
+              <div className="min-w-0 flex-1 text-center sm:text-left">
+                <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
+                  {CURRENT_SEASON.shortLabel} · last reviewed {formatDropReviewed(drop.reviewed)}
+                </p>
+                <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
+                  Best drop <span className="text-primary">{drop.name}</span>
+                </h1>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">{drop.excerpt}</p>
+                <div className="mt-5 flex flex-wrap justify-center gap-2 text-xs sm:justify-start">
+                  <span
+                    className="rounded-md px-2.5 py-1 font-semibold uppercase tracking-wider text-black"
+                    style={{ background: CONTEST_COLOR[drop.contest] || '#888' }}
+                  >
+                    {contestLabels[drop.contest]}
+                  </span>
+                  <span className="rounded-md border border-border bg-card px-2.5 py-1 text-primary">
+                    Loot {lootLabel(drop.loot)} · {drop.chests}
+                  </span>
+                  <span className="rounded-md border border-border bg-card px-2.5 py-1 text-muted-foreground">
+                    {drop.biome}
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -263,16 +292,30 @@ export default async function DropGuidePage({ params }: Props) {
             <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
               Other drops
             </h2>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {others.map((g) => (
-                <Link
-                  key={g.slug}
-                  href={`/drops/${g.slug}`}
-                  className="rounded-lg border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
-                >
-                  {g.name}
-                </Link>
-              ))}
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {others.map((g) => {
+                const otherFocus = dropMapFocus(g.slug, g.nearPoi, pois)
+                return (
+                  <Link
+                    key={g.slug}
+                    href={`/drops/${g.slug}`}
+                    className="group overflow-hidden rounded-xl border border-border bg-card hover:border-primary/60"
+                  >
+                    <div className="relative">
+                      <MapPoiCrop
+                        focus={otherFocus}
+                        alt={`${g.name} on the live Shattered Coast map`}
+                        className="h-28"
+                        scale={2.4}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                      <p className="absolute bottom-2 left-3 text-sm font-semibold text-white group-hover:text-primary">
+                        {g.name}
+                      </p>
+                    </div>
+                  </Link>
+                )
+              })}
             </div>
           </section>
         </div>

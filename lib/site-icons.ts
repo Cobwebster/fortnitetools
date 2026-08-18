@@ -50,6 +50,9 @@ export const TOOL_ICONS: Record<string, string> = {
   '/season': '/images/loadout/self_revive.png',
   '/drops': '/images/loadout/cluster_clinger.png',
   '/sets': '/images/loadout/apple.png',
+  '/reload': '/images/loadout/batman_grapnel.png',
+  '/ranked': '/images/loadout/shield_breaker_emp.png',
+  '/status': '/images/loadout/mat_metal.png',
   '/tools/battle-pass-xp-calculator': '/images/loadout/chug_jug.png',
 }
 

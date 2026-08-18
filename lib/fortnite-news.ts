@@ -109,7 +109,11 @@ export function newsTake(motd: NewsMotd): NewsTake {
     notes.push(
       'Season rollover is the countdown we keep dated on this site. Lobby art often lands a day or two before the island actually flips.'
     )
-    links.push({ href: '/season-countdown', label: 'Season countdown' })
+    links.push(
+      { href: '/season-countdown', label: 'Season countdown' },
+      { href: '/status', label: 'Is Fortnite down' },
+      { href: '/ranked', label: 'Ranked reset' }
+    )
   }
   if (/shop|outfit|bundle|item shop|cosmetic/.test(hay)) {
     links.push({ href: '/tools/item-shop', label: 'Item Shop' }, { href: '/new-cosmetics', label: 'New cosmetics' })

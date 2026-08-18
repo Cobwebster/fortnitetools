@@ -1,12 +1,25 @@
 import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { MapPoiCrop } from '@/components/MapPoiCrop'
 import { DROP_GUIDES, DROP_INDEX_FAQS, DROP_PICKER } from '@/lib/drop-guides'
+import { CONTEST_COLOR, dropMapFocus, loadMapPois } from '@/lib/drop-map'
 import { contestLabels, lootLabel } from '@/lib/map-data'
 import { CURRENT_SEASON } from '@/lib/season'
 import { breadcrumbJsonLd, faqJsonLd } from '@/lib/seo'
 
-export default function DropsIndexPage() {
+export const revalidate = 3600
+
+const PICKER_ART = [
+  { title: 'Ranked climb (LP)', image: '/images/icons/crown.png' },
+  { title: 'Loot and fights', image: '/images/loadout/striker_pump.png' },
+  { title: 'Sprite / cube bank', image: '/images/loadout/flowberry.png' },
+  { title: 'Zone already looks north / snow', image: '/images/icons/storm.png' },
+] as const
+
+export default async function DropsIndexPage() {
+  const pois = await loadMapPois()
+
   return (
     <>
       <script
@@ -27,12 +40,18 @@ export default function DropsIndexPage() {
       <Navbar />
       <main className="min-h-screen bg-background">
         <section className="relative overflow-hidden border-b border-border">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={CURRENT_SEASON.mapImage}
+            alt=""
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25"
+          />
           <div
             className="pointer-events-none absolute inset-0"
             aria-hidden="true"
             style={{
               background:
-                'radial-gradient(ellipse 65% 50% at 10% 0%, color-mix(in oklab, var(--primary) 20%, transparent), transparent 60%), linear-gradient(180deg, var(--card), var(--background))',
+                'linear-gradient(180deg, color-mix(in oklab, var(--background) 35%, transparent), var(--background))',
             }}
           />
           <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
@@ -43,41 +62,58 @@ export default function DropsIndexPage() {
               <span>/</span>
               <span className="text-foreground">Drops</span>
             </nav>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · Shattered Coast · last reviewed 17 Aug 2026
-            </p>
-            <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
-              Best Fortnite <span className="text-primary">Drops</span>
-            </h1>
-            <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Five named POIs with real rotate paths — contest, bus, landing split, extract, Sprites,
-              third-party angles, and when to leave. These are not the map pin tooltips. Use the{' '}
-              <Link href="/fortnite-map" className="text-primary hover:underline">
-                interactive map
-              </Link>{' '}
-              for pins; use these pages when you search “best drop [POI]” on reset week.
-            </p>
-            <p className="mt-3 text-sm text-muted-foreground">
-              <Link href="/fortnite-map" className="text-primary hover:underline">
-                Map
-              </Link>
-              {' · '}
-              <Link href="/guides/map/fortnite-loot-guide-best-spots" className="text-primary hover:underline">
-                Loot spots guide
-              </Link>
-              {' · '}
-              <Link href="/guides/map/fortnite-map-all-locations-guide" className="text-primary hover:underline">
-                All locations
-              </Link>
-              {' · '}
-              <Link href="/season" className="text-primary hover:underline">
-                Season hub
-              </Link>
-              {' · '}
-              <Link href="/guides/how-to/fortnite-ranked-mode-guide" className="text-primary hover:underline">
-                Ranked
-              </Link>
-            </p>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+              <div className="relative mx-auto w-36 shrink-0 sm:mx-0 sm:w-44">
+                <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg ring-1 ring-primary/20">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={CURRENT_SEASON.mapImage}
+                    alt={`${CURRENT_SEASON.label} Shattered Coast — drop guides for this island`}
+                    className="aspect-square w-full object-cover"
+                    width={176}
+                    height={176}
+                  />
+                </div>
+              </div>
+              <div className="min-w-0 flex-1 text-center sm:text-left">
+                <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
+                  {CURRENT_SEASON.shortLabel} · Shattered Coast · last reviewed 17 Aug 2026
+                </p>
+                <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
+                  Best Fortnite <span className="text-primary">Drops</span>
+                </h1>
+                <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
+                  Five named POIs with real rotate paths — contest, bus, landing split, extract, Sprites,
+                  third-party angles, and when to leave. Crops below are the live Shattered Coast
+                  minimap, not clip art. Use the{' '}
+                  <Link href="/fortnite-map" className="text-primary hover:underline">
+                    interactive map
+                  </Link>{' '}
+                  for pins; use these pages when you search “best drop [POI]” on reset week.
+                </p>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  <Link href="/fortnite-map" className="text-primary hover:underline">
+                    Map
+                  </Link>
+                  {' · '}
+                  <Link href="/guides/map/fortnite-loot-guide-best-spots" className="text-primary hover:underline">
+                    Loot spots guide
+                  </Link>
+                  {' · '}
+                  <Link href="/guides/map/fortnite-map-all-locations-guide" className="text-primary hover:underline">
+                    All locations
+                  </Link>
+                  {' · '}
+                  <Link href="/season" className="text-primary hover:underline">
+                    Season hub
+                  </Link>
+                  {' · '}
+                  <Link href="/ranked" className="text-primary hover:underline">
+                    Ranked LP / drops
+                  </Link>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -92,12 +128,25 @@ export default function DropsIndexPage() {
               stale every path here — until then this is late C7S3 Shattered Coast.
             </p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              {DROP_PICKER.map((row) => (
-                <article key={row.title} className="rounded-xl border border-border bg-card p-5">
-                  <h3 className="text-sm font-bold text-foreground">{row.title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
-                </article>
-              ))}
+              {DROP_PICKER.map((row) => {
+                const art = PICKER_ART.find((a) => a.title === row.title)
+                return (
+                  <article key={row.title} className="flex gap-4 rounded-xl border border-border bg-card p-5">
+                    {art ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={art.image}
+                        alt=""
+                        className="h-12 w-12 shrink-0 object-contain drop-shadow-md"
+                      />
+                    ) : null}
+                    <div>
+                      <h3 className="text-sm font-bold text-foreground">{row.title}</h3>
+                      <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
+                    </div>
+                  </article>
+                )
+              })}
             </div>
           </section>
 
@@ -105,62 +154,45 @@ export default function DropsIndexPage() {
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               The five landing pages
             </h2>
-            <div className="mt-5 overflow-x-auto rounded-xl border border-border">
-              <table className="w-full min-w-[36rem] text-left text-sm">
-                <thead className="bg-muted/50 text-xs uppercase tracking-wider text-muted-foreground">
-                  <tr>
-                    <th className="px-3 py-2 font-semibold">POI</th>
-                    <th className="px-3 py-2 font-semibold">Contest</th>
-                    <th className="px-3 py-2 font-semibold">Chests</th>
-                    <th className="px-3 py-2 font-semibold">Extract</th>
-                    <th className="px-3 py-2 font-semibold">Best for</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {DROP_GUIDES.map((drop) => (
-                    <tr key={drop.slug} className="border-t border-border">
-                      <td className="px-3 py-2">
-                        <Link href={`/drops/${drop.slug}`} className="font-semibold text-primary hover:underline">
-                          {drop.name}
-                        </Link>
-                      </td>
-                      <td className="px-3 py-2 text-muted-foreground">{contestLabels[drop.contest]}</td>
-                      <td className="px-3 py-2 text-muted-foreground">
-                        {drop.chests} {lootLabel(drop.loot)}
-                      </td>
-                      <td className="px-3 py-2 text-muted-foreground">{drop.extract.name}</td>
-                      <td className="px-3 py-2 text-muted-foreground">{drop.biome}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {DROP_GUIDES.map((drop) => {
+                const focus = dropMapFocus(drop.slug, drop.nearPoi, pois)
+                return (
+                  <Link
+                    key={drop.slug}
+                    href={`/drops/${drop.slug}`}
+                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/60"
+                  >
+                    <div className="relative">
+                      <MapPoiCrop
+                        focus={focus}
+                        alt={`${drop.name} on the live Shattered Coast map`}
+                        className="h-44"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
+                      <span
+                        className="absolute right-3 top-3 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-black"
+                        style={{ background: CONTEST_COLOR[drop.contest] || '#888' }}
+                      >
+                        {contestLabels[drop.contest]}
+                      </span>
+                      <p className="absolute bottom-2 left-3 font-display text-xl font-bold uppercase tracking-wide text-white group-hover:text-primary">
+                        {drop.name}
+                      </p>
+                    </div>
+                    <div className="flex flex-1 flex-col p-5">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                        {drop.biome} · {drop.chests} {lootLabel(drop.loot)}
+                      </p>
+                      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{drop.excerpt}</p>
+                      <p className="mt-3 text-xs text-muted-foreground">Extract: {drop.extract.name}</p>
+                      <p className="mt-3 text-sm font-semibold text-primary">Rotate guide →</p>
+                    </div>
+                  </Link>
+                )
+              })}
             </div>
           </section>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {DROP_GUIDES.map((drop) => (
-              <Link
-                key={drop.slug}
-                href={`/drops/${drop.slug}`}
-                className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-colors hover:border-primary/60"
-              >
-                <div className="flex items-center justify-between gap-2">
-                  <span className="rounded px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider bg-muted text-muted-foreground">
-                    {contestLabels[drop.contest]}
-                  </span>
-                  <span className="text-xs text-primary" aria-hidden="true">
-                    {lootLabel(drop.loot)}
-                  </span>
-                </div>
-                <h2 className="mt-3 font-display text-xl font-bold uppercase tracking-wide text-foreground group-hover:text-primary">
-                  {drop.name}
-                </h2>
-                <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">{drop.biome}</p>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{drop.excerpt}</p>
-                <p className="mt-4 text-sm font-semibold text-primary">Rotate guide →</p>
-              </Link>
-            ))}
-          </div>
 
           <section className="rounded-xl border border-border bg-card p-5">
             <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">

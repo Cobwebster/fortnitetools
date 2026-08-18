@@ -186,6 +186,14 @@ export function worldToLatLng(x: number, y: number): [number, number] {
   return [-y, x]
 }
 
+/** Percent on fortnite-api.com/images/map.png (north up, Fortnite Y+ is south). */
+export function worldToMapPercent(x: number, y: number): { x: number; y: number } {
+  return {
+    x: ((x + MAP_HALF) / (MAP_HALF * 2)) * 100,
+    y: ((y + MAP_HALF) / (MAP_HALF * 2)) * 100,
+  }
+}
+
 export type ExtractTraffic = 'quiet' | 'medium' | 'hot'
 
 export type ExtractionSiteDef = {
@@ -324,7 +332,7 @@ export type ResolvedExtractionSite = ExtractionSiteDef & {
   poiName: string
 }
 
-function findPoiByName(
+export function findPoiByName(
   pois: { name: string; location: { x: number; y: number } }[],
   nearPoi: string
 ) {
@@ -337,8 +345,6 @@ function findPoiByName(
     pois.find((p) => normalizePoiName(p.name).includes(target) || target.includes(normalizePoiName(p.name)))
   )
 }
-
-export { findPoiByName }
 
 /** Anchor curated extract pads to live Fortnite-API POI coordinates. */
 export function resolveExtractionSites(

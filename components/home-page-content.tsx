@@ -33,6 +33,9 @@ const EN_POPULAR_TOOLS = [
   { href: '/drops', key: 'toolDrops' as const },
   { href: '/news', key: 'toolNews' as const },
   { href: '/modes', key: 'toolModes' as const },
+  { href: '/reload', key: 'toolReload' as const },
+  { href: '/ranked', key: 'toolRanked' as const },
+  { href: '/status', key: 'toolStatus' as const },
   { href: '/new-cosmetics', key: 'toolNewCosmetics' as const },
   { href: '/sets', key: 'toolSets' as const },
   { href: '/map-rotation', key: 'toolRotation' as const },
@@ -119,6 +122,14 @@ export function HomePageContent() {
               >
                 {isEnglish ? t('ctaTierList') : t('ctaGuides')}
               </Link>
+              {isEnglish ? (
+                <Link
+                  href="/tools/loadout-builder"
+                  className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                >
+                  {t('ctaLoadout')}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>

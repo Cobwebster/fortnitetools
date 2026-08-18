@@ -7,6 +7,9 @@
     "codes": "Códigos",
     "news": "Notícias",
     "modes": "Modos",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Status",
     "newCosmetics": "Cosméticos novos",
     "season": "Temporada",
     "drops": "Drops",
@@ -56,6 +59,9 @@
     "playerCount": "Jogadores online",
     "news": "Notícias",
     "modes": "Modos",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Fortnite caiu?",
     "newCosmetics": "Cosméticos novos",
     "season": "Temporada",
     "drops": "Melhores drops",
@@ -102,6 +108,7 @@
     "heroBody": "Mapa de Shattered Coast, tracker de stats, configurações e guias how-to da temporada — não uma fazenda de calculadoras.",
     "ctaTools": "Abrir ferramentas grátis",
     "ctaTierList": "Tier list de armas T3",
+    "ctaLoadout": "Enviar seu loadout",
     "browseCategories": "Navegar por categoria",
     "weaponChanges": "Mudanças de armas",
     "popularTools": "Ferramentas populares",
@@ -128,6 +135,9 @@
     "toolItemShop": "Loja",
     "toolNews": "Notícias",
     "toolModes": "Modos",
+    "toolReload": "Reload",
+    "toolRanked": "Ranked",
+    "toolStatus": "Status",
     "toolNewCosmetics": "Novos",
     "toolSeason": "Temporada",
     "toolDrops": "Drops",
@@ -213,6 +223,18 @@
       "map-rotation": {
         "title": "Map Rotation Timer",
         "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
+      },
+      "reload": {
+        "title": "Fortnite Reload",
+        "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
+      },
+      "ranked": {
+        "title": "Fortnite Ranked Reset",
+        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+      },
+      "status": {
+        "title": "Is Fortnite Down?",
+        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",

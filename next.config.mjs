@@ -80,6 +80,11 @@ const nextConfig = {
         destination: '/guides/how-to',
         permanent: true,
       },
+      {
+        source: '/is-fortnite-down',
+        destination: '/status',
+        permanent: true,
+      },
     ]
   },
 }

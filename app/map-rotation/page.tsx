@@ -60,9 +60,17 @@ export default function MapRotationPage() {
               What Reload map is on right now, how many minutes until it changes, and which island is
               next. Reload rotates every <strong className="text-foreground">20 minutes</strong> —
               Oasis, Slurp Rush, then Springfield — and this page tracks it live so you don&apos;t
-              have to open the lobby to check.
+              have to open the lobby to check. What Reload <em>is</em>, vs BR and Blitz, lives on the{' '}
+              <Link href="/reload" className="text-primary hover:underline">
+                Reload mode page
+              </Link>
+              .
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
+              <Link href="/reload" className="text-primary hover:underline">
+                What is Reload
+              </Link>
+              {' · '}
               <Link href="/map-evolution" className="text-primary hover:underline">
                 Map evolution
               </Link>

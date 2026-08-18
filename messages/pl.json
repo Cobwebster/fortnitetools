@@ -7,6 +7,9 @@
     "codes": "Kody",
     "news": "Aktualności",
     "modes": "Tryby",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Status",
     "newCosmetics": "Nowe kosmetyki",
     "season": "Sezon",
     "drops": "Dropy",
@@ -56,6 +59,9 @@
     "playerCount": "Liczba graczy",
     "news": "Aktualności",
     "modes": "Tryby",
+    "reload": "Reload",
+    "ranked": "Ranked",
+    "status": "Czy Fortnite nie działa?",
     "newCosmetics": "Nowe kosmetyki",
     "season": "Sezon",
     "drops": "Najlepsze dropy",
@@ -102,6 +108,7 @@
     "heroBody": "Mapa Shattered Coast, tracker statystyk, ustawienia i poradniki how-to — nie farma kalkulatorów.",
     "ctaTools": "Otwórz darmowe narzędzia",
     "ctaTierList": "Tier lista broni S3",
+    "ctaLoadout": "Wyślij loadout",
     "browseCategories": "Przeglądaj kategorie",
     "weaponChanges": "Zmiany broni",
     "popularTools": "Popularne narzędzia",
@@ -128,6 +135,9 @@
     "toolItemShop": "Sklep",
     "toolNews": "Aktualności",
     "toolModes": "Tryby",
+    "toolReload": "Reload",
+    "toolRanked": "Ranked",
+    "toolStatus": "Status",
     "toolNewCosmetics": "Nowe",
     "toolSeason": "Sezon",
     "toolDrops": "Dropy",
@@ -213,6 +223,18 @@
       "map-rotation": {
         "title": "Map Rotation Timer",
         "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
+      },
+      "reload": {
+        "title": "Fortnite Reload",
+        "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
+      },
+      "ranked": {
+        "title": "Fortnite Ranked Reset",
+        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+      },
+      "status": {
+        "title": "Is Fortnite Down?",
+        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",

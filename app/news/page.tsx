@@ -61,6 +61,10 @@ export default async function NewsPage() {
                 Season countdown
               </Link>
               {' · '}
+              <Link href="/status" className="text-primary hover:underline">
+                Is Fortnite down
+              </Link>
+              {' · '}
               <Link href="/new-cosmetics" className="text-primary hover:underline">
                 New cosmetics
               </Link>
