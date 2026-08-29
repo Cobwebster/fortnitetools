@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { formatRemaining, getRotationSnapshot, type RotationSnapshot } from '@/lib/map-rotation'
 
 export function ReloadNowCard() {

@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { COSMETIC_TYPES, RARITY_COLORS, type CosmeticItem } from '@/lib/fortnite-api'
 import { CosmeticDetailDrawer } from '@/components/CosmeticDetailDrawer'
 

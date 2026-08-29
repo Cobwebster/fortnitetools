@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { ArrowRight } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import { FortniteIcon } from '@/components/fortnite-icon'

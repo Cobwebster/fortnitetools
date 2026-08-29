@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { categories } from '@/lib/posts'
 import { BRAND_ICON } from '@/lib/site-icons'

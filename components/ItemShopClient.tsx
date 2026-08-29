@@ -9,7 +9,7 @@ import {
   type CosmeticItem,
   type ShopOffer,
 } from '@/lib/fortnite-api'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { Search, RefreshCw, ShoppingBag, Sparkles, Library, Star, Heart } from 'lucide-react'
 import { CosmeticDetailDrawer } from '@/components/CosmeticDetailDrawer'
 import {

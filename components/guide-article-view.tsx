@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { Clock, Tag, ArrowLeft, ArrowRight } from 'lucide-react'
 import { useTranslations, useLocale } from 'next-intl'
 import { PostCard } from '@/components/post-card'

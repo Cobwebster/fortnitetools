@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { Check } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'

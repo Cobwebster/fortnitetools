@@ -1,7 +1,7 @@
 'use client'
 
 import type { ReactNode } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useLocale, useTranslations } from 'next-intl'
 import {
   locales,

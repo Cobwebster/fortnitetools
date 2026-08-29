@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { ToolsCatalogClient } from '@/components/ToolsCatalogClient'
 import { defaultLocale, localizeHref, type AppLocale } from '@/i18n/config'

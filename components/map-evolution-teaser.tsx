@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { MapEvolutionCompareSlider } from '@/components/map-evolution-compare'

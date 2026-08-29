@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { fetchLiveSets, LIVE_SET_CAP, SETS_HOWTO, SETS_INDEX_FAQS } from '@/lib/cosmetic-sets'

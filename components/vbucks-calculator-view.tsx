@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { ShoppingCart, TrendingUp, Info, Star } from 'lucide-react'
 import { loadShopWishlist, type ShopWishlistItem } from '@/lib/shop-wishlist'

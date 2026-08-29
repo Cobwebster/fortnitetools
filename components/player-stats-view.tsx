@@ -1,7 +1,7 @@
 'use client'
 
 import { Suspense } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 import { FortniteIcon } from '@/components/fortnite-icon'

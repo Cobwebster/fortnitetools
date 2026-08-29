@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/link'
 import Image from 'next/image'
 import { Clock } from 'lucide-react'
 import { type Post, getCategoryLabel, formatDate } from '@/lib/posts'

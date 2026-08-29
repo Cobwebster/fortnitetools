@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { newsTake, type NewsMotd, type NewsPayload, type StwMessage } from '@/lib/fortnite-news'
 
 function formatNewsDate(iso: string | null) {

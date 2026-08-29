@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type ReactNode } from 'react'
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { ChevronDown } from 'lucide-react'
 import { extractTrafficColor, type ContestLevel } from '@/lib/map-data'

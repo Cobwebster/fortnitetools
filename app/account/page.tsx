@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { redirect } from 'next/navigation'
 import { CalendarDays, CheckCircle2, LogOut, Sparkles, UploadCloud, UserRound } from 'lucide-react'
 import { SitePage } from '@/components/site-page'

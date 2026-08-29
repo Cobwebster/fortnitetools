@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 
 const DISMISS_KEY = 'ft_cookie_notice'
 

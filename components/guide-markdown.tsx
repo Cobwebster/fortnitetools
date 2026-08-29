@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/link'
 import type { ReactNode } from 'react'
 import { useLocale } from 'next-intl'
 import { localizeHref, type AppLocale } from '@/i18n/config'

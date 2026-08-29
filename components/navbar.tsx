@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { AuthNavLinks } from '@/components/auth-nav-links'
 import { LanguageFlagLinks } from '@/components/language-flag-links'

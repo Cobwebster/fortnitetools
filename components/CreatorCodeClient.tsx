@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { FortniteIcon } from '@/components/fortnite-icon'
 import { CREATOR_CODE_EXAMPLES, type CreatorCodeResult } from '@/lib/creator-code'
 

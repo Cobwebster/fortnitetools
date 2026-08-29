@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { PostCard } from '@/components/post-card'
 import { getLocalizedPosts } from '@/lib/posts'

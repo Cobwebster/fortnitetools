@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import {
   CATALOG_RARITY_BG,
   CATALOG_RARITY_TEXT,

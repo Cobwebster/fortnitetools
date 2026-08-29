@@ -1,7 +1,7 @@
 'use client'
 
 import { useActionState, useEffect, useMemo, useRef, useState } from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { Check, Link2, Copy, UploadCloud, X } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import {
