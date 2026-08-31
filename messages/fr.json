@@ -120,8 +120,8 @@
     "blurbTools": "Carte, tracker, réglages graphiques et binds — mis à jour quand la saison change.",
     "blurbGuidesTitle": "Guides",
     "blurbGuides": "Guides armes, carte, Passe et ranked de la saison — sans remplissage.",
-    "blurbSeasonTitle": "Chapitre 7 Saison 3",
-    "blurbSeason": "Couverture Runners du loot et de la carte — avec dates de dernière vérif.",
+    "blurbSeasonTitle": "Chapter 7 Season 4",
+    "blurbSeason": "Override coverage for the live island, Match Overrides, ranked, and Battle Pass — with dates so you know when something was last checked.",
     "toolFreeCosmetics": "Cosmétiques gratuits",
     "toolXpCalc": "Calc. XP",
     "toolCountdown": "Compte à rebours",
@@ -206,7 +206,7 @@
       },
       "season-countdown": {
         "title": "Season Countdown",
-        "description": "When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start."
+        "description": "When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start."
       },
       "codes": {
         "title": "Creative Map Codes",
@@ -229,12 +229,12 @@
         "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
-        "title": "Fortnite Ranked Reset",
-        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+        "title": "Fortnite Ranked",
+        "description": "LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump."
       },
       "status": {
         "title": "Is Fortnite Down?",
-        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
+        "description": "Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",

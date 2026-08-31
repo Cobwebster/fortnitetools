@@ -51,9 +51,9 @@ export const posts: Post[] = [
   // ─── WEAPONS ───────────────────────────────────────────────────────────────
   {
     slug: 'fortnite-best-weapons-tier-list-2026',
-    title: 'Fortnite Chapter 7 Season 3 Weapons Tier List',
+    title: 'Fortnite Chapter 7 Season 3 Weapons Tier List (Runners — archive)',
     excerpt:
-      'Current Runners meta on Shattered Coast — Striker Pump, Flex SMG, Surgical Burst Rifle ranked, plus what to skip (Lancehead) after mid-season balance.',
+      'Archive: late Runners meta on Shattered Coast. Override loot numbers are not fully rewritten — confirm in-game; see the season hub.',
     category: 'weapons',
     image: '/images/hero-bg.png',
     date: '2026-07-25',
@@ -61,6 +61,8 @@ export const posts: Post[] = [
     featured: true,
     tags: ['weapons', 'tier list', 'meta', 'chapter 7 season 3', 'runners', 'striker pump', 'flex smg'],
     content: `
+> **Archive note (31 Aug 2026):** This list is late **Runners (C7S3)**. **Override** is live — we have not rewritten full DPS sheets yet. Confirm guns in-game; see the [season hub](/season) and [loadout builder](/tools/loadout-builder).
+
 ## How this tier list is ranked
 
 Weapons are ranked for Chapter 7 Season 3 (Runners) on the Shattered Coast map. Criteria: fight impact, consistency, how often you find them, and how they pair with mobility (Seven Sliders / Overdrive-style rotates). Epic has already hotfixed this season — treat this as a living guide.
@@ -343,21 +345,23 @@ POI names and power spots shift with hotfixes and mid-season map updates. If Epi
   // ─── SEASON ────────────────────────────────────────────────────────────────
   {
     slug: 'fortnite-season-battle-pass-guide',
-    title: 'Fortnite Runners Battle Pass Guide (Chapter 7 Season 3)',
+    title: 'Fortnite Runners Battle Pass Guide (Chapter 7 Season 3 — archive)',
     excerpt:
-      'Runners Battle Pass cost, skin unlock levels, and a practical XP plan to finish before the season ends.',
+      'Archive: Runners Battle Pass cost, skin unlock levels, and XP plan. Override (C7S4) ends November 1, 2026 — use the live XP calculator for the current pass.',
     category: 'season',
     image: '/images/icons/battle_pass.png',
     date: '2026-07-10',
     readTime: 10,
     featured: false,
-    tags: ['battle pass', 'season', 'XP', 'level up', 'runners', 'chapter 7 season 3'],
+    tags: ['battle pass', 'season', 'XP', 'level up', 'runners', 'chapter 7 season 3', 'archive'],
     content: `
+> **Archive note (31 Aug 2026):** Runners ended at the August 20 reboot. **Override (Chapter 7 Season 4)** is live and ends **November 1, 2026**. Use the [season countdown](/season-countdown) and [Battle Pass XP calculator](/tools/battle-pass-xp-calculator) for the current pass. Skin levels below are historical.
+
 ## Runners Battle Pass overview
 
-Chapter 7 Season 3 (**Runners**) ends around **August 19, 2026**. The paid pass is typically **800 V-Bucks** (also included with Fortnite Crew). Cosmetics are seasonal — unclaimed rewards disappear when the season ends.
+Chapter 7 Season 3 (**Runners**) ended around **August 19–20, 2026**. The paid pass was typically **800 V-Bucks** (also included with Fortnite Crew). Cosmetics are seasonal — unclaimed rewards disappeared when the season ended.
 
-This page covers skin unlock gates and a realistic XP plan. For a live grind projection, use the [Battle Pass XP calculator](/tools/battle-pass-xp-calculator). Cosmetics in the pass also show up in the [Item Shop viewer](/tools/item-shop) once they rotate or when you want set context.
+This page covers skin unlock gates and a realistic XP plan from the Runners era. For a live grind projection on Override, use the [Battle Pass XP calculator](/tools/battle-pass-xp-calculator). Cosmetics in the live pass also show up in the [Item Shop viewer](/tools/item-shop) once they rotate or when you want set context.
 
 ## Outfit unlock levels
 

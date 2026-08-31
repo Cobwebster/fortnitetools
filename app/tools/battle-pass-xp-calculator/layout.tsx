@@ -4,13 +4,14 @@ import { createMetadata, faqJsonLd } from '@/lib/seo'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Battle Pass XP Calculator',
   description:
-    'Estimate Battle Pass progress for Chapter 7 Season 3. Enter your level and weekly XP sources to see if you can finish before the season ends.',
+    'Estimate Battle Pass progress for Chapter 7 Season 4 (Override). Enter your level and weekly XP sources to see if you can finish before November 1, 2026.',
   path: '/tools/battle-pass-xp-calculator',
   keywords: [
     'fortnite xp calculator',
     'battle pass xp',
     'fortnite levels calculator',
-    'chapter 7 season 3 battle pass',
+    'chapter 7 season 4 battle pass',
+    'fortnite override battle pass',
   ],
 })
 
@@ -21,9 +22,9 @@ const faqs = [
       'This planner uses a simplified ~80,000 XP per level model. Real quest values, boosts, and caps change during the season.',
   },
   {
-    question: 'When does Chapter 7 Season 3 end?',
+    question: 'When does Chapter 7 Season 4 end?',
     answer:
-      'Runners is scheduled through about August 19, 2026. Confirm the countdown in-game if Epic extends the season.',
+      'Override is scheduled through November 1, 2026. Use the season countdown for remaining time; Epic can shift downtime by a few hours.',
   },
 ]
 

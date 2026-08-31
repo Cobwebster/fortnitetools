@@ -120,8 +120,8 @@
     "blurbTools": "Mapa, tracker, configurações gráficas e binds — atualizado quando a temporada muda.",
     "blurbGuidesTitle": "Guias",
     "blurbGuides": "Guias de armas, mapa, Passe e ranked da temporada — sem enrolação.",
-    "blurbSeasonTitle": "Capítulo 7 Temporada 3",
-    "blurbSeason": "Cobertura Runners do loot e mapa atuais — com datas da última revisão.",
+    "blurbSeasonTitle": "Chapter 7 Season 4",
+    "blurbSeason": "Override coverage for the live island, Match Overrides, ranked, and Battle Pass — with dates so you know when something was last checked.",
     "toolFreeCosmetics": "Cosméticos grátis",
     "toolXpCalc": "Calc. XP",
     "toolCountdown": "Contagem",
@@ -206,7 +206,7 @@
       },
       "season-countdown": {
         "title": "Season Countdown",
-        "description": "When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start."
+        "description": "When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start."
       },
       "codes": {
         "title": "Creative Map Codes",
@@ -229,12 +229,12 @@
         "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
-        "title": "Fortnite Ranked Reset",
-        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+        "title": "Fortnite Ranked",
+        "description": "LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump."
       },
       "status": {
         "title": "Is Fortnite Down?",
-        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
+        "description": "Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",

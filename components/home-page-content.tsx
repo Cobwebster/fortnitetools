@@ -296,15 +296,15 @@ export function HomePageContent() {
       {isEnglish ? (
         <section className="border-t border-border bg-background">
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Last reviewed 17 Aug 2026</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Last reviewed 31 Aug 2026</p>
             <h2 className="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-foreground">
               Built for the live season — not a widget farm
             </h2>
             <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2">
               <p className="text-sm leading-relaxed text-muted-foreground">
                 FortniteTools is a solo fan project. Pages get a date when the loot pool, island, or shop rules change.
-                The useful stuff is the map, tracker, shop, loadout builder, build practice, and the Chapter 7 Season 3
-                guides — not a new calculator for every search query.
+                The useful stuff is the map, tracker, shop, loadout builder, build practice, and the Chapter 7 Season 4
+                (Override) hubs — not a new calculator for every search query.
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 I do not publish per-skin encyclopedias, leak dumps, or translated copies of the same form. If a helper

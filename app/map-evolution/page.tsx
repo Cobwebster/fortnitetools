@@ -50,16 +50,16 @@ const CHAPTER_SUMMARIES = [
   {
     chapter: 7,
     island: 'Shattered Coast',
-    seasons: 3,
+    seasons: 4,
     blurb:
-      'Current Runners era. Start with Chapter 7 Season 3 on the right and any nostalgia map on the left for “then vs now” content. For live POIs and drops, switch to the interactive map — this archive is historical minimaps, not live markers.',
+      'Override is live (Chapter 7 Season 4). Archive snapshots may lag the live minimap — start with the newest Chapter 7 season on the right and any nostalgia map on the left for “then vs now.” For live POIs and drops, switch to the interactive map — this archive is historical minimaps, not live markers.',
   },
 ] as const
 
 const COMPARISON_IDEAS = [
   {
-    title: 'Chapter 1 Season 1 vs Chapter 7 Season 3',
-    body: 'The classic “how far has Fortnite come?” pair. Empty early Athena next to today’s Shattered Coast shows island size, POI density, and art direction in one drag.',
+    title: 'Chapter 1 Season 1 vs Chapter 7 Season 4',
+    body: 'The classic “how far has Fortnite come?” pair. Empty early Athena next to today’s Override island shows island size, POI density, and art direction in one drag.',
   },
   {
     title: 'Season X vs Chapter 2 Season 1',
@@ -78,7 +78,7 @@ const COMPARISON_IDEAS = [
 const faqs = [
   {
     q: 'What is Fortnite map evolution?',
-    a: `Map evolution is a visual history of Fortnite Battle Royale islands. This tool lets you pick any two of ${MAP_EVOLUTION.length} season snapshots and drag a slider to compare them — for example Chapter 1 Season 1 next to Chapter 7 Season 3 (Shattered Coast).`,
+    a: `Map evolution is a visual history of Fortnite Battle Royale islands. This tool lets you pick any two of ${MAP_EVOLUTION.length} season snapshots and drag a slider to compare them — for example Chapter 1 Season 1 next to Chapter 7 Season 4 (Override).`,
   },
   {
     q: 'How do I compare two Fortnite maps?',
@@ -184,7 +184,7 @@ export default function MapEvolutionPage() {
                 renames, new biomes, and coastline edits.
               </li>
               <li>
-                For “then vs now,” leave Chapter 7 Season 3 on the right and pick any nostalgia season
+                For “then vs now,” leave the newest Chapter 7 season on the right and pick any nostalgia season
                 on the left — Chapter 1 Season 1 is the most shared pairing.
               </li>
               <li>
@@ -318,7 +318,7 @@ export default function MapEvolutionPage() {
             </p>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               This page is intentionally an archive viewer — not a loot heat map. When you need
-              Season 3 drop advice, read the{' '}
+              Override drop advice, read the{' '}
               <Link href="/guides/map/fortnite-map-all-locations-guide" className="text-primary hover:underline">
                 Shattered Coast POI guide
               </Link>{' '}

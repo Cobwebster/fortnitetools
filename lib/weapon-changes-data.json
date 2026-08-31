@@ -1,7 +1,331 @@
 {
-  "updatedAt": "2026-07-26",
-  "sourceNote": "Compiled from public Fortnite balance history (Epic patch notes / community trackers). Numbers are reference values — always confirm in-game after updates.",
+  "updatedAt": "2026-08-31",
+  "sourceNote": "Compiled from public Fortnite balance history (Epic patch notes / Fortnite wiki / community trackers). Numbers are reference values — always confirm in-game after updates. Override (v42.00) vault/unvault rows use New for the live value; Old is prior season when known.",
   "patches": [
+    {
+      "date": "2026-08-26",
+      "label": "August 26, 2026 Hotfix",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Mega Buster",
+          "stats": [
+            {
+              "stat": "Damage (base)",
+              "old": 40,
+              "new": 48,
+              "change": 8
+            },
+            {
+              "stat": "Damage (half charge)",
+              "old": 80,
+              "new": 96,
+              "change": 16
+            },
+            {
+              "stat": "Damage (full charge)",
+              "old": 120,
+              "new": 144,
+              "change": 24
+            },
+            {
+              "stat": "Structure Damage (base)",
+              "old": 40,
+              "new": 48,
+              "change": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "label": "August 21, 2026 Hotfix",
+      "entries": [
+        {
+          "rarity": "Rare",
+          "name": "Mega Buster",
+          "stats": [
+            {
+              "stat": "Damage (base)",
+              "old": 35,
+              "new": 40,
+              "change": 5
+            },
+            {
+              "stat": "Damage (half charge)",
+              "old": 70,
+              "new": 80,
+              "change": 10
+            },
+            {
+              "stat": "Damage (full charge)",
+              "old": 105,
+              "new": 120,
+              "change": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "label": "August 20, 2026 — Override (v42.00)",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 92,
+              "new": 95,
+              "change": 3
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.35,
+              "new": 1.4,
+              "change": 0.05
+            },
+            {
+              "stat": "DPS",
+              "old": 124.2,
+              "new": 133,
+              "change": 8.8
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 112,
+              "new": 116,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.35,
+              "new": 1.4,
+              "change": 0.05
+            },
+            {
+              "stat": "DPS",
+              "old": 151.2,
+              "new": 162.4,
+              "change": 11.2
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Enhanced 8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 117,
+              "new": 121,
+              "change": 4
+            },
+            {
+              "stat": "Fire Rate",
+              "old": 1.35,
+              "new": 1.4,
+              "change": 0.05
+            },
+            {
+              "stat": "DPS",
+              "old": 157.95,
+              "new": 169.4,
+              "change": 11.45
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 119,
+              "new": 108,
+              "change": -11
+            },
+            {
+              "stat": "DPS",
+              "old": 83.3,
+              "new": 75.6,
+              "change": -7.7
+            },
+            {
+              "stat": "Reload Time",
+              "old": 4.05,
+              "new": 4.14,
+              "change": 0.09
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 128,
+              "new": 116,
+              "change": -12
+            },
+            {
+              "stat": "DPS",
+              "old": 89.6,
+              "new": 81.2,
+              "change": -8.4
+            },
+            {
+              "stat": "Reload Time",
+              "old": 3.7,
+              "new": 3.78,
+              "change": 0.08
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Mega Buster",
+          "stats": [
+            {
+              "stat": "Damage (base)",
+              "old": null,
+              "new": 35,
+              "change": null
+            },
+            {
+              "stat": "Damage (full charge)",
+              "old": null,
+              "new": 105,
+              "change": null
+            },
+            {
+              "stat": "Fire Rate",
+              "old": null,
+              "new": 2.6,
+              "change": null
+            },
+            {
+              "stat": "Ammo Reserve",
+              "old": null,
+              "new": 75,
+              "change": null
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Midas' Masterpiece",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": null,
+              "new": 125,
+              "change": null
+            },
+            {
+              "stat": "Headshot Multiplier",
+              "old": null,
+              "new": 2.5,
+              "change": null
+            },
+            {
+              "stat": "Magazine Size",
+              "old": null,
+              "new": 1,
+              "change": null
+            },
+            {
+              "stat": "Ammo Reserve",
+              "old": null,
+              "new": 7,
+              "change": null
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Assault Rifle",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": null,
+              "new": 36,
+              "change": null
+            },
+            {
+              "stat": "DPS",
+              "old": null,
+              "new": 198,
+              "change": null
+            },
+            {
+              "stat": "Fire Rate",
+              "old": null,
+              "new": 5.5,
+              "change": null
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Striker Pump Shotgun",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Surgical Burst Rifle",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Warforged Assault Rifle",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Rapid Fire SMG",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-15",
       "label": "July 15, 2026",

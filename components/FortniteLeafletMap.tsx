@@ -547,7 +547,7 @@ export function FortniteLeafletMap({
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Near <span className="font-semibold text-foreground">{selectedExtract.poiName}</span> on
-                Shattered Coast (Chapter 7 Season 3 / Runners).
+                Shattered Coast (Chapter 7 Season 4 / Override).
               </p>
               <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">Tip: </span>
@@ -580,7 +580,7 @@ export function FortniteLeafletMap({
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Near <span className="font-semibold text-foreground">{selectedSpawn.poiName}</span> —
-                POI-anchored planning pin for Chapter 7 Season 3.
+                POI-anchored planning pin for Chapter 7 Season 4.
               </p>
               <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
                 Exact in-match spots can shift slightly. Use this to plan drops and rotates, then

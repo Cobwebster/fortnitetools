@@ -64,7 +64,7 @@ export default async function RankedPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={CURRENT_SEASON.mapImage}
-                    alt={`${CURRENT_SEASON.label} Shattered Coast — ranked is this island until the reboot`}
+                    alt={`${CURRENT_SEASON.label} Override — ranked BR uses this island`}
                     className="aspect-square w-full object-cover"
                     width={176}
                     height={176}
@@ -85,13 +85,13 @@ export default async function RankedPage() {
                   Fortnite <span className="text-primary">Ranked</span>
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                  League Points, the Season 4 reset date, and which Shattered Coast drops still make
-                  sense while Chapter 7 Season 3 is live. “Fortnite ranked reset” and “how ranked works”
-                  are not the same question as{' '}
+                  League Points, Match Overrides, and which returning drops still make sense on
+                  Override (Chapter 7 Season 4). “Fortnite ranked reset” and “how ranked works” are
+                  not the same question as{' '}
                   <Link href="/modes" className="text-primary hover:underline">
                     every playlist in the files
                   </Link>
-                  . The long climb article is linked below — this page is the season-boundary sheet.
+                  . The long climb article is linked below — this page is the season sheet.
                 </p>
                 <p className="mt-3 text-sm text-muted-foreground">
                   <Link href="/guides/how-to/fortnite-ranked-mode-guide" className="text-primary hover:underline">
@@ -193,7 +193,7 @@ export default async function RankedPage() {
               How LP actually pays
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Ranked is a Habanero playlist on the same Shattered Coast island as pubs, with a
+              Ranked is a Habanero playlist on the same Override island as pubs, with a
               different lobby and a different incentive. The client still shows Bronze I through
               Unreal. We will not invent a new Season 4 point formula before the reboot — S3 math
               below is what the live tab is counting tonight.
@@ -335,13 +335,13 @@ export default async function RankedPage() {
 
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Where to drop in ranked (C7S3)
+              Where to drop in ranked (C7S4)
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Crops of the live Shattered Coast minimap, focused on each named POI. Ranked is not
-              pubs with a badge: Heatwave Harbor’s chest density is still real, and so is the 50/50.
-              After the S4 island flip, treat the names as stale until we rewrite them — we will not
-              invent Season 4 POIs the night before the reboot.
+              Crops of the live Override minimap for each named POI that still has a drop page.
+              Ranked is not pubs with a badge: Heatwave Harbor’s chest density is still real, and so
+              is the 50/50. New Override names (Green Hill Zone, Reality’s Reign, Stone Sanctum) do
+              not have dedicated pages yet — scout them in pubs before you climb there.
             </p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               {RANKED_DROPS.map((row) => {
@@ -353,7 +353,7 @@ export default async function RankedPage() {
                     className="group overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/50"
                   >
                     <div className="relative">
-                      <MapPoiCrop focus={focus} alt={`${row.name} on the live Shattered Coast map`} />
+                      <MapPoiCrop focus={focus} alt={`${row.name} on the live Override map`} />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                       <p className="absolute bottom-2 left-3 font-display text-lg font-bold uppercase tracking-wide text-white group-hover:text-primary">
                         {row.name}
@@ -372,8 +372,9 @@ export default async function RankedPage() {
             </div>
             <p className="mt-3 text-sm">
               <Link href="/fortnite-map" className="font-semibold text-primary hover:underline">
-                Full Shattered Coast map
+                Full Override map
               </Link>
+              . New POIs without pages yet: Green Hill Zone, Reality’s Reign, Stone Sanctum.
               {' · '}
               <Link href="/drops" className="font-semibold text-primary hover:underline">
                 All five drop guides
@@ -383,7 +384,7 @@ export default async function RankedPage() {
 
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Last night of the season
+              Climb notes for Override
             </h2>
             <div className="mt-5 grid gap-3">
               {LAST_NIGHT.map((row) => (

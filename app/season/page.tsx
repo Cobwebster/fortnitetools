@@ -14,15 +14,8 @@ import {
   SEASON_HUB_FAQS,
   SEASON_HUB_LINKS,
   SEASON_HUB_REVIEWED,
-  SEASON_MYTHICS,
   VAULTED_THIS_SEASON,
 } from '@/lib/season-hub'
-import { WEAPONS } from '@/lib/weapons'
-
-const LOOT_BY_CATEGORY = (['AR', 'Shotgun', 'SMG', 'Pistol', 'Sniper'] as const).map((category) => ({
-  category,
-  names: WEAPONS.filter((w) => w.category === category && w.rarity !== 'Mythic').map((w) => w.name),
-}))
 
 export default function SeasonHubPage() {
   return (
@@ -53,7 +46,7 @@ export default function SeasonHubPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={CURRENT_SEASON.mapImage}
-                    alt={`${CURRENT_SEASON.label} Shattered Coast map`}
+                    alt={`${CURRENT_SEASON.label} live minimap`}
                     className="aspect-square w-full object-cover"
                     width={176}
                     height={176}
@@ -62,25 +55,27 @@ export default function SeasonHubPage() {
               </div>
               <div className="min-w-0 flex-1 text-center sm:text-left">
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-                  Last reviewed {SEASON_HUB_REVIEWED} · {CURRENT_SEASON.shortLabel} still live
+                  Last reviewed {SEASON_HUB_REVIEWED} · {CURRENT_SEASON.shortLabel} live
                 </p>
                 <h1 className="font-display text-3xl font-extrabold uppercase leading-tight tracking-wide text-foreground sm:text-5xl text-balance">
-                  Fortnite {CURRENT_SEASON.next.label} — what changed
+                  Fortnite {CURRENT_SEASON.label} — {CURRENT_SEASON.codename}
                 </h1>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                  Reset-week hub for island, loot pool, mythics, ranked, and the Battle Pass free
-                  track. {CURRENT_SEASON.label} ({CURRENT_SEASON.codename}) is still the live client
-                  until {formatSeasonLongDate(seasonEndDate())}. {CURRENT_SEASON.next.label} is dated{' '}
-                  {formatSeasonLongDate(nextSeasonStartDate())}; the lobby MOTD says “Reality Reboots
-                  August 20.” S4 POIs, guns, and mythics are{' '}
-                  <strong className="text-foreground">not invented here</strong>.
+                  Live hub for island changes, Match Overrides, ranked, and the Battle Pass. Season
+                  ends {formatSeasonLongDate(seasonEndDate())}; {CURRENT_SEASON.next.label} is dated{' '}
+                  {formatSeasonLongDate(nextSeasonStartDate())}. Loot DPS sheets that still say
+                  Runners are getting a rewrite — we will not invent Override gun numbers.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <div className="mt-8 flex flex-wrap justify-center gap-2 sm:justify-start">
               {SEASON_HUB_LINKS.map((link) => (
-                <Link key={link.href} href={link.href} className="font-semibold text-primary hover:underline">
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-md border border-border bg-card/80 px-3 py-1.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
+                >
                   {link.label}
                 </Link>
               ))}
@@ -91,76 +86,42 @@ export default function SeasonHubPage() {
         <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 sm:px-6">
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              How to use this page this week
+              Playbook
             </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Search traffic this week wants “what changed.” Most of those answers are still “not
-              yet.” The useful part is knowing what is still true on Shattered Coast so you do not
-              queue with a vaulted Flex SMG loadout.
-            </p>
             <div className="mt-5 grid gap-3">
-              {RESET_WEEK_PLAYBOOK.map((step) => (
-                <article key={step.title} className="rounded-xl border border-border bg-card p-5">
-                  <h3 className="text-sm font-bold text-foreground">{step.title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
+              {RESET_WEEK_PLAYBOOK.map((row) => (
+                <article key={row.title} className="rounded-xl border border-border bg-card p-5">
+                  <h3 className="text-sm font-bold text-foreground">{row.title}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
                 </article>
               ))}
             </div>
-          </section>
-
-          <section className="rounded-xl border border-primary/40 bg-card p-5">
-            <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
-              Incoming — do not spoiler-fill
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Confirmed: season countdown to {formatSeasonLongDate(nextSeasonStartDate())} (UTC) and
-              the lobby tile “Reality Reboots August 20.” Not confirmed in our files: S4 POI names,
-              loot pool, boss mythics, or Battle Pass layout. When the client flips, this page gets a
-              rewrite the same day — until then, play Shattered Coast and the C7S3 pool.
-            </p>
-            <p className="mt-3 text-sm">
-              <Link href="/season-countdown" className="font-semibold text-primary hover:underline">
-                Live countdown
-              </Link>
-              {' · '}
-              <Link href="/news" className="font-semibold text-primary hover:underline">
-                Lobby MOTDs
-              </Link>
-              {' · '}
-              <Link href="/modes" className="font-semibold text-primary hover:underline">
-                Playlists
-              </Link>
-            </p>
           </section>
 
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               What changed
             </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Each card is live S3 vs incoming S4. If a leak site already named S4 drops, ignore it
-              here.
-            </p>
-            <div className="mt-5 grid gap-4">
+            <div className="mt-5 space-y-4">
               {SEASON_CHANGE_CARDS.map((card) => (
                 <article key={card.id} className="rounded-xl border border-border bg-card p-5">
-                  <div className="flex items-baseline justify-between gap-3">
-                    <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                      {card.title}
-                    </h3>
-                    <Link href={card.href} className="shrink-0 text-sm font-semibold text-primary hover:underline">
-                      {card.linkLabel}
-                    </Link>
-                  </div>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
+                    {card.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     <span className="font-semibold text-foreground">Live: </span>
                     {card.live}
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    <span className="font-semibold text-foreground">S4: </span>
+                    <span className="font-semibold text-foreground">Next: </span>
                     {card.incoming}
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{card.extra}</p>
+                  <p className="mt-3 text-sm">
+                    <Link href={card.href} className="font-semibold text-primary hover:underline">
+                      {card.linkLabel}
+                    </Link>
+                  </p>
                 </article>
               ))}
             </div>
@@ -168,18 +129,18 @@ export default function SeasonHubPage() {
 
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Named POIs still on Shattered Coast
+              Named POIs (live list)
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              Five of these have rotate guides (contest, extract, third-party). The rest stay on the
-              interactive map and the two map articles. After the reboot, treat this list as stale.
+              From Fortnite-API named locations, reviewed {SEASON_HUB_REVIEWED}. Drop guides exist for
+              five returning POIs — new Override names use the map until dedicated pages ship.
             </p>
-            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+            <ul className="mt-5 grid gap-2 sm:grid-cols-2">
               {LIVE_NAMED_POIS.map((poi) => (
                 <li key={poi.name}>
                   <Link
                     href={poi.href}
-                    className="flex flex-col rounded-lg border border-border bg-card px-3 py-2 hover:border-primary/60"
+                    className="flex flex-col rounded-lg border border-border bg-card px-3 py-2 hover:border-primary/50"
                   >
                     <span className="text-sm font-semibold text-foreground">{poi.name}</span>
                     <span className="text-xs text-muted-foreground">{poi.note}</span>
@@ -191,56 +152,15 @@ export default function SeasonHubPage() {
 
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Live loot snapshot
+              Gone / locked with the reboot
             </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Body-shot planning pool after the 16 Jul 2026 hotfix. Numbers and STK live on the
-              weapons encyclopedia and loadout builder — this is the name list so reset-week search
-              has a dated snapshot.
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {LOOT_BY_CATEGORY.map((row) => (
-                <div key={row.category} className="rounded-xl border border-border bg-card px-4 py-3">
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-primary">{row.category}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.names.join(' · ')}</p>
-                </div>
-              ))}
-            </div>
-            <h3 className="mt-6 text-sm font-bold uppercase tracking-wider text-foreground">
-              Vaulted mid-season (not in BR)
-            </h3>
-            <ul className="mt-2 space-y-2">
-              {VAULTED_THIS_SEASON.map((item) => (
-                <li key={item.name} className="rounded-lg border border-border bg-card px-4 py-2 text-sm">
-                  <span className="font-semibold text-foreground">{item.name}</span>
-                  <span className="text-muted-foreground"> — {item.when}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Live mythics
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Boss or vault versions of the guns above. Harbor and Sinister Strip still pull this
-              traffic on Shattered Coast. Taking one makes you the third-party.
-            </p>
             <ul className="mt-4 space-y-2">
-              {SEASON_MYTHICS.map((w) => (
+              {VAULTED_THIS_SEASON.map((row) => (
                 <li
-                  key={w.id}
-                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-2.5"
+                  key={row.name}
+                  className="rounded-lg border border-border bg-card px-4 py-3 text-sm text-muted-foreground"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.image} alt="" className="h-10 w-10 object-contain" width={40} height={40} />
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">{w.name}</p>
-                    <p className="text-xs text-muted-foreground">
-                      {w.note || w.category} · {w.dmg} body · {w.fireRate} rps
-                    </p>
-                  </div>
+                  <span className="font-semibold text-foreground">{row.name}</span> — {row.when}
                 </li>
               ))}
             </ul>

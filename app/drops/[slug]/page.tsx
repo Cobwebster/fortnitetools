@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!drop) return {}
   return createMetadata({
     title: `Best Drop ${drop.name} – Fortnite Rotate & Extract Guide`,
-    description: `${drop.excerpt} Contest, bus, extract (${drop.extract.name}), third-party angles, and rotate paths for Chapter 7 Season 3 Shattered Coast. Last reviewed ${formatDropReviewed(drop.reviewed)}.`,
+    description: `${drop.excerpt} Contest, bus, extract (${drop.extract.name}), third-party angles, and rotate paths for Chapter 7 Season 4 Override (returning POI). Last reviewed ${formatDropReviewed(drop.reviewed)}.`,
     path: `/drops/${drop.slug}`,
     keywords: [
       `best drop ${drop.name}`,

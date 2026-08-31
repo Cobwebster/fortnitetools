@@ -1,8 +1,8 @@
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { formatSeasonLongDate, nextSeasonStartDate, seasonEndDate } from '@/lib/season'
 
-export const RANKED_REVIEWED = '18 Aug 2026'
-export const RANKED_REVIEWED_ISO = '2026-08-18'
+export const RANKED_REVIEWED = '31 Aug 2026'
+export const RANKED_REVIEWED_ISO = '2026-08-31'
 
 export const RANK_TIERS = [
   { tier: 'Bronze I–III', who: 'Placement school. Survive, loot, make zone. Kills are extra.' },
@@ -36,28 +36,28 @@ export const LP_RULES = [
 export const RANKED_QUEUES = [
   {
     name: 'Ranked Battle Royale',
-    body: 'Shattered Coast (C7S3). Same island as pubs, different lobby. Mythics and extracts still exist — you just should not die for them.',
-    image: '/images/map-evolution/41-10.webp',
-    alt: 'Chapter 7 Season 3 Shattered Coast map',
+    body: 'Override island (C7S4). Same map as pubs, different lobby. Match Overrides can change the ruleset mid-season — check the playlist tile before you assume classic BR.',
+    image: 'https://fortnite-api.com/images/map.png',
+    alt: 'Chapter 7 Season 4 Override live minimap',
     badge: '/images/icons/crown.png',
   },
   {
     name: 'Ranked Zero Build',
     body: 'Same island, no builds. Cover and mobility matter more. Cafe roofs and open docks from the drop pages get worse, not better.',
-    image: '/images/map-evolution/41-10.webp',
-    alt: 'Shattered Coast — Ranked Zero Build uses the same island',
+    image: 'https://fortnite-api.com/images/map.png',
+    alt: 'Override island — Ranked Zero Build uses the same map',
     badge: '/images/icons/glider.png',
   },
   {
     name: 'Ranked Reload',
-    body: 'Small rotating islands — not Shattered Coast. LP still exists; the drop guides on this site do not apply. Use the Reload hub and the rotation timer.',
+    body: 'Small rotating islands — not the big BR map. LP still exists; the drop guides on this site do not apply. Use the Reload hub and the rotation timer.',
     image: '/images/map-rotation/oasis.webp',
-    alt: 'Reload island art — Oasis, not Shattered Coast',
+    alt: 'Reload island art — Oasis, not Override BR',
     badge: '/images/icons/storm.png',
   },
   {
     name: 'Ranked OG',
-    body: 'When Epic has the Figment queue up. Chapter 1 island, Chapter 1 loot. Do not bring a C7S3 loadout plan.',
+    body: 'When Epic has the Figment queue up. Chapter 1 island, Chapter 1 loot. Do not bring a C7S4 Override loadout plan.',
     image: '/images/map-evolution/1-11.webp',
     alt: 'Chapter 1 OG island map',
     badge: '/images/loadout/rift.png',
@@ -68,20 +68,25 @@ export const RANKED_DROPS = DROP_GUIDES.map((d) => ({
   slug: d.slug,
   name: d.name,
   contest: d.contest,
-  ranked: d.contest === 'hot' ? 'Pubs / ego. Climb only if you can win the land every time.' : d.contest === 'edge' ? 'Placement / LP. Leave on time if zone is north.' : 'Default climb drop. Repeatable, not a highlight reel.',
+  ranked:
+    d.contest === 'hot'
+      ? 'Pubs / ego. Climb only if you can win the land every time.'
+      : d.contest === 'edge'
+        ? 'Placement / LP. Leave on time if zone is north.'
+        : 'Default climb drop. Repeatable, not a highlight reel.',
   href: `/drops/${d.slug}`,
 }))
 
 export const RANKED_RESET = {
   title: 'When does Fortnite ranked reset?',
-  live: `Chapter 7 Season 3 ranked is still the live ladder until the season ends (${formatSeasonLongDate(seasonEndDate())}). Your Bronze–Unreal rank and LP are S3 until the flip.`,
-  incoming: `Chapter 7 Season 4 is scheduled ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Lobby MOTD: “Reality Reboots August 20.” Fortnite almost always resets ranked LP at a season boundary. Treat that as the default. Confirm the ranked tab in-game on reboot day — we will not invent a new point formula or a fake “you keep Diamond” promise.`,
+  live: `Chapter 7 Season 4 (Override) ranked is the live ladder. Season ends ${formatSeasonLongDate(seasonEndDate())}. Your Bronze–Unreal rank and LP are S4 until the next flip.`,
+  incoming: `Chapter 7 Season 5 is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Fortnite almost always resets ranked LP at a season boundary. Confirm the ranked tab in-game on reboot day — we will not invent a new point formula.`,
   after: 'After a reset you typically land in a lower band with some soft seed from last season. The exact seed changes. Screenshot your rank before downtime if you care; the client is the source of truth after.',
 } as const
 
 export const RANKED_VS_GUIDE = {
   thisPage:
-    'This URL is the season-boundary sheet: when LP resets, which Shattered Coast drops still make sense in C7S3, which queues exist, and how placement vs elims actually pay. Search “Fortnite ranked reset” should land here, not on a 3,000-word climb essay.',
+    'This URL is the season sheet: which Override drops still make sense for climb games, which queues exist, and how placement vs elims pay. Search “Fortnite ranked reset” should land here, not on a 3,000-word climb essay.',
   longGuide:
     'The June 28, 2026 climb article is Bronze → Unreal habits: w-key vs placement, tilt, loadouts, and what changes at Gold/Diamond/Elite. It is not a reset clock. Link both; do not paste one into the other.',
   modes:
@@ -90,16 +95,16 @@ export const RANKED_VS_GUIDE = {
 
 export const LAST_NIGHT = [
   {
-    title: 'Do not “protect” a badge',
-    body: 'S3 LP is about to roll. Sitting in Champion to screenshot a rank that will seed lower tomorrow is a waste of the last evening the island still exists. Play if you want to play. Do not queue terrified of -40.',
+    title: 'Learn Match Overrides before you blame LP',
+    body: 'Override can flip rulesets mid-season. If the playlist tile says something weird and you still drop Heatwave like classic BR, that is on you — not the ladder.',
   },
   {
-    title: 'Finish the Pass, not a hero session',
-    body: 'Unclaimed Runners free-track rewards lock with the season. If you are level 87, the XP calculator and Creative codes matter more than one more Diamond lobby. Ranked XP is fine; it is not a dedicated XP island.',
+    title: 'Finish the Pass on a schedule',
+    body: 'Unclaimed Override free-track rewards lock when the season ends (November 1). If you are level 87, the XP calculator and Creative codes matter more than one more Diamond lobby.',
   },
   {
-    title: 'Drop like you have to climb tomorrow',
-    body: 'Wonkeeland / Latte still pay on Shattered Coast. Heatwave Harbor on the last night of a season is how you donate LP and then blame “sweats.” After the reboot, these POI names are stale until we rewrite the drop pages.',
+    title: 'Returning POIs ≠ identical traffic',
+    body: 'Wonkeeland / Latte still have drop pages. Green Hill Zone, Reality’s Reign, and Stone Sanctum do not yet. Treat new names as contested until you have your own reps.',
   },
 ] as const
 
@@ -121,22 +126,22 @@ export const RANKED_NOT = [
 export const RANKED_FAQS = [
   {
     question: 'When does Fortnite ranked reset?',
-    answer: `Expect a ladder reset when Chapter 7 Season 4 goes live (${formatSeasonLongDate(nextSeasonStartDate())} UTC schedule, lobby art says August 20). Confirm the ranked screen after downtime. This page will say so in plain language once we have seen the live tab — last reviewed ${RANKED_REVIEWED}.`,
+    answer: `Override ranked already reset at the August 20 reboot. The next expected ladder flip is with Chapter 7 Season 5 (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime. Last reviewed ${RANKED_REVIEWED}.`,
   },
   {
-    question: 'Do I keep my rank into Season 4?',
+    question: 'Do I keep my rank into Season 5?',
     answer:
-      'You do not keep S3 LP as-is. There is usually a soft seed so Unreal does not wake up in Bronze I, but you will not log in at the same division. Do not spend the last day of the season “protecting” a badge that is about to roll.',
+      'You do not keep S4 LP as-is. There is usually a soft seed so Unreal does not wake up in Bronze I, but you will not log in at the same division. Do not spend the last day of the season “protecting” a badge that is about to roll.',
   },
   {
     question: 'How does Fortnite ranked LP work?',
     answer:
-      'Placement first, eliminations second, early death expensive. A consistent top 10 climbs faster than a 5 K/D that dies 35th. The long climb guide covers Bronze through Unreal habits; this page is the season-boundary version.',
+      'Placement first, eliminations second, early death expensive. A consistent top 10 climbs faster than a 5 K/D that dies 35th. The long climb guide covers Bronze through Unreal habits; this page is the season version.',
   },
   {
     question: 'Where should I drop in ranked?',
     answer:
-      'On Shattered Coast: Wonkeeland or Latte Landing for climb games, Sunken Shores for placement, Heatwave / Battlewoods only if you can win the POI. Those five have rotate pages. After the S4 island flip, treat the names as stale until we rewrite them.',
+      'Returning POIs: Wonkeeland or Latte Landing for climb games, Sunken Shores for placement, Heatwave / Battlewoods only if you can win the POI. New Override names (Green Hill Zone, Reality’s Reign, Stone Sanctum) do not have dedicated drop pages yet — scout them in pubs first.',
   },
   {
     question: 'Is Ranked Reload the same map as Ranked BR?',

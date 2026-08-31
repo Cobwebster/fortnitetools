@@ -21,12 +21,11 @@ export const metadata: Metadata = createMetadata({
   keywords: [
     'when does fortnite season end',
     'fortnite season countdown',
-    'when does chapter 7 season 3 end',
-    'fortnite chapter 7 season 3 end date',
-    'fortnite season 3 end date',
-    'chapter 7 season 4 start date',
-    'when does fortnite chapter 7 season 4 start',
-    'fortnite runners end date',
+    'when does chapter 7 season 4 end',
+    'fortnite chapter 7 season 4 end date',
+    'fortnite override end date',
+    'fortnite season 4 end date',
+    'chapter 7 season 5 start date',
     'fortnite season end date 2026',
   ],
 })
@@ -34,16 +33,16 @@ export const metadata: Metadata = createMetadata({
 const faqs = [
   {
     question: `When does Fortnite ${CURRENT_SEASON.label} end?`,
-    answer: `Fortnite ${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) ends on ${endLabel}. Epic may shift the exact downtime by a few hours — this countdown tracks the announced calendar date.`,
+    answer: `Fortnite ${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) ends on ${endLabel}. Epic may shift the exact downtime by a few hours — this countdown tracks the announced calendar date (November 1 on Epic’s Battle Pass page).`,
   },
   {
     question: `When does Fortnite ${CURRENT_SEASON.next.label} start?`,
     answer: `${CURRENT_SEASON.next.label} is expected to start on ${endLabel}, right after ${CURRENT_SEASON.label} ends.`,
   },
   {
-    question: 'How long is a Fortnite season?',
+    question: 'How long is Fortnite Override?',
     answer:
-      'Most Fortnite seasons last about 10–12 weeks. Chapter 7 Season 3 (Runners) runs from early June 2026 through mid-August 2026.',
+      'Chapter 7 Season 4 (Override) runs from August 20, 2026 through November 1, 2026 — about 73 days. Exact downtime can move a few hours.',
   },
   {
     question: 'Will my Battle Pass progress carry over?',

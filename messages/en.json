@@ -104,10 +104,10 @@
   },
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
-    "heroSubtitle": "Interactive tools and season guides for Chapter 7 Season 3.",
-    "heroBody": "Shattered Coast map layers, a live Item Shop, stats lookup, build practice, and the current-season weapon/loot guides — written for how people actually play, not a dump of formula widgets.",
+    "heroSubtitle": "Interactive tools and season guides for Chapter 7 Season 4 (Override).",
+    "heroBody": "Live Override map layers, a live Item Shop, stats lookup, build practice, and current-season hubs — written for how people actually play, not a dump of formula widgets.",
     "ctaTools": "Open free tools",
-    "ctaTierList": "Season 3 weapon tier list",
+    "ctaTierList": "Weapons tier list",
     "ctaLoadout": "Upload your loadout",
     "browseCategories": "Browse by Category",
     "weaponChanges": "Weapon Changes",
@@ -120,8 +120,8 @@
     "blurbTools": "Map, tracker, shop, loadout builder, and build practice — plus a few helpers for settings and season planning. Updated when the loot pool or island changes.",
     "blurbGuidesTitle": "Guides",
     "blurbGuides": "Season-specific weapon, map, Battle Pass, and ranked guides — no filler listicles.",
-    "blurbSeasonTitle": "Chapter 7 Season 3",
-    "blurbSeason": "Runners season coverage for the current loot pool and map — with dates so you know when something was last checked.",
+    "blurbSeasonTitle": "Chapter 7 Season 4",
+    "blurbSeason": "Override coverage for the live island, Match Overrides, ranked, and Battle Pass — with dates so you know when something was last checked.",
     "toolFreeCosmetics": "Free Cosmetics",
     "toolXpCalc": "XP Calc",
     "toolCountdown": "Countdown",
@@ -176,13 +176,13 @@
     "description": "Interactive Fortnite tools for the live season: map layers, stats lookup, Item Shop, build practice, loadouts, and weapon data — plus a few helpers when you need the numbers.",
     "aboutTitle": "What these tools are for",
     "aboutMapTitle": "Interactive Map",
-    "aboutMap": "Chapter 7 Season 3 Shattered Coast with named POIs, loot ratings, and spawn layers (extracts, vaults, sprite chests, vehicles). Built for drop decisions, not a tile scrape of someone else's map CDN.",
+    "aboutMap": "Chapter 7 Season 4 Override island with named POIs, loot ratings, and spawn layers. Built for drop decisions, not a tile scrape of someone else's map CDN.",
     "aboutBuildTitle": "Build Simulator",
     "aboutBuild": "Browser practice for walls, ramps, floors, and cones — piece HP, phasing, and a Fortnite-style build bar. Use it to warm up 90s and edits without loading Creative.",
     "aboutShopTitle": "Item Shop",
     "aboutShop": "Today's rotation with a UTC reset countdown, leaving-tonight strip, and a local wishlist that rolls into the V-Bucks helper. No per-skin index pages.",
     "aboutLoadoutTitle": "Loadout Builder",
-    "aboutLoadout": "C7S3 hotbar with real item icons and rough STK/TTK. Pair it with the weapons encyclopedia when you want the full stat sheet.",
+    "aboutLoadout": "C7S4 hotbar with real item icons and rough STK/TTK. Gun numbers may still reflect late Runners until the Override rewrite — confirm in-game.",
     "aboutSkinRarityTitle": "Skin Rarity Calculator",
     "aboutSkinRarity": "People search \"rare Fortnite skins\" constantly. This lookup separates shop color tiers from real scarcity using appearance history and exclusive sources.",
     "aboutSensTitle": "Sensitivity Calculator",
@@ -190,9 +190,9 @@
     "aboutVbucksTitle": "V-Bucks Calculator",
     "aboutVbucks": "Packs come in fixed sizes. Add Item Shop prices to a wishlist and we search for a low-cost pack combo using common USD prices (regional storefronts can differ).",
     "aboutBpTitle": "Battle Pass XP Calculator",
-    "aboutBp": "Seasons are roughly 10 weeks. Plug in your level and weekly XP sources to see whether you finish the pass before Chapter 7 Season 3 ends.",
+    "aboutBp": "Seasons are roughly 10–12 weeks. Plug in your level and weekly XP sources to see whether you finish the Override pass before November 1, 2026.",
     "aboutDamageTitle": "Weapon Damage Calculator",
-    "aboutDamage": "Compare approximate shots-to-kill and TTK for the current Runners loot pool so you can plan loadouts before you drop.",
+    "aboutDamage": "Compare approximate shots-to-kill and TTK for planning. Pool sample may lag Override patches — confirm in-game after balance updates.",
     "aboutTrackerTitle": "Fortnite Tracker",
     "aboutTracker": "Look up any Epic, PlayStation, or Xbox name for K/D, wins, matches, and playlist splits — useful for lobbies, duo tryouts, or tracking your own season.",
     "metaTitle": "Fortnite Tools – Map, Tracker, Shop & Practice",
@@ -223,7 +223,7 @@
       },
       "season-countdown": {
         "title": "Season Countdown",
-        "description": "When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start."
+        "description": "When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start."
       },
       "codes": {
         "title": "Creative Map Codes",
@@ -235,7 +235,7 @@
       },
       "fortnite-map": {
         "title": "Interactive Map",
-        "description": "Shattered Coast POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 3."
+        "description": "Live Override POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 4."
       },
       "map-rotation": {
         "title": "Map Rotation Timer",
@@ -246,20 +246,20 @@
         "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
-        "title": "Fortnite Ranked Reset",
-        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+        "title": "Fortnite Ranked",
+        "description": "LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump."
       },
       "status": {
         "title": "Is Fortnite Down?",
-        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
+        "description": "Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map."
       },
       "season": {
-        "title": "Chapter 7 Season 4 Hub",
-        "description": "Reset-week season page: live Shattered Coast loot and mythics vs what the August 20 reboot actually confirms."
+        "title": "Chapter 7 Season 4 Override Hub",
+        "description": "Live Override hub: new POIs, Match Overrides, ranked, and Battle Pass end date (November 1, 2026)."
       },
       "drops": {
         "title": "Best Drops",
-        "description": "Named-POI landing pages with contest, extract, third-party, and rotate paths for Chapter 7 Season 3."
+        "description": "Named-POI landing pages with contest, extract, third-party, and rotate paths for returning Override POIs."
       },
       "sets": {
         "title": "Live Cosmetic Sets",
@@ -295,7 +295,7 @@
       },
       "loadout-builder": {
         "title": "Loadout Builder",
-        "description": "Build a C7S3 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK."
+        "description": "Build a C7S4 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK. Numbers may lag Override patches."
       },
       "fortnite-build-simulator": {
         "title": "Build Simulator",
@@ -315,7 +315,7 @@
       },
       "zone-timer": {
         "title": "Zone Timer",
-        "description": "Storm circle wait and shrink reference for Chapter 7 Season 3. Start it when a new zone appears so you know when to rotate."
+        "description": "Storm circle wait and shrink reference for Chapter 7 Season 4. Start it when a new zone appears so you know when to rotate."
       },
       "fps-settings": {
         "title": "FPS & Settings Guide",
@@ -335,7 +335,7 @@
       },
       "weapon-damage-calculator": {
         "title": "Weapon Damage Calculator",
-        "description": "Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 3 weapons in the current loot pool sample."
+        "description": "Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 4 planning — sample may still include late Runners guns until rewritten."
       },
       "vbucks-calculator": {
         "title": "V-Bucks Calculator",
@@ -349,12 +349,12 @@
   },
   "homeMeta": {
     "title": "FortniteTools – Free Fortnite Guides & Tools",
-    "description": "Free Fortnite tools and guides for Chapter 7 Season 3 — player stats lookup, sensitivity converter, XP calculator, keybinds, weapon stats, and practical Battle Royale strategy."
+    "description": "Free Fortnite tools and guides for Chapter 7 Season 4 (Override) — player stats lookup, sensitivity converter, XP calculator, keybinds, weapon stats, and practical Battle Royale strategy."
   },
   "tools": {
     "sensitivityCalculator": {
       "metaTitle": "Fortnite Sensitivity Calculator – Convert from Valorant, CS2, Apex",
-      "metaDescription": "Convert mouse sensitivity to Fortnite from Valorant, CS2, Apex, Warzone, and more using cm/360. Free eDPI calculator for Chapter 7 Season 3.",
+      "metaDescription": "Convert mouse sensitivity to Fortnite from Valorant, CS2, Apex, Warzone, and more using cm/360. Free eDPI calculator for Chapter 7 Season 4.",
       "home": "Home",
       "tools": "Tools",
       "breadcrumb": "Sensitivity Calculator",
@@ -431,7 +431,7 @@
     },
     "battlePassXp": {
       "metaTitle": "Fortnite Battle Pass XP Calculator – Will You Finish In Time?",
-      "metaDescription": "Calculate whether you'll finish the Fortnite Battle Pass before Chapter 7 Season 3 ends. Enter your level and pick weekly XP sources to see your projected finish level.",
+      "metaDescription": "Calculate whether you'll finish the Fortnite Battle Pass before Chapter 7 Season 4 (Override) ends on November 1, 2026. Enter your level and pick weekly XP sources to see your projected finish level.",
       "home": "Home",
       "tools": "Tools",
       "breadcrumb": "Battle Pass XP Calculator",
@@ -462,7 +462,7 @@
       "needMoreXp": "{xp} XP/week",
       "needMoreSuffix": "to finish on time. Try enabling LEGO Fortnite or Rocket Racing for extra XP.",
       "howTitle": "How Fortnite Battle Pass XP works",
-      "howP1": "This planner uses a simplified model of about 80,000 XP per level toward a 100-level pass. Real quest values, XP boosts, and caps change during the season — use the result as a grind plan, not a guarantee. Chapter 7 Season 3 (Runners) is scheduled through August 19, 2026.",
+      "howP1": "This planner uses a simplified model of about 80,000 XP per level toward a 100-level pass. Real quest values, XP boosts, and caps change during the season — use the result as a grind plan, not a guarantee. Chapter 7 Season 4 (Override) is scheduled through November 1, 2026.",
       "howP2": "Weekly and daily quests are usually the most reliable XP. Modes like LEGO Fortnite can add a lot of passive XP but are often capped — confirm current rates in-game before relying on them.",
       "relatedTitle": "Related Fortnite tools",
       "relatedBefore": "Track your season progress, then check the",
@@ -475,7 +475,7 @@
     },
     "kdCalculator": {
       "metaTitle": "Fortnite K/D Calculator – Kill/Death Ratio & Win Rate",
-      "metaDescription": "Calculate your Fortnite K/D ratio, win rate, and kills per game. Free calculator with rough public-lobby context ranges for Chapter 7 Season 3.",
+      "metaDescription": "Calculate your Fortnite K/D ratio, win rate, and kills per game. Free calculator with rough public-lobby context ranges for Chapter 7 Season 4.",
       "home": "Home",
       "tools": "Tools",
       "breadcrumb": "K/D Calculator",
@@ -709,13 +709,13 @@
     },
     "weaponDamage": {
       "metaTitle": "Fortnite Weapon Damage Calculator – Shots to Kill & DPS",
-      "metaDescription": "Calculate shots-to-kill, DPS, and time-to-kill for every Fortnite Chapter 7 Season 3 weapon. Compare damage vs. shields, headshots, and structures.",
+      "metaDescription": "Calculate shots-to-kill, DPS, and time-to-kill for Fortnite Chapter 7 Season 4 weapons. Compare damage vs. shields, headshots, and structures. Confirm in-game after Override patches.",
       "home": "Home",
       "tools": "Tools",
       "breadcrumb": "Weapon Damage Calculator",
       "titlePrefix": "Weapon Damage",
       "titleHighlight": "Calculator",
-      "hero": "Approximate shots-to-kill, DPS, and time-to-kill for Chapter 7 Season 3 weapons. Values are for planning — Epic changes balance mid-season, so confirm in-game after patches.",
+      "hero": "Approximate shots-to-kill, DPS, and time-to-kill for Chapter 7 Season 4 planning. Pool sample may lag Override — Epic changes balance mid-season, so confirm in-game after patches.",
       "categoryAll": "All",
       "targetOptionsTitle": "Target Options",
       "targetHp": "Target HP",
@@ -756,13 +756,13 @@
     },
     "zoneTimer": {
       "metaTitle": "Fortnite Zone Timer – Storm Circle Wait & Shrink Times",
-      "metaDescription": "Approximate Fortnite storm circle wait and shrink times for every phase. Free zone timer with rotation tips and storm damage reference for Chapter 7 Season 3.",
+      "metaDescription": "Approximate Fortnite storm circle wait and shrink times for every phase. Free zone timer with rotation tips and storm damage reference for Chapter 7 Season 4.",
       "home": "Home",
       "tools": "Tools",
       "breadcrumb": "Zone Timer",
       "titlePrefix": "Fortnite",
       "titleHighlight": "Zone Timer",
-      "hero": "Approximate wait and shrink times for Chapter 7 Season 3 storm circles. Start the timer when a new zone appears so you know when to rotate. Epic can tweak timings in patches.",
+      "hero": "Approximate wait and shrink times for Chapter 7 Season 4 storm circles. Start the timer when a new zone appears so you know when to rotate. Epic can tweak timings in patches.",
       "selectPhase": "Select Phase",
       "playersSuffix": "players",
       "hpsSuffix": "HP/s",
@@ -847,7 +847,7 @@
       "relatedAfter": "."
     },
     "fpsSettings": {
-      "metaTitle": "Best Fortnite Settings – FPS & Graphics Guide (Chapter 7 Season 3)",
+      "metaTitle": "Best Fortnite Settings – FPS & Graphics Guide (Chapter 7 Season 4)",
       "metaDescription": "Every Fortnite graphics, display, and audio setting explained, with competitive, balanced, and quality presets to boost FPS and reduce input lag.",
       "home": "Home",
       "tools": "Tools",
@@ -1293,12 +1293,12 @@
     }
   },
   "fortniteMap": {
-    "metaTitle": "Fortnite Interactive Map – Extraction Sites, POIs & Loot",
-    "metaDescription": "Free Fortnite Chapter 7 Season 3 map: live Shattered Coast minimap with Extraction Sites for Sprites, named POIs, loot ratings, hot drops, and rotation tips.",
+    "metaTitle": "Fortnite Interactive Map – POIs, Spawns & Loot",
+    "metaDescription": "Free Fortnite Chapter 7 Season 4 (Override) map: live minimap with named POIs (including Green Hill Zone), spawn layers, loot ratings, hot drops, and rotation tips.",
     "home": "Home",
     "breadcrumb": "Fortnite Map",
     "title": "Fortnite Interactive Map",
-    "hero": "Free Chapter 7 Season 3 Shattered Coast map with live minimap imagery, named POIs, Extraction Sites, vaults, Sprite chests, vehicles, and other spawn layers — plus loot ratings and drop filters for landings, rotates, and Runners extracts.",
+    "hero": "Free Chapter 7 Season 4 Override map with live minimap imagery, named POIs, vaults, chests, vehicles, and other spawn layers — plus loot ratings and drop filters for landings and rotates.",
     "heroExtractStrong": "Extraction Sites",
     "preferReading": "Prefer reading?",
     "linkExtractSprites": "How to extract Sprites",
@@ -1306,28 +1306,28 @@
     "linkMapGuides": "All map guides",
     "linkLandingSpots": "Best landing spots",
     "apiCreditBefore": "Map imagery and coordinates from",
-    "apiCreditAfter": ". Extraction Sites and other spawn pins are POI-anchored planning markers for Chapter 7 Season 3 / Runners (approximate locations). Not affiliated with Epic Games. Loot/contest tips are editorial and may change with patches.",
+    "apiCreditAfter": ". Spawn pins are POI-anchored planning markers for Chapter 7 Season 4 / Override (approximate locations). Not affiliated with Epic Games. Loot/contest tips are editorial and may change with patches.",
     "howTitle": "How this Fortnite map tool works",
     "howBody": "This interactive Fortnite map loads the current Battle Royale minimap and places markers using live POI coordinates. Toggle Spawns layers for Extraction Sites, vaults, Sprite chests, chests, vehicles, reboot vans, and more — or filter named drops by contest and loot.",
     "howLiveTitle": "Live minimap",
-    "howLiveBody": "Real in-game map imagery for Chapter 7 Season 3, not a fake sketch.",
+    "howLiveBody": "Real in-game map imagery for Chapter 7 Season 4 (Override), not a fake sketch.",
     "howExtractTitle": "Extraction Sites",
     "howExtractBody": "Diamond markers for Sprite extract pads near major POIs (quiet vs hot traffic).",
     "howPoiTitle": "Named POIs & landmarks",
-    "howPoiBody": "Click Lifty Lodge, Heatwave Harbor, Wonkeeland, and more.",
+    "howPoiBody": "Click Heatwave Harbor, Wonkeeland, Green Hill Zone, Reality\\u2019s Reign, Stone Sanctum, and more.",
     "howLootTitle": "Loot & contest filters",
     "howLootBody": "Sort hot drops, balanced landings, and quiet edge POIs.",
-    "extractTitle": "Chapter 7 Season 3 Extraction Sites",
-    "extractBodyBefore": "Runners Sprite banking uses fixed Extraction Sites across Shattered Coast. Enable the Extraction Sites layer above to see pads near Lifty Lodge, Sinister Strip, Sunken Shores, Wonkeeland, Golden Grove, and more. Sites unlock after the first storm circle; activating one alerts the lobby for roughly 30 seconds. Full steps:",
-    "extractLink": "how to extract Sprites in Chapter 7 Season 3",
-    "locationsTitle": "Shattered Coast named locations",
-    "locationsBody": "Looking up “Fortnite map locations” or “Shattered Coast POIs”? These are the main named drops players search for in Chapter 7 Season 3. Open them on the map above for markers and tips.",
+    "extractTitle": "Extraction Sites & spawn layers",
+    "extractBodyBefore": "Toggle spawn layers on the map for pads and chests near returning POIs (Lifty Lodge, Sunken Shores, Wonkeeland, Golden Grove, and more). Some Runners-era extract names (Sinister Strip) are gone from the live named list. Sites typically unlock after the first storm circle; activating one may alert the lobby. Full steps:",
+    "extractLink": "how to extract Sprites (may be stale for Override)",
+    "locationsTitle": "Override named locations",
+    "locationsBody": "Looking up \\u201cFortnite map locations\\u201d or \\u201cOverride POIs\\u201d? These are the main named drops players search for in Chapter 7 Season 4. Open them on the map above for markers and tips.",
     "hotTitle": "Hot drops",
-    "hotBody": "Lifty Lodge, Battlewoods, Sinister Strip, Heatwave Harbor, Frosted Flats — high loot, high contest when the bus is nearby.",
+    "hotBody": "Lifty Lodge, Battlewoods, Heatwave Harbor, Green Hill Zone, Reality\\u2019s Reign — high loot, high contest when the bus is nearby.",
     "balancedTitle": "Balanced landings",
     "balancedBody": "Wonkeeland, Latte Landing, Golden Grove, Shaken Sanctuary, Chopped Shop — solid chests without guaranteed early chaos.",
     "edgeTitle": "Edge / placement",
-    "edgeBody": "Cluster Coast, Sunken Shores, Calamari Canyon — quieter loot with longer rotates into mid-game circles.",
+    "edgeBody": "Cluster Coast, Sunken Shores, Stone Sanctum — quieter loot with longer rotates into mid-game circles.",
     "landingTitle": "Best Fortnite landing spots by goal",
     "landingFight": "Fight practice:",
     "landingFightBody": "Drop contested named locations under the bus path. You will die more often, but you learn loot speed, first fights, and third-party timing faster.",
@@ -1338,25 +1338,25 @@
     "landingMoreBefore": "For deeper drop strategy, read the",
     "landingLootGuide": "best loot spots guide",
     "landingAnd": "and the",
-    "landingPoiGuide": "full Shattered Coast POI breakdown",
+    "landingPoiGuide": "full POI breakdown",
     "faqTitle": "Fortnite map FAQ",
     "faqs": {
-      "q1": "What is the current Fortnite map in Chapter 7 Season 3?",
-      "a1": "Chapter 7 Season 3 (Runners) uses the Shattered Coast island, added after the Shattered live event. Named locations include Lifty Lodge, Battlewoods, Wonkeeland, Latte Landing, Frosted Flats, Sinister Strip, Golden Grove, Shaken Sanctuary, Cluster Coast, Sunken Shores, Heatwave Harbor, Calamari Canyon, and Chopped Shop.",
-      "q2": "Where are Fortnite Extraction Sites in Chapter 7 Season 3?",
-      "a2": "Extraction Sites sit near major Shattered Coast POIs (Lifty Lodge, Sinister Strip, Sunken Shores, Wonkeeland, and more). Toggle the Extraction Sites layer on this map. Sites unlock after the first storm circle closes; activating one broadcasts your location for ~30 seconds while the crate arrives.",
+      "q1": "What is the current Fortnite map in Chapter 7 Season 4?",
+      "a1": "Chapter 7 Season 4 (Override) uses the live BR island with new named POIs including Green Hill Zone, Reality\\u2019s Reign, and Stone Sanctum. Returning names include Lifty Lodge, Battlewoods, Wonkeeland, Latte Landing, Golden Grove, Shaken Sanctuary, Cluster Coast, Sunken Shores, Heatwave Harbor, and Chopped Shop. Frosted Flats, Sinister Strip, and Calamari Canyon are gone from the named list.",
+      "q2": "Where are Fortnite Extraction Sites in Override?",
+      "a2": "Toggle the Extraction Sites layer on this map when available. Pads sit near major POIs. Unlock timing and alert windows can change with patches — trust the in-game UI over an old Runners guide.",
       "q3": "Where should I land in Fortnite for the best loot?",
-      "a3": "High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and Sinister Strip reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games.",
+      "a3": "High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and new Override names reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games.",
       "q4": "How do I use this interactive Fortnite map?",
       "a4": "Use the left sidebar: pick Battle Royale, search spawns/POIs, toggle spawn layers (vaults, Sprite chests, chests, vehicles, reboot vans, and more), Named Locations / Landmarks, then filter drops by hot / balanced / edge. Click markers for tips. Spawn pins are POI-anchored planning markers. OG, Reload, and Blitz maps are still coming soon.",
       "q5": "Does this Fortnite map update every season?",
-      "a5": "The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips and Extraction Site overlays are reviewed around major Chapter 7 Season 3 patches."
+      "a5": "The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips are reviewed around major Chapter 7 Season 4 patches."
     },
     "moreTitle": "More Fortnite tools",
     "moreBody": "Pair the map with other free FortniteTools utilities while you queue.",
     "moreZone": "Zone timer",
     "moreDamage": "Weapon damage calculator",
-    "moreTier": "Season 3 weapon tier list",
+    "moreTier": "Weapons tier list",
     "moreAll": "All tools",
     "ui": {
       "loading": "Loading interactive map…",
@@ -1391,7 +1391,7 @@
       "quests": "Quests",
       "noQuestMatch": "No quests match.",
       "extractGuide": "How to extract Sprites →",
-      "footerLive": "Spawn pins are POI-anchored planning markers for Shattered Coast. Toggle layers in Spawns.",
+      "footerLive": "Spawn pins are POI-anchored planning markers for the live Override island. Toggle layers in Spawns.",
       "footerArchive": "Historical versions show the island image only. Switch Island version back to Live for pins."
     },
     "spawns": {

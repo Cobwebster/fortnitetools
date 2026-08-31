@@ -1,26 +1,29 @@
-/** Chapter 7 Season 3 (Runners) schedule — update when Epic announces the next end date. */
+/** Chapter 7 Season 4 (Override) schedule — update when Epic announces the next end date. */
 
 export const CURRENT_SEASON = {
   chapter: 7,
-  season: 3,
-  codename: 'Runners',
-  label: 'Chapter 7 Season 3',
-  shortLabel: 'C7S3',
-  /** Approximate public start (UTC). */
-  startIso: '2026-06-06T00:00:00.000Z',
+  season: 4,
+  codename: 'Override',
+  label: 'Chapter 7 Season 4',
+  shortLabel: 'C7S4',
+  /** Public start after Aug 20 reboot downtime (UTC approximate). */
+  startIso: '2026-08-20T10:00:00.000Z',
   /**
-   * Expected season rollover (UTC). Epic often flips mid-morning Americas time;
-   * date is the search-critical signal — time may shift by a few hours.
+   * Expected season rollover (UTC). Epic publishes the calendar day on the Battle Pass
+   * page; recent Chapter 7 flips have been late UTC. Time may shift by a few hours.
    */
-  endIso: '2026-08-19T08:00:00.000Z',
-  /** Season-specific art we ship (C7S3 Shattered Coast map — no official Runners logo on site). */
-  mapImage: '/images/map-evolution/41-10.webp',
+  endIso: '2026-11-01T23:00:00.000Z',
+  /**
+   * Live minimap from Fortnite-API (no local C7S4 archive snapshot yet).
+   * Older Shattered Coast archive: /images/map-evolution/41-10.webp
+   */
+  mapImage: 'https://fortnite-api.com/images/map.png',
   passIcon: '/images/icons/battle_pass.png',
   next: {
     chapter: 7,
-    season: 4,
-    label: 'Chapter 7 Season 4',
-    startIso: '2026-08-19T08:00:00.000Z',
+    season: 5,
+    label: 'Chapter 7 Season 5',
+    startIso: '2026-11-01T23:00:00.000Z',
   },
 } as const
 
@@ -80,7 +83,7 @@ export function getSeasonCountdown(now = new Date()): SeasonCountdownParts {
   }
 }
 
-/** e.g. Wednesday, August 19, 2026 */
+/** e.g. Sunday, November 1, 2026 */
 export function formatSeasonLongDate(date: Date, timeZone = 'UTC') {
   return new Intl.DateTimeFormat('en-US', {
     weekday: 'long',

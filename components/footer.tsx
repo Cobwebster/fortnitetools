@@ -80,8 +80,8 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card mt-16">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
-          <div className="lg:col-span-1">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-12">
+          <div className="lg:col-span-2">
             <Link href={homeHref} className="flex items-center gap-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -96,7 +96,7 @@ export function Footer() {
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t('tagline')}</p>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
               {t('categories')}
             </h3>
@@ -114,7 +114,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
               {t('guides')}
             </h3>
@@ -177,11 +177,11 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="sm:col-span-2 lg:col-span-2">
+          <div className="sm:col-span-2 lg:col-span-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
               {t('tools')}
             </h3>
-            <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2" role="list">
+            <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3" role="list">
               {toolLinks.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -195,7 +195,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">{t('site')}</h3>
             <ul className="mt-4 flex flex-col gap-2" role="list">
               <li>

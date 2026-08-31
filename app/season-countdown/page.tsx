@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: `When does ${CURRENT_SEASON.next.label} start?`,
-    a: `${CURRENT_SEASON.next.label} starts on ${formatSeasonLongDate(nextSeasonStartDate())}, immediately after Season 3 ends.`,
+    a: `${CURRENT_SEASON.next.label} starts on ${formatSeasonLongDate(nextSeasonStartDate())}, immediately after Override ends.`,
   },
   {
     q: 'What happens when the Fortnite season ends?',
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'How accurate is this Fortnite season countdown?',
-    a: 'The end date matches Epic’s announced Chapter 7 Season 3 schedule. Exact downtime can move by a few hours for servers and patching. Refresh this page near launch day for the latest remaining time.',
+    a: 'The end date matches Epic’s published Override / Chapter 7 Season 4 schedule (November 1, 2026 on the Battle Pass page). Exact downtime can move by a few hours for servers and patching.',
   },
 ]
 
@@ -73,7 +73,7 @@ export default function SeasonCountdownPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={CURRENT_SEASON.mapImage}
-                    alt={`${CURRENT_SEASON.label} Shattered Coast map`}
+                    alt={`${CURRENT_SEASON.label} live minimap`}
                     className="aspect-square w-full object-cover"
                     width={176}
                     height={176}
@@ -107,15 +107,16 @@ export default function SeasonCountdownPage() {
             </div>
 
             <p className="mt-6 text-sm text-muted-foreground">
-              Reset-week loot, island, ranked, and Battle Pass notes live on the{' '}
+              Reset-week loot notes are retired — Override is live. Island, ranked, and Battle Pass
+              notes live on the{' '}
               <Link href="/season" className="text-primary hover:underline">
-                {CURRENT_SEASON.next.label} hub
+                {CURRENT_SEASON.label} hub
               </Link>
               . Queue vs downtime is the{' '}
               <Link href="/status" className="text-primary hover:underline">
                 status page
               </Link>
-              ; LP reset is{' '}
+              ; LP notes are{' '}
               <Link href="/ranked" className="text-primary hover:underline">
                 ranked
               </Link>
@@ -146,7 +147,7 @@ export default function SeasonCountdownPage() {
               Fortnite <strong className="text-foreground">{CURRENT_SEASON.label}</strong> (
               {CURRENT_SEASON.codename}) started around <strong className="text-foreground">{startLabel}</strong>{' '}
               and ends on <strong className="text-foreground">{endLabel}</strong>. That is the date
-              players mean when they search “when does Fortnite season end” or “Chapter 7 Season 3
+              players mean when they search “when does Fortnite season end” or “Chapter 7 Season 4
               end date.”
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
@@ -178,8 +179,10 @@ export default function SeasonCountdownPage() {
                 href="/guides/season/fortnite-season-battle-pass-guide"
                 className="text-primary hover:underline"
               >
-                Runners Battle Pass guide
+                Battle Pass guide
               </Link>
+              {' '}
+              (Runners-era — Override pass levels differ; use the XP calculator for the live end date)
               .
             </p>
           </section>

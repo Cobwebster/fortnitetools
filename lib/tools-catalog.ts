@@ -41,7 +41,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/fortnite-map',
     title: 'Interactive Map',
     description:
-      'Shattered Coast POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 3.',
+      'Live Override POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 4.',
     tags: ['Map', 'Loot', 'POIs'],
     category: 'map',
   },
@@ -57,7 +57,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/tools/loadout-builder',
     title: 'Loadout Builder',
     description:
-      'Build a C7S3 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK.',
+      'Build a C7S4 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK. Gun numbers may still reflect late Runners until we rewrite the pool.',
     tags: ['Loadout', 'Weapons', 'TTK'],
     category: 'weapons',
   },
@@ -71,9 +71,9 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     href: '/season',
-    title: 'Chapter 7 Season 4 Hub',
+    title: 'Chapter 7 Season 4 Override Hub',
     description:
-      'Reset-week season page: live Shattered Coast loot and mythics vs what the August 20 reboot actually confirms. Last reviewed 17 Aug 2026.',
+      'Live Override hub: new POIs, Match Overrides, ranked, and Battle Pass end date (November 1, 2026). Last reviewed 31 Aug 2026.',
     tags: ['Season', 'Loot', 'Ranked'],
     category: 'season',
   },
@@ -143,9 +143,9 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     href: '/ranked',
-    title: 'Fortnite Ranked Reset',
+    title: 'Fortnite Ranked',
     description:
-      'LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump. Last reviewed 18 Aug 2026.',
+      'LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump. Last reviewed 31 Aug 2026.',
     tags: ['Ranked', 'LP', 'Reset'],
     category: 'season',
   },
@@ -153,7 +153,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/status',
     title: 'Is Fortnite Down?',
     description:
-      'Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map. Queue is not downtime.',
+      'Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map. Queue is not downtime.',
     tags: ['Status', 'Servers', 'Downtime'],
     category: 'season',
   },
@@ -209,7 +209,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/season-countdown',
     title: 'Season Countdown',
     description:
-      'When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start.',
+      'When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start.',
     tags: ['Season', 'Countdown', 'End Date'],
     category: 'season',
   },
@@ -233,7 +233,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/tools/zone-timer',
     title: 'Zone Timer',
     description:
-      'Storm circle wait and shrink reference for Chapter 7 Season 3. Start it when a new zone appears so you know when to rotate.',
+      'Storm circle wait and shrink reference for Chapter 7 Season 4. Start it when a new zone appears so you know when to rotate.',
     tags: ['Storm', 'Rotation', 'Strategy'],
     category: 'season',
   },
@@ -265,7 +265,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/tools/weapon-damage-calculator',
     title: 'Weapon Damage Calculator',
     description:
-      'Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 3 weapons in the current loot pool sample.',
+      'Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 4 planning — sample may still include late Runners guns until the Override rewrite ships.',
     tags: ['Weapons', 'Damage', 'TTK'],
     category: 'weapons',
   },

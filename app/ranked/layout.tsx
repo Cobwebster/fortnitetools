@@ -3,17 +3,17 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { RANKED_FAQS } from '@/lib/ranked-hub'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Ranked Reset – LP, Tiers, and Which Drops to Use',
+  title: 'Fortnite Ranked – LP, Override Drops & Climb Notes',
   description:
-    'How Fortnite ranked LP works this season, when the ladder resets for Chapter 7 Season 4 (August 19–20 2026), and which Shattered Coast drops to use. Distinct from the long climb guide and from the playlist catalog. Last reviewed 18 Aug 2026.',
+    'How Fortnite ranked LP works in Chapter 7 Season 4 (Override), which returning drops to use, and Match Override caveats. Distinct from the long climb guide and from the playlist catalog. Last reviewed 31 Aug 2026.',
   path: '/ranked',
   keywords: [
-    'fortnite ranked reset',
+    'fortnite ranked',
     'fortnite ranked lp',
     'how fortnite ranked works',
     'fortnite ranked drops',
-    'fortnite ranked season 4',
-    'fortnite ranked reset date',
+    'fortnite override ranked',
+    'fortnite ranked reset',
     'fortnite bronze to unreal',
   ],
 })

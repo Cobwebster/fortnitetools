@@ -60,7 +60,7 @@ export default async function StatusPage() {
               <span className="text-foreground">Status</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              Reset week · last reviewed {STATUS_REVIEWED}
+              Live season · last reviewed {STATUS_REVIEWED}
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Is Fortnite <span className="text-primary">down</span>?
@@ -127,16 +127,15 @@ export default async function StatusPage() {
           </section>
 
           <section className="rounded-xl border border-primary/40 bg-card p-5 ring-1 ring-primary/20">
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Reset week</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Season timer</p>
             <h2 className="mt-2 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Chapter 7 Season 4 downtime
+              Override ends {formatSeasonLongDate(nextSeasonStartDate())}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{countdownLine}</p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Lobby MOTD: “Reality Reboots August 20.” Our timestamp is{' '}
-              {formatSeasonLongDate(nextSeasonStartDate())} UTC — same as the {CURRENT_SEASON.shortLabel}{' '}
-              end we publish on the countdown. Downtime can move a few hours. Ranked LP usually
-              resets at that boundary; confirm the ranked tab after you get in.
+              Chapter 7 Season 4 ({CURRENT_SEASON.codename}) is live. The countdown tracks the
+              published end into {CURRENT_SEASON.next.label}. Downtime can move a few hours. Ranked
+              LP usually resets at that boundary; confirm the ranked tab after you get in.
             </p>
             <div className="mt-5 grid gap-3">
               {STATUS_RESET_WEEK.map((row) => (

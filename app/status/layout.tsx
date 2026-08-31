@@ -3,9 +3,9 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { STATUS_FAQS } from '@/lib/fortnite-status'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Is Fortnite Down? Server Status, Queue & Season Reboot',
+  title: 'Is Fortnite Down? Server Status, Queue & Season Countdown',
   description:
-    'Honest Fortnite server status for reset week: Epic’s status board, lobby MOTDs, and the Season 4 countdown. No fake ping map. Queue is not the same as downtime. Last reviewed 18 Aug 2026.',
+    'Honest Fortnite server status for Override: Epic’s status board, lobby MOTDs, and the Chapter 7 Season 4 countdown to November 1, 2026. No fake ping map. Queue is not downtime. Last reviewed 31 Aug 2026.',
   path: '/status',
   keywords: [
     'is fortnite down',
@@ -14,7 +14,7 @@ export const metadata: Metadata = createMetadata({
     'fortnite queue',
     'fortnite status',
     'fortnite server status',
-    'fortnite reboot august 20',
+    'fortnite override',
   ],
 })
 

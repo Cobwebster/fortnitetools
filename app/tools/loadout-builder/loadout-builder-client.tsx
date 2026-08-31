@@ -563,7 +563,7 @@ export function LoadoutBuilderClient() {
         </div>
 
         <p className="text-xs text-muted-foreground">
-          Stats are approximate for Chapter 7 Season 3 planning. Epic balance patches change numbers — confirm in-game.
+          Stats are approximate for Chapter 7 Season 4 planning. Epic balance patches change numbers — confirm in-game. Pool may still include late Runners guns until rewritten.
           Dig deeper per gun in the{' '}
           <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
             weapon damage calculator

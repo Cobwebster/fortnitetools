@@ -32,17 +32,19 @@ const faqs = [
 export const metadata: Metadata = createMetadata({
   title: 'All Fortnite Weapons – DPS, Damage & Stats by Rarity',
   description:
-    'Every Fortnite weapon with rarity tables: Assault Rifles, Shotguns, SMGs, Pistols, DMRs, Snipers, Bows, and Explosives — DPS, damage, structure damage, fire rate, mag size, and reload. Compare any two guns side by side. Includes vaulted history.',
+    'Chapter 7 Season 4 (Override) Fortnite weapons with rarity tables — 8-Bit Shotgun, Mega Buster, Midas’ Masterpiece, classic unvaults, plus vaulted history. Compare DPS, damage, fire rate, mag, and reload.',
   path: '/weapons',
   keywords: [
     'fortnite weapons',
     'all fortnite weapons',
     'fortnite weapon stats',
+    'fortnite override weapons',
+    '8-bit shotgun fortnite',
+    'mega buster fortnite',
     'fortnite weapon compare',
     'fortnite dps',
     'fortnite shotgun stats',
     'fortnite assault rifle stats',
-    'fortnite smg stats',
     'vaulted fortnite weapons',
   ],
 })

@@ -44,19 +44,24 @@ export default function WeaponsPage() {
               All Fortnite <span className="text-primary">Weapons</span>
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Complete Fortnite weapons list with rarity tables — DPS, body damage, structure
-              damage, fire rate, mag size, and reload. Compare any two guns side by side, browse
-              Assault Rifles, Shotguns, SMGs, Pistols, DMRs, Snipers, Bows, Explosives, and more.
-              Toggle vaulted history for older loot.
+              Chapter 7 Season 4 (Override) loot pool with rarity tables — DPS, body damage, structure
+              damage, fire rate, mag size, and reload. New: 8-Bit Shotgun, Mega Buster, Midas’
+              Masterpiece. Unvaults include Pump, Assault Rifle, Drum Gun, and more. Compare any two
+              guns; toggle vaulted history for older loot. Some returns (Minigun, Oni, Duals) often
+              need Loot Hack.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{liveCount}</strong> current ·{' '}
               <strong className="text-foreground">{vaultedCount}</strong> vaulted ·{' '}
+              <Link href="/weapon-changes" className="text-primary hover:underline">
+                Override buffs / nerfs
+              </Link>
+              {' · '}
               <Link
                 href="/guides/weapons/fortnite-best-weapons-tier-list-2026"
                 className="text-primary hover:underline"
               >
-                Meta tier list
+                Runners tier list (archive)
               </Link>
               {' · '}
               <Link href="/weapon-changes" className="text-primary hover:underline">

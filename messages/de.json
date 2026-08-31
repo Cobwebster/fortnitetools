@@ -104,7 +104,7 @@
   },
   "home": {
     "heroAlt": "Fortnite-Insel unter dem Sturmkreis",
-    "heroSubtitle": "Saison-Tools und Guides für Chapter 7 Season 3.",
+    "heroSubtitle": "Saison-Tools und Guides für Chapter 7 Season 4 (Override).",
     "heroBody": "Shattered-Coast-Karte, Stats-Tracker, Settings und die How-to-Guides der Saison — keine Rechner-Farm.",
     "ctaTools": "Kostenlose Tools öffnen",
     "ctaTierList": "Season-3-Waffen-Tierliste",
@@ -120,8 +120,8 @@
     "blurbTools": "Karte, Tracker, Grafik-Settings und Tastenbelegung — aktuell gehalten, wenn sich die Saison ändert.",
     "blurbGuidesTitle": "Guides",
     "blurbGuides": "Season-Guides zu Waffen, Karte, Battle Pass und Ranked — ohne Filler.",
-    "blurbSeasonTitle": "Chapter 7 Season 3",
-    "blurbSeason": "Runners-Coverage für aktuellen Loot-Pool und Map — mit Daten, wann zuletzt geprüft.",
+    "blurbSeasonTitle": "Chapter 7 Season 4",
+    "blurbSeason": "Override coverage for the live island, Match Overrides, ranked, and Battle Pass — with dates so you know when something was last checked.",
     "toolFreeCosmetics": "Gratis-Cosmetics",
     "toolXpCalc": "XP-Rechner",
     "toolCountdown": "Countdown",
@@ -206,7 +206,7 @@
       },
       "season-countdown": {
         "title": "Season Countdown",
-        "description": "When does Chapter 7 Season 3 end? Live countdown to August 19, 2026 and Chapter 7 Season 4 start."
+        "description": "When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start."
       },
       "codes": {
         "title": "Creative Map Codes",
@@ -229,12 +229,12 @@
         "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
-        "title": "Fortnite Ranked Reset",
-        "description": "LP, Season 4 reset date, which Shattered Coast drops to use, and a link to the long climb guide. Not the playlist dump."
+        "title": "Fortnite Ranked",
+        "description": "LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump."
       },
       "status": {
         "title": "Is Fortnite Down?",
-        "description": "Reset-week server status: Epic’s public board, lobby MOTDs, and the season countdown. No fake ping map."
+        "description": "Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map."
       },
       "player-count": {
         "title": "Player Count",
@@ -304,7 +304,7 @@
   },
   "homeMeta": {
     "title": "FortniteTools – Kostenlose Fortnite-Guides & Tools",
-    "description": "Kostenlose Fortnite-Tools und Guides für Chapter 7 Season 3 — Stats, Sensitivität, XP, Tasten, Waffen und BR-Strategie."
+    "description": "Kostenlose Fortnite-Tools und Guides für Chapter 7 Season 4 (Override) — Stats, Sensitivität, XP, Tasten, Waffen und BR-Strategie."
   },
   "tools": {
     "sensitivityCalculator": {

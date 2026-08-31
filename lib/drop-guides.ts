@@ -324,19 +324,19 @@ export const DROP_INDEX_FAQS = [
       'No. The interactive map keeps short contest / loot / extract notes on each pin. These drop pages are landing-and-rotate guides: how to split the POI, when to extract, where third parties come from, and when to leave. Use the map for pins; use these pages when you search “best drop [POI].”',
   },
   {
-    question: 'Will these drops still be true in Chapter 7 Season 4?',
+    question: 'Are these drops still accurate in Override?',
     answer:
-      'They describe Shattered Coast as it plays in late Chapter 7 Season 3 (last reviewed 17 Aug 2026). When the island reboots, treat POI names and paths as stale until we rewrite them. The season hub tracks that flip — we will not invent S4 landings the night before.',
+      'They cover five returning POIs (last reviewed 17 Aug 2026 for paths). Traffic patterns changed with Override — Green Hill Zone, Reality’s Reign, and Stone Sanctum do not have dedicated pages yet. Use the live map for new names; treat these five as starting points, not gospel.',
   },
   {
     question: 'Which drop is best for ranked?',
     answer:
-      'Latte Landing and Wonkeeland are the balanced defaults. Sunken Shores is the placement / LP edge. Heatwave Harbor and Battlewoods are for lobby control, not clean climb games. Ranked still pays placement more than elims — see the ranked guide.',
+      'Latte Landing and Wonkeeland are the balanced defaults. Sunken Shores is the placement / LP edge. Heatwave Harbor and Battlewoods are for lobby control, not clean climb games. Ranked still pays placement more than elims — see the ranked hub.',
   },
   {
     question: 'Where should I land if I want mythics?',
     answer:
-      'Mythics in C7S3 are boss / vault versions of the live guns (Voidblade, Harley, Skeletor, Wolfe, Catwoman, Dog, Ivy, vault-pedestal sniper). Harbor and Sinister Strip pull that traffic. These five pages are named-POI rotates, not a boss-route spreadsheet. Check the season hub and weapons page for the live mythic list.',
+      'Mythic names on the weapons page may still list late Runners bosses. Override introduced new mythics — trust the in-game inventory over an old list. These five pages are named-POI rotates, not a boss-route spreadsheet. Check the season hub for honesty notes.',
   },
   {
     question: 'Do I still need the loot-spots and all-locations guides?',

@@ -124,8 +124,9 @@ export default async function DropsIndexPage() {
             </h2>
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
               “Best drop” is a bad query unless you say ranked, loot, Sprites, or placement. Harbor
-              wins chests and loses LP. Sunken Shores does the opposite. Chapter 7 Season 4 will
-              stale every path here — until then this is late C7S3 Shattered Coast.
+              wins chests and loses LP. Sunken Shores does the opposite. These five pages cover
+              returning Override POIs — Green Hill Zone, Reality’s Reign, and Stone Sanctum do not
+              have dedicated guides yet.
             </p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {DROP_PICKER.map((row) => {

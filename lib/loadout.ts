@@ -11,7 +11,7 @@ export type UtilityItem = {
   note: string
 }
 
-/** Active C7S3 heals / consumables (floor + chests). */
+/** Active C7S4 heals / consumables (floor + chests + Loot Hack returns). */
 export const HEALS: UtilityItem[] = [
   {
     id: 'medkit',
@@ -30,14 +30,6 @@ export const HEALS: UtilityItem[] = [
     note: '+15 HP · stackable',
   },
   {
-    id: 'guzzle_juice',
-    name: 'Guzzle Juice',
-    slot: 'heal',
-    rarity: 'Uncommon',
-    image: '/images/loadout/guzzle_juice.png',
-    note: 'HP + move-speed sip',
-  },
-  {
     id: 'apple',
     name: 'Apple',
     slot: 'heal',
@@ -52,14 +44,6 @@ export const HEALS: UtilityItem[] = [
     rarity: 'Uncommon',
     image: '/images/loadout/pepper.png',
     note: '+10 HP + short speed · produce boxes',
-  },
-  {
-    id: 'golden_apple',
-    name: 'Golden Apple',
-    slot: 'heal',
-    rarity: 'Exotic',
-    image: '/images/loadout/golden_apple.png',
-    note: '+50 HP + low gravity · Exotic',
   },
   {
     id: 'small_pot',
@@ -83,7 +67,7 @@ export const HEALS: UtilityItem[] = [
     slot: 'heal',
     rarity: 'Rare',
     image: '/images/loadout/chug_splash.png',
-    note: 'AoE HP + shield splash',
+    note: 'AoE HP + shield · often Loot Hack',
   },
   {
     id: 'chug_jug',
@@ -99,7 +83,7 @@ export const HEALS: UtilityItem[] = [
     slot: 'heal',
     rarity: 'Rare',
     image: '/images/loadout/flowberry.png',
-    note: 'Seasonal heal / mobility hybrid',
+    note: 'Heal / mobility hybrid',
   },
   {
     id: 'slap_juice',
@@ -121,40 +105,16 @@ export const HEALS: UtilityItem[] = [
 
 /**
  * Mobility + fight utility for the 5th hotbar slot.
- * Active C7S3 gadgets (Rift-To-Go, Overdrive, Turret, Scanner, Crash Pad Jr., etc.).
+ * Override pool — Seven Sliders / Rift / Shock Rocks vaulted with Runners.
  */
 export const MOBILITY: UtilityItem[] = [
   {
-    id: 'seven_sliders',
-    name: 'Seven Sliders',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/seven_sliders.png',
-    note: 'Slide reposition + ADS slow-mo',
-  },
-  {
-    id: 'limitless_seven_sliders',
-    name: 'Limitless Seven Sliders',
+    id: 'sonic_sneakers',
+    name: 'Sonic Power Sneakers',
     slot: 'mobility',
     rarity: 'Mythic',
     image: '/images/loadout/seven_sliders.png',
-    note: 'Mythic · infinite charges',
-  },
-  {
-    id: 'shock_rocks',
-    name: 'Shock Rocks',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/shock_rocks.png',
-    note: 'Triple midair jump · rotate / fight',
-  },
-  {
-    id: 'rift_to_go',
-    name: 'Rift-To-Go',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/rift.png',
-    note: 'Portable rift · team rotate',
+    note: 'Spin Dash / Spin Attack · Override',
   },
   {
     id: 'overdrive_grenade',
@@ -162,7 +122,15 @@ export const MOBILITY: UtilityItem[] = [
     slot: 'mobility',
     rarity: 'Rare',
     image: '/images/loadout/overdrive_grenade.png',
-    note: 'Speed / overdrive throw',
+    note: 'Speed / overdrive throw · unvault',
+  },
+  {
+    id: 'bass_boost',
+    name: 'Bass Boost',
+    slot: 'mobility',
+    rarity: 'Epic',
+    image: '/images/loadout/impulse.png',
+    note: 'Knock / boost · often Loot Hack',
   },
   {
     id: 'shockwave',
@@ -195,38 +163,6 @@ export const MOBILITY: UtilityItem[] = [
     rarity: 'Rare',
     image: '/images/loadout/impulse.png',
     note: 'Knock teammates / yourself',
-  },
-  {
-    id: 'business_turret',
-    name: 'Business Turret',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/business_turret.png',
-    note: 'Deployable auto-turret',
-  },
-  {
-    id: 'pulse_scanner',
-    name: 'Pulse Scanner',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/pulse_scanner.png',
-    note: 'Reveal nearby enemies',
-  },
-  {
-    id: 'cluster_clinger',
-    name: 'Cluster Clinger',
-    slot: 'mobility',
-    rarity: 'Uncommon',
-    image: '/images/loadout/cluster_clinger.png',
-    note: 'Sticky cluster explosive',
-  },
-  {
-    id: 'batman_grapnel',
-    name: 'Batman Grapnel Gun',
-    slot: 'mobility',
-    rarity: 'Mythic',
-    image: '/images/loadout/batman_grapnel.png',
-    note: 'Mythic · Rare Chests',
   },
   {
     id: 'grappler',
@@ -270,23 +206,23 @@ export const PRESETS: {
   {
     id: 'aggressive',
     name: 'Aggressive',
-    blurb: 'Striker crack → Rapid Fire spray → Surgical mid',
+    blurb: '8-Bit spray → Drum / AR mid → Sonic rotate',
     slots: {
-      shotgun: 'striker_pump',
-      ar: 'surgical_burst',
-      smg: 'rapid_fire_smg',
+      shotgun: 'eight_bit_shotgun',
+      ar: 'drum_gun',
+      smg: 'tactical_pistol',
       heal: 'small_pot',
-      mobility: 'seven_sliders',
+      mobility: 'sonic_sneakers',
     },
   },
   {
     id: 'box',
     name: 'Box / Pump',
-    blurb: 'First-shot punish in builds',
+    blurb: 'Classic pump crack + AR hold',
     slots: {
-      shotgun: 'striker_pump',
-      ar: 'warforged_ar',
-      smg: 'stinger_smg',
+      shotgun: 'pump_shotgun',
+      ar: 'assault_rifle',
+      smg: 'ranger_pistol',
       heal: 'big_pot',
       mobility: 'shockwave',
     },
@@ -294,13 +230,13 @@ export const PRESETS: {
   {
     id: 'zone',
     name: 'Zone / Placement',
-    blurb: 'Safer mid-game + rift rotate',
+    blurb: 'Safer mid-game + Overdrive rotate',
     slots: {
-      shotgun: 'maven_auto',
-      ar: 'surgical_burst',
-      smg: 'bank_shot',
+      shotgun: 'pump_shotgun',
+      ar: 'ranger_assault_rifle',
+      smg: 'dual_pistols',
       heal: 'medkit',
-      mobility: 'rift_to_go',
+      mobility: 'overdrive_grenade',
     },
   },
 ]

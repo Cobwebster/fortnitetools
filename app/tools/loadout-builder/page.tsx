@@ -26,9 +26,10 @@ export default function LoadoutBuilderPage() {
               Fortnite <span className="text-primary">Loadout Builder</span>
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Plan a Chapter 7 Season 3 (Runners) hotbar for Shattered Coast — every active shotgun, AR, SMG, pistol,
-              sniper, mythic boss drop, heal, and utility gadget — with item icons and estimated shots-to-kill /
-              time-to-kill. Build a kit, then share a loadout link with teammates.
+              Plan a Chapter 7 Season 4 (Override) hotbar — shotgun, AR, SMG, pistol, sniper, mythic,
+              heal, and utility — with item icons and estimated STK/TTK. Gun numbers may still reflect
+              late Runners until we rewrite the pool; confirm in-game after Override patches. Share a
+              loadout link with teammates when you are happy with the kit.
             </p>
           </div>
         </section>
@@ -38,18 +39,18 @@ export default function LoadoutBuilderPage() {
 
           <section className="mt-14">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-3">
-              How to build a Fortnite loadout in Chapter 7 Season 3
+              How to build a Fortnite loadout in Chapter 7 Season 4
             </h2>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground mb-6">
               A strong hotbar is five jobs, not five “strongest guns.” Close range, mid range, cleanup, sustain, and
               rotation each deserve a slot. Use the presets above as starting points, then swap for what you actually loot
-              on drop.
+              on drop. If a gun is missing from this list after an Override patch, trust the floor loot — we have not
+              invented new DPS sheets yet.
             </p>
             <ol className="list-decimal pl-5 space-y-2 text-sm leading-relaxed text-muted-foreground max-w-3xl">
               <li>
-                Click a hotbar slot, then pick from the full active Runners pool — Extending Focus, Striker Pump, Maven
-                Auto, Surgical Burst, Warforged AR, Stinger, Rapid Fire, Lancehead, Bank Shot, Heavy Impact, mythic boss
-                drops, Overdrive, Rift-To-Go, Seven Sliders, and more.
+                Click a hotbar slot, then pick from the listed pool (Striker Pump, Surgical Burst, Warforged AR, and
+                more). Some late-Runners names may still appear; vaulted guns will not.
               </li>
               <li>
                 Set target HP to 100 / 150 / 200 and toggle headshots to see how STK and TTK change for each combat weapon
@@ -81,8 +82,8 @@ export default function LoadoutBuilderPage() {
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground mb-4">
               After you tweak slots, the address bar updates with a short share URL (for example{' '}
               <code className="text-xs text-foreground">?sg=striker_pump&amp;ar=warforged_ar&amp;…</code>
-              ). Send that link in Discord, party chat, or socials — anyone who opens it lands on your exact Chapter 7
-              Season 3 hotbar with STK/TTK still visible. The default tool page does not inject query params until you
+              ). Send that link in Discord, party chat, or socials — anyone who opens it lands on your exact hotbar with
+              STK/TTK still visible. The default tool page does not inject query params until you
               modify the loadout, so the canonical URL stays clean for search.
             </p>
           </section>

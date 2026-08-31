@@ -2,12 +2,12 @@ export const LOADOUT_FAQS = [
   {
     question: 'What is the Fortnite Loadout Builder?',
     answer:
-      'A free Chapter 7 Season 3 (Runners) hotbar planner. Pick from the full active loot pool — shotgun, AR/rifle, SMG or sidearm, heal, and utility — then compare estimated shots-to-kill (STK) and time-to-kill (TTK) against 100 / 150 / 200 HP using the same damage model as our weapon calculator.',
+      'A free Chapter 7 Season 4 (Override) hotbar planner. Pick shotgun, AR/rifle, SMG or sidearm, heal, and utility, then compare estimated shots-to-kill (STK) and time-to-kill (TTK) against 100 / 150 / 200 HP. Gun numbers may still reflect late Runners until we rewrite the pool — confirm in-game after Override patches.',
   },
   {
-    question: 'What is a good Fortnite loadout in Chapter 7 Season 3?',
+    question: 'What is a good Fortnite loadout in Chapter 7 Season 4?',
     answer:
-      'Most fights still want a shotgun for box/close pressure, a mid-range AR or burst rifle, a spray or sidearm for cleanup, plus heals and utility. On Shattered Coast, Extending Focus or Striker Pump + Surgical Burst/Warforged + Rapid Fire, Stinger, or Lancehead is a common core — then smalls/bigs and Overdrive, Shockwaves, Seven Sliders, or Rift-To-Go for rotates.',
+      'Most fights still want a shotgun for box/close pressure, a mid-range AR or burst rifle, a spray or sidearm for cleanup, plus heals and utility. A common core is Striker Pump (or similar) + Surgical Burst/Warforged + a spray, then smalls/bigs and mobility. Match Overrides can change the ruleset — check the playlist tile.',
   },
   {
     question: 'How does STK / TTK work in this tool?',
@@ -22,7 +22,7 @@ export const LOADOUT_FAQS = [
   {
     question: 'Are the weapon icons and stats official Epic data?',
     answer:
-      'Icons are real Fortnite item art mirrored for reference. Damage, fire rate, and magazine values are approximate planning numbers for the current Runners BR loot pool (post Hot Bat Summer / 41.20) and can change after patches — confirm in-game after major balance updates. Vaulted guns like Flex SMG, Hunting Rifle, and Chaos Reloader are not listed.',
+      'Icons are real Fortnite item art mirrored for reference. Damage, fire rate, and magazine values are approximate planning numbers and can lag Override balance patches — confirm in-game after major updates. Vaulted guns are not listed.',
   },
   {
     question: 'How is this different from the weapon damage calculator?',

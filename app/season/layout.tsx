@@ -3,19 +3,19 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { SEASON_HUB_FAQS } from '@/lib/season-hub'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Chapter 7 Season 4 – What Changed (Island, Loot, Ranked)',
+  title: 'Fortnite Chapter 7 Season 4 Override – Map, Ranked, Battle Pass',
   description:
-    'Reset-week hub for Fortnite Chapter 7 Season 4: what is still true on Shattered Coast, what the August 20 reboot confirms, and what we will not invent (S4 POIs, loot, mythics). Last reviewed 17 Aug 2026.',
+    'Fortnite Override (Chapter 7 Season 4) hub: new POIs (Green Hill Zone, Reality’s Reign, Stone Sanctum), Match Overrides, ranked reset, and Battle Pass end date (November 1, 2026). Last reviewed 31 Aug 2026.',
   path: '/season',
   keywords: [
     'fortnite chapter 7 season 4',
+    'fortnite override',
     'fortnite season 4 hub',
-    'fortnite what changed',
-    'fortnite season 4 loot pool',
-    'fortnite season 4 mythics',
+    'fortnite green hill zone',
+    'fortnite match override',
     'fortnite ranked reset',
-    'fortnite battle pass free track',
-    'reality reboots august 20',
+    'fortnite override battle pass',
+    'when does fortnite season 4 end',
   ],
 })
 

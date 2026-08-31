@@ -1,7 +1,7 @@
 import { formatSeasonLongDate, getSeasonCountdown, nextSeasonStartDate } from '@/lib/season'
 import type { NewsMotd } from '@/lib/fortnite-news'
 
-export const STATUS_REVIEWED = '18 Aug 2026'
+export const STATUS_REVIEWED = '31 Aug 2026'
 
 export type EpicStatusPayload = {
   indicator: 'none' | 'minor' | 'major' | 'critical' | 'maintenance' | string
@@ -94,13 +94,13 @@ export function formatEpicUpdated(iso: string | null) {
 export function countdownStatusLine(now = new Date()) {
   const c = getSeasonCountdown(now)
   if (c.ended) {
-    return 'The C7S3 countdown has elapsed. If the lobby is a queue or a patcher, that is reboot downtime — not a mystery outage we can ping-map.'
+    return 'The C7S4 Override countdown has elapsed. If the lobby is a queue or a patcher, that is season-flip downtime — not a mystery outage we can ping-map.'
   }
-  return `${c.days}d ${c.hours}h ${c.minutes}m left on the season timer we publish (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Exact maintenance can shift a few hours.`
+  return `${c.days}d ${c.hours}h ${c.minutes}m left on Override (${formatSeasonLongDate(nextSeasonStartDate())} UTC end). Exact maintenance can shift a few hours.`
 }
 
 const DOWNTIME_RE =
-  /reboot|downtime|maintenance|server|queue|august 20|season 4|chapter 7 season 4|reality reboot|coming soon|update/i
+  /reboot|downtime|maintenance|server|queue|season 5|chapter 7 season 5|override|coming soon|update|outage/i
 
 /** Prefer MOTDs that actually mention reboot / downtime; otherwise show the latest lobby tiles so the page is not empty. */
 export function pickStatusMotds(motds: NewsMotd[]) {
@@ -115,11 +115,11 @@ export const STATUS_RESET_WEEK = [
   },
   {
     title: 'Queue is not an outage',
-    body: 'A progress bar after “Reality Reboots August 20” is matchmaking load. Third-party sites do not get your queue position. Refresh Epic’s board, this page, and the countdown. Buying a VPN does nothing.',
+    body: 'A progress bar after a content update is matchmaking load. Third-party sites do not get your queue position. Refresh Epic’s board, this page, and the countdown. Buying a VPN does nothing.',
   },
   {
     title: 'What we can actually see',
-    body: 'Epic’s public status JSON, the same lobby MOTDs as the news page, and the season timestamp we already publish. We cannot see your ping, your NAT, or whether NA-East is worse than EU.',
+    body: 'Epic’s public status JSON, the same lobby MOTDs as the news page, and the Override end timestamp we publish. We cannot see your ping, your NAT, or whether NA-East is worse than EU.',
   },
 ] as const
 
@@ -145,11 +145,11 @@ export const STATUS_CHECKS = [
   },
   {
     title: 'Lobby news (MOTDs)',
-    body: 'When Epic is about to take the game down for a season reboot, the news tab usually says so days ahead (“Reality Reboots August 20”). That is a scheduled downtime headline, not a live outage flag. We load the same tiles as the lobby.',
+    body: 'When Epic is about to take the game down for a season reboot or big update, the news tab usually says so days ahead. That is a scheduled downtime headline, not a live outage flag. We load the same tiles as the lobby.',
   },
   {
     title: 'Season countdown',
-    body: `Chapter 7 Season 4 is dated ${formatSeasonLongDate(nextSeasonStartDate())} UTC. Expect a maintenance window around that flip. Exact queue length is not a public API — if the client says “servers are busy,” believe the client.`,
+    body: `Override (Chapter 7 Season 4) ends ${formatSeasonLongDate(nextSeasonStartDate())} UTC. Expect a maintenance window around that flip into Season 5. Exact queue length is not a public API — if the client says “servers are busy,” believe the client.`,
   },
 ] as const
 
@@ -183,8 +183,8 @@ export const STATUS_FAQS = [
       'Check Epic’s status board first (embedded below from status.epicgames.com). Then check whether the lobby news mentions scheduled downtime. This site does not run a fake world ping map — we cannot see your connection.',
   },
   {
-    question: 'When is the Chapter 7 Season 4 downtime?',
-    answer: `The season end / S4 start timestamp we use is ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). The lobby MOTD says “Reality Reboots August 20.” Downtime can shift by a few hours. Use the countdown; treat this page as the “is it servers or me” checklist.`,
+    question: 'When is the next season downtime?',
+    answer: `Override ends / Chapter 7 Season 5 is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Downtime can shift by a few hours. Use the countdown; treat this page as the “is it servers or me” checklist.`,
   },
   {
     question: 'Why do other sites show a green ping map?',

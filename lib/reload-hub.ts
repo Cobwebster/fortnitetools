@@ -10,7 +10,7 @@ export const MODE_COMPARE = [
     href: '/fortnite-map',
     players: '100 (typical pubs)',
     respawn: 'No — one life',
-    island: 'Shattered Coast (C7S3). S4 island TBD until the reboot.',
+    island: 'Override island (C7S4). Same map as pubs — Match Overrides can change the ruleset.',
     storm: 'Full BR circles — use the zone timer',
     pickWhen: 'Ranked LP, mythics, the current Battle Pass island, placement games.',
   },
@@ -84,7 +84,7 @@ export const RELOAD_ISLAND_PLAY = [
 
 export const RELOAD_VS_BR_LOOT = {
   title: 'Reload loot is not the BR pool',
-  body: 'Do not build a Shattered Coast hotbar and expect it on Oasis. Reload ships its own floor/chest pool on the small islands. Mythics and Duck Race traffic from C7S3 BR do not transfer. If you care about Surgical Burst / Striker Pump numbers, that is the BR weapons page and loadout builder — not this mode.',
+  body: 'Do not build a BR Override hotbar and expect it on Oasis. Reload ships its own floor/chest pool on the small islands. Mythics and BR island traffic do not transfer. If you care about Surgical Burst / Striker Pump numbers, that is the BR weapons page and loadout builder — not this mode.',
 } as const
 
 export const RELOAD_XP = {

@@ -7,7 +7,7 @@ import { Info, CheckCircle2, Circle } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 import { seasonEndDate } from '@/lib/season'
 
-// Chapter 7 Season 3 (Runners) Battle Pass planning model — August 2026
+// Chapter 7 Season 4 (Override) Battle Pass planning model — Aug–Nov 2026
 // 100 reward levels. XP-per-level and weekly sources are estimates; quest values change.
 const XP_PER_LEVEL = 80_000
 const TOTAL_LEVELS = 100
@@ -25,7 +25,7 @@ const WEEKLY_SOURCES = [
   { id: 'festival',       label: 'Festival concerts / events',         xp:  40_000, default: false },
 ]
 
-// Chapter 7 Season 3: June 6 – August 19, 2026
+// Chapter 7 Season 4: August 20 – November 1, 2026
 const SEASON_END = seasonEndDate()
 
 function defaultWeeksRemaining() {

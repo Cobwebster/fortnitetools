@@ -16,18 +16,18 @@ export default function FortniteMapPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is the current Fortnite map in Chapter 7 Season 3?',
+        name: 'What is the current Fortnite map in Chapter 7 Season 4?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Chapter 7 Season 3 (Runners) uses the Shattered Coast island, added after the Shattered live event. Named locations include Lifty Lodge, Battlewoods, Wonkeeland, Latte Landing, Frosted Flats, Sinister Strip, Golden Grove, Shaken Sanctuary, Cluster Coast, Sunken Shores, Heatwave Harbor, Calamari Canyon, and Chopped Shop.',
+          text: 'Chapter 7 Season 4 (Override) uses the live BR island with new named POIs including Green Hill Zone, Reality’s Reign, and Stone Sanctum. Returning names include Lifty Lodge, Battlewoods, Wonkeeland, Latte Landing, Golden Grove, Shaken Sanctuary, Cluster Coast, Sunken Shores, Heatwave Harbor, and Chopped Shop. Frosted Flats, Sinister Strip, and Calamari Canyon are gone from the named list.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Where are Fortnite Extraction Sites in Chapter 7 Season 3?',
+        name: 'Where are Fortnite Extraction Sites in Override?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Extraction Sites sit near major Shattered Coast POIs (Lifty Lodge, Sinister Strip, Sunken Shores, Wonkeeland, and more). Toggle the Extraction Sites layer on this map. Sites unlock after the first storm circle closes; activating one broadcasts your location for ~30 seconds while the crate arrives.',
+          text: 'Toggle the Extraction Sites layer on this map when available. Pads sit near major POIs. Unlock timing and alert windows can change with patches — trust the in-game UI over an old Runners guide.',
         },
       },
       {
@@ -35,7 +35,7 @@ export default function FortniteMapPage() {
         name: 'Where should I land in Fortnite for the best loot?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and Sinister Strip reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games. Rotate paths (contest, extract, third-party) for five named POIs are on /drops — not the pin tooltips.',
+          text: 'High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and new Override names reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games. Rotate paths for five returning POIs are on /drops — not the pin tooltips.',
         },
       },
       {
@@ -51,7 +51,7 @@ export default function FortniteMapPage() {
         name: 'Does this Fortnite map update every season?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips and Extraction Site overlays are reviewed around major Chapter 7 Season 3 patches.',
+          text: 'The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips are reviewed around major Chapter 7 Season 4 patches.',
         },
       },
     ],
