@@ -147,7 +147,7 @@ export default function LoadoutBuilderPage() {
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               For the full season ranking and drop notes, read the{' '}
               <Link href="/guides/weapons/fortnite-best-weapons-tier-list-2026" className="text-primary hover:underline">
-                Chapter 7 Season 3 weapons tier list
+                Chapter 7 Season 3 weapons tier list (archive)
               </Link>
               .
             </p>

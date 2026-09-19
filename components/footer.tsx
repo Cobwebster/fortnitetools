@@ -37,16 +37,19 @@ export function Footer() {
     { href: '/ranked', label: t('ranked') },
     { href: '/status', label: t('status') },
     { href: '/new-cosmetics', label: t('newCosmetics') },
+    { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
     { href: '/creator-code', label: t('creatorCode') },
     { href: '/free-cosmetics', label: t('freeCosmetics') },
     { href: '/xp-calculator', label: t('xpCalculator') },
     { href: '/season-countdown', label: t('seasonCountdown') },
     { href: localizeHref(locale, '/tools/player-stats'), label: t('fortniteTracker') },
+    { href: '/tools/player-compare', label: t('playerCompare') },
     { href: '/codes', label: t('mapCodes') },
     { href: localizeHref(locale, '/fortnite-map'), label: t('interactiveMap') },
     { href: '/map-rotation', label: t('mapRotation') },
     { href: '/map-evolution', label: t('mapEvolution') },
+    { href: '/stats', label: t('statsLeaderboards') },
     { href: '/player-count', label: t('playerCount') },
     { href: localizeHref(locale, '/tools/loadout-builder'), label: t('loadoutBuilder') },
     { href: localizeHref(locale, '/tools/fortnite-build-simulator'), label: t('buildSimulator') },
@@ -135,6 +138,22 @@ export function Footer() {
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {t('weaponsTier')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/season"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('season')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/drops"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('drops')}
                     </Link>
                   </li>
                   <li>

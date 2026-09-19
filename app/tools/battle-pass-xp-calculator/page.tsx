@@ -8,13 +8,14 @@ import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 const base = createMetadata({
   title: 'Fortnite Battle Pass XP Calculator – Will You Finish In Time?',
   description:
-    "Calculate whether you'll finish the Fortnite Battle Pass before Chapter 7 Season 3 ends. Enter your level and pick weekly XP sources to see your projected finish level.",
+    "Calculate whether you'll finish the Fortnite Battle Pass before Chapter 7 Season 4 (Override) ends on November 1, 2026. Enter your level and pick weekly XP sources to see your projected finish level.",
   path: '/tools/battle-pass-xp-calculator',
   keywords: [
     'fortnite battle pass xp calculator',
     'fortnite xp calculator',
     'fortnite battle pass level calculator',
-    'chapter 7 season 3 battle pass',
+    'chapter 7 season 4 battle pass',
+    'fortnite override battle pass',
   ],
 })
 

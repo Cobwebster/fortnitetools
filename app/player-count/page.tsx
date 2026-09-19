@@ -47,6 +47,10 @@ export default async function PlayerCountPage() {
               maps people actually search for — powered by Epic&apos;s public Ecosystem Data API.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
+              <Link href="/stats" className="font-semibold text-primary hover:underline">
+                Stats leaderboards
+              </Link>
+              {' · '}
               <Link href="/codes" className="text-primary hover:underline">
                 Map codes
               </Link>

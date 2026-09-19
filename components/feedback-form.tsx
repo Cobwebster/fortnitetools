@@ -1,6 +1,7 @@
 'use client'
 
 import { useActionState, useEffect, useRef } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { MessageSquareText, Send } from 'lucide-react'
 import {
   submitSuggestionAction,
@@ -10,6 +11,8 @@ import {
 const initialState: AuthActionState = {}
 
 export function FeedbackForm() {
+  const searchParams = useSearchParams()
+  const requestLeaderboard = searchParams.get('request') === 'leaderboard'
   const [state, formAction, pending] = useActionState(
     submitSuggestionAction,
     initialState
@@ -20,8 +23,19 @@ export function FeedbackForm() {
     if (state.success) formRef.current?.reset()
   }, [state.success])
 
+  useEffect(() => {
+    if (!requestLeaderboard) return
+    const el = document.getElementById('feedback')
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [requestLeaderboard])
+
   return (
-    <form ref={formRef} action={formAction} className="space-y-5">
+    <form
+      id="feedback"
+      ref={formRef}
+      action={formAction}
+      className="scroll-mt-24 space-y-5"
+    >
       <div className="flex items-start gap-3">
         <div className="rounded-lg bg-primary/15 p-2.5 text-primary">
           <MessageSquareText className="h-5 w-5" aria-hidden="true" />
@@ -31,7 +45,9 @@ export function FeedbackForm() {
             Submit feedback
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Suggest a feature, report a problem, or share an idea.
+            {requestLeaderboard
+              ? 'Request a leaderboard add — include your exact Epic display name and platform.'
+              : 'Suggest a feature, report a problem, request a leaderboard add, or share an idea.'}
           </p>
         </div>
       </div>
@@ -60,10 +76,11 @@ export function FeedbackForm() {
         <select
           id="feedback-category"
           name="category"
-          defaultValue="suggestion"
+          defaultValue={requestLeaderboard ? 'leaderboard' : 'suggestion'}
           className="w-full rounded-md border border-border bg-muted px-3 py-2.5 text-sm text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
         >
           <option value="suggestion">Feature suggestion</option>
+          <option value="leaderboard">Leaderboard — track my name</option>
           <option value="bug">Bug report</option>
           <option value="other">Other feedback</option>
         </select>
@@ -80,6 +97,11 @@ export function FeedbackForm() {
           minLength={10}
           maxLength={2000}
           rows={6}
+          defaultValue={
+            requestLeaderboard
+              ? 'Please add my Epic name to the /stats tracked leaderboards.\n\nEpic name: \nPlatform: Epic / PSN / Xbox\n'
+              : undefined
+          }
           placeholder="Tell us what you would like to see..."
           className="w-full resize-y rounded-md border border-border bg-muted px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
         />

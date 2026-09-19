@@ -39,13 +39,23 @@ export async function updateSession(request: NextRequest) {
   if (isProtected && !user) {
     const url = request.nextUrl.clone()
     url.pathname = '/login'
-    url.searchParams.set('next', path)
+    const next = `${path}${request.nextUrl.search || ''}`
+    url.search = ''
+    url.searchParams.set('next', next)
     return NextResponse.redirect(url)
   }
 
   if (isAuthPage && user) {
+    const next = request.nextUrl.searchParams.get('next')
     const url = request.nextUrl.clone()
-    url.pathname = '/account'
+    if (next && next.startsWith('/') && !next.startsWith('//')) {
+      const [pathname, qs] = next.split('?')
+      url.pathname = pathname || '/account'
+      url.search = qs ? `?${qs}` : ''
+    } else {
+      url.pathname = '/account'
+      url.search = ''
+    }
     return NextResponse.redirect(url)
   }
 

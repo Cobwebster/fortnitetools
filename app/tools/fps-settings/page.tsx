@@ -6,7 +6,7 @@ import { createMetadata } from '@/lib/seo'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 
 const base = createMetadata({
-  title: 'Best Fortnite Settings – FPS & Graphics Guide (Chapter 7 Season 3)',
+  title: 'Best Fortnite Settings – FPS & Graphics Guide (Chapter 7 Season 4)',
   description:
     'Every Fortnite graphics, display, and audio setting explained, with competitive, balanced, and quality presets to boost FPS and reduce input lag.',
   path: '/tools/fps-settings',

@@ -11,14 +11,20 @@ export const metadata: Metadata = createMetadata({
   index: false,
 })
 
-export default function RegisterPage() {
+export default async function RegisterPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>
+}) {
+  const params = await searchParams
+
   return (
     <SitePage
       title="Create account"
       description="Register with email and password. Confirmation may be required depending on your project settings."
     >
       <div className="mx-auto max-w-md not-prose">
-        <RegisterForm />
+        <RegisterForm next={params.next} />
       </div>
     </SitePage>
   )

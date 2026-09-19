@@ -54,6 +54,14 @@ export const TOOLS: ToolEntry[] = [
     category: 'stats',
   },
   {
+    href: '/tools/player-compare',
+    title: 'Player Compare',
+    description:
+      'Compare two Fortnite players side by side — wins, K/D, win rate, kills, and matches for season or lifetime.',
+    tags: ['Compare', 'Tracker', 'K/D'],
+    category: 'stats',
+  },
+  {
     href: '/tools/loadout-builder',
     title: 'Loadout Builder',
     description:
@@ -67,6 +75,14 @@ export const TOOLS: ToolEntry[] = [
     description:
       'Live shop rotation plus newly added cosmetics and a searchable catalog of outfits, emotes, and more.',
     tags: ['Shop', 'Skins', 'Emotes'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/cosmetic-stats',
+    title: 'Cosmetic Stats',
+    description:
+      'Fortnite outfit shop stats — most Item Shop appearances, longest vaults, recent returns, and what’s live tonight.',
+    tags: ['Shop History', 'Vaulted', 'Skins'],
     category: 'cosmetics',
   },
   {
@@ -196,6 +212,14 @@ export const TOOLS: ToolEntry[] = [
       'Searchable Fortnite Creative island codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more.',
     tags: ['Codes', 'XP', 'Creative'],
     category: 'map',
+  },
+  {
+    href: '/stats',
+    title: 'Fortnite Player Stats',
+    description:
+      'Tracked Fortnite player stats leaderboards — season wins, kills, Battle Pass level, and time from accounts we poll — plus mode popularity by peak CCU.',
+    tags: ['Player Stats', 'Leaderboard', 'CCU'],
+    category: 'stats',
   },
   {
     href: '/player-count',

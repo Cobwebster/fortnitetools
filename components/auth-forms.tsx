@@ -78,7 +78,7 @@ export function LoginForm({ next }: { next?: string }) {
       </button>
       <p className="pt-2 text-center text-base text-muted-foreground">
         Don&apos;t have an account?{' '}
-        <Link href="/register" className="text-lg font-bold text-primary hover:underline">
+        <Link href={next ? `/register?next=${encodeURIComponent(next)}` : '/register'} className="text-lg font-bold text-primary hover:underline">
           Register
         </Link>
       </p>
@@ -86,11 +86,12 @@ export function LoginForm({ next }: { next?: string }) {
   )
 }
 
-export function RegisterForm() {
+export function RegisterForm({ next }: { next?: string }) {
   const [state, formAction, pending] = useActionState(registerAction, initial)
 
   return (
     <form action={formAction} className="space-y-4">
+      <input type="hidden" name="next" value={next || '/account'} />
       <AuthMessage state={state} />
       <div>
         <label htmlFor="register-name" className={labelClass}>

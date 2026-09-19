@@ -158,12 +158,15 @@ export function PlayerCountClient({
   totalTrackedPeak,
   updatedAt,
   sourceNote,
+  variant = 'player-count',
 }: {
   epicRows: PlayerCountRow[]
   creativeRows: PlayerCountRow[]
   totalTrackedPeak: number
   updatedAt: string
   sourceNote: string
+  /** `stats` = leaderboard hub framing + player-stats CTA; default keeps /player-count copy */
+  variant?: 'player-count' | 'stats'
 }) {
   const updatedLabel = new Date(updatedAt).toLocaleString('en-US', {
     month: 'short',
@@ -172,13 +175,14 @@ export function PlayerCountClient({
     minute: '2-digit',
     timeZoneName: 'short',
   })
+  const isStats = variant === 'stats'
 
   return (
     <div className="space-y-10">
       <div className="grid gap-3 sm:grid-cols-3">
         <div className="rounded-xl border border-border bg-card px-5 py-4 sm:col-span-1">
           <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-            Tracked peak CCU
+            {isStats ? 'Leaderboard peak CCU' : 'Tracked peak CCU'}
           </p>
           <p className="mt-2 font-display text-3xl font-extrabold tabular-nums text-primary sm:text-4xl">
             {formatPlayers(totalTrackedPeak)}
@@ -196,16 +200,45 @@ export function PlayerCountClient({
         </div>
       </div>
 
-      <IslandLookup />
+      {isStats ? (
+        <section className="overflow-hidden rounded-xl border border-primary/40 bg-card p-5 ring-1 ring-primary/20">
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">
+            Personal stats
+          </p>
+          <h2 className="mt-2 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+            Look up any player
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Wins, K/D, win rate, and playlist splits for an Epic, PlayStation, or Xbox name — lifetime
+            or current season. That is a per-account tracker, not a global wins ladder.
+          </p>
+          <p className="mt-4 text-sm">
+            <Link
+              href="/tools/player-stats"
+              className="inline-flex rounded-lg border border-primary bg-primary px-4 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground"
+            >
+              Open player stats
+            </Link>
+            {' · '}
+            <Link href="/player-count" className="font-semibold text-primary hover:underline">
+              Island lookup on player count
+            </Link>
+          </p>
+        </section>
+      ) : (
+        <IslandLookup />
+      )}
 
       <section className="space-y-4">
         <div className="flex flex-wrap items-end justify-between gap-2">
           <div>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Epic modes
+              {isStats ? 'Modes leaderboard' : 'Epic modes'}
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Battle Royale, Reload, OG, Blitz, LEGO, Festival, and Racing — ranked by peak concurrent.
+              {isStats
+                ? 'Battle Royale, Reload, OG, Blitz, LEGO, Festival, and Racing — ranked #1–N by peak concurrent players.'
+                : 'Battle Royale, Reload, OG, Blitz, LEGO, Festival, and Racing — ranked by peak concurrent.'}
             </p>
           </div>
         </div>
@@ -215,7 +248,7 @@ export function PlayerCountClient({
       <section className="space-y-4">
         <div>
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-            Popular Creative maps
+            {isStats ? 'Creative maps leaderboard' : 'Popular Creative maps'}
           </h2>
           <p className="mt-1 max-w-3xl text-sm text-muted-foreground">
             Viral tycoons, pillars, Zone Wars, and other high-traffic islands (100+ peak CCU) —
@@ -228,7 +261,11 @@ export function PlayerCountClient({
         </div>
         <RankTable
           rows={creativeRows}
-          emptyLabel="No Creative maps with live metrics right now — try the lookup above."
+          emptyLabel={
+            isStats
+              ? 'No Creative maps with live metrics right now — check player count for island lookup.'
+              : 'No Creative maps with live metrics right now — try the lookup above.'
+          }
         />
       </section>
     </div>

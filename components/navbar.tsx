@@ -17,6 +17,23 @@ type NavLink = {
   label: string
   emphasis?: boolean
   external?: boolean
+  badge?: 'new'
+}
+
+function NewBadge({ compact }: { compact?: boolean }) {
+  return (
+    <span
+      className={
+        compact
+          ? 'relative inline-flex items-center rounded-[3px] bg-primary px-1 py-px text-[8px] font-black uppercase leading-none tracking-[0.12em] text-primary-foreground shadow-[0_0_12px_color-mix(in_oklab,var(--primary)_55%,transparent)]'
+          : 'relative inline-flex items-center rounded-[4px] bg-primary px-1.5 py-0.5 text-[9px] font-black uppercase leading-none tracking-[0.14em] text-primary-foreground shadow-[0_0_14px_color-mix(in_oklab,var(--primary)_50%,transparent)]'
+      }
+      aria-hidden="true"
+    >
+      <span className="absolute inset-0 animate-ping rounded-[inherit] bg-primary/40" />
+      <span className="relative">New</span>
+    </span>
+  )
 }
 
 function NavLinkItem({
@@ -26,25 +43,37 @@ function NavLinkItem({
   link: NavLink
   compact?: boolean
 }) {
+  const hasBadge = link.badge === 'new'
   const className = compact
-    ? link.emphasis
-      ? 'inline-flex rounded-md px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-muted transition-colors'
-      : 'inline-flex rounded-md px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-primary transition-colors'
-    : link.emphasis
-      ? 'px-2.5 py-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors rounded-md hover:bg-muted'
-      : 'px-2.5 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted'
+    ? hasBadge
+      ? 'inline-flex items-center gap-1.5 rounded-md border border-primary/35 bg-primary/10 px-2.5 py-1.5 text-xs font-bold text-primary transition-colors hover:bg-primary/15'
+      : link.emphasis
+        ? 'inline-flex rounded-md px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-muted transition-colors'
+        : 'inline-flex rounded-md px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-primary transition-colors'
+    : hasBadge
+      ? 'inline-flex items-center gap-1.5 rounded-md border border-primary/40 bg-primary/10 px-2.5 py-2 text-sm font-bold text-primary transition-colors hover:bg-primary/15 hover:border-primary/60'
+      : link.emphasis
+        ? 'px-2.5 py-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors rounded-md hover:bg-muted'
+        : 'px-2.5 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-muted'
+
+  const content = (
+    <>
+      <span>{link.label}</span>
+      {hasBadge ? <NewBadge compact={compact} /> : null}
+    </>
+  )
 
   if (link.external) {
     return (
       <a href={link.href} target="_blank" rel="noopener noreferrer" className={className}>
-        {link.label}
+        {content}
       </a>
     )
   }
 
   return (
-    <Link href={link.href} className={className}>
-      {link.label}
+    <Link href={link.href} className={className} aria-label={hasBadge ? `${link.label} (new)` : undefined}>
+      {content}
     </Link>
   )
 }
@@ -61,6 +90,7 @@ export function Navbar() {
     { href: toolsHref, label: t('tools'), emphasis: true },
     { href: '/tools/fortnite-build-simulator', label: t('buildSim') },
     { href: localizeHref(locale, '/tools/player-stats'), label: t('playerTracker') },
+    { href: '/stats', label: t('stats'), badge: 'new', emphasis: true },
     { href: localizeHref(locale, '/fortnite-map'), label: t('map') },
     { href: localizeHref(locale, '/tools/item-shop'), label: t('itemShop') },
   ]
@@ -74,6 +104,7 @@ export function Navbar() {
     { href: '/ranked', label: t('ranked') },
     { href: '/status', label: t('status') },
     { href: '/new-cosmetics', label: t('newCosmetics') },
+    { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
     { href: '/creator-code', label: t('creatorCode') },
     { href: '/codes', label: t('codes') },

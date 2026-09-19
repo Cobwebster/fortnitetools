@@ -295,6 +295,17 @@ export async function fetchNewCosmetics() {
   return { build, lastAdditions, byType, all }
 }
 
+/** Full BR cosmetics catalog with shop history (responseFlags=7). Heavy — cache aggressively. */
+export async function fetchAllBrCosmetics(): Promise<CosmeticItem[]> {
+  const res = await fetch(`${API_BASE}/v2/cosmetics/br?language=en&responseFlags=7`, {
+    next: { revalidate: 21_600 },
+  })
+  if (!res.ok) throw new Error(`Cosmetics catalog API failed (${res.status})`)
+  const json = await res.json()
+  const list = Array.isArray(json.data) ? json.data : []
+  return (list as ApiCosmetic[]).map(normalizeCosmetic).filter(Boolean) as CosmeticItem[]
+}
+
 export async function searchCosmetics(params: {
   name?: string
   type?: string

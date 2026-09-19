@@ -37,7 +37,7 @@ export const categories: { id: Category; label: string; description: string }[] 
     id: 'map',
     label: 'Map',
     description:
-      'Shattered Coast drops, contest, extracts, and rotates for Chapter 7 Season 3. Use the interactive map for pins; these guides are the landing/rotate notes that do not fit in a tooltip.',
+      'Drop and POI notes for returning Override locations. New POIs (Green Hill Zone, Reality’s Reign, Stone Sanctum) use the live map until dedicated guides ship.',
   },
 ]
 
@@ -136,7 +136,7 @@ Mythics from bosses sit above their base versions when available. Always prefer 
   },
   {
     slug: 'fortnite-shotgun-guide-best-options',
-    title: 'Fortnite Shotgun Guide (Chapter 7 Season 3)',
+    title: 'Fortnite Shotgun Guide (Chapter 7 Season 3) (archive)',
     excerpt:
       'Which shotgun to run in Runners season: Striker Pump first, then Maven / Extending Focus — plus Flex SMG pairings and the Chaos Reloader vault note.',
     category: 'weapons',
@@ -146,6 +146,9 @@ Mythics from bosses sit above their base versions when available. Always prefer 
     featured: false,
     tags: ['shotgun', 'weapons', 'close range', 'chapter 7 season 3', 'loadout', 'striker pump'],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## Why shotguns still decide close fights
 
 Most box fights and final-circle collisions still end on a shotgun trade. Chapter 7 Season 3’s pool is small: learn **Striker Pump** well, keep Maven / Extending Focus as backups, and always cover mid-range with a **Flex SMG**.
@@ -197,7 +200,7 @@ Was the early-season boxfight king (stowed auto-reload + huge body damage). **Re
   // ─── MAP ───────────────────────────────────────────────────────────────────
   {
     slug: 'fortnite-loot-guide-best-spots',
-    title: 'Best Loot Spots on Shattered Coast (Chapter 7 Season 3)',
+    title: 'Best Loot Spots on Shattered Coast (Chapter 7 Season 3) (archive)',
     excerpt:
       'Practical drop tiers for Shattered Coast — hot, balanced, and edge POIs — plus landing priority and when to leave.',
     category: 'map',
@@ -207,6 +210,9 @@ Was the early-season boxfight king (stowed auto-reload + huge body damage). **Re
     featured: true,
     tags: ['loot', 'map', 'drop locations', 'named locations', 'hot drops', 'chapter 7 season 3', 'shattered coast'],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## How to choose a drop
 
 Your landing spot decides the first two minutes. Pick for **contest level**, **loot density**, and a **rotation path** toward the first circle — not just the biggest POI name on the map.
@@ -262,7 +268,7 @@ POI power shifts with hotfixes. Treat in-game labels as truth, and use this page
   },
   {
     slug: 'fortnite-map-all-locations-guide',
-    title: 'Fortnite Shattered Coast Map Guide: Every Named POI',
+    title: 'Fortnite Shattered Coast Map Guide: Every Named POI (archive)',
     excerpt:
       'Named locations on the Chapter 7 Season 3 Shattered Coast island — Lifty Lodge, Battlewoods, Wonkeeland, Heatwave Harbor, and more — with drop and rotation notes.',
     category: 'map',
@@ -272,6 +278,9 @@ POI power shifts with hotfixes. Treat in-game labels as truth, and use this page
     featured: false,
     tags: ['map', 'locations', 'rotation', 'POI', 'shattered coast', 'chapter 7 season 3'],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## Shattered Coast overview
 
 Chapter 7 Season 3 replaced the mid-chapter island with **Shattered Coast** after the Shattered live event. The Zero Point sits near center, with snow, desert, and coastal biomes around it. Only **Wonkeeland** and **Latte Landing** carried over cleanly from Season 2 — everything else is new or heavily remixed.
@@ -1037,7 +1046,7 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
   },
   {
     slug: 'how-to-extract-sprites-fortnite',
-    title: 'How to Extract Sprites in Fortnite Chapter 7 Season 3 (Runners)',
+    title: 'How to Extract Sprites in Fortnite Chapter 7 Season 3 (Runners) (archive)',
     excerpt:
       'Chapter 7 Season 3 Sprite extraction on Shattered Coast: when Extraction Sites unlock, the ~30s defend timer, Portable Extractor, Victory Royale auto-extract, and safe Runners site picks.',
     category: 'how-to',
@@ -1058,6 +1067,9 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
       'runners sprites',
     ],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## How to extract Sprites in Fortnite Chapter 7 Season 3
 
 In **Chapter 7 Season 3 (Runners)**, finding a Sprite only buffs **this** match. To keep it in your collection (and earn Sprite Dust) on the **Shattered Coast** map, you must **extract** it:
@@ -1187,7 +1199,7 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
   },
   {
     slug: 'how-to-get-cube-sprites-fortnite',
-    title: 'How to Get Cube Sprites in Fortnite (Chapter 7 Season 3)',
+    title: 'How to Get Cube Sprites in Fortnite (Chapter 7 Season 3) (archive)',
     excerpt:
       'Which cube sprite variants are live right now, where they drop from chests and vaults, how the Sprite Locator works, and the best Shattered Coast farm routes.',
     category: 'how-to',
@@ -1204,6 +1216,9 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
       'golden grove sprites',
     ],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## Cube sprites are live — but not every sprite has a cube yet
 
 In Chapter 7 Season 3 (Runners), Epic added **cube** variants of Sprites. These are rare collectible/combat companions that can appear from the same sprite loot pipeline as normal Sprites — chests, Sprite Chests, rare chests, vaults, and Sprite Locator routes.
@@ -1344,7 +1359,7 @@ Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find
   },
   {
     slug: 'how-to-get-ironmouse-sprite-fortnite',
-    title: 'How to Get the Ironmouse Sprite in Fortnite (C7S3)',
+    title: 'How to Get the Ironmouse Sprite in Fortnite (C7S3) (archive)',
     excerpt:
       'Ironmouse Fortnite Sprite guide: August 4 return after the early vault, Mythic powers (heal + cloak + low gravity), Relic Chest farm tips, and how to extract her.',
     category: 'how-to',
@@ -1363,6 +1378,9 @@ Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find
       'ironmouse fortnite release date',
     ],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## Ironmouse is in Fortnite — here’s the short version
 
 **Ironmouse** (the VTuber) got a **Mythic Sprite** collab in Fortnite Chapter 7 Season 3 (Runners). She briefly appeared after the **v41.30** update around **July 30, 2026**, then Epic **vaulted** her because the drop went live too early. Ironmouse herself confirmed the proper launch is her debut anniversary: **Tuesday, August 4, 2026**.
@@ -1672,7 +1690,7 @@ No. We are an independent fan site. We explain the public process and link offic
   },
   {
     slug: 'best-fortnite-xp-maps',
-    title: 'Best Fortnite XP Maps (August 2026) — How to Level Up Fast',
+    title: 'Best Fortnite XP Maps (August 2026) — How to Level Up Fast (archive)',
     excerpt:
       'Working Creative XP map codes for Chapter 7 Season 3, how to enter island codes, daily/weekly Creative XP caps, and a fast Battle Pass leveling plan.',
     category: 'season',
@@ -1689,6 +1707,9 @@ No. We are an independent fan site. We explain the public process and link offic
       'battle pass xp farm',
     ],
     content: `
+> **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
+
+
 ## Fastest way to level the Battle Pass right now
 
 Creative **XP maps** are still the quickest path to Battle Pass levels in Chapter 7 Season 3 — as long as you respect Epic’s Creative XP caps and rotate maps when gains slow. This guide lists working codes, shows how to enter them, and pairs with our live [Creative map codes](/codes) database and [Battle Pass XP calculator](/tools/battle-pass-xp-calculator).

@@ -32,15 +32,29 @@ export default function ContactPage() {
           We read every message we can. Tool bug reports, guide corrections, and map/POI tip updates are especially
           helpful. Please allow a few days for a reply.
         </p>
+        <p>
+          FortniteTools is a solo fan project. If something is wrong on a calculator, the interactive map, or a guide,
+          a short note with the URL is enough — you do not need a formal ticket.
+        </p>
       </section>
 
       <section className="space-y-3">
         <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">What to include</h2>
         <ul className="list-disc pl-5 space-y-1.5">
-          <li>The page or tool URL (for example /tools/loadout-builder)</li>
+          <li>The page or tool URL (for example /tools/loadout-builder or /fortnite-map)</li>
           <li>What you expected vs what happened</li>
           <li>Device / browser if it looks like a display bug</li>
+          <li>For season or loot questions: whether you are on Battle Royale, Reload, or Zero Build</li>
         </ul>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">What we can help with</h2>
+        <p>
+          Corrections to weapon stats, drop guides, season end dates, and broken Creative codes. Feature ideas for
+          existing tools. We do not provide Epic account support, V-Bucks refunds, or ban appeals — those go through
+          Epic’s own help site.
+        </p>
       </section>
 
       <section className="rounded-xl border border-border bg-card p-5 space-y-2">
@@ -50,6 +64,10 @@ export default function ContactPage() {
           More about the project on{' '}
           <Link href="/about" className="text-primary hover:underline">
             About
+          </Link>
+          . Privacy notes live on{' '}
+          <Link href="/privacy" className="text-primary hover:underline">
+            Privacy
           </Link>
           .
         </p>

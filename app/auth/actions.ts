@@ -44,6 +44,7 @@ export async function registerAction(
   const email = String(formData.get('email') || '').trim()
   const password = String(formData.get('password') || '')
   const displayName = String(formData.get('displayName') || '').trim()
+  const next = cleanNext(String(formData.get('next') || '/account'))
 
   if (!email || !password) {
     return { error: 'Email and password are required.' }
@@ -59,7 +60,7 @@ export async function registerAction(
     email,
     password,
     options: {
-      emailRedirectTo: `${origin}/auth/callback`,
+      emailRedirectTo: `${origin}/auth/callback?next=${encodeURIComponent(next)}`,
       data: displayName ? { display_name: displayName } : undefined,
     },
   })
@@ -71,7 +72,7 @@ export async function registerAction(
   // If email confirmation is disabled, session exists immediately.
   if (data.session) {
     revalidatePath('/', 'layout')
-    redirect('/account')
+    redirect(next)
   }
 
   return {
@@ -131,7 +132,7 @@ export async function submitSuggestionAction(
 ): Promise<AuthActionState> {
   const category = String(formData.get('category') || '')
   const message = String(formData.get('message') || '').trim()
-  const allowedCategories = ['suggestion', 'bug', 'other']
+  const allowedCategories = ['suggestion', 'bug', 'leaderboard', 'other']
 
   if (!allowedCategories.includes(category)) {
     return { error: 'Choose a valid feedback type.' }

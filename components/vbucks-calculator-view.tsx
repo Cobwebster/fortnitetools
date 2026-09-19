@@ -366,14 +366,28 @@ export function VBucksCalculatorView() {
         <div className="mt-6 rounded-xl border border-border bg-card p-6">
           <div className="flex gap-3">
             <Info className="h-5 w-5 shrink-0 text-primary mt-0.5" aria-hidden="true" />
-            <div>
-              <h2 className="text-sm font-semibold text-foreground mb-2">{t('aboutTitle')}</h2>
+            <div className="space-y-3">
+              <h2 className="text-sm font-semibold text-foreground">{t('aboutTitle')}</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 {t('aboutIntro')} <strong className="text-foreground">{t('aboutBestPack')}</strong> {t('aboutMid')} {t('aboutOutro')}
               </p>
+              <h3 className="text-sm font-semibold text-foreground pt-2">{t('howTitle')}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{t('howP1')}</p>
+              <p className="text-sm leading-relaxed text-muted-foreground">{t('howP2')}</p>
+              <p className="text-sm leading-relaxed text-muted-foreground">{t('howP3')}</p>
             </div>
           </div>
         </div>
+
+        <section className="mt-10 space-y-4">
+          <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{t('faqTitle')}</h2>
+          {(['q1', 'q2', 'q3', 'q4'] as const).map((q) => (
+            <div key={q} className="rounded-xl border border-border bg-card px-4 py-3">
+              <h3 className="text-sm font-bold text-foreground">{t(`faqs.${q}`)}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{t(`faqs.a${q.slice(1)}`)}</p>
+            </div>
+          ))}
+        </section>
 
         {/* Related tools */}
         <section className="mt-12 border-t border-border pt-10 space-y-3">

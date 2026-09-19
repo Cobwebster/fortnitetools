@@ -8,9 +8,9 @@ import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 const base = createMetadata({
   title: 'Fortnite Weapon Damage Calculator – STK & TTK',
   description:
-    'Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 3 weapons in the current loot pool sample.',
+    'Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 4 (Override) weapons. Confirm in-game after patches.',
   path: '/tools/weapon-damage-calculator',
-  keywords: ['fortnite damage calculator', 'fortnite ttk', 'fortnite shots to kill'],
+  keywords: ['fortnite damage calculator', 'fortnite ttk', 'fortnite shots to kill', 'fortnite override'],
 })
 
 export const metadata: Metadata = {

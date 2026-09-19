@@ -8,7 +8,7 @@ import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 const base = createMetadata({
   title: 'Fortnite Zone Timer – Storm Circle Wait & Shrink Times',
   description:
-    'Approximate Fortnite storm circle wait and shrink times for every phase. Free zone timer with rotation tips and storm damage reference for Chapter 7 Season 3.',
+    'Approximate Fortnite storm circle wait and shrink times for every phase. Free zone timer with rotation tips and storm damage reference for Chapter 7 Season 4.',
   path: '/tools/zone-timer',
   keywords: [
     'fortnite zone timer',

@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import Link from '@/components/link'
 import { redirect } from 'next/navigation'
@@ -113,7 +114,9 @@ export default async function AccountPage() {
 
         <div className="grid gap-6 md:grid-cols-[1.15fr_0.85fr]">
           <section className="rounded-xl border border-border bg-card p-5 sm:p-6">
-            <FeedbackForm />
+            <Suspense fallback={<p className="text-sm text-muted-foreground">Loading feedback…</p>}>
+              <FeedbackForm />
+            </Suspense>
           </section>
 
           <section className="rounded-xl border border-border bg-card p-5 sm:p-6">

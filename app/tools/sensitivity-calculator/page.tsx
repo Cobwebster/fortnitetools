@@ -8,7 +8,7 @@ import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 const base = createMetadata({
   title: 'Fortnite Sensitivity Calculator – Convert from Valorant, CS2, Apex',
   description:
-    'Convert mouse sensitivity to Fortnite from Valorant, CS2, Apex, Warzone, and more using cm/360. Free eDPI calculator for Chapter 7 Season 3.',
+    'Convert mouse sensitivity to Fortnite from Valorant, CS2, Apex, Warzone, and more using cm/360. Free eDPI calculator for Chapter 7 Season 4.',
   path: '/tools/sensitivity-calculator',
   keywords: [
     'fortnite sensitivity calculator',

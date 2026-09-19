@@ -1,0 +1,1013 @@
+{
+  "generatedAt": "2026-09-19T23:20:43.954Z",
+  "source": "fortnite-api.com/v2/stats/br/v2",
+  "note": "Tracked-account sample only — ranks among names we poll, not every Fortnite player.",
+  "timeWindow": "season",
+  "accountType": "epic",
+  "trackedCount": 21,
+  "failedCount": 9,
+  "players": [
+    {
+      "accountId": "6ad3de979068467796e6be0e34f61b89",
+      "name": "TTxenowrld",
+      "bpLevel": 1945,
+      "wins": 1708,
+      "kills": 19634,
+      "deaths": 148,
+      "kd": 132.662,
+      "matches": 1856,
+      "minutesPlayed": 24450,
+      "score": 1172951,
+      "lastModified": "2026-09-19T22:49:07Z"
+    },
+    {
+      "accountId": "a9a512487bbd47dd9ef99accb83a7f45",
+      "name": "stoic.deepanshu",
+      "bpLevel": 1161,
+      "wins": 1051,
+      "kills": 12901,
+      "deaths": 17,
+      "kd": 758.882,
+      "matches": 1068,
+      "minutesPlayed": 14840,
+      "score": 732954,
+      "lastModified": "2026-09-19T20:07:11Z"
+    },
+    {
+      "accountId": "7abade0295e740f4840f02b96bc04143",
+      "name": "Samalt23",
+      "bpLevel": 3051,
+      "wins": 988,
+      "kills": 30625,
+      "deaths": 40,
+      "kd": 765.625,
+      "matches": 1028,
+      "minutesPlayed": 13983,
+      "score": 718293,
+      "lastModified": "2026-09-19T23:08:28Z"
+    },
+    {
+      "accountId": "b0e92a48088f4481aff6a396cb6bede8",
+      "name": "Ａｎｇｅｌａ ツ",
+      "bpLevel": 431,
+      "wins": 808,
+      "kills": 1,
+      "deaths": 157,
+      "kd": 0.006,
+      "matches": 965,
+      "minutesPlayed": 6022,
+      "score": 502528,
+      "lastModified": "2026-09-19T20:54:55Z"
+    },
+    {
+      "accountId": "ba5b22ddbf8945d1b039e828995eb27c",
+      "name": "zp ᵗᵗᵛVibesicko",
+      "bpLevel": 1553,
+      "wins": 874,
+      "kills": 18618,
+      "deaths": 241,
+      "kd": 77.253,
+      "matches": 1115,
+      "minutesPlayed": 14202,
+      "score": 719703,
+      "lastModified": "2026-09-19T20:35:26Z"
+    },
+    {
+      "accountId": "fda25feade1f4e2d972fb12eee2c68b3",
+      "name": "ʜ ᴜ s s ᴀ ɪ ɴ ツ",
+      "bpLevel": 974,
+      "wins": 817,
+      "kills": 10207,
+      "deaths": 554,
+      "kd": 18.424,
+      "matches": 1371,
+      "minutesPlayed": 14949,
+      "score": 712844,
+      "lastModified": "2026-09-19T23:13:58Z"
+    },
+    {
+      "accountId": "160da034fe704a46a2e5e9d338bef2c4",
+      "name": "Fragger FHD",
+      "bpLevel": 782,
+      "wins": 671,
+      "kills": 9411,
+      "deaths": 802,
+      "kd": 11.734,
+      "matches": 1473,
+      "minutesPlayed": 13501,
+      "score": 607155,
+      "lastModified": "2026-09-19T19:18:59Z"
+    },
+    {
+      "accountId": "ebc07361de6f44a09684685e1a007f85",
+      "name": "UMBRA_playArt",
+      "bpLevel": 947,
+      "wins": 682,
+      "kills": 7219,
+      "deaths": 237,
+      "kd": 30.46,
+      "matches": 919,
+      "minutesPlayed": 12989,
+      "score": 589803,
+      "lastModified": "2026-09-19T19:31:11Z"
+    },
+    {
+      "accountId": "fa0a5ea3469e4df69c35a660d08c0d53",
+      "name": "frxbba on yt",
+      "bpLevel": 3129,
+      "wins": 581,
+      "kills": 20148,
+      "deaths": 694,
+      "kd": 29.032,
+      "matches": 1275,
+      "minutesPlayed": 9921,
+      "score": 491190,
+      "lastModified": "2026-09-19T03:20:12Z"
+    },
+    {
+      "accountId": "2f90bf94b793418598709bc3e0327338",
+      "name": "ᴸⱽʸMidas",
+      "bpLevel": 1666,
+      "wins": 568,
+      "kills": 18251,
+      "deaths": 62,
+      "kd": 294.371,
+      "matches": 630,
+      "minutesPlayed": 8230,
+      "score": 464682,
+      "lastModified": "2026-09-19T19:48:41Z"
+    },
+    {
+      "accountId": "e13a8907997a4e908f9de02617189334",
+      "name": "ᴿᴬᴿᴱ YSR",
+      "bpLevel": 1534,
+      "wins": 426,
+      "kills": 14485,
+      "deaths": 168,
+      "kd": 86.22,
+      "matches": 594,
+      "minutesPlayed": 6682,
+      "score": 347178,
+      "lastModified": "2026-09-19T19:13:09Z"
+    },
+    {
+      "accountId": "14cdfad697854b36b59554a0d37f9782",
+      "name": "Dr g00ner",
+      "bpLevel": 19,
+      "wins": 4,
+      "kills": 6,
+      "deaths": 6089,
+      "kd": 0.001,
+      "matches": 6093,
+      "minutesPlayed": 20481,
+      "score": 591124,
+      "lastModified": "2026-09-19T21:53:21Z"
+    },
+    {
+      "accountId": "b982a358439d44d3b10e4ba7a829e3d3",
+      "name": "ITALYANОS",
+      "bpLevel": 553,
+      "wins": 240,
+      "kills": 2200,
+      "deaths": 1334,
+      "kd": 1.649,
+      "matches": 1574,
+      "minutesPlayed": 21161,
+      "score": 570861,
+      "lastModified": "2026-09-19T20:46:26Z"
+    },
+    {
+      "accountId": "a0467c31fe7b4886bc350cd1d131ff24",
+      "name": "BeST-Saul0926",
+      "bpLevel": 165,
+      "wins": 36,
+      "kills": 1412,
+      "deaths": 4466,
+      "kd": 0.316,
+      "matches": 4502,
+      "minutesPlayed": 18516,
+      "score": 465448,
+      "lastModified": "2026-09-19T23:19:19Z"
+    },
+    {
+      "accountId": "cff48af53a0d42c4a5f9b6edb72a9e25",
+      "name": "Kitty_Boy_Ttv",
+      "bpLevel": 673,
+      "wins": 172,
+      "kills": 5295,
+      "deaths": 1598,
+      "kd": 3.314,
+      "matches": 1770,
+      "minutesPlayed": 16831,
+      "score": 499548,
+      "lastModified": "2026-09-19T23:04:21Z"
+    },
+    {
+      "accountId": "ab3836cb7d594503b871171f6591e92f",
+      "name": "ᴮᴼᴳStoneColdPoke",
+      "bpLevel": 774,
+      "wins": 531,
+      "kills": 11072,
+      "deaths": 970,
+      "kd": 11.414,
+      "matches": 1501,
+      "minutesPlayed": 18363,
+      "score": 733509,
+      "lastModified": "2026-09-19T23:18:59Z"
+    },
+    {
+      "accountId": "ad43df5c48fd4c379c45d09f94b70b35",
+      "name": "jake420life",
+      "bpLevel": 907,
+      "wins": 390,
+      "kills": 8296,
+      "deaths": 982,
+      "kd": 8.448,
+      "matches": 1372,
+      "minutesPlayed": 15895,
+      "score": 602189,
+      "lastModified": "2026-09-19T22:37:27Z"
+    },
+    {
+      "accountId": "eadd7e7a612f4a4ba505fcd84135f509",
+      "name": "まつくんYouTubeいろっぴー",
+      "bpLevel": 657,
+      "wins": 376,
+      "kills": 7741,
+      "deaths": 917,
+      "kd": 8.442,
+      "matches": 1293,
+      "minutesPlayed": 14898,
+      "score": 567259,
+      "lastModified": "2026-09-19T19:13:08Z"
+    },
+    {
+      "accountId": "f7d6d5645e9a43bf923ef1d7500ad2f4",
+      "name": "dutу〆",
+      "bpLevel": 2546,
+      "wins": 2640,
+      "kills": 35248,
+      "deaths": 124,
+      "kd": 284.258,
+      "matches": 2764,
+      "minutesPlayed": 29328,
+      "score": 1577719,
+      "lastModified": "2026-09-19T23:19:52Z"
+    },
+    {
+      "accountId": "779f0d23061f4a7a9b2167f62daf16ae",
+      "name": "AKWYPT",
+      "bpLevel": 1528,
+      "wins": 1586,
+      "kills": 27694,
+      "deaths": 75,
+      "kd": 369.253,
+      "matches": 1661,
+      "minutesPlayed": 15866,
+      "score": 1201104,
+      "lastModified": "2026-09-19T23:12:10Z"
+    },
+    {
+      "accountId": "8d6cdd5d02024368906757078232f0be",
+      "name": "I_-AM_DENNIS",
+      "bpLevel": 2784,
+      "wins": 54,
+      "kills": 29987,
+      "deaths": 1572,
+      "kd": 19.076,
+      "matches": 1626,
+      "minutesPlayed": 7723,
+      "score": 367140,
+      "lastModified": "2026-09-19T19:28:14Z"
+    }
+  ],
+  "boards": {
+    "level": [
+      {
+        "rank": 1,
+        "name": "frxbba on yt",
+        "accountId": "fa0a5ea3469e4df69c35a660d08c0d53",
+        "value": 3129,
+        "bpLevel": 3129,
+        "kd": 29.032
+      },
+      {
+        "rank": 2,
+        "name": "Samalt23",
+        "accountId": "7abade0295e740f4840f02b96bc04143",
+        "value": 3051,
+        "bpLevel": 3051,
+        "kd": 765.625
+      },
+      {
+        "rank": 3,
+        "name": "I_-AM_DENNIS",
+        "accountId": "8d6cdd5d02024368906757078232f0be",
+        "value": 2784,
+        "bpLevel": 2784,
+        "kd": 19.076
+      },
+      {
+        "rank": 4,
+        "name": "dutу〆",
+        "accountId": "f7d6d5645e9a43bf923ef1d7500ad2f4",
+        "value": 2546,
+        "bpLevel": 2546,
+        "kd": 284.258
+      },
+      {
+        "rank": 5,
+        "name": "TTxenowrld",
+        "accountId": "6ad3de979068467796e6be0e34f61b89",
+        "value": 1945,
+        "bpLevel": 1945,
+        "kd": 132.662
+      },
+      {
+        "rank": 6,
+        "name": "ᴸⱽʸMidas",
+        "accountId": "2f90bf94b793418598709bc3e0327338",
+        "value": 1666,
+        "bpLevel": 1666,
+        "kd": 294.371
+      },
+      {
+        "rank": 7,
+        "name": "zp ᵗᵗᵛVibesicko",
+        "accountId": "ba5b22ddbf8945d1b039e828995eb27c",
+        "value": 1553,
+        "bpLevel": 1553,
+        "kd": 77.253
+      },
+      {
+        "rank": 8,
+        "name": "ᴿᴬᴿᴱ YSR",
+        "accountId": "e13a8907997a4e908f9de02617189334",
+        "value": 1534,
+        "bpLevel": 1534,
+        "kd": 86.22
+      },
+      {
+        "rank": 9,
+        "name": "AKWYPT",
+        "accountId": "779f0d23061f4a7a9b2167f62daf16ae",
+        "value": 1528,
+        "bpLevel": 1528,
+        "kd": 369.253
+      },
+      {
+        "rank": 10,
+        "name": "stoic.deepanshu",
+        "accountId": "a9a512487bbd47dd9ef99accb83a7f45",
+        "value": 1161,
+        "bpLevel": 1161,
+        "kd": 758.882
+      },
+      {
+        "rank": 11,
+        "name": "ʜ ᴜ s s ᴀ ɪ ɴ ツ",
+        "accountId": "fda25feade1f4e2d972fb12eee2c68b3",
+        "value": 974,
+        "bpLevel": 974,
+        "kd": 18.424
+      },
+      {
+        "rank": 12,
+        "name": "UMBRA_playArt",
+        "accountId": "ebc07361de6f44a09684685e1a007f85",
+        "value": 947,
+        "bpLevel": 947,
+        "kd": 30.46
+      },
+      {
+        "rank": 13,
+        "name": "jake420life",
+        "accountId": "ad43df5c48fd4c379c45d09f94b70b35",
+        "value": 907,
+        "bpLevel": 907,
+        "kd": 8.448
+      },
+      {
+        "rank": 14,
+        "name": "Fragger FHD",
+        "accountId": "160da034fe704a46a2e5e9d338bef2c4",
+        "value": 782,
+        "bpLevel": 782,
+        "kd": 11.734
+      },
+      {
+        "rank": 15,
+        "name": "ᴮᴼᴳStoneColdPoke",
+        "accountId": "ab3836cb7d594503b871171f6591e92f",
+        "value": 774,
+        "bpLevel": 774,
+        "kd": 11.414
+      },
+      {
+        "rank": 16,
+        "name": "Kitty_Boy_Ttv",
+        "accountId": "cff48af53a0d42c4a5f9b6edb72a9e25",
+        "value": 673,
+        "bpLevel": 673,
+        "kd": 3.314
+      },
+      {
+        "rank": 17,
+        "name": "まつくんYouTubeいろっぴー",
+        "accountId": "eadd7e7a612f4a4ba505fcd84135f509",
+        "value": 657,
+        "bpLevel": 657,
+        "kd": 8.442
+      },
+      {
+        "rank": 18,
+        "name": "ITALYANОS",
+        "accountId": "b982a358439d44d3b10e4ba7a829e3d3",
+        "value": 553,
+        "bpLevel": 553,
+        "kd": 1.649
+      },
+      {
+        "rank": 19,
+        "name": "Ａｎｇｅｌａ ツ",
+        "accountId": "b0e92a48088f4481aff6a396cb6bede8",
+        "value": 431,
+        "bpLevel": 431,
+        "kd": 0.006
+      },
+      {
+        "rank": 20,
+        "name": "BeST-Saul0926",
+        "accountId": "a0467c31fe7b4886bc350cd1d131ff24",
+        "value": 165,
+        "bpLevel": 165,
+        "kd": 0.316
+      },
+      {
+        "rank": 21,
+        "name": "Dr g00ner",
+        "accountId": "14cdfad697854b36b59554a0d37f9782",
+        "value": 19,
+        "bpLevel": 19,
+        "kd": 0.001
+      }
+    ],
+    "wins": [
+      {
+        "rank": 1,
+        "name": "dutу〆",
+        "accountId": "f7d6d5645e9a43bf923ef1d7500ad2f4",
+        "value": 2640,
+        "bpLevel": 2546,
+        "kd": 284.258
+      },
+      {
+        "rank": 2,
+        "name": "TTxenowrld",
+        "accountId": "6ad3de979068467796e6be0e34f61b89",
+        "value": 1708,
+        "bpLevel": 1945,
+        "kd": 132.662
+      },
+      {
+        "rank": 3,
+        "name": "AKWYPT",
+        "accountId": "779f0d23061f4a7a9b2167f62daf16ae",
+        "value": 1586,
+        "bpLevel": 1528,
+        "kd": 369.253
+      },
+      {
+        "rank": 4,
+        "name": "stoic.deepanshu",
+        "accountId": "a9a512487bbd47dd9ef99accb83a7f45",
+        "value": 1051,
+        "bpLevel": 1161,
+        "kd": 758.882
+      },
+      {
+        "rank": 5,
+        "name": "Samalt23",
+        "accountId": "7abade0295e740f4840f02b96bc04143",
+        "value": 988,
+        "bpLevel": 3051,
+        "kd": 765.625
+      },
+      {
+        "rank": 6,
+        "name": "zp ᵗᵗᵛVibesicko",
+        "accountId": "ba5b22ddbf8945d1b039e828995eb27c",
+        "value": 874,
+        "bpLevel": 1553,
+        "kd": 77.253
+      },
+      {
+        "rank": 7,
+        "name": "ʜ ᴜ s s ᴀ ɪ ɴ ツ",
+        "accountId": "fda25feade1f4e2d972fb12eee2c68b3",
+        "value": 817,
+        "bpLevel": 974,
+        "kd": 18.424
+      },
+      {
+        "rank": 8,
+        "name": "Ａｎｇｅｌａ ツ",
+        "accountId": "b0e92a48088f4481aff6a396cb6bede8",
+        "value": 808,
+        "bpLevel": 431,
+        "kd": 0.006
+      },
+      {
+        "rank": 9,
+        "name": "UMBRA_playArt",
+        "accountId": "ebc07361de6f44a09684685e1a007f85",
+        "value": 682,
+        "bpLevel": 947,
+        "kd": 30.46
+      },
+      {
+        "rank": 10,
+        "name": "Fragger FHD",
+        "accountId": "160da034fe704a46a2e5e9d338bef2c4",
+        "value": 671,
+        "bpLevel": 782,
+        "kd": 11.734
+      },
+      {
+        "rank": 11,
+        "name": "frxbba on yt",
+        "accountId": "fa0a5ea3469e4df69c35a660d08c0d53",
+        "value": 581,
+        "bpLevel": 3129,
+        "kd": 29.032
+      },
+      {
+        "rank": 12,
+        "name": "ᴸⱽʸMidas",
+        "accountId": "2f90bf94b793418598709bc3e0327338",
+        "value": 568,
+        "bpLevel": 1666,
+        "kd": 294.371
+      },
+      {
+        "rank": 13,
+        "name": "ᴮᴼᴳStoneColdPoke",
+        "accountId": "ab3836cb7d594503b871171f6591e92f",
+        "value": 531,
+        "bpLevel": 774,
+        "kd": 11.414
+      },
+      {
+        "rank": 14,
+        "name": "ᴿᴬᴿᴱ YSR",
+        "accountId": "e13a8907997a4e908f9de02617189334",
+        "value": 426,
+        "bpLevel": 1534,
+        "kd": 86.22
+      },
+      {
+        "rank": 15,
+        "name": "jake420life",
+        "accountId": "ad43df5c48fd4c379c45d09f94b70b35",
+        "value": 390,
+        "bpLevel": 907,
+        "kd": 8.448
+      },
+      {
+        "rank": 16,
+        "name": "まつくんYouTubeいろっぴー",
+        "accountId": "eadd7e7a612f4a4ba505fcd84135f509",
+        "value": 376,
+        "bpLevel": 657,
+        "kd": 8.442
+      },
+      {
+        "rank": 17,
+        "name": "ITALYANОS",
+        "accountId": "b982a358439d44d3b10e4ba7a829e3d3",
+        "value": 240,
+        "bpLevel": 553,
+        "kd": 1.649
+      },
+      {
+        "rank": 18,
+        "name": "Kitty_Boy_Ttv",
+        "accountId": "cff48af53a0d42c4a5f9b6edb72a9e25",
+        "value": 172,
+        "bpLevel": 673,
+        "kd": 3.314
+      },
+      {
+        "rank": 19,
+        "name": "I_-AM_DENNIS",
+        "accountId": "8d6cdd5d02024368906757078232f0be",
+        "value": 54,
+        "bpLevel": 2784,
+        "kd": 19.076
+      },
+      {
+        "rank": 20,
+        "name": "BeST-Saul0926",
+        "accountId": "a0467c31fe7b4886bc350cd1d131ff24",
+        "value": 36,
+        "bpLevel": 165,
+        "kd": 0.316
+      },
+      {
+        "rank": 21,
+        "name": "Dr g00ner",
+        "accountId": "14cdfad697854b36b59554a0d37f9782",
+        "value": 4,
+        "bpLevel": 19,
+        "kd": 0.001
+      }
+    ],
+    "kills": [
+      {
+        "rank": 1,
+        "name": "dutу〆",
+        "accountId": "f7d6d5645e9a43bf923ef1d7500ad2f4",
+        "value": 35248,
+        "bpLevel": 2546,
+        "kd": 284.258
+      },
+      {
+        "rank": 2,
+        "name": "Samalt23",
+        "accountId": "7abade0295e740f4840f02b96bc04143",
+        "value": 30625,
+        "bpLevel": 3051,
+        "kd": 765.625
+      },
+      {
+        "rank": 3,
+        "name": "I_-AM_DENNIS",
+        "accountId": "8d6cdd5d02024368906757078232f0be",
+        "value": 29987,
+        "bpLevel": 2784,
+        "kd": 19.076
+      },
+      {
+        "rank": 4,
+        "name": "AKWYPT",
+        "accountId": "779f0d23061f4a7a9b2167f62daf16ae",
+        "value": 27694,
+        "bpLevel": 1528,
+        "kd": 369.253
+      },
+      {
+        "rank": 5,
+        "name": "frxbba on yt",
+        "accountId": "fa0a5ea3469e4df69c35a660d08c0d53",
+        "value": 20148,
+        "bpLevel": 3129,
+        "kd": 29.032
+      },
+      {
+        "rank": 6,
+        "name": "TTxenowrld",
+        "accountId": "6ad3de979068467796e6be0e34f61b89",
+        "value": 19634,
+        "bpLevel": 1945,
+        "kd": 132.662
+      },
+      {
+        "rank": 7,
+        "name": "zp ᵗᵗᵛVibesicko",
+        "accountId": "ba5b22ddbf8945d1b039e828995eb27c",
+        "value": 18618,
+        "bpLevel": 1553,
+        "kd": 77.253
+      },
+      {
+        "rank": 8,
+        "name": "ᴸⱽʸMidas",
+        "accountId": "2f90bf94b793418598709bc3e0327338",
+        "value": 18251,
+        "bpLevel": 1666,
+        "kd": 294.371
+      },
+      {
+        "rank": 9,
+        "name": "ᴿᴬᴿᴱ YSR",
+        "accountId": "e13a8907997a4e908f9de02617189334",
+        "value": 14485,
+        "bpLevel": 1534,
+        "kd": 86.22
+      },
+      {
+        "rank": 10,
+        "name": "stoic.deepanshu",
+        "accountId": "a9a512487bbd47dd9ef99accb83a7f45",
+        "value": 12901,
+        "bpLevel": 1161,
+        "kd": 758.882
+      },
+      {
+        "rank": 11,
+        "name": "ᴮᴼᴳStoneColdPoke",
+        "accountId": "ab3836cb7d594503b871171f6591e92f",
+        "value": 11072,
+        "bpLevel": 774,
+        "kd": 11.414
+      },
+      {
+        "rank": 12,
+        "name": "ʜ ᴜ s s ᴀ ɪ ɴ ツ",
+        "accountId": "fda25feade1f4e2d972fb12eee2c68b3",
+        "value": 10207,
+        "bpLevel": 974,
+        "kd": 18.424
+      },
+      {
+        "rank": 13,
+        "name": "Fragger FHD",
+        "accountId": "160da034fe704a46a2e5e9d338bef2c4",
+        "value": 9411,
+        "bpLevel": 782,
+        "kd": 11.734
+      },
+      {
+        "rank": 14,
+        "name": "jake420life",
+        "accountId": "ad43df5c48fd4c379c45d09f94b70b35",
+        "value": 8296,
+        "bpLevel": 907,
+        "kd": 8.448
+      },
+      {
+        "rank": 15,
+        "name": "まつくんYouTubeいろっぴー",
+        "accountId": "eadd7e7a612f4a4ba505fcd84135f509",
+        "value": 7741,
+        "bpLevel": 657,
+        "kd": 8.442
+      },
+      {
+        "rank": 16,
+        "name": "UMBRA_playArt",
+        "accountId": "ebc07361de6f44a09684685e1a007f85",
+        "value": 7219,
+        "bpLevel": 947,
+        "kd": 30.46
+      },
+      {
+        "rank": 17,
+        "name": "Kitty_Boy_Ttv",
+        "accountId": "cff48af53a0d42c4a5f9b6edb72a9e25",
+        "value": 5295,
+        "bpLevel": 673,
+        "kd": 3.314
+      },
+      {
+        "rank": 18,
+        "name": "ITALYANОS",
+        "accountId": "b982a358439d44d3b10e4ba7a829e3d3",
+        "value": 2200,
+        "bpLevel": 553,
+        "kd": 1.649
+      },
+      {
+        "rank": 19,
+        "name": "BeST-Saul0926",
+        "accountId": "a0467c31fe7b4886bc350cd1d131ff24",
+        "value": 1412,
+        "bpLevel": 165,
+        "kd": 0.316
+      },
+      {
+        "rank": 20,
+        "name": "Dr g00ner",
+        "accountId": "14cdfad697854b36b59554a0d37f9782",
+        "value": 6,
+        "bpLevel": 19,
+        "kd": 0.001
+      },
+      {
+        "rank": 21,
+        "name": "Ａｎｇｅｌａ ツ",
+        "accountId": "b0e92a48088f4481aff6a396cb6bede8",
+        "value": 1,
+        "bpLevel": 431,
+        "kd": 0.006
+      }
+    ],
+    "time": [
+      {
+        "rank": 1,
+        "name": "dutу〆",
+        "accountId": "f7d6d5645e9a43bf923ef1d7500ad2f4",
+        "value": 29328,
+        "bpLevel": 2546,
+        "kd": 284.258
+      },
+      {
+        "rank": 2,
+        "name": "TTxenowrld",
+        "accountId": "6ad3de979068467796e6be0e34f61b89",
+        "value": 24450,
+        "bpLevel": 1945,
+        "kd": 132.662
+      },
+      {
+        "rank": 3,
+        "name": "ITALYANОS",
+        "accountId": "b982a358439d44d3b10e4ba7a829e3d3",
+        "value": 21161,
+        "bpLevel": 553,
+        "kd": 1.649
+      },
+      {
+        "rank": 4,
+        "name": "Dr g00ner",
+        "accountId": "14cdfad697854b36b59554a0d37f9782",
+        "value": 20481,
+        "bpLevel": 19,
+        "kd": 0.001
+      },
+      {
+        "rank": 5,
+        "name": "BeST-Saul0926",
+        "accountId": "a0467c31fe7b4886bc350cd1d131ff24",
+        "value": 18516,
+        "bpLevel": 165,
+        "kd": 0.316
+      },
+      {
+        "rank": 6,
+        "name": "ᴮᴼᴳStoneColdPoke",
+        "accountId": "ab3836cb7d594503b871171f6591e92f",
+        "value": 18363,
+        "bpLevel": 774,
+        "kd": 11.414
+      },
+      {
+        "rank": 7,
+        "name": "Kitty_Boy_Ttv",
+        "accountId": "cff48af53a0d42c4a5f9b6edb72a9e25",
+        "value": 16831,
+        "bpLevel": 673,
+        "kd": 3.314
+      },
+      {
+        "rank": 8,
+        "name": "jake420life",
+        "accountId": "ad43df5c48fd4c379c45d09f94b70b35",
+        "value": 15895,
+        "bpLevel": 907,
+        "kd": 8.448
+      },
+      {
+        "rank": 9,
+        "name": "AKWYPT",
+        "accountId": "779f0d23061f4a7a9b2167f62daf16ae",
+        "value": 15866,
+        "bpLevel": 1528,
+        "kd": 369.253
+      },
+      {
+        "rank": 10,
+        "name": "ʜ ᴜ s s ᴀ ɪ ɴ ツ",
+        "accountId": "fda25feade1f4e2d972fb12eee2c68b3",
+        "value": 14949,
+        "bpLevel": 974,
+        "kd": 18.424
+      },
+      {
+        "rank": 11,
+        "name": "まつくんYouTubeいろっぴー",
+        "accountId": "eadd7e7a612f4a4ba505fcd84135f509",
+        "value": 14898,
+        "bpLevel": 657,
+        "kd": 8.442
+      },
+      {
+        "rank": 12,
+        "name": "stoic.deepanshu",
+        "accountId": "a9a512487bbd47dd9ef99accb83a7f45",
+        "value": 14840,
+        "bpLevel": 1161,
+        "kd": 758.882
+      },
+      {
+        "rank": 13,
+        "name": "zp ᵗᵗᵛVibesicko",
+        "accountId": "ba5b22ddbf8945d1b039e828995eb27c",
+        "value": 14202,
+        "bpLevel": 1553,
+        "kd": 77.253
+      },
+      {
+        "rank": 14,
+        "name": "Samalt23",
+        "accountId": "7abade0295e740f4840f02b96bc04143",
+        "value": 13983,
+        "bpLevel": 3051,
+        "kd": 765.625
+      },
+      {
+        "rank": 15,
+        "name": "Fragger FHD",
+        "accountId": "160da034fe704a46a2e5e9d338bef2c4",
+        "value": 13501,
+        "bpLevel": 782,
+        "kd": 11.734
+      },
+      {
+        "rank": 16,
+        "name": "UMBRA_playArt",
+        "accountId": "ebc07361de6f44a09684685e1a007f85",
+        "value": 12989,
+        "bpLevel": 947,
+        "kd": 30.46
+      },
+      {
+        "rank": 17,
+        "name": "frxbba on yt",
+        "accountId": "fa0a5ea3469e4df69c35a660d08c0d53",
+        "value": 9921,
+        "bpLevel": 3129,
+        "kd": 29.032
+      },
+      {
+        "rank": 18,
+        "name": "ᴸⱽʸMidas",
+        "accountId": "2f90bf94b793418598709bc3e0327338",
+        "value": 8230,
+        "bpLevel": 1666,
+        "kd": 294.371
+      },
+      {
+        "rank": 19,
+        "name": "I_-AM_DENNIS",
+        "accountId": "8d6cdd5d02024368906757078232f0be",
+        "value": 7723,
+        "bpLevel": 2784,
+        "kd": 19.076
+      },
+      {
+        "rank": 20,
+        "name": "ᴿᴬᴿᴱ YSR",
+        "accountId": "e13a8907997a4e908f9de02617189334",
+        "value": 6682,
+        "bpLevel": 1534,
+        "kd": 86.22
+      },
+      {
+        "rank": 21,
+        "name": "Ａｎｇｅｌａ ツ",
+        "accountId": "b0e92a48088f4481aff6a396cb6bede8",
+        "value": 6022,
+        "bpLevel": 431,
+        "kd": 0.006
+      }
+    ]
+  },
+  "errors": [
+    {
+      "name": "RIP Kaylee lol",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "Lozer.Sawaahhh",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "TynnKz",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "Kÿron",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "Jxmfnz",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "Hrzvybear",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "catboy",
+      "error": "the requested account does not exist",
+      "status": 404
+    },
+    {
+      "name": "zzz",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    },
+    {
+      "name": "Walës",
+      "error": "the requested account's stats are not public",
+      "status": 403
+    }
+  ]
+}

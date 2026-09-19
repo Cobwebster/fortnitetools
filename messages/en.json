@@ -3,6 +3,7 @@
     "tools": "Tools",
     "buildSim": "Build Sim",
     "playerTracker": "Player Tracker",
+    "stats": "Player Stats",
     "itemShop": "Item Shop",
     "codes": "Codes",
     "news": "News",
@@ -31,7 +32,8 @@
     "damage": "Damage",
     "bpXp": "BP XP",
     "fps": "FPS",
-    "keybinds": "Keybinds"
+    "keybinds": "Keybinds",
+    "cosmeticStats": "Cosmetic Stats"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -44,18 +46,20 @@
     "tools": "Tools",
     "site": "Site",
     "allGuides": "All Guides",
-    "weaponsTier": "Weapons Tier List",
-    "bestLoot": "Best Loot Spots",
+    "weaponsTier": "Archive: Runners weapons tier list",
+    "bestLoot": "Archive: Shattered Coast loot guide",
     "mapGuides": "Map Guides",
     "allTools": "All Tools",
     "freeCosmetics": "Free Cosmetics",
     "xpCalculator": "XP Calculator",
     "seasonCountdown": "Season Countdown",
     "fortniteTracker": "Fortnite Tracker",
+    "playerCompare": "Player Compare",
     "mapCodes": "Map Codes",
     "interactiveMap": "Interactive Map",
     "mapRotation": "Map Rotation",
     "mapEvolution": "Map Evolution",
+    "statsLeaderboards": "Player Stats",
     "playerCount": "Player Count",
     "news": "News",
     "modes": "Game Modes",
@@ -100,7 +104,8 @@
     "catSeason": "Season",
     "catMap": "Map",
     "refundGuide": "How to Refund Skins",
-    "redeemGuide": "How to Redeem a Code"
+    "redeemGuide": "How to Redeem a Code",
+    "cosmeticStats": "Cosmetic Stats"
   },
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
@@ -130,8 +135,10 @@
     "toolRotation": "Rotation",
     "toolMapEvolution": "Map Evolution",
     "toolMapCodes": "Map Codes",
+    "toolStatsLeaderboards": "Player Stats",
     "toolPlayerCount": "Player Count",
     "toolStatsTracker": "Stats Tracker",
+    "toolPlayerCompare": "Player Compare",
     "toolItemShop": "Item Shop",
     "toolNews": "News",
     "toolModes": "Modes",
@@ -166,7 +173,8 @@
     "mapEvoRight": "Right map",
     "mapEvoHint": "Previewing {count} seasons’ worth of maps — pick two highlights, then open the archive for every chapter.",
     "mapEvoLink": "Compare every map",
-    "mapEvoDrag": "Drag the handle to reveal the other map"
+    "mapEvoDrag": "Drag the handle to reveal the other map",
+    "toolCosmeticStats": "Cosmetic Stats"
   },
   "toolsPage": {
     "home": "Home",
@@ -233,6 +241,10 @@
         "title": "Fortnite Tracker & Stats Checker",
         "description": "Free Fortnite tracker — look up K/D, wins, win rate, matches, and Solo/Duo/Squad stats by Epic, PlayStation, or Xbox name."
       },
+      "player-compare": {
+        "title": "Player Compare",
+        "description": "Compare two Fortnite players side by side — wins, K/D, win rate, kills, and matches for season or lifetime."
+      },
       "fortnite-map": {
         "title": "Interactive Map",
         "description": "Live Override POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 4."
@@ -284,6 +296,10 @@
       "player-count": {
         "title": "Player Count",
         "description": "Fortnite peak concurrent players for Battle Royale, Reload, OG, Blitz, LEGO, and popular Creative maps — from Epic’s public Data API."
+      },
+      "stats": {
+        "title": "Fortnite Player Stats",
+        "description": "Tracked Fortnite player stats leaderboards — season wins, kills, Battle Pass level, and time from accounts we poll — plus mode popularity by peak CCU."
       },
       "map-evolution": {
         "title": "Map Evolution",
@@ -344,6 +360,10 @@
       "battle-pass-xp-calculator": {
         "title": "Battle Pass XP Calculator",
         "description": "Check if you can finish the Battle Pass before the season ends. Enter your level and weekly XP sources to project your final level."
+      },
+      "cosmetic-stats": {
+        "title": "Cosmetic Stats",
+        "description": "Fortnite outfit shop stats — most Item Shop appearances, longest vaults, recent returns, and what is live tonight."
       }
     }
   },
@@ -471,7 +491,19 @@
       "relatedAfter": ".",
       "relatedVbucks": "V-Bucks calculator",
       "relatedTracker": "Fortnite tracker",
-      "relatedHub": "full tools hub"
+      "relatedHub": "full tools hub",
+      "howP3": "Creative XP maps can fill gaps when you are behind, but Epic caps Creative XP. Rotate codes when gains slow, and pair this planner with the season countdown so you know how many weeks are left on Override.",
+      "faqTitle": "Battle Pass XP FAQ",
+      "faqs": {
+        "q1": "How much XP is one Battle Pass level?",
+        "a1": "This planner uses about 80,000 XP per level toward a 100-level pass. Real quest values change — treat it as a grind plan.",
+        "q2": "When does Override end?",
+        "a2": "Chapter 7 Season 4 is dated through November 1, 2026 on this site. Exact downtime can move a few hours — use the season countdown.",
+        "q3": "Do Reload and LEGO count?",
+        "a3": "Yes for match XP and many quests, but island-gated BR quests will not complete in Reload. LEGO/Festival often have daily caps.",
+        "q4": "Will unclaimed rewards carry over?",
+        "a4": "No. Unclaimed Battle Pass rewards lock when the season ends. Finish levels before the countdown hits zero."
+      }
     },
     "kdCalculator": {
       "metaTitle": "Fortnite K/D Calculator – Kill/Death Ratio & Win Rate",
@@ -705,7 +737,22 @@
       "relatedItemShop": "Item Shop",
       "relatedMid2": ", or browse the",
       "relatedHub": "full tools hub",
-      "relatedAfter": "."
+      "relatedAfter": ".",
+      "howTitle": "How to use this V-Bucks calculator",
+      "howP1": "Add Item Shop prices or preset cosmetics to your wishlist, then read the cheapest pack combination in USD. The solver prefers fewer packs with leftover V-Bucks over buying the smallest pack repeatedly — leftovers stay on your account for the next shop rotation.",
+      "howP2": "Regional storefronts (PlayStation, Xbox, Switch, mobile) can price packs differently from the Epic PC store. Treat the USD table as a planning baseline, then confirm the price in your platform’s store before you buy.",
+      "howP3": "Battle Pass and Fortnite Crew also grant V-Bucks over time. If you already own leftover V-Bucks, subtract them mentally from “V-Bucks needed” — this tool does not read your Epic account balance.",
+      "faqTitle": "V-Bucks FAQ",
+      "faqs": {
+        "q1": "What is the cheapest V-Bucks pack?",
+        "a1": "On the standard USD storefront, the 13,500 pack usually has the lowest cost per V-Buck. Smaller packs cost more per V-Buck but waste less if you only need a few hundred.",
+        "q2": "Why does leftover V-Bucks appear?",
+        "a2": "Packs come in fixed sizes. If you need 2,000 V-Bucks, buying a 2,800 pack leaves 800 for later. That is often cheaper than two 1,000 packs.",
+        "q3": "Does this work for every country?",
+        "a3": "No. Taxes, platform fees, and local currency change the real price. Use this as a combo planner, then check your storefront.",
+        "q4": "Can I include Item Shop wishlist items?",
+        "a4": "Yes on English — star skins on the Item Shop tool and include them here. Prices refresh with the shop rotation."
+      }
     },
     "weaponDamage": {
       "metaTitle": "Fortnite Weapon Damage Calculator – Shots to Kill & DPS",
@@ -742,9 +789,9 @@
       "fireRateLabel": "Fire Rate",
       "fireRateValue": "{rate}/s",
       "magSizeLabel": "Mag Size",
-      "howTitle": "How weapon damage works in Fortnite",
-      "howP1": "Players normally have 100 HP + up to 100 shield (200 effective). Some limited-time modes or items can change that — use the custom HP field when needed.",
-      "howP2": "Headshots multiply body damage (often ~1.5x on many guns; snipers and some precision weapons can be higher). Structure damage uses approximate placed/max wall HP for wood / brick / metal — walls also heal after placement, so live TTK on builds can differ.",
+      "howTitle": "How Fortnite STK and TTK work here",
+      "howP1": "Shots-to-kill (STK) is how many hits of the selected weapon are needed to drop the HP pool you set (100 / 150 / 200 or custom). Time-to-kill (TTK) is how long that takes at the listed fire rate if every shot lands and you do not reload mid-mag.",
+      "howP2": "Headshot mode multiplies damage by the weapon’s headshot multiplier. Structure shots estimate how many hits to break wood, brick, or metal pieces using the same damage model as our weapons encyclopedia.",
       "relatedTitle": "Related Fortnite tools",
       "relatedBefore": "Pair loadout math with a stable",
       "relatedMid1": ", check the current",
@@ -752,7 +799,19 @@
       "relatedAfter": ".",
       "relatedFps": "sensitivity setup",
       "relatedTier": "weapon tier list",
-      "relatedHub": "full tools hub"
+      "relatedHub": "full tools hub",
+      "howP3": "These numbers are for Chapter 7 Season 4 (Override) planning. Match Overrides, bloom, falloff, builds, and healing can change real fights — confirm after every balance hotfix on the weapon-changes page.",
+      "faqTitle": "Weapon damage FAQ",
+      "faqs": {
+        "q1": "Is DPS the same as TTK?",
+        "a1": "No. DPS is damage × fire rate on paper. TTK asks how long it takes to finish a specific HP pool with that gun.",
+        "q2": "Why is a shotgun’s TTK weird at range?",
+        "a2": "This calculator uses listed body damage, not pellet falloff. Close-range shotguns feel stronger than the sheet; long-range pumps feel weaker.",
+        "q3": "Do Mythics use different math?",
+        "a3": "Mythics use their encyclopedia row (for example Midas’ Masterpiece). Special rules like charge shots on Mega Buster are noted on the weapons page — pick the rarity you actually hold.",
+        "q4": "Where should I go after comparing two guns?",
+        "a4": "Open the loadout builder to lock a five-slot hotbar, or the full weapons encyclopedia to compare rarities side by side."
+      }
     },
     "zoneTimer": {
       "metaTitle": "Fortnite Zone Timer – Storm Circle Wait & Shrink Times",

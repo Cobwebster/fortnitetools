@@ -52,6 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/ranked',
     '/status',
     '/map-evolution',
+    '/stats',
     '/player-count',
     '/season',
     '/drops',
@@ -61,11 +62,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/news',
     '/modes',
     '/new-cosmetics',
+    '/cosmetic-stats',
     '/creator-code',
     '/tools',
     '/weapons',
     '/weapon-changes',
     '/tools/player-stats',
+    '/tools/player-compare',
     '/codes',
     '/tools/item-shop',
     '/tools/skin-rarity-calculator',
@@ -95,6 +98,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       path === '/fortnite-map' ||
       path === '/map-rotation' ||
       path === '/map-evolution' ||
+      path === '/stats' ||
       path === '/player-count' ||
       path === '/codes' ||
       path === '/weapons' ||
@@ -105,10 +109,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       path === '/tools/item-shop' ||
       path === '/tools/loadout-builder' ||
       path === '/tools/player-stats' ||
+      path === '/tools/player-compare' ||
       path === '/tools/skin-rarity-calculator' ||
       path === '/news' ||
       path === '/modes' ||
       path === '/new-cosmetics' ||
+      path === '/cosmetic-stats' ||
       path === '/season' ||
       path === '/drops' ||
       path === '/sets' ||
@@ -172,5 +178,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
-  return [...staticRoutes, ...localeRoutes, ...toolRoutes, ...categoryRoutes, ...postRoutes]
+  return [...staticRoutes, ...toolRoutes, ...localeRoutes, ...categoryRoutes, ...postRoutes]
 }
