@@ -4,9 +4,9 @@ import { CREATIVE_CODES_FAQS } from '@/lib/creative-codes-seo'
 import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite XP Map Codes & Creative Island Codes',
+  title: 'Fortnite XP Map Codes & Creative Island Codes (Override)',
   description:
-    'Working Fortnite Creative map codes with Discover thumbnails — XP farms, horror, 1v1s, tycoons, deathruns. Copy a code and paste it in Discover.',
+    'Working Fortnite Creative map codes for Chapter 7 Season 4 — XP farms, 1v1s, Zone Wars, horror, deathruns, and viral tycoons. Copy a code and paste it in Discover.',
   path: '/codes',
   keywords: [
     'fortnite map codes',
@@ -19,6 +19,8 @@ export const metadata: Metadata = createMetadata({
     'fortnite creative codes',
     'fortnite island codes',
     'fortnite deathrun codes',
+    'fortnite zone wars codes',
+    'override creative maps',
   ],
 })
 

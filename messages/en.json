@@ -110,7 +110,7 @@
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
     "heroSubtitle": "Interactive tools and season guides for Chapter 7 Season 4 (Override).",
-    "heroBody": "Live Override map layers, a live Item Shop, stats lookup, build practice, and current-season hubs — written for how people actually play, not a dump of formula widgets.",
+    "heroBody": "Live Override map layers, our own tracked player stats leaderboards, a live Item Shop, build practice, and current-season hubs — written for how people actually play, not a dump of formula widgets.",
     "ctaTools": "Open free tools",
     "ctaTierList": "Weapons tier list",
     "ctaLoadout": "Upload your loadout",
@@ -223,7 +223,7 @@
     "items": {
       "free-cosmetics": {
         "title": "Free Fortnite Cosmetics",
-        "description": "Track free rewards — Twitch drops, quests, Ranked, Sprite mastery, passes, and account links with end dates."
+        "description": "Track free Override rewards — ironmouse Twitch Drops, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account links with end dates."
       },
       "xp-calculator": {
         "title": "Fortnite XP Calculator",

@@ -201,7 +201,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/free-cosmetics',
     title: 'Free Fortnite Cosmetics',
     description:
-      'Track free rewards — Twitch drops, quests, Ranked, Sprite mastery, passes, and account links with end dates.',
+      'Track free Override rewards — ironmouse Twitch Drops, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account links with end dates.',
     tags: ['Free', 'Cosmetics', 'Drops'],
     category: 'cosmetics',
   },
@@ -209,7 +209,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/codes',
     title: 'Creative Map Codes',
     description:
-      'Searchable Fortnite Creative island codes — XP maps, horror, 1v1, tycoon, escape rooms, deathruns, and more.',
+      'Override Creative island codes — XP farms, 1v1 warmups, Zone Wars, horror, deathruns, and viral tycoons that still resolve on Epic’s API.',
     tags: ['Codes', 'XP', 'Creative'],
     category: 'map',
   },

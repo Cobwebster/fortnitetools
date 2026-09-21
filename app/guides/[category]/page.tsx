@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Fortnite ${cat.label} Guides`,
     description: `${cat.description} Browse Fortnite ${cat.label.toLowerCase()} guides on FortniteTools.`,
     path: `/guides/${cat.id}`,
-    keywords: [`fortnite ${cat.label.toLowerCase()}`, 'fortnite guides', 'chapter 7 season 3'],
+    keywords: [`fortnite ${cat.label.toLowerCase()}`, 'fortnite guides', 'override', 'chapter 7 season 4'],
   })
 }
 

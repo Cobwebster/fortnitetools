@@ -17,6 +17,8 @@ export const SEASON_HUB_LINKS = [
   { href: '/sets', label: 'Live sets' },
   { href: '/ranked', label: 'Ranked / LP' },
   { href: '/status', label: 'Is Fortnite down' },
+  { href: '/guides/season/fortnite-override-battle-pass-guide', label: 'Override Battle Pass' },
+  { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel codes' },
   { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked climb guide' },
 ] as const
 

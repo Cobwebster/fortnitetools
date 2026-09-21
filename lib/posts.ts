@@ -19,25 +19,25 @@ export const categories: { id: Category; label: string; description: string }[] 
     id: 'how-to',
     label: 'How-To',
     description:
-      'Account and settings walkthroughs with the in-game labels Epic actually uses — refunds, creator codes, and the mistakes that waste V-Bucks. Written from doing the steps, not paraphrasing a help article.',
+      'Account and settings walkthroughs with the in-game labels Epic actually uses — Admin Panel codes, refunds, creator codes, and the mistakes that waste V-Bucks.',
   },
   {
     id: 'weapons',
     label: 'Weapons',
     description:
-      'Chapter 7 Season 3 (Runners) loot pool: what to pick up, what to drop, and how mid-season hotfixes changed the shotgun/SMG pair. Pair with the loadout builder when you want a hotbar, not a list.',
+      'Chapter 7 Season 4 (Override) loot notes and older Runners archives marked with honesty dates. Pair with the loadout builder when you want a hotbar, not a list.',
   },
   {
     id: 'season',
     label: 'Season',
     description:
-      'Battle Pass XP, ranked climb habits, and free reward windows for the live season — with dates so you can tell when a quest line or end date moved.',
+      'Override Battle Pass XP, Match Overrides, ranked climb habits, and free reward windows — with dates so you can tell when a quest line or end date moved.',
   },
   {
     id: 'map',
     label: 'Map',
     description:
-      'Drop and POI notes for returning Override locations. New POIs (Green Hill Zone, Reality’s Reign, Stone Sanctum) use the live map until dedicated guides ship.',
+      'Override drop guides for Green Hill Zone and returning POIs. Use the live map for Reality’s Reign and Stone Sanctum until those landings get dedicated pages.',
   },
 ]
 
@@ -48,6 +48,361 @@ export const localizedGuideSlugs = [
 ] as const
 
 export const posts: Post[] = [
+  // ─── OVERRIDE (C7S4) — Sep 2026 ────────────────────────────────────────────
+  {
+    slug: 'fortnite-admin-panel-lobby-hack-codes',
+    title: 'Fortnite Admin Panel Lobby Hack Codes (Override) — How to Redeem',
+    excerpt:
+      'How to open the Override Admin Panel, redeem Lobby Hack codes for XP / Sprite Dust / Sprites, and avoid V-Bucks scam sites. Reviewed 21 Sep 2026.',
+    category: 'how-to',
+    image: '/images/icons/battle_pass.png',
+    date: '2026-09-21',
+    readTime: 7,
+    featured: true,
+    tags: [
+      'fortnite admin panel',
+      'lobby hack codes',
+      'fortnite cheat codes',
+      'override',
+      'sprite dust',
+      'free fortnite rewards',
+    ],
+    content: `
+## What the Admin Panel is
+
+Chapter 7 Season 4 (**Override**) added an **Admin Panel** on the Battle Royale lobby. Epic publishes **Lobby Hack** codes you enter there for free XP, Sprite Dust, Sprites, Gizmos, loading screens, and occasional quest-gated styles — **not V-Bucks**.
+
+Last reviewed: **21 September 2026**. Codes rotate through the season (through ~1 November 2026). Epic can disable a code without notice.
+
+Track timed freebies on the [free cosmetics tracker](/free-cosmetics). Season context: [Override hub](/season).
+
+## How to redeem a Lobby Hack code
+
+1. Launch Fortnite and stay in the **Battle Royale** lobby (not Creative / Discover).
+2. Turn **Ranked off** if the panel is greyed out — codes are a pubs-lobby feature.
+3. Open the **⋯ / Admin Panel** control (top-right of the lobby UI).
+4. Paste a code from Epic’s blog, patch notes, or a trusted list → **Submit**.
+5. Claim any Sprite / dust / item prompts the client shows.
+
+Codes are typically **one redeem per account**. A few Sprite / story rewards require finishing a related story quest first — if Submit fails on a “valid” code, check quest progress.
+
+## What codes usually give
+
+| Reward type | Examples |
+| --- | --- |
+| XP | Flat Battle Pass XP bursts (e.g. OverrideXP-style grants) |
+| Sprite Dust | 2k–5k dust stacks for Sprite upgrades |
+| Sprites | Cheat Master / collab Sprites (Sonic, Jonesy, etc.) |
+| Match tools | Llama drops, Extraction Accelerators, Cheat Code Locators |
+| Cosmetics | Loading screens, sprays, quest-gated styles |
+
+Exact strings change weekly. Do **not** rely on a screenshot from July — redeem whatever Epic is posting *this* patch.
+
+## Sample codes players were redeeming mid-September 2026
+
+These were widely reported active around **17–21 Sep 2026**. Confirm in-client before assuming they still work:
+
+- \`OverrideXP\` — XP grant  
+- \`DustInTheWind\` / \`BLINKYINKYPINKYCLYDE\` / \`PlayToLevelUp\` — Sprite Dust  
+- \`DestinyAwaits\` — Llama Supply Drops  
+- \`GottaGoFast\` / \`IWannaFlyHigh\` — Sonic / Tails Sprites (when still live)  
+- \`YourThoughtsAreMine\` — dust + Geno style (quest-gated in some reports)
+
+If a string errors, it is expired, mistyped, already redeemed, or quest-locked — not a “generator” problem.
+
+## Scams to ignore
+
+- Any site selling **“free V-Bucks Admin codes”** is a scam. Lobby Hacks do not print V-Bucks.
+- Discord DMs asking you to “verify” by logging into a third-party Epic page.
+- Fake redeem sites that ask for your password or 2FA codes.
+
+Real path: **in-game Admin Panel only**. Account security: [enable 2FA](/guides/how-to/how-to-enable-2fa-fortnite).
+
+## FAQ
+
+### Do Admin Panel codes expire with Override?
+
+Seasonal Lobby Hacks are tied to Override. Finish them before the season ends (**1 November 2026** on this site’s calendar). Ongoing account rewards (2FA Boogie Down, LEGO link) live on the [free cosmetics](/free-cosmetics) list separately.
+
+### Can I use codes in Ranked or Creative?
+
+Use the **BR pubs lobby**. Ranked / Creative menus usually hide or block the panel.
+
+### Where should I look for new codes?
+
+Epic patch notes, the official Fortnite blog / social posts, and in-game MOTDs. We list the *method* and end dates on [free cosmetics](/free-cosmetics); we will not mirror every string forever when Epic ships ten new ones a week.
+`,
+  },
+  {
+    slug: 'fortnite-override-battle-pass-guide',
+    title: 'Fortnite Override Battle Pass Guide (Chapter 7 Season 4)',
+    excerpt:
+      'Override Battle Pass end date (1 Nov 2026), free vs paid track, Sonic / Gaming Legends notes, and a realistic XP plan with the live calculator.',
+    category: 'season',
+    image: '/images/icons/battle_pass.png',
+    date: '2026-09-21',
+    readTime: 9,
+    featured: true,
+    tags: [
+      'override battle pass',
+      'chapter 7 season 4',
+      'fortnite battle pass',
+      'sonic fortnite',
+      'battle pass xp',
+      'november 1 2026',
+    ],
+    content: `
+## Override Battle Pass at a glance
+
+**Chapter 7 Season 4 (Override)** launched **20 August 2026**. The Battle Pass runs through **1 November 2026** (Epic’s calendar day; this site uses a late-UTC rollover — check the [season countdown](/season-countdown) for remaining time).
+
+Last reviewed: **21 September 2026**.
+
+Live tools: [season hub](/season) · [XP calculator](/xp-calculator) · [free cosmetics](/free-cosmetics) · older Runners pass notes stay archived at [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide).
+
+## Free track vs paid pass
+
+| Track | What you get |
+| --- | --- |
+| **Free** | Cosmetic + V-Bucks nodes on the free page — finishes with the season |
+| **Paid (~950 V-Bucks or Crew)** | Premium pages, headline outfits, most V-Bucks refund nodes, collab styles |
+
+Sonic and other **Gaming Legends** page rewards need the paid track or Crew. Unclaimed rewards **do not carry** into Chapter 7 Season 5.
+
+## What actually levels the pass
+
+1. **Weekly quests** — best reliable XP; clear them on reset day.
+2. **Daily quests** — filler; swap modes you hate instead of forcing them.
+3. **Match XP** — placement still pays; hot-drop inting does not.
+4. **Admin Panel Lobby Hacks** — occasional flat XP codes (see [Admin Panel guide](/guides/how-to/fortnite-admin-panel-lobby-hack-codes)).
+5. **Creative XP maps** — useful after weeklies, until daily/weekly Creative caps. Codes rotate — use [/codes](/codes) and the [XP maps archive](/guides/season/best-fortnite-xp-maps) as a starting list, not gospel.
+
+## Practical plan if you are behind (late September)
+
+Assume ~5–6 weeks left from mid/late September to **1 November**:
+
+1. Open the [XP calculator](/xp-calculator), enter your current level, and see whether casual play + weeklies finish level 100.
+2. Buy the pass **only** if you want the exclusive pages — do not buy tiers in the last three days hoping to “catch style.”
+3. Prioritize weeklies → Admin Panel XP codes → Creative until capped → pubs / ranked.
+4. After 100, clear bonus / Super Style pages before the clock hits zero.
+
+## Collabs and honesty
+
+Override’s public coverage featured **Sonic** and other gaming-legend cosmetics on the pass. Exact unlock levels shift when Epic inserts mid-season pages — trust the **in-game pass UI**, not a July screenshot from Runners.
+
+Shop / set context: [Item Shop](/tools/item-shop) and [sets](/sets).
+
+## FAQ
+
+### When does the Override Battle Pass end?
+
+**1 November 2026.** Use the [countdown](/season-countdown). Downtime can move a few hours.
+
+### Is the Runners Battle Pass guide still useful?
+
+Only as an archive. Skin unlock tables there are **Chapter 7 Season 3**. This page + the XP calculator are the live path.
+
+### Can I finish free track without buying?
+
+Yes — free nodes unlock with levels. Premium Sonic / legend pages need the paid pass or Crew.
+`,
+  },
+  {
+    slug: 'fortnite-green-hill-zone-drop-guide',
+    title: 'Fortnite Green Hill Zone Drop Guide (Override)',
+    excerpt:
+      'How to land Green Hill Zone in Chapter 7 Season 4: contest level, loot expectations, rotates toward Reality’s Reign / center, and when to skip it in Ranked.',
+    category: 'map',
+    image: '/images/map-evolution/41-10.webp',
+    date: '2026-09-21',
+    readTime: 8,
+    featured: true,
+    tags: [
+      'green hill zone',
+      'fortnite drop guide',
+      'override map',
+      'sonic fortnite',
+      'best drops',
+      'chapter 7 season 4',
+    ],
+    content: `
+## Green Hill Zone overview
+
+**Green Hill Zone** is a new named POI on the Override island (Chapter 7 Season 4) — the Sonic-flavored biome players search for after the 20 Aug reboot. It is a **hot** landing: strong early loot, high third-party traffic, and rotates that pull toward center / Reality’s Reign.
+
+Last reviewed: **21 September 2026**. Pins and minimap: [interactive Fortnite map](/fortnite-map). Season context: [Override hub](/season).
+
+## Who should land here
+
+| Playlist | Verdict |
+| --- | --- |
+| Pubs / creative warm-up | Great — learn the biome, chase Sonic fantasy drops |
+| Ranked climb | Only if you win POI fights consistently; otherwise prefer [Wonkeeland](/drops/wonkeeland) / [Latte Landing](/drops/latte-landing) |
+| Zero Build | Playable, but open slopes punish bad peeks — bring mobility |
+
+Returning hot drops ([Heatwave Harbor](/drops/heatwave-harbor), [Battlewoods](/drops/battlewoods)) still exist. Green Hill is *extra* contested because it is new and branded.
+
+## Drop plan
+
+1. **Bus angle** — Mark Green Hill early. If half the lobby marks it, swing to a side POI or edge of the biome instead of dead-center.
+2. **Land high / roof first** when the zone has vertical buildings — claim chests before floor scrap.
+3. **Leave with a shotgun + mid** — Override launch pool favors 8-Bit Shotgun / classic pumps and unvault ARs; confirm in the [weapons encyclopedia](/weapons) after hotfixes.
+4. **Rotate early** toward zone or Reality’s Reign / Geno’s Machine if storm pulls center — late rotates across open Sonic flats are free damage.
+
+## Rotates and third parties
+
+- Expect third parties from **Reality’s Reign** and inland traffic once mid-game starts.
+- Edge players from **Cluster Coast** / east can pinch if zone favors that half.
+- Match Overrides can rewrite speed / loot mid-match — do not assume classic BR pace. See [Match Overrides explained](/guides/season/fortnite-match-overrides-explained).
+
+## Loot expectations (honest)
+
+We are not publishing fake chest counts. Treat Green Hill as **high contest, high reward**: enough floor loot and chests to kit a squad if you win the POI, not a free uncontested farm like Sunken Shores.
+
+Spawn layers (chests, vehicles, Sprite-related pins when live): toggle them on the [map](/fortnite-map).
+
+## When to skip Green Hill
+
+- You need LP and your duo cannot win 3+ contested fights before first zone.
+- Bus is unfavorable and you would land 15+ seconds late.
+- You are learning Override guns — drop [Wonkeeland](/drops/wonkeeland) or [Latte](/drops/latte-landing) for cleaner mid-game practice.
+
+## FAQ
+
+### Is Green Hill Zone on the old Shattered Coast map?
+
+Override rebuilt center / Sonic biomes on the live island. Named list also adds **Reality’s Reign** and **Stone Sanctum**; Frosted Flats / Sinister Strip / Calamari Canyon dropped off the named list. Full list: [map locations](/fortnite-map).
+
+### Where is the dedicated Reality’s Reign guide?
+
+Not shipped yet — use the live map until we write it. Same for Stone Sanctum.
+`,
+  },
+  {
+    slug: 'fortnite-match-overrides-explained',
+    title: 'Fortnite Match Overrides Explained (Chapter 7 Season 4)',
+    excerpt:
+      'What Match Override Consoles do mid-match, how they differ from Admin Panel Lobby Hacks, and how to play around speed / loot / heal flips in Override.',
+    category: 'season',
+    image: '/images/icons/xp.png',
+    date: '2026-09-21',
+    readTime: 6,
+    featured: false,
+    tags: [
+      'match overrides',
+      'fortnite override',
+      'match override console',
+      'chapter 7 season 4',
+      'loot hack',
+    ],
+    content: `
+## Match Overrides vs Lobby Hacks (do not confuse them)
+
+| Feature | Where | What it does |
+| --- | --- | --- |
+| **Admin Panel / Lobby Hack codes** | BR lobby UI | Redeem Epic codes for XP, Sprites, dust — [how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes) |
+| **Match Override Consoles** | In-match on the island | Rewrite **match rules** mid-game (speed, loot feel, healing, etc.) |
+
+Last reviewed: **21 September 2026**. Season hub: [/season](/season).
+
+## What a Match Override feels like
+
+Override’s fantasy is that the match can **flip rules** after someone hits a console / Override event. Practical player impact:
+
+- Fights you planned around classic BR pacing suddenly play faster or slower.
+- Loot / heal availability can feel different after the flip — your hotbar priority may change.
+- Ranked lobbies use the same island fantasy; check the playlist tile so you are not surprised.
+
+This is **not** the same as finding a mythic or a Loot Hack item on the floor. Mythics and unvault guns still matter — see [/weapons](/weapons) — but the *ruleset* can move under you.
+
+## How to play around them
+
+1. **Audio / UI** — When the lobby announces an Override, stop tunneling a 50/50 and re-read the modifier.
+2. **Inventory** — If healing is buffed or nerfed, re-value slurps vs shields before you take a bad peek.
+3. **Rotates** — Speed Overrides punish late walks across open flats (Green Hill slopes included).
+4. **Ranked** — Placement still beats spawn-island K/D. Do not int for console chaos if you are on a climb game. [Ranked hub](/ranked) · [climb guide](/guides/how-to/fortnite-ranked-mode-guide).
+
+## Related Override systems
+
+- **Loot Hack** items — floor / event loot that changes what guns you see; confirm after hotfixes on [/weapon-changes](/weapon-changes).
+- **Admin Panel** — out-of-match freebies only.
+- **New POIs** — Green Hill / Reality’s Reign / Stone Sanctum change *where* fights happen; Overrides change *how* they play. Drop notes: [Green Hill guide](/guides/map/fortnite-green-hill-zone-drop-guide).
+
+## FAQ
+
+### Do Match Overrides give free V-Bucks?
+
+No. Neither Match Overrides nor Lobby Hack codes print V-Bucks.
+
+### Are Overrides in Reload / Blitz?
+
+Playlist rules differ. Trust the tile for that mode — [Reload hub](/reload) when you queue there.
+`,
+  },
+  {
+    slug: 'how-to-get-null-ranked-rewards-fortnite',
+    title: 'How to Get Null Ranked Rewards in Fortnite Override',
+    excerpt:
+      'Unlock the Null outfit and Skeletal Slingbag / Null’s Scythe styles (Champion Molten, Elite Neon, Unreal Rifted) on the Override Ranked ladder before 1 November 2026.',
+    category: 'how-to',
+    image: '/images/map-evolution/35-20.webp',
+    date: '2026-09-21',
+    readTime: 7,
+    featured: false,
+    tags: [
+      'null fortnite',
+      'ranked rewards',
+      'fortnite ranked',
+      'champion rewards',
+      'override',
+      'unreal',
+    ],
+    content: `
+## Null rewards on the Override ladder
+
+Chapter 7 Season 4 (**Override**) Ranked track includes the **Null** outfit and matching **Skeletal Slingbag** / **Null’s Scythe** styles gated by rank tier — commonly called out as **Champion Molten**, **Elite Neon**, and **Unreal Rifted** in season coverage. Exact cup calendars and kill challenges can shift mid-season; trust the in-game Ranked / Cups screens.
+
+Last reviewed: **21 September 2026**. Ladder ends with the season (**1 November 2026**). Freebies list: [free cosmetics](/free-cosmetics). Climb systems: [ranked hub](/ranked) · [LP guide](/guides/how-to/fortnite-ranked-mode-guide).
+
+## What you are grinding for
+
+| Goal | Typical gate |
+| --- | --- |
+| Null base / early styles | Mid Ranked tiers + seasonal ranked quests |
+| Champion Molten style | Champion |
+| Elite Neon style | Elite |
+| Unreal Rifted style | Unreal |
+
+These are **rank unlocks**, not Item Shop purchases. You cannot buy the missing style with V-Bucks if the season ends.
+
+## Climb habits that actually unlock styles
+
+1. **Placement over spawn fragging** — early deaths delete LP; Null styles need sustained rank, not highlight clips.
+2. **Drop for your rank** — Wonkeeland / Latte for climb games; save Green Hill Zone for pubs until you win that POI cold. [Green Hill guide](/guides/map/fortnite-green-hill-zone-drop-guide).
+3. **Finish ranked quests / cups** when they appear in Discover — some seasons split cosmetics across quests and pure LP.
+4. **Learn Match Overrides** so you do not throw endgames when rules flip — [explained](/guides/season/fortnite-match-overrides-explained).
+5. **Play your mode** — Ranked BR vs Zero Build tracks differ; styles follow the track Epic lists in-client.
+
+## Timeline honesty
+
+From late September you have roughly **five weeks** to Unreal if you are starting from Gold/Platinum. That is doable with consistent sessions — not with one weekend of hot drops. Use the [season countdown](/season-countdown) so you are not unlocking Champion the night Override ends.
+
+## FAQ
+
+### Do Null styles carry to next season?
+
+Ranked cosmetic unlocks stay in your locker once earned. Unearned Override styles are gone when the ladder resets.
+
+### Is Null on the Battle Pass?
+
+No — Null is the **Ranked** reward fantasy this season. Pass cosmetics (Sonic, etc.) are separate — [Override Battle Pass guide](/guides/season/fortnite-override-battle-pass-guide).
+
+### Where do I track other free rewards?
+
+[Free cosmetics tracker](/free-cosmetics) — Twitch drops, Admin Panel, 2FA, and ranked entries with end dates.
+`,
+  },
+
   // ─── WEAPONS ───────────────────────────────────────────────────────────────
   {
     slug: 'fortnite-best-weapons-tier-list-2026',
@@ -2719,12 +3074,17 @@ export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug)
 }
 
+/** Newest first — keeps /guides looking alive for crawlers and humans. */
+export function getPostsSorted(): Post[] {
+  return [...posts].sort((a, b) => b.date.localeCompare(a.date))
+}
+
 export function getPostsByCategory(category: Category): Post[] {
-  return posts.filter((p) => p.category === category)
+  return getPostsSorted().filter((p) => p.category === category)
 }
 
 export function getFeaturedPosts(): Post[] {
-  return posts.filter((p) => p.featured)
+  return getPostsSorted().filter((p) => p.featured)
 }
 
 export function getCategoryLabel(category: Category): string {

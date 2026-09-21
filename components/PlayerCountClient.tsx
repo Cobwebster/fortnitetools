@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import Link from '@/components/link'
+import { RankMedal } from '@/components/rank-medal'
 import {
   formatCompact,
   formatPlayers,
@@ -38,7 +39,9 @@ function RankTable({
         <tbody>
           {rows.map((row, i) => (
             <tr key={`${row.code}-${row.title}`} className="border-b border-border/50 last:border-0">
-              <td className="px-3 py-2.5 tabular-nums text-muted-foreground">{i + 1}</td>
+              <td className="px-3 py-2.5">
+                <RankMedal rank={i + 1} />
+              </td>
               <td className="px-3 py-2.5">
                 <div className="font-semibold text-foreground">{row.title}</div>
                 <div className="mt-0.5 text-xs text-muted-foreground">

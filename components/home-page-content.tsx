@@ -1,5 +1,6 @@
 'use client'
 
+import type { ReactNode } from 'react'
 import Image from 'next/image'
 import Link from '@/components/link'
 import { ArrowRight } from 'lucide-react'
@@ -7,7 +8,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { FortniteIcon } from '@/components/fortnite-icon'
 import { MapEvolutionTeaser } from '@/components/map-evolution-teaser'
 import { PostCard } from '@/components/post-card'
-import { posts, categories, getFeaturedPosts, getLocalizedPosts } from '@/lib/posts'
+import { categories, getFeaturedPosts, getLocalizedPosts, getPostsSorted } from '@/lib/posts'
 import { siteConfig } from '@/lib/site'
 import { CATEGORY_ICONS, toolIcon } from '@/lib/site-icons'
 import {
@@ -24,10 +25,11 @@ const CAT_KEYS: Record<string, 'catHowTo' | 'catWeapons' | 'catSeason' | 'catMap
 }
 
 const EN_POPULAR_TOOLS = [
+  { href: '/stats', key: 'toolStatsLeaderboards' as const },
+  { href: '/tools/player-compare', key: 'toolPlayerCompare' as const },
   { href: '/tools/fortnite-build-simulator', key: 'toolBuildSim' as const },
   { href: '/fortnite-map', key: 'toolMap' as const },
   { href: '/tools/player-stats', key: 'toolStatsTracker' as const },
-  { href: '/tools/player-compare', key: 'toolPlayerCompare' as const },
   { href: '/tools/loadout-builder', key: 'toolLoadout' as const },
   { href: '/tools/item-shop', key: 'toolItemShop' as const },
   { href: '/season', key: 'toolSeason' as const },
@@ -45,7 +47,6 @@ const EN_POPULAR_TOOLS = [
   { href: '/weapons', key: 'toolWeapons' as const },
   { href: '/free-cosmetics', key: 'toolFreeCosmetics' as const },
   { href: '/codes', key: 'toolMapCodes' as const },
-  { href: '/stats', key: 'toolStatsLeaderboards' as const },
   { href: '/player-count', key: 'toolPlayerCount' as const },
   { href: '/season-countdown', key: 'toolCountdown' as const },
 ]
@@ -60,13 +61,18 @@ const LOCALE_POPULAR_TOOLS = [
   { href: '/tools/sensitivity-calculator', key: 'toolSensitivity' as const },
 ]
 
-export function HomePageContent() {
+export function HomePageContent({
+  statsTeaser = null,
+}: {
+  /** EN-only server-rendered teaser (e.g. tracked player boards). */
+  statsTeaser?: ReactNode
+}) {
   const t = useTranslations('home')
   const locale = useLocale() as AppLocale
   const isEnglish = locale === defaultLocale
   const featuredPosts = (isEnglish ? getFeaturedPosts() : getLocalizedPosts()).slice(0, 4)
   const recentPosts = isEnglish
-    ? posts.filter((p) => !p.featured).slice(0, 2)
+    ? getPostsSorted().filter((p) => !p.featured).slice(0, 2)
     : []
   const toolsHref = localizeHref(locale, '/tools')
   const guidesHref = localizeHref(locale, '/guides')
@@ -125,6 +131,14 @@ export function HomePageContent() {
               >
                 {isEnglish ? t('ctaTierList') : t('ctaGuides')}
               </Link>
+              {isEnglish ? (
+                <Link
+                  href="/stats"
+                  className="inline-flex items-center gap-2 rounded-md border border-primary/50 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/15 transition-colors"
+                >
+                  Player Stats
+                </Link>
+              ) : null}
               {isEnglish ? (
                 <Link
                   href="/tools/loadout-builder"
@@ -242,6 +256,8 @@ export function HomePageContent() {
         </div>
       </section>
 
+      {isEnglish ? statsTeaser : null}
+
       {isEnglish ? <MapEvolutionTeaser /> : null}
 
       <section
@@ -306,7 +322,7 @@ export function HomePageContent() {
             <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2">
               <p className="text-sm leading-relaxed text-muted-foreground">
                 FortniteTools is a solo fan project. Pages get a date when the loot pool, island, or shop rules change.
-                The useful stuff is the map, tracker, shop, loadout builder, build practice, and the Chapter 7 Season 4
+                The useful stuff is the map, our own tracked player stats leaderboards, shop, loadout builder, build practice, and the Chapter 7 Season 4
                 (Override) hubs — not a new calculator for every search query.
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">

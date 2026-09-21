@@ -83,12 +83,18 @@ export function newsTake(motd: NewsMotd): NewsTake {
 
   if (/sprite/.test(hay)) {
     notes.push(
-      'Sprite mastery is the free cosmetic track this season — extract at marked sites, then tick off backblings on the free cosmetics list before the window closes.'
+      'Sprites and Sprite Dust still show up via Admin Panel Lobby Hacks and map extracts — free Cosmetic trackers list timed Override drops separately from mastery grind.'
     )
     links.push(
       { href: '/guides/how-to/how-to-extract-sprites-fortnite', label: 'Sprite extract guide' },
       { href: '/free-cosmetics', label: 'Free cosmetics tracker' }
     )
+  }
+  if (/ironmouse|twitch drop|admin panel|lobby hack/.test(hay)) {
+    notes.push(
+      'Timed free cosmetics (Twitch drops, Admin Panel codes, Ranked Null) are listed with end dates on the free cosmetics tracker.'
+    )
+    links.push({ href: '/free-cosmetics', label: 'Free cosmetics tracker' })
   }
   if (/seven slider|chaos exploder|extending focus|gear up|weapon/.test(hay)) {
     notes.push(

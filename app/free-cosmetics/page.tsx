@@ -2,20 +2,25 @@ import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { FreeCosmeticsClient } from '@/components/FreeCosmeticsClient'
-import { FREE_COSMETIC_OFFERS } from '@/lib/free-cosmetics'
+import { FREE_COSMETIC_OFFERS, FREE_COSMETICS_REVIEWED } from '@/lib/free-cosmetics'
+import { CURRENT_SEASON } from '@/lib/season'
 
 const faqs = [
   {
-    q: 'What free Fortnite cosmetics are available right now?',
-    a: 'Use the Active filter above — it hides completed items and expired timed offers. Twitch drops, Reload / BR quests, Ranked, Sprite mastery, and free pass tracks rotate through the season.',
+    q: 'What free Fortnite cosmetics are available in Override right now?',
+    a: 'Use the Active filter — it hides finished and expired offers. Live windows include ironmouse Twitch Drops (through 30 Sep), Admin Panel Lobby Hack codes, Override Battle Pass free track, Ranked Null styles, and ongoing account rewards like 2FA Boogie Down.',
   },
   {
-    q: 'Where do Sprite mastery rewards come from?',
-    a: 'Mastering Sprites unlocks free backblings and a glider at set milestones. See the Sprite list for every companion, then extract them before the mastery window ends.',
+    q: 'What is the Admin Panel?',
+    a: 'Chapter 7 Season 4 added Lobby Hack codes in the Admin Panel (lobby, Ranked off). Epic codes grant XP, Sprite Dust, Sprites, and cosmetics — never V-Bucks. Redeem before the season ends.',
   },
   {
     q: 'Can I still get Boogie Down for free?',
     a: 'Yes — enable two-factor authentication on your Epic account. It is listed under ongoing account rewards with no end date.',
+  },
+  {
+    q: 'When does the Override free Battle Pass track end?',
+    a: `${CURRENT_SEASON.label} is scheduled through 1 November 2026. Finish free-track and seasonal ranked quests before then.`,
   },
 ]
 
@@ -42,20 +47,21 @@ export default function FreeCosmeticsPage() {
               <span className="text-foreground">Free Cosmetics</span>
             </nav>
 
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
+              {CURRENT_SEASON.shortLabel} · Reviewed {FREE_COSMETICS_REVIEWED}
+            </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Free Fortnite <span className="text-primary">Cosmetics</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Timed and ongoing free rewards — Twitch drops, quests, Ranked, Sprite mastery, passes,
-              and account links. Mark what you&apos;ve finished; we save progress in this browser.
+              Override freebies — ironmouse Twitch Drops, Admin Panel Lobby Hacks, Ranked Null, Battle
+              Pass free track, and evergreen account rewards. Mark what you&apos;ve finished; progress
+              saves in this browser.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{FREE_COSMETIC_OFFERS.length}</strong> offers tracked ·{' '}
-              <Link
-                href="/guides/how-to/how-to-extract-sprites-fortnite"
-                className="text-primary hover:underline"
-              >
-                Sprite guide
+              <Link href="/season" className="text-primary hover:underline">
+                Season hub
               </Link>
               {' · '}
               <Link href="/tools/item-shop" className="text-primary hover:underline">
@@ -69,7 +75,7 @@ export default function FreeCosmeticsPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 space-y-12">
+        <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 sm:px-6">
           <FreeCosmeticsClient />
 
           <section className="space-y-4 border-t border-border pt-10">

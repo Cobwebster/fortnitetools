@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { RankMedal } from '@/components/rank-medal'
 import {
   formatBoardValue,
   LEADERBOARD_BOARD_META,
@@ -97,8 +98,8 @@ export function TrackedStatsLeaderboards({
                           key={`${meta.id}-${row.accountId || row.name}`}
                           className="border-b border-border/70 last:border-0"
                         >
-                          <td className="px-4 py-2.5 tabular-nums text-muted-foreground">
-                            {row.rank}
+                          <td className="px-4 py-2.5">
+                            <RankMedal rank={row.rank} />
                           </td>
                           <td className="max-w-[12rem] truncate px-2 py-2.5 font-medium text-foreground">
                             <Link

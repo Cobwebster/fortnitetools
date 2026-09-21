@@ -3,15 +3,21 @@ import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PostCard } from '@/components/post-card'
-import { posts, categories } from '@/lib/posts'
+import { categories, getPostsSorted } from '@/lib/posts'
 import { createMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Guides',
   description:
-    'Chapter 7 Season 4 (Override) Fortnite guides — weapons, drops, Battle Pass XP, and ranked climbing. Older Runners articles stay up with honesty dates until rewritten.',
+    'Chapter 7 Season 4 (Override) Fortnite guides — Admin Panel codes, Green Hill Zone, Battle Pass XP, Match Overrides, and Ranked Null. Older Runners articles stay dated until rewritten.',
   path: '/guides',
-  keywords: ['fortnite guides', 'fortnite weapons', 'override', 'chapter 7 season 4'],
+  keywords: [
+    'fortnite guides',
+    'fortnite override',
+    'admin panel codes',
+    'green hill zone',
+    'chapter 7 season 4',
+  ],
 })
 
 export default function GuidesPage() {
@@ -28,9 +34,9 @@ export default function GuidesPage() {
               Fortnite Guides
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Season hubs first — Override island, ranked, and Battle Pass end date. Older Runners weapon and Sprite
-              articles stay linked with last-reviewed dates until we rewrite the loot pool; we will not invent Override
-              DPS sheets overnight.
+              Fresh Override write-ups first — Admin Panel codes, Battle Pass end date, Green Hill Zone,
+              Match Overrides, and Ranked Null. Older Runners weapon and Sprite articles stay linked with
+              last-reviewed dates until we rewrite the loot pool.
             </p>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
               Start with the{' '}
@@ -73,7 +79,7 @@ export default function GuidesPage() {
 
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
+            {getPostsSorted().map((post) => (
               <PostCard key={post.slug} post={post} featured />
             ))}
           </div>

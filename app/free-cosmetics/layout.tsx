@@ -3,15 +3,17 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { FREE_COSMETIC_OFFERS } from '@/lib/free-cosmetics'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Free Fortnite Cosmetics – Drops, Quests & Passes (2026)',
-  description: `Track ${FREE_COSMETIC_OFFERS.length}+ free Fortnite cosmetics: Twitch drops, Sprite mastery, Ranked rewards, Battle Pass free track, LEGO / OG / Music Pass, account links, and timed quests with end dates.`,
+  title: 'Free Fortnite Cosmetics – Override Drops, Admin Panel & Ranked',
+  description: `Track ${FREE_COSMETIC_OFFERS.length}+ free Fortnite cosmetics in Chapter 7 Season 4 (Override): ironmouse Twitch Drops, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account rewards with end dates.`,
   path: '/free-cosmetics',
   keywords: [
     'free fortnite cosmetics',
     'free fortnite skins',
     'fortnite free rewards',
     'fortnite twitch drops',
-    'fortnite sprite mastery rewards',
+    'fortnite ironmouse drops',
+    'fortnite admin panel codes',
+    'fortnite lobby hack codes',
     'fortnite ranked free rewards',
     'how to get free fortnite cosmetics',
     'fortnite free battle pass rewards',
@@ -21,14 +23,14 @@ export const metadata: Metadata = createMetadata({
 
 const faqs = [
   {
-    question: 'How do I get free Fortnite cosmetics?',
+    question: 'How do I get free Fortnite cosmetics in Override?',
     answer:
-      'Timed quests, Twitch drops, Ranked milestones, free pass tracks, Sprite mastery, account links (LEGO, MyDisney, 2FA), and collab promotions. This page lists active and ongoing methods with end dates.',
+      'Timed Twitch drops (ironmouse), Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
   },
   {
     question: 'Do free Fortnite rewards expire?',
     answer:
-      'Many do — Twitch drops, seasonal quests, and Ranked events have end dates. Ongoing offers like 2FA Boogie Down or default unlocks have no deadline.',
+      'Many do — Twitch drops and seasonal quests have hard cutoffs. Admin Panel / Ranked / free pass track generally last until Override ends (1 November 2026). Ongoing offers like 2FA Boogie Down have no deadline.',
   },
   {
     question: 'Is Mark as completed synced to my Epic account?',

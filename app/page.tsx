@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { HomePageContent } from '@/components/home-page-content'
+import { StatsLeaderboardTeaser } from '@/components/stats-leaderboard-teaser'
 import { hreflangAlternates, absoluteLocaleUrl } from '@/i18n/pathnames'
 import { siteConfig } from '@/lib/site'
 
@@ -19,7 +20,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <HomePageContent />
+      <HomePageContent statsTeaser={<StatsLeaderboardTeaser />} />
       <Footer />
     </>
   )
