@@ -248,6 +248,10 @@
         "title": "Player Compare",
         "description": "Compare two Fortnite players side by side — wins, K/D, win rate, kills, and matches for season or lifetime."
       },
+      "upload": {
+        "title": "Community Uploads",
+        "description": "Player guides (YouTube/socials welcome), loadouts, XP maps, keybinds, FPS presets, drops, tips, and more — public UGC feed."
+      },
       "fortnite-map": {
         "title": "Interactive Map",
         "description": "Live Override POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 4."

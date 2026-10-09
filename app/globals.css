@@ -62,7 +62,7 @@
   --secondary: oklch(0.2 0.03 240);
   --secondary-foreground: oklch(0.95 0.01 240);
   --muted: oklch(0.18 0.025 240);
-  --muted-foreground: oklch(0.6 0.03 240);
+  --muted-foreground: oklch(0.82 0.015 240);
   /* Yellow accent for highlights */
   --accent: oklch(0.82 0.19 88);
   --accent-foreground: oklch(0.1 0.02 240);

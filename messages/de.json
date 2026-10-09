@@ -229,6 +229,10 @@
         "title": "Player Compare",
         "description": "Compare two Fortnite players side by side — wins, K/D, win rate, kills, and matches for season or lifetime."
       },
+      "upload": {
+        "title": "Community-Uploads",
+        "description": "Spieler-Guides (YouTube/Socials willkommen), Loadouts, XP-Maps, Keybinds, FPS-Presets, Drops, Tipps und mehr."
+      },
       "fortnite-map": {
         "title": "Interaktive Karte",
         "description": "Shattered-Coast-POI-Karte mit Loot, Filtern und Drop-Tipps für Kapitel 7 Season 3."
