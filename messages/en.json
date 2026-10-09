@@ -1,6 +1,7 @@
 {
   "nav": {
     "tools": "Tools",
+    "upload": "Upload",
     "buildSim": "Build Sim",
     "playerTracker": "Player Tracker",
     "stats": "Player Stats",
@@ -40,14 +41,14 @@
     "aria": "Choose language"
   },
   "footer": {
-    "tagline": "Free Fortnite calculators and guides for the current season. Independent fan project.",
+    "tagline": "Map, weapons, and season tools for Override — independent fan project.",
     "categories": "Categories",
     "guides": "Guides",
     "tools": "Tools",
     "site": "Site",
     "allGuides": "All Guides",
-    "weaponsTier": "Archive: Runners weapons tier list",
-    "bestLoot": "Archive: Shattered Coast loot guide",
+    "weaponsTier": "All weapons",
+    "bestLoot": "Green Hill Zone drops",
     "mapGuides": "Map Guides",
     "allTools": "All Tools",
     "freeCosmetics": "Free Cosmetics",
@@ -71,6 +72,7 @@
     "drops": "Best Drops",
     "sets": "Sets",
     "creatorCode": "Creator Code",
+    "upload": "Community Uploads",
     "loadoutBuilder": "Loadout Builder",
     "buildSimulator": "Build Simulator",
     "itemShop": "Item Shop",
@@ -109,11 +111,12 @@
   },
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
-    "heroSubtitle": "Interactive tools and season guides for Chapter 7 Season 4 (Override).",
-    "heroBody": "Live Override map layers, our own tracked player stats leaderboards, a live Item Shop, build practice, and current-season hubs — written for how people actually play, not a dump of formula widgets.",
+    "heroSubtitle": "Override map, shop, and stats — plus guides when the island actually changes.",
+    "heroBody": "Drop on the live map, check tracked player boards, build a hotbar, and keep an eye on ranked and free rewards. Built for how you play this season.",
     "ctaTools": "Open free tools",
     "ctaTierList": "Weapons tier list",
-    "ctaLoadout": "Upload your loadout",
+    "ctaWeapons": "All weapons",
+    "ctaLoadout": "Build a loadout",
     "browseCategories": "Browse by Category",
     "weaponChanges": "Weapon Changes",
     "popularTools": "Popular Tools",
@@ -122,11 +125,11 @@
     "latestArticles": "Latest Articles",
     "viewAll": "View all",
     "blurbToolsTitle": "Tools",
-    "blurbTools": "Map, tracker, shop, loadout builder, and build practice — plus a few helpers for settings and season planning. Updated when the loot pool or island changes.",
+    "blurbTools": "Map, tracker, shop, loadout builder, and build practice. Settings helpers live under Tools when you need them.",
     "blurbGuidesTitle": "Guides",
-    "blurbGuides": "Season-specific weapon, map, Battle Pass, and ranked guides — no filler listicles.",
-    "blurbSeasonTitle": "Chapter 7 Season 4",
-    "blurbSeason": "Override coverage for the live island, Match Overrides, ranked, and Battle Pass — with dates so you know when something was last checked.",
+    "blurbGuides": "Override Battle Pass, Green Hill drops, Admin Panel codes, and Ranked Null — plus evergreen account how-tos.",
+    "blurbSeasonTitle": "Override season",
+    "blurbSeason": "Live island notes, Match Overrides, ranked, and Battle Pass timing through November 1.",
     "toolFreeCosmetics": "Free Cosmetics",
     "toolXpCalc": "XP Calc",
     "toolCountdown": "Countdown",
@@ -190,7 +193,7 @@
     "aboutShopTitle": "Item Shop",
     "aboutShop": "Today's rotation with a UTC reset countdown, leaving-tonight strip, and a local wishlist that rolls into the V-Bucks helper. No per-skin index pages.",
     "aboutLoadoutTitle": "Loadout Builder",
-    "aboutLoadout": "C7S4 hotbar with real item icons and rough STK/TTK. Gun numbers may still reflect late Runners until the Override rewrite — confirm in-game.",
+    "aboutLoadout": "Full Override inventory planner — hotbar, mats, ammo, heal stacks, use-case presets, and STK/TTK. Confirm gun numbers in-game after patches.",
     "aboutSkinRarityTitle": "Skin Rarity Calculator",
     "aboutSkinRarity": "People search \"rare Fortnite skins\" constantly. This lookup separates shop color tiers from real scarcity using appearance history and exclusive sources.",
     "aboutSensTitle": "Sensitivity Calculator",
@@ -263,7 +266,7 @@
       },
       "status": {
         "title": "Is Fortnite Down?",
-        "description": "Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map."
+        "description": "Live Online / Issues / Down from Epic’s board, lobby downtime headlines, and the Override season countdown. No fake ping map."
       },
       "season": {
         "title": "Chapter 7 Season 4 Override Hub",
@@ -279,7 +282,7 @@
       },
       "news": {
         "title": "Fortnite News",
-        "description": "Live Battle Royale lobby MOTDs with notes that point at the map, shop, weapons, and season countdown."
+        "description": "Live Battle Royale lobby headlines with FortniteTools takes that point at the map, shop, freebies, and season countdown."
       },
       "modes": {
         "title": "Game Modes",
@@ -311,7 +314,7 @@
       },
       "loadout-builder": {
         "title": "Loadout Builder",
-        "description": "Build a C7S4 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK. Numbers may lag Override patches."
+        "description": "Full Override inventory — hotbar, mats, ammo, heal stacks, use-case presets, kit scorecard, and STK/TTK. Share one link with the lobby."
       },
       "fortnite-build-simulator": {
         "title": "Build Simulator",
@@ -647,7 +650,7 @@
       "bpBody": "Season Battle Pass level and progress toward the next level when the API returns it.",
       "faqTitle": "Frequently asked questions",
       "relatedTitle": "Related tools",
-      "relatedKd": "K/D Calculator",
+      "relatedKd": "Stats leaderboards",
       "relatedLoadout": "Loadout Builder",
       "relatedMap": "Interactive Map",
       "relatedAll": "All Tools",
@@ -897,8 +900,8 @@
         "s4p": "In addition to the main storm, Fortnite has a Storm Surge mechanic in later circles that targets players with low damage dealt. If you are in the bottom half of remaining players by damage dealt, Storm Surge begins dealing additional damage to you. This punishes passive play and forces action in late game scenarios."
       },
       "relatedTitle": "Related Fortnite tools",
-      "relatedBefore": "Track your K/D and win rate with the",
-      "relatedKd": "K/D calculator",
+      "relatedBefore": "Look up a name on the",
+      "relatedKd": "player stats tracker",
       "relatedMid1": ", dial in your",
       "relatedFps": "FPS settings",
       "relatedMid2": ", or browse the",

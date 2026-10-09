@@ -59,13 +59,17 @@ export default function WeaponChangesPage() {
               Fortnite <span className="text-primary">Weapon Changes</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Buffs and nerfs across patches — damage, DPS, fire rate, magazine size, reload, and
-              structure damage with Old / New / Change by rarity. Jump to a date or search a gun.
+              Override buffs, nerfs, and Fortnitemares vault/unvault rows — damage, DPS, reload, and
+              loot-pool flips with Old / New / Change by rarity. Jump to a date or search a gun.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{WEAPON_CHANGE_PATCHES.length}</strong> patch days ·{' '}
               <strong className="text-foreground">{WEAPON_CHANGE_ENTRY_COUNT}</strong> rarity changes ·
               updated {WEAPON_CHANGES_UPDATED_AT}
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Latest: <strong className="text-foreground">v42.30 Fortnitemares</strong> (1 Oct) ·{' '}
+              <strong className="text-foreground">v42.10</strong> Pump / 8-Bit / AR (3 Sep)
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/weapons" className="text-primary hover:underline">
@@ -100,7 +104,7 @@ export default function WeaponChangesPage() {
                 weapons encyclopedia
               </Link>{' '}
               for current stats and the{' '}
-              <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
+              <Link href="/weapons" className="text-primary hover:underline">
                 damage calculator
               </Link>{' '}
               for shots-to-kill after a patch.

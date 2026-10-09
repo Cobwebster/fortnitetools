@@ -1,7 +1,427 @@
 {
-  "updatedAt": "2026-08-31",
-  "sourceNote": "Compiled from public Fortnite balance history (Epic patch notes / Fortnite wiki / community trackers). Numbers are reference values — always confirm in-game after updates. Override (v42.00) vault/unvault rows use New for the live value; Old is prior season when known.",
+  "updatedAt": "2026-10-09",
+  "sourceNote": "Compiled from Epic Override patch notes (v42.00–v42.30), Fortnite wiki history, and community trackers. Numbers are reference values — always confirm in-game after updates. Loot-pool rows use In BR loot pool 0/1 for vault/unvault. Relative % rows for Rebecca’s Guns reflect Epic’s qualitative notes when absolute sheet values were not published.",
   "patches": [
+    {
+      "date": "2026-10-01",
+      "label": "October 1, 2026 — Fortnitemares (v42.30)",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Rebecca's Guns (SMG)",
+          "stats": [
+            {
+              "stat": "Damage (relative)",
+              "old": 100,
+              "new": 110,
+              "change": 10
+            },
+            {
+              "stat": "Spread",
+              "old": 100,
+              "new": 90,
+              "change": -10
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 100,
+              "new": 90,
+              "change": -10
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Rebecca's Guns (Assault Rifle)",
+          "stats": [
+            {
+              "stat": "Spread",
+              "old": 100,
+              "new": 90,
+              "change": -10
+            },
+            {
+              "stat": "Vertical Recoil",
+              "old": 100,
+              "new": 90,
+              "change": -10
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Drum Gun",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Ranger Assault Rifle",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Exotic",
+          "name": "Tetris Rift",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Bonerattler SMG",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Freddy's Nightmare",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Wood Stake Shotgun",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Dual Fiend Hunters",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Heavy Assault Rifle",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Pumpkin Launcher",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "label": "September 3, 2026 — Override (v42.10)",
+      "entries": [
+        {
+          "rarity": "Common",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 84,
+              "new": 87,
+              "change": 3
+            },
+            {
+              "stat": "DPS",
+              "old": 58.8,
+              "new": 60.9,
+              "change": 2.1
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 92,
+              "new": 95,
+              "change": 3
+            },
+            {
+              "stat": "DPS",
+              "old": 64.4,
+              "new": 66.5,
+              "change": 2.1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 100,
+              "new": 103,
+              "change": 3
+            },
+            {
+              "stat": "DPS",
+              "old": 70,
+              "new": 72.1,
+              "change": 2.1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 108,
+              "new": 111,
+              "change": 3
+            },
+            {
+              "stat": "DPS",
+              "old": 75.6,
+              "new": 77.7,
+              "change": 2.1
+            },
+            {
+              "stat": "Equip Animation",
+              "old": 1,
+              "new": 0.85,
+              "change": -0.15
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Pump Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 116,
+              "new": 119,
+              "change": 3
+            },
+            {
+              "stat": "DPS",
+              "old": 81.2,
+              "new": 83.3,
+              "change": 2.1
+            }
+          ]
+        },
+        {
+          "rarity": "Common",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 95,
+              "new": 88,
+              "change": -7
+            },
+            {
+              "stat": "DPS",
+              "old": 133,
+              "new": 123.2,
+              "change": -9.8
+            }
+          ]
+        },
+        {
+          "rarity": "Uncommon",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 100,
+              "new": 93,
+              "change": -7
+            },
+            {
+              "stat": "DPS",
+              "old": 140,
+              "new": 130.2,
+              "change": -9.8
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 105,
+              "new": 98,
+              "change": -7
+            },
+            {
+              "stat": "DPS",
+              "old": 147,
+              "new": 137.2,
+              "change": -9.8
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 110,
+              "new": 103,
+              "change": -7
+            },
+            {
+              "stat": "DPS",
+              "old": 154,
+              "new": 144.2,
+              "change": -9.8
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "8-Bit Shotgun",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 116,
+              "new": 108,
+              "change": -8
+            },
+            {
+              "stat": "DPS",
+              "old": 162.4,
+              "new": 151.2,
+              "change": -11.2
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Assault Rifle",
+          "stats": [
+            {
+              "stat": "Damage",
+              "old": 36,
+              "new": 35,
+              "change": -1
+            },
+            {
+              "stat": "DPS",
+              "old": 198,
+              "new": 192.5,
+              "change": -5.5
+            },
+            {
+              "stat": "Headshot Multiplier",
+              "old": 2,
+              "new": 1.5,
+              "change": -0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.07,
+              "new": 2.2,
+              "change": 0.13
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Assault Rifle",
+          "stats": [
+            {
+              "stat": "Headshot Multiplier",
+              "old": 2,
+              "new": 1.5,
+              "change": -0.5
+            },
+            {
+              "stat": "Reload Time",
+              "old": 2.25,
+              "new": 2.35,
+              "change": 0.1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Mega Buster",
+          "stats": [
+            {
+              "stat": "Projectile Speed",
+              "old": 100,
+              "new": 115,
+              "change": 15
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Sweeper Shotgun",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-08-26",
       "label": "August 26, 2026 Hotfix",

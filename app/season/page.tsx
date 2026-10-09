@@ -55,16 +55,16 @@ export default function SeasonHubPage() {
               </div>
               <div className="min-w-0 flex-1 text-center sm:text-left">
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-                  Last reviewed {SEASON_HUB_REVIEWED} · {CURRENT_SEASON.shortLabel} live
+                  Updated {SEASON_HUB_REVIEWED} · ends Nov 1
                 </p>
                 <h1 className="font-display text-3xl font-extrabold uppercase leading-tight tracking-wide text-foreground sm:text-5xl text-balance">
-                  Fortnite {CURRENT_SEASON.label} — {CURRENT_SEASON.codename}
+                  Fortnite {CURRENT_SEASON.codename}
                 </h1>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                  Live hub for island changes, Match Overrides, ranked, and the Battle Pass. Season
-                  ends {formatSeasonLongDate(seasonEndDate())}; {CURRENT_SEASON.next.label} is dated{' '}
-                  {formatSeasonLongDate(nextSeasonStartDate())}. Loot DPS sheets that still say
-                  Runners are getting a rewrite — we will not invent Override gun numbers.
+                  What changed on the island, how Match Overrides mess with fights, ranked notes, and
+                  when the Battle Pass locks. Season clock runs through{' '}
+                  {formatSeasonLongDate(seasonEndDate())}. Next flip ({CURRENT_SEASON.next.label}) is
+                  dated {formatSeasonLongDate(nextSeasonStartDate())}.
                 </p>
               </div>
             </div>

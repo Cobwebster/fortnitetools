@@ -5,6 +5,7 @@ import { SkinRarityClient } from '@/components/SkinRarityClient'
 import { SkinRarityReportPanel } from '@/components/skin-rarity-report'
 import {
   RARE_SKIN_EXAMPLES,
+  SKIN_RARITY_FAQS,
   SKIN_RARITY_SEO_SECTIONS,
   STATIC_SKIN_EXAMPLES,
 } from '@/lib/skin-rarity-seo'
@@ -112,22 +113,36 @@ export default function SkinRarityCalculatorPage() {
             </section>
           ))}
 
+          <section className="space-y-4 border-t border-border pt-10">
+            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+              Frequently asked questions
+            </h2>
+            <div className="space-y-4 max-w-3xl">
+              {SKIN_RARITY_FAQS.map((faq) => (
+                <div key={faq.question}>
+                  <h3 className="text-sm font-bold text-foreground">{faq.question}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           <section className="space-y-3 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Related Fortnite tools
+              Related tools
             </h2>
             <p className="text-sm leading-relaxed text-muted-foreground max-w-3xl">
               Check{' '}
               <Link href="/tools/item-shop" className="text-primary hover:underline">
                 today&apos;s Item Shop
               </Link>
-              , estimate pack cost with the{' '}
+              , dig into vault leaders on{' '}
+              <Link href="/cosmetic-stats" className="text-primary hover:underline">
+                cosmetic stats
+              </Link>
+              , or estimate pack cost with the{' '}
               <Link href="/tools/vbucks-calculator" className="text-primary hover:underline">
                 V-Bucks calculator
-              </Link>
-              , or browse more free utilities on the{' '}
-              <Link href="/tools" className="text-primary hover:underline">
-                tools hub
               </Link>
               .
             </p>

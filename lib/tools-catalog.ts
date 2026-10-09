@@ -62,11 +62,19 @@ export const TOOLS: ToolEntry[] = [
     category: 'stats',
   },
   {
+    href: '/upload',
+    title: 'Community Uploads',
+    description:
+      'Player guides (YouTube/socials welcome), loadouts, XP maps, keybinds, FPS presets, drops, tips, and more — public UGC feed.',
+    tags: ['Community', 'UGC', 'Guides'],
+    category: 'season',
+  },
+  {
     href: '/tools/loadout-builder',
     title: 'Loadout Builder',
     description:
-      'Build a C7S4 hotbar with real item icons — shotgun, AR, SMG, heals, mobility — plus estimated STK/TTK. Gun numbers may still reflect late Runners until we rewrite the pool.',
-    tags: ['Loadout', 'Weapons', 'TTK'],
+      'Full Override inventory planner — hotbar, wood/stone/metal, ammo, heal stacks, use-case presets, kit scorecard, and STK/TTK. Share one link with the lobby.',
+    tags: ['Loadout', 'Mats', 'TTK'],
     category: 'weapons',
   },
   {
@@ -87,9 +95,9 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     href: '/season',
-    title: 'Chapter 7 Season 4 Override Hub',
+    title: 'Override Season Hub',
     description:
-      'Live Override hub: new POIs, Match Overrides, ranked, and Battle Pass end date (November 1, 2026). Last reviewed 31 Aug 2026.',
+      'New POIs, Match Overrides, ranked notes, and Battle Pass timing through November 1.',
     tags: ['Season', 'Loot', 'Ranked'],
     category: 'season',
   },
@@ -113,7 +121,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/news',
     title: 'Fortnite News',
     description:
-      'Live Battle Royale lobby MOTDs with notes that point at the map, shop, weapons, and season countdown.',
+      'Live Battle Royale lobby headlines with FortniteTools takes that point at the map, shop, freebies, and season countdown.',
     tags: ['News', 'Lobby', 'Season'],
     category: 'season',
   },
@@ -169,7 +177,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/status',
     title: 'Is Fortnite Down?',
     description:
-      'Server status: Epic’s public board, lobby MOTDs, and the Override season countdown. No fake ping map. Queue is not downtime.',
+      'Live Online / Issues / Down read from Epic’s board, lobby downtime headlines, and the Override season countdown. No fake ping map.',
     tags: ['Status', 'Servers', 'Downtime'],
     category: 'season',
   },
@@ -278,26 +286,10 @@ export const TOOLS: ToolEntry[] = [
     category: 'cosmetics',
   },
   {
-    href: '/tools/kd-calculator',
-    title: 'K/D Calculator',
-    description:
-      'Calculate Kill/Death ratio, win rate, and kills per game with rough public-lobby comparison ranges.',
-    tags: ['Stats', 'K/D', 'Win Rate'],
-    category: 'stats',
-  },
-  {
-    href: '/tools/weapon-damage-calculator',
-    title: 'Weapon Damage Calculator',
-    description:
-      'Shots-to-kill, TTK, and DPS estimates for Chapter 7 Season 4 planning — sample may still include late Runners guns until the Override rewrite ships.',
-    tags: ['Weapons', 'Damage', 'TTK'],
-    category: 'weapons',
-  },
-  {
     href: '/xp-calculator',
     title: 'Fortnite XP Calculator',
     description:
-      'Daily XP to hit level 100 or 200, on-pace checkpoints, XP per level, and playtime rates for BR, Reload, LEGO, Festival, and Creative.',
+      'Daily XP pace, weekly quest planner, and playtime estimates so you know if you can finish the Override pass.',
     tags: ['XP', 'Levels', 'Battle Pass'],
     category: 'calculators',
   },
@@ -305,16 +297,8 @@ export const TOOLS: ToolEntry[] = [
     href: '/tools/vbucks-calculator',
     title: 'V-Bucks Calculator',
     description:
-      'Build a wishlist and estimate a low-cost V-Bucks pack combination using common USD storefront prices.',
+      'Build a wishlist and estimate a low-cost V-Bucks pack combo from common USD storefront prices.',
     tags: ['V-Bucks', 'Skins', 'Shop'],
-    category: 'calculators',
-  },
-  {
-    href: '/tools/battle-pass-xp-calculator',
-    title: 'Battle Pass XP Calculator',
-    description:
-      'Check if you can finish the Battle Pass before the season ends. Enter your level and weekly XP sources to project your final level.',
-    tags: ['XP', 'Battle Pass', 'Levels'],
     category: 'calculators',
   },
 ]

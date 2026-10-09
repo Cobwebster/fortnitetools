@@ -17,7 +17,7 @@ interface PostCardProps {
 function isCoverArt(src: string) {
   return (
     src.includes('/map-evolution/') ||
-    src.includes('hero-bg') ||
+    src.includes('/map-rotation/') ||
     src.endsWith('.webp')
   )
 }

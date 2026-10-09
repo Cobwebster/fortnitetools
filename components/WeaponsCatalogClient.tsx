@@ -638,7 +638,7 @@ export function WeaponsCatalogClient() {
             Compare two guns
           </a>
           {' · '}
-          <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
+          <Link href="/weapons" className="text-primary hover:underline">
             Damage calculator
           </Link>
           {' · '}

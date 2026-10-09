@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { CommunitySubmitCta } from '@/components/community-submit-cta'
 import { KeybindsView } from '@/components/keybinds-view'
 import { createMetadata } from '@/lib/seo'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
@@ -32,6 +33,13 @@ export default function KeybindsPage() {
     <>
       <Navbar />
       <KeybindsView />
+      <div className="mx-auto max-w-5xl px-4 pb-12 sm:px-6">
+        <CommunitySubmitCta
+          href="/upload/keybinds"
+          title="Share your keybind layout"
+          body="Post wall / floor / stair / cone / edit binds to the community feed so other players can copy what works for you."
+        />
+      </div>
       <Footer />
     </>
   )

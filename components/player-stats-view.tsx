@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense } from 'react'
+import { Suspense, useMemo, useState } from 'react'
 import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { localizeHref, type AppLocale } from '@/i18n/config'
@@ -26,11 +26,66 @@ const FAQ_KEYS = [
 ] as const
 
 const RELATED = [
-  { href: '/tools/kd-calculator', labelKey: 'relatedKd' as const, icon: '/images/loadout/heavy_impact.png' },
+  { href: '/stats', labelKey: 'relatedKd' as const, icon: '/images/loadout/heavy_impact.png', enOnly: true },
   { href: '/tools/loadout-builder', labelKey: 'relatedLoadout' as const, icon: '/images/loadout/flex_smg.png', enOnly: true },
   { href: '/fortnite-map', labelKey: 'relatedMap' as const, icon: '/images/loadout/pulse_scanner.png' },
   { href: '/tools', labelKey: 'relatedAll' as const, icon: '/images/loadout/mat_wood.png' },
 ] as const
+
+function ManualKdWidget() {
+  const [kills, setKills] = useState('')
+  const [deaths, setDeaths] = useState('')
+  const kd = useMemo(() => {
+    const k = parseFloat(kills)
+    const d = parseFloat(deaths)
+    if (!Number.isFinite(k) || !Number.isFinite(d) || d <= 0) return null
+    return (k / d).toFixed(2)
+  }, [kills, deaths])
+
+  return (
+    <section className="mt-10 rounded-xl border border-border bg-card p-5">
+      <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
+        Manual K/D
+      </h2>
+      <p className="mt-1.5 text-sm text-muted-foreground">
+        Stats private or tracker stuck? Plug kills and deaths here. For live season numbers, search a
+        name above.
+      </p>
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <label className="block">
+          <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            Kills
+          </span>
+          <input
+            type="number"
+            min={0}
+            value={kills}
+            onChange={(e) => setKills(e.target.value)}
+            className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm tabular-nums text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
+          />
+        </label>
+        <label className="block">
+          <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            Deaths
+          </span>
+          <input
+            type="number"
+            min={0}
+            value={deaths}
+            onChange={(e) => setDeaths(e.target.value)}
+            className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm tabular-nums text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
+          />
+        </label>
+        <div className="flex flex-col justify-end rounded-lg border border-border bg-background px-3 py-2.5">
+          <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">K/D</span>
+          <span className="mt-0.5 font-display text-2xl font-bold tabular-nums text-primary">
+            {kd ?? '—'}
+          </span>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export function PlayerStatsView({
   initialName = '',
@@ -96,6 +151,8 @@ export function PlayerStatsView({
             configured={configured}
           />
         </Suspense>
+
+        <ManualKdWidget />
 
         <section className="mt-14">
           <div className="mb-3 flex items-center gap-3">

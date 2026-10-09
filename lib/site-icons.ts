@@ -30,6 +30,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/player-count': '/images/loadout/business_turret.png',
   '/tools/item-shop': '/images/loadout/golden_apple.png',
   '/cosmetic-stats': '/images/loadout/guzzle_juice.png',
+  '/upload': '/images/loadout/overdrive_grenade.png',
   '/tools/loadout-builder': '/images/loadout/flex_smg.png',
   '/tools/fortnite-build-simulator': '/images/loadout/mat_stone.png',
   '/tools/sensitivity-calculator': '/images/loadout/hunting_rifle.png',

@@ -30,11 +30,8 @@ export const localeHtmlLang: Record<AppLocale, string> = {
 /** Nested tool pages under /tools/* that have locale twins. */
 export const localizedToolSlugs = [
   'sensitivity-calculator',
-  'kd-calculator',
   'zone-timer',
   'vbucks-calculator',
-  'battle-pass-xp-calculator',
-  'weapon-damage-calculator',
   'fps-settings',
   'keybinds',
   'player-stats',

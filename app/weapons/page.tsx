@@ -44,36 +44,24 @@ export default function WeaponsPage() {
               All Fortnite <span className="text-primary">Weapons</span>
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Chapter 7 Season 4 (Override) loot pool with rarity tables — DPS, body damage, structure
-              damage, fire rate, mag size, and reload. New: 8-Bit Shotgun, Mega Buster, Midas’
-              Masterpiece. Unvaults include Pump, Assault Rifle, Drum Gun, and more. Compare any two
-              guns; toggle vaulted history for older loot. Some returns (Minigun, Oni, Duals) often
-              need Loot Hack.
+              Override loot pool with rarity tables — DPS, body damage, structure damage, fire rate,
+              mag size, reload. Launch highlights: 8-Bit Shotgun, Mega Buster, Midas’ Masterpiece,
+              plus Pump (post–v42.10 buff). Drum Gun left in Fortnitemares. Compare any two guns; toggle vaulted history when
+              you want older loot. Some returns still need Loot Hack.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{liveCount}</strong> current ·{' '}
               <strong className="text-foreground">{vaultedCount}</strong> vaulted ·{' '}
               <Link href="/weapon-changes" className="text-primary hover:underline">
-                Override buffs / nerfs
-              </Link>
-              {' · '}
-              <Link
-                href="/guides/weapons/fortnite-best-weapons-tier-list-2026"
-                className="text-primary hover:underline"
-              >
-                Runners tier list (archive)
-              </Link>
-              {' · '}
-              <Link href="/weapon-changes" className="text-primary hover:underline">
-                Weapon changes
-              </Link>
-              {' · '}
-              <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
-                Damage calculator
+                Buffs / nerfs
               </Link>
               {' · '}
               <Link href="/tools/loadout-builder" className="text-primary hover:underline">
                 Loadout builder
+              </Link>
+              {' · '}
+              <Link href="/season" className="text-primary hover:underline">
+                Season hub
               </Link>
             </p>
           </div>

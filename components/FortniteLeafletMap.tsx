@@ -15,7 +15,6 @@ import 'leaflet/dist/leaflet.css'
 import {
   MAP_HALF,
   contestLabels,
-  extractTrafficColor,
   extractTrafficLabels,
   getEnrichment,
   lootLabel,
@@ -27,7 +26,10 @@ import {
 } from '@/lib/map-data'
 import type { SpawnLayerId } from '@/lib/map-layers'
 import {
-  SPAWN_LAYER_COLOR,
+  MAP_EXTRACT_ICON,
+  MAP_LANDMARK_ICON,
+  POI_CONTEST_ICON,
+  SPAWN_LAYER_ICON,
   resolveSpawnPoints,
   type ResolvedSpawnPoint,
 } from '@/lib/map-spawns'
@@ -64,105 +66,97 @@ const contestColor: Record<ContestLevel, string> = {
   edge: '#7aa2ff',
 }
 
-function makePoiIcon(color: string, active: boolean, label?: string) {
-  const size = active ? 16 : 12
-  const safeLabel = label
-    ? label
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-    : ''
+function escapeMarkerText(label: string) {
+  return label
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
 
-  const labelHtml = safeLabel
+function makeFortniteMarkerIcon(opts: {
+  src: string
+  active: boolean
+  size?: number
+  label?: string
+  ring?: string
+  goldRing?: boolean
+}) {
+  const base = opts.size ?? 28
+  const size = opts.active ? base + 6 : base
+  const img = Math.max(14, size - 8)
+  const ring = opts.active ? '#ffffff' : opts.ring ?? 'rgba(255,255,255,.35)'
+  const shadow = opts.goldRing
+    ? `box-shadow:0 0 0 2px #fbbf24, 0 2px 8px rgba(0,0,0,.55);`
+    : opts.active
+      ? `box-shadow:0 0 0 2px ${ring}, 0 2px 10px rgba(0,0,0,.55);`
+      : `box-shadow:0 2px 8px rgba(0,0,0,.5);`
+
+  const labelHtml = opts.label
     ? `<span style="
-        position:absolute;left:50%;bottom:100%;transform:translate(-50%,-4px);
+        position:absolute;left:50%;bottom:100%;transform:translate(-50%,-5px);
         white-space:nowrap;pointer-events:none;
-        font:700 11px/1.1 system-ui,sans-serif;letter-spacing:0.02em;
-        color:${active ? '#ffffff' : '#f4f8ff'};
+        font:700 11px/1.1 Barlow Condensed,Barlow,system-ui,sans-serif;letter-spacing:0.03em;
+        text-transform:uppercase;
+        color:#ffffff;
         text-shadow:
           0 0 4px rgba(0,0,0,.95),
           0 1px 2px rgba(0,0,0,.9),
           1px 0 2px rgba(0,0,0,.9),
-          -1px 0 2px rgba(0,0,0,.9),
-          0 -1px 2px rgba(0,0,0,.9);
-      ">${safeLabel}</span>`
+          -1px 0 2px rgba(0,0,0,.9);
+      ">${escapeMarkerText(opts.label)}</span>`
     : ''
 
   return L.divIcon({
     className: 'fn-poi-marker',
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
-    popupAnchor: [0, -size / 2 - (label ? 14 : 0)],
+    popupAnchor: [0, -size / 2 - (opts.label ? 14 : 0)],
     html: `<span style="position:relative;display:block;width:${size}px;height:${size}px;">
       ${labelHtml}
       <span style="
-        display:block;width:${size}px;height:${size}px;border-radius:999px;
-        background:${color};border:2px solid ${active ? '#fff' : 'rgba(0,0,0,.55)'};
-        box-shadow:0 0 0 1px rgba(0,0,0,.25);
-      "></span>
+        display:flex;align-items:center;justify-content:center;
+        width:${size}px;height:${size}px;border-radius:8px;
+        background:linear-gradient(180deg,rgba(12,18,32,.92),rgba(6,10,20,.96));
+        border:2px solid ${ring};
+        ${shadow}
+      ">
+        <img src="${opts.src}" alt="" width="${img}" height="${img}" draggable="false"
+          style="width:${img}px;height:${img}px;object-fit:contain;pointer-events:none;" />
+      </span>
     </span>`,
   })
 }
 
-function makeExtractIcon(color: string, active: boolean, label?: string) {
-  const size = active ? 18 : 14
-  const safeLabel = label
-    ? label
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-    : ''
-
-  const labelHtml = safeLabel
-    ? `<span style="
-        position:absolute;left:50%;bottom:100%;transform:translate(-50%,-6px);
-        white-space:nowrap;pointer-events:none;
-        font:700 10px/1.1 system-ui,sans-serif;letter-spacing:0.02em;
-        color:${active ? '#ffffff' : '#fff7ed'};
-        text-shadow:
-          0 0 4px rgba(0,0,0,.95),
-          0 1px 2px rgba(0,0,0,.9);
-      ">${safeLabel}</span>`
-    : ''
-
-  return L.divIcon({
-    className: 'fn-poi-marker',
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
-    popupAnchor: [0, -size / 2 - (label ? 14 : 0)],
-    html: `<span style="position:relative;display:block;width:${size}px;height:${size}px;">
-      ${labelHtml}
-      <span style="
-        display:block;width:${size}px;height:${size}px;
-        transform:rotate(45deg);
-        background:${color};
-        border:2px solid ${active ? '#fff' : 'rgba(0,0,0,.5)'};
-        box-shadow:0 0 10px ${color}88, 0 0 0 1px rgba(0,0,0,.2);
-      "></span>
-    </span>`,
+function makePoiIcon(contest: ContestLevel | null, active: boolean, label?: string) {
+  const src = contest ? POI_CONTEST_ICON[contest] : MAP_LANDMARK_ICON
+  const ring = contest ? contestColor[contest] : 'rgba(201,215,232,.55)'
+  return makeFortniteMarkerIcon({
+    src,
+    active,
+    size: contest ? 30 : 24,
+    label,
+    ring,
   })
 }
 
-function makeSpawnIcon(color: string, active: boolean, diamond = false, goldRing = false) {
-  const size = active ? 14 : 10
-  const shape = diamond
-    ? `transform:rotate(45deg);border-radius:1px;`
-    : `border-radius:2px;`
-  const ring = goldRing
-    ? `box-shadow:0 0 0 2px #fbbf24, 0 0 0 1px rgba(0,0,0,.35);`
-    : `box-shadow:0 0 0 1px rgba(0,0,0,.35);`
-  return L.divIcon({
-    className: 'fn-poi-marker',
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
-    popupAnchor: [0, -size / 2],
-    html: `<span style="
-      display:block;width:${size}px;height:${size}px;
-      background:${color};border:1.5px solid ${active ? '#fff' : 'rgba(0,0,0,.45)'};
-      ${shape}${ring}
-    "></span>`,
+function makeExtractIcon(active: boolean, label?: string) {
+  return makeFortniteMarkerIcon({
+    src: MAP_EXTRACT_ICON,
+    active,
+    size: 30,
+    label,
+    ring: '#fbbf24',
+  })
+}
+
+function makeSpawnIcon(layer: SpawnLayerId, active: boolean, goldRing = false) {
+  return makeFortniteMarkerIcon({
+    src: SPAWN_LAYER_ICON[layer],
+    active,
+    size: 26,
+    goldRing,
+    ring: 'rgba(255,255,255,.3)',
   })
 }
 
@@ -414,7 +408,6 @@ export function FortniteLeafletMap({
               <Recenter latlng={isLive ? flyTo : null} />
               {isLive && filteredPois.map((poi) => {
                 const en = poi.enrichment
-                const color = en ? contestColor[en.contest] : '#c9d7e8'
                 const active = selection?.kind === 'poi' && poi.id === selection.id
                 const latlng = worldToLatLng(poi.location.x, poi.location.y)
                 const showLabel = poi.isNamed || filteredPois.length <= 20
@@ -422,7 +415,7 @@ export function FortniteLeafletMap({
                   <Marker
                     key={poi.id}
                     position={latlng}
-                    icon={makePoiIcon(color, active, showLabel ? poi.name : undefined)}
+                    icon={makePoiIcon(en?.contest ?? null, active, showLabel ? poi.name : undefined)}
                     zIndexOffset={active ? 1000 : poi.isNamed ? 200 : 0}
                     eventHandlers={{
                       click: () => selectPoi(poi),
@@ -440,14 +433,13 @@ export function FortniteLeafletMap({
                 )
               })}
               {filteredExtracts.map((site) => {
-                const color = extractTrafficColor[site.traffic]
                 const active = selection?.kind === 'extract' && site.id === selection.id
                 const latlng = worldToLatLng(site.location.x, site.location.y)
                 return (
                   <Marker
                     key={site.id}
                     position={latlng}
-                    icon={makeExtractIcon(color, active, site.name.replace(' Extract', ''))}
+                    icon={makeExtractIcon(active, site.name.replace(' Extract', ''))}
                     zIndexOffset={active ? 1100 : 400}
                     eventHandlers={{
                       click: () => selectExtract(site),
@@ -463,7 +455,6 @@ export function FortniteLeafletMap({
                 )
               })}
               {filteredSpawns.map((point) => {
-                const color = SPAWN_LAYER_COLOR[point.layer]
                 const active = selection?.kind === 'spawn' && point.id === selection.id
                 const latlng = worldToLatLng(point.location.x, point.location.y)
                 const label = point.label || spawnLayerLabel(point.layer)
@@ -471,7 +462,7 @@ export function FortniteLeafletMap({
                   <Marker
                     key={point.id}
                     position={latlng}
-                    icon={makeSpawnIcon(color, active, false, Boolean(point.guaranteed))}
+                    icon={makeSpawnIcon(point.layer, active, Boolean(point.guaranteed))}
                     zIndexOffset={active ? 1050 : point.guaranteed ? 350 : 150}
                     eventHandlers={{
                       click: () => selectSpawn(point),
@@ -492,17 +483,20 @@ export function FortniteLeafletMap({
 
           <div className="flex flex-wrap items-center gap-3 border-t border-border/60 px-3 py-2 text-[11px] text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full" style={{ background: contestColor.hot }} /> Hot POI
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={POI_CONTEST_ICON.hot} alt="" className="h-4 w-4 object-contain" /> Hot POI
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full" style={{ background: contestColor.balanced }} /> Balanced
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={POI_CONTEST_ICON.balanced} alt="" className="h-4 w-4 object-contain" /> Balanced
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <span
-                className="inline-block h-2 w-2 rotate-45"
-                style={{ background: extractTrafficColor.medium }}
-              />{' '}
-              Extract
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={POI_CONTEST_ICON.edge} alt="" className="h-4 w-4 object-contain" /> Edge
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={MAP_EXTRACT_ICON} alt="" className="h-4 w-4 object-contain" /> Extract
             </span>
             <span className="ml-auto">
               {isLive

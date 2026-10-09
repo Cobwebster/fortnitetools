@@ -51,6 +51,7 @@ export function Footer() {
     { href: '/map-evolution', label: t('mapEvolution') },
     { href: '/stats', label: t('statsLeaderboards') },
     { href: '/player-count', label: t('playerCount') },
+    { href: '/upload', label: t('upload') },
     { href: localizeHref(locale, '/tools/loadout-builder'), label: t('loadoutBuilder') },
     { href: localizeHref(locale, '/tools/fortnite-build-simulator'), label: t('buildSimulator') },
     { href: localizeHref(locale, '/tools/item-shop'), label: t('itemShop') },
@@ -134,18 +135,26 @@ export function Footer() {
                 <>
                   <li>
                     <Link
-                      href="/guides/weapons/fortnite-best-weapons-tier-list-2026"
+                      href="/weapons"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      {t('weaponsTier')}
+                      {t('allWeapons')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/season"
+                      href="/guides/season/fortnite-override-battle-pass-guide"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {t('season')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/guides/map/fortnite-green-hill-zone-drop-guide"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('bestLoot')}
                     </Link>
                   </li>
                   <li>
@@ -154,22 +163,6 @@ export function Footer() {
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {t('drops')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/guides/map/fortnite-loot-guide-best-spots"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {t('bestLoot')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/guides/map"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {t('mapGuides')}
                     </Link>
                   </li>
                 </>

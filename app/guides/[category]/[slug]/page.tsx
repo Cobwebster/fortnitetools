@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     type: 'article',
     publishedTime: post.date,
     tags: post.tags,
+    index: !post.noindex,
   })
 }
 

@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Is playtime XP the only way to level up?',
-    a: 'No. Weekly/daily quests, medals, and Punch Cards add a lot. Use the Battle Pass XP calculator for a weekly quest plan, and Creative map codes when you need to farm fast.',
+    a: 'No. Open the Weekly planner tab for quest / mode estimates, then hit Creative map codes when you need a fast fill before the daily Creative cap.',
   },
 ]
 
@@ -55,9 +55,8 @@ export default function XpCalculatorPage() {
               Fortnite <span className="text-primary">XP Calculator</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Plan daily XP for {CURRENT_SEASON.label} ({CURRENT_SEASON.codename}). See how much XP
-              you need per day for level 100 or 200, stay on pace, and compare playtime rates across
-              modes.
+              How much XP do you need per day to finish the Override pass? Daily pace, a weekly
+              quest planner, and playtime estimates — all tied to the live season countdown.
             </p>
           </div>
         </section>
@@ -70,26 +69,22 @@ export default function XpCalculatorPage() {
               Level up before the season ends
             </h2>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Pair this calculator with the{' '}
+              Check days left on the{' '}
               <Link href="/season-countdown" className="text-primary hover:underline">
                 season countdown
               </Link>
-              ,{' '}
-              <Link href="/tools/battle-pass-xp-calculator" className="text-primary hover:underline">
-                Battle Pass weekly XP planner
-              </Link>
-              , and{' '}
+              , farm Creative on{' '}
               <Link href="/codes" className="text-primary hover:underline">
-                Creative XP map codes
+                map codes
               </Link>
-              . Pass reward context:{' '}
+              , and read the{' '}
               <Link
-                href="/guides/season/fortnite-season-battle-pass-guide"
+                href="/guides/season/fortnite-override-battle-pass-guide"
                 className="text-primary hover:underline"
               >
-                Runners Battle Pass guide
-              </Link>
-              .
+                Override Battle Pass guide
+              </Link>{' '}
+              if you are deciding whether to buy the pass.
             </p>
           </section>
 

@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { CommunitySubmitCta } from '@/components/community-submit-cta'
 import { CreativeCodesClient } from '@/components/CreativeCodesClient'
 import { CREATIVE_MAPS, genreLabel, uniqueMapsByCode, type CreativeMapLive, type CreativeGenre } from '@/lib/creative-codes'
 import {
@@ -63,7 +64,7 @@ export default async function CodesPage() {
             </nav>
 
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · Reviewed {CREATIVE_CODES_REVIEWED}
+              {CURRENT_SEASON.codename} · updated {CREATIVE_CODES_REVIEWED}
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Map Codes</span>
@@ -139,6 +140,19 @@ export default async function CodesPage() {
           </section>
 
           <CreativeCodesClient maps={maps} initialGenre="xp" />
+
+          <div className="mt-10 space-y-4">
+            <CommunitySubmitCta
+              href="/upload/xp_map"
+              title="Submit an XP map code"
+              body="Found a Creative island that still awards Override XP? Post the code — players browse submissions on /upload."
+            />
+            <CommunitySubmitCta
+              href="/upload/map_code"
+              title="Submit a practice / 1v1 / Zone Wars code"
+              body="Warmup and piece-control maps welcome. Island name + notes help the feed stay useful."
+            />
+          </div>
 
           <section className="space-y-3 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

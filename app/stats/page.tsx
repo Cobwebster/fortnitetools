@@ -48,18 +48,18 @@ export default async function StatsPage() {
             </nav>
 
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · Tracked boards + popularity
+              Updated {STATS_HUB_REVIEWED} · our poll + Epic CCU
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Player Stats</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Season wins, kills, Battle Pass level, and time among Epic accounts we poll via
-              Fortnite-API — plus mode and Creative popularity by peak CCU. Look up any name on the
-              player stats tracker. Not a scraped third-party ladder.
+              Wins, kills, Battle Pass level, and time among accounts we poll ourselves — plus which
+              modes and Creative maps are actually busy. Look up any name on the tracker. No scraped
+              third-party ladders.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
-              Reviewed {STATS_HUB_REVIEWED}
+              <span className="text-foreground">{STATS_HUB_REVIEWED}</span>
               {' · '}
               <Link href="/tools/player-stats" className="text-primary hover:underline">
                 Player stats

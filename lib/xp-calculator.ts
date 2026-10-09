@@ -1,10 +1,24 @@
 import { getSeasonCountdown } from '@/lib/season'
 
-/** Flat XP cost per Battle Pass level (Chapter 7 Season 3). */
+/** Flat XP cost per Battle Pass level (Override model). */
 export const XP_PER_LEVEL = 80_000
 
 /** Super styles / bonus track commonly run to 200. */
 export const XP_LEVEL_CAP = 200
+
+/** Weekly XP source estimates for the Battle Pass planner tab. */
+export const WEEKLY_XP_SOURCES = [
+  { id: 'quests_weekly', label: 'Weekly quests (5 done)', xp: 150_000, default: true },
+  { id: 'quests_daily', label: 'Daily quests (full week)', xp: 350_000, default: true },
+  { id: 'matches_played', label: 'Regular matches (~14/week)', xp: 140_000, default: true },
+  { id: 'medals', label: 'Match medals & placement', xp: 80_000, default: false },
+  { id: 'punch_cards', label: 'Punch card milestones', xp: 100_000, default: false },
+  { id: 'crew', label: 'Crew bonus XP', xp: 50_000, default: false },
+  { id: 'reload', label: 'Reload matches (~14/week)', xp: 120_000, default: false },
+  { id: 'lego', label: 'LEGO Fortnite (~2 hrs/day)', xp: 196_000, default: false },
+  { id: 'rocket', label: 'Rocket Racing (~10 races)', xp: 60_000, default: false },
+  { id: 'festival', label: 'Festival concerts / events', xp: 40_000, default: false },
+] as const
 
 export type PlaytimeMode = {
   id: string

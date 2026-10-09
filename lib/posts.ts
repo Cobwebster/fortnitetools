@@ -10,6 +10,8 @@ export interface Post {
   date: string
   readTime: number
   featured?: boolean
+  /** Runners / historical guides — keep online, keep out of the index. */
+  noindex?: boolean
   tags: string[]
   content: string
 }
@@ -19,25 +21,25 @@ export const categories: { id: Category; label: string; description: string }[] 
     id: 'how-to',
     label: 'How-To',
     description:
-      'Account and settings walkthroughs with the in-game labels Epic actually uses — Admin Panel codes, refunds, creator codes, and the mistakes that waste V-Bucks.',
+      'Admin Panel codes, refunds, 2FA, creator codes — the account steps that actually matter in-game.',
   },
   {
     id: 'weapons',
     label: 'Weapons',
     description:
-      'Chapter 7 Season 4 (Override) loot notes and older Runners archives marked with honesty dates. Pair with the loadout builder when you want a hotbar, not a list.',
+      'Override loot notes plus older Runners tier lists labeled by season. Build a hotbar in the loadout tool when you are picking fights.',
   },
   {
     id: 'season',
     label: 'Season',
     description:
-      'Override Battle Pass XP, Match Overrides, ranked climb habits, and free reward windows — with dates so you can tell when a quest line or end date moved.',
+      'Battle Pass timing, Match Overrides, ranked climb habits, and free reward windows for Override.',
   },
   {
     id: 'map',
     label: 'Map',
     description:
-      'Override drop guides for Green Hill Zone and returning POIs. Use the live map for Reality’s Reign and Stone Sanctum until those landings get dedicated pages.',
+      'Green Hill Zone and returning POI drop notes. Reality’s Reign and Stone Sanctum live on the interactive map until they get their own pages.',
   },
 ]
 
@@ -55,7 +57,7 @@ export const posts: Post[] = [
     excerpt:
       'How to open the Override Admin Panel, redeem Lobby Hack codes for XP / Sprite Dust / Sprites, and avoid V-Bucks scam sites. Reviewed 21 Sep 2026.',
     category: 'how-to',
-    image: '/images/icons/battle_pass.png',
+    image: '/images/map-rotation/venture.webp',
     date: '2026-09-21',
     readTime: 7,
     featured: true,
@@ -139,7 +141,7 @@ Epic patch notes, the official Fortnite blog / social posts, and in-game MOTDs. 
     excerpt:
       'Override Battle Pass end date (1 Nov 2026), free vs paid track, Sonic / Gaming Legends notes, and a realistic XP plan with the live calculator.',
     category: 'season',
-    image: '/images/icons/battle_pass.png',
+    image: '/images/map-evolution/39-51.webp',
     date: '2026-09-21',
     readTime: 9,
     featured: true,
@@ -282,11 +284,11 @@ Not shipped yet — use the live map until we write it. Same for Stone Sanctum.
     slug: 'fortnite-match-overrides-explained',
     title: 'Fortnite Match Overrides Explained (Chapter 7 Season 4)',
     excerpt:
-      'What Match Override Consoles do mid-match, how they differ from Admin Panel Lobby Hacks, and how to play around speed / loot / heal flips in Override.',
+      'How Override Consoles work mid-match: claim race, server-wide vs squad buffs, map pings, and how to play when Sonic Speed or Loot Hack flips the lobby.',
     category: 'season',
-    image: '/images/icons/xp.png',
-    date: '2026-09-21',
-    readTime: 6,
+    image: '/images/map-evolution/34-40.webp',
+    date: '2026-10-09',
+    readTime: 10,
     featured: false,
     tags: [
       'match overrides',
@@ -294,49 +296,114 @@ Not shipped yet — use the live map until we write it. Same for Stone Sanctum.
       'match override console',
       'chapter 7 season 4',
       'loot hack',
+      'sonic speed',
+      'fortnitemares',
     ],
     content: `
-## Match Overrides vs Lobby Hacks (do not confuse them)
+## Match Overrides vs Lobby Hacks (do not mix these up)
 
-| Feature | Where | What it does |
+Two different “Override” toys. Same season name. Totally different boxes.
+
+| | Admin Panel / Lobby Hack | Match Override Console |
 | --- | --- | --- |
-| **Admin Panel / Lobby Hack codes** | BR lobby UI | Redeem Epic codes for XP, Sprites, dust — [how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes) |
-| **Match Override Consoles** | In-match on the island | Rewrite **match rules** mid-game (speed, loot feel, healing, etc.) |
+| **Where** | Battle Royale lobby UI (Ranked off) | On the island mid-match |
+| **What** | Type a code → XP, Sprite Dust, Sprites, loading screens | First squad to a live console picks a **ruleset flip** |
+| **Lasts** | Account reward (once per code) | Until that match ends |
+| **Guide** | [Admin Panel how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes) | This page |
 
-Last reviewed: **21 September 2026**. Season hub: [/season](/season).
+Last reviewed: **9 October 2026** (Fortnitemares wave still adding cartridges). Season context: [Override hub](/season).
 
-## What a Match Override feels like
+## How a console actually works
 
-Override’s fantasy is that the match can **flip rules** after someone hits a console / Override event. Practical player impact:
+Consoles look like **retro game-cartridge slots** parked at fixed spots around the Override island. There are **nine** of those slots every match. They are not all live at once.
 
-- Fights you planned around classic BR pacing suddenly play faster or slower.
-- Loot / heal availability can feel different after the flip — your hotbar priority may change.
-- Ranked lobbies use the same island fantasy; check the playlist tile so you are not surprised.
+1. Early storm phases, **one** console powers up at a time (more can wake later — count varies).
+2. A **cartridge icon** pops on the map / HUD when it is claimable. Book it.
+3. First player to use the terminal gets a pick of **three random Match Overrides**. The other two vanish for that claim.
+4. Your name can sit on the console base so the lobby knows who flipped the switch. Effects stick **until the end of that match**.
+5. Green check on the icon means someone already claimed it — stop sprinting into a third-party for nothing.
 
-This is **not** the same as finding a mythic or a Loot Hack item on the floor. Mythics and unvault guns still matter — see [/weapons](/weapons) — but the *ruleset* can move under you.
+NPC trash near the pads is usually free mats / a distraction, not the real fight. The real fight is every squad that marked the cartridge the same second you did.
 
-## How to play around them
+## Server-wide vs squad-only (the trap)
 
-1. **Audio / UI** — When the lobby announces an Override, stop tunneling a 50/50 and re-read the modifier.
-2. **Inventory** — If healing is buffed or nerfed, re-value slurps vs shields before you take a bad peek.
-3. **Rotates** — Speed Overrides punish late walks across open flats (Green Hill slopes included).
-4. **Ranked** — Placement still beats spawn-island K/D. Do not int for console chaos if you are on a climb game. [Ranked hub](/ranked) · [climb guide](/guides/how-to/fortnite-ranked-mode-guide).
+Some Overrides rewrite the **whole lobby** (Big Fish turning fishing holes gold, Dynamic Storm speeding the circle when the player count drops, Big Head Mode being Big Head Mode). Others are **squad-only** — Rare / Mythic “Squad …” variants that only buff the claimers.
 
-## Related Override systems
+Squad-only usually means you get marked as **Hackers** on the map for the rest of the match. That is the trade: Sonic Speed for your four, but every third party can see the approximate ping. If you claim Extra Life / Squad Endless Shooter with no mats and no exit, you just painted a target on a bad POI.
 
-- **Loot Hack** items — floor / event loot that changes what guns you see; confirm after hotfixes on [/weapon-changes](/weapon-changes).
-- **Admin Panel** — out-of-match freebies only.
-- **New POIs** — Green Hill / Reality’s Reign / Stone Sanctum change *where* fights happen; Overrides change *how* they play. Drop notes: [Green Hill guide](/guides/map/fortnite-green-hill-zone-drop-guide).
+**Squad Level Up** is the odd one that hands a Mythic Kingdom Key **without** exposing you the same way — still read the in-game card before you mash confirm.
+
+## What the common Overrides actually change
+
+Epic enables, disables, and Fortnitemares-skins these constantly. Treat this as a **playbook**, not a wiki dump of every cartridge that ever shipped. Confirm the three options on the terminal in your match.
+
+### Mobility / tempo
+- **Sonic Speed / Squad Sonic Speed** — sprint ramps. Late walks across Green Hill flats become deaths. Hold high ground or leave early.
+- **Infinite Stamina** — same idea, less flashy. Edge rotates suddenly exist.
+- **Spooky Sprinter** (Fortnitemares) — cloak while sprinting. Expect quieter flanks and worse audio reads.
+- **Action Hero** — hangtime + mid-air damage. Vertical peeks get scarier.
+
+### Loot / economy
+- **Big Loot** — chests lean Epic / Legendary. Contested POIs get even meaner after the flip.
+- **Loot Hack** — next chest spits a Loot Hack item. That is **not** the same as a floor mythic; it changes what you see in the loot table. Cross-check hotfixes on [weapon changes](/weapon-changes) and the [weapons list](/weapons).
+- **Big Fish** — every fishing hole goes gold. Mid-game “I will fish edge” suddenly prints loot for the whole server.
+- **More XP** — elim / loot / storm survival XP bump. Nice for Battle Pass nights; irrelevant to the gunfight itself. Pass plan: [Override BP guide](/guides/season/fortnite-override-battle-pass-guide).
+
+### Combat / survival
+- **Overshield / Healing Overdrive / Recovery** — shield and heal values move. Re-sort slurps vs bigs before you peek.
+- **Health Siphon / Berserk / More Health** — siphon and low-HP ramps change when you commit. More Health literally deletes normal shield logic — stop hoarding minis the same way.
+- **Sharpshooter / Endless Shooter / Super Shot / Pumpkin Launching** — bloom, mag size, or “sometimes your AR also fires a rocket / pumpkin.” Box fights and spray ranges stop feeling like classic BR.
+- **Extra Life / Squad Extra Life** — one brink-of-elim respawn. Do not play like you have two lives in a 1v3; the second life is for the rotate you already planned.
+- **Hunter Scavenger** — damaged / elim’d players get marked. Third-partying becomes the meta, not a surprise.
+
+### Chaos / seasonal
+- **Dynamic Storm** — fewer players → faster storm. Placement games punish greed harder.
+- **Big Boom** — long falls = no fall damage + landing boom. Height is a weapon again.
+- **Prop Hunt / Spooky Prop Hunt / Sugar Rush / Big Head Mode** — lobby goof modes. Still count as real rulesets for damage and vision; do not AFK because it looks silly.
+
+## Should you race the cartridge?
+
+**Yes, if…**
+- You are already kitted and the console is on your rotate (Wonkeeland → center, Latte side pulls, etc.).
+- The three options include a **server-wide** that helps everyone (or hurts the lobby in a way you like) and you can leave immediately after claim.
+- Pubs / XP night and More XP / Big Loot is free value.
+
+**No / bait, if…**
+- You are naked after a hot drop — [Green Hill](/guides/map/fortnite-green-hill-zone-drop-guide) fights first, console second.
+- Ranked climb game and the only good pick is a **squad-only** that pings you for the rest of the match. Placement pays LP; map graffiti does not. [Ranked hub](/ranked) · [climb guide](/guides/how-to/fortnite-ranked-mode-guide).
+- You hear the claim VO and you are still 20 seconds out — turn mid-rotate and assume the winner is already marked.
+
+## How to play *after* someone else claims
+
+1. **Read the broadcast.** Stop tunneling a 50/50. The name of the Override is the new law.
+2. **Re-value your hotbar.** Siphon / More Health / Overshield change what heals you keep. Speed Shooter / Endless Shooter change which AR you trust. Use the [loadout builder](/tools/loadout-builder) between games; in-match just swap slots.
+3. **Assume third parties.** Squad-only marks are public grief invitations. If you are the marked squad, leave the console pad — do not emote on it.
+4. **Storm math.** Dynamic Storm and Sonic Speed both punish “one more chest.” Look at the [map](/fortnite-map) before you greed.
+5. **Competitive playlists.** Tournament / competitive BR rules often **strip** Match Overrides. Pubs and many Ranked lobbies still have them — trust the playlist tile, not this paragraph, every queue.
+
+## Related Override clutter (so the vocab sticks)
+
+- **Loot Hack (item)** — can show up from the Loot Hack Override *or* as seasonal loot language. Still a loot-table thing, not a lobby code.
+- **Admin Panel** — lobby only. Never mid-match.
+- **POIs** — Green Hill / Reality’s Reign / Stone Sanctum change *where* you fight. Overrides change *how* the server plays once someone hits a cartridge. Drops hub: [/drops](/drops).
 
 ## FAQ
 
 ### Do Match Overrides give free V-Bucks?
 
-No. Neither Match Overrides nor Lobby Hack codes print V-Bucks.
+No. Neither Match Overrides nor Lobby Hack codes print V-Bucks. Freebies with end dates live on [free cosmetics](/free-cosmetics).
 
-### Are Overrides in Reload / Blitz?
+### Can every squad get an Override in one match?
 
-Playlist rules differ. Trust the tile for that mode — [Reload hub](/reload) when you queue there.
+No. One live console at a time, first claim wins that flip. More consoles can wake later, but you are not entitled to a personal cartridge every game.
+
+### Are Overrides in Reload / Blitz / Ranked?
+
+Core BR pubs are the home. Reload, Blitz, and Ranked follow their own playlist rules — and competitive BR often disables the mechanic entirely. Read the tile. [Reload hub](/reload) when you queue there.
+
+### Why did my favorite Override disappear?
+
+Epic toggles cartridges when they get too spicy (Extra Life, Speed Shooter, Power Pickaxe have all been in and out). Fortnitemares also injected seasonal ones. If it is not in your three options, it is disabled or unlucky RNG — not a client bug.
 `,
   },
   {
@@ -345,7 +412,7 @@ Playlist rules differ. Trust the tile for that mode — [Reload hub](/reload) wh
     excerpt:
       'Unlock the Null outfit and Skeletal Slingbag / Null’s Scythe styles (Champion Molten, Elite Neon, Unreal Rifted) on the Override Ranked ladder before 1 November 2026.',
     category: 'how-to',
-    image: '/images/map-evolution/35-20.webp',
+    image: '/images/map-evolution/37-50.webp',
     date: '2026-09-21',
     readTime: 7,
     featured: false,
@@ -410,10 +477,11 @@ No — Null is the **Ranked** reward fantasy this season. Pass cosmetics (Sonic,
     excerpt:
       'Archive: late Runners meta on Shattered Coast. Override loot numbers are not fully rewritten — confirm in-game; see the season hub.',
     category: 'weapons',
-    image: '/images/hero-bg.png',
+    image: '/images/loadout/striker_pump.png',
     date: '2026-07-25',
     readTime: 12,
-    featured: true,
+    featured: false,
+    noindex: true,
     tags: ['weapons', 'tier list', 'meta', 'chapter 7 season 3', 'runners', 'striker pump', 'flex smg'],
     content: `
 > **Archive note (31 Aug 2026):** This list is late **Runners (C7S3)**. **Override** is live — we have not rewritten full DPS sheets yet. Confirm guns in-game; see the [season hub](/season) and [loadout builder](/tools/loadout-builder).
@@ -499,6 +567,7 @@ Mythics from bosses sit above their base versions when available. Always prefer 
     date: '2026-07-25',
     readTime: 7,
     featured: false,
+    noindex: true,
     tags: ['shotgun', 'weapons', 'close range', 'chapter 7 season 3', 'loadout', 'striker pump'],
     content: `
 > **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
@@ -562,7 +631,8 @@ Was the early-season boxfight king (stowed auto-reload + huge body damage). **Re
     image: '/images/map-evolution/41-10.webp',
     date: '2026-07-15',
     readTime: 7,
-    featured: true,
+    featured: false,
+    noindex: true,
     tags: ['loot', 'map', 'drop locations', 'named locations', 'hot drops', 'chapter 7 season 3', 'shattered coast'],
     content: `
 > **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
@@ -631,6 +701,7 @@ POI power shifts with hotfixes. Treat in-game labels as truth, and use this page
     date: '2026-07-08',
     readTime: 12,
     featured: false,
+    noindex: true,
     tags: ['map', 'locations', 'rotation', 'POI', 'shattered coast', 'chapter 7 season 3'],
     content: `
 > **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
@@ -717,6 +788,7 @@ POI names and power spots shift with hotfixes and mid-season map updates. If Epi
     date: '2026-07-10',
     readTime: 10,
     featured: false,
+    noindex: true,
     tags: ['battle pass', 'season', 'XP', 'level up', 'runners', 'chapter 7 season 3', 'archive'],
     content: `
 > **Archive note (31 Aug 2026):** Runners ended at the August 20 reboot. **Override (Chapter 7 Season 4)** is live and ends **November 1, 2026**. Use the [season countdown](/season-countdown) and [Battle Pass XP calculator](/tools/battle-pass-xp-calculator) for the current pass. Skin levels below are historical.
@@ -1409,6 +1481,7 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
     date: '2026-07-26',
     readTime: 9,
     featured: false,
+    noindex: true,
     tags: [
       'how to extract sprites fortnite',
       'how to extract sprites chapter 7 season 3',
@@ -1562,6 +1635,7 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
     date: '2026-07-23',
     readTime: 10,
     featured: false,
+    noindex: true,
     tags: [
       'how to get cube sprites in fortnite',
       'fortnite cube sprites',
@@ -1722,6 +1796,7 @@ Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find
     date: '2026-08-01',
     readTime: 9,
     featured: false,
+    noindex: true,
     tags: [
       'ironmouse fortnite',
       'ironmouse sprite',
@@ -2053,6 +2128,7 @@ No. We are an independent fan site. We explain the public process and link offic
     date: '2026-08-01',
     readTime: 10,
     featured: false,
+    noindex: true,
     tags: [
       'best fortnite xp maps',
       'fortnite xp map codes',

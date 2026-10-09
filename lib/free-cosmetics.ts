@@ -34,10 +34,56 @@ export function cosmeticIconUrl(id: string) {
   return `https://fortnite-api.com/images/cosmetics/br/${id.toLowerCase()}/smallicon.png`
 }
 
-export const FREE_COSMETICS_REVIEWED = '21 Sep 2026'
+export const FREE_COSMETICS_REVIEWED = '9 Oct 2026'
 
 /** Free Fortnite cosmetics / rewards tracker — Override (C7S4). Update when Epic refreshes promos. */
 export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
+  {
+    id: 'fortnitemares-nitemare-quests',
+    title: 'Fortnitemares — Jack-a-Nape quests',
+    endsIso: '2026-10-31T23:59:00.000Z',
+    endsLabel: '31 October',
+    howTo:
+      'Complete 26 Nitemare quests across BR / Zero Build, Horde Rush, and Reload. Milestones unlock Wind-Up Key, Monkey Biz, Jack’s Tambourine, and the free Jack-a-Nape outfit at 26.',
+    details: [
+      'Progress carries across modes — mix BR, Horde Rush, and Nitemare Island Reload.',
+      'Waves drop through October (Oct 1 + Oct 8 batches live). Finish before 31 Oct.',
+      'Each quest also grants ~15k XP toward the Override Battle Pass.',
+    ],
+    href: '/season',
+    hrefLabel: 'Season hub',
+    category: 'quest',
+    rewards: [
+      { id: 'LoadingScreen_HiHat', name: 'The Clockwork Ape' },
+      { id: 'Backpack_HiHat', name: 'Wind-Up Key' },
+      { id: 'Emoticon_HiHat', name: 'Monkey Biz' },
+      { id: 'Pickaxe_HiHat', name: "Jack's Tambourine" },
+      { id: 'Emoticon_HiHat2', name: 'Tambourine Surprise' },
+      { id: 'Character_HiHat', name: 'Jack-a-Nape' },
+    ],
+  },
+  {
+    id: 'fortnitemares-jimothy',
+    title: 'Fortnitemares — Jimothy Sidekick',
+    endsIso: '2026-10-31T23:59:00.000Z',
+    endsLabel: '31 October',
+    howTo:
+      'Find a Dumpster Diver Sprite on the island and extract it (Extraction Sites or a Portable Extractor) to unlock the free Jimothy Sidekick.',
+    details: [
+      'Extraction Accelerators from Admin Panel codes make the pull safer.',
+    ],
+    category: 'quest',
+    rewards: [{ id: 'Companion_ScrapPaws', name: 'Jimothy' }],
+  },
+  {
+    id: 'fortnitemares-login-tapestry',
+    title: 'Fortnitemares — Prophetic Tapestry',
+    endsIso: '2026-10-31T23:59:00.000Z',
+    endsLabel: '31 October',
+    howTo: 'Log into Fortnite during Fortnitemares and claim the free Prophetic Tapestry loading screen.',
+    category: 'other',
+    rewards: [{ id: 'LoadingScreen_S42_Narrative3', name: 'Prophetic Tapestry' }],
+  },
   {
     id: 'twitch-ironmouse',
     title: 'Twitch Drop — ironmouse',
@@ -46,8 +92,8 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     howTo:
       'Link Epic ↔ Twitch, then watch ironmouse’s live Fortnite streams. 30 minutes = Chibi Ironmouse Spray; 60 minutes = Guitar Processing Unit (guitar + matching back bling + pickaxe). Claim in Twitch Drops inventory.',
     details: [
-      'Only ironmouse’s channel counts — other Fortnite streams do not.',
-      'Watch time stacks across sessions; claim each drop manually on Twitch.',
+      'Ended 30 September 2026. Kept here so completed marks stay honest.',
+      'Watch for the next Fortnite-category Twitch drop window — we will re-list when Epic posts one.',
     ],
     href: 'https://www.twitch.tv/ironmouse',
     hrefLabel: 'twitch.tv/ironmouse',
@@ -59,11 +105,11 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsIso: CURRENT_SEASON.endIso,
     endsLabel: '1 November',
     howTo:
-      'In the Override lobby (Ranked OFF), open the Admin Panel and enter Epic Lobby Hack codes for free XP, Sprite Dust, Sprites, Gizmos, and loading screens.',
+      'In the Override lobby (Ranked OFF), open the Admin Panel and enter Epic Lobby Hack codes for free XP, Sprite Dust, Sprites, Gizmos, loading screens, and Fortnitemares lobby effects.',
     details: [
-      'Codes work once per account. Sprite duplicates usually convert to Sprite Dust.',
+      'Oct 1 Fortnitemares drop included CrowsAreAfraid / PumpkinSpiceLife (lobby transforms), IThinkTheKeyFoundMeChat (Extraction Accelerator), plus quest-gated dust codes.',
+      'Codes work once per account (reusable lobby transforms are the exception). Sprite duplicates usually convert to Sprite Dust.',
       'Never V-Bucks — any “free V-Bucks code” site is a scam.',
-      'Epic adds codes through the season; redeem before Override ends.',
     ],
     href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes',
     hrefLabel: 'Admin Panel guide',

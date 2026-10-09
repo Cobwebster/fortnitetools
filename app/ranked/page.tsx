@@ -79,19 +79,18 @@ export default async function RankedPage() {
               </div>
               <div className="min-w-0 flex-1 text-center sm:text-left">
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-                  {CURRENT_SEASON.shortLabel} ladder · last reviewed {RANKED_REVIEWED}
+                  {CURRENT_SEASON.codename} ladder · updated {RANKED_REVIEWED}
                 </p>
                 <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
                   Fortnite <span className="text-primary">Ranked</span>
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                  League Points, Match Overrides, and which returning drops still make sense on
-                  Override (Chapter 7 Season 4). “Fortnite ranked reset” and “how ranked works” are
-                  not the same question as{' '}
+                  League Points, Match Overrides, and which returning drops still work for climb
+                  games. Reset questions live here — the full playlist dump is on{' '}
                   <Link href="/modes" className="text-primary hover:underline">
-                    every playlist in the files
+                    modes
                   </Link>
-                  . The long climb article is linked below — this page is the season sheet.
+                  . Long Bronze → Unreal habits are in the climb guide linked below.
                 </p>
                 <p className="mt-3 text-sm text-muted-foreground">
                   <Link href="/guides/how-to/fortnite-ranked-mode-guide" className="text-primary hover:underline">

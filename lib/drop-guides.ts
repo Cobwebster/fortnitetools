@@ -83,7 +83,7 @@ export const DROP_GUIDES: DropGuide[] = [
     loadoutNote:
       'Close-to-mid fights: Striker Pump or Extending Focus plus Surgical Burst or Warforged. Stinger if you win a stair. Heals before a second mythic. Build the hotbar in the loadout builder if you want STK numbers — grey Rapid Fire on the dock does not beat a roof Striker.',
     zb: 'Zero Build Heatwave is a cover game. Play containers, crane bases, and interior stairwells. Do not peek the waterline. Shockwaves / Sliders matter more than a third gun because you cannot box the extract ping.',
-    reviewed: '2026-08-17',
+    reviewed: '2026-10-09',
   },
   {
     slug: 'battlewoods',
@@ -132,7 +132,7 @@ export const DROP_GUIDES: DropGuide[] = [
     loadoutNote:
       'Shotgun range: Striker Pump with Surgical Burst or Warforged. Maven Auto if you win a close cabin. Shockwaves / Sliders for the leave — you will get sprayed from a ridge if you walk. Skip Lancehead as a primary here; the fights are too close.',
     zb: 'Zero Build woods is third-party hell. Play cabin interiors and ridge lips. Do not take a 30-second spray in the clearing. Mobility items are the ranked loadout, not a third AR.',
-    reviewed: '2026-08-17',
+    reviewed: '2026-10-09',
   },
   {
     slug: 'wonkeeland',
@@ -181,7 +181,7 @@ export const DROP_GUIDES: DropGuide[] = [
     loadoutNote:
       'You can afford to look for Extending Focus + an AR (Surgical Burst or Warforged). This is not a W-key spawn — pick the shotgun you actually hit with. Heals + one mobility before you start the flats rotate.',
     zb: 'The interior funnel is worse in Zero Build. Play sheds and roof angles. If two teams commit inside, leave — you cannot box the stair.',
-    reviewed: '2026-08-17',
+    reviewed: '2026-10-09',
   },
   {
     slug: 'latte-landing',
@@ -230,7 +230,7 @@ export const DROP_GUIDES: DropGuide[] = [
     loadoutNote:
       'Ranked default: Striker + Surgical Burst, heals, one mobility. Check the ranked guide if you are still W-keying every drop — placement still pays more LP than a cafe 20-bomb that dies 40th. Zone timer on the second monitor if you throw rotates.',
     zb: 'Cafe roof is worse in Zero Build. Play the side house and the road ditch. Do not stand on the roof for the screenshot.',
-    reviewed: '2026-08-17',
+    reviewed: '2026-10-09',
   },
   {
     slug: 'sunken-shores',
@@ -279,7 +279,7 @@ export const DROP_GUIDES: DropGuide[] = [
     loadoutNote:
       'You may not find a mythic. Grey-to-purple Striker + any AR is enough. Zone timer matters more than DPS. Prioritize Shockwaves / Sliders / a boat over a third gun. Open the zone timer when the first circle appears.',
     zb: 'Open sand is a sniper farm. Play station interior and rocks. Mobility is the entire loadout. Do not hold the waterline.',
-    reviewed: '2026-08-17',
+    reviewed: '2026-10-09',
   },
 ]
 
@@ -326,7 +326,7 @@ export const DROP_INDEX_FAQS = [
   {
     question: 'Are these drops still accurate in Override?',
     answer:
-      'They cover five returning POIs (last reviewed 17 Aug 2026 for paths). Traffic patterns changed with Override — Green Hill Zone, Reality’s Reign, and Stone Sanctum do not have dedicated pages yet. Use the live map for new names; treat these five as starting points, not gospel.',
+      'Five returning POIs with Override traffic notes (updated Oct 2026). Green Hill Zone, Reality’s Reign, and Stone Sanctum still use the live map / Green Hill guide until they get dedicated drop pages.',
   },
   {
     question: 'Which drop is best for ranked?',

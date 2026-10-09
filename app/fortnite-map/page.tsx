@@ -65,7 +65,7 @@ export default function FortniteMapPage() {
     applicationCategory: 'GameApplication',
     operatingSystem: 'Any',
     description:
-      'Interactive Fortnite Chapter 7 Season 3 map with live Shattered Coast minimap, POI markers, Extraction Sites for Sprites, loot ratings, and drop filters.',
+      'Interactive Fortnite Override map with live minimap, POI markers, spawn layers, loot ratings, and drop filters for Chapter 7 Season 4.',
     offers: {
       '@type': 'Offer',
       price: '0',

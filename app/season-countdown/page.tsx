@@ -167,7 +167,7 @@ export default function SeasonCountdownPage() {
                 Fortnite XP calculator
               </Link>
               ,{' '}
-              <Link href="/tools/battle-pass-xp-calculator" className="text-primary hover:underline">
+              <Link href="/xp-calculator" className="text-primary hover:underline">
                 Battle Pass XP calculator
               </Link>{' '}
               and farm Creative XP from our{' '}

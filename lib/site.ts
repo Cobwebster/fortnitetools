@@ -3,8 +3,8 @@ export const siteConfig = {
   domain: 'www.fortnitetools.com',
   url: 'https://www.fortnitetools.com',
   description:
-    'Free Fortnite tools and guides for Chapter 7 Season 4 (Override) — interactive map, player stats, Item Shop, build practice, weapons, and season strategy.',
-  ogImage: '/images/hero-bg.png',
+    'Override map, player stats, Item Shop, weapons, and season hubs for Fortnite — plus build practice and a few helpers when you need them.',
+  ogImage: '/images/map-evolution/40-40.webp',
   contactEmail: 'thederpywhale@hotmail.com',
 } as const
 

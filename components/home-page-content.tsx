@@ -32,6 +32,7 @@ const EN_POPULAR_TOOLS = [
   { href: '/tools/player-stats', key: 'toolStatsTracker' as const },
   { href: '/tools/loadout-builder', key: 'toolLoadout' as const },
   { href: '/tools/item-shop', key: 'toolItemShop' as const },
+  { href: '/tools/skin-rarity-calculator', key: 'toolSkinRarity' as const },
   { href: '/season', key: 'toolSeason' as const },
   { href: '/drops', key: 'toolDrops' as const },
   { href: '/news', key: 'toolNews' as const },
@@ -76,9 +77,7 @@ export function HomePageContent({
     : []
   const toolsHref = localizeHref(locale, '/tools')
   const guidesHref = localizeHref(locale, '/guides')
-  const secondaryCtaHref = isEnglish
-    ? '/guides/weapons/fortnite-best-weapons-tier-list-2026'
-    : guidesHref
+  const secondaryCtaHref = isEnglish ? '/weapons' : guidesHref
 
   const browseCategories = isEnglish
     ? categories
@@ -94,7 +93,7 @@ export function HomePageContent({
       >
         <div className="absolute inset-0">
           <Image
-            src="/images/hero-bg.png"
+            src="/images/map-evolution/40-40.webp"
             alt={t('heroAlt')}
             fill
             priority
@@ -129,7 +128,7 @@ export function HomePageContent({
                 href={secondaryCtaHref}
                 className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
               >
-                {isEnglish ? t('ctaTierList') : t('ctaGuides')}
+                {isEnglish ? t('ctaWeapons') : t('ctaGuides')}
               </Link>
               {isEnglish ? (
                 <Link

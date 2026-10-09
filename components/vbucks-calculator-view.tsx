@@ -394,7 +394,7 @@ export function VBucksCalculatorView() {
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{t('relatedTitle')}</h2>
           <p className="text-sm leading-relaxed text-muted-foreground">
             {t('relatedBefore')}{' '}
-            <Link href={localizeHref(locale, '/tools/battle-pass-xp-calculator')} className="text-primary hover:underline">
+            <Link href={localizeHref(locale, '/xp-calculator')} className="text-primary hover:underline">
               {t('relatedBattlePass')}
             </Link>
             {locale === 'en' ? (

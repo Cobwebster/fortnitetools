@@ -52,11 +52,14 @@ export async function submitLoadoutAction(
     return { error: 'You must be signed in to submit a loadout.' }
   }
 
-  const { error } = await supabase.from('loadout_submissions').insert({
+  const { error } = await supabase.from('community_submissions').insert({
     user_id: user.id,
     creator_name: creatorName,
-    loadout_name: loadoutName,
-    loadout_url: canonicalPath,
+    kind: 'loadout',
+    title: loadoutName,
+    body: 'Community loadout from the loadout builder.',
+    payload: { loadout_url: canonicalPath },
+    status: 'pending',
   })
 
   if (error) {
@@ -64,6 +67,6 @@ export async function submitLoadoutAction(
   }
 
   return {
-    success: 'Loadout submitted! It will be ready for moderation when community pages launch.',
+    success: 'Loadout submitted for review. It goes live after we verify it.',
   }
 }

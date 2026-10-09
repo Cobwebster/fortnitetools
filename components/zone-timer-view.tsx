@@ -6,7 +6,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { Play, RotateCcw, SkipForward } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 
-// Fortnite Chapter 7 Season 3 — Solo BR zone timings (seconds, community reference)
+// Fortnite Override (C7S4) — Solo BR zone timings (seconds, community reference; confirm in-game)
 // waitTime = how long this circle stays open before shrinking starts
 // shrinkTime = how long the shrink takes
 // damage = DPS while outside the zone
@@ -302,7 +302,7 @@ export function ZoneTimerView() {
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{t('relatedTitle')}</h2>
           <p className="text-sm leading-relaxed text-muted-foreground">
             {t('relatedBefore')}{' '}
-            <Link href={localizeHref(locale, '/tools/kd-calculator')} className="text-primary hover:underline">
+            <Link href={localizeHref(locale, '/tools/player-stats')} className="text-primary hover:underline">
               {t('relatedKd')}
             </Link>
             {t('relatedMid1')}{' '}

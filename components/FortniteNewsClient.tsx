@@ -35,7 +35,7 @@ function MotdCard({ motd, featured }: { motd: NewsMotd; featured?: boolean }) {
         </h2>
         <p className="text-sm leading-relaxed text-muted-foreground">{motd.body}</p>
         <p className="text-sm leading-relaxed text-foreground/90">
-          <span className="font-semibold text-foreground">FortniteTools: </span>
+          <span className="font-semibold text-primary">Our take — </span>
           {take.note}
         </p>
         {take.links.length > 0 ? (
@@ -105,11 +105,13 @@ export function FortniteNewsClient({ data }: { data: NewsPayload }) {
       {tab === 'br' ? (
         <div className="space-y-6">
           {brStamp ? (
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">Lobby news updated {brStamp}</p>
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">
+              Lobby tab last changed {brStamp}
+            </p>
           ) : null}
           {featured ? <MotdCard motd={featured} featured /> : (
             <p className="rounded-xl border border-dashed border-border px-4 py-8 text-center text-sm text-muted-foreground">
-              No Battle Royale lobby tiles right now.
+              No Battle Royale lobby headlines right now — check back after the next content drop.
             </p>
           )}
           {rest.length > 0 ? (
@@ -123,11 +125,13 @@ export function FortniteNewsClient({ data }: { data: NewsPayload }) {
       ) : (
         <div className="space-y-4">
           {stwStamp ? (
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">STW message updated {stwStamp}</p>
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">
+              Save the World last changed {stwStamp}
+            </p>
           ) : null}
           {data.stwMessages.length === 0 ? (
             <p className="rounded-xl border border-dashed border-border px-4 py-8 text-center text-sm text-muted-foreground">
-              No Save the World message of the day in this payload.
+              No Save the World headlines right now.
             </p>
           ) : (
             data.stwMessages.map((message) => <StwCard key={message.title} message={message} />)

@@ -88,7 +88,7 @@ function OfferCard({
 
   return (
     <article
-      className={`rounded-xl border p-4 sm:p-5 transition-opacity ${
+      className={`flex h-full flex-col rounded-xl border p-4 transition-opacity ${
         done
           ? 'border-border/60 bg-muted/20 opacity-70'
           : ended
@@ -96,16 +96,16 @@ function OfferCard({
             : 'border-border bg-card'
       }`}
     >
-      <div className="flex flex-wrap items-start justify-between gap-3">
+      <div className="flex flex-wrap items-start justify-between gap-2">
         <div className="min-w-0 flex-1 space-y-1">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
             {FREE_COSMETIC_CATEGORY_LABEL[offer.category]}
           </p>
-          <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
+          <h3 className="font-display text-base font-bold uppercase leading-snug tracking-wide text-foreground sm:text-lg">
             {offer.title}
           </h3>
           {offer.endsIso ? (
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs text-muted-foreground sm:text-sm">
               {ended ? (
                 <span className="font-semibold text-rose-300">Ended</span>
               ) : (
@@ -115,28 +115,28 @@ function OfferCard({
                   {offer.endsLabel ? (
                     <>
                       {' '}
-                      · <span className="text-muted-foreground">Ends {offer.endsLabel}</span>
+                      · <span className="text-muted-foreground">{offer.endsLabel}</span>
                     </>
                   ) : null}
                 </>
               )}
             </p>
           ) : (
-            <p className="text-sm text-muted-foreground">No end date</p>
+            <p className="text-xs text-muted-foreground sm:text-sm">No end date</p>
           )}
         </div>
         <button
           type="button"
           onClick={onToggle}
           aria-pressed={done}
-          className={`inline-flex shrink-0 items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+          className={`inline-flex shrink-0 items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider transition-colors sm:text-xs ${
             done
               ? 'border-primary bg-primary text-primary-foreground'
               : 'border-border text-muted-foreground hover:border-primary/50 hover:text-foreground'
           }`}
         >
           {done ? <Check className="h-3.5 w-3.5" aria-hidden /> : null}
-          {done ? 'Completed' : 'Mark completed'}
+          {done ? 'Done' : 'Done?'}
         </button>
       </div>
 
@@ -144,7 +144,7 @@ function OfferCard({
 
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{offer.howTo}</p>
       {offer.details?.length ? (
-        <ul className="mt-2 space-y-1 text-sm text-muted-foreground list-disc pl-4">
+        <ul className="mt-2 space-y-1 text-xs text-muted-foreground list-disc pl-4 sm:text-sm">
           {offer.details.map((d) => (
             <li key={d}>{d}</li>
           ))}
@@ -157,19 +157,21 @@ function OfferCard({
             href={offer.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-flex text-sm font-semibold text-primary hover:underline"
+            className="mt-auto inline-flex pt-3 text-sm font-semibold text-primary hover:underline"
           >
             {offer.hrefLabel || 'Open link'} →
           </a>
         ) : (
           <Link
             href={offer.href}
-            className="mt-3 inline-flex text-sm font-semibold text-primary hover:underline"
+            className="mt-auto inline-flex pt-3 text-sm font-semibold text-primary hover:underline"
           >
             {offer.hrefLabel || 'Open'} →
           </Link>
         )
-      ) : null}
+      ) : (
+        <div className="mt-auto pt-3" aria-hidden />
+      )}
     </article>
   )
 }
@@ -300,9 +302,9 @@ export function FreeCosmeticsClient() {
         </p>
       </div>
 
-      <div className="space-y-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {!hydrated ? (
-          <div className="rounded-xl border border-dashed border-border px-5 py-12 text-center text-sm text-muted-foreground">
+          <div className="rounded-xl border border-dashed border-border px-5 py-12 text-center text-sm text-muted-foreground sm:col-span-2">
             Loading free cosmetics…
           </div>
         ) : (
@@ -317,7 +319,7 @@ export function FreeCosmeticsClient() {
               />
             ))}
             {list.length === 0 ? (
-              <div className="rounded-xl border border-dashed border-border px-5 py-12 text-center text-sm text-muted-foreground">
+              <div className="rounded-xl border border-dashed border-border px-5 py-12 text-center text-sm text-muted-foreground sm:col-span-2">
                 Nothing in this filter. Try Active or All.
               </div>
             ) : null}

@@ -30,12 +30,13 @@ const faqs = [
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Weapon Changes – Damage Buffs, Nerfs & Patch History',
   description:
-    'Every Fortnite weapon balance change in one place — damage, DPS, fire rate, mag size, reload, and structure damage with Old / New / Change by rarity. Track buffs and nerfs across patches.',
+    'Fortnite Override weapon balance history — v42.10 Pump / 8-Bit / AR tweaks, Fortnitemares v42.30 vaults and unvaults, plus older patch Old / New / Change rows by rarity.',
   path: '/weapon-changes',
   keywords: [
     'fortnite weapon changes',
     'fortnite weapon buffs',
     'fortnite weapon nerfs',
+    'fortnite fortnitemares weapons',
     'fortnite damage changes',
     'fortnite balance patch',
     'fortnite weapon patch notes',

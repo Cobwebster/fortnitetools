@@ -8,6 +8,7 @@ import {
 } from '@/lib/season'
 import {
   PLAYTIME_MODES,
+  WEEKLY_XP_SOURCES,
   XP_LEVEL_CAP,
   XP_PER_LEVEL,
   buildXpPerLevelTable,
@@ -21,13 +22,16 @@ import {
   xpBetweenLevels,
 } from '@/lib/xp-calculator'
 
-type Tab = 'calculator' | 'per-level'
+type Tab = 'calculator' | 'weekly' | 'per-level'
 
 export function XpCalculatorClient() {
   const [season, setSeason] = useState<ReturnType<typeof getSeasonCountdown> | null>(null)
   const [tab, setTab] = useState<Tab>('calculator')
   const [currentLevel, setCurrentLevel] = useState('1')
   const [targetLevel, setTargetLevel] = useState('100')
+  const [enabled, setEnabled] = useState<Record<string, boolean>>(() =>
+    Object.fromEntries(WEEKLY_XP_SOURCES.map((s) => [s.id, s.default]))
+  )
 
   useEffect(() => {
     setSeason(getSeasonCountdown())
@@ -36,6 +40,7 @@ export function XpCalculatorClient() {
   const cur = clampLevel(parseInt(currentLevel, 10) || 1)
   const tgt = clampLevel(parseInt(targetLevel, 10) || 100)
   const days = Math.max(1, season?.daysRemaining ?? 1)
+  const weeks = Math.max(1, Math.ceil(days / 7))
   const pct = season ? Math.round(season.progressPct) : null
 
   const pace100 = season ? onPaceLevel(100, season.progressPct) : null
@@ -45,6 +50,14 @@ export function XpCalculatorClient() {
   const daily = dailyXpNeeded(cur, tgt, days)
   const levelsNeeded = Math.max(0, tgt - cur)
 
+  const weeklyXp = WEEKLY_XP_SOURCES.filter((s) => enabled[s.id]).reduce((acc, s) => acc + s.xp, 0)
+  const totalWeeklyPlan = weeklyXp * weeks
+  const projectedLevel = Math.min(
+    XP_LEVEL_CAP,
+    cur + Math.floor(totalWeeklyPlan / XP_PER_LEVEL)
+  )
+  const onTrackWeekly = totalWeeklyPlan >= xpNeeded
+
   const perLevelRows = useMemo(() => buildXpPerLevelTable(XP_LEVEL_CAP), [])
 
   return (
@@ -52,8 +65,9 @@ export function XpCalculatorClient() {
       <div className="flex flex-wrap gap-2" role="tablist" aria-label="XP calculator views">
         {(
           [
-            { id: 'calculator' as const, label: 'XP Calculator' },
-            { id: 'per-level' as const, label: 'XP Per Level' },
+            { id: 'calculator' as const, label: 'Daily pace' },
+            { id: 'weekly' as const, label: 'Weekly planner' },
+            { id: 'per-level' as const, label: 'XP per level' },
           ] as const
         ).map((t) => {
           const active = tab === t.id
@@ -212,7 +226,62 @@ export function XpCalculatorClient() {
             </p>
           </section>
         </>
-      ) : (
+      ) : null}
+
+      {tab === 'weekly' ? (
+        <section className="space-y-4">
+          <div>
+            <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
+              Weekly Battle Pass planner
+            </h2>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              Toggle the XP sources you actually do. Estimates only — quest values move mid-season.
+              About <strong className="text-foreground">{weeks} weeks</strong> left from today&apos;s
+              countdown.
+            </p>
+          </div>
+          <ul className="space-y-2">
+            {WEEKLY_XP_SOURCES.map((source) => {
+              const on = enabled[source.id]
+              return (
+                <li key={source.id}>
+                  <button
+                    type="button"
+                    onClick={() => setEnabled((prev) => ({ ...prev, [source.id]: !prev[source.id] }))}
+                    className={`flex w-full items-center justify-between gap-3 rounded-lg border px-3 py-2.5 text-left text-sm transition-colors ${
+                      on
+                        ? 'border-primary/50 bg-primary/10 text-foreground'
+                        : 'border-border bg-card text-muted-foreground hover:border-primary/30'
+                    }`}
+                  >
+                    <span className="font-medium">{source.label}</span>
+                    <span className="shrink-0 tabular-nums font-semibold text-primary">
+                      {formatXp(source.xp)} / wk
+                    </span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+          <div className="rounded-xl border border-border bg-card px-5 py-5">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+              {onTrackWeekly ? 'On track' : 'Behind pace'}
+            </p>
+            <p className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+              ~Level {projectedLevel}{' '}
+              <span className="text-base font-semibold normal-case tracking-normal text-muted-foreground">
+                if you keep this week every week
+              </span>
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {formatXp(weeklyXp)} XP / week · {formatXp(totalWeeklyPlan)} XP over {weeks} weeks · need{' '}
+              {formatXp(xpNeeded)} XP to hit level {tgt}
+            </p>
+          </div>
+        </section>
+      ) : null}
+
+      {tab === 'per-level' ? (
         <section className="space-y-3">
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
             XP per level
@@ -249,7 +318,7 @@ export function XpCalculatorClient() {
             </table>
           </div>
         </section>
-      )}
+      ) : null}
     </div>
   )
 }

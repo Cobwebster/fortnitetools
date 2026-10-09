@@ -230,6 +230,51 @@ export const SPAWN_LAYER_COLOR: Record<SpawnLayerId, string> = {
   dumpsters: '#78716c',
 }
 
+/** Real Fortnite item / UI icons for map pins + sidebar (not colored dots). */
+export const SPAWN_LAYER_ICON: Record<SpawnLayerId, string> = {
+  extraction_sites: '/images/loadout/pulse_scanner.png',
+  batmobile: '/images/loadout/batman_grapnel.png',
+  vaults: '/images/loadout/mat_metal.png',
+  sprite_chests: '/images/loadout/shock_rocks.png',
+  chests: '/images/loadout/mat_wood.png',
+  rare_chests: '/images/loadout/golden_apple.png',
+  ammo_boxes: '/images/loadout/heavy_impact.png',
+  vending_machines: '/images/loadout/chug_jug.png',
+  mending_machines: '/images/loadout/medkit.png',
+  launchpads: '/images/loadout/launch_pad.png',
+  cars_sport: '/images/loadout/overdrive_grenade.png',
+  cars_suv: '/images/loadout/chaos_exploder.png',
+  boats: '/images/loadout/unstable_bounce_grenade.webp',
+  offroad_tires: '/images/loadout/mat_stone.png',
+  ziplines: '/images/loadout/grappler.png',
+  flushers: '/images/loadout/rift.png',
+  teleporters: '/images/loadout/rift.png',
+  service_stations: '/images/loadout/business_turret.png',
+  campfires: '/images/loadout/pepper.png',
+  noms: '/images/loadout/apple.png',
+  mushrooms: '/images/loadout/flowberry.png',
+  slurp_barrels: '/images/loadout/slap_juice.png',
+  slurp_trucks: '/images/loadout/guzzle_juice.png',
+  fishing_rods: '/images/loadout/impulse.png',
+  fishing_holes: '/images/loadout/chug_splash.png',
+  reboot_vans: '/images/loadout/self_revive.png',
+  jobboards_supplydrop: '/images/icons/glider.png',
+  jobboards_treasure: '/images/icons/crown.png',
+  safes: '/images/icons/vbucks.png',
+  cash_registers: '/images/icons/xp.png',
+  bushes: '/images/loadout/bandages.png',
+  dumpsters: '/images/loadout/cluster_clinger.png',
+}
+
+export const POI_CONTEST_ICON: Record<'hot' | 'balanced' | 'edge', string> = {
+  hot: '/images/icons/crown.png',
+  balanced: '/images/icons/map.png',
+  edge: '/images/icons/glider.png',
+}
+
+export const MAP_LANDMARK_ICON = '/images/icons/pickaxe.png'
+export const MAP_EXTRACT_ICON = '/images/loadout/pulse_scanner.png'
+
 export function resolveSpawnPoints(
   pois: { name: string; location: { x: number; y: number } }[]
 ): ResolvedSpawnPoint[] {

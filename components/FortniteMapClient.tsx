@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import Link from '@/components/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { ChevronDown } from 'lucide-react'
-import { extractTrafficColor, type ContestLevel } from '@/lib/map-data'
+import type { ContestLevel } from '@/lib/map-data'
 import {
   DEFAULT_ACTIVE_SPAWNS,
   MAP_MODES,
@@ -14,7 +14,7 @@ import {
   type MapModeId,
   type SpawnLayerId,
 } from '@/lib/map-layers'
-import { SPAWN_LAYER_COLOR, SPAWN_POINTS } from '@/lib/map-spawns'
+import { SPAWN_LAYER_ICON, SPAWN_POINTS } from '@/lib/map-spawns'
 import {
   MAP_EVOLUTION,
   MAP_EVOLUTION_CHAPTERS,
@@ -351,13 +351,11 @@ export function FortniteMapClient() {
                     active={isLive && activeSpawns.has(layer.id)}
                     onToggle={() => toggleSpawn(layer.id)}
                     swatch={
-                      <span
-                        className={`mt-1 inline-block h-2.5 w-2.5 shrink-0 border border-black/20 ${
-                          layer.id === 'extraction_sites' ? 'rotate-45' : 'rounded-sm'
-                        }`}
-                        style={{
-                          background: SPAWN_LAYER_COLOR[layer.id] ?? extractTrafficColor.medium,
-                        }}
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={SPAWN_LAYER_ICON[layer.id]}
+                        alt=""
+                        className="mt-0.5 h-5 w-5 shrink-0 object-contain drop-shadow-sm"
                         aria-hidden
                       />
                     }

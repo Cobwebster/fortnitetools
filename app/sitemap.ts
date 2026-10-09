@@ -4,179 +4,213 @@ import { siteConfig } from '@/lib/site'
 import { localizedGuidePaths, localizedToolSlugs, prefixedLocales } from '@/i18n/config'
 import { fetchLiveSets } from '@/lib/cosmetic-sets'
 import { DROP_GUIDES } from '@/lib/drop-guides'
+import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
+
+const FLAGSHIP = new Set([
+  '/fortnite-map',
+  '/stats',
+  '/weapons',
+  '/weapon-changes',
+  '/ranked',
+  '/status',
+  '/season',
+  '/codes',
+  '/free-cosmetics',
+  '/tools/item-shop',
+  '/tools/player-stats',
+  '/tools/loadout-builder',
+  '/tools/fortnite-build-simulator',
+  '/tools/skin-rarity-calculator',
+  '/upload',
+  '/map-rotation',
+  '/drops',
+  '/xp-calculator',
+])
+
+const CALC_OR_THIN = new Set([
+  '/season-countdown',
+  '/tools/sensitivity-calculator',
+  '/tools/vbucks-calculator',
+  '/tools/fps-settings',
+  '/tools/keybinds',
+  '/tools/zone-timer',
+  '/player-count',
+  '/map-evolution',
+  '/creator-code',
+])
+
+function toolPriority(path: string): number {
+  if (FLAGSHIP.has(path) || path.startsWith('/drops/')) return 0.9
+  if (CALC_OR_THIN.has(path)) return 0.55
+  return 0.7
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url
   const liveSets = await fetchLiveSets()
+  const hubModified = new Date(SEASON_HUB_REVIEWED_ISO)
 
   const localeRoutes: MetadataRoute.Sitemap = prefixedLocales.flatMap((locale) => [
     {
       url: `${base}/${locale}`,
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 0.85,
+      lastModified: hubModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
     },
     {
       url: `${base}/${locale}/tools`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'weekly' as const,
-      priority: 0.8,
+      priority: 0.65,
     },
     {
       url: `${base}/${locale}/fortnite-map`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     ...localizedGuidePaths.map((path) => ({
       url: `${base}/${locale}${path}`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'weekly' as const,
-      priority: path === '/guides' ? 0.85 : 0.75,
+      priority: path === '/guides' ? 0.75 : 0.6,
     })),
-    ...localizedToolSlugs.map((slug) => ({
-      url: `${base}/${locale}/tools/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.75,
-    })),
+    ...localizedToolSlugs
+      .filter(
+        (slug) =>
+          slug !== 'kd-calculator' &&
+          slug !== 'battle-pass-xp-calculator' &&
+          slug !== 'weapon-damage-calculator'
+      )
+      .map((slug) => ({
+        url: `${base}/${locale}/tools/${slug}`,
+        lastModified: hubModified,
+        changeFrequency: 'weekly' as const,
+        priority: slug === 'player-stats' ? 0.8 : 0.55,
+      })),
   ])
 
-  const toolRoutes: MetadataRoute.Sitemap = [
-    '/season-countdown',
-    '/xp-calculator',
-    '/free-cosmetics',
+  const toolPaths = [
     '/fortnite-map',
-    '/map-rotation',
-    '/reload',
-    '/ranked',
-    '/status',
-    '/map-evolution',
     '/stats',
-    '/player-count',
-    '/season',
-    '/drops',
-    ...DROP_GUIDES.map((g) => `/drops/${g.slug}`),
-    '/sets',
-    ...liveSets.map((s) => `/sets/${s.slug}`),
-    '/news',
-    '/modes',
-    '/new-cosmetics',
-    '/cosmetic-stats',
-    '/creator-code',
-    '/tools',
     '/weapons',
     '/weapon-changes',
+    '/ranked',
+    '/status',
+    '/season',
+    '/codes',
+    '/free-cosmetics',
+    '/drops',
+    ...DROP_GUIDES.map((g) => `/drops/${g.slug}`),
+    '/tools/item-shop',
     '/tools/player-stats',
     '/tools/player-compare',
-    '/codes',
-    '/tools/item-shop',
-    '/tools/skin-rarity-calculator',
     '/tools/loadout-builder',
     '/tools/fortnite-build-simulator',
+    '/tools/skin-rarity-calculator',
+    '/upload',
+    '/upload/guide',
+    '/upload/loadout',
+    '/upload/drop_spot',
+    '/upload/map_code',
+    '/upload/xp_map',
+    '/upload/settings',
+    '/upload/keybinds',
+    '/upload/fps_preset',
+    '/upload/tip',
+    '/upload/weapon_take',
+    '/upload/clip',
+    '/upload/combo',
+    '/upload/post/a1000000-0000-4000-8000-000000000001',
+    '/upload/post/a1000000-0000-4000-8000-000000000002',
+    '/upload/post/a1000000-0000-4000-8000-000000000003',
+    '/upload/post/a1000000-0000-4000-8000-000000000004',
+    '/upload/post/a1000000-0000-4000-8000-000000000005',
+    '/xp-calculator',
+    '/season-countdown',
+    '/player-count',
+    '/news',
+    '/modes',
+    '/reload',
+    '/new-cosmetics',
+    '/cosmetic-stats',
+    '/sets',
+    ...liveSets.map((s) => `/sets/${s.slug}`),
+    '/creator-code',
+    '/map-rotation',
+    '/map-evolution',
+    '/tools',
     '/tools/sensitivity-calculator',
     '/tools/vbucks-calculator',
-    '/tools/battle-pass-xp-calculator',
-    '/tools/weapon-damage-calculator',
-    '/tools/kd-calculator',
     '/tools/fps-settings',
     '/tools/keybinds',
     '/tools/zone-timer',
-  ].map((path) => ({
+  ]
+
+  const toolRoutes: MetadataRoute.Sitemap = toolPaths.map((path) => ({
     url: `${base}${path}`,
-    lastModified: new Date(),
+    lastModified: hubModified,
     changeFrequency:
-      path === '/news' ||
-      path === '/new-cosmetics' ||
-      path === '/season' ||
-      path === '/sets' ||
-      path.startsWith('/sets/') ||
-      path === '/status'
+      path === '/news' || path === '/status' || path === '/tools/item-shop'
         ? ('daily' as const)
         : ('weekly' as const),
-    priority:
-      path === '/fortnite-map' ||
-      path === '/map-rotation' ||
-      path === '/map-evolution' ||
-      path === '/stats' ||
-      path === '/player-count' ||
-      path === '/codes' ||
-      path === '/weapons' ||
-      path === '/weapon-changes' ||
-      path === '/season-countdown' ||
-      path === '/xp-calculator' ||
-      path === '/free-cosmetics' ||
-      path === '/tools/item-shop' ||
-      path === '/tools/loadout-builder' ||
-      path === '/tools/player-stats' ||
-      path === '/tools/player-compare' ||
-      path === '/tools/skin-rarity-calculator' ||
-      path === '/news' ||
-      path === '/modes' ||
-      path === '/new-cosmetics' ||
-      path === '/cosmetic-stats' ||
-      path === '/season' ||
-      path === '/drops' ||
-      path === '/sets' ||
-      path === '/reload' ||
-      path === '/ranked' ||
-      path === '/status'
-        ? 0.95
-        : 0.85,
+    priority: toolPriority(path),
   }))
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: base,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${base}/guides`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
+      lastModified: hubModified,
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     {
       url: `${base}/about`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'monthly',
-      priority: 0.5,
+      priority: 0.4,
     },
     {
       url: `${base}/privacy`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'yearly',
-      priority: 0.4,
+      priority: 0.3,
     },
     {
       url: `${base}/terms`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'yearly',
-      priority: 0.4,
+      priority: 0.3,
     },
     {
       url: `${base}/contact`,
-      lastModified: new Date(),
+      lastModified: hubModified,
       changeFrequency: 'monthly',
-      priority: 0.5,
+      priority: 0.4,
     },
   ]
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map((cat) => ({
     url: `${base}/guides/${cat.id}`,
-    lastModified: new Date(),
+    lastModified: hubModified,
     changeFrequency: 'weekly',
-    priority: 0.8,
-  }))
-
-  const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${base}/guides/${post.category}/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly',
     priority: 0.7,
   }))
+
+  const postRoutes: MetadataRoute.Sitemap = posts
+    .filter((post) => !post.noindex)
+    .map((post) => ({
+      url: `${base}/guides/${post.category}/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: post.featured ? 0.75 : 0.6,
+    }))
 
   return [...staticRoutes, ...toolRoutes, ...localeRoutes, ...categoryRoutes, ...postRoutes]
 }

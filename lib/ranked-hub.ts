@@ -1,8 +1,8 @@
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { formatSeasonLongDate, nextSeasonStartDate, seasonEndDate } from '@/lib/season'
 
-export const RANKED_REVIEWED = '31 Aug 2026'
-export const RANKED_REVIEWED_ISO = '2026-08-31'
+export const RANKED_REVIEWED = '9 Oct 2026'
+export const RANKED_REVIEWED_ISO = '2026-10-09'
 
 export const RANK_TIERS = [
   { tier: 'Bronze I–III', who: 'Placement school. Survive, loot, make zone. Kills are extra.' },
@@ -126,7 +126,7 @@ export const RANKED_NOT = [
 export const RANKED_FAQS = [
   {
     question: 'When does Fortnite ranked reset?',
-    answer: `Override ranked already reset at the August 20 reboot. The next expected ladder flip is with Chapter 7 Season 5 (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime. Last reviewed ${RANKED_REVIEWED}.`,
+    answer: `Override ranked already reset at the August 20 reboot. The next expected ladder flip is with Chapter 7 Season 5 (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime.`,
   },
   {
     question: 'Do I keep my rank into Season 5?',

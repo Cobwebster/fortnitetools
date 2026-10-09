@@ -3,14 +3,16 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd, webApplicationJsonLd } fro
 import { LOADOUT_FAQS } from '@/lib/loadout-seo'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Loadout Builder – Override Hotbar (STK/TTK)',
+  title: 'Fortnite Loadout Builder – Inventory, Mats & STK/TTK',
   description:
-    'Build and share a Fortnite Chapter 7 Season 4 (Override) loadout: shotgun, AR, sidearm, heals, and mobility with item icons. Compare STK/TTK, then copy a shareable hotbar link.',
+    'Plan a full Fortnite Override inventory: hotbar, wood/stone/metal, ammo, and heal stacks. Use Ranked, contest, Zero Build, and Fortnitemares presets, then share one link.',
   path: '/tools/loadout-builder',
   keywords: [
     'fortnite loadout builder',
     'fortnite best loadout',
     'fortnite hotbar',
+    'fortnite inventory planner',
+    'fortnite materials planner',
     'chapter 7 season 4 loadout',
     'fortnite override loadout',
     '8-bit shotgun loadout',
@@ -48,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             webApplicationJsonLd({
               name: 'Fortnite Loadout Builder',
               description:
-                'Plan an Override hotbar with STK/TTK estimates and share a loadout link with teammates.',
+                'Plan a full Override inventory — hotbar, mats, ammo, heal stacks — with STK/TTK and shareable links.',
               path: '/tools/loadout-builder',
             })
           ),

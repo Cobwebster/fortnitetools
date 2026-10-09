@@ -3,16 +3,16 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { NEWS_FAQS } from '@/lib/fortnite-news'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite News – Live Lobby MOTDs & Season Headlines',
+  title: 'Fortnite News – Live Lobby Headlines & Season Takes',
   description:
-    'Current Fortnite Battle Royale lobby news (MOTDs) with FortniteTools notes that link the tiles to the map, shop, weapons, and season countdown. Updates when Epic swaps the news tab.',
+    'Live Fortnite Battle Royale lobby headlines for Override, with FortniteTools notes that link each tile to the map, shop, free cosmetics, and season countdown. Updates when Epic swaps the lobby tab.',
   path: '/news',
   keywords: [
     'fortnite news',
     'fortnite lobby news',
-    'fortnite motd',
+    'fortnite override news',
     'fortnite chapter 7 season 4',
-    'fortnite runners news',
+    'fortnitemares news',
     'fortnite current events',
   ],
 })

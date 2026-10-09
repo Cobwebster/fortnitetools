@@ -56,7 +56,7 @@ const nextConfig = {
       },
       {
         source: '/guides/tools/fortnite-tracker-how-to-check-stats',
-        destination: '/tools/kd-calculator',
+        destination: '/tools/player-stats',
         permanent: true,
       },
       {
@@ -83,6 +83,36 @@ const nextConfig = {
       {
         source: '/is-fortnite-down',
         destination: '/status',
+        permanent: true,
+      },
+      {
+        source: '/tools/battle-pass-xp-calculator',
+        destination: '/xp-calculator',
+        permanent: true,
+      },
+      {
+        source: '/:locale/tools/battle-pass-xp-calculator',
+        destination: '/xp-calculator',
+        permanent: true,
+      },
+      {
+        source: '/tools/kd-calculator',
+        destination: '/tools/player-stats',
+        permanent: true,
+      },
+      {
+        source: '/:locale/tools/kd-calculator',
+        destination: '/:locale/tools/player-stats',
+        permanent: true,
+      },
+      {
+        source: '/tools/weapon-damage-calculator',
+        destination: '/weapons',
+        permanent: true,
+      },
+      {
+        source: '/:locale/tools/weapon-damage-calculator',
+        destination: '/weapons',
         permanent: true,
       },
     ]

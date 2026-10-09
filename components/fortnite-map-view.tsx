@@ -258,7 +258,7 @@ export function FortniteMapView() {
               </li>
               <li>
                 <Link
-                  href={localizeHref(locale, '/tools/weapon-damage-calculator')}
+                  href={localizeHref(locale, '/weapons')}
                   className="hover:opacity-80"
                 >
                   {t('moreDamage')}

@@ -1,7 +1,7 @@
 import { formatSeasonLongDate, getSeasonCountdown, nextSeasonStartDate } from '@/lib/season'
 import type { NewsMotd } from '@/lib/fortnite-news'
 
-export const STATUS_REVIEWED = '31 Aug 2026'
+export const STATUS_REVIEWED = '9 Oct 2026'
 
 export type EpicStatusPayload = {
   indicator: 'none' | 'minor' | 'major' | 'critical' | 'maintenance' | string
@@ -141,15 +141,15 @@ export const WHAT_WE_DONT_SHOW = [
 export const STATUS_CHECKS = [
   {
     title: 'Epic’s own status board',
-    body: 'status.epicgames.com is what Epic publishes for Fortnite, the Epic Games Store, accounts, and related services. If that board is green and you still cannot play, the problem is more often your ISP, console network, or a local queue — not a global outage we can invent a ping map for.',
+    body: 'status.epicgames.com is what Epic publishes for Fortnite, the store, accounts, and related services. If that board is green and you still cannot play, the problem is more often your ISP, console network, or a local queue — not a global outage we can invent a ping map for.',
   },
   {
-    title: 'Lobby news (MOTDs)',
-    body: 'When Epic is about to take the game down for a season reboot or big update, the news tab usually says so days ahead. That is a scheduled downtime headline, not a live outage flag. We load the same tiles as the lobby.',
+    title: 'Lobby news',
+    body: 'When Epic is about to take the game down for a season reboot or big update, the news tab usually says so days ahead. That is a scheduled downtime headline, not a live outage flag. Same tiles as the in-game lobby.',
   },
   {
     title: 'Season countdown',
-    body: `Override (Chapter 7 Season 4) ends ${formatSeasonLongDate(nextSeasonStartDate())} UTC. Expect a maintenance window around that flip into Season 5. Exact queue length is not a public API — if the client says “servers are busy,” believe the client.`,
+    body: `Override (Chapter 7 Season 4) ends ${formatSeasonLongDate(nextSeasonStartDate())} UTC. Expect a maintenance window around that flip into Season 5. Exact queue length is not something third-party sites get — if the client says “servers are busy,” believe the client.`,
   },
 ] as const
 
@@ -180,25 +180,25 @@ export const STATUS_FAQS = [
   {
     question: 'Is Fortnite down right now?',
     answer:
-      'Check Epic’s status board first (embedded below from status.epicgames.com). Then check whether the lobby news mentions scheduled downtime. This site does not run a fake world ping map — we cannot see your connection.',
+      'Start with the live Online / Issues / Down read on this page (from Epic’s public board). Then check whether lobby headlines mention scheduled downtime. We do not run a fake world ping map — we cannot see your connection.',
   },
   {
     question: 'When is the next season downtime?',
-    answer: `Override ends / Chapter 7 Season 5 is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Downtime can shift by a few hours. Use the countdown; treat this page as the “is it servers or me” checklist.`,
+    answer: `Override ends / Chapter 7 Season 5 is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Downtime can shift by a few hours. Use the live countdown; treat this page as the “is it servers or me” checklist.`,
   },
   {
     question: 'Why do other sites show a green ping map?',
     answer:
-      'Those are usually player-reported or guessed. They look official and are often wrong for your city. We refuse to fake that. If you have packet loss in-match, use the ping/packet-loss guide — that is a you-to-server problem, not an Epic status flag.',
+      'Those are usually player-reported or guessed. They look official and are often wrong for your city. We refuse to fake that. If you have packet loss in-match, use the ping guide — that is a you-to-server problem, not an Epic status flag.',
   },
   {
     question: 'The game is up but queues are long. Is that “down”?',
     answer:
-      'No. Queue is matchmaking load, especially after a reboot or a free weekend. Down means login, matchmaking, or the client cannot reach Epic. Long queue with a progress bar is the game working badly, not a status-page outage.',
+      'No. Queue is matchmaking load, especially after a reboot or a free weekend. Down means login, matchmaking, or the client cannot reach Epic. Long queue with a progress bar is the game working badly, not a status outage.',
   },
   {
     question: 'Should I restart my router?',
     answer:
-      'If Epic’s board is green and a friend on another ISP is in-game, yes — try network basics. If the board is red or the MOTD says maintenance, restarting your router does nothing.',
+      'If Epic’s board is green and a friend on another ISP is in-game, yes — try network basics. If the board is red or the lobby says maintenance, restarting your router does nothing.',
   },
 ]

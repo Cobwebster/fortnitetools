@@ -93,21 +93,21 @@ export default async function AccountPage() {
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
-                Community loadouts
+                Community uploads
               </p>
               <h2 className="mt-1 font-display text-xl font-bold text-foreground">
-                Submit your favorite loadout
+                Post a loadout, tip, code, or drop
               </h2>
               <p className="mt-1 max-w-md text-sm text-muted-foreground">
-                Build a hotbar, generate its share link, then upload it for our upcoming community showcase.
+                Public feed for AdSense-friendly UGC — loadouts, map codes, settings, weapon takes, and more.
               </p>
             </div>
           </div>
           <Link
-            href="/tools/loadout-builder"
+            href="/upload"
             className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Build and submit
+            Open uploads
             <UploadCloud className="h-4 w-4" aria-hidden="true" />
           </Link>
         </section>

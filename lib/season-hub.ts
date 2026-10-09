@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '31 Aug 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-08-31'
+export const SEASON_HUB_REVIEWED = '9 Oct 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-10-09'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -72,7 +72,7 @@ export const SEASON_CHANGE_CARDS = [
   {
     id: 'loot',
     title: 'Loot pool',
-    live: 'Override launch pool: 8-Bit Shotgun, Mega Buster, Midas’ Masterpiece, plus unvaults (Pump, Assault Rifle, Ranger AR, Drum Gun, pistols; Oni/Minigun often via Loot Hack). Runners guns (Striker Pump, Surgical Burst, Warforged, Rapid Fire, etc.) are vaulted. See /weapons and /weapon-changes for Aug 20–26 hotfixes.',
+    live: 'Override pool after Fortnitemares (v42.30): Pump buffed in v42.10, 8-Bit / AR toned down, Drum Gun + Ranger AR vaulted, Bonerattler SMG / Freddy’s Nightmare / classic horror unvaults in. Mega Buster + Midas’ Masterpiece still around. See /weapons and /weapon-changes.',
     incoming: 'Kingdom Key and Cyberpunk Rebecca guns are called out for later — not inventing them as live until they ship.',
     extra:
       'Match Overrides rewrite match rules mid-game (speed, loot, heal, etc.). That is not the same as a mythic drop — plan fights knowing the lobby can flip mid-match.',

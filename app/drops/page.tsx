@@ -68,7 +68,7 @@ export default async function DropsIndexPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={CURRENT_SEASON.mapImage}
-                    alt={`${CURRENT_SEASON.label} Shattered Coast — drop guides for this island`}
+                    alt={`${CURRENT_SEASON.codename} island — returning POI drop guides`}
                     className="aspect-square w-full object-cover"
                     width={176}
                     height={176}
@@ -77,27 +77,36 @@ export default async function DropsIndexPage() {
               </div>
               <div className="min-w-0 flex-1 text-center sm:text-left">
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-                  {CURRENT_SEASON.shortLabel} · Shattered Coast · last reviewed 17 Aug 2026
+                  {CURRENT_SEASON.codename} · returning POIs · updated Oct 2026
                 </p>
                 <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
                   Best Fortnite <span className="text-primary">Drops</span>
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                  Five named POIs with real rotate paths — contest, bus, landing split, extract, Sprites,
-                  third-party angles, and when to leave. Crops below are the live Shattered Coast
-                  minimap, not clip art. Use the{' '}
+                  Five returning landings with contest notes, bus angles, and rotates that still make
+                  sense on Override. Green Hill, Reality&apos;s Reign, and Stone Sanctum live on the{' '}
                   <Link href="/fortnite-map" className="text-primary hover:underline">
                     interactive map
                   </Link>{' '}
-                  for pins; use these pages when you search “best drop [POI]” on reset week.
+                  (and the{' '}
+                  <Link
+                    href="/guides/map/fortnite-green-hill-zone-drop-guide"
+                    className="text-primary hover:underline"
+                  >
+                    Green Hill guide
+                  </Link>
+                  ) until they get full drop pages.
                 </p>
                 <p className="mt-3 text-sm text-muted-foreground">
                   <Link href="/fortnite-map" className="text-primary hover:underline">
                     Map
                   </Link>
                   {' · '}
-                  <Link href="/guides/map/fortnite-loot-guide-best-spots" className="text-primary hover:underline">
-                    Loot spots guide
+                  <Link
+                    href="/guides/map/fortnite-green-hill-zone-drop-guide"
+                    className="text-primary hover:underline"
+                  >
+                    Green Hill Zone
                   </Link>
                   {' · '}
                   <Link href="/guides/map/fortnite-map-all-locations-guide" className="text-primary hover:underline">

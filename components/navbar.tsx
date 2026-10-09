@@ -122,9 +122,10 @@ export function Navbar() {
 
   const englishPrimary: NavLink[] = [
     { href: toolsHref, label: t('tools'), emphasis: true },
+    { href: '/upload', label: t('upload'), badge: 'new' },
     { href: '/tools/fortnite-build-simulator', label: t('buildSim') },
     { href: localizeHref(locale, '/tools/player-stats'), label: t('playerTracker') },
-    { href: '/stats', label: t('stats'), badge: 'new', emphasis: true },
+    { href: '/stats', label: t('stats'), emphasis: true },
     { href: localizeHref(locale, '/fortnite-map'), label: t('map') },
     { href: localizeHref(locale, '/tools/item-shop'), label: t('itemShop') },
   ]

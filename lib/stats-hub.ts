@@ -1,70 +1,63 @@
 import { CURRENT_SEASON, formatSeasonLongDate, seasonEndDate } from '@/lib/season'
 
-export const STATS_HUB_REVIEWED = '20 Sep 2026'
-export const STATS_HUB_REVIEWED_ISO = '2026-09-20'
+export const STATS_HUB_REVIEWED = '9 Oct 2026'
+export const STATS_HUB_REVIEWED_ISO = '2026-10-09'
 
 export const STATS_HUB_LINKS = [
-  { href: '/tools/player-stats', label: 'Player stats lookup' },
+  { href: '/tools/player-stats', label: 'Look up a name' },
   { href: '/tools/player-compare', label: 'Compare two players' },
-  { href: '/player-count', label: 'Player count detail' },
-  { href: '/map-rotation', label: 'Reload rotation' },
+  { href: '/player-count', label: 'Player count' },
   { href: '/season', label: 'Season hub' },
   { href: '/codes', label: 'Creative codes' },
 ] as const
 
 export const STATS_HUB_PLAYBOOK = [
   {
-    title: 'Tracked player boards (our poll)',
-    body: 'Wins, kills, Battle Pass level, and time boards rank Epic accounts we poll ourselves through Fortnite-API — the same source as the player stats lookup. It is a growing sample, not every Fortnite account on earth. Private profiles are skipped.',
+    title: 'How we build the player boards',
+    body: 'We keep a seed list of Epic display names in data/tracked-players.json, call Fortnite-API on a schedule, and rank whoever still has public stats. Private profiles get skipped. It is a living sample — not every account on earth, and not a scrape of another site.',
   },
   {
-    title: 'Mode popularity (peak CCU)',
-    body: 'Separate tables rank Epic modes and Creative islands by peak concurrent players from Epic’s public Ecosystem Data API. Those answer “what is busy,” not “who has the most wins.”',
+    title: 'What the medals mean',
+    body: 'Gold / silver / bronze icons mark places 1–3 inside each tracked board (wins, kills, Battle Pass level, time). Everything else is a plain rank number.',
   },
   {
-    title: `Override season context (${CURRENT_SEASON.shortLabel})`,
-    body: `${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) runs through ${formatSeasonLongDate(seasonEndDate())}. Player boards use the current season window from Fortnite-API when we re-poll the seed list.`,
+    title: 'Mode popularity is a different question',
+    body: 'The CCU tables answer “what lobby is busy right now?” using Epic’s public Ecosystem data. They do not say who has the most wins.',
   },
   {
-    title: 'Look up any name',
-    body: 'Not on the tracked list? Use the player stats tracker for Epic / PlayStation / Xbox — lifetime or current season — without needing a global ladder.',
+    title: `Season window (${CURRENT_SEASON.codename})`,
+    body: `Override runs through ${formatSeasonLongDate(seasonEndDate())}. When we re-poll, player boards use the current season window from Fortnite-API so Battle Pass level and season stats stay current.`,
+  },
+  {
+    title: 'Want on the board?',
+    body: 'Sign in, open account feedback, pick “Leaderboard — track my name,” and send your exact Epic name + platform. We add public profiles to the next poll.',
   },
 ] as const
 
 export const STATS_HUB_FAQS = [
   {
-    question: 'Can I get my Epic name on the FortniteTools leaderboards?',
+    question: 'Can I get my Epic name on these leaderboards?',
     answer:
-      'Yes. Sign in (or create an account), open account feedback, choose “Leaderboard — track my name,” and send your exact Epic display name plus platform. We review requests and add public profiles to the tracked poll that powers /stats.',
+      'Yes. Sign in, open account feedback, choose “Leaderboard — track my name,” and send your exact Epic display name plus platform. Public profiles only.',
   },
   {
-    question: 'Are these the same leaderboards as fortnite.gg?',
+    question: 'Is this the same as fortnite.gg?',
     answer:
-      'No. We do not scrape fortnite.gg. Player boards are built by polling Fortnite-API for a seed list of Epic names we maintain. Mode/Creative boards use Epic’s Ecosystem peak CCU data. Both are ours.',
+      'No. We poll Fortnite-API for names we track ourselves. Mode/Creative tables use Epic’s Ecosystem CCU data. Nothing is scraped from third-party ladders.',
   },
   {
-    question: 'Is this a global Fortnite wins leaderboard?',
+    question: 'Is this a global wins leaderboard?',
     answer:
-      'No. Epic does not publish a worldwide wins ladder through the APIs we use. Our player ranks only cover accounts in data/tracked-players.json that still have public stats. Grow the list and re-poll to expand coverage.',
+      'No. Epic does not publish a worldwide wins ladder through the APIs we use. Ranks only cover the seed list that still has public stats.',
   },
   {
-    question: 'How often do player leaderboards update?',
+    question: 'How often do player boards update?',
     answer:
-      'When we run the poll script and publish a new snapshot. Mode popularity tables refresh from Epic about every 30 minutes on their own.',
+      'When we run the poll and publish a new snapshot. Mode popularity refreshes from Epic on its own (~30 minutes).',
   },
   {
-    question: 'What do the mode / Creative tables show?',
+    question: 'Where do I check my own stats?',
     answer:
-      'Epic modes (Battle Royale, Reload, OG, Blitz, LEGO, Festival, Racing) and high-traffic Creative maps, sorted by latest peak concurrent players (Peak CCU).',
-  },
-  {
-    question: 'Where can I check my personal Fortnite stats?',
-    answer:
-      'Open the player stats tool, enter an Epic, PlayStation, or Xbox name, and choose lifetime or current season.',
-  },
-  {
-    question: 'Is this the same as the player count page?',
-    answer:
-      '/stats is the hub for tracked player boards plus mode popularity. /player-count focuses on Epic CCU and island lookup. Same CCU source; player boards live on /stats.',
+      'Use the player stats lookup — Epic, PlayStation, or Xbox name, lifetime or current season. Manual K/D is on that page if the API is private.',
   },
 ]

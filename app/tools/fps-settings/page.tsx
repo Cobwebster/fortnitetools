@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { CommunitySubmitCta } from '@/components/community-submit-cta'
 import { FpsSettingsView } from '@/components/fps-settings-view'
 import { createMetadata } from '@/lib/seo'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
@@ -32,6 +33,13 @@ export default function FpsSettingsPage() {
     <>
       <Navbar />
       <FpsSettingsView />
+      <div className="mx-auto max-w-5xl px-4 pb-12 sm:px-6">
+        <CommunitySubmitCta
+          href="/upload/fps_preset"
+          title="Share your FPS / graphics preset"
+          body="Competitive, balanced, or quality notes for your monitor and GPU — posted on the public /upload feed."
+        />
+      </div>
       <Footer />
     </>
   )

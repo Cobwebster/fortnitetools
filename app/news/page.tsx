@@ -47,14 +47,14 @@ export default async function NewsPage() {
               <span className="text-foreground">News</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · Lobby MOTDs
+              {CURRENT_SEASON.shortLabel} · Live lobby headlines
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">News</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              The same Battle Royale news tiles as the in-game lobby, plus a short FortniteTools note that
-              points at the map, shop, weapons, or countdown — not a copy of Epic&apos;s patch blog.
+              What&apos;s on the Battle Royale lobby tab right now — with a short FortniteTools take under each
+              tile that points at the map, shop, freebies, or countdown when the promo copy alone is useless.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/season-countdown" className="text-primary hover:underline">

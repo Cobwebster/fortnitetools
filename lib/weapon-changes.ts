@@ -121,6 +121,7 @@ const LOWER_IS_BETTER = new Set([
   'bloom',
   'vertical recoil',
   'horizontal recoil',
+  'pullout time',
 ])
 
 export function changeTone(

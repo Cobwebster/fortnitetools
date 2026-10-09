@@ -3,15 +3,17 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { FREE_COSMETIC_OFFERS } from '@/lib/free-cosmetics'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Free Fortnite Cosmetics – Override Drops, Admin Panel & Ranked',
-  description: `Track ${FREE_COSMETIC_OFFERS.length}+ free Fortnite cosmetics in Chapter 7 Season 4 (Override): ironmouse Twitch Drops, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account rewards with end dates.`,
+  title: 'Free Fortnite Cosmetics – Fortnitemares, Admin Panel & Ranked',
+  description: `Track ${FREE_COSMETIC_OFFERS.length}+ free Fortnite cosmetics in Override: Fortnitemares Jack-a-Nape quests, Jimothy Sidekick, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account rewards with end dates.`,
   path: '/free-cosmetics',
   keywords: [
     'free fortnite cosmetics',
     'free fortnite skins',
     'fortnite free rewards',
+    'fortnitemares 2026 free rewards',
+    'jack-a-nape fortnite',
+    'fortnite jimothy',
     'fortnite twitch drops',
-    'fortnite ironmouse drops',
     'fortnite admin panel codes',
     'fortnite lobby hack codes',
     'fortnite ranked free rewards',
@@ -25,12 +27,12 @@ const faqs = [
   {
     question: 'How do I get free Fortnite cosmetics in Override?',
     answer:
-      'Timed Twitch drops (ironmouse), Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
+      'Fortnitemares Nitemare quests (Jack-a-Nape through 31 Oct), Jimothy Sidekick extract, Prophetic Tapestry login, Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
   },
   {
     question: 'Do free Fortnite rewards expire?',
     answer:
-      'Many do — Twitch drops and seasonal quests have hard cutoffs. Admin Panel / Ranked / free pass track generally last until Override ends (1 November 2026). Ongoing offers like 2FA Boogie Down have no deadline.',
+      'Many do — Fortnitemares ends 31 October 2026; Twitch drops and seasonal quests have hard cutoffs. Admin Panel / Ranked / free pass track generally last until Override ends (1 November 2026). Ongoing offers like 2FA Boogie Down have no deadline.',
   },
   {
     question: 'Is Mark as completed synced to my Epic account?',
