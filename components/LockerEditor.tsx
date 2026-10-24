@@ -4,7 +4,13 @@ import { FormEvent, useMemo, useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from '@/components/link'
 import { COSMETIC_TYPES, RARITY_COLORS, type CosmeticItem } from '@/lib/fortnite-api'
-import { LOCKER_ITEM_CAP, sanitizeLockerSlugInput, type LockerRow } from '@/lib/lockers'
+import {
+  LOCKER_ITEM_CAP,
+  isValidLockerSlug,
+  sanitizeLockerSlug,
+  sanitizeLockerSlugInput,
+  type LockerRow,
+} from '@/lib/lockers'
 import { siteConfig } from '@/lib/site'
 import {
   addLockerItemAction,
@@ -94,8 +100,15 @@ export function LockerEditor({
   function saveSettings(e: FormEvent) {
     e.preventDefault()
     setActionError(null)
+    const nextSlug = sanitizeLockerSlug(slug)
+    if (!isValidLockerSlug(nextSlug)) {
+      setActionError(
+        'Share slug must be 3–32 letters or numbers. Hyphens are ok in the middle, not at the ends.'
+      )
+      return
+    }
     startTransition(async () => {
-      const result = await updateLockerSettingsAction({ displayName, slug, isPublic })
+      const result = await updateLockerSettingsAction({ displayName, slug: nextSlug, isPublic })
       if (!result.ok) {
         setActionError(result.error)
         return
@@ -168,12 +181,11 @@ export function LockerEditor({
               autoCorrect="off"
               spellCheck={false}
               maxLength={32}
-              pattern="[a-z0-9][a-z0-9-]{1,30}[a-z0-9]"
-              title="Lowercase letters, numbers, hyphens. No spaces."
+              aria-invalid={slug.length > 0 && !isValidLockerSlug(sanitizeLockerSlug(slug))}
               className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm text-foreground outline-none focus:ring-2 focus:ring-primary/40"
             />
             <span className="mt-1 block text-[11px] text-muted-foreground">
-              Letters, numbers, hyphens only — spaces get stripped.
+              Letters and numbers are fine. Hyphens ok in the middle. 3–32 characters.
             </span>
           </label>
           <div className="flex items-end gap-3">
@@ -197,6 +209,7 @@ export function LockerEditor({
         <p className="text-xs text-muted-foreground">
           Share URL: <span className="text-foreground">{shareUrl}</span>
         </p>
+        {actionError ? <p className="text-sm text-rose-300">{actionError}</p> : null}
       </section>
 
       <section className="rounded-xl border border-border bg-card p-4 sm:p-5 space-y-4">
