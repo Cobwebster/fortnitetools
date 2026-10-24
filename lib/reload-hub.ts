@@ -1,6 +1,6 @@
 import { ROTATION_MODES } from '@/lib/map-rotation'
 
-export const RELOAD_REVIEWED = '18 Aug 2026'
+export const RELOAD_REVIEWED = '24 Oct 2026'
 
 export const RELOAD_ISLANDS = ROTATION_MODES.find((m) => m.id === 'reload')?.maps ?? []
 
@@ -55,6 +55,10 @@ export const RELOAD_WHY = [
   {
     title: 'You cannot pick the map',
     body: 'Epic keeps one Reload island live at a time so queues stay full. That is why the rotation timer exists. If you want Springfield’s Confidential / John Wick Sprite window, you queue in the :40 slot — you do not select it in Discover.',
+  },
+  {
+    title: 'Fortnitemares is on Reload too',
+    body: 'Epic brought Fortnitemares curses to Reload on 8 October. Horror loot and seasonal Overrides can show up on Oasis / Slurp / Springfield until the event ends (through 1 November). It is still the small-island rotation — not the Override BR map. Confirm the playlist tile.',
   },
 ] as const
 

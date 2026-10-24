@@ -1,8 +1,8 @@
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { formatSeasonLongDate, nextSeasonStartDate, seasonEndDate } from '@/lib/season'
 
-export const RANKED_REVIEWED = '9 Oct 2026'
-export const RANKED_REVIEWED_ISO = '2026-10-09'
+export const RANKED_REVIEWED = '24 Oct 2026'
+export const RANKED_REVIEWED_ISO = '2026-10-24'
 
 export const RANK_TIERS = [
   { tier: 'Bronze I–III', who: 'Placement school. Survive, loot, make zone. Kills are extra.' },
@@ -95,16 +95,16 @@ export const RANKED_VS_GUIDE = {
 
 export const LAST_NIGHT = [
   {
-    title: 'Learn Match Overrides before you blame LP',
-    body: 'Override can flip rulesets mid-season. If the playlist tile says something weird and you still drop Heatwave like classic BR, that is on you — not the ladder.',
+    title: 'Claim Null before the flip',
+    body: 'Champion Molten / Elite Neon / Unreal Rifted styles lock with Override. If you are one rank short, play for placement this week — not clips. Guide: how to get Null ranked rewards.',
   },
   {
     title: 'Finish the Pass on a schedule',
-    body: 'Unclaimed Override free-track rewards lock when the season ends (November 1). If you are level 87, the XP calculator and Creative codes matter more than one more Diamond lobby.',
+    body: 'Unclaimed Override free-track rewards lock when the season ends (November 1, Eastern Time). If you are level 87, the XP calculator and Creative codes matter more than one more Diamond lobby.',
   },
   {
-    title: 'Returning POIs ≠ identical traffic',
-    body: 'Wonkeeland / Latte still have drop pages. Green Hill Zone, Reality’s Reign, and Stone Sanctum do not yet. Treat new names as contested until you have your own reps.',
+    title: 'v42.40 vaulted four combat Overrides',
+    body: 'Super Shot, Big Boom, Action Hero, and Healing Overdrive left on 15 Oct. Spooky Sprinter / Berserk / Prop Hunt are still in the Fortnitemares mix. Read the three options on the terminal — last week’s screenshot is stale.',
   },
 ] as const
 

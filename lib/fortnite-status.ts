@@ -1,7 +1,7 @@
 import { formatSeasonLongDate, getSeasonCountdown, nextSeasonStartDate } from '@/lib/season'
 import type { NewsMotd } from '@/lib/fortnite-news'
 
-export const STATUS_REVIEWED = '9 Oct 2026'
+export const STATUS_REVIEWED = '24 Oct 2026'
 
 export type EpicStatusPayload = {
   indicator: 'none' | 'minor' | 'major' | 'critical' | 'maintenance' | string

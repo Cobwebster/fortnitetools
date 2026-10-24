@@ -434,11 +434,11 @@ export const PRESETS: LoadoutPreset[] = [
   {
     id: 'aggressive',
     name: 'Aggressive pubs',
-    blurb: '8-Bit spray → Drum mid → Sonic rotate',
+    blurb: '8-Bit spray → Heavy AR mid → Sonic rotate',
     tags: ['Pubs', 'Contest'],
     slots: {
       shotgun: 'eight_bit_shotgun',
-      ar: 'drum_gun',
+      ar: 'heavy_assault_rifle',
       smg: 'tactical_pistol',
       heal: 'small_pot',
       mobility: 'sonic_sneakers',
@@ -470,7 +470,7 @@ export const PRESETS: LoadoutPreset[] = [
     tags: ['Zone', 'Ranked'],
     slots: {
       shotgun: 'pump_shotgun',
-      ar: 'ranger_assault_rifle',
+      ar: 'assault_rifle',
       smg: 'dual_pistols',
       heal: 'medkit',
       mobility: 'overdrive_grenade',
@@ -486,7 +486,7 @@ export const PRESETS: LoadoutPreset[] = [
     tags: ['Ranked', 'Zone'],
     slots: {
       shotgun: 'pump_shotgun',
-      ar: 'ranger_assault_rifle',
+      ar: 'assault_rifle',
       smg: 'tactical_pistol',
       heal: 'chug_splash',
       mobility: 'shockwave',
@@ -517,9 +517,9 @@ export const PRESETS: LoadoutPreset[] = [
     blurb: 'Natural cover kit · mobility over mats',
     tags: ['Zero Build'],
     slots: {
-      shotgun: 'pump_shotgun',
-      ar: 'ranger_assault_rifle',
-      smg: 'midas_masterpiece',
+      shotgun: 'sweeper_shotgun',
+      ar: 'assault_rifle',
+      smg: 'tactical_pistol',
       heal: 'slap_juice',
       mobility: 'grappler',
     },
@@ -546,12 +546,12 @@ export const PRESETS: LoadoutPreset[] = [
   {
     id: 'fortnitemares',
     name: 'Fortnitemares',
-    blurb: 'Drum Gun pressure + classic Pump',
+    blurb: 'Wood Stake + Heavy AR + Fiend Hunters',
     tags: ['Fortnitemares', 'Pubs'],
     slots: {
-      shotgun: 'pump_shotgun',
-      ar: 'drum_gun',
-      smg: 'dual_pistols',
+      shotgun: 'wood_stake_shotgun',
+      ar: 'heavy_assault_rifle',
+      smg: 'dual_fiend_hunters',
       heal: 'chug_jug',
       mobility: 'rift',
     },

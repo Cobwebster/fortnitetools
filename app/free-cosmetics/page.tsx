@@ -8,11 +8,15 @@ import { CURRENT_SEASON } from '@/lib/season'
 const faqs = [
   {
     q: 'What free cosmetics are live in Override right now?',
-    a: 'Fortnitemares Nitemare quests (Jack-a-Nape set through 31 Oct), Jimothy Sidekick extract, Prophetic Tapestry login, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and evergreen account rewards like 2FA Boogie Down. Hit Active to hide expired windows.',
+    a: 'Fortnitemares Nitemare quests (Jack-a-Nape set through 31 Oct), Jimothy Sidekick (extract a Dumpster Dive Sprite at a real Extraction Site), Prophetic Tapestry login, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and evergreen account rewards like 2FA Boogie Down. Hit Active to hide expired windows.',
   },
   {
     q: 'How do I get the free Jack-a-Nape skin?',
     a: 'Complete 26 Nitemare quests across BR / Zero Build, Horde Rush, and Reload. Progress carries between modes. Milestone cosmetics unlock earlier (Wind-Up Key at 8, Tambourine at 20, outfit at 26). Ends 31 October 2026.',
+  },
+  {
+    q: 'How do I get Jimothy?',
+    a: 'Extract any Dumpster Dive Sprite at a physical Extraction Site in Battle Royale or Zero Build. Portable Extractor often does not count. Then check Locker → Sidekicks. Ends 31 October 2026. Step-by-step is in the Jimothy how-to on this site.',
   },
   {
     q: 'What is the Admin Panel?',
@@ -92,7 +96,11 @@ export default function FreeCosmeticsPage() {
               <h2 className="text-sm font-bold text-foreground">Fortnitemares first</h2>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                 Nitemare quests unlock Jack-a-Nape and the Wind-Up Key set through 31 Oct. Extract a
-                Dumpster Diver Sprite for Jimothy while you are at it.
+                Dumpster Dive Sprite for{' '}
+                <Link href="/guides/how-to/how-to-get-jimothy-fortnite" className="text-primary hover:underline">
+                  Jimothy
+                </Link>{' '}
+                while you are at it.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card px-4 py-4">
@@ -130,6 +138,13 @@ export default function FreeCosmeticsPage() {
                   className="text-primary hover:underline"
                 >
                   Admin Panel guide
+                </Link>
+                . Jimothy: extract a Dumpster Dive Sprite —{' '}
+                <Link
+                  href="/guides/how-to/how-to-get-jimothy-fortnite"
+                  className="text-primary hover:underline"
+                >
+                  Jimothy how-to
                 </Link>
                 . For Null climb habits, see the{' '}
                 <Link

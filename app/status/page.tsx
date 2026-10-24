@@ -204,10 +204,18 @@ export default async function StatusPage() {
                 key={row.title}
                 className="relative overflow-hidden rounded-xl border border-border bg-card p-5"
               >
-                <span className="font-display text-3xl font-extrabold text-primary/25">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h3 className="mt-1 text-sm font-bold text-foreground">{row.title}</h3>
+                <FortniteIcon
+                  src={
+                    i === 0
+                      ? '/images/icons/glider.png'
+                      : i === 1
+                        ? '/images/icons/storm.png'
+                        : '/images/loadout/pulse_scanner.png'
+                  }
+                  alt=""
+                  size="sm"
+                />
+                <h3 className="mt-3 text-sm font-bold text-foreground">{row.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
               </article>
             ))}
@@ -309,7 +317,18 @@ export default async function StatusPage() {
             <div className="mt-5 grid gap-3 sm:grid-cols-3">
               {WHAT_WE_DONT_SHOW.map((row) => (
                 <article key={row.title} className="rounded-xl border border-border/80 bg-muted/20 p-5">
-                  <h3 className="text-sm font-bold text-foreground">{row.title}</h3>
+                  <FortniteIcon
+                    src={
+                      row.title.includes('ping')
+                        ? '/images/icons/map.png'
+                        : row.title.includes('queue')
+                          ? '/images/loadout/pulse_scanner.png'
+                          : '/images/icons/pickaxe.png'
+                    }
+                    alt=""
+                    size="sm"
+                  />
+                  <h3 className="mt-3 text-sm font-bold text-foreground">{row.title}</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
                 </article>
               ))}

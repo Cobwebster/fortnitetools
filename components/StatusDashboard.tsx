@@ -9,7 +9,8 @@ import {
   nextSeasonStartDate,
   pad2,
 } from '@/lib/season'
-import type { StatusToneKind } from '@/lib/status-tone'
+import { FortniteIcon } from '@/components/fortnite-icon'
+import { STATUS_TONE_ICONS, type StatusToneKind } from '@/lib/status-tone'
 
 export type { StatusToneKind }
 
@@ -27,7 +28,6 @@ const TONE = {
   ok: {
     word: 'Online',
     sub: 'Epic’s board looks clear',
-    orb: 'bg-emerald-400',
     ring: 'border-emerald-400/40',
     glow: 'rgba(52, 211, 153, 0.35)',
     badge: 'bg-emerald-500/15 text-emerald-300 border-emerald-400/40',
@@ -35,7 +35,6 @@ const TONE = {
   warn: {
     word: 'Issues',
     sub: 'Epic flagged something',
-    orb: 'bg-amber-400',
     ring: 'border-amber-400/45',
     glow: 'rgba(251, 191, 36, 0.35)',
     badge: 'bg-amber-500/15 text-amber-200 border-amber-400/40',
@@ -43,7 +42,6 @@ const TONE = {
   bad: {
     word: 'Down',
     sub: 'Epic reports an outage',
-    orb: 'bg-rose-500',
     ring: 'border-rose-500/45',
     glow: 'rgba(244, 63, 94, 0.4)',
     badge: 'bg-rose-500/15 text-rose-200 border-rose-500/40',
@@ -51,7 +49,6 @@ const TONE = {
   unknown: {
     word: 'Unknown',
     sub: 'Could not reach Epic’s board',
-    orb: 'bg-muted-foreground',
     ring: 'border-border',
     glow: 'rgba(148, 163, 184, 0.25)',
     badge: 'bg-muted text-muted-foreground border-border',
@@ -159,13 +156,18 @@ export function StatusDashboard({
 
         <div className="relative grid gap-8 p-6 sm:p-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
-            <div className="relative mx-auto h-28 w-28 shrink-0 sm:mx-0 sm:h-32 sm:w-32">
+            <div className="relative mx-auto shrink-0 sm:mx-0">
               <div
-                className={`absolute inset-0 animate-ping rounded-full opacity-20 ${t.orb}`}
-                style={{ animationDuration: '2.4s' }}
+                className="pointer-events-none absolute -inset-5 rounded-3xl blur-2xl opacity-55"
+                style={{ background: t.glow }}
+                aria-hidden="true"
               />
-              <div className={`absolute inset-3 rounded-full border-2 ${t.ring} bg-background/80`} />
-              <div className={`absolute inset-[2.35rem] rounded-full ${t.orb}`} />
+              <FortniteIcon
+                src={STATUS_TONE_ICONS[tone].src}
+                alt={STATUS_TONE_ICONS[tone].alt}
+                size="hero"
+                frameClassName={`relative border-2 ${t.ring} bg-black/70`}
+              />
             </div>
             <div className="min-w-0 text-center sm:text-left">
               <p className={`inline-flex rounded-md border px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] ${t.badge}`}>

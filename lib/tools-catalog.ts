@@ -73,7 +73,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/tools/loadout-builder',
     title: 'Loadout Builder',
     description:
-      'Full Override inventory planner — hotbar, wood/stone/metal, ammo, heal stacks, use-case presets, kit scorecard, and STK/TTK. Share one link with the lobby.',
+      'Override inventory after v42.40 — hotbar without Midas/Drum, mats, ammo, Fortnitemares presets, kit scorecard, and STK/TTK. Share one link with the lobby.',
     tags: ['Loadout', 'Mats', 'TTK'],
     category: 'weapons',
   },
@@ -161,7 +161,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/reload',
     title: 'Fortnite Reload',
     description:
-      'What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer. Last reviewed 18 Aug 2026.',
+      'What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. Fortnitemares overlay through 1 Nov. Last reviewed 24 Oct 2026.',
     tags: ['Reload', 'Modes', 'Maps'],
     category: 'season',
   },
@@ -169,7 +169,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/ranked',
     title: 'Fortnite Ranked',
     description:
-      'LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump. Last reviewed 31 Aug 2026.',
+      'LP, Null ranked styles, Override climb drops, and Match Overrides after v42.40. Last reviewed 24 Oct 2026.',
     tags: ['Ranked', 'LP', 'Reset'],
     category: 'season',
   },
@@ -193,7 +193,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/weapons',
     title: 'All Fortnite Weapons',
     description:
-      'Full weapon encyclopedia — current pool plus vaulted history with DPS, damage, fire rate, mag, and reload by rarity.',
+      'Override encyclopedia after v42.40 — Pump, 8-Bit, Sweeper, Heavy AR, plus vaulted history (Midas, Drum Gun) with DPS, damage, fire rate, mag, and reload.',
     tags: ['Weapons', 'DPS', 'Stats'],
     category: 'weapons',
   },
@@ -201,7 +201,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/weapon-changes',
     title: 'Weapon Changes',
     description:
-      'Fortnite weapon buffs and nerfs by patch — damage, DPS, fire rate, mag, reload, and structure damage with Old / New / Change.',
+      'Fortnite weapon buffs and nerfs through v42.40 — Sweeper fire rate, Midas vault, Fortnitemares pool flips, with Old / New / Change.',
     tags: ['Balance', 'Buffs', 'Nerfs'],
     category: 'weapons',
   },
@@ -292,6 +292,14 @@ export const TOOLS: ToolEntry[] = [
       'Daily XP pace, weekly quest planner, and playtime estimates so you know if you can finish the Override pass.',
     tags: ['XP', 'Levels', 'Battle Pass'],
     category: 'calculators',
+  },
+  {
+    href: '/locker',
+    title: 'Fortnite Locker',
+    description:
+      'Make and share your own Fortnite locker. Sign in, add cosmetics, send the link.',
+    tags: ['Locker', 'Skins', 'Share'],
+    category: 'cosmetics',
   },
   {
     href: '/tools/vbucks-calculator',

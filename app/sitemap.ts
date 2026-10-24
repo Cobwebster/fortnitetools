@@ -5,6 +5,7 @@ import { localizedGuidePaths, localizedToolSlugs, prefixedLocales } from '@/i18n
 import { fetchLiveSets } from '@/lib/cosmetic-sets'
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
+import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
 
 const FLAGSHIP = new Set([
   '/fortnite-map',
@@ -135,6 +136,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/new-cosmetics',
     '/cosmetic-stats',
     '/sets',
+    '/locker',
     ...liveSets.map((s) => `/sets/${s.slug}`),
     '/creator-code',
     '/map-rotation',
@@ -212,5 +214,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: post.featured ? 0.75 : 0.6,
     }))
 
-  return [...staticRoutes, ...toolRoutes, ...localeRoutes, ...categoryRoutes, ...postRoutes]
+  const weaponRoutes: MetadataRoute.Sitemap = WEAPON_CATALOG.map((w) => ({
+    url: `${base}/weapons/${w.id}`,
+    lastModified: hubModified,
+    changeFrequency: 'weekly' as const,
+    priority: w.vaulted ? 0.4 : 0.55,
+  }))
+
+  return [...staticRoutes, ...toolRoutes, ...localeRoutes, ...categoryRoutes, ...postRoutes, ...weaponRoutes]
 }

@@ -49,3 +49,6 @@ Desktop.ini
 
 # local-only scrape input for parse:weapon-changes (generated JSON is committed instead)
 scripts/weapon-changes-source.md
+
+# Supabase SQL (run in the dashboard; keep local)
+supabase/

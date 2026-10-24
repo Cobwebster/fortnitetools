@@ -16,6 +16,7 @@
     "season": "Season",
     "drops": "Drops",
     "sets": "Sets",
+    "locker": "Locker",
     "creatorCode": "Creator Code",
     "freeCosmetics": "Free Cosmetics",
     "countdown": "Countdown",
@@ -71,6 +72,7 @@
     "season": "Season",
     "drops": "Best Drops",
     "sets": "Sets",
+    "locker": "Locker",
     "creatorCode": "Creator Code",
     "upload": "Community Uploads",
     "loadoutBuilder": "Loadout Builder",
@@ -111,8 +113,8 @@
   },
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
-    "heroSubtitle": "Override map, shop, and stats — plus guides when the island actually changes.",
-    "heroBody": "Drop on the live map, check tracked player boards, build a hotbar, and keep an eye on ranked and free rewards. Built for how you play this season.",
+    "heroSubtitle": "Last week of Override — v42.40 loot, Fortnitemares, and the Nov 1 Battle Pass cutoff.",
+    "heroBody": "Drop on the live map, rebuild a hotbar without Midas or Drum Gun, finish Null and Jack-a-Nape, and watch the season countdown. Built for how you play this week.",
     "ctaTools": "Open free tools",
     "ctaTierList": "Weapons tier list",
     "ctaWeapons": "All weapons",
@@ -129,7 +131,7 @@
     "blurbGuidesTitle": "Guides",
     "blurbGuides": "Override Battle Pass, Green Hill drops, Admin Panel codes, and Ranked Null — plus evergreen account how-tos.",
     "blurbSeasonTitle": "Override season",
-    "blurbSeason": "Live island notes, Match Overrides, ranked, and Battle Pass timing through November 1.",
+    "blurbSeason": "v42.40 was the last Override patch. Fortnitemares, Null ranked styles, and the Battle Pass lock on November 1.",
     "toolFreeCosmetics": "Free Cosmetics",
     "toolXpCalc": "XP Calc",
     "toolCountdown": "Countdown",
@@ -213,6 +215,13 @@
     "searchPlaceholder": "Search tools…",
     "openTool": "Open tool",
     "noResults": "No tools match your filters.",
+    "sortLabel": "Sort tools",
+    "sortHottest": "Hottest",
+    "sortCatalog": "Catalog",
+    "fireLabel": "Give this tool a fire",
+    "firedLabel": "You already fired this tool",
+    "signInToFire": "Sign in to give this tool a fire",
+    "fireHint": "Sign in to 🔥 a tool once. Rankings on this page are a snapshot plus starter counts — they do not jump live.",
     "categories": {
       "all": "All",
       "cosmetics": "Cosmetics",
@@ -226,7 +235,7 @@
     "items": {
       "free-cosmetics": {
         "title": "Free Fortnite Cosmetics",
-        "description": "Track free Override rewards — ironmouse Twitch Drops, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account links with end dates."
+        "description": "Last week of Fortnitemares freebies — Jack-a-Nape quests, Jimothy, Ranked Null, Admin Panel codes, and the Override Battle Pass free track before November 1."
       },
       "xp-calculator": {
         "title": "Fortnite XP Calculator",
@@ -262,11 +271,11 @@
       },
       "reload": {
         "title": "Fortnite Reload",
-        "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
+        "description": "Respawn BR on Oasis, Slurp Rush, and Springfield — Fortnitemares overlay through 1 Nov, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
         "title": "Fortnite Ranked",
-        "description": "LP, Override climb drops, Match Overrides, and a link to the long climb guide. Not the playlist dump."
+        "description": "Override LP, Null ranked styles before Nov 1, climb drops, and Match Overrides after v42.40."
       },
       "status": {
         "title": "Is Fortnite Down?",
@@ -274,7 +283,7 @@
       },
       "season": {
         "title": "Chapter 7 Season 4 Override Hub",
-        "description": "Live Override hub: new POIs, Match Overrides, ranked, and Battle Pass end date (November 1, 2026)."
+        "description": "Last week of Override after v42.40: loot vaults, Fortnitemares, ranked Null, and Battle Pass end date (November 1, 2026)."
       },
       "drops": {
         "title": "Best Drops",
@@ -283,6 +292,10 @@
       "sets": {
         "title": "Live Cosmetic Sets",
         "description": "Tonight’s Item Shop sets plus current-build sets, capped, with shop history. Not a page per outfit."
+      },
+      "locker": {
+        "title": "Fortnite Locker",
+        "description": "Make and share your own Fortnite locker. Sign in, add cosmetics, send the link."
       },
       "news": {
         "title": "Fortnite News",
@@ -318,7 +331,7 @@
       },
       "loadout-builder": {
         "title": "Loadout Builder",
-        "description": "Full Override inventory — hotbar, mats, ammo, heal stacks, use-case presets, kit scorecard, and STK/TTK. Share one link with the lobby."
+        "description": "Override inventory after v42.40 — hotbar without Midas/Drum, mats, ammo, Fortnitemares presets, kit scorecard, and STK/TTK."
       },
       "fortnite-build-simulator": {
         "title": "Build Simulator",
@@ -350,11 +363,11 @@
       },
       "weapons": {
         "title": "All Fortnite Weapons",
-        "description": "Full weapon encyclopedia — current pool plus vaulted history with DPS, damage, fire rate, mag, and reload by rarity."
+        "description": "Override pool after v42.40 — Pump, 8-Bit, Sweeper, Heavy AR, plus vaulted history (Midas, Drum Gun) with DPS, damage, fire rate, mag, and reload by rarity."
       },
       "weapon-changes": {
         "title": "Weapon Changes",
-        "description": "Fortnite weapon buffs and nerfs by patch — damage, DPS, fire rate, mag, reload, and structure damage with Old / New / Change."
+        "description": "Fortnite weapon buffs and nerfs through v42.40 — Sweeper fire rate, Midas vault, Fortnitemares pool flips, with Old / New / Change."
       },
       "weapon-damage-calculator": {
         "title": "Weapon Damage Calculator",

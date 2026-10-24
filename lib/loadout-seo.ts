@@ -12,7 +12,7 @@ export const LOADOUT_FAQS = [
   {
     question: 'What is a good Fortnite loadout in Chapter 7 Season 4?',
     answer:
-      'Most fights still want a shotgun for box/close pressure, a mid-range AR, a spray or sidearm for cleanup, plus heals and utility. Use the Ranked endgame, Contested POI, Zero Build, Duo support, or Fortnitemares presets as starting points, then swap for what you actually loot.',
+      'Most fights still want a shotgun for box/close pressure, a mid-range AR, a spray or sidearm for cleanup, plus heals and utility. After v42.40 that is Pump / 8-Bit / Sweeper / Wood Stake, Heavy AR or classic AR, and a pistol or Dual Fiend Hunters — Drum Gun and Midas are vaulted. Use the Ranked, contest, Zero Build, Duo, or Fortnitemares presets, then swap for what you actually loot.',
   },
   {
     question: 'How does the kit scorecard work?',

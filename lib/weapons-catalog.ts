@@ -54,6 +54,29 @@ const RARITY_ORDER: WeaponRarity[] = [
 /** Full Fortnite weapons encyclopedia (current pool + vaulted history). */
 export const WEAPON_CATALOG: WeaponCatalogEntry[] = encyclopedia as WeaponCatalogEntry[]
 
+const CATALOG_BY_ID = new Map(WEAPON_CATALOG.map((w) => [w.id, w]))
+
+function normalizeWeaponName(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/['']/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+}
+
+const CATALOG_ID_BY_NAME = new Map(
+  WEAPON_CATALOG.map((w) => [normalizeWeaponName(w.name), w.id] as const)
+)
+
+export function getCatalogWeapon(id: string): WeaponCatalogEntry | undefined {
+  return CATALOG_BY_ID.get(id)
+}
+
+/** Exact name match only — "Pump Shotgun" must not resolve to "Striker Pump Shotgun". */
+export function catalogIdForWeaponName(name: string): string | undefined {
+  return CATALOG_ID_BY_NAME.get(normalizeWeaponName(name))
+}
+
 export const WEAPON_CATEGORY_META: {
   id: WeaponCategoryId | 'all'
   label: string

@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '9 Oct 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-10-09'
+export const SEASON_HUB_REVIEWED = '24 Oct 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-10-24'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -18,26 +18,27 @@ export const SEASON_HUB_LINKS = [
   { href: '/ranked', label: 'Ranked / LP' },
   { href: '/status', label: 'Is Fortnite down' },
   { href: '/guides/season/fortnite-override-battle-pass-guide', label: 'Override Battle Pass' },
+  { href: '/guides/season/fortnite-v42-40-last-override-patch', label: 'v42.40 last patch' },
   { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel codes' },
   { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked climb guide' },
 ] as const
 
 export const RESET_WEEK_PLAYBOOK = [
   {
-    title: 'Override is live',
-    body: `Chapter 7 Season 4 (${CURRENT_SEASON.codename}) flipped on 20 Aug 2026. Lobby MOTD: “Fortnite: Override Is Here!” Match Override Consoles, Sonic / gaming-legend collabs, and new center POIs are in the client. Finish the Override Battle Pass before ${formatSeasonLongDate(seasonEndDate())} — free track does not carry.`,
+    title: 'Last week of Override',
+    body: `Chapter 7 Season 4 (${CURRENT_SEASON.codename}) is in its final week. Epic’s Battle Pass page still reads “Ends November 1, 2026 Eastern Time.” Fortnitemares runs to the same calendar day. Claim Null ranked styles, Jack-a-Nape quests, Sprite Mastery, and unclaimed pass rewards before downtime — none of that carries.`,
   },
   {
-    title: 'What changed on the island',
-    body: 'Live Fortnite-API named POIs now include Green Hill Zone, Reality’s Reign, and Stone Sanctum. Gone from the named list: Frosted Flats, Sinister Strip, Calamari Canyon. The old Zero Point landmark reads as Geno’s Machine. Returning coast/woods names (Heatwave, Battlewoods, Wonkeeland, Latte, Sunken Shores, Lifty, Grove, Sanctuary, Cluster, Chopped Shop) are still there — traffic patterns are not identical to Runners.',
+    title: 'What v42.40 actually changed',
+    body: '15 Oct was the last Override content patch. New Loot Hacks: Thorne’s Vampiric Blade, Finger Guns, Gatekeeper Shotgun, Hunting Rifle, Slap Splash, all Sprite variants. Vaulted: Midas’ Masterpiece, Witch Broom, plus Super Shot / Big Boom / Action Hero / Healing Overdrive cartridges. Sweeper Shotgun fire rate went up slightly. Honey Sprite and One Wish Willow Sprite are live; Sprite Mastery is on its last page.',
   },
   {
-    title: 'Loot & tools honesty',
-    body: 'Weapons encyclopedia and loadout builder now track the Override launch pool (8-Bit Shotgun, Mega Buster, Midas’ Masterpiece, classic unvaults). Loot Hack items and Match Overrides still change what you see mid-match — confirm in-game after hotfixes.',
+    title: 'Island (still the same map)',
+    body: 'Named POIs did not flip in v42.40. Green Hill Zone, Reality’s Reign, and Stone Sanctum are still the new names. Frosted Flats, Sinister Strip, and Calamari Canyon stay off the named list. A giant pirate chest landmark sits east of Sunken Shores — treat it as scenery until Epic names whatever comes next.',
   },
   {
     title: 'Countdown',
-    body: `Override is dated through ${formatSeasonLongDate(seasonEndDate())} (UTC schedule used on this site; Epic’s Battle Pass page states November 1). Exact downtime can move a few hours. Use the season countdown tool for remaining time.`,
+    body: `Override is dated through ${formatSeasonLongDate(seasonEndDate())} (UTC schedule used on this site; Epic’s Battle Pass page states November 1, Eastern Time). Exact downtime can move a few hours. Use the season countdown tool for remaining time. Chapter 7 Season 5’s theme is not announced here.`,
   },
 ] as const
 
@@ -65,35 +66,35 @@ export const SEASON_CHANGE_CARDS = [
     live: `Override island is live. New named POIs: Green Hill Zone, Reality’s Reign, Stone Sanctum. Several Runners names (Frosted Flats, Sinister Strip, Calamari Canyon) are gone from the named list. Interactive map pins load from live Fortnite-API coordinates.`,
     incoming: `${CURRENT_SEASON.next.label} is not announced beyond the Override end date (${formatSeasonLongDate(nextSeasonStartDate())} UTC schedule). Do not invent the next island.`,
     extra:
-      'Five drop pages still cover returning POIs — treat mid-game rotates as “re-check in client” until we rewrite paths for Override traffic. Map Evolution still archives older seasons; live POIs are on the interactive map.',
+      'Five drop pages still cover returning POIs — treat mid-game rotates as “re-check in client.” A pirate-chest landmark east of Sunken Shores showed up with v42.40; it is not a new named POI. Map Evolution still archives older seasons; live POIs are on the interactive map.',
     href: '/fortnite-map',
     linkLabel: 'Open map',
   },
   {
     id: 'loot',
     title: 'Loot pool',
-    live: 'Override pool after Fortnitemares (v42.30): Pump buffed in v42.10, 8-Bit / AR toned down, Drum Gun + Ranger AR vaulted, Bonerattler SMG / Freddy’s Nightmare / classic horror unvaults in. Mega Buster + Midas’ Masterpiece still around. See /weapons and /weapon-changes.',
-    incoming: 'Kingdom Key and Cyberpunk Rebecca guns are called out for later — not inventing them as live until they ship.',
+    live: 'After v42.40: Pump (post–v42.10), 8-Bit, Sweeper (fire-rate bump), Heavy AR, Wood Stake, Dual Fiend Hunters, Mega Buster, Bonerattler SMG / Freddy’s Nightmare still in the Fortnitemares mix. Drum Gun, Ranger AR, and Midas’ Masterpiece are vaulted. Gatekeeper, Hunting Rifle, Finger Guns, and Thorne’s blade are Loot Hacks this week — not guaranteed floor loot.',
+    incoming: 'No more Override content patches are scheduled. Next loot flip is the season boundary — we will not invent the Chapter 7 Season 5 pool.',
     extra:
-      'Match Overrides rewrite match rules mid-game (speed, loot, heal, etc.). That is not the same as a mythic drop — plan fights knowing the lobby can flip mid-match.',
+      'Like-for-Like auto-upgrades (walk over a higher rarity of the gun you already hold) shipped in v42.40 if Auto Pick Up Weapons is on. Match Overrides still rewrite rules mid-match; Super Shot, Big Boom, Action Hero, and Healing Overdrive were pulled in this patch.',
     href: '/weapons',
     linkLabel: 'Weapons page',
   },
   {
     id: 'mythics',
     title: 'Mythics',
-    live: 'Midas’ Masterpiece is the standout launch Mythic pistol (limited ammo, headshot deletes). Enhanced 8-Bit Shotgun (Eggman) was vaulted shortly after launch. Old Runners boss mythics are gone.',
-    incoming: 'More collab mythics may arrive mid-season. We will not invent drop locations the night before.',
+    live: 'Midas’ Masterpiece left in v42.40. Freddy’s Nightmare (Krueger drop at Nightmare Neighborhood) is the Fortnitemares highlight. Enhanced 8-Bit Shotgun (Eggman) was vaulted shortly after launch. Thorne’s Vampiric Blade is a Loot Hack, not a floor spawn.',
+    incoming: 'Do not expect another Override mythic before November 1. Next-season boss loot is not announced.',
     extra:
-      'Loot Hack / Sprite Dust can surface extra guns that are not on the floor pool.',
+      'Loot Hack / Sprite Dust can still surface Gatekeeper, Hunting Rifle, Finger Guns, Slap Splash, and Sprite variants from hacked chests.',
     href: '/tools/loadout-builder',
     linkLabel: 'Loadout builder',
   },
   {
     id: 'ranked',
     title: 'Ranked',
-    live: 'Ranked LP reset with the Aug 20 season boundary. You are on the Override ladder now. Placement still beats spawn-island K/D. Returning balanced drops (Wonkeeland, Latte) remain sensible climb landings while we map Green Hill / Reality’s Reign contest.',
-    incoming: 'Next ranked reset is expected at the Override → S5 boundary. Confirm the ranked tab in-game near season end.',
+    live: 'You are still on the Override ladder. Claim Null Champion / Elite / Unreal styles before the flip — they lock with the season. Placement still beats spawn-island K/D. Wonkeeland and Latte remain the climb defaults.',
+    incoming: 'Next ranked reset is expected at the Override → S5 boundary around November 1. Confirm the ranked tab in-game after downtime — we will not invent a new LP formula.',
     extra:
       'Ranked Reload is still the small-island rotation — not the Override BR map. Modes catalog labels Habanero rows; Discover is source of truth for which queue is up.',
     href: '/ranked',
@@ -105,7 +106,7 @@ export const SEASON_CHANGE_CARDS = [
     live: `Override Battle Pass is live (Sonic and other Gaming Legends styles in public coverage). Ends with the season (${formatSeasonLongDate(seasonEndDate())}). Unclaimed rewards lock — use the XP calculator if you are short.`,
     incoming: `${CURRENT_SEASON.next.label} pass is not published. Do not buy levels for a future track that does not exist yet.`,
     extra:
-      'Free cosmetics outside the pass (Twitch, Ranked cups, etc.) keep their own end dates on the free-cosmetics tracker.',
+      'Fortnitemares Jack-a-Nape quests and Jimothy Sidekick also end with the event (through 31 Oct / 1 Nov). Jimothy how-to: extract a Dumpster Dive Sprite at a physical Extraction Site. Track dates on free cosmetics, not on the pass UI.',
     href: '/xp-calculator',
     linkLabel: 'XP planner',
   },
@@ -118,6 +119,9 @@ export const VAULTED_THIS_SEASON = [
   { name: 'Runners Battle Pass', when: 'Locked at the Aug 20 reboot — free track does not carry' },
   { name: 'Striker Pump / Surgical Burst / Warforged / Rapid Fire (and most C7S3 guns)', when: 'Vaulted with Override loot flip' },
   { name: 'Enhanced 8-Bit Shotgun (Eggman Mythic)', when: 'Vaulted shortly after Aug 20 launch hotfix' },
+  { name: 'Drum Gun / Ranger Assault Rifle / Tetris Rift', when: 'Vaulted with Fortnitemares v42.30 (1 Oct 2026)' },
+  { name: "Midas' Masterpiece / Witch Broom", when: 'Vaulted in v42.40 (15 Oct 2026)' },
+  { name: 'Super Shot / Big Boom / Action Hero / Healing Overdrive (Match Overrides)', when: 'Disabled in v42.40' },
 ] as const
 
 export const SEASON_HUB_FAQS = [
@@ -128,7 +132,7 @@ export const SEASON_HUB_FAQS = [
   {
     question: 'What is new in Fortnite Override?',
     answer:
-      'Match Override Consoles that rewrite match rules, new named POIs (Green Hill Zone, Reality’s Reign, Stone Sanctum), Gaming Legends collabs (Sonic and others), and a new Battle Pass. Lobby MOTD: “Fortnite: Override Is Here!” Last reviewed 31 Aug 2026 against live map + news tiles.',
+      'Match Override Consoles, Green Hill Zone / Reality’s Reign / Stone Sanctum, Sonic and other Gaming Legends on the Battle Pass, Sprites, and Fortnitemares through 1 November. Last content patch is v42.40 (15 Oct 2026). Last reviewed 24 Oct 2026.',
   },
   {
     question: 'What is the current Fortnite map?',
@@ -142,7 +146,7 @@ export const SEASON_HUB_FAQS = [
   },
   {
     question: 'When does Chapter 7 Season 5 start?',
-    answer: `${CURRENT_SEASON.next.label} is dated ${formatSeasonLongDate(nextSeasonStartDate())} on this site (same as Override end). Theme and island are not announced here — we will not invent them.`,
+    answer: `${CURRENT_SEASON.next.label} is dated ${formatSeasonLongDate(nextSeasonStartDate())} on this site (same as Override end). Theme, island, and loot are not announced here — we will not invent them. A pirate-chest landmark east of Sunken Shores is not a season-5 leak we are treating as fact.`,
   },
   {
     question: 'Are the old drop guides still valid?',

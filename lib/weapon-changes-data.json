@@ -1,7 +1,109 @@
 {
-  "updatedAt": "2026-10-09",
-  "sourceNote": "Compiled from Epic Override patch notes (v42.00–v42.30), Fortnite wiki history, and community trackers. Numbers are reference values — always confirm in-game after updates. Loot-pool rows use In BR loot pool 0/1 for vault/unvault. Relative % rows for Rebecca’s Guns reflect Epic’s qualitative notes when absolute sheet values were not published.",
+  "updatedAt": "2026-10-24",
+  "sourceNote": "Compiled from Epic Override patch notes (v42.00–v42.40), Fortnite wiki history, and community trackers. Numbers are reference values — always confirm in-game after updates. Loot-pool rows use In BR loot pool 0/1 for vault/unvault. Relative % rows (Sweeper fire rate, Rebecca’s Guns) reflect Epic’s qualitative notes when absolute sheet values were not published.",
   "patches": [
+    {
+      "date": "2026-10-15",
+      "label": "October 15, 2026 — Override (v42.40)",
+      "entries": [
+        {
+          "rarity": "Epic",
+          "name": "Sweeper Shotgun",
+          "stats": [
+            {
+              "stat": "Fire Rate (relative)",
+              "old": 100,
+              "new": 108,
+              "change": 8
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Midas' Masterpiece",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Witch Broom",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 1,
+              "new": 0,
+              "change": -1
+            }
+          ]
+        },
+        {
+          "rarity": "Mythic",
+          "name": "Thorne's Vampiric Blade",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Epic",
+          "name": "Finger Guns",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Gatekeeper Shotgun",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Legendary",
+          "name": "Hunting Rifle",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        },
+        {
+          "rarity": "Rare",
+          "name": "Slap Splash",
+          "stats": [
+            {
+              "stat": "In BR loot pool",
+              "old": 0,
+              "new": 1,
+              "change": 1
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-01",
       "label": "October 1, 2026 — Fortnitemares (v42.30)",

@@ -15,8 +15,9 @@ export type WeaponStat = {
 }
 
 /**
- * Active Battle Royale combat guns for C7S4 Override (post Aug 20–26 hotfixes).
- * Runners pool vaulted. Some returns (Minigun, Dual Pistols, Oni) often need Loot Hack.
+ * Active Battle Royale combat guns for C7S4 Override after v42.40 (15 Oct 2026).
+ * Drum Gun, Ranger AR, and Midas’ Masterpiece are vaulted. Some returns
+ * (Minigun, Dual Pistols, Oni, Gatekeeper, Hunting Rifle) often need Loot Hack.
  * Mega Buster is Explosive in the encyclopedia — listed here as AR slot for hotbar planning.
  */
 export const WEAPONS: WeaponStat[] = [
@@ -35,30 +36,17 @@ export const WEAPONS: WeaponStat[] = [
     note: 'Classic AR unvault',
   },
   {
-    id: 'ranger_assault_rifle',
-    name: 'Ranger Assault Rifle',
+    id: 'heavy_assault_rifle',
+    name: 'Heavy Assault Rifle',
     category: 'AR',
     rarity: 'Legendary',
-    dmg: 37,
-    hs: 1.5,
-    fireRate: 4.0,
+    dmg: 44,
+    hs: 2.0,
+    fireRate: 3.75,
     mag: 25,
-    reload: 2.25,
+    reload: 2.52,
     image: '/images/loadout/warforged_ar.png',
-    note: 'Slower · accurate',
-  },
-  {
-    id: 'drum_gun',
-    name: 'Drum Gun',
-    category: 'AR',
-    rarity: 'Legendary',
-    dmg: 24,
-    hs: 1.5,
-    fireRate: 8.3,
-    mag: 30,
-    reload: 2.7,
-    image: '/images/loadout/warforged_ar.png',
-    note: 'Spray / pressure',
+    note: 'Fortnitemares unvault',
   },
   {
     id: 'mega_buster',
@@ -115,6 +103,32 @@ export const WEAPONS: WeaponStat[] = [
     note: 'Classic pump · C7S4 high-tier values',
   },
   {
+    id: 'sweeper_shotgun',
+    name: 'Sweeper Shotgun',
+    category: 'Shotgun',
+    rarity: 'Legendary',
+    dmg: 82.5,
+    hs: 1.5,
+    fireRate: 1.53,
+    mag: 7,
+    reload: 5.2,
+    image: '/images/loadout/maven_auto.png',
+    note: 'Auto · v42.40 fire-rate bump (confirm in-game)',
+  },
+  {
+    id: 'wood_stake_shotgun',
+    name: 'Wood Stake Shotgun',
+    category: 'Shotgun',
+    rarity: 'Legendary',
+    dmg: 101,
+    hs: 1.5,
+    fireRate: 1.3,
+    mag: 4,
+    reload: 3.85,
+    image: '/images/loadout/striker_pump.png',
+    note: 'Fortnitemares unvault',
+  },
+  {
     id: 'oni_shotgun',
     name: 'Oni Shotgun',
     category: 'Shotgun',
@@ -155,6 +169,19 @@ export const WEAPONS: WeaponStat[] = [
     note: 'Often Loot Hack',
   },
   {
+    id: 'dual_fiend_hunters',
+    name: 'Dual Fiend Hunters',
+    category: 'Pistol',
+    rarity: 'Legendary',
+    dmg: 34,
+    hs: 1.5,
+    fireRate: 4.0,
+    mag: 16,
+    reload: 2.61,
+    image: '/images/loadout/ranger_pistol.png',
+    note: 'Fortnitemares unvault',
+  },
+  {
     id: 'ranger_pistol',
     name: 'Ranger Pistol',
     category: 'Pistol',
@@ -165,19 +192,6 @@ export const WEAPONS: WeaponStat[] = [
     mag: 15,
     reload: 1.35,
     image: '/images/loadout/ranger_pistol.png',
-  },
-  {
-    id: 'midas_masterpiece',
-    name: "Midas' Masterpiece",
-    category: 'Pistol',
-    rarity: 'Mythic',
-    dmg: 125,
-    hs: 2.5,
-    fireRate: 1.0,
-    mag: 1,
-    reload: 2.6,
-    image: '/images/loadout/bank_shot.png',
-    note: '1/match · headshot deletes · limited ammo',
   },
 ]
 

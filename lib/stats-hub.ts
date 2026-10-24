@@ -1,7 +1,7 @@
 import { CURRENT_SEASON, formatSeasonLongDate, seasonEndDate } from '@/lib/season'
 
-export const STATS_HUB_REVIEWED = '9 Oct 2026'
-export const STATS_HUB_REVIEWED_ISO = '2026-10-09'
+export const STATS_HUB_REVIEWED = '24 Oct 2026'
+export const STATS_HUB_REVIEWED_ISO = '2026-10-24'
 
 export const STATS_HUB_LINKS = [
   { href: '/tools/player-stats', label: 'Look up a name' },

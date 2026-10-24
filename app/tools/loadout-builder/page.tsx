@@ -127,8 +127,8 @@ export default async function LoadoutBuilderPage() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Shotgun</h3>
                 <p>
-                  Close fights still decide contested POIs. Pump rewards first-shot accuracy; 8-Bit sprays when you
-                  cannot land pumps. See the{' '}
+                  Close fights still decide contested POIs. Pump rewards first-shot accuracy; 8-Bit and Sweeper
+                  spray when you cannot land pumps; Wood Stake is the Fortnitemares shotgun. See the{' '}
                   <Link href="/guides/weapons/fortnite-shotgun-guide-best-options" className="text-primary hover:underline">
                     shotgun guide
                   </Link>{' '}
@@ -138,8 +138,9 @@ export default async function LoadoutBuilderPage() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">AR / Rifle</h3>
                 <p>
-                  Classic AR and Ranger cover mid peeks; Drum Gun pressures boxes; Mega Buster is a charge-lane
-                  swap. Snipers replace the AR slot here when your drop path has long sightlines.
+                  Classic AR and Heavy AR cover mid peeks after v42.40; Drum Gun and Ranger AR are vaulted. Mega
+                  Buster is still a charge-lane swap. Snipers replace the AR slot here when your drop path has
+                  long sightlines.
                 </p>
               </div>
               <div>

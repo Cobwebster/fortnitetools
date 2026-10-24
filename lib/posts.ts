@@ -5,7 +5,7 @@ export interface Post {
   title: string
   excerpt: string
   category: Category
-  /** Optional; omit when we don't have a real Fortnite asset */
+  /** Cover art — official Epic loading screen / MOTD / item render when we have one */
   image?: string
   date: string
   readTime: number
@@ -50,14 +50,213 @@ export const localizedGuideSlugs = [
 ] as const
 
 export const posts: Post[] = [
-  // ─── OVERRIDE (C7S4) — Sep 2026 ────────────────────────────────────────────
+  // ─── OVERRIDE (C7S4) — Oct 2026 ────────────────────────────────────────────
+  {
+    slug: 'fortnite-v42-40-last-override-patch',
+    title: 'Fortnite v42.40 — Last Override Patch Before Season End',
+    excerpt:
+      'What actually shipped on 15 October 2026: new Loot Hacks, Midas and Witch Broom vaults, Sweeper fire-rate bump, Honey / One Wish Willow Sprites, Like-for-Like pickups, and a last-week checklist before November 1.',
+    category: 'season',
+    image: '/images/guides/horror-here.jpg',
+    date: '2026-10-24',
+    readTime: 11,
+    featured: true,
+    tags: [
+      'fortnite v42.40',
+      'fortnite override patch',
+      'fortnitemares 2026',
+      'midas masterpiece vaulted',
+      'loot hacks',
+      'chapter 7 season 4 end',
+      'sweeper shotgun',
+    ],
+    content: `
+## This is the last Override content drop
+
+**v42.40** went live **15 October 2026**. Epic’s notes call it the final Battle Royale update of Chapter 7 Season 4. Fortnitemares and the Override Battle Pass both still read **through 1 November 2026, Eastern Time**. There is no published hour. Treat the evening of 31 October as the practical deadline if you are in US time zones, and check the in-game Passes tab the day of.
+
+This page is the “so what” for that patch — not a paste of the notes. Season sheet: [Override hub](/season). Clock: [countdown](/season-countdown). Loot numbers: [weapon changes](/weapon-changes).
+
+Last reviewed: **24 October 2026**.
+
+## Loot Hacks this week (not floor loot)
+
+Sprite Dust still buys a Loot Hack that rewrites **your next chests**, not the whole lobby’s floor spawns. v42.40’s board:
+
+| Hack | What it is |
+| --- | --- |
+| **Thorne’s Vampiric Blade** | Mythic melee return |
+| **Finger Guns** | Joke hitscan from earlier Chapter 7 |
+| **Gatekeeper Shotgun** | 3-shell shotgun |
+| **Hunting Rifle** | Single-shot DMR / sniper feel |
+| **Slap Splash** | Slap heal throw |
+| **All Sprite Variants** | Lets hacked chests spit Sprite styles |
+
+If you never open the Hack menu, you can play a whole session without seeing Gatekeeper or Finger Guns. That is expected. Floor pool is still Pump / 8-Bit / Sweeper / Heavy AR / Wood Stake / Dual Fiend Hunters / Mega Buster plus Fortnitemares extras like Bonerattler and Freddy’s Nightmare.
+
+## What left the island
+
+**Vaulted in v42.40**
+- **Midas’ Masterpiece** — the 1-ammo Mythic pistol from Override launch. Headshot deletes are gone unless it comes back later.
+- **Witch Broom** — Fortnitemares pocket mobility from v42.30, already pulled.
+- **Match Overrides:** Super Shot, Big Boom, Action Hero, Healing Overdrive.
+
+**Already vaulted in Fortnitemares v42.30 (1 Oct)** — still gone: Drum Gun, Ranger Assault Rifle, Tetris Rift.
+
+Do not copy a loadout screenshot from early October that still has Drum + Midas. The [loadout builder](/tools/loadout-builder) presets were rebuilt for this pool.
+
+## Sweeper Shotgun
+
+Epic’s line is “slightly increased fire rate.” They did not publish a new shots-per-second sheet. We log it as a relative buff on [weapon changes](/weapon-changes) and keep the pre-patch encyclopedia rate until a datamine is honest. Confirm the in-game inspect screen if you are theory-crafting STK.
+
+Sweeper is still the auto shotgun next to Pump and 8-Bit — not a replacement for first-shot Pump in boxes.
+
+## New Sprites
+
+- **Honey Sprite** (Design-A-Sprite winner) — ranged hits can spawn bees at the impact point.
+- **One Wish Willow Sprite** (Obsession collab) — steal equipped Sprites on elim and shove nearby players when you take damage. Removing it marks you on the map.
+
+Sprite Mastery’s **last page** is unlocked: extra **Quack Sprites** and a **Pixel Polli** style. Quack feeds bonus Sprite XP to everything you are carrying. Finish that page this week; mastery does not roll into Season 5.
+
+## Like-for-Like weapon upgrades (easy to miss)
+
+Walk over a **higher rarity of the same gun** you are holding and, if **Settings → Game → Combat → Auto Pick Up Weapons** is on, the client swaps you up automatically. That is the whole feature. It does not grab a different weapon off the floor. Turn it off if you hate surprise swaps in a box.
+
+## Match Overrides after the vaults
+
+Consoles still exist. Four combat cartridges are gone. Fortnitemares ones (**Spooky Sprinter, Berserk, Spooky Prop Hunt, More Health, Pumpkin Launching, Sugar Rush**) can still roll. Playbook: [Match Overrides explained](/guides/season/fortnite-match-overrides-explained). Competitive / tournament playlists often strip the mechanic — read the tile.
+
+## Last-week checklist (24 Oct → 1 Nov)
+
+1. **Battle Pass** — unclaimed free-track and premium pages lock. Use the [XP calculator](/xp-calculator). Do not buy tiers on 31 Oct hoping a style appears.
+2. **Jack-a-Nape** — 26 Nitemare quests across BR, Horde Rush, and Reload. Outfit is at 26. [Free cosmetics](/free-cosmetics).
+3. **Jimothy Sidekick** — extract a Dumpster Dive Sprite. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
+4. **Prophetic Tapestry** — login claim during Fortnitemares.
+5. **Null ranked styles** — Champion / Elite / Unreal. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
+6. **Sprite Mastery last page** — Quack + Pixel Polli.
+7. **Admin Panel** — remaining Lobby Hack codes. Never V-Bucks. [Admin Panel how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+
+## What we are not inventing
+
+Epic has **not named** Chapter 7 Season 5 on the Battle Pass page or in the v42.40 notes. A giant pirate chest east of Sunken Shores is a landmark, not a leak we will treat as a POI guide. When the next season has a public name, the [season hub](/season) gets a new review date — not a speculative island essay the week before.
+
+## FAQ
+
+### Is Override over on 31 October or 1 November?
+
+Epic’s Battle Pass page: **1 November 2026, Eastern Time**, no hour. Community wikis often print 31 October because early-morning Eastern cutoffs land on the previous calendar day out west. Check the Passes tab.
+
+### Did the map change in v42.40?
+
+No named-POI flip. Green Hill Zone, Reality’s Reign, and Stone Sanctum are still the new names. [Live map](/fortnite-map).
+
+### Is Midas’ Masterpiece coming back?
+
+Not in this patch. Vault means vault. We will un-hide it on the weapons page if Epic returns it — we will not keep it in the live loadout picker “just in case.”
+`,
+  },
+  {
+    slug: 'how-to-get-jimothy-fortnite',
+    title: 'How to Get Jimothy in Fortnite (Free Dumpster Dive Sidekick)',
+    excerpt:
+      'Jimothy is a free Fortnitemares raccoon Sidekick. Find any Dumpster Dive Sprite, extract it at a physical Extraction Site, then grab him in the Locker before 31 October 2026.',
+    category: 'how-to',
+    image: '/images/guides/jimothy.png',
+    date: '2026-10-24',
+    readTime: 7,
+    featured: true,
+    tags: [
+      'how to get jimothy fortnite',
+      'jimothy fortnite',
+      'jimothy sidekick',
+      'dumpster dive sprite',
+      'fortnitemares 2026',
+      'extract a silly little guy',
+      'nightmare neighborhood',
+    ],
+    content: `
+## What Jimothy actually is
+
+**Jimothy** is an Uncommon **Sidekick** — a raccoon that follows you, not a skin, not a Sprite you equip in the hotbar, and not a Battle Pass page. Epic’s locker line is “Looks like a Jimothy.” He shipped with Fortnitemares **v42.30** (1 October 2026) as **Companion_ScrapPaws**. You cannot buy him with V-Bucks during the event.
+
+The unlock is a hidden quest players have been calling **Extract A Silly Little Guy**. It does not always sit in the regular quest list. Completing it once is enough.
+
+Last reviewed: **24 October 2026**. Fortnitemares freebies on this site run **through 31 October 2026**. Override itself still reads **1 November 2026, Eastern Time**. Do this match this week. Tracker: [free cosmetics](/free-cosmetics). Season sheet: [Override hub](/season).
+
+## How to unlock Jimothy (one match)
+
+1. Queue **Battle Royale or Zero Build pubs** (not Creative). Ranked can be picky with Fortnitemares toys — pubs is the clean run.
+2. Find a **Dumpster Dive Sprite** (any variant — Gold, Loot Hacker, Bounty Hunter, Trick or Treat, Cheat Master all count as long as the name includes Dumpster Dive / Diver).
+3. Carry it to a **physical Extraction Site** on the map. Finish the extract there.
+4. Survive until the extract actually completes. Dying with the Sprite still on you does not count.
+5. Back in the lobby, open **Locker → Sidekicks**. Jimothy should be sitting there. Equip him.
+
+Do **not** treat a Portable Extractor as a guaranteed shortcut. Independent write-ups that actually tested the hidden quest say the handheld extract plays the animation and **does not** grant Jimothy. If you already used a Portable Extractor and he is missing from the locker, run it again on a real pad.
+
+## Where Dumpster Dive Sprites spawn
+
+There is no shop listing. You have to find one in a match.
+
+**Most reliable farm:** land **Nightmare Neighborhood**, kill **Freddy Krueger**. Coverage is consistent that he drops a Dumpster Dive Sprite. If the boss marker is missing, he can be disguised as another character in the POI — interact / shoot the suspicious NPC instead of rotating out empty. That POI is contested. Have a rotate.
+
+**If you skip the boss:**
+
+- **Pumpkin Chests** (Fortnitemares giant pumpkins)
+- **Cheat Codes / Trick or Treat** terminals around the island
+- Regular chests and floor Sprite luck (thin — do not plan a whole session on this)
+
+Any Dumpster Dive variant works. You do not need a gold foil.
+
+Admin Panel **Extraction Accelerators** (Lobby Hack codes) make the pad less of a third-party magnet. They do not spawn the Sprite for you. Codes: [Admin Panel how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+
+## Extract without throwing the unlock
+
+Public Extraction Sites still advertise on the map (beacon / pad). Clear the area **before** you hit the terminal. The defend window is loud. If the first pad is cooked, rotate with the Sprite — do not Portable-extract “just to be safe” if you came for Jimothy.
+
+Winning the match with the Sprite still on you is reported as a backup by some players. We are not treating that as the main path. The path we will tell you to use is a **physical site**.
+
+The older [Sprite extract guide](/guides/how-to/how-to-extract-sprites-fortnite) is a **Runners (C7S3) archive** for timers and pad etiquette. Use it for the idea of “sites unlock after early storm / one use per pad.” Trust the live Override HUD for the current timer.
+
+## After he is in the locker
+
+Jimothy is a Sidekick, so he lives on the **Sidekicks** tab, not Outfits. Equip him there. Extra reactions / a follow-up Sidekick quest can appear in-client after the unlock — we will not invent a points sheet. If the raccoon is in the locker, you already got the trending reward.
+
+## Last-week honesty
+
+From **24 October** you have **days**. Fortnitemares is the window. We are **not** promising Epic will sell Jimothy in the Item Shop after 31 October. If you want him free, extract this week.
+
+Same-week freebies: [Jack-a-Nape quests and login tapestry](/free-cosmetics) · [Null ranked](/guides/how-to/how-to-get-null-ranked-rewards-fortnite) · [v42.40 last-patch notes](/guides/season/fortnite-v42-40-last-override-patch).
+
+## FAQ
+
+### Can I buy Jimothy with V-Bucks?
+
+Not as the Fortnitemares method. The live path is the Sprite extract. Ignore “free Jimothy generator” sites — those are the same scam pattern as fake V-Bucks codes.
+
+### Does the Portable Extractor work?
+
+Treat it as **no** for this specific quest unless Epic changes it. Several independent tests say a real Extraction Site is required. If portable worked for you, you got lucky or a later patch fixed it — still use a pad if the locker is empty.
+
+### Do I have to extract a specific variant?
+
+No. Any Dumpster Dive / Diver Sprite.
+
+### Is Jimothy a Sprite or a pet?
+
+Sidekick. Different locker tab from Sprites. Extracting the Dumpster Dive Sprite is just the **quest condition**.
+
+### Ranked / Reload / Creative?
+
+Do the extract in a normal BR / Zero Build match where Fortnitemares Sprites and Extraction Sites are actually in the ruleset. Creative maps will not grant the Sidekick.
+`,
+  },
   {
     slug: 'fortnite-admin-panel-lobby-hack-codes',
     title: 'Fortnite Admin Panel Lobby Hack Codes (Override) — How to Redeem',
     excerpt:
-      'How to open the Override Admin Panel, redeem Lobby Hack codes for XP / Sprite Dust / Sprites, and avoid V-Bucks scam sites. Reviewed 21 Sep 2026.',
+      'How to open the Override Admin Panel, redeem Lobby Hack codes for XP / Sprite Dust / Sprites, and avoid V-Bucks scam sites. Reviewed 24 Oct 2026.',
     category: 'how-to',
-    image: '/images/map-rotation/venture.webp',
+    image: '/images/guides/administrator.png',
     date: '2026-09-21',
     readTime: 7,
     featured: true,
@@ -74,7 +273,7 @@ export const posts: Post[] = [
 
 Chapter 7 Season 4 (**Override**) added an **Admin Panel** on the Battle Royale lobby. Epic publishes **Lobby Hack** codes you enter there for free XP, Sprite Dust, Sprites, Gizmos, loading screens, and occasional quest-gated styles — **not V-Bucks**.
 
-Last reviewed: **21 September 2026**. Codes rotate through the season (through ~1 November 2026). Epic can disable a code without notice.
+Last reviewed: **24 October 2026**. Codes rotate through the season (through ~1 November 2026). Epic can disable a code without notice. This is the last week of Override — redeem leftover XP / Dust strings before downtime.
 
 Track timed freebies on the [free cosmetics tracker](/free-cosmetics). Season context: [Override hub](/season).
 
@@ -139,10 +338,10 @@ Epic patch notes, the official Fortnite blog / social posts, and in-game MOTDs. 
     slug: 'fortnite-override-battle-pass-guide',
     title: 'Fortnite Override Battle Pass Guide (Chapter 7 Season 4)',
     excerpt:
-      'Override Battle Pass end date (1 Nov 2026), free vs paid track, Sonic / Gaming Legends notes, and a realistic XP plan with the live calculator.',
+      'Override Battle Pass end date (1 Nov 2026 ET), free vs paid track, Sonic / Gaming Legends notes, and a last-week XP plan before the season locks.',
     category: 'season',
-    image: '/images/map-evolution/39-51.webp',
-    date: '2026-09-21',
+    image: '/images/guides/shapeless-ascendance.png',
+    date: '2026-10-24',
     readTime: 9,
     featured: true,
     tags: [
@@ -158,9 +357,9 @@ Epic patch notes, the official Fortnite blog / social posts, and in-game MOTDs. 
 
 **Chapter 7 Season 4 (Override)** launched **20 August 2026**. The Battle Pass runs through **1 November 2026** (Epic’s calendar day; this site uses a late-UTC rollover — check the [season countdown](/season-countdown) for remaining time).
 
-Last reviewed: **21 September 2026**.
+Last reviewed: **24 October 2026** (v42.40 is the last Override patch; the pass end date did not move).
 
-Live tools: [season hub](/season) · [XP calculator](/xp-calculator) · [free cosmetics](/free-cosmetics) · older Runners pass notes stay archived at [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide).
+Live tools: [season hub](/season) · [XP calculator](/xp-calculator) · [free cosmetics](/free-cosmetics) · [v42.40 last-patch notes](/guides/season/fortnite-v42-40-last-override-patch) · older Runners pass notes stay archived at [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide).
 
 ## Free track vs paid pass
 
@@ -179,14 +378,14 @@ Sonic and other **Gaming Legends** page rewards need the paid track or Crew. Unc
 4. **Admin Panel Lobby Hacks** — occasional flat XP codes (see [Admin Panel guide](/guides/how-to/fortnite-admin-panel-lobby-hack-codes)).
 5. **Creative XP maps** — useful after weeklies, until daily/weekly Creative caps. Codes rotate — use [/codes](/codes) and the [XP maps archive](/guides/season/best-fortnite-xp-maps) as a starting list, not gospel.
 
-## Practical plan if you are behind (late September)
+## Practical plan if you are behind (last week of October)
 
-Assume ~5–6 weeks left from mid/late September to **1 November**:
+Assume **days**, not weeks, until **1 November**:
 
-1. Open the [XP calculator](/xp-calculator), enter your current level, and see whether casual play + weeklies finish level 100.
-2. Buy the pass **only** if you want the exclusive pages — do not buy tiers in the last three days hoping to “catch style.”
-3. Prioritize weeklies → Admin Panel XP codes → Creative until capped → pubs / ranked.
-4. After 100, clear bonus / Super Style pages before the clock hits zero.
+1. Open the [XP calculator](/xp-calculator), enter your current level, and be honest about whether weeklies + Creative cap can still hit 100.
+2. Buy the pass **only** if you want the exclusive pages you can actually reach — do not buy tiers on 31 Oct hoping a Super Style appears.
+3. Prioritize remaining weeklies → Admin Panel XP codes → Creative until capped → Fortnitemares Nitemare quests (~15k XP each) → pubs / ranked.
+4. After 100, clear bonus / Super Style pages the same session. Unclaimed nodes lock with the season.
 
 ## Collabs and honesty
 
@@ -284,10 +483,10 @@ Not shipped yet — use the live map until we write it. Same for Stone Sanctum.
     slug: 'fortnite-match-overrides-explained',
     title: 'Fortnite Match Overrides Explained (Chapter 7 Season 4)',
     excerpt:
-      'How Override Consoles work mid-match: claim race, server-wide vs squad buffs, map pings, and how to play when Sonic Speed or Loot Hack flips the lobby.',
+      'How Override Consoles work after v42.40: claim race, server-wide vs squad buffs, which Fortnitemares cartridges remain, and the four combat Overrides that left on 15 October.',
     category: 'season',
-    image: '/images/map-evolution/34-40.webp',
-    date: '2026-10-09',
+    image: '/images/guides/override-ready.png',
+    date: '2026-10-24',
     readTime: 10,
     featured: false,
     tags: [
@@ -311,7 +510,7 @@ Two different “Override” toys. Same season name. Totally different boxes.
 | **Lasts** | Account reward (once per code) | Until that match ends |
 | **Guide** | [Admin Panel how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes) | This page |
 
-Last reviewed: **9 October 2026** (Fortnitemares wave still adding cartridges). Season context: [Override hub](/season).
+Last reviewed: **24 October 2026** after **v42.40** vaulted Super Shot, Big Boom, Action Hero, and Healing Overdrive. Season context: [Override hub](/season) · [v42.40 notes](/guides/season/fortnite-v42-40-last-override-patch).
 
 ## How a console actually works
 
@@ -341,7 +540,7 @@ Epic enables, disables, and Fortnitemares-skins these constantly. Treat this as 
 - **Sonic Speed / Squad Sonic Speed** — sprint ramps. Late walks across Green Hill flats become deaths. Hold high ground or leave early.
 - **Infinite Stamina** — same idea, less flashy. Edge rotates suddenly exist.
 - **Spooky Sprinter** (Fortnitemares) — cloak while sprinting. Expect quieter flanks and worse audio reads.
-- **Action Hero** — hangtime + mid-air damage. Vertical peeks get scarier.
+- **Action Hero** — **vaulted in v42.40.** If it is not in your three options, that is the patch, not RNG.
 
 ### Loot / economy
 - **Big Loot** — chests lean Epic / Legendary. Contested POIs get even meaner after the flip.
@@ -350,15 +549,15 @@ Epic enables, disables, and Fortnitemares-skins these constantly. Treat this as 
 - **More XP** — elim / loot / storm survival XP bump. Nice for Battle Pass nights; irrelevant to the gunfight itself. Pass plan: [Override BP guide](/guides/season/fortnite-override-battle-pass-guide).
 
 ### Combat / survival
-- **Overshield / Healing Overdrive / Recovery** — shield and heal values move. Re-sort slurps vs bigs before you peek.
+- **Overshield / Recovery** — shield and heal values move. Re-sort slurps vs bigs before you peek. **Healing Overdrive left in v42.40.**
 - **Health Siphon / Berserk / More Health** — siphon and low-HP ramps change when you commit. More Health literally deletes normal shield logic — stop hoarding minis the same way.
-- **Sharpshooter / Endless Shooter / Super Shot / Pumpkin Launching** — bloom, mag size, or “sometimes your AR also fires a rocket / pumpkin.” Box fights and spray ranges stop feeling like classic BR.
+- **Sharpshooter / Endless Shooter / Pumpkin Launching** — bloom, mag size, or “sometimes your AR also fires a pumpkin.” Box fights and spray ranges stop feeling like classic BR. **Super Shot (periodic rocket while firing) left in v42.40.**
 - **Extra Life / Squad Extra Life** — one brink-of-elim respawn. Do not play like you have two lives in a 1v3; the second life is for the rotate you already planned.
 - **Hunter Scavenger** — damaged / elim’d players get marked. Third-partying becomes the meta, not a surprise.
 
 ### Chaos / seasonal
 - **Dynamic Storm** — fewer players → faster storm. Placement games punish greed harder.
-- **Big Boom** — long falls = no fall damage + landing boom. Height is a weapon again.
+- **Big Boom** — **vaulted in v42.40.** Long-fall boom is not in the live cartridge list.
 - **Prop Hunt / Spooky Prop Hunt / Sugar Rush / Big Head Mode** — lobby goof modes. Still count as real rulesets for damage and vision; do not AFK because it looks silly.
 
 ## Should you race the cartridge?
@@ -403,7 +602,7 @@ Core BR pubs are the home. Reload, Blitz, and Ranked follow their own playlist r
 
 ### Why did my favorite Override disappear?
 
-Epic toggles cartridges when they get too spicy (Extra Life, Speed Shooter, Power Pickaxe have all been in and out). Fortnitemares also injected seasonal ones. If it is not in your three options, it is disabled or unlucky RNG — not a client bug.
+Epic toggles cartridges when they get too spicy (Extra Life, Speed Shooter, Power Pickaxe have all been in and out). **v42.40** specifically pulled Super Shot, Big Boom, Action Hero, and Healing Overdrive. Fortnitemares still injects Spooky Sprinter / Berserk / Prop Hunt / Sugar Rush. If it is not in your three options, it is disabled or unlucky RNG — not a client bug.
 `,
   },
   {
@@ -412,8 +611,8 @@ Epic toggles cartridges when they get too spicy (Extra Life, Speed Shooter, Powe
     excerpt:
       'Unlock the Null outfit and Skeletal Slingbag / Null’s Scythe styles (Champion Molten, Elite Neon, Unreal Rifted) on the Override Ranked ladder before 1 November 2026.',
     category: 'how-to',
-    image: '/images/map-evolution/37-50.webp',
-    date: '2026-09-21',
+    image: '/images/guides/null.png',
+    date: '2026-10-24',
     readTime: 7,
     featured: false,
     tags: [
@@ -429,7 +628,7 @@ Epic toggles cartridges when they get too spicy (Extra Life, Speed Shooter, Powe
 
 Chapter 7 Season 4 (**Override**) Ranked track includes the **Null** outfit and matching **Skeletal Slingbag** / **Null’s Scythe** styles gated by rank tier — commonly called out as **Champion Molten**, **Elite Neon**, and **Unreal Rifted** in season coverage. Exact cup calendars and kill challenges can shift mid-season; trust the in-game Ranked / Cups screens.
 
-Last reviewed: **21 September 2026**. Ladder ends with the season (**1 November 2026**). Freebies list: [free cosmetics](/free-cosmetics). Climb systems: [ranked hub](/ranked) · [LP guide](/guides/how-to/fortnite-ranked-mode-guide).
+Last reviewed: **24 October 2026**. Ladder ends with the season (**1 November 2026**, Eastern Time). This is the last week — styles lock. Freebies list: [free cosmetics](/free-cosmetics). Climb systems: [ranked hub](/ranked) · [LP guide](/guides/how-to/fortnite-ranked-mode-guide).
 
 ## What you are grinding for
 
@@ -452,7 +651,7 @@ These are **rank unlocks**, not Item Shop purchases. You cannot buy the missing 
 
 ## Timeline honesty
 
-From late September you have roughly **five weeks** to Unreal if you are starting from Gold/Platinum. That is doable with consistent sessions — not with one weekend of hot drops. Use the [season countdown](/season-countdown) so you are not unlocking Champion the night Override ends.
+From **24 October** you have **days**, not weeks. If you are not already near the rank that unlocks your missing Null style, play for placement every session and do not hot-drop Green Hill. Use the [season countdown](/season-countdown) so you are not unlocking Champion the night Override ends.
 
 ## FAQ
 
@@ -477,7 +676,7 @@ No — Null is the **Ranked** reward fantasy this season. Pass cosmetics (Sonic,
     excerpt:
       'Archive: late Runners meta on Shattered Coast. Override loot numbers are not fully rewritten — confirm in-game; see the season hub.',
     category: 'weapons',
-    image: '/images/loadout/striker_pump.png',
+    image: '/images/guides/secret-weapon.png',
     date: '2026-07-25',
     readTime: 12,
     featured: false,
@@ -628,7 +827,7 @@ Was the early-season boxfight king (stowed auto-reload + huge body damage). **Re
     excerpt:
       'Practical drop tiers for Shattered Coast — hot, balanced, and edge POIs — plus landing priority and when to leave.',
     category: 'map',
-    image: '/images/map-evolution/41-10.webp',
+    image: '/images/map-evolution/39-51.webp',
     date: '2026-07-15',
     readTime: 7,
     featured: false,
@@ -784,7 +983,7 @@ POI names and power spots shift with hotfixes and mid-season map updates. If Epi
     excerpt:
       'Archive: Runners Battle Pass cost, skin unlock levels, and XP plan. Override (C7S4) ends November 1, 2026 — use the live XP calculator for the current pass.',
     category: 'season',
-    image: '/images/icons/battle_pass.png',
+    image: '/images/guides/sprite-runners.png',
     date: '2026-07-10',
     readTime: 10,
     featured: false,
@@ -845,7 +1044,7 @@ If you play a few times a week through August, the pass is usually worth it for 
     excerpt:
       'How Fortnite Ranked LP works, and climb strategies from Bronze through Champion.',
     category: 'how-to',
-    image: '/images/map-evolution/35-20.webp',
+    image: '/images/guides/beastly-bus.png',
     date: '2026-06-28',
     readTime: 11,
     featured: true,
@@ -1008,7 +1207,7 @@ No — it is a paid subscription that includes monthly V-Bucks and the Battle Pa
     excerpt:
       'Change your Fortnite / Epic display name for free every 14 days, plus what console players must know about PSN, Xbox, and Switch names.',
     category: 'how-to',
-    image: '/images/loadout/pulse_scanner.png',
+    image: '/images/guides/select-character.png',
     date: '2026-07-23',
     readTime: 9,
     featured: false,
@@ -1112,7 +1311,7 @@ Update creator codes, Discord nicknames, tracker profiles, and clan tags so team
     excerpt:
       'Official Epic refund rules: Cancel Purchase within 24 hours, Return Tickets within 30 days, what cannot be refunded, and how to get V-Bucks back.',
     category: 'how-to',
-    image: '/images/loadout/golden_apple.png',
+    image: '/images/guides/visitors-return.png',
     date: '2026-07-23',
     readTime: 10,
     featured: false,
@@ -1228,7 +1427,7 @@ Using the official Cancel Purchase / Return Ticket tools as designed is normal. 
     excerpt:
       'Turn on Epic Games two-factor authentication with an authenticator app, SMS, or email — protect your locker and claim the Boogie Down thank-you reward.',
     category: 'how-to',
-    image: '/images/loadout/shield_breaker_emp.png',
+    image: '/images/guides/sanctuary-sitrep.png',
     date: '2026-07-23',
     readTime: 8,
     featured: false,
@@ -1327,7 +1526,7 @@ Avoid free V-Bucks phishing covered in [how to get free V-Bucks](/guides/season/
     excerpt:
       'Raise Fortnite FPS with Performance Mode, shadow settings, NVIDIA Reflex, resolution choices, and a practical hardware checklist for Chapter 7.',
     category: 'how-to',
-    image: '/images/map-evolution/28-30.webp',
+    image: '/images/guides/hit-by-chaos.png',
     date: '2026-07-23',
     readTime: 12,
     featured: true,
@@ -1477,7 +1676,7 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
     excerpt:
       'Chapter 7 Season 3 Sprite extraction on Shattered Coast: when Extraction Sites unlock, the ~30s defend timer, Portable Extractor, Victory Royale auto-extract, and safe Runners site picks.',
     category: 'how-to',
-    image: '/images/loadout/flowberry.png',
+    image: '/images/guides/sprites-collect.jpg',
     date: '2026-07-26',
     readTime: 9,
     featured: false,
@@ -1631,7 +1830,7 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
     excerpt:
       'Which cube sprite variants are live right now, where they drop from chests and vaults, how the Sprite Locator works, and the best Shattered Coast farm routes.',
     category: 'how-to',
-    image: '/images/loadout/shock_rocks.png',
+    image: '/images/guides/welcome-innovation.png',
     date: '2026-07-23',
     readTime: 10,
     featured: false,
@@ -1792,7 +1991,7 @@ Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find
     excerpt:
       'Ironmouse Fortnite Sprite guide: August 4 return after the early vault, Mythic powers (heal + cloak + low gravity), Relic Chest farm tips, and how to extract her.',
     category: 'how-to',
-    image: '/images/loadout/pepper.png',
+    image: '/images/guides/ironmouse.png',
     date: '2026-08-01',
     readTime: 9,
     featured: false,
@@ -1936,7 +2135,7 @@ Chapter 7 Season 3 Sprite collections are season-scoped. Extract and master her 
     excerpt:
       'How to check your Fortnite ban status, find your Sanction ID, submit one official appeal on Epic’s Sanctions and Appeals portal, and what happens after review.',
     category: 'how-to',
-    image: '/images/loadout/self_revive.png',
+    image: '/images/guides/the-return.png',
     date: '2026-07-23',
     readTime: 11,
     featured: false,
@@ -2124,7 +2323,7 @@ No. We are an independent fan site. We explain the public process and link offic
     excerpt:
       'Working Creative XP map codes for Chapter 7 Season 3, how to enter island codes, daily/weekly Creative XP caps, and a fast Battle Pass leveling plan.',
     category: 'season',
-    image: '/images/icons/xp.png',
+    image: '/images/guides/fortm.jpg',
     date: '2026-08-01',
     readTime: 10,
     featured: false,
@@ -2222,7 +2421,7 @@ Browse and filter XP maps on [/codes](/codes), or read our Creative SEO sections
     excerpt:
       'Step-by-step: connect your Epic account to PS5/PS4, Xbox, and Nintendo Switch for cross-progress, shared V-Bucks, and the correct Fortnite locker.',
     category: 'how-to',
-    image: '/images/loadout/business_turret.png',
+    image: '/images/guides/welcome-guardian.png',
     date: '2026-07-24',
     readTime: 9,
     featured: false,
@@ -2319,7 +2518,7 @@ Yes from Epic Connections, with consequences for how you sign in on that console
     excerpt:
       'Gift Item Shop skins in Fortnite: 2FA, friendship timer, daily gift limits, Buy as Gift steps, and why you cannot send locker items.',
     category: 'how-to',
-    image: '/images/loadout/seven_sliders.png',
+    image: '/images/guides/shards-united.png',
     date: '2026-07-24',
     readTime: 8,
     featured: false,
@@ -2401,7 +2600,7 @@ Daily reset — details in [when does the Item Shop reset?](/guides/how-to/when-
     excerpt:
       'Report toxic players, mute voice/text chat, and block users in Fortnite — plus what happens after a report and how to stay safe.',
     category: 'how-to',
-    image: '/images/loadout/cluster_clinger.png',
+    image: '/images/guides/block-party.png',
     date: '2026-07-24',
     readTime: 7,
     featured: false,
@@ -2492,7 +2691,7 @@ Double-check you muted the correct player, that party chat is not a different ch
     excerpt:
       'Fortnite Item Shop refresh time: 00:00 UTC daily, converted to ET/PT/UK/EU, plus how to check today’s shop and About Shop in-game.',
     category: 'how-to',
-    image: '/images/loadout/chug_jug.png',
+    image: '/images/guides/legendary-llamas.png',
     date: '2026-07-24',
     readTime: 6,
     featured: false,
@@ -2559,7 +2758,7 @@ Maybe — [Cancel Purchase / Return Tickets guide](/guides/how-to/how-to-refund-
     excerpt:
       'Redeem V-Bucks gift cards on PC, Switch, PlayStation, and Xbox — plus how Support-A-Creator codes work in the Item Shop and how to avoid wrong-account mistakes.',
     category: 'how-to',
-    image: '/images/loadout/launch_pad.png',
+    image: '/images/guides/exalted-reforged.png',
     date: '2026-07-31',
     readTime: 11,
     featured: false,
@@ -2699,7 +2898,7 @@ Entering a code alone does nothing until you make an eligible purchase. Wishlist
     excerpt:
       'Diagnose Fortnite lag with Net Debug Stats, then fix packet loss and high ping: Ethernet, region, Wi-Fi, router, ISP routing, and settings that actually matter.',
     category: 'how-to',
-    image: '/images/icons/storm.png',
+    image: '/images/guides/cold-welcome.png',
     date: '2026-07-31',
     readTime: 12,
     featured: false,
@@ -2853,7 +3052,7 @@ Auto is fine when it picks correctly. If you travel, use a VPN exit, or see cons
     excerpt:
       'Fix Fortnite party invites, crossplay lobbies, and join failures across PC, PlayStation, Xbox, and Switch — privacy, NAT, links, and platform blocks.',
     category: 'how-to',
-    image: '/images/loadout/grappler.png',
+    image: '/images/guides/stars-of-the-show.png',
     date: '2026-07-31',
     readTime: 11,
     featured: false,
@@ -3007,7 +3206,7 @@ Online multiplayer on consoles generally needs the platform’s online access re
     excerpt:
       'Enable Fortnite Performance Mode step-by-step, what DirectX 12 Performance means, best companion settings, and fixes when the option is missing.',
     category: 'how-to',
-    image: '/images/icons/pickaxe.png',
+    image: '/images/guides/charge-elites.png',
     date: '2026-07-31',
     readTime: 9,
     featured: false,

@@ -39,6 +39,7 @@ export function Footer() {
     { href: '/new-cosmetics', label: t('newCosmetics') },
     { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
+    { href: '/locker', label: t('locker') },
     { href: '/creator-code', label: t('creatorCode') },
     { href: '/free-cosmetics', label: t('freeCosmetics') },
     { href: '/xp-calculator', label: t('xpCalculator') },

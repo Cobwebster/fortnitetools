@@ -34,7 +34,7 @@ export function cosmeticIconUrl(id: string) {
   return `https://fortnite-api.com/images/cosmetics/br/${id.toLowerCase()}/smallicon.png`
 }
 
-export const FREE_COSMETICS_REVIEWED = '9 Oct 2026'
+export const FREE_COSMETICS_REVIEWED = '24 Oct 2026'
 
 /** Free Fortnite cosmetics / rewards tracker — Override (C7S4). Update when Epic refreshes promos. */
 export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
@@ -47,8 +47,8 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
       'Complete 26 Nitemare quests across BR / Zero Build, Horde Rush, and Reload. Milestones unlock Wind-Up Key, Monkey Biz, Jack’s Tambourine, and the free Jack-a-Nape outfit at 26.',
     details: [
       'Progress carries across modes — mix BR, Horde Rush, and Nitemare Island Reload.',
-      'Waves drop through October (Oct 1 + Oct 8 batches live). Finish before 31 Oct.',
-      'Each quest also grants ~15k XP toward the Override Battle Pass.',
+      'This is the last week: finish the 26-quest track before 31 October. Oct 1 + Oct 8 waves are live.',
+      'Each quest also grants ~15k XP toward the Override Battle Pass — useful if you are short on levels.',
     ],
     href: '/season',
     hrefLabel: 'Season hub',
@@ -68,10 +68,13 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     endsIso: '2026-10-31T23:59:00.000Z',
     endsLabel: '31 October',
     howTo:
-      'Find a Dumpster Diver Sprite on the island and extract it (Extraction Sites or a Portable Extractor) to unlock the free Jimothy Sidekick.',
+      'Find any Dumpster Dive Sprite and extract it at a physical Extraction Site (Portable Extractor often does not complete the hidden quest). Jimothy then appears under Locker → Sidekicks.',
     details: [
-      'Extraction Accelerators from Admin Panel codes make the pull safer.',
+      'Freddy Krueger at Nightmare Neighborhood is the reliable Sprite drop. Pumpkin Chests and Cheat Codes also roll it.',
+      'Extraction Accelerators from Admin Panel codes make the pad safer. They do not spawn the Sprite.',
     ],
+    href: '/guides/how-to/how-to-get-jimothy-fortnite',
+    hrefLabel: 'Jimothy how-to',
     category: 'quest',
     rewards: [{ id: 'Companion_ScrapPaws', name: 'Jimothy' }],
   },
@@ -107,7 +110,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     howTo:
       'In the Override lobby (Ranked OFF), open the Admin Panel and enter Epic Lobby Hack codes for free XP, Sprite Dust, Sprites, Gizmos, loading screens, and Fortnitemares lobby effects.',
     details: [
-      'Oct 1 Fortnitemares drop included CrowsAreAfraid / PumpkinSpiceLife (lobby transforms), IThinkTheKeyFoundMeChat (Extraction Accelerator), plus quest-gated dust codes.',
+      'Fortnitemares lobby transforms and Extraction Accelerator codes from the Oct 1 drop are still the method — Epic can retire a string without notice. Sprite Mastery final page (Quack Sprites, Pixel Polli style) is in-match, not a lobby code.',
       'Codes work once per account (reusable lobby transforms are the exception). Sprite duplicates usually convert to Sprite Dust.',
       'Never V-Bucks — any “free V-Bucks code” site is a scam.',
     ],

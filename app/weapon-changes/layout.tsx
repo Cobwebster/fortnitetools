@@ -30,7 +30,7 @@ const faqs = [
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Weapon Changes – Damage Buffs, Nerfs & Patch History',
   description:
-    'Fortnite Override weapon balance history — v42.10 Pump / 8-Bit / AR tweaks, Fortnitemares v42.30 vaults and unvaults, plus older patch Old / New / Change rows by rarity.',
+    'Fortnite Override weapon balance history — v42.40 Sweeper buff and Midas vault, Fortnitemares v42.30 pool flip, v42.10 Pump / 8-Bit / AR tweaks, plus older Old / New / Change rows by rarity.',
   path: '/weapon-changes',
   keywords: [
     'fortnite weapon changes',

@@ -416,13 +416,18 @@ function WeaponBlock({
       }`}
     >
       <div className="flex flex-wrap items-center gap-3 border-b border-border px-4 py-3 sm:px-5">
-        <div className="flex h-14 w-14 items-center justify-center rounded-lg border border-border bg-background">
+        <Link
+          href={`/weapons/${weapon.id}`}
+          className="flex h-14 w-14 items-center justify-center rounded-lg border border-border bg-background"
+        >
           <WeaponIcon src={weapon.image} alt={weapon.name} />
-        </div>
+        </Link>
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-              {weapon.name}
+              <Link href={`/weapons/${weapon.id}`} className="hover:text-primary transition-colors">
+                {weapon.name}
+              </Link>
             </h3>
             {weapon.vaulted ? (
               <span className="rounded border border-rose-400/40 bg-rose-500/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-rose-300">
@@ -439,17 +444,25 @@ function WeaponBlock({
             <p className="mt-0.5 text-sm text-muted-foreground leading-snug">{weapon.note}</p>
           ) : null}
         </div>
-        <button
-          type="button"
-          onClick={() => onCompare(weapon.id)}
-          className={`shrink-0 rounded-lg border px-3 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
-            compareSlot
-              ? 'border-primary bg-primary text-primary-foreground'
-              : 'border-border text-muted-foreground hover:border-primary/60 hover:text-foreground'
-          }`}
-        >
-          {compareSlot ? 'Selected' : 'Compare'}
-        </button>
+        <div className="flex shrink-0 items-center gap-2">
+          <Link
+            href={`/weapons/${weapon.id}`}
+            className="rounded-lg border border-border px-3 py-2 text-xs font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:border-primary/60 hover:text-foreground"
+          >
+            Page
+          </Link>
+          <button
+            type="button"
+            onClick={() => onCompare(weapon.id)}
+            className={`rounded-lg border px-3 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+              compareSlot
+                ? 'border-primary bg-primary text-primary-foreground'
+                : 'border-border text-muted-foreground hover:border-primary/60 hover:text-foreground'
+            }`}
+          >
+            {compareSlot ? 'Selected' : 'Compare'}
+          </button>
+        </div>
       </div>
 
       <div className="overflow-x-auto">
@@ -638,7 +651,7 @@ export function WeaponsCatalogClient() {
             Compare two guns
           </a>
           {' · '}
-          <Link href="/weapons" className="text-primary hover:underline">
+          <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
             Damage calculator
           </Link>
           {' · '}

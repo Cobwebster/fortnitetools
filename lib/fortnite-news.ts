@@ -88,9 +88,22 @@ export function newsTake(motd: NewsMotd): NewsTake {
 
   if (/fortnitemare|nitemare|halloween|jack-a-nape|jimothy/.test(hay)) {
     notes.push(
-      'Fortnitemares freebies (Jack-a-Nape quests, Jimothy extract, login loading screen) sit on the free cosmetics tracker with end dates — lobby art alone will not tell you the cutoff.'
+      'Fortnitemares freebies (Jack-a-Nape quests, Jimothy extract, login loading screen) end with the event — this is the last week. End dates live on the free cosmetics tracker; lobby art will not tell you the cutoff.'
     )
-    links.push({ href: '/free-cosmetics', label: 'Free cosmetics tracker' }, { href: '/season', label: 'Season hub' })
+    links.push(
+      { href: '/guides/how-to/how-to-get-jimothy-fortnite', label: 'Jimothy how-to' },
+      { href: '/free-cosmetics', label: 'Free cosmetics tracker' },
+      { href: '/season', label: 'Season hub' }
+    )
+  }
+  if (/v42\.40|honey sprite|one wish willow|obsession sprite|like-for-like|finger guns|vampiric/.test(hay)) {
+    notes.push(
+      'v42.40 (15 Oct) is the last Override patch: Midas and Witch Broom vaulted, Sweeper fire rate up, Honey / One Wish Willow Sprites, Like-for-Like auto rarity swaps. Full so-what is on the last-patch guide.'
+    )
+    links.push(
+      { href: '/guides/season/fortnite-v42-40-last-override-patch', label: 'v42.40 last-patch guide' },
+      { href: '/weapon-changes', label: 'Weapon changes' }
+    )
   }
   if (/sprite/.test(hay)) {
     notes.push(

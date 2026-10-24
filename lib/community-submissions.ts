@@ -220,7 +220,7 @@ export const COMMUNITY_KIND_META: Record<CommunityKind, CommunityKindMeta> = {
     relatedLabel: 'Weapons encyclopedia',
     icon: '/images/loadout/striker_pump.png',
     placeholders: {
-      title: 'e.g. Pump still S-tier after v42.10',
+      title: 'e.g. Sweeper after the v42.40 fire-rate bump',
       body: 'Why you run it over 8-Bit / Oni…',
     },
   },

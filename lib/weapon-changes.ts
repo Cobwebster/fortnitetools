@@ -98,6 +98,23 @@ export const WEAPON_CHANGE_ENTRY_COUNT = WEAPON_CHANGE_PATCHES.reduce(
   0
 )
 
+export type WeaponChangeHit = {
+  date: string
+  label: string
+  entries: WeaponChangeEntry[]
+}
+
+/** Patch rows whose weapon name matches this catalog name exactly (normalized). */
+export function getWeaponChangeHistory(weaponName: string): WeaponChangeHit[] {
+  const key = normalizeName(weaponName)
+  const hits: WeaponChangeHit[] = []
+  for (const patch of WEAPON_CHANGE_PATCHES) {
+    const entries = patch.entries.filter((e) => normalizeName(e.name) === key)
+    if (entries.length) hits.push({ date: patch.date, label: patch.label, entries })
+  }
+  return hits
+}
+
 export function formatChangeValue(n: number | null | undefined): string {
   if (n == null || Number.isNaN(n)) return '—'
   if (Number.isInteger(n)) return String(n)

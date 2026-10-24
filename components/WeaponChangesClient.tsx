@@ -1,6 +1,7 @@
 'use client'
 
 import { useDeferredValue, useMemo, useState } from 'react'
+import Link from '@/components/link'
 import {
   WEAPON_CHANGE_PATCHES,
   changeTone,
@@ -9,7 +10,7 @@ import {
   type WeaponChangeEntry,
   type WeaponChangePatch,
 } from '@/lib/weapon-changes'
-import { CATALOG_RARITY_BG, CATALOG_RARITY_TEXT } from '@/lib/weapons-catalog'
+import { CATALOG_RARITY_BG, CATALOG_RARITY_TEXT, catalogIdForWeaponName } from '@/lib/weapons-catalog'
 
 function matchesQuery(entry: WeaponChangeEntry, q: string) {
   if (!q) return true
@@ -59,6 +60,7 @@ function StatTable({ entry }: { entry: WeaponChangeEntry }) {
 }
 
 function WeaponChangeCard({ entry }: { entry: WeaponChangeEntry }) {
+  const weaponId = catalogIdForWeaponName(entry.name)
   return (
     <article className="overflow-hidden rounded-xl border border-border bg-card">
       <div className="flex items-center gap-3 border-b border-border px-3 py-2.5 sm:px-4">
@@ -79,7 +81,13 @@ function WeaponChangeCard({ entry }: { entry: WeaponChangeEntry }) {
         </div>
         <div className="min-w-0">
           <p className="truncate font-display text-sm font-bold uppercase tracking-wide text-foreground sm:text-base">
-            {entry.name}
+            {weaponId ? (
+              <Link href={`/weapons/${weaponId}`} className="hover:text-primary transition-colors">
+                {entry.name}
+              </Link>
+            ) : (
+              entry.name
+            )}
           </p>
           <span
             className={`mt-1 inline-flex rounded border px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${CATALOG_RARITY_BG[entry.rarity]} ${CATALOG_RARITY_TEXT[entry.rarity]}`}

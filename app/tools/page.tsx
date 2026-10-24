@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ToolsPageContent } from '@/components/tools-page-content'
+import { loadToolFirePageState } from '@/lib/tool-fires-server'
 import { createMetadata } from '@/lib/seo'
 import { hreflangAlternates, absoluteLocaleUrl } from '@/i18n/pathnames'
 
@@ -29,11 +30,12 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ToolsPage() {
+export default async function ToolsPage() {
+  const fires = await loadToolFirePageState()
   return (
     <>
       <Navbar />
-      <ToolsPageContent />
+      <ToolsPageContent fires={fires} />
       <Footer />
     </>
   )

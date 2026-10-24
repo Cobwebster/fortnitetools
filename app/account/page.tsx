@@ -54,7 +54,7 @@ export default async function AccountPage() {
                 Welcome, {greetingName}
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                More account features are coming soon.
+                Build a locker, post uploads, and manage your profile.
               </p>
             </div>
           </div>
@@ -84,6 +84,29 @@ export default async function AccountPage() {
               {displayName || 'Not set'}
             </p>
           </div>
+        </section>
+
+        <section className="flex flex-col gap-5 overflow-hidden rounded-xl border border-primary/30 bg-linear-to-r from-primary/15 via-card to-card p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+          <div className="flex items-start gap-4">
+            <div className="rounded-lg bg-primary/15 p-2.5 text-primary">
+              <Sparkles className="h-5 w-5" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">Locker</p>
+              <h2 className="mt-1 font-display text-xl font-bold text-foreground">
+                Build a locker and share it
+              </h2>
+              <p className="mt-1 max-w-md text-sm text-muted-foreground">
+                Make a locker and share it with a link.
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/locker"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Open locker
+          </Link>
         </section>
 
         <section className="flex flex-col gap-5 overflow-hidden rounded-xl border border-primary/30 bg-linear-to-r from-primary/15 via-card to-card p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">

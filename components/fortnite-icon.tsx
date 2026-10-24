@@ -4,7 +4,7 @@ type FortniteIconProps = {
   className?: string
   /** Extra classes on the wrapping slot (rarity-style frame). */
   frameClassName?: string
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'hero'
 }
 
 const SIZE = {
@@ -13,6 +13,7 @@ const SIZE = {
   md: 'h-14 w-14',
   lg: 'h-16 w-16',
   xl: 'h-20 w-20',
+  hero: 'h-28 w-28 sm:h-32 sm:w-32',
 } as const
 
 const IMG = {
@@ -21,6 +22,7 @@ const IMG = {
   md: 'h-11 w-11',
   lg: 'h-14 w-14',
   xl: 'h-16 w-16',
+  hero: 'h-24 w-24 sm:h-28 sm:w-28',
 } as const
 
 /** Game-style item icon slot — real Fortnite sprites instead of Lucide/emoji. */

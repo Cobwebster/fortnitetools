@@ -18,7 +18,10 @@ function isCoverArt(src: string) {
   return (
     src.includes('/map-evolution/') ||
     src.includes('/map-rotation/') ||
-    src.endsWith('.webp')
+    src.includes('/images/guides/') ||
+    src.endsWith('.webp') ||
+    src.endsWith('.jpg') ||
+    src.endsWith('.jpeg')
   )
 }
 

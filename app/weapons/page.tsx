@@ -1,13 +1,39 @@
+import type { Metadata } from 'next'
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { WeaponsCatalogClient } from '@/components/WeaponsCatalogClient'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
+import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
+
+export const metadata: Metadata = createMetadata({
+  title: 'All Fortnite Weapons – DPS, Damage & Stats by Rarity',
+  description:
+    'Chapter 7 Season 4 (Override) Fortnite weapons after v42.40 — Pump, 8-Bit, Sweeper, Heavy AR, Wood Stake, Mega Buster, plus vaulted history (Midas’ Masterpiece, Drum Gun). Compare DPS, damage, fire rate, mag, and reload.',
+  path: '/weapons',
+  keywords: [
+    'fortnite weapons',
+    'all fortnite weapons',
+    'fortnite weapon stats',
+    'fortnite override weapons',
+    '8-bit shotgun fortnite',
+    'mega buster fortnite',
+    'fortnite weapon compare',
+    'fortnite dps',
+    'fortnite shotgun stats',
+    'fortnite assault rifle stats',
+    'vaulted fortnite weapons',
+  ],
+})
 
 const faqs = [
   {
     q: 'How many Fortnite weapons are listed here?',
-    a: `This encyclopedia includes the current BR loot pool plus a large vaulted history — ${WEAPON_CATALOG.length} weapons with per-rarity DPS, damage, structure damage, fire rate, mag size, and reload.`,
+    a: `This encyclopedia includes the current BR loot pool plus a large vaulted history — ${WEAPON_CATALOG.length} weapons with per-rarity DPS, damage, structure damage, fire rate, mag size, and reload. Each gun also has its own stats page.`,
+  },
+  {
+    q: 'Does every Fortnite weapon have its own page?',
+    a: `Yes. Open any card for rarity tables, shots-to-kill vs 100/150/200, loot-pool status, and patch history when we have it — ${WEAPON_CATALOG.length} URLs under /weapons.`,
   },
   {
     q: 'How is DPS calculated?',
@@ -19,7 +45,7 @@ const faqs = [
   },
   {
     q: 'Where can I test shots-to-kill?',
-    a: 'Use the Weapon Damage Calculator for TTK against 100/150/200 HP targets, or build a hotbar in the Loadout Builder.',
+    a: 'Use the Weapon Damage Calculator for TTK against 100/150/200 HP targets, or open a weapon page for the same math at the planning rarity.',
   },
 ]
 
@@ -29,6 +55,30 @@ export default function WeaponsPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            faqJsonLd(
+              faqs.map((f) => ({
+                question: f.q,
+                answer: f.a,
+              }))
+            )
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbJsonLd([
+              { name: 'Home', path: '/' },
+              { name: 'All Fortnite Weapons', path: '/weapons' },
+            ])
+          ),
+        }}
+      />
       <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-card py-10">
@@ -44,10 +94,12 @@ export default function WeaponsPage() {
               All Fortnite <span className="text-primary">Weapons</span>
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Override loot pool with rarity tables — DPS, body damage, structure damage, fire rate,
-              mag size, reload. Launch highlights: 8-Bit Shotgun, Mega Buster, Midas’ Masterpiece,
-              plus Pump (post–v42.10 buff). Drum Gun left in Fortnitemares. Compare any two guns; toggle vaulted history when
-              you want older loot. Some returns still need Loot Hack.
+              Override loot pool after v42.40 — DPS, body damage, structure damage, fire rate,
+              mag size, reload. Live highlights: Pump (post–v42.10), 8-Bit, Sweeper (fire-rate bump),
+              Heavy AR, Wood Stake, Dual Fiend Hunters, Mega Buster. Midas’ Masterpiece and Drum Gun
+              are vaulted. Compare any two guns; toggle vaulted history when you want older loot.
+              Gatekeeper / Hunting Rifle / Finger Guns still need Loot Hack.
+              Click a gun name for its own page (STK, first-added when we know it, patch history).
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{liveCount}</strong> current ·{' '}

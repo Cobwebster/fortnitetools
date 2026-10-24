@@ -59,8 +59,9 @@ export default function WeaponChangesPage() {
               Fortnite <span className="text-primary">Weapon Changes</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Override buffs, nerfs, and Fortnitemares vault/unvault rows — damage, DPS, reload, and
-              loot-pool flips with Old / New / Change by rarity. Jump to a date or search a gun.
+              Override buffs, nerfs, and Fortnitemares vault/unvault rows through v42.40 (15 Oct) —
+              damage, DPS, reload, and loot-pool flips with Old / New / Change by rarity. Jump to a date
+              or search a gun.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{WEAPON_CHANGE_PATCHES.length}</strong> patch days ·{' '}
@@ -68,8 +69,8 @@ export default function WeaponChangesPage() {
               updated {WEAPON_CHANGES_UPDATED_AT}
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
-              Latest: <strong className="text-foreground">v42.30 Fortnitemares</strong> (1 Oct) ·{' '}
-              <strong className="text-foreground">v42.10</strong> Pump / 8-Bit / AR (3 Sep)
+              Latest: <strong className="text-foreground">v42.40</strong> Sweeper / Midas vault (15 Oct) ·{' '}
+              <strong className="text-foreground">v42.30 Fortnitemares</strong> (1 Oct)
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/weapons" className="text-primary hover:underline">

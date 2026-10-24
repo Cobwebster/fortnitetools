@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ToolsPageContent } from '@/components/tools-page-content'
+import { loadToolFirePageState } from '@/lib/tool-fires-server'
 import { isPrefixedLocale, type PrefixedLocale } from '@/i18n/config'
 import { getMessages } from '@/i18n/get-messages'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
@@ -36,10 +37,12 @@ export default async function LocaleToolsPage({ params }: Props) {
   const { locale } = await params
   if (!isPrefixedLocale(locale)) notFound()
 
+  const fires = await loadToolFirePageState()
+
   return (
     <>
       <Navbar />
-      <ToolsPageContent />
+      <ToolsPageContent fires={fires} />
       <Footer />
     </>
   )
