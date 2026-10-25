@@ -95,6 +95,51 @@ export function getLiveSet(sets: LiveSet[], slug: string) {
   return sets.find((s) => s.slug === slug)
 }
 
+const SET_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
+
+function liveSetFromMembers(
+  slug: string,
+  items: CosmeticItem[],
+  flags: { inShop: boolean; fromNew: boolean }
+): LiveSet | null {
+  const matched = items.filter((item) => item.set && slugifySetName(item.set) === slug)
+  const first = matched[0]
+  if (!first?.set) return null
+  return {
+    slug,
+    name: first.set,
+    backend: first.setBackend,
+    setText: first.setText,
+    inShop: flags.inShop,
+    fromNew: flags.fromNew,
+    thumb: first.featuredImage || first.image || first.smallImage || null,
+    sampleCount: matched.length,
+  }
+}
+
+/** Live shop/new list first; otherwise look the slug up in Fortnite-API (real sets should not 404). */
+export async function resolveSetBySlug(slug: string): Promise<LiveSet | null> {
+  const live = await fetchLiveSets()
+  const fromLive = getLiveSet(live, slug)
+  if (fromLive) return fromLive
+  if (!SET_SLUG_RE.test(slug) || slug.length > 80) return null
+
+  const query = slug.replace(/-/g, ' ').trim()
+  if (query.length < 2) return null
+
+  const [items, shop, fresh] = await Promise.all([
+    searchCosmetics({ set: query, matchMethod: 'full' }).catch(() => [] as CosmeticItem[]),
+    fetchShop().catch(() => null),
+    fetchNewCosmetics().catch(() => null),
+  ])
+  const shopItems = (shop?.offers || []).flatMap((offer) => offer.items)
+  const newItems = fresh?.all || []
+  return liveSetFromMembers(slug, items, {
+    inShop: shopItems.some((item) => item.set && slugifySetName(item.set) === slug),
+    fromNew: newItems.some((item) => item.set && slugifySetName(item.set) === slug),
+  })
+}
+
 export async function fetchSetMembers(set: LiveSet): Promise<CosmeticItem[]> {
   let items = await searchCosmetics({ set: set.name, matchMethod: 'full' }).catch(() => [] as CosmeticItem[])
   if (items.length <= 1 && set.backend) {
@@ -152,8 +197,8 @@ export const SETS_HOWTO = [
     body: 'See the members (outfit, back bling, pickaxe, wrap, jam track, car…) and a shop-history count per item. Click a tile for styles. This is not a price list and not a locker database.',
   },
   {
-    title: 'Why a URL 404s tomorrow',
-    body: 'When the set is no longer in the shop and not on the current-build new list, we drop the slug on purpose. Bookmark the Item Shop or the rarity tool if you need a cosmetic after it rotates out.',
+    title: 'The index vs a set URL',
+    body: '/sets only lists tonight’s shop plus current-build new sets (cap 40). A real set slug still opens if Fortnite-API knows the name — it is not limited to that live list.',
   },
 ] as const
 
@@ -166,7 +211,7 @@ export const SETS_INDEX_FAQS = [
   {
     question: 'Why did a set page 404?',
     answer:
-      'When a set leaves the shop and is not in the current-build “new” list, we drop the slug. That is intentional. Check the Item Shop tracker or new cosmetics if you still want the items.',
+      'The slug is not a Fortnite-API set name (typo, old nickname, or not a set). The /sets index is a live cap of shop + new-build sets; a missing card there does not mean the set URL is gone.',
   },
   {
     question: 'Is shop history the same as rarity?',
@@ -199,6 +244,6 @@ export const SET_DETAIL_FAQS = [
   {
     question: 'Will this URL stay up?',
     answer:
-      'Only while the set is in the live cap (shop tonight or current-build new). After that it 404s. That is how this stays a few dozen pages instead of 10k outfit URLs.',
+      'If Fortnite-API still has a set with this name, the page stays. The /sets index only highlights shop and new-build sets (cap 40) so we do not list every cosmetic set ever shipped.',
   },
 ]

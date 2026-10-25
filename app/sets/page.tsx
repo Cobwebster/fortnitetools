@@ -56,8 +56,8 @@ export default async function SetsIndexPage() {
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               {sets.length} sets from tonight&apos;s Item Shop
               {shopCount ? ` (${shopCount} in shop)` : ''} plus cosmetics added in the current game
-              build. Shop-first, then new-build, cap {LIVE_SET_CAP}. When a set leaves both lists,
-              the URL 404s — this is not a locker encyclopedia and not 10k outfit pages.
+              build. Shop-first, then new-build, cap {LIVE_SET_CAP} on this index. A real set URL
+              still opens if Fortnite-API has the name — this is not 10k outfit pages.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/tools/item-shop" className="text-primary hover:underline">

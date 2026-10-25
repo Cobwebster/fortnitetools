@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { SetMembersClient } from '@/components/SetMembersClient'
-import { fetchLiveSets, fetchSetMembers, formatSetDay, getLiveSet, SET_DETAIL_FAQS, summarizeSetMembers } from '@/lib/cosmetic-sets'
+import { fetchLiveSets, fetchSetMembers, formatSetDay, resolveSetBySlug, SET_DETAIL_FAQS, summarizeSetMembers } from '@/lib/cosmetic-sets'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
@@ -22,12 +22,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const sets = await fetchLiveSets()
-  const set = getLiveSet(sets, slug)
+  const set = await resolveSetBySlug(slug)
   if (!set) return { robots: { index: false, follow: false } }
   return createMetadata({
     title: `${set.name} Set – Fortnite Cosmetics & Shop History`,
-    description: `Members of the Fortnite ${set.name} set${set.inShop ? ' (in tonight’s Item Shop)' : set.fromNew ? ' (on the current game build)' : ''}, with shop-history counts. Live cap only — the URL 404s when the set rotates out.`,
+    description: `Members of the Fortnite ${set.name} set${set.inShop ? ' (in tonight’s Item Shop)' : set.fromNew ? ' (on the current game build)' : ''}, with shop-history counts.`,
     path: `/sets/${set.slug}`,
     keywords: [`${set.name} fortnite`, `${set.name} set`, 'fortnite cosmetic set', 'fortnite shop set'],
   })
@@ -35,8 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function SetDetailPage({ params }: Props) {
   const { slug } = await params
-  const sets = await fetchLiveSets()
-  const set = getLiveSet(sets, slug)
+  const [set, sets] = await Promise.all([resolveSetBySlug(slug), fetchLiveSets()])
   if (!set) notFound()
 
   const members = await fetchSetMembers(set)
@@ -89,7 +87,8 @@ export default async function SetDetailPage({ params }: Props) {
               <span className="text-foreground">{set.name}</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · {set.inShop ? 'in shop tonight' : 'current-build set'}
+              {CURRENT_SEASON.shortLabel} ·{' '}
+              {set.inShop ? 'in shop tonight' : set.fromNew ? 'current-build set' : 'cosmetic set'}
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               {set.name} <span className="text-primary">Set</span>
@@ -98,10 +97,9 @@ export default async function SetDetailPage({ params }: Props) {
               <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">{set.setText}</p>
             ) : null}
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Live set page: {set.inShop ? 'in tonight’s Item Shop' : 'not in tonight’s shop'}
+              {set.inShop ? 'In tonight’s Item Shop' : 'Not in tonight’s shop'}
               {set.fromNew ? ' · also on the current-build new list' : ''}. Click a member for
-              styles. Prices stay on the Item Shop tracker. If this slug 404s tomorrow, the set left
-              the live cap — that is intentional.
+              styles. Prices stay on the Item Shop tracker.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/tools/item-shop" className="text-primary hover:underline">
@@ -144,7 +142,9 @@ export default async function SetDetailPage({ params }: Props) {
                 <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Tonight</p>
                 <p className="mt-1 text-sm text-foreground">{set.inShop ? 'In the Item Shop' : 'Not in the shop'}</p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  {set.sampleCount} tile{set.sampleCount === 1 ? '' : 's'} on the live shop/new lists that pointed here
+                  {set.inShop || set.fromNew
+                    ? `${set.sampleCount} tile${set.sampleCount === 1 ? '' : 's'} on the live shop/new lists that pointed here`
+                    : 'Looked up from Fortnite-API by set name'}
                 </p>
               </div>
             </section>

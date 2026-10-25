@@ -6,6 +6,7 @@ import { fetchLiveSets } from '@/lib/cosmetic-sets'
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
+import { guidesPageHref, guidesTotalPages } from '@/lib/guides-pagination'
 import { listPublicLockers } from '@/lib/lockers-db'
 
 const FLAGSHIP = new Set([
@@ -207,6 +208,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  const guidePageRoutes: MetadataRoute.Sitemap = Array.from(
+    { length: Math.max(0, guidesTotalPages() - 1) },
+    (_, i) => ({
+      url: `${base}${guidesPageHref(i + 2)}`,
+      lastModified: hubModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.55,
+    })
+  )
+
   const postRoutes: MetadataRoute.Sitemap = posts
     .filter((post) => !post.noindex)
     .map((post) => ({
@@ -236,6 +247,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...toolRoutes,
     ...localeRoutes,
     ...categoryRoutes,
+    ...guidePageRoutes,
     ...postRoutes,
     ...weaponRoutes,
     ...lockerRoutes,
