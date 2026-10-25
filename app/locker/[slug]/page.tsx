@@ -58,7 +58,7 @@ export default async function PublicLockerPage({ params }: Props) {
           __html: JSON.stringify(
             breadcrumbJsonLd([
               { name: 'Home', path: '/' },
-              { name: 'Locker', path: '/locker' },
+              { name: 'Player lockers', path: '/lockers' },
               { name: locker.display_name, path: `/locker/${locker.slug}` },
             ])
           ),
@@ -73,8 +73,8 @@ export default async function PublicLockerPage({ params }: Props) {
                 Home
               </Link>
               <span>/</span>
-              <Link href="/locker" className="hover:text-primary">
-                Locker
+              <Link href="/lockers" className="hover:text-primary">
+                Player lockers
               </Link>
               <span>/</span>
               <span className="text-foreground">{locker.display_name}</span>

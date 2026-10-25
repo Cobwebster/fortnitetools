@@ -302,6 +302,14 @@ export const TOOLS: ToolEntry[] = [
     category: 'cosmetics',
   },
   {
+    href: '/lockers',
+    title: 'Player Lockers',
+    description:
+      'Browse public Fortnite lockers other players built and shared — real share links, not a scraped Epic inventory.',
+    tags: ['Locker', 'Skins', 'Community'],
+    category: 'cosmetics',
+  },
+  {
     href: '/tools/vbucks-calculator',
     title: 'V-Bucks Calculator',
     description:

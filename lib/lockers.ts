@@ -5,6 +5,8 @@ import {
 } from '@/lib/fortnite-api'
 
 export const LOCKER_ITEM_CAP = 300
+export const LOCKER_DIRECTORY_LIMIT = 60
+export const LOCKER_PREVIEW_COUNT = 6
 
 export const LOCKER_SLUG_RE = /^[a-z0-9][a-z0-9-]{1,30}[a-z0-9]$/
 
@@ -33,6 +35,14 @@ export type LockerRow = {
 
 export type LockerWithItems = LockerRow & {
   itemIds: string[]
+}
+
+export type PublicLockerCard = {
+  slug: string
+  displayName: string
+  updatedAt: string
+  itemCount: number
+  previewIds: string[]
 }
 
 export const LOCKER_TYPE_TABS: { value: string; label: string }[] = [

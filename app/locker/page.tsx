@@ -4,8 +4,9 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { LockerEditor } from '@/components/LockerEditor'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
-import { ensureMyLocker, getMyLocker, LOCKERS_SETUP_HINT } from '@/lib/lockers-db'
+import { ensureMyLocker, getMyLocker, listPublicLockers, LOCKERS_SETUP_HINT } from '@/lib/lockers-db'
 import { resolveLockerCosmetics } from '@/lib/lockers'
+import { LockerDirectoryGrid } from '@/components/LockerDirectoryGrid'
 import { CURRENT_SEASON } from '@/lib/season'
 
 export const metadata: Metadata = createMetadata({
@@ -43,6 +44,7 @@ export default async function LockerHubPage() {
   const mine = await getMyLocker()
 
   if (!mine.userId) {
+    const publicLockers = await listPublicLockers(12)
     return (
       <>
         <script
@@ -86,6 +88,12 @@ export default async function LockerHubPage() {
                 >
                   Register
                 </Link>
+                <Link
+                  href="/lockers"
+                  className="rounded-lg border border-border px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground"
+                >
+                  Player lockers
+                </Link>
               </div>
             </div>
           </section>
@@ -105,6 +113,27 @@ export default async function LockerHubPage() {
                 pull from Epic’s in-game inventory. Register is free. After you log in, search a
                 cosmetic, hit Add, and copy your share URL.
               </p>
+            </section>
+
+            <section className="space-y-4">
+              <div className="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                    Player lockers
+                  </h2>
+                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                    Lockers other players already shared. Open one, or sign in and add yours to the
+                    list.
+                  </p>
+                </div>
+                <Link
+                  href="/lockers"
+                  className="text-sm font-bold uppercase tracking-wider text-primary hover:underline"
+                >
+                  See all
+                </Link>
+              </div>
+              <LockerDirectoryGrid lockers={publicLockers} />
             </section>
 
             <section className="max-w-3xl space-y-4">

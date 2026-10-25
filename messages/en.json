@@ -16,7 +16,8 @@
     "season": "Season",
     "drops": "Drops",
     "sets": "Sets",
-    "locker": "Locker",
+    "locker": "Lockers",
+    "playerLockers": "Player lockers",
     "creatorCode": "Creator Code",
     "freeCosmetics": "Free Cosmetics",
     "countdown": "Countdown",
@@ -73,6 +74,7 @@
     "drops": "Best Drops",
     "sets": "Sets",
     "locker": "Locker",
+    "playerLockers": "Player lockers",
     "creatorCode": "Creator Code",
     "upload": "Community Uploads",
     "loadoutBuilder": "Loadout Builder",
@@ -296,6 +298,10 @@
       "locker": {
         "title": "Fortnite Locker",
         "description": "Make and share your own Fortnite locker. Sign in, add cosmetics, send the link."
+      },
+      "lockers": {
+        "title": "Player Lockers",
+        "description": "Browse public Fortnite lockers other players built and shared — real share links, not a scraped Epic inventory."
       },
       "news": {
         "title": "Fortnite News",

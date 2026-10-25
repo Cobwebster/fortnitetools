@@ -6,6 +6,7 @@ import { fetchLiveSets } from '@/lib/cosmetic-sets'
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
+import { listPublicLockers } from '@/lib/lockers-db'
 
 const FLAGSHIP = new Set([
   '/fortnite-map',
@@ -137,6 +138,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/cosmetic-stats',
     '/sets',
     '/locker',
+    '/lockers',
     ...liveSets.map((s) => `/sets/${s.slug}`),
     '/creator-code',
     '/map-rotation',
@@ -221,5 +223,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: w.vaulted ? 0.4 : 0.55,
   }))
 
-  return [...staticRoutes, ...toolRoutes, ...localeRoutes, ...categoryRoutes, ...postRoutes, ...weaponRoutes]
+  const publicLockers = await listPublicLockers(200).catch(() => [])
+  const lockerRoutes: MetadataRoute.Sitemap = publicLockers.map((locker) => ({
+    url: `${base}/locker/${locker.slug}`,
+    lastModified: new Date(locker.updatedAt),
+    changeFrequency: 'weekly' as const,
+    priority: 0.5,
+  }))
+
+  return [
+    ...staticRoutes,
+    ...toolRoutes,
+    ...localeRoutes,
+    ...categoryRoutes,
+    ...postRoutes,
+    ...weaponRoutes,
+    ...lockerRoutes,
+  ]
 }

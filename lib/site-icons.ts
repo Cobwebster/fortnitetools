@@ -55,6 +55,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/drops': '/images/loadout/cluster_clinger.png',
   '/sets': '/images/loadout/apple.png',
   '/locker': '/images/loadout/mat_metal.png',
+  '/lockers': '/images/loadout/mat_metal.png',
   '/reload': '/images/loadout/batman_grapnel.png',
   '/ranked': '/images/loadout/shield_breaker_emp.png',
   '/status': '/images/icons/umbrella.png',
