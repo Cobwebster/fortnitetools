@@ -10,7 +10,7 @@ export default function FortniteBuildSimulatorPage() {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        <section className="border-b border-border bg-card py-8">
+        <section className="py-8">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <nav className="mb-3 flex items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-primary transition-colors">

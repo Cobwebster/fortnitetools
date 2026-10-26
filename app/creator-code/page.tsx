@@ -57,7 +57,7 @@ export default function CreatorCodePage() {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        <section className="relative overflow-hidden border-b border-border">
+        <section className="relative">
           <div
             className="pointer-events-none absolute inset-0"
             aria-hidden="true"

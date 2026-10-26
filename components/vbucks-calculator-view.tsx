@@ -139,7 +139,7 @@ export function VBucksCalculatorView() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="border-b border-border bg-card py-10">
+      <section className="py-10">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <nav className="mb-4 flex items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
             <Link href={homeHref} className="hover:text-primary transition-colors">

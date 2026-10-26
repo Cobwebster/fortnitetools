@@ -50,7 +50,7 @@ export function GuidesIndex({ page }: { page: number }) {
           }),
         }}
       />
-      <section className="border-b border-border bg-card">
+      <section>
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Guides</p>
           <h1 className="mt-2 font-display text-4xl font-extrabold uppercase tracking-tight text-foreground sm:text-5xl text-balance">
@@ -89,7 +89,7 @@ export function GuidesIndex({ page }: { page: number }) {
         </div>
       </section>
 
-      <section className="border-b border-border bg-background">
+      <section>
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <nav aria-label="Filter by category">
             <ul className="flex flex-wrap gap-2" role="list">

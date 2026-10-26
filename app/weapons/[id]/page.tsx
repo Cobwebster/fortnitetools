@@ -92,7 +92,7 @@ export default async function WeaponDetailPage({ params }: Props) {
       />
       <Navbar />
       <main className="min-h-screen bg-background">
-        <section className="relative overflow-hidden border-b border-border">
+        <section className="relative">
           <div
             className="pointer-events-none absolute inset-0"
             aria-hidden="true"

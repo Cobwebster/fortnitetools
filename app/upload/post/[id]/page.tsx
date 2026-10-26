@@ -105,7 +105,7 @@ export default async function UploadPostPage({ params }: Props) {
 
       <Navbar />
       <main className="min-h-screen bg-background">
-        <article className="border-b border-border bg-card py-10">
+        <article className="py-10">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <nav className="mb-4 flex flex-wrap items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-primary">

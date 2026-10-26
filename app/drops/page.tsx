@@ -39,7 +39,7 @@ export default async function DropsIndexPage() {
       />
       <Navbar />
       <main className="min-h-screen bg-background">
-        <section className="relative overflow-hidden border-b border-border">
+        <section className="relative">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={CURRENT_SEASON.mapImage}

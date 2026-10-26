@@ -16,7 +16,7 @@ export function GuidesCategoryContent({ category }: { category: Category }) {
 
   return (
     <main>
-      <nav aria-label="Breadcrumb" className="border-b border-border bg-card">
+      <nav aria-label="Breadcrumb">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
           <ol className="flex items-center gap-2 text-sm text-muted-foreground" role="list">
             <li>
@@ -39,7 +39,7 @@ export function GuidesCategoryContent({ category }: { category: Category }) {
         </div>
       </nav>
 
-      <section className="border-b border-border bg-card">
+      <section>
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="flex items-start gap-4">
             <FortniteIcon
@@ -62,7 +62,7 @@ export function GuidesCategoryContent({ category }: { category: Category }) {
         </div>
       </section>
 
-      <section className="border-b border-border bg-background">
+      <section>
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <nav aria-label="Filter by category">
             <ul className="flex flex-wrap gap-2" role="list">

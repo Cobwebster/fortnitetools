@@ -16,7 +16,7 @@ export function FortniteMapView() {
 
   return (
     <main className="min-h-screen bg-background">
-      <section className="border-b border-border bg-card py-10">
+      <section className="py-10">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <nav
             className="mb-4 flex items-center gap-2 text-xs text-muted-foreground"
@@ -100,7 +100,7 @@ export function FortniteMapView() {
         </p>
       </section>
 
-      <section className="border-t border-border bg-card">
+      <section>
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 space-y-12">
           <div>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground sm:text-3xl">

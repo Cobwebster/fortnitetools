@@ -31,7 +31,7 @@ export function ToolsPageContent({ fires }: { fires: ToolFirePageState }) {
 
   return (
     <main className="min-h-screen bg-background">
-      <section className="border-b border-border bg-card py-12">
+      <section className="py-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <nav className="mb-4 flex items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
             <Link href={homeHref} className="hover:text-primary transition-colors">
@@ -57,7 +57,7 @@ export function ToolsPageContent({ fires }: { fires: ToolFirePageState }) {
         />
       </section>
 
-      <section className="border-t border-border bg-card">
+      <section>
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">
             {t('aboutTitle')}

@@ -41,10 +41,7 @@ export default async function CategoryPage({ params }: Props) {
       <Navbar />
       <main>
         {/* Breadcrumb */}
-        <nav
-          aria-label="Breadcrumb"
-          className="border-b border-border bg-card"
-        >
+        <nav aria-label="Breadcrumb">
           <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
             <ol className="flex items-center gap-2 text-sm text-muted-foreground" role="list">
               <li>
@@ -65,7 +62,7 @@ export default async function CategoryPage({ params }: Props) {
         </nav>
 
         {/* Page header */}
-        <section className="border-b border-border bg-card">
+        <section>
           <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
             <div className="flex items-start gap-4">
               <FortniteIcon
@@ -95,7 +92,7 @@ export default async function CategoryPage({ params }: Props) {
         </section>
 
         {/* Category pills */}
-        <section className="border-b border-border bg-background">
+        <section>
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
             <nav aria-label="Filter by category">
               <ul className="flex flex-wrap gap-2" role="list">

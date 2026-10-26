@@ -46,7 +46,7 @@ export default async function UploadKindPage({ params }: Props) {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        <section className="border-b border-border bg-card py-10">
+        <section className="py-10">
           <div
             className={`mx-auto px-4 sm:px-6 ${raw === 'guide' ? 'max-w-4xl' : 'max-w-3xl'}`}
           >

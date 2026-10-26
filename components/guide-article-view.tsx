@@ -31,7 +31,7 @@ export function GuideArticleView({ post, recommended, prevPost, nextPost }: Prop
 
   return (
     <main>
-      <nav aria-label="Breadcrumb" className="border-b border-border bg-card">
+      <nav aria-label="Breadcrumb">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
           <ol className="flex items-center gap-2 text-sm text-muted-foreground" role="list">
             <li>

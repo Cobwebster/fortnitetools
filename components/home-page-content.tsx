@@ -321,7 +321,7 @@ export function HomePageContent({
       ) : null}
 
       {isEnglish ? (
-        <section className="border-t border-border bg-background">
+        <section>
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Last reviewed 31 Aug 2026</p>
             <h2 className="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-foreground">
@@ -346,7 +346,7 @@ export function HomePageContent({
         </section>
       ) : null}
 
-      <section className="border-t border-border bg-card">
+      <section>
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div>
