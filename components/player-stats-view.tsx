@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, useState } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 import { FortniteIcon } from '@/components/fortnite-icon'
@@ -137,6 +138,7 @@ export function PlayerStatsView({
       </section>
 
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        <AdSenseUnit variant="inTool" className="mb-10" />
         <Suspense
           fallback={
             <div className="rounded-xl border border-border bg-card p-8 text-sm text-muted-foreground">
@@ -226,6 +228,7 @@ export function PlayerStatsView({
             })}
           </ul>
         </section>
+        <AdSenseUnit variant="endOfBlog" className="mt-10" />
       </div>
     </main>
   )

@@ -5,6 +5,7 @@ import Link from '@/components/link'
 import { Clock, Tag, ArrowLeft, ArrowRight } from 'lucide-react'
 import { useTranslations, useLocale } from 'next-intl'
 import { PostCard } from '@/components/post-card'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { GuideMarkdown } from '@/components/guide-markdown'
 import { getCategoryLabel, formatDate, type Post } from '@/lib/posts'
 import { guideMessageKey, localizeHref, type AppLocale } from '@/i18n/config'
@@ -108,13 +109,15 @@ export function GuideArticleView({ post, recommended, prevPost, nextPost }: Prop
 
             <div className="mt-8 prose prose-invert prose-lg max-w-none" itemProp="articleBody">
               {content ? (
-                <GuideMarkdown content={content} />
+                <GuideMarkdown content={content} midAd />
               ) : (
                 <div className="rounded-lg border border-border bg-muted/30 p-8 text-center">
                   <p className="text-muted-foreground">{t('comingSoon')}</p>
                 </div>
               )}
             </div>
+
+            {content ? <AdSenseUnit variant="endOfBlog" className="mt-10" /> : null}
 
             {post.tags.length > 0 && (
               <div className="mt-8 flex flex-wrap items-center gap-2">

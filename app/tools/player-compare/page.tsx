@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PlayerCompareClient } from '@/components/PlayerCompareClient'
@@ -80,6 +81,7 @@ export default async function PlayerComparePage({ searchParams }: Props) {
         </section>
 
         <div className="mx-auto max-w-5xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
           <Suspense fallback={<p className="text-sm text-muted-foreground">Loading compare tool…</p>}>
             <PlayerCompareClient
               configured={configured}
@@ -115,6 +117,7 @@ export default async function PlayerComparePage({ searchParams }: Props) {
               ))}
             </dl>
           </section>
+          <AdSenseUnit variant="endOfBlog" />
         </div>
       </main>
       <Footer />

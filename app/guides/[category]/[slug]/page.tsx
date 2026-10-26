@@ -6,6 +6,7 @@ import { Clock, Tag, ArrowLeft, ArrowRight } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PostCard } from '@/components/post-card'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { GuideMarkdown } from '@/components/guide-markdown'
 import { posts, getPostBySlug, getCategoryLabel, formatDate, type Category } from '@/lib/posts'
 import { articleJsonLd, breadcrumbJsonLd, createMetadata } from '@/lib/seo'
@@ -152,13 +153,15 @@ export default async function PostPage({ params }: Props) {
               {/* Article content */}
               <div className="mt-8 prose prose-invert prose-lg max-w-none" itemProp="articleBody">
                 {post.content ? (
-                  <GuideMarkdown content={post.content} />
+                  <GuideMarkdown content={post.content} midAd />
                 ) : (
                   <div className="rounded-lg border border-border bg-muted/30 p-8 text-center">
                     <p className="text-muted-foreground">Full article coming soon. Check back shortly!</p>
                   </div>
                 )}
               </div>
+
+              {post.content ? <AdSenseUnit variant="endOfBlog" className="mt-10" /> : null}
 
               {/* Tags */}
               {post.tags.length > 0 && (

@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { EPIC_DISCLAIMER } from '@/lib/site'
@@ -36,6 +37,7 @@ export default function FortniteBuildSimulatorPage() {
 
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
           <BuildSimulatorClient />
+          <AdSenseUnit variant="inTool" className="mt-10" />
 
           <div className="mt-14 max-w-3xl space-y-12">
             {BUILD_SIM_SEO_SECTIONS.map((section) => (
@@ -71,6 +73,8 @@ export default function FortniteBuildSimulatorPage() {
                 ))}
               </dl>
             </section>
+
+            <AdSenseUnit variant="endOfBlog" />
 
             <p className="text-sm leading-relaxed text-muted-foreground">
               More practice tools:{' '}

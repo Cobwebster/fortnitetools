@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { CommunitySubmitCta } from '@/components/community-submit-cta'
@@ -39,6 +40,7 @@ export default async function LoadoutBuilderPage() {
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" className="mb-10" />
           {communityLoadouts.length > 0 ? (
             <section className="mb-10">
               <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
@@ -238,6 +240,7 @@ export default async function LoadoutBuilderPage() {
               </li>
             </ul>
           </section>
+          <AdSenseUnit variant="endOfBlog" className="mt-10" />
         </div>
       </main>
       <Footer />

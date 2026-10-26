@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { WeaponsCatalogClient } from '@/components/WeaponsCatalogClient'
@@ -120,6 +121,7 @@ export default function WeaponsPage() {
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 space-y-12">
+          <AdSenseUnit variant="inTool" />
           <WeaponsCatalogClient />
 
           <section className="space-y-3 border-t border-border pt-10">
@@ -150,6 +152,8 @@ export default function WeaponsPage() {
               .
             </p>
           </section>
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

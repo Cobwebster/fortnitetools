@@ -1,6 +1,7 @@
 'use client'
 
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { FortniteMapClient } from '@/components/FortniteMapClient'
 import { defaultLocale, localizeHref, type AppLocale } from '@/i18n/config'
@@ -98,6 +99,7 @@ export function FortniteMapView() {
           </a>
           {t('apiCreditAfter')}
         </p>
+        <AdSenseUnit variant="inTool" className="mt-8" />
       </section>
 
       <section>
@@ -287,6 +289,7 @@ export function FortniteMapView() {
               </li>
             </ul>
           </div>
+          <AdSenseUnit variant="endOfBlog" />
         </div>
       </section>
     </main>

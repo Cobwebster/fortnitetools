@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Suspense } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
@@ -89,6 +90,7 @@ export default async function ItemShopPage() {
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" className="mb-10" />
           <Suspense fallback={<p className="text-sm text-muted-foreground">Loading shop…</p>}>
             <ItemShopClient />
           </Suspense>
@@ -217,6 +219,7 @@ export default async function ItemShopPage() {
               </li>
             </ul>
           </section>
+          <AdSenseUnit variant="endOfBlog" className="mt-10" />
         </div>
       </main>
       <Footer />

@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { MapPoiCrop } from '@/components/MapPoiCrop'
@@ -127,6 +128,7 @@ export default async function DropsIndexPage() {
         </section>
 
         <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               Pick a drop for the game you are actually playing
@@ -227,6 +229,7 @@ export default async function DropsIndexPage() {
               ))}
             </div>
           </section>
+          <AdSenseUnit variant="endOfBlog" />
         </div>
       </main>
       <Footer />

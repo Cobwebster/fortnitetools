@@ -1,6 +1,7 @@
 'use client'
 
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { PostCard } from '@/components/post-card'
 import { getLocalizedPosts } from '@/lib/posts'
@@ -51,6 +52,7 @@ export function GuidesHubContent() {
       </section>
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <AdSenseUnit variant="blog" className="mb-8" />
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => {
             const key = guideMessageKey(post.slug)

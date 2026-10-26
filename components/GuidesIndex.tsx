@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { PostCard } from '@/components/post-card'
 import { GuidesPagination } from '@/components/GuidesPagination'
 import { categories, getPostsSorted } from '@/lib/posts'
@@ -118,6 +119,7 @@ export function GuidesIndex({ page }: { page: number }) {
       </section>
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <AdSenseUnit variant="blog" className="mb-8" />
         <p className="mb-5 text-sm text-muted-foreground">
           Showing {(page - 1) * GUIDES_PAGE_SIZE + 1}–{(page - 1) * GUIDES_PAGE_SIZE + paged.items.length} of {paged.total}
         </p>

@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import {
@@ -84,6 +85,7 @@ export default function SeasonHubPage() {
         </section>
 
         <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               Playbook
@@ -175,6 +177,7 @@ export default function SeasonHubPage() {
               </div>
             ))}
           </section>
+          <AdSenseUnit variant="endOfBlog" />
         </div>
       </main>
       <Footer />

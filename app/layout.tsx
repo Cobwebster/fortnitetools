@@ -3,6 +3,7 @@ import { Barlow, Barlow_Condensed } from 'next/font/google'
 import Script from 'next/script'
 import { CookieConsent } from '@/components/cookie-consent'
 import { IntlProvider } from '@/components/intl-provider'
+import { ADSENSE_CLIENT } from '@/lib/adsense'
 import { websiteJsonLd } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
 import { defaultLocale } from '@/i18n/config'
@@ -10,7 +11,6 @@ import { getMessages } from '@/i18n/get-messages'
 import './globals.css'
 
 const GA_MEASUREMENT_ID = 'G-2XQ18341NM'
-const ADSENSE_CLIENT = 'ca-pub-4663468510887622'
 
 const barlow = Barlow({
   subsets: ['latin'],

@@ -1,4 +1,5 @@
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PlayerCountClient } from '@/components/PlayerCountClient'
@@ -81,6 +82,7 @@ export default async function StatsPage() {
         </section>
 
         <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
           <TrackedStatsLeaderboards snapshot={leaderboard} />
 
           <div className="border-t border-border pt-10">
@@ -141,6 +143,7 @@ export default async function StatsPage() {
               ))}
             </dl>
           </section>
+          <AdSenseUnit variant="endOfBlog" />
         </div>
       </main>
       <Footer />

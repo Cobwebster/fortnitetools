@@ -3,6 +3,7 @@
 import Link from '@/components/link'
 import type { ReactNode } from 'react'
 import { useLocale } from 'next-intl'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 
 function isInternalHref(href: string) {
@@ -147,20 +148,36 @@ function firstLineAndRest(trimmed: string): { first: string; rest: string } {
   return { first: trimmed.slice(0, nl).trim(), rest: trimmed.slice(nl + 1).trim() }
 }
 
-export function GuideMarkdown({ content }: { content: string }) {
+function midAdInsertIndex(blocks: string[]) {
+  const headings: number[] = []
+  for (let i = 0; i < blocks.length; i++) {
+    if (blocks[i].trim().startsWith('## ')) headings.push(i)
+  }
+  if (headings.length >= 2) return headings[1]
+  if (blocks.length >= 8) return 4
+  return -1
+}
+
+export function GuideMarkdown({ content, midAd = false }: { content: string; midAd?: boolean }) {
   const locale = useLocale() as AppLocale
   const blocks = content.trim().split(/\n\n+/)
+  const insertAt = midAd ? midAdInsertIndex(blocks) : -1
 
   return (
     <div className="space-y-4 text-muted-foreground leading-relaxed">
       {blocks.map((block, i) => {
         const trimmed = block.trim()
         if (!trimmed) return null
+        const midAdSlot =
+          i === insertAt ? (
+            <AdSenseUnit key={`mid-ad-${i}`} variant="blog" className="not-prose my-8" />
+          ) : null
 
         if (trimmed.startsWith('## ')) {
           const { first, rest } = firstLineAndRest(trimmed)
           return (
             <div key={i} className="space-y-4">
+              {midAdSlot}
               <h2 className="font-display text-2xl font-bold uppercase text-foreground mt-8 mb-3">
                 {first.replace(/^##\s+/, '')}
               </h2>
@@ -292,6 +309,17 @@ export function GuideMarkdown({ content }: { content: string }) {
                 <li key={j}>{renderInline(item.replace(/^\s*\d+\.\s+/, ''), locale)}</li>
               ))}
             </ol>
+          )
+        }
+
+        if (midAdSlot) {
+          return (
+            <div key={i} className="space-y-6">
+              {midAdSlot}
+              <p className="text-muted-foreground">
+                {renderInline(trimmed.replace(/\n/g, ' '), locale)}
+              </p>
+            </div>
           )
         }
 
