@@ -80,7 +80,7 @@ export const RANKED_DROPS = DROP_GUIDES.map((d) => ({
 export const RANKED_RESET = {
   title: 'When does Fortnite ranked reset?',
   live: `Chapter 7 Season 4 (Override) ranked is the live ladder. Season ends ${formatSeasonLongDate(seasonEndDate())}. Your Bronze–Unreal rank and LP are S4 until the next flip.`,
-  incoming: `Chapter 7 Season 5 is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Fortnite almost always resets ranked LP at a season boundary. Confirm the ranked tab in-game on reboot day — we will not invent a new point formula.`,
+  incoming: `Treasure Hunters is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC) on this clock. Fortnite almost always resets ranked LP at a season boundary. Confirm the ranked tab in-game on reboot day — we will not invent a new point formula.`,
   after: 'After a reset you typically land in a lower band with some soft seed from last season. The exact seed changes. Screenshot your rank before downtime if you care; the client is the source of truth after.',
 } as const
 
@@ -126,10 +126,10 @@ export const RANKED_NOT = [
 export const RANKED_FAQS = [
   {
     question: 'When does Fortnite ranked reset?',
-    answer: `Override ranked already reset at the August 20 reboot. The next expected ladder flip is with Chapter 7 Season 5 (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime.`,
+    answer: `Override ranked already reset at the August 20 reboot. The next expected ladder flip is with Treasure Hunters (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime.`,
   },
   {
-    question: 'Do I keep my rank into Season 5?',
+    question: 'Do I keep my rank into Treasure Hunters?',
     answer:
       'You do not keep S4 LP as-is. There is usually a soft seed so Unreal does not wake up in Bronze I, but you will not log in at the same division. Do not spend the last day of the season “protecting” a badge that is about to roll.',
   },

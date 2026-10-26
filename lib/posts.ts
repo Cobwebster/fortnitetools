@@ -21,7 +21,7 @@ export const categories: { id: Category; label: string; description: string }[] 
     id: 'how-to',
     label: 'How-To',
     description:
-      'Admin Panel codes, refunds, 2FA, creator codes — the account steps that actually matter in-game.',
+      'V-Bucks prices, Battle Pass cost, Crew, refunds, 2FA, creator codes — the account steps that actually matter.',
   },
   {
     id: 'weapons',
@@ -51,6 +51,97 @@ export const localizedGuideSlugs = [
 
 export const posts: Post[] = [
   // ─── OVERRIDE (C7S4) — Oct 2026 ────────────────────────────────────────────
+  {
+    slug: 'fortnite-treasure-hunters',
+    title: 'Fortnite Treasure Hunters (1 Nov) — What Epic Has Actually Posted',
+    excerpt:
+      'Epic named Treasure Hunters on 24 Oct 2026 with “11.1”, then posted a Fortnite × One Piece teaser. Override’s Battle Pass still ends 1 November 2026 ET. No hour, no island sheet, no shop list.',
+    category: 'season',
+    image: '/images/guides/override-ready.png',
+    date: '2026-10-26',
+    readTime: 8,
+    featured: true,
+    tags: [
+      'fortnite treasure hunters',
+      'treasure hunters fortnite',
+      'fortnite november 1 2026',
+      'fortnite one piece',
+      'chapter 7 season 4 end',
+      'v43.00',
+      'when does fortnite season end',
+    ],
+    content: `
+## What Epic posted on 24 October
+
+The official Fortnite account ([@Fortnite](https://x.com/Fortnite)) published a short teaser on **24 October 2026** captioned **“The greatest adventure of all! 11.1”**. The title card reads **Treasure Hunters** / **The Greatest Adventure of All Time** (Japanese on the card: トレジャーハンターズ). **11.1** is 1 November — the same calendar day Epic already prints on the Override Battle Pass page.
+
+Hours later the same account posted a second clip captioned with straw-hat emojis. It ends on the **Fortnite** and **One Piece** logos together. That is a collab confirmation. It is not a character list, a shop row, or a Battle Pass page.
+
+Last reviewed: **26 October 2026**.
+
+## Dates that were already on Epic’s Battle Pass page
+
+- **Override Battle Pass** — ends **1 November 2026, Eastern Time**. No hour. Official page: [fortnite.com/battle-pass](https://www.fortnite.com/battle-pass).
+- **Fortnitemares 2026** — same calendar day.
+- This site’s clock uses a UTC placeholder on the [countdown](/season-countdown). US daylight saving time also ends on 1 November, so “evening of the 31st” vs “1 Nov ET” arguments are timezone math, not two different Epic dates.
+
+When the client is in a queue, use [Is Fortnite down?](/status) plus Epic’s own [status.epicgames.com](https://status.epicgames.com/). Third-party ping maps do not get the queue.
+
+## Patch number, not a theme essay
+
+On **13 October 2026**, Epic staff on the Unreal Engine forums wrote that a fix was **“targeted for v43.00 (November 1)”**. That is the update after Override. It is a build number, not a loot table.
+
+v42.40 (15 Oct) is still the last Override content patch: [v42.40 notes](/guides/season/fortnite-v42-40-last-override-patch).
+
+## What we are not filling in
+
+Epic has **not** published, as of this review:
+
+- Whether Treasure Hunters is a full season or a shorter one (recap blogs calling it a “mini-season” are guessing from past November flips)
+- A Chapter 8 date
+- Island changes, named POIs, or a loot pool
+- A Treasure Hunters Battle Pass track or price
+- One Piece outfits, prices, or which page of a pass they sit on
+- A downtime hour
+
+A pirate-chest landmark east of Sunken Shores is still scenery on the [live map](/fortnite-map). We will not write a POI guide from a teaser.
+
+## Finish before the queue
+
+None of this carries:
+
+1. **Override Battle Pass** — unclaimed free-track and paid pages lock. Cost is still **800 V-Bucks** (or Crew): [how much is the Battle Pass](/guides/how-to/how-much-is-fortnite-battle-pass). XP plan: [XP calculator](/xp-calculator).
+2. **Null ranked styles** — Champion / Elite / Unreal. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
+3. **Jack-a-Nape** — Fortnitemares quests. [Free cosmetics](/free-cosmetics).
+4. **Sprite Mastery last page** — Quack + Pixel Polli. Dust is not advertised as carrying.
+5. **Jimothy** — extract a Dumpster Dive Sprite. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
+6. **Admin Panel** lobby codes. Never V-Bucks. [Admin Panel](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+
+If you panic-bought V-Bucks or a pass you cannot finish: [refunds](/guides/how-to/how-to-refund-fortnite-skins). If you have a card to burn before downtime: [redeem a code](/guides/how-to/how-to-redeem-fortnite-code).
+
+## FAQ
+
+### When does Fortnite Treasure Hunters start?
+
+Epic’s teaser says **11.1**. Epic’s Battle Pass page already said Override ends **1 November 2026, Eastern Time**. No hour yet. Watch [status](/status) the morning of.
+
+### Is Treasure Hunters “Chapter 7 Season 5”?
+
+Not on the teaser. Epic named **Treasure Hunters**. We will use that name until they print a season number on the Battle Pass page.
+
+### Is the One Piece collab confirmed?
+
+The **logo pairing** on the official Fortnite account is confirmed. Characters, prices, and whether it is shop vs pass are **not**.
+
+### Will my Override pass rewards carry?
+
+Unclaimed tiers do not. Claimed-but-unopened rewards are a different Epic support case — check the Passes tab before you log off on the 31st.
+
+### Where should I sit during downtime?
+
+[Is Fortnite down?](/status) for Epic’s board vs your network, and the [countdown](/season-countdown) for the calendar clock. Refresh those, not Twitter screenshots.
+`,
+  },
   {
     slug: 'fortnite-v42-40-last-override-patch',
     title: 'Fortnite v42.40 — Last Override Patch Before Season End',
@@ -138,7 +229,7 @@ Consoles still exist. Four combat cartridges are gone. Fortnitemares ones (**Spo
 
 ## What we are not inventing
 
-Epic has **not named** Chapter 7 Season 5 on the Battle Pass page or in the v42.40 notes. A giant pirate chest east of Sunken Shores is a landmark, not a leak we will treat as a POI guide. When the next season has a public name, the [season hub](/season) gets a new review date — not a speculative island essay the week before.
+Epic **named** what follows on **24 October 2026**: [Treasure Hunters](/guides/season/fortnite-treasure-hunters), dated **11.1** on the official Fortnite account, plus a Fortnite × One Piece logo teaser. They still have not published an island, loot pool, pass track, or downtime hour. A giant pirate chest east of Sunken Shores is a landmark, not a POI guide. The [season hub](/season) is the sheet; that guide is the sourced teaser page.
 
 ## FAQ
 
@@ -359,14 +450,14 @@ Epic patch notes, the official Fortnite blog / social posts, and in-game MOTDs. 
 
 Last reviewed: **24 October 2026** (v42.40 is the last Override patch; the pass end date did not move).
 
-Live tools: [season hub](/season) · [XP calculator](/xp-calculator) · [free cosmetics](/free-cosmetics) · [v42.40 last-patch notes](/guides/season/fortnite-v42-40-last-override-patch) · older Runners pass notes stay archived at [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide).
+Live tools: [season hub](/season) · [XP calculator](/xp-calculator) · [free cosmetics](/free-cosmetics) · [v42.40 last-patch notes](/guides/season/fortnite-v42-40-last-override-patch) · pass **costs 800 V-Bucks** ([price explainer](/guides/how-to/how-much-is-fortnite-battle-pass)). Older Runners pass notes stay archived at [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide).
 
 ## Free track vs paid pass
 
 | Track | What you get |
 | --- | --- |
 | **Free** | Cosmetic + V-Bucks nodes on the free page — finishes with the season |
-| **Paid (~950 V-Bucks or Crew)** | Premium pages, headline outfits, most V-Bucks refund nodes, collab styles |
+| **Paid (800 V-Bucks or Crew)** | Premium pages, headline outfits, 800 V-Bucks back if you finish the pass, collab styles |
 
 Sonic and other **Gaming Legends** page rewards need the paid track or Crew. Unclaimed rewards **do not carry** into Chapter 7 Season 5.
 
@@ -1104,6 +1195,371 @@ At Elite and above, the competition knows rotation, positioning, and fighting me
 
   // ─── HOW-TO GUIDES (account / currency / performance) ─────────────────────
   {
+    slug: 'how-much-are-v-bucks-fortnite',
+    title: 'How Much Are V-Bucks in Fortnite? (Pack Prices 2026)',
+    excerpt:
+      'Current Fortnite V-Bucks pack prices after the March 2026 change: 800, 2,400, 4,500, and 12,500 packs, cents per V-Buck, Battle Pass cost, and the cheapest combo.',
+    category: 'how-to',
+    image: '/images/icons/vbucks.png',
+    date: '2026-10-26',
+    readTime: 10,
+    featured: true,
+    tags: [
+      'how much are v-bucks',
+      'v-bucks prices',
+      'fortnite vbucks pack',
+      'cheapest v-bucks pack',
+      'how much is 1000 v-bucks',
+      'v-bucks price increase',
+    ],
+    content: `
+## Short answer (USD, as of 19 March 2026)
+
+Epic published a [V-Bucks price increase](https://www.fortnite.com/news/fortnite-v-bucks-price-increase) that started **19 March 2026**. The dollar tiers went up, and each pack grants **fewer** V-Bucks than it did before.
+
+| USD pack | V-Bucks you get now | Was | ¢ per V-Buck |
+| --- | --- | --- | --- |
+| **$8.99** | **800** | 1,000 | ~1.12¢ |
+| **$22.99** | **2,400** | 2,800 | ~0.96¢ |
+| **$36.99** | **4,500** | 5,000 | ~0.82¢ |
+| **$89.99** | **12,500** | 13,500 | ~0.72¢ |
+| Exact amount | **50** for **$0.99** | ~$0.50 | ~1.98¢ |
+
+Last reviewed: **26 October 2026**. Console and mobile storefronts can tax or round differently. Confirm the live store before you pay. Use the [V-Bucks calculator](/tools/vbucks-calculator) when you have a shopping list.
+
+SKU names in the Epic catalog can still say “1,000 V-Bucks” even after the grant dropped to 800. Trust the **amount on the checkout screen**, not the old product URL.
+
+## What V-Bucks actually buy
+
+V-Bucks are Epic’s premium currency. They do **not** buy weapons, mats, or ranked LP. Typical spends:
+
+| Purchase | Typical cost |
+| --- | --- |
+| Battle Pass | **800** V-Bucks (or included with Crew) |
+| Battle Bundle (pass + 25 levels) | **2,600** V-Bucks |
+| Uncommon outfit | ~800 |
+| Rare outfit | ~1,200 |
+| Epic outfit | ~1,500 |
+| Legendary / Icon Series outfit | ~2,000 |
+| Pickaxe / glider / wrap / emote | 200–1,500 depending on rarity |
+
+Shop tiles change daily. Check [today’s Item Shop](/tools/item-shop) before you convert leftover V-Bucks into a panic buy. Refunds: [Cancel Purchase / Return Tickets](/guides/how-to/how-to-refund-fortnite-skins).
+
+## Cheapest pack (and when a smaller one wins)
+
+On the USD table above, **12,500 for $89.99** is the lowest cents-per-V-Buck. That only helps if you will actually spend 12,500. If you need **800** for the Battle Pass, the $8.99 pack is the honest buy — leftover from a $22.99 pack is only “value” if you already wanted another shop item.
+
+Worked examples (USD, ignoring tax / Epic Rewards):
+
+- **Need 800** (Battle Pass) → one $8.99 pack, 0 leftover.
+- **Need 2,000** (Legendary skin) → one $22.99 pack (2,400) is usually cheaper than three $8.99 packs.
+- **Need 2,600** (Battle Bundle) → one $22.99 + one $8.99, or check whether Crew is cheaper this month.
+
+The [calculator](/tools/vbucks-calculator) brute-forces those combos so you do not have to.
+
+## Epic Rewards 20% back (not extra V-Bucks in the pack)
+
+If you pay through the **Epic Games Store or Epic’s payment system** (PC, iOS, Android, web — not every console checkout), Epic’s note is **20% back in Epic Rewards**. That is **store credit**, listed as dollars on the official table (for example +$1.79 on the $8.99 pack). It is not 20% more V-Bucks stuffed into the pack.
+
+Gift cards still redeem at the **printed** V-Bucks amount. How to redeem: [V-Bucks cards + creator codes](/guides/how-to/how-to-redeem-fortnite-code).
+
+## How this compares to “free” V-Bucks
+
+Finishing the paid Battle Pass currently returns **800 V-Bucks** — enough for the next pass, not a shop fund. Free-track nodes are a drip. Save the World Founders dailies still exist only on Founder accounts. Everything else is a scam page. Full list: [legitimate free V-Bucks](/guides/season/how-to-get-free-v-bucks-fortnite).
+
+Crew is a **subscription**, not a pack. Math: [Is Fortnite Crew worth it?](/guides/how-to/fortnite-crew-worth-it).
+
+## Currencies that are not V-Bucks
+
+Sprite Dust, Gold Bars, Gizmos, and X-Ray Tickets do not convert into V-Bucks. [Fortnite currencies explained](/guides/how-to/fortnite-currencies-explained).
+
+## FAQ
+
+### How much is 1,000 V-Bucks now?
+
+There is **no 1,000 pack** on Epic’s post–March 2026 sheet. The old $8.99 / 1,000 tier is now **800 V-Bucks for $8.99**. If a store tile still says 1,000, read the grant on checkout.
+
+### How much is 2,800 V-Bucks?
+
+That pack is now **2,400 V-Bucks for $22.99**.
+
+### Do V-Bucks expire?
+
+No. Unused V-Bucks stay on the account. Seasonal currencies (Sprite Dust this season) are a different wallet.
+
+### Can I transfer V-Bucks to another account?
+
+No. Gifting cosmetics is a separate shop flow with its own rules: [how to gift skins](/guides/how-to/how-to-gift-skins-fortnite).
+
+### Why does Google still show $7.99 / 1,000?
+
+Those are pre–March 2026 numbers. Ignore them. This page + the in-game store are the check.
+`,
+  },
+  {
+    slug: 'how-much-is-fortnite-battle-pass',
+    title: 'How Much Is the Fortnite Battle Pass? (800 V-Bucks)',
+    excerpt:
+      'The Fortnite Battle Pass costs 800 V-Bucks (or Crew). Completing it returns 800 V-Bucks. Battle Bundle is 2,600. Override ends 1 November 2026 ET.',
+    category: 'how-to',
+    image: '/images/icons/battle_pass.png',
+    date: '2026-10-26',
+    readTime: 8,
+    featured: true,
+    tags: [
+      'how much is fortnite battle pass',
+      'fortnite battle pass cost',
+      'battle pass 800 v-bucks',
+      'battle bundle 2600',
+      'does battle pass give v-bucks',
+    ],
+    content: `
+## The number people actually search
+
+The **Fortnite Battle Pass costs 800 V-Bucks**, or it is included with an active **Fortnite Crew** subscription. Epic cut it from 1,000 when they [raised pack prices on 19 March 2026](https://www.fortnite.com/news/fortnite-v-bucks-price-increase). Official Override pass page: [fortnite.com/battle-pass](https://www.fortnite.com/battle-pass).
+
+Last reviewed: **26 October 2026**. Chapter 7 Season 4 (Override) Battle Pass runs through **1 November 2026, Eastern Time**. Unclaimed pass rewards do not roll into Season 5.
+
+| Product | Cost | What you get |
+| --- | --- | --- |
+| **Battle Pass** | **800 V-Bucks** or Crew | Premium pages, outfits, 800 V-Bucks back if you finish |
+| **Battle Bundle** | **2,600 V-Bucks** | Pass + first **25 levels** unlocked |
+| **OG Pass** | **800 V-Bucks** (or Crew) | OG season track |
+| **Music Pass** | **1,200 V-Bucks** (or Crew) | Music / Festival track |
+| **LEGO Pass** | **1,200 V-Bucks** (or Crew) | LEGO Fortnite track |
+| **Free track** | **0** | A short page of cosmetics + a few V-Bucks nodes |
+
+USD equivalent for 800 V-Bucks is one **$8.99** pack on Epic’s current sheet if you have zero balance. Pack math: [How much are V-Bucks?](/guides/how-to/how-much-are-v-bucks-fortnite). Combo planner: [V-Bucks calculator](/tools/vbucks-calculator).
+
+## Do you earn the pass back?
+
+**Yes, if you complete it.** The paid track currently awards **800 V-Bucks** — the same as the purchase price. Epic removed the extra V-Bucks that used to sit on Bonus Rewards pages (the old “1,000 + 500” loop). Finish the pass and you can buy the **next** season’s pass without another pack. You do **not** stockpile shop money from the pass anymore.
+
+Crew subscribers get the pass included; they still claim the 800 V-Bucks nodes as they level. [Crew vs Battle Pass](/guides/how-to/fortnite-crew-worth-it).
+
+## Override (this season) vs the price question
+
+Price is account-wide and does not change because the island is Override. What **does** expire on **1 November 2026 ET**:
+
+- Unclaimed Override pages (Sonic / Gaming Legends / Super Styles)
+- Seasonal quest XP toward those pages
+
+If you are buying the pass in the last week of October, open the [XP calculator](/xp-calculator) first. A pass you cannot finish is 800 V-Bucks you will not earn back. Season checklist: [Override Battle Pass guide](/guides/season/fortnite-override-battle-pass-guide) and [v42.40 last patch](/guides/season/fortnite-v42-40-last-override-patch).
+
+## How to buy it
+
+1. Have **800 V-Bucks** (pack, leftover balance, or last season’s pass refund) **or** an active Crew sub.
+2. Open **Passes** in the lobby.
+3. Buy **Battle Pass** — not a random Item Shop tile named after a pass skin.
+4. You cannot spend V-Bucks to **gift** a Battle Pass. Gifting uses real money where Epic still offers it.
+
+Redeeming a retail card: [how to redeem a Fortnite code](/guides/how-to/how-to-redeem-fortnite-code).
+
+## Battle Bundle — when 2,600 is rational
+
+**2,600 V-Bucks** = pass + 25 levels. That is 1,800 extra V-Bucks of levels on top of the 800 pass. Buy it only if:
+
+- You are late in the season and 25 levels is the difference between finishing and missing a page you care about, **and**
+- You already know from the [XP calculator](/xp-calculator) that weeklies + Fortnitemares quests will not get you there.
+
+Do not buy the bundle on 31 October hoping Super Styles appear from nowhere.
+
+## FAQ
+
+### How much is the Fortnite Battle Pass in dollars?
+
+If you have 0 V-Bucks: one **$8.99** pack (800 V-Bucks) on Epic’s USD sheet, plus tax on some storefronts. If you already have 800 leftover, the pass is “free” in cash terms.
+
+### Does the free Battle Pass give V-Bucks?
+
+A few nodes, not 800. Count the V-Bucks icons on the free page in-game. It will not fund a Legendary skin.
+
+### Can I refund a Battle Pass?
+
+Generally **no**. Item Shop cosmetics have Cancel Purchase / Return Tickets. Passes and pass levels are a different policy. [Refunds guide](/guides/how-to/how-to-refund-fortnite-skins).
+
+### Will Battle Pass skins come to the shop later?
+
+Epic’s current language: pass items **may** hit the shop at least **18 months** after that pass expires, with style options that can differ. Do not skip a pass assuming a cheap shop rerelease.
+`,
+  },
+  {
+    slug: 'fortnite-crew-worth-it',
+    title: 'Is Fortnite Crew Worth It? (Crew vs Battle Pass vs Packs)',
+    excerpt:
+      'Fortnite Crew vs buying the 800 V-Bucks Battle Pass and packs. Monthly V-Bucks grant is 800, Crew includes BR / OG / Music / LEGO passes and a Crew Pack.',
+    category: 'how-to',
+    image: '/images/loadout/golden_apple.png',
+    date: '2026-10-26',
+    readTime: 8,
+    featured: false,
+    tags: [
+      'is fortnite crew worth it',
+      'fortnite crew vs battle pass',
+      'fortnite crew v-bucks',
+      'fortnite crew 800',
+      'fortnite crew pack',
+    ],
+    content: `
+## Short version
+
+**Fortnite Crew is worth it if you already buy the Battle Pass every season and want the extra passes + Crew Pack.** It is not a V-Bucks generator, and it is not cheaper than playing for free.
+
+Epic cut the monthly Crew V-Bucks grant from **1,000 to 800** in the same [March 2026 economy update](https://www.fortnite.com/news/fortnite-v-bucks-price-increase) that shrank packs. Timing of that grant change was emailed to subscribers by region — if your Crew page still shows a different number, trust the in-game Crew screen.
+
+Last reviewed: **26 October 2026**. USD Crew is commonly listed around **$11.99 / month** on Epic’s storefront; consoles add their own tax and billing. Confirm the price on **your** store before you subscribe.
+
+## What Crew includes (current pitch)
+
+From Epic’s Battle Pass / Crew pages:
+
+- This season’s **Battle Pass** (800 V-Bucks value)
+- **OG Pass** (800)
+- **Music Pass** (1,200)
+- **LEGO Pass** (1,200)
+- A monthly **Crew Pack** cosmetic
+- **800 V-Bucks** per month (the grant)
+
+You do not pay 800 V-Bucks for the BR pass while Crew is active. You still have to **level** the tracks to claim rewards. Override pass end: **1 November 2026 ET**. [Battle Pass cost explainer](/guides/how-to/how-much-is-fortnite-battle-pass). [Override pass guide](/guides/season/fortnite-override-battle-pass-guide).
+
+## Crew vs buying the pass with V-Bucks
+
+| If you… | Better default |
+| --- | --- |
+| Only want the BR Battle Pass this season | Buy **800 V-Bucks** once ([pack prices](/guides/how-to/how-much-are-v-bucks-fortnite)) |
+| Play BR + LEGO or Festival / OG every month | **Crew** usually beats buying three extra passes |
+| Want one Crew Pack skin and you already subscribe out of habit | Stay on Crew; cancel after the pack if you are done |
+| Are 4 days from season end and not finishing the pass | **Do not** start Crew “for the pass” you cannot complete |
+| Never spend real money | Free track only. [Legit free V-Bucks](/guides/season/how-to-get-free-v-bucks-fortnite) |
+
+V-Bucks leftover from last season’s finished pass already cover the **next** 800 V-Bucks BR pass. Crew’s extra value is the **other passes + Crew Pack + the 800 grant you can spend in the shop**, not “unlocking the BR pass twice.”
+
+## Rough monthly math (USD, ignore tax)
+
+These are planning numbers, not invoices:
+
+1. **BR pass only, you finish it every season:** one $8.99 pack per season is enough forever after the first one (800 in, 800 back). Crew is overkill unless you want the other tracks / Pack.
+2. **BR pass + shop skins:** the 800 Crew grant is one Uncommon outfit **or** the next pass. Compare 800 grant vs buying a $8.99 pack that month.
+3. **You buy Music + LEGO every season anyway:** Crew’s included 1,200 + 1,200 V-Bucks of passes is the case where the sub wins quickly.
+
+Use the [V-Bucks calculator](/tools/vbucks-calculator) for a specific shop wishlist. It will not read your Crew status.
+
+## How to subscribe / cancel without wrecking a pass
+
+- Subscribe from the **Crew** tab in Fortnite or Epic’s official Crew page — not a “discounted Crew” Discord.
+- Cosmetics you already claimed stay in the locker after you cancel.
+- If you cancel, you keep Crew benefits until that **billing period** ends, then the extra passes stop unlocking. Claim pages before it drops.
+- Turning Crew on with **two days left** in Override only makes sense if the Crew Pack + remaining pass pages are items you will actually claim.
+
+## FAQ
+
+### Does Fortnite Crew give the Battle Pass?
+
+Yes, while the subscription is active.
+
+### How many V-Bucks does Crew give?
+
+**800 per month** on Epic’s current grant (was 1,000). Plus whatever you earn on pass tracks.
+
+### Can I gift Crew with V-Bucks?
+
+No. Crew is real-money billing.
+
+### Is Crew cheaper than the $89.99 V-Bucks pack?
+
+Different product. The big pack is a pile of V-Bucks. Crew is a monthly bundle of passes + a Pack + 800 V-Bucks. Buy the pack if you only shop. Buy Crew if you use the extra passes.
+`,
+  },
+  {
+    slug: 'fortnite-currencies-explained',
+    title: 'Fortnite Currencies Explained (V-Bucks, Sprite Dust, Gold Bars)',
+    excerpt:
+      'What each Fortnite currency actually buys in 2026: V-Bucks vs Sprite Dust vs Gold Bars vs Gizmos vs X-Ray Tickets — and which ones expire on 1 November.',
+    category: 'how-to',
+    image: '/images/loadout/flowberry.png',
+    date: '2026-10-26',
+    readTime: 8,
+    featured: false,
+    tags: [
+      'fortnite currency',
+      'fortnite gold bars',
+      'sprite dust fortnite',
+      'what are v-bucks',
+      'fortnite gizmos',
+      'x-ray tickets',
+    ],
+    content: `
+## One wallet is premium. The rest are mode wallets.
+
+Players search “Fortnite currency” meaning **V-Bucks**, then get confused by **Sprite Dust**, **Gold Bars**, **Gizmos**, and **X-Ray Tickets**. None of the seasonal / in-match wallets convert into V-Bucks. Anyone selling a “Dust to V-Bucks converter” is scamming you.
+
+Last reviewed: **26 October 2026**. Override (Chapter 7 Season 4) ends **1 November 2026 ET**.
+
+| Currency | Spends on | Expires with the season? |
+| --- | --- | --- |
+| **V-Bucks** | Item Shop, Battle Pass, some packs | **No** |
+| **Sprite Dust** | Summoning Sprites, Loot Hacks | **Yes** — spend before 1 Nov |
+| **Gizmos** | Override gizmo / hack toys | **Yes** — same season wallet |
+| **Gold Bars** | In-match vendors / services | Bars themselves persist; **this season’s machines do not** |
+| **X-Ray Tickets** | Save the World llamas | STW only — not BR shop |
+
+## V-Bucks (the one Google ads care about)
+
+Premium currency. Pack prices, Battle Pass **800**, Crew grant **800**: [How much are V-Bucks?](/guides/how-to/how-much-are-v-bucks-fortnite), [Battle Pass cost](/guides/how-to/how-much-is-fortnite-battle-pass), [Crew](/guides/how-to/fortnite-crew-worth-it), [calculator](/tools/vbucks-calculator).
+
+Admin Panel Lobby Hack codes give XP / Dust / Sprites — **never V-Bucks**. [Admin Panel codes](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+
+## Sprite Dust (Override)
+
+Sprite Dust is Chapter 7’s seasonal Sprite wallet. You earn it from Sprite progression, some quests, and Lobby Hack codes. You spend it to **summon a Sprite you already collected** and to buy **Loot Hacks** that rewrite *your* next chests (Gatekeeper, Finger Guns, etc. this week — [v42.40 notes](/guides/season/fortnite-v42-40-last-override-patch)).
+
+Dust **does not** become V-Bucks. Unused Dust is not advertised as carrying into Season 5. If you care about a Sprite loadout this week, spend it. How to extract / bank Sprites (older Runners write-up still useful for the extract loop): [extract Sprites](/guides/how-to/how-to-extract-sprites-fortnite). Live map layers: [interactive map](/fortnite-map).
+
+## Gold Bars
+
+Gold Bars are the **in-match** BR currency you pick up and spend at vendors / services during a game. They are not Item Shop money. They do not buy Battle Pass levels.
+
+Bars on your account are not a season-end wipe in the way Dust is, but **Override-themed vending and boss purchases leave with the island**. There is no reason to hoard bars into downtime hoping a Season 5 machine still sells this week’s Mythic.
+
+If a site tells you Gold Bars convert to V-Bucks at a rate, close it.
+
+## Gizmos
+
+Gizmos are another Override seasonal counter (hacks / toys). Same rule as Dust: use them before **1 November**. They do not pay rent on the Item Shop.
+
+## X-Ray Tickets (Save the World)
+
+If you play STW, X-Ray Tickets roll llamas. They are **not** Founder V-Bucks. New STW accounts do not magically farm BR V-Bucks. [Free V-Bucks — Founders only](/guides/season/how-to-get-free-v-bucks-fortnite).
+
+## What to spend before 1 November 2026
+
+Priority if you are cashing out Override, not “investing”:
+
+1. **Battle Pass pages** you already paid for — V-Bucks nodes included ([XP calculator](/xp-calculator))
+2. **Sprite Dust / Gizmos** on summons and Loot Hacks you will actually play
+3. **Gold Bars** in matches this week, not in a spreadsheet
+4. Leave **V-Bucks** alone unless you want a shop item — they keep
+
+## FAQ
+
+### What is the main Fortnite currency?
+
+**V-Bucks.** Everything else is a side wallet.
+
+### Can I buy Sprite Dust with V-Bucks?
+
+Not as a standard Item Shop pack. Dust comes from playing / codes.
+
+### Do Gold Bars reset every match?
+
+You spend what you carry in that match at in-world vendors. Do not confuse that with your V-Bucks balance on the account.
+
+### Will leftover Dust become V-Bucks at season end?
+
+No.
+`,
+  },
+  {
     slug: 'how-to-get-free-v-bucks-fortnite',
     title: 'How to Get Free V-Bucks in Fortnite (Legitimate Methods Only)',
     excerpt:
@@ -1142,9 +1598,9 @@ Every season includes a **free reward track**. As you earn XP and level up, you 
 
 **Practical tip:** The free track alone will not fund a Legendary skin every week. Treat it as a drip of currency toward one intentional purchase, not unlimited shopping. Exact V-Bucks totals shift between seasons — open the in-game Battle Pass and count the V-Bucks icons on the free page.
 
-If you already bought the premium pass once, finishing it often returns **more V-Bucks than the pass cost**, which can self-fund the next season if you complete the track. That is still not “free forever,” but it is the most common legitimate loop players use.
+If you buy the premium pass, finishing it currently returns **800 V-Bucks** — enough to buy the next season’s pass, not extra shop money. Bonus-page V-Bucks from older seasons are gone. Details: [How much is the Battle Pass?](/guides/how-to/how-much-is-fortnite-battle-pass).
 
-See the [Runners Battle Pass guide](/guides/season/fortnite-season-battle-pass-guide) for Chapter 7 Season 3 unlock context.
+See the live [Override Battle Pass guide](/guides/season/fortnite-override-battle-pass-guide) for this season’s date and XP plan.
 
 ## Method 2 — Save the World Founders (legacy earners only)
 

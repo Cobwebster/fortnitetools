@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '24 Oct 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-10-24'
+export const SEASON_HUB_REVIEWED = '26 Oct 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-10-26'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -17,8 +17,12 @@ export const SEASON_HUB_LINKS = [
   { href: '/sets', label: 'Live sets' },
   { href: '/ranked', label: 'Ranked / LP' },
   { href: '/status', label: 'Is Fortnite down' },
+  { href: '/guides/season/fortnite-treasure-hunters', label: 'Treasure Hunters' },
   { href: '/guides/season/fortnite-override-battle-pass-guide', label: 'Override Battle Pass' },
   { href: '/guides/season/fortnite-v42-40-last-override-patch', label: 'v42.40 last patch' },
+  { href: '/guides/how-to/how-much-is-fortnite-battle-pass', label: 'Pass cost (800)' },
+  { href: '/guides/how-to/how-to-redeem-fortnite-code', label: 'Redeem a code' },
+  { href: '/guides/how-to/how-to-refund-fortnite-skins', label: 'Refund skins' },
   { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel codes' },
   { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked climb guide' },
 ] as const
@@ -29,16 +33,20 @@ export const RESET_WEEK_PLAYBOOK = [
     body: `Chapter 7 Season 4 (${CURRENT_SEASON.codename}) is in its final week. Epic’s Battle Pass page still reads “Ends November 1, 2026 Eastern Time.” Fortnitemares runs to the same calendar day. Claim Null ranked styles, Jack-a-Nape quests, Sprite Mastery, and unclaimed pass rewards before downtime — none of that carries.`,
   },
   {
+    title: 'Treasure Hunters is the name Epic posted',
+    body: 'On 24 October 2026 the official Fortnite account posted a teaser captioned “The greatest adventure of all! 11.1” with a Treasure Hunters title card. Hours later it posted a Fortnite × One Piece logo teaser. Epic has not published an island sheet, a loot pool, a Battle Pass track, or a downtime hour. Write-up: Treasure Hunters guide. Queue day: status page and countdown.',
+  },
+  {
     title: 'What v42.40 actually changed',
     body: '15 Oct was the last Override content patch. New Loot Hacks: Thorne’s Vampiric Blade, Finger Guns, Gatekeeper Shotgun, Hunting Rifle, Slap Splash, all Sprite variants. Vaulted: Midas’ Masterpiece, Witch Broom, plus Super Shot / Big Boom / Action Hero / Healing Overdrive cartridges. Sweeper Shotgun fire rate went up slightly. Honey Sprite and One Wish Willow Sprite are live; Sprite Mastery is on its last page.',
   },
   {
-    title: 'Island (still the same map)',
-    body: 'Named POIs did not flip in v42.40. Green Hill Zone, Reality’s Reign, and Stone Sanctum are still the new names. Frosted Flats, Sinister Strip, and Calamari Canyon stay off the named list. A giant pirate chest landmark sits east of Sunken Shores — treat it as scenery until Epic names whatever comes next.',
+    title: 'Island (still the Override map)',
+    body: 'Named POIs did not flip in v42.40. Green Hill Zone, Reality’s Reign, and Stone Sanctum are still the new names. Frosted Flats, Sinister Strip, and Calamari Canyon stay off the named list. A giant pirate chest landmark sits east of Sunken Shores — scenery until Treasure Hunters ships and Epic names whatever replaces it.',
   },
   {
     title: 'Countdown',
-    body: `Override is dated through ${formatSeasonLongDate(seasonEndDate())} (UTC schedule used on this site; Epic’s Battle Pass page states November 1, Eastern Time). Exact downtime can move a few hours. Use the season countdown tool for remaining time. Chapter 7 Season 5’s theme is not announced here.`,
+    body: `Override is dated through ${formatSeasonLongDate(seasonEndDate())} (UTC schedule used on this site; Epic’s Battle Pass page states November 1, Eastern Time). Exact downtime can move a few hours. Use the season countdown for remaining time and the status page when the client is in a queue. Treasure Hunters is the name on Epic’s 11.1 teaser — not a numbered “Season 5” on that post.`,
   },
 ] as const
 
@@ -64,7 +72,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'island',
     title: 'Island',
     live: `Override island is live. New named POIs: Green Hill Zone, Reality’s Reign, Stone Sanctum. Several Runners names (Frosted Flats, Sinister Strip, Calamari Canyon) are gone from the named list. Interactive map pins load from live Fortnite-API coordinates.`,
-    incoming: `${CURRENT_SEASON.next.label} is not announced beyond the Override end date (${formatSeasonLongDate(nextSeasonStartDate())} UTC schedule). Do not invent the next island.`,
+    incoming: `${CURRENT_SEASON.next.label} is the name on Epic’s 24 Oct teaser (dated 11.1). No island, POI list, or map screenshot has been published. Do not invent the next island.`,
     extra:
       'Five drop pages still cover returning POIs — treat mid-game rotates as “re-check in client.” A pirate-chest landmark east of Sunken Shores showed up with v42.40; it is not a new named POI. Map Evolution still archives older seasons; live POIs are on the interactive map.',
     href: '/fortnite-map',
@@ -74,7 +82,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'loot',
     title: 'Loot pool',
     live: 'After v42.40: Pump (post–v42.10), 8-Bit, Sweeper (fire-rate bump), Heavy AR, Wood Stake, Dual Fiend Hunters, Mega Buster, Bonerattler SMG / Freddy’s Nightmare still in the Fortnitemares mix. Drum Gun, Ranger AR, and Midas’ Masterpiece are vaulted. Gatekeeper, Hunting Rifle, Finger Guns, and Thorne’s blade are Loot Hacks this week — not guaranteed floor loot.',
-    incoming: 'No more Override content patches are scheduled. Next loot flip is the season boundary — we will not invent the Chapter 7 Season 5 pool.',
+    incoming: 'No more Override content patches are scheduled. Next loot flip is the Treasure Hunters boundary — we will not invent that pool.',
     extra:
       'Like-for-Like auto-upgrades (walk over a higher rarity of the gun you already hold) shipped in v42.40 if Auto Pick Up Weapons is on. Match Overrides still rewrite rules mid-match; Super Shot, Big Boom, Action Hero, and Healing Overdrive were pulled in this patch.',
     href: '/weapons',
@@ -94,7 +102,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'ranked',
     title: 'Ranked',
     live: 'You are still on the Override ladder. Claim Null Champion / Elite / Unreal styles before the flip — they lock with the season. Placement still beats spawn-island K/D. Wonkeeland and Latte remain the climb defaults.',
-    incoming: 'Next ranked reset is expected at the Override → S5 boundary around November 1. Confirm the ranked tab in-game after downtime — we will not invent a new LP formula.',
+    incoming: 'Next ranked reset is expected at the Override → Treasure Hunters boundary around November 1. Confirm the ranked tab in-game after downtime — we will not invent a new LP formula.',
     extra:
       'Ranked Reload is still the small-island rotation — not the Override BR map. Modes catalog labels Habanero rows; Discover is source of truth for which queue is up.',
     href: '/ranked',
@@ -104,7 +112,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'pass',
     title: 'Battle Pass',
     live: `Override Battle Pass is live (Sonic and other Gaming Legends styles in public coverage). Ends with the season (${formatSeasonLongDate(seasonEndDate())}). Unclaimed rewards lock — use the XP calculator if you are short.`,
-    incoming: `${CURRENT_SEASON.next.label} pass is not published. Do not buy levels for a future track that does not exist yet.`,
+    incoming: `The ${CURRENT_SEASON.next.label} pass is not published. Do not buy levels for a future track that does not exist yet.`,
     extra:
       'Fortnitemares Jack-a-Nape quests and Jimothy Sidekick also end with the event (through 31 Oct / 1 Nov). Jimothy how-to: extract a Dumpster Dive Sprite at a physical Extraction Site. Track dates on free cosmetics, not on the pass UI.',
     href: '/xp-calculator',
@@ -132,7 +140,7 @@ export const SEASON_HUB_FAQS = [
   {
     question: 'What is new in Fortnite Override?',
     answer:
-      'Match Override Consoles, Green Hill Zone / Reality’s Reign / Stone Sanctum, Sonic and other Gaming Legends on the Battle Pass, Sprites, and Fortnitemares through 1 November. Last content patch is v42.40 (15 Oct 2026). Last reviewed 24 Oct 2026.',
+      'Match Override Consoles, Green Hill Zone / Reality’s Reign / Stone Sanctum, Sonic and other Gaming Legends on the Battle Pass, Sprites, and Fortnitemares through 1 November. Last content patch is v42.40 (15 Oct 2026). Last reviewed 26 Oct 2026. Treasure Hunters is the name Epic posted for 11.1.',
   },
   {
     question: 'What is the current Fortnite map?',
@@ -145,8 +153,8 @@ export const SEASON_HUB_FAQS = [
       'Yes — expect the usual season-boundary LP reset at the Aug 20 flip. Soft seed from last season is normal; you do not keep S3 LP as-is. Confirm the ranked tab in-game.',
   },
   {
-    question: 'When does Chapter 7 Season 5 start?',
-    answer: `${CURRENT_SEASON.next.label} is dated ${formatSeasonLongDate(nextSeasonStartDate())} on this site (same as Override end). Theme, island, and loot are not announced here — we will not invent them. A pirate-chest landmark east of Sunken Shores is not a season-5 leak we are treating as fact.`,
+    question: 'When does Fortnite Treasure Hunters start?',
+    answer: `Epic’s 24 Oct teaser dates Treasure Hunters as 11.1 (1 November), the same calendar day the Override Battle Pass ends. This site’s clock uses ${formatSeasonLongDate(nextSeasonStartDate())} UTC as a placeholder. Epic has not posted an hour. Island, loot, and pass contents are not published — a pirate-chest landmark east of Sunken Shores is still scenery.`,
   },
   {
     question: 'Are the old drop guides still valid?',

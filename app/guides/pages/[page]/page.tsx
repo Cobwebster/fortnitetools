@@ -46,7 +46,7 @@ export default async function GuidesPagedPage({ params }: Props) {
   const page = parseGuidesPageParam(raw)
   if (!page) notFound()
   if (page === 1) permanentRedirect('/guides')
-  if (page > guidesTotalPages()) notFound()
+  if (page > guidesTotalPages()) permanentRedirect('/guides')
 
   return (
     <>

@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: `When does ${CURRENT_SEASON.next.label} start?`,
-    a: `${CURRENT_SEASON.next.label} starts on ${formatSeasonLongDate(nextSeasonStartDate())}, immediately after Override ends.`,
+    a: `${CURRENT_SEASON.next.label} is the name Epic posted for 11.1 — the same calendar day Override ends. This clock uses ${formatSeasonLongDate(nextSeasonStartDate())} UTC as a placeholder. Epic has not posted an hour.`,
   },
   {
     q: 'What happens when the Fortnite season ends?',
@@ -107,18 +107,17 @@ export default function SeasonCountdownPage() {
             </div>
 
             <p className="mt-6 text-sm text-muted-foreground">
-              Reset-week loot notes are retired — Override is live. Island, ranked, and Battle Pass
-              notes live on the{' '}
-              <Link href="/season" className="text-primary hover:underline">
-                {CURRENT_SEASON.label} hub
-              </Link>
-              . Queue vs downtime is the{' '}
+              Queue vs downtime lives on the{' '}
               <Link href="/status" className="text-primary hover:underline">
                 status page
               </Link>
-              ; LP notes are{' '}
-              <Link href="/ranked" className="text-primary hover:underline">
-                ranked
+              — that is the 1 Nov landing if the client is sitting on a patcher. Sourced teaser notes:{' '}
+              <Link href="/guides/season/fortnite-treasure-hunters" className="text-primary hover:underline">
+                Treasure Hunters
+              </Link>
+              . Island, ranked, and Battle Pass notes:{' '}
+              <Link href="/season" className="text-primary hover:underline">
+                {CURRENT_SEASON.label} hub
               </Link>
               .
             </p>
@@ -151,9 +150,12 @@ export default function SeasonCountdownPage() {
               end date.”
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              <strong className="text-foreground">{CURRENT_SEASON.next.label}</strong> is scheduled to
-              begin on <strong className="text-foreground">{nextLabel}</strong> — the same calendar
-              day the current season wraps.
+              <strong className="text-foreground">{CURRENT_SEASON.next.label}</strong> is the name on
+              Epic’s 24 Oct teaser (dated 11.1). This clock uses{' '}
+              <strong className="text-foreground">{nextLabel}</strong> UTC as a placeholder for the
+              same calendar day. Epic has not posted an hour. US daylight saving time also ends on 1
+              November — treat Epic’s “Eastern Time” calendar day as the source, not two different
+              end dates.
             </p>
           </section>
 
@@ -162,7 +164,15 @@ export default function SeasonCountdownPage() {
               Finish the Battle Pass before it ends
             </h2>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Pair this calculator with the{' '}
+              Pass still costs{' '}
+              <Link
+                href="/guides/how-to/how-much-is-fortnite-battle-pass"
+                className="text-primary hover:underline"
+              >
+                800 V-Bucks
+              </Link>
+              {' '}
+              (or Crew). Pair the leftover-XP math with the{' '}
               <Link href="/xp-calculator" className="text-primary hover:underline">
                 Fortnite XP calculator
               </Link>

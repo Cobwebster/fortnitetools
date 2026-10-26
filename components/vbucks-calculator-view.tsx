@@ -9,16 +9,17 @@ import { localizeHref, type AppLocale } from '@/i18n/config'
 
 // Official Fortnite V-Bucks pack pricing (USD) as of 2026
 const VBUCKS_PACKS = [
-  { id: 'p1000', vbucks: 1000, price: 7.99, tag: '' as const },
-  { id: 'p2800', vbucks: 2800, price: 19.99, tag: 'tagPopular' as const },
-  { id: 'p5000', vbucks: 5000, price: 31.99, tag: '' as const },
-  { id: 'p13500', vbucks: 13500, price: 79.99, tag: 'tagBestValue' as const },
+  { id: 'p1000', vbucks: 800, price: 8.99, tag: '' as const },
+  { id: 'p2800', vbucks: 2400, price: 22.99, tag: 'tagPopular' as const },
+  { id: 'p5000', vbucks: 4500, price: 36.99, tag: '' as const },
+  { id: 'p13500', vbucks: 12500, price: 89.99, tag: 'tagBestValue' as const },
 ]
 
 // Common Fortnite Item Shop / pack prices (USD storefront examples, 2026)
 const SHOP_ITEMS = [
-  { id: 'battlePass', cost: 950, category: 'pass' },
-  { id: 'crewPack', cost: 1800, category: 'pass' },
+  { id: 'battlePass', cost: 800, category: 'pass' },
+  { id: 'battleBundle', cost: 2600, category: 'pass' },
+  { id: 'crewPack', cost: 800, category: 'pass' },
   { id: 'iconSeriesSkin', cost: 2000, category: 'skin' },
   { id: 'legendarySkin', cost: 2000, category: 'skin' },
   { id: 'epicSkin', cost: 1500, category: 'skin' },
@@ -413,6 +414,27 @@ export function VBucksCalculatorView() {
             </Link>
             {t('relatedAfter')}
           </p>
+          {locale === 'en' ? (
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Price explainers:{' '}
+              <Link href="/guides/how-to/how-much-are-v-bucks-fortnite" className="text-primary hover:underline">
+                How much are V-Bucks
+              </Link>
+              {' · '}
+              <Link href="/guides/how-to/how-much-is-fortnite-battle-pass" className="text-primary hover:underline">
+                Battle Pass cost
+              </Link>
+              {' · '}
+              <Link href="/guides/how-to/fortnite-crew-worth-it" className="text-primary hover:underline">
+                Crew vs Battle Pass
+              </Link>
+              {' · '}
+              <Link href="/guides/how-to/fortnite-currencies-explained" className="text-primary hover:underline">
+                All Fortnite currencies
+              </Link>
+              .
+            </p>
+          ) : null}
         </section>
       </div>
     </main>

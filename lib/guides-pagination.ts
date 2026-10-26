@@ -1,7 +1,7 @@
 import { getPostsSorted, type Post } from '@/lib/posts'
 
 /** Cards per page — enough unique content that page 2+ is not a thin stub. */
-export const GUIDES_PAGE_SIZE = 12
+export const GUIDES_PAGE_SIZE = 24
 
 export function guidesPageHref(page: number) {
   return page <= 1 ? '/guides' : `/guides/pages/${page}`

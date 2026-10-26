@@ -241,7 +241,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/season-countdown',
     title: 'Season Countdown',
     description:
-      'When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start.',
+      'When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Treasure Hunters.',
     tags: ['Season', 'Countdown', 'End Date'],
     category: 'season',
   },

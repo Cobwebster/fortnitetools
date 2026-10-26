@@ -17,6 +17,7 @@ const FLAGSHIP = new Set([
   '/ranked',
   '/status',
   '/season',
+  '/season-countdown',
   '/codes',
   '/free-cosmetics',
   '/tools/item-shop',
@@ -31,7 +32,6 @@ const FLAGSHIP = new Set([
 ])
 
 const CALC_OR_THIN = new Set([
-  '/season-countdown',
   '/tools/sensitivity-calculator',
   '/tools/vbucks-calculator',
   '/tools/fps-settings',
@@ -40,6 +40,13 @@ const CALC_OR_THIN = new Set([
   '/player-count',
   '/map-evolution',
   '/creator-code',
+])
+
+const GSC_PUSH_GUIDES = new Set([
+  'how-to-redeem-fortnite-code',
+  'how-to-refund-fortnite-skins',
+  'how-much-is-fortnite-battle-pass',
+  'fortnite-treasure-hunters',
 ])
 
 function toolPriority(path: string): number {
@@ -156,7 +163,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${base}${path}`,
     lastModified: hubModified,
     changeFrequency:
-      path === '/news' || path === '/status' || path === '/tools/item-shop'
+      path === '/news' ||
+      path === '/status' ||
+      path === '/season-countdown' ||
+      path === '/tools/item-shop'
         ? ('daily' as const)
         : ('weekly' as const),
     priority: toolPriority(path),
@@ -224,7 +234,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${base}/guides/${post.category}/${post.slug}`,
       lastModified: new Date(post.date),
       changeFrequency: 'monthly' as const,
-      priority: post.featured ? 0.75 : 0.6,
+      priority: GSC_PUSH_GUIDES.has(post.slug) ? 0.85 : post.featured ? 0.75 : 0.6,
     }))
 
   const weaponRoutes: MetadataRoute.Sitemap = WEAPON_CATALOG.map((w) => ({

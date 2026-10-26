@@ -25,7 +25,8 @@ export const metadata: Metadata = createMetadata({
     'fortnite chapter 7 season 4 end date',
     'fortnite override end date',
     'fortnite season 4 end date',
-    'chapter 7 season 5 start date',
+    'fortnite treasure hunters',
+    'fortnite treasure hunters start date',
     'fortnite season end date 2026',
   ],
 })
@@ -37,7 +38,7 @@ const faqs = [
   },
   {
     question: `When does Fortnite ${CURRENT_SEASON.next.label} start?`,
-    answer: `${CURRENT_SEASON.next.label} is expected to start on ${endLabel}, right after ${CURRENT_SEASON.label} ends.`,
+    answer: `${CURRENT_SEASON.next.label} is the name Epic posted for 11.1, the same calendar day ${CURRENT_SEASON.label} ends (${endLabel} on this clock). Epic has not posted an hour.`,
   },
   {
     question: 'How long is Fortnite Override?',

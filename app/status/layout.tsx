@@ -5,7 +5,7 @@ import { STATUS_FAQS } from '@/lib/fortnite-status'
 export const metadata: Metadata = createMetadata({
   title: 'Is Fortnite Down? Live Server Status & Season Countdown',
   description:
-    'Live Fortnite server status for Override: Epic’s board read as Online / Issues / Down, lobby downtime headlines, and a live countdown to November 1, 2026. No fake ping map. Queue is not downtime.',
+    'Live Fortnite server status for Override → Treasure Hunters: Epic’s board as Online / Issues / Down, lobby downtime headlines, and a countdown to 1 November 2026. No fake ping map. Queue is not downtime.',
   path: '/status',
   keywords: [
     'is fortnite down',
@@ -15,6 +15,8 @@ export const metadata: Metadata = createMetadata({
     'fortnite status',
     'fortnite server status',
     'fortnite override',
+    'fortnite treasure hunters',
+    'fortnite november 1 downtime',
   ],
 })
 

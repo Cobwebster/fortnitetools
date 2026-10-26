@@ -6,11 +6,17 @@ import { createMetadata } from '@/lib/seo'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 
 const base = createMetadata({
-  title: 'Fortnite V-Bucks Calculator – Pack Combinations',
+  title: 'Fortnite V-Bucks Calculator – Cheapest Pack Combo (2026)',
   description:
-    'Build a Fortnite wishlist and estimate a low-cost V-Bucks pack combination using common USD storefront prices.',
+    'Build a Fortnite wishlist and estimate the cheapest V-Bucks pack combo after the March 2026 price change (800 / 2,400 / 4,500 / 12,500 packs).',
   path: '/tools/vbucks-calculator',
-  keywords: ['vbucks calculator', 'fortnite vbucks', 'fortnite pack calculator'],
+  keywords: [
+    'vbucks calculator',
+    'fortnite vbucks',
+    'fortnite pack calculator',
+    'how much are v-bucks',
+    'cheapest v-bucks pack',
+  ],
 })
 
 export const metadata: Metadata = {

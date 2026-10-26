@@ -22,7 +22,8 @@ export const CURRENT_SEASON = {
   next: {
     chapter: 7,
     season: 5,
-    label: 'Chapter 7 Season 5',
+    /** Name Epic posted 24 Oct 2026. They have not numbered it as “Season 5” on that teaser. */
+    label: 'Treasure Hunters',
     startIso: '2026-11-01T23:00:00.000Z',
   },
 } as const

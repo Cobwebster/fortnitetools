@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react'
 import { useTranslations, useLocale } from 'next-intl'
 import { FortniteIcon } from '@/components/fortnite-icon'
 import { MapEvolutionTeaser } from '@/components/map-evolution-teaser'
+import { SeasonCountdownClient } from '@/components/SeasonCountdownClient'
 import { PostCard } from '@/components/post-card'
 import { categories, getFeaturedPosts, getLocalizedPosts, getPostsSorted } from '@/lib/posts'
 import { siteConfig } from '@/lib/site'
@@ -121,38 +122,90 @@ export function HomePageContent({
               {t('heroBody')}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link
-                href={toolsHref}
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
-              >
-                {t('ctaTools')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <Link
-                href={secondaryCtaHref}
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
-              >
-                {isEnglish ? t('ctaWeapons') : t('ctaGuides')}
-              </Link>
               {isEnglish ? (
-                <Link
-                  href="/stats"
-                  className="inline-flex items-center gap-2 rounded-md border border-primary/50 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/15 transition-colors"
-                >
-                  Player Stats
-                </Link>
-              ) : null}
-              {isEnglish ? (
-                <Link
-                  href="/tools/loadout-builder"
-                  className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
-                >
-                  {t('ctaLoadout')}
-                </Link>
-              ) : null}
+                <>
+                  <Link
+                    href="/status"
+                    className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+                  >
+                    Is Fortnite down? <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href="/season-countdown"
+                    className="inline-flex items-center gap-2 rounded-md border border-primary/50 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/15 transition-colors"
+                  >
+                    Nov 1 countdown
+                  </Link>
+                  <Link
+                    href="/guides/season/fortnite-treasure-hunters"
+                    className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                  >
+                    Treasure Hunters
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    href={toolsHref}
+                    className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+                  >
+                    {t('ctaTools')} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href={secondaryCtaHref}
+                    className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                  >
+                    {t('ctaGuides')}
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>
       </section>
+
+      {isEnglish ? (
+        <section
+          className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8"
+          aria-labelledby="flip-heading"
+        >
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">1 November ET</p>
+          <h2
+            id="flip-heading"
+            className="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-foreground sm:text-3xl"
+          >
+            Override ends. Treasure Hunters is the name Epic posted.
+          </h2>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Official Fortnite account, 24 Oct: “The greatest adventure of all! 11.1”, then a Fortnite ×
+            One Piece logo teaser. No hour yet. Sit on status if the client queues, and the countdown
+            for the calendar clock.
+          </p>
+          <div className="mt-6 rounded-2xl border border-border bg-card/70 p-5 sm:p-6">
+            <SeasonCountdownClient compact />
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/status"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90"
+            >
+              Is Fortnite down?
+            </Link>
+            <Link
+              href="/season-countdown"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
+            >
+              Full countdown
+            </Link>
+            <Link
+              href="/guides/season/fortnite-treasure-hunters"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
+            >
+              What Epic has shown
+            </Link>
+          </div>
+        </section>
+      ) : null}
 
       <section
         className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"
@@ -264,6 +317,52 @@ export function HomePageContent({
         </div>
       </section>
 
+      {isEnglish ? (
+        <section
+          className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8"
+          aria-labelledby="account-howtos-heading"
+        >
+          <h2
+            id="account-howtos-heading"
+            className="font-display text-2xl font-bold uppercase tracking-tight text-foreground"
+          >
+            Account how-tos
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The searches people type when they are about to spend V-Bucks — not a fifth wallet recap.
+          </p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            <Link
+              href="/guides/how-to/how-to-redeem-fortnite-code"
+              className="rounded-xl border border-border bg-card p-5 transition-colors hover:border-primary/60"
+            >
+              <p className="text-sm font-bold text-foreground">Redeem a Fortnite code</p>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                Gift cards on PC, Switch, PlayStation, and Xbox — plus creator codes in the shop.
+              </p>
+            </Link>
+            <Link
+              href="/guides/how-to/how-to-refund-fortnite-skins"
+              className="rounded-xl border border-border bg-card p-5 transition-colors hover:border-primary/60"
+            >
+              <p className="text-sm font-bold text-foreground">Refund skins</p>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                Cancel Purchase in 24 hours, Return Tickets in 30 days, and what Epic will not take back.
+              </p>
+            </Link>
+            <Link
+              href="/guides/how-to/how-much-is-fortnite-battle-pass"
+              className="rounded-xl border border-border bg-card p-5 transition-colors hover:border-primary/60"
+            >
+              <p className="text-sm font-bold text-foreground">Battle Pass cost (800)</p>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                800 V-Bucks or Crew, 800 back if you finish, Battle Bundle 2,600. Override locks 1 Nov ET.
+              </p>
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
       {isEnglish ? statsTeaser : null}
 
       {isEnglish ? <MapEvolutionTeaser /> : null}
@@ -323,7 +422,7 @@ export function HomePageContent({
       {isEnglish ? (
         <section>
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Last reviewed 31 Aug 2026</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Last reviewed 26 Oct 2026</p>
             <h2 className="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-foreground">
               Built for the live season — not a widget farm
             </h2>

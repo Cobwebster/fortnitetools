@@ -137,34 +137,42 @@ export function Footer() {
                 <>
                   <li>
                     <Link
+                      href="/guides/season/fortnite-treasure-hunters"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('treasureHuntersGuide')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/guides/how-to/how-much-is-fortnite-battle-pass"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('passCostGuide')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/guides/how-to/how-to-redeem-fortnite-code"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('redeemGuide')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/guides/how-to/how-to-refund-fortnite-skins"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {t('refundGuide')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/weapons"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {t('allWeapons')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/guides/season/fortnite-override-battle-pass-guide"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {t('season')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/guides/map/fortnite-green-hill-zone-drop-guide"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {t('bestLoot')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/drops"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {t('drops')}
                     </Link>
                   </li>
                 </>

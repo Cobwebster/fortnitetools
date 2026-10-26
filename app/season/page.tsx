@@ -64,8 +64,8 @@ export default function SeasonHubPage() {
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                   What changed on the island, how Match Overrides mess with fights, ranked notes, and
                   when the Battle Pass locks. Season clock runs through{' '}
-                  {formatSeasonLongDate(seasonEndDate())}. Next flip ({CURRENT_SEASON.next.label}) is
-                  dated {formatSeasonLongDate(nextSeasonStartDate())}.
+                  {formatSeasonLongDate(seasonEndDate())}. Epic named{' '}
+                  {CURRENT_SEASON.next.label} for 11.1 — sourced teaser only, not an island guide.
                 </p>
               </div>
             </div>

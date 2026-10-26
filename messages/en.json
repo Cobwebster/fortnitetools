@@ -111,12 +111,14 @@
     "catMap": "Map",
     "refundGuide": "How to Refund Skins",
     "redeemGuide": "How to Redeem a Code",
+    "passCostGuide": "Battle Pass Cost (800)",
+    "treasureHuntersGuide": "Treasure Hunters",
     "cosmeticStats": "Cosmetic Stats"
   },
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
-    "heroSubtitle": "Last week of Override — v42.40 loot, Fortnitemares, and the Nov 1 Battle Pass cutoff.",
-    "heroBody": "Drop on the live map, rebuild a hotbar without Midas or Drum Gun, finish Null and Jack-a-Nape, and watch the season countdown. Built for how you play this week.",
+    "heroSubtitle": "Override ends 1 Nov ET. Epic named Treasure Hunters — sit on status and the countdown.",
+    "heroBody": "Finish the Battle Pass, Null, and Fortnitemares before the queue. Treasure Hunters is a name and a date, not an island guide yet.",
     "ctaTools": "Open free tools",
     "ctaTierList": "Weapons tier list",
     "ctaWeapons": "All weapons",
@@ -133,7 +135,7 @@
     "blurbGuidesTitle": "Guides",
     "blurbGuides": "Override Battle Pass, Green Hill drops, Admin Panel codes, and Ranked Null — plus evergreen account how-tos.",
     "blurbSeasonTitle": "Override season",
-    "blurbSeason": "v42.40 was the last Override patch. Fortnitemares, Null ranked styles, and the Battle Pass lock on November 1.",
+    "blurbSeason": "v42.40 was the last Override patch. Epic named Treasure Hunters for 11.1. Fortnitemares, Null, and the Battle Pass lock on November 1.",
     "toolFreeCosmetics": "Free Cosmetics",
     "toolXpCalc": "XP Calc",
     "toolCountdown": "Countdown",
@@ -245,7 +247,7 @@
       },
       "season-countdown": {
         "title": "Season Countdown",
-        "description": "When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Chapter 7 Season 5 start."
+        "description": "When does Chapter 7 Season 4 (Override) end? Live countdown to November 1, 2026 and Treasure Hunters."
       },
       "codes": {
         "title": "Creative Map Codes",
@@ -696,7 +698,7 @@
       "breadcrumb": "V-Bucks Calculator",
       "titlePrefix": "V-Bucks",
       "titleHighlight": "Calculator",
-      "hero": "Build a wishlist, see V-Bucks needed, and estimate a low-cost pack combination (USD storefront examples).",
+      "hero": "Build a wishlist, see V-Bucks needed, and estimate a low-cost pack combination using Epic’s post–March 2026 USD pack sizes (800 / 2,400 / 4,500 / 12,500).",
       "categories": {
         "pass": "Battle Pass & Crew",
         "skin": "Skins",
@@ -705,7 +707,8 @@
       },
       "items": {
         "battlePass": "Battle Pass",
-        "crewPack": "Crew Pack (monthly)",
+        "battleBundle": "Battle Bundle (pass + 25 levels)",
+        "crewPack": "Crew monthly V-Bucks grant",
         "iconSeriesSkin": "Icon Series Skin",
         "legendarySkin": "Legendary Skin",
         "epicSkin": "Epic Skin",
@@ -743,18 +746,18 @@
       "leftover": "+{count} V-Bucks leftover after purchase.",
       "packPricesTitle": "V-Bucks Pack Prices",
       "packs": {
-        "p1000": "1,000 V-Bucks",
-        "p2800": "2,800 V-Bucks",
-        "p5000": "5,000 V-Bucks",
-        "p13500": "13,500 V-Bucks"
+        "p1000": "800 V-Bucks",
+        "p2800": "2,400 V-Bucks",
+        "p5000": "4,500 V-Bucks",
+        "p13500": "12,500 V-Bucks"
       },
       "tagPopular": "Most Popular",
       "tagBestValue": "Best Value",
       "perVbuck": "{price}¢ per V-Buck",
       "aboutTitle": "About V-Bucks pricing",
-      "aboutIntro": "V-Bucks are Fortnite's in-game currency used to buy cosmetics from the Item Shop and unlock Battle Passes. Prices shown reflect the standard USD storefront pricing as of 2026. The",
-      "aboutBestPack": "13,500 V-Bucks pack",
-      "aboutMid": "gives the best per-V-Buck value at roughly 0.593¢ each versus 0.799¢ for the 1,000 pack — a 26% savings.",
+      "aboutIntro": "V-Bucks are Fortnite's in-game currency used to buy cosmetics from the Item Shop and unlock Battle Passes. Pack sizes and USD prices follow Epic’s 19 March 2026 change. Confirm the live storefront before you buy. The",
+      "aboutBestPack": "12,500 V-Bucks pack",
+      "aboutMid": "gives the best per-V-Buck value at about 0.72¢ each versus about 1.12¢ for the 800 pack.",
       "aboutOutro": "V-Bucks earned through the Battle Pass or Crew subscription effectively lower your per-V-Buck cost further.",
       "relatedTitle": "Related Fortnite tools",
       "relatedBefore": "Plan your season with the",
@@ -771,9 +774,9 @@
       "faqTitle": "V-Bucks FAQ",
       "faqs": {
         "q1": "What is the cheapest V-Bucks pack?",
-        "a1": "On the standard USD storefront, the 13,500 pack usually has the lowest cost per V-Buck. Smaller packs cost more per V-Buck but waste less if you only need a few hundred.",
+        "a1": "On the standard USD storefront after March 2026, the 12,500 pack usually has the lowest cost per V-Buck. Smaller packs cost more per V-Buck but waste less if you only need a few hundred.",
         "q2": "Why does leftover V-Bucks appear?",
-        "a2": "Packs come in fixed sizes. If you need 2,000 V-Bucks, buying a 2,800 pack leaves 800 for later. That is often cheaper than two 1,000 packs.",
+        "a2": "Packs come in fixed sizes. If you need 1,600 V-Bucks, one 2,400 pack leaves 800 for later. That is often cheaper than two 800 packs.",
         "q3": "Does this work for every country?",
         "a3": "No. Taxes, platform fees, and local currency change the real price. Use this as a combo planner, then check your storefront.",
         "q4": "Can I include Item Shop wishlist items?",

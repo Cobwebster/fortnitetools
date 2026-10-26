@@ -1,7 +1,7 @@
 import { formatSeasonLongDate, getSeasonCountdown, nextSeasonStartDate } from '@/lib/season'
 import type { NewsMotd } from '@/lib/fortnite-news'
 
-export const STATUS_REVIEWED = '24 Oct 2026'
+export const STATUS_REVIEWED = '26 Oct 2026'
 
 export type EpicStatusPayload = {
   indicator: 'none' | 'minor' | 'major' | 'critical' | 'maintenance' | string
@@ -100,7 +100,7 @@ export function countdownStatusLine(now = new Date()) {
 }
 
 const DOWNTIME_RE =
-  /reboot|downtime|maintenance|server|queue|season 5|chapter 7 season 5|override|coming soon|update|outage/i
+  /reboot|downtime|maintenance|server|queue|season 5|chapter 7 season 5|treasure hunters|override|coming soon|update|outage/i
 
 /** Prefer MOTDs that actually mention reboot / downtime; otherwise show the latest lobby tiles so the page is not empty. */
 export function pickStatusMotds(motds: NewsMotd[]) {
@@ -149,7 +149,7 @@ export const STATUS_CHECKS = [
   },
   {
     title: 'Season countdown',
-    body: `Override (Chapter 7 Season 4) ends ${formatSeasonLongDate(nextSeasonStartDate())} UTC. Expect a maintenance window around that flip into Season 5. Exact queue length is not something third-party sites get — if the client says “servers are busy,” believe the client.`,
+    body: `Override (Chapter 7 Season 4) ends ${formatSeasonLongDate(nextSeasonStartDate())} UTC. Expect a maintenance window around that flip into Treasure Hunters. Exact queue length is not something third-party sites get — if the client says “servers are busy,” believe the client.`,
   },
 ] as const
 
@@ -184,7 +184,7 @@ export const STATUS_FAQS = [
   },
   {
     question: 'When is the next season downtime?',
-    answer: `Override ends / Chapter 7 Season 5 is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC). Downtime can shift by a few hours. Use the live countdown; treat this page as the “is it servers or me” checklist.`,
+    answer: `Override ends / Treasure Hunters is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC) on this clock. Epic’s Battle Pass page says 1 November, Eastern Time, with no hour. Downtime can shift. Use the live countdown; treat this page as the “is it servers or me” checklist.`,
   },
   {
     question: 'Why do other sites show a green ping map?',

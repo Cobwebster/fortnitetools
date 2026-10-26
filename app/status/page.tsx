@@ -72,7 +72,8 @@ export default async function StatusPage() {
                 </h1>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
                   Live read on Epic’s public board, lobby headlines that mention downtime, and the
-                  Override season clock — not a fake ping map of your city.
+                  Override → Treasure Hunters clock — not a fake ping map of your city. 1 November
+                  queue day starts here.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 text-sm">
@@ -89,6 +90,18 @@ export default async function StatusPage() {
                   className="rounded-md border border-border bg-card/80 px-3 py-2 font-semibold text-foreground hover:border-primary/50 hover:text-primary transition-colors"
                 >
                   Lobby news
+                </Link>
+                <Link
+                  href="/season-countdown"
+                  className="rounded-md border border-border bg-card/80 px-3 py-2 font-semibold text-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                >
+                  Nov 1 countdown
+                </Link>
+                <Link
+                  href="/guides/season/fortnite-treasure-hunters"
+                  className="rounded-md border border-border bg-card/80 px-3 py-2 font-semibold text-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                >
+                  Treasure Hunters
                 </Link>
                 <Link
                   href="/guides/how-to/how-to-fix-fortnite-packet-loss-high-ping"
@@ -343,6 +356,44 @@ export default async function StatusPage() {
               </Link>
               , not a fake world map.
             </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+              If you are spending before downtime
+            </h2>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Account steps people search while the season clock runs out — not a status flag.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <Link
+                href="/guides/how-to/how-to-redeem-fortnite-code"
+                className="rounded-xl border border-border bg-card p-5 hover:border-primary/60"
+              >
+                <p className="text-sm font-bold text-foreground">Redeem a code</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  Gift cards and creator codes before you sit in a queue.
+                </p>
+              </Link>
+              <Link
+                href="/guides/how-to/how-to-refund-fortnite-skins"
+                className="rounded-xl border border-border bg-card p-5 hover:border-primary/60"
+              >
+                <p className="text-sm font-bold text-foreground">Refund skins</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  Cancel Purchase and Return Tickets if you bought a pass you cannot finish.
+                </p>
+              </Link>
+              <Link
+                href="/guides/how-to/how-much-is-fortnite-battle-pass"
+                className="rounded-xl border border-border bg-card p-5 hover:border-primary/60"
+              >
+                <p className="text-sm font-bold text-foreground">Battle Pass is 800</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  Override still costs 800 V-Bucks (or Crew). Unclaimed tiers do not carry.
+                </p>
+              </Link>
+            </div>
           </section>
 
           <section className="space-y-4 border-t border-border pt-10">
