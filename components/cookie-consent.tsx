@@ -47,7 +47,7 @@ export function CookieConsent() {
     >
       <div className="flex w-full max-w-3xl flex-col gap-3 rounded-lg border border-border/80 bg-background px-3.5 py-3 shadow-lg sm:flex-row sm:items-center sm:gap-4 sm:px-4">
         <p className="flex-1 text-xs leading-relaxed text-muted-foreground sm:text-[13px]">
-          We use analytics cookies to measure traffic.{' '}
+          We use analytics cookies to measure traffic, and advertising cookies when ads are shown.{' '}
           <Link
             href="/privacy"
             onClick={dismiss}

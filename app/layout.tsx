@@ -10,6 +10,7 @@ import { getMessages } from '@/i18n/get-messages'
 import './globals.css'
 
 const GA_MEASUREMENT_ID = 'G-2XQ18341NM'
+const ADSENSE_CLIENT = 'ca-pub-4663468510887622'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -78,6 +79,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  other: {
+    'google-adsense-account': ADSENSE_CLIENT,
+  },
 }
 
 export const viewport: Viewport = {
@@ -120,6 +124,12 @@ export default async function RootLayout({
                 gtag('config', '${GA_MEASUREMENT_ID}');
               `}
             </Script>
+            <Script
+              async
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+              crossOrigin="anonymous"
+              strategy="afterInteractive"
+            />
           </>
         )}
       </body>

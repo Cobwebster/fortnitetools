@@ -94,8 +94,9 @@ export default function PrivacyPage() {
         <p>
           We use <strong className="text-foreground">Supabase</strong> for authentication and database storage for
           accounts and submissions. We use <strong className="text-foreground">Google Analytics</strong> for traffic
-          stats. Some tools load public Fortnite-related data from third-party APIs. Those providers have their own
-          privacy practices. We do not control Epic Games&apos; services or the official Fortnite client.
+          stats and <strong className="text-foreground">Google AdSense</strong> to show ads. Some tools load public
+          Fortnite-related data from third-party APIs. Those providers have their own privacy practices. We do not
+          control Epic Games&apos; services or the official Fortnite client.
         </p>
       </section>
 
