@@ -49,6 +49,7 @@ const EN_POPULAR_TOOLS = [
   { href: '/map-evolution', key: 'toolMapEvolution' as const },
   { href: '/weapons', key: 'toolWeapons' as const },
   { href: '/free-cosmetics', key: 'toolFreeCosmetics' as const },
+  { href: '/lobby-hacks', key: 'toolLobbyHacks' as const },
   { href: '/codes', key: 'toolMapCodes' as const },
   { href: '/player-count', key: 'toolPlayerCount' as const },
   { href: '/season-countdown', key: 'toolCountdown' as const },

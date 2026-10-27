@@ -142,6 +142,8 @@ export function Navbar() {
     { href: '/new-cosmetics', label: t('newCosmetics') },
     { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
+    { href: '/sprites', label: t('sprites') },
+    { href: '/lobby-hacks', label: t('lobbyHacks') },
     { href: '/creator-code', label: t('creatorCode') },
     { href: '/codes', label: t('codes') },
     { href: '/free-cosmetics', label: t('freeCosmetics') },

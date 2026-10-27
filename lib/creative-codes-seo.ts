@@ -42,7 +42,7 @@ export const CREATIVE_CODES_FAQS = [
   {
     question: 'Admin Panel Lobby Hack codes vs Creative map codes?',
     answer:
-      'Different systems. Lobby Hack codes are typed in the Override Admin Panel for Sprite Dust / XP / Sprites. Creative map codes load islands in Discover. See the Admin Panel guide for lobby strings.',
+      'Different systems. Lobby Hack codes are typed in the Override Admin Panel for Sprite Dust / XP / Sprites. Creative map codes load islands in Discover. Copy lobby strings on the Lobby Hacks page.',
   },
 ]
 
@@ -103,6 +103,6 @@ export const CREATIVE_CODES_LINKS = [
   { href: '/xp-calculator', label: 'Battle Pass XP calculator' },
   { href: '/player-count', label: 'Live Creative CCU' },
   { href: '/stats', label: 'Player stats hub' },
-  { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel codes' },
+  { href: '/lobby-hacks', label: 'Lobby Hacks' },
   { href: '/season-countdown', label: 'Season countdown' },
 ] as const

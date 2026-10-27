@@ -89,8 +89,8 @@ export const TOOLS: ToolEntry[] = [
     href: '/cosmetic-stats',
     title: 'Cosmetic Stats',
     description:
-      'Fortnite outfit shop stats — most Item Shop appearances, longest vaults, recent returns, and what’s live tonight.',
-    tags: ['Shop History', 'Vaulted', 'Skins'],
+      'Shop occurrences, longest vault wait, rarity / season / type mix, and what’s live tonight — from Fortnite-API.',
+    tags: ['Shop History', 'Vaulted', 'Rarity'],
     category: 'cosmetics',
   },
   {
@@ -139,6 +139,22 @@ export const TOOLS: ToolEntry[] = [
     description:
       'Cosmetics added in the current game build — outfits, emotes, jam tracks, and cars. New is not the same as in the shop tonight.',
     tags: ['Skins', 'New', 'Leaks'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/sprites',
+    title: 'Sprites',
+    description:
+      'Every Chapter 7 Sprite companion portrait — Jonesy, Gold, Cheat Master, Gummy, Galaxy, Cube, and collab variants.',
+    tags: ['Sprites', 'Collection', 'Icons'],
+    category: 'cosmetics',
+  },
+  {
+    href: '/lobby-hacks',
+    title: 'Lobby Hacks',
+    description:
+      'Click to copy Override Admin Panel codes for Sprites, XP, Sprite Dust, locker items, and lobby effects. Marks used in this browser.',
+    tags: ['Codes', 'Sprites', 'Free'],
     category: 'cosmetics',
   },
   {

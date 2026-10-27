@@ -30,11 +30,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/sprites',
-        destination: '/guides/how-to/how-to-extract-sprites-fortnite',
-        permanent: true,
-      },
-      {
         source: '/guides/building/fortnite-building-guide-beginners',
         destination: '/guides',
         permanent: true,

@@ -174,10 +174,7 @@ export default async function CodesPage() {
             </ol>
             <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
               Island codes are not the same as Item Shop creator support codes or Override{' '}
-              <Link
-                href="/guides/how-to/fortnite-admin-panel-lobby-hack-codes"
-                className="text-primary hover:underline"
-              >
+              <Link href="/lobby-hacks" className="text-primary hover:underline">
                 Admin Panel Lobby Hacks
               </Link>
               .

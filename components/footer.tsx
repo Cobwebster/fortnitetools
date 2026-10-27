@@ -39,6 +39,8 @@ export function Footer() {
     { href: '/new-cosmetics', label: t('newCosmetics') },
     { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
+    { href: '/sprites', label: t('sprites') },
+    { href: '/lobby-hacks', label: t('lobbyHacks') },
     { href: '/locker', label: t('locker') },
     { href: '/lockers', label: t('playerLockers') },
     { href: '/creator-code', label: t('creatorCode') },

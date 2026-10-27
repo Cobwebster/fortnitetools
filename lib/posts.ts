@@ -115,7 +115,7 @@ None of this carries:
 3. **Jack-a-Nape** — Fortnitemares quests. [Free cosmetics](/free-cosmetics).
 4. **Sprite Mastery last page** — Quack + Pixel Polli. Dust is not advertised as carrying.
 5. **Jimothy** — extract a Dumpster Dive Sprite. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
-6. **Admin Panel** lobby codes. Never V-Bucks. [Admin Panel](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+6. **Admin Panel** lobby codes. Never V-Bucks. [Lobby Hacks](/lobby-hacks).
 
 If you panic-bought V-Bucks or a pass you cannot finish: [refunds](/guides/how-to/how-to-refund-fortnite-skins). If you have a card to burn before downtime: [redeem a code](/guides/how-to/how-to-redeem-fortnite-code).
 
@@ -225,7 +225,7 @@ Consoles still exist. Four combat cartridges are gone. Fortnitemares ones (**Spo
 4. **Prophetic Tapestry** — login claim during Fortnitemares.
 5. **Null ranked styles** — Champion / Elite / Unreal. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
 6. **Sprite Mastery last page** — Quack + Pixel Polli.
-7. **Admin Panel** — remaining Lobby Hack codes. Never V-Bucks. [Admin Panel how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+7. **Admin Panel** — remaining Lobby Hack codes. Never V-Bucks. [Lobby Hacks](/lobby-hacks).
 
 ## What we are not inventing
 
@@ -298,7 +298,7 @@ There is no shop listing. You have to find one in a match.
 
 Any Dumpster Dive variant works. You do not need a gold foil.
 
-Admin Panel **Extraction Accelerators** (Lobby Hack codes) make the pad less of a third-party magnet. They do not spawn the Sprite for you. Codes: [Admin Panel how-to](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+Admin Panel **Extraction Accelerators** (Lobby Hack codes) make the pad less of a third-party magnet. They do not spawn the Sprite for you. Codes: [Lobby Hacks](/lobby-hacks).
 
 ## Extract without throwing the unlock
 
@@ -366,7 +366,7 @@ Chapter 7 Season 4 (**Override**) added an **Admin Panel** on the Battle Royale 
 
 Last reviewed: **24 October 2026**. Codes rotate through the season (through ~1 November 2026). Epic can disable a code without notice. This is the last week of Override — redeem leftover XP / Dust strings before downtime.
 
-Track timed freebies on the [free cosmetics tracker](/free-cosmetics). Season context: [Override hub](/season).
+Click-to-copy list (marks used in your browser): [Lobby Hacks](/lobby-hacks). Timed freebies: [free cosmetics tracker](/free-cosmetics). Season context: [Override hub](/season).
 
 ## How to redeem a Lobby Hack code
 
@@ -390,15 +390,9 @@ Codes are typically **one redeem per account**. A few Sprite / story rewards req
 
 Exact strings change weekly. Do **not** rely on a screenshot from July — redeem whatever Epic is posting *this* patch.
 
-## Sample codes players were redeeming mid-September 2026
+## Live code list
 
-These were widely reported active around **17–21 Sep 2026**. Confirm in-client before assuming they still work:
-
-- \`OverrideXP\` — XP grant  
-- \`DustInTheWind\` / \`BLINKYINKYPINKYCLYDE\` / \`PlayToLevelUp\` — Sprite Dust  
-- \`DestinyAwaits\` — Llama Supply Drops  
-- \`GottaGoFast\` / \`IWannaFlyHigh\` — Sonic / Tails Sprites (when still live)  
-- \`YourThoughtsAreMine\` — dust + Geno style (quest-gated in some reports)
+The click-to-copy catalog lives on [Lobby Hacks](/lobby-hacks) (Sprites, locker items, XP / Dust, fun effects). Snapshot **27 October 2026**. Confirm in-client — Epic can disable a string without notice.
 
 If a string errors, it is expired, mistyped, already redeemed, or quest-locked — not a “generator” problem.
 
@@ -466,7 +460,7 @@ Sonic and other **Gaming Legends** page rewards need the paid track or Crew. Unc
 1. **Weekly quests** — best reliable XP; clear them on reset day.
 2. **Daily quests** — filler; swap modes you hate instead of forcing them.
 3. **Match XP** — placement still pays; hot-drop inting does not.
-4. **Admin Panel Lobby Hacks** — occasional flat XP codes (see [Admin Panel guide](/guides/how-to/fortnite-admin-panel-lobby-hack-codes)).
+4. **Admin Panel Lobby Hacks** — occasional flat XP codes (see [Lobby Hacks](/lobby-hacks)).
 5. **Creative XP maps** — useful after weeklies, until daily/weekly Creative caps. Codes rotate — use [/codes](/codes) and the [XP maps archive](/guides/season/best-fortnite-xp-maps) as a starting list, not gospel.
 
 ## Practical plan if you are behind (last week of October)
@@ -1507,7 +1501,7 @@ Last reviewed: **26 October 2026**. Override (Chapter 7 Season 4) ends **1 Novem
 
 Premium currency. Pack prices, Battle Pass **800**, Crew grant **800**: [How much are V-Bucks?](/guides/how-to/how-much-are-v-bucks-fortnite), [Battle Pass cost](/guides/how-to/how-much-is-fortnite-battle-pass), [Crew](/guides/how-to/fortnite-crew-worth-it), [calculator](/tools/vbucks-calculator).
 
-Admin Panel Lobby Hack codes give XP / Dust / Sprites — **never V-Bucks**. [Admin Panel codes](/guides/how-to/fortnite-admin-panel-lobby-hack-codes).
+Admin Panel Lobby Hack codes give XP / Dust / Sprites — **never V-Bucks**. [Lobby Hacks](/lobby-hacks).
 
 ## Sprite Dust (Override)
 
@@ -2152,6 +2146,7 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
     content: `
 > **Archive note (19 Sep 2026):** This guide was written for **Chapter 7 Season 3 (Runners)**. **Override (Chapter 7 Season 4)** is live — treat POI names, loot, and progression loops as historical unless the season hub says otherwise. See [/season](/season), [/fortnite-map](/fortnite-map), and [/weapons](/weapons).
 
+Looking for the **icon gallery** (every companion portrait + name)? That lives at [/sprites](/sprites) — not this extract walkthrough.
 
 ## How to extract Sprites in Fortnite Chapter 7 Season 3
 

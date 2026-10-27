@@ -1,0 +1,2797 @@
+{
+  "source": "https://fortnite.gg/sprites",
+  "capturedAt": "2026-10-27",
+  "note": "Chapter 7 companion Sprite icons hotlinked from fortnite.gg. Not PNG sprite sheets.",
+  "sprites": [
+    {
+      "id": 212,
+      "slug": "bounty-hunter-8-bit-sprite",
+      "name": "Bounty Hunter 8-Bit",
+      "shortName": "Bounty Hunter 8-Bit",
+      "family": "8-Bit",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_8BitBlaster_BountyHunter_L.webp"
+    },
+    {
+      "id": 192,
+      "slug": "cheat-master-8-bit-sprite",
+      "name": "Cheat Master 8-Bit",
+      "shortName": "Cheat Master 8-Bit",
+      "family": "8-Bit",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_Cheatmaster_L.webp"
+    },
+    {
+      "id": 193,
+      "slug": "gold-8-bit-sprite",
+      "name": "Gold 8-Bit",
+      "shortName": "Gold 8-Bit",
+      "family": "8-Bit",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_Gold_L.webp"
+    },
+    {
+      "id": 117,
+      "slug": "loot-hacker-8-bit-sprite",
+      "name": "Loot Hacker 8-Bit",
+      "shortName": "Loot Hacker 8-Bit",
+      "family": "8-Bit",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_Hacker_L.webp"
+    },
+    {
+      "id": 191,
+      "slug": "8-bit-sprite",
+      "name": "8-Bit",
+      "shortName": "8-Bit",
+      "family": "8-Bit",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_L.webp"
+    },
+    {
+      "id": 246,
+      "slug": "trick-or-treat-8-bit-sprite",
+      "name": "Trick or Treat 8-Bit",
+      "shortName": "Trick or Treat 8-Bit",
+      "family": "8-Bit",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_8BitBlaster_TrickTreat_L.webp"
+    },
+    {
+      "id": 207,
+      "slug": "bounty-hunter-adventure-sprite",
+      "name": "Bounty Hunter Adventure",
+      "shortName": "Bounty Hunter Adventure",
+      "family": "Adventure",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_BountyHunter_L.webp"
+    },
+    {
+      "id": 177,
+      "slug": "cheat-master-adventure-sprite",
+      "name": "Cheat Master Adventure",
+      "shortName": "Cheat Master Adventure",
+      "family": "Adventure",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Cheatmaster_L.webp"
+    },
+    {
+      "id": 178,
+      "slug": "gold-adventure-sprite",
+      "name": "Gold Adventure",
+      "shortName": "Gold Adventure",
+      "family": "Adventure",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Gold_L.webp"
+    },
+    {
+      "id": 108,
+      "slug": "loot-hacker-adventure-sprite",
+      "name": "Loot Hacker Adventure",
+      "shortName": "Loot Hacker Adventure",
+      "family": "Adventure",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Hacker_L.webp"
+    },
+    {
+      "id": 264,
+      "slug": "quack-adventure-sprite",
+      "name": "Quack Adventure",
+      "shortName": "Quack Adventure",
+      "family": "Adventure",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Quack_L.webp"
+    },
+    {
+      "id": 176,
+      "slug": "adventure-sprite",
+      "name": "Adventure",
+      "shortName": "Adventure",
+      "family": "Adventure",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_L.webp"
+    },
+    {
+      "id": 242,
+      "slug": "trick-or-treat-adventure-sprite",
+      "name": "Trick or Treat Adventure",
+      "shortName": "Trick or Treat Adventure",
+      "family": "Adventure",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_TrickTreat_L.webp"
+    },
+    {
+      "id": 75,
+      "slug": "galaxy-air-sprite",
+      "name": "Galaxy Air",
+      "shortName": "Galaxy Air",
+      "family": "Air",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Air_Galaxy_L.webp"
+    },
+    {
+      "id": 42,
+      "slug": "gold-air-sprite",
+      "name": "Gold Air",
+      "shortName": "Gold Air",
+      "family": "Air",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Air_Gold_L.webp"
+    },
+    {
+      "id": 72,
+      "slug": "gummy-air-sprite",
+      "name": "Gummy Air",
+      "shortName": "Gummy Air",
+      "family": "Air",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Air_Candy_L.webp"
+    },
+    {
+      "id": 77,
+      "slug": "holofoil-air-sprite",
+      "name": "Holofoil Air",
+      "shortName": "Holofoil Air",
+      "family": "Air",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Air_Holo_L.webp"
+    },
+    {
+      "id": 74,
+      "slug": "air-sprite",
+      "name": "Air",
+      "shortName": "Air",
+      "family": "Air",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Air_Default_L.webp"
+    },
+    {
+      "id": 67,
+      "slug": "aura-sprite",
+      "name": "Aura",
+      "shortName": "Aura",
+      "family": "Aura",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp"
+    },
+    {
+      "id": 69,
+      "slug": "galaxy-aura-sprite",
+      "name": "Galaxy Aura",
+      "shortName": "Galaxy Aura",
+      "family": "Aura",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 70,
+      "slug": "gem-aura-sprite",
+      "name": "Gem Aura",
+      "shortName": "Gem Aura",
+      "family": "Aura",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp"
+    },
+    {
+      "id": 71,
+      "slug": "gold-aura-sprite",
+      "name": "Gold Aura",
+      "shortName": "Gold Aura",
+      "family": "Aura",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Gold_ui_L.webp"
+    },
+    {
+      "id": 68,
+      "slug": "gummy-aura-sprite",
+      "name": "Gummy Aura",
+      "shortName": "Gummy Aura",
+      "family": "Aura",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Candy_ui_L.webp"
+    },
+    {
+      "id": 146,
+      "slug": "cube-batman-sprite",
+      "name": "Cube Batman",
+      "shortName": "Cube Batman",
+      "family": "Batman",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_FossilMeal_Cube_L.webp"
+    },
+    {
+      "id": 142,
+      "slug": "galaxy-batman-sprite",
+      "name": "Galaxy Batman",
+      "shortName": "Galaxy Batman",
+      "family": "Batman",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_FossilMeal_Galaxy_L.webp"
+    },
+    {
+      "id": 140,
+      "slug": "gold-batman-sprite",
+      "name": "Gold Batman",
+      "shortName": "Gold Batman",
+      "family": "Batman",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_FossilMeal_Gold_L.webp"
+    },
+    {
+      "id": 141,
+      "slug": "gummy-batman-sprite",
+      "name": "Gummy Batman",
+      "shortName": "Gummy Batman",
+      "family": "Batman",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_FossilMeal_Candy_L.webp"
+    },
+    {
+      "id": 145,
+      "slug": "holofoil-batman-sprite",
+      "name": "Holofoil Batman",
+      "shortName": "Holofoil Batman",
+      "family": "Batman",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_FossilMeal_Holofoil_L.webp"
+    },
+    {
+      "id": 139,
+      "slug": "batman-sprite",
+      "name": "Batman",
+      "shortName": "Batman",
+      "family": "Batman",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_FossilMeal_Default_L.webp"
+    },
+    {
+      "id": 134,
+      "slug": "bounty-hunter-birthday-sprite",
+      "name": "Bounty Hunter Birthday",
+      "shortName": "Bounty Hunter Birthday",
+      "family": "Birthday",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_BountyHunter_L.webp"
+    },
+    {
+      "id": 132,
+      "slug": "cheat-master-birthday-sprite",
+      "name": "Cheat Master Birthday",
+      "shortName": "Cheat Master Birthday",
+      "family": "Birthday",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_Cheatmaster_L.webp"
+    },
+    {
+      "id": 131,
+      "slug": "gold-birthday-sprite",
+      "name": "Gold Birthday",
+      "shortName": "Gold Birthday",
+      "family": "Birthday",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_Gold_L.webp"
+    },
+    {
+      "id": 133,
+      "slug": "loot-hacker-birthday-sprite",
+      "name": "Loot Hacker Birthday",
+      "shortName": "Loot Hacker Birthday",
+      "family": "Birthday",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_Hacker_L.webp"
+    },
+    {
+      "id": 127,
+      "slug": "birthday-sprite",
+      "name": "Birthday",
+      "shortName": "Birthday",
+      "family": "Birthday",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_L.webp"
+    },
+    {
+      "id": 234,
+      "slug": "trick-or-treat-birthday-sprite",
+      "name": "Trick or Treat Birthday",
+      "shortName": "Trick or Treat Birthday",
+      "family": "Birthday",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_TrickTreat_L.webp"
+    },
+    {
+      "id": 124,
+      "slug": "bounty-hunter-blinky-sprite",
+      "name": "Bounty Hunter Blinky",
+      "shortName": "Bounty Hunter Blinky",
+      "family": "Blinky",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_BountyHunter_L.webp"
+    },
+    {
+      "id": 121,
+      "slug": "cheat-master-blinky-sprite",
+      "name": "Cheat Master Blinky",
+      "shortName": "Cheat Master Blinky",
+      "family": "Blinky",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_Cheatmaster_L.webp"
+    },
+    {
+      "id": 122,
+      "slug": "gold-blinky-sprite",
+      "name": "Gold Blinky",
+      "shortName": "Gold Blinky",
+      "family": "Blinky",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_Gold_L.webp"
+    },
+    {
+      "id": 120,
+      "slug": "blinky-sprite",
+      "name": "Blinky",
+      "shortName": "Blinky",
+      "family": "Blinky",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_L.webp"
+    },
+    {
+      "id": 123,
+      "slug": "loot-hacker-blinky-sprite",
+      "name": "Loot Hacker Blinky",
+      "shortName": "Loot Hacker Blinky",
+      "family": "Blinky",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_Hacker_L.webp"
+    },
+    {
+      "id": 232,
+      "slug": "trick-or-treat-blinky-sprite",
+      "name": "Trick or Treat Blinky",
+      "shortName": "Trick or Treat Blinky",
+      "family": "Blinky",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_TrickTreat_L.webp"
+    },
+    {
+      "id": 126,
+      "slug": "cube-boss-sprite",
+      "name": "Cube Boss",
+      "shortName": "Cube Boss",
+      "family": "Boss",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Cube_ui_L.webp"
+    },
+    {
+      "id": 52,
+      "slug": "galaxy-boss-sprite",
+      "name": "Galaxy Boss",
+      "shortName": "Galaxy Boss",
+      "family": "Boss",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 50,
+      "slug": "gold-boss-sprite",
+      "name": "Gold Boss",
+      "shortName": "Gold Boss",
+      "family": "Boss",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp"
+    },
+    {
+      "id": 51,
+      "slug": "gummy-boss-sprite",
+      "name": "Gummy Boss",
+      "shortName": "Gummy Boss",
+      "family": "Boss",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp"
+    },
+    {
+      "id": 49,
+      "slug": "boss-sprite",
+      "name": "Boss",
+      "shortName": "Boss",
+      "family": "Boss",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_ui_L.webp"
+    },
+    {
+      "id": 41,
+      "slug": "burnt-peanut",
+      "name": "Burnt Peanut",
+      "shortName": "Burnt Peanut",
+      "family": "Burnt Peanut",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp"
+    },
+    {
+      "id": 205,
+      "slug": "bounty-hunter-bush-sprite",
+      "name": "Bounty Hunter Bush",
+      "shortName": "Bounty Hunter Bush",
+      "family": "Bush",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_BountyHunter_L.webp"
+    },
+    {
+      "id": 168,
+      "slug": "cheat-master-bush-sprite",
+      "name": "Cheat Master Bush",
+      "shortName": "Cheat Master Bush",
+      "family": "Bush",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Cheatmaster_L.webp"
+    },
+    {
+      "id": 169,
+      "slug": "gold-bush-sprite",
+      "name": "Gold Bush",
+      "shortName": "Gold Bush",
+      "family": "Bush",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Gold_L.webp"
+    },
+    {
+      "id": 105,
+      "slug": "loot-hacker-bush-sprite",
+      "name": "Loot Hacker Bush",
+      "shortName": "Loot Hacker Bush",
+      "family": "Bush",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Hacker_L.webp"
+    },
+    {
+      "id": 263,
+      "slug": "quack-bush-sprite",
+      "name": "Quack Bush",
+      "shortName": "Quack Bush",
+      "family": "Bush",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Quack_L.webp"
+    },
+    {
+      "id": 167,
+      "slug": "bush-sprite",
+      "name": "Bush",
+      "shortName": "Bush",
+      "family": "Bush",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_L.webp"
+    },
+    {
+      "id": 240,
+      "slug": "trick-or-treat-bush-sprite",
+      "name": "Trick or Treat Bush",
+      "shortName": "Trick or Treat Bush",
+      "family": "Bush",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_TrickTreat_L.webp"
+    },
+    {
+      "id": 144,
+      "slug": "bounty-hunter-crash-bandicoot-sprite",
+      "name": "Bounty Hunter Crash Bandicoot",
+      "shortName": "Bounty Hunter Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_BountyHunter_L.webp"
+    },
+    {
+      "id": 136,
+      "slug": "cheat-master-crash-bandicoot-sprite",
+      "name": "Cheat Master Crash Bandicoot",
+      "shortName": "Cheat Master Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_Cheatmaster_L.webp"
+    },
+    {
+      "id": 137,
+      "slug": "gold-crash-bandicoot-sprite",
+      "name": "Gold Crash Bandicoot",
+      "shortName": "Gold Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_Gold_L.webp"
+    },
+    {
+      "id": 135,
+      "slug": "crash-bandicoot-sprite",
+      "name": "Crash Bandicoot",
+      "shortName": "Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_L.webp"
+    },
+    {
+      "id": 143,
+      "slug": "loot-hacker-crash-bandicoot-sprite",
+      "name": "Loot Hacker Crash Bandicoot",
+      "shortName": "Loot Hacker Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_Hacker_L.webp"
+    },
+    {
+      "id": 235,
+      "slug": "trick-or-treat-crash-bandicoot-sprite",
+      "name": "Trick or Treat Crash Bandicoot",
+      "shortName": "Trick or Treat Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_TrickTreat_L.webp"
+    },
+    {
+      "id": 211,
+      "slug": "bounty-hunter-crown-sprite",
+      "name": "Bounty Hunter Crown",
+      "shortName": "Bounty Hunter Crown",
+      "family": "Crown",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_BountyHunter_L.webp"
+    },
+    {
+      "id": 189,
+      "slug": "cheat-master-crown-sprite",
+      "name": "Cheat Master Crown",
+      "shortName": "Cheat Master Crown",
+      "family": "Crown",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_Cheatmaster_L.webp"
+    },
+    {
+      "id": 190,
+      "slug": "gold-crown-sprite",
+      "name": "Gold Crown",
+      "shortName": "Gold Crown",
+      "family": "Crown",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_Gold_L.webp"
+    },
+    {
+      "id": 115,
+      "slug": "loot-hacker-crown-sprite",
+      "name": "Loot Hacker Crown",
+      "shortName": "Loot Hacker Crown",
+      "family": "Crown",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_Hacker_L.webp"
+    },
+    {
+      "id": 188,
+      "slug": "crown-sprite",
+      "name": "Crown",
+      "shortName": "Crown",
+      "family": "Crown",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_L.webp"
+    },
+    {
+      "id": 243,
+      "slug": "trick-or-treat-crown-sprite",
+      "name": "Trick or Treat Crown",
+      "shortName": "Trick or Treat Crown",
+      "family": "Crown",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_TrickTreat_L.webp"
+    },
+    {
+      "id": 37,
+      "slug": "demon-sprite",
+      "name": "Demon",
+      "shortName": "Demon",
+      "family": "Demon",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_RedDemon_Default_L.webp"
+    },
+    {
+      "id": 39,
+      "slug": "galaxy-demon-sprite",
+      "name": "Galaxy Demon",
+      "shortName": "Galaxy Demon",
+      "family": "Demon",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_RedDemon_Galaxy_L.webp"
+    },
+    {
+      "id": 47,
+      "slug": "gem-demon-sprite",
+      "name": "Gem Demon",
+      "shortName": "Gem Demon",
+      "family": "Demon",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_RedDemon_Gem_L.webp"
+    },
+    {
+      "id": 40,
+      "slug": "gold-demon-sprite",
+      "name": "Gold Demon",
+      "shortName": "Gold Demon",
+      "family": "Demon",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_RedDemon_Gold_L.webp"
+    },
+    {
+      "id": 38,
+      "slug": "gummy-demon-sprite",
+      "name": "Gummy Demon",
+      "shortName": "Gummy Demon",
+      "family": "Demon",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_RedDemon_Candy_L.webp"
+    },
+    {
+      "id": 99,
+      "slug": "cube-dream-sprite",
+      "name": "Cube Dream",
+      "shortName": "Cube Dream",
+      "family": "Dream",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp"
+    },
+    {
+      "id": 23,
+      "slug": "galaxy-dream-sprite",
+      "name": "Galaxy Dream",
+      "shortName": "Galaxy Dream",
+      "family": "Dream",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 24,
+      "slug": "gold-dream-sprite",
+      "name": "Gold Dream",
+      "shortName": "Gold Dream",
+      "family": "Dream",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp"
+    },
+    {
+      "id": 22,
+      "slug": "gummy-dream-sprite",
+      "name": "Gummy Dream",
+      "shortName": "Gummy Dream",
+      "family": "Dream",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Candy_ui_L.webp"
+    },
+    {
+      "id": 21,
+      "slug": "dream-sprite",
+      "name": "Dream",
+      "shortName": "Dream",
+      "family": "Dream",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp"
+    },
+    {
+      "id": 13,
+      "slug": "duck-sprite",
+      "name": "Duck",
+      "shortName": "Duck",
+      "family": "Duck",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Duck_Default_L.webp"
+    },
+    {
+      "id": 15,
+      "slug": "galaxy-duck-sprite",
+      "name": "Galaxy Duck",
+      "shortName": "Galaxy Duck",
+      "family": "Duck",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Duck_Galaxy_L.webp"
+    },
+    {
+      "id": 44,
+      "slug": "gem-duck-sprite",
+      "name": "Gem Duck",
+      "shortName": "Gem Duck",
+      "family": "Duck",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Duck_Gem_L.webp"
+    },
+    {
+      "id": 16,
+      "slug": "gold-duck-sprite",
+      "name": "Gold Duck",
+      "shortName": "Gold Duck",
+      "family": "Duck",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Duck_Gold_L.webp"
+    },
+    {
+      "id": 14,
+      "slug": "gummy-duck-sprite",
+      "name": "Gummy Duck",
+      "shortName": "Gummy Duck",
+      "family": "Duck",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Duck_Candy_L.webp"
+    },
+    {
+      "id": 260,
+      "slug": "bounty-hunter-dumpster-dive-sprite",
+      "name": "Bounty Hunter Dumpster Dive",
+      "shortName": "Bounty Hunter Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_BountyHunter_L.webp"
+    },
+    {
+      "id": 257,
+      "slug": "cheat-master-dumpster-dive-sprite",
+      "name": "Cheat Master Dumpster Dive",
+      "shortName": "Cheat Master Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_Cheatmaster_L.webp"
+    },
+    {
+      "id": 256,
+      "slug": "dumpster-dive-sprite",
+      "name": "Dumpster Dive",
+      "shortName": "Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_L.webp"
+    },
+    {
+      "id": 258,
+      "slug": "gold-dumpster-dive-sprite",
+      "name": "Gold Dumpster Dive",
+      "shortName": "Gold Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_Gold_L.webp"
+    },
+    {
+      "id": 259,
+      "slug": "loot-hacker-dumpster-dive-sprite",
+      "name": "Loot Hacker Dumpster Dive",
+      "shortName": "Loot Hacker Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_Hacker_L.webp"
+    },
+    {
+      "id": 261,
+      "slug": "trick-or-treat-dumpster-dive-sprite",
+      "name": "Trick or Treat Dumpster Dive",
+      "shortName": "Trick or Treat Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_TrickTreat_L.webp"
+    },
+    {
+      "id": 86,
+      "slug": "cube-earth-sprite",
+      "name": "Cube Earth",
+      "shortName": "Cube Earth",
+      "family": "Earth",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Cube_ui_L.webp"
+    },
+    {
+      "id": 7,
+      "slug": "galaxy-earth-sprite",
+      "name": "Galaxy Earth",
+      "shortName": "Galaxy Earth",
+      "family": "Earth",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 45,
+      "slug": "gem-earth-sprite",
+      "name": "Gem Earth",
+      "shortName": "Gem Earth",
+      "family": "Earth",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp"
+    },
+    {
+      "id": 8,
+      "slug": "gold-earth-sprite",
+      "name": "Gold Earth",
+      "shortName": "Gold Earth",
+      "family": "Earth",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Gold_ui_L.webp"
+    },
+    {
+      "id": 6,
+      "slug": "gummy-earth-sprite",
+      "name": "Gummy Earth",
+      "shortName": "Gummy Earth",
+      "family": "Earth",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Candy_ui_L.webp"
+    },
+    {
+      "id": 87,
+      "slug": "quack-earth-sprite",
+      "name": "Quack Earth",
+      "shortName": "Quack Earth",
+      "family": "Earth",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp"
+    },
+    {
+      "id": 5,
+      "slug": "earth-sprite",
+      "name": "Earth",
+      "shortName": "Earth",
+      "family": "Earth",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Ch7S3_UI_L.webp"
+    },
+    {
+      "id": 89,
+      "slug": "cube-fire-sprite",
+      "name": "Cube Fire",
+      "shortName": "Cube Fire",
+      "family": "Fire",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Cube_ui_L.webp"
+    },
+    {
+      "id": 11,
+      "slug": "galaxy-fire-sprite",
+      "name": "Galaxy Fire",
+      "shortName": "Galaxy Fire",
+      "family": "Fire",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 12,
+      "slug": "gold-fire-sprite",
+      "name": "Gold Fire",
+      "shortName": "Gold Fire",
+      "family": "Fire",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Gold_ui_L.webp"
+    },
+    {
+      "id": 10,
+      "slug": "gummy-fire-sprite",
+      "name": "Gummy Fire",
+      "shortName": "Gummy Fire",
+      "family": "Fire",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Candy_ui_L.webp"
+    },
+    {
+      "id": 46,
+      "slug": "holofoil-fire-sprite",
+      "name": "Holofoil Fire",
+      "shortName": "Holofoil Fire",
+      "family": "Fire",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Holofoil_ui_L.webp"
+    },
+    {
+      "id": 90,
+      "slug": "quack-fire-sprite",
+      "name": "Quack Fire",
+      "shortName": "Quack Fire",
+      "family": "Fire",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp"
+    },
+    {
+      "id": 9,
+      "slug": "fire-sprite",
+      "name": "Fire",
+      "shortName": "Fire",
+      "family": "Fire",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp"
+    },
+    {
+      "id": 116,
+      "slug": "cube-fishy-sprite",
+      "name": "Cube Fishy",
+      "shortName": "Cube Fishy",
+      "family": "Fishy",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Cube_L.webp"
+    },
+    {
+      "id": 60,
+      "slug": "galaxy-fishy-sprite",
+      "name": "Galaxy Fishy",
+      "shortName": "Galaxy Fishy",
+      "family": "Fishy",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 61,
+      "slug": "gold-fishy-sprite",
+      "name": "Gold Fishy",
+      "shortName": "Gold Fishy",
+      "family": "Fishy",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp"
+    },
+    {
+      "id": 59,
+      "slug": "gummy-fishy-sprite",
+      "name": "Gummy Fishy",
+      "shortName": "Gummy Fishy",
+      "family": "Fishy",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp"
+    },
+    {
+      "id": 58,
+      "slug": "fishy-sprite",
+      "name": "Fishy",
+      "shortName": "Fishy",
+      "family": "Fishy",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp"
+    },
+    {
+      "id": 17,
+      "slug": "ghost-sprite",
+      "name": "Ghost",
+      "shortName": "Ghost",
+      "family": "Ghost",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp"
+    },
+    {
+      "id": 19,
+      "slug": "galaxy-ghost-sprite",
+      "name": "Galaxy Ghost",
+      "shortName": "Galaxy Ghost",
+      "family": "Ghost",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Galaxy_L.webp"
+    },
+    {
+      "id": 20,
+      "slug": "gold-ghost-sprite",
+      "name": "Gold Ghost",
+      "shortName": "Gold Ghost",
+      "family": "Ghost",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Gold_L.webp"
+    },
+    {
+      "id": 18,
+      "slug": "gummy-ghost-sprite",
+      "name": "Gummy Ghost",
+      "shortName": "Gummy Ghost",
+      "family": "Ghost",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Candy_L.webp"
+    },
+    {
+      "id": 48,
+      "slug": "holofoil-ghost-sprite",
+      "name": "Holofoil Ghost",
+      "shortName": "Holofoil Ghost",
+      "family": "Ghost",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Holo_L.webp"
+    },
+    {
+      "id": 130,
+      "slug": "cube-grim-sprite",
+      "name": "Cube Grim",
+      "shortName": "Cube Grim",
+      "family": "Grim",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Cube_L.webp"
+    },
+    {
+      "id": 80,
+      "slug": "galaxy-grim-sprite",
+      "name": "Galaxy Grim",
+      "shortName": "Galaxy Grim",
+      "family": "Grim",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Galaxy_L.webp"
+    },
+    {
+      "id": 128,
+      "slug": "gem-grim-sprite",
+      "name": "Gem Grim",
+      "shortName": "Gem Grim",
+      "family": "Grim",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Gem_L.webp"
+    },
+    {
+      "id": 81,
+      "slug": "gold-grim-sprite",
+      "name": "Gold Grim",
+      "shortName": "Gold Grim",
+      "family": "Grim",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Gold_L.webp"
+    },
+    {
+      "id": 79,
+      "slug": "gummy-grim-sprite",
+      "name": "Gummy Grim",
+      "shortName": "Gummy Grim",
+      "family": "Grim",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Candy_L.webp"
+    },
+    {
+      "id": 129,
+      "slug": "holofoil-grim-sprite",
+      "name": "Holofoil Grim",
+      "shortName": "Holofoil Grim",
+      "family": "Grim",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Holofoil_L.webp"
+    },
+    {
+      "id": 78,
+      "slug": "grim-sprite",
+      "name": "Grim",
+      "shortName": "Grim",
+      "family": "Grim",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_GrimReaper_Default_L.webp"
+    },
+    {
+      "id": 271,
+      "slug": "bounty-hunter-honey-sprite",
+      "name": "Bounty Hunter Honey",
+      "shortName": "Bounty Hunter Honey",
+      "family": "Honey",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_BountyHunter_L.webp"
+    },
+    {
+      "id": 268,
+      "slug": "cheatmaster-honey-sprite",
+      "name": "Cheatmaster Honey",
+      "shortName": "Cheatmaster Honey",
+      "family": "Honey",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_Cheatmaster_L.webp"
+    },
+    {
+      "id": 267,
+      "slug": "honey-sprite",
+      "name": "Honey",
+      "shortName": "Honey",
+      "family": "Honey",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_L.webp"
+    },
+    {
+      "id": 269,
+      "slug": "gold-honey-sprite",
+      "name": "Gold Honey",
+      "shortName": "Gold Honey",
+      "family": "Honey",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_Gold_L.webp"
+    },
+    {
+      "id": 270,
+      "slug": "loot-hacker-honey-sprite",
+      "name": "Loot Hacker Honey",
+      "shortName": "Loot Hacker Honey",
+      "family": "Honey",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_Hacker_L.webp"
+    },
+    {
+      "id": 272,
+      "slug": "trick-or-treat-honey-sprite",
+      "name": "Trick or Treat Honey",
+      "shortName": "Trick or Treat Honey",
+      "family": "Honey",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_TrickTreat_L.webp"
+    },
+    {
+      "id": 150,
+      "slug": "ironmouse-sprite",
+      "name": "Ironmouse",
+      "shortName": "Ironmouse",
+      "family": "Ironmouse",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_PedicureAntacid_L.webp"
+    },
+    {
+      "id": 119,
+      "slug": "bounty-hunter-jackrabbit-sprite",
+      "name": "Bounty Hunter Jackrabbit",
+      "shortName": "Bounty Hunter Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_BountyHunter_L.webp"
+    },
+    {
+      "id": 163,
+      "slug": "cheat-master-jackrabbit-sprite",
+      "name": "Cheat Master Jackrabbit",
+      "shortName": "Cheat Master Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_JazzJackrabbit_Cheatmaster_L.webp"
+    },
+    {
+      "id": 162,
+      "slug": "gold-jackrabbit-sprite",
+      "name": "Gold Jackrabbit",
+      "shortName": "Gold Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_JazzJackrabbit_Gold_L.webp"
+    },
+    {
+      "id": 161,
+      "slug": "jackrabbit-sprite",
+      "name": "Jackrabbit",
+      "shortName": "Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_JazzJackrabbit_L.webp"
+    },
+    {
+      "id": 102,
+      "slug": "loot-hacker-jackrabbit-sprite",
+      "name": "Loot Hacker Jackrabbit",
+      "shortName": "Loot Hacker Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_Hacker_L.webp"
+    },
+    {
+      "id": 225,
+      "slug": "trick-or-treat-jackrabbit-sprite",
+      "name": "Trick or Treat Jackrabbit",
+      "shortName": "Trick or Treat Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_TrickTreat_L.webp"
+    },
+    {
+      "id": 138,
+      "slug": "john-wick-sprite",
+      "name": "John Wick",
+      "shortName": "John Wick",
+      "family": "John Wick",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_Reload_FillerGrunt_icon_L.webp"
+    },
+    {
+      "id": 209,
+      "slug": "bounty-hunter-jonesy-sprite",
+      "name": "Bounty Hunter Jonesy",
+      "shortName": "Bounty Hunter Jonesy",
+      "family": "Jonesy",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_BountyHunter_L.webp"
+    },
+    {
+      "id": 183,
+      "slug": "cheat-master-jonesy-sprite",
+      "name": "Cheat Master Jonesy",
+      "shortName": "Cheat Master Jonesy",
+      "family": "Jonesy",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Cheatmaster_L.webp"
+    },
+    {
+      "id": 184,
+      "slug": "gold-jonesy-sprite",
+      "name": "Gold Jonesy",
+      "shortName": "Gold Jonesy",
+      "family": "Jonesy",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Gold_L.webp"
+    },
+    {
+      "id": 110,
+      "slug": "loot-hacker-jonesy-sprite",
+      "name": "Loot Hacker Jonesy",
+      "shortName": "Loot Hacker Jonesy",
+      "family": "Jonesy",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Hacker_L.webp"
+    },
+    {
+      "id": 266,
+      "slug": "quack-jonesy-sprite",
+      "name": "Quack Jonesy",
+      "shortName": "Quack Jonesy",
+      "family": "Jonesy",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Quack_L.webp"
+    },
+    {
+      "id": 182,
+      "slug": "jonesy-sprite",
+      "name": "Jonesy",
+      "shortName": "Jonesy",
+      "family": "Jonesy",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_L.webp"
+    },
+    {
+      "id": 244,
+      "slug": "trick-or-treat-jonesy-sprite",
+      "name": "Trick or Treat Jonesy",
+      "shortName": "Trick or Treat Jonesy",
+      "family": "Jonesy",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_TrickTreat_L.webp"
+    },
+    {
+      "id": 206,
+      "slug": "bounty-hunter-killswitch-sprite",
+      "name": "Bounty Hunter Killswitch",
+      "shortName": "Bounty Hunter Killswitch",
+      "family": "Killswitch",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_BountyHunter_L.webp"
+    },
+    {
+      "id": 174,
+      "slug": "cheat-master-killswitch-sprite",
+      "name": "Cheat Master Killswitch",
+      "shortName": "Cheat Master Killswitch",
+      "family": "Killswitch",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_Cheatmaster_L.webp"
+    },
+    {
+      "id": 175,
+      "slug": "gold-killswitch-sprite",
+      "name": "Gold Killswitch",
+      "shortName": "Gold Killswitch",
+      "family": "Killswitch",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_Gold_L.webp"
+    },
+    {
+      "id": 173,
+      "slug": "killswitch-sprite",
+      "name": "Killswitch",
+      "shortName": "Killswitch",
+      "family": "Killswitch",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_L.webp"
+    },
+    {
+      "id": 107,
+      "slug": "loot-hacker-killswitch-sprite",
+      "name": "Loot Hacker Killswitch",
+      "shortName": "Loot Hacker Killswitch",
+      "family": "Killswitch",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_Hacker_L.webp"
+    },
+    {
+      "id": 241,
+      "slug": "trick-or-treat-killswitch-sprite",
+      "name": "Trick or Treat Killswitch",
+      "shortName": "Trick or Treat Killswitch",
+      "family": "Killswitch",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_TrickTreat_L.webp"
+    },
+    {
+      "id": 29,
+      "slug": "king-sprite",
+      "name": "King",
+      "shortName": "King",
+      "family": "King",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_ui_L.webp"
+    },
+    {
+      "id": 31,
+      "slug": "galaxy-king-sprite",
+      "name": "Galaxy King",
+      "shortName": "Galaxy King",
+      "family": "King",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 32,
+      "slug": "gold-king-sprite",
+      "name": "Gold King",
+      "shortName": "Gold King",
+      "family": "King",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Gold_ui_L.webp"
+    },
+    {
+      "id": 30,
+      "slug": "gummy-king-sprite",
+      "name": "Gummy King",
+      "shortName": "Gummy King",
+      "family": "King",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Candy_ui_L.webp"
+    },
+    {
+      "id": 73,
+      "slug": "holofoil-king-sprite",
+      "name": "Holofoil King",
+      "shortName": "Holofoil King",
+      "family": "King",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Holofoil_ui_L.webp"
+    },
+    {
+      "id": 208,
+      "slug": "bounty-hunter-klombo-sprite",
+      "name": "Bounty Hunter Klombo",
+      "shortName": "Bounty Hunter Klombo",
+      "family": "Klombo",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_BountyHunter_L.webp"
+    },
+    {
+      "id": 180,
+      "slug": "cheat-master-klombo-sprite",
+      "name": "Cheat Master Klombo",
+      "shortName": "Cheat Master Klombo",
+      "family": "Klombo",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Cheatmaster_L.webp"
+    },
+    {
+      "id": 181,
+      "slug": "gold-klombo-sprite",
+      "name": "Gold Klombo",
+      "shortName": "Gold Klombo",
+      "family": "Klombo",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Gold_L.webp"
+    },
+    {
+      "id": 109,
+      "slug": "loot-hacker-klombo-sprite",
+      "name": "Loot Hacker Klombo",
+      "shortName": "Loot Hacker Klombo",
+      "family": "Klombo",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Hacker_L.webp"
+    },
+    {
+      "id": 179,
+      "slug": "klombo-sprite",
+      "name": "Klombo",
+      "shortName": "Klombo",
+      "family": "Klombo",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_L.webp"
+    },
+    {
+      "id": 265,
+      "slug": "quack-klombo-sprite",
+      "name": "Quack Klombo",
+      "shortName": "Quack Klombo",
+      "family": "Klombo",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Quack_L.webp"
+    },
+    {
+      "id": 262,
+      "slug": "trick-or-treat-klombo-sprite",
+      "name": "Trick or Treat Klombo",
+      "shortName": "Trick or Treat Klombo",
+      "family": "Klombo",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_TrickTreat_L.webp"
+    },
+    {
+      "id": 154,
+      "slug": "galaxy-llama-sprite",
+      "name": "Galaxy Llama",
+      "shortName": "Galaxy Llama",
+      "family": "Llama",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 155,
+      "slug": "gem-llama-sprite",
+      "name": "Gem Llama",
+      "shortName": "Gem Llama",
+      "family": "Llama",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp"
+    },
+    {
+      "id": 152,
+      "slug": "gold-llama-sprite",
+      "name": "Gold Llama",
+      "shortName": "Gold Llama",
+      "family": "Llama",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Gold_ui_L.webp"
+    },
+    {
+      "id": 153,
+      "slug": "gummy-llama-sprite",
+      "name": "Gummy Llama",
+      "shortName": "Gummy Llama",
+      "family": "Llama",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp"
+    },
+    {
+      "id": 151,
+      "slug": "llama-sprite",
+      "name": "Llama",
+      "shortName": "Llama",
+      "family": "Llama",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_ui_L.webp"
+    },
+    {
+      "id": 92,
+      "slug": "mega-man-sprite",
+      "name": "Mega Man",
+      "shortName": "Mega Man",
+      "family": "Mega Man",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ImprovedSlide_L.webp"
+    },
+    {
+      "id": 217,
+      "slug": "bounty-hunter-morgana-sprite",
+      "name": "Bounty Hunter Morgana",
+      "shortName": "Bounty Hunter Morgana",
+      "family": "Morgana",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_BountyHunter_L.webp"
+    },
+    {
+      "id": 214,
+      "slug": "cheat-master-morgana-sprite",
+      "name": "Cheat Master Morgana",
+      "shortName": "Cheat Master Morgana",
+      "family": "Morgana",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Cheatmaster_L.webp"
+    },
+    {
+      "id": 213,
+      "slug": "morgana-sprite",
+      "name": "Morgana",
+      "shortName": "Morgana",
+      "family": "Morgana",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_L.webp"
+    },
+    {
+      "id": 215,
+      "slug": "gold-morgana-sprite",
+      "name": "Gold Morgana",
+      "shortName": "Gold Morgana",
+      "family": "Morgana",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Gold_L.webp"
+    },
+    {
+      "id": 216,
+      "slug": "loot-hacker-morgana-sprite",
+      "name": "Loot Hacker Morgana",
+      "shortName": "Loot Hacker Morgana",
+      "family": "Morgana",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Hacker_L.webp"
+    },
+    {
+      "id": 248,
+      "slug": "trick-or-treat-morgana-sprite",
+      "name": "Trick or Treat Morgana",
+      "shortName": "Trick or Treat Morgana",
+      "family": "Morgana",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_TrickTreat_L.webp"
+    },
+    {
+      "id": 277,
+      "slug": "bounty-hunter-one-wish-willow-sprite",
+      "name": "Bounty Hunter One Wish Willow",
+      "shortName": "Bounty Hunter One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_BountyHunter_L.webp"
+    },
+    {
+      "id": 274,
+      "slug": "cheatmaster-one-wish-willow-sprite",
+      "name": "Cheatmaster One Wish Willow",
+      "shortName": "Cheatmaster One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_Cheatmaster_L.webp"
+    },
+    {
+      "id": 275,
+      "slug": "gold-one-wish-willow-sprite",
+      "name": "Gold One Wish Willow",
+      "shortName": "Gold One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_Gold_L.webp"
+    },
+    {
+      "id": 276,
+      "slug": "loot-hacker-one-wish-willow-sprite",
+      "name": "Loot Hacker One Wish Willow",
+      "shortName": "Loot Hacker One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_Hacker_L.webp"
+    },
+    {
+      "id": 273,
+      "slug": "one-wish-willow-sprite",
+      "name": "One Wish Willow",
+      "shortName": "One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_L.webp"
+    },
+    {
+      "id": 278,
+      "slug": "trick-or-treat-one-wish-willow-sprite",
+      "name": "Trick or Treat One Wish Willow",
+      "shortName": "Trick or Treat One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_TrickTreat_L.webp"
+    },
+    {
+      "id": 202,
+      "slug": "bounty-hunter-onigiri-sprite",
+      "name": "Bounty Hunter Onigiri",
+      "shortName": "Bounty Hunter Onigiri",
+      "family": "Onigiri",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_BountyHunter_L.webp"
+    },
+    {
+      "id": 98,
+      "slug": "cheatmaster-onigiri-sprite",
+      "name": "Cheatmaster Onigiri",
+      "shortName": "Cheatmaster Onigiri",
+      "family": "Onigiri",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_Cheatmaster_L.webp"
+    },
+    {
+      "id": 100,
+      "slug": "gold-onigiri-sprite",
+      "name": "Gold Onigiri",
+      "shortName": "Gold Onigiri",
+      "family": "Onigiri",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_Gold_L.webp"
+    },
+    {
+      "id": 101,
+      "slug": "loot-hacker-onigiri-sprite",
+      "name": "Loot Hacker Onigiri",
+      "shortName": "Loot Hacker Onigiri",
+      "family": "Onigiri",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_Hacker_L.webp"
+    },
+    {
+      "id": 97,
+      "slug": "onigiri-sprite",
+      "name": "Onigiri",
+      "shortName": "Onigiri",
+      "family": "Onigiri",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_L.webp"
+    },
+    {
+      "id": 255,
+      "slug": "trick-or-treat-onigiri-sprite",
+      "name": "Trick or Treat Onigiri",
+      "shortName": "Trick or Treat Onigiri",
+      "family": "Onigiri",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_TrickTreat_L.webp"
+    },
+    {
+      "id": 125,
+      "slug": "bounty-hunter-overshield-sprite",
+      "name": "Bounty Hunter Overshield",
+      "shortName": "Bounty Hunter Overshield",
+      "family": "Overshield",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_BountyHunter_L.webp"
+    },
+    {
+      "id": 85,
+      "slug": "cheat-master-overshield-sprite",
+      "name": "Cheat Master Overshield",
+      "shortName": "Cheat Master Overshield",
+      "family": "Overshield",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_Cheatmaster_L.webp"
+    },
+    {
+      "id": 88,
+      "slug": "gold-overshield-sprite",
+      "name": "Gold Overshield",
+      "shortName": "Gold Overshield",
+      "family": "Overshield",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_Gold_L.webp"
+    },
+    {
+      "id": 91,
+      "slug": "loot-hacker-overshield-sprite",
+      "name": "Loot Hacker Overshield",
+      "shortName": "Loot Hacker Overshield",
+      "family": "Overshield",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_Hacker_L.webp"
+    },
+    {
+      "id": 83,
+      "slug": "overshield-sprite",
+      "name": "Overshield",
+      "shortName": "Overshield",
+      "family": "Overshield",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_L.webp"
+    },
+    {
+      "id": 233,
+      "slug": "trick-or-treat-overshield-sprite",
+      "name": "Trick or Treat Overshield",
+      "shortName": "Trick or Treat Overshield",
+      "family": "Overshield",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_TrickTreat_L.webp"
+    },
+    {
+      "id": 159,
+      "slug": "galaxy-peeky-peely-sprite",
+      "name": "Galaxy Peeky Peely",
+      "shortName": "Galaxy Peeky Peely",
+      "family": "Peeky Peely",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 157,
+      "slug": "gold-peeky-peely-sprite",
+      "name": "Gold Peeky Peely",
+      "shortName": "Gold Peeky Peely",
+      "family": "Peeky Peely",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp"
+    },
+    {
+      "id": 158,
+      "slug": "gummy-peeky-peely-sprite",
+      "name": "Gummy Peeky Peely",
+      "shortName": "Gummy Peeky Peely",
+      "family": "Peeky Peely",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp"
+    },
+    {
+      "id": 160,
+      "slug": "holofoil-peeky-peely-sprite",
+      "name": "Holofoil Peeky Peely",
+      "shortName": "Holofoil Peeky Peely",
+      "family": "Peeky Peely",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp"
+    },
+    {
+      "id": 156,
+      "slug": "peeky-peely-sprite",
+      "name": "Peeky Peely",
+      "shortName": "Peeky Peely",
+      "family": "Peeky Peely",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_ui_L.webp"
+    },
+    {
+      "id": 148,
+      "slug": "pollo-sprite",
+      "name": "Pollo",
+      "shortName": "Pollo",
+      "family": "Pollo",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_CompanyStargazer_Default_L.webp"
+    },
+    {
+      "id": 200,
+      "slug": "bounty-hunter-pond-sprite",
+      "name": "Bounty Hunter Pond",
+      "shortName": "Bounty Hunter Pond",
+      "family": "Pond",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_BountyHunter_L.webp"
+    },
+    {
+      "id": 197,
+      "slug": "cheat-master-pond-sprite",
+      "name": "Cheat Master Pond",
+      "shortName": "Cheat Master Pond",
+      "family": "Pond",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_Cheatmaster_L.webp"
+    },
+    {
+      "id": 147,
+      "slug": "pond-sprite",
+      "name": "Pond",
+      "shortName": "Pond",
+      "family": "Pond",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_L.webp"
+    },
+    {
+      "id": 198,
+      "slug": "gold-pond-sprite",
+      "name": "Gold Pond",
+      "shortName": "Gold Pond",
+      "family": "Pond",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_Gold_L.webp"
+    },
+    {
+      "id": 199,
+      "slug": "loot-hacker-pond-sprite",
+      "name": "Loot Hacker Pond",
+      "shortName": "Loot Hacker Pond",
+      "family": "Pond",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_Hacker_L.webp"
+    },
+    {
+      "id": 236,
+      "slug": "trick-or-treat-pond-sprite",
+      "name": "Trick or Treat Pond",
+      "shortName": "Trick or Treat Pond",
+      "family": "Pond",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_TrickTreat_L.webp"
+    },
+    {
+      "id": 106,
+      "slug": "cube-punk-sprite",
+      "name": "Cube Punk",
+      "shortName": "Cube Punk",
+      "family": "Punk",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Cube_ui_L.webp"
+    },
+    {
+      "id": 27,
+      "slug": "galaxy-punk-sprite",
+      "name": "Galaxy Punk",
+      "shortName": "Galaxy Punk",
+      "family": "Punk",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 28,
+      "slug": "gold-punk-sprite",
+      "name": "Gold Punk",
+      "shortName": "Gold Punk",
+      "family": "Punk",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Gold_ui_L.webp"
+    },
+    {
+      "id": 26,
+      "slug": "gummy-punk-sprite",
+      "name": "Gummy Punk",
+      "shortName": "Gummy Punk",
+      "family": "Punk",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Candy_ui_L.webp"
+    },
+    {
+      "id": 25,
+      "slug": "punk-sprite",
+      "name": "Punk",
+      "shortName": "Punk",
+      "family": "Punk",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_ui_L.webp"
+    },
+    {
+      "id": 55,
+      "slug": "galaxy-seven-sprite",
+      "name": "Galaxy Seven",
+      "shortName": "Galaxy Seven",
+      "family": "Seven",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 56,
+      "slug": "gold-seven-sprite",
+      "name": "Gold Seven",
+      "shortName": "Gold Seven",
+      "family": "Seven",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Gold_ui_L.webp"
+    },
+    {
+      "id": 54,
+      "slug": "gummy-seven-sprite",
+      "name": "Gummy Seven",
+      "shortName": "Gummy Seven",
+      "family": "Seven",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp"
+    },
+    {
+      "id": 57,
+      "slug": "holofoil-seven-sprite",
+      "name": "Holofoil Seven",
+      "shortName": "Holofoil Seven",
+      "family": "Seven",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp"
+    },
+    {
+      "id": 53,
+      "slug": "seven-sprite",
+      "name": "Seven",
+      "shortName": "Seven",
+      "family": "Seven",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_ui_L.webp"
+    },
+    {
+      "id": 204,
+      "slug": "bounty-hunter-shadow-sprite",
+      "name": "Bounty Hunter Shadow",
+      "shortName": "Bounty Hunter Shadow",
+      "family": "Shadow",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_BountyHunter_L.webp"
+    },
+    {
+      "id": 165,
+      "slug": "cheat-master-shadow-sprite",
+      "name": "Cheat Master Shadow",
+      "shortName": "Cheat Master Shadow",
+      "family": "Shadow",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Scribe_Cheatmaster_L.webp"
+    },
+    {
+      "id": 164,
+      "slug": "shadow-sprite",
+      "name": "Shadow",
+      "shortName": "Shadow",
+      "family": "Shadow",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Scribe_L.webp"
+    },
+    {
+      "id": 166,
+      "slug": "gold-shadow-sprite",
+      "name": "Gold Shadow",
+      "shortName": "Gold Shadow",
+      "family": "Shadow",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Scribe_Gold_L.webp"
+    },
+    {
+      "id": 104,
+      "slug": "loot-hacker-shadow-sprite",
+      "name": "Loot Hacker Shadow",
+      "shortName": "Loot Hacker Shadow",
+      "family": "Shadow",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_Hacker_L.webp"
+    },
+    {
+      "id": 239,
+      "slug": "trick-or-treat-shadow-sprite",
+      "name": "Trick or Treat Shadow",
+      "shortName": "Trick or Treat Shadow",
+      "family": "Shadow",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_TrickTreat_L.webp"
+    },
+    {
+      "id": 210,
+      "slug": "bounty-hunter-sonic-sprite",
+      "name": "Bounty Hunter Sonic",
+      "shortName": "Bounty Hunter Sonic",
+      "family": "Sonic",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_BountyHunter_L.webp"
+    },
+    {
+      "id": 186,
+      "slug": "cheat-master-sonic-sprite",
+      "name": "Cheat Master Sonic",
+      "shortName": "Cheat Master Sonic",
+      "family": "Sonic",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Obsidian_Cheatmaster_L.webp"
+    },
+    {
+      "id": 185,
+      "slug": "sonic-sprite",
+      "name": "Sonic",
+      "shortName": "Sonic",
+      "family": "Sonic",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Obsidian_L.webp"
+    },
+    {
+      "id": 187,
+      "slug": "gold-sonic-sprite",
+      "name": "Gold Sonic",
+      "shortName": "Gold Sonic",
+      "family": "Sonic",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Obsidian_Gold_L.webp"
+    },
+    {
+      "id": 114,
+      "slug": "loot-hacker-sonic-sprite",
+      "name": "Loot Hacker Sonic",
+      "shortName": "Loot Hacker Sonic",
+      "family": "Sonic",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Hacker_L.webp"
+    },
+    {
+      "id": 245,
+      "slug": "trick-or-treat-sonic-sprite",
+      "name": "Trick or Treat Sonic",
+      "shortName": "Trick or Treat Sonic",
+      "family": "Sonic",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_TrickTreat_L.webp"
+    },
+    {
+      "id": 223,
+      "slug": "bounty-hunter-spooky-dash-sprite",
+      "name": "Bounty Hunter Spooky Dash",
+      "shortName": "Bounty Hunter Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_BountyHunter_L.webp"
+    },
+    {
+      "id": 220,
+      "slug": "cheat-master-spooky-dash-sprite",
+      "name": "Cheat Master Spooky Dash",
+      "shortName": "Cheat Master Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Cheatmaster_L.webp"
+    },
+    {
+      "id": 221,
+      "slug": "gold-spooky-dash-sprite",
+      "name": "Gold Spooky Dash",
+      "shortName": "Gold Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Gold_L.webp"
+    },
+    {
+      "id": 222,
+      "slug": "loot-hacker-spooky-dash-sprite",
+      "name": "Loot Hacker Spooky Dash",
+      "shortName": "Loot Hacker Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Hacker_L.webp"
+    },
+    {
+      "id": 219,
+      "slug": "spooky-dash-sprite",
+      "name": "Spooky Dash",
+      "shortName": "Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_L.webp"
+    },
+    {
+      "id": 279,
+      "slug": "quack-spooky-dash-sprite",
+      "name": "Quack Spooky Dash",
+      "shortName": "Quack Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Quack_L.webp"
+    },
+    {
+      "id": 224,
+      "slug": "trick-or-treat-spooky-dash-sprite",
+      "name": "Trick or Treat Spooky Dash",
+      "shortName": "Trick or Treat Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_TrickTreat_L.webp"
+    },
+    {
+      "id": 218,
+      "slug": "bounty-hunter-storm-scout-sprite",
+      "name": "Bounty Hunter Storm Scout",
+      "shortName": "Bounty Hunter Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_BountyHunter_L.webp"
+    },
+    {
+      "id": 195,
+      "slug": "cheat-master-storm-scout-sprite",
+      "name": "Cheat Master Storm Scout",
+      "shortName": "Cheat Master Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_Cheatmaster_L.webp"
+    },
+    {
+      "id": 196,
+      "slug": "gold-storm-scout-sprite",
+      "name": "Gold Storm Scout",
+      "shortName": "Gold Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_Gold_L.webp"
+    },
+    {
+      "id": 118,
+      "slug": "loot-hacker-storm-scout-sprite",
+      "name": "Loot Hacker Storm Scout",
+      "shortName": "Loot Hacker Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_Hacker_L.webp"
+    },
+    {
+      "id": 194,
+      "slug": "storm-scout-sprite",
+      "name": "Storm Scout",
+      "shortName": "Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_L.webp"
+    },
+    {
+      "id": 247,
+      "slug": "trick-or-treat-storm-scout-sprite",
+      "name": "Trick or Treat Storm Scout",
+      "shortName": "Trick or Treat Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_TrickTreat_L.webp"
+    },
+    {
+      "id": 62,
+      "slug": "striker-sprite",
+      "name": "Striker",
+      "shortName": "Striker",
+      "family": "Striker",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp"
+    },
+    {
+      "id": 64,
+      "slug": "galaxy-striker-sprite",
+      "name": "Galaxy Striker",
+      "shortName": "Galaxy Striker",
+      "family": "Striker",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Galaxy_L.webp"
+    },
+    {
+      "id": 65,
+      "slug": "gold-striker-sprite",
+      "name": "Gold Striker",
+      "shortName": "Gold Striker",
+      "family": "Striker",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp"
+    },
+    {
+      "id": 63,
+      "slug": "gummy-striker-sprite",
+      "name": "Gummy Striker",
+      "shortName": "Gummy Striker",
+      "family": "Striker",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp"
+    },
+    {
+      "id": 66,
+      "slug": "holofoil-striker-sprite",
+      "name": "Holofoil Striker",
+      "shortName": "Holofoil Striker",
+      "family": "Striker",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Holofoil_L.webp"
+    },
+    {
+      "id": 203,
+      "slug": "bounty-hunter-tails-sprite",
+      "name": "Bounty Hunter Tails",
+      "shortName": "Bounty Hunter Tails",
+      "family": "Tails",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFleaMonkey_BountyHunter_L.webp"
+    },
+    {
+      "id": 171,
+      "slug": "cheat-master-tails-sprite",
+      "name": "Cheat Master Tails",
+      "shortName": "Cheat Master Tails",
+      "family": "Tails",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_Cheatmaster_L.webp"
+    },
+    {
+      "id": 170,
+      "slug": "tails-sprite",
+      "name": "Tails",
+      "shortName": "Tails",
+      "family": "Tails",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_L.webp"
+    },
+    {
+      "id": 172,
+      "slug": "gold-tails-sprite",
+      "name": "Gold Tails",
+      "shortName": "Gold Tails",
+      "family": "Tails",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_Gold_L.webp"
+    },
+    {
+      "id": 103,
+      "slug": "loot-hacker-tails-sprite",
+      "name": "Loot Hacker Tails",
+      "shortName": "Loot Hacker Tails",
+      "family": "Tails",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_Hacker_L.webp"
+    },
+    {
+      "id": 238,
+      "slug": "trick-or-treat-tails-sprite",
+      "name": "Trick or Treat Tails",
+      "shortName": "Trick or Treat Tails",
+      "family": "Tails",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFleaMonkey_TrickTreat_L.webp"
+    },
+    {
+      "id": 253,
+      "slug": "bounty-hunter-the-deer-sprite",
+      "name": "Bounty Hunter The Deer",
+      "shortName": "Bounty Hunter The Deer",
+      "family": "The Deer",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_BountyHunter_L.webp"
+    },
+    {
+      "id": 250,
+      "slug": "cheatmaster-the-deer-sprite",
+      "name": "Cheatmaster The Deer",
+      "shortName": "Cheatmaster The Deer",
+      "family": "The Deer",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_Cheatmaster_L.webp"
+    },
+    {
+      "id": 251,
+      "slug": "gold-the-deer-sprite",
+      "name": "Gold The Deer",
+      "shortName": "Gold The Deer",
+      "family": "The Deer",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_Gold_L.webp"
+    },
+    {
+      "id": 249,
+      "slug": "the-deer-sprite",
+      "name": "The Deer",
+      "shortName": "The Deer",
+      "family": "The Deer",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_L.webp"
+    },
+    {
+      "id": 252,
+      "slug": "loot-hacker-the-deer-sprite",
+      "name": "Loot Hacker The Deer",
+      "shortName": "Loot Hacker The Deer",
+      "family": "The Deer",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_Hacker_L.webp"
+    },
+    {
+      "id": 254,
+      "slug": "trick-or-treat-the-deer-sprite",
+      "name": "Trick or Treat The Deer",
+      "shortName": "Trick or Treat The Deer",
+      "family": "The Deer",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_TrickTreat_L.webp"
+    },
+    {
+      "id": 230,
+      "slug": "bounty-hunter-vampire-sprite",
+      "name": "Bounty Hunter Vampire",
+      "shortName": "Bounty Hunter Vampire",
+      "family": "Vampire",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_BountyHunter_L.webp"
+    },
+    {
+      "id": 227,
+      "slug": "cheatmaster-vampire-sprite",
+      "name": "Cheatmaster Vampire",
+      "shortName": "Cheatmaster Vampire",
+      "family": "Vampire",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Cheatmaster_L.webp"
+    },
+    {
+      "id": 228,
+      "slug": "gold-vampire-sprite",
+      "name": "Gold Vampire",
+      "shortName": "Gold Vampire",
+      "family": "Vampire",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Gold_L.webp"
+    },
+    {
+      "id": 226,
+      "slug": "vampire-sprite",
+      "name": "Vampire",
+      "shortName": "Vampire",
+      "family": "Vampire",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_L.webp"
+    },
+    {
+      "id": 229,
+      "slug": "loot-hacker-vampire-sprite",
+      "name": "Loot Hacker Vampire",
+      "shortName": "Loot Hacker Vampire",
+      "family": "Vampire",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Hacker_L.webp"
+    },
+    {
+      "id": 231,
+      "slug": "trick-or-treat-vampire-sprite",
+      "name": "Trick or Treat Vampire",
+      "shortName": "Trick or Treat Vampire",
+      "family": "Vampire",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_TrickTreat_L.webp"
+    },
+    {
+      "id": 149,
+      "slug": "vini-jr-sprite",
+      "name": "Vini Jr.",
+      "shortName": "Vini Jr.",
+      "family": "Vini Jr.",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_CokeParmesan_Default_L.webp"
+    },
+    {
+      "id": 3,
+      "slug": "galaxy-water-sprite",
+      "name": "Galaxy Water",
+      "shortName": "Galaxy Water",
+      "family": "Water",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 76,
+      "slug": "gem-water-sprite",
+      "name": "Gem Water",
+      "shortName": "Gem Water",
+      "family": "Water",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp"
+    },
+    {
+      "id": 4,
+      "slug": "gold-water-sprite",
+      "name": "Gold Water",
+      "shortName": "Gold Water",
+      "family": "Water",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp"
+    },
+    {
+      "id": 2,
+      "slug": "gummy-water-sprite",
+      "name": "Gummy Water",
+      "shortName": "Gummy Water",
+      "family": "Water",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Candy_ui_L.webp"
+    },
+    {
+      "id": 43,
+      "slug": "holofoil-water-sprite",
+      "name": "Holofoil Water",
+      "shortName": "Holofoil Water",
+      "family": "Water",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Holofoil_ui_L.webp"
+    },
+    {
+      "id": 84,
+      "slug": "quack-water-sprite",
+      "name": "Quack Water",
+      "shortName": "Quack Water",
+      "family": "Water",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp"
+    },
+    {
+      "id": 1,
+      "slug": "water-sprite",
+      "name": "Water",
+      "shortName": "Water",
+      "family": "Water",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Unvault_Ch7S3_ui_L.webp"
+    },
+    {
+      "id": 201,
+      "slug": "bounty-hunter-x-ray-sprite",
+      "name": "Bounty Hunter X-Ray",
+      "shortName": "Bounty Hunter X-Ray",
+      "family": "X-Ray",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_BountyHunter_L.webp"
+    },
+    {
+      "id": 94,
+      "slug": "cheatmaster-x-ray-sprite",
+      "name": "Cheatmaster X-Ray",
+      "shortName": "Cheatmaster X-Ray",
+      "family": "X-Ray",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_Cheatmaster_L.webp"
+    },
+    {
+      "id": 95,
+      "slug": "gold-x-ray-sprite",
+      "name": "Gold X-Ray",
+      "shortName": "Gold X-Ray",
+      "family": "X-Ray",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_Gold_L.webp"
+    },
+    {
+      "id": 93,
+      "slug": "x-ray-sprite",
+      "name": "X-Ray",
+      "shortName": "X-Ray",
+      "family": "X-Ray",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_L.webp"
+    },
+    {
+      "id": 96,
+      "slug": "loot-hacker-x-ray-sprite",
+      "name": "Loot Hacker X-Ray",
+      "shortName": "Loot Hacker X-Ray",
+      "family": "X-Ray",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_Hacker_L.webp"
+    },
+    {
+      "id": 237,
+      "slug": "trick-or-treat-x-ray-sprite",
+      "name": "Trick or Treat X-Ray",
+      "shortName": "Trick or Treat X-Ray",
+      "family": "X-Ray",
+      "variant": "Trick or Treat",
+      "theme": "tricktreat",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_TrickTreat_L.webp"
+    },
+    {
+      "id": 112,
+      "slug": "cube-zero-point-sprite",
+      "name": "Cube Zero Point",
+      "shortName": "Cube Zero Point",
+      "family": "Zero Point",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp"
+    },
+    {
+      "id": 35,
+      "slug": "galaxy-zero-point-sprite",
+      "name": "Galaxy Zero Point",
+      "shortName": "Galaxy Zero Point",
+      "family": "Zero Point",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Galaxy_ui_L.webp"
+    },
+    {
+      "id": 82,
+      "slug": "gem-zero-point-sprite",
+      "name": "Gem Zero Point",
+      "shortName": "Gem Zero Point",
+      "family": "Zero Point",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp"
+    },
+    {
+      "id": 36,
+      "slug": "gold-zero-point-sprite",
+      "name": "Gold Zero Point",
+      "shortName": "Gold Zero Point",
+      "family": "Zero Point",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Gold_ui_L.webp"
+    },
+    {
+      "id": 34,
+      "slug": "gummy-zero-point-sprite",
+      "name": "Gummy Zero Point",
+      "shortName": "Gummy Zero Point",
+      "family": "Zero Point",
+      "variant": "Gummy",
+      "theme": "candy",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Candy_ui_L.webp"
+    },
+    {
+      "id": 111,
+      "slug": "holofoil-zero-point-sprite",
+      "name": "Holofoil Zero Point",
+      "shortName": "Holofoil Zero Point",
+      "family": "Zero Point",
+      "variant": "Holofoil",
+      "theme": "holofoil",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp"
+    },
+    {
+      "id": 33,
+      "slug": "zero-point-sprite",
+      "name": "Zero Point",
+      "shortName": "Zero Point",
+      "family": "Zero Point",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_ui_L.webp"
+    },
+    {
+      "id": 113,
+      "slug": "quack-zero-point-sprite",
+      "name": "Quack Zero Point",
+      "shortName": "Quack Zero Point",
+      "family": "Zero Point",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "https://fortnite.gg/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp"
+    }
+  ]
+}

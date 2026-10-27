@@ -23,7 +23,8 @@ export const SEASON_HUB_LINKS = [
   { href: '/guides/how-to/how-much-is-fortnite-battle-pass', label: 'Pass cost (800)' },
   { href: '/guides/how-to/how-to-redeem-fortnite-code', label: 'Redeem a code' },
   { href: '/guides/how-to/how-to-refund-fortnite-skins', label: 'Refund skins' },
-  { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel codes' },
+  { href: '/lobby-hacks', label: 'Lobby Hacks' },
+  { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel how-to' },
   { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked climb guide' },
 ] as const
 

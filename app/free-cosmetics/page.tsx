@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'What is the Admin Panel?',
-    a: 'Override Lobby Hack codes in the BR lobby (Ranked off). Epic codes give XP, Sprite Dust, Sprites, cosmetics, and Fortnitemares lobby effects — never V-Bucks. Redeem before the season ends.',
+    a: 'Override Lobby Hack codes in the BR lobby (Ranked off). Epic codes give XP, Sprite Dust, Sprites, cosmetics, and Fortnitemares lobby effects — never V-Bucks. Copy them on the Lobby Hacks page. Redeem before the season ends.',
   },
   {
     q: 'Can I still get Boogie Down for free?',
@@ -73,10 +73,10 @@ export default function FreeCosmeticsPage() {
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{FREE_COSMETIC_OFFERS.length}</strong> offers ·{' '}
               <Link
-                href="/guides/how-to/fortnite-admin-panel-lobby-hack-codes"
+                href="/lobby-hacks"
                 className="text-primary hover:underline"
               >
-                Admin Panel guide
+                Lobby Hacks
               </Link>
               {' · '}
               <Link href="/tools/item-shop" className="text-primary hover:underline">
@@ -106,8 +106,12 @@ export default function FreeCosmeticsPage() {
             <div className="rounded-xl border border-border bg-card px-4 py-4">
               <h2 className="text-sm font-bold text-foreground">Lobby Hacks</h2>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                Admin Panel in the pubs lobby — XP, Sprite Dust, Fortnitemares transforms. Scam sites
-                promising free V-Bucks are lying.
+                Click-to-copy list on{' '}
+                <Link href="/lobby-hacks" className="text-primary hover:underline">
+                  Lobby Hacks
+                </Link>
+                . XP, Sprite Dust, Sprites, Fortnitemares transforms. Scam sites promising free
+                V-Bucks are lying.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card px-4 py-4">
@@ -132,7 +136,11 @@ export default function FreeCosmeticsPage() {
                 ranked windows change — not by inventing V-Bucks generators.
               </p>
               <p>
-                For step-by-step Admin Panel redeem tips, use the{' '}
+                Copy every live string on{' '}
+                <Link href="/lobby-hacks" className="text-primary hover:underline">
+                  Lobby Hacks
+                </Link>
+                . For step-by-step Admin Panel redeem tips, use the{' '}
                 <Link
                   href="/guides/how-to/fortnite-admin-panel-lobby-hack-codes"
                   className="text-primary hover:underline"

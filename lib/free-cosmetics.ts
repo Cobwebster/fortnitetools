@@ -114,8 +114,8 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
       'Codes work once per account (reusable lobby transforms are the exception). Sprite duplicates usually convert to Sprite Dust.',
       'Never V-Bucks — any “free V-Bucks code” site is a scam.',
     ],
-    href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes',
-    hrefLabel: 'Admin Panel guide',
+    href: '/lobby-hacks',
+    hrefLabel: 'Lobby Hack codes',
     category: 'quest',
   },
   {
