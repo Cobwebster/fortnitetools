@@ -3,7 +3,7 @@
 import * as THREE from 'three'
 import type { MatType } from '@/lib/build-simulator'
 
-/** Original procedural maps inspired by Fortnite wood / stone / metal readability — not Epic assets. */
+/** Procedural maps inspired by Fortnite prefab readability — not Epic assets. */
 
 function makeCanvas(size = 256) {
   const canvas = document.createElement('canvas')
@@ -36,36 +36,30 @@ function mulberry32(seed: number) {
 function grassMap() {
   const { canvas, ctx, size } = makeCanvas(512)
   const rnd = mulberry32(0x6f2a11)
-  ctx.fillStyle = '#4c8f42'
+  ctx.fillStyle = '#4e9444'
   ctx.fillRect(0, 0, size, size)
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 140; i++) {
     const x = rnd() * size
     const y = rnd() * size
-    const r = 16 + rnd() * 48
+    const r = 8 + rnd() * 22
     const g = ctx.createRadialGradient(x, y, 0, x, y, r)
-    g.addColorStop(0, rnd() > 0.45 ? 'rgba(70, 150, 58, 0.55)' : 'rgba(38, 110, 42, 0.5)')
+    g.addColorStop(0, rnd() > 0.5 ? 'rgba(72, 148, 62, 0.45)' : 'rgba(42, 108, 48, 0.4)')
     g.addColorStop(1, 'rgba(0,0,0,0)')
     ctx.fillStyle = g
     ctx.fillRect(x - r, y - r, r * 2, r * 2)
   }
 
-  for (let i = 0; i < 2200; i++) {
+  for (let i = 0; i < 9000; i++) {
     const x = rnd() * size
     const y = rnd() * size
-    ctx.strokeStyle = rnd() > 0.5 ? 'rgba(32, 82, 28, 0.32)' : 'rgba(196, 220, 110, 0.2)'
+    ctx.strokeStyle = rnd() > 0.55 ? 'rgba(28, 78, 26, 0.28)' : 'rgba(186, 214, 96, 0.16)'
     ctx.lineWidth = 1
     ctx.beginPath()
     ctx.moveTo(x, y)
-    ctx.lineTo(x + (rnd() - 0.5) * 5, y - 3 - rnd() * 7)
+    ctx.lineTo(x + (rnd() - 0.5) * 2.2, y - 2 - rnd() * 4)
     ctx.stroke()
   }
-
-  const shade = ctx.createLinearGradient(0, 0, size, size)
-  shade.addColorStop(0, 'rgba(255,255,255,0.05)')
-  shade.addColorStop(1, 'rgba(20,50,18,0.1)')
-  ctx.fillStyle = shade
-  ctx.fillRect(0, 0, size, size)
   return toTexture(canvas)
 }
 
@@ -109,68 +103,91 @@ export function getCloudTexture() {
   return cloudTex
 }
 
+function tileGridMap() {
+  const { canvas, ctx, size } = makeCanvas(512)
+  ctx.clearRect(0, 0, size, size)
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.22)'
+  ctx.lineWidth = 2
+  ctx.strokeRect(1.5, 1.5, size - 3, size - 3)
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.06)'
+  ctx.lineWidth = 1
+  ctx.beginPath()
+  ctx.moveTo(size / 2, 0)
+  ctx.lineTo(size / 2, size)
+  ctx.moveTo(0, size / 2)
+  ctx.lineTo(size, size / 2)
+  ctx.stroke()
+  return toTexture(canvas)
+}
+
+let gridTex: THREE.CanvasTexture | null = null
+
+export function getTileGridTexture() {
+  if (!gridTex) gridTex = tileGridMap()
+  return gridTex
+}
+
+/** Fortnite wood reads as plywood sheets in a timber frame — not Minecraft planks. */
 function woodMap() {
   const { canvas, ctx, size } = makeCanvas()
-  ctx.fillStyle = '#c4a06a'
+  const rnd = mulberry32(0xc4a06a)
+  ctx.fillStyle = '#c9944c'
   ctx.fillRect(0, 0, size, size)
 
-  const plankH = size / 4
-  for (let row = 0; row < 4; row++) {
-    const y = row * plankH
-    ctx.fillStyle = row % 2 === 0 ? '#b89058' : '#d0ae78'
-    ctx.fillRect(0, y, size, plankH - 2)
-    ctx.fillStyle = '#8a6840'
-    ctx.fillRect(0, y + plankH - 2, size, 2)
-    for (let i = 0; i < 3; i++) {
-      const x = ((i * 87 + row * 41) % (size - 20)) + 10
-      ctx.fillStyle = 'rgba(90, 60, 30, 0.35)'
-      ctx.fillRect(x, y + 4, 2, plankH - 10)
-      ctx.fillStyle = '#6b4e32'
-      ctx.beginPath()
-      ctx.arc(x + 1, y + plankH / 2, 2, 0, Math.PI * 2)
-      ctx.fill()
-    }
-    ctx.strokeStyle = 'rgba(120, 80, 40, 0.25)'
+  for (let i = 0; i < 420; i++) {
+    ctx.fillStyle = rnd() > 0.5 ? 'rgba(168, 110, 48, 0.22)' : 'rgba(232, 190, 118, 0.18)'
+    ctx.fillRect(rnd() * size, rnd() * size, 6 + rnd() * 18, 4 + rnd() * 10)
+  }
+
+  const panels = 3
+  const pw = size / panels
+  for (let p = 0; p < panels; p++) {
+    const x = p * pw
+    ctx.fillStyle = p % 2 === 0 ? 'rgba(90, 50, 18, 0.08)' : 'rgba(255, 230, 170, 0.07)'
+    ctx.fillRect(x, 0, pw, size)
+    ctx.fillStyle = 'rgba(70, 42, 16, 0.45)'
+    ctx.fillRect(x + pw - 2, 0, 2, size)
+    ctx.strokeStyle = 'rgba(110, 68, 28, 0.22)'
     ctx.lineWidth = 1
-    for (let g = 0; g < 5; g++) {
+    for (let g = 0; g < 14; g++) {
+      const gx = x + 8 + ((g * 17) % (pw - 16))
       ctx.beginPath()
-      ctx.moveTo(0, y + 6 + g * 8)
-      ctx.bezierCurveTo(size * 0.3, y + 4 + g * 8, size * 0.7, y + 10 + g * 8, size, y + 6 + g * 8)
+      ctx.moveTo(gx, 0)
+      ctx.bezierCurveTo(gx + 3, size * 0.35, gx - 4, size * 0.7, gx + 1, size)
       ctx.stroke()
     }
   }
-  const grad = ctx.createLinearGradient(0, 0, size, size)
-  grad.addColorStop(0, 'rgba(255,255,255,0.08)')
-  grad.addColorStop(1, 'rgba(80,50,20,0.12)')
-  ctx.fillStyle = grad
+
+  const vignette = ctx.createRadialGradient(size / 2, size / 2, size * 0.2, size / 2, size / 2, size * 0.72)
+  vignette.addColorStop(0, 'rgba(0,0,0,0)')
+  vignette.addColorStop(1, 'rgba(70, 40, 12, 0.16)')
+  ctx.fillStyle = vignette
   ctx.fillRect(0, 0, size, size)
   return toTexture(canvas)
 }
 
 function stoneMap() {
   const { canvas, ctx, size } = makeCanvas()
-  ctx.fillStyle = '#9a6a55'
+  ctx.fillStyle = '#6d5348'
   ctx.fillRect(0, 0, size, size)
 
-  const rows = 6
+  const rows = 8
   const cols = 4
   const bh = size / rows
   const bw = size / cols
+  const tones = ['#c56a48', '#b45c3e', '#d07854', '#a8523a', '#c86e50']
   for (let r = 0; r < rows; r++) {
     const offset = r % 2 === 0 ? 0 : bw / 2
     for (let c = -1; c <= cols; c++) {
       const x = c * bw + offset
       const y = r * bh
-      const tones = ['#b07a62', '#8f5f4a', '#a36c55', '#c08970']
-      ctx.fillStyle = tones[(r * 3 + c + 5) % tones.length]
+      ctx.fillStyle = tones[(r * 5 + c + 7) % tones.length]
       ctx.fillRect(x + 1, y + 1, bw - 2, bh - 2)
-      ctx.strokeStyle = '#6e5248'
+      ctx.strokeStyle = '#5a463e'
       ctx.lineWidth = 2
       ctx.strokeRect(x + 0.5, y + 0.5, bw - 1, bh - 1)
-      ctx.fillStyle = 'rgba(60,40,30,0.2)'
-      for (let s = 0; s < 4; s++) {
-        ctx.fillRect(x + 6 + ((s * 17) % (bw - 12)), y + 4 + ((s * 11) % (bh - 8)), 2, 2)
-      }
+      ctx.fillStyle = 'rgba(255, 200, 160, 0.12)'
+      ctx.fillRect(x + 2, y + 2, bw * 0.45, 2)
     }
   }
   return toTexture(canvas)
@@ -179,36 +196,33 @@ function stoneMap() {
 function metalMap() {
   const { canvas, ctx, size } = makeCanvas()
   const base = ctx.createLinearGradient(0, 0, size, 0)
-  base.addColorStop(0, '#7a8fa3')
-  base.addColorStop(0.5, '#9aafc0')
-  base.addColorStop(1, '#6d8296')
+  base.addColorStop(0, '#6d8498')
+  base.addColorStop(0.5, '#97aec0')
+  base.addColorStop(1, '#62788c')
   ctx.fillStyle = base
   ctx.fillRect(0, 0, size, size)
 
-  const ribs = 10
+  const ribs = 12
   const rw = size / ribs
   for (let i = 0; i < ribs; i++) {
     const x = i * rw
-    ctx.fillStyle = i % 2 === 0 ? 'rgba(255,255,255,0.12)' : 'rgba(30,45,60,0.18)'
+    ctx.fillStyle = i % 2 === 0 ? 'rgba(255,255,255,0.1)' : 'rgba(20,36,52,0.16)'
     ctx.fillRect(x, 0, rw * 0.55, size)
-    ctx.fillStyle = 'rgba(20,30,40,0.25)'
+    ctx.fillStyle = 'rgba(18, 28, 40, 0.28)'
     ctx.fillRect(x + rw * 0.55, 0, 2, size)
   }
-  for (let y = 16; y < size; y += 32) {
-    for (let x = 12; x < size; x += rw) {
-      ctx.fillStyle = '#c5d4e0'
+  for (let y = 18; y < size; y += 36) {
+    for (let x = 10; x < size; x += rw) {
+      ctx.fillStyle = '#d2dee8'
       ctx.beginPath()
-      ctx.arc(x, y, 3, 0, Math.PI * 2)
+      ctx.arc(x, y, 2.6, 0, Math.PI * 2)
       ctx.fill()
-      ctx.fillStyle = '#4a5a68'
+      ctx.fillStyle = '#3a4a58'
       ctx.beginPath()
-      ctx.arc(x, y, 1.2, 0, Math.PI * 2)
+      ctx.arc(x, y, 1.1, 0, Math.PI * 2)
       ctx.fill()
     }
   }
-  ctx.strokeStyle = 'rgba(40,55,70,0.55)'
-  ctx.lineWidth = 6
-  ctx.strokeRect(3, 3, size - 6, size - 6)
   return toTexture(canvas)
 }
 
@@ -222,13 +236,20 @@ export function getMatTexture(mat: MatType): THREE.CanvasTexture {
 }
 
 export const MAT_ROUGHNESS: Record<MatType, number> = {
-  wood: 0.82,
-  brick: 0.88,
-  metal: 0.35,
+  wood: 0.84,
+  brick: 0.9,
+  metal: 0.32,
 }
 
 export const MAT_METALNESS: Record<MatType, number> = {
   wood: 0.02,
   brick: 0.04,
-  metal: 0.72,
+  metal: 0.7,
+}
+
+/** Timber / masonry / steel frame around Fortnite-style prefabs. */
+export const TRIM_HEX: Record<MatType, string> = {
+  wood: '#5a381c',
+  brick: '#4e3c36',
+  metal: '#3a4652',
 }

@@ -1,8 +1,8 @@
 /**
- * Fortnite-style edit grids:
- * - Enter edit → piece becomes a blue tile grid
- * - Select tiles to REMOVE, confirm applies (classic BR)
- * - Walls/floors 3×3, cones 2×2, ramps L/M/R strips
+ * Fortnite edit grids (wiki / GamesRadar building guide — Epic does not publish source):
+ * - Tap G to enter, LMB paints tiles to REMOVE, tap G to confirm, RMB resets
+ * - Blue tiles = remaining. Invalid leftover shapes stay red and cannot confirm.
+ * - Walls/floors 3×3. Pyramids 2×2 (any subset). Stairs 2×2 corners (full / half / L / U).
  * https://fortnite.fandom.com/wiki/Building
  */
 
@@ -10,31 +10,25 @@ import {
   CELL,
   CONE_HEIGHT,
   MAX_BUILD_RANGE,
+  aimPointWithinRange,
   cellCenter,
   type BuildPiece,
   type PieceType,
 } from './build-simulator'
 
-export type EditGridKind = '3x3' | '2x2' | '3col'
+export type EditGridKind = '3x3' | '2x2'
 
 export function editGridKind(type: PieceType): EditGridKind {
-  if (type === 'cone') return '2x2'
-  if (type === 'ramp') return '3col'
+  if (type === 'cone' || type === 'ramp') return '2x2'
   return '3x3'
 }
 
 export function editTileCount(type: PieceType): number {
-  const k = editGridKind(type)
-  if (k === '2x2') return 4
-  if (k === '3col') return 3
-  return 9
+  return editGridKind(type) === '2x2' ? 4 : 9
 }
 
 export function editGridDims(type: PieceType): { cols: number; rows: number } {
-  const k = editGridKind(type)
-  if (k === '2x2') return { cols: 2, rows: 2 }
-  if (k === '3col') return { cols: 3, rows: 1 }
-  return { cols: 3, rows: 3 }
+  return editGridKind(type) === '2x2' ? { cols: 2, rows: 2 } : { cols: 3, rows: 3 }
 }
 
 /** Full unedited piece — every tile present. */
@@ -63,6 +57,61 @@ export function emptySelection(type: PieceType): boolean[] {
 /** Apply FN select-to-remove: selected tiles are cut from the base. */
 export function applyEditSelection(baseTiles: boolean[], selected: boolean[]): boolean[] {
   return baseTiles.map((on, i) => on && !selected[i])
+}
+
+function is4Connected(tiles: boolean[], cols: number, rows: number): boolean {
+  const start = tiles.findIndex(Boolean)
+  if (start < 0) return true
+  const seen = new Set<number>([start])
+  const stack = [start]
+  const idx = (c: number, r: number) => r * cols + c
+  while (stack.length) {
+    const i = stack.pop()!
+    const c = i % cols
+    const r = Math.floor(i / cols)
+    for (const [dc, dr] of [
+      [1, 0],
+      [-1, 0],
+      [0, 1],
+      [0, -1],
+    ] as const) {
+      const nc = c + dc
+      const nr = r + dr
+      if (nc < 0 || nr < 0 || nc >= cols || nr >= rows) continue
+      const j = idx(nc, nr)
+      if (!tiles[j] || seen.has(j)) continue
+      seen.add(j)
+      stack.push(j)
+    }
+  }
+  return seen.size === tiles.filter(Boolean).length
+}
+
+/**
+ * Stairs: full (4), half (2 edge-adjacent), quarter-turn / half-turn (3).
+ * Diagonals and single tiles have no stair mesh.
+ */
+function isValidRampTiles(tiles: boolean[]): boolean {
+  const on = tiles.map(Boolean)
+  const n = on.filter(Boolean).length
+  if (n === 0 || n === 3 || n === 4) return true
+  if (n !== 2) return false
+  const pairs: [number, number][] = [
+    [0, 1],
+    [2, 3],
+    [0, 2],
+    [1, 3],
+  ]
+  return pairs.some(([a, b]) => on[a] && on[b])
+}
+
+/** Empty leftover = destroy (valid). Scattered leftover tiles cannot confirm. */
+export function isValidEditTiles(type: PieceType, tiles: boolean[]): boolean {
+  if (!hasAnyTile(tiles)) return true
+  if (type === 'cone') return true
+  if (type === 'ramp') return isValidRampTiles(tiles)
+  const { cols, rows } = editGridDims(type)
+  return is4Connected(tiles, cols, rows)
 }
 
 export function withDefaultTiles(piece: BuildPiece): BuildPiece {
@@ -125,12 +174,18 @@ function rayAabb(
   return tmin >= 0 ? tmin : tmax >= 0 ? 0 : null
 }
 
-export function findAimedPiece(
+export type AimedHit = {
+  piece: BuildPiece
+  t: number
+  point: { x: number; y: number; z: number }
+}
+
+export function findAimedHit(
   eye: { x: number; y: number; z: number },
   lookDir: { x: number; y: number; z: number },
   pieces: BuildPiece[],
   maxRange: number = MAX_BUILD_RANGE
-): BuildPiece | null {
+): AimedHit | null {
   const len = Math.hypot(lookDir.x, lookDir.y, lookDir.z) || 1
   const dir = { x: lookDir.x / len, y: lookDir.y / len, z: lookDir.z / len }
   let best: BuildPiece | null = null
@@ -143,7 +198,56 @@ export function findAimedPiece(
       best = p
     }
   }
-  return best
+  if (!best) return null
+  return {
+    piece: best,
+    t: bestT,
+    point: { x: eye.x + dir.x * bestT, y: eye.y + dir.y * bestT, z: eye.z + dir.z * bestT },
+  }
+}
+
+export function findAimedPiece(
+  eye: { x: number; y: number; z: number },
+  lookDir: { x: number; y: number; z: number },
+  pieces: BuildPiece[],
+  maxRange: number = MAX_BUILD_RANGE
+): BuildPiece | null {
+  return findAimedHit(eye, lookDir, pieces, maxRange)?.piece ?? null
+}
+
+/**
+ * Fortnite hologram follows the crosshair onto the grid: hit a piece or the
+ * ground, then nudge a hair along look so the snap lands on the face you meant.
+ */
+export function resolveBuildAim(
+  eye: { x: number; y: number; z: number },
+  lookDir: { x: number; y: number; z: number },
+  pieces: BuildPiece[]
+): { x: number; y: number; z: number } {
+  const len = Math.hypot(lookDir.x, lookDir.y, lookDir.z) || 1
+  const dir = { x: lookDir.x / len, y: lookDir.y / len, z: lookDir.z / len }
+  const hit = findAimedHit(eye, lookDir, pieces)
+  let groundT: number | null = null
+  if (Math.abs(dir.y) > 0.02) {
+    const t = (0.04 - eye.y) / dir.y
+    if (t > 0.2 && t <= MAX_BUILD_RANGE) groundT = t
+  }
+  if (hit && (groundT == null || hit.t <= groundT + 0.08)) {
+    const push = 0.18
+    return {
+      x: hit.point.x + dir.x * push,
+      y: hit.point.y + dir.y * push,
+      z: hit.point.z + dir.z * push,
+    }
+  }
+  if (groundT != null) {
+    return {
+      x: eye.x + dir.x * groundT,
+      y: 0.04,
+      z: eye.z + dir.z * groundT,
+    }
+  }
+  return aimPointWithinRange(eye, lookDir)
 }
 
 function clamp01(n: number) {
@@ -158,11 +262,6 @@ export function tileIndexFromUV(type: PieceType, u: number, v: number): number {
     const col = uu < 0.5 ? 0 : 1
     const row = vv < 0.5 ? 0 : 1
     return row * 2 + col
-  }
-  if (kind === '3col') {
-    if (uu < 1 / 3) return 0
-    if (uu < 2 / 3) return 1
-    return 2
   }
   const col = Math.floor(uu * 3)
   const row = Math.floor(vv * 3)
@@ -224,13 +323,17 @@ export function editUVFromRay(
   }
 
   if (piece.type === 'ramp') {
-    // Approximate UV on the ramp slope (45° rising +local Z)
     const tAabb = rayAabb(eye, dir, pieceAimBounds(piece).min, pieceAimBounds(piece).max, MAX_BUILD_RANGE)
     if (tAabb == null) return null
     const hx = eye.x + dir.x * tAabb - cx
     const hz = eye.z + dir.z * tAabb - cz
     const localX = hx * right.x + hz * right.z
-    return { u: clamp01((localX + CELL / 2) / CELL), v: 0.5, t: tAabb }
+    const localZ = hx * forward.x + hz * forward.z
+    return {
+      u: clamp01((localX + CELL / 2) / CELL),
+      v: clamp01((localZ + CELL / 2) / CELL),
+      t: tAabb,
+    }
   }
 
   // cone — top-down
@@ -297,7 +400,13 @@ export function editTileWorldCenter(
   }
   if (piece.type === 'ramp') {
     const localX = (u - 0.5) * CELL
-    return { x: cx + right.x * localX, y: cy + CELL / 2, z: cz + right.z * localX, yaw }
+    const localZ = (v - 0.5) * CELL
+    return {
+      x: cx + right.x * localX + forward.x * localZ,
+      y: cy + CELL / 2 + localZ,
+      z: cz + right.z * localX + forward.z * localZ,
+      yaw,
+    }
   }
   // floor / cone
   const localX = (u - 0.5) * CELL
@@ -315,6 +424,6 @@ export function editTileWorldCenter(
 export function editTileSize(type: PieceType): { w: number; h: number } {
   const { cols, rows } = editGridDims(type)
   const w = (CELL * 0.92) / cols
-  const h = type === 'ramp' ? CELL * 0.9 : (CELL * 0.92) / rows
+  const h = (CELL * 0.92) / rows
   return { w, h }
 }

@@ -3,9 +3,9 @@ import { breadcrumbJsonLd, createMetadata, faqJsonLd, webApplicationJsonLd } fro
 import { COSMETIC_STATS_FAQS } from '@/lib/cosmetic-stats'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Cosmetic Stats – Most Appeared & Vaulted Shop Skins',
+  title: 'Fortnite Cosmetic Stats – Shop Occurrences, Vaults & Catalog Mix',
   description:
-    'Fortnite Item Shop cosmetic stats: outfits ranked by most shop appearances, longest vault time, recent returns, and what’s in the shop tonight — from Fortnite-API shop history.',
+    'Fortnite cosmetic stats: most Item Shop occurrences, longest vault wait, rarity and season mix, type counts, and what’s in the shop tonight — from Fortnite-API, not wishlists.',
   path: '/cosmetic-stats',
   keywords: [
     'fortnite cosmetic stats',
@@ -43,7 +43,7 @@ export default function CosmeticStatsLayout({ children }: { children: React.Reac
             webApplicationJsonLd({
               name: 'Fortnite Cosmetic Stats',
               description:
-                'Rank Fortnite outfits by Item Shop appearances, vault time, recent returns, and tonight’s shop.',
+                'Rank Fortnite cosmetics by Item Shop occurrences, vault time, rarity, season, type, and tonight’s shop.',
               path: '/cosmetic-stats',
             })
           ),

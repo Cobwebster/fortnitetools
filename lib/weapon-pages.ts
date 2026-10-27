@@ -1,4 +1,3 @@
-import { getWeapon } from '@/lib/weapons'
 import {
   WEAPON_CATALOG,
   WEAPON_CATEGORY_META,
@@ -12,8 +11,9 @@ import {
 import { getWeaponChangeHistory, type WeaponChangeHit } from '@/lib/weapon-changes'
 import { getWeaponWiki, type WeaponWikiEntry } from '@/lib/weapon-wiki'
 import { CURRENT_SEASON } from '@/lib/season'
+import { FALLOFF_CAPTURED_AT, falloffCaption, getWeaponFalloff, resolveHs } from '@/lib/weapon-combat'
 
-const HP_TARGETS = [100, 150, 200] as const
+const HP_TARGETS = [100, 150, 200, 250] as const
 
 const PLANNING_RARITY: WeaponRarity[] = [
   'Legendary',
@@ -175,8 +175,8 @@ export function buildWeaponPage(id: string): WeaponPageModel | null {
   const live = !weapon.vaulted
   const changes = getWeaponChangeHistory(weapon.name)
   const firstLogged = changes.length ? { date: changes[changes.length - 1]!.date, label: changes[changes.length - 1]!.label } : undefined
-  const liveHs = getWeapon(weapon.id)?.hs
-  const hsMult = liveHs && liveHs > 1 ? liveHs : undefined
+  const falloff = getWeaponFalloff(weapon.id)
+  const hsMult = resolveHs(weapon.id, falloff?.hs)
   const stk = HP_TARGETS.map((hp) => stkFor(top.dmg, top.fireRate, top.mag, hp, hsMult))
   const related = relatedWeapons(weapon)
   const label = categoryLabel(weapon.category)
@@ -219,12 +219,21 @@ export function buildWeaponPage(id: string): WeaponPageModel | null {
     `${cadence(top.fireRate)} — ${top.fireRate} fire rate at ${top.rarity}.`
   )
   bullets.push(
-    `Against 150 HP it is ${stk150.bodyShots} body shot${stk150.bodyShots === 1 ? '' : 's'} (${formatSeconds(stk150.bodyTtk)} TTK)${
+    `Against 150 HP at hipfire it is ${stk150.bodyShots} body shot${stk150.bodyShots === 1 ? '' : 's'} (${formatSeconds(stk150.bodyTtk)} TTK)${
       stk150.headShots
         ? `, or ${stk150.headShots} headshot${stk150.headShots === 1 ? '' : 's'} at ${hsMult}× (${formatSeconds(stk150.headTtk!)})`
         : ''
     }. ${stk150.magCanKill ? `${magPhrase(top.mag, true)} can finish 150 HP without a reload.` : `${magPhrase(top.mag, true)} cannot finish 150 HP in one dump — you reload mid-fight or swap.`}`
   )
+  if (falloff) {
+    bullets.push(
+      `Logged damage-by-distance curve: ${falloffCaption(falloff.curveFor(top.rarity, top.dmg))} Time-to-kill on this page updates with the meter slider.`
+    )
+  } else {
+    bullets.push(
+      'No logged falloff curve for this gun — the damage-by-distance chart is a flat hipfire line until we snapshot one.'
+    )
+  }
   if (top.reload === 0) {
     bullets.push('Reload is 0s in the encyclopedia (charge, reserve, or special cycle — not a normal mag swap).')
   } else if (top.reload >= 4) {
@@ -256,11 +265,17 @@ export function buildWeaponPage(id: string): WeaponPageModel | null {
     },
     {
       question: `How many shots to kill with the ${weapon.name}?`,
-      answer: `At ${top.rarity}, body shots-to-kill are ${stk.map((r) => `${r.bodyShots} for ${r.hp} HP`).join(', ')} (no falloff, no bloom). ${
+      answer: `At ${top.rarity} hipfire, body TTK is ${stk.map((r) => `${formatSeconds(r.bodyTtk)} (${r.bodyShots} ${r.bodyShots === 1 ? 'shot' : 'shots'}) vs ${r.hp} HP`).join(', ')}. ${
         hsMult
-          ? `Live Override headshot multiplier is ${hsMult}×.`
-          : 'Headshot STK is omitted unless we have a live-pool multiplier for this gun.'
-      }`,
+          ? `Headshot multiplier is ${hsMult}×.`
+          : 'Headshot TTK is omitted unless we have a multiplier for this gun.'
+      } The combat table also tracks 250 HP overshield and recalculates as you drag distance.`,
+    },
+    {
+      question: `Does the ${weapon.name} lose damage with range?`,
+      answer: falloff
+        ? `${falloffCaption(falloff.curveFor(top.rarity, top.dmg))} Hipfire on the rarity table stays the encyclopedia body number; the chart is our ${FALLOFF_CAPTURED_AT} falloff snapshot scaled to that row.`
+        : `We have not logged a falloff curve for ${weapon.name} yet, so the chart is a flat hipfire line. Do not assume class-default drop-off.`,
     },
     {
       question: `When was the ${weapon.name} added to Fortnite?`,
@@ -277,7 +292,7 @@ export function buildWeaponPage(id: string): WeaponPageModel | null {
   ]
 
   const poolBit = live ? 'in the Override loot pool' : 'vaulted'
-  const description = `${weapon.name} Fortnite stats — ${top.rarity} ${top.dmg} dmg, ${top.dps} DPS, ${top.fireRate} fire rate, ${magLabel} mag. ${poolBit}. STK vs 100/150/200 and patch history.`
+  const description = `${weapon.name} Fortnite stats — ${top.rarity} ${top.dmg} dmg, ${top.dps} DPS, ${top.fireRate} fire rate, ${magLabel} mag. ${poolBit}. TTK vs 100/150/200/250, damage by distance, patch history.`
 
   return {
     weapon,

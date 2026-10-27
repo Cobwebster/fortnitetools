@@ -1,7 +1,7 @@
 /**
  * Poll Fortnite-API for tracked Epic names and write our own leaderboard snapshot.
  *
- * Uses the same public stats endpoint as /tools/player-stats — we do NOT scrape fortnite.gg.
+ * Uses the same public stats endpoint as /tools/player-stats — we do not scrape third-party ladders.
  * Snapshot is JSON (git-friendly). Run periodically and commit when you want boards to refresh.
  *
  *   npm run poll:stats-leaderboard

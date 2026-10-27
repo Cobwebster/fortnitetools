@@ -77,35 +77,47 @@ export const PIECE_LABELS: Record<PieceType, string> = {
 }
 
 export const PIECE_KEYS: Record<PieceType, string> = {
-  wall: 'Q',
-  floor: 'F',
+  wall: 'Z',
+  floor: 'X',
   ramp: 'C',
   cone: 'V',
 }
 
 export const MAT_KEYS: Record<MatType, string> = {
-  wood: '1',
-  brick: '2',
-  metal: '3',
+  wood: 'RMB',
+  brick: 'RMB',
+  metal: 'RMB',
 }
 
+export const MAT_CYCLE: MatType[] = ['wood', 'brick', 'metal']
+
+export function nextMat(mat: MatType): MatType {
+  return MAT_CYCLE[(MAT_CYCLE.indexOf(mat) + 1) % MAT_CYCLE.length]
+}
+
+export const PIECE_CYCLE: PieceType[] = ['wall', 'floor', 'ramp', 'cone']
+
+export function nextPiece(type: PieceType, dir: 1 | -1): PieceType {
+  const i = PIECE_CYCLE.indexOf(type)
+  return PIECE_CYCLE[(i + dir + PIECE_CYCLE.length) % PIECE_CYCLE.length]
+}
+
+/** Epic Standard PC preset (building under WASD) + combat harvest. */
 export const BUILD_BINDS = {
-  wall: 'KeyQ',
-  floor: 'KeyF',
+  wall: 'KeyZ',
+  floor: 'KeyX',
   ramp: 'KeyC',
   cone: 'KeyV',
-  matWood: 'Digit1',
-  matBrick: 'Digit2',
-  matMetal: 'Digit3',
+  harvest: 'KeyF',
+  harvestAlt: 'Digit1',
   rotate: 'KeyR',
   edit: 'KeyG',
-  editReset: 'KeyT',
   jump: 'Space',
   sprint: 'ShiftLeft',
   crouch: 'ControlLeft',
   respawn: 'KeyB',
   refill: 'KeyM',
-  clearBuilds: 'KeyX',
+  clearBuilds: 'Delete',
   infiniteMats: 'KeyI',
 } as const
 
@@ -149,15 +161,13 @@ export type PlacementHint = {
 }
 
 export const HUD_CONTROLS: { keys: string; action: string }[] = [
-  { keys: 'Click / hold', action: 'Place · turbo-build while held' },
-  { keys: 'Q F C V', action: 'Select piece + place (while locked)' },
-  { keys: 'RMB', action: 'Pickaxe — 50 dmg / swing, builds have HP' },
-  { keys: 'G hold', action: 'Edit — select tiles to remove, release to confirm' },
-  { keys: 'T / Esc', action: 'Reset edit to full · cancel edit' },
-  { keys: 'WASD · Shift · Ctrl', action: 'Move · sprint · crouch' },
-  { keys: 'Space', action: 'Jump' },
-  { keys: '1 2 3 · R', action: 'Mats · rotate 90°' },
-  { keys: 'B · M · X · I', action: 'Respawn · refill · clear builds · infinite mats' },
+  { keys: 'Z X C V', action: 'Wall · floor · stairs · roof (build mode)' },
+  { keys: 'LMB hold', action: 'Place / turbo-build (build mode)' },
+  { keys: 'RMB', action: 'Cycle wood / stone / metal · reset edit' },
+  { keys: 'F / 1', action: 'Pickaxe — LMB swing, 50 dmg' },
+  { keys: 'G', action: 'Edit — tap in, LMB paint holes, tap G to confirm' },
+  { keys: 'R', action: 'Rotate piece 90°' },
+  { keys: 'WASD · Shift · Ctrl · Space', action: 'Move · sprint · crouch · jump' },
 ]
 
 export type Vec3 = { x: number; y: number; z: number }
@@ -262,15 +272,19 @@ export function aimPointWithinRange(eye: Vec3, lookDir: Vec3): Vec3 {
  * Snap aim → grid cell + facing (Fortnite hologram lock).
  * Then pull the cell toward the player if somehow still out of range.
  */
+export const BUILD_FOV = 80
+
 export function resolvePlacement(
   type: PieceType,
   eye: Vec3,
   lookDir: Vec3,
   playerFeet: Vec3,
   rotOffset: number = 0,
-  hint?: PlacementHint
+  hint?: PlacementHint,
+  /** Crosshair grid hit (piece/ground). When set, hologram follows look — not a wall glued to your toes. */
+  aimOverride?: Vec3
 ): PlacementResult {
-  const aim = aimPointWithinRange(eye, lookDir)
+  const aim = aimOverride ?? aimPointWithinRange(eye, lookDir)
 
   let cx = snapToCell(aim.x)
   let cz = snapToCell(aim.z)
@@ -287,12 +301,12 @@ export function resolvePlacement(
   const airborne = hint?.airborne ?? false
   const strafe = hint?.strafe ?? 0
   const goingFwd = (hint?.forward ?? 0) > 0.25
-  const lookingUp = lookDir.y > 0.16
-  const lookingDown = lookDir.y < -0.38
+  const lookingUp = lookDir.y > 0.18
+  const lookingDown = lookDir.y < -0.42
   const turning90 = airborne && (Math.abs(strafe) > 0.35 || lookingUp)
 
-  // Walls: on the ground, one tile ahead. In a 90 / retake, snap to the side
-  // of the cell you're in (or the next height) so the box closes as you jump.
+  // Default: snap the aimed point to the grid (Fortnite hologram).
+  // 90s / look-up still steal the cell so retakes close the box while airborne.
   if (type === 'wall') {
     if (turning90) {
       cx = standCx
@@ -305,25 +319,24 @@ export function resolvePlacement(
         cx = snapToCell(playerFeet.x + rightX * side * CELL * 0.55)
         cz = snapToCell(playerFeet.z + rightZ * side * CELL * 0.55)
       }
+    } else if (lookingUp) {
+      cx = snapToCell(playerFeet.x + nx * CELL * 0.55)
+      cz = snapToCell(playerFeet.z + nz * CELL * 0.55)
+      const up = eye.y + lookDir.y * CELL * 1.35
+      cy = snapToCell(Math.max(0, up - CELL * 0.35))
+    } else if (cx === standCx && cz === standCz && !lookingDown) {
+      cx = snapToCell(playerFeet.x + nx * CELL * 0.7)
+      cz = snapToCell(playerFeet.z + nz * CELL * 0.7)
+      cy = snapToCell(Math.max(0, playerFeet.y + 0.2))
     } else {
-      const ahead = CELL * 0.7
-      cx = snapToCell(playerFeet.x + nx * ahead)
-      cz = snapToCell(playerFeet.z + nz * ahead)
-      if (lookingUp) {
-        const up = eye.y + lookDir.y * CELL * 1.35
-        cy = snapToCell(Math.max(0, up - CELL * 0.35))
-      } else if (lookingDown) {
-        cy = snapToCell(Math.max(0, aim.y))
-      } else {
-        cy = snapToCell(Math.max(0, playerFeet.y + 0.2))
-      }
+      cy = snapToCell(Math.max(0, lookingDown ? aim.y : playerFeet.y + 0.15))
     }
   } else if (type === 'ramp') {
-    const ahead = turning90 || lookingUp ? CELL * 0.35 : CELL * 0.85
-    cx = snapToCell(playerFeet.x + nx * ahead)
-    cz = snapToCell(playerFeet.z + nz * ahead)
-    const movedHoriz = cx !== standCx || cz !== standCz
-    if (lookingUp || (airborne && goingFwd)) {
+    if (turning90 || lookingUp || (airborne && goingFwd)) {
+      const ahead = turning90 || lookingUp ? CELL * 0.35 : CELL * 0.85
+      cx = snapToCell(playerFeet.x + nx * ahead)
+      cz = snapToCell(playerFeet.z + nz * ahead)
+      const movedHoriz = cx !== standCx || cz !== standCz
       cy = standCy + 1
       if (!movedHoriz && (turning90 || lookingUp)) {
         cx = standCx
@@ -331,10 +344,10 @@ export function resolvePlacement(
       }
     } else if (lookingDown) {
       cy = Math.max(0, standCy - (climbT < 0.25 ? 1 : 0))
-    } else if (movedHoriz && climbT > 0.08) {
+    } else if ((cx !== standCx || cz !== standCz) && climbT > 0.08) {
       cy = standCy + 1
     } else {
-      cy = standCy
+      cy = Math.max(cy, standCy)
     }
     if (cy < 0) cy = 0
   } else if (type === 'floor' || type === 'cone') {
@@ -343,13 +356,9 @@ export function resolvePlacement(
       cz = standCz
       cy = standCy + 1
     } else if (lookingDown) {
-      cx = snapToCell(playerFeet.x + nx * CELL * 0.35)
-      cz = snapToCell(playerFeet.z + nz * CELL * 0.35)
       cy = snapToCell(Math.max(0, playerFeet.y + 0.05))
     } else {
-      cx = snapToCell(playerFeet.x + nx * CELL * 0.85)
-      cz = snapToCell(playerFeet.z + nz * CELL * 0.85)
-      cy = snapToCell(Math.max(0, playerFeet.y + 0.15))
+      cy = snapToCell(Math.max(0, playerFeet.y + 0.12))
     }
   }
 
@@ -530,4 +539,4 @@ export const BUILD_SIM_V2_NOTES = [
 ] as const
 
 export const PHYSICS_PARITY_NOTE =
-  'Browser practice sandbox: turbo-build, Q/F/C/V, pickaxe HP (wood 150 / stone 300 / metal 400), yellow phase-through, G-edit, 3-tile range. Movement and 90s snaps are Fortnite-like, not Epic-accurate.'
+  'Browser practice sandbox: Standard binds (Z/X/C/V builds, G tap-to-edit, RMB cycle mats / reset edit, F pickaxe), turbo-build, piece HP (wood 150 / stone 300 / metal 400), yellow phase-through, 3-tile range. Edit leftover tiles must stay connected (stairs: full / half / L / U). Movement is Fortnite-like, not Epic-accurate. Visuals are original lookalikes — not Epic pak textures.'

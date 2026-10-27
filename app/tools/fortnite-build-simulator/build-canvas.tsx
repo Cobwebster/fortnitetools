@@ -12,6 +12,7 @@ import {
 } from '@react-three/rapier'
 import * as THREE from 'three'
 import {
+  BUILD_FOV,
   CELL,
   CONE_BASE_RADIUS,
   CONE_HEIGHT,
@@ -25,6 +26,7 @@ import {
   pieceHpNow,
   pieceKey,
   pieceMaxHp,
+  nextPiece,
   resolvePlacement,
   type BuildPiece,
   type MatType,
@@ -32,14 +34,17 @@ import {
 } from '@/lib/build-simulator'
 import {
   aimedEditTileIndex,
+  applyEditSelection,
   editTileSize,
   editTileWorldCenter,
   findAimedPiece,
   fullEditTiles,
+  isValidEditTiles,
+  resolveBuildAim,
   withDefaultTiles,
 } from '@/lib/build-edits'
 import { Billboard } from '@react-three/drei'
-import { getMatTexture, MAT_METALNESS, MAT_ROUGHNESS } from './build-materials'
+import { getMatTexture, MAT_METALNESS, MAT_ROUGHNESS, TRIM_HEX } from './build-materials'
 import { ArenaEnvironment } from './build-env'
 import { useSim } from './sim-context'
 
@@ -58,7 +63,7 @@ const SLOPE_FOLLOW = 1
 const RAMP_COLLIDER_HALF_THICK = 0.7
 const COYOTE_MS = 90
 const JUMP_BUFFER_MS = 100
-const LOOK_SENS = 0.0024
+const LOOK_SENS = 0.00255
 const RAMP_CLIMB = 1.06
 
 class CanvasErrorBoundary extends Component<
@@ -84,28 +89,28 @@ class CanvasErrorBoundary extends Component<
 export function BuildCanvas() {
   return (
     <CanvasErrorBoundary>
-      <div className="relative h-full w-full min-h-[480px] bg-[#6fa8d4]">
+      <div className="relative h-full w-full min-h-[480px] bg-[#5ea3d6]">
         <Canvas
           className="absolute inset-0 h-full w-full touch-none"
           shadows={{ type: THREE.PCFShadowMap }}
           dpr={[1, 1.75]}
-          camera={{ fov: 75, near: 0.1, far: 360, position: [0, 3, 14] }}
+          camera={{ fov: BUILD_FOV, near: 0.1, far: 420, position: [0, 3, 14] }}
           gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
           onCreated={({ gl, camera }) => {
-            gl.setClearColor('#87b7dc', 1)
+            gl.setClearColor('#5ea3d6', 1)
             gl.toneMapping = THREE.ACESFilmicToneMapping
-            gl.toneMappingExposure = 1.08
+            gl.toneMappingExposure = 0.96
             gl.shadowMap.type = THREE.PCFShadowMap
             camera.lookAt(0, 1, 0)
           }}
         >
-          <color attach="background" args={['#87b7dc']} />
-          <fog attach="fog" args={['#9ec6e4', 70, 210]} />
-          <hemisphereLight args={['#e8f4ff', '#4a6b3a', 0.9]} />
-          <ambientLight intensity={0.42} />
+          <color attach="background" args={['#5ea3d6']} />
+          <fog attach="fog" args={['#7eb4d8', 95, 280]} />
+          <hemisphereLight args={['#c5e0f8', '#3d5a32', 0.72]} />
+          <ambientLight intensity={0.36} />
           <directionalLight
             castShadow
-            intensity={1.35}
+            intensity={1.22}
             position={[28, 42, 18]}
             shadow-mapSize={[1024, 1024]}
             shadow-camera-far={100}
@@ -116,7 +121,6 @@ export function BuildCanvas() {
           />
 
           <ArenaEnvironment arena={ARENA} />
-          <gridHelper args={[ARENA, ARENA / CELL, '#3d6e42', '#4a7c48']} position={[0, 0.03, 0]} />
 
           <Suspense fallback={<LoadingMarker />}>
             <Physics gravity={[0, GRAVITY, 0]}>
@@ -209,8 +213,16 @@ function PlayerController() {
     setHoverEditTile,
     respawnToken,
     placementHintRef,
+    playerFeetRef,
     editSession,
     locked,
+    selectedPiece,
+    selectedMat,
+    combatModeRef,
+    cycleMat,
+    resetEditDraft,
+    setSelectedPiece,
+    setCombatMode,
   } = useSim()
   const keys = useKeyMap()
   const yaw = useRef(0)
@@ -233,6 +245,7 @@ function PlayerController() {
   const lastPickaxeAt = useRef(0)
   const rmbHeld = useRef(false)
   const pickaxeGroup = useRef<THREE.Group>(null)
+  const heldGroup = useRef<THREE.Group>(null)
   const pickaxeSwing = useRef(0)
   const wishRef = useRef({ forward: 0, strafe: 0 })
   const lastAimedId = useRef<string | null>(null)
@@ -252,13 +265,15 @@ function PlayerController() {
     const eye = { x: camera.position.x, y: camera.position.y, z: camera.position.z }
     const feet = { x: t.x, y: t.y, z: t.z }
     const piece = pieceOverride ?? selectedPieceRef.current
+    const look = { x: dir.x, y: dir.y, z: dir.z }
     const result = resolvePlacement(
       piece,
       eye,
-      { x: dir.x, y: dir.y, z: dir.z },
+      look,
       feet,
       rotOffsetRef.current,
-      placementHint()
+      placementHint(),
+      resolveBuildAim(eye, look, piecesRef.current)
     )
     const occupied = piecesRef.current.some((p) => pieceKey(p) === pieceKey(result.draft))
     const canPay = canAfford(matsRef.current, selectedMatRef.current, infiniteRef.current)
@@ -347,6 +362,8 @@ function PlayerController() {
               paintSelectTile()
             }
           }
+        } else if (combatModeRef.current === 'harvest') {
+          tryPickaxe()
         } else {
           attemptPlace()
           lastTurboAt.current = performance.now()
@@ -354,7 +371,8 @@ function PlayerController() {
       } else if (e.button === 2) {
         e.preventDefault()
         rmbHeld.current = true
-        tryPickaxe()
+        if (editSessionRef.current) resetEditDraft()
+        else if (combatModeRef.current !== 'harvest') cycleMat()
       }
     }
     const onMouseUp = (e: MouseEvent) => {
@@ -375,20 +393,25 @@ function PlayerController() {
       // Pointer-lock often delivers wheel on document, not the canvas — block page scroll either way.
       if (!locked && !overArena) return
       e.preventDefault()
-      if (locked) rotatePiece(e.deltaY > 0 ? 1 : -1)
+      if (locked && !editSessionRef.current) {
+        const next = nextPiece(selectedPieceRef.current, e.deltaY > 0 ? 1 : -1)
+        selectedPieceRef.current = next
+        setSelectedPiece(next)
+        setCombatMode('build')
+      }
     }
     const onEditDown = () => {
       if (document.pointerLockElement !== el) return
-      if (editSessionRef.current) return
+      if (editSessionRef.current) {
+        confirmEdit()
+        return
+      }
       const dir = lookDir.current
       const eye = { x: camera.position.x, y: camera.position.y, z: camera.position.z }
       const aimed = findAimedPiece(eye, { x: dir.x, y: dir.y, z: dir.z }, piecesRef.current)
       if (aimed) beginEdit(aimed.id)
     }
-    const onEditUp = () => {
-      if (document.pointerLockElement !== el) return
-      if (editSessionRef.current) confirmEdit()
-    }
+    const onEditUp = () => {}
     const onPlaceKey = (ev: Event) => {
       if (document.pointerLockElement !== el) return
       const detail = (ev as CustomEvent<{ piece: PieceType }>).detail
@@ -418,17 +441,17 @@ function PlayerController() {
       window.removeEventListener('buildsim-place-key', onPlaceKey)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gl, setLocked, rotatePiece, camera, beginEdit, confirmEdit, damagePiece, tryPlace, setTileSelected])
+  }, [gl, setLocked, rotatePiece, camera, beginEdit, confirmEdit, damagePiece, tryPlace, setTileSelected, cycleMat, resetEditDraft, setSelectedPiece, setCombatMode])
 
   useEffect(() => {
     if (respawnToken === lastRespawnToken.current) return
     lastRespawnToken.current = respawnToken
     const rb = body.current
     if (!rb) return
-    rb.setTranslation({ x: 0, y: 3, z: 12 }, true)
+    rb.setTranslation({ x: 2, y: 3, z: 14 }, true)
     rb.setLinvel({ x: 0, y: 0, z: 0 }, true)
     yaw.current = 0
-    pitch.current = -0.18
+    pitch.current = -0.06
   }, [respawnToken])
 
   useFrame(() => {
@@ -438,10 +461,11 @@ function PlayerController() {
     if (!ready.current) {
       ready.current = true
       yaw.current = 0
-      pitch.current = -0.18
+      pitch.current = -0.06
     }
 
     const t = rb.translation()
+    playerFeetRef.current = { x: t.x, y: t.y, z: t.z }
     const k = keys.current
     const crouching = !!(k.ControlLeft || k.ControlRight)
     const targetEye = crouching ? EYE_CROUCH : EYE
@@ -554,7 +578,7 @@ function PlayerController() {
 
     const half = ARENA / 2 - 1
     if (Math.abs(t.x) > half || Math.abs(t.z) > half || t.y < -5) {
-      rb.setTranslation({ x: 0, y: 3, z: 12 }, true)
+      rb.setTranslation({ x: 2, y: 3, z: 14 }, true)
       rb.setLinvel({ x: 0, y: 0, z: 0 }, true)
     }
 
@@ -562,6 +586,8 @@ function PlayerController() {
     if (lockedNow && lmbHeld.current) {
       if (editSessionRef.current) {
         paintSelectTile()
+      } else if (combatModeRef.current === 'harvest') {
+        tryPickaxe()
       } else if (now - lastTurboAt.current >= TURBO_BUILD_MS) {
         if (attemptPlace()) lastTurboAt.current = now
         else lastTurboAt.current = now
@@ -589,29 +615,48 @@ function PlayerController() {
         lastAimedId.current = nextId
         setAimedPieceId(nextId)
       }
-      if (rmbHeld.current) tryPickaxe()
     } else if (lastAimedId.current !== null) {
       lastAimedId.current = null
       setAimedPieceId(null)
     }
 
+    pickaxeSwing.current = Math.max(0, pickaxeSwing.current - 0.085)
+    const swinging = pickaxeSwing.current > 0.08
+    const harvesting = combatModeRef.current === 'harvest'
+    const inHands = lockedNow && !editSessionRef.current
+
     const axe = pickaxeGroup.current
     if (axe) {
       if (axe.parent !== camera) camera.add(axe)
-      axe.visible = lockedNow && !editSessionRef.current
-      pickaxeSwing.current = Math.max(0, pickaxeSwing.current - 0.085)
+      axe.visible = inHands && (harvesting || swinging)
       const s = pickaxeSwing.current
       axe.rotation.set(-0.18 - s * 1.15, 0.22, 0.42 + s * 0.85)
       axe.position.set(0.32, -0.28 - s * 0.1, -0.48)
     }
+    const held = heldGroup.current
+    if (held) {
+      if (held.parent !== camera) camera.add(held)
+      held.visible = inHands && !harvesting && !swinging
+      held.rotation.set(-0.1, 0.52, 0.06)
+      held.position.set(0.48, -0.4, -0.82)
+    }
   })
+
+  useEffect(() => {
+    return () => {
+      const axe = pickaxeGroup.current
+      const held = heldGroup.current
+      if (axe?.parent) axe.parent.remove(axe)
+      if (held?.parent) held.parent.remove(held)
+    }
+  }, [])
 
   return (
     <>
       <RigidBody
         ref={body}
         colliders={false}
-        position={[0, 3, 12]}
+        position={[2, 3, 14]}
         enabledRotations={[false, false, false]}
         linearDamping={0.02}
         friction={0}
@@ -621,12 +666,12 @@ function PlayerController() {
       >
         <CapsuleCollider args={[0.48, 0.28]} position={[0, 0.9, 0]} friction={0} restitution={0} />
       </RigidBody>
-      <group ref={pickaxeGroup} visible={locked && !editSession}>
-        <mesh position={[0, -0.08, 0]} rotation={[0.35, 0.1, 0.15]} castShadow>
+      <group ref={pickaxeGroup} visible={false}>
+        <mesh position={[0, -0.08, 0]} rotation={[0.35, 0.1, 0.15]}>
           <cylinderGeometry args={[0.016, 0.02, 0.52, 7]} />
           <meshStandardMaterial color="#3a2416" roughness={0.75} />
         </mesh>
-        <mesh position={[0.01, 0.2, 0.02]} rotation={[0.1, 0.2, 0.55]} castShadow>
+        <mesh position={[0.01, 0.2, 0.02]} rotation={[0.1, 0.2, 0.55]}>
           <boxGeometry args={[0.26, 0.07, 0.045]} />
           <meshStandardMaterial color="#9aa8b5" metalness={0.72} roughness={0.28} />
         </mesh>
@@ -635,7 +680,62 @@ function PlayerController() {
           <meshStandardMaterial color="#c5d0d8" metalness={0.65} roughness={0.32} />
         </mesh>
       </group>
+      <group ref={heldGroup} visible={locked && !editSession}>
+        <HeldPiece type={selectedPiece} mat={selectedMat} />
+      </group>
     </>
+  )
+}
+
+function HeldPiece({ type, mat }: { type: PieceType; mat: MatType }) {
+  const map = getMatTexture(mat)
+  const s = 0.105
+  return (
+    <group scale={[s, s, s]}>
+      {type === 'wall' && (
+        <group>
+          <mesh>
+            <boxGeometry args={[CELL * 0.72, CELL * 0.72, 0.12]} />
+            <meshStandardMaterial
+              map={map}
+              roughness={MAT_ROUGHNESS[mat]}
+              metalness={MAT_METALNESS[mat]}
+            />
+          </mesh>
+          <FrameRing w={CELL} h={CELL} thick={0.22} depth={0.2} z={0.02} mat={mat} />
+        </group>
+      )}
+      {type === 'floor' && (
+        <mesh rotation={[-0.4, 0.15, 0.05]}>
+          <boxGeometry args={[CELL, 0.16, CELL]} />
+          <meshStandardMaterial
+            map={map}
+            roughness={MAT_ROUGHNESS[mat]}
+            metalness={MAT_METALNESS[mat]}
+          />
+        </mesh>
+      )}
+      {type === 'ramp' && (
+        <mesh rotation={[-0.55, 0.2, 0.08]}>
+          <boxGeometry args={[CELL * 0.9, 0.16, CELL * 1.2]} />
+          <meshStandardMaterial
+            map={map}
+            roughness={MAT_ROUGHNESS[mat]}
+            metalness={MAT_METALNESS[mat]}
+          />
+        </mesh>
+      )}
+      {type === 'cone' && (
+        <mesh rotation={[0.15, 0.4, 0.05]}>
+          <coneGeometry args={[CONE_BASE_RADIUS * 0.85, CONE_HEIGHT, 4]} />
+          <meshStandardMaterial
+            map={map}
+            roughness={MAT_ROUGHNESS[mat]}
+            metalness={MAT_METALNESS[mat]}
+          />
+        </mesh>
+      )}
+    </group>
   )
 }
 
@@ -682,8 +782,8 @@ function MatSurface({
     )
   }
   const map = ghost ? null : getMatTexture(matType)
-  const ghostColor = ghostValid === false ? '#f87171' : '#7dd3fc'
-  const ghostEmissive = ghostValid === false ? '#ef4444' : '#38bdf8'
+  const ghostColor = ghostValid === false ? '#f87171' : '#62d0ff'
+  const ghostEmissive = ghostValid === false ? '#ef4444' : '#3ec4ff'
   return (
     <meshStandardMaterial
       map={map ?? undefined}
@@ -691,16 +791,152 @@ function MatSurface({
       transparent={!!ghost || !!color}
       opacity={ghost ? 0.5 : color ? 0.55 : 1}
       depthWrite={!ghost && !color}
-      roughness={ghost ? 0.45 : MAT_ROUGHNESS[matType]}
-      metalness={ghost ? 0.05 : MAT_METALNESS[matType]}
+      roughness={ghost ? 0.18 : MAT_ROUGHNESS[matType]}
+      metalness={ghost ? 0.08 : MAT_METALNESS[matType]}
       emissive={ghost ? ghostEmissive : color ? color : '#000000'}
-      emissiveIntensity={ghost ? 0.35 : color ? 0.25 : 0}
+      emissiveIntensity={ghost ? 1.15 : color ? 0.25 : 0}
     />
   )
 }
 
-function TrimMat() {
-  return <meshStandardMaterial color="#1c1610" roughness={0.62} metalness={0.22} />
+function HoloBar({
+  position,
+  args,
+}: {
+  position: [number, number, number]
+  args: [number, number, number]
+}) {
+  return (
+    <mesh position={position}>
+      <boxGeometry args={args} />
+      <meshBasicMaterial color="#e8fbff" transparent opacity={0.95} depthWrite={false} />
+    </mesh>
+  )
+}
+
+function HoloGrid({ type }: { type: PieceType }) {
+  if (type === 'wall') {
+    const z = CELL / 2 - 0.02
+    const tics = [-CELL / 3, CELL / 3]
+    const half = CELL * 0.49
+    return (
+      <group>
+        {tics.map((lx) => (
+          <HoloBar key={`v${lx}`} position={[lx, 0, z]} args={[0.04, CELL * 0.96, 0.025]} />
+        ))}
+        {tics.map((ly) => (
+          <HoloBar key={`h${ly}`} position={[0, ly, z]} args={[CELL * 0.96, 0.04, 0.025]} />
+        ))}
+        <HoloBar position={[-half, 0, z]} args={[0.06, CELL, 0.04]} />
+        <HoloBar position={[half, 0, z]} args={[0.06, CELL, 0.04]} />
+        <HoloBar position={[0, half, z]} args={[CELL, 0.06, 0.04]} />
+        <HoloBar position={[0, -half, z]} args={[CELL, 0.06, 0.04]} />
+      </group>
+    )
+  }
+  if (type === 'floor' || type === 'cone') {
+    const y = type === 'cone' ? CONE_HEIGHT * 0.02 : 0.1
+    const tics = [-CELL / 3, CELL / 3]
+    const half = CELL * 0.49
+    return (
+      <group>
+        {tics.map((lx) => (
+          <HoloBar key={`x${lx}`} position={[lx, y, 0]} args={[0.04, 0.025, CELL * 0.96]} />
+        ))}
+        {tics.map((lz) => (
+          <HoloBar key={`z${lz}`} position={[0, y, lz]} args={[CELL * 0.96, 0.025, 0.04]} />
+        ))}
+        <HoloBar position={[0, y, half]} args={[CELL, 0.03, 0.06]} />
+        <HoloBar position={[0, y, -half]} args={[CELL, 0.03, 0.06]} />
+        <HoloBar position={[half, y, 0]} args={[0.06, 0.03, CELL]} />
+        <HoloBar position={[-half, y, 0]} args={[0.06, 0.03, CELL]} />
+      </group>
+    )
+  }
+  const tics = [-CELL / 3, CELL / 3]
+  return (
+    <group rotation={[-Math.PI / 4, 0, 0]}>
+      {tics.map((lx) => (
+        <HoloBar key={`r${lx}`} position={[lx, 0.12, 0]} args={[0.04, 0.025, CELL * Math.SQRT2]} />
+      ))}
+      <HoloBar position={[-CELL * 0.48, 0.12, 0]} args={[0.06, 0.03, CELL * Math.SQRT2]} />
+      <HoloBar position={[CELL * 0.48, 0.12, 0]} args={[0.06, 0.03, CELL * Math.SQRT2]} />
+    </group>
+  )
+}
+
+let rampWedgeGeo: THREE.ExtrudeGeometry | null = null
+function getRampWedgeGeo() {
+  if (!rampWedgeGeo) {
+    const shape = new THREE.Shape()
+    shape.moveTo(0, 0)
+    shape.lineTo(CELL, 0)
+    shape.lineTo(CELL, CELL)
+    shape.closePath()
+    rampWedgeGeo = new THREE.ExtrudeGeometry(shape, { depth: CELL - 0.1, bevelEnabled: false, steps: 1 })
+    rampWedgeGeo.translate(-CELL / 2, -CELL / 2, -(CELL - 0.1) / 2)
+    rampWedgeGeo.rotateY(-Math.PI / 2)
+  }
+  return rampWedgeGeo
+}
+
+function RampWedge({
+  children,
+  castShadow,
+  receiveShadow,
+}: {
+  children: ReactNode
+  castShadow?: boolean
+  receiveShadow?: boolean
+}) {
+  return (
+    <mesh geometry={getRampWedgeGeo()} castShadow={castShadow} receiveShadow={receiveShadow}>
+      {children}
+    </mesh>
+  )
+}
+
+function TrimMat({ mat }: { mat: MatType }) {
+  return <meshStandardMaterial color={TRIM_HEX[mat]} roughness={0.68} metalness={mat === 'metal' ? 0.45 : 0.12} />
+}
+
+function FrameRing({
+  w,
+  h,
+  thick,
+  depth,
+  z,
+  mat,
+}: {
+  w: number
+  h: number
+  thick: number
+  depth: number
+  z: number
+  mat: MatType
+}) {
+  const hw = w / 2
+  const hh = h / 2
+  return (
+    <group>
+      <mesh position={[-hw + thick / 2, 0, z]}>
+        <boxGeometry args={[thick, h, depth]} />
+        <TrimMat mat={mat} />
+      </mesh>
+      <mesh position={[hw - thick / 2, 0, z]}>
+        <boxGeometry args={[thick, h, depth]} />
+        <TrimMat mat={mat} />
+      </mesh>
+      <mesh position={[0, hh - thick / 2, z]}>
+        <boxGeometry args={[w - thick * 2, thick, depth]} />
+        <TrimMat mat={mat} />
+      </mesh>
+      <mesh position={[0, -hh + thick / 2, z]}>
+        <boxGeometry args={[w - thick * 2, thick, depth]} />
+        <TrimMat mat={mat} />
+      </mesh>
+    </group>
+  )
 }
 
 /** Render only remaining edit tiles (doors / windows / half-stairs, etc.). */
@@ -731,6 +967,10 @@ function PieceMesh({
   const allPresent = tiles.every(Boolean)
   const phasing = !ghost && isPhasing(piece, now)
   const showTrim = !ghost && !phasing && !editPreview && allPresent
+  const pop =
+    ghost || !piece.placedAt || now == null
+      ? 1
+      : Math.min(1, 0.84 + Math.min(1, (now - piece.placedAt) / 140) * 0.16)
 
   const mat = (extra?: { color?: string }) => (
     <MatSurface
@@ -746,8 +986,39 @@ function PieceMesh({
     const tw = (CELL - 0.08) / 3
     const td = (CELL - 0.08) / 3
     const edge = CELL * 0.48
+    if (allPresent && !editPreview) {
+      return (
+        <group position={[x, y + 0.08, z]} scale={pop}>
+          <mesh castShadow={!ghost} receiveShadow={!ghost} position={[0, 0, 0]}>
+            <boxGeometry args={[CELL - 0.42, 0.14, CELL - 0.42]} />
+            {mat()}
+          </mesh>
+          {showTrim && (
+            <>
+              <mesh position={[0, 0.04, edge]}>
+                <boxGeometry args={[CELL * 0.98, 0.16, 0.22]} />
+                <TrimMat mat={matType} />
+              </mesh>
+              <mesh position={[0, 0.04, -edge]}>
+                <boxGeometry args={[CELL * 0.98, 0.16, 0.22]} />
+                <TrimMat mat={matType} />
+              </mesh>
+              <mesh position={[edge, 0.04, 0]}>
+                <boxGeometry args={[0.22, 0.16, CELL * 0.98]} />
+                <TrimMat mat={matType} />
+              </mesh>
+              <mesh position={[-edge, 0.04, 0]}>
+                <boxGeometry args={[0.22, 0.16, CELL * 0.98]} />
+                <TrimMat mat={matType} />
+              </mesh>
+            </>
+          )}
+          {ghost ? <HoloGrid type="floor" /> : null}
+        </group>
+      )
+    }
     return (
-      <group position={[x, y + 0.08, z]}>
+      <group position={[x, y + 0.08, z]} scale={pop}>
         {tiles.map((on, i) => {
           if (!on && !editPreview) return null
           const col = i % 3
@@ -768,10 +1039,22 @@ function PieceMesh({
         })}
         {showTrim && (
           <>
-            <mesh position={[0, 0.09, edge]}><boxGeometry args={[CELL * 0.98, 0.1, 0.1]} /><TrimMat /></mesh>
-            <mesh position={[0, 0.09, -edge]}><boxGeometry args={[CELL * 0.98, 0.1, 0.1]} /><TrimMat /></mesh>
-            <mesh position={[edge, 0.09, 0]}><boxGeometry args={[0.1, 0.1, CELL * 0.98]} /><TrimMat /></mesh>
-            <mesh position={[-edge, 0.09, 0]}><boxGeometry args={[0.1, 0.1, CELL * 0.98]} /><TrimMat /></mesh>
+            <mesh position={[0, 0.09, edge]}>
+              <boxGeometry args={[CELL * 0.98, 0.1, 0.1]} />
+              <TrimMat mat={matType} />
+            </mesh>
+            <mesh position={[0, 0.09, -edge]}>
+              <boxGeometry args={[CELL * 0.98, 0.1, 0.1]} />
+              <TrimMat mat={matType} />
+            </mesh>
+            <mesh position={[edge, 0.09, 0]}>
+              <boxGeometry args={[0.1, 0.1, CELL * 0.98]} />
+              <TrimMat mat={matType} />
+            </mesh>
+            <mesh position={[-edge, 0.09, 0]}>
+              <boxGeometry args={[0.1, 0.1, CELL * 0.98]} />
+              <TrimMat mat={matType} />
+            </mesh>
           </>
         )}
       </group>
@@ -782,9 +1065,25 @@ function PieceMesh({
     const offset = CELL / 2 - 0.08
     const tw = (CELL - 0.08) / 3
     const th = CELL / 3
-    const half = CELL * 0.46
+    if (allPresent && !editPreview) {
+      return (
+        <group position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]} scale={pop}>
+          <mesh castShadow={!ghost} receiveShadow={!ghost} position={[0, 0, offset - 0.02]}>
+            <boxGeometry args={[CELL - 0.52, CELL - 0.52, 0.14]} />
+            {mat()}
+          </mesh>
+          {showTrim && (
+            <>
+              <FrameRing w={CELL} h={CELL} thick={0.26} depth={0.28} z={offset} mat={matType} />
+              <FrameRing w={CELL - 0.58} h={CELL - 0.58} thick={0.1} depth={0.2} z={offset + 0.02} mat={matType} />
+            </>
+          )}
+          {ghost ? <HoloGrid type="wall" /> : null}
+        </group>
+      )
+    }
     return (
-      <group position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]}>
+      <group position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]} scale={pop}>
         {tiles.map((on, i) => {
           if (!on && !editPreview) return null
           const col = i % 3
@@ -804,34 +1103,53 @@ function PieceMesh({
           )
         })}
         {showTrim && (
-          <>
-            <mesh position={[-half, 0, offset]}><boxGeometry args={[0.14, CELL * 0.98, 0.2]} /><TrimMat /></mesh>
-            <mesh position={[half, 0, offset]}><boxGeometry args={[0.14, CELL * 0.98, 0.2]} /><TrimMat /></mesh>
-            <mesh position={[0, half, offset]}><boxGeometry args={[CELL * 0.98, 0.14, 0.2]} /><TrimMat /></mesh>
-            <mesh position={[0, -half, offset]}><boxGeometry args={[CELL * 0.98, 0.14, 0.2]} /><TrimMat /></mesh>
-          </>
+          <FrameRing w={CELL} h={CELL} thick={0.2} depth={0.22} z={offset} mat={matType} />
         )}
       </group>
     )
   }
 
   if (t === 'ramp') {
-    const stripW = (CELL - 0.08) / 3
     const railX = CELL * 0.46
+    if (allPresent && !editPreview) {
+      return (
+        <group position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]} scale={pop}>
+          <RampWedge castShadow={!ghost} receiveShadow={!ghost}>
+            {mat()}
+          </RampWedge>
+          {showTrim && (
+            <>
+              <mesh position={[-railX, 0, 0]} rotation={[-Math.PI / 4, 0, 0]}>
+                <boxGeometry args={[0.18, 0.22, CELL * Math.SQRT2]} />
+                <TrimMat mat={matType} />
+              </mesh>
+              <mesh position={[railX, 0, 0]} rotation={[-Math.PI / 4, 0, 0]}>
+                <boxGeometry args={[0.18, 0.22, CELL * Math.SQRT2]} />
+                <TrimMat mat={matType} />
+              </mesh>
+            </>
+          )}
+          {ghost ? <HoloGrid type="ramp" /> : null}
+        </group>
+      )
+    }
     return (
-      <group position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]}>
+      <group position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]} scale={pop}>
         {tiles.map((on, i) => {
           if (!on && !editPreview) return null
-          const lx = (i - 1) * stripW
+          const col = i % 2
+          const row = Math.floor(i / 2)
+          const lx = (col === 0 ? -1 : 1) * (CELL * 0.24)
+          const lz = (row === 0 ? 1 : -1) * (CELL * 0.24)
           return (
             <mesh
               key={i}
               castShadow={!ghost && on}
               receiveShadow={!ghost && on}
-              position={[lx, 0, 0]}
+              position={[lx, lz * 0.5, lz]}
               rotation={[-Math.PI / 4, 0, 0]}
             >
-              <boxGeometry args={[stripW - 0.08, on ? 0.16 : 0.06, CELL * Math.SQRT2]} />
+              <boxGeometry args={[CELL * 0.46, on ? 0.16 : 0.06, CELL * 0.7]} />
               {mat(on ? undefined : { color: '#f87171' })}
             </mesh>
           )
@@ -840,11 +1158,11 @@ function PieceMesh({
           <>
             <mesh position={[-railX, 0, 0]} rotation={[-Math.PI / 4, 0, 0]}>
               <boxGeometry args={[0.14, 0.22, CELL * Math.SQRT2]} />
-              <TrimMat />
+              <TrimMat mat={matType} />
             </mesh>
             <mesh position={[railX, 0, 0]} rotation={[-Math.PI / 4, 0, 0]}>
               <boxGeometry args={[0.14, 0.22, CELL * Math.SQRT2]} />
-              <TrimMat />
+              <TrimMat mat={matType} />
             </mesh>
           </>
         )}
@@ -855,7 +1173,7 @@ function PieceMesh({
   // Cone / roof: squat square pyramid (wiki 5.12×5.12×1.92 — half wall height).
   if (allPresent && !editPreview) {
     return (
-      <group position={[x, y + CONE_HEIGHT / 2, z]}>
+      <group position={[x, y + CONE_HEIGHT / 2, z]} scale={pop}>
         <mesh castShadow={!ghost} receiveShadow={!ghost} rotation={[0, Math.PI / 4, 0]}>
           <coneGeometry args={[CONE_BASE_RADIUS * 0.92, CONE_HEIGHT, 4]} />
           {mat()}
@@ -863,9 +1181,10 @@ function PieceMesh({
         {showTrim && (
           <mesh position={[0, -CONE_HEIGHT / 2 + 0.06, 0]}>
             <boxGeometry args={[CELL * 0.96, 0.12, CELL * 0.96]} />
-            <TrimMat />
+            <TrimMat mat={matType} />
           </mesh>
         )}
+        {ghost ? <HoloGrid type="cone" /> : null}
       </group>
     )
   }
@@ -873,7 +1192,7 @@ function PieceMesh({
   const corner = CELL * 0.28
   const cornerR = CONE_BASE_RADIUS * 0.52
   return (
-    <group position={[x, y + CONE_HEIGHT / 2, z]}>
+    <group position={[x, y + CONE_HEIGHT / 2, z]} scale={pop}>
       {tiles.map((on, i) => {
         if (!on && !editPreview) return null
         const col = i % 2
@@ -906,6 +1225,13 @@ function PieceCollider({ piece }: { piece: BuildPiece }) {
   if (t === 'floor') {
     const tw = (CELL - 0.08) / 3
     const td = (CELL - 0.08) / 3
+    if (tiles.every(Boolean)) {
+      return (
+        <RigidBody type="fixed" colliders={false} position={[x, y + 0.08, z]}>
+          <CuboidCollider args={[(CELL - 0.05) / 2, 0.09, (CELL - 0.05) / 2]} friction={0.35} restitution={0} />
+        </RigidBody>
+      )
+    }
     return (
       <RigidBody type="fixed" colliders={false} position={[x, y + 0.08, z]}>
         {tiles.map((on, i) => {
@@ -927,6 +1253,13 @@ function PieceCollider({ piece }: { piece: BuildPiece }) {
     const offset = CELL / 2 - 0.08
     const tw = (CELL - 0.08) / 3
     const th = CELL / 3
+    if (tiles.every(Boolean)) {
+      return (
+        <RigidBody type="fixed" colliders={false} position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]}>
+          <CuboidCollider args={[(CELL - 0.1) / 2, CELL / 2, 0.09]} position={[0, 0, offset]} friction={0} restitution={0} />
+        </RigidBody>
+      )
+    }
     return (
       <RigidBody type="fixed" colliders={false} position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]}>
         {tiles.map((on, i) => {
@@ -945,22 +1278,36 @@ function PieceCollider({ piece }: { piece: BuildPiece }) {
     )
   }
   if (t === 'ramp') {
-    const stripW = (CELL - 0.08) / 3
     // Thick tilted wedge (not stair steps) — capsules wedge into step faces and sink.
-    // Shift collider along -normal so the walkable face matches the thin visual mesh.
+    // Shift collider along -normal so the walkable face matches the visual slope.
     const meshHalf = 0.1
     const sink = RAMP_COLLIDER_HALF_THICK - meshHalf
     const ny = Math.SQRT1_2
+    if (tiles.every(Boolean)) {
+      return (
+        <RigidBody type="fixed" colliders={false} position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]}>
+          <CuboidCollider
+            args={[(CELL - 0.08) / 2, RAMP_COLLIDER_HALF_THICK, (CELL * Math.SQRT2) / 2]}
+            position={[0, -sink * ny, sink * ny]}
+            rotation={[-Math.PI / 4, 0, 0]}
+            friction={0.45}
+            restitution={0}
+          />
+        </RigidBody>
+      )
+    }
     return (
       <RigidBody type="fixed" colliders={false} position={[x, y + CELL / 2, z]} rotation={[0, yaw, 0]}>
-        {tiles.map((on, strip) => {
+        {tiles.map((on, i) => {
           if (!on) return null
-          const lx = (strip - 1) * stripW
+          const col = i % 2
+          const row = Math.floor(i / 2)
+          const lx = (col === 0 ? -1 : 1) * (CELL * 0.24)
           return (
             <CuboidCollider
-              key={strip}
-              args={[(stripW + 0.06) / 2, RAMP_COLLIDER_HALF_THICK, (CELL * Math.SQRT2) / 2]}
-              position={[lx, -sink * ny, sink * ny]}
+              key={i}
+              args={[CELL * 0.24, RAMP_COLLIDER_HALF_THICK, (CELL * Math.SQRT2) / 4]}
+              position={[lx, -sink * ny, sink * ny + (row === 0 ? CELL * 0.18 : -CELL * 0.18)]}
               rotation={[-Math.PI / 4, 0, 0]}
               friction={0.45}
               restitution={0}
@@ -997,7 +1344,7 @@ function PieceCollider({ piece }: { piece: BuildPiece }) {
   )
 }
 
-/** Fortnite blue edit grid — select tiles to remove. */
+/** Fortnite blue edit grid — remaining tiles stay blue; clicked tiles are cut. */
 function EditGridOverlay({
   piece,
   baseTiles,
@@ -1012,6 +1359,8 @@ function EditGridOverlay({
   const { w, h } = editTileSize(piece.type)
   const isWall = piece.type === 'wall'
   const isRamp = piece.type === 'ramp'
+  const remaining = applyEditSelection(baseTiles, selected)
+  const valid = isValidEditTiles(piece.type, remaining)
 
   return (
     <group>
@@ -1020,8 +1369,14 @@ function EditGridOverlay({
         const c = editTileWorldCenter(piece, i)
         const isSel = selected[i]
         const isHover = hover === i
-        const color = isSel ? '#e0f2fe' : isHover ? '#7dd3fc' : '#38bdf8'
-        const opacity = isSel ? 0.92 : isHover ? 0.75 : 0.55
+        const color = isSel
+          ? '#082f49'
+          : !valid
+            ? '#f87171'
+            : isHover
+              ? '#7dd3fc'
+              : '#38bdf8'
+        const opacity = isSel ? 0.18 : isHover ? 0.82 : 0.7
         return (
           <mesh
             key={i}
@@ -1121,12 +1476,12 @@ function PlacementGhost() {
     rotOffsetRef,
     editSession,
     placementHintRef,
+    playerFeetRef,
   } = useSim()
   const group = useRef<THREE.Group>(null)
   const lastKey = useRef('')
   const lastOk = useRef(true)
   const look = useRef(new THREE.Vector3())
-  const playerBody = useRef({ x: 0, y: 0, z: 0 })
   const [ghost, setGhost] = useState<BuildPiece | null>(null)
   const [ghostOk, setGhostOk] = useState(true)
 
@@ -1140,15 +1495,15 @@ function PlacementGhost() {
 
     camera.getWorldDirection(look.current)
     const eye = { x: camera.position.x, y: camera.position.y, z: camera.position.z }
-    playerBody.current = { x: eye.x, y: eye.y - 1.55, z: eye.z }
-
+    const lookVec = { x: look.current.x, y: look.current.y, z: look.current.z }
     const result = resolvePlacement(
       selectedPieceRef.current,
       eye,
-      { x: look.current.x, y: look.current.y, z: look.current.z },
-      playerBody.current,
+      lookVec,
+      playerFeetRef.current,
       rotOffsetRef.current,
-      placementHintRef.current
+      placementHintRef.current,
+      resolveBuildAim(eye, lookVec, piecesRef.current)
     )
     const key = pieceKey(result.draft)
     const occupied = piecesRef.current.some((p) => pieceKey(p) === key)

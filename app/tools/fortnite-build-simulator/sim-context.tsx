@@ -1,12 +1,14 @@
 'use client'
 
 import { createContext, useContext, type MutableRefObject } from 'react'
-import type { BuildPiece, MatType, MatsState, PieceType, PlacementHint } from '@/lib/build-simulator'
+import type { BuildPiece, MatType, MatsState, PieceType, PlacementHint, Vec3 } from '@/lib/build-simulator'
+
+export type CombatMode = 'build' | 'harvest'
 
 /**
  * Fortnite edit session:
  * - baseTiles = material present when edit opened (or after reset)
- * - selected = tiles marked to REMOVE (blue → brighter when selected)
+ * - selected = tiles marked to REMOVE (blue remaining; dim = cut)
  */
 export type EditSession = {
   pieceId: string
@@ -25,6 +27,7 @@ export type SimApi = {
   mats: MatsState
   selectedPiece: PieceType
   selectedMat: MatType
+  combatMode: CombatMode
   infiniteMats: boolean
   locked: boolean
   rotOffset: number
@@ -35,6 +38,8 @@ export type SimApi = {
   stats: PracticeStats
   setSelectedPiece: (t: PieceType) => void
   setSelectedMat: (m: MatType) => void
+  setCombatMode: (m: CombatMode) => void
+  cycleMat: () => void
   setInfiniteMats: (v: boolean) => void
   setLocked: (v: boolean) => void
   rotatePiece: (dir?: 1 | -1) => void
@@ -50,7 +55,7 @@ export type SimApi = {
   /** Mark/unmark tile for removal (FN select). */
   setTileSelected: (index: number, selected: boolean) => void
   resetEditDraft: () => void
-  confirmEdit: () => void
+  confirmEdit: () => boolean
   cancelEdit: () => void
   resetArena: () => void
   refillMats: () => void
@@ -61,10 +66,12 @@ export type SimApi = {
   matsRef: MutableRefObject<MatsState>
   selectedPieceRef: MutableRefObject<PieceType>
   selectedMatRef: MutableRefObject<MatType>
+  combatModeRef: MutableRefObject<CombatMode>
   infiniteRef: MutableRefObject<boolean>
   rotOffsetRef: MutableRefObject<number>
   editSessionRef: MutableRefObject<EditSession | null>
   placementHintRef: MutableRefObject<PlacementHint>
+  playerFeetRef: MutableRefObject<Vec3>
 }
 
 export const SimContext = createContext<SimApi | null>(null)

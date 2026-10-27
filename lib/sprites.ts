@@ -30,7 +30,6 @@ export type SpriteEntry = {
 }
 
 type RawCatalog = {
-  source: string
   capturedAt: string
   note: string
   sprites: Array<{
@@ -47,7 +46,6 @@ type RawCatalog = {
 
 const payload = catalog as RawCatalog
 
-export const SPRITES_SOURCE = payload.source
 export const SPRITES_CAPTURED_AT = payload.capturedAt
 export const SPRITES_NOTE = payload.note
 
@@ -119,11 +117,11 @@ export const SPRITES_HOWTO = [
   },
   {
     title: `${SPRITE_COUNTS.total} icons, ${SPRITE_COUNTS.families} families`,
-    body: `Snapshot ${SPRITES_CAPTURED_AT} from the public fortnite.gg tracker. ${CURRENT_SEASON.shortLabel} Override still uses the Sprite loop; mastery does not carry into Treasure Hunters.`,
+    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. ${CURRENT_SEASON.shortLabel} Override still uses the Sprite loop; mastery does not carry into Treasure Hunters.`,
   },
   {
-    title: 'Art is hotlinked',
-    body: 'Icons stay on fortnite.gg’s CDN. We do not ship Epic pak files. If an image blanks, their host is down — the name is still in the catalog.',
+    title: 'Names stay even if art blanks',
+    body: 'We store every companion name and family here. Icons load from a remote host — if one blanks, the tile label still works. We do not ship Epic pak files.',
   },
 ]
 
@@ -136,7 +134,7 @@ export const SPRITES_FAQS = [
   {
     question: 'Is /sprites a PNG sprite-sheet dump?',
     answer:
-      'No. It is every companion portrait from the live Sprite tracker. Texture sheets from pak files are not hosted here.',
+      'No. It is every companion portrait in our Sprite catalog. Texture sheets from pak files are not hosted here.',
   },
   {
     question: 'How do I extract Sprites in Override?',
@@ -145,7 +143,7 @@ export const SPRITES_FAQS = [
   },
   {
     question: 'Where do the pictures come from?',
-    answer: `A ${SPRITES_CAPTURED_AT} snapshot of fortnite.gg/sprites. Images load from their CDN; names and families are stored here so the gallery still works if their HTML layout changes.`,
+    answer: `A ${SPRITES_CAPTURED_AT} companion catalog we maintain. Names and families are stored on FortniteTools; icons load remotely so the gallery stays light.`,
   },
 ]
 

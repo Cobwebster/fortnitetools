@@ -192,8 +192,14 @@ export const WEAPON_WIKI: Record<string, WeaponWikiEntry> = {
     vaultHistory:
       'v42.40 Loot Hack — Mythic melee from hacked chests (15 October 2026). Not a ranged gun; stats are melee encyclopedia values.',
   },
+  rebeccas_guns: {
+    vaultHistory:
+      'C7S4 Override dual-wield. This page is the SMG spray mode. Fortnitemares v42.30 (1 October 2026) logged a relative SMG damage buff and tighter spread.',
+    playstyle:
+      '12-round/s spray with an AR-like envelope — full body damage out to 50m, then a shallow drop. Dual-wield bloom still decides whether the sheet TTK lands.',
+  },
   tactical_pistol: {
-    vaultHistory: 'C7S4 Override floor-pool sidearm. With no SMG in the live pool, this is the default spray pocket gun.',
+    vaultHistory: 'C7S4 Override floor-pool sidearm. Spray pocket gun when you do not have Rebecca’s Guns or another SMG.',
   },
   ranger_pistol: {
     vaultHistory: 'C7S4 Override floor-pool sidearm. Hits harder per shot than Tactical; similar mag.',

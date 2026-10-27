@@ -51,7 +51,7 @@ export function TrackedStatsLeaderboards({
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           Wins, kills, Battle Pass level, and time among{' '}
           <strong className="font-semibold text-foreground">{snapshot.trackedCount}</strong> Epic
-          accounts we poll ourselves via Fortnite-API — not a scraped fortnite.gg board and not every
+          accounts we poll ourselves via Fortnite-API — not a scraped third-party board and not every
           player in the world. Add names to the seed list and re-poll to grow the sample.
         </p>
         <p className="mt-2 text-xs text-muted-foreground">

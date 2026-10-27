@@ -41,9 +41,9 @@ export const STATS_HUB_FAQS = [
       'Yes. Sign in, open account feedback, choose “Leaderboard — track my name,” and send your exact Epic display name plus platform. Public profiles only.',
   },
   {
-    question: 'Is this the same as fortnite.gg?',
+    question: 'Is this a scraped third-party ladder?',
     answer:
-      'No. We poll Fortnite-API for names we track ourselves. Mode/Creative tables use Epic’s Ecosystem CCU data. Nothing is scraped from third-party ladders.',
+      'No. We poll Fortnite-API for names we track ourselves. Mode/Creative tables use Epic’s Ecosystem CCU data.',
   },
   {
     question: 'Is this a global wins leaderboard?',

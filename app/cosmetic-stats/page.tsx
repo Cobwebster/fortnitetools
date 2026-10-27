@@ -36,15 +36,15 @@ export default async function CosmeticStatsPage() {
               <span className="text-foreground">Cosmetic Stats</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · Shop history boards
+              {CURRENT_SEASON.shortLabel} · Shop history + catalog mix
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Cosmetic Stats</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Outfit shop popularity from Fortnite-API history — most Item Shop appearances, longest
-              vaults, recent returns, and what’s live tonight. This is rotation frequency, not how
-              many players equip the skin in lobby.
+              Most Item Shop occurrences, longest vault wait, rarity / season / type mix, and what’s
+              live tonight — from Fortnite-API shop history. Rotation frequency, not lobby wear,
+              wishlists, or cup owner counts.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/tools/item-shop" className="text-primary hover:underline">

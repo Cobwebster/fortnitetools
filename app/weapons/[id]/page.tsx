@@ -10,6 +10,8 @@ import {
   formatMagSize,
 } from '@/lib/weapons-catalog'
 import { allWeaponIds, buildWeaponPage } from '@/lib/weapon-pages'
+import { WeaponCombatPanel } from '@/components/WeaponCombatPanel'
+import { getWeaponFalloff, headshotDamage } from '@/lib/weapon-combat'
 import { changeTone, formatChangeValue, formatDelta } from '@/lib/weapon-changes'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
@@ -31,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { weapon, description, live } = model
   return createMetadata({
     title: live
-      ? `${weapon.name} – Fortnite Stats, DPS & STK`
+      ? `${weapon.name} – Fortnite Stats, DPS & TTK`
       : `${weapon.name} – Fortnite Stats (Vaulted)`,
     description,
     path: `/weapons/${weapon.id}`,
@@ -39,16 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${weapon.name} fortnite`,
       `${weapon.name} stats`,
       `${weapon.name} dps`,
+      `${weapon.name} ttk`,
       `fortnite ${weapon.category.toLowerCase()}`,
       'fortnite weapon stats',
       live ? 'fortnite override weapons' : 'vaulted fortnite weapons',
     ],
   })
-}
-
-function formatSeconds(n: number) {
-  if (n <= 0) return '0s'
-  return `${n.toFixed(2)}s`
 }
 
 export default async function WeaponDetailPage({ params }: Props) {
@@ -64,13 +62,14 @@ export default async function WeaponDetailPage({ params }: Props) {
     categoryLabel,
     intro,
     bullets,
-    stk,
     hsMult,
     changes,
     related,
     faqs,
     guides,
   } = model
+
+  const falloffPack = getWeaponFalloff(weapon.id)
 
   return (
     <>
@@ -205,6 +204,7 @@ export default async function WeaponDetailPage({ params }: Props) {
                     <th className="px-4 py-2.5 font-semibold">Rarity</th>
                     <th className="px-3 py-2.5 font-semibold text-right">DPS</th>
                     <th className="px-3 py-2.5 font-semibold text-right">Dmg</th>
+                    <th className="px-3 py-2.5 font-semibold text-right">Head</th>
                     <th className="px-3 py-2.5 font-semibold text-right">Struct</th>
                     <th className="px-3 py-2.5 font-semibold text-right">Fire Rate</th>
                     <th className="px-3 py-2.5 font-semibold text-right">Mag</th>
@@ -231,6 +231,17 @@ export default async function WeaponDetailPage({ params }: Props) {
                       </td>
                       <td className="px-3 py-2.5 text-right tabular-nums text-foreground">{v.dmg}</td>
                       <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
+                        {hsMult
+                          ? headshotDamage(
+                              v.dmg,
+                              hsMult,
+                              falloffPack?.curveFor(v.rarity, v.dmg).cap
+                            )
+                              .toFixed(1)
+                              .replace(/\.0$/, '')
+                          : '—'}
+                      </td>
+                      <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
                         {v.structDmg}
                       </td>
                       <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
@@ -249,69 +260,7 @@ export default async function WeaponDetailPage({ params }: Props) {
             </div>
           </section>
 
-          <section className="space-y-3">
-            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Shots to kill
-            </h2>
-            <p className="max-w-3xl text-sm text-muted-foreground">
-              {top.rarity} body shots, no falloff. Time-to-kill is the gap between shots at this
-              fire rate (0s if the gun one-taps).
-              {hsMult
-                ? ` Headshots use the live Override ${hsMult}× multiplier.`
-                : ' Headshot columns only appear when we have a live-pool multiplier for this gun.'}
-            </p>
-            <div className="overflow-x-auto rounded-xl border border-border bg-card">
-              <table className="w-full min-w-[480px] text-sm">
-                <thead>
-                  <tr className="border-b border-border bg-muted/30 text-left text-[10px] font-bold uppercase tracking-wider text-foreground">
-                    <th className="px-4 py-2.5 font-semibold">HP</th>
-                    <th className="px-3 py-2.5 font-semibold text-right">Body STK</th>
-                    <th className="px-3 py-2.5 font-semibold text-right">Body TTK</th>
-                    {hsMult ? (
-                      <>
-                        <th className="px-3 py-2.5 font-semibold text-right">HS STK</th>
-                        <th className="px-3 py-2.5 font-semibold text-right">HS TTK</th>
-                      </>
-                    ) : null}
-                    <th className="px-4 py-2.5 font-semibold text-right">Mag OK?</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {stk.map((row) => (
-                    <tr key={row.hp} className="border-b border-border/60 last:border-0">
-                      <td className="px-4 py-2.5 font-semibold text-foreground">{row.hp}</td>
-                      <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
-                        {row.bodyShots}
-                      </td>
-                      <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
-                        {formatSeconds(row.bodyTtk)}
-                      </td>
-                      {hsMult ? (
-                        <>
-                          <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
-                            {row.headShots}
-                          </td>
-                          <td className="px-3 py-2.5 text-right tabular-nums text-foreground">
-                            {formatSeconds(row.headTtk ?? 0)}
-                          </td>
-                        </>
-                      ) : null}
-                      <td className="px-4 py-2.5 text-right text-foreground">
-                        {row.magCanKill ? 'Yes' : 'Reload'}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Run custom HP in the{' '}
-              <Link href="/tools/weapon-damage-calculator" className="text-primary hover:underline">
-                weapon damage calculator
-              </Link>
-              .
-            </p>
-          </section>
+          <WeaponCombatPanel weapon={weapon} initialRarity={top.rarity} />
 
           {wiki && (wiki.firstAdded || wiki.vaultHistory) ? (
             <section className="space-y-3">
@@ -377,7 +326,7 @@ export default async function WeaponDetailPage({ params }: Props) {
                                     : 'text-foreground'
                               return (
                                 <tr
-                                  key={`${entry.rarity}-${stat.stat}-${stat.old}-${stat.new}`}
+                                  key={`${entry.name}-${entry.rarity}-${stat.stat}-${stat.old}-${stat.new}`}
                                   className="border-b border-border/40 last:border-0"
                                 >
                                   <td className="px-4 py-2">

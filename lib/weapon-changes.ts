@@ -109,7 +109,10 @@ export function getWeaponChangeHistory(weaponName: string): WeaponChangeHit[] {
   const key = normalizeName(weaponName)
   const hits: WeaponChangeHit[] = []
   for (const patch of WEAPON_CHANGE_PATCHES) {
-    const entries = patch.entries.filter((e) => normalizeName(e.name) === key)
+    const entries = patch.entries.filter((e) => {
+      const n = normalizeName(e.name)
+      return n === key || n.startsWith(`${key} `)
+    })
     if (entries.length) hits.push({ date: patch.date, label: patch.label, entries })
   }
   return hits

@@ -23,7 +23,7 @@ export type RotationMode = {
 }
 
 /**
- * Curated from community trackers (fortnite.gg / lobby timers).
+ * Curated from community lobby timers / map schedules.
  * Epic does not publish a public rotation API — update this when the live pool changes.
  */
 export const ROTATION_MODES: RotationMode[] = [

@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'Does every Fortnite weapon have its own page?',
-    a: `Yes. Open any card for rarity tables, shots-to-kill vs 100/150/200, loot-pool status, and patch history when we have it — ${WEAPON_CATALOG.length} URLs under /weapons.`,
+    a: `Yes. Open any card for rarity tables, time-to-kill vs 100/150/200/250, damage-by-distance (logged curves or a flat hipfire line), loot-pool status, and patch history when we have it — ${WEAPON_CATALOG.length} URLs under /weapons.`,
   },
   {
     q: 'How is DPS calculated?',
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: 'Where can I test shots-to-kill?',
-    a: 'Use the Weapon Damage Calculator for TTK against 100/150/200 HP targets, or open a weapon page for the same math at the planning rarity.',
+    a: 'Open a weapon page for TTK vs 100/150/200/250 (body and head) that updates with the distance slider. Custom HP is still on the Weapon Damage Calculator.',
   },
 ]
 
@@ -100,7 +100,7 @@ export default function WeaponsPage() {
               Heavy AR, Wood Stake, Dual Fiend Hunters, Mega Buster. Midas’ Masterpiece and Drum Gun
               are vaulted. Compare any two guns; toggle vaulted history when you want older loot.
               Gatekeeper / Hunting Rifle / Finger Guns still need Loot Hack.
-              Click a gun name for its own page (STK, first-added when we know it, patch history).
+              Click a gun name for its own page (TTK, damage by distance, first-added when we know it, patch history).
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{liveCount}</strong> current ·{' '}

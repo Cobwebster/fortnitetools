@@ -142,7 +142,22 @@ export const WEAPONS: WeaponStat[] = [
     note: 'Break-action · often Loot Hack',
   },
 
-  // ── Pistols / sidearms (no floor SMG this season) ─────────────────────
+  // ── SMGs ─────────────────────────────────────────────────────────────
+  {
+    id: 'rebeccas_guns',
+    name: "Rebecca's Guns",
+    category: 'SMG',
+    rarity: 'Legendary',
+    dmg: 10,
+    hs: 1.5,
+    fireRate: 12,
+    mag: 40,
+    reload: 1.44,
+    image: '/images/loadout/flex_smg.png',
+    note: 'Dual-wield AR/SMG — SMG spray mode',
+  },
+
+  // ── Pistols / sidearms ──────────────────────────────────────────────
   {
     id: 'tactical_pistol',
     name: 'Tactical Pistol',

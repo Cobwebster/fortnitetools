@@ -14,6 +14,7 @@ import {
   PIECE_KEYS,
   PIECE_LABELS,
   canAfford,
+  nextMat,
   pieceHpNow,
   pieceMaxHp,
   pieceKey,
@@ -24,21 +25,24 @@ import {
   type MatsState,
   type PieceType,
   type PlacementHint,
+  type Vec3,
 } from '@/lib/build-simulator'
+import { sfxBreak, sfxEdit, sfxPlace, sfxReset, sfxSwing } from './build-audio'
 import {
   applyEditSelection,
   cloneTiles,
   emptySelection,
   fullEditTiles,
   hasAnyTile,
+  isValidEditTiles,
   withDefaultTiles,
 } from '@/lib/build-edits'
-import { SimContext, useSim, type EditSession, type PracticeStats, type SimApi } from './sim-context'
+import { SimContext, useSim, type CombatMode, type EditSession, type PracticeStats, type SimApi } from './sim-context'
 
 const BuildCanvas = dynamic(() => import('./build-canvas').then((m) => m.BuildCanvas), {
   ssr: false,
   loading: () => (
-    <div className="flex h-full min-h-[480px] items-center justify-center bg-[#6fa8d4] text-sm text-white/80">
+    <div className="flex h-full min-h-[480px] items-center justify-center bg-[#5ea3d6] text-sm text-white/80">
       Loading 3D arena…
     </div>
   ),
@@ -46,11 +50,43 @@ const BuildCanvas = dynamic(() => import('./build-canvas').then((m) => m.BuildCa
 
 const EMPTY_STATS: PracticeStats = { placed: 0, edited: 0, broken: 0 }
 
+/** 1×1 wood box + ramp in front of spawn so the island doesn’t load as empty grass. */
+function warmupBox(): BuildPiece[] {
+  const placedAt = 1
+  const mat: MatType = 'wood'
+  const cell = { cx: 0, cy: 0, cz: 1 }
+  const piece = (
+    type: PieceType,
+    rot: 0 | 1 | 2 | 3,
+    extra: Partial<BuildPiece> = {}
+  ): BuildPiece => {
+    const draft = { type, rot, cx: extra.cx ?? cell.cx, cy: extra.cy ?? cell.cy, cz: extra.cz ?? cell.cz }
+    return {
+      ...draft,
+      id: pieceKey(draft),
+      mat,
+      tiles: fullEditTiles(type),
+      placedAt,
+      damage: 0,
+    }
+  }
+  return [
+    piece('floor', 0),
+    piece('wall', 0),
+    piece('wall', 1),
+    piece('wall', 2),
+    piece('wall', 3),
+    piece('cone', 0, { cy: 1 }),
+    piece('ramp', 2, { cz: 2 }),
+  ]
+}
+
 export function BuildSimulatorClient() {
-  const [pieces, setPieces] = useState<BuildPiece[]>([])
+  const [pieces, setPieces] = useState<BuildPiece[]>(warmupBox)
   const [mats, setMats] = useState<MatsState>({ ...DEFAULT_MATS })
   const [selectedPiece, setSelectedPiece] = useState<PieceType>('wall')
   const [selectedMat, setSelectedMat] = useState<MatType>('wood')
+  const [combatMode, setCombatMode] = useState<CombatMode>('build')
   /** Training default: infinite mats so mechanics practice isn't interrupted. */
   const [infiniteMats, setInfiniteMats] = useState(true)
   const [locked, setLocked] = useState(false)
@@ -66,14 +102,17 @@ export function BuildSimulatorClient() {
   const matsRef = useRef(mats)
   const selectedPieceRef = useRef(selectedPiece)
   const selectedMatRef = useRef(selectedMat)
+  const combatModeRef = useRef(combatMode)
   const infiniteRef = useRef(infiniteMats)
   const rotOffsetRef = useRef(rotOffset)
   const editSessionRef = useRef(editSession)
   const placementHintRef = useRef<PlacementHint>({ strafe: 0, forward: 0, airborne: false })
+  const playerFeetRef = useRef<Vec3>({ x: 2, y: 0, z: 14 })
   piecesRef.current = pieces
   matsRef.current = mats
   selectedPieceRef.current = selectedPiece
   selectedMatRef.current = selectedMat
+  combatModeRef.current = combatMode
   infiniteRef.current = infiniteMats
   rotOffsetRef.current = rotOffset
   editSessionRef.current = editSession
@@ -103,6 +142,7 @@ export function BuildSimulatorClient() {
   }, [])
 
   const resetEditDraft = useCallback(() => {
+    sfxReset()
     setEditSession((prev) => {
       if (!prev) return prev
       const piece = piecesRef.current.find((p) => p.id === prev.pieceId)
@@ -117,23 +157,28 @@ export function BuildSimulatorClient() {
 
   const confirmEdit = useCallback(() => {
     const session = editSessionRef.current
-    if (!session) return
+    if (!session) return false
+    const piece = piecesRef.current.find((p) => p.id === session.pieceId)
     const tiles = applyEditSelection(session.baseTiles, session.selected)
+    if (piece && !isValidEditTiles(piece.type, tiles)) return false
     if (!hasAnyTile(tiles)) {
       setPieces((prev) => {
         const next = prev.filter((p) => p.id !== session.pieceId)
         const supported = supportedPieceKeys(next)
         return next.filter((p) => supported.has(pieceKey(p)))
       })
+      sfxBreak()
       setStats((s) => ({ ...s, broken: s.broken + 1, edited: s.edited + 1 }))
     } else {
       setPieces((prev) =>
         prev.map((p) => (p.id === session.pieceId ? { ...p, tiles: cloneTiles(tiles) } : p))
       )
+      sfxEdit()
       setStats((s) => ({ ...s, edited: s.edited + 1 }))
     }
     setEditSession(null)
     setHoverEditTile(-1)
+    return true
   }, [])
 
   const cancelEdit = useCallback(() => {
@@ -158,6 +203,7 @@ export function BuildSimulatorClient() {
     }
     setPieces((prev) => [...prev, next])
     setMats((prev) => spendMats(prev, mat, infinite))
+    sfxPlace(mat)
     setStats((s) => ({ ...s, placed: s.placed + 1 }))
     return true
   }, [])
@@ -175,7 +221,10 @@ export function BuildSimulatorClient() {
       const supported = supportedPieceKeys(next)
       return next.filter((p) => supported.has(pieceKey(p)))
     })
-    if (removed) setStats((s) => ({ ...s, broken: s.broken + 1 }))
+    if (removed) {
+      sfxBreak()
+      setStats((s) => ({ ...s, broken: s.broken + 1 }))
+    }
     return removed
   }, [])
 
@@ -193,12 +242,22 @@ export function BuildSimulatorClient() {
   }, [destroyPiece])
 
   const swingPickaxe = useCallback(() => {
+    sfxSwing()
     setPickaxeToken((n) => n + 1)
   }, [])
 
   const rotatePiece = useCallback((dir: 1 | -1 = 1) => {
     if (editSessionRef.current) return
     setRotOffset((r) => (r + dir + 4) % 4)
+  }, [])
+
+  const cycleMat = useCallback(() => {
+    setSelectedMat((m) => nextMat(m))
+  }, [])
+
+  const setCombatModeSafe = useCallback((m: CombatMode) => {
+    setCombatMode(m)
+    combatModeRef.current = m
   }, [])
 
   const resetArena = useCallback(() => {
@@ -223,6 +282,7 @@ export function BuildSimulatorClient() {
       mats,
       selectedPiece,
       selectedMat,
+      combatMode,
       infiniteMats,
       locked,
       rotOffset,
@@ -232,6 +292,8 @@ export function BuildSimulatorClient() {
       stats,
       setSelectedPiece,
       setSelectedMat,
+      setCombatMode: setCombatModeSafe,
+      cycleMat,
       setInfiniteMats,
       setLocked: setLockedSafe,
       rotatePiece,
@@ -256,16 +318,19 @@ export function BuildSimulatorClient() {
       matsRef,
       selectedPieceRef,
       selectedMatRef,
+      combatModeRef,
       infiniteRef,
       rotOffsetRef,
       editSessionRef,
       placementHintRef,
+      playerFeetRef,
     }),
     [
       pieces,
       mats,
       selectedPiece,
       selectedMat,
+      combatMode,
       infiniteMats,
       locked,
       rotOffset,
@@ -274,6 +339,8 @@ export function BuildSimulatorClient() {
       stats,
       setLockedSafe,
       rotatePiece,
+      cycleMat,
+      setCombatModeSafe,
       tryPlace,
       destroyPiece,
       damagePiece,
@@ -303,13 +370,7 @@ export function BuildSimulatorClient() {
 
       if (e.code === BUILD_BINDS.edit) {
         e.preventDefault()
-        // Hold G = enter / keep editing (edit-on-release confirms on keyup).
         window.dispatchEvent(new CustomEvent('buildsim-edit-down'))
-        return
-      }
-      if (e.code === BUILD_BINDS.editReset) {
-        e.preventDefault()
-        if (editSessionRef.current) resetEditDraft()
         return
       }
       if (e.code === 'Escape' && editSessionRef.current) {
@@ -342,9 +403,16 @@ export function BuildSimulatorClient() {
 
       if (editSessionRef.current) return
 
+      if (e.code === BUILD_BINDS.harvest || e.code === BUILD_BINDS.harvestAlt) {
+        e.preventDefault()
+        setCombatModeSafe('harvest')
+        return
+      }
+
       const placeBind = (piece: PieceType) => {
         selectedPieceRef.current = piece
         setSelectedPiece(piece)
+        setCombatModeSafe('build')
         window.dispatchEvent(new CustomEvent('buildsim-place-key', { detail: { piece } }))
       }
 
@@ -352,33 +420,22 @@ export function BuildSimulatorClient() {
       else if (e.code === BUILD_BINDS.floor) placeBind('floor')
       else if (e.code === BUILD_BINDS.ramp) placeBind('ramp')
       else if (e.code === BUILD_BINDS.cone) placeBind('cone')
-      else if (e.code === BUILD_BINDS.matWood) setSelectedMat('wood')
-      else if (e.code === BUILD_BINDS.matBrick) setSelectedMat('brick')
-      else if (e.code === BUILD_BINDS.matMetal) setSelectedMat('metal')
       else if (e.code === BUILD_BINDS.rotate) {
         e.preventDefault()
         rotatePiece(1)
       }
     }
-    const onKeyUp = (e: KeyboardEvent) => {
-      if (e.code === BUILD_BINDS.edit) {
-        e.preventDefault()
-        window.dispatchEvent(new CustomEvent('buildsim-edit-up'))
-      }
-    }
     window.addEventListener('keydown', onKeyDown, { passive: false })
-    window.addEventListener('keyup', onKeyUp, { passive: false })
     return () => {
       window.removeEventListener('keydown', onKeyDown)
-      window.removeEventListener('keyup', onKeyUp)
     }
-  }, [rotatePiece, resetEditDraft, cancelEdit, requestRespawn, refillMats, resetArena])
+  }, [rotatePiece, cancelEdit, requestRespawn, refillMats, resetArena, setCombatModeSafe])
 
   return (
     <SimContext.Provider value={api}>
       <div
         data-build-sim
-        className="relative overflow-hidden overscroll-none rounded-xl border border-border bg-[#6fa8d4]"
+        className="relative overflow-hidden overscroll-none rounded-xl border border-border bg-[#5ea3d6]"
       >
         <div className="relative h-[min(72vh,720px)] min-h-[480px] w-full">
           <BuildCanvas />
@@ -453,6 +510,7 @@ function BuildHud() {
     aimedPieceId,
     setSelectedPiece,
     setSelectedMat,
+    setCombatMode,
     setInfiniteMats,
     resetArena,
     refillMats,
@@ -476,7 +534,7 @@ function BuildHud() {
       {!locked && (
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
           <p className="rounded-lg bg-black/75 px-4 py-2 text-sm font-medium text-white shadow-lg">
-            Click arena to lock mouse — hold click to turbo-build · RMB pickaxe · G edit
+            Click arena to lock mouse — Z/X/C/V build · F pickaxe · G edit
           </p>
         </div>
       )}
@@ -485,7 +543,7 @@ function BuildHud() {
         <div className="pointer-events-none absolute left-1/2 top-14 z-20 -translate-x-1/2 rounded-lg border border-sky-400/50 bg-black/80 px-3 py-2 text-center text-xs text-white shadow-lg">
           <p className="font-bold uppercase tracking-wide text-sky-300">Edit mode</p>
           <p className="mt-0.5 text-white/75">
-            Select blue tiles to remove · release G to confirm · T reset · Esc cancel
+            Blue stays · click to cut · G confirm · RMB reset · Esc cancel
           </p>
           <div className="pointer-events-auto mt-2 flex justify-center gap-2">
             <button
@@ -500,7 +558,7 @@ function BuildHud() {
               onClick={resetEditDraft}
               className="rounded border border-white/25 bg-white/10 px-2 py-1 text-[10px] font-semibold text-white/85"
             >
-              Reset (T)
+              Reset (RMB)
             </button>
             <button
               type="button"
@@ -646,10 +704,13 @@ function BuildHud() {
               <button
                 key={p}
                 type="button"
-                onClick={() => setSelectedPiece(p)}
+                onClick={() => {
+                  setCombatMode('build')
+                  setSelectedPiece(p)
+                }}
                 className={`pointer-events-auto flex w-[4.4rem] flex-col items-center rounded-sm border px-1 py-1.5 ${
                   active
-                    ? 'border-white bg-white/15 shadow-[0_0_0_1px_rgba(255,255,255,0.35)]'
+                    ? 'border-sky-300 bg-sky-400/20 shadow-[0_0_14px_rgba(56,189,248,0.45)]'
                     : 'border-white/10 bg-black/40 hover:bg-black/60'
                 }`}
               >
@@ -664,7 +725,12 @@ function BuildHud() {
       </div>
 
       {locked && (
-        <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.6)]" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute left-1/2 top-1/2 h-[7px] w-[2px] -translate-x-1/2 -translate-y-[11px] bg-white/95 shadow-[0_0_0_1px_rgba(0,0,0,0.55)]" />
+          <div className="absolute left-1/2 top-1/2 h-[7px] w-[2px] -translate-x-1/2 translate-y-[4px] bg-white/95 shadow-[0_0_0_1px_rgba(0,0,0,0.55)]" />
+          <div className="absolute left-1/2 top-1/2 h-[2px] w-[7px] -translate-x-[11px] -translate-y-1/2 bg-white/95 shadow-[0_0_0_1px_rgba(0,0,0,0.55)]" />
+          <div className="absolute left-1/2 top-1/2 h-[2px] w-[7px] translate-x-[4px] -translate-y-1/2 bg-white/95 shadow-[0_0_0_1px_rgba(0,0,0,0.55)]" />
+        </div>
       )}
     </>
   )

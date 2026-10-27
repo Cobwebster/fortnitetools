@@ -13,12 +13,12 @@ export const BUILD_SIM_FAQS = [
   {
     question: 'What are the controls?',
     answer:
-      'Click the arena to lock the mouse. Hold left click to turbo-build. Q, F, C, and V select and place wall, floor, ramp, and cone. Right-click breaks the piece under your crosshair; unsupported builds cascade. Hold G to edit (blue tile grid — select tiles to remove, release G to confirm). T resets edit; Esc cancels. WASD move, Shift sprint, Ctrl crouch, Space jump. 1/2/3 mats; R or wheel rotates. Blue hologram = can place; red = cannot.',
+      'Click the arena to lock the mouse. Standard PC binds: Z wall, X floor, C stairs, V roof, then hold left click to turbo-build. F or 1 pulls the pickaxe (left click to swing). Right-click cycles wood/stone/metal in build mode and resets an edit. Tap G to edit, left-click tiles to cut them (blue tiles stay), tap G to confirm — leftover tiles must stay connected. R rotates. WASD move, Shift sprint, Ctrl crouch, Space jump. Blue hologram = can place; red = cannot.',
   },
   {
     question: 'Can you edit builds like in Fortnite?',
     answer:
-      'Yes. Hold G on your piece to enter edit mode — it turns into a blue tile grid. Click or drag to select tiles to remove, then release G to confirm (edit-on-release). T resets to a full piece; Esc cancels. Walls and floors are 3×3, cones 2×2, ramps L/M/R. Edits are free; selecting every tile destroys the piece.',
+      'Yes. Tap G on a piece you built — it becomes a blue tile grid. Left-click tiles to cut them (blue tiles stay). Tap G again to confirm. Right-click resets the edit; Esc cancels. Invalid leftover shapes (scattered tiles, or a one-tile stair) turn red and will not confirm. Walls and floors are 3×3, pyramids and stairs are 2×2 (full / half / L / U stairs). Cutting every tile destroys the piece.',
   },
   {
     question: 'Is the Fortnite Build Simulator free?',
@@ -54,21 +54,21 @@ export const BUILD_SIM_SEO_SECTIONS: BuildSimSeoSection[] = [
   {
     heading: 'Turbo-build, mats, and placement rules',
     paragraphs: [
-      'Hold left click to turbo-build while you look around — the same spam rhythm that matters for 90s, retakes, and box fights. Press Q, F, C, or V to select a piece and place it immediately. Wood, stone, and metal cost 10 materials per piece with a 500 cap (toggle infinite mats when you only care about mechanics).',
+      'Hold left click to turbo-build while you look around — the same spam rhythm that matters for 90s, retakes, and box fights. Standard binds are Z, X, C, and V for wall, floor, stairs, and roof. Wood, stone, and metal cost 10 materials per piece with a 500 cap (right-click cycles material; toggle infinite mats when you only care about mechanics).',
       'Placement follows Fortnite-style constraints so practice transfers better: about three tiles of build range, grid snap, a blue/red hologram for valid vs blocked spots, and support rules so floating air builds do not stick. Look up to place higher walls and ceilings; look down for floors under your feet.',
     ],
     bullets: [
       'Blue hologram = in range, affordable, and supported by ground or connected builds',
       'Red hologram = blocked slot, out of range, no mats, or would float unsupported',
-      'R or mouse wheel rotates the piece 90° before you place',
-      'Right-click breaks the aimed piece; unsupported structures cascade away',
+      'R rotates the piece 90°; mouse wheel cycles wall / floor / stairs / roof',
+      'F or 1 for pickaxe, then left-click to swing; unsupported structures cascade when a piece breaks',
     ],
   },
   {
     heading: 'Edit walls, floors, ramps, and cones',
     paragraphs: [
-      'Editing is a core Fortnite skill — doors, windows, half ramps, and cone corners win piece-control fights. Aim at a piece you built, press G, then drag across the edit grid to paint tiles. Confirm with G, reset to a full piece with T, or cancel with Esc.',
-      'Walls and floors use a real 3×3 edit grid. Cones use a 2×2 corner grid like pyramids/roofs in-game. Ramps expose left, middle, and right strips so you can train common half-stair edits. Edits are free; clearing every tile removes the piece, matching empty-edit behavior in Battle Royale.',
+      'Editing is a core Fortnite skill — doors, windows, half stairs, and cone corners win piece-control fights. Aim at a piece you built, tap G, then drag across the blue grid to cut tiles. Tap G again to confirm, right-click to reset, or Esc to cancel. Leftover tiles must stay connected or the grid turns red and will not confirm.',
+      'Walls and floors use a 3×3 grid. Pyramids use a 2×2 corner grid. Stairs use the same 2×2 for full, half, L (quarter-turn), and U (half-turn) edits — not three strips. Edits are free; clearing every tile removes the piece.',
     ],
   },
   {
