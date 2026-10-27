@@ -470,7 +470,7 @@ export const SPAWN_LAYER_COLOR: Record<SpawnLayerId, string> = {
 
 /** Real Fortnite item / UI icons for map pins + sidebar (not colored dots). */
 export const SPAWN_LAYER_ICON: Record<SpawnLayerId, string> = {
-  npcs: '/images/guides/select-character.png',
+  npcs: '/images/guides/select-character.webp',
   extraction_sites: '/images/loadout/pulse_scanner.png',
   batmobile: '/images/loadout/batman_grapnel.png',
   vaults: '/images/loadout/mat_metal.png',

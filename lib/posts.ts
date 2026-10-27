@@ -57,7 +57,7 @@ export const posts: Post[] = [
     excerpt:
       'Epic named Treasure Hunters on 24 Oct 2026 with “11.1”, then posted a Fortnite × One Piece teaser. Override’s Battle Pass still ends 1 November 2026 ET. No hour, no island sheet, no shop list.',
     category: 'season',
-    image: '/images/guides/override-ready.png',
+    image: '/images/guides/override-ready.webp',
     date: '2026-10-26',
     readTime: 8,
     featured: true,
@@ -148,7 +148,7 @@ Unclaimed tiers do not. Claimed-but-unopened rewards are a different Epic suppor
     excerpt:
       'What actually shipped on 15 October 2026: new Loot Hacks, Midas and Witch Broom vaults, Sweeper fire-rate bump, Honey / One Wish Willow Sprites, Like-for-Like pickups, and a last-week checklist before November 1.',
     category: 'season',
-    image: '/images/guides/horror-here.jpg',
+    image: '/images/guides/horror-here.webp',
     date: '2026-10-24',
     readTime: 11,
     featured: true,
@@ -252,7 +252,7 @@ Not in this patch. Vault means vault. We will un-hide it on the weapons page if 
     excerpt:
       'Jimothy is a free Fortnitemares raccoon Sidekick. Find any Dumpster Dive Sprite, extract it at a physical Extraction Site, then grab him in the Locker before 31 October 2026.',
     category: 'how-to',
-    image: '/images/guides/jimothy.png',
+    image: '/images/guides/jimothy.webp',
     date: '2026-10-24',
     readTime: 7,
     featured: true,
@@ -347,7 +347,7 @@ Do the extract in a normal BR / Zero Build match where Fortnitemares Sprites and
     excerpt:
       'How to open the Override Admin Panel, redeem Lobby Hack codes for XP / Sprite Dust / Sprites, and avoid V-Bucks scam sites. Reviewed 24 Oct 2026.',
     category: 'how-to',
-    image: '/images/guides/administrator.png',
+    image: '/images/guides/administrator.webp',
     date: '2026-09-21',
     readTime: 7,
     featured: true,
@@ -425,7 +425,7 @@ Epic patch notes, the official Fortnite blog / social posts, and in-game MOTDs. 
     excerpt:
       'Override Battle Pass end date (1 Nov 2026 ET), free vs paid track, Sonic / Gaming Legends notes, and a last-week XP plan before the season locks.',
     category: 'season',
-    image: '/images/guides/shapeless-ascendance.png',
+    image: '/images/guides/shapeless-ascendance.webp',
     date: '2026-10-24',
     readTime: 9,
     featured: true,
@@ -570,7 +570,7 @@ Not shipped yet — use the live map until we write it. Same for Stone Sanctum.
     excerpt:
       'How Override Consoles work after v42.40: claim race, server-wide vs squad buffs, which Fortnitemares cartridges remain, and the four combat Overrides that left on 15 October.',
     category: 'season',
-    image: '/images/guides/override-ready.png',
+    image: '/images/guides/override-ready.webp',
     date: '2026-10-24',
     readTime: 10,
     featured: false,
@@ -696,7 +696,7 @@ Epic toggles cartridges when they get too spicy (Extra Life, Speed Shooter, Powe
     excerpt:
       'Unlock the Null outfit and Skeletal Slingbag / Null’s Scythe styles (Champion Molten, Elite Neon, Unreal Rifted) on the Override Ranked ladder before 1 November 2026.',
     category: 'how-to',
-    image: '/images/guides/null.png',
+    image: '/images/guides/null.webp',
     date: '2026-10-24',
     readTime: 7,
     featured: false,
@@ -761,7 +761,7 @@ No — Null is the **Ranked** reward fantasy this season. Pass cosmetics (Sonic,
     excerpt:
       'Archive: late Runners meta on Shattered Coast. Override loot numbers are not fully rewritten — confirm in-game; see the season hub.',
     category: 'weapons',
-    image: '/images/guides/secret-weapon.png',
+    image: '/images/guides/secret-weapon.webp',
     date: '2026-07-25',
     readTime: 12,
     featured: false,
@@ -1068,7 +1068,7 @@ POI names and power spots shift with hotfixes and mid-season map updates. If Epi
     excerpt:
       'Archive: Runners Battle Pass cost, skin unlock levels, and XP plan. Override (C7S4) ends November 1, 2026 — use the live XP calculator for the current pass.',
     category: 'season',
-    image: '/images/guides/sprite-runners.png',
+    image: '/images/guides/sprite-runners.webp',
     date: '2026-07-10',
     readTime: 10,
     featured: false,
@@ -1129,7 +1129,7 @@ If you play a few times a week through August, the pass is usually worth it for 
     excerpt:
       'How Fortnite Ranked LP works, and climb strategies from Bronze through Champion.',
     category: 'how-to',
-    image: '/images/guides/beastly-bus.png',
+    image: '/images/guides/beastly-bus.webp',
     date: '2026-06-28',
     readTime: 11,
     featured: true,
@@ -1657,7 +1657,7 @@ No — it is a paid subscription that includes monthly V-Bucks and the Battle Pa
     excerpt:
       'Change your Fortnite / Epic display name for free every 14 days, plus what console players must know about PSN, Xbox, and Switch names.',
     category: 'how-to',
-    image: '/images/guides/select-character.png',
+    image: '/images/guides/select-character.webp',
     date: '2026-07-23',
     readTime: 9,
     featured: false,
@@ -1761,7 +1761,7 @@ Update creator codes, Discord nicknames, tracker profiles, and clan tags so team
     excerpt:
       'Official Epic refund rules: Cancel Purchase within 24 hours, Return Tickets within 30 days, what cannot be refunded, and how to get V-Bucks back.',
     category: 'how-to',
-    image: '/images/guides/visitors-return.png',
+    image: '/images/guides/visitors-return.webp',
     date: '2026-07-23',
     readTime: 10,
     featured: false,
@@ -1877,7 +1877,7 @@ Using the official Cancel Purchase / Return Ticket tools as designed is normal. 
     excerpt:
       'Turn on Epic Games two-factor authentication with an authenticator app, SMS, or email — protect your locker and claim the Boogie Down thank-you reward.',
     category: 'how-to',
-    image: '/images/guides/sanctuary-sitrep.png',
+    image: '/images/guides/sanctuary-sitrep.webp',
     date: '2026-07-23',
     readTime: 8,
     featured: false,
@@ -1976,7 +1976,7 @@ Avoid free V-Bucks phishing covered in [how to get free V-Bucks](/guides/season/
     excerpt:
       'Raise Fortnite FPS with Performance Mode, shadow settings, NVIDIA Reflex, resolution choices, and a practical hardware checklist for Chapter 7.',
     category: 'how-to',
-    image: '/images/guides/hit-by-chaos.png',
+    image: '/images/guides/hit-by-chaos.webp',
     date: '2026-07-23',
     readTime: 12,
     featured: true,
@@ -2126,7 +2126,7 @@ Frame times can still feel smoother and reduce latency even above refresh, but G
     excerpt:
       'Chapter 7 Season 3 Sprite extraction on Shattered Coast: when Extraction Sites unlock, the ~30s defend timer, Portable Extractor, Victory Royale auto-extract, and safe Runners site picks.',
     category: 'how-to',
-    image: '/images/guides/sprites-collect.jpg',
+    image: '/images/guides/sprites-collect.webp',
     date: '2026-07-26',
     readTime: 9,
     featured: false,
@@ -2281,7 +2281,7 @@ No. Sprite extraction is Battle Royale on Shattered Coast only. For Creative lev
     excerpt:
       'Which cube sprite variants are live right now, where they drop from chests and vaults, how the Sprite Locator works, and the best Shattered Coast farm routes.',
     category: 'how-to',
-    image: '/images/guides/welcome-innovation.png',
+    image: '/images/guides/welcome-innovation.webp',
     date: '2026-07-23',
     readTime: 10,
     featured: false,
@@ -2442,7 +2442,7 @@ Community video walkthrough used as a Chapter 7 Season 3 reference: [How to find
     excerpt:
       'Ironmouse Fortnite Sprite guide: August 4 return after the early vault, Mythic powers (heal + cloak + low gravity), Relic Chest farm tips, and how to extract her.',
     category: 'how-to',
-    image: '/images/guides/ironmouse.png',
+    image: '/images/guides/ironmouse.webp',
     date: '2026-08-01',
     readTime: 9,
     featured: false,
@@ -2586,7 +2586,7 @@ Chapter 7 Season 3 Sprite collections are season-scoped. Extract and master her 
     excerpt:
       'How to check your Fortnite ban status, find your Sanction ID, submit one official appeal on Epic’s Sanctions and Appeals portal, and what happens after review.',
     category: 'how-to',
-    image: '/images/guides/the-return.png',
+    image: '/images/guides/the-return.webp',
     date: '2026-07-23',
     readTime: 11,
     featured: false,
@@ -2774,7 +2774,7 @@ No. We are an independent fan site. We explain the public process and link offic
     excerpt:
       'Working Creative XP map codes for Chapter 7 Season 3, how to enter island codes, daily/weekly Creative XP caps, and a fast Battle Pass leveling plan.',
     category: 'season',
-    image: '/images/guides/fortm.jpg',
+    image: '/images/guides/fortm.webp',
     date: '2026-08-01',
     readTime: 10,
     featured: false,
@@ -2872,7 +2872,7 @@ Browse and filter XP maps on [/codes](/codes), or read our Creative SEO sections
     excerpt:
       'Step-by-step: connect your Epic account to PS5/PS4, Xbox, and Nintendo Switch for cross-progress, shared V-Bucks, and the correct Fortnite locker.',
     category: 'how-to',
-    image: '/images/guides/welcome-guardian.png',
+    image: '/images/guides/welcome-guardian.webp',
     date: '2026-07-24',
     readTime: 9,
     featured: false,
@@ -2969,7 +2969,7 @@ Yes from Epic Connections, with consequences for how you sign in on that console
     excerpt:
       'Gift Item Shop skins in Fortnite: 2FA, friendship timer, daily gift limits, Buy as Gift steps, and why you cannot send locker items.',
     category: 'how-to',
-    image: '/images/guides/shards-united.png',
+    image: '/images/guides/shards-united.webp',
     date: '2026-07-24',
     readTime: 8,
     featured: false,
@@ -3051,7 +3051,7 @@ Daily reset — details in [when does the Item Shop reset?](/guides/how-to/when-
     excerpt:
       'Report toxic players, mute voice/text chat, and block users in Fortnite — plus what happens after a report and how to stay safe.',
     category: 'how-to',
-    image: '/images/guides/block-party.png',
+    image: '/images/guides/block-party.webp',
     date: '2026-07-24',
     readTime: 7,
     featured: false,
@@ -3142,7 +3142,7 @@ Double-check you muted the correct player, that party chat is not a different ch
     excerpt:
       'Fortnite Item Shop refresh time: 00:00 UTC daily, converted to ET/PT/UK/EU, plus how to check today’s shop and About Shop in-game.',
     category: 'how-to',
-    image: '/images/guides/legendary-llamas.png',
+    image: '/images/guides/legendary-llamas.webp',
     date: '2026-07-24',
     readTime: 6,
     featured: false,
@@ -3209,7 +3209,7 @@ Maybe — [Cancel Purchase / Return Tickets guide](/guides/how-to/how-to-refund-
     excerpt:
       'Redeem V-Bucks gift cards on PC, Switch, PlayStation, and Xbox — plus how Support-A-Creator codes work in the Item Shop and how to avoid wrong-account mistakes.',
     category: 'how-to',
-    image: '/images/guides/exalted-reforged.png',
+    image: '/images/guides/exalted-reforged.webp',
     date: '2026-07-31',
     readTime: 11,
     featured: false,
@@ -3349,7 +3349,7 @@ Entering a code alone does nothing until you make an eligible purchase. Wishlist
     excerpt:
       'Diagnose Fortnite lag with Net Debug Stats, then fix packet loss and high ping: Ethernet, region, Wi-Fi, router, ISP routing, and settings that actually matter.',
     category: 'how-to',
-    image: '/images/guides/cold-welcome.png',
+    image: '/images/guides/cold-welcome.webp',
     date: '2026-07-31',
     readTime: 12,
     featured: false,
@@ -3503,7 +3503,7 @@ Auto is fine when it picks correctly. If you travel, use a VPN exit, or see cons
     excerpt:
       'Fix Fortnite party invites, crossplay lobbies, and join failures across PC, PlayStation, Xbox, and Switch — privacy, NAT, links, and platform blocks.',
     category: 'how-to',
-    image: '/images/guides/stars-of-the-show.png',
+    image: '/images/guides/stars-of-the-show.webp',
     date: '2026-07-31',
     readTime: 11,
     featured: false,
@@ -3657,7 +3657,7 @@ Online multiplayer on consoles generally needs the platform’s online access re
     excerpt:
       'Enable Fortnite Performance Mode step-by-step, what DirectX 12 Performance means, best companion settings, and fixes when the option is missing.',
     category: 'how-to',
-    image: '/images/guides/charge-elites.png',
+    image: '/images/guides/charge-elites.webp',
     date: '2026-07-31',
     readTime: 9,
     featured: false,
