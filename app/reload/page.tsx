@@ -15,7 +15,7 @@ import { CURRENT_SEASON } from '@/lib/season'
 import { formatCompact, loadPlayerCountData } from '@/lib/player-count'
 import { PAST_RELOAD_MAPS } from '@/lib/map-rotation-seo'
 
-export const revalidate = 600
+export const revalidate = 86400
 
 export default async function ReloadPage() {
   const counts = await loadPlayerCountData().catch(() => null)

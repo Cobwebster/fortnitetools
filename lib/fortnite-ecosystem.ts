@@ -40,7 +40,7 @@ function maxValue(series: MetricPoint[]): number | null {
 
 export async function fetchIslandMeta(code: string) {
   const res = await fetch(`${ECO_BASE}/islands/${encodeURIComponent(code)}`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: 86400 },
   })
   if (!res.ok) return null
   return (await res.json()) as {
@@ -60,7 +60,7 @@ export async function fetchIslandMetrics(
   const [meta, metricsRes] = await Promise.all([
     fetchIslandMeta(code).catch(() => null),
     fetch(`${ECO_BASE}/islands/${encodeURIComponent(code)}/metrics?interval=${interval}`, {
-      next: { revalidate: 1800 },
+      next: { revalidate: 86400 },
     }).catch(() => null),
   ])
 

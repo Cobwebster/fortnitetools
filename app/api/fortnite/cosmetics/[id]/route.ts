@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { fetchCosmeticDetail } from '@/lib/fortnite-api'
 
-export const revalidate = 600
+export const revalidate = 86400
 
 type Params = { params: Promise<{ id: string }> }
 

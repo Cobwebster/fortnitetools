@@ -7,7 +7,7 @@ import { ItemShopClient } from '@/components/ItemShopClient'
 import { fetchShop } from '@/lib/fortnite-api'
 import { ITEM_SHOP_FAQS } from '@/lib/item-shop-seo'
 
-export const revalidate = 300
+export const revalidate = 3600
 
 export default async function ItemShopPage() {
   const shop = await fetchShop().catch(() => null)

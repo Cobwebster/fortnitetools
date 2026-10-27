@@ -5,7 +5,7 @@ import { fetchLiveSets, LIVE_SET_CAP, SETS_HOWTO, SETS_INDEX_FAQS } from '@/lib/
 import { CURRENT_SEASON } from '@/lib/season'
 import { breadcrumbJsonLd, faqJsonLd } from '@/lib/seo'
 
-export const revalidate = 600
+export const revalidate = 86400
 
 export default async function SetsIndexPage() {
   const sets = await fetchLiveSets()

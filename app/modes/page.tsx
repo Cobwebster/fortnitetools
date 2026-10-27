@@ -5,7 +5,7 @@ import { FortniteModesClient } from '@/components/FortniteModesClient'
 import { fetchPlaylists, PLAYLIST_FAQS } from '@/lib/fortnite-playlists'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export default async function ModesPage() {
   const playlists = await fetchPlaylists().catch(() => [])

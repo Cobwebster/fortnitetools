@@ -5,7 +5,7 @@ import { DailyJamTracksClient } from '@/components/DailyJamTracksClient'
 import { CURRENT_SEASON } from '@/lib/season'
 import { fetchDailyJamTracks, JAM_TRACKS_FAQS } from '@/lib/jam-tracks'
 
-export const revalidate = 1800
+export const revalidate = 86400
 
 export default async function DailyJamTracksPage() {
   let snapshot = null as Awaited<ReturnType<typeof fetchDailyJamTracks>> | null

@@ -8,7 +8,7 @@ import { listPublicLockers } from '@/lib/lockers-db'
 import { CURRENT_SEASON } from '@/lib/season'
 import { siteConfig } from '@/lib/site'
 
-export const revalidate = 60
+export const revalidate = 86400
 
 export const metadata: Metadata = createMetadata({
   title: 'Player Fortnite Lockers',

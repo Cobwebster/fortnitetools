@@ -141,7 +141,7 @@ export async function fetchPlayerStats(options: {
 
   const res = await fetch(`${API_BASE}/v2/stats/br/v2?${params}`, {
     headers: { Authorization: key },
-    next: { revalidate: 60 },
+    next: { revalidate: 300 },
   })
 
   const json = (await res.json().catch(() => null)) as {

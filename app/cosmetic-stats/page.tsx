@@ -5,7 +5,7 @@ import { CosmeticStatsClient } from '@/components/CosmeticStatsClient'
 import { COSMETIC_STATS_FAQS, loadCosmeticStats } from '@/lib/cosmetic-stats'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 21_600
+export const revalidate = 86400
 
 export default async function CosmeticStatsPage() {
   const data = await loadCosmeticStats().catch(() => null)

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { fetchShop } from '@/lib/fortnite-api'
 
-export const revalidate = 300
+export const revalidate = 3600
 
 export async function GET() {
   try {

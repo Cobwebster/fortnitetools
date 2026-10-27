@@ -8,7 +8,7 @@ import { fetchLiveSets, fetchSetMembers, formatSetDay, resolveSetBySlug, SET_DET
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 600
+export const revalidate = 86400
 export const dynamicParams = true
 
 interface Props {

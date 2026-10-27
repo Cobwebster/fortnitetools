@@ -177,7 +177,7 @@ export function newsTake(motd: NewsMotd): NewsTake {
 
 export async function fetchFortniteNews(): Promise<NewsPayload> {
   const res = await fetch(`${API_BASE}/v2/news?language=en`, {
-    next: { revalidate: 600 },
+    next: { revalidate: 86400 },
   })
   if (!res.ok) throw new Error(`News API failed (${res.status})`)
   const json = await res.json()

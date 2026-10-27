@@ -342,7 +342,7 @@ export async function loadCosmeticStats(): Promise<CosmeticStatsPayload> {
   const total = catalog.length
 
   return {
-    generatedAt: now.toISOString(),
+    generatedAt: shop.date || `${now.toISOString().slice(0, 10)}T00:00:00.000Z`,
     source: 'fortnite-api.com/v2/cosmetics/br + /v2/shop',
     note: 'Shop rotation and catalog mix from Fortnite-API — not locker wear rates, wishlists, or cup owner dumps.',
     catalogCount: total,

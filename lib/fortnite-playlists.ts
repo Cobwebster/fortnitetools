@@ -225,7 +225,7 @@ export const MODE_CATEGORY_ICONS: Record<ModeCategory | 'all', string> = {
 
 export async function fetchPlaylists(): Promise<ModePlaylist[]> {
   const res = await fetch(`${API_BASE}/v1/playlists?language=en`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: 86400 },
   })
   if (!res.ok) throw new Error(`Playlists API failed (${res.status})`)
   const json = await res.json()

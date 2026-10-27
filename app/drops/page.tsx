@@ -9,7 +9,7 @@ import { contestLabels, lootLabel } from '@/lib/map-data'
 import { CURRENT_SEASON } from '@/lib/season'
 import { breadcrumbJsonLd, faqJsonLd } from '@/lib/seo'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 const PICKER_ART = [
   { title: 'Ranked climb (LP)', image: '/images/icons/crown.png' },

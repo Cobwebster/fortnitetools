@@ -22,7 +22,7 @@ export type MapPoi = { name: string; location: { x: number; y: number } }
 export async function loadMapPois(): Promise<MapPoi[]> {
   try {
     const res = await fetch('https://fortnite-api.com/v1/map?language=en', {
-      next: { revalidate: 3600 },
+      next: { revalidate: 86400 },
       headers: { Accept: 'application/json' },
     })
     if (!res.ok) return []

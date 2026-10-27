@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { searchCosmetics } from '@/lib/fortnite-api'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl

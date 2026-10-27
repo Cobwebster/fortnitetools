@@ -14,7 +14,7 @@ import {
 import { fetchIslandMetricsBatch } from '@/lib/fortnite-ecosystem'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 1800
+export const revalidate = 86400
 
 export default async function CodesPage() {
   const unique = uniqueMapsByCode(CREATIVE_MAPS)

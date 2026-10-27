@@ -14,7 +14,7 @@ import {
 } from '@/lib/stats-hub'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 1800
+export const revalidate = 86400
 
 export default async function StatsPage() {
   const [data, leaderboard] = await Promise.all([

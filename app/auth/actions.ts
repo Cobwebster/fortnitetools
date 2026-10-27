@@ -33,7 +33,6 @@ export async function loginAction(
     return { error: error.message }
   }
 
-  revalidatePath('/', 'layout')
   redirect(next)
 }
 
@@ -71,7 +70,6 @@ export async function registerAction(
 
   // If email confirmation is disabled, session exists immediately.
   if (data.session) {
-    revalidatePath('/', 'layout')
     redirect(next)
   }
 
@@ -83,7 +81,6 @@ export async function registerAction(
 export async function logoutAction() {
   const supabase = await createClient()
   await supabase.auth.signOut()
-  revalidatePath('/', 'layout')
   redirect('/')
 }
 

@@ -18,7 +18,7 @@ import { fetchPlaylists } from '@/lib/fortnite-playlists'
 import { CONTEST_COLOR, dropMapFocus, loadMapPois } from '@/lib/drop-map'
 import { MapPoiCrop } from '@/components/MapPoiCrop'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export default async function RankedPage() {
   const [playlists, pois] = await Promise.all([

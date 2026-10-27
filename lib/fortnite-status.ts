@@ -27,7 +27,7 @@ export function indicatorCopy(indicator: string, description: string) {
 export async function fetchEpicStatus(): Promise<EpicStatusPayload> {
   try {
     const res = await fetch('https://status.epicgames.com/api/v2/summary.json', {
-      next: { revalidate: 60 },
+      next: { revalidate: 300 },
       headers: { Accept: 'application/json' },
     })
     if (!res.ok) {

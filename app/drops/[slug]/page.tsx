@@ -19,7 +19,7 @@ import { CURRENT_SEASON } from '@/lib/season'
 import { MapPoiCrop } from '@/components/MapPoiCrop'
 import { CONTEST_COLOR, dropMapFocus, loadMapPois } from '@/lib/drop-map'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 interface Props {
   params: Promise<{ slug: string }>

@@ -82,7 +82,6 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId, wished, 
   const [detail, setDetail] = useState<CosmeticDetail | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [showRaw, setShowRaw] = useState(false)
   const [variantPreview, setVariantPreview] = useState<string | null>(null)
 
   useEffect(() => {
@@ -434,18 +433,6 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId, wished, 
                   </div>
                 )}
 
-                <button
-                  type="button"
-                  onClick={() => setShowRaw((v) => !v)}
-                  className="mt-4 text-xs font-semibold text-primary hover:underline"
-                >
-                  {showRaw ? 'Hide' : 'Show'} raw API JSON
-                </button>
-                {showRaw && (
-                  <pre className="mt-2 max-h-64 overflow-auto rounded-lg border border-border bg-muted/40 p-3 text-[10px] text-muted-foreground">
-                    {JSON.stringify(detail.raw, null, 2)}
-                  </pre>
-                )}
               </section>
             </>
           )}

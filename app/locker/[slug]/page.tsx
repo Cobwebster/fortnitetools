@@ -11,7 +11,7 @@ import { breadcrumbJsonLd, createMetadata } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 60
+export const revalidate = 86400
 export const dynamicParams = true
 
 interface Props {

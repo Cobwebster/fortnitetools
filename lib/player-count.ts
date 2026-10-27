@@ -135,7 +135,7 @@ export async function loadPlayerCountData() {
   )
 
   return {
-    updatedAt: new Date().toISOString(),
+    updatedAt: `${new Date().toISOString().slice(0, 10)}T00:00:00.000Z`,
     epicRows,
     creativeRows,
     totalTrackedPeak,

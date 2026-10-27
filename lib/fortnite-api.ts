@@ -59,7 +59,6 @@ export type ShopPriceInfo = {
 export type CosmeticDetail = CosmeticItem & {
   shop: ShopPriceInfo | null
   setItems: CosmeticItem[]
-  raw: Record<string, unknown>
 }
 
 export type ShopOffer = {
@@ -260,7 +259,7 @@ export function normalizeShopOffers(entries: ApiShopEntry[] = []): ShopOffer[] {
 
 export async function fetchShop() {
   const res = await fetch(`${API_BASE}/v2/shop?language=en`, {
-    next: { revalidate: 300 },
+    next: { revalidate: 3600 },
   })
   if (!res.ok) throw new Error(`Shop API failed (${res.status})`)
   const json = await res.json()
@@ -274,7 +273,7 @@ export async function fetchShop() {
 
 export async function fetchNewCosmetics() {
   const res = await fetch(`${API_BASE}/v2/cosmetics/new?language=en`, {
-    next: { revalidate: 600 },
+    next: { revalidate: 3600 },
   })
   if (!res.ok) throw new Error(`New cosmetics API failed (${res.status})`)
   const json = await res.json()
@@ -298,7 +297,7 @@ export async function fetchNewCosmetics() {
 /** Full BR cosmetics catalog with shop history (responseFlags=7). Heavy — cache aggressively. */
 export async function fetchAllBrCosmetics(): Promise<CosmeticItem[]> {
   const res = await fetch(`${API_BASE}/v2/cosmetics/br?language=en&responseFlags=7`, {
-    next: { revalidate: 21_600 },
+    next: { revalidate: 86400 },
   })
   if (!res.ok) throw new Error(`Cosmetics catalog API failed (${res.status})`)
   const json = await res.json()
@@ -337,7 +336,7 @@ export async function searchCosmetics(params: {
   }
 
   const res = await fetch(`${API_BASE}/v2/cosmetics/br/search/all?${qs.toString()}`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: 86400 },
   })
   if (!res.ok) {
     if (res.status === 404) return []
@@ -351,7 +350,7 @@ export async function searchCosmetics(params: {
 export async function fetchCosmeticById(id: string): Promise<ApiCosmetic | null> {
   const res = await fetch(
     `${API_BASE}/v2/cosmetics/br/${encodeURIComponent(id)}?language=en&responseFlags=0x7`,
-    { next: { revalidate: 3600 } }
+    { next: { revalidate: 86400 } }
   )
   if (res.status === 404) return null
   if (!res.ok) throw new Error(`Cosmetic API failed (${res.status})`)
@@ -413,7 +412,6 @@ function detailFromShopOffer(id: string, offer: ShopOffer): CosmeticDetail {
     featuredImage: item.featuredImage || offer.image,
     shop: shopPriceFromOffer(offer),
     setItems: offer.items.filter((s) => s.id !== item.id),
-    raw: { source: 'shop', offerId: offer.offerId, name: offer.name },
   }
 }
 
@@ -436,7 +434,6 @@ export async function fetchCosmeticDetail(id: string): Promise<CosmeticDetail | 
         ...item,
         shop: shop ? findShopPrice(item.id, shop.offers) : null,
         setItems: setItems.filter((s) => s.id !== item.id),
-        raw: raw as Record<string, unknown>,
       }
     }
   }

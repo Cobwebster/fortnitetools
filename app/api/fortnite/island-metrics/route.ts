@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { fetchIslandMetrics } from '@/lib/fortnite-ecosystem'
 
-export const revalidate = 1800
+export const revalidate = 86400
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)

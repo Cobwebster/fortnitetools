@@ -5,7 +5,7 @@ import { FortniteNewsClient } from '@/components/FortniteNewsClient'
 import { fetchFortniteNews, NEWS_FAQS } from '@/lib/fortnite-news'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 600
+export const revalidate = 86400
 
 export default async function NewsPage() {
   const data = await fetchFortniteNews().catch(() => ({

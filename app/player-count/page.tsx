@@ -5,7 +5,7 @@ import { PlayerCountClient } from '@/components/PlayerCountClient'
 import { loadPlayerCountData, PLAYER_COUNT_FAQS } from '@/lib/player-count'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 1800
+export const revalidate = 86400
 
 export default async function PlayerCountPage() {
   const data = await loadPlayerCountData()

@@ -109,7 +109,7 @@ function normalize(raw: RawTrack, today: string): JamTrack | null {
 export async function fetchDailyJamTracks(): Promise<DailyJamTracksSnapshot> {
   const today = utcDayKey()
   const res = await fetch(TRACKS_URL, {
-    next: { revalidate: 1800 },
+    next: { revalidate: 86400 },
     headers: { Accept: 'application/json', 'User-Agent': 'FortniteTools/1.0' },
   })
   if (!res.ok) {
