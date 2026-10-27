@@ -342,6 +342,18 @@
       "cosmetic-stats": {
         "title": "Cosmetic Stats",
         "description": "Fortnite outfit shop stats — most Item Shop appearances, longest vaults, recent returns, and what is live tonight."
+      },
+      "sprites": {
+        "title": "Sprites",
+        "description": "Every Chapter 7 Sprite companion portrait — Jonesy, Gold, Cheat Master, Quack, and collab variants. Open a tile for ability and how to get."
+      },
+      "daily-jam-tracks": {
+        "title": "Daily Jam Tracks",
+        "description": "Today’s free Fortnite Festival Jam Tracks with a UTC refresh countdown and playable YouTube embeds."
+      },
+      "lobby-hacks": {
+        "title": "Lobby Hacks",
+        "description": "Click to copy Override Admin Panel codes for Sprites, XP, Sprite Dust, locker items, and lobby effects. Marks used in this browser."
       }
     }
   },
