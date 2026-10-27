@@ -120,8 +120,8 @@ export const SPRITES_HOWTO = [
     body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. ${CURRENT_SEASON.shortLabel} Override still uses the Sprite loop; mastery does not carry into Treasure Hunters.`,
   },
   {
-    title: 'Names stay even if art blanks',
-    body: 'We store every companion name and family here. Icons load from a remote host — if one blanks, the tile label still works. We do not ship Epic pak files.',
+    title: 'Icons hosted here',
+    body: 'Every portrait in this gallery is served from FortniteTools. We do not ship Epic pak texture sheets.',
   },
 ]
 
@@ -143,7 +143,7 @@ export const SPRITES_FAQS = [
   },
   {
     question: 'Where do the pictures come from?',
-    answer: `A ${SPRITES_CAPTURED_AT} companion catalog we maintain. Names and families are stored on FortniteTools; icons load remotely so the gallery stays light.`,
+    answer: `A ${SPRITES_CAPTURED_AT} companion catalog we maintain. Names, families, and icons are all hosted on FortniteTools.`,
   },
 ]
 
