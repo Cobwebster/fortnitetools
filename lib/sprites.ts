@@ -113,7 +113,7 @@ export const SPRITE_COUNTS = {
 export const SPRITES_HOWTO = [
   {
     title: 'Companions, not PNG sheets',
-    body: `Sprites are Chapter 7 collectible companions (Jonesy, Klombo, Gold / Cheat Master variants, and so on). This page is the picture list — not a texture-extract dump.`,
+    body: `Sprites are Chapter 7 collectible companions (Jonesy, Klombo, Gold / Cheat Master / Quack variants, and so on). This hub lists every portrait; each Sprite has its own ability + how-to-get page.`,
   },
   {
     title: `${SPRITE_COUNTS.total} icons, ${SPRITE_COUNTS.families} families`,
@@ -129,12 +129,12 @@ export const SPRITES_FAQS = [
   {
     question: 'What are Fortnite Sprites?',
     answer:
-      'Chapter 7 Battle Royale companions you find, carry, and extract. Variants (Gold, Gummy, Galaxy, Holofoil, Cube, Cheat Master, Loot Hacker, and collab skins) count as separate collection entries.',
+      'Chapter 7 Battle Royale companions you find, carry, and extract. Variants (Gold, Gummy, Galaxy, Holofoil, Cube, Cheat Master, Loot Hacker, Quack, and collab skins) count as separate collection entries.',
   },
   {
     question: 'Is /sprites a PNG sprite-sheet dump?',
     answer:
-      'No. It is every companion portrait in our Sprite catalog. Texture sheets from pak files are not hosted here.',
+      'No. It is every companion portrait in our Sprite catalog, plus a detail page per Sprite for abilities and how to get them. Texture sheets from pak files are not hosted here.',
   },
   {
     question: 'How do I extract Sprites in Override?',

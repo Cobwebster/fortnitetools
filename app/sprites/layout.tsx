@@ -12,6 +12,8 @@ export const metadata: Metadata = createMetadata({
     'fortnite jonesy sprite',
     'fortnite gold sprites',
     'fortnite cheat master sprites',
+    'fortnite quack jonesy sprite',
+    'how to get fortnite sprites',
     'chapter 7 sprites',
   ],
 })

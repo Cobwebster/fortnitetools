@@ -16,6 +16,7 @@
     "drops": "Drops",
     "sets": "Sets",
     "sprites": "Sprites",
+    "dailyJamTracks": "Daily Jam Tracks",
     "lobbyHacks": "Lobby Hacks",
     "locker": "Armário",
     "playerLockers": "Armários dos jogadores",
@@ -75,6 +76,7 @@
     "drops": "Melhores drops",
     "sets": "Sets",
     "sprites": "Sprites",
+    "dailyJamTracks": "Daily Jam Tracks",
     "lobbyHacks": "Lobby Hacks",
     "locker": "Armário",
     "playerLockers": "Armários dos jogadores",
@@ -255,11 +257,11 @@
       },
       "map-rotation": {
         "title": "Map Rotation Timer",
-        "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
+        "description": "Live Reload map schedule — Nitemare Island, Squid Grounds, Stranger Things — with countdown to the next island, plus Blitz status."
       },
       "reload": {
         "title": "Fortnite Reload",
-        "description": "What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. The live clock is the rotation timer."
+        "description": "What Reload is: respawn BR on Nitemare Island, Squid Grounds, and Stranger Things, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
         "title": "Fortnite Ranked",

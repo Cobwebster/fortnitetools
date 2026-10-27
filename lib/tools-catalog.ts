@@ -150,6 +150,14 @@ export const TOOLS: ToolEntry[] = [
     category: 'cosmetics',
   },
   {
+    href: '/daily-jam-tracks',
+    title: 'Daily Jam Tracks',
+    description:
+      'Today’s free Fortnite Festival Jam Tracks with a UTC refresh countdown and playable YouTube embeds.',
+    tags: ['Festival', 'Music', 'YouTube'],
+    category: 'cosmetics',
+  },
+  {
     href: '/lobby-hacks',
     title: 'Lobby Hacks',
     description:
@@ -169,7 +177,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/map-rotation',
     title: 'Map Rotation Timer',
     description:
-      'Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status.',
+      'Live Reload map schedule — Nitemare Island, Squid Grounds, Stranger Things — with countdown to the next island, plus Blitz status.',
     tags: ['Reload', 'Blitz', 'Timer'],
     category: 'map',
   },
@@ -177,7 +185,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/reload',
     title: 'Fortnite Reload',
     description:
-      'What Reload is: respawn BR on Oasis, Slurp Rush, and Springfield, vs Battle Royale and Blitz. Fortnitemares overlay through 1 Nov. Last reviewed 24 Oct 2026.',
+      'What Reload is: respawn BR on Nitemare Island, Squid Grounds, and Stranger Things, vs Battle Royale and Blitz. Fortnitemares overlay through 1 Nov. Last reviewed 27 Oct 2026.',
     tags: ['Reload', 'Modes', 'Maps'],
     category: 'season',
   },

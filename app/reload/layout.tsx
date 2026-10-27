@@ -5,7 +5,7 @@ import { RELOAD_FAQS } from '@/lib/reload-hub'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Reload – What It Is, vs BR & Blitz, Current Islands',
   description:
-    'Fortnite Reload explained: respawn BR on rotating small islands (Oasis, Slurp Rush, Springfield), how it differs from Battle Royale and Blitz, Ranked Reload, and when to queue each map. Last reviewed 18 Aug 2026. The live clock lives on the map rotation timer.',
+    'Fortnite Reload explained: respawn BR on rotating small islands (Nitemare Island, Squid Grounds, Stranger Things), how it differs from Battle Royale and Blitz, Ranked Reload, and when to queue each map. Last reviewed 27 Oct 2026. The live clock lives on the map rotation timer.',
   path: '/reload',
   keywords: [
     'fortnite reload',

@@ -150,13 +150,14 @@ function makeExtractIcon(active: boolean, label?: string) {
   })
 }
 
-function makeSpawnIcon(layer: SpawnLayerId, active: boolean, goldRing = false) {
+function makeSpawnIcon(layer: SpawnLayerId, active: boolean, goldRing = false, label?: string) {
   return makeFortniteMarkerIcon({
     src: SPAWN_LAYER_ICON[layer],
     active,
-    size: 26,
+    size: layer === 'npcs' ? 30 : 26,
     goldRing,
-    ring: 'rgba(255,255,255,.3)',
+    label,
+    ring: layer === 'npcs' ? '#f472b6' : 'rgba(255,255,255,.3)',
   })
 }
 
@@ -328,6 +329,7 @@ export function FortniteLeafletMap({
         s.poiName.toLowerCase().includes(q) ||
         s.nearPoi.toLowerCase().includes(q) ||
         (s.label?.toLowerCase().includes(q) ?? false) ||
+        (s.note?.toLowerCase().includes(q) ?? false) ||
         layerLabel.toLowerCase().includes(q) ||
         s.layer.includes(q.replace(/\s+/g, '_'))
       )
@@ -458,12 +460,13 @@ export function FortniteLeafletMap({
                 const active = selection?.kind === 'spawn' && point.id === selection.id
                 const latlng = worldToLatLng(point.location.x, point.location.y)
                 const label = point.label || spawnLayerLabel(point.layer)
+                const nameOnMap = point.layer === 'npcs' ? point.label : undefined
                 return (
                   <Marker
                     key={point.id}
                     position={latlng}
-                    icon={makeSpawnIcon(point.layer, active, Boolean(point.guaranteed))}
-                    zIndexOffset={active ? 1050 : point.guaranteed ? 350 : 150}
+                    icon={makeSpawnIcon(point.layer, active, Boolean(point.guaranteed), nameOnMap)}
+                    zIndexOffset={active ? 1050 : point.layer === 'npcs' ? 400 : point.guaranteed ? 350 : 150}
                     eventHandlers={{
                       click: () => selectSpawn(point),
                     }}
@@ -474,6 +477,9 @@ export function FortniteLeafletMap({
                         {spawnLayerLabel(point.layer)} · near {point.poiName}
                         {point.guaranteed ? ' · high confidence' : ''}
                       </div>
+                      {point.note ? (
+                        <div style={{ marginTop: 4, fontSize: 12 }}>{point.note}</div>
+                      ) : null}
                     </Popup>
                   </Marker>
                 )
@@ -576,10 +582,19 @@ export function FortniteLeafletMap({
                 Near <span className="font-semibold text-foreground">{selectedSpawn.poiName}</span> —
                 POI-anchored planning pin for Chapter 7 Season 4.
               </p>
-              <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
-                Exact in-match spots can shift slightly. Use this to plan drops and rotates, then
-                confirm on the live minimap.
-              </p>
+              {selectedSpawn.note ? (
+                <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
+                  <span className="font-semibold text-foreground">
+                    {selectedSpawn.layer === 'npcs' ? 'Services: ' : 'Note: '}
+                  </span>
+                  {selectedSpawn.note}
+                </p>
+              ) : (
+                <p className="mt-4 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-sm text-muted-foreground">
+                  Exact in-match spots can shift slightly. Use this to plan drops and rotates, then
+                  confirm on the live minimap.
+                </p>
+              )}
             </>
           ) : selectedPoi ? (
             <>

@@ -75,7 +75,7 @@
     "viewingArchive": "Viewing {label} archive image — markers stay on Live.",
     "compareSeasons": "Compare seasons",
     "search": "Search",
-    "searchPlaceholder": "Spawns, POIs, extracts…",
+    "searchPlaceholder": "NPCs, spawns, POIs…",
     "clearSpawns": "Clear spawns",
     "keyLayers": "Key layers",
     "spawns": "Spawns",
@@ -135,7 +135,9 @@
     "safes": "Safes",
     "cash_registers": "Cash Registers",
     "bushes": "Bushes",
-    "dumpsters": "Dumpsters"
+    "dumpsters": "Dumpsters",
+    "npcs": "NPCs",
+    "npcsHint": "hire / Gold Bar services"
   },
   "modes": {
     "br": "Battle Royale",

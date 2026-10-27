@@ -23,9 +23,14 @@ export type RotationMode = {
 }
 
 /**
- * Curated from community lobby timers / map schedules.
- * Epic does not publish a public rotation API — update this when the live pool changes.
+ * Pool from Epic Reload v42.40 notes (15 Oct 2026): after the Squid Grounds
+ * exclusive weekend (15–19 Oct), Ranked + Unranked share Nitemare Island,
+ * Squid Grounds, and Stranger Things. Epic does not publish a public rotation
+ * API — clock slots are community-aligned; trust the in-game lobby if they disagree.
+ * Reviewed 27 Oct 2026.
  */
+export const ROTATION_REVIEWED = '2026-10-27'
+
 export const ROTATION_MODES: RotationMode[] = [
   {
     id: 'reload',
@@ -33,28 +38,28 @@ export const ROTATION_MODES: RotationMode[] = [
     slotMinutes: 20,
     maps: [
       {
-        id: 'oasis',
-        name: 'Oasis',
-        theme: 'Desert island — Paradise Palms, hotel hub, mid-range arid POIs',
-        accent: '#fbbf24',
-        image: '/images/map-rotation/oasis.webp',
+        id: 'nitemare-island',
+        name: 'Nitemare Island',
+        theme: 'Fortnitemares / Kado’s Curse — Terror Turrets, The Hunt, Siphon loot',
+        accent: '#c084fc',
+        image: '/images/map-rotation/nitemare-island.webp',
       },
       {
-        id: 'slurp-rush',
-        name: 'Slurp Rush',
-        theme: 'Chapter 2 Slurp island — Slurpy Swamp, Steamy Stacks, Dirty Docks',
-        accent: '#2dd4bf',
-        image: '/images/map-rotation/slurp-rush.webp',
+        id: 'squid-grounds',
+        name: 'Squid Grounds',
+        theme: 'Squid Game collab island — challenge POIs after the Oct 15–19 takeover',
+        accent: '#f43f5e',
+        image: '/images/map-rotation/squid-grounds.webp',
       },
       {
-        id: 'springfield',
-        name: 'Springfield',
-        theme: 'The Simpsons Reload island — The Confidential, 50-player lobbies',
-        accent: '#f59e0b',
-        image: '/images/map-rotation/springfield.webp',
-        badge: 'new',
+        id: 'stranger-things',
+        name: 'Stranger Things',
+        theme: 'Hawkins crossover Reload island — back in the shared Ranked / Unranked pool',
+        accent: '#ef4444',
+        image: '/images/map-rotation/stranger-things.webp',
       },
     ],
+    note: 'Ranked and Unranked Reload share this three-map pool (Epic v42.40).',
   },
   {
     id: 'blitz',

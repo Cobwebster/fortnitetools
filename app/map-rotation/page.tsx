@@ -3,23 +3,24 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { MapRotationClient } from '@/components/MapRotationClient'
 import { MAP_ROTATION_FAQS, PAST_RELOAD_MAPS } from '@/lib/map-rotation-seo'
+import { ROTATION_REVIEWED } from '@/lib/map-rotation'
 import { CURRENT_SEASON } from '@/lib/season'
 
 const SCHEDULE = [
   {
     slot: ':00 – :20',
-    map: 'Oasis',
-    theme: 'Desert island — Paradise Palms and the hotel hub',
+    map: 'Nitemare Island',
+    theme: 'Fortnitemares / Kado’s Curse — Terror Turrets, The Hunt',
   },
   {
     slot: ':20 – :40',
-    map: 'Slurp Rush',
-    theme: 'Chapter 2 Slurp island — Slurpy Swamp, Steamy Stacks, Dirty Docks',
+    map: 'Squid Grounds',
+    theme: 'Squid Game collab island — post Oct 15–19 takeover',
   },
   {
     slot: ':40 – :00',
-    map: 'Springfield',
-    theme: 'The Simpsons Reload island — The Confidential, 50-player lobbies',
+    map: 'Stranger Things',
+    theme: 'Hawkins crossover — shared Ranked / Unranked pool',
   },
 ]
 
@@ -51,7 +52,7 @@ export default function MapRotationPage() {
             </nav>
 
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · Live timer
+              {CURRENT_SEASON.shortLabel} · Live timer · reviewed {ROTATION_REVIEWED}
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Map Rotation</span>
@@ -59,8 +60,9 @@ export default function MapRotationPage() {
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               What Reload map is on right now, how many minutes until it changes, and which island is
               next. Reload rotates every <strong className="text-foreground">20 minutes</strong> —
-              Oasis, Slurp Rush, then Springfield — and this page tracks it live so you don&apos;t
-              have to open the lobby to check. What Reload <em>is</em>, vs BR and Blitz, lives on the{' '}
+              Nitemare Island, Squid Grounds, then Stranger Things (Ranked and Unranked share the
+              pool after Epic’s v42.40 notes) — and this page tracks it live so you don&apos;t have
+              to open the lobby to check. What Reload <em>is</em>, vs BR and Blitz, lives on the{' '}
               <Link href="/reload" className="text-primary hover:underline">
                 Reload mode page
               </Link>
@@ -104,7 +106,7 @@ export default function MapRotationPage() {
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Reload slots are tied to minutes past the hour, so the schedule is identical in every
               region and timezone. If it is <strong className="text-foreground">:25</strong> where you
-              are, Slurp Rush is live everywhere.
+              are, Squid Grounds is live everywhere.
             </p>
             <div className="overflow-hidden rounded-xl border border-border">
               <table className="w-full text-left text-sm">
@@ -134,7 +136,8 @@ export default function MapRotationPage() {
             </div>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Three maps × 20 minutes means a full cycle takes one hour and then repeats, 24/7. There
-              is no daily reset and no regional offset.
+              is no daily reset and no regional offset. Epic announces the pool; exact slot order is
+              community-aligned — trust the lobby if it disagrees.
             </p>
           </section>
 
@@ -145,32 +148,31 @@ export default function MapRotationPage() {
             <div className="space-y-5 max-w-3xl">
               <div>
                 <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                  Oasis — live at :00
+                  Nitemare Island — live at :00
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  Desert island built around a hotel hub and Paradise Palms-style POIs. Fights spread
-                  out more than Springfield, so positioning and mid-range trades matter more than
-                  raw close-range aim.
+                  Fortnitemares / Kado’s Curse island. Expect The Hunt match modifier, Terror Turrets,
+                  and Nitemare-only Siphon weapons (Gatekeeper still drops here after the general
+                  Reload vault). Best queue if you are chasing Map Mastery or Halloween loot.
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                  Slurp Rush — live at :20
+                  Squid Grounds — live at :20
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  Chapter 2 Slurp island — Slurpy Swamp, Steamy Stacks, Dirty Docks. Water and Slurp
-                  pickups keep fights going, so expect longer mid-games and a lot of third-partying
-                  around the swamp.
+                  Squid Game collab island. It ran alone for the Oct 15–19 exclusive weekend, then
+                  returned to the normal three-map rotation with Nitemare Island and Stranger Things.
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-                  Springfield — live at :40
+                  Stranger Things — live at :40
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  The Simpsons Reload island with 50-player lobbies and The Confidential, a
-                  no-combat POI. Tight streets, Simpsons loot, and the John Wick Sprite — queue a
-                  couple of minutes early so you don&apos;t miss the window.
+                  Hawkins crossover Reload island. Epic briefly swapped it for Oasis earlier in
+                  Fortnitemares, then put it back — it is in both Ranked and Unranked under the
+                  current pool.
                 </p>
               </div>
             </div>
@@ -184,7 +186,7 @@ export default function MapRotationPage() {
               <li>Check the timer above for the map you want and how long until it starts.</li>
               <li>
                 Open Fortnite and go to <strong className="text-foreground">Discover → Reload</strong>{' '}
-                (Solo, Duo, Trio, Squads, or Zero Build).
+                (Solo, Duo, Trio, Squads, or Zero Build — Ranked uses the same map pool).
               </li>
               <li>
                 Queue inside that map&apos;s 20-minute window. Matches started before a swap finish on
@@ -202,8 +204,8 @@ export default function MapRotationPage() {
               Maps that could return to the rotation
             </h2>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
-              Epic swaps Reload islands in and out across patches. These have all been in the
-              rotation before and may come back:
+              Epic swaps Reload islands in and out across patches. These were live recently (or
+              earlier in Chapter 7) and may come back:
             </p>
             <ul className="max-w-3xl space-y-2 text-sm text-muted-foreground">
               {PAST_RELOAD_MAPS.map((m) => (
@@ -225,8 +227,8 @@ export default function MapRotationPage() {
               time idea as Reload, but with a shorter{' '}
               <strong className="text-foreground">10-minute</strong> slot when more than one island
               is enabled. Right now Blitz is running a single map, so the Blitz tab above shows the
-              live island without a switch countdown. Past Blitz islands include Stranger Things,
-              Starfall Island, and Stark Island.
+              live island without a switch countdown. Past Blitz islands include Starfall Island and
+              Stark Island.
             </p>
           </section>
 
@@ -239,7 +241,7 @@ export default function MapRotationPage() {
               rely on quick re-queues. If every island were selectable at once, the player base would
               split across playlists and queue times would climb — especially in smaller regions and
               off-peak hours. A timed rotation keeps a single healthy queue while still cycling
-              favourites like Oasis and Springfield through every hour.
+              favourites like Nitemare Island and Squid Grounds through every hour.
             </p>
           </section>
 
@@ -298,9 +300,10 @@ export default function MapRotationPage() {
           </section>
 
           <p className="border-t border-border pt-8 text-xs text-muted-foreground">
-            Rotation slots are curated from community trackers and in-game lobby timers — Epic does
-            not publish a public rotation API. Not affiliated with Epic Games. If the in-game lobby
-            disagrees with this page, trust the lobby.
+            Pool based on Epic Reload v42.40 community notes (Nitemare Island, Squid Grounds, Stranger
+            Things for Ranked + Unranked after 19 Oct 2026). Clock slots are community-aligned — Epic
+            does not publish a public rotation API. Not affiliated with Epic Games. If the in-game
+            lobby disagrees with this page, trust the lobby.
           </p>
         </div>
       </main>

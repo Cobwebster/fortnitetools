@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
+import Link from '@/components/link'
 import {
   SPRITE_THEME_STYLES,
   SPRITE_VARIANT_ORDER,
@@ -21,7 +22,6 @@ function matchesQuery(sprite: SpriteEntry, q: string) {
 export function SpritesGallery() {
   const [query, setQuery] = useState('')
   const [variant, setVariant] = useState('')
-  const [selected, setSelected] = useState<SpriteEntry | null>(null)
 
   const q = query.trim().toLowerCase()
 
@@ -36,15 +36,6 @@ export function SpritesGallery() {
     () => SPRITES.filter((sprite) => matchesQuery(sprite, q)).length,
     [q]
   )
-
-  useEffect(() => {
-    if (!selected) return
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setSelected(null)
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [selected])
 
   const variantCounts = useMemo(() => {
     const counts = new Map<string, number>()
@@ -110,10 +101,9 @@ export function SpritesGallery() {
       ) : (
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7">
           {filtered.map((sprite) => (
-            <button
+            <Link
               key={sprite.id}
-              type="button"
-              onClick={() => setSelected(sprite)}
+              href={`/sprites/${sprite.slug}`}
               className={`group overflow-hidden rounded-xl border text-left transition-colors hover:border-primary/70 ${SPRITE_THEME_STYLES[sprite.theme]}`}
             >
               <div className="aspect-square bg-background/40">
@@ -135,47 +125,10 @@ export function SpritesGallery() {
                   {sprite.variant}
                 </p>
               </div>
-            </button>
+            </Link>
           ))}
         </div>
       )}
-
-      {selected ? (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-          onClick={() => setSelected(null)}
-          role="dialog"
-          aria-modal="true"
-          aria-label={selected.name}
-        >
-          <div
-            className={`max-h-[90vh] w-full max-w-lg overflow-auto rounded-2xl border bg-card p-4 ${SPRITE_THEME_STYLES[selected.theme]}`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={selected.image}
-              alt={selected.name}
-              width={320}
-              height={320}
-              className="mx-auto h-auto w-full max-w-xs object-contain"
-            />
-            <h2 className="mt-3 font-display text-xl font-bold uppercase tracking-wide text-foreground">
-              {selected.name}
-            </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              {selected.family} · {selected.variant}
-            </p>
-            <button
-              type="button"
-              onClick={() => setSelected(null)}
-              className="mt-4 rounded-lg border border-border bg-muted px-3 py-1.5 text-sm text-foreground hover:border-primary"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      ) : null}
     </div>
   )
 }

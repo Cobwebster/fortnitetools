@@ -9,6 +9,8 @@ export type SpawnPointDef = {
   offsetX?: number
   offsetY?: number
   label?: string
+  /** Extra popup copy (NPC services, hire cost, etc.) */
+  note?: string
   /** Guaranteed / high-confidence spawn (e.g. vault sprite chests) */
   guaranteed?: boolean
 }
@@ -73,12 +75,247 @@ const COASTAL_POIS = [
   'Golden Grove',
 ]
 
+const NPC_SERVICE =
+  'Gold Bar services (Rift / Patch Up / Max Ammo · 500). Which offer is live rotates each match.'
+
+/**
+ * Chapter 7 Season 4 Override character pins.
+ * Names + POIs from public C7S4 / Fortnitemares coverage (Destructoid 20 Aug 2026,
+ * GameRant, Beebom v42.40). Anchored to live Fortnite-API POI coords — not pixel-perfect.
+ * Battlewoods / Latte Landing are gone from the named list, so those two vendors
+ * use the Fortnitemares POIs those outlets listed instead.
+ */
+const NPC_POINTS: SpawnPointDef[] = [
+  {
+    id: 'npc-wrixel',
+    layer: 'npcs',
+    nearPoi: 'Shaken Sanctuary',
+    offsetX: -7000,
+    offsetY: -5000,
+    label: 'Wrixel',
+    note: `Northwest of Shaken Sanctuary, small building. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-phantom',
+    layer: 'npcs',
+    nearPoi: 'Nightmare Neighborhood',
+    offsetX: -6000,
+    offsetY: 4000,
+    label: 'Phantom',
+    note: `Southwest side of Nightmare Neighborhood (Battlewoods pin retired with that named POI). ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-innovation',
+    layer: 'npcs',
+    nearPoi: 'Freaky Fields',
+    offsetX: 1000,
+    offsetY: 9000,
+    label: 'The Innovation (Slone)',
+    note: `South of Freaky Fields (Latte Landing pin retired with that named POI). ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-prophecy',
+    layer: 'npcs',
+    nearPoi: "Reality's Reign",
+    offsetX: 7000,
+    offsetY: 8000,
+    label: 'The Prophecy (Hope)',
+    note: `Southeast of Reality’s Reign. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-bastian',
+    layer: 'npcs',
+    nearPoi: 'Stone Sanctum',
+    offsetX: 800,
+    offsetY: 800,
+    label: 'Bastian',
+    note: `Around the tower in the middle of Stone Sanctum. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-k1tty',
+    layer: 'npcs',
+    nearPoi: 'Nightmare Neighborhood',
+    offsetX: 8000,
+    offsetY: -6000,
+    label: 'K1ttyW1ns',
+    note: `Northeast of Nightmare Neighborhood. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-sonic',
+    layer: 'npcs',
+    nearPoi: 'Green Hill Zone',
+    offsetX: 0,
+    offsetY: -2000,
+    label: 'Sonic the Hedgehog',
+    note: `Hill in the middle of Green Hill Zone. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-grace',
+    layer: 'npcs',
+    nearPoi: 'Shaken Sanctuary',
+    offsetX: -9000,
+    offsetY: 1500,
+    label: 'Grace Crowne',
+    note: `West of Shaken Sanctuary. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-order',
+    layer: 'npcs',
+    nearPoi: 'Chopped Shop',
+    offsetX: 8000,
+    offsetY: 7000,
+    label: 'The Order',
+    note: 'Southeast cliff of Chopped Shop. Hire Scout Specialist · 350 Gold Bars.',
+    guaranteed: true,
+  },
+  {
+    id: 'npc-guardian',
+    layer: 'npcs',
+    nearPoi: 'Stone Sanctum',
+    offsetX: -2000,
+    offsetY: -10000,
+    label: 'The Guardian',
+    note: 'North of Stone Sanctum, toward the center swirl. Hire Medic Specialist · 350 Gold Bars.',
+    guaranteed: true,
+  },
+  {
+    id: 'npc-peak-scout',
+    layer: 'npcs',
+    nearPoi: 'Lifty Lodge',
+    offsetX: 4000,
+    offsetY: 9000,
+    label: 'Peak Scout',
+    note: `Snowy slope south / southeast of Lifty Lodge. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-singularity',
+    layer: 'npcs',
+    nearPoi: 'Heatwave Harbor',
+    offsetX: 10000,
+    offsetY: -12000,
+    label: 'The Singularity',
+    note: 'Northeast of Heatwave Harbor (toward Stone Sanctum / south of Green Hill). Hire Supply Specialist · 350 Gold Bars.',
+    guaranteed: true,
+  },
+  {
+    id: 'npc-mali',
+    layer: 'npcs',
+    nearPoi: 'Stone Sanctum',
+    offsetX: 9000,
+    offsetY: -7000,
+    label: 'Mali',
+    note: `Northeast of Stone Sanctum, southwest of Reality’s Reign. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-vengeance',
+    layer: 'npcs',
+    nearPoi: 'Golden Grove',
+    offsetX: 1500,
+    offsetY: -8000,
+    label: 'Vengeance Jones',
+    note: `North end of Golden Grove, near the cliff. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-freddy',
+    layer: 'npcs',
+    nearPoi: 'Nightmare Neighborhood',
+    offsetX: 0,
+    offsetY: 0,
+    label: 'Freddy Krueger',
+    note: 'Boss at Nightmare Neighborhood. Dumpster Dive Sprite / Freddy’s Nightmare. Can disguise as another character in the POI — interact the suspicious NPC if the boss marker is missing.',
+    guaranteed: true,
+  },
+  {
+    id: 'npc-jack-a-nape',
+    layer: 'npcs',
+    nearPoi: 'Nightmare Neighborhood',
+    offsetX: 2000,
+    offsetY: 10000,
+    label: 'Jack-A-Nape',
+    note: `South of Nightmare Neighborhood. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-lucy',
+    layer: 'npcs',
+    nearPoi: "Geno's Machine",
+    offsetX: 0,
+    offsetY: 0,
+    label: 'Lucy',
+    note: `Geno’s Machine landmark. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-knuckles',
+    layer: 'npcs',
+    nearPoi: 'Green Hill Zone',
+    offsetX: -10000,
+    offsetY: -8000,
+    label: 'Knuckles',
+    note: `Northwestern edge of Green Hill Zone. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-geralt',
+    layer: 'npcs',
+    nearPoi: 'Pac-Man Island',
+    offsetX: 1500,
+    offsetY: 8000,
+    label: 'Geralt of Rivia',
+    note: `South of Pac-Man Island. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-champion-focus',
+    layer: 'npcs',
+    nearPoi: 'Pinky Island',
+    offsetX: 8000,
+    offsetY: 0,
+    label: 'Champion Focus',
+    note: `East of Pinky Island. ${NPC_SERVICE}`,
+    guaranteed: true,
+  },
+  {
+    id: 'npc-sub-zero',
+    layer: 'npcs',
+    nearPoi: 'Green Hill Zone',
+    offsetX: -8000,
+    offsetY: 8000,
+    label: 'Sub-Zero',
+    note: 'Southwest corner of Green Hill Zone. Duel NPC — not a Gold Bar vendor.',
+    guaranteed: true,
+  },
+  {
+    id: 'npc-yeah',
+    layer: 'npcs',
+    nearPoi: "Reality's Reign",
+    offsetX: 0,
+    offsetY: -12000,
+    label: 'Yeah',
+    note: 'Far north of Reality’s Reign. Quest NPC — not a Gold Bar vendor.',
+    guaranteed: true,
+  },
+]
+
 /**
  * Chapter 7 Season 3 (Runners) spawn pins.
  * Anchored to live Fortnite-API POI coords + offsets — approximate planning markers,
  * not pixel-perfect Epic dumps. Sprite chest / vault counts follow community guides.
  */
 export const SPAWN_POINTS: SpawnPointDef[] = [
+  ...NPC_POINTS,
+
   // —— Vaults (8 fixed) ——
   { id: 'vault-frosted-epic', layer: 'vaults', nearPoi: 'Frosted Flats', offsetX: 6000, offsetY: 2000, label: 'Epic Sprite Vault', guaranteed: true },
   { id: 'vault-sinister-epic', layer: 'vaults', nearPoi: 'Sinister Strip', offsetX: -3000, offsetY: 4000, label: 'Epic Sprite Vault', guaranteed: true },
@@ -196,6 +433,7 @@ export const SPAWN_POINTS: SpawnPointDef[] = [
 ]
 
 export const SPAWN_LAYER_COLOR: Record<SpawnLayerId, string> = {
+  npcs: '#f472b6',
   extraction_sites: '#fbbf24',
   batmobile: '#1e293b',
   vaults: '#f59e0b',
@@ -232,6 +470,7 @@ export const SPAWN_LAYER_COLOR: Record<SpawnLayerId, string> = {
 
 /** Real Fortnite item / UI icons for map pins + sidebar (not colored dots). */
 export const SPAWN_LAYER_ICON: Record<SpawnLayerId, string> = {
+  npcs: '/images/guides/select-character.png',
   extraction_sites: '/images/loadout/pulse_scanner.png',
   batmobile: '/images/loadout/batman_grapnel.png',
   vaults: '/images/loadout/mat_metal.png',

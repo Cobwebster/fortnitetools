@@ -143,6 +143,7 @@ export function Navbar() {
     { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
     { href: '/sprites', label: t('sprites') },
+    { href: '/daily-jam-tracks', label: t('dailyJamTracks') },
     { href: '/lobby-hacks', label: t('lobbyHacks') },
     { href: '/creator-code', label: t('creatorCode') },
     { href: '/codes', label: t('codes') },

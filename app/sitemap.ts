@@ -8,6 +8,7 @@ import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
 import { guidesPageHref, guidesTotalPages } from '@/lib/guides-pagination'
 import { listPublicLockers } from '@/lib/lockers-db'
+import { SPRITES, SPRITES_CAPTURED_AT } from '@/lib/sprites'
 
 const FLAGSHIP = new Set([
   '/fortnite-map',
@@ -20,6 +21,7 @@ const FLAGSHIP = new Set([
   '/season-countdown',
   '/codes',
   '/lobby-hacks',
+  '/daily-jam-tracks',
   '/free-cosmetics',
   '/tools/item-shop',
   '/tools/player-stats',
@@ -147,6 +149,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/cosmetic-stats',
     '/sets',
     '/sprites',
+    '/daily-jam-tracks',
     '/lobby-hacks',
     '/locker',
     '/lockers',
@@ -247,6 +250,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: w.vaulted ? 0.4 : 0.55,
   }))
 
+  const spritesModified = new Date(SPRITES_CAPTURED_AT)
+  const spriteRoutes: MetadataRoute.Sitemap = SPRITES.map((s) => ({
+    url: `${base}/sprites/${s.slug}`,
+    lastModified: spritesModified,
+    changeFrequency: 'weekly' as const,
+    priority: 0.65,
+  }))
+
   const publicLockers = await listPublicLockers(200).catch(() => [])
   const lockerRoutes: MetadataRoute.Sitemap = publicLockers.map((locker) => ({
     url: `${base}/locker/${locker.slug}`,
@@ -263,6 +274,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...guidePageRoutes,
     ...postRoutes,
     ...weaponRoutes,
+    ...spriteRoutes,
     ...lockerRoutes,
   ]
 }

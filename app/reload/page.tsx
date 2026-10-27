@@ -55,7 +55,7 @@ export default async function ReloadPage() {
               <Link href="/map-rotation" className="text-primary hover:underline">
                 map rotation timer
               </Link>
-              . Do not treat Oasis as Shattered Coast.
+              . Do not treat Reload islands as the Battle Royale Override map.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/map-rotation" className="text-primary hover:underline">
@@ -225,8 +225,8 @@ export default async function ReloadPage() {
               <li>In Fortnite: Discover → Reload (Solo / Duo / Trio / Squads / Zero Build as offered).</li>
               <li>
                 Do not queue in the last minute of a slot if you care which island you get. A match
-                that starts on Slurp Rush finishes on Slurp Rush even if Springfield is now “live”
-                in the lobby.
+                that starts on Squid Grounds finishes on Squid Grounds even if Stranger Things is now
+                “live” in the lobby.
               </li>
             </ol>
           </section>
@@ -236,12 +236,12 @@ export default async function ReloadPage() {
               Maps that used to be in the pool
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Reload is not a permanent three-map product. Venture (Chapter 1 Tilted / Pleasant /
-              Retail) was the original island and is currently the Blitz map, not a Reload slot.
-              Elite Stronghold, Squid Grounds, Surf City, and Nitemare Island have rotated through
-              and can return. The timer page lists them; this page will not pretend they are live
-              tonight. If the lobby shows a fourth island, trust the lobby and the clock — we update
-              the pool when the files / community timers agree.
+              Reload is not a permanent three-map product. The live pool after Epic’s v42.40 notes is
+              Nitemare Island, Squid Grounds, and Stranger Things (Ranked + Unranked). Oasis, Slurp
+              Rush, Springfield, Surf City, Venture, and Elite Stronghold have rotated through and
+              can return. The timer page lists past islands; this page will not pretend they are live
+              tonight. If the lobby shows a different island, trust the lobby — we update the pool
+              when Epic’s notes / community timers agree.
             </p>
             <ul className="mt-4 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
               {PAST_RELOAD_MAPS.map((m) => (

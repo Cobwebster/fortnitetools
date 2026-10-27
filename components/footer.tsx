@@ -40,6 +40,7 @@ export function Footer() {
     { href: '/cosmetic-stats', label: t('cosmeticStats') },
     { href: '/sets', label: t('sets') },
     { href: '/sprites', label: t('sprites') },
+    { href: '/daily-jam-tracks', label: t('dailyJamTracks') },
     { href: '/lobby-hacks', label: t('lobbyHacks') },
     { href: '/locker', label: t('locker') },
     { href: '/lockers', label: t('playerLockers') },

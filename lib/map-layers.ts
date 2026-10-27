@@ -40,6 +40,7 @@ export const MAP_MODES: MapMode[] = [
 ]
 
 export type SpawnLayerId =
+  | 'npcs'
   | 'extraction_sites'
   | 'batmobile'
   | 'vaults'
@@ -80,6 +81,11 @@ export type SpawnLayer = {
 }
 
 export const SPAWN_LAYERS: SpawnLayer[] = [
+  {
+    id: 'npcs',
+    label: 'NPCs',
+    hint: 'hire / Gold Bar services',
+  },
   { id: 'extraction_sites', label: 'Extraction Sites' },
   { id: 'batmobile', label: "Batman's Beach Buggy" },
   { id: 'vaults', label: 'Vaults' },
@@ -128,6 +134,7 @@ export const SPAWN_LAYERS: SpawnLayer[] = [
 
 /** Default layers on when the map loads — the pins people actually land for. */
 export const DEFAULT_ACTIVE_SPAWNS: SpawnLayerId[] = [
+  'npcs',
   'extraction_sites',
   'vaults',
   'sprite_chests',
@@ -135,6 +142,11 @@ export const DEFAULT_ACTIVE_SPAWNS: SpawnLayerId[] = [
 ]
 
 export const SPAWN_LAYER_GROUPS: { id: string; label: string; layers: SpawnLayerId[] }[] = [
+  {
+    id: 'characters',
+    label: 'Characters',
+    layers: ['npcs'],
+  },
   {
     id: 'loot',
     label: 'Loot',

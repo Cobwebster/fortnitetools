@@ -17,6 +17,7 @@
     "drops": "Drops",
     "sets": "Sets",
     "sprites": "Sprites",
+    "dailyJamTracks": "Daily Jam Tracks",
     "lobbyHacks": "Lobby Hacks",
     "locker": "Lockers",
     "playerLockers": "Player lockers",
@@ -76,6 +77,7 @@
     "drops": "Best Drops",
     "sets": "Sets",
     "sprites": "Sprites",
+    "dailyJamTracks": "Daily Jam Tracks",
     "lobbyHacks": "Lobby Hacks",
     "locker": "Locker",
     "playerLockers": "Player lockers",
@@ -276,11 +278,11 @@
       },
       "map-rotation": {
         "title": "Map Rotation Timer",
-        "description": "Live Reload map schedule — Oasis, Slurp Rush, Springfield — with countdown to the next island, plus Blitz status."
+        "description": "Live Reload map schedule — Nitemare Island, Squid Grounds, Stranger Things — with countdown to the next island, plus Blitz status."
       },
       "reload": {
         "title": "Fortnite Reload",
-        "description": "Respawn BR on Oasis, Slurp Rush, and Springfield — Fortnitemares overlay through 1 Nov, vs Battle Royale and Blitz. The live clock is the rotation timer."
+        "description": "Respawn BR on Nitemare Island, Squid Grounds, and Stranger Things — Fortnitemares overlay through 1 Nov, vs Battle Royale and Blitz. The live clock is the rotation timer."
       },
       "ranked": {
         "title": "Fortnite Ranked",
@@ -1401,7 +1403,7 @@
     "apiCreditBefore": "Map imagery and coordinates from",
     "apiCreditAfter": ". Spawn pins are POI-anchored planning markers for Chapter 7 Season 4 / Override (approximate locations). Not affiliated with Epic Games. Loot/contest tips are editorial and may change with patches.",
     "howTitle": "How this Fortnite map tool works",
-    "howBody": "This interactive Fortnite map loads the current Battle Royale minimap and places markers using live POI coordinates. Toggle Spawns layers for Extraction Sites, vaults, Sprite chests, chests, vehicles, reboot vans, and more — or filter named drops by contest and loot.",
+    "howBody": "This interactive Fortnite map loads the current Battle Royale minimap and places markers using live POI coordinates. Toggle Spawns layers for NPCs, Extraction Sites, vaults, Sprite chests, chests, vehicles, reboot vans, and more — or filter named drops by contest and loot.",
     "howLiveTitle": "Live minimap",
     "howLiveBody": "Real in-game map imagery for Chapter 7 Season 4 (Override), not a fake sketch.",
     "howExtractTitle": "Extraction Sites",
@@ -1441,7 +1443,7 @@
       "q3": "Where should I land in Fortnite for the best loot?",
       "a3": "High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and new Override names reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games.",
       "q4": "How do I use this interactive Fortnite map?",
-      "a4": "Use the left sidebar: pick Battle Royale, search spawns/POIs, toggle spawn layers (vaults, Sprite chests, chests, vehicles, reboot vans, and more), Named Locations / Landmarks, then filter drops by hot / balanced / edge. Click markers for tips. Spawn pins are POI-anchored planning markers. OG, Reload, and Blitz maps are still coming soon.",
+      "a4": "Use the left sidebar: pick Battle Royale, search spawns/POIs, toggle spawn layers (NPCs, vaults, Sprite chests, chests, vehicles, reboot vans, and more), Named Locations / Landmarks, then filter drops by hot / balanced / edge. Click markers for tips. Spawn pins are POI-anchored planning markers. OG, Reload, and Blitz maps are still coming soon.",
       "q5": "Does this Fortnite map update every season?",
       "a5": "The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips are reviewed around major Chapter 7 Season 4 patches."
     },
@@ -1462,7 +1464,7 @@
       "viewingArchive": "Viewing {label} archive image — markers stay on Live.",
       "compareSeasons": "Compare seasons",
       "search": "Search",
-      "searchPlaceholder": "Spawns, POIs, extracts…",
+      "searchPlaceholder": "NPCs, spawns, POIs…",
       "clearSpawns": "Clear spawns",
       "keyLayers": "Key layers",
       "spawns": "Spawns",
@@ -1522,7 +1524,9 @@
       "safes": "Safes",
       "cash_registers": "Cash Registers",
       "bushes": "Bushes",
-      "dumpsters": "Dumpsters"
+      "dumpsters": "Dumpsters",
+      "npcs": "NPCs",
+      "npcsHint": "hire / Gold Bar services"
     },
     "modes": {
       "br": "Battle Royale",
