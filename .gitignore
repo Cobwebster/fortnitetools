@@ -50,5 +50,6 @@ Desktop.ini
 # local-only scrape input for parse:weapon-changes (generated JSON is committed instead)
 scripts/weapon-changes-source.md
 
-# Supabase SQL (run in the dashboard; keep local)
-supabase/
+# Supabase SQL at repo root (run in the dashboard; keep local).
+# Must be /supabase/ — a bare supabase/ also ignores lib/supabase/*.ts
+/supabase/
