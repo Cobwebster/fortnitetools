@@ -138,7 +138,7 @@ export function LockerEditor({
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
               {items.length} / {LOCKER_ITEM_CAP} items
-              {locker.is_public ? ' · public' : ' · unlisted'}
+              {locker.is_public ? ' · public link' : ' · unlisted'}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -195,7 +195,7 @@ export function LockerEditor({
                 checked={isPublic}
                 onChange={(e) => setIsPublic(e.target.checked)}
               />
-              Public
+              Public share link
             </label>
             <button
               type="submit"
@@ -208,6 +208,9 @@ export function LockerEditor({
         </form>
         <p className="text-xs text-muted-foreground">
           Share URL: <span className="text-foreground">{shareUrl}</span>
+          {isPublic
+            ? ' — works now for anyone with the URL. /lockers only lists lockers from the last site build.'
+            : ' — only you can open it. Turn on public share if you want to send the link.'}
         </p>
         {actionError ? <p className="text-sm text-rose-300">{actionError}</p> : null}
       </section>

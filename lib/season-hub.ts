@@ -18,6 +18,9 @@ export const SEASON_HUB_LINKS = [
   { href: '/ranked', label: 'Ranked / LP' },
   { href: '/status', label: 'Is Fortnite down' },
   { href: '/guides/season/fortnite-treasure-hunters', label: 'Treasure Hunters' },
+  { href: '/guides/season/when-does-fortnite-go-down-november-1', label: '1 Nov downtime / DST' },
+  { href: '/guides/how-to/how-to-get-jack-a-nape-fortnite', label: 'Jack-a-Nape how-to' },
+  { href: '/guides/how-to/how-to-get-cuddlz-fortnite', label: 'Cuddlz / Safety in Numbers' },
   { href: '/guides/season/fortnite-override-battle-pass-guide', label: 'Override Battle Pass' },
   { href: '/guides/season/fortnite-v42-40-last-override-patch', label: 'v42.40 last patch' },
   { href: '/guides/how-to/how-much-is-fortnite-battle-pass', label: 'Pass cost (800)' },
@@ -115,7 +118,7 @@ export const SEASON_CHANGE_CARDS = [
     live: `Override Battle Pass is live (Sonic and other Gaming Legends styles in public coverage). Ends with the season (${formatSeasonLongDate(seasonEndDate())}). Unclaimed rewards lock — use the XP calculator if you are short.`,
     incoming: `The ${CURRENT_SEASON.next.label} pass is not published. Do not buy levels for a future track that does not exist yet.`,
     extra:
-      'Fortnitemares Jack-a-Nape quests and Jimothy Sidekick also end with the event (through 31 Oct / 1 Nov). Jimothy how-to: extract a Dumpster Dive Sprite at a physical Extraction Site. Track dates on free cosmetics, not on the pass UI.',
+      'Fortnitemares Jack-a-Nape quests and Jimothy Sidekick also end with the event (through 31 Oct / 1 Nov). How-tos: Jack-a-Nape, Jimothy. Cuddlz / Safety in Numbers is a Creative party track with a separate timer. Track dates on free cosmetics, not on the pass UI.',
     href: '/xp-calculator',
     linkLabel: 'XP planner',
   },
@@ -136,7 +139,7 @@ export const VAULTED_THIS_SEASON = [
 export const SEASON_HUB_FAQS = [
   {
     question: 'When does Fortnite Chapter 7 Season 4 end?',
-    answer: `${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) is scheduled through ${formatSeasonLongDate(seasonEndDate())} (UTC timestamp we publish; Epic’s Battle Pass page states November 1). Use the countdown for remaining time. Downtime can shift a few hours.`,
+    answer: `${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) is scheduled through ${formatSeasonLongDate(seasonEndDate())} (UTC timestamp we publish; Epic’s Battle Pass page states November 1). Use the countdown for remaining time. Downtime can shift a few hours. DST/shop/queue write-up: 1 Nov downtime guide.`,
   },
   {
     question: 'What is new in Fortnite Override?',

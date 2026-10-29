@@ -12,6 +12,8 @@ export const metadata: Metadata = createMetadata({
     'fortnite free rewards',
     'fortnitemares 2026 free rewards',
     'jack-a-nape fortnite',
+    'cuddlz fortnite',
+    'safety in numbers fortnite',
     'fortnite jimothy',
     'fortnite twitch drops',
     'fortnite admin panel codes',
@@ -27,7 +29,7 @@ const faqs = [
   {
     question: 'How do I get free Fortnite cosmetics in Override?',
     answer:
-      'Fortnitemares Nitemare quests (Jack-a-Nape through 31 Oct), Jimothy Sidekick extract, Prophetic Tapestry login, Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
+      'Fortnitemares Nitemare quests (Jack-a-Nape through 31 Oct), Jimothy Sidekick extract, Safety in Numbers / Cuddlz on Horror Creative islands, Prophetic Tapestry login, Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
   },
   {
     question: 'Do free Fortnite rewards expire?',

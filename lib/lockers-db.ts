@@ -1,3 +1,4 @@
+import { createAnonClient } from '@/lib/supabase/anon'
 import { createClient } from '@/lib/supabase/server'
 import {
   LOCKER_DIRECTORY_LIMIT,
@@ -182,7 +183,7 @@ function cardsFromRows(
 export async function listPublicLockers(
   limit = LOCKER_DIRECTORY_LIMIT
 ): Promise<PublicLockerCard[]> {
-  const supabase = await createClient()
+  const supabase = createAnonClient()
   const { data, error } = await supabase
     .from('lockers')
     .select('slug, display_name, updated_at, locker_items(cosmetic_id, added_at)')
@@ -201,7 +202,7 @@ export async function listPublicLockers(
 }
 
 async function listPublicLockersFallback(
-  supabase: Awaited<ReturnType<typeof createClient>>,
+  supabase: ReturnType<typeof createAnonClient>,
   limit: number
 ): Promise<PublicLockerCard[] | null> {
   const { data: lockers, error } = await supabase

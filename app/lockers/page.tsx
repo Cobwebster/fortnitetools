@@ -8,7 +8,8 @@ import { listPublicLockers } from '@/lib/lockers-db'
 import { CURRENT_SEASON } from '@/lib/season'
 import { siteConfig } from '@/lib/site'
 
-export const revalidate = 86400
+export const dynamic = 'force-static'
+export const revalidate = false
 
 export const metadata: Metadata = createMetadata({
   title: 'Player Fortnite Lockers',
@@ -24,7 +25,7 @@ export const metadata: Metadata = createMetadata({
 })
 
 export default async function PlayerLockersPage() {
-  const lockers = await listPublicLockers()
+  const lockers = await listPublicLockers().catch(() => [])
 
   return (
     <>
@@ -93,8 +94,8 @@ export default async function PlayerLockersPage() {
               Put your locker on this page
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-              Sign in, add cosmetics at <span className="text-foreground">/locker</span>, and your
-              share link shows up here for anyone to open.
+              Sign in, add cosmetics at <span className="text-foreground">/locker</span>, and share
+              the link anytime. This directory only lists lockers from the last site build.
             </p>
             <span className="mt-4 inline-flex rounded-lg bg-primary px-4 py-2 text-xs font-bold uppercase tracking-wider text-primary-foreground">
               Build at /locker

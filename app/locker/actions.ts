@@ -25,18 +25,14 @@ function setupOrFull(error: { message?: string; code?: string }) {
   return null
 }
 
-function revalidateLockers(...slugs: (string | undefined)[]) {
+function revalidateEditor() {
   revalidatePath('/locker')
-  revalidatePath('/lockers')
-  for (const slug of slugs) {
-    if (slug) revalidatePath(`/locker/${slug}`)
-  }
 }
 
 export async function ensureLockerAction(): Promise<LockerActionResult> {
   const result = await ensureMyLocker()
   if (result.error) return { ok: false, error: result.error }
-  revalidateLockers(result.locker.slug)
+  revalidateEditor()
   return { ok: true, slug: result.locker.slug }
 }
 
@@ -77,7 +73,7 @@ export async function addLockerItemAction(cosmeticId: string): Promise<LockerAct
     return { ok: false, error: 'Could not add that item.' }
   }
 
-  revalidateLockers(locker.slug)
+  revalidateEditor()
   return { ok: true, slug: locker.slug }
 }
 
@@ -98,7 +94,7 @@ export async function removeLockerItemAction(cosmeticId: string): Promise<Locker
     return { ok: false, error: 'Could not remove that item.' }
   }
 
-  revalidateLockers(mine.locker.slug)
+  revalidateEditor()
   return { ok: true, slug: mine.locker.slug }
 }
 
@@ -143,6 +139,6 @@ export async function updateLockerSettingsAction(form: {
     return { ok: false, error: 'Could not save locker settings.' }
   }
 
-  revalidateLockers(locker.slug, nextSlug)
+  revalidateEditor()
   return { ok: true, slug: nextSlug }
 }

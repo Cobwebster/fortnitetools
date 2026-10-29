@@ -4,9 +4,8 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { LockerEditor } from '@/components/LockerEditor'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
-import { ensureMyLocker, getMyLocker, listPublicLockers, LOCKERS_SETUP_HINT } from '@/lib/lockers-db'
+import { ensureMyLocker, getMyLocker, LOCKERS_SETUP_HINT } from '@/lib/lockers-db'
 import { resolveLockerCosmetics } from '@/lib/lockers'
-import { LockerDirectoryGrid } from '@/components/LockerDirectoryGrid'
 import { CURRENT_SEASON } from '@/lib/season'
 
 export const metadata: Metadata = createMetadata({
@@ -36,7 +35,7 @@ const lockerFaqs = [
   {
     question: 'Can I share my locker with friends?',
     answer:
-      'Once you have items in it, copy your locker link and send it. Anyone with the URL can view a public locker.',
+      'Yes — copy the share URL and send it. Marking it public makes the link work for anyone. The /lockers directory is a checked snapshot from the last site build, so it will not show up there until the next deploy.',
   },
 ]
 
@@ -44,7 +43,6 @@ export default async function LockerHubPage() {
   const mine = await getMyLocker()
 
   if (!mine.userId) {
-    const publicLockers = await listPublicLockers(12)
     return (
       <>
         <script
@@ -116,24 +114,19 @@ export default async function LockerHubPage() {
             </section>
 
             <section className="space-y-4">
-              <div className="flex flex-wrap items-end justify-between gap-3">
-                <div>
-                  <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-                    Player lockers
-                  </h2>
-                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                    Lockers other players already shared. Open one, or sign in and add yours to the
-                    list.
-                  </p>
-                </div>
-                <Link
-                  href="/lockers"
-                  className="text-sm font-bold uppercase tracking-wider text-primary hover:underline"
-                >
-                  See all
-                </Link>
-              </div>
-              <LockerDirectoryGrid lockers={publicLockers} />
+              <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                Player lockers
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                The public directory is a snapshot from the last site build — only lockers we have
+                checked. Sign in to queue yours for the next one.
+              </p>
+              <Link
+                href="/lockers"
+                className="inline-flex rounded-lg border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-bold uppercase tracking-wider text-primary hover:bg-primary/20"
+              >
+                Browse /lockers
+              </Link>
             </section>
 
             <section className="max-w-3xl space-y-4">

@@ -52,6 +52,340 @@ export const localizedGuideSlugs = [
 export const posts: Post[] = [
   // ─── OVERRIDE (C7S4) — Oct 2026 ────────────────────────────────────────────
   {
+    slug: 'how-to-get-jack-a-nape-fortnite',
+    title: 'How to Get Jack-a-Nape in Fortnite (26 Nitemare Quests)',
+    excerpt:
+      'Jack-a-Nape is the free Fortnitemares 2026 outfit. Complete 26 Nitemare quests across Battle Royale, Horde Rush, and Reload before the event window closes. Progress carries between those modes — Creative copies do not.',
+    category: 'how-to',
+    image: '/images/guides/jack-a-nape.webp',
+    date: '2026-10-29',
+    readTime: 12,
+    featured: true,
+    tags: [
+      'how to get jack-a-nape fortnite',
+      'jack-a-nape fortnite',
+      'fortnitemares 2026 quests',
+      'nitemare quests fortnite',
+      'free fortnite halloween skin 2026',
+      'horde rush fortnitemares',
+      'nitemare island reload',
+    ],
+    content: `
+## What Jack-a-Nape is
+
+**Jack-a-Nape** is an Epic **Outfit** in the **Clockwork Circus Chimp** set (Fortnite-API id \`Character_HiHat\`). Epic’s locker line is “The most musical menace this travelling circus has ever seen.” He is **not** in the Item Shop as the Fortnitemares method, **not** a Battle Pass page, and **not** the Jimothy Sidekick.
+
+The unlock is a **Nitemare quest** track. This site’s free-cosmetics tracker has listed the outfit at **26 completed Nitemare quests** since the event launched. Earlier milestones in the same track grant the rest of the set. Last reviewed: **29 October 2026**.
+
+Fortnitemares itself is dated with Override. Epic’s [Fortnitemares 2026 news post](https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026) does not print a clock hour. This site treats **31 October 2026** as the practical freebie cutoff and **1 November 2026, Eastern Time** as the Battle Pass calendar day. If those disagree with your Quests tab timer, **trust the timer**.
+
+Same-week freebies: [Jimothy](/guides/how-to/how-to-get-jimothy-fortnite) · [Cuddlz / Safety in Numbers](/guides/how-to/how-to-get-cuddlz-fortnite) · [tracker](/free-cosmetics) · [1 Nov downtime](/guides/season/when-does-fortnite-go-down-november-1).
+
+## Clockwork Circus Chimp rewards (what we can name)
+
+These cosmetics are on the Fortnite-API BR catalog as Chapter 7 Season 4 introductions. They are the Jack-a-Nape **set**, not shop guesses.
+
+| Cosmetic | Type | API id | When it unlocks on this tracker |
+| --- | --- | --- | --- |
+| The Clockwork Ape | Loading screen | \`LoadingScreen_HiHat\` | Earlier Nitemare milestones (check the quest UI) |
+| Wind-Up Key | Back bling | \`Backpack_HiHat\` | **8** Nitemare quests |
+| Monkey Biz | Emoticon | \`Emoticon_HiHat\` | Earlier milestones in the same track |
+| Jack's Tambourine | Pickaxe | \`Pickaxe_HiHat\` | **20** Nitemare quests |
+| Tambourine Surprise | Emoticon | \`Emoticon_HiHat2\` | Same track as the pickaxe |
+| **Jack-a-Nape** | Outfit | \`Character_HiHat\` | **26** Nitemare quests |
+
+If your quest screen shows a reward we did not list, the client is ahead of this table — screenshot the milestone row, not a recap blog.
+
+Each Nitemare quest also grants on the order of **15,000 XP** toward the Override Battle Pass. That XP **does** die with the pass on 1 November. The cosmetics are the reason to finish the 26; the XP is a bonus if you are short on tiers. Planner: [XP calculator](/xp-calculator). Pass cost is still **800 V-Bucks**: [Battle Pass price](/guides/how-to/how-much-is-fortnite-battle-pass).
+
+## Where the 26 quests actually count
+
+Epic’s Fortnitemares post puts the event on **Battle Royale, Horde Rush, and Reload**. That is the allowlist.
+
+| Playlist | Counts for Nitemare quests? | Notes |
+| --- | --- | --- |
+| Battle Royale / Zero Build pubs | **Yes** | Default farm. Ranked can strip Fortnitemares toys — if a quest names Pumpkin Chests or Freddy’s Nightmare, pubs is the clean run. |
+| Horde Rush (Epic LTM) | **Yes** | Must be Epic’s Horde Rush tile. A creator “Horde Rush” island in Discover is not the same playlist. |
+| Reload — **Nitemare Island** | **Yes, when that island is in the match** | Shared Ranked/Unranked Reload pool after v42.40 is Nitemare Island, Squid Grounds, and Stranger Things. Clock: [map rotation](/map-rotation). |
+| Reload — Squid Grounds / Stranger Things | **Not for island-named quests** | If the quest text says Terror Turrets, Haunted Hamlet, Retail Ruin, or Estranged Estate, wait for Nitemare Island. |
+| OG / Blitz / Festival / LEGO / Racing | **No** | Different rulesets. |
+| Creative / UEFN horror maps | **No** | Those are [Safety in Numbers](/guides/how-to/how-to-get-cuddlz-fortnite), a different track. |
+| Admin Panel lobby codes | **No** | Lobby Hacks never grant Jack-a-Nape. [Lobby Hacks](/lobby-hacks). |
+
+Progress **carries across** BR, Horde Rush, and Reload. You do not need 26 in one mode. You do need 26 on the Nitemare track, not 26 random weeklies.
+
+Epic did **not** publish the quest text in that news post. Recap sites dump the Oct 1 / Oct 8 / Oct 16 batches; those lists go stale the moment Epic adds a line. **Pin the Nitemare category in the Quests tab** and play what is on your HUD.
+
+## How to finish the last weekend (29 Oct → 31 Oct)
+
+You do not need a 26-row spreadsheet. You need the three playlists and a pin.
+
+1. Open **Quests** → Fortnitemares / **Nitemare**. Pin every incomplete row.
+2. Queue **Battle Royale or Zero Build**. Land where the pinned text points. Epic’s own post names **Nightmare Neighborhood**, **Freaky Fields**, **Freddy Krueger**, **Bonerattler SMG**, **Wood Stake Shotgun**, **Pumpkin Launcher**, and cursed **Match Overrides** (Spooky Sprinter, Berserk, Prop Hunt). If your pin names one of those, that is the drop — [live map](/fortnite-map).
+3. If BR pins are done and you still need count, play **Horde Rush** on the Epic tile. Perk picks, Cube Monster Parts, vending kits, and cursed statues are the usual Horde language. One or two full runs often clear a batch if you actually take the offers.
+4. For Reload pins that name Nitemare Island POIs, wait for **Nitemare Island** on the [rotation clock](/map-rotation) (:00–:20 in the current shared pool). Do not farm Squid Game or Hawkins tiles for those rows.
+5. After each match, confirm the quest ticked **before** you queue the next mode. If it did not tick, you were in the wrong playlist, not “bugged forever.”
+6. When the counter hits **26**, check **Locker → Outfits** for Jack-a-Nape and claim any unopened milestone cosmetics on the quest screen.
+
+Pumpkin Chests are the giant Fortnitemares pumpkins, not regular chests with a sticker. Extraction Sites are for [Jimothy](/guides/how-to/how-to-get-jimothy-fortnite), not this outfit.
+
+## What this is not
+
+- **Not Jimothy.** Sidekick, Dumpster Dive Sprite, physical Extraction Site. Separate how-to.
+- **Not Cuddlz.** Back bling from UEFN horror maps in a party. Separate how-to. That track may outlive Fortnitemares; this one should not.
+- **Not Null.** Ranked styles. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
+- **Not a shop skin.** Ignore “Jack-a-Nape generator” and Discord unban-style sellers. Same scam pattern as fake V-Bucks.
+
+v42.40 (15 Oct) was the last Override **content** patch. It did not remove the Nitemare track. Patch so-what: [v42.40](/guides/season/fortnite-v42-40-last-override-patch).
+
+## FAQ
+
+### How many Fortnitemares quests for Jack-a-Nape?
+
+**26** Nitemare quests on this tracker. The quest UI is the live counter. Recap blogs that still say “wait for another weekly batch” are describing mid-October. By 29 October the batches that shipped (Oct 1, Oct 8, Oct 16 coverage) already exceed 26 if you also did Reload / Horde.
+
+### Do I have to play Horde Rush?
+
+Only if you still need quests that live on that playlist, or you want the XP. BR-only can finish the outfit if enough BR rows are complete. Mix if you are short on time.
+
+### Does Ranked count?
+
+Sometimes the Fortnitemares modifiers are stripped. If a quest needs Freddy’s Nightmare or a Pumpkin Chest and your ranked match has neither, switch to pubs.
+
+### When does Jack-a-Nape leave?
+
+With Fortnitemares, not “whenever Treasure Hunters feels like it.” This site’s tracker ends the offer **31 October 2026**. Override’s Battle Pass page still reads **1 November 2026, Eastern Time**. Finish on the 31st if you cannot sit the queue. [Downtime / DST](/guides/season/when-does-fortnite-go-down-november-1).
+
+### Will he come to the Item Shop later?
+
+Epic has not said. Halloween outfits sometimes return. That is not a plan. If you want him free, do the 26.
+
+### Can I buy the rest of the set?
+
+The Fortnitemares method is the quest track. We will not invent a V-Buck row.
+`,
+  },
+  {
+    slug: 'how-to-get-cuddlz-fortnite',
+    title: 'How to Get Cuddlz in Fortnite (Safety in Numbers Quests)',
+    excerpt:
+      'Cuddlz is a free Rare back bling from Safety in Numbers — 10 stages of 80,000 XP on Horror Creator-made islands, in a party. Battle Royale does not count. The in-game timer is the deadline, not Halloween.',
+    category: 'how-to',
+    image: '/images/guides/harrowville.webp',
+    date: '2026-10-29',
+    readTime: 11,
+    featured: true,
+    tags: [
+      'how to get cuddlz fortnite',
+      'cuddlz back bling',
+      'safety in numbers fortnite',
+      'fortnite horror creator islands',
+      'tarnished crowbar fortnite',
+      'chilling claws fortnite',
+      'welcome to harrowville',
+    ],
+    content: `
+## What Safety in Numbers is
+
+**Safety in Numbers** is a Fortnitemares-adjacent **UEFN / Creative** questline. Every stage asks the same thing: earn **XP on Horror Creator-made islands while you are in a party with at least one other player**. Ten stages. Cosmetic milestones sit on **2 / 4 / 6 / 8 / 10**.
+
+This is **not** Battle Royale, Zero Build, Reload, Horde Rush, OG, or the Jack-a-Nape Nitemare track. If you grind pubs all night and the Safety in Numbers bar does not move, you were in the wrong mode.
+
+The cosmetics shipped on the Fortnite-API catalog on **15 October 2026** — the same day as [v42.40](/guides/season/fortnite-v42-40-last-override-patch). Last reviewed: **29 October 2026**.
+
+Jack-a-Nape (26 BR/Horde/Reload quests) is a different freebie and a tighter clock: [Jack-a-Nape how-to](/guides/how-to/how-to-get-jack-a-nape-fortnite).
+
+## Rewards we can name (Fortnite-API)
+
+| Stages | Horror-island XP (10 × 80k) | Reward | Type | API id |
+| --- | --- | --- | --- | --- |
+| 2 | 160,000 | Homebase Banner Icon | Banner | (banner, not a BR outfit id) |
+| 4 | 320,000 | **Tarnished Crowbar** | Rare pickaxe | \`Pickaxe_FlossGuava\` — “It's been a long time since this pried anything open.” |
+| 6 | 480,000 | **Welcome to Harrowville** | Uncommon loading screen | \`LoadingScreen_HavenDale\` — “You're in for the fright of your life.” |
+| 8 | 640,000 | **Chilling Claws** | Rare pickaxe | \`Pickaxe_TinyLively\` — “Make 'em disappear into the darkness.” |
+| 10 | 800,000 | **Cuddlz** | Rare back bling | \`Backpack_SweptSassy\` — “Decrepit cutie.” |
+
+Recap blogs sometimes call the stage-8 pickaxe **Ghostly Claws**. The live BR name on Fortnite-API is **Chilling Claws**. Use the locker name, not the blog name.
+
+Each completed stage also grants on the order of **10,000 Battle Pass XP**. That XP only helps the **Override** pass if you bank it **before 1 November 2026, Eastern Time**. After the pass locks, the remaining stages are still worth the cosmetics if the quest timer is still running.
+
+## When it ends (read this twice)
+
+Three different clocks get mashed together online:
+
+| Thing | Clock this site uses |
+| --- | --- |
+| Jack-a-Nape / Jimothy / Fortnitemares BR toys | **31 October 2026** on the [free cosmetics](/free-cosmetics) tracker |
+| Override Battle Pass | **1 November 2026, Eastern Time**, no hour — [countdown](/season-countdown) |
+| Safety in Numbers | **In-game quest timer.** fortnite.com’s Fortnitemares news post does **not** print this hour. Recap coverage widely lists **12 November 2026, 6:00 AM ET**. Treat that as unofficial until Epic’s UI disagrees, then **trust the UI**. |
+
+If a guide tells you Cuddlz expires on Halloween, they copied the Fortnitemares date. Finish Override pass XP from this track before 1 Nov if you care about tiers. Finish the **10 stages** by whatever date the quest screen shows.
+
+## How to make a stage count
+
+1. Party with **at least one friend** (duo is enough). Solo Creative does not satisfy “with friends.”
+2. Discover → filter **Horror** (Creator-made). Pick an island that is actually tagged Horror, not a gun-game with a pumpkin loading screen.
+3. Load in **together**. If someone is still in the BR lobby, you are not in the island yet.
+4. Play until the stage’s **80,000 XP** on that island ticks. AFK in the spawn cage is the usual way to get a zero.
+5. After the tick, the next identical “earn XP in Horror Creator-made Islands in a party with friends” row appears. That is normal. It is ten copies of one objective, not ten unique chores.
+6. Claim milestone cosmetics on the quest screen as they light up. Cuddlz is **Locker → Back Blings**.
+
+We will **not** publish a “best XP map” code list. Those codes rot, get stolen, and turn into malware landing pages. If an island is in the Horror category, in a party, and the quest HUD is visible in the lobby **before** you ready up, you are on the right path.
+
+## What never counts
+
+- Battle Royale, Zero Build, Reload, Horde Rush, OG, Blitz, Festival
+- [Jack-a-Nape](/guides/how-to/how-to-get-jack-a-nape-fortnite) Nitemare rows
+- [Jimothy](/guides/how-to/how-to-get-jimothy-fortnite) Sprite extracts
+- [Lobby Hack codes](/lobby-hacks)
+- Playing a Horror island **solo**
+- XP earned in the party while one person is still in BR
+
+## Why this page exists after 1 November
+
+Treasure Hunters is only a **name and a date** on Epic’s 24 Oct teaser. Write-up: [Treasure Hunters](/guides/season/fortnite-treasure-hunters). We are not promising the Horror category survives the reboot. We **are** saying this questline was built as a Creative track with a timer that recap sites place **after** Override. If Discover still has Horror islands and the quest is still in your tab on 2 November, keep grinding. If the row vanished in downtime, it ended — we will not invent a makeup quest.
+
+## FAQ
+
+### How much XP is Cuddlz?
+
+**800,000** XP on qualifying Horror islands (10 × 80,000), plus whatever the maps themselves award toward the Battle Pass as a side effect. The 80k is the stage gate, not “80k total for the whole track.”
+
+### Can I do it with a second account in the same house?
+
+The quest text says a party with friends. Two logged-in accounts in one party is how a lot of people finish when nobody is online. We are not going to moralize it. If Epic wanted a unique-household check, the client would say so.
+
+### Does Cuddlz work in Festival / Reload?
+
+Back blings that are real BR cosmetics equip in BR and Reload. Festival slots are a different locker. Equip it in BR first; do not assume every mode lists every back bling.
+
+### Is Tarnished Crowbar a Half-Life collab?
+
+The description reads like a crowbar joke. Epic has **not** posted a Half-Life collab on the Fortnitemares news post. Treat it as a pickaxe with a wink, not a Valve bundle.
+
+### Will these go to the Item Shop?
+
+Epic has not said. Same answer as every event cosmetic: maybe later, not a plan.
+`,
+  },
+  {
+    slug: 'when-does-fortnite-go-down-november-1',
+    title: 'When Does Fortnite Go Down on 1 November 2026? (DST, Shop, Queue)',
+    excerpt:
+      'Epic has not published a downtime hour for the Override → Treasure Hunters flip. Battle Pass says 1 November 2026 Eastern Time. US clocks fall back that morning. Shop reset stays 00:00 UTC. Use Epic’s board, not a tweet.',
+    category: 'season',
+    image: '/images/guides/the-return.webp',
+    date: '2026-10-29',
+    readTime: 12,
+    featured: true,
+    tags: [
+      'when does fortnite go down november 1',
+      'fortnite downtime november 2026',
+      'fortnite daylight saving 2026',
+      'when does fortnite season end',
+      'treasure hunters downtime',
+      'fortnite servers down 1 nov',
+      'item shop reset dst',
+    ],
+    content: `
+## Short answer
+
+Epic has **not** posted a maintenance hour for the Override → Treasure Hunters reboot. What they **have** posted:
+
+- Battle Pass page: Override **ends 1 November 2026, Eastern Time** ([fortnite.com/battle-pass](https://www.fortnite.com/battle-pass)). **No hour.**
+- Official Fortnite account, **24 October 2026**: Treasure Hunters teaser captioned **“The greatest adventure of all! 11.1”**, then a Fortnite × One Piece logo clip. Sourced write-up: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
+- Unreal Engine forums (13 Oct 2026): a fix “targeted for **v43.00 (November 1)**.” That is a **build number**, not a queue length.
+
+This site’s countdown uses a UTC placeholder (\`2026-11-01T23:00:00.000Z\`) so the clock has *a* second to tick. **That placeholder is not Epic’s hour.** When the client is in a queue, use [Is Fortnite down?](/status) and [status.epicgames.com](https://status.epicgames.com/). Last reviewed: **29 October 2026**.
+
+## Three clocks people are mixing up
+
+| Clock | What it actually is | What it is not |
+| --- | --- | --- |
+| **Fortnitemares freebies** (Jack-a-Nape, Jimothy, login tapestry) | This tracker ends them **31 October 2026**. Epic’s Fortnitemares post does not print a minute. | Not the Battle Pass. Not Safety in Numbers. |
+| **Override Battle Pass** | **1 November 2026, Eastern Time**, no hour. Unclaimed tiers lock. | Not “Fortnite dies at midnight everywhere.” |
+| **Item Shop** | Epic Help: about **00:00 GMT/UTC every day**. Guide: [shop reset](/guides/how-to/when-does-fortnite-item-shop-reset). | Not the season reboot. A shop rotation can happen while BR is still up, or while you are in a queue. |
+
+**Safety in Numbers / Cuddlz** is a fourth clock. Recap sites put it on **12 November**. fortnite.com did not. In-game timer wins. [Cuddlz how-to](/guides/how-to/how-to-get-cuddlz-fortnite).
+
+## US daylight saving ends the same morning
+
+US clocks fall back **Sunday 1 November 2026, 2:00 AM local** (to 1:00 AM). Until that moment Eastern is still **EDT (UTC−4)**. After it, Eastern is **EST (UTC−5)**. Europe already fell back on **25 October**.
+
+That is why “1 November Eastern Time” arguments explode in Discord:
+
+- **Start of 1 Nov in New York** (midnight EDT) = **04:00 UTC, 1 Nov**.
+- **00:00 UTC, 1 Nov** (daily shop) = **8:00 PM EDT, 31 October**.
+- **After 2:00 AM Nov 1**, “7 PM Eastern” shop math flips from EDT to EST. The shop **anchor stays UTC midnight**. Your wall clock moves; Epic’s UTC stamp does not.
+
+Do **not** convert a YouTuber’s “2 AM ET downtime” unless they are quoting Epic. We will not invent 2 AM. Sit the [countdown](/season-countdown) plus the Passes tab the evening of the 31st if you cannot watch the queue.
+
+## What to finish before you log off on the 31st
+
+None of this is promised to survive the reboot. Claim it in-client.
+
+1. **Override Battle Pass** — unclaimed free-track and paid pages. [Pass guide](/guides/season/fortnite-override-battle-pass-guide) · [XP calculator](/xp-calculator). Cost is still 800 V-Bucks: [how much is the Battle Pass](/guides/how-to/how-much-is-fortnite-battle-pass).
+2. **Jack-a-Nape** — 26 Nitemare quests. [How-to](/guides/how-to/how-to-get-jack-a-nape-fortnite).
+3. **Jimothy** — Dumpster Dive extract. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
+4. **Null ranked styles** — Champion / Elite / Unreal. [Null](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
+5. **Sprite Mastery last page** — Quack / Pixel Polli. Dust is not advertised as carrying.
+6. **Admin Panel** codes still in your list. Never V-Bucks. [Lobby Hacks](/lobby-hacks).
+7. **Prophetic Tapestry** login claim.
+
+**Cuddlz** is the exception *if* your quest timer still shows after downtime. Do not skip Jack-a-Nape because you assume every Halloween quest lasts two extra weeks.
+
+If you panic-bought V-Bucks or a pass you cannot finish: [refunds](/guides/how-to/how-to-refund-fortnite-skins). If you have a card: [redeem a code](/guides/how-to/how-to-redeem-fortnite-code) onto the **right** Epic account before the queue.
+
+## Queue vs “Fortnite is down”
+
+| What you see | What it probably is | What to do |
+| --- | --- | --- |
+| Epic status board red, everyone on socials stuck | Outage or scheduled maintenance | Wait. Do not uninstall. Do not buy a VPN. |
+| Board green, only your stack fails | NAT / ISP / console network | [Packet loss / ping](/guides/how-to/how-to-fix-fortnite-packet-loss-high-ping). |
+| “Connecting” / patcher after the calendar flip | **Queue.** Season reboots take minutes to a few hours. | Refresh [status](/status) and Epic’s board. Third-party “184,221 in queue” numbers are not a public API. |
+| Shop rotated, BR still playable | Normal UTC shop tick | [Item Shop tracker](/tools/item-shop). |
+
+We do **not** publish a fake ping map. We do **not** guess queue length from v42.00’s five-hour launch. v43.00 can be shorter or longer.
+
+## What we will not fill in
+
+Epic has still **not** published, as of this review:
+
+- A downtime start or end hour
+- Whether Treasure Hunters is a mini-season or a full season
+- A Chapter 8 date
+- Island / loot / Battle Pass for Treasure Hunters
+- One Piece outfits, prices, or pass pages
+- How long Sprite Dust, Gizmos, or unopened Fortnitemares toys sit in the locker after the flip
+
+A pirate-chest landmark east of Sunken Shores is scenery on the [live map](/fortnite-map), not a Treasure Hunters POI guide.
+
+When the new season actually loads, the [season hub](/season) is the sheet we will rewrite. Until then this page is the **clock**, not the patch notes.
+
+## FAQ
+
+### What time does Fortnite go down on November 1?
+
+**Not posted.** Watch the Passes tab, [status](/status), and Epic’s board. This site’s countdown second is a placeholder.
+
+### Is Fortnite down because of daylight saving?
+
+DST does not take the servers offline. It **does** make “7 PM Eastern shop” and “midnight November 1” mean different UTC stamps than last week. Convert from **UTC**, or you will miss a shop or log in an hour late.
+
+### Will I lose skins I already own?
+
+Owned locker cosmetics stay. **Unclaimed Battle Pass tiers** do not. Claimed-but-unopened rewards are an Epic support case — open the Passes tab before you log off.
+
+### Should I stay in queue overnight?
+
+Optional. Reboots have been a few hours in recent Chapter 7 flips. Sleeping is allowed. Just do not leave unclaimed Jack-a-Nape / pass tiers for “after the queue” if the event already expired.
+
+### Where is the live event?
+
+Epic has **not** announced an end-of-Override live event on the Battle Pass page. A teaser video on 24 Oct is not a sky-event time. If a MOTD appears, it will show on [news](/news).
+`,
+  },
+  {
     slug: 'fortnite-treasure-hunters',
     title: 'Fortnite Treasure Hunters (1 Nov) — What Epic Has Actually Posted',
     excerpt:
@@ -112,7 +446,7 @@ None of this carries:
 
 1. **Override Battle Pass** — unclaimed free-track and paid pages lock. Cost is still **800 V-Bucks** (or Crew): [how much is the Battle Pass](/guides/how-to/how-much-is-fortnite-battle-pass). XP plan: [XP calculator](/xp-calculator).
 2. **Null ranked styles** — Champion / Elite / Unreal. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
-3. **Jack-a-Nape** — Fortnitemares quests. [Free cosmetics](/free-cosmetics).
+3. **Jack-a-Nape** — 26 Nitemare quests. [How-to](/guides/how-to/how-to-get-jack-a-nape-fortnite).
 4. **Sprite Mastery last page** — Quack + Pixel Polli. Dust is not advertised as carrying.
 5. **Jimothy** — extract a Dumpster Dive Sprite. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
 6. **Admin Panel** lobby codes. Never V-Bucks. [Lobby Hacks](/lobby-hacks).
@@ -139,7 +473,7 @@ Unclaimed tiers do not. Claimed-but-unopened rewards are a different Epic suppor
 
 ### Where should I sit during downtime?
 
-[Is Fortnite down?](/status) for Epic’s board vs your network, and the [countdown](/season-countdown) for the calendar clock. Refresh those, not Twitter screenshots.
+[Is Fortnite down?](/status) for Epic’s board vs your network, the [countdown](/season-countdown) for the calendar clock, and the [1 Nov downtime / DST guide](/guides/season/when-does-fortnite-go-down-november-1). Refresh those, not Twitter screenshots.
 `,
   },
   {
@@ -220,7 +554,7 @@ Consoles still exist. Four combat cartridges are gone. Fortnitemares ones (**Spo
 ## Last-week checklist (24 Oct → 1 Nov)
 
 1. **Battle Pass** — unclaimed free-track and premium pages lock. Use the [XP calculator](/xp-calculator). Do not buy tiers on 31 Oct hoping a style appears.
-2. **Jack-a-Nape** — 26 Nitemare quests across BR, Horde Rush, and Reload. Outfit is at 26. [Free cosmetics](/free-cosmetics).
+2. **Jack-a-Nape** — 26 Nitemare quests across BR, Horde Rush, and Reload. Outfit is at 26. [How-to](/guides/how-to/how-to-get-jack-a-nape-fortnite).
 3. **Jimothy Sidekick** — extract a Dumpster Dive Sprite. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
 4. **Prophetic Tapestry** — login claim during Fortnitemares.
 5. **Null ranked styles** — Champion / Elite / Unreal. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
@@ -316,7 +650,7 @@ Jimothy is a Sidekick, so he lives on the **Sidekicks** tab, not Outfits. Equip 
 
 From **24 October** you have **days**. Fortnitemares is the window. We are **not** promising Epic will sell Jimothy in the Item Shop after 31 October. If you want him free, extract this week.
 
-Same-week freebies: [Jack-a-Nape quests and login tapestry](/free-cosmetics) · [Null ranked](/guides/how-to/how-to-get-null-ranked-rewards-fortnite) · [v42.40 last-patch notes](/guides/season/fortnite-v42-40-last-override-patch).
+Same-week freebies: [Jack-a-Nape](/guides/how-to/how-to-get-jack-a-nape-fortnite) · [Cuddlz](/guides/how-to/how-to-get-cuddlz-fortnite) · [Null ranked](/guides/how-to/how-to-get-null-ranked-rewards-fortnite) · [v42.40 last-patch notes](/guides/season/fortnite-v42-40-last-override-patch).
 
 ## FAQ
 

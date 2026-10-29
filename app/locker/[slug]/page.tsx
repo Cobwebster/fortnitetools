@@ -11,8 +11,8 @@ import { breadcrumbJsonLd, createMetadata } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 86400
-export const dynamicParams = true
+/** Share links work immediately. The /lockers directory is the build-time allowlist. */
+export const dynamic = 'force-dynamic'
 
 interface Props {
   params: Promise<{ slug: string }>

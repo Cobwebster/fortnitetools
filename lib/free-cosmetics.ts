@@ -34,7 +34,7 @@ export function cosmeticIconUrl(id: string) {
   return `https://fortnite-api.com/images/cosmetics/br/${id.toLowerCase()}/smallicon.png`
 }
 
-export const FREE_COSMETICS_REVIEWED = '24 Oct 2026'
+export const FREE_COSMETICS_REVIEWED = '29 Oct 2026'
 
 /** Free Fortnite cosmetics / rewards tracker — Override (C7S4). Update when Epic refreshes promos. */
 export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
@@ -46,12 +46,12 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     howTo:
       'Complete 26 Nitemare quests across BR / Zero Build, Horde Rush, and Reload. Milestones unlock Wind-Up Key, Monkey Biz, Jack’s Tambourine, and the free Jack-a-Nape outfit at 26.',
     details: [
-      'Progress carries across modes — mix BR, Horde Rush, and Nitemare Island Reload.',
-      'This is the last week: finish the 26-quest track before 31 October. Oct 1 + Oct 8 waves are live.',
+      'Progress carries across modes — mix BR, Horde Rush, and Nitemare Island Reload. Creative horror maps do not count.',
+      'This is the last week: finish the 26-quest track before 31 October. Oct 1 / Oct 8 / Oct 16 batches are already out.',
       'Each quest also grants ~15k XP toward the Override Battle Pass — useful if you are short on levels.',
     ],
-    href: '/season',
-    hrefLabel: 'Season hub',
+    href: '/guides/how-to/how-to-get-jack-a-nape-fortnite',
+    hrefLabel: 'Jack-a-Nape how-to',
     category: 'quest',
     rewards: [
       { id: 'LoadingScreen_HiHat', name: 'The Clockwork Ape' },
@@ -77,6 +77,27 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     hrefLabel: 'Jimothy how-to',
     category: 'quest',
     rewards: [{ id: 'Companion_ScrapPaws', name: 'Jimothy' }],
+  },
+  {
+    id: 'safety-in-numbers-cuddlz',
+    title: 'Safety in Numbers — Cuddlz',
+    endsIso: '2026-11-12T11:00:00.000Z',
+    endsLabel: 'in-game timer (recaps: 12 Nov)',
+    howTo:
+      'Earn 80,000 XP per stage on Horror Creator-made islands while partied with a friend. Ten stages. Cuddlz is the back bling at 10. Battle Royale / Reload / Horde Rush do not count.',
+    details: [
+      'Milestones: banner (2), Tarnished Crowbar (4), Welcome to Harrowville (6), Chilling Claws (8), Cuddlz (10).',
+      'The 12 Nov 6:00 AM ET date is recap coverage, not a fortnite.com hour. Trust the quest timer. Override Battle Pass XP from this track still dies 1 Nov ET.',
+    ],
+    href: '/guides/how-to/how-to-get-cuddlz-fortnite',
+    hrefLabel: 'Cuddlz how-to',
+    category: 'quest',
+    rewards: [
+      { id: 'Pickaxe_FlossGuava', name: 'Tarnished Crowbar' },
+      { id: 'LoadingScreen_HavenDale', name: 'Welcome to Harrowville' },
+      { id: 'Pickaxe_TinyLively', name: 'Chilling Claws' },
+      { id: 'Backpack_SweptSassy', name: 'Cuddlz' },
+    ],
   },
   {
     id: 'fortnitemares-login-tapestry',

@@ -91,7 +91,9 @@ export function newsTake(motd: NewsMotd): NewsTake {
       'Fortnitemares freebies (Jack-a-Nape quests, Jimothy extract, login loading screen) end with the event — this is the last week. End dates live on the free cosmetics tracker; lobby art will not tell you the cutoff.'
     )
     links.push(
+      { href: '/guides/how-to/how-to-get-jack-a-nape-fortnite', label: 'Jack-a-Nape how-to' },
       { href: '/guides/how-to/how-to-get-jimothy-fortnite', label: 'Jimothy how-to' },
+      { href: '/guides/how-to/how-to-get-cuddlz-fortnite', label: 'Cuddlz how-to' },
       { href: '/free-cosmetics', label: 'Free cosmetics tracker' },
       { href: '/season', label: 'Season hub' }
     )
@@ -146,6 +148,7 @@ export function newsTake(motd: NewsMotd): NewsTake {
       'Season rollover is on the countdown we keep dated here. Lobby art often lands a day or two before the island actually flips.'
     )
     links.push(
+      { href: '/guides/season/when-does-fortnite-go-down-november-1', label: '1 Nov downtime / DST' },
       { href: '/season-countdown', label: 'Season countdown' },
       { href: '/status', label: 'Is Fortnite down' },
       { href: '/ranked', label: 'Ranked reset' }

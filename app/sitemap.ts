@@ -7,7 +7,6 @@ import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
 import { guidesPageHref, guidesTotalPages } from '@/lib/guides-pagination'
-import { listPublicLockers } from '@/lib/lockers-db'
 import { SPRITES, SPRITES_CAPTURED_AT } from '@/lib/sprites'
 
 const FLAGSHIP = new Set([
@@ -258,14 +257,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.65,
   }))
 
-  const publicLockers = await listPublicLockers(200).catch(() => [])
-  const lockerRoutes: MetadataRoute.Sitemap = publicLockers.map((locker) => ({
-    url: `${base}/locker/${locker.slug}`,
-    lastModified: new Date(locker.updatedAt),
-    changeFrequency: 'weekly' as const,
-    priority: 0.5,
-  }))
-
   return [
     ...staticRoutes,
     ...toolRoutes,
@@ -275,6 +266,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...postRoutes,
     ...weaponRoutes,
     ...spriteRoutes,
-    ...lockerRoutes,
   ]
 }

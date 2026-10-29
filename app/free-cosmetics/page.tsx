@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'How do I get the free Jack-a-Nape skin?',
-    a: 'Complete 26 Nitemare quests across BR / Zero Build, Horde Rush, and Reload. Progress carries between modes. Milestone cosmetics unlock earlier (Wind-Up Key at 8, Tambourine at 20, outfit at 26). Ends 31 October 2026.',
+    a: 'Complete 26 Nitemare quests across BR / Zero Build, Horde Rush, and Reload. Progress carries between modes. Milestone cosmetics unlock earlier (Wind-Up Key at 8, Tambourine at 20, outfit at 26). Ends 31 October 2026. Step-by-step is in the Jack-a-Nape how-to.',
   },
   {
     q: 'How do I get Jimothy?',
@@ -25,6 +25,10 @@ const faqs = [
   {
     q: 'Can I still get Boogie Down for free?',
     a: 'Yes. Enable two-factor authentication on your Epic account. It sits under ongoing account rewards with no end date.',
+  },
+  {
+    q: 'How do I get Cuddlz?',
+    a: 'Safety in Numbers: ten stages of 80,000 XP on Horror Creator-made islands in a party. BR / Reload / Horde do not count. Recap sites list 12 November — trust the in-game timer. Step-by-step is in the Cuddlz how-to.',
   },
   {
     q: 'When does the free Battle Pass track end?',
@@ -95,12 +99,19 @@ export default function FreeCosmeticsPage() {
             <div className="rounded-xl border border-border bg-card px-4 py-4">
               <h2 className="text-sm font-bold text-foreground">Fortnitemares first</h2>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                Nitemare quests unlock Jack-a-Nape and the Wind-Up Key set through 31 Oct. Extract a
-                Dumpster Dive Sprite for{' '}
+                Nitemare quests unlock{' '}
+                <Link href="/guides/how-to/how-to-get-jack-a-nape-fortnite" className="text-primary hover:underline">
+                  Jack-a-Nape
+                </Link>{' '}
+                through 31 Oct. Extract a Dumpster Dive Sprite for{' '}
                 <Link href="/guides/how-to/how-to-get-jimothy-fortnite" className="text-primary hover:underline">
                   Jimothy
-                </Link>{' '}
-                while you are at it.
+                </Link>
+                . Horror Creative maps are{' '}
+                <Link href="/guides/how-to/how-to-get-cuddlz-fortnite" className="text-primary hover:underline">
+                  Cuddlz
+                </Link>
+                , not the outfit.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card px-4 py-4">
@@ -147,12 +158,26 @@ export default function FreeCosmeticsPage() {
                 >
                   Admin Panel guide
                 </Link>
+                . Jack-a-Nape (26 Nitemare quests):{' '}
+                <Link
+                  href="/guides/how-to/how-to-get-jack-a-nape-fortnite"
+                  className="text-primary hover:underline"
+                >
+                  Jack-a-Nape how-to
+                </Link>
                 . Jimothy: extract a Dumpster Dive Sprite —{' '}
                 <Link
                   href="/guides/how-to/how-to-get-jimothy-fortnite"
                   className="text-primary hover:underline"
                 >
                   Jimothy how-to
+                </Link>
+                . Cuddlz is a party Horror-island track:{' '}
+                <Link
+                  href="/guides/how-to/how-to-get-cuddlz-fortnite"
+                  className="text-primary hover:underline"
+                >
+                  Cuddlz how-to
                 </Link>
                 . For Null climb habits, see the{' '}
                 <Link

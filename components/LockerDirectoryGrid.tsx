@@ -6,7 +6,8 @@ export function LockerDirectoryGrid({ lockers }: { lockers: PublicLockerCard[] }
   if (!lockers.length) {
     return (
       <p className="rounded-xl border border-dashed border-border px-5 py-10 text-center text-sm text-muted-foreground">
-        No public lockers yet. Sign in, build yours at /locker, and it shows up here.
+        No public lockers in this build. Sign in, build yours at /locker, and mark it public for the
+        next site update.
       </p>
     )
   }
