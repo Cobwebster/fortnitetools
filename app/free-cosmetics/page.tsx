@@ -7,8 +7,12 @@ import { CURRENT_SEASON } from '@/lib/season'
 
 const faqs = [
   {
+    q: 'What is Pirate Shop Access in Fortnite?',
+    a: 'A rare Treasure Hunters chest prize. You get two activations (2026 and 2027). Each one lets you claim V-Bucks Item Shop offers for free for 14 days from the moment you activate. Real-money packs, gifting, Battle Pass rewards, and extra Sidekicks are excluded. Epic has not published drop odds. Step-by-step is in the Pirate Shop how-to.',
+  },
+  {
     q: 'What free cosmetics are live in Override right now?',
-    a: 'Fortnitemares Nitemare quests (Jack-a-Nape set through 31 Oct), Jimothy Sidekick (extract a Dumpster Dive Sprite at a real Extraction Site), Prophetic Tapestry login, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and evergreen account rewards like 2FA Boogie Down. Hit Active to hide expired windows.',
+    a: 'Treasure Hunters Pirate Shop Access (rare BR chests, 14-day V-Bucks shop claims), Fortnitemares Nitemare quests (Jack-a-Nape set through 31 Oct), Jimothy Sidekick (extract a Dumpster Dive Sprite at a real Extraction Site), Prophetic Tapestry login, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and evergreen account rewards like 2FA Boogie Down. Hit Active to hide expired windows.',
   },
   {
     q: 'How do I get the free Jack-a-Nape skin?',
@@ -97,21 +101,16 @@ export default function FreeCosmeticsPage() {
         <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
           <section className="grid gap-4 sm:grid-cols-3">
             <div className="rounded-xl border border-border bg-card px-4 py-4">
-              <h2 className="text-sm font-bold text-foreground">Fortnitemares first</h2>
+              <h2 className="text-sm font-bold text-foreground">Pirate Shop Access</h2>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                Nitemare quests unlock{' '}
-                <Link href="/guides/how-to/how-to-get-jack-a-nape-fortnite" className="text-primary hover:underline">
-                  Jack-a-Nape
+                Rare Treasure Hunters chest prize.{' '}
+                <Link
+                  href="/guides/how-to/how-to-get-pirate-shop-access-fortnite"
+                  className="text-primary hover:underline"
+                >
+                  Two 14-day Item Shop claim windows
                 </Link>{' '}
-                through 31 Oct. Extract a Dumpster Dive Sprite for{' '}
-                <Link href="/guides/how-to/how-to-get-jimothy-fortnite" className="text-primary hover:underline">
-                  Jimothy
-                </Link>
-                . Horror Creative maps are{' '}
-                <Link href="/guides/how-to/how-to-get-cuddlz-fortnite" className="text-primary hover:underline">
-                  Cuddlz
-                </Link>
-                , not the outfit.
+                (2026 and 2027). V-Bucks tiles only. Odds unpublished. Turn on 2FA before you sit on a token.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card px-4 py-4">
@@ -157,6 +156,13 @@ export default function FreeCosmeticsPage() {
                   className="text-primary hover:underline"
                 >
                   Admin Panel guide
+                </Link>
+                . Pirate Shop Access (rare BR chests, 14-day shop claims):{' '}
+                <Link
+                  href="/guides/how-to/how-to-get-pirate-shop-access-fortnite"
+                  className="text-primary hover:underline"
+                >
+                  Pirate Shop how-to
                 </Link>
                 . Jack-a-Nape (26 Nitemare quests):{' '}
                 <Link

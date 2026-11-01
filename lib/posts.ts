@@ -50,6 +50,173 @@ export const localizedGuideSlugs = [
 ] as const
 
 export const posts: Post[] = [
+  // ─── TREASURE HUNTERS — 1 Nov 2026 ─────────────────────────────────────────
+  {
+    slug: 'how-to-get-pirate-shop-access-fortnite',
+    title: 'How to Get Pirate Shop Access in Fortnite (Free Item Shop for 14 Days)',
+    excerpt:
+      'Pirate Shop Access is a rare Treasure Hunters chest prize. Activate it once in 2026 and once in 2027 to claim V-Bucks Item Shop offers for free for 14 days. Epic has not published the drop odds.',
+    category: 'how-to',
+    image: '/images/guides/pirate-shop-access.jpg',
+    date: '2026-11-01',
+    readTime: 12,
+    featured: true,
+    tags: [
+      'pirate shop access fortnite',
+      'fortnite pirate shop',
+      'how to get pirate shop access',
+      'fortnite free item shop 14 days',
+      'treasure hunters pirate shop',
+      'fortnite treasure hunt chest',
+      'plunder the item shop',
+    ],
+    content: `
+## What Pirate Shop Access is
+
+**Pirate Shop Access** is a Treasure Hunters reward that landed with the **1 November 2026** update. The in-client MOTD is titled **Pirate Shop Access Unlocked**. Epic’s own copy is the rule sheet:
+
+- You **plunder the Item Shop twice** — once in **2026**, once in **2027**.
+- Each activation lets you **claim anything sold for V-Bucks** in the Fortnite Item Shop **for free for 14 days from the moment you activate**.
+- **Real-money offers**, **gifting**, and **Battle Pass levels / rewards** are excluded.
+- You may claim **one free Sidekick you do not already own**.
+- The treasure is **not transferable**.
+- Epic’s MOTD also tells you to turn on **two-factor authentication** ([fn.gg/2FA](https://fn.gg/2FA) — steps: [how to enable 2FA](/guides/how-to/how-to-enable-2fa-fortnite)).
+
+Last reviewed: **1 November 2026**. Live rotation while you are in a 14-day window: [Item Shop tracker](/tools/item-shop). Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
+
+This is **not** free V-Bucks added to your wallet. You are claiming shop rows. Claimed cosmetics stay in the locker after the 14 days end — that is what early winners reported today ([Dexerto](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/)). Generators, Discord “token sellers,” and account-share “I’ll activate it on your login” are still scams. The MOTD already says the prize cannot move accounts.
+
+## How you actually get it
+
+Epic’s unlock card does **not** print a drop table. Recap coverage on **1 November** (Dexerto, Destructoid, GameRant) is consistent on the method:
+
+1. Queue **Battle Royale** (Zero Build included in every recap that names a playlist).
+2. Open **chests**. Dexerto’s wording is that BR chests can roll a **Treasure Hunt** prize. Destructoid calls them special chests with **no fixed spawn list**. One early winner (snowslept, quoted by Dexerto) said the chest that paid out **looked like any other chest** on replay, after roughly **150 opens** across three **Solos** matches. That is one anecdote, not a farm route.
+3. If you hit it, you get the **Pirate Shop Access Unlocked** MOTD when you leave the match. Two gold compass tokens show under the compass icon. Hit **Claim All**.
+
+**Odds:** Epic has **not** published them. Dexerto notes dataminer HYPEX saying the prize is in the weekly Treasure Hunt pool, and that it is still unclear whether there is a drop cap. Anyone selling a percentage, a “guaranteed POI,” or a Creative map code is inventing it.
+
+**What we will not write:** a named-island chest circuit. Recap blogs are already using island names that Epic has not printed on fortnite.com. Open chests in BR. Recheck the [live map](/fortnite-map) if the client renamed POIs overnight. Do not land from a recap screenshot.
+
+### Squads vs solos (recap, not the MOTD)
+
+Destructoid, GameRant, and Beebom all say the **whole squad gets the treasure if one teammate finds it**. That line is **not** on Epic’s unlock card. Treat it as reported 1 Nov behavior: play with people you trust, and do not hand your account to a random “I’ll find it for you” friend. If a teammate’s MOTD pops and yours does not, finish the match and check the lobby before you assume you were skipped.
+
+Reload, OG, Festival, LEGO, Racing, and Creative are **not** named as drop playlists in the coverage we used. Farm BR until Epic says otherwise.
+
+## Two tokens — do not mash Activate Now
+
+The MOTD art shows **two** compass tokens. Recap + HYPEX (via Dexerto) add windows the MOTD itself does not print:
+
+| Token | What Epic’s MOTD says | Extra window recaps are using (not on the MOTD) |
+| --- | --- | --- |
+| 2026 | Activate once in 2026 | Usable through **15 December 2026** |
+| 2027 | Activate once in 2027 | **1 January – 15 December 2027** |
+
+Destructoid / GameRant also describe a **find** window of **1 November – 5 December**. That is a recap calendar, not Epic Help. If your token is already in the locker, the find window no longer matters — only the activate window does.
+
+**The 14-day clock starts when you activate**, not when the chest opens. Recaps describe an Item Shop button labeled **Plunder the Item Shop** (bottom-right), then **Activate Now**. The MOTD’s own button is **Claim All** — that grants the tokens. Claiming and activating are two different clicks. You can sit on an unused 2026 token.
+
+### When to burn the 2026 token
+
+- **Activate now** if the current shop already has a collab or bundle you would have bought anyway. Check [today’s shop](/tools/item-shop) and [new cosmetics](/new-cosmetics) first.
+- **Wait a few daily resets** if you already own this week’s rows and you are hunting a later rotation. The shop still flips around **00:00 UTC** ([shop reset](/guides/how-to/when-does-fortnite-item-shop-reset)). Fourteen days is about **fourteen rotations**, not one screen.
+- **Do not wait past the recap 15 Dec 2026 date** on the first token unless Epic prints a different expiry in your client. Trust the token tooltip over a blog.
+- **Save the 2027 token.** It is a second, separate 14-day window. Using both in the same month is possible only if you ignore the year split Epic wrote.
+
+Dataminer week-by-week collab menus (A$AP, Straw Hats, and so on) are **leaks**, not a fortnite.com calendar. We are not reprinting them as a schedule. If you are holding a token for a specific outfit, wait until that outfit is **in the live shop for V-Bucks**.
+
+## What you can claim
+
+During an active Pirate Shop window, treat a shop tile as eligible if **the price is in V-Bucks** and it is not on the exclusion list.
+
+Reported as included (early winner via Dexerto): **Jam Tracks**. Festival songs in the BR shop that cost V-Bucks should be claimed the same way as outfits if they show a free claim. Confirm on the tile — do not assume every Festival catalog row is in the BR shop that day.
+
+Claimed items are **yours**. They do not expire when the 14 days end. You are not renting the locker.
+
+Use **Claim All** on the MOTD / Pirate Shop sheet for a sweep, then walk the shop anyway. Bundles, extra styles, and wraps sometimes sit on a second tile. Our tracker still shows the paid V-Bucks price even while your client is in a free-claim state — the site is not your inventory.
+
+## What you cannot claim
+
+Epic’s MOTD exclusions, plus the Sidekick cap:
+
+| Blocked | Why it matters |
+| --- | --- |
+| **Real-money offers** | Starter Packs, Quest Packs, and anything priced in USD / local currency stay paid. Crew is real money. Do not expect a 14-day Crew grant. |
+| **Gifting** | You cannot send the free claim to a friend. Buy-a-gift flows stay paid. Separate how-to: [gifting](/guides/how-to/how-to-gift-skins-fortnite). |
+| **Battle Pass levels / rewards** | Pass pages, level packs, and pass-only cosmetics are not a Pirate Shop dump. Pass cost is still **800 V-Bucks** if you actually buy one: [Battle Pass price](/guides/how-to/how-much-is-fortnite-battle-pass). |
+| **One Sidekick, and only if you do not own it** | A second Sidekick in the shop stays paid. Jimothy from Fortnitemares is a different unlock — [Jimothy how-to](/guides/how-to/how-to-get-jimothy-fortnite). |
+| **Someone else’s account** | Not transferable. Logging into a friend’s Epic to “share” the token is how lockers get stolen. |
+
+If a tile is V-Bucks but the claim button is grey, it is probably one of those rows — not a bug you fix with a VPN.
+
+## Protect the locker (Epic put this on the card for a reason)
+
+A 14-day free shop is the best phishing bait Epic could print. The MOTD already links **fn.gg/2FA**.
+
+1. Enable Epic **2FA** on the account that holds the token — authenticator app, not SMS if you can. [2FA steps](/guides/how-to/how-to-enable-2fa-fortnite).
+2. Do not type your password into a “claim Pirate Shop” website. There is no web redeem. The token is in **this** Fortnite client.
+3. Do not sell, trade, or “boost” the token. The MOTD says it cannot move. Anyone offering a paid unlock is selling an account takeover.
+4. If the locker is already valuable, change the Epic password after a shared-PC session. Refunds will not rebuild a stolen shop haul: [refund rules](/guides/how-to/how-to-refund-fortnite-skins).
+
+Boogie Down is still the evergreen 2FA emote on the [free cosmetics tracker](/free-cosmetics). Turn 2FA on even if you never see this chest.
+
+## Scams that will show up this week
+
+Same pattern as fake V-Bucks. Full list: [legitimate free V-Bucks](/guides/season/how-to-get-free-v-bucks-fortnite).
+
+- “Pirate Shop generator” pages and YouTube files
+- Discord “I hit the chest, add my bot”
+- Selling the token, or renting an account that “already activated”
+- Creative map codes that “guarantee Treasure Hunt chests”
+- Support impersonators asking for the 6-digit 2FA code because “Claim All failed”
+
+Epic Support will not DM you. If the account gets banned in the mess, that is [ban appeal](/guides/how-to/fortnite-ban-appeal) — not a reason to pay a recovery service.
+
+## FAQ
+
+### Is Pirate Shop Access real?
+
+**Yes.** The **Pirate Shop Access Unlocked** MOTD is in the live client on **1 November 2026** with Treasure Hunters. Multiple recaps the same day (Dexerto, Destructoid, GameRant) match the MOTD’s 14-day / two-year / exclusion language. Epic has **not** posted drop odds on fortnite.com.
+
+### Do I have to buy anything?
+
+No. Eligible V-Bucks tiles claim free during an **active** window. You still pay real money for cash packs, and you still pay V-Bucks (or get nothing) when the 14 days expire.
+
+### Can I gift the free skins?
+
+No. The MOTD excludes gifting. The cosmetics land on **your** locker.
+
+### Are Jam Tracks included?
+
+An early winner told Dexerto they are. Confirm on the live Jam / shop tile. Festival-only catalogs that are not in the BR Item Shop that day are not a Pirate Shop dump. Daily Jam page: [Jam Tracks](/daily-jam-tracks).
+
+### What if I already own the shop?
+
+Owned rows stay owned. You are not paid V-Bucks back. Skip them and claim what you are missing. The Sidekick rule is stricter: **one** new Sidekick, and only if you do not already own that one.
+
+### Can I activate both tokens now?
+
+Epic’s MOTD says once in **2026** and once in **2027**. Recap tooltips put the second token on **1 January 2027**. If your client greys out 2027, wait — do not assume a second Activate Now is a bug.
+
+### Will this come back every season?
+
+Unknown. It is a Treasure Hunters prize as of 1 Nov 2026. Do not bank on a Chapter 8 reprint.
+
+### Where are the drop odds?
+
+**Unpublished.** Open BR chests. That is the whole farm.
+
+## Sources
+
+- In-client MOTD **Pirate Shop Access Unlocked** (Treasure Hunters / 1 Nov 2026) — two activations, 14 days from activate, V-Bucks shop claims, real-money / gifting / pass exclusions, one new Sidekick, not transferable, 2FA CTA.
+- [Dexerto, 1 Nov 2026](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/) — BR chests / Treasure Hunt prize, HYPEX weekly pool + 15 Dec / 2027 windows, snowslept drop anecdote, permanent claims, Jam Tracks, unpublished odds.
+- [Destructoid](https://www.destructoid.com/how-to-access-the-pirate-shop-and-get-tokens-in-fortnite/) — special chests, no fixed locations, reported squad share, recap find window through 5 Dec.
+- [GameRant](https://gamerant.com/fortnite-treasure-hunters-pirate-shop-access-how-to-get-free-skins/) — same chest method, squad share, 15 Dec / 2027 activate windows.
+
+If the client tooltip disagrees with a recap date, **the tooltip wins**.
+`,
+  },
   // ─── OVERRIDE (C7S4) — Oct 2026 ────────────────────────────────────────────
   {
     slug: 'how-to-get-jack-a-nape-fortnite',
@@ -411,7 +578,9 @@ The official Fortnite account ([@Fortnite](https://x.com/Fortnite)) published a 
 
 Hours later the same account posted a second clip captioned with straw-hat emojis. It ends on the **Fortnite** and **One Piece** logos together. That is a collab confirmation. It is not a character list, a shop row, or a Battle Pass page.
 
-Last reviewed: **26 October 2026**.
+Last reviewed: **1 November 2026**.
+
+Treasure Hunters is **live**. The first Epic-written loot rule in the client is the **Pirate Shop Access Unlocked** MOTD — two 14-day Item Shop claim windows, not a POI sheet. How-to: [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite). This page stays the sourced teaser history. We are still not filling in an island or loot pool from recap blogs.
 
 ## Dates that were already on Epic’s Battle Pass page
 
@@ -1912,7 +2081,9 @@ There is **no website, Discord bot, or “V-Bucks generator”** that can add cu
 
 What *does* work is slower and official: seasonal Battle Pass V-Bucks nodes, Save the World **Founder** quests (if you already own Founders), occasional Epic promotions, and platform reward programs that pay out in store credit you can spend on V-Bucks packs.
 
-Last reviewed: August 2026. Pack prices and pass totals change — use the [V-Bucks calculator](/tools/vbucks-calculator) when you are budgeting a shop wishlist, and the [Battle Pass XP calculator](/tools/battle-pass-xp-calculator) if you are grinding levels for pass rewards.
+Treasure Hunters added a separate path that is **not** free V-Bucks in the wallet: **Pirate Shop Access**, a rare BR chest prize that lets you claim V-Bucks Item Shop rows for 14 days. It is real, it is RNG, and it is not a generator. How-to: [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+
+Last reviewed: 1 November 2026. Pack prices and pass totals change — use the [V-Bucks calculator](/tools/vbucks-calculator) when you are budgeting a shop wishlist, and the [Battle Pass XP calculator](/tools/battle-pass-xp-calculator) if you are grinding levels for pass rewards.
 
 ## Method 1 — Free Battle Pass track (everyone)
 
@@ -2302,6 +2473,8 @@ PlayStation / Xbox / Nintendo 2FA protects those storefronts. Your **Epic** pass
 ## Related security habits
 
 Avoid free V-Bucks phishing covered in [how to get free V-Bucks](/guides/season/how-to-get-free-v-bucks-fortnite). Keep purchase tools honest with official [refund rules](/guides/how-to/how-to-refund-fortnite-skins). If an account was already drained, enable 2FA on whatever access you regain, change the password, and contact Epic Support with purchase IDs — do not buy “recovery software.”
+
+Treasure Hunters’ Pirate Shop MOTD (1 Nov 2026) links **fn.gg/2FA** for a reason: a 14-day free shop is a theft magnet. How-to: [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 `,
   },
   {

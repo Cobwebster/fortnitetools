@@ -49,6 +49,7 @@ const GSC_PUSH_GUIDES = new Set([
   'how-to-refund-fortnite-skins',
   'how-much-is-fortnite-battle-pass',
   'fortnite-treasure-hunters',
+  'how-to-get-pirate-shop-access-fortnite',
 ])
 
 function toolPriority(path: string): number {

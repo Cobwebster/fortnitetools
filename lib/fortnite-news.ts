@@ -86,6 +86,17 @@ export function newsTake(motd: NewsMotd): NewsTake {
   const links: { href: string; label: string }[] = []
   const notes: string[] = []
 
+  if (/pirate shop|plunder the|treasure hunt/.test(hay)) {
+    notes.push(
+      'Pirate Shop Access is a rare Treasure Hunters chest prize: two 14-day V-Bucks Item Shop claim windows (2026 and 2027). Epic has not published drop odds. Real-money, gifting, and pass rewards stay excluded — enable 2FA before you sit on a token.'
+    )
+    links.push(
+      { href: '/guides/how-to/how-to-get-pirate-shop-access-fortnite', label: 'Pirate Shop how-to' },
+      { href: '/tools/item-shop', label: 'Item Shop' },
+      { href: '/guides/how-to/how-to-enable-2fa-fortnite', label: 'Enable 2FA' },
+      { href: '/free-cosmetics', label: 'Free cosmetics tracker' }
+    )
+  }
   if (/fortnitemare|nitemare|halloween|jack-a-nape|jimothy/.test(hay)) {
     notes.push(
       'Fortnitemares freebies (Jack-a-Nape quests, Jimothy extract, login loading screen) end with the event — this is the last week. End dates live on the free cosmetics tracker; lobby art will not tell you the cutoff.'

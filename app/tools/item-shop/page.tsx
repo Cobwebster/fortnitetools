@@ -59,6 +59,15 @@ export default async function ItemShopPage() {
               The free Fortnite cosmetic browser for today&apos;s shop, full outfit sets, emote dance videos, style
               variants, and every skin in the catalog — including newly added and incoming items.
             </p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              Treasure Hunters added{' '}
+              <Link href="/guides/how-to/how-to-get-pirate-shop-access-fortnite" className="text-primary hover:underline">
+                Pirate Shop Access
+              </Link>
+              : a rare Battle Royale chest prize for 14 days of free V-Bucks shop claims (two activations, 2026 and
+              2027). Drop odds unpublished. This page still shows paid prices — the claim button is in the Fortnite
+              client.
+            </p>
             {(offerCount > 0 || shopDate) && (
               <p className="mt-4 text-sm text-muted-foreground">
                 {shopDate && (

@@ -3,13 +3,15 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { FREE_COSMETIC_OFFERS } from '@/lib/free-cosmetics'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Free Fortnite Cosmetics – Fortnitemares, Admin Panel & Ranked',
-  description: `Track ${FREE_COSMETIC_OFFERS.length}+ free Fortnite cosmetics in Override: Fortnitemares Jack-a-Nape quests, Jimothy Sidekick, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account rewards with end dates.`,
+  title: 'Free Fortnite Cosmetics – Pirate Shop, Fortnitemares & Ranked',
+  description: `Track ${FREE_COSMETIC_OFFERS.length}+ free Fortnite cosmetics: Treasure Hunters Pirate Shop Access, Fortnitemares Jack-a-Nape quests, Jimothy Sidekick, Admin Panel Lobby Hacks, Ranked Null, Battle Pass free track, and account rewards with end dates.`,
   path: '/free-cosmetics',
   keywords: [
     'free fortnite cosmetics',
     'free fortnite skins',
     'fortnite free rewards',
+    'pirate shop access fortnite',
+    'fortnite pirate shop',
     'fortnitemares 2026 free rewards',
     'jack-a-nape fortnite',
     'cuddlz fortnite',
@@ -29,7 +31,7 @@ const faqs = [
   {
     question: 'How do I get free Fortnite cosmetics in Override?',
     answer:
-      'Fortnitemares Nitemare quests (Jack-a-Nape through 31 Oct), Jimothy Sidekick extract, Safety in Numbers / Cuddlz on Horror Creative islands, Prophetic Tapestry login, Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
+      'Pirate Shop Access (rare Treasure Hunters BR chests — 14-day V-Bucks Item Shop claims), Fortnitemares Nitemare quests (Jack-a-Nape through 31 Oct), Jimothy Sidekick extract, Safety in Numbers / Cuddlz on Horror Creative islands, Prophetic Tapestry login, Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
   },
   {
     question: 'Do free Fortnite rewards expire?',

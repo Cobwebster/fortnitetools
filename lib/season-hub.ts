@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '26 Oct 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-10-26'
+export const SEASON_HUB_REVIEWED = '1 Nov 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-11-01'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -17,6 +17,7 @@ export const SEASON_HUB_LINKS = [
   { href: '/sets', label: 'Live sets' },
   { href: '/ranked', label: 'Ranked / LP' },
   { href: '/status', label: 'Is Fortnite down' },
+  { href: '/guides/how-to/how-to-get-pirate-shop-access-fortnite', label: 'Pirate Shop Access' },
   { href: '/guides/season/fortnite-treasure-hunters', label: 'Treasure Hunters' },
   { href: '/guides/season/when-does-fortnite-go-down-november-1', label: '1 Nov downtime / DST' },
   { href: '/guides/how-to/how-to-get-jack-a-nape-fortnite', label: 'Jack-a-Nape how-to' },
@@ -32,6 +33,10 @@ export const SEASON_HUB_LINKS = [
 ] as const
 
 export const RESET_WEEK_PLAYBOOK = [
+  {
+    title: 'Pirate Shop Access is live',
+    body: 'Treasure Hunters shipped a rare BR chest prize: Pirate Shop Access. Epic’s MOTD grants two activations (2026 and 2027). Each one claims V-Bucks Item Shop rows for 14 days from the moment you activate. Real-money offers, gifting, pass levels, and extra Sidekicks are excluded. Drop odds unpublished. How-to: Pirate Shop Access guide.',
+  },
   {
     title: 'Last week of Override',
     body: `Chapter 7 Season 4 (${CURRENT_SEASON.codename}) is in its final week. Epic’s Battle Pass page still reads “Ends November 1, 2026 Eastern Time.” Fortnitemares runs to the same calendar day. Claim Null ranked styles, Jack-a-Nape quests, Sprite Mastery, and unclaimed pass rewards before downtime — none of that carries.`,

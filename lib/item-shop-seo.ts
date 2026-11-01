@@ -1,5 +1,10 @@
 export const ITEM_SHOP_FAQS = [
   {
+    question: 'What is Pirate Shop Access in the Fortnite Item Shop?',
+    answer:
+      'A rare Treasure Hunters chest prize. Activate it once in 2026 and once in 2027 to claim V-Bucks shop offers for free for 14 days. Real-money packs, gifting, and Battle Pass rewards are excluded. Epic has not published drop odds. This tracker still shows the paid V-Bucks price — your client is the claim UI.',
+  },
+  {
     question: 'Where does FortniteTools get Item Shop data?',
     answer:
       'We pull live data from Fortnite-API.com, which tracks the current shop rotation and the full cosmetic database, including newly added and unreleased items.',
