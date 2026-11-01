@@ -145,7 +145,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/sprites',
     title: 'Sprites',
     description:
-      'Every Chapter 7 Sprite companion portrait — Jonesy, Gold, Cheat Master, Gummy, Galaxy, Cube, and collab variants.',
+      'Every Chapter 7 Sprite companion portrait — Treasure Hunters launch twelve, Fortune / Cursed finishes, plus Jonesy, Gold, and older variants.',
     tags: ['Sprites', 'Collection', 'Icons'],
     category: 'cosmetics',
   },

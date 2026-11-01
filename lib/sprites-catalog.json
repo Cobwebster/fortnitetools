@@ -1,26 +1,16 @@
 {
-  "capturedAt": "2026-10-27",
-  "note": "Chapter 7 companion Sprite icons hosted on FortniteTools. Not PNG sprite sheets.",
+  "capturedAt": "2026-11-01",
+  "note": "Chapter 7 companion Sprite icons hosted on FortniteTools. Treasure Hunters (v43.00) families added 1 Nov 2026. Not PNG sprite sheets.",
   "sprites": [
     {
-      "id": 212,
-      "slug": "bounty-hunter-8-bit-sprite",
-      "name": "Bounty Hunter 8-Bit",
-      "shortName": "Bounty Hunter 8-Bit",
+      "id": 191,
+      "slug": "8-bit-sprite",
+      "name": "8-Bit",
+      "shortName": "8-Bit",
       "family": "8-Bit",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-8-bit-sprite.webp"
-    },
-    {
-      "id": 192,
-      "slug": "cheat-master-8-bit-sprite",
-      "name": "Cheat Master 8-Bit",
-      "shortName": "Cheat Master 8-Bit",
-      "family": "8-Bit",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-8-bit-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/8-bit-sprite.webp"
     },
     {
       "id": 193,
@@ -33,6 +23,16 @@
       "image": "/images/sprites/gold-8-bit-sprite.webp"
     },
     {
+      "id": 192,
+      "slug": "cheat-master-8-bit-sprite",
+      "name": "Cheat Master 8-Bit",
+      "shortName": "Cheat Master 8-Bit",
+      "family": "8-Bit",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-8-bit-sprite.webp"
+    },
+    {
       "id": 117,
       "slug": "loot-hacker-8-bit-sprite",
       "name": "Loot Hacker 8-Bit",
@@ -43,14 +43,14 @@
       "image": "/images/sprites/loot-hacker-8-bit-sprite.webp"
     },
     {
-      "id": 191,
-      "slug": "8-bit-sprite",
-      "name": "8-Bit",
-      "shortName": "8-Bit",
+      "id": 212,
+      "slug": "bounty-hunter-8-bit-sprite",
+      "name": "Bounty Hunter 8-Bit",
+      "shortName": "Bounty Hunter 8-Bit",
       "family": "8-Bit",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/8-bit-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-8-bit-sprite.webp"
     },
     {
       "id": 246,
@@ -63,24 +63,14 @@
       "image": "/images/sprites/trick-or-treat-8-bit-sprite.webp"
     },
     {
-      "id": 207,
-      "slug": "bounty-hunter-adventure-sprite",
-      "name": "Bounty Hunter Adventure",
-      "shortName": "Bounty Hunter Adventure",
+      "id": 176,
+      "slug": "adventure-sprite",
+      "name": "Adventure",
+      "shortName": "Adventure",
       "family": "Adventure",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-adventure-sprite.webp"
-    },
-    {
-      "id": 177,
-      "slug": "cheat-master-adventure-sprite",
-      "name": "Cheat Master Adventure",
-      "shortName": "Cheat Master Adventure",
-      "family": "Adventure",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-adventure-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/adventure-sprite.webp"
     },
     {
       "id": 178,
@@ -93,6 +83,16 @@
       "image": "/images/sprites/gold-adventure-sprite.webp"
     },
     {
+      "id": 177,
+      "slug": "cheat-master-adventure-sprite",
+      "name": "Cheat Master Adventure",
+      "shortName": "Cheat Master Adventure",
+      "family": "Adventure",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-adventure-sprite.webp"
+    },
+    {
       "id": 108,
       "slug": "loot-hacker-adventure-sprite",
       "name": "Loot Hacker Adventure",
@@ -103,24 +103,14 @@
       "image": "/images/sprites/loot-hacker-adventure-sprite.webp"
     },
     {
-      "id": 264,
-      "slug": "quack-adventure-sprite",
-      "name": "Quack Adventure",
-      "shortName": "Quack Adventure",
+      "id": 207,
+      "slug": "bounty-hunter-adventure-sprite",
+      "name": "Bounty Hunter Adventure",
+      "shortName": "Bounty Hunter Adventure",
       "family": "Adventure",
-      "variant": "Quack",
-      "theme": "quack",
-      "image": "/images/sprites/quack-adventure-sprite.webp"
-    },
-    {
-      "id": 176,
-      "slug": "adventure-sprite",
-      "name": "Adventure",
-      "shortName": "Adventure",
-      "family": "Adventure",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/adventure-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-adventure-sprite.webp"
     },
     {
       "id": 242,
@@ -133,14 +123,24 @@
       "image": "/images/sprites/trick-or-treat-adventure-sprite.webp"
     },
     {
-      "id": 75,
-      "slug": "galaxy-air-sprite",
-      "name": "Galaxy Air",
-      "shortName": "Galaxy Air",
+      "id": 264,
+      "slug": "quack-adventure-sprite",
+      "name": "Quack Adventure",
+      "shortName": "Quack Adventure",
+      "family": "Adventure",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "/images/sprites/quack-adventure-sprite.webp"
+    },
+    {
+      "id": 74,
+      "slug": "air-sprite",
+      "name": "Air",
+      "shortName": "Air",
       "family": "Air",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-air-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/air-sprite.webp"
     },
     {
       "id": 42,
@@ -163,6 +163,16 @@
       "image": "/images/sprites/gummy-air-sprite.webp"
     },
     {
+      "id": 75,
+      "slug": "galaxy-air-sprite",
+      "name": "Galaxy Air",
+      "shortName": "Galaxy Air",
+      "family": "Air",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-air-sprite.webp"
+    },
+    {
       "id": 77,
       "slug": "holofoil-air-sprite",
       "name": "Holofoil Air",
@@ -173,16 +183,6 @@
       "image": "/images/sprites/holofoil-air-sprite.webp"
     },
     {
-      "id": 74,
-      "slug": "air-sprite",
-      "name": "Air",
-      "shortName": "Air",
-      "family": "Air",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/air-sprite.webp"
-    },
-    {
       "id": 67,
       "slug": "aura-sprite",
       "name": "Aura",
@@ -191,26 +191,6 @@
       "variant": "Epic",
       "theme": "epic",
       "image": "/images/sprites/aura-sprite.webp"
-    },
-    {
-      "id": 69,
-      "slug": "galaxy-aura-sprite",
-      "name": "Galaxy Aura",
-      "shortName": "Galaxy Aura",
-      "family": "Aura",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-aura-sprite.webp"
-    },
-    {
-      "id": 70,
-      "slug": "gem-aura-sprite",
-      "name": "Gem Aura",
-      "shortName": "Gem Aura",
-      "family": "Aura",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-aura-sprite.webp"
     },
     {
       "id": 71,
@@ -233,24 +213,64 @@
       "image": "/images/sprites/gummy-aura-sprite.webp"
     },
     {
-      "id": 146,
-      "slug": "cube-batman-sprite",
-      "name": "Cube Batman",
-      "shortName": "Cube Batman",
-      "family": "Batman",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-batman-sprite.webp"
-    },
-    {
-      "id": 142,
-      "slug": "galaxy-batman-sprite",
-      "name": "Galaxy Batman",
-      "shortName": "Galaxy Batman",
-      "family": "Batman",
+      "id": 69,
+      "slug": "galaxy-aura-sprite",
+      "name": "Galaxy Aura",
+      "shortName": "Galaxy Aura",
+      "family": "Aura",
       "variant": "Galaxy",
       "theme": "galaxy",
-      "image": "/images/sprites/galaxy-batman-sprite.webp"
+      "image": "/images/sprites/galaxy-aura-sprite.webp"
+    },
+    {
+      "id": 70,
+      "slug": "gem-aura-sprite",
+      "name": "Gem Aura",
+      "shortName": "Gem Aura",
+      "family": "Aura",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-aura-sprite.webp"
+    },
+    {
+      "id": 286,
+      "slug": "barry-o-fish-sprite",
+      "name": "Barry O'Fish",
+      "shortName": "Barry O'Fish",
+      "family": "Barry O'Fish",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/barry-o-fish-sprite.webp"
+    },
+    {
+      "id": 288,
+      "slug": "fortune-barry-o-fish-sprite",
+      "name": "Fortune Barry O'Fish",
+      "shortName": "Fortune Barry O'Fish",
+      "family": "Barry O'Fish",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-barry-o-fish-sprite.webp"
+    },
+    {
+      "id": 287,
+      "slug": "cursed-barry-o-fish-sprite",
+      "name": "Cursed Barry O'Fish",
+      "shortName": "Cursed Barry O'Fish",
+      "family": "Barry O'Fish",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-barry-o-fish-sprite.webp"
+    },
+    {
+      "id": 139,
+      "slug": "batman-sprite",
+      "name": "Batman",
+      "shortName": "Batman",
+      "family": "Batman",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/batman-sprite.webp"
     },
     {
       "id": 140,
@@ -273,6 +293,16 @@
       "image": "/images/sprites/gummy-batman-sprite.webp"
     },
     {
+      "id": 142,
+      "slug": "galaxy-batman-sprite",
+      "name": "Galaxy Batman",
+      "shortName": "Galaxy Batman",
+      "family": "Batman",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-batman-sprite.webp"
+    },
+    {
       "id": 145,
       "slug": "holofoil-batman-sprite",
       "name": "Holofoil Batman",
@@ -283,54 +313,14 @@
       "image": "/images/sprites/holofoil-batman-sprite.webp"
     },
     {
-      "id": 139,
-      "slug": "batman-sprite",
-      "name": "Batman",
-      "shortName": "Batman",
+      "id": 146,
+      "slug": "cube-batman-sprite",
+      "name": "Cube Batman",
+      "shortName": "Cube Batman",
       "family": "Batman",
-      "variant": "Mythic",
-      "theme": "mythic",
-      "image": "/images/sprites/batman-sprite.webp"
-    },
-    {
-      "id": 134,
-      "slug": "bounty-hunter-birthday-sprite",
-      "name": "Bounty Hunter Birthday",
-      "shortName": "Bounty Hunter Birthday",
-      "family": "Birthday",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-birthday-sprite.webp"
-    },
-    {
-      "id": 132,
-      "slug": "cheat-master-birthday-sprite",
-      "name": "Cheat Master Birthday",
-      "shortName": "Cheat Master Birthday",
-      "family": "Birthday",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-birthday-sprite.webp"
-    },
-    {
-      "id": 131,
-      "slug": "gold-birthday-sprite",
-      "name": "Gold Birthday",
-      "shortName": "Gold Birthday",
-      "family": "Birthday",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-birthday-sprite.webp"
-    },
-    {
-      "id": 133,
-      "slug": "loot-hacker-birthday-sprite",
-      "name": "Loot Hacker Birthday",
-      "shortName": "Loot Hacker Birthday",
-      "family": "Birthday",
-      "variant": "Loot Hacker",
-      "theme": "hacker",
-      "image": "/images/sprites/loot-hacker-birthday-sprite.webp"
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-batman-sprite.webp"
     },
     {
       "id": 127,
@@ -343,6 +333,46 @@
       "image": "/images/sprites/birthday-sprite.webp"
     },
     {
+      "id": 131,
+      "slug": "gold-birthday-sprite",
+      "name": "Gold Birthday",
+      "shortName": "Gold Birthday",
+      "family": "Birthday",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-birthday-sprite.webp"
+    },
+    {
+      "id": 132,
+      "slug": "cheat-master-birthday-sprite",
+      "name": "Cheat Master Birthday",
+      "shortName": "Cheat Master Birthday",
+      "family": "Birthday",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-birthday-sprite.webp"
+    },
+    {
+      "id": 133,
+      "slug": "loot-hacker-birthday-sprite",
+      "name": "Loot Hacker Birthday",
+      "shortName": "Loot Hacker Birthday",
+      "family": "Birthday",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "/images/sprites/loot-hacker-birthday-sprite.webp"
+    },
+    {
+      "id": 134,
+      "slug": "bounty-hunter-birthday-sprite",
+      "name": "Bounty Hunter Birthday",
+      "shortName": "Bounty Hunter Birthday",
+      "family": "Birthday",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-birthday-sprite.webp"
+    },
+    {
       "id": 234,
       "slug": "trick-or-treat-birthday-sprite",
       "name": "Trick or Treat Birthday",
@@ -351,36 +381,6 @@
       "variant": "Trick or Treat",
       "theme": "tricktreat",
       "image": "/images/sprites/trick-or-treat-birthday-sprite.webp"
-    },
-    {
-      "id": 124,
-      "slug": "bounty-hunter-blinky-sprite",
-      "name": "Bounty Hunter Blinky",
-      "shortName": "Bounty Hunter Blinky",
-      "family": "Blinky",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-blinky-sprite.webp"
-    },
-    {
-      "id": 121,
-      "slug": "cheat-master-blinky-sprite",
-      "name": "Cheat Master Blinky",
-      "shortName": "Cheat Master Blinky",
-      "family": "Blinky",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-blinky-sprite.webp"
-    },
-    {
-      "id": 122,
-      "slug": "gold-blinky-sprite",
-      "name": "Gold Blinky",
-      "shortName": "Gold Blinky",
-      "family": "Blinky",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-blinky-sprite.webp"
     },
     {
       "id": 120,
@@ -393,6 +393,26 @@
       "image": "/images/sprites/blinky-sprite.webp"
     },
     {
+      "id": 122,
+      "slug": "gold-blinky-sprite",
+      "name": "Gold Blinky",
+      "shortName": "Gold Blinky",
+      "family": "Blinky",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-blinky-sprite.webp"
+    },
+    {
+      "id": 121,
+      "slug": "cheat-master-blinky-sprite",
+      "name": "Cheat Master Blinky",
+      "shortName": "Cheat Master Blinky",
+      "family": "Blinky",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-blinky-sprite.webp"
+    },
+    {
       "id": 123,
       "slug": "loot-hacker-blinky-sprite",
       "name": "Loot Hacker Blinky",
@@ -401,6 +421,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-blinky-sprite.webp"
+    },
+    {
+      "id": 124,
+      "slug": "bounty-hunter-blinky-sprite",
+      "name": "Bounty Hunter Blinky",
+      "shortName": "Bounty Hunter Blinky",
+      "family": "Blinky",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-blinky-sprite.webp"
     },
     {
       "id": 232,
@@ -413,24 +443,14 @@
       "image": "/images/sprites/trick-or-treat-blinky-sprite.webp"
     },
     {
-      "id": 126,
-      "slug": "cube-boss-sprite",
-      "name": "Cube Boss",
-      "shortName": "Cube Boss",
+      "id": 49,
+      "slug": "boss-sprite",
+      "name": "Boss",
+      "shortName": "Boss",
       "family": "Boss",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-boss-sprite.webp"
-    },
-    {
-      "id": 52,
-      "slug": "galaxy-boss-sprite",
-      "name": "Galaxy Boss",
-      "shortName": "Galaxy Boss",
-      "family": "Boss",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-boss-sprite.webp"
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/boss-sprite.webp"
     },
     {
       "id": 50,
@@ -453,14 +473,24 @@
       "image": "/images/sprites/gummy-boss-sprite.webp"
     },
     {
-      "id": 49,
-      "slug": "boss-sprite",
-      "name": "Boss",
-      "shortName": "Boss",
+      "id": 52,
+      "slug": "galaxy-boss-sprite",
+      "name": "Galaxy Boss",
+      "shortName": "Galaxy Boss",
       "family": "Boss",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/boss-sprite.webp"
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-boss-sprite.webp"
+    },
+    {
+      "id": 126,
+      "slug": "cube-boss-sprite",
+      "name": "Cube Boss",
+      "shortName": "Cube Boss",
+      "family": "Boss",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-boss-sprite.webp"
     },
     {
       "id": 41,
@@ -473,24 +503,14 @@
       "image": "/images/sprites/burnt-peanut.webp"
     },
     {
-      "id": 205,
-      "slug": "bounty-hunter-bush-sprite",
-      "name": "Bounty Hunter Bush",
-      "shortName": "Bounty Hunter Bush",
+      "id": 167,
+      "slug": "bush-sprite",
+      "name": "Bush",
+      "shortName": "Bush",
       "family": "Bush",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-bush-sprite.webp"
-    },
-    {
-      "id": 168,
-      "slug": "cheat-master-bush-sprite",
-      "name": "Cheat Master Bush",
-      "shortName": "Cheat Master Bush",
-      "family": "Bush",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-bush-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/bush-sprite.webp"
     },
     {
       "id": 169,
@@ -503,6 +523,16 @@
       "image": "/images/sprites/gold-bush-sprite.webp"
     },
     {
+      "id": 168,
+      "slug": "cheat-master-bush-sprite",
+      "name": "Cheat Master Bush",
+      "shortName": "Cheat Master Bush",
+      "family": "Bush",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-bush-sprite.webp"
+    },
+    {
       "id": 105,
       "slug": "loot-hacker-bush-sprite",
       "name": "Loot Hacker Bush",
@@ -513,24 +543,14 @@
       "image": "/images/sprites/loot-hacker-bush-sprite.webp"
     },
     {
-      "id": 263,
-      "slug": "quack-bush-sprite",
-      "name": "Quack Bush",
-      "shortName": "Quack Bush",
+      "id": 205,
+      "slug": "bounty-hunter-bush-sprite",
+      "name": "Bounty Hunter Bush",
+      "shortName": "Bounty Hunter Bush",
       "family": "Bush",
-      "variant": "Quack",
-      "theme": "quack",
-      "image": "/images/sprites/quack-bush-sprite.webp"
-    },
-    {
-      "id": 167,
-      "slug": "bush-sprite",
-      "name": "Bush",
-      "shortName": "Bush",
-      "family": "Bush",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/bush-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-bush-sprite.webp"
     },
     {
       "id": 240,
@@ -543,34 +563,44 @@
       "image": "/images/sprites/trick-or-treat-bush-sprite.webp"
     },
     {
-      "id": 144,
-      "slug": "bounty-hunter-crash-bandicoot-sprite",
-      "name": "Bounty Hunter Crash Bandicoot",
-      "shortName": "Bounty Hunter Crash Bandicoot",
-      "family": "Crash Bandicoot",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-crash-bandicoot-sprite.webp"
+      "id": 263,
+      "slug": "quack-bush-sprite",
+      "name": "Quack Bush",
+      "shortName": "Quack Bush",
+      "family": "Bush",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "/images/sprites/quack-bush-sprite.webp"
     },
     {
-      "id": 136,
-      "slug": "cheat-master-crash-bandicoot-sprite",
-      "name": "Cheat Master Crash Bandicoot",
-      "shortName": "Cheat Master Crash Bandicoot",
-      "family": "Crash Bandicoot",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-crash-bandicoot-sprite.webp"
+      "id": 289,
+      "slug": "chester-sprite",
+      "name": "Chester",
+      "shortName": "Chester",
+      "family": "Chester",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "/images/sprites/chester-sprite.webp"
     },
     {
-      "id": 137,
-      "slug": "gold-crash-bandicoot-sprite",
-      "name": "Gold Crash Bandicoot",
-      "shortName": "Gold Crash Bandicoot",
-      "family": "Crash Bandicoot",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-crash-bandicoot-sprite.webp"
+      "id": 291,
+      "slug": "fortune-chester-sprite",
+      "name": "Fortune Chester",
+      "shortName": "Fortune Chester",
+      "family": "Chester",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-chester-sprite.webp"
+    },
+    {
+      "id": 290,
+      "slug": "cursed-chester-sprite",
+      "name": "Cursed Chester",
+      "shortName": "Cursed Chester",
+      "family": "Chester",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-chester-sprite.webp"
     },
     {
       "id": 135,
@@ -583,6 +613,26 @@
       "image": "/images/sprites/crash-bandicoot-sprite.webp"
     },
     {
+      "id": 137,
+      "slug": "gold-crash-bandicoot-sprite",
+      "name": "Gold Crash Bandicoot",
+      "shortName": "Gold Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-crash-bandicoot-sprite.webp"
+    },
+    {
+      "id": 136,
+      "slug": "cheat-master-crash-bandicoot-sprite",
+      "name": "Cheat Master Crash Bandicoot",
+      "shortName": "Cheat Master Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-crash-bandicoot-sprite.webp"
+    },
+    {
       "id": 143,
       "slug": "loot-hacker-crash-bandicoot-sprite",
       "name": "Loot Hacker Crash Bandicoot",
@@ -591,6 +641,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-crash-bandicoot-sprite.webp"
+    },
+    {
+      "id": 144,
+      "slug": "bounty-hunter-crash-bandicoot-sprite",
+      "name": "Bounty Hunter Crash Bandicoot",
+      "shortName": "Bounty Hunter Crash Bandicoot",
+      "family": "Crash Bandicoot",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-crash-bandicoot-sprite.webp"
     },
     {
       "id": 235,
@@ -603,24 +663,14 @@
       "image": "/images/sprites/trick-or-treat-crash-bandicoot-sprite.webp"
     },
     {
-      "id": 211,
-      "slug": "bounty-hunter-crown-sprite",
-      "name": "Bounty Hunter Crown",
-      "shortName": "Bounty Hunter Crown",
+      "id": 188,
+      "slug": "crown-sprite",
+      "name": "Crown",
+      "shortName": "Crown",
       "family": "Crown",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-crown-sprite.webp"
-    },
-    {
-      "id": 189,
-      "slug": "cheat-master-crown-sprite",
-      "name": "Cheat Master Crown",
-      "shortName": "Cheat Master Crown",
-      "family": "Crown",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-crown-sprite.webp"
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/crown-sprite.webp"
     },
     {
       "id": 190,
@@ -633,6 +683,16 @@
       "image": "/images/sprites/gold-crown-sprite.webp"
     },
     {
+      "id": 189,
+      "slug": "cheat-master-crown-sprite",
+      "name": "Cheat Master Crown",
+      "shortName": "Cheat Master Crown",
+      "family": "Crown",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-crown-sprite.webp"
+    },
+    {
       "id": 115,
       "slug": "loot-hacker-crown-sprite",
       "name": "Loot Hacker Crown",
@@ -643,14 +703,14 @@
       "image": "/images/sprites/loot-hacker-crown-sprite.webp"
     },
     {
-      "id": 188,
-      "slug": "crown-sprite",
-      "name": "Crown",
-      "shortName": "Crown",
+      "id": 211,
+      "slug": "bounty-hunter-crown-sprite",
+      "name": "Bounty Hunter Crown",
+      "shortName": "Bounty Hunter Crown",
       "family": "Crown",
-      "variant": "Mythic",
-      "theme": "mythic",
-      "image": "/images/sprites/crown-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-crown-sprite.webp"
     },
     {
       "id": 243,
@@ -673,26 +733,6 @@
       "image": "/images/sprites/demon-sprite.webp"
     },
     {
-      "id": 39,
-      "slug": "galaxy-demon-sprite",
-      "name": "Galaxy Demon",
-      "shortName": "Galaxy Demon",
-      "family": "Demon",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-demon-sprite.webp"
-    },
-    {
-      "id": 47,
-      "slug": "gem-demon-sprite",
-      "name": "Gem Demon",
-      "shortName": "Gem Demon",
-      "family": "Demon",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-demon-sprite.webp"
-    },
-    {
       "id": 40,
       "slug": "gold-demon-sprite",
       "name": "Gold Demon",
@@ -713,24 +753,34 @@
       "image": "/images/sprites/gummy-demon-sprite.webp"
     },
     {
-      "id": 99,
-      "slug": "cube-dream-sprite",
-      "name": "Cube Dream",
-      "shortName": "Cube Dream",
-      "family": "Dream",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-dream-sprite.webp"
-    },
-    {
-      "id": 23,
-      "slug": "galaxy-dream-sprite",
-      "name": "Galaxy Dream",
-      "shortName": "Galaxy Dream",
-      "family": "Dream",
+      "id": 39,
+      "slug": "galaxy-demon-sprite",
+      "name": "Galaxy Demon",
+      "shortName": "Galaxy Demon",
+      "family": "Demon",
       "variant": "Galaxy",
       "theme": "galaxy",
-      "image": "/images/sprites/galaxy-dream-sprite.webp"
+      "image": "/images/sprites/galaxy-demon-sprite.webp"
+    },
+    {
+      "id": 47,
+      "slug": "gem-demon-sprite",
+      "name": "Gem Demon",
+      "shortName": "Gem Demon",
+      "family": "Demon",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-demon-sprite.webp"
+    },
+    {
+      "id": 21,
+      "slug": "dream-sprite",
+      "name": "Dream",
+      "shortName": "Dream",
+      "family": "Dream",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/dream-sprite.webp"
     },
     {
       "id": 24,
@@ -753,14 +803,24 @@
       "image": "/images/sprites/gummy-dream-sprite.webp"
     },
     {
-      "id": 21,
-      "slug": "dream-sprite",
-      "name": "Dream",
-      "shortName": "Dream",
+      "id": 23,
+      "slug": "galaxy-dream-sprite",
+      "name": "Galaxy Dream",
+      "shortName": "Galaxy Dream",
       "family": "Dream",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/dream-sprite.webp"
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-dream-sprite.webp"
+    },
+    {
+      "id": 99,
+      "slug": "cube-dream-sprite",
+      "name": "Cube Dream",
+      "shortName": "Cube Dream",
+      "family": "Dream",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-dream-sprite.webp"
     },
     {
       "id": 13,
@@ -771,26 +831,6 @@
       "variant": "Epic",
       "theme": "epic",
       "image": "/images/sprites/duck-sprite.webp"
-    },
-    {
-      "id": 15,
-      "slug": "galaxy-duck-sprite",
-      "name": "Galaxy Duck",
-      "shortName": "Galaxy Duck",
-      "family": "Duck",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-duck-sprite.webp"
-    },
-    {
-      "id": 44,
-      "slug": "gem-duck-sprite",
-      "name": "Gem Duck",
-      "shortName": "Gem Duck",
-      "family": "Duck",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-duck-sprite.webp"
     },
     {
       "id": 16,
@@ -813,24 +853,24 @@
       "image": "/images/sprites/gummy-duck-sprite.webp"
     },
     {
-      "id": 260,
-      "slug": "bounty-hunter-dumpster-dive-sprite",
-      "name": "Bounty Hunter Dumpster Dive",
-      "shortName": "Bounty Hunter Dumpster Dive",
-      "family": "Dumpster Dive",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-dumpster-dive-sprite.webp"
+      "id": 15,
+      "slug": "galaxy-duck-sprite",
+      "name": "Galaxy Duck",
+      "shortName": "Galaxy Duck",
+      "family": "Duck",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-duck-sprite.webp"
     },
     {
-      "id": 257,
-      "slug": "cheat-master-dumpster-dive-sprite",
-      "name": "Cheat Master Dumpster Dive",
-      "shortName": "Cheat Master Dumpster Dive",
-      "family": "Dumpster Dive",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-dumpster-dive-sprite.webp"
+      "id": 44,
+      "slug": "gem-duck-sprite",
+      "name": "Gem Duck",
+      "shortName": "Gem Duck",
+      "family": "Duck",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-duck-sprite.webp"
     },
     {
       "id": 256,
@@ -853,6 +893,16 @@
       "image": "/images/sprites/gold-dumpster-dive-sprite.webp"
     },
     {
+      "id": 257,
+      "slug": "cheat-master-dumpster-dive-sprite",
+      "name": "Cheat Master Dumpster Dive",
+      "shortName": "Cheat Master Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-dumpster-dive-sprite.webp"
+    },
+    {
       "id": 259,
       "slug": "loot-hacker-dumpster-dive-sprite",
       "name": "Loot Hacker Dumpster Dive",
@@ -861,6 +911,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-dumpster-dive-sprite.webp"
+    },
+    {
+      "id": 260,
+      "slug": "bounty-hunter-dumpster-dive-sprite",
+      "name": "Bounty Hunter Dumpster Dive",
+      "shortName": "Bounty Hunter Dumpster Dive",
+      "family": "Dumpster Dive",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-dumpster-dive-sprite.webp"
     },
     {
       "id": 261,
@@ -873,34 +933,14 @@
       "image": "/images/sprites/trick-or-treat-dumpster-dive-sprite.webp"
     },
     {
-      "id": 86,
-      "slug": "cube-earth-sprite",
-      "name": "Cube Earth",
-      "shortName": "Cube Earth",
+      "id": 5,
+      "slug": "earth-sprite",
+      "name": "Earth",
+      "shortName": "Earth",
       "family": "Earth",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-earth-sprite.webp"
-    },
-    {
-      "id": 7,
-      "slug": "galaxy-earth-sprite",
-      "name": "Galaxy Earth",
-      "shortName": "Galaxy Earth",
-      "family": "Earth",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-earth-sprite.webp"
-    },
-    {
-      "id": 45,
-      "slug": "gem-earth-sprite",
-      "name": "Gem Earth",
-      "shortName": "Gem Earth",
-      "family": "Earth",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-earth-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/earth-sprite.webp"
     },
     {
       "id": 8,
@@ -923,6 +963,36 @@
       "image": "/images/sprites/gummy-earth-sprite.webp"
     },
     {
+      "id": 7,
+      "slug": "galaxy-earth-sprite",
+      "name": "Galaxy Earth",
+      "shortName": "Galaxy Earth",
+      "family": "Earth",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-earth-sprite.webp"
+    },
+    {
+      "id": 86,
+      "slug": "cube-earth-sprite",
+      "name": "Cube Earth",
+      "shortName": "Cube Earth",
+      "family": "Earth",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-earth-sprite.webp"
+    },
+    {
+      "id": 45,
+      "slug": "gem-earth-sprite",
+      "name": "Gem Earth",
+      "shortName": "Gem Earth",
+      "family": "Earth",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-earth-sprite.webp"
+    },
+    {
       "id": 87,
       "slug": "quack-earth-sprite",
       "name": "Quack Earth",
@@ -933,34 +1003,44 @@
       "image": "/images/sprites/quack-earth-sprite.webp"
     },
     {
-      "id": 5,
-      "slug": "earth-sprite",
-      "name": "Earth",
-      "shortName": "Earth",
-      "family": "Earth",
+      "id": 292,
+      "slug": "exmarks-sprite",
+      "name": "Exmarks",
+      "shortName": "Exmarks",
+      "family": "Exmarks",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "/images/sprites/exmarks-sprite.webp"
+    },
+    {
+      "id": 293,
+      "slug": "fortune-exmarks-sprite",
+      "name": "Fortune Exmarks",
+      "shortName": "Fortune Exmarks",
+      "family": "Exmarks",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-exmarks-sprite.webp"
+    },
+    {
+      "id": 294,
+      "slug": "cursed-exmarks-sprite",
+      "name": "Cursed Exmarks",
+      "shortName": "Cursed Exmarks",
+      "family": "Exmarks",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-exmarks-sprite.webp"
+    },
+    {
+      "id": 9,
+      "slug": "fire-sprite",
+      "name": "Fire",
+      "shortName": "Fire",
+      "family": "Fire",
       "variant": "Rare",
       "theme": "rare",
-      "image": "/images/sprites/earth-sprite.webp"
-    },
-    {
-      "id": 89,
-      "slug": "cube-fire-sprite",
-      "name": "Cube Fire",
-      "shortName": "Cube Fire",
-      "family": "Fire",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-fire-sprite.webp"
-    },
-    {
-      "id": 11,
-      "slug": "galaxy-fire-sprite",
-      "name": "Galaxy Fire",
-      "shortName": "Galaxy Fire",
-      "family": "Fire",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-fire-sprite.webp"
+      "image": "/images/sprites/fire-sprite.webp"
     },
     {
       "id": 12,
@@ -983,6 +1063,16 @@
       "image": "/images/sprites/gummy-fire-sprite.webp"
     },
     {
+      "id": 11,
+      "slug": "galaxy-fire-sprite",
+      "name": "Galaxy Fire",
+      "shortName": "Galaxy Fire",
+      "family": "Fire",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-fire-sprite.webp"
+    },
+    {
       "id": 46,
       "slug": "holofoil-fire-sprite",
       "name": "Holofoil Fire",
@@ -991,6 +1081,16 @@
       "variant": "Holofoil",
       "theme": "holofoil",
       "image": "/images/sprites/holofoil-fire-sprite.webp"
+    },
+    {
+      "id": 89,
+      "slug": "cube-fire-sprite",
+      "name": "Cube Fire",
+      "shortName": "Cube Fire",
+      "family": "Fire",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-fire-sprite.webp"
     },
     {
       "id": 90,
@@ -1003,34 +1103,14 @@
       "image": "/images/sprites/quack-fire-sprite.webp"
     },
     {
-      "id": 9,
-      "slug": "fire-sprite",
-      "name": "Fire",
-      "shortName": "Fire",
-      "family": "Fire",
+      "id": 58,
+      "slug": "fishy-sprite",
+      "name": "Fishy",
+      "shortName": "Fishy",
+      "family": "Fishy",
       "variant": "Rare",
       "theme": "rare",
-      "image": "/images/sprites/fire-sprite.webp"
-    },
-    {
-      "id": 116,
-      "slug": "cube-fishy-sprite",
-      "name": "Cube Fishy",
-      "shortName": "Cube Fishy",
-      "family": "Fishy",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-fishy-sprite.webp"
-    },
-    {
-      "id": 60,
-      "slug": "galaxy-fishy-sprite",
-      "name": "Galaxy Fishy",
-      "shortName": "Galaxy Fishy",
-      "family": "Fishy",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-fishy-sprite.webp"
+      "image": "/images/sprites/fishy-sprite.webp"
     },
     {
       "id": 61,
@@ -1053,14 +1133,24 @@
       "image": "/images/sprites/gummy-fishy-sprite.webp"
     },
     {
-      "id": 58,
-      "slug": "fishy-sprite",
-      "name": "Fishy",
-      "shortName": "Fishy",
+      "id": 60,
+      "slug": "galaxy-fishy-sprite",
+      "name": "Galaxy Fishy",
+      "shortName": "Galaxy Fishy",
       "family": "Fishy",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/fishy-sprite.webp"
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-fishy-sprite.webp"
+    },
+    {
+      "id": 116,
+      "slug": "cube-fishy-sprite",
+      "name": "Cube Fishy",
+      "shortName": "Cube Fishy",
+      "family": "Fishy",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-fishy-sprite.webp"
     },
     {
       "id": 17,
@@ -1071,16 +1161,6 @@
       "variant": "Epic",
       "theme": "epic",
       "image": "/images/sprites/ghost-sprite.webp"
-    },
-    {
-      "id": 19,
-      "slug": "galaxy-ghost-sprite",
-      "name": "Galaxy Ghost",
-      "shortName": "Galaxy Ghost",
-      "family": "Ghost",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-ghost-sprite.webp"
     },
     {
       "id": 20,
@@ -1103,6 +1183,16 @@
       "image": "/images/sprites/gummy-ghost-sprite.webp"
     },
     {
+      "id": 19,
+      "slug": "galaxy-ghost-sprite",
+      "name": "Galaxy Ghost",
+      "shortName": "Galaxy Ghost",
+      "family": "Ghost",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-ghost-sprite.webp"
+    },
+    {
       "id": 48,
       "slug": "holofoil-ghost-sprite",
       "name": "Holofoil Ghost",
@@ -1113,34 +1203,14 @@
       "image": "/images/sprites/holofoil-ghost-sprite.webp"
     },
     {
-      "id": 130,
-      "slug": "cube-grim-sprite",
-      "name": "Cube Grim",
-      "shortName": "Cube Grim",
+      "id": 78,
+      "slug": "grim-sprite",
+      "name": "Grim",
+      "shortName": "Grim",
       "family": "Grim",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-grim-sprite.webp"
-    },
-    {
-      "id": 80,
-      "slug": "galaxy-grim-sprite",
-      "name": "Galaxy Grim",
-      "shortName": "Galaxy Grim",
-      "family": "Grim",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-grim-sprite.webp"
-    },
-    {
-      "id": 128,
-      "slug": "gem-grim-sprite",
-      "name": "Gem Grim",
-      "shortName": "Gem Grim",
-      "family": "Grim",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-grim-sprite.webp"
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/grim-sprite.webp"
     },
     {
       "id": 81,
@@ -1163,6 +1233,16 @@
       "image": "/images/sprites/gummy-grim-sprite.webp"
     },
     {
+      "id": 80,
+      "slug": "galaxy-grim-sprite",
+      "name": "Galaxy Grim",
+      "shortName": "Galaxy Grim",
+      "family": "Grim",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-grim-sprite.webp"
+    },
+    {
       "id": 129,
       "slug": "holofoil-grim-sprite",
       "name": "Holofoil Grim",
@@ -1173,34 +1253,54 @@
       "image": "/images/sprites/holofoil-grim-sprite.webp"
     },
     {
-      "id": 78,
-      "slug": "grim-sprite",
-      "name": "Grim",
-      "shortName": "Grim",
+      "id": 130,
+      "slug": "cube-grim-sprite",
+      "name": "Cube Grim",
+      "shortName": "Cube Grim",
       "family": "Grim",
-      "variant": "Mythic",
-      "theme": "mythic",
-      "image": "/images/sprites/grim-sprite.webp"
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-grim-sprite.webp"
     },
     {
-      "id": 271,
-      "slug": "bounty-hunter-honey-sprite",
-      "name": "Bounty Hunter Honey",
-      "shortName": "Bounty Hunter Honey",
-      "family": "Honey",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-honey-sprite.webp"
+      "id": 128,
+      "slug": "gem-grim-sprite",
+      "name": "Gem Grim",
+      "shortName": "Gem Grim",
+      "family": "Grim",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-grim-sprite.webp"
     },
     {
-      "id": 268,
-      "slug": "cheatmaster-honey-sprite",
-      "name": "Cheatmaster Honey",
-      "shortName": "Cheatmaster Honey",
-      "family": "Honey",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheatmaster-honey-sprite.webp"
+      "id": 280,
+      "slug": "halfpeeld-sprite",
+      "name": "Halfpeel'd",
+      "shortName": "Halfpeel'd",
+      "family": "Halfpeel'd",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/halfpeeld-sprite.webp"
+    },
+    {
+      "id": 281,
+      "slug": "fortune-halfpeeld-sprite",
+      "name": "Fortune Halfpeel'd",
+      "shortName": "Fortune Halfpeel'd",
+      "family": "Halfpeel'd",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-halfpeeld-sprite.webp"
+    },
+    {
+      "id": 282,
+      "slug": "cursed-halfpeeld-sprite",
+      "name": "Cursed Halfpeel'd",
+      "shortName": "Cursed Halfpeel'd",
+      "family": "Halfpeel'd",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-halfpeeld-sprite.webp"
     },
     {
       "id": 267,
@@ -1223,6 +1323,16 @@
       "image": "/images/sprites/gold-honey-sprite.webp"
     },
     {
+      "id": 268,
+      "slug": "cheatmaster-honey-sprite",
+      "name": "Cheatmaster Honey",
+      "shortName": "Cheatmaster Honey",
+      "family": "Honey",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheatmaster-honey-sprite.webp"
+    },
+    {
       "id": 270,
       "slug": "loot-hacker-honey-sprite",
       "name": "Loot Hacker Honey",
@@ -1231,6 +1341,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-honey-sprite.webp"
+    },
+    {
+      "id": 271,
+      "slug": "bounty-hunter-honey-sprite",
+      "name": "Bounty Hunter Honey",
+      "shortName": "Bounty Hunter Honey",
+      "family": "Honey",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-honey-sprite.webp"
     },
     {
       "id": 272,
@@ -1253,24 +1373,14 @@
       "image": "/images/sprites/ironmouse-sprite.webp"
     },
     {
-      "id": 119,
-      "slug": "bounty-hunter-jackrabbit-sprite",
-      "name": "Bounty Hunter Jackrabbit",
-      "shortName": "Bounty Hunter Jackrabbit",
+      "id": 161,
+      "slug": "jackrabbit-sprite",
+      "name": "Jackrabbit",
+      "shortName": "Jackrabbit",
       "family": "Jackrabbit",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-jackrabbit-sprite.webp"
-    },
-    {
-      "id": 163,
-      "slug": "cheat-master-jackrabbit-sprite",
-      "name": "Cheat Master Jackrabbit",
-      "shortName": "Cheat Master Jackrabbit",
-      "family": "Jackrabbit",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-jackrabbit-sprite.webp"
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/jackrabbit-sprite.webp"
     },
     {
       "id": 162,
@@ -1283,14 +1393,14 @@
       "image": "/images/sprites/gold-jackrabbit-sprite.webp"
     },
     {
-      "id": 161,
-      "slug": "jackrabbit-sprite",
-      "name": "Jackrabbit",
-      "shortName": "Jackrabbit",
+      "id": 163,
+      "slug": "cheat-master-jackrabbit-sprite",
+      "name": "Cheat Master Jackrabbit",
+      "shortName": "Cheat Master Jackrabbit",
       "family": "Jackrabbit",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/jackrabbit-sprite.webp"
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-jackrabbit-sprite.webp"
     },
     {
       "id": 102,
@@ -1301,6 +1411,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-jackrabbit-sprite.webp"
+    },
+    {
+      "id": 119,
+      "slug": "bounty-hunter-jackrabbit-sprite",
+      "name": "Bounty Hunter Jackrabbit",
+      "shortName": "Bounty Hunter Jackrabbit",
+      "family": "Jackrabbit",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-jackrabbit-sprite.webp"
     },
     {
       "id": 225,
@@ -1323,24 +1443,14 @@
       "image": "/images/sprites/john-wick-sprite.webp"
     },
     {
-      "id": 209,
-      "slug": "bounty-hunter-jonesy-sprite",
-      "name": "Bounty Hunter Jonesy",
-      "shortName": "Bounty Hunter Jonesy",
+      "id": 182,
+      "slug": "jonesy-sprite",
+      "name": "Jonesy",
+      "shortName": "Jonesy",
       "family": "Jonesy",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-jonesy-sprite.webp"
-    },
-    {
-      "id": 183,
-      "slug": "cheat-master-jonesy-sprite",
-      "name": "Cheat Master Jonesy",
-      "shortName": "Cheat Master Jonesy",
-      "family": "Jonesy",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-jonesy-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/jonesy-sprite.webp"
     },
     {
       "id": 184,
@@ -1353,6 +1463,16 @@
       "image": "/images/sprites/gold-jonesy-sprite.webp"
     },
     {
+      "id": 183,
+      "slug": "cheat-master-jonesy-sprite",
+      "name": "Cheat Master Jonesy",
+      "shortName": "Cheat Master Jonesy",
+      "family": "Jonesy",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-jonesy-sprite.webp"
+    },
+    {
       "id": 110,
       "slug": "loot-hacker-jonesy-sprite",
       "name": "Loot Hacker Jonesy",
@@ -1363,24 +1483,14 @@
       "image": "/images/sprites/loot-hacker-jonesy-sprite.webp"
     },
     {
-      "id": 266,
-      "slug": "quack-jonesy-sprite",
-      "name": "Quack Jonesy",
-      "shortName": "Quack Jonesy",
+      "id": 209,
+      "slug": "bounty-hunter-jonesy-sprite",
+      "name": "Bounty Hunter Jonesy",
+      "shortName": "Bounty Hunter Jonesy",
       "family": "Jonesy",
-      "variant": "Quack",
-      "theme": "quack",
-      "image": "/images/sprites/quack-jonesy-sprite.webp"
-    },
-    {
-      "id": 182,
-      "slug": "jonesy-sprite",
-      "name": "Jonesy",
-      "shortName": "Jonesy",
-      "family": "Jonesy",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/jonesy-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-jonesy-sprite.webp"
     },
     {
       "id": 244,
@@ -1393,34 +1503,44 @@
       "image": "/images/sprites/trick-or-treat-jonesy-sprite.webp"
     },
     {
-      "id": 206,
-      "slug": "bounty-hunter-killswitch-sprite",
-      "name": "Bounty Hunter Killswitch",
-      "shortName": "Bounty Hunter Killswitch",
-      "family": "Killswitch",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-killswitch-sprite.webp"
+      "id": 266,
+      "slug": "quack-jonesy-sprite",
+      "name": "Quack Jonesy",
+      "shortName": "Quack Jonesy",
+      "family": "Jonesy",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "/images/sprites/quack-jonesy-sprite.webp"
     },
     {
-      "id": 174,
-      "slug": "cheat-master-killswitch-sprite",
-      "name": "Cheat Master Killswitch",
-      "shortName": "Cheat Master Killswitch",
-      "family": "Killswitch",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-killswitch-sprite.webp"
+      "id": 298,
+      "slug": "kelper-sprite",
+      "name": "Kelper",
+      "shortName": "Kelper",
+      "family": "Kelper",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "/images/sprites/kelper-sprite.webp"
     },
     {
-      "id": 175,
-      "slug": "gold-killswitch-sprite",
-      "name": "Gold Killswitch",
-      "shortName": "Gold Killswitch",
-      "family": "Killswitch",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-killswitch-sprite.webp"
+      "id": 299,
+      "slug": "fortune-kelper-sprite",
+      "name": "Fortune Kelper",
+      "shortName": "Fortune Kelper",
+      "family": "Kelper",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-kelper-sprite.webp"
+    },
+    {
+      "id": 300,
+      "slug": "cursed-kelper-sprite",
+      "name": "Cursed Kelper",
+      "shortName": "Cursed Kelper",
+      "family": "Kelper",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-kelper-sprite.webp"
     },
     {
       "id": 173,
@@ -1433,6 +1553,26 @@
       "image": "/images/sprites/killswitch-sprite.webp"
     },
     {
+      "id": 175,
+      "slug": "gold-killswitch-sprite",
+      "name": "Gold Killswitch",
+      "shortName": "Gold Killswitch",
+      "family": "Killswitch",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-killswitch-sprite.webp"
+    },
+    {
+      "id": 174,
+      "slug": "cheat-master-killswitch-sprite",
+      "name": "Cheat Master Killswitch",
+      "shortName": "Cheat Master Killswitch",
+      "family": "Killswitch",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-killswitch-sprite.webp"
+    },
+    {
       "id": 107,
       "slug": "loot-hacker-killswitch-sprite",
       "name": "Loot Hacker Killswitch",
@@ -1441,6 +1581,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-killswitch-sprite.webp"
+    },
+    {
+      "id": 206,
+      "slug": "bounty-hunter-killswitch-sprite",
+      "name": "Bounty Hunter Killswitch",
+      "shortName": "Bounty Hunter Killswitch",
+      "family": "Killswitch",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-killswitch-sprite.webp"
     },
     {
       "id": 241,
@@ -1463,16 +1613,6 @@
       "image": "/images/sprites/king-sprite.webp"
     },
     {
-      "id": 31,
-      "slug": "galaxy-king-sprite",
-      "name": "Galaxy King",
-      "shortName": "Galaxy King",
-      "family": "King",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-king-sprite.webp"
-    },
-    {
       "id": 32,
       "slug": "gold-king-sprite",
       "name": "Gold King",
@@ -1493,6 +1633,16 @@
       "image": "/images/sprites/gummy-king-sprite.webp"
     },
     {
+      "id": 31,
+      "slug": "galaxy-king-sprite",
+      "name": "Galaxy King",
+      "shortName": "Galaxy King",
+      "family": "King",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-king-sprite.webp"
+    },
+    {
       "id": 73,
       "slug": "holofoil-king-sprite",
       "name": "Holofoil King",
@@ -1501,46 +1651,6 @@
       "variant": "Holofoil",
       "theme": "holofoil",
       "image": "/images/sprites/holofoil-king-sprite.webp"
-    },
-    {
-      "id": 208,
-      "slug": "bounty-hunter-klombo-sprite",
-      "name": "Bounty Hunter Klombo",
-      "shortName": "Bounty Hunter Klombo",
-      "family": "Klombo",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-klombo-sprite.webp"
-    },
-    {
-      "id": 180,
-      "slug": "cheat-master-klombo-sprite",
-      "name": "Cheat Master Klombo",
-      "shortName": "Cheat Master Klombo",
-      "family": "Klombo",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-klombo-sprite.webp"
-    },
-    {
-      "id": 181,
-      "slug": "gold-klombo-sprite",
-      "name": "Gold Klombo",
-      "shortName": "Gold Klombo",
-      "family": "Klombo",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-klombo-sprite.webp"
-    },
-    {
-      "id": 109,
-      "slug": "loot-hacker-klombo-sprite",
-      "name": "Loot Hacker Klombo",
-      "shortName": "Loot Hacker Klombo",
-      "family": "Klombo",
-      "variant": "Loot Hacker",
-      "theme": "hacker",
-      "image": "/images/sprites/loot-hacker-klombo-sprite.webp"
     },
     {
       "id": 179,
@@ -1553,14 +1663,44 @@
       "image": "/images/sprites/klombo-sprite.webp"
     },
     {
-      "id": 265,
-      "slug": "quack-klombo-sprite",
-      "name": "Quack Klombo",
-      "shortName": "Quack Klombo",
+      "id": 181,
+      "slug": "gold-klombo-sprite",
+      "name": "Gold Klombo",
+      "shortName": "Gold Klombo",
       "family": "Klombo",
-      "variant": "Quack",
-      "theme": "quack",
-      "image": "/images/sprites/quack-klombo-sprite.webp"
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-klombo-sprite.webp"
+    },
+    {
+      "id": 180,
+      "slug": "cheat-master-klombo-sprite",
+      "name": "Cheat Master Klombo",
+      "shortName": "Cheat Master Klombo",
+      "family": "Klombo",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-klombo-sprite.webp"
+    },
+    {
+      "id": 109,
+      "slug": "loot-hacker-klombo-sprite",
+      "name": "Loot Hacker Klombo",
+      "shortName": "Loot Hacker Klombo",
+      "family": "Klombo",
+      "variant": "Loot Hacker",
+      "theme": "hacker",
+      "image": "/images/sprites/loot-hacker-klombo-sprite.webp"
+    },
+    {
+      "id": 208,
+      "slug": "bounty-hunter-klombo-sprite",
+      "name": "Bounty Hunter Klombo",
+      "shortName": "Bounty Hunter Klombo",
+      "family": "Klombo",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-klombo-sprite.webp"
     },
     {
       "id": 262,
@@ -1573,24 +1713,114 @@
       "image": "/images/sprites/trick-or-treat-klombo-sprite.webp"
     },
     {
-      "id": 154,
-      "slug": "galaxy-llama-sprite",
-      "name": "Galaxy Llama",
-      "shortName": "Galaxy Llama",
-      "family": "Llama",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-llama-sprite.webp"
+      "id": 265,
+      "slug": "quack-klombo-sprite",
+      "name": "Quack Klombo",
+      "shortName": "Quack Klombo",
+      "family": "Klombo",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "/images/sprites/quack-klombo-sprite.webp"
     },
     {
-      "id": 155,
-      "slug": "gem-llama-sprite",
-      "name": "Gem Llama",
-      "shortName": "Gem Llama",
+      "id": 305,
+      "slug": "lil-flacko-sprite",
+      "name": "Lil' Flacko",
+      "shortName": "Lil' Flacko",
+      "family": "Lil' Flacko",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/lil-flacko-sprite.webp"
+    },
+    {
+      "id": 306,
+      "slug": "fortune-lil-flacko-sprite",
+      "name": "Fortune Lil' Flacko",
+      "shortName": "Fortune Lil' Flacko",
+      "family": "Lil' Flacko",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-lil-flacko-sprite.webp"
+    },
+    {
+      "id": 307,
+      "slug": "cursed-lil-flacko-sprite",
+      "name": "Cursed Lil' Flacko",
+      "shortName": "Cursed Lil' Flacko",
+      "family": "Lil' Flacko",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-lil-flacko-sprite.webp"
+    },
+    {
+      "id": 302,
+      "slug": "lil-squibbly-sprite",
+      "name": "Lil' Squibbly",
+      "shortName": "Lil' Squibbly",
+      "family": "Lil' Squibbly",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/lil-squibbly-sprite.webp"
+    },
+    {
+      "id": 304,
+      "slug": "fortune-lil-squibbly-sprite",
+      "name": "Fortune Lil' Squibbly",
+      "shortName": "Fortune Lil' Squibbly",
+      "family": "Lil' Squibbly",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-lil-squibbly-sprite.webp"
+    },
+    {
+      "id": 303,
+      "slug": "cursed-lil-squibbly-sprite",
+      "name": "Cursed Lil' Squibbly",
+      "shortName": "Cursed Lil' Squibbly",
+      "family": "Lil' Squibbly",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-lil-squibbly-sprite.webp"
+    },
+    {
+      "id": 308,
+      "slug": "lil-uzi-vert-jr-sprite",
+      "name": "Lil' Uzi Vert Jr.",
+      "shortName": "Lil' Uzi Vert Jr.",
+      "family": "Lil' Uzi Vert Jr.",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/lil-uzi-vert-jr-sprite.webp"
+    },
+    {
+      "id": 310,
+      "slug": "fortune-lil-uzi-vert-jr-sprite",
+      "name": "Fortune Lil' Uzi Vert Jr.",
+      "shortName": "Fortune Lil' Uzi Vert Jr.",
+      "family": "Lil' Uzi Vert Jr.",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-lil-uzi-vert-jr-sprite.webp"
+    },
+    {
+      "id": 309,
+      "slug": "cursed-lil-uzi-vert-jr-sprite",
+      "name": "Cursed Lil' Uzi Vert Jr.",
+      "shortName": "Cursed Lil' Uzi Vert Jr.",
+      "family": "Lil' Uzi Vert Jr.",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-lil-uzi-vert-jr-sprite.webp"
+    },
+    {
+      "id": 151,
+      "slug": "llama-sprite",
+      "name": "Llama",
+      "shortName": "Llama",
       "family": "Llama",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-llama-sprite.webp"
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/llama-sprite.webp"
     },
     {
       "id": 152,
@@ -1613,14 +1843,24 @@
       "image": "/images/sprites/gummy-llama-sprite.webp"
     },
     {
-      "id": 151,
-      "slug": "llama-sprite",
-      "name": "Llama",
-      "shortName": "Llama",
+      "id": 154,
+      "slug": "galaxy-llama-sprite",
+      "name": "Galaxy Llama",
+      "shortName": "Galaxy Llama",
       "family": "Llama",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/llama-sprite.webp"
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-llama-sprite.webp"
+    },
+    {
+      "id": 155,
+      "slug": "gem-llama-sprite",
+      "name": "Gem Llama",
+      "shortName": "Gem Llama",
+      "family": "Llama",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-llama-sprite.webp"
     },
     {
       "id": 92,
@@ -1631,26 +1871,6 @@
       "variant": "Rare",
       "theme": "rare",
       "image": "/images/sprites/mega-man-sprite.webp"
-    },
-    {
-      "id": 217,
-      "slug": "bounty-hunter-morgana-sprite",
-      "name": "Bounty Hunter Morgana",
-      "shortName": "Bounty Hunter Morgana",
-      "family": "Morgana",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-morgana-sprite.webp"
-    },
-    {
-      "id": 214,
-      "slug": "cheat-master-morgana-sprite",
-      "name": "Cheat Master Morgana",
-      "shortName": "Cheat Master Morgana",
-      "family": "Morgana",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-morgana-sprite.webp"
     },
     {
       "id": 213,
@@ -1673,6 +1893,16 @@
       "image": "/images/sprites/gold-morgana-sprite.webp"
     },
     {
+      "id": 214,
+      "slug": "cheat-master-morgana-sprite",
+      "name": "Cheat Master Morgana",
+      "shortName": "Cheat Master Morgana",
+      "family": "Morgana",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-morgana-sprite.webp"
+    },
+    {
       "id": 216,
       "slug": "loot-hacker-morgana-sprite",
       "name": "Loot Hacker Morgana",
@@ -1681,6 +1911,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-morgana-sprite.webp"
+    },
+    {
+      "id": 217,
+      "slug": "bounty-hunter-morgana-sprite",
+      "name": "Bounty Hunter Morgana",
+      "shortName": "Bounty Hunter Morgana",
+      "family": "Morgana",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-morgana-sprite.webp"
     },
     {
       "id": 248,
@@ -1693,24 +1933,14 @@
       "image": "/images/sprites/trick-or-treat-morgana-sprite.webp"
     },
     {
-      "id": 277,
-      "slug": "bounty-hunter-one-wish-willow-sprite",
-      "name": "Bounty Hunter One Wish Willow",
-      "shortName": "Bounty Hunter One Wish Willow",
+      "id": 273,
+      "slug": "one-wish-willow-sprite",
+      "name": "One Wish Willow",
+      "shortName": "One Wish Willow",
       "family": "One Wish Willow",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-one-wish-willow-sprite.webp"
-    },
-    {
-      "id": 274,
-      "slug": "cheatmaster-one-wish-willow-sprite",
-      "name": "Cheatmaster One Wish Willow",
-      "shortName": "Cheatmaster One Wish Willow",
-      "family": "One Wish Willow",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheatmaster-one-wish-willow-sprite.webp"
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/one-wish-willow-sprite.webp"
     },
     {
       "id": 275,
@@ -1723,6 +1953,16 @@
       "image": "/images/sprites/gold-one-wish-willow-sprite.webp"
     },
     {
+      "id": 274,
+      "slug": "cheatmaster-one-wish-willow-sprite",
+      "name": "Cheatmaster One Wish Willow",
+      "shortName": "Cheatmaster One Wish Willow",
+      "family": "One Wish Willow",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheatmaster-one-wish-willow-sprite.webp"
+    },
+    {
       "id": 276,
       "slug": "loot-hacker-one-wish-willow-sprite",
       "name": "Loot Hacker One Wish Willow",
@@ -1733,14 +1973,14 @@
       "image": "/images/sprites/loot-hacker-one-wish-willow-sprite.webp"
     },
     {
-      "id": 273,
-      "slug": "one-wish-willow-sprite",
-      "name": "One Wish Willow",
-      "shortName": "One Wish Willow",
+      "id": 277,
+      "slug": "bounty-hunter-one-wish-willow-sprite",
+      "name": "Bounty Hunter One Wish Willow",
+      "shortName": "Bounty Hunter One Wish Willow",
       "family": "One Wish Willow",
-      "variant": "Mythic",
-      "theme": "mythic",
-      "image": "/images/sprites/one-wish-willow-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-one-wish-willow-sprite.webp"
     },
     {
       "id": 278,
@@ -1753,24 +1993,14 @@
       "image": "/images/sprites/trick-or-treat-one-wish-willow-sprite.webp"
     },
     {
-      "id": 202,
-      "slug": "bounty-hunter-onigiri-sprite",
-      "name": "Bounty Hunter Onigiri",
-      "shortName": "Bounty Hunter Onigiri",
+      "id": 97,
+      "slug": "onigiri-sprite",
+      "name": "Onigiri",
+      "shortName": "Onigiri",
       "family": "Onigiri",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-onigiri-sprite.webp"
-    },
-    {
-      "id": 98,
-      "slug": "cheatmaster-onigiri-sprite",
-      "name": "Cheatmaster Onigiri",
-      "shortName": "Cheatmaster Onigiri",
-      "family": "Onigiri",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheatmaster-onigiri-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/onigiri-sprite.webp"
     },
     {
       "id": 100,
@@ -1783,6 +2013,16 @@
       "image": "/images/sprites/gold-onigiri-sprite.webp"
     },
     {
+      "id": 98,
+      "slug": "cheatmaster-onigiri-sprite",
+      "name": "Cheatmaster Onigiri",
+      "shortName": "Cheatmaster Onigiri",
+      "family": "Onigiri",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheatmaster-onigiri-sprite.webp"
+    },
+    {
       "id": 101,
       "slug": "loot-hacker-onigiri-sprite",
       "name": "Loot Hacker Onigiri",
@@ -1793,14 +2033,14 @@
       "image": "/images/sprites/loot-hacker-onigiri-sprite.webp"
     },
     {
-      "id": 97,
-      "slug": "onigiri-sprite",
-      "name": "Onigiri",
-      "shortName": "Onigiri",
+      "id": 202,
+      "slug": "bounty-hunter-onigiri-sprite",
+      "name": "Bounty Hunter Onigiri",
+      "shortName": "Bounty Hunter Onigiri",
       "family": "Onigiri",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/onigiri-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-onigiri-sprite.webp"
     },
     {
       "id": 255,
@@ -1813,24 +2053,14 @@
       "image": "/images/sprites/trick-or-treat-onigiri-sprite.webp"
     },
     {
-      "id": 125,
-      "slug": "bounty-hunter-overshield-sprite",
-      "name": "Bounty Hunter Overshield",
-      "shortName": "Bounty Hunter Overshield",
+      "id": 83,
+      "slug": "overshield-sprite",
+      "name": "Overshield",
+      "shortName": "Overshield",
       "family": "Overshield",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-overshield-sprite.webp"
-    },
-    {
-      "id": 85,
-      "slug": "cheat-master-overshield-sprite",
-      "name": "Cheat Master Overshield",
-      "shortName": "Cheat Master Overshield",
-      "family": "Overshield",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-overshield-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/overshield-sprite.webp"
     },
     {
       "id": 88,
@@ -1843,6 +2073,16 @@
       "image": "/images/sprites/gold-overshield-sprite.webp"
     },
     {
+      "id": 85,
+      "slug": "cheat-master-overshield-sprite",
+      "name": "Cheat Master Overshield",
+      "shortName": "Cheat Master Overshield",
+      "family": "Overshield",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-overshield-sprite.webp"
+    },
+    {
       "id": 91,
       "slug": "loot-hacker-overshield-sprite",
       "name": "Loot Hacker Overshield",
@@ -1853,14 +2093,14 @@
       "image": "/images/sprites/loot-hacker-overshield-sprite.webp"
     },
     {
-      "id": 83,
-      "slug": "overshield-sprite",
-      "name": "Overshield",
-      "shortName": "Overshield",
+      "id": 125,
+      "slug": "bounty-hunter-overshield-sprite",
+      "name": "Bounty Hunter Overshield",
+      "shortName": "Bounty Hunter Overshield",
       "family": "Overshield",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/overshield-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-overshield-sprite.webp"
     },
     {
       "id": 233,
@@ -1873,14 +2113,14 @@
       "image": "/images/sprites/trick-or-treat-overshield-sprite.webp"
     },
     {
-      "id": 159,
-      "slug": "galaxy-peeky-peely-sprite",
-      "name": "Galaxy Peeky Peely",
-      "shortName": "Galaxy Peeky Peely",
+      "id": 156,
+      "slug": "peeky-peely-sprite",
+      "name": "Peeky Peely",
+      "shortName": "Peeky Peely",
       "family": "Peeky Peely",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-peeky-peely-sprite.webp"
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/peeky-peely-sprite.webp"
     },
     {
       "id": 157,
@@ -1903,6 +2143,16 @@
       "image": "/images/sprites/gummy-peeky-peely-sprite.webp"
     },
     {
+      "id": 159,
+      "slug": "galaxy-peeky-peely-sprite",
+      "name": "Galaxy Peeky Peely",
+      "shortName": "Galaxy Peeky Peely",
+      "family": "Peeky Peely",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-peeky-peely-sprite.webp"
+    },
+    {
       "id": 160,
       "slug": "holofoil-peeky-peely-sprite",
       "name": "Holofoil Peeky Peely",
@@ -1913,14 +2163,34 @@
       "image": "/images/sprites/holofoil-peeky-peely-sprite.webp"
     },
     {
-      "id": 156,
-      "slug": "peeky-peely-sprite",
-      "name": "Peeky Peely",
-      "shortName": "Peeky Peely",
-      "family": "Peeky Peely",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/peeky-peely-sprite.webp"
+      "id": 311,
+      "slug": "plundarrgh-sprite",
+      "name": "Plundarrgh",
+      "shortName": "Plundarrgh",
+      "family": "Plundarrgh",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/plundarrgh-sprite.webp"
+    },
+    {
+      "id": 313,
+      "slug": "fortune-plundarrgh-sprite",
+      "name": "Fortune Plundarrgh",
+      "shortName": "Fortune Plundarrgh",
+      "family": "Plundarrgh",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-plundarrgh-sprite.webp"
+    },
+    {
+      "id": 312,
+      "slug": "cursed-plundarrgh-sprite",
+      "name": "Cursed Plundarrgh",
+      "shortName": "Cursed Plundarrgh",
+      "family": "Plundarrgh",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-plundarrgh-sprite.webp"
     },
     {
       "id": 148,
@@ -1931,26 +2201,6 @@
       "variant": "Mythic",
       "theme": "mythic",
       "image": "/images/sprites/pollo-sprite.webp"
-    },
-    {
-      "id": 200,
-      "slug": "bounty-hunter-pond-sprite",
-      "name": "Bounty Hunter Pond",
-      "shortName": "Bounty Hunter Pond",
-      "family": "Pond",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-pond-sprite.webp"
-    },
-    {
-      "id": 197,
-      "slug": "cheat-master-pond-sprite",
-      "name": "Cheat Master Pond",
-      "shortName": "Cheat Master Pond",
-      "family": "Pond",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-pond-sprite.webp"
     },
     {
       "id": 147,
@@ -1973,6 +2223,16 @@
       "image": "/images/sprites/gold-pond-sprite.webp"
     },
     {
+      "id": 197,
+      "slug": "cheat-master-pond-sprite",
+      "name": "Cheat Master Pond",
+      "shortName": "Cheat Master Pond",
+      "family": "Pond",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-pond-sprite.webp"
+    },
+    {
       "id": 199,
       "slug": "loot-hacker-pond-sprite",
       "name": "Loot Hacker Pond",
@@ -1981,6 +2241,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-pond-sprite.webp"
+    },
+    {
+      "id": 200,
+      "slug": "bounty-hunter-pond-sprite",
+      "name": "Bounty Hunter Pond",
+      "shortName": "Bounty Hunter Pond",
+      "family": "Pond",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-pond-sprite.webp"
     },
     {
       "id": 236,
@@ -1993,24 +2263,14 @@
       "image": "/images/sprites/trick-or-treat-pond-sprite.webp"
     },
     {
-      "id": 106,
-      "slug": "cube-punk-sprite",
-      "name": "Cube Punk",
-      "shortName": "Cube Punk",
+      "id": 25,
+      "slug": "punk-sprite",
+      "name": "Punk",
+      "shortName": "Punk",
       "family": "Punk",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-punk-sprite.webp"
-    },
-    {
-      "id": 27,
-      "slug": "galaxy-punk-sprite",
-      "name": "Galaxy Punk",
-      "shortName": "Galaxy Punk",
-      "family": "Punk",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-punk-sprite.webp"
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/punk-sprite.webp"
     },
     {
       "id": 28,
@@ -2033,24 +2293,64 @@
       "image": "/images/sprites/gummy-punk-sprite.webp"
     },
     {
-      "id": 25,
-      "slug": "punk-sprite",
-      "name": "Punk",
-      "shortName": "Punk",
+      "id": 27,
+      "slug": "galaxy-punk-sprite",
+      "name": "Galaxy Punk",
+      "shortName": "Galaxy Punk",
       "family": "Punk",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/punk-sprite.webp"
-    },
-    {
-      "id": 55,
-      "slug": "galaxy-seven-sprite",
-      "name": "Galaxy Seven",
-      "shortName": "Galaxy Seven",
-      "family": "Seven",
       "variant": "Galaxy",
       "theme": "galaxy",
-      "image": "/images/sprites/galaxy-seven-sprite.webp"
+      "image": "/images/sprites/galaxy-punk-sprite.webp"
+    },
+    {
+      "id": 106,
+      "slug": "cube-punk-sprite",
+      "name": "Cube Punk",
+      "shortName": "Cube Punk",
+      "family": "Punk",
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-punk-sprite.webp"
+    },
+    {
+      "id": 283,
+      "slug": "re-pete-sprite",
+      "name": "Re-Pete",
+      "shortName": "Re-Pete",
+      "family": "Re-Pete",
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/re-pete-sprite.webp"
+    },
+    {
+      "id": 285,
+      "slug": "fortune-re-pete-sprite",
+      "name": "Fortune Re-Pete",
+      "shortName": "Fortune Re-Pete",
+      "family": "Re-Pete",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-re-pete-sprite.webp"
+    },
+    {
+      "id": 284,
+      "slug": "cursed-re-pete-sprite",
+      "name": "Cursed Re-Pete",
+      "shortName": "Cursed Re-Pete",
+      "family": "Re-Pete",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-re-pete-sprite.webp"
+    },
+    {
+      "id": 53,
+      "slug": "seven-sprite",
+      "name": "Seven",
+      "shortName": "Seven",
+      "family": "Seven",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/seven-sprite.webp"
     },
     {
       "id": 56,
@@ -2073,6 +2373,16 @@
       "image": "/images/sprites/gummy-seven-sprite.webp"
     },
     {
+      "id": 55,
+      "slug": "galaxy-seven-sprite",
+      "name": "Galaxy Seven",
+      "shortName": "Galaxy Seven",
+      "family": "Seven",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-seven-sprite.webp"
+    },
+    {
       "id": 57,
       "slug": "holofoil-seven-sprite",
       "name": "Holofoil Seven",
@@ -2081,36 +2391,6 @@
       "variant": "Holofoil",
       "theme": "holofoil",
       "image": "/images/sprites/holofoil-seven-sprite.webp"
-    },
-    {
-      "id": 53,
-      "slug": "seven-sprite",
-      "name": "Seven",
-      "shortName": "Seven",
-      "family": "Seven",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/seven-sprite.webp"
-    },
-    {
-      "id": 204,
-      "slug": "bounty-hunter-shadow-sprite",
-      "name": "Bounty Hunter Shadow",
-      "shortName": "Bounty Hunter Shadow",
-      "family": "Shadow",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-shadow-sprite.webp"
-    },
-    {
-      "id": 165,
-      "slug": "cheat-master-shadow-sprite",
-      "name": "Cheat Master Shadow",
-      "shortName": "Cheat Master Shadow",
-      "family": "Shadow",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-shadow-sprite.webp"
     },
     {
       "id": 164,
@@ -2133,6 +2413,16 @@
       "image": "/images/sprites/gold-shadow-sprite.webp"
     },
     {
+      "id": 165,
+      "slug": "cheat-master-shadow-sprite",
+      "name": "Cheat Master Shadow",
+      "shortName": "Cheat Master Shadow",
+      "family": "Shadow",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-shadow-sprite.webp"
+    },
+    {
       "id": 104,
       "slug": "loot-hacker-shadow-sprite",
       "name": "Loot Hacker Shadow",
@@ -2143,6 +2433,16 @@
       "image": "/images/sprites/loot-hacker-shadow-sprite.webp"
     },
     {
+      "id": 204,
+      "slug": "bounty-hunter-shadow-sprite",
+      "name": "Bounty Hunter Shadow",
+      "shortName": "Bounty Hunter Shadow",
+      "family": "Shadow",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-shadow-sprite.webp"
+    },
+    {
       "id": 239,
       "slug": "trick-or-treat-shadow-sprite",
       "name": "Trick or Treat Shadow",
@@ -2151,26 +2451,6 @@
       "variant": "Trick or Treat",
       "theme": "tricktreat",
       "image": "/images/sprites/trick-or-treat-shadow-sprite.webp"
-    },
-    {
-      "id": 210,
-      "slug": "bounty-hunter-sonic-sprite",
-      "name": "Bounty Hunter Sonic",
-      "shortName": "Bounty Hunter Sonic",
-      "family": "Sonic",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-sonic-sprite.webp"
-    },
-    {
-      "id": 186,
-      "slug": "cheat-master-sonic-sprite",
-      "name": "Cheat Master Sonic",
-      "shortName": "Cheat Master Sonic",
-      "family": "Sonic",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-sonic-sprite.webp"
     },
     {
       "id": 185,
@@ -2193,6 +2473,16 @@
       "image": "/images/sprites/gold-sonic-sprite.webp"
     },
     {
+      "id": 186,
+      "slug": "cheat-master-sonic-sprite",
+      "name": "Cheat Master Sonic",
+      "shortName": "Cheat Master Sonic",
+      "family": "Sonic",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-sonic-sprite.webp"
+    },
+    {
       "id": 114,
       "slug": "loot-hacker-sonic-sprite",
       "name": "Loot Hacker Sonic",
@@ -2201,6 +2491,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-sonic-sprite.webp"
+    },
+    {
+      "id": 210,
+      "slug": "bounty-hunter-sonic-sprite",
+      "name": "Bounty Hunter Sonic",
+      "shortName": "Bounty Hunter Sonic",
+      "family": "Sonic",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-sonic-sprite.webp"
     },
     {
       "id": 245,
@@ -2213,24 +2513,14 @@
       "image": "/images/sprites/trick-or-treat-sonic-sprite.webp"
     },
     {
-      "id": 223,
-      "slug": "bounty-hunter-spooky-dash-sprite",
-      "name": "Bounty Hunter Spooky Dash",
-      "shortName": "Bounty Hunter Spooky Dash",
+      "id": 219,
+      "slug": "spooky-dash-sprite",
+      "name": "Spooky Dash",
+      "shortName": "Spooky Dash",
       "family": "Spooky Dash",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-spooky-dash-sprite.webp"
-    },
-    {
-      "id": 220,
-      "slug": "cheat-master-spooky-dash-sprite",
-      "name": "Cheat Master Spooky Dash",
-      "shortName": "Cheat Master Spooky Dash",
-      "family": "Spooky Dash",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-spooky-dash-sprite.webp"
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/spooky-dash-sprite.webp"
     },
     {
       "id": 221,
@@ -2243,6 +2533,16 @@
       "image": "/images/sprites/gold-spooky-dash-sprite.webp"
     },
     {
+      "id": 220,
+      "slug": "cheat-master-spooky-dash-sprite",
+      "name": "Cheat Master Spooky Dash",
+      "shortName": "Cheat Master Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-spooky-dash-sprite.webp"
+    },
+    {
       "id": 222,
       "slug": "loot-hacker-spooky-dash-sprite",
       "name": "Loot Hacker Spooky Dash",
@@ -2253,24 +2553,14 @@
       "image": "/images/sprites/loot-hacker-spooky-dash-sprite.webp"
     },
     {
-      "id": 219,
-      "slug": "spooky-dash-sprite",
-      "name": "Spooky Dash",
-      "shortName": "Spooky Dash",
+      "id": 223,
+      "slug": "bounty-hunter-spooky-dash-sprite",
+      "name": "Bounty Hunter Spooky Dash",
+      "shortName": "Bounty Hunter Spooky Dash",
       "family": "Spooky Dash",
-      "variant": "Mythic",
-      "theme": "mythic",
-      "image": "/images/sprites/spooky-dash-sprite.webp"
-    },
-    {
-      "id": 279,
-      "slug": "quack-spooky-dash-sprite",
-      "name": "Quack Spooky Dash",
-      "shortName": "Quack Spooky Dash",
-      "family": "Spooky Dash",
-      "variant": "Quack",
-      "theme": "quack",
-      "image": "/images/sprites/quack-spooky-dash-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-spooky-dash-sprite.webp"
     },
     {
       "id": 224,
@@ -2283,24 +2573,24 @@
       "image": "/images/sprites/trick-or-treat-spooky-dash-sprite.webp"
     },
     {
-      "id": 218,
-      "slug": "bounty-hunter-storm-scout-sprite",
-      "name": "Bounty Hunter Storm Scout",
-      "shortName": "Bounty Hunter Storm Scout",
-      "family": "Storm Scout",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-storm-scout-sprite.webp"
+      "id": 279,
+      "slug": "quack-spooky-dash-sprite",
+      "name": "Quack Spooky Dash",
+      "shortName": "Quack Spooky Dash",
+      "family": "Spooky Dash",
+      "variant": "Quack",
+      "theme": "quack",
+      "image": "/images/sprites/quack-spooky-dash-sprite.webp"
     },
     {
-      "id": 195,
-      "slug": "cheat-master-storm-scout-sprite",
-      "name": "Cheat Master Storm Scout",
-      "shortName": "Cheat Master Storm Scout",
+      "id": 194,
+      "slug": "storm-scout-sprite",
+      "name": "Storm Scout",
+      "shortName": "Storm Scout",
       "family": "Storm Scout",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-storm-scout-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/storm-scout-sprite.webp"
     },
     {
       "id": 196,
@@ -2313,6 +2603,16 @@
       "image": "/images/sprites/gold-storm-scout-sprite.webp"
     },
     {
+      "id": 195,
+      "slug": "cheat-master-storm-scout-sprite",
+      "name": "Cheat Master Storm Scout",
+      "shortName": "Cheat Master Storm Scout",
+      "family": "Storm Scout",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-storm-scout-sprite.webp"
+    },
+    {
       "id": 118,
       "slug": "loot-hacker-storm-scout-sprite",
       "name": "Loot Hacker Storm Scout",
@@ -2323,14 +2623,14 @@
       "image": "/images/sprites/loot-hacker-storm-scout-sprite.webp"
     },
     {
-      "id": 194,
-      "slug": "storm-scout-sprite",
-      "name": "Storm Scout",
-      "shortName": "Storm Scout",
+      "id": 218,
+      "slug": "bounty-hunter-storm-scout-sprite",
+      "name": "Bounty Hunter Storm Scout",
+      "shortName": "Bounty Hunter Storm Scout",
       "family": "Storm Scout",
-      "variant": "Rare",
-      "theme": "rare",
-      "image": "/images/sprites/storm-scout-sprite.webp"
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-storm-scout-sprite.webp"
     },
     {
       "id": 247,
@@ -2353,16 +2653,6 @@
       "image": "/images/sprites/striker-sprite.webp"
     },
     {
-      "id": 64,
-      "slug": "galaxy-striker-sprite",
-      "name": "Galaxy Striker",
-      "shortName": "Galaxy Striker",
-      "family": "Striker",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-striker-sprite.webp"
-    },
-    {
       "id": 65,
       "slug": "gold-striker-sprite",
       "name": "Gold Striker",
@@ -2383,6 +2673,16 @@
       "image": "/images/sprites/gummy-striker-sprite.webp"
     },
     {
+      "id": 64,
+      "slug": "galaxy-striker-sprite",
+      "name": "Galaxy Striker",
+      "shortName": "Galaxy Striker",
+      "family": "Striker",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-striker-sprite.webp"
+    },
+    {
       "id": 66,
       "slug": "holofoil-striker-sprite",
       "name": "Holofoil Striker",
@@ -2393,24 +2693,14 @@
       "image": "/images/sprites/holofoil-striker-sprite.webp"
     },
     {
-      "id": 203,
-      "slug": "bounty-hunter-tails-sprite",
-      "name": "Bounty Hunter Tails",
-      "shortName": "Bounty Hunter Tails",
-      "family": "Tails",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-tails-sprite.webp"
-    },
-    {
-      "id": 171,
-      "slug": "cheat-master-tails-sprite",
-      "name": "Cheat Master Tails",
-      "shortName": "Cheat Master Tails",
-      "family": "Tails",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheat-master-tails-sprite.webp"
+      "id": 301,
+      "slug": "sweet-dreams-sprite",
+      "name": "Sweet Dreams",
+      "shortName": "Sweet Dreams",
+      "family": "Sweet Dreams",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/sweet-dreams-sprite.webp"
     },
     {
       "id": 170,
@@ -2433,6 +2723,16 @@
       "image": "/images/sprites/gold-tails-sprite.webp"
     },
     {
+      "id": 171,
+      "slug": "cheat-master-tails-sprite",
+      "name": "Cheat Master Tails",
+      "shortName": "Cheat Master Tails",
+      "family": "Tails",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheat-master-tails-sprite.webp"
+    },
+    {
       "id": 103,
       "slug": "loot-hacker-tails-sprite",
       "name": "Loot Hacker Tails",
@@ -2441,6 +2741,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-tails-sprite.webp"
+    },
+    {
+      "id": 203,
+      "slug": "bounty-hunter-tails-sprite",
+      "name": "Bounty Hunter Tails",
+      "shortName": "Bounty Hunter Tails",
+      "family": "Tails",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-tails-sprite.webp"
     },
     {
       "id": 238,
@@ -2453,24 +2763,14 @@
       "image": "/images/sprites/trick-or-treat-tails-sprite.webp"
     },
     {
-      "id": 253,
-      "slug": "bounty-hunter-the-deer-sprite",
-      "name": "Bounty Hunter The Deer",
-      "shortName": "Bounty Hunter The Deer",
+      "id": 249,
+      "slug": "the-deer-sprite",
+      "name": "The Deer",
+      "shortName": "The Deer",
       "family": "The Deer",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-the-deer-sprite.webp"
-    },
-    {
-      "id": 250,
-      "slug": "cheatmaster-the-deer-sprite",
-      "name": "Cheatmaster The Deer",
-      "shortName": "Cheatmaster The Deer",
-      "family": "The Deer",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheatmaster-the-deer-sprite.webp"
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/the-deer-sprite.webp"
     },
     {
       "id": 251,
@@ -2483,14 +2783,14 @@
       "image": "/images/sprites/gold-the-deer-sprite.webp"
     },
     {
-      "id": 249,
-      "slug": "the-deer-sprite",
-      "name": "The Deer",
-      "shortName": "The Deer",
+      "id": 250,
+      "slug": "cheatmaster-the-deer-sprite",
+      "name": "Cheatmaster The Deer",
+      "shortName": "Cheatmaster The Deer",
       "family": "The Deer",
-      "variant": "Legendary",
-      "theme": "legendary",
-      "image": "/images/sprites/the-deer-sprite.webp"
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheatmaster-the-deer-sprite.webp"
     },
     {
       "id": 252,
@@ -2503,6 +2803,16 @@
       "image": "/images/sprites/loot-hacker-the-deer-sprite.webp"
     },
     {
+      "id": 253,
+      "slug": "bounty-hunter-the-deer-sprite",
+      "name": "Bounty Hunter The Deer",
+      "shortName": "Bounty Hunter The Deer",
+      "family": "The Deer",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-the-deer-sprite.webp"
+    },
+    {
       "id": 254,
       "slug": "trick-or-treat-the-deer-sprite",
       "name": "Trick or Treat The Deer",
@@ -2513,34 +2823,14 @@
       "image": "/images/sprites/trick-or-treat-the-deer-sprite.webp"
     },
     {
-      "id": 230,
-      "slug": "bounty-hunter-vampire-sprite",
-      "name": "Bounty Hunter Vampire",
-      "shortName": "Bounty Hunter Vampire",
-      "family": "Vampire",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-vampire-sprite.webp"
-    },
-    {
-      "id": 227,
-      "slug": "cheatmaster-vampire-sprite",
-      "name": "Cheatmaster Vampire",
-      "shortName": "Cheatmaster Vampire",
-      "family": "Vampire",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheatmaster-vampire-sprite.webp"
-    },
-    {
-      "id": 228,
-      "slug": "gold-vampire-sprite",
-      "name": "Gold Vampire",
-      "shortName": "Gold Vampire",
-      "family": "Vampire",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-vampire-sprite.webp"
+      "id": 314,
+      "slug": "transponder-snail-sprite",
+      "name": "Transponder Snail",
+      "shortName": "Transponder Snail",
+      "family": "Transponder Snail",
+      "variant": "Legendary",
+      "theme": "legendary",
+      "image": "/images/sprites/transponder-snail-sprite.webp"
     },
     {
       "id": 226,
@@ -2553,6 +2843,26 @@
       "image": "/images/sprites/vampire-sprite.webp"
     },
     {
+      "id": 228,
+      "slug": "gold-vampire-sprite",
+      "name": "Gold Vampire",
+      "shortName": "Gold Vampire",
+      "family": "Vampire",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-vampire-sprite.webp"
+    },
+    {
+      "id": 227,
+      "slug": "cheatmaster-vampire-sprite",
+      "name": "Cheatmaster Vampire",
+      "shortName": "Cheatmaster Vampire",
+      "family": "Vampire",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheatmaster-vampire-sprite.webp"
+    },
+    {
       "id": 229,
       "slug": "loot-hacker-vampire-sprite",
       "name": "Loot Hacker Vampire",
@@ -2561,6 +2871,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-vampire-sprite.webp"
+    },
+    {
+      "id": 230,
+      "slug": "bounty-hunter-vampire-sprite",
+      "name": "Bounty Hunter Vampire",
+      "shortName": "Bounty Hunter Vampire",
+      "family": "Vampire",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-vampire-sprite.webp"
     },
     {
       "id": 231,
@@ -2583,24 +2903,14 @@
       "image": "/images/sprites/vini-jr-sprite.webp"
     },
     {
-      "id": 3,
-      "slug": "galaxy-water-sprite",
-      "name": "Galaxy Water",
-      "shortName": "Galaxy Water",
+      "id": 1,
+      "slug": "water-sprite",
+      "name": "Water",
+      "shortName": "Water",
       "family": "Water",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-water-sprite.webp"
-    },
-    {
-      "id": 76,
-      "slug": "gem-water-sprite",
-      "name": "Gem Water",
-      "shortName": "Gem Water",
-      "family": "Water",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-water-sprite.webp"
+      "variant": "Rare",
+      "theme": "rare",
+      "image": "/images/sprites/water-sprite.webp"
     },
     {
       "id": 4,
@@ -2623,6 +2933,16 @@
       "image": "/images/sprites/gummy-water-sprite.webp"
     },
     {
+      "id": 3,
+      "slug": "galaxy-water-sprite",
+      "name": "Galaxy Water",
+      "shortName": "Galaxy Water",
+      "family": "Water",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-water-sprite.webp"
+    },
+    {
       "id": 43,
       "slug": "holofoil-water-sprite",
       "name": "Holofoil Water",
@@ -2631,6 +2951,16 @@
       "variant": "Holofoil",
       "theme": "holofoil",
       "image": "/images/sprites/holofoil-water-sprite.webp"
+    },
+    {
+      "id": 76,
+      "slug": "gem-water-sprite",
+      "name": "Gem Water",
+      "shortName": "Gem Water",
+      "family": "Water",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-water-sprite.webp"
     },
     {
       "id": 84,
@@ -2643,44 +2973,34 @@
       "image": "/images/sprites/quack-water-sprite.webp"
     },
     {
-      "id": 1,
-      "slug": "water-sprite",
-      "name": "Water",
-      "shortName": "Water",
-      "family": "Water",
+      "id": 295,
+      "slug": "wayfinder-sprite",
+      "name": "Wayfinder",
+      "shortName": "Wayfinder",
+      "family": "Wayfinder",
       "variant": "Rare",
       "theme": "rare",
-      "image": "/images/sprites/water-sprite.webp"
+      "image": "/images/sprites/wayfinder-sprite.webp"
     },
     {
-      "id": 201,
-      "slug": "bounty-hunter-x-ray-sprite",
-      "name": "Bounty Hunter X-Ray",
-      "shortName": "Bounty Hunter X-Ray",
-      "family": "X-Ray",
-      "variant": "Bounty Hunter",
-      "theme": "reaper",
-      "image": "/images/sprites/bounty-hunter-x-ray-sprite.webp"
+      "id": 297,
+      "slug": "fortune-wayfinder-sprite",
+      "name": "Fortune Wayfinder",
+      "shortName": "Fortune Wayfinder",
+      "family": "Wayfinder",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-wayfinder-sprite.webp"
     },
     {
-      "id": 94,
-      "slug": "cheatmaster-x-ray-sprite",
-      "name": "Cheatmaster X-Ray",
-      "shortName": "Cheatmaster X-Ray",
-      "family": "X-Ray",
-      "variant": "Cheat Master",
-      "theme": "cheatmaster",
-      "image": "/images/sprites/cheatmaster-x-ray-sprite.webp"
-    },
-    {
-      "id": 95,
-      "slug": "gold-x-ray-sprite",
-      "name": "Gold X-Ray",
-      "shortName": "Gold X-Ray",
-      "family": "X-Ray",
-      "variant": "Gold",
-      "theme": "gold",
-      "image": "/images/sprites/gold-x-ray-sprite.webp"
+      "id": 296,
+      "slug": "cursed-wayfinder-sprite",
+      "name": "Cursed Wayfinder",
+      "shortName": "Cursed Wayfinder",
+      "family": "Wayfinder",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-wayfinder-sprite.webp"
     },
     {
       "id": 93,
@@ -2693,6 +3013,26 @@
       "image": "/images/sprites/x-ray-sprite.webp"
     },
     {
+      "id": 95,
+      "slug": "gold-x-ray-sprite",
+      "name": "Gold X-Ray",
+      "shortName": "Gold X-Ray",
+      "family": "X-Ray",
+      "variant": "Gold",
+      "theme": "gold",
+      "image": "/images/sprites/gold-x-ray-sprite.webp"
+    },
+    {
+      "id": 94,
+      "slug": "cheatmaster-x-ray-sprite",
+      "name": "Cheatmaster X-Ray",
+      "shortName": "Cheatmaster X-Ray",
+      "family": "X-Ray",
+      "variant": "Cheat Master",
+      "theme": "cheatmaster",
+      "image": "/images/sprites/cheatmaster-x-ray-sprite.webp"
+    },
+    {
       "id": 96,
       "slug": "loot-hacker-x-ray-sprite",
       "name": "Loot Hacker X-Ray",
@@ -2701,6 +3041,16 @@
       "variant": "Loot Hacker",
       "theme": "hacker",
       "image": "/images/sprites/loot-hacker-x-ray-sprite.webp"
+    },
+    {
+      "id": 201,
+      "slug": "bounty-hunter-x-ray-sprite",
+      "name": "Bounty Hunter X-Ray",
+      "shortName": "Bounty Hunter X-Ray",
+      "family": "X-Ray",
+      "variant": "Bounty Hunter",
+      "theme": "reaper",
+      "image": "/images/sprites/bounty-hunter-x-ray-sprite.webp"
     },
     {
       "id": 237,
@@ -2713,34 +3063,14 @@
       "image": "/images/sprites/trick-or-treat-x-ray-sprite.webp"
     },
     {
-      "id": 112,
-      "slug": "cube-zero-point-sprite",
-      "name": "Cube Zero Point",
-      "shortName": "Cube Zero Point",
+      "id": 33,
+      "slug": "zero-point-sprite",
+      "name": "Zero Point",
+      "shortName": "Zero Point",
       "family": "Zero Point",
-      "variant": "Cube",
-      "theme": "cube",
-      "image": "/images/sprites/cube-zero-point-sprite.webp"
-    },
-    {
-      "id": 35,
-      "slug": "galaxy-zero-point-sprite",
-      "name": "Galaxy Zero Point",
-      "shortName": "Galaxy Zero Point",
-      "family": "Zero Point",
-      "variant": "Galaxy",
-      "theme": "galaxy",
-      "image": "/images/sprites/galaxy-zero-point-sprite.webp"
-    },
-    {
-      "id": 82,
-      "slug": "gem-zero-point-sprite",
-      "name": "Gem Zero Point",
-      "shortName": "Gem Zero Point",
-      "family": "Zero Point",
-      "variant": "Gem",
-      "theme": "gem",
-      "image": "/images/sprites/gem-zero-point-sprite.webp"
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/zero-point-sprite.webp"
     },
     {
       "id": 36,
@@ -2763,6 +3093,16 @@
       "image": "/images/sprites/gummy-zero-point-sprite.webp"
     },
     {
+      "id": 35,
+      "slug": "galaxy-zero-point-sprite",
+      "name": "Galaxy Zero Point",
+      "shortName": "Galaxy Zero Point",
+      "family": "Zero Point",
+      "variant": "Galaxy",
+      "theme": "galaxy",
+      "image": "/images/sprites/galaxy-zero-point-sprite.webp"
+    },
+    {
       "id": 111,
       "slug": "holofoil-zero-point-sprite",
       "name": "Holofoil Zero Point",
@@ -2773,14 +3113,24 @@
       "image": "/images/sprites/holofoil-zero-point-sprite.webp"
     },
     {
-      "id": 33,
-      "slug": "zero-point-sprite",
-      "name": "Zero Point",
-      "shortName": "Zero Point",
+      "id": 112,
+      "slug": "cube-zero-point-sprite",
+      "name": "Cube Zero Point",
+      "shortName": "Cube Zero Point",
       "family": "Zero Point",
-      "variant": "Mythic",
-      "theme": "mythic",
-      "image": "/images/sprites/zero-point-sprite.webp"
+      "variant": "Cube",
+      "theme": "cube",
+      "image": "/images/sprites/cube-zero-point-sprite.webp"
+    },
+    {
+      "id": 82,
+      "slug": "gem-zero-point-sprite",
+      "name": "Gem Zero Point",
+      "shortName": "Gem Zero Point",
+      "family": "Zero Point",
+      "variant": "Gem",
+      "theme": "gem",
+      "image": "/images/sprites/gem-zero-point-sprite.webp"
     },
     {
       "id": 113,

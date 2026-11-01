@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
-import { CURRENT_SEASON } from '@/lib/season'
 import { SPRITE_THEME_STYLES } from '@/lib/sprites'
 import {
   allSpriteSlugs,
@@ -59,6 +58,7 @@ export default async function SpriteDetailPage({ params }: Props) {
     related,
     faqs,
     liveOverride,
+    poolLabel,
   } = model
 
   return (
@@ -119,7 +119,7 @@ export default async function SpriteDetailPage({ params }: Props) {
 
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-                  {CURRENT_SEASON.shortLabel} · {sprite.family} family · reviewed {SPRITE_PAGES_REVIEWED}
+                  {poolLabel} · {sprite.family} family · reviewed {SPRITE_PAGES_REVIEWED}
                 </p>
                 <h1 className="font-display text-3xl font-extrabold uppercase tracking-wide text-foreground sm:text-4xl">
                   {sprite.name}
@@ -133,11 +133,15 @@ export default async function SpriteDetailPage({ params }: Props) {
                   </span>
                   {liveOverride ? (
                     <span className="rounded-full border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 text-emerald-300">
-                      Override live
+                      {poolLabel}
+                    </span>
+                  ) : poolLabel === 'Later this season' ? (
+                    <span className="rounded-full border border-sky-500/40 bg-sky-500/10 px-2.5 py-1 text-sky-200">
+                      {poolLabel}
                     </span>
                   ) : (
                     <span className="rounded-full border border-amber-500/40 bg-amber-500/10 px-2.5 py-1 text-amber-200">
-                      Catalog / may be vaulted
+                      {poolLabel}
                     </span>
                   )}
                 </div>

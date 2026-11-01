@@ -2,7 +2,6 @@ import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { SpritesGallery } from '@/components/SpritesGallery'
-import { CURRENT_SEASON } from '@/lib/season'
 import {
   SPRITE_COUNTS,
   SPRITES_CAPTURED_AT,
@@ -33,16 +32,17 @@ export default function SpritesPage() {
               <span className="text-foreground">Sprites</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · {SPRITE_COUNTS.total} companions · snapshot {SPRITES_CAPTURED_AT}
+              Treasure Hunters · {SPRITE_COUNTS.total} companions · snapshot {SPRITES_CAPTURED_AT}
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Sprites</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               All {SPRITE_COUNTS.total} Chapter 7 Sprite portraits across {SPRITE_COUNTS.families}{' '}
-              families — Jonesy, Klombo, Gold, Cheat Master, Quack, and collab skins. Open any tile
-              for ability, how to get, location notes, and every family variant. These are in-game
-              companions, not PNG texture sheets.
+              families — including the Treasure Hunters launch twelve (Halfpeel&apos;d, Lil&apos; Flacko,
+              Plundarrgh, Transponder Snail, and the rest) plus Fortune / Cursed finishes. Open any
+              tile for ability, how to get, and every family variant. These are in-game companions,
+              not PNG texture sheets.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/guides/how-to/how-to-extract-sprites-fortnite" className="text-primary hover:underline">

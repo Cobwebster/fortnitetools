@@ -38,12 +38,39 @@ export type SpritePageModel = {
   faqs: { question: string; answer: string }[]
   description: string
   liveOverride: boolean
+  poolLabel: string
 }
 
-/** Base companion powers for Override-active families (Oct 2026 coverage). */
+const TREASURE_HUNTER_FAMILIES = new Set([
+  "Halfpeel'd",
+  'Re-Pete',
+  "Barry O'Fish",
+  'Chester',
+  'Exmarks',
+  'Wayfinder',
+  'Kelper',
+  'Sweet Dreams',
+  "Lil' Squibbly",
+  "Lil' Flacko",
+  'Plundarrgh',
+  'Transponder Snail',
+  "Lil' Uzi Vert Jr.",
+])
+
+const TREASURE_HUNTER_LOCATION =
+  'Crossbones Isle — tear down a Wanted Poster for a Sprite Treasure Map, then dig the buried Sprite Chest. Regular chests can also roll a Sprite.'
+
+/** Base companion powers. Treasure Hunters families are 1 Nov 2026; Override families stay catalogued. */
 const FAMILY_ABILITY: Record<
   string,
-  { ability: string; abilityScale?: string; location?: string; live?: boolean }
+  {
+    ability: string
+    abilityScale?: string
+    location?: string
+    live?: boolean
+    upcoming?: boolean
+    pool?: 'Treasure Hunters' | 'Override'
+  }
 > = {
   Jonesy: {
     ability:
@@ -218,6 +245,98 @@ const FAMILY_ABILITY: Record<
     location: 'Rare Mythic roll — Relic / Sprite Chests and Locator routes when she is live.',
     live: true,
   },
+  "Halfpeel'd": {
+    ability: 'Marks eliminations on the map.',
+    abilityScale: 'Effect radius increases with each level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  'Re-Pete': {
+    ability: 'Increases reload speed, with a chance that reloading refunds ammo.',
+    abilityScale: 'Reload speed and ammo-refund chance increase with each level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  "Barry O'Fish": {
+    ability: 'Reduces tactical sprint stamina drain when in water.',
+    abilityScale: 'Grants Slap at max level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Chester: {
+    ability: 'Grants a chance to spawn extra loot from Treasure Chests and nullifies fall damage.',
+    abilityScale: 'Extra-loot chance increases with each level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Exmarks: {
+    ability: 'Reveals nearby Treasure Maps and Wanted Posters.',
+    abilityScale: 'Spawns a Treasure Map at max level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Wayfinder: {
+    ability: 'Reveals nearby Sprites and grants more items when opening Buried Chests.',
+    abilityScale: 'Sprite detection radius increases with each level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Kelper: {
+    ability: 'Restores health over time when in water.',
+    abilityScale: 'Heal amount increases with each level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  'Sweet Dreams': {
+    ability: 'Grants a random item at each level, exploding with Mythic loot at max level.',
+    abilityScale: 'Loot value increases at each level. Auto-extracts at max.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  "Lil' Squibbly": {
+    ability: 'Jumping into a fishing hole fishes it and gives some bonus loot.',
+    abilityScale: 'Bonus loot improves as you level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  "Lil' Flacko": {
+    ability: 'Creates a small shockwave on landing, knocking back enemies.',
+    abilityScale: 'Knockback strength increases with each level.',
+    location: `${TREASURE_HUNTER_LOCATION} Also reported from the A$AP Rocky boss on the $.$. Rocky.`,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Plundarrgh: {
+    ability: 'Opening a Chest grants increased pickaxe speed and movement speed.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  'Transponder Snail': {
+    ability:
+      'Grants extra resources on pickup. Teammates who also have this Sprite equipped get some extra resources too.',
+    abilityScale: 'Bonus resources increase with each level.',
+    location: TREASURE_HUNTER_LOCATION,
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  "Lil' Uzi Vert Jr.": {
+    ability: 'Generates a Chug Splash effect when restoring shields.',
+    abilityScale: 'Cooldown decreases with each level.',
+    location: 'Not in the 1 Nov launch twelve. Recaps date it to a later Captain’s Day (around 7 Nov).',
+    live: false,
+    upcoming: true,
+    pool: 'Treasure Hunters',
+  },
 }
 
 const VARIANT_BONUS: Record<string, string> = {
@@ -235,6 +354,9 @@ const VARIANT_BONUS: Record<string, string> = {
   Gummy: 'Gummy finish — same base power, separate collection entry.',
   Holofoil: 'Holofoil finish — same base power, separate collection entry.',
   Gem: 'Gem finish — same base power, separate collection entry.',
+  Fortune: 'Reveals nearby Chests — the Treasure Hunters jeweled finish.',
+  Cursed:
+    'Better odds of finding rare Sprite variants, but water damages you while it is equipped.',
 }
 
 const STARTER_FAMILIES = new Set(['Jonesy', 'Bush', 'Adventure'])
@@ -299,10 +421,51 @@ function howToGetSteps(sprite: SpriteEntry, lobbyHack?: { code: string; note?: s
     })
   }
 
-  steps.push({
-    title: 'Cheat Codes, chests & pumpkins',
-    body: 'Priority farm: Cheat Code chests (blue → Rare, purple → Epic/Legendary, gold → Mythic / variants). Regular chests and Fortnitemares pumpkins are lower odds.',
-  })
+  if (TREASURE_HUNTER_FAMILIES.has(family)) {
+    if (family === "Lil' Uzi Vert Jr.") {
+      steps.push({
+        title: 'Later Captain’s Day',
+        body: "Not in the 1 Nov launch twelve. Recaps date Lil' Uzi Vert Jr. to a later Captain's Day (around 7 Nov). Trust the live collection screen.",
+      })
+    }
+    if (variant === 'Cursed') {
+      steps.push({
+        title: 'Cursed drop table',
+        body: 'Cursed is in the Treasure Hunters collection menu on 1 Nov. Several recaps say it is not in the live chest table yet — check the in-game Sprite tooltip before farming water-damage on purpose.',
+      })
+    }
+    steps.push({
+      title: 'Wanted Poster → Sprite Treasure Map',
+      body: 'Tear down a Wanted Poster on Crossbones Isle. It becomes a Sprite Treasure Map that marks a buried Sprite Chest. Dig it with your pickaxe and open it.',
+    })
+    if (family === 'Exmarks') {
+      steps.push({
+        title: 'Exmarks finds the hunt',
+        body: 'Exmarks reveals nearby Treasure Maps and Wanted Posters, and spawns a Treasure Map at max level. Catch this family first if you are starting from zero.',
+      })
+    }
+    if (family === 'Wayfinder') {
+      steps.push({
+        title: 'Wayfinder pings Sprites',
+        body: 'Wayfinder reveals nearby Sprites and adds extra loot to Buried Chests. Pair it with Exmarks when you are mapping a rotation.',
+      })
+    }
+    if (family === "Lil' Flacko") {
+      steps.push({
+        title: 'A$AP Rocky / $.$. Rocky',
+        body: "Lil' Flacko is also reported from the A$AP Rocky boss fight on the $.$. Rocky battleship POI — Shock Rocket included.",
+      })
+    }
+    steps.push({
+      title: 'Chests and knocks',
+      body: 'Regular chests can roll a Sprite. You can also take one off a player who is carrying it. Sprite Chests from maps are the guaranteed path.',
+    })
+  } else {
+    steps.push({
+      title: 'Cheat Codes, chests & pumpkins',
+      body: 'Priority farm: Cheat Code chests (blue → Rare, purple → Epic/Legendary, gold → Mythic / variants). Regular chests and Fortnitemares pumpkins are lower odds.',
+    })
+  }
 
   steps.push({
     title: 'Extract to keep it',
@@ -388,6 +551,13 @@ export function buildSpritePage(slug: string): SpritePageModel | null {
     faqs,
     description: description.slice(0, 160),
     liveOverride: Boolean(fam?.live),
+    poolLabel: fam?.upcoming
+      ? 'Later this season'
+      : fam?.pool === 'Treasure Hunters'
+        ? 'Treasure Hunters'
+        : fam?.live
+          ? 'Override live'
+          : 'Catalog / may be vaulted',
   }
 }
 

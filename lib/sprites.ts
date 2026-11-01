@@ -1,5 +1,4 @@
 import catalog from '@/lib/sprites-catalog.json'
-import { CURRENT_SEASON } from '@/lib/season'
 
 export type SpriteTheme =
   | 'rare'
@@ -17,6 +16,8 @@ export type SpriteTheme =
   | 'reaper'
   | 'tricktreat'
   | 'quack'
+  | 'fortune'
+  | 'cursed'
 
 export type SpriteEntry = {
   id: number
@@ -54,6 +55,8 @@ export const SPRITE_VARIANT_ORDER = [
   'Epic',
   'Legendary',
   'Mythic',
+  'Fortune',
+  'Cursed',
   'Gold',
   'Gummy',
   'Galaxy',
@@ -83,6 +86,8 @@ export const SPRITE_THEME_STYLES: Record<SpriteTheme, string> = {
   reaper: 'border-rose-500/80 bg-rose-700/20',
   tricktreat: 'border-orange-300/80 bg-orange-600/15',
   quack: 'border-yellow-400/80 bg-yellow-500/10',
+  fortune: 'border-teal-300/80 bg-teal-400/15',
+  cursed: 'border-purple-700/80 bg-purple-950/40',
 }
 
 export const SPRITES: SpriteEntry[] = payload.sprites.map((row) => {
@@ -113,11 +118,11 @@ export const SPRITE_COUNTS = {
 export const SPRITES_HOWTO = [
   {
     title: 'Companions, not PNG sheets',
-    body: `Sprites are Chapter 7 collectible companions (Jonesy, Klombo, Gold / Cheat Master / Quack variants, and so on). This hub lists every portrait; each Sprite has its own ability + how-to-get page.`,
+    body: `Sprites are Chapter 7 collectible companions. Treasure Hunters (1 Nov 2026) added a new roster — Halfpeel'd, Lil' Flacko, Plundarrgh, Transponder Snail, and the rest — each with its own ability page.`,
   },
   {
     title: `${SPRITE_COUNTS.total} icons, ${SPRITE_COUNTS.families} families`,
-    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. ${CURRENT_SEASON.shortLabel} Override still uses the Sprite loop; mastery does not carry into Treasure Hunters.`,
+    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. Hunt Wanted Posters for Sprite Treasure Maps, then dig buried Sprite Chests on Crossbones Isle. Fortune finishes are live; Cursed is in the menu; Gold returns 12 Nov.`,
   },
   {
     title: 'Icons hosted here',
@@ -129,7 +134,12 @@ export const SPRITES_FAQS = [
   {
     question: 'What are Fortnite Sprites?',
     answer:
-      'Chapter 7 Battle Royale companions you find, carry, and extract. Variants (Gold, Gummy, Galaxy, Holofoil, Cube, Cheat Master, Loot Hacker, Quack, and collab skins) count as separate collection entries.',
+      'Chapter 7 Battle Royale companions you find, carry, and extract. Treasure Hunters finishes (Fortune, Cursed) and older ones (Gold, Gummy, Galaxy, Holofoil, Cube, Cheat Master, Loot Hacker, Quack) each count as a separate collection entry.',
+  },
+  {
+    question: 'What are the 12 new Treasure Hunters Sprites?',
+    answer:
+      "Launch twelve (1 Nov 2026): Halfpeel'd, Re-Pete, Barry O'Fish, Chester, Exmarks, Wayfinder, Kelper, Sweet Dreams, Lil' Squibbly, Lil' Flacko, Plundarrgh, and Transponder Snail. Most also have Fortune and Cursed variants. Lil' Uzi Vert Jr. is dated for a later Captain's Day.",
   },
   {
     question: 'Is /sprites a PNG sprite-sheet dump?',
@@ -137,9 +147,9 @@ export const SPRITES_FAQS = [
       'No. It is every companion portrait in our Sprite catalog, plus a detail page per Sprite for abilities and how to get them. Texture sheets from pak files are not hosted here.',
   },
   {
-    question: 'How do I extract Sprites in Override?',
+    question: 'How do I get Sprites in Treasure Hunters?',
     answer:
-      'Use Extraction Sites after the first storm, a Portable Extractor, or a Victory Royale auto-extract. The older Runners write-up still covers pad etiquette.',
+      "Tear down a Wanted Poster for a Sprite Treasure Map, follow it, and dig the buried Sprite Chest. Regular chests can also roll a Sprite. Extract (pad, Portable Extractor, or a win) to bank it. Lil' Flacko can drop from the A$AP Rocky fight on the $.$. Rocky.",
   },
   {
     question: 'Where do the pictures come from?',
