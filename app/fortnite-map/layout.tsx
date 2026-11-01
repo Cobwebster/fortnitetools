@@ -3,22 +3,23 @@ import { createMetadata } from '@/lib/seo'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 
 const base = createMetadata({
-  title: 'Fortnite Interactive Map – Override POIs, Spawns & Loot',
+  title: 'Fortnite Interactive Map – Treasure Hunters, Crossbones Isle & POIs',
   description:
-    'Free Fortnite Chapter 7 Season 4 (Override) map: live minimap with named POIs including Green Hill Zone, spawn layers, loot ratings, hot drops, and rotation tips.',
+    'Treasure Hunters (v43.00) is live on Crossbones Isle. This map still loads Fortnite-API’s live dump (Override island as of 1 Nov 2026). Pirate Shop Access is a BR chest prize, not a pin. Arlong Park, Windmill Village, and The $.$. Rocky land when the API ships coordinates.',
   path: '/fortnite-map',
   keywords: [
     'fortnite map',
     'fortnite interactive map',
-    'fortnite override map',
-    'fortnite green hill zone',
+    'fortnite treasure hunters map',
+    'crossbones isle map',
+    'fortnite arlong park',
+    'fortnite pirate shop',
     'fortnite map locations',
     'fortnite poi map',
     'fortnite loot map',
     'best fortnite landing spots',
     'where to land fortnite',
     'fortnite named locations',
-    'chapter 7 season 4 map',
     'fortnite minimap',
     'fortnite drop spots',
   ],

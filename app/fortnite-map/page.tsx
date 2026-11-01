@@ -16,18 +16,18 @@ export default function FortniteMapPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is the current Fortnite map in Chapter 7 Season 4?',
+        name: 'What is the current Fortnite map in Treasure Hunters?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Chapter 7 Season 4 (Override) uses the live BR island with new named POIs including Green Hill Zone, Reality’s Reign, and Stone Sanctum. Returning names include Lifty Lodge, Battlewoods, Wonkeeland, Latte Landing, Golden Grove, Shaken Sanctuary, Cluster Coast, Sunken Shores, Heatwave Harbor, and Chopped Shop. Frosted Flats, Sinister Strip, and Calamari Canyon are gone from the named list.',
+          text: 'Treasure Hunters (v43.00, 1 Nov 2026) uses Crossbones Isle, an 80-player Battle Royale island. Epic named Arlong Park, Windmill Village, and The $.$. Rocky (A$AP Rocky’s battleship). This tool’s pins follow Fortnite-API. As of 1 Nov 2026 that dump still lists the previous Override island (Green Hill Zone, Reality’s Reign, Stone Sanctum, Lifty Lodge, and Fortnitemares landmarks). We will pin Crossbones Isle names when the API publishes coordinates — we will not invent them.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Where are Fortnite Extraction Sites in Override?',
+        name: 'Where is the Pirate Shop on the Fortnite map?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Toggle the Extraction Sites layer on this map when available. Pads sit near major POIs. Unlock timing and alert windows can change with patches — trust the in-game UI over an old Runners guide.',
+          text: 'It is not a map pin. Pirate Shop Access is a rare Battle Royale chest prize (not a POI). Open chests, watch for the unlock MOTD, then claim Item Shop rows during the 14-day windows. Full steps: /guides/how-to/how-to-get-pirate-shop-access-fortnite.',
         },
       },
       {
@@ -35,7 +35,7 @@ export default function FortniteMapPage() {
         name: 'Where should I land in Fortnite for the best loot?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'High-loot contested drops like Heatwave Harbor, Lifty Lodge, Battlewoods, and new Override names reward early fights. For cleaner loot into zone, use balanced spots such as Wonkeeland or Latte Landing. Edge POIs like Cluster Coast and Sunken Shores are better for placement-focused games. Rotate paths for five returning POIs are on /drops — not the pin tooltips.',
+          text: 'On Crossbones Isle, headline drops are Arlong Park, Windmill Village, and The $.$. Rocky once those names appear in-game. Until Fortnite-API ships those coordinates, the pins on this page still match the previous island dump. Use in-game labels over this overlay for Treasure Hunters landings.',
         },
       },
       {
@@ -51,7 +51,7 @@ export default function FortniteMapPage() {
         name: 'Does this Fortnite map update every season?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when Epic updates the island. Editorial loot tips are reviewed around major Chapter 7 Season 4 patches.',
+          text: 'The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when that dump updates. Editorial loot tips are reviewed around major patches. Treasure Hunters launched 1 Nov 2026; Crossbones Isle pins land here when Fortnite-API lists them.',
         },
       },
     ],
@@ -65,7 +65,7 @@ export default function FortniteMapPage() {
     applicationCategory: 'GameApplication',
     operatingSystem: 'Any',
     description:
-      'Interactive Fortnite Override map with live minimap, POI markers, spawn layers, loot ratings, and drop filters for Chapter 7 Season 4.',
+      'Interactive Fortnite Treasure Hunters map. Pins follow Fortnite-API’s live dump. Pirate Shop Access is a chest prize, not a POI.',
     offers: {
       '@type': 'Offer',
       price: '0',

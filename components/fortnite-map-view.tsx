@@ -36,8 +36,39 @@ export function FortniteMapView() {
             {t('hero')}
           </p>
           {isEnglish ? (
+            <div className="mt-4 max-w-2xl rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm leading-relaxed text-foreground">
+              <p>
+                <span className="font-semibold">Treasure Hunters is live.</span> Crossbones
+                Isle names (Arlong Park, Windmill Village, The $.$. Rocky) are not on this
+                canvas yet — Fortnite-API still serves the previous Override dump. We will
+                not invent pins.
+              </p>
+              <p className="mt-2">
+                <span className="font-semibold">Pirate Shop Access</span> is not a map
+                location. It rolls from Battle Royale chests.{' '}
+                <Link
+                  href="/guides/how-to/how-to-get-pirate-shop-access-fortnite"
+                  className="font-semibold text-primary hover:opacity-80"
+                >
+                  How to get Pirate Shop Access
+                </Link>
+                {' · '}
+                <Link href="/sprites" className="font-semibold text-primary hover:opacity-80">
+                  New Treasure Hunters Sprites
+                </Link>
+              </p>
+            </div>
+          ) : null}
+          {isEnglish ? (
             <p className="mt-3 text-sm text-muted-foreground">
               {t('preferReading')}{' '}
+              <Link
+                href="/guides/how-to/how-to-get-pirate-shop-access-fortnite"
+                className="font-semibold text-primary hover:opacity-80"
+              >
+                Pirate Shop Access
+              </Link>
+              {' · '}
               <Link
                 href="/guides/how-to/how-to-extract-sprites-fortnite"
                 className="font-semibold text-primary hover:opacity-80"
