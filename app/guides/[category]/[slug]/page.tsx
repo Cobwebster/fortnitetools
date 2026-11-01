@@ -9,7 +9,8 @@ import { PostCard } from '@/components/post-card'
 import { AdSenseUnit } from '@/components/adsense-unit'
 import { GuideMarkdown } from '@/components/guide-markdown'
 import { posts, getPostBySlug, getCategoryLabel, formatDate, type Category } from '@/lib/posts'
-import { articleJsonLd, breadcrumbJsonLd, createMetadata } from '@/lib/seo'
+import { articleJsonLd, breadcrumbJsonLd, createMetadata, videoJsonLd } from '@/lib/seo'
+import { GuideNativeVideo } from '@/components/guide-native-video'
 
 interface Props {
   params: Promise<{ category: string; slug: string }>
@@ -35,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     publishedTime: post.date,
     tags: post.tags,
     index: !post.noindex,
+    video: post.video,
   })
 }
 
@@ -43,13 +45,16 @@ export default async function PostPage({ params }: Props) {
   const post = getPostBySlug(slug)
   if (!post || post.category !== category) notFound()
 
+  const path = `/guides/${post.category}/${post.slug}`
   const articleLd = articleJsonLd({
     title: post.title,
     description: post.excerpt,
-    path: `/guides/${post.category}/${post.slug}`,
+    path,
     datePublished: post.date,
     image: post.image,
+    video: post.video,
   })
+  const videoLd = post.video ? videoJsonLd(post.video, path) : null
 
   const crumbsLd = breadcrumbJsonLd([
     { name: 'Home', path: '/' },
@@ -79,6 +84,12 @@ export default async function PostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
+      {videoLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoLd) }}
+        />
+      ) : null}
       <Navbar />
       <main>
         {/* Breadcrumb */}
@@ -149,6 +160,8 @@ export default async function PostPage({ params }: Props) {
                   </span>
                 </div>
               </header>
+
+              {post.video ? <GuideNativeVideo video={post.video} /> : null}
 
               {/* Article content */}
               <div className="mt-8 prose prose-invert prose-lg max-w-none" itemProp="articleBody">

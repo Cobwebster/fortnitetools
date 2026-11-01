@@ -1,4 +1,7 @@
+import type { PostVideo } from '@/lib/guide-video'
+
 export type Category = 'how-to' | 'weapons' | 'season' | 'map'
+export type { PostVideo }
 
 export interface Post {
   slug: string
@@ -7,6 +10,8 @@ export interface Post {
   category: Category
   /** Cover art — official Epic loading screen / MOTD / item render when we have one */
   image?: string
+  /** Native MP4 hosted on this origin — Google VideoObject / sitemap enhancement */
+  video?: PostVideo
   date: string
   readTime: number
   featured?: boolean
@@ -70,6 +75,18 @@ export const posts: Post[] = [
       'fortnite treasure hunt chest',
       'plunder the item shop',
     ],
+    video: {
+      src: '/videos/pirate-shop-found-by-snowslept.mp4',
+      poster: '/images/guides/pirate-shop-found-by-snowslept.jpg',
+      title: 'First ever Pirate Shop found by snowslept',
+      description:
+        'Gameplay of snowslept hitting the first known Pirate Shop Access drop from a Battle Royale chest during Fortnite Treasure Hunters on 1 November 2026. The chest looked like any other chest; the unlock MOTD appears after the match.',
+      uploadDate: '2026-11-01T09:14:34.000Z',
+      durationSeconds: 16,
+      width: 640,
+      height: 360,
+      credit: 'snowslept',
+    },
     content: `
 ## What Pirate Shop Access is
 
@@ -82,7 +99,7 @@ export const posts: Post[] = [
 - The treasure is **not transferable**.
 - Epic’s MOTD also tells you to turn on **two-factor authentication** ([fn.gg/2FA](https://fn.gg/2FA) — steps: [how to enable 2FA](/guides/how-to/how-to-enable-2fa-fortnite)).
 
-Last reviewed: **1 November 2026**. Live rotation while you are in a 14-day window: [Item Shop tracker](/tools/item-shop). Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
+Last reviewed: **1 November 2026**. Native clip of the first public drop (snowslept) is on this page — our own MP4, not a YouTube embed. Live rotation while you are in a 14-day window: [Item Shop tracker](/tools/item-shop). Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
 
 This is **not** free V-Bucks added to your wallet. You are claiming shop rows. Claimed cosmetics stay in the locker after the 14 days end — that is what early winners reported today ([Dexerto](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/)). Generators, Discord “token sellers,” and account-share “I’ll activate it on your login” are still scams. The MOTD already says the prize cannot move accounts.
 
@@ -91,7 +108,7 @@ This is **not** free V-Bucks added to your wallet. You are claiming shop rows. C
 Epic’s unlock card does **not** print a drop table. Recap coverage on **1 November** (Dexerto, Destructoid, GameRant) is consistent on the method:
 
 1. Queue **Battle Royale** (Zero Build included in every recap that names a playlist).
-2. Open **chests**. Dexerto’s wording is that BR chests can roll a **Treasure Hunt** prize. Destructoid calls them special chests with **no fixed spawn list**. One early winner (snowslept, quoted by Dexerto) said the chest that paid out **looked like any other chest** on replay, after roughly **150 opens** across three **Solos** matches. That is one anecdote, not a farm route.
+2. Open **chests**. Dexerto’s wording is that BR chests can roll a **Treasure Hunt** prize. Destructoid calls them special chests with **no fixed spawn list**. One early winner (snowslept, quoted by Dexerto) said the chest that paid out **looked like any other chest** on replay, after roughly **150 opens** across three **Solos** matches. The video on this page is that drop. That is one anecdote, not a farm route.
 3. If you hit it, you get the **Pirate Shop Access Unlocked** MOTD when you leave the match. Two gold compass tokens show under the compass icon. Hit **Claim All**.
 
 **Odds:** Epic has **not** published them. Dexerto notes dataminer HYPEX saying the prize is in the weekly Treasure Hunt pool, and that it is still unclear whether there is a drop cap. Anyone selling a percentage, a “guaranteed POI,” or a Creative map code is inventing it.
@@ -209,6 +226,7 @@ Unknown. It is a Treasure Hunters prize as of 1 Nov 2026. Do not bank on a Chapt
 
 ## Sources
 
+- Native video (this page): first Pirate Shop Access drop recorded by snowslept, 1 Nov 2026.
 - In-client MOTD **Pirate Shop Access Unlocked** (Treasure Hunters / 1 Nov 2026) — two activations, 14 days from activate, V-Bucks shop claims, real-money / gifting / pass exclusions, one new Sidekick, not transferable, 2FA CTA.
 - [Dexerto, 1 Nov 2026](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/) — BR chests / Treasure Hunt prize, HYPEX weekly pool + 15 Dec / 2027 windows, snowslept drop anecdote, permanent claims, Jam Tracks, unpublished odds.
 - [Destructoid](https://www.destructoid.com/how-to-access-the-pirate-shop-and-get-tokens-in-fortnite/) — special chests, no fixed locations, reported squad share, recap find window through 5 Dec.

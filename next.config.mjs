@@ -17,6 +17,17 @@ const nextConfig = {
     config.experiments = { ...config.experiments, asyncWebAssembly: true }
     return config
   },
+  async headers() {
+    return [
+      {
+        source: '/videos/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+          { key: 'Accept-Ranges', value: 'bytes' },
+        ],
+      },
+    ]
+  },
   async redirects() {
     return [
       {

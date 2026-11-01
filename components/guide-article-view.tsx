@@ -7,6 +7,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { PostCard } from '@/components/post-card'
 import { AdSenseUnit } from '@/components/adsense-unit'
 import { GuideMarkdown } from '@/components/guide-markdown'
+import { GuideNativeVideo } from '@/components/guide-native-video'
 import { getCategoryLabel, formatDate, type Post } from '@/lib/posts'
 import { guideMessageKey, localizeHref, type AppLocale } from '@/i18n/config'
 
@@ -106,6 +107,8 @@ export function GuideArticleView({ post, recommended, prevPost, nextPost }: Prop
                 </span>
               </div>
             </header>
+
+            {post.video ? <GuideNativeVideo video={post.video} /> : null}
 
             <div className="mt-8 prose prose-invert prose-lg max-w-none" itemProp="articleBody">
               {content ? (

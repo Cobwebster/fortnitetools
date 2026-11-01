@@ -7,6 +7,7 @@ import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
 import { guidesPageHref, guidesTotalPages } from '@/lib/guides-pagination'
+import { sitemapVideo } from '@/lib/guide-video'
 import { SPRITES, SPRITES_CAPTURED_AT } from '@/lib/sprites'
 
 const FLAGSHIP = new Set([
@@ -241,6 +242,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(post.date),
       changeFrequency: 'monthly' as const,
       priority: GSC_PUSH_GUIDES.has(post.slug) ? 0.85 : post.featured ? 0.75 : 0.6,
+      ...(post.video ? { videos: [sitemapVideo(post.video)] } : {}),
     }))
 
   const weaponRoutes: MetadataRoute.Sitemap = WEAPON_CATALOG.map((w) => ({

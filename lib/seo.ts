@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { siteConfig } from './site'
+import { absoluteAssetUrl, videoPageId, videoJsonLd, type PostVideo } from './guide-video'
 
 type MetaInput = {
   title: string
@@ -10,6 +11,7 @@ type MetaInput = {
   publishedTime?: string
   tags?: string[]
   index?: boolean
+  video?: PostVideo
 }
 
 export function createMetadata({
@@ -21,9 +23,11 @@ export function createMetadata({
   publishedTime,
   tags,
   index = true,
+  video,
 }: MetaInput): Metadata {
   const url = `${siteConfig.url}${path}`
   const ogImage = `${siteConfig.url}${siteConfig.ogImage}`
+  const poster = video ? absoluteAssetUrl(video.poster) : ogImage
 
   return {
     title,
@@ -42,7 +46,25 @@ export function createMetadata({
       siteName: siteConfig.name,
       locale: 'en_US',
       type,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: siteConfig.name }],
+      images: video
+        ? [
+            { url: poster, width: video.width, height: video.height, alt: video.title },
+            { url: ogImage, width: 1200, height: 630, alt: siteConfig.name },
+          ]
+        : [{ url: ogImage, width: 1200, height: 630, alt: siteConfig.name }],
+      ...(video
+        ? {
+            videos: [
+              {
+                url: absoluteAssetUrl(video.src),
+                secureUrl: absoluteAssetUrl(video.src),
+                type: 'video/mp4',
+                width: video.width,
+                height: video.height,
+              },
+            ],
+          }
+        : {}),
       ...(publishedTime ? { publishedTime } : {}),
       ...(tags ? { tags } : {}),
     },
@@ -50,7 +72,7 @@ export function createMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage],
+      images: [poster],
     },
   }
 }
@@ -71,12 +93,14 @@ export function articleJsonLd({
   path,
   datePublished,
   image,
+  video,
 }: {
   title: string
   description: string
   path: string
   datePublished: string
   image?: string
+  video?: PostVideo
 }) {
   return {
     '@context': 'https://schema.org',
@@ -97,8 +121,16 @@ export function articleJsonLd({
       url: siteConfig.url,
     },
     mainEntityOfPage: `${siteConfig.url}${path}`,
+    ...(video
+      ? {
+          video: { '@id': videoPageId(path) },
+          associatedMedia: { '@id': videoPageId(path) },
+        }
+      : {}),
   }
 }
+
+export { videoJsonLd }
 
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return {
