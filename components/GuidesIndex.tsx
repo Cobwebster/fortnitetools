@@ -60,8 +60,8 @@ export function GuidesIndex({ page }: { page: number }) {
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
             {page > 1
-              ? `Page ${page} of ${paged.totalPages} — more Override and older Runners write-ups. ${paged.total} guides in total.`
-              : 'Fresh Override write-ups first — Treasure Hunters (what Epic actually posted), Admin Panel codes, Battle Pass cost, Green Hill Zone, Match Overrides, and Ranked Null. Older Runners weapon and Sprite articles stay linked with last-reviewed dates until we rewrite the loot pool.'}
+              ? `Page ${page} of ${paged.totalPages} — more Treasure Hunters, Override, and older Runners write-ups. ${paged.total} guides in total.`
+              : 'Fresh Treasure Hunters write-ups first — Pirate Shop Access, Shock Rocket, Wanted Posters, Battle Pass vs shop, and Crossbones Isle loot. Older Override / Runners articles stay linked with last-reviewed dates.'}
           </p>
           {page === 1 ? (
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">

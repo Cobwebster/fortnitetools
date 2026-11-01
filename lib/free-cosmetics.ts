@@ -1,4 +1,4 @@
-import { CURRENT_SEASON } from '@/lib/season'
+import { CURRENT_SEASON, OVERRIDE_ENDED_ISO } from '@/lib/season'
 
 export type FreeCosmeticCategory =
   | 'twitch'
@@ -36,7 +36,7 @@ export function cosmeticIconUrl(id: string) {
 
 export const FREE_COSMETICS_REVIEWED = '1 Nov 2026'
 
-/** Free Fortnite cosmetics / rewards tracker — Override (C7S4). Update when Epic refreshes promos. */
+/** Free Fortnite cosmetics / rewards tracker — Treasure Hunters. Override rows keep the 1 Nov lock. */
 export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'treasure-hunters-pirate-shop',
@@ -52,6 +52,36 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
     href: '/guides/how-to/how-to-get-pirate-shop-access-fortnite',
     hrefLabel: 'Pirate Shop how-to',
     category: 'other',
+  },
+  {
+    id: 'treasure-hunters-sprite-mastery',
+    title: 'Treasure Hunters — Sprite Mastery',
+    endsIso: CURRENT_SEASON.endIso,
+    endsLabel: 'with the season (5 Dec event)',
+    howTo:
+      'Hunt Wanted Posters for Sprite Treasure Maps, dig buried Sprite Chests, and master Sprites on the Treasure tab. Forty masters unlock the Navigator’s Nosedive umbrella. Mastery Monday is 2× Sprite XP and Dust from 9 AM ET.',
+    details: [
+      'Launch twelve plus Fortune / Cursed variants. Gold Sprite is dated 12 November.',
+      'Lil’ Flacko can also drop from the A$AP Rocky Boss on The $.$. Rocky.',
+    ],
+    href: '/guides/how-to/how-to-hunt-sprites-treasure-hunters',
+    hrefLabel: 'Wanted Poster how-to',
+    category: 'quest',
+  },
+  {
+    id: 'treasure-hunters-ranked',
+    title: 'Ranked — Treasure Hunters rewards',
+    endsIso: CURRENT_SEASON.endIso,
+    endsLabel: 'with the ranked season',
+    howTo:
+      'Climb the new Treasure Hunters ranked ladder. Epic named Gold AHOY! emoticon, Platinum By Order of Geno loading screen, Diamond This Must Be the Spot spray, Elite Par-Rot back bling, Unreal Double-Duty Duelist pickaxe.',
+    details: [
+      'New Elite / Champion / Unreal rank icons (compass / Peely Roger / Gem Llama).',
+      'Null was Override and locked on 1 November. Shock Rocket is not in Competitive.',
+    ],
+    href: '/ranked',
+    hrefLabel: 'Ranked hub',
+    category: 'ranked',
   },
   {
     id: 'fortnitemares-nitemare-quests',
@@ -141,7 +171,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'admin-panel-lobby-hacks',
     title: 'Admin Panel — Lobby Hack codes',
-    endsIso: CURRENT_SEASON.endIso,
+    endsIso: OVERRIDE_ENDED_ISO,
     endsLabel: '1 November',
     howTo:
       'In the Override lobby (Ranked OFF), open the Admin Panel and enter Epic Lobby Hack codes for free XP, Sprite Dust, Sprites, Gizmos, loading screens, and Fortnitemares lobby effects.',
@@ -157,7 +187,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'battle-pass-free-override',
     title: 'Battle Pass free track (Override)',
-    endsIso: CURRENT_SEASON.endIso,
+    endsIso: OVERRIDE_ENDED_ISO,
     endsLabel: '1 November',
     howTo:
       'Earn levels on the Chapter 7 Season 4 Battle Pass free track for V-Bucks and cosmetics (pass purchase unlocks the premium pages).',
@@ -172,7 +202,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'ranked-null-override',
     title: 'Ranked — Null rewards',
-    endsIso: CURRENT_SEASON.endIso,
+    endsIso: OVERRIDE_ENDED_ISO,
     endsLabel: '1 November',
     howTo:
       'Climb Ranked for the Null outfit and matching Skeletal Slingbag / Null’s Scythe styles (Champion Molten, Elite Neon, Unreal Rifted).',
@@ -187,7 +217,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'ranked-play-all-ranks',
     title: 'Ranked BR — play each rank',
-    endsIso: CURRENT_SEASON.endIso,
+    endsIso: OVERRIDE_ENDED_ISO,
     endsLabel: '1 November',
     howTo:
       'Play Ranked Battle Royale at Gold and above when Epic’s seasonal ranked quests are live — higher ranks usually unlock emotes and wraps.',
@@ -196,7 +226,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'crown-vr-br-override',
     title: '(Crown) Victory Royale — BR',
-    endsIso: CURRENT_SEASON.endIso,
+    endsIso: OVERRIDE_ENDED_ISO,
     endsLabel: '1 November',
     howTo:
       'Win a Victory Royale in Battle Royale or Zero Build. Win while holding a crown when the seasonal crown quest is active for an extra emoticon.',
@@ -209,7 +239,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
   {
     id: 'crown-vr-reload-override',
     title: '(Crown) Victory Royale — Reload',
-    endsIso: CURRENT_SEASON.endIso,
+    endsIso: OVERRIDE_ENDED_ISO,
     endsLabel: '1 November',
     howTo: 'Win in Reload or Zero Build Reload. Crown wins may grant an extra emoticon when the quest is active.',
     category: 'quest',

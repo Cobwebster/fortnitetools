@@ -7,14 +7,14 @@ import { createMetadata } from '@/lib/seo'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Guides',
   description:
-    'Chapter 7 Season 4 (Override) Fortnite guides — Admin Panel codes, Green Hill Zone, Battle Pass XP, Match Overrides, and Ranked Null. Older Runners articles stay dated until rewritten.',
+    'Treasure Hunters Fortnite guides — Pirate Shop Access, Shock Rocket, Wanted Posters, Battle Pass vs shop, and Crossbones Isle loot. Older Override / Runners articles stay dated.',
   path: '/guides',
   keywords: [
     'fortnite guides',
-    'fortnite override',
-    'admin panel codes',
-    'green hill zone',
-    'chapter 7 season 4',
+    'fortnite treasure hunters',
+    'pirate shop access',
+    'shock rocket fortnite',
+    'crossbones isle',
   ],
 })
 

@@ -5,7 +5,6 @@ import { Footer } from '@/components/footer'
 import {
   CURRENT_SEASON,
   formatSeasonLongDate,
-  nextSeasonStartDate,
   seasonEndDate,
 } from '@/lib/season'
 import {
@@ -56,16 +55,15 @@ export default function SeasonHubPage() {
               </div>
               <div className="min-w-0 flex-1 text-center sm:text-left">
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-                  Updated {SEASON_HUB_REVIEWED} · ends Nov 1
+                  Updated {SEASON_HUB_REVIEWED} · Chapter 7 end event 5 Dec
                 </p>
                 <h1 className="font-display text-3xl font-extrabold uppercase leading-tight tracking-wide text-foreground sm:text-5xl text-balance">
                   Fortnite {CURRENT_SEASON.codename}
                 </h1>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                  What changed on the island, how Match Overrides mess with fights, ranked notes, and
-                  when the Battle Pass locks. Season clock runs through{' '}
-                  {formatSeasonLongDate(seasonEndDate())}. Epic named{' '}
-                  {CURRENT_SEASON.next.label} for 11.1 — sourced teaser only, not an island guide.
+                  Crossbones Isle, Captain’s Days, One Piece loot, Pirate Shop Access, and the new
+                  Battle Pass. Clock runs through {formatSeasonLongDate(seasonEndDate())} — the
+                  date Epic told you to keep open for the Chapter 7 end event.
                 </p>
               </div>
             </div>
@@ -134,8 +132,8 @@ export default function SeasonHubPage() {
               Named POIs (live list)
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              From Fortnite-API named locations, reviewed {SEASON_HUB_REVIEWED}. Drop guides exist for
-              five returning POIs — new Override names use the map until dedicated pages ship.
+              Epic-named Crossbones Isle locations, reviewed {SEASON_HUB_REVIEWED}. The interactive
+              map still follows Fortnite-API and may lag the live island — trust in-game labels.
             </p>
             <ul className="mt-5 grid gap-2 sm:grid-cols-2">
               {LIVE_NAMED_POIS.map((poi) => (

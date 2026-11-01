@@ -184,7 +184,7 @@ export const STATUS_FAQS = [
   },
   {
     question: 'When is the next season downtime?',
-    answer: `Override ends / Treasure Hunters is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC) on this clock. Epic’s Battle Pass page says 1 November, Eastern Time, with no hour. Downtime can shift. Use the live countdown; treat this page as the “is it servers or me” checklist.`,
+    answer: `Treasure Hunters is live. Epic dated the Chapter 7 end event ${formatSeasonLongDate(nextSeasonStartDate())} (UTC) on this clock. Downtime can shift. Use the live countdown; treat this page as the “is it servers or me” checklist.`,
   },
   {
     question: 'Why do other sites show a green ping map?',

@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: `When does ${CURRENT_SEASON.next.label} start?`,
-    a: `${CURRENT_SEASON.next.label} is the name Epic posted for 11.1 — the same calendar day Override ends. This clock uses ${formatSeasonLongDate(nextSeasonStartDate())} UTC as a placeholder. Epic has not posted an hour.`,
+    a: `Epic told players to keep Saturday 5 December open for the Chapter 7 end event. This clock uses ${formatSeasonLongDate(nextSeasonStartDate())} as that date. They have not numbered the next season on the Battle Pass page.`,
   },
   {
     q: 'What happens when the Fortnite season ends?',
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'How accurate is this Fortnite season countdown?',
-    a: 'The end date matches Epic’s published Override / Chapter 7 Season 4 schedule (November 1, 2026 on the Battle Pass page). Exact downtime can move by a few hours for servers and patching.',
+    a: 'The end date is the Chapter 7 end event Epic printed (Saturday 5 December 2026). Exact downtime can move by a few hours. Trust the Passes tab if the client shows a different lock time.',
   },
 ]
 
@@ -143,19 +143,16 @@ export default function SeasonCountdownPage() {
               {CURRENT_SEASON.label} end date
             </h2>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Fortnite <strong className="text-foreground">{CURRENT_SEASON.label}</strong> (
-              {CURRENT_SEASON.codename}) started around <strong className="text-foreground">{startLabel}</strong>{' '}
-              and ends on <strong className="text-foreground">{endLabel}</strong>. That is the date
-              players mean when they search “when does Fortnite season end” or “Chapter 7 Season 4
-              end date.”
+              Fortnite <strong className="text-foreground">{CURRENT_SEASON.label}</strong> started
+              around <strong className="text-foreground">{startLabel}</strong>. This clock ends on{' '}
+              <strong className="text-foreground">{endLabel}</strong> — the Chapter 7 end event date
+              Epic printed, not a “Season 5 lock at 21:00 UTC” line.
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              <strong className="text-foreground">{CURRENT_SEASON.next.label}</strong> is the name on
-              Epic’s 24 Oct teaser (dated 11.1). This clock uses{' '}
-              <strong className="text-foreground">{nextLabel}</strong> UTC as a placeholder for the
-              same calendar day. Epic has not posted an hour. US daylight saving time also ends on 1
-              November — treat Epic’s “Eastern Time” calendar day as the source, not two different
-              end dates.
+              <strong className="text-foreground">{CURRENT_SEASON.next.label}</strong> is not named
+              on the Battle Pass page yet. This clock uses{' '}
+              <strong className="text-foreground">{nextLabel}</strong> as the same calendar day.
+              Trust the Passes tab if the client shows a different lock time.
             </p>
           </section>
 

@@ -22,11 +22,11 @@ export const metadata: Metadata = createMetadata({
     'when does fortnite season end',
     'fortnite season countdown',
     'when does chapter 7 season 4 end',
-    'fortnite chapter 7 season 4 end date',
-    'fortnite override end date',
-    'fortnite season 4 end date',
+    'fortnite treasure hunters end date',
+    'fortnite chapter 7 end event',
+    'fortnite december 5 2026',
     'fortnite treasure hunters',
-    'fortnite treasure hunters start date',
+    'when does fortnite treasure hunters end',
     'fortnite season end date 2026',
   ],
 })
@@ -34,16 +34,16 @@ export const metadata: Metadata = createMetadata({
 const faqs = [
   {
     question: `When does Fortnite ${CURRENT_SEASON.label} end?`,
-    answer: `Fortnite ${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) ends on ${endLabel}. Epic may shift the exact downtime by a few hours — this countdown tracks the announced calendar date (November 1 on Epic’s Battle Pass page).`,
+    answer: `Fortnite ${CURRENT_SEASON.label} uses ${endLabel} on this clock — the Chapter 7 end event date Epic printed. Epic may shift exact downtime by a few hours. Trust the Passes tab if the client disagrees.`,
   },
   {
     question: `When does Fortnite ${CURRENT_SEASON.next.label} start?`,
-    answer: `${CURRENT_SEASON.next.label} is the name Epic posted for 11.1, the same calendar day ${CURRENT_SEASON.label} ends (${endLabel} on this clock). Epic has not posted an hour.`,
+    answer: `Epic has not numbered the next season. They told players to keep Saturday 5 December open for the Chapter 7 end event (${endLabel} on this clock).`,
   },
   {
-    question: 'How long is Fortnite Override?',
+    question: 'How long is Fortnite Treasure Hunters?',
     answer:
-      'Chapter 7 Season 4 (Override) runs from August 20, 2026 through November 1, 2026 — about 73 days. Exact downtime can move a few hours.',
+      'Live from 1 November 2026. Epic named Captain’s Days through 21 November and a Chapter 7 end event on 5 December. They did not print “mini-season” on fortnite.com.',
   },
   {
     question: 'Will my Battle Pass progress carry over?',

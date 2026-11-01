@@ -1,4 +1,5 @@
 import type { PostVideo } from '@/lib/guide-video'
+import { treasureHuntersPosts } from '@/lib/treasure-hunters-posts'
 
 export type Category = 'how-to' | 'weapons' | 'season' | 'map'
 export type { PostVideo }
@@ -26,25 +27,25 @@ export const categories: { id: Category; label: string; description: string }[] 
     id: 'how-to',
     label: 'How-To',
     description:
-      'V-Bucks prices, Battle Pass cost, Crew, refunds, 2FA, creator codes — the account steps that actually matter.',
+      'Pirate Shop, Shock Rocket, Wanted Posters, V-Bucks prices, Crew, refunds, 2FA — the account and loot steps that actually matter.',
   },
   {
     id: 'weapons',
     label: 'Weapons',
     description:
-      'Override loot notes plus older Runners tier lists labeled by season. Build a hotbar in the loadout tool when you are picking fights.',
+      'Treasure Hunters loot notes plus older Override / Runners lists labeled by season. Build a hotbar in the loadout tool when you are picking fights.',
   },
   {
     id: 'season',
     label: 'Season',
     description:
-      'Battle Pass timing, Match Overrides, ranked climb habits, and free reward windows for Override.',
+      'Treasure Hunters Battle Pass, Captain’s Days, shop calendar, and older Override / Runners season pages kept as archive.',
   },
   {
     id: 'map',
     label: 'Map',
     description:
-      'Green Hill Zone and returning POI drop notes. Reality’s Reign and Stone Sanctum live on the interactive map until they get their own pages.',
+      'Crossbones Isle POIs and loot from Epic’s v43.00 notes. Older Green Hill / Shattered Coast drop pages stay online as archive.',
   },
 ]
 
@@ -113,7 +114,7 @@ Epic’s unlock card does **not** print a drop table. Recap coverage on **1 Nove
 
 **Odds:** Epic has **not** published them. Dexerto notes dataminer HYPEX saying the prize is in the weekly Treasure Hunt pool, and that it is still unclear whether there is a drop cap. Anyone selling a percentage, a “guaranteed POI,” or a Creative map code is inventing it.
 
-**What we will not write:** a named-island chest circuit. Recap blogs are already using island names that Epic has not printed on fortnite.com. Open chests in BR. Recheck the [live map](/fortnite-map) if the client renamed POIs overnight. Do not land from a recap screenshot.
+**What we will not write:** a named-island chest circuit. Epic named Crossbones Isle POIs; they did **not** publish a Pirate Shop spawn list. Open chests in BR. Recheck the [live map](/fortnite-map) if Fortnite-API still shows the previous island. Do not land from a recap screenshot.
 
 ### Squads vs solos (recap, not the MOTD)
 
@@ -235,6 +236,7 @@ Unknown. It is a Treasure Hunters prize as of 1 Nov 2026. Do not bank on a Chapt
 If the client tooltip disagrees with a recap date, **the tooltip wins**.
 `,
   },
+  ...(treasureHuntersPosts as unknown as Post[]),
   // ─── OVERRIDE (C7S4) — Oct 2026 ────────────────────────────────────────────
   {
     slug: 'how-to-get-jack-a-nape-fortnite',
@@ -572,95 +574,99 @@ Epic has **not** announced an end-of-Override live event on the Battle Pass page
   },
   {
     slug: 'fortnite-treasure-hunters',
-    title: 'Fortnite Treasure Hunters (1 Nov) — What Epic Has Actually Posted',
+    title: 'Fortnite Treasure Hunters (v43.00) — Crossbones Isle, Dates, What to Do',
     excerpt:
-      'Epic named Treasure Hunters on 24 Oct 2026 with “11.1”, then posted a Fortnite × One Piece teaser. Override’s Battle Pass still ends 1 November 2026 ET. No hour, no island sheet, no shop list.',
+      'Treasure Hunters is live. 80-player Crossbones Isle, Captain’s Days, One Piece loot, a new Battle Pass, and Pirate Shop Access. Hub for the v43.00 notes — not the 24 Oct teaser anymore.',
     category: 'season',
-    image: '/images/guides/override-ready.webp',
-    date: '2026-10-26',
-    readTime: 8,
+    image: '/images/guides/treasure-hunters.jpg',
+    date: '2026-11-01',
+    readTime: 11,
     featured: true,
     tags: [
       'fortnite treasure hunters',
       'treasure hunters fortnite',
-      'fortnite november 1 2026',
+      'crossbones isle',
       'fortnite one piece',
-      'chapter 7 season 4 end',
       'v43.00',
-      'when does fortnite season end',
+      'captain’s day fortnite',
+      'chapter 7 mini season',
     ],
     content: `
-## What Epic posted on 24 October
+## Treasure Hunters is live
 
-The official Fortnite account ([@Fortnite](https://x.com/Fortnite)) published a short teaser on **24 October 2026** captioned **“The greatest adventure of all! 11.1”**. The title card reads **Treasure Hunters** / **The Greatest Adventure of All Time** (Japanese on the card: トレジャーハンターズ). **11.1** is 1 November — the same calendar day Epic already prints on the Override Battle Pass page.
+**v43.00** shipped **1 November 2026**. The island is **Crossbones Isle**, matches are **80 players**, and Epic named the season **Treasure Hunters** — they still have not printed “Chapter 7 Season 5” on the Battle Pass page, so this site uses **Treasure Hunters**.
 
-Hours later the same account posted a second clip captioned with straw-hat emojis. It ends on the **Fortnite** and **One Piece** logos together. That is a collab confirmation. It is not a character list, a shop row, or a Battle Pass page.
+Last reviewed: **1 November 2026**. Official post: [Fortnite Treasure Hunters](https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time).
 
-Last reviewed: **1 November 2026**.
+How-tos on this site (full pages, not stubs):
 
-Treasure Hunters is **live**. The first Epic-written loot rule in the client is the **Pirate Shop Access Unlocked** MOTD — two 14-day Item Shop claim windows, not a POI sheet. How-to: [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite). This page stays the sourced teaser history. We are still not filling in an island or loot pool from recap blogs.
+- [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite) — rare BR chest prize, 14-day V-Bucks shop claims
+- [Shock Rocket / A$AP Rocky](/guides/how-to/how-to-get-shock-rocket-fortnite) — first Captain’s Day Boss on The $.$. Rocky
+- [Wanted Posters & Sprite Mastery](/guides/how-to/how-to-hunt-sprites-treasure-hunters) — how you actually get Sprites now
+- [Battle Pass & shop calendar](/guides/season/fortnite-treasure-hunters-battle-pass) — Ace / Nico Robin on the pass; Luffy is shop
+- [Crossbones Isle map & loot](/guides/map/fortnite-crossbones-isle-map-loot) — Epic-named POIs, guns, Gold Bars vaulted
+- [Sprites gallery](/sprites) — launch twelve + Fortune / Cursed
+- [Live map](/fortnite-map) — still Fortnite-API; Override dump on launch day, no invented pins
 
-## Dates that were already on Epic’s Battle Pass page
+Override unclaimed pass nodes, Null styles, Jack-a-Nape, and Admin Panel season codes **do not carry**.
 
-- **Override Battle Pass** — ends **1 November 2026, Eastern Time**. No hour. Official page: [fortnite.com/battle-pass](https://www.fortnite.com/battle-pass).
-- **Fortnitemares 2026** — same calendar day.
-- This site’s clock uses a UTC placeholder on the [countdown](/season-countdown). US daylight saving time also ends on 1 November, so “evening of the 31st” vs “1 Nov ET” arguments are timezone math, not two different Epic dates.
+## Calendar Epic actually printed
 
-When the client is in a queue, use [Is Fortnite down?](/status) plus Epic’s own [status.epicgames.com](https://status.epicgames.com/). Third-party ping maps do not get the queue.
+| When | What |
+| --- | --- |
+| **1 Nov** | v43.00 / Treasure Hunters live. First **Captain’s Day** **9 AM ET** (A$AP Rocky Boss). Luffy, Nami, Usopp in the Shop. |
+| **Mondays, 9 AM ET** | **Mastery Monday** — 2× Sprite XP and Sprite Dust. More posters / Sprite Chests. |
+| **Sundays** | **Treasure Hours** — Captain’s weapons at match start, boosted drops. Hour is in that week’s MOTD. |
+| **5 Nov, 7 PM ET** | A$AP Rocky Outfit in the Shop (not Shock Rocket). |
+| **6 Nov** | One Piece: **Zoro Cup** (Compete tab). |
+| **7 Nov** | Captain’s Day — Lil Uzi + Cuddle Team Leader take a fort. Shop: Zoro, Sanji, Chopper Sidekick. |
+| **12 Nov** | Captain’s Day. **Gold Sprite** variant. Lil Uzi Vert in the Shop. |
+| **13 Nov** | **Buggy Cup**. Buggy in the Shop. |
+| **14 Nov** | Captain’s Day — Hatsune Miku & Kasane Teto at the resort. Both in the Shop. |
+| **21 Nov** | Captain’s Day — Oscar, Frenzy Auto Shotgun. |
+| **5 Dec** | Epic: keep **Saturday, 5 December** open for the **Chapter 7 end event**. |
 
-## Patch number, not a theme essay
+This site’s [countdown](/season-countdown) uses **5 December 2026** as the clock because that is the date Epic told you to keep free — not because they printed a Battle Pass “ends at 21:00 UTC” line. Trust the Passes tab if the client shows a different lock time.
 
-On **13 October 2026**, Epic staff on the Unreal Engine forums wrote that a fix was **“targeted for v43.00 (November 1)”**. That is the update after Override. It is a build number, not a loot table.
+## What the season is
 
-v42.40 (15 Oct) is still the last Override content patch: [v42.40 notes](/guides/season/fortnite-v42-40-last-override-patch).
+- **New island**, not a reskin of Green Hill Zone. 80 players. Cannons.
+- **One Piece powers** in the loot pool (Gum-Gum Fruit, Flame-Flame Fruit, Zoro’s Three Sword Style, Usopp’s Slingshot, Nami’s Tangerine).
+- **Weekly captains** with a crew and a POI. Straw Hats + A$AP Rocky week 1.
+- **Captain X’s mega chest** and **Map Fragments** are teased. We do not have a how-to until Epic says how the pieces combine.
+- **New ranked season** — Gold AHOY! emoticon, Platinum By Order of Geno loading screen, Diamond This Must Be the Spot spray, Elite Par-Rot back bling, Unreal Double-Duty Duelist pickaxe. Elite / Champion / Unreal icons also refreshed (compass / Peely Roger / Gem Llama).
+- **Gold Bars vaulted.** NPC follower services are free. Vending machines are gone.
 
-## What we are not filling in
+## Ranked vs pubs
 
-Epic has **not** published, as of this review:
+Shock Rocket and Explosive Cannon Balls are **non-Competitive**. Ranked is a new ladder on the same island without those toys. Climb notes still live on [ranked](/ranked) and the evergreen [climb guide](/guides/how-to/fortnite-ranked-mode-guide). Null was Override — it locked.
 
-- Whether Treasure Hunters is a full season or a shorter one (recap blogs calling it a “mini-season” are guessing from past November flips)
-- A Chapter 8 date
-- Island changes, named POIs, or a loot pool
-- A Treasure Hunters Battle Pass track or price
-- One Piece outfits, prices, or which page of a pass they sit on
-- A downtime hour
+## Teaser history (24 Oct)
 
-A pirate-chest landmark east of Sunken Shores is still scenery on the [live map](/fortnite-map). We will not write a POI guide from a teaser.
-
-## Finish before the queue
-
-None of this carries:
-
-1. **Override Battle Pass** — unclaimed free-track and paid pages lock. Cost is still **800 V-Bucks** (or Crew): [how much is the Battle Pass](/guides/how-to/how-much-is-fortnite-battle-pass). XP plan: [XP calculator](/xp-calculator).
-2. **Null ranked styles** — Champion / Elite / Unreal. [Null guide](/guides/how-to/how-to-get-null-ranked-rewards-fortnite).
-3. **Jack-a-Nape** — 26 Nitemare quests. [How-to](/guides/how-to/how-to-get-jack-a-nape-fortnite).
-4. **Sprite Mastery last page** — Quack + Pixel Polli. Dust is not advertised as carrying.
-5. **Jimothy** — extract a Dumpster Dive Sprite. [How-to](/guides/how-to/how-to-get-jimothy-fortnite).
-6. **Admin Panel** lobby codes. Never V-Bucks. [Lobby Hacks](/lobby-hacks).
-
-If you panic-bought V-Bucks or a pass you cannot finish: [refunds](/guides/how-to/how-to-refund-fortnite-skins). If you have a card to burn before downtime: [redeem a code](/guides/how-to/how-to-redeem-fortnite-code).
+The official Fortnite account posted **“The greatest adventure of all! 11.1”** on **24 October 2026**, then a Fortnite × One Piece logo clip. That teaser is how we knew the date. **v43.00 launch notes superseded it.** This page is no longer a “we will not fill in the island” stub.
 
 ## FAQ
 
-### When does Fortnite Treasure Hunters start?
+### Is Treasure Hunters a mini-season?
 
-Epic’s teaser says **11.1**. Epic’s Battle Pass page already said Override ends **1 November 2026, Eastern Time**. No hour yet. Watch [status](/status) the morning of.
+Epic did not print “mini-season” on fortnite.com. They printed a **Treasure Hunters Battle Pass**, weekly Captain’s Days through **21 Nov**, and a **5 Dec** Chapter 7 end event. Play it as the live season until that event.
 
-### Is Treasure Hunters “Chapter 7 Season 5”?
+### Is it Chapter 7 Season 5?
 
-Not on the teaser. Epic named **Treasure Hunters**. We will use that name until they print a season number on the Battle Pass page.
+Not on the Battle Pass page. The name is **Treasure Hunters**.
 
-### Is the One Piece collab confirmed?
+### Where should I land?
 
-The **logo pairing** on the official Fortnite account is confirmed. Characters, prices, and whether it is shop vs pass are **not**.
+Epic-named hot names: **The $.$. Rocky**, **Arlong Park**, **Loguetown**. Details: [map & loot](/guides/map/fortnite-crossbones-isle-map-loot). Do not use Override drop guides.
 
-### Will my Override pass rewards carry?
+### How do I get free shop skins?
 
-Unclaimed tiers do not. Claimed-but-unopened rewards are a different Epic support case — check the Passes tab before you log off on the 31st.
+[Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite) — chests, not a POI.
 
-### Where should I sit during downtime?
+## Sources
 
-[Is Fortnite down?](/status) for Epic’s board vs your network, the [countdown](/season-countdown) for the calendar clock, and the [1 Nov downtime / DST guide](/guides/season/when-does-fortnite-go-down-november-1). Refresh those, not Twitter screenshots.
+- [Fortnite Treasure Hunters: The Greatest Adventure of All Time (30 Oct 2026)](https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time)
+- Epic 1 Nov 2026 v43.00 launch notes (POIs, items, ranked rewards, Captain’s Days, Sprite Mastery, cups)
 `,
   },
   {

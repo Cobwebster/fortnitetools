@@ -1,32 +1,34 @@
-/** Chapter 7 Season 4 (Override) schedule — update when Epic announces the next end date. */
+/** Treasure Hunters (v43.00) — Epic has not numbered this as “Season 5” on the Battle Pass page. */
 
 export const CURRENT_SEASON = {
   chapter: 7,
-  season: 4,
-  codename: 'Override',
-  label: 'Chapter 7 Season 4',
-  shortLabel: 'C7S4',
-  /** Public start after Aug 20 reboot downtime (UTC approximate). */
-  startIso: '2026-08-20T10:00:00.000Z',
+  season: 5,
+  codename: 'Treasure Hunters',
+  label: 'Treasure Hunters',
+  shortLabel: 'TH',
+  /** v43.00 downtime ended the morning of 1 Nov 2026 UTC. */
+  startIso: '2026-11-01T08:00:00.000Z',
   /**
-   * Expected season rollover (UTC). Epic publishes the calendar day on the Battle Pass
-   * page; recent Chapter 7 flips have been late UTC. Time may shift by a few hours.
+   * Epic told players to keep Saturday 5 December open for the Chapter 7 end event.
+   * That is the date this clock uses — not a printed “pass locks at 21:00 UTC” line.
    */
-  endIso: '2026-11-01T23:00:00.000Z',
+  endIso: '2026-12-05T23:00:00.000Z',
   /**
-   * Live minimap from Fortnite-API (no local C7S4 archive snapshot yet).
-   * Older Shattered Coast archive: /images/map-evolution/41-10.webp
+   * Live minimap from Fortnite-API. Launch day still served the previous Override dump.
+   * Crossbones Isle pins land when that feed updates — we do not invent coordinates.
    */
   mapImage: 'https://fortnite-api.com/images/map.png',
   passIcon: '/images/icons/battle_pass.png',
   next: {
-    chapter: 7,
-    season: 5,
-    /** Name Epic posted 24 Oct 2026. They have not numbered it as “Season 5” on that teaser. */
-    label: 'Treasure Hunters',
-    startIso: '2026-11-01T23:00:00.000Z',
+    chapter: 8,
+    season: 1,
+    label: 'Chapter 8',
+    startIso: '2026-12-05T23:00:00.000Z',
   },
 } as const
+
+/** Override Battle Pass / Null / Admin Panel lock — used by free-cosmetics rows that died at the flip. */
+export const OVERRIDE_ENDED_ISO = '2026-11-01T23:00:00.000Z'
 
 export type SeasonCountdownParts = {
   totalMs: number

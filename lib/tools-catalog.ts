@@ -95,9 +95,9 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     href: '/season',
-    title: 'Override Season Hub',
+    title: 'Treasure Hunters Season Hub',
     description:
-      'New POIs, Match Overrides, ranked notes, and Battle Pass timing through November 1.',
+      'Crossbones Isle, Captain’s Days, Pirate Shop, Shock Rocket, Sprite hunt, and the 5 Dec Chapter 7 end event.',
     tags: ['Season', 'Loot', 'Ranked'],
     category: 'season',
   },
@@ -193,7 +193,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/ranked',
     title: 'Fortnite Ranked',
     description:
-      'LP, Null ranked styles, Override climb drops, and Match Overrides after v42.40. Last reviewed 24 Oct 2026.',
+      'LP, Treasure Hunters ranked rewards (Par-Rot, Double-Duty Duelist), and climb habits on Crossbones Isle. Last reviewed 1 Nov 2026.',
     tags: ['Ranked', 'LP', 'Reset'],
     category: 'season',
   },
@@ -201,7 +201,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/status',
     title: 'Is Fortnite Down?',
     description:
-      'Live Online / Issues / Down read from Epic’s board, lobby downtime headlines, and the Override season countdown. No fake ping map.',
+      'Live Online / Issues / Down read from Epic’s board, lobby downtime headlines, and the Treasure Hunters countdown. No fake ping map.',
     tags: ['Status', 'Servers', 'Downtime'],
     category: 'season',
   },

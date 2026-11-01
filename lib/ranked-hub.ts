@@ -1,8 +1,8 @@
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { formatSeasonLongDate, nextSeasonStartDate, seasonEndDate } from '@/lib/season'
 
-export const RANKED_REVIEWED = '24 Oct 2026'
-export const RANKED_REVIEWED_ISO = '2026-10-24'
+export const RANKED_REVIEWED = '1 Nov 2026'
+export const RANKED_REVIEWED_ISO = '2026-11-01'
 
 export const RANK_TIERS = [
   { tier: 'Bronze I–III', who: 'Placement school. Survive, loot, make zone. Kills are extra.' },
@@ -28,7 +28,7 @@ export const LP_RULES = [
   },
   {
     title: 'Dying early is expensive',
-    body: 'Negative LP on a bad place is the real ranked tax. That is why Heatwave Harbor and Battlewoods are terrible climb drops when the bus is near — not because the loot is bad.',
+    body: 'Negative LP on a bad place is the real ranked tax. That is why The $.$. Rocky and Arlong Park are terrible climb drops when the bus is near — not because the loot is bad.',
     image: '/images/loadout/shockwave.png',
   },
 ] as const
@@ -36,16 +36,16 @@ export const LP_RULES = [
 export const RANKED_QUEUES = [
   {
     name: 'Ranked Battle Royale',
-    body: 'Override island (C7S4). Same map as pubs, different lobby. Match Overrides can change the ruleset mid-season — check the playlist tile before you assume classic BR.',
+    body: 'Crossbones Isle (Treasure Hunters). Same 80-player map as pubs, different lobby. Shock Rocket is non-Competitive — do not plan a Ranked loadout around the Boss drop.',
     image: 'https://fortnite-api.com/images/map.png',
-    alt: 'Chapter 7 Season 4 Override live minimap',
+    alt: 'Treasure Hunters live minimap',
     badge: '/images/icons/crown.png',
   },
   {
     name: 'Ranked Zero Build',
     body: 'Same island, no builds. Cover and mobility matter more. Cafe roofs and open docks from the drop pages get worse, not better.',
     image: 'https://fortnite-api.com/images/map.png',
-    alt: 'Override island — Ranked Zero Build uses the same map',
+    alt: 'Crossbones Isle — Ranked Zero Build uses the same map',
     badge: '/images/icons/glider.png',
   },
   {
@@ -79,14 +79,14 @@ export const RANKED_DROPS = DROP_GUIDES.map((d) => ({
 
 export const RANKED_RESET = {
   title: 'When does Fortnite ranked reset?',
-  live: `Chapter 7 Season 4 (Override) ranked is the live ladder. Season ends ${formatSeasonLongDate(seasonEndDate())}. Your Bronze–Unreal rank and LP are S4 until the next flip.`,
-  incoming: `Treasure Hunters is dated ${formatSeasonLongDate(nextSeasonStartDate())} (UTC) on this clock. Fortnite almost always resets ranked LP at a season boundary. Confirm the ranked tab in-game on reboot day — we will not invent a new point formula.`,
+  live: `Treasure Hunters ranked is the live ladder. This clock uses ${formatSeasonLongDate(seasonEndDate())} (Chapter 7 end event). Shock Rocket is not in Competitive.`,
+  incoming: `Epic has not numbered the next season. Chapter 8 is expected around ${formatSeasonLongDate(nextSeasonStartDate())}. Confirm the ranked tab after that event — we will not invent a new LP formula.`,
   after: 'After a reset you typically land in a lower band with some soft seed from last season. The exact seed changes. Screenshot your rank before downtime if you care; the client is the source of truth after.',
 } as const
 
 export const RANKED_VS_GUIDE = {
   thisPage:
-    'This URL is the season sheet: which Override drops still make sense for climb games, which queues exist, and how placement vs elims pay. Search “Fortnite ranked reset” should land here, not on a 3,000-word climb essay.',
+    'This URL is the season sheet: which Crossbones Isle drops make sense for climb games, which queues exist, and how placement vs elims pay. Search “Fortnite ranked reset” should land here, not on a 3,000-word climb essay.',
   longGuide:
     'The June 28, 2026 climb article is Bronze → Unreal habits: w-key vs placement, tilt, loadouts, and what changes at Gold/Diamond/Elite. It is not a reset clock. Link both; do not paste one into the other.',
   modes:
@@ -95,16 +95,16 @@ export const RANKED_VS_GUIDE = {
 
 export const LAST_NIGHT = [
   {
-    title: 'Claim Null before the flip',
-    body: 'Champion Molten / Elite Neon / Unreal Rifted styles lock with Override. If you are one rank short, play for placement this week — not clips. Guide: how to get Null ranked rewards.',
+    title: 'New ranked cosmetics',
+    body: 'Gold AHOY! emoticon, Platinum By Order of Geno loading screen, Diamond This Must Be the Spot spray, Elite Par-Rot back bling, Unreal Double-Duty Duelist pickaxe. Null was Override and already locked.',
   },
   {
-    title: 'Finish the Pass on a schedule',
-    body: 'Unclaimed Override free-track rewards lock when the season ends (November 1, Eastern Time). If you are level 87, the XP calculator and Creative codes matter more than one more Diamond lobby.',
+    title: 'Finish the Treasure Hunters pass',
+    body: 'Ace and Nico Robin are on the pass; Luffy is shop. Unclaimed nodes will not outlive the 5 December Chapter 7 end event. XP calculator if you are behind.',
   },
   {
-    title: 'v42.40 vaulted four combat Overrides',
-    body: 'Super Shot, Big Boom, Action Hero, and Healing Overdrive left on 15 Oct. Spooky Sprinter / Berserk / Prop Hunt are still in the Fortnitemares mix. Read the three options on the terminal — last week’s screenshot is stale.',
+    title: 'Do not farm Shock Rocket in Ranked',
+    body: 'Epic marked Shock Rocket and Explosive Cannon Balls non-Competitive. The $.$. Rocky is still a terrible climb drop. Play for placement.',
   },
 ] as const
 
@@ -126,12 +126,12 @@ export const RANKED_NOT = [
 export const RANKED_FAQS = [
   {
     question: 'When does Fortnite ranked reset?',
-    answer: `Override ranked already reset at the August 20 reboot. The next expected ladder flip is with Treasure Hunters (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime.`,
+    answer: `Treasure Hunters started a new ranked season on 1 November 2026. The next expected ladder flip is the Chapter 7 end event (${formatSeasonLongDate(nextSeasonStartDate())} UTC). Confirm the ranked screen after downtime.`,
   },
   {
-    question: 'Do I keep my rank into Treasure Hunters?',
+    question: 'Do I keep Override rank into Treasure Hunters?',
     answer:
-      'You do not keep S4 LP as-is. There is usually a soft seed so Unreal does not wake up in Bronze I, but you will not log in at the same division. Do not spend the last day of the season “protecting” a badge that is about to roll.',
+      'No. Override LP and Null styles locked on 1 November. There is usually a soft seed so Unreal does not wake up in Bronze I, but you do not keep the same division.',
   },
   {
     question: 'How does Fortnite ranked LP work?',
@@ -141,7 +141,7 @@ export const RANKED_FAQS = [
   {
     question: 'Where should I drop in ranked?',
     answer:
-      'Returning POIs: Wonkeeland or Latte Landing for climb games, Sunken Shores for placement, Heatwave / Battlewoods only if you can win the POI. New Override names (Green Hill Zone, Reality’s Reign, Stone Sanctum) do not have dedicated drop pages yet — scout them in pubs first.',
+      '80-player Crossbones Isle. Avoid The $.$. Rocky and Arlong Park unless you can win the land. Windmill Village / Crew’s Cove / Captain’s Cenote look quieter on paper. Scout in pubs first — we are not inventing chest counts.',
   },
   {
     question: 'Is Ranked Reload the same map as Ranked BR?',

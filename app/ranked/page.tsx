@@ -64,7 +64,7 @@ export default async function RankedPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={CURRENT_SEASON.mapImage}
-                    alt={`${CURRENT_SEASON.label} Override — ranked BR uses this island`}
+                    alt={`${CURRENT_SEASON.label} — ranked BR uses Crossbones Isle`}
                     className="aspect-square w-full object-cover"
                     width={176}
                     height={176}
@@ -85,8 +85,8 @@ export default async function RankedPage() {
                   Fortnite <span className="text-primary">Ranked</span>
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                  League Points, Match Overrides, and which returning drops still work for climb
-                  games. Reset questions live here — the full playlist dump is on{' '}
+                  League Points, the new Treasure Hunters ranked rewards, and climb habits on
+                  Crossbones Isle. Reset questions live here — the full playlist dump is on{' '}
                   <Link href="/modes" className="text-primary hover:underline">
                     modes
                   </Link>

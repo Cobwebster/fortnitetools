@@ -29,14 +29,14 @@ export const metadata: Metadata = createMetadata({
 
 const faqs = [
   {
-    question: 'How do I get free Fortnite cosmetics in Override?',
+    question: 'How do I get free Fortnite cosmetics in Treasure Hunters?',
     answer:
-      'Pirate Shop Access (rare Treasure Hunters BR chests — 14-day V-Bucks Item Shop claims), Fortnitemares Nitemare quests (Jack-a-Nape through 31 Oct), Jimothy Sidekick extract, Safety in Numbers / Cuddlz on Horror Creative islands, Prophetic Tapestry login, Admin Panel Lobby Hack codes, Ranked Null styles, Battle Pass free track, and evergreen account rewards (2FA, LEGO link, MyDisney). This page lists methods with end dates.',
+      'Pirate Shop Access (rare BR chests — 14-day V-Bucks Item Shop claims), Sprite Mastery (Navigator’s Nosedive at 40), the new ranked track (Par-Rot / Double-Duty Duelist), plus leftover Fortnitemares / Override rows that already locked. Evergreen: 2FA Boogie Down, LEGO link, MyDisney.',
   },
   {
     question: 'Do free Fortnite rewards expire?',
     answer:
-      'Many do — Fortnitemares ends 31 October 2026; Twitch drops and seasonal quests have hard cutoffs. Admin Panel / Ranked / free pass track generally last until Override ends (1 November 2026). Ongoing offers like 2FA Boogie Down have no deadline.',
+      'Yes. Fortnitemares / Null / Override free-track locked 31 Oct–1 Nov 2026. Treasure Hunters ranked and Sprite Mastery follow the season (this site uses 5 December, the Chapter 7 end event Epic printed). 2FA Boogie Down has no deadline.',
   },
   {
     question: 'Is Mark as completed synced to my Epic account?',

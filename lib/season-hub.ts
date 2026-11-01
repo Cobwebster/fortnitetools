@@ -8,166 +8,157 @@ export const SEASON_HUB_REVIEWED_ISO = '2026-11-01'
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
 export const SEASON_HUB_LINKS = [
+  { href: '/guides/season/fortnite-treasure-hunters', label: 'Treasure Hunters hub' },
+  { href: '/guides/how-to/how-to-get-pirate-shop-access-fortnite', label: 'Pirate Shop Access' },
+  { href: '/guides/how-to/how-to-get-shock-rocket-fortnite', label: 'Shock Rocket / A$AP Rocky' },
+  { href: '/guides/how-to/how-to-hunt-sprites-treasure-hunters', label: 'Wanted Posters / Sprites' },
+  { href: '/guides/season/fortnite-treasure-hunters-battle-pass', label: 'Battle Pass & shop' },
+  { href: '/guides/map/fortnite-crossbones-isle-map-loot', label: 'Crossbones Isle loot' },
   { href: '/fortnite-map', label: 'Live map' },
-  { href: '/drops', label: 'Best drops' },
-  { href: '/weapons', label: 'Loot pool' },
+  { href: '/sprites', label: 'Sprites' },
+  { href: '/weapons', label: 'Weapons encyclopedia' },
   { href: '/tools/loadout-builder', label: 'Loadout builder' },
-  { href: '/season-countdown', label: 'Countdown' },
+  { href: '/season-countdown', label: 'Countdown (5 Dec event)' },
   { href: '/news', label: 'Lobby news' },
-  { href: '/sets', label: 'Live sets' },
   { href: '/ranked', label: 'Ranked / LP' },
   { href: '/status', label: 'Is Fortnite down' },
-  { href: '/guides/how-to/how-to-get-pirate-shop-access-fortnite', label: 'Pirate Shop Access' },
-  { href: '/guides/season/fortnite-treasure-hunters', label: 'Treasure Hunters' },
-  { href: '/guides/season/when-does-fortnite-go-down-november-1', label: '1 Nov downtime / DST' },
-  { href: '/guides/how-to/how-to-get-jack-a-nape-fortnite', label: 'Jack-a-Nape how-to' },
-  { href: '/guides/how-to/how-to-get-cuddlz-fortnite', label: 'Cuddlz / Safety in Numbers' },
-  { href: '/guides/season/fortnite-override-battle-pass-guide', label: 'Override Battle Pass' },
-  { href: '/guides/season/fortnite-v42-40-last-override-patch', label: 'v42.40 last patch' },
   { href: '/guides/how-to/how-much-is-fortnite-battle-pass', label: 'Pass cost (800)' },
   { href: '/guides/how-to/how-to-redeem-fortnite-code', label: 'Redeem a code' },
   { href: '/guides/how-to/how-to-refund-fortnite-skins', label: 'Refund skins' },
-  { href: '/lobby-hacks', label: 'Lobby Hacks' },
-  { href: '/guides/how-to/fortnite-admin-panel-lobby-hack-codes', label: 'Admin Panel how-to' },
   { href: '/guides/how-to/fortnite-ranked-mode-guide', label: 'Ranked climb guide' },
 ] as const
 
 export const RESET_WEEK_PLAYBOOK = [
   {
     title: 'Pirate Shop Access is live',
-    body: 'Treasure Hunters shipped a rare BR chest prize: Pirate Shop Access. Epic’s MOTD grants two activations (2026 and 2027). Each one claims V-Bucks Item Shop rows for 14 days from the moment you activate. Real-money offers, gifting, pass levels, and extra Sidekicks are excluded. Drop odds unpublished. How-to: Pirate Shop Access guide.',
+    body: 'Rare BR chest prize. Epic’s MOTD grants two activations (2026 and 2027). Each one claims V-Bucks Item Shop rows for 14 days from the moment you activate. Real-money offers, gifting, pass levels, and extra Sidekicks are excluded. Drop odds unpublished.',
   },
   {
-    title: 'Last week of Override',
-    body: `Chapter 7 Season 4 (${CURRENT_SEASON.codename}) is in its final week. Epic’s Battle Pass page still reads “Ends November 1, 2026 Eastern Time.” Fortnitemares runs to the same calendar day. Claim Null ranked styles, Jack-a-Nape quests, Sprite Mastery, and unclaimed pass rewards before downtime — none of that carries.`,
+    title: 'First Captain’s Day — A$AP Rocky',
+    body: '9 AM ET on 1 Nov. Board The $.$. Rocky, fight him as a Boss. He can drop Shock Rocket and Lil’ Flacko. Shock Rocket is non-Competitive only. Not a guaranteed drop.',
   },
   {
-    title: 'Treasure Hunters is the name Epic posted',
-    body: 'On 24 October 2026 the official Fortnite account posted a teaser captioned “The greatest adventure of all! 11.1” with a Treasure Hunters title card. Hours later it posted a Fortnite × One Piece logo teaser. Epic has not published an island sheet, a loot pool, a Battle Pass track, or a downtime hour. Write-up: Treasure Hunters guide. Queue day: status page and countdown.',
+    title: 'Sprites are Wanted Posters now',
+    body: 'Tear down a poster → Sprite Treasure Map → buried Sprite Chest. Mastery Monday (every Monday 9 AM ET) is 2× Sprite XP and Dust. Master 40 Sprites for Navigator’s Nosedive. Gold Sprite variant is 12 Nov.',
   },
   {
-    title: 'What v42.40 actually changed',
-    body: '15 Oct was the last Override content patch. New Loot Hacks: Thorne’s Vampiric Blade, Finger Guns, Gatekeeper Shotgun, Hunting Rifle, Slap Splash, all Sprite variants. Vaulted: Midas’ Masterpiece, Witch Broom, plus Super Shot / Big Boom / Action Hero / Healing Overdrive cartridges. Sweeper Shotgun fire rate went up slightly. Honey Sprite and One Wish Willow Sprite are live; Sprite Mastery is on its last page.',
+    title: 'Pass vs shop',
+    body: 'Ace and Nico Robin are on the Treasure Hunters Battle Pass. Luffy, Nami, and Usopp are Item Shop (launch). Gift the pass to a friend and you both get Dark Kawaii Team Leader. Pirate Shop cannot buy pass pages.',
   },
   {
-    title: 'Island (still the Override map)',
-    body: 'Named POIs did not flip in v42.40. Green Hill Zone, Reality’s Reign, and Stone Sanctum are still the new names. Frosted Flats, Sinister Strip, and Calamari Canyon stay off the named list. A giant pirate chest landmark sits east of Sunken Shores — scenery until Treasure Hunters ships and Epic names whatever replaces it.',
+    title: 'Crossbones Isle (80 players)',
+    body: 'Cannons to rotate. Epic-named POIs include Arlong Park, Windmill Village, The $.$. Rocky, Loguetown, Baratie Bay, Lantern Lanes, Plunder Port, Fort Fortuna, Rubber Resort, Crew’s Cove, Captain’s Cenote. Fortnite-API may still show the Override dump — trust in-game labels.',
   },
   {
     title: 'Countdown',
-    body: `Override is dated through ${formatSeasonLongDate(seasonEndDate())} (UTC schedule used on this site; Epic’s Battle Pass page states November 1, Eastern Time). Exact downtime can move a few hours. Use the season countdown for remaining time and the status page when the client is in a queue. Treasure Hunters is the name on Epic’s 11.1 teaser — not a numbered “Season 5” on that post.`,
+    body: `Epic told you to keep Saturday 5 December open for the Chapter 7 end event. This site’s clock runs through ${formatSeasonLongDate(seasonEndDate())}. Exact downtime can move. Use the season countdown and the status page if the client queues.`,
   },
 ] as const
 
 export const LIVE_NAMED_POIS = [
-  { name: 'Green Hill Zone', href: '/fortnite-map', note: 'New · Sonic biome · hot' },
-  { name: "Reality's Reign", href: '/fortnite-map', note: 'New · center · Override traffic' },
-  { name: 'Stone Sanctum', href: '/fortnite-map', note: 'New · mid · contested' },
-  { name: 'Heatwave Harbor', href: '/drops/heatwave-harbor', note: 'Returning · hot · drop guide (re-check rotates)' },
-  { name: 'The Battlewoods', href: '/drops/battlewoods', note: 'Returning · hot · drop guide' },
-  { name: 'Wonkeeland', href: '/drops/wonkeeland', note: 'Returning · balanced · ranked default' },
-  { name: 'Latte Landing', href: '/drops/latte-landing', note: 'Returning · balanced · ranked' },
-  { name: 'Sunken Shores', href: '/drops/sunken-shores', note: 'Returning · edge · placement' },
-  { name: 'Lifty Lodge', href: '/fortnite-map', note: 'Returning · snow' },
-  { name: 'Golden Grove', href: '/fortnite-map', note: 'Returning · inland' },
-  { name: 'Shaken Sanctuary', href: '/fortnite-map', note: 'Returning · woods' },
-  { name: 'Cluster Coast', href: '/fortnite-map', note: 'Returning · east edge' },
-  { name: 'Chopped Shop', href: '/fortnite-map', note: 'Returning · vehicles' },
-  { name: "Geno's Machine", href: '/fortnite-map', note: 'Center landmark · was Zero Point' },
+  { name: 'The $.$. Rocky', href: '/guides/how-to/how-to-get-shock-rocket-fortnite', note: 'Boss ship · Shock Rocket / Lil’ Flacko' },
+  { name: 'Arlong Park', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'One Piece · fish-man stronghold' },
+  { name: 'Windmill Village', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'One Piece · quieter village' },
+  { name: 'Loguetown', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Harbor town · contested' },
+  { name: 'Lantern Lanes', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lantern maze' },
+  { name: 'Baratie Bay', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Floating restaurant' },
+  { name: 'Plunder Port', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Two docked ships' },
+  { name: 'Fort Fortuna', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Fortress · Uzi week 7 Nov' },
+  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · Miku/Teto 14 Nov' },
+  { name: 'Crew’s Cove', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Hidden cove + ship' },
+  { name: 'Captain’s Cenote', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Mountain sinkhole' },
+  { name: 'Wanted Posters', href: '/guides/how-to/how-to-hunt-sprites-treasure-hunters', note: 'Not a POI · Sprite hunt loop' },
 ] as const
 
 export const SEASON_CHANGE_CARDS = [
   {
     id: 'island',
     title: 'Island',
-    live: `Override island is live. New named POIs: Green Hill Zone, Reality’s Reign, Stone Sanctum. Several Runners names (Frosted Flats, Sinister Strip, Calamari Canyon) are gone from the named list. Interactive map pins load from live Fortnite-API coordinates.`,
-    incoming: `${CURRENT_SEASON.next.label} is the name on Epic’s 24 Oct teaser (dated 11.1). No island, POI list, or map screenshot has been published. Do not invent the next island.`,
+    live: 'Crossbones Isle. 80-player Battle Royale. Cannons to launch across. Headline names: Arlong Park, Windmill Village, The $.$. Rocky. Full Epic list is on the map & loot guide.',
+    incoming: `Captain’s Days on 7, 12, 14, and 21 Nov change POIs and loot. Chapter 7 end event is dated ${formatSeasonLongDate(nextSeasonStartDate())}.`,
     extra:
-      'Five drop pages still cover returning POIs — treat mid-game rotates as “re-check in client.” A pirate-chest landmark east of Sunken Shores showed up with v42.40; it is not a new named POI. Map Evolution still archives older seasons; live POIs are on the interactive map.',
-    href: '/fortnite-map',
-    linkLabel: 'Open map',
+      'The interactive map still loads Fortnite-API coordinates. Launch day dump was Override. We will pin Crossbones Isle names when that feed updates — we will not invent them.',
+    href: '/guides/map/fortnite-crossbones-isle-map-loot',
+    linkLabel: 'Map & loot guide',
   },
   {
     id: 'loot',
     title: 'Loot pool',
-    live: 'After v42.40: Pump (post–v42.10), 8-Bit, Sweeper (fire-rate bump), Heavy AR, Wood Stake, Dual Fiend Hunters, Mega Buster, Bonerattler SMG / Freddy’s Nightmare still in the Fortnitemares mix. Drum Gun, Ranger AR, and Midas’ Masterpiece are vaulted. Gatekeeper, Hunting Rifle, Finger Guns, and Thorne’s blade are Loot Hacks this week — not guaranteed floor loot.',
-    incoming: 'No more Override content patches are scheduled. Next loot flip is the Treasure Hunters boundary — we will not invent that pool.',
+    live: 'Gum-Gum Fruit, Flame-Flame Fruit, Zoro’s Three Sword Style, Usopp’s Slingshot, Bundlebuss Repeater, Gilded Dragoon, Nami’s Tangerine, Meat on a Stick, Wanted Posters, Explosive Cannon Balls (non-Competitive). Shock Rocket is a Boss drop.',
+    incoming: 'Later Epic list: Lever Action, Frenzy Auto, Flapjack Rifle. Oscar’s 21 Nov Captain’s Day calls out Frenzy Auto.',
     extra:
-      'Like-for-Like auto-upgrades (walk over a higher rarity of the gun you already hold) shipped in v42.40 if Auto Pick Up Weapons is on. Match Overrides still rewrite rules mid-match; Super Shot, Big Boom, Action Hero, and Healing Overdrive were pulled in this patch.',
-    href: '/weapons',
-    linkLabel: 'Weapons page',
+      'Unvaulted pumps, SMGs, Hammer AR, Flint-Knock, fish/Slurp. Gold Bars vaulted — follower services free, vending machines gone.',
+    href: '/guides/map/fortnite-crossbones-isle-map-loot',
+    linkLabel: 'Loot sheet',
   },
   {
     id: 'mythics',
-    title: 'Mythics',
-    live: 'Midas’ Masterpiece left in v42.40. Freddy’s Nightmare (Krueger drop at Nightmare Neighborhood) is the Fortnitemares highlight. Enhanced 8-Bit Shotgun (Eggman) was vaulted shortly after launch. Thorne’s Vampiric Blade is a Loot Hack, not a floor spawn.',
-    incoming: 'Do not expect another Override mythic before November 1. Next-season boss loot is not announced.',
-    extra:
-      'Loot Hack / Sprite Dust can still surface Gatekeeper, Hunting Rifle, Finger Guns, Slap Splash, and Sprite variants from hacked chests.',
-    href: '/tools/loadout-builder',
-    linkLabel: 'Loadout builder',
+    title: 'Boss / mythic-style',
+    live: 'A$AP Rocky on The $.$. Rocky can drop Shock Rocket and Lil’ Flacko. Neither is guaranteed. Shock Rocket is pubs / Zero Build, not Ranked.',
+    incoming: 'Weekly captains: Lil Uzi (7 Nov), Miku & Teto (14 Nov), Oscar (21 Nov). Map Fragments / Captain X’s mega chest are teased, not documented.',
+    extra: 'Pirate Shop Access is a chest prize, not a Boss drop.',
+    href: '/guides/how-to/how-to-get-shock-rocket-fortnite',
+    linkLabel: 'Shock Rocket how-to',
   },
   {
     id: 'ranked',
     title: 'Ranked',
-    live: 'You are still on the Override ladder. Claim Null Champion / Elite / Unreal styles before the flip — they lock with the season. Placement still beats spawn-island K/D. Wonkeeland and Latte remain the climb defaults.',
-    incoming: 'Next ranked reset is expected at the Override → Treasure Hunters boundary around November 1. Confirm the ranked tab in-game after downtime — we will not invent a new LP formula.',
+    live: 'New ranked season on Crossbones Isle. Rewards Epic named: Gold AHOY! emoticon, Platinum By Order of Geno loading screen, Diamond This Must Be the Spot spray, Elite Par-Rot back bling, Unreal Double-Duty Duelist pickaxe. New Elite / Champion / Unreal icons.',
+    incoming: 'Zoro Cup 6 Nov and Buggy Cup 13 Nov can award those outfits to top regional players. Compete tab for rules.',
     extra:
-      'Ranked Reload is still the small-island rotation — not the Override BR map. Modes catalog labels Habanero rows; Discover is source of truth for which queue is up.',
+      'Null was Override and locked. Shock Rocket is not in Competitive. Placement still beats spawn-island K/D.',
     href: '/ranked',
     linkLabel: 'Ranked hub',
   },
   {
     id: 'pass',
     title: 'Battle Pass',
-    live: `Override Battle Pass is live (Sonic and other Gaming Legends styles in public coverage). Ends with the season (${formatSeasonLongDate(seasonEndDate())}). Unclaimed rewards lock — use the XP calculator if you are short.`,
-    incoming: `The ${CURRENT_SEASON.next.label} pass is not published. Do not buy levels for a future track that does not exist yet.`,
+    live: 'Treasure Hunters Battle Pass is live: Portgas D. Ace, Nico Robin, anime Jonesy / Cuddle Team Leader / Charlotte. Gift the pass and both of you get Dark Kawaii Team Leader. Luffy / Nami / Usopp are shop, not the pass.',
+    incoming: `Epic’s Chapter 7 end event is ${formatSeasonLongDate(seasonEndDate())}. Unclaimed nodes will not outlive that flip.`,
     extra:
-      'Fortnitemares Jack-a-Nape quests and Jimothy Sidekick also end with the event (through 31 Oct / 1 Nov). How-tos: Jack-a-Nape, Jimothy. Cuddlz / Safety in Numbers is a Creative party track with a separate timer. Track dates on free cosmetics, not on the pass UI.',
-    href: '/xp-calculator',
-    linkLabel: 'XP planner',
+      'Pirate Shop MOTD excludes Battle Pass levels. Sprite Mastery is a separate Treasure-tab track (40 masters = Navigator’s Nosedive).',
+    href: '/guides/season/fortnite-treasure-hunters-battle-pass',
+    linkLabel: 'Pass & shop guide',
   },
 ] as const
 
 export const VAULTED_THIS_SEASON = [
-  { name: 'Frosted Flats (named POI)', when: 'Removed from live named list with Override (20 Aug 2026)' },
-  { name: 'Sinister Strip (named POI)', when: 'Removed from live named list with Override' },
-  { name: 'Calamari Canyon (named POI)', when: 'Removed from live named list with Override' },
-  { name: 'Runners Battle Pass', when: 'Locked at the Aug 20 reboot — free track does not carry' },
-  { name: 'Striker Pump / Surgical Burst / Warforged / Rapid Fire (and most C7S3 guns)', when: 'Vaulted with Override loot flip' },
-  { name: 'Enhanced 8-Bit Shotgun (Eggman Mythic)', when: 'Vaulted shortly after Aug 20 launch hotfix' },
-  { name: 'Drum Gun / Ranger Assault Rifle / Tetris Rift', when: 'Vaulted with Fortnitemares v42.30 (1 Oct 2026)' },
-  { name: "Midas' Masterpiece / Witch Broom", when: 'Vaulted in v42.40 (15 Oct 2026)' },
-  { name: 'Super Shot / Big Boom / Action Hero / Healing Overdrive (Match Overrides)', when: 'Disabled in v42.40' },
+  { name: 'Override island / Green Hill Zone / Reality’s Reign / Stone Sanctum', when: 'Replaced by Crossbones Isle on 1 Nov 2026' },
+  { name: 'Gold Bars', when: 'Vaulted in v43.00 — follower services are free' },
+  { name: 'Vending Machines', when: 'Removed in v43.00 (Pocket-O-Matic stays in Zero Build)' },
+  { name: 'Override Battle Pass / Null ranked styles', when: 'Locked at the 1 Nov flip' },
+  { name: 'Match Override Consoles / Fortnitemares loot', when: 'Left with Override / 31 Oct event end' },
+  { name: 'Shock Rocket in Competitive', when: 'Item exists in pubs; Epic marked it non-Competitive' },
 ] as const
 
 export const SEASON_HUB_FAQS = [
   {
-    question: 'When does Fortnite Chapter 7 Season 4 end?',
-    answer: `${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}) is scheduled through ${formatSeasonLongDate(seasonEndDate())} (UTC timestamp we publish; Epic’s Battle Pass page states November 1). Use the countdown for remaining time. Downtime can shift a few hours. DST/shop/queue write-up: 1 Nov downtime guide.`,
+    question: 'When does Fortnite Treasure Hunters end?',
+    answer: `Epic told players to keep Saturday 5 December open for the Chapter 7 end event. This site’s countdown uses ${formatSeasonLongDate(seasonEndDate())}. Trust the Passes tab if the client shows a different lock time.`,
   },
   {
-    question: 'What is new in Fortnite Override?',
+    question: 'What is new in Fortnite Treasure Hunters?',
     answer:
-      'Match Override Consoles, Green Hill Zone / Reality’s Reign / Stone Sanctum, Sonic and other Gaming Legends on the Battle Pass, Sprites, and Fortnitemares through 1 November. Last content patch is v42.40 (15 Oct 2026). Last reviewed 26 Oct 2026. Treasure Hunters is the name Epic posted for 11.1.',
+      'Crossbones Isle (80 players), One Piece powers, A$AP Rocky as the first Boss, 12 new Sprites via Wanted Posters, a Treasure Hunters Battle Pass (Ace / Nico Robin), Pirate Shop Access, and a new ranked track. Last reviewed 1 Nov 2026.',
   },
   {
     question: 'What is the current Fortnite map?',
     answer:
-      'Override-era Shattered Coast with new center / Sonic biomes. Live named locations include Green Hill Zone, Reality’s Reign, Stone Sanctum, plus returning POIs like Heatwave Harbor, Battlewoods, Wonkeeland, Latte Landing, and Sunken Shores. Frosted Flats, Sinister Strip, and Calamari Canyon are no longer on the named list.',
+      'Crossbones Isle. Epic named The $.$. Rocky, Arlong Park, Windmill Village, Loguetown, Lantern Lanes, Baratie Bay, Plunder Port, Fort Fortuna, Rubber Resort, Crew’s Cove, and Captain’s Cenote. The interactive map follows Fortnite-API and may lag the live island.',
   },
   {
-    question: 'Did ranked reset for Season 4?',
+    question: 'Did ranked reset?',
     answer:
-      'Yes — expect the usual season-boundary LP reset at the Aug 20 flip. Soft seed from last season is normal; you do not keep S3 LP as-is. Confirm the ranked tab in-game.',
+      'Yes — a new ranked season started with Treasure Hunters. You do not keep Override LP or Null styles. Confirm the ranked tab in-game.',
   },
   {
-    question: 'When does Fortnite Treasure Hunters start?',
-    answer: `Epic’s 24 Oct teaser dates Treasure Hunters as 11.1 (1 November), the same calendar day the Override Battle Pass ends. This site’s clock uses ${formatSeasonLongDate(nextSeasonStartDate())} UTC as a placeholder. Epic has not posted an hour. Island, loot, and pass contents are not published — a pirate-chest landmark east of Sunken Shores is still scenery.`,
-  },
-  {
-    question: 'Are the old drop guides still valid?',
+    question: 'Where is the Pirate Shop?',
     answer:
-      'Returning POI pages still describe those landings, but Override traffic and mid-game rotates need a client check. New POIs (Green Hill, Reality’s Reign, Stone Sanctum) do not have dedicated /drops pages yet — use the interactive map.',
+      'It is not a POI. Pirate Shop Access is a rare Battle Royale chest prize. How-to is the Pirate Shop Access guide.',
+  },
+  {
+    question: 'Are Override drop guides still valid?',
+    answer:
+      'No. Green Hill / Wonkeeland / Latte pages describe the previous island. Use the Crossbones Isle map & loot guide and in-game names.',
   },
 ]

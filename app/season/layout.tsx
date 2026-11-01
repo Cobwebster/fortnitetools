@@ -3,19 +3,19 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 import { SEASON_HUB_FAQS } from '@/lib/season-hub'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Chapter 7 Season 4 Override – Map, Ranked, Battle Pass',
+  title: 'Fortnite Treasure Hunters – Crossbones Isle, Ranked, Battle Pass',
   description:
-    'Fortnite Override (Chapter 7 Season 4) hub: new POIs (Green Hill Zone, Reality’s Reign, Stone Sanctum), Match Overrides, ranked reset, and Battle Pass end date (November 1, 2026). Last reviewed 31 Aug 2026.',
+    'Fortnite Treasure Hunters hub: Crossbones Isle POIs, Captain’s Days, Pirate Shop Access, Shock Rocket, Sprite Wanted Posters, ranked reset, and the 5 December Chapter 7 end event. Last reviewed 1 Nov 2026.',
   path: '/season',
   keywords: [
-    'fortnite chapter 7 season 4',
-    'fortnite override',
-    'fortnite season 4 hub',
-    'fortnite green hill zone',
-    'fortnite match override',
+    'fortnite treasure hunters',
+    'crossbones isle',
+    'fortnite one piece',
+    'fortnite captain’s day',
     'fortnite ranked reset',
-    'fortnite override battle pass',
-    'when does fortnite season 4 end',
+    'treasure hunters battle pass',
+    'when does fortnite treasure hunters end',
+    'fortnite chapter 7 end event',
   ],
 })
 

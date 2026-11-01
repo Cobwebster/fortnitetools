@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: 'When does the free Battle Pass track end?',
-    a: `${CURRENT_SEASON.codename} is scheduled through 1 November 2026. Finish free-track, Fortnitemares (31 Oct), and seasonal ranked quests before then.`,
+    a: `${CURRENT_SEASON.codename} uses 5 December 2026 on this site (Chapter 7 end event Epic printed). Override free-track / Null / Jack-a-Nape already locked on 1 November.`,
   },
   {
     q: 'Does “Mark as completed” sync to Epic?',
