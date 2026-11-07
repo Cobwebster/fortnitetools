@@ -61,11 +61,11 @@ export const posts: Post[] = [
     slug: 'how-to-get-pirate-shop-access-fortnite',
     title: 'How to Get Pirate Shop Access in Fortnite (Free Item Shop for 14 Days)',
     excerpt:
-      'Pirate Shop Access is a rare Treasure Hunters chest prize. Activate it once in 2026 and once in 2027 to claim V-Bucks Item Shop offers for free for 14 days. Epic has not published the drop odds.',
+      'Pirate Shop Access is a Treasure Hunters chest prize at official 1:137,500 per chest (2.0× in tonight’s Treasure Hours). Activate once in 2026 and once in 2027 for 14-day free V-Bucks shop claims.',
     category: 'how-to',
     image: '/images/guides/pirate-shop-access.jpg',
-    date: '2026-11-01',
-    readTime: 12,
+    date: '2026-11-07',
+    readTime: 13,
     featured: true,
     tags: [
       'pirate shop access fortnite',
@@ -75,6 +75,8 @@ export const posts: Post[] = [
       'treasure hunters pirate shop',
       'fortnite treasure hunt chest',
       'plunder the item shop',
+      'pirate shop access odds',
+      'pirate shop token drop rate',
     ],
     video: {
       src: '/videos/pirate-shop-found-by-snowslept.mp4',
@@ -100,21 +102,41 @@ export const posts: Post[] = [
 - The treasure is **not transferable**.
 - Epic’s MOTD also tells you to turn on **two-factor authentication** ([fn.gg/2FA](https://fn.gg/2FA) — steps: [how to enable 2FA](/guides/how-to/how-to-enable-2fa-fortnite)).
 
-Last reviewed: **1 November 2026**. Native clip of the first public drop (snowslept) is on this page — our own MP4, not a YouTube embed. Live rotation while you are in a 14-day window: [Item Shop tracker](/tools/item-shop). Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
+Last reviewed: **7 November 2026** (official Fortnite Status drop rates). Native clip of the first public drop (snowslept) is on this page — our own MP4, not a YouTube embed. Live rotation while you are in a 14-day window: [Item Shop tracker](/tools/item-shop). Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
 
-This is **not** free V-Bucks added to your wallet. You are claiming shop rows. Claimed cosmetics stay in the locker after the 14 days end — that is what early winners reported today ([Dexerto](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/)). Generators, Discord “token sellers,” and account-share “I’ll activate it on your login” are still scams. The MOTD already says the prize cannot move accounts.
+This is **not** free V-Bucks added to your wallet. You are claiming shop rows. Claimed cosmetics stay in the locker after the 14 days end — that is what early winners reported ([Dexerto](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/)). Generators, Discord “token sellers,” and account-share “I’ll activate it on your login” are still scams. The MOTD already says the prize cannot move accounts. AFK squad-fill farming can get you matchmaking banned: [AFK ban leak](/leaks/pirate-shop-afk-squad-fill-ban).
+
+## Official drop odds (Fortnite Status, 7 Nov 2026)
+
+Fortnite Status published the Treasure Hunt chest table after the **#ReleaseTheOdds** push. Rates are **per chest** in a normal match, **constant since season launch**, and do **not** change through the day **except during Treasure Hours**.
+
+| Treasure (per chest) | Base rate |
+| --- | --- |
+| Weekly Gold Outfit | **1 : 1,562,500** |
+| **Pirate Shop Access** | **1 : 137,500** |
+| Weekly Vehicle & Decal | **1 : 7,813** |
+| Weekly Pickaxe or Back Bling | **1 : 568** |
+| Weekly Jam Track | **1 : 391** |
+| Weekly Loading Screen | **1 : 272** |
+| Gizmo (any) | **1 : 127** |
+
+Other notes from the same Status post:
+
+- Other than **Gizmos**, you **cannot get the same treasure twice**.
+- **Treasure Hours** boost these rates. Status listed earlier today: Pirate Shop Access **1.5×**, Weekly Gold Outfit **7.5×**, Weekly Vehicle & Decal **10×**.
+- Tonight’s **9–11 PM ET** Treasure Hour (7 Nov): Pirate Shop Access **2.0×**, Weekly Gold Outfit **10.0×**. Future Hours may go higher — Status said they will announce it.
+
+**During a 2.0× Pirate Shop window that is ~1 : 68,750 per chest.** At 1.5× it is ~1 : 91,667. Still rare — just not the fake **1 : 700,000** figure that circulated all week.
+
+Community guesses (Blortzen ~1 : 2,000, viral 1 : 700,000, “0.1%”) are **obsolete**. Use the Status table.
 
 ## How you actually get it
 
-Epic’s unlock card does **not** print a drop table. Recap coverage on **1 November** (Dexerto, Destructoid, GameRant) is consistent on the method:
-
-1. Queue **Battle Royale** (Zero Build included in every recap that names a playlist).
-2. Open **chests**. Dexerto’s wording is that BR chests can roll a **Treasure Hunt** prize. Destructoid calls them special chests with **no fixed spawn list**. One early winner (snowslept, quoted by Dexerto) said the chest that paid out **looked like any other chest** on replay, after roughly **150 opens** across three **Solos** matches. The video on this page is that drop. That is one anecdote, not a farm route.
+1. Queue **Battle Royale** (Zero Build included in every recap that names a playlist). Status frames this as chests in a **normal match**.
+2. Open **chests**. Any BR chest can roll the treasure table above — there is **no** fixed Pirate Shop POI. One early winner (snowslept) said the paying chest **looked like any other chest**; the video on this page is that drop.
 3. If you hit it, you get the **Pirate Shop Access Unlocked** MOTD when you leave the match. Two gold compass tokens show under the compass icon. Hit **Claim All**.
 
-**Odds:** Epic has **not** published them. Dexerto notes dataminer HYPEX saying the prize is in the weekly Treasure Hunt pool, and that it is still unclear whether there is a drop cap. Anyone selling a percentage, a “guaranteed POI,” or a Creative map code is inventing it.
-
-**What we will not write:** a named-island chest circuit. Epic named Crossbones Isle POIs; they did **not** publish a Pirate Shop spawn list. Open chests in BR. The [live map](/fortnite-map) has Crossbones Isle pins now — Pirate Shop Access is still **not** one of them.
+**What we will not write:** a named-island chest circuit. Epic named Crossbones Isle POIs; Pirate Shop Access is still **not** a map pin. Prefer high-chest routes on the [live map](/fortnite-map), and play **Treasure Hours** when Pirate Shop is boosted.
 
 ### Squads vs solos (recap, not the MOTD)
 
@@ -195,7 +217,7 @@ Epic Support will not DM you. If the account gets banned in the mess, that is [b
 
 ### Is Pirate Shop Access real?
 
-**Yes.** The **Pirate Shop Access Unlocked** MOTD is in the live client on **1 November 2026** with Treasure Hunters. Multiple recaps the same day (Dexerto, Destructoid, GameRant) match the MOTD’s 14-day / two-year / exclusion language. Epic has **not** posted drop odds on fortnite.com.
+**Yes.** The **Pirate Shop Access Unlocked** MOTD has been live since **1 November 2026**. Fortnite Status published the official **1 : 137,500** per-chest rate on **7 November 2026**.
 
 ### Do I have to buy anything?
 
@@ -223,17 +245,22 @@ Unknown. It is a Treasure Hunters prize as of 1 Nov 2026. Do not bank on a Chapt
 
 ### Where are the drop odds?
 
-**Unpublished.** Open BR chests. That is the whole farm.
+**Official (Fortnite Status, 7 Nov 2026):** **1 : 137,500** per chest for Pirate Shop Access in a normal match. **1.5×** / **2.0×** during listed Treasure Hours — see the odds table earlier on this page. Old viral numbers (1 : 700,000, ~1 : 2,000) are not Epic’s.
+
+### Do Treasure Hours boost the Pirate Shop Token?
+
+**Yes.** Status confirmed Treasure Hours raise Pirate Shop Access (and other treasures). Example: earlier 7 Nov window **1.5×**; tonight **9–11 PM ET** **2.0×** for Pirate Shop Access. That is separate from older “Power Hours later this season” chatter — see [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
 
 ## Sources
 
+- **Fortnite Status (@FortniteStatus), 7 Nov 2026** — official per-chest treasure rates (Pirate Shop Access **1 : 137,500**), no duplicate treasures except Gizmos, Treasure Hours multipliers (1.5× / 2.0× Pirate Shop examples).
 - Native video (this page): first Pirate Shop Access drop recorded by snowslept, 1 Nov 2026.
 - In-client MOTD **Pirate Shop Access Unlocked** (Treasure Hunters / 1 Nov 2026) — two activations, 14 days from activate, V-Bucks shop claims, real-money / gifting / pass exclusions, one new Sidekick, not transferable, 2FA CTA.
-- [Dexerto, 1 Nov 2026](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/) — BR chests / Treasure Hunt prize, HYPEX weekly pool + 15 Dec / 2027 windows, snowslept drop anecdote, permanent claims, Jam Tracks, unpublished odds.
-- [Destructoid](https://www.destructoid.com/how-to-access-the-pirate-shop-and-get-tokens-in-fortnite/) — special chests, no fixed locations, reported squad share, recap find window through 5 Dec.
+- [Dexerto, 1 Nov 2026](https://www.dexerto.com/fortnite/fortnite-adds-rare-reward-that-makes-entire-item-shop-free-for-14-days-but-theres-limits-3423637/) — BR chests / Treasure Hunt prize, 15 Dec / 2027 windows, snowslept drop anecdote, permanent claims, Jam Tracks (odds now superseded by Status).
+- [Destructoid](https://www.destructoid.com/how-to-access-the-pirate-shop-and-get-tokens-in-fortnite/) — no fixed locations, reported squad share, recap find window through 5 Dec.
 - [GameRant](https://gamerant.com/fortnite-treasure-hunters-pirate-shop-access-how-to-get-free-skins/) — same chest method, squad share, 15 Dec / 2027 activate windows.
 
-If the client tooltip disagrees with a recap date, **the tooltip wins**.
+If the client tooltip disagrees with a recap date, **the tooltip wins**. Status odds beat every community estimate.
 `,
   },
   ...(treasureHuntersPosts as unknown as Post[]),

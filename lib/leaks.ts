@@ -130,38 +130,39 @@ Still watching later-season odds boosts: [Pirate Shop Power Hours](/leaks/pirate
       'pirate shop token chance',
     ],
     content: `
-## Official base odds
-Epic / Fortnite published the per-chest Treasure Hunt prize odds (base rates, before any event boost):
+## Official base odds (Fortnite Status, 7 Nov)
+
+Per-chest Treasure Hunt rates in a normal match — **constant since season launch**, except during Treasure Hours:
 
 | Prize | Odds |
 | --- | --- |
-| Weekly Gold Outfit | 1 in 1,562,500 |
-| Pirate Shop Access | 1 in 137,500 |
-| Weekly Vehicle & Decal | 1 in 7,813 |
-| Weekly Pickaxe or Backbling | 1 in 568 |
-| Weekly Jam Track | 1 in 391 |
-| Weekly Loading Screen | 1 in 272 |
-| Any Gizmo | 1 in 127 |
+| Weekly Gold Outfit | **1 : 1,562,500** |
+| **Pirate Shop Access** | **1 : 137,500** |
+| Weekly Vehicle & Decal | **1 : 7,813** |
+| Weekly Pickaxe or Back Bling | **1 : 568** |
+| Weekly Jam Track | **1 : 391** |
+| Weekly Loading Screen | **1 : 272** |
+| Gizmo (any) | **1 : 127** |
 
-Note Gold Outfit is rarer than Pirate Shop Access.
+Gold Outfit is rarer than Pirate Shop Access. Other than **Gizmos**, you cannot roll the same treasure twice.
 
 ## Treasure Hours multipliers
-During Treasure Hours, Fortnite confirmed boosts on top of those base rates:
-- Pirate Shop Access: **1.5×**
+
+Earlier 7 Nov window:
+- Pirate Shop Access: **1.5×** (~1 : 91,667)
 - Weekly Gold Outfit: **7.5×**
 - Weekly Vehicle & Decal: **10×**
 
-## Tonight’s higher Pirate Shop window (7–8 Nov)
-A further limited window **9–11pm ET on 7 November 2026** (02:00–04:00 GMT / UK on 8 Nov) boosts:
-- Pirate Shop Access: **2.0×** (~1 in 68,750)
-- Weekly Gold Outfit: **10.0×** (~1 in 156,250)
+Tonight **9–11 PM ET** (7 Nov):
+- Pirate Shop Access: **2.0×** (~1 : 68,750)
+- Weekly Gold Outfit: **10.0×**
 
-Cross-link:
-- [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours)
-- [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite)
-- [AFK ban warning](/leaks/pirate-shop-afk-squad-fill-ban)
+Status said future Hours may go higher and they will announce it.
 
-**Status:** Shipped (Epic published the numbers). This page will stay as the canonical odds reference; watch the Power Hours page for short-term multipliers.
+Canonical how-to: [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).  
+Also: [Power Hours / tonight’s window](/leaks/pirate-shop-power-hours) · [AFK ban](/leaks/pirate-shop-afk-squad-fill-ban)
+
+**Shipped:** 7 November 2026 (Fortnite Status).
 `,
   },
   {
@@ -663,7 +664,7 @@ Live catalog: [sprites](/sprites)
 
 Override-style Power Hour chatter became Epic **Treasure Hours** with **Fortune Sprite** boosts (plus Mastery Mondays).
 
-Still different from [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
+Treasure Hours also multiply **Pirate Shop Access** and other treasures — official base rates + multipliers: [Pirate Shop odds](/leaks/pirate-shop-odds) · [guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
 **Shipped:** early November 2026 — check [news](/news) / MOTD for this week’s clocks.
 `,
