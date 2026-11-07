@@ -111,6 +111,60 @@ Still watching later-season odds boosts: [Pirate Shop Power Hours](/leaks/pirate
 `,
   },
   {
+    slug: 'pirate-shop-odds',
+    title: 'Fortnite Pirate Shop Odds — Official Chest Drop Rates',
+    excerpt:
+      'Epic published Treasure Hunt chest odds: Pirate Shop Access is 1 in 137,500, Weekly Gold Outfit 1 in 1,562,500. Treasure Hours and a Nov 7–8 night window boost Access and Gold further.',
+    category: 'shop',
+    status: 'shipped',
+    date: '2026-11-07',
+    confirmedDate: '2026-11-07',
+    readTime: 4,
+    featured: true,
+    image: '/images/guides/pirate-shop-access.jpg',
+    tags: [
+      'fortnite pirate shop odds',
+      'pirate shop access odds',
+      'fortnite gold outfit odds',
+      'treasure hours boost',
+      'pirate shop token chance',
+    ],
+    content: `
+## Official base odds
+Epic / Fortnite published the per-chest Treasure Hunt prize odds (base rates, before any event boost):
+
+| Prize | Odds |
+| --- | --- |
+| Weekly Gold Outfit | 1 in 1,562,500 |
+| Pirate Shop Access | 1 in 137,500 |
+| Weekly Vehicle & Decal | 1 in 7,813 |
+| Weekly Pickaxe or Backbling | 1 in 568 |
+| Weekly Jam Track | 1 in 391 |
+| Weekly Loading Screen | 1 in 272 |
+| Any Gizmo | 1 in 127 |
+
+Note Gold Outfit is rarer than Pirate Shop Access.
+
+## Treasure Hours multipliers
+During Treasure Hours, Fortnite confirmed boosts on top of those base rates:
+- Pirate Shop Access: **1.5×**
+- Weekly Gold Outfit: **7.5×**
+- Weekly Vehicle & Decal: **10×**
+
+## Tonight’s higher Pirate Shop window (7–8 Nov)
+A further limited window **9–11pm ET on 7 November 2026** (02:00–04:00 GMT / UK on 8 Nov) boosts:
+- Pirate Shop Access: **2.0×** (~1 in 68,750)
+- Weekly Gold Outfit: **10.0×** (~1 in 156,250)
+
+Cross-link:
+- [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours)
+- [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite)
+- [AFK ban warning](/leaks/pirate-shop-afk-squad-fill-ban)
+
+**Status:** Shipped (Epic published the numbers). This page will stay as the canonical odds reference; watch the Power Hours page for short-term multipliers.
+`,
+  },
+  {
     slug: 'lil-uzi-vert-stronghold-update',
     title: 'Lil Uzi Vert Takes the Stronghold — Lil’ SMG + Lil’ Uzi Vert Jr. Sprite',
     excerpt:
@@ -358,12 +412,13 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
   },
   {
     slug: 'pirate-shop-power-hours',
-    title: 'Pirate Shop Power Hours — Boosted Access Odds Later This Season',
+    title: 'Pirate Shop Power Hours — 2× Access Tonight (9–11pm ET)',
     excerpt:
-      'Pirate Shop Power Hours later in Treasure Hunters: short 1–2 hour windows that likely raise Pirate Shop Access spawn chance. No date or multiplier from Epic yet.',
+      'Confirmed: 7 Nov 9–11pm ET Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
     category: 'shop',
-    status: 'active',
+    status: 'watching',
     date: '2026-11-04',
+    confirmedDate: '2026-11-07',
     readTime: 4,
     featured: true,
     image: '/images/guides/pirate-shop-access.jpg',
@@ -371,26 +426,30 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
       'pirate shop power hours',
       'pirate shop access odds',
       'fortnite power hour',
+      'pirate shop 2x boost',
+      'treasure hours 2.0x',
     ],
     content: `
-## The claim
+## What are Power Hours?
+Short, scheduled windows later in the season that temporarily boost the chance to roll the **Pirate Shop Access** prize from Battle Royale chests.
 
-> **Pirate Shop Power Hours are coming later this season**
->
-> For those who don’t know what a power hour is — they will most likely **boost spawn chance for an hour or 2**
+## Confirmed Treasure Hours multipliers
+Weekend Treasure Hours previously boosted other Treasure Hunt prizes (on top of the base odds):
+- **Pirate Shop Access:** 1.5×
+- **Weekly Gold Outfit:** 7.5×
+- **Weekly Vehicle & Decal:** 10×
 
-Separate from weekend **Treasure Hours** (Fortune Sprites / starting loadouts). This is specifically about the **Pirate Shop Access** chest prize.
+## Tonight’s Pirate Shop window
+**7 Nov 2026, 9–11pm ET** (**02:00–04:00 GMT / UK on 8 Nov**)
+- **Pirate Shop Access:** **2.0×**
+- **Weekly Gold Outfit:** **10.0×**
 
-| Piece | Status |
-| --- | --- |
-| Power Hours planned this season | Unconfirmed leak |
-| 1–2 hour windows | Leak read |
-| Date / multiplier | Unknown |
-| Equal odds otherwise | Epic / Fortnite Status |
+Full base table: [Pirate Shop odds](/leaks/pirate-shop-odds).  
+How-to guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
-How-to while you wait: [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite)
+We’ll keep this page updated for future Power Hours and multiplier confirmations.
 
-**Filed:** 4 November 2026.
+**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** until the window ends.
 `,
   },
   {
@@ -536,7 +595,7 @@ Most of this is now **live season structure**. Lil Uzi week details: [Stronghold
     slug: 'pirate-shop-access-feature',
     title: 'Pirate Shop Access — Free Item Shop Leak That Shipped',
     excerpt:
-      'Archive: BR chests can roll a Treasure Hunt “Pirate Shop” prize every week; odds unknown. Shipped 1 Nov as Pirate Shop Access.',
+      'Archive of the Pirate Shop Access leak that shipped 1 Nov. Base chest odds are now public: Access is 1 in 137,500 — see the odds page.',
     category: 'shop',
     status: 'shipped',
     date: '2026-10-31',
@@ -555,7 +614,7 @@ Most of this is now **live season structure**. Lil Uzi week details: [Stronghold
 >
 > - Opening chests in Battle Royale can roll a Treasure Hunt prize
 > - The “Pirate Shop” is in the prize pool every week
-> - Odds unknown — unclear if there’s a limit
+> - Access base chest odds: **1 in 137,500** — see [Pirate Shop odds](/leaks/pirate-shop-odds)
 
 Epic shipped it **1 Nov** as **Pirate Shop Access** (14-day free V-Bucks claims, two year tokens).
 
