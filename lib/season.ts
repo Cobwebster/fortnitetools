@@ -13,10 +13,7 @@ export const CURRENT_SEASON = {
    * That is the date this clock uses — not a printed “pass locks at 21:00 UTC” line.
    */
   endIso: '2026-12-05T23:00:00.000Z',
-  /**
-   * Live minimap from Fortnite-API. Launch day still served the previous Override dump.
-   * Crossbones Isle pins land when that feed updates — we do not invent coordinates.
-   */
+  /** Live minimap from Fortnite-API (Crossbones Isle dump as of week 2). */
   mapImage: 'https://fortnite-api.com/images/map.png',
   passIcon: '/images/icons/battle_pass.png',
   next: {

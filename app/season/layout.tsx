@@ -5,7 +5,7 @@ import { SEASON_HUB_FAQS } from '@/lib/season-hub'
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Treasure Hunters – Crossbones Isle, Ranked, Battle Pass',
   description:
-    'Fortnite Treasure Hunters hub: Crossbones Isle POIs, Captain’s Days, Pirate Shop Access, Shock Rocket, Sprite Wanted Posters, ranked reset, and the 5 December Chapter 7 end event. Last reviewed 1 Nov 2026.',
+    'Fortnite Treasure Hunters hub: Crossbones Isle POIs, Captain’s Days (8/12/15/22 Nov), Pirate Shop Access, Shock Rocket, Sprite Wanted Posters, ranked reset, and the 5 December Chapter 7 end event. Last reviewed 7 Nov 2026.',
   path: '/season',
   keywords: [
     'fortnite treasure hunters',

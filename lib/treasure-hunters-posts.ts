@@ -29,7 +29,7 @@ export const treasureHuntersPosts = [
 
 It is a **Boss drop**, not floor loot and not an Item Shop row. The A$AP Rocky **Outfit** is a separate shop drop on **5 November 2026 at 7 PM ET**. Do not mix those two up.
 
-Last reviewed: **1 November 2026**. Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters). Island names: [Crossbones Isle map & loot](/guides/map/fortnite-crossbones-isle-map-loot). Lil’ Flacko page: [Sprites](/sprites).
+Last reviewed: **7 November 2026**. Season context: [Treasure Hunters](/guides/season/fortnite-treasure-hunters). Island names: [Crossbones Isle map & loot](/guides/map/fortnite-crossbones-isle-map-loot). Lil’ Flacko page: [Sprites](/sprites).
 
 ## How to get it (the only method Epic printed)
 
@@ -40,7 +40,7 @@ Last reviewed: **1 November 2026**. Season context: [Treasure Hunters](/guides/s
 
 **“Can drop” is the whole rule.** Epic did not publish odds, a pity timer, or a “always Shock Rocket + always Sprite” table. If the Boss dies and you see neither, that is allowed by the copy they wrote. Third parties will take the floor loot.
 
-Captain’s Days after today (Epic’s calendar): **7 Nov, 12 Nov, 14 Nov, 21 Nov**. Later captains bring their own weapons and Sprites. Shock Rocket is the **week-1** Boss toy. Do not wait for a later Captain’s Day hoping Rocky stays the only Boss forever — Epic said a **new captain arrives each week**.
+Captain’s Days after week 1 (revised calendar): **8 Nov, 12 Nov, 15 Nov, 22 Nov**. Later captains bring their own weapons and Sprites. Shock Rocket is the **week-1** Boss toy. Do not wait for a later Captain’s Day hoping Rocky stays the only Boss forever — Epic said a **new captain arrives each week**.
 
 ## What the item actually does
 
@@ -80,7 +80,7 @@ Explosive Cannon Balls are also **non-Competitive only** and load into cannons. 
 
 ### Where is A$AP Rocky?
 
-On **The $.$. Rocky**, the battleship POI. Fortnite-API’s public map dump was still the previous Override island on launch afternoon — trust the **in-game** label, not a stale minimap overlay. Our [interactive map](/fortnite-map) says the same.
+On **The $.$. Rocky**, the battleship POI. Our [interactive map](/fortnite-map) now loads Fortnite-API’s Crossbones Isle dump — still trust the **in-game** label if anything disagrees.
 
 ### Does Zero Build count?
 
@@ -92,7 +92,7 @@ Epic did not print a squad-share rule for Shock Rocket. Play as if only the play
 
 ### When is the next Captain’s Day?
 
-Epic: **7, 12, 14, 21 November**, plus Mastery Mondays and Treasure Hours Sundays all season. Week 2 copy names **Lil Uzi** on a fort (7 Nov). Week 3 is **Miku & Teto** at the resort (14 Nov). Week 4 is **Oscar** and a Frenzy Auto Shotgun (21 Nov).
+**8, 12, 15, 22 November**, plus Mastery Mondays and **Treasure Hours on Saturdays**. Week 2 (**8 Nov**) is **Lil Uzi** on **Fortune’s Fort**. Week 3 (**15 Nov**) is **Miku & Teto** at Rubber Resort. Week 4 (**22 Nov**) is **Oscar** and a Frenzy Auto Shotgun.
 
 ### Is there a Creative map that spawns it?
 
@@ -167,10 +167,10 @@ Epic named these as the new crew. Each has its own page on this site:
 Epic also listed **new & returning variants**:
 
 - **Fortune** — reveals nearby chests. Live at launch.
-- **Cursed** — increases chance of rare Sprite variants, **but water damages you**. In the menu at launch.
+- **Cursed** — increases chance of rare Sprite variants, **but water damages you**. Returned **Saturday 7 November**.
 - **Gold** — **12 November**. Bonus XP from eliminating opponents.
 
-Lil’ Uzi Vert Jr. is **not** in the 1 Nov twelve. Recaps date it to a later Captain’s Day. Trust the collection screen.
+**Lil’ Uzi Vert Jr.** (base + Fortune) lands with the **8 Nov Captain’s Day**. Hunt Wanted Posters / Sprite Chests around **Fortune’s Fort**. Trust the collection screen if a finish is still grey.
 
 ## Sprite Mastery (Treasure tab)
 
@@ -188,7 +188,7 @@ QoL in v43.00: this season’s Sprites show in **numbered order**, and each one 
 Epic:
 
 - **Mastery Monday** — every Monday from **9 AM ET**, **2× Sprite XP** and **2× Sprite Dust** all day. Sprite Chests and Wanted Posters appear in **bigger numbers**.
-- **Treasure Hours Sundays** — Captain’s weapons at the start of matches, boosted drops, “and more.” Exact hour is in the lobby MOTD that week, not on a fake timetable here.
+- **Treasure Hours Saturdays** — Captain’s weapons at the start of matches, boosted drops, “and more.” This week (7 Nov): Fortune Treasure Hours **2–4 PM** and **9–11 PM ET**. Exact hour is always in the lobby MOTD.
 
 If you are going to grind Mastery, **Monday** is the day Epic actually boosted.
 
@@ -208,7 +208,7 @@ You still have to **bank** them or they do not stay in the collection. Epic did 
 
 ### Are Cube / Quack / Override Sprites gone?
 
-They stay in the catalog as older collection entries. The **launch twelve + Fortune / Cursed** are the Treasure Hunters hunt. Gold returns **12 Nov**.
+They stay in the catalog as older collection entries. The **launch twelve + Fortune / Cursed + Lil’ Uzi Vert Jr.** are the Treasure Hunters hunt. Gold returns **12 Nov**.
 
 ### Does Creative count?
 
@@ -255,7 +255,7 @@ Epic split the One Piece collab on purpose:
 
 If a thumbnail says “free Luffy on the pass,” it is wrong. Epic’s [30 Oct post](${EPIC_TH}) puts Luffy / Nami / Usopp in the **Shop** section.
 
-Last reviewed: **1 November 2026**. Price explainer (still **800 V-Bucks** unless your client shows otherwise): [how much is the Battle Pass](/guides/how-to/how-much-is-fortnite-battle-pass). Live tiles: [Item Shop](/tools/item-shop). Season hub: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
+Last reviewed: **7 November 2026**. Price explainer (still **800 V-Bucks** unless your client shows otherwise): [how much is the Battle Pass](/guides/how-to/how-much-is-fortnite-battle-pass). Live tiles: [Item Shop](/tools/item-shop). Season hub: [Treasure Hunters](/guides/season/fortnite-treasure-hunters).
 
 Epic’s Battle Pass page on launch day said the **normal Battle Pass returns next season** and pointed at the **Treasure Hunters Battle Pass, live now**. Confirm the **Passes** tab for page count — we are not inventing a 200-level table from a recap screenshot.
 
@@ -279,9 +279,9 @@ Override unclaimed nodes **did not carry**. If you still needed Null / Jack-a-Na
 | **7 Nov** | **Zoro, Sanji, Chopper Sidekick** |
 | **12 Nov** | **Lil Uzi Vert** |
 | **13 Nov** | **Buggy** |
-| **14 Nov** | **Kasane Teto** and **Cap'n Hatsune Miku** |
+| **14 Nov** | **Cap'n Hatsune Miku** (Kasane Teto Music Pass starts **12 Nov**) |
 
-Times after 5 Nov are **calendar days** on fortnite.com, not a guaranteed 00:00 UTC shop flip. The daily shop still rotates around **00:00 UTC** ([shop reset](/guides/how-to/when-does-fortnite-item-shop-reset)); collab drops often land at **7 PM ET**. Sit on the [shop tracker](/tools/item-shop) the evening of.
+Times after 5 Nov are **calendar days** on fortnite.com, not a guaranteed 00:00 UTC shop flip. The daily shop still rotates around **00:00 UTC** ([shop reset](/guides/how-to/when-does-fortnite-item-shop-reset)); collab drops often land at **7 PM ET**. Sit on the [shop tracker](/tools/item-shop) the evening of. Captain’s Days after week 1 are **Sundays** (8 / 15 / 22 Nov); Treasure Hours are **Saturdays**.
 
 **Zoro Cup (6 Nov)** and **Buggy Cup (13 Nov)** can award those outfits to **top regional performers** plus a Fortnite × One Piece Treasure Box in eligible countries. That is **Compete tab**, not the shop. Rules: [fortnite.com/competitive](https://www.fortnite.com/competitive) and the in-game Compete screen.
 
@@ -356,37 +356,36 @@ Epic did not print a Super Style page in the 30 Oct / 1 Nov notes. Do not buy 50
 
 **Crossbones Isle** is the Treasure Hunters Battle Royale island. Epic: **80-player** matches, **cannons** to launch across, One Piece shores, and a battleship.
 
-Last reviewed: **1 November 2026**. Pins on [/fortnite-map](/fortnite-map) still follow **Fortnite-API**. On launch day that dump was the **previous Override island** — we will not fake Arlong Park coordinates. Use **in-game names**. This page is the sourced POI + loot sheet until that API updates.
+Last reviewed: **7 November 2026**. Pins on [/fortnite-map](/fortnite-map) follow **Fortnite-API’s Crossbones Isle dump**. If a label disagrees with your client, **in-game text wins**.
 
 Season dates and Captain’s Days: [Treasure Hunters hub](/guides/season/fortnite-treasure-hunters).
 
-## Named locations Epic printed (1 Nov)
+## Named locations (live Fortnite-API + Epic notes)
 
-From the v43.00 launch notes — **not** from a recap map card. Some marketing images use different labels (Lantern Landing vs Lantern Lanes). **In-game text wins.**
+Live dump names as of week 2. Epic’s launch marketing also used Lantern Lanes / Fort Fortuna / Baratie Bay — the client now shows the row on the left.
 
-| POI (Epic’s notes) | What they wrote |
+| Live name | Notes |
 | --- | --- |
 | **The $.$. Rocky** | Board it and **challenge A$AP Rocky as a Boss**, then raid the deck. |
-| **Lantern Lanes** | Maze of lantern-lit streets. Pick a route before another squad cuts it off. |
-| **Baratie Bay** | Floating restaurant and the waterfront around it. |
+| **Fortune’s Fort** | Week-2 fort — Lil Uzi + Cuddle Team Leader (**8 Nov Captain’s Day**). Epic also called Fort Fortuna. |
+| **Lantern Landing** | Maze of lantern-lit streets (Epic also said Lantern Lanes). |
+| **Busy Bay** | South-east bay. **Baratie** is a nearby landmark. |
 | **Windmill Village** | Quiet seaside village with windmills, from One Piece. |
 | **Loguetown** | Busy harbor town. |
 | **Arlong Park** | Fish-man stronghold. |
-| **Crew’s Cove** | A ship beside a waterfall in a hidden cove. |
 | **Plunder Port** | Two docked ships, both worth clearing. |
-| **Fort Fortuna** | Fortress — search the ramparts. |
-| **Rubber Resort** | Resort with a duck-shaped yacht. |
-| **Captain’s Cenote** | Mountain sinkhole pool. |
+| **Rubber Resort** | Resort with a duck-shaped yacht — Miku & Teto on **15 Nov**. |
+| **Loot Lagoon** | Lagoon loot dens. |
+| **Cursed Cavern** | Cave POI — mid-fight third parties. |
+| **The Chest** | Named chest landmark. |
 
-Headline names from the [30 Oct post](${EPIC_TH}): **Arlong Park**, **Windmill Village**, **The $.$. Rocky**.
-
-Recap map cards also print Rubber Resort / The Chest / Loot Lagoon / Lil’ Uzi’s Stronghold / Cursed Cavern / Busy Bay. Those labels are **not** all in Epic’s 1 Nov list. We are not merging the two sheets into fake pins. If your minimap says **Busy Bay** and the notes said **Baratie Bay**, land on what the **client** shows.
+Also on the dump as landmarks: **Baratie**, **Boogie Boat**, **Giant’s Battlefield**, **Henry**, **The Salty Skull**.
 
 **Landing, not pins:**
 
-- **Hot / contested:** The $.$. Rocky (Boss + Shock Rocket), Arlong Park, Loguetown.
-- **Quieter-looking names:** Windmill Village, Crew’s Cove, Captain’s Cenote — still 80 players; “quiet” is relative.
-- **Week 2 (7 Nov):** Epic says Lil Uzi and Cuddle Team Leader **claim a fort**. That is when Fort Fortuna / a recap “Lil’ Uzi’s Stronghold” likely lights up. Do not drop an empty fort on 1 Nov expecting Uzi.
+- **Hot / contested:** The $.$. Rocky (Boss + Shock Rocket), Arlong Park, Loguetown, Fortune’s Fort (after 8 Nov).
+- **Quieter-looking names:** Windmill Village, Loot Lagoon — still 80 players; “quiet” is relative.
+- **Week 2 (8 Nov):** Lil Uzi and Cuddle Team Leader **claim Fortune’s Fort**. Lil’ Uzi Vert Jr. joins the Sprite hunt.
 
 Cannons are mobility. Explosive Cannon Balls load into them (**non-Competitive**).
 
@@ -412,7 +411,7 @@ We are not posting fake DPS. Inspect in-game.
 
 **Unvaulted:** Sentinel Pump, Auto Shotgun, Flint-Knock, Sidearm Pistol, Machine SMG, Tactical SMG, Hammer AR, Zipline Deployer, Overdrive Grenade, plus heals/fish (Slurp Juice, Shield Fish, Jellyfish, Slurpfish, Hop Flopper, Spicy Fish).
 
-**Later in the season (Epic):** Lever Action Shotgun, Frenzy Auto Shotgun, Flapjack Rifle. Oscar’s week (21 Nov) calls out **Frenzy Auto**.
+**Later in the season (Epic):** Lever Action Shotgun, Frenzy Auto Shotgun, Flapjack Rifle. Oscar’s week (**22 Nov**) calls out **Frenzy Auto**.
 
 **Gold Bars — vaulted.** That is the economy change:
 
@@ -430,13 +429,12 @@ Blitz loot refresh includes Tactical SMG, Usopp’s Slingshot, Bundlebuss, Gilde
 
 Playlist truth lives in Discover. This is not a Blitz tier list.
 
-## How to use this without a live API dump
+## How to use this with the live map
 
-1. Drop on an **Epic-named** POI you can actually see in the bus map.
+1. Drop on a **live-named** POI you can see in the bus map / [/fortnite-map](/fortnite-map).
 2. If you want the week-1 Boss item, that is **only** [The $.$. Rocky](/guides/how-to/how-to-get-shock-rocket-fortnite) in pubs.
-3. If you want Sprites, hunt **Wanted Posters**, not Override extract pads.
+3. If you want Sprites, hunt **Wanted Posters**, not Override extract pads. Week-2 Sprite: Lil’ Uzi Vert Jr. around Fortune’s Fort.
 4. If you want shop collabs, that is a [pass vs shop](/guides/season/fortnite-treasure-hunters-battle-pass) problem, not a POI.
-5. Recheck [/fortnite-map](/fortnite-map) after Fortnite-API ships Crossbones Isle names — pins will appear without us inventing them.
 
 ## FAQ
 
@@ -450,7 +448,7 @@ Playlist truth lives in Discover. This is not a Blitz tier list.
 
 ### When does the island change?
 
-Captain’s Days: **1, 7, 12, 14, 21 November**. Epic said each week a new captain arrives with a crew and POI.
+Captain’s Days: **1, 8, 12, 15, 22 November**. Epic said each week a new captain arrives with a crew and POI. Treasure Hours are **Saturdays**.
 
 ### Chapter 7 end?
 

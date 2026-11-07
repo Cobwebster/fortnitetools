@@ -19,7 +19,7 @@ export default function FortniteMapPage() {
         name: 'What is the current Fortnite map in Treasure Hunters?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Treasure Hunters (v43.00, 1 Nov 2026) uses Crossbones Isle, an 80-player Battle Royale island. Epic named Arlong Park, Windmill Village, and The $.$. Rocky (A$AP Rocky’s battleship). This tool’s pins follow Fortnite-API. As of 1 Nov 2026 that dump still lists the previous Override island (Green Hill Zone, Reality’s Reign, Stone Sanctum, Lifty Lodge, and Fortnitemares landmarks). We will pin Crossbones Isle names when the API publishes coordinates — we will not invent them.',
+          text: 'Treasure Hunters (v43.00) uses Crossbones Isle, an 80-player Battle Royale island. Live Fortnite-API names include Arlong Park, Fortune’s Fort, Rubber Resort, Loguetown, Lantern Landing, The $.$. Rocky (A$AP Rocky’s battleship), and more. This tool’s pins follow that dump. Pirate Shop Access is a BR chest prize, not a map pin. Spawn rings are planning markers around named POIs — not pixel-perfect Epic dumps.',
         },
       },
       {
@@ -35,7 +35,7 @@ export default function FortniteMapPage() {
         name: 'Where should I land in Fortnite for the best loot?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'On Crossbones Isle, headline drops are Arlong Park, Windmill Village, and The $.$. Rocky once those names appear in-game. Until Fortnite-API ships those coordinates, the pins on this page still match the previous island dump. Use in-game labels over this overlay for Treasure Hunters landings.',
+          text: 'Hot names: The $.$. Rocky, Arlong Park, Loguetown, and Fortune’s Fort after the 8 Nov Captain’s Day. Balanced: Rubber Resort, Windmill Village, Plunder Port. Filter hot / balanced / edge on this map, then trust in-game labels if anything disagrees.',
         },
       },
       {
@@ -51,7 +51,7 @@ export default function FortniteMapPage() {
         name: 'Does this Fortnite map update every season?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when that dump updates. Editorial loot tips are reviewed around major patches. Treasure Hunters launched 1 Nov 2026; Crossbones Isle pins land here when Fortnite-API lists them.',
+          text: 'Yes. The minimap image and coordinates load from live Fortnite-API data, so named locations refresh when that dump updates. Editorial loot tips are reviewed around major patches — last Crossbones Isle pass 7 Nov 2026.',
         },
       },
     ],
@@ -65,7 +65,7 @@ export default function FortniteMapPage() {
     applicationCategory: 'GameApplication',
     operatingSystem: 'Any',
     description:
-      'Interactive Fortnite Treasure Hunters map. Pins follow Fortnite-API’s live dump. Pirate Shop Access is a chest prize, not a POI.',
+      'Interactive Fortnite Treasure Hunters map for Crossbones Isle. Live Fortnite-API pins. Pirate Shop Access is a chest prize, not a POI.',
     offers: {
       '@type': 'Offer',
       price: '0',

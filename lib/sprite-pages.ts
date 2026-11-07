@@ -331,8 +331,9 @@ const FAMILY_ABILITY: Record<
   },
   "Lil' Uzi Vert Jr.": {
     ability: 'Generates a Chug Splash effect when restoring shields.',
-    abilityScale: 'Cooldown decreases with each level.',
-    location: 'Not in the 1 Nov launch twelve. Recaps date it to a later Captain’s Day (around 7 Nov).',
+    abilityScale: 'Cooldown decreases with each level (community reports ~18s → ~10s by level 5).',
+    location:
+      'Week-2 Treasure Hunters Sprite (Captain’s Day 8 Nov). Hunt Wanted Posters / Sprite Chests on Crossbones Isle — Fortune’s Fort is the live fort POI. Fortune finish shares the same hunt. Trust the collection screen if a finish is still grey.',
     live: false,
     upcoming: true,
     pool: 'Treasure Hunters',
@@ -424,14 +425,14 @@ function howToGetSteps(sprite: SpriteEntry, lobbyHack?: { code: string; note?: s
   if (TREASURE_HUNTER_FAMILIES.has(family)) {
     if (family === "Lil' Uzi Vert Jr.") {
       steps.push({
-        title: 'Later Captain’s Day',
-        body: "Not in the 1 Nov launch twelve. Recaps date Lil' Uzi Vert Jr. to a later Captain's Day (around 7 Nov). Trust the live collection screen.",
+        title: 'Week-2 Captain’s Day Sprite',
+        body: "Lil' Uzi Vert Jr. (base + Fortune) lands with the 8 Nov Captain’s Day. Open Sprite Chests / Wanted Poster digs on Crossbones Isle — Fortune’s Fort is the live fort POI. Trust the collection screen if a finish is still grey.",
       })
     }
     if (variant === 'Cursed') {
       steps.push({
         title: 'Cursed drop table',
-        body: 'Cursed is in the Treasure Hunters collection menu on 1 Nov. Several recaps say it is not in the live chest table yet — check the in-game Sprite tooltip before farming water-damage on purpose.',
+        body: 'Cursed finishes returned Saturday 7 Nov (water damages you; better rare-variant odds). Confirm the in-game tooltip before farming them on purpose.',
       })
     }
     steps.push({

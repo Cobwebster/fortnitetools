@@ -114,7 +114,7 @@ Epic’s unlock card does **not** print a drop table. Recap coverage on **1 Nove
 
 **Odds:** Epic has **not** published them. Dexerto notes dataminer HYPEX saying the prize is in the weekly Treasure Hunt pool, and that it is still unclear whether there is a drop cap. Anyone selling a percentage, a “guaranteed POI,” or a Creative map code is inventing it.
 
-**What we will not write:** a named-island chest circuit. Epic named Crossbones Isle POIs; they did **not** publish a Pirate Shop spawn list. Open chests in BR. Recheck the [live map](/fortnite-map) if Fortnite-API still shows the previous island. Do not land from a recap screenshot.
+**What we will not write:** a named-island chest circuit. Epic named Crossbones Isle POIs; they did **not** publish a Pirate Shop spawn list. Open chests in BR. The [live map](/fortnite-map) has Crossbones Isle pins now — Pirate Shop Access is still **not** one of them.
 
 ### Squads vs solos (recap, not the MOTD)
 
@@ -596,7 +596,7 @@ Epic has **not** announced an end-of-Override live event on the Battle Pass page
 
 **v43.00** shipped **1 November 2026**. The island is **Crossbones Isle**, matches are **80 players**, and Epic named the season **Treasure Hunters** — they still have not printed “Chapter 7 Season 5” on the Battle Pass page, so this site uses **Treasure Hunters**.
 
-Last reviewed: **1 November 2026**. Official post: [Fortnite Treasure Hunters](https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time).
+Last reviewed: **7 November 2026**. Official post: [Fortnite Treasure Hunters](https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time).
 
 How-tos on this site (full pages, not stubs):
 
@@ -605,8 +605,8 @@ How-tos on this site (full pages, not stubs):
 - [Wanted Posters & Sprite Mastery](/guides/how-to/how-to-hunt-sprites-treasure-hunters) — how you actually get Sprites now
 - [Battle Pass & shop calendar](/guides/season/fortnite-treasure-hunters-battle-pass) — Ace / Nico Robin on the pass; Luffy is shop
 - [Crossbones Isle map & loot](/guides/map/fortnite-crossbones-isle-map-loot) — Epic-named POIs, guns, Gold Bars vaulted
-- [Sprites gallery](/sprites) — launch twelve + Fortune / Cursed
-- [Live map](/fortnite-map) — still Fortnite-API; Override dump on launch day, no invented pins
+- [Sprites gallery](/sprites) — launch twelve + Fortune / Cursed + Lil’ Uzi Vert Jr.
+- [Live map](/fortnite-map) — Fortnite-API Crossbones Isle pins
 
 Override unclaimed pass nodes, Null styles, Jack-a-Nape, and Admin Panel season codes **do not carry**.
 
@@ -616,14 +616,16 @@ Override unclaimed pass nodes, Null styles, Jack-a-Nape, and Admin Panel season 
 | --- | --- |
 | **1 Nov** | v43.00 / Treasure Hunters live. First **Captain’s Day** **9 AM ET** (A$AP Rocky Boss). Luffy, Nami, Usopp in the Shop. |
 | **Mondays, 9 AM ET** | **Mastery Monday** — 2× Sprite XP and Sprite Dust. More posters / Sprite Chests. |
-| **Sundays** | **Treasure Hours** — Captain’s weapons at match start, boosted drops. Hour is in that week’s MOTD. |
+| **Saturdays** | **Treasure Hours** — Captain’s weapons at match start, boosted drops. This week (7 Nov): Fortune Treasure Hours 2–4 PM and 9–11 PM ET. |
 | **5 Nov, 7 PM ET** | A$AP Rocky Outfit in the Shop (not Shock Rocket). |
 | **6 Nov** | One Piece: **Zoro Cup** (Compete tab). |
-| **7 Nov** | Captain’s Day — Lil Uzi + Cuddle Team Leader take a fort. Shop: Zoro, Sanji, Chopper Sidekick. |
-| **12 Nov** | Captain’s Day. **Gold Sprite** variant. Lil Uzi Vert in the Shop. |
+| **7 Nov** | **Cursed** Sprite finishes return. Fortune Treasure Hours (see Saturdays). Shop: **Zoro, Sanji, Chopper Sidekick** (7 PM ET). Not a Captain’s Day. |
+| **8 Nov** | **Captain’s Day** — Lil Uzi + Cuddle Team Leader take **Fortune’s Fort**. Lil’ Uzi Vert Jr. hunt. Buggy / Megalodon on the island. |
+| **12 Nov** | Captain’s Day slot on Epic’s list. **Gold Sprite** variant. Lil Uzi Vert Outfit in the Shop. Kasane Teto **Music Pass** starts. |
 | **13 Nov** | **Buggy Cup**. Buggy in the Shop. |
-| **14 Nov** | Captain’s Day — Hatsune Miku & Kasane Teto at the resort. Both in the Shop. |
-| **21 Nov** | Captain’s Day — Oscar, Frenzy Auto Shotgun. |
+| **14 Nov** | Cap'n Hatsune Miku in the Shop. |
+| **15 Nov** | **Captain’s Day** — Hatsune Miku & Kasane Teto take Rubber Resort. |
+| **22 Nov** | **Captain’s Day** — Oscar, Frenzy Auto Shotgun. |
 | **5 Dec** | Epic: keep **Saturday, 5 December** open for the **Chapter 7 end event**. |
 
 This site’s [countdown](/season-countdown) uses **5 December 2026** as the clock because that is the date Epic told you to keep free — not because they printed a Battle Pass “ends at 21:00 UTC” line. Trust the Passes tab if the client shows a different lock time.
@@ -649,7 +651,7 @@ The official Fortnite account posted **“The greatest adventure of all! 11.1”
 
 ### Is Treasure Hunters a mini-season?
 
-Epic did not print “mini-season” on fortnite.com. They printed a **Treasure Hunters Battle Pass**, weekly Captain’s Days through **21 Nov**, and a **5 Dec** Chapter 7 end event. Play it as the live season until that event.
+Epic did not print “mini-season” on fortnite.com. They printed a **Treasure Hunters Battle Pass**, Captain’s Days through **22 Nov** (Sundays after week 1), and a **5 Dec** Chapter 7 end event. Play it as the live season until that event.
 
 ### Is it Chapter 7 Season 5?
 

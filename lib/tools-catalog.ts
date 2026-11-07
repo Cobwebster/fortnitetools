@@ -41,7 +41,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/fortnite-map',
     title: 'Interactive Map',
     description:
-      'Live Override POI map with loot ratings, contest filters, and drop tips for Chapter 7 Season 4.',
+      'Live Crossbones Isle POI map (Fortnite-API) with loot ratings, contest filters, and drop tips for Treasure Hunters.',
     tags: ['Map', 'Loot', 'POIs'],
     category: 'map',
   },
@@ -145,7 +145,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/sprites',
     title: 'Sprites',
     description:
-      'Every Chapter 7 Sprite companion portrait — Treasure Hunters launch twelve, Fortune / Cursed finishes, plus Jonesy, Gold, and older variants.',
+      'Every Chapter 7 Sprite companion portrait — Treasure Hunters launch twelve, Fortune / Cursed finishes, Lil’ Uzi Vert Jr. (8 Nov), plus Jonesy, Gold, and older variants.',
     tags: ['Sprites', 'Collection', 'Icons'],
     category: 'cosmetics',
   },
@@ -193,7 +193,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/ranked',
     title: 'Fortnite Ranked',
     description:
-      'LP, Treasure Hunters ranked rewards (Par-Rot, Double-Duty Duelist), and climb habits on Crossbones Isle. Last reviewed 1 Nov 2026.',
+      'LP, Treasure Hunters ranked rewards (Par-Rot, Double-Duty Duelist), and climb habits on Crossbones Isle. Last reviewed 7 Nov 2026.',
     tags: ['Ranked', 'LP', 'Reset'],
     category: 'season',
   },

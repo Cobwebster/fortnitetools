@@ -122,7 +122,7 @@ export const SPRITES_HOWTO = [
   },
   {
     title: `${SPRITE_COUNTS.total} icons, ${SPRITE_COUNTS.families} families`,
-    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. Hunt Wanted Posters for Sprite Treasure Maps, then dig buried Sprite Chests on Crossbones Isle. Fortune finishes are live; Cursed is in the menu; Gold returns 12 Nov.`,
+    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. Hunt Wanted Posters for Sprite Treasure Maps, then dig buried Sprite Chests on Crossbones Isle. Fortune finishes are live; Cursed finishes returned 7 Nov; Lil’ Uzi Vert Jr. lands with the 8 Nov Captain’s Day; Gold returns 12 Nov.`,
   },
   {
     title: 'Icons hosted here',
@@ -139,7 +139,7 @@ export const SPRITES_FAQS = [
   {
     question: 'What are the 12 new Treasure Hunters Sprites?',
     answer:
-      "Launch twelve (1 Nov 2026): Halfpeel'd, Re-Pete, Barry O'Fish, Chester, Exmarks, Wayfinder, Kelper, Sweet Dreams, Lil' Squibbly, Lil' Flacko, Plundarrgh, and Transponder Snail. Most also have Fortune and Cursed variants. Lil' Uzi Vert Jr. is dated for a later Captain's Day.",
+      "Launch twelve (1 Nov 2026): Halfpeel'd, Re-Pete, Barry O'Fish, Chester, Exmarks, Wayfinder, Kelper, Sweet Dreams, Lil' Squibbly, Lil' Flacko, Plundarrgh, and Transponder Snail — plus Fortune finishes. Cursed finishes returned 7 Nov. Lil' Uzi Vert Jr. lands with the 8 Nov Captain’s Day. Gold returns 12 Nov.",
   },
   {
     question: 'Is /sprites a PNG sprite-sheet dump?',

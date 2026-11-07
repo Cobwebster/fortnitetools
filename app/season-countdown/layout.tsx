@@ -43,7 +43,7 @@ const faqs = [
   {
     question: 'How long is Fortnite Treasure Hunters?',
     answer:
-      'Live from 1 November 2026. Epic named Captain’s Days through 21 November and a Chapter 7 end event on 5 December. They did not print “mini-season” on fortnite.com.',
+      'Live from 1 November 2026. Captain’s Days run through 22 November (Sundays after week 1), with a Chapter 7 end event on 5 December. Epic did not print “mini-season” on fortnite.com.',
   },
   {
     question: 'Will my Battle Pass progress carry over?',

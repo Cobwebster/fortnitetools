@@ -5,7 +5,7 @@ import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 const base = createMetadata({
   title: 'Fortnite Interactive Map – Treasure Hunters, Crossbones Isle & POIs',
   description:
-    'Treasure Hunters (v43.00) is live on Crossbones Isle. This map still loads Fortnite-API’s live dump (Override island as of 1 Nov 2026). Pirate Shop Access is a BR chest prize, not a pin. Arlong Park, Windmill Village, and The $.$. Rocky land when the API ships coordinates.',
+    'Treasure Hunters (v43.00) interactive map for Crossbones Isle. Live Fortnite-API pins: Arlong Park, Fortune’s Fort, Rubber Resort, The $.$. Rocky, Loguetown, and more. Pirate Shop Access is a BR chest prize, not a pin.',
   path: '/fortnite-map',
   keywords: [
     'fortnite map',

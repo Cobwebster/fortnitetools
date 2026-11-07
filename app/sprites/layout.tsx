@@ -4,7 +4,7 @@ import { SPRITE_COUNTS, SPRITES_FAQS } from '@/lib/sprites'
 
 export const metadata: Metadata = createMetadata({
   title: 'Fortnite Sprites – Treasure Hunters Companions & Icons',
-  description: `Every Fortnite Sprite portrait (${SPRITE_COUNTS.total} companions across ${SPRITE_COUNTS.families} families): Treasure Hunters launch twelve, Fortune and Cursed finishes, plus Jonesy, Gold, Cheat Master, and older variants.`,
+  description: `Every Fortnite Sprite portrait (${SPRITE_COUNTS.total} companions across ${SPRITE_COUNTS.families} families): Treasure Hunters launch twelve, Fortune / Cursed finishes, Lil’ Uzi Vert Jr. (8 Nov), plus Jonesy, Gold, Cheat Master, and older variants.`,
   path: '/sprites',
   keywords: [
     'fortnite sprites',

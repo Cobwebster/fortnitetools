@@ -39,10 +39,10 @@ export default function SpritesPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               All {SPRITE_COUNTS.total} Chapter 7 Sprite portraits across {SPRITE_COUNTS.families}{' '}
-              families — including the Treasure Hunters launch twelve (Halfpeel&apos;d, Lil&apos; Flacko,
-              Plundarrgh, Transponder Snail, and the rest) plus Fortune / Cursed finishes. Open any
-              tile for ability, how to get, and every family variant. These are in-game companions,
-              not PNG texture sheets.
+              families — including the Treasure Hunters launch twelve, Fortune / Cursed finishes
+              (Cursed returned 7 Nov), and Lil&apos; Uzi Vert Jr. with the 8 Nov Captain&apos;s Day.
+              Open any tile for ability, how to get, and every family variant. These are in-game
+              companions, not PNG texture sheets.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/guides/how-to/how-to-extract-sprites-fortnite" className="text-primary hover:underline">

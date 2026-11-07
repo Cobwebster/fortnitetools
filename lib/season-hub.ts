@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '1 Nov 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-11-01'
+export const SEASON_HUB_REVIEWED = '7 Nov 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-11-07'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -34,8 +34,8 @@ export const RESET_WEEK_PLAYBOOK = [
     body: 'Rare BR chest prize. Epic’s MOTD grants two activations (2026 and 2027). Each one claims V-Bucks Item Shop rows for 14 days from the moment you activate. Real-money offers, gifting, pass levels, and extra Sidekicks are excluded. Drop odds unpublished.',
   },
   {
-    title: 'First Captain’s Day — A$AP Rocky',
-    body: '9 AM ET on 1 Nov. Board The $.$. Rocky, fight him as a Boss. He can drop Shock Rocket and Lil’ Flacko. Shock Rocket is non-Competitive only. Not a guaranteed drop.',
+    title: 'Week-2 Captain’s Day — Lil Uzi (8 Nov)',
+    body: 'Sunday 8 Nov at 9 AM ET. Lil Uzi + Cuddle Team Leader claim Fortune’s Fort. Lil’ Uzi Vert Jr. joins the Sprite hunt. Cursed Sprite finishes returned Saturday 7 Nov. Shop that night: Zoro, Sanji, Chopper Sidekick (7 PM ET).',
   },
   {
     title: 'Sprites are Wanted Posters now',
@@ -47,7 +47,7 @@ export const RESET_WEEK_PLAYBOOK = [
   },
   {
     title: 'Crossbones Isle (80 players)',
-    body: 'Cannons to rotate. Epic-named POIs include Arlong Park, Windmill Village, The $.$. Rocky, Loguetown, Baratie Bay, Lantern Lanes, Plunder Port, Fort Fortuna, Rubber Resort, Crew’s Cove, Captain’s Cenote. Fortnite-API may still show the Override dump — trust in-game labels.',
+    body: 'Cannons to rotate. Live Fortnite-API names include The $.$. Rocky, Arlong Park, Fortune’s Fort, Rubber Resort, Loguetown, Lantern Landing, Plunder Port, Busy Bay, Loot Lagoon, Windmill Village, Cursed Cavern, and The Chest. Trust the in-game minimap if a label disagrees.',
   },
   {
     title: 'Countdown',
@@ -58,15 +58,16 @@ export const RESET_WEEK_PLAYBOOK = [
 export const LIVE_NAMED_POIS = [
   { name: 'The $.$. Rocky', href: '/guides/how-to/how-to-get-shock-rocket-fortnite', note: 'Boss ship · Shock Rocket / Lil’ Flacko' },
   { name: 'Arlong Park', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'One Piece · fish-man stronghold' },
-  { name: 'Windmill Village', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'One Piece · quieter village' },
+  { name: "Fortune's Fort", href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Week-2 fort · Lil Uzi / Cuddle Team Leader' },
+  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · Miku/Teto 15 Nov' },
   { name: 'Loguetown', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Harbor town · contested' },
-  { name: 'Lantern Lanes', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lantern maze' },
-  { name: 'Baratie Bay', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Floating restaurant' },
+  { name: 'Lantern Landing', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lantern maze (Epic also said Lantern Lanes)' },
   { name: 'Plunder Port', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Two docked ships' },
-  { name: 'Fort Fortuna', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Fortress · Uzi week 7 Nov' },
-  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · Miku/Teto 14 Nov' },
-  { name: 'Crew’s Cove', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Hidden cove + ship' },
-  { name: 'Captain’s Cenote', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Mountain sinkhole' },
+  { name: 'Busy Bay', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'South-east bay · Baratie landmark nearby' },
+  { name: 'Loot Lagoon', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lagoon loot dens' },
+  { name: 'Windmill Village', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Quieter village drop' },
+  { name: 'Cursed Cavern', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Cave POI · mid-fight third parties' },
+  { name: 'The Chest', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Named chest landmark' },
   { name: 'Wanted Posters', href: '/guides/how-to/how-to-hunt-sprites-treasure-hunters', note: 'Not a POI · Sprite hunt loop' },
 ] as const
 
@@ -74,10 +75,10 @@ export const SEASON_CHANGE_CARDS = [
   {
     id: 'island',
     title: 'Island',
-    live: 'Crossbones Isle. 80-player Battle Royale. Cannons to launch across. Headline names: Arlong Park, Windmill Village, The $.$. Rocky. Full Epic list is on the map & loot guide.',
-    incoming: `Captain’s Days on 7, 12, 14, and 21 Nov change POIs and loot. Chapter 7 end event is dated ${formatSeasonLongDate(nextSeasonStartDate())}.`,
+    live: 'Crossbones Isle. 80-player Battle Royale. Cannons to launch across. Headline names: Arlong Park, Windmill Village, The $.$. Rocky, Fortune’s Fort. Full live list is on the map & loot guide.',
+    incoming: `Captain’s Days on 8, 12, 15, and 22 Nov change POIs and loot. Chapter 7 end event is dated ${formatSeasonLongDate(nextSeasonStartDate())}.`,
     extra:
-      'The interactive map still loads Fortnite-API coordinates. Launch day dump was Override. We will pin Crossbones Isle names when that feed updates — we will not invent them.',
+      'The interactive map loads Fortnite-API’s Crossbones Isle dump (updated after launch). Pirate Shop Access is still a chest prize, not a pin.',
     href: '/guides/map/fortnite-crossbones-isle-map-loot',
     linkLabel: 'Map & loot guide',
   },
@@ -85,7 +86,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'loot',
     title: 'Loot pool',
     live: 'Gum-Gum Fruit, Flame-Flame Fruit, Zoro’s Three Sword Style, Usopp’s Slingshot, Bundlebuss Repeater, Gilded Dragoon, Nami’s Tangerine, Meat on a Stick, Wanted Posters, Explosive Cannon Balls (non-Competitive). Shock Rocket is a Boss drop.',
-    incoming: 'Later Epic list: Lever Action, Frenzy Auto, Flapjack Rifle. Oscar’s 21 Nov Captain’s Day calls out Frenzy Auto.',
+    incoming: 'Later Epic list: Lever Action, Frenzy Auto, Flapjack Rifle. Oscar’s 22 Nov Captain’s Day calls out Frenzy Auto.',
     extra:
       'Unvaulted pumps, SMGs, Hammer AR, Flint-Knock, fish/Slurp. Gold Bars vaulted — follower services free, vending machines gone.',
     href: '/guides/map/fortnite-crossbones-isle-map-loot',
@@ -95,7 +96,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'mythics',
     title: 'Boss / mythic-style',
     live: 'A$AP Rocky on The $.$. Rocky can drop Shock Rocket and Lil’ Flacko. Neither is guaranteed. Shock Rocket is pubs / Zero Build, not Ranked.',
-    incoming: 'Weekly captains: Lil Uzi (7 Nov), Miku & Teto (14 Nov), Oscar (21 Nov). Map Fragments / Captain X’s mega chest are teased, not documented.',
+    incoming: 'Weekly captains: Lil Uzi (8 Nov), Miku & Teto (15 Nov), Oscar (22 Nov). Map Fragments / Captain X’s mega chest are teased, not documented.',
     extra: 'Pirate Shop Access is a chest prize, not a Boss drop.',
     href: '/guides/how-to/how-to-get-shock-rocket-fortnite',
     linkLabel: 'Shock Rocket how-to',
@@ -139,12 +140,12 @@ export const SEASON_HUB_FAQS = [
   {
     question: 'What is new in Fortnite Treasure Hunters?',
     answer:
-      'Crossbones Isle (80 players), One Piece powers, A$AP Rocky as the first Boss, 12 new Sprites via Wanted Posters, a Treasure Hunters Battle Pass (Ace / Nico Robin), Pirate Shop Access, and a new ranked track. Last reviewed 1 Nov 2026.',
+      'Crossbones Isle (80 players), One Piece powers, A$AP Rocky as the first Boss, Sprites via Wanted Posters (Cursed finishes live as of 7 Nov; Lil’ Uzi Vert Jr. with the 8 Nov Captain’s Day), a Treasure Hunters Battle Pass (Ace / Nico Robin), Pirate Shop Access, and a new ranked track. Last reviewed 7 Nov 2026.',
   },
   {
     question: 'What is the current Fortnite map?',
     answer:
-      'Crossbones Isle. Epic named The $.$. Rocky, Arlong Park, Windmill Village, Loguetown, Lantern Lanes, Baratie Bay, Plunder Port, Fort Fortuna, Rubber Resort, Crew’s Cove, and Captain’s Cenote. The interactive map follows Fortnite-API and may lag the live island.',
+      'Crossbones Isle. Live API names include The $.$. Rocky, Arlong Park, Fortune’s Fort, Rubber Resort, Loguetown, Lantern Landing, Plunder Port, Busy Bay, Loot Lagoon, Windmill Village, Cursed Cavern, and The Chest. The interactive map follows Fortnite-API.',
   },
   {
     question: 'Did ranked reset?',

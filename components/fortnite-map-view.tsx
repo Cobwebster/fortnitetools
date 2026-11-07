@@ -38,10 +38,10 @@ export function FortniteMapView() {
           {isEnglish ? (
             <div className="mt-4 max-w-2xl rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm leading-relaxed text-foreground">
               <p>
-                <span className="font-semibold">Treasure Hunters is live.</span> Crossbones
-                Isle names (Arlong Park, Windmill Village, The $.$. Rocky) are not on this
-                canvas yet — Fortnite-API still serves the previous Override dump. We will
-                not invent pins.
+                <span className="font-semibold">Crossbones Isle is on the canvas.</span>{' '}
+                Fortnite-API now serves live names (Arlong Park, Fortune&apos;s Fort, The
+                $.$. Rocky, Rubber Resort, and more). Spawn rings are approximate planning
+                markers around those POIs.
               </p>
               <p className="mt-2">
                 <span className="font-semibold">Pirate Shop Access</span> is not a map
@@ -54,7 +54,7 @@ export function FortniteMapView() {
                 </Link>
                 {' · '}
                 <Link href="/sprites" className="font-semibold text-primary hover:opacity-80">
-                  New Treasure Hunters Sprites
+                  Sprites (Cursed + Lil&apos; Uzi Vert Jr.)
                 </Link>
               </p>
             </div>
