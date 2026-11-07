@@ -38,6 +38,7 @@ const EN_POPULAR_TOOLS = [
   { href: '/season', key: 'toolSeason' as const },
   { href: '/drops', key: 'toolDrops' as const },
   { href: '/news', key: 'toolNews' as const },
+  { href: '/leaks', key: 'toolLeaks' as const },
   { href: '/modes', key: 'toolModes' as const },
   { href: '/reload', key: 'toolReload' as const },
   { href: '/ranked', key: 'toolRanked' as const },
@@ -143,6 +144,18 @@ export function HomePageContent({
                   >
                     Treasure Hunters
                   </Link>
+                  <Link
+                    href="/leaks/pirate-shop-afk-squad-fill-ban"
+                    className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                  >
+                    Pirate Shop AFK ban
+                  </Link>
+                  <Link
+                    href="/leaks"
+                    className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                  >
+                    All leaks
+                  </Link>
                 </>
               ) : (
                 <>
@@ -203,6 +216,12 @@ export function HomePageContent({
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
             >
               What Epic has shown
+            </Link>
+            <Link
+              href="/leaks"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
+            >
+              Fortnite Leaks
             </Link>
           </div>
         </section>
@@ -434,8 +453,12 @@ export function HomePageContent({
                 (Override) hubs — not a new calculator for every search query.
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                I do not publish per-skin encyclopedias, leak dumps, or translated copies of the same form. If a helper
-                exists, it is because I use it in-game. Corrections:{' '}
+                I do not publish per-skin encyclopedias or translated copies of the same form. Datamine write-ups live
+                on{' '}
+                <Link href="/leaks" className="text-primary hover:underline">
+                  Fortnite Leaks
+                </Link>
+                . If a helper exists, it is because I use it in-game. Corrections:{' '}
                 <a href={`mailto:${siteConfig.contactEmail}`} className="text-primary hover:underline">
                   {siteConfig.contactEmail}
                 </a>
@@ -448,22 +471,38 @@ export function HomePageContent({
 
       <section>
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <h2 className="font-display text-lg font-bold uppercase text-foreground">
-                {t('blurbToolsTitle')}
+                <Link href={toolsHref} className="hover:text-primary transition-colors">
+                  {t('blurbToolsTitle')}
+                </Link>
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('blurbTools')}</p>
             </div>
             <div>
               <h2 className="font-display text-lg font-bold uppercase text-foreground">
-                {t('blurbGuidesTitle')}
+                <Link href={guidesHref} className="hover:text-primary transition-colors">
+                  {t('blurbGuidesTitle')}
+                </Link>
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('blurbGuides')}</p>
             </div>
+            {isEnglish ? (
+              <div>
+                <h2 className="font-display text-lg font-bold uppercase text-foreground">
+                  <Link href="/leaks" className="hover:text-primary transition-colors">
+                    {t('blurbLeaksTitle')}
+                  </Link>
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('blurbLeaks')}</p>
+              </div>
+            ) : null}
             <div>
               <h2 className="font-display text-lg font-bold uppercase text-foreground">
-                {t('blurbSeasonTitle')}
+                <Link href={localizeHref(locale, '/season')} className="hover:text-primary transition-colors">
+                  {t('blurbSeasonTitle')}
+                </Link>
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('blurbSeason')}</p>
             </div>

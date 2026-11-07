@@ -3,9 +3,9 @@ import { createMetadata, faqJsonLd, breadcrumbJsonLd, webApplicationJsonLd } fro
 import { LOADOUT_FAQS } from '@/lib/loadout-seo'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Loadout Builder – Inventory, Mats & STK/TTK',
+  title: 'Fortnite Loadout Builder – Treasure Hunters Inventory & STK/TTK',
   description:
-    'Plan a full Fortnite Override inventory: hotbar, wood/stone/metal, ammo, and heal stacks. Use Ranked, contest, Zero Build, and Fortnitemares presets, then share one link.',
+    'Plan a full Treasure Hunters inventory: hotbar, wood/stone/metal, ammo, and heal stacks. Ranked, pubs Boss ship, Zero Build, and Sprite-hunt presets — then share one link.',
   path: '/tools/loadout-builder',
   keywords: [
     'fortnite loadout builder',
@@ -13,10 +13,10 @@ export const metadata: Metadata = createMetadata({
     'fortnite hotbar',
     'fortnite inventory planner',
     'fortnite materials planner',
-    'chapter 7 season 4 loadout',
-    'fortnite override loadout',
-    '8-bit shotgun loadout',
-    'fortnite pump shotgun loadout',
+    'treasure hunters loadout',
+    'fortnite shock rocket loadout',
+    'sentinel pump loadout',
+    'fortnite hammer ar loadout',
     'fortnite ttk',
     'fortnite stk',
     'fortnite share loadout',
@@ -50,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             webApplicationJsonLd({
               name: 'Fortnite Loadout Builder',
               description:
-                'Plan a full Override inventory — hotbar, mats, ammo, heal stacks — with STK/TTK and shareable links.',
+                'Plan a full Treasure Hunters inventory — hotbar, mats, ammo, heal stacks — with STK/TTK and shareable links.',
               path: '/tools/loadout-builder',
             })
           ),

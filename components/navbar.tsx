@@ -128,7 +128,8 @@ export function Navbar() {
     { href: '/stats', label: t('stats'), emphasis: true },
     { href: localizeHref(locale, '/fortnite-map'), label: t('map') },
     { href: localizeHref(locale, '/tools/item-shop'), label: t('itemShop') },
-    { href: '/lockers', label: t('locker'), badge: 'new' },
+    { href: '/leaks', label: t('leaks'), badge: 'new' },
+    { href: '/lockers', label: t('locker') },
   ]
 
   const englishSecondary: NavLink[] = [

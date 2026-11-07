@@ -28,17 +28,19 @@ const ogImage = `${siteConfig.url}${siteConfig.ogImage}`
 
 export const metadata: Metadata = {
   title: {
-    default: 'FortniteTools – Free Fortnite Guides & Tools',
+    default: 'FortniteTools – Free Fortnite Guides, Tools & Leaks',
     template: '%s | FortniteTools',
   },
   description: siteConfig.description,
   keywords: [
     'Fortnite tools',
     'Fortnite guides',
+    'Fortnite leaks',
     'Fortnite map',
     'Fortnite tracker',
     'Fortnite Item Shop',
-    'Chapter 7 Season 3',
+    'Treasure Hunters',
+    'Lil Uzi Vert Fortnite',
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
@@ -58,13 +60,13 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'FortniteTools – Free Fortnite Guides & Tools',
+    title: 'FortniteTools – Free Fortnite Guides, Tools & Leaks',
     description: siteConfig.description,
     images: [{ url: ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FortniteTools – Free Fortnite Guides & Tools',
+    title: 'FortniteTools – Free Fortnite Guides, Tools & Leaks',
     description: siteConfig.description,
     images: [ogImage],
   },

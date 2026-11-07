@@ -70,13 +70,13 @@ const AXIS_LABEL: Record<KitAxis, string> = {
 
 const USE_CASE_FILTERS: Array<UseCaseTag | 'All'> = [
   'All',
+  'Treasure Hunters',
   'Ranked',
   'Pubs',
   'Contest',
   'Zone',
   'Zero Build',
   'Duo',
-  'Fortnitemares',
 ]
 
 function ItemIcon({
@@ -331,17 +331,160 @@ export function LoadoutBuilderClient() {
     setCheckingAuth(false)
   }
 
+  const pickerCount = activeWeapons.length + activeUtility.length
+
   return (
-    <div className="space-y-8">
-      {/* Use-case presets */}
-      <section className="space-y-3">
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Use cases</p>
-            <h2 className="font-display text-xl font-bold uppercase text-foreground">
-              Start from a real scenario
-            </h2>
+    <div className="space-y-6">
+      {/* 1) Hotbar + picker — the only thing you need to change guns */}
+      <section className="overflow-hidden rounded-2xl border border-cyan-500/25 bg-[radial-gradient(ellipse_at_top,_rgba(34,211,238,0.14),_transparent_55%),linear-gradient(180deg,#0b1220_0%,#020617_100%)] shadow-inner">
+        <div className="border-b border-white/10 px-4 py-3 sm:px-5">
+          <p className="text-sm font-semibold text-white">
+            1. Tap a hotbar slot → 2. Pick a replacement below
+          </p>
+          <p className="mt-0.5 text-xs text-white/55">
+            That&apos;s the whole builder. Mats, scorecard, and STK are optional further down.
+          </p>
+        </div>
+
+        <div className="px-4 py-4 sm:px-5">
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-200/80">Your hotbar</p>
+            <p className="text-[11px] text-white/45">
+              Editing <span className="font-semibold text-cyan-200">{SLOT_META[activeSlot].label}</span>
+            </p>
           </div>
+          <div className="grid grid-cols-5 gap-2 sm:gap-3">
+            {LOADOUT_SLOTS.map((slot) => (
+              <HotbarSlot
+                key={slot}
+                slot={slot}
+                active={activeSlot === slot}
+                weapon={getWeapon(bundle.slots[slot])}
+                utility={getUtility(bundle.slots[slot])}
+                healStack={slot === 'heal' ? bundle.healStack : undefined}
+                onClick={() => setActiveSlot(slot)}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 bg-black/35 px-4 py-4 sm:px-5">
+          <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
+            <div>
+              <h2 className="font-display text-lg font-bold uppercase text-white">
+                Replace {SLOT_META[activeSlot].label}
+              </h2>
+              <p className="text-xs text-white/50">
+                {SLOT_META[activeSlot].hint} · {pickerCount} options · tap one to equip
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-1">
+              {LOADOUT_SLOTS.map((slot) => (
+                <button
+                  key={slot}
+                  type="button"
+                  onClick={() => setActiveSlot(slot)}
+                  className={`rounded-md px-2 py-1 text-[10px] font-bold uppercase tracking-wider ${
+                    activeSlot === slot
+                      ? 'bg-cyan-400 text-black'
+                      : 'bg-white/10 text-white/60 hover:bg-white/15 hover:text-white'
+                  }`}
+                >
+                  {SLOT_META[slot].key}. {SLOT_META[slot].label.split(' ')[0]}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {activeSlot === 'heal' ? (
+            <div className="mb-3 flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-3 py-2">
+              {heal ? <ItemIcon src={heal.image} alt={heal.name} className="h-8 w-8" /> : null}
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/50">Stack size</p>
+                <input
+                  type="range"
+                  min={1}
+                  max={HEAL_STACK_MAX}
+                  value={bundle.healStack}
+                  onChange={(e) =>
+                    updateBundle({
+                      ...bundle,
+                      healStack: Number(e.target.value),
+                    })
+                  }
+                  className="mt-1 w-full accent-emerald-400"
+                  aria-label="Heal stack size"
+                />
+              </div>
+              <span className="font-display text-xl font-bold text-emerald-300">×{bundle.healStack}</span>
+            </div>
+          ) : null}
+
+          <div className="grid max-h-[min(52vh,420px)] grid-cols-1 gap-2 overflow-y-auto pr-1 sm:grid-cols-2 lg:grid-cols-3">
+            {activeWeapons.map((w) => {
+              const selected = bundle.slots[activeSlot] === w.id
+              return (
+                <button
+                  key={w.id}
+                  type="button"
+                  onClick={() => pickItem(w.id)}
+                  className={`flex items-center gap-3 rounded-lg border p-2.5 text-left transition-colors ${
+                    selected
+                      ? 'border-cyan-300 bg-cyan-400/15 ring-1 ring-cyan-300/40'
+                      : `${RARITY_BORDER[w.rarity]} hover:border-cyan-300/50`
+                  }`}
+                >
+                  <ItemIcon src={w.image} alt={w.name} className="h-12 w-12 shrink-0" />
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold text-white">{w.name}</p>
+                    <p className={`text-[10px] font-bold uppercase ${RARITY_TEXT[w.rarity]}`}>{w.rarity}</p>
+                    <p className="line-clamp-1 text-[11px] text-white/50">
+                      {w.note || `${w.dmg} dmg · ${w.fireRate}/s`}
+                    </p>
+                  </div>
+                  {selected ? (
+                    <span className="ml-auto shrink-0 text-[10px] font-bold uppercase text-cyan-300">Equipped</span>
+                  ) : null}
+                </button>
+              )
+            })}
+            {activeUtility.map((u) => {
+              const selected = bundle.slots[activeSlot] === u.id
+              return (
+                <button
+                  key={u.id}
+                  type="button"
+                  onClick={() => pickItem(u.id)}
+                  className={`flex items-center gap-3 rounded-lg border p-2.5 text-left transition-colors ${
+                    selected
+                      ? 'border-cyan-300 bg-cyan-400/15 ring-1 ring-cyan-300/40'
+                      : `${RARITY_BORDER[u.rarity] || RARITY_BORDER.Common} hover:border-cyan-300/50`
+                  }`}
+                >
+                  <ItemIcon src={u.image} alt={u.name} className="h-12 w-12 shrink-0" />
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold text-white">{u.name}</p>
+                    <p className="line-clamp-2 text-[11px] text-white/50">{u.note}</p>
+                  </div>
+                  {selected ? (
+                    <span className="ml-auto shrink-0 text-[10px] font-bold uppercase text-cyan-300">Equipped</span>
+                  ) : null}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 2) Optional quick start */}
+      <details className="rounded-xl border border-border bg-card open:pb-3">
+        <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
+          <span className="flex items-center justify-between gap-2">
+            <span>Optional: start from a preset kit</span>
+            <span className="text-xs font-normal text-muted-foreground">tap to expand</span>
+          </span>
+        </summary>
+        <div className="space-y-3 border-t border-border px-4 pt-3">
           <div className="flex flex-wrap gap-1.5">
             {USE_CASE_FILTERS.map((tag) => (
               <button
@@ -358,54 +501,39 @@ export function LoadoutBuilderClient() {
               </button>
             ))}
           </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredPresets.map((p) => {
-            const active = bundlesEqual(bundle, presetToBundle(p))
-            return (
-              <button
-                key={p.id}
-                type="button"
-                onClick={() => applyPreset(p.id)}
-                className={`rounded-xl border p-3 text-left transition-all ${
-                  active
-                    ? 'border-primary bg-primary/10 shadow-[0_0_20px_rgba(103,232,249,0.12)]'
-                    : 'border-border bg-card hover:border-primary/40'
-                }`}
-              >
-                <div className="flex items-start justify-between gap-2">
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredPresets.map((p) => {
+              const active = bundlesEqual(bundle, presetToBundle(p))
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  onClick={() => applyPreset(p.id)}
+                  className={`rounded-xl border p-3 text-left transition-all ${
+                    active
+                      ? 'border-primary bg-primary/10'
+                      : 'border-border bg-background hover:border-primary/40'
+                  }`}
+                >
                   <span className="text-sm font-bold uppercase tracking-wide text-foreground">{p.name}</span>
-                  <span className="shrink-0 text-[10px] font-semibold uppercase text-muted-foreground">
-                    {p.mats.wood + p.mats.stone + p.mats.metal} mats
-                  </span>
-                </div>
-                <p className="mt-1 text-[11px] text-muted-foreground">{p.blurb}</p>
-                <div className="mt-2 flex flex-wrap gap-1">
-                  {p.tags.map((t) => (
-                    <span
-                      key={t}
-                      className="rounded bg-muted px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-muted-foreground"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </button>
-            )
-          })}
+                  <p className="mt-1 text-[11px] text-muted-foreground">{p.blurb}</p>
+                </button>
+              )
+            })}
+          </div>
         </div>
-      </section>
+      </details>
 
-      <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between">
+      {/* Share */}
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-[11px] text-muted-foreground">
           {isCustom ? (
             <span className="inline-flex items-center gap-1">
               <Link2 className="h-3 w-3 shrink-0" aria-hidden="true" />
-              Shareable inventory link is in the address bar
+              Share link updates in the address bar as you edit
             </span>
           ) : (
-            'Pick a use case or edit slots — mats and ammo ride along in the share link'
+            'Change any slot above — then copy a link for your lobby'
           )}
         </p>
         <div className="flex flex-col gap-2 sm:flex-row">
@@ -447,20 +575,13 @@ export function LoadoutBuilderClient() {
             <X className="h-4 w-4" aria-hidden="true" />
           </button>
           <div className="mb-5 pr-10">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
-              Community loadouts
-            </p>
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">Community loadouts</p>
             <h2 className="mt-1 font-display text-2xl font-bold uppercase text-foreground">
               Submit this inventory
             </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Hotbar, mats, ammo, and heal stacks — saved for the upcoming community showcase.
-            </p>
           </div>
-
           <form action={submissionAction} className="grid gap-4 sm:grid-cols-2">
             <input type="hidden" name="loadoutPath" value={buildLoadoutSharePath(bundle)} />
-
             {submissionState.error ? (
               <p
                 className="sm:col-span-2 rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive"
@@ -477,7 +598,6 @@ export function LoadoutBuilderClient() {
                 {submissionState.success}
               </p>
             ) : null}
-
             <div>
               <label htmlFor="creator-name" className="mb-1.5 block text-sm font-semibold text-foreground">
                 Your name
@@ -494,7 +614,6 @@ export function LoadoutBuilderClient() {
                 className="w-full rounded-md border border-border bg-muted px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
               />
             </div>
-
             <div>
               <label htmlFor="loadout-name" className="mb-1.5 block text-sm font-semibold text-foreground">
                 Loadout name
@@ -510,7 +629,6 @@ export function LoadoutBuilderClient() {
                 className="w-full rounded-md border border-border bg-muted px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
               />
             </div>
-
             <div className="sm:col-span-2">
               <label htmlFor="loadout-url" className="mb-1.5 block text-sm font-semibold text-foreground">
                 Inventory link
@@ -523,7 +641,6 @@ export function LoadoutBuilderClient() {
                 className="w-full truncate rounded-md border border-border bg-background/50 px-3 py-2.5 text-xs text-muted-foreground"
               />
             </div>
-
             <div className="sm:col-span-2">
               <button
                 type="submit"
@@ -538,64 +655,26 @@ export function LoadoutBuilderClient() {
         </section>
       ) : null}
 
-      {/* Inventory stage */}
-      <section className="relative overflow-hidden rounded-2xl border border-cyan-500/20 bg-[radial-gradient(ellipse_at_top,_rgba(34,211,238,0.12),_transparent_55%),linear-gradient(180deg,#0b1220_0%,#020617_100%)] p-5 shadow-inner sm:p-6">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px)',
-            backgroundSize: '28px 28px',
-          }}
-        />
-        <div className="relative mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-cyan-400/30 bg-cyan-400/10">
-              <Package className="h-5 w-5 text-cyan-300" aria-hidden="true" />
-            </div>
-            <div>
-              <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200/90">
-                Full inventory
-              </h2>
-              <p className="text-[11px] text-white/50">
-                Hotbar · mats · ammo · heal stacks — click a slot to re-loot
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-black/40 px-3 py-2">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-wider text-white/50">Readiness</p>
-              <p className="font-display text-2xl font-bold text-cyan-300">{readiness}%</p>
-            </div>
-            <div className="h-10 w-px bg-white/10" />
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-wider text-white/50">Pieces</p>
-              <p className="font-display text-2xl font-bold text-white">{pieces.total}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="relative grid grid-cols-5 gap-2 sm:gap-3">
-          {LOADOUT_SLOTS.map((slot) => (
-            <HotbarSlot
-              key={slot}
-              slot={slot}
-              active={activeSlot === slot}
-              weapon={getWeapon(bundle.slots[slot])}
-              utility={getUtility(bundle.slots[slot])}
-              healStack={slot === 'heal' ? bundle.healStack : undefined}
-              onClick={() => setActiveSlot(slot)}
-            />
-          ))}
-        </div>
-
-        {/* Mats strip */}
-        <div className="relative mt-5 grid grid-cols-1 gap-3 lg:grid-cols-[1.4fr_1fr]">
-          <div className="rounded-xl border border-white/10 bg-black/35 p-4">
+      {/* 3) Mats / ammo — secondary */}
+      <details className="rounded-xl border border-border bg-card">
+        <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
+          <span className="flex items-center justify-between gap-2">
+            <span className="inline-flex items-center gap-2">
+              <Package className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+              Mats &amp; ammo
+              <span className="font-normal text-muted-foreground">
+                ({pieces.total} pieces · readiness {readiness}%)
+              </span>
+            </span>
+            <span className="text-xs font-normal text-muted-foreground">optional</span>
+          </span>
+        </summary>
+        <div className="grid grid-cols-1 gap-3 border-t border-border p-4 lg:grid-cols-[1.4fr_1fr]">
+          <div className="rounded-xl border border-border bg-muted/20 p-4">
             <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-amber-300" aria-hidden="true" />
-                <h3 className="text-xs font-bold uppercase tracking-wider text-white/80">Materials</h3>
+                <Sparkles className="h-4 w-4 text-amber-500" aria-hidden="true" />
+                <h3 className="text-xs font-bold uppercase tracking-wider text-foreground">Materials</h3>
               </div>
               <div className="flex flex-wrap gap-1">
                 {MAT_PRESETS.map((mp) => (
@@ -603,7 +682,7 @@ export function LoadoutBuilderClient() {
                     key={mp.id}
                     type="button"
                     onClick={() => setMats(mp.mats)}
-                    className="rounded-md bg-white/5 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white/70 hover:bg-white/10 hover:text-white"
+                    className="rounded-md bg-muted px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground"
                     title={mp.blurb}
                   >
                     {mp.name}
@@ -620,9 +699,9 @@ export function LoadoutBuilderClient() {
                     <ItemIcon src={mat.image} alt={mat.label} className="h-9 w-9 shrink-0" />
                     <div className="min-w-0 flex-1">
                       <div className="mb-1 flex items-center justify-between gap-2">
-                        <span className="text-xs font-semibold text-white">{mat.label}</span>
+                        <span className="text-xs font-semibold text-foreground">{mat.label}</span>
                         <div className="flex items-center gap-2">
-                          <span className="text-[10px] text-white/40">
+                          <span className="text-[10px] text-muted-foreground">
                             ~{Math.floor(value / 10)} pieces
                           </span>
                           <input
@@ -631,7 +710,7 @@ export function LoadoutBuilderClient() {
                             max={MAT_CAP}
                             value={value}
                             onChange={(e) => setMatKey(mat.key, Number(e.target.value))}
-                            className="w-16 rounded border border-white/15 bg-black/50 px-1.5 py-0.5 text-right text-xs font-bold text-white outline-none focus:border-cyan-400"
+                            className="w-16 rounded border border-border bg-background px-1.5 py-0.5 text-right text-xs font-bold text-foreground outline-none focus:border-primary"
                           />
                         </div>
                       </div>
@@ -645,7 +724,7 @@ export function LoadoutBuilderClient() {
                         className="w-full accent-cyan-400"
                         aria-label={`${mat.label} materials`}
                       />
-                      <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-white/10">
+                      <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-muted">
                         <div
                           className="h-full rounded-full transition-all"
                           style={{ width: `${pct}%`, background: mat.color }}
@@ -658,87 +737,51 @@ export function LoadoutBuilderClient() {
             </div>
           </div>
 
-          <div className="space-y-3">
-            <div className="rounded-xl border border-white/10 bg-black/35 p-4">
-              <div className="mb-3 flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <Crosshair className="h-4 w-4 text-rose-300" aria-hidden="true" />
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-white/80">Ammo</h3>
-                </div>
-                <button
-                  type="button"
-                  onClick={() =>
-                    updateBundle({ ...bundle, ammo: suggestedAmmoForSlots(bundle.slots) })
-                  }
-                  className="inline-flex items-center gap-1 rounded-md bg-white/5 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white/70 hover:bg-white/10"
-                >
-                  <RefreshCw className="h-3 w-3" aria-hidden="true" />
-                  Auto
-                </button>
+          <div className="rounded-xl border border-border bg-muted/20 p-4">
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <Crosshair className="h-4 w-4 text-rose-400" aria-hidden="true" />
+                <h3 className="text-xs font-bold uppercase tracking-wider text-foreground">Ammo</h3>
               </div>
-              <div className="grid grid-cols-2 gap-2">
-                {AMMO_META.map((a) => (
-                  <label
-                    key={a.key}
-                    className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-2"
-                  >
-                    <span className="block text-[10px] font-bold uppercase tracking-wider text-white/60">
-                      {a.label}
-                    </span>
-                    <span className="mb-1 block text-[10px] text-white/35">{a.hint}</span>
-                    <input
-                      type="number"
-                      min={0}
-                      max={999}
-                      value={bundle.ammo[a.key]}
-                      onChange={(e) => setAmmoKey(a.key, Number(e.target.value))}
-                      className="w-full rounded border border-white/15 bg-black/50 px-2 py-1 text-sm font-bold text-white outline-none focus:border-cyan-400"
-                    />
-                  </label>
-                ))}
-              </div>
+              <button
+                type="button"
+                onClick={() =>
+                  updateBundle({ ...bundle, ammo: suggestedAmmoForSlots(bundle.slots) })
+                }
+                className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground"
+              >
+                <RefreshCw className="h-3 w-3" aria-hidden="true" />
+                Auto
+              </button>
             </div>
-
-            {activeSlot === 'heal' || heal ? (
-              <div className="rounded-xl border border-white/10 bg-black/35 p-4">
-                <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-white/80">
-                  Heal stack
-                </h3>
-                <div className="flex items-center gap-3">
-                  {heal ? <ItemIcon src={heal.image} alt={heal.name} className="h-10 w-10" /> : null}
-                  <div className="flex-1">
-                    <p className="text-sm font-semibold text-white">{heal?.name}</p>
-                    <input
-                      type="range"
-                      min={1}
-                      max={HEAL_STACK_MAX}
-                      value={bundle.healStack}
-                      onChange={(e) =>
-                        updateBundle({
-                          ...bundle,
-                          healStack: Number(e.target.value),
-                        })
-                      }
-                      className="mt-2 w-full accent-emerald-400"
-                      aria-label="Heal stack size"
-                    />
-                  </div>
-                  <span className="font-display text-2xl font-bold text-emerald-300">
-                    ×{bundle.healStack}
+            <div className="grid grid-cols-2 gap-2">
+              {AMMO_META.map((a) => (
+                <label key={a.key} className="rounded-lg border border-border bg-background px-2.5 py-2">
+                  <span className="block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                    {a.label}
                   </span>
-                </div>
-              </div>
-            ) : null}
+                  <span className="mb-1 block text-[10px] text-muted-foreground/70">{a.hint}</span>
+                  <input
+                    type="number"
+                    min={0}
+                    max={999}
+                    value={bundle.ammo[a.key]}
+                    onChange={(e) => setAmmoKey(a.key, Number(e.target.value))}
+                    className="w-full rounded border border-border bg-muted px-2 py-1 text-sm font-bold text-foreground outline-none focus:border-primary"
+                  />
+                </label>
+              ))}
+            </div>
           </div>
         </div>
-      </section>
+      </details>
 
-      {/* Kit scorecard + tips */}
+      {/* Scorecard + tips */}
       <section className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_1.1fr]">
         <div className="rounded-xl border border-border bg-card p-5">
           <h2 className="font-display text-xl font-bold uppercase text-foreground">Kit scorecard</h2>
           <p className="mt-1 text-xs text-muted-foreground">
-            Relative planning scores from your hotbar, heals, utility, and mats — not an Epic rating.
+            Relative planning scores — not an Epic rating.
           </p>
           <div className="mt-4 space-y-3">
             {(Object.keys(AXIS_LABEL) as KitAxis[]).map((axis) => (
@@ -766,7 +809,6 @@ export function LoadoutBuilderClient() {
                 <p className="text-sm font-semibold text-foreground">
                   {heal?.name} ×{bundle.healStack}
                 </p>
-                <p className="text-[11px] text-muted-foreground">{heal?.note}</p>
               </div>
             </div>
             <div className="flex items-center gap-3 rounded-lg border border-border bg-muted/30 p-3">
@@ -776,94 +818,9 @@ export function LoadoutBuilderClient() {
               <div>
                 <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Utility</p>
                 <p className="text-sm font-semibold text-foreground">{mobility?.name}</p>
-                <p className="text-[11px] text-muted-foreground">{mobility?.note}</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Picker */}
-      <section className="rounded-xl border border-border bg-card p-5">
-        <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-          <div>
-            <h2 className="font-display text-xl font-bold uppercase text-foreground">
-              Choose {SLOT_META[activeSlot].label}
-            </h2>
-            <p className="text-xs text-muted-foreground">
-              {SLOT_META[activeSlot].hint}
-              {' · '}
-              <span className="text-foreground">
-                {activeWeapons.length + activeUtility.length} options
-              </span>
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-1.5">
-            {LOADOUT_SLOTS.map((slot) => (
-              <button
-                key={slot}
-                type="button"
-                onClick={() => setActiveSlot(slot)}
-                className={`rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ${
-                  activeSlot === slot
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-muted text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {SLOT_META[slot].label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-          {activeWeapons.map((w) => {
-            const selected = bundle.slots[activeSlot] === w.id
-            return (
-              <button
-                key={w.id}
-                type="button"
-                onClick={() => pickItem(w.id)}
-                className={`flex items-center gap-3 rounded-lg border p-2.5 text-left transition-colors ${
-                  selected ? 'border-primary bg-primary/10' : `${RARITY_BORDER[w.rarity]} hover:border-primary/40`
-                }`}
-              >
-                <ItemIcon src={w.image} alt={w.name} className="h-12 w-12 shrink-0" />
-                <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-foreground">{w.name}</p>
-                  <p className={`text-[10px] font-bold uppercase ${RARITY_TEXT[w.rarity]}`}>{w.rarity}</p>
-                  {w.note ? (
-                    <p className="line-clamp-1 text-[11px] text-muted-foreground">{w.note}</p>
-                  ) : (
-                    <p className="text-[11px] text-muted-foreground">
-                      {w.dmg} dmg · {w.fireRate}/s
-                    </p>
-                  )}
-                </div>
-              </button>
-            )
-          })}
-          {activeUtility.map((u) => {
-            const selected = bundle.slots[activeSlot] === u.id
-            return (
-              <button
-                key={u.id}
-                type="button"
-                onClick={() => pickItem(u.id)}
-                className={`flex items-center gap-3 rounded-lg border p-2.5 text-left transition-colors ${
-                  selected
-                    ? 'border-primary bg-primary/10'
-                    : `${RARITY_BORDER[u.rarity] || RARITY_BORDER.Common} hover:border-primary/40`
-                }`}
-              >
-                <ItemIcon src={u.image} alt={u.name} className="h-12 w-12 shrink-0" />
-                <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-foreground">{u.name}</p>
-                  <p className="line-clamp-2 text-[11px] text-muted-foreground">{u.note}</p>
-                </div>
-              </button>
-            )
-          })}
         </div>
       </section>
 
@@ -931,14 +888,10 @@ export function LoadoutBuilderClient() {
         </div>
 
         <p className="text-xs text-muted-foreground">
-          Stats and mat piece estimates are for Chapter 7 Season 4 planning (~10 mats per piece). Epic balance
-          patches change numbers — confirm in-game. Dig deeper per gun in the{' '}
+          Planning numbers for Treasure Hunters (~10 mats per piece). Confirm in-game after patches. Dig deeper in
+          the{' '}
           <Link href="/weapons" className="text-primary hover:underline">
             weapon damage calculator
-          </Link>
-          {' '}or practice piece spam in the{' '}
-          <Link href="/tools/fortnite-build-simulator" className="text-primary hover:underline">
-            build simulator
           </Link>
           .
         </p>

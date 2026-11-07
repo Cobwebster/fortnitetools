@@ -33,7 +33,7 @@ export function WeaponDamageCalculatorView() {
   const homeHref = localizeHref(locale, '/')
   const toolsHref = localizeHref(locale, '/tools')
 
-  const [selectedWeapon, setSelectedWeapon] = useState('surgical_burst')
+  const [selectedWeapon, setSelectedWeapon] = useState('hammer_ar')
   const [targetHP, setTargetHP] = useState(200)
   const [customHP, setCustomHP] = useState('')
   const [headshot, setHeadshot] = useState(false)

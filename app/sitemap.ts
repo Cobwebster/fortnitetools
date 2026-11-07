@@ -9,6 +9,7 @@ import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
 import { guidesPageHref, guidesTotalPages } from '@/lib/guides-pagination'
 import { sitemapVideo } from '@/lib/guide-video'
 import { SPRITES, SPRITES_CAPTURED_AT } from '@/lib/sprites'
+import { leaks } from '@/lib/leaks'
 
 const FLAGSHIP = new Set([
   '/fortnite-map',
@@ -32,6 +33,7 @@ const FLAGSHIP = new Set([
   '/map-rotation',
   '/drops',
   '/xp-calculator',
+  '/leaks',
 ])
 
 const CALC_OR_THIN = new Set([
@@ -144,6 +146,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/season-countdown',
     '/player-count',
     '/news',
+    '/leaks',
     '/modes',
     '/reload',
     '/new-cosmetics',
@@ -171,6 +174,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: hubModified,
     changeFrequency:
       path === '/news' ||
+      path === '/leaks' ||
       path === '/status' ||
       path === '/season-countdown' ||
       path === '/tools/item-shop'
@@ -260,6 +264,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.65,
   }))
 
+  const leakRoutes: MetadataRoute.Sitemap = leaks.map((leak) => ({
+    url: `${base}/leaks/${leak.slug}`,
+    lastModified: new Date(leak.confirmedDate ?? leak.date),
+    changeFrequency: leak.status === 'active' || leak.status === 'watching' ? ('daily' as const) : ('weekly' as const),
+    priority: leak.featured ? 0.75 : leak.status === 'shipped' ? 0.55 : 0.65,
+  }))
+
   return [
     ...staticRoutes,
     ...toolRoutes,
@@ -269,5 +280,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...postRoutes,
     ...weaponRoutes,
     ...spriteRoutes,
+    ...leakRoutes,
   ]
 }

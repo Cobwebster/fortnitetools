@@ -42,7 +42,7 @@ export type UseCaseTag =
   | 'Contest'
   | 'Zone'
   | 'Duo'
-  | 'Fortnitemares'
+  | 'Treasure Hunters'
 
 export type LoadoutPreset = {
   id: string
@@ -118,7 +118,7 @@ export const MAT_PRESETS: { id: string; name: string; blurb: string; mats: MatsS
   },
 ]
 
-/** Active C7S4 heals / consumables (floor + chests + Loot Hack returns). */
+/** Treasure Hunters heals / consumables (floor + fish + TH items). */
 export const HEALS: UtilityItem[] = [
   {
     id: 'medkit',
@@ -156,7 +156,7 @@ export const HEALS: UtilityItem[] = [
     slot: 'heal',
     rarity: 'Legendary',
     image: '/images/loadout/golden_apple.png',
-    note: 'Big HP + shield burst · rare find',
+    note: '~40 effective HP (overheal → shield) · low-grav · produce boxes',
     score: 5,
     defaultStack: 1,
   },
@@ -169,6 +169,36 @@ export const HEALS: UtilityItem[] = [
     note: '+10 HP + short speed · produce boxes',
     score: 2,
     defaultStack: 3,
+  },
+  {
+    id: 'nami_tangerine',
+    name: "Nami's Tangerine",
+    slot: 'heal',
+    rarity: 'Epic',
+    image: '/images/loadout/flowberry.png',
+    note: 'HP + shields · water move speed · TH item',
+    score: 5,
+    defaultStack: 2,
+  },
+  {
+    id: 'meat_on_a_stick',
+    name: 'Meat on a Stick',
+    slot: 'heal',
+    rarity: 'Rare',
+    image: '/images/loadout/meat_on_a_stick.png',
+    note: 'Heal then short HoT · TH item',
+    score: 4,
+    defaultStack: 2,
+  },
+  {
+    id: 'slurp_juice',
+    name: 'Slurp Juice',
+    slot: 'heal',
+    rarity: 'Epic',
+    image: '/images/loadout/slurp_juice.png',
+    note: 'Unvault · HP + shield over time',
+    score: 5,
+    defaultStack: 1,
   },
   {
     id: 'small_pot',
@@ -196,7 +226,7 @@ export const HEALS: UtilityItem[] = [
     slot: 'heal',
     rarity: 'Rare',
     image: '/images/loadout/chug_splash.png',
-    note: 'AoE HP + shield · often Loot Hack',
+    note: 'AoE HP + shield',
     score: 5,
     defaultStack: 3,
   },
@@ -253,18 +283,64 @@ export const HEALS: UtilityItem[] = [
 ]
 
 /**
- * Mobility + fight utility for the 5th hotbar slot.
- * Override / Fortnitemares pool — confirm in-game after hotfixes.
+ * Mobility + powers + fight utility for the 5th hotbar slot.
+ * Treasure Hunters pool — confirm in-game after hotfixes. Shock Rocket / Explosive
+ * Cannon Balls are non-Competitive only.
  */
 export const MOBILITY: UtilityItem[] = [
   {
-    id: 'sonic_sneakers',
-    name: 'Sonic Power Sneakers',
+    id: 'shock_rocket',
+    name: "A$AP Rocky's Shock Rocket",
+    slot: 'mobility',
+    rarity: 'Mythic',
+    image: '/images/loadout/chaos_exploder.png',
+    note: 'Boss drop · airborne rockets · pubs / ZB only (not Ranked)',
+    score: 5,
+  },
+  {
+    id: 'gum_gum_fruit',
+    name: 'Gum-Gum Fruit',
     slot: 'mobility',
     rarity: 'Mythic',
     image: '/images/loadout/seven_sliders.png',
-    note: 'Spin Dash / Spin Attack · Override',
+    note: 'Luffy power · rubber punches / slam / launch',
     score: 5,
+  },
+  {
+    id: 'flame_flame_fruit',
+    name: 'Flame-Flame Fruit',
+    slot: 'mobility',
+    rarity: 'Mythic',
+    image: '/images/loadout/chaos_exploder.png',
+    note: 'Ace power · Fire Fist finisher',
+    score: 5,
+  },
+  {
+    id: 'zoro_three_sword',
+    name: "Zoro's Three Sword Style",
+    slot: 'mobility',
+    rarity: 'Legendary',
+    image: '/images/loadout/lancehead.png',
+    note: 'Close slash + dash · also Reload',
+    score: 4,
+  },
+  {
+    id: 'usopp_slingshot',
+    name: "Usopp's Slingshot",
+    slot: 'mobility',
+    rarity: 'Legendary',
+    image: '/images/loadout/heavy_impact.png',
+    note: 'Heavy marksman rounds · also Reload',
+    score: 4,
+  },
+  {
+    id: 'explosive_cannon_ball',
+    name: 'Explosive Cannon Ball',
+    slot: 'mobility',
+    rarity: 'Epic',
+    image: '/images/loadout/chaos_exploder.png',
+    note: 'Throw or load a cannon · non-Competitive',
+    score: 4,
   },
   {
     id: 'overdrive_grenade',
@@ -272,17 +348,8 @@ export const MOBILITY: UtilityItem[] = [
     slot: 'mobility',
     rarity: 'Rare',
     image: '/images/loadout/overdrive_grenade.png',
-    note: 'Speed / overdrive throw · unvault',
+    note: 'Speed throw · unvault · Pocket-O-Matic in ZB',
     score: 4,
-  },
-  {
-    id: 'bass_boost',
-    name: 'Bass Boost',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/impulse.png',
-    note: 'Knock / boost · often Loot Hack',
-    score: 3,
   },
   {
     id: 'shockwave',
@@ -290,7 +357,7 @@ export const MOBILITY: UtilityItem[] = [
     slot: 'mobility',
     rarity: 'Epic',
     image: '/images/loadout/shockwave.png',
-    note: 'Knock + rotate without fall damage',
+    note: 'Knock + rotate · Pocket-O-Matic in ZB',
     score: 5,
   },
   {
@@ -301,6 +368,33 @@ export const MOBILITY: UtilityItem[] = [
     image: '/images/loadout/shock_rocks.png',
     note: 'Stackable knock · farm / chests',
     score: 4,
+  },
+  {
+    id: 'port_a_bunker',
+    name: 'Port-A-Bunker',
+    slot: 'mobility',
+    rarity: 'Rare',
+    image: '/images/loadout/port_a_bunker.png',
+    note: 'Pocket cover · Zero Build Pocket-O-Matic',
+    score: 3,
+  },
+  {
+    id: 'shield_bubble_jr',
+    name: 'Shield Bubble Jr.',
+    slot: 'mobility',
+    rarity: 'Rare',
+    image: '/images/loadout/shield_bubble_jr.png',
+    note: 'Pocket bubble · Zero Build Pocket-O-Matic',
+    score: 3,
+  },
+  {
+    id: 'zipline_deployer',
+    name: 'Zipline Deployer',
+    slot: 'mobility',
+    rarity: 'Rare',
+    image: '/images/loadout/grappler.png',
+    note: 'Unvault · place a line and rotate',
+    score: 3,
   },
   {
     id: 'crash_pad_jr',
@@ -326,7 +420,7 @@ export const MOBILITY: UtilityItem[] = [
     slot: 'mobility',
     rarity: 'Epic',
     image: '/images/loadout/launch_pad.png',
-    note: 'Glider redeploy rotate',
+    note: 'Glider redeploy · cannons are the island rotate',
     score: 4,
   },
   {
@@ -348,15 +442,6 @@ export const MOBILITY: UtilityItem[] = [
     score: 4,
   },
   {
-    id: 'batman_grapnel',
-    name: 'Batman Grapnel Gun',
-    slot: 'mobility',
-    rarity: 'Mythic',
-    image: '/images/loadout/batman_grapnel.png',
-    note: 'Mythic swing · limited charges',
-    score: 5,
-  },
-  {
     id: 'rift',
     name: 'Rift-to-Go',
     slot: 'mobility',
@@ -375,30 +460,12 @@ export const MOBILITY: UtilityItem[] = [
     score: 2,
   },
   {
-    id: 'shield_breaker_emp',
-    name: 'Shield Breaker EMP',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/shield_breaker_emp.png',
-    note: 'Strip shields · fight opener',
-    score: 3,
-  },
-  {
     id: 'pulse_scanner',
     name: 'Pulse Scanner',
     slot: 'mobility',
     rarity: 'Rare',
     image: '/images/loadout/pulse_scanner.png',
-    note: 'Info ping · third-party radar',
-    score: 2,
-  },
-  {
-    id: 'business_turret',
-    name: 'Business Turret',
-    slot: 'mobility',
-    rarity: 'Epic',
-    image: '/images/loadout/business_turret.png',
-    note: 'Deployable pressure · hold angles',
+    note: 'Info ping · Wanted Poster pathing',
     score: 2,
   },
 ]
@@ -432,47 +499,63 @@ export function getUtility(id: string): UtilityItem | undefined {
 
 export const PRESETS: LoadoutPreset[] = [
   {
-    id: 'aggressive',
-    name: 'Aggressive pubs',
-    blurb: '8-Bit spray → Heavy AR mid → Sonic rotate',
-    tags: ['Pubs', 'Contest'],
+    id: 'pubs-rocky',
+    name: 'Pubs · $.$. Rocky',
+    blurb: 'Boss-ship greed · Shock Rocket (pubs only) + Sentinel',
+    tags: ['Pubs', 'Contest', 'Treasure Hunters'],
     slots: {
-      shotgun: 'eight_bit_shotgun',
-      ar: 'heavy_assault_rifle',
-      smg: 'tactical_pistol',
+      shotgun: 'sentinel_pump',
+      ar: 'bundlebuss',
+      smg: 'machine_smg',
       heal: 'small_pot',
-      mobility: 'sonic_sneakers',
+      mobility: 'shock_rocket',
     },
-    mats: { wood: 200, stone: 50, metal: 0 },
-    ammo: { shells: 30, light: 150, medium: 200, heavy: 0 },
+    mats: { wood: 150, stone: 50, metal: 0 },
+    ammo: { shells: 25, light: 180, medium: 180, heavy: 0 },
     healStack: 3,
   },
   {
-    id: 'box',
-    name: 'Box / Pump',
-    blurb: 'Classic pump crack + AR hold',
-    tags: ['Ranked', 'Pubs'],
+    id: 'ranked-climb',
+    name: 'Ranked climb',
+    blurb: 'No Shock Rocket · Sentinel + Hammer + Shockwaves',
+    tags: ['Ranked', 'Treasure Hunters'],
     slots: {
-      shotgun: 'pump_shotgun',
-      ar: 'assault_rifle',
-      smg: 'ranger_pistol',
+      shotgun: 'sentinel_pump',
+      ar: 'hammer_ar',
+      smg: 'tactical_smg',
       heal: 'big_pot',
       mobility: 'shockwave',
     },
     mats: { wood: 400, stone: 300, metal: 200 },
-    ammo: { shells: 25, light: 120, medium: 200, heavy: 0 },
+    ammo: { shells: 25, light: 150, medium: 200, heavy: 0 },
     healStack: 2,
+  },
+  {
+    id: 'ranked-endgame',
+    name: 'Ranked endgame',
+    blurb: 'Full mats · Dragoon crack · splashes · no Boss toys',
+    tags: ['Ranked', 'Zone'],
+    slots: {
+      shotgun: 'gilded_dragoon',
+      ar: 'hammer_ar',
+      smg: 'tactical_smg',
+      heal: 'chug_splash',
+      mobility: 'shockwave',
+    },
+    mats: { wood: 500, stone: 500, metal: 500 },
+    ammo: { shells: 20, light: 150, medium: 250, heavy: 0 },
+    healStack: 3,
   },
   {
     id: 'zone',
     name: 'Zone / Placement',
-    blurb: 'Safer mid-game + Overdrive rotate',
-    tags: ['Zone', 'Ranked'],
+    blurb: 'Safer mid-game · Tangerine + Overdrive / cannons',
+    tags: ['Zone', 'Ranked', 'Treasure Hunters'],
     slots: {
-      shotgun: 'pump_shotgun',
-      ar: 'assault_rifle',
-      smg: 'dual_pistols',
-      heal: 'medkit',
+      shotgun: 'sentinel_pump',
+      ar: 'bundlebuss',
+      smg: 'sidearm_pistol',
+      heal: 'nami_tangerine',
       mobility: 'overdrive_grenade',
     },
     mats: { wood: 500, stone: 400, metal: 300 },
@@ -480,100 +563,84 @@ export const PRESETS: LoadoutPreset[] = [
     healStack: 2,
   },
   {
-    id: 'ranked-endgame',
-    name: 'Ranked endgame',
-    blurb: 'Full mats · Shockwaves · bigs · no greed',
-    tags: ['Ranked', 'Zone'],
-    slots: {
-      shotgun: 'pump_shotgun',
-      ar: 'assault_rifle',
-      smg: 'tactical_pistol',
-      heal: 'chug_splash',
-      mobility: 'shockwave',
-    },
-    mats: { wood: 500, stone: 500, metal: 500 },
-    ammo: { shells: 30, light: 150, medium: 250, heavy: 0 },
-    healStack: 3,
-  },
-  {
     id: 'contest-drop',
     name: 'Contested POI',
     blurb: 'First shotgun + smalls · farm wood while fighting',
     tags: ['Contest', 'Pubs'],
     slots: {
-      shotgun: 'eight_bit_shotgun',
-      ar: 'assault_rifle',
-      smg: 'ranger_pistol',
+      shotgun: 'auto_shotgun',
+      ar: 'hammer_ar',
+      smg: 'machine_smg',
       heal: 'small_pot',
       mobility: 'shock_rocks',
     },
     mats: { wood: 80, stone: 0, metal: 0 },
-    ammo: { shells: 15, light: 60, medium: 90, heavy: 0 },
+    ammo: { shells: 15, light: 120, medium: 90, heavy: 0 },
+    healStack: 2,
+  },
+  {
+    id: 'one-piece-pubs',
+    name: 'One Piece pubs',
+    blurb: 'Gum-Gum + Dragoon · power slot over utility',
+    tags: ['Pubs', 'Treasure Hunters'],
+    slots: {
+      shotgun: 'gilded_dragoon',
+      ar: 'bundlebuss',
+      smg: 'flint_knock',
+      heal: 'meat_on_a_stick',
+      mobility: 'gum_gum_fruit',
+    },
+    mats: { wood: 250, stone: 150, metal: 50 },
+    ammo: { shells: 15, light: 40, medium: 200, heavy: 0 },
     healStack: 2,
   },
   {
     id: 'zero-build',
     name: 'Zero Build',
-    blurb: 'Natural cover kit · mobility over mats',
-    tags: ['Zero Build'],
+    blurb: 'Pocket-O-Matic kit · no mats · mobility over builds',
+    tags: ['Zero Build', 'Treasure Hunters'],
     slots: {
-      shotgun: 'sweeper_shotgun',
-      ar: 'assault_rifle',
-      smg: 'tactical_pistol',
+      shotgun: 'auto_shotgun',
+      ar: 'hammer_ar',
+      smg: 'tactical_smg',
       heal: 'slap_juice',
-      mobility: 'grappler',
+      mobility: 'shockwave',
     },
     mats: { wood: 0, stone: 0, metal: 0 },
-    ammo: { shells: 25, light: 40, medium: 200, heavy: 0 },
+    ammo: { shells: 25, light: 160, medium: 200, heavy: 0 },
     healStack: 2,
   },
   {
     id: 'duo-support',
     name: 'Duo support',
-    blurb: 'Splashes + scan · you refill, they crack',
+    blurb: 'Splashes + Tangerine · you refill, they crack',
     tags: ['Duo', 'Ranked'],
     slots: {
-      shotgun: 'pump_shotgun',
-      ar: 'assault_rifle',
-      smg: 'tactical_pistol',
+      shotgun: 'sentinel_pump',
+      ar: 'hammer_ar',
+      smg: 'sidearm_pistol',
       heal: 'chug_splash',
       mobility: 'pulse_scanner',
     },
     mats: { wood: 400, stone: 300, metal: 200 },
-    ammo: { shells: 20, light: 120, medium: 200, heavy: 0 },
+    ammo: { shells: 20, light: 100, medium: 200, heavy: 0 },
     healStack: 4,
   },
   {
-    id: 'fortnitemares',
-    name: 'Fortnitemares',
-    blurb: 'Wood Stake + Heavy AR + Fiend Hunters',
-    tags: ['Fortnitemares', 'Pubs'],
+    id: 'sprite-hunt',
+    name: 'Wanted Poster hunt',
+    blurb: 'Sustain + rotate for digs · not a Boss greed kit',
+    tags: ['Treasure Hunters', 'Pubs', 'Zone'],
     slots: {
-      shotgun: 'wood_stake_shotgun',
-      ar: 'heavy_assault_rifle',
-      smg: 'dual_fiend_hunters',
-      heal: 'chug_jug',
+      shotgun: 'sentinel_pump',
+      ar: 'bundlebuss',
+      smg: 'tactical_smg',
+      heal: 'nami_tangerine',
       mobility: 'rift',
     },
-    mats: { wood: 350, stone: 250, metal: 150 },
-    ammo: { shells: 25, light: 100, medium: 220, heavy: 0 },
-    healStack: 1,
-  },
-  {
-    id: 'mega-buster',
-    name: 'Mega Buster lane',
-    blurb: 'Charge shots + sidearm cleanup',
-    tags: ['Pubs', 'Contest'],
-    slots: {
-      shotgun: 'eight_bit_shotgun',
-      ar: 'mega_buster',
-      smg: 'tactical_pistol',
-      heal: 'guzzle_juice',
-      mobility: 'overdrive_grenade',
-    },
-    mats: { wood: 250, stone: 150, metal: 50 },
-    ammo: { shells: 20, light: 150, medium: 0, heavy: 0 },
-    healStack: 2,
+    mats: { wood: 300, stone: 200, metal: 100 },
+    ammo: { shells: 20, light: 140, medium: 180, heavy: 0 },
+    healStack: 3,
   },
 ]
 
@@ -712,26 +779,30 @@ export function scoreKit(bundle: LoadoutBundle): Record<KitAxis, number> {
 export function kitTips(bundle: LoadoutBundle): string[] {
   const scores = scoreKit(bundle)
   const tips: string[] = []
+  const util = bundle.slots.mobility
+  if (util === 'shock_rocket' || util === 'explosive_cannon_ball') {
+    tips.push('Shock Rocket / Explosive Cannon Balls are non-Competitive — leave them off Ranked kits.')
+  }
   if (scores.sustain <= 2) {
-    tips.push('Shields are thin — swap heals to smalls/bigs or bump the heal stack before you third-party.')
+    tips.push('Shields are thin — grab smalls/bigs, Nami’s Tangerine, or bump the heal stack before you third-party.')
   }
   if (scores.rotate <= 2) {
-    tips.push('Utility is light for rotates. Shockwaves, Overdrive, or a Grappler save more fights than a fourth gun.')
+    tips.push('Utility is light for rotates. Shockwaves, Overdrive, a Grappler, or a cannon launch save more fights than a fourth gun.')
   }
   if (scores.build <= 2 && scores.build > 1) {
-    tips.push('Mats are low for Ranked boxes — farm wood/stone before you hard-commit a POI.')
+    tips.push('Mats are low for Ranked boxes — farm wood/stone before you hard-commit a POI. Gold Bars are vaulted this season.')
   }
   if (scores.build === 1) {
-    tips.push('Zero-mat kit: play natural cover and keep mobility hot. Do not take long build fights.')
+    tips.push('Zero-mat kit: play natural cover, Pocket-O-Matic items, and cannons. Do not take long build fights.')
   }
   if (scores.close >= 4 && scores.mid <= 2) {
-    tips.push('Close game is strong — your mid tags may lose peeks. Consider a more accurate AR or Ranger.')
+    tips.push('Close game is strong — your mid tags may lose peeks. Consider Hammer AR or Bundlebuss.')
   }
   if (bundle.ammo.shells < 10) {
     tips.push('Shell count is dangerous for multi-fight paths. Loot ammo boxes before the next contest.')
   }
   if (tips.length === 0) {
-    tips.push('Balanced kit — still confirm floor loot and Match Overrides in-game before you lock the plan.')
+    tips.push('Balanced kit — still confirm floor loot and Captain’s Day toys in-game before you lock the plan.')
   }
   return tips.slice(0, 3)
 }

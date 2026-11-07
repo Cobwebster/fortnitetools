@@ -2,7 +2,7 @@ export const LOADOUT_FAQS = [
   {
     question: 'What is the Fortnite Loadout Builder?',
     answer:
-      'A free Chapter 7 Season 4 (Override) inventory planner. Build a five-slot hotbar, set wood/stone/metal, plan ammo and heal stacks, then compare estimated shots-to-kill (STK) and time-to-kill (TTK) against 100 / 150 / 200 HP. Share the full inventory link with teammates.',
+      'A free Treasure Hunters inventory planner for Crossbones Isle. Build a five-slot hotbar, set wood/stone/metal, plan ammo and heal stacks, then compare estimated shots-to-kill (STK) and time-to-kill (TTK) against 100 / 150 / 200 HP. Share the full inventory link with teammates.',
   },
   {
     question: 'Can I plan materials and ammo, not just guns?',
@@ -10,9 +10,9 @@ export const LOADOUT_FAQS = [
       'Yes. The inventory panel includes wood, stone, and metal (0–500 each) with contest / mid-game / ranked-endgame / Zero Build presets, plus shells, light, medium, and heavy ammo counts and a heal stack size. All of that rides along in the shareable URL.',
   },
   {
-    question: 'What is a good Fortnite loadout in Chapter 7 Season 4?',
+    question: 'What is a good Fortnite loadout in Treasure Hunters?',
     answer:
-      'Most fights still want a shotgun for box/close pressure, a mid-range AR, a spray or sidearm for cleanup, plus heals and utility. After v42.40 that is Pump / 8-Bit / Sweeper / Wood Stake, Heavy AR or classic AR, and a pistol or Dual Fiend Hunters — Drum Gun and Midas are vaulted. Use the Ranked, contest, Zero Build, Duo, or Fortnitemares presets, then swap for what you actually loot.',
+      'Most fights still want a shotgun for close pressure, a mid-range AR, a spray or sidearm for cleanup, plus heals and utility. On Crossbones Isle that is often Sentinel Pump / Auto / Gilded Dragoon, Hammer AR or Bundlebuss, Machine or Tactical SMG, then heals (Nami’s Tangerine, Slurp, pots) and utility or a One Piece power. Shock Rocket is pubs / Zero Build only — not Ranked. Use the presets, then swap for what you actually loot.',
   },
   {
     question: 'How does the kit scorecard work?',
@@ -22,22 +22,22 @@ export const LOADOUT_FAQS = [
   {
     question: 'How does STK / TTK work in this tool?',
     answer:
-      'STK is how many hits of that weapon are needed to drop the selected HP pool (body or headshots). TTK is how long that takes at the weapon’s listed fire rate, assuming every shot lands and ignoring reload mid-mag. Use it to compare guns, not as a guarantee in real fights with builds, bloom, and peeks.',
+      'STK is how many hits of that weapon are needed to drop the selected HP pool (body or headshots). TTK is how long that takes at the weapon’s listed fire rate, assuming every shot lands and ignoring reload mid-mag. Use it to compare guns, not as a guarantee in real fights with builds, bloom, and peeks. Devil Fruit powers are utility picks without STK rows.',
   },
   {
     question: 'Should I always run heals, mobility, and full mats?',
     answer:
-      'In Ranked and late-game pubs, yes more often than not. Full mats without shields lose to third-parties; no mobility makes storm and high ground rotations punishable. Zero Build can run 0 mats — just keep grappler / shockwave utility hot.',
+      'In Ranked and late-game pubs, yes more often than not. Full mats without shields lose to third-parties; no mobility makes storm and cannon rotates punishable. Zero Build can run 0 mats — keep Pocket-O-Matic / shockwave utility hot. Gold Bars are vaulted this season.',
   },
   {
     question: 'Are the weapon icons and stats official Epic data?',
     answer:
-      'Icons are real Fortnite item art mirrored for reference. Damage, fire rate, magazine, and mat piece estimates (~10 mats per piece) are approximate planning numbers and can lag Override balance patches — confirm in-game after major updates.',
+      'Icons are real Fortnite item art mirrored for reference when available. Damage, fire rate, magazine, and mat piece estimates (~10 mats per piece) are approximate planning numbers and can lag Treasure Hunters balance patches — confirm in-game after major updates.',
   },
   {
     question: 'How is this different from the weapon damage calculator?',
     answer:
-      'The damage calculator digs into one gun at a time (DPS, mag feasibility, material break shots). The loadout builder focuses on a full inventory — combat trio, heals, utility, mats, and ammo — so you can compare complete kits and use-case presets side by side.',
+      'The damage calculator digs into one gun at a time (DPS, mag feasibility, material break shots). The loadout builder focuses on a full inventory — combat trio, heals, utility / powers, mats, and ammo — so you can compare complete kits and use-case presets side by side.',
   },
   {
     question: 'Can I share my Fortnite loadout with teammates?',

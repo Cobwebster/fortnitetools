@@ -1,0 +1,17 @@
+---
+description: >-
+  Run the FortniteTools season/patch update checklist when the user asks to
+  check for updates, do a round of updates, refresh for a new patch/season,
+  or verify map/sprites/calendar/news are current.
+alwaysApply: false
+---
+
+# Season / patch update pass
+
+When the user asks to check for updates (or similar), **read and follow** the private checklist:
+
+`.cursor/UPDATE-CHECKLIST.md`
+
+Do not improvise a thinner pass. Work the list, use live sources (Epic news, Fortnite-API map, sprites API) before editing copy, skip sections that clearly do not apply, then report what changed vs what was already current.
+
+Keep the checklist itself updated if you discover a new recurring stale surface (add a checkbox + file path).

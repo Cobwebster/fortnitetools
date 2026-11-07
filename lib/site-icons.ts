@@ -48,6 +48,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/tools/skin-rarity-calculator': '/images/loadout/seven_sliders.png',
   '/codes': '/images/loadout/launch_pad.png',
   '/news': '/images/loadout/grappler.png',
+  '/leaks': '/images/loadout/flint_knock.png',
   '/modes': '/images/loadout/overdrive_grenade.png',
   '/new-cosmetics': '/images/loadout/slap_juice.png',
   '/creator-code': '/images/loadout/chug_splash.png',

@@ -32,17 +32,19 @@ export default async function LoadoutBuilderPage() {
               Fortnite <span className="text-primary">Loadout Builder</span>
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              Plan a full Chapter 7 Season 4 inventory — five-slot hotbar, wood/stone/metal, ammo, and heal
-              stacks — then read STK/TTK and a kit scorecard. Start from Ranked, contest, Zero Build, Duo, or
-              Fortnitemares use cases and share one link with the lobby.
+              Tap a hotbar slot, pick a gun or utility from the list under it. That&apos;s it. Mats, presets,
+              and STK/TTK sit below if you want them — share one link with the lobby when you&apos;re done.
             </p>
           </div>
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
           <AdSenseUnit variant="inTool" className="mb-10" />
+
+          <LoadoutBuilderClient />
+
           {communityLoadouts.length > 0 ? (
-            <section className="mb-10">
+            <section className="mt-14">
               <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
                 <div>
                   <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
@@ -64,8 +66,6 @@ export default async function LoadoutBuilderPage() {
             </section>
           ) : null}
 
-          <LoadoutBuilderClient />
-
           <div className="mt-10">
             <CommunitySubmitCta
               href="/upload/loadout"
@@ -85,12 +85,12 @@ export default async function LoadoutBuilderPage() {
             </p>
             <ol className="list-decimal pl-5 space-y-2 text-sm leading-relaxed text-muted-foreground max-w-3xl">
               <li>
-                Pick a use case (Ranked endgame, Contested POI, Zero Build, Duo support, Fortnitemares…) or start
-                from Aggressive / Box / Zone and customize.
+                Pick a use case (Ranked climb, $.$. Rocky pubs, Zero Build, Duo support, Sprite hunt…) or start
+                from a preset and customize.
               </li>
               <li>
-                Click a hotbar slot and re-loot from the Override pool. Slot 4 has a heal stack slider; slot 5 is
-                mobility and fight gadgets (Shockwave, EMP, Scanner, Turret…).
+                Click a hotbar slot and re-loot from the Treasure Hunters pool. Slot 4 has a heal stack slider;
+                slot 5 is mobility, Pocket-O-Matic items, and One Piece / Boss powers (Shock Rocket is pubs only).
               </li>
               <li>
                 Set wood / stone / metal with the mat presets or sliders (0–500). Piece estimate is ~10 mats per
@@ -123,26 +123,26 @@ export default async function LoadoutBuilderPage() {
 
           <section className="mt-14">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">
-              Slot and mat priorities for Override
+              Slot and mat priorities for Treasure Hunters
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Shotgun</h3>
                 <p>
-                  Close fights still decide contested POIs. Pump rewards first-shot accuracy; 8-Bit and Sweeper
-                  spray when you cannot land pumps; Wood Stake is the Fortnitemares shotgun. See the{' '}
+                  Close fights still decide contested POIs. Sentinel Pump rewards first-shot accuracy; Auto
+                  Shotgun sprays when you cannot land pumps; Gilded Dragoon hits hard with a tiny mag. See the{' '}
                   <Link href="/guides/weapons/fortnite-shotgun-guide-best-options" className="text-primary hover:underline">
                     shotgun guide
                   </Link>{' '}
-                  for pairing tips.
+                  for pairing tips — confirm the live TH pool in-game.
                 </p>
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">AR / Rifle</h3>
                 <p>
-                  Classic AR and Heavy AR cover mid peeks after v42.40; Drum Gun and Ranger AR are vaulted. Mega
-                  Buster is still a charge-lane swap. Snipers replace the AR slot here when your drop path has
-                  long sightlines.
+                  Hammer AR and Bundlebuss cover mid peeks on Crossbones Isle. One Piece powers (Gum-Gum,
+                  Flame-Flame, Usopp’s Slingshot) sit in the utility slot so you can still keep a real AR.
+                  Shock Rocket is a Boss drop for pubs / Zero Build only.
                 </p>
               </div>
               <div>
@@ -159,12 +159,12 @@ export default async function LoadoutBuilderPage() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Heals &amp; mobility</h3>
                 <p>
-                  Smalls first, then bigs / splashes / Med Kit based on fight pace. Mobility wins rotates — keep
-                  Shockwaves or Overdrive for zone; use the{' '}
+                  Smalls first, then bigs / splashes / Nami’s Tangerine based on fight pace. Cannons are the
+                  island rotate — keep Shockwaves or Overdrive for zone; use the{' '}
                   <Link href="/tools/zone-timer" className="text-primary hover:underline">
                     zone timer
                   </Link>{' '}
-                  so you leave with utility instead of walking storm.
+                  so you leave with utility instead of walking storm. Gold Bars are vaulted.
                 </p>
               </div>
             </div>

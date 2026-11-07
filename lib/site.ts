@@ -3,7 +3,7 @@ export const siteConfig = {
   domain: 'www.fortnitetools.com',
   url: 'https://www.fortnitetools.com',
   description:
-    'Override map, player stats, Item Shop, weapons, and season hubs for Fortnite — plus build practice and a few helpers when you need them.',
+    'Treasure Hunters map, player stats, Item Shop, weapons, Fortnite leaks, and season hubs — plus loadout builder, build practice, and guides.',
   ogImage: '/images/map-evolution/40-40.webp',
   contactEmail: 'thederpywhale@hotmail.com',
 } as const

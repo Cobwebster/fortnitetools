@@ -73,7 +73,7 @@ export const TOOLS: ToolEntry[] = [
     href: '/tools/loadout-builder',
     title: 'Loadout Builder',
     description:
-      'Override inventory after v42.40 — hotbar without Midas/Drum, mats, ammo, Fortnitemares presets, kit scorecard, and STK/TTK. Share one link with the lobby.',
+      'Treasure Hunters inventory planner — hotbar, mats, ammo, Ranked / pubs / Zero Build presets, kit scorecard, and STK/TTK. Share one link with the lobby.',
     tags: ['Loadout', 'Mats', 'TTK'],
     category: 'weapons',
   },
@@ -123,6 +123,14 @@ export const TOOLS: ToolEntry[] = [
     description:
       'Live Battle Royale lobby headlines with FortniteTools takes that point at the map, shop, freebies, and season countdown.',
     tags: ['News', 'Lobby', 'Season'],
+    category: 'season',
+  },
+  {
+    href: '/leaks',
+    title: 'Fortnite Leaks',
+    description:
+      'Guides-style leak hub — Pirate Shop Power Hours, Chapter 8 finishers, Sprite swaps, and past leaks that shipped. Status on every page.',
+    tags: ['Leaks', 'Datamine', 'Chapter 8'],
     category: 'season',
   },
   {

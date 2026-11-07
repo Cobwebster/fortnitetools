@@ -32,6 +32,7 @@ export function Footer() {
     { href: '/season', label: t('season') },
     { href: '/drops', label: t('drops') },
     { href: '/news', label: t('news') },
+    { href: '/leaks', label: t('leaks') },
     { href: '/modes', label: t('modes') },
     { href: '/reload', label: t('reload') },
     { href: '/ranked', label: t('ranked') },

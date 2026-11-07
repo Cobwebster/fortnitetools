@@ -8,6 +8,7 @@
     "itemShop": "Item Shop",
     "codes": "Codes",
     "news": "News",
+    "leaks": "Leaks",
     "modes": "Modes",
     "reload": "Reload",
     "ranked": "Ranked",
@@ -69,6 +70,7 @@
     "statsLeaderboards": "Player Stats",
     "playerCount": "Player Count",
     "news": "News",
+    "leaks": "Leaks",
     "modes": "Game Modes",
     "reload": "Reload",
     "ranked": "Ranked",
@@ -124,8 +126,8 @@
   },
   "home": {
     "heroAlt": "Fortnite island under a storm circle",
-    "heroSubtitle": "Treasure Hunters is live on Crossbones Isle. Pirate Shop, Shock Rocket, Wanted Posters.",
-    "heroBody": "v43.00 shipped 1 November. Ace and Nico Robin are on the new pass — Luffy is shop. Keep 5 December open for the Chapter 7 end event.",
+    "heroSubtitle": "Treasure Hunters is live on Crossbones Isle. Pirate Shop, Shock Rocket, Wanted Posters — plus Fortnite leaks.",
+    "heroBody": "v43.00 shipped 1 November. Fresh on Leaks: AFK squad-fill farming for the Pirate Shop Token can get a matchmaking ban, plus Lil Uzi Vert Stronghold / Lil’ SMG. Keep 5 December open for the Chapter 7 end event.",
     "ctaTools": "Open free tools",
     "ctaTierList": "Weapons tier list",
     "ctaWeapons": "All weapons",
@@ -141,6 +143,8 @@
     "blurbTools": "Map, tracker, shop, loadout builder, and build practice. Settings helpers live under Tools when you need them.",
     "blurbGuidesTitle": "Guides",
     "blurbGuides": "Pirate Shop Access, Shock Rocket, Wanted Posters, Treasure Hunters Battle Pass, and Crossbones Isle loot — plus evergreen account how-tos.",
+    "blurbLeaksTitle": "Leaks",
+    "blurbLeaks": "AFK Pirate Shop Token squad-fill ban warning, Lil Uzi Vert Stronghold / Lil’ SMG, gold prize swaps, shop dumps, Power Hours, Chapter 8 finishers.",
     "blurbSeasonTitle": "Treasure Hunters",
     "blurbSeason": "v43.00 is live: 80-player Crossbones Isle, Captain’s Days, One Piece loot, and a new pass. Chapter 7 end event is 5 December.",
     "toolFreeCosmetics": "Free Cosmetics",
@@ -158,6 +162,7 @@
     "toolPlayerCompare": "Player Compare",
     "toolItemShop": "Item Shop",
     "toolNews": "News",
+    "toolLeaks": "Leaks",
     "toolModes": "Modes",
     "toolReload": "Reload",
     "toolRanked": "Ranked",
@@ -207,7 +212,7 @@
     "aboutShopTitle": "Item Shop",
     "aboutShop": "Today's rotation with a UTC reset countdown, leaving-tonight strip, and a local wishlist that rolls into the V-Bucks helper. No per-skin index pages.",
     "aboutLoadoutTitle": "Loadout Builder",
-    "aboutLoadout": "Full Override inventory planner — hotbar, mats, ammo, heal stacks, use-case presets, and STK/TTK. Confirm gun numbers in-game after patches.",
+    "aboutLoadout": "Treasure Hunters inventory planner — hotbar, mats, ammo, heal stacks, use-case presets, and STK/TTK. Confirm gun numbers in-game after patches.",
     "aboutSkinRarityTitle": "Skin Rarity Calculator",
     "aboutSkinRarity": "People search \"rare Fortnite skins\" constantly. This lookup separates shop color tiers from real scarcity using appearance history and exclusive sources.",
     "aboutSensTitle": "Sensitivity Calculator",
@@ -347,7 +352,7 @@
       },
       "loadout-builder": {
         "title": "Loadout Builder",
-        "description": "Override inventory after v42.40 — hotbar without Midas/Drum, mats, ammo, Fortnitemares presets, kit scorecard, and STK/TTK."
+        "description": "Treasure Hunters inventory planner — hotbar, mats, ammo, Ranked / pubs / Zero Build presets, kit scorecard, and STK/TTK."
       },
       "fortnite-build-simulator": {
         "title": "Build Simulator",
@@ -416,8 +421,8 @@
     }
   },
   "homeMeta": {
-    "title": "FortniteTools – Free Fortnite Guides & Tools",
-    "description": "Free Fortnite tools and guides for Chapter 7 Season 4 (Override) — player stats lookup, sensitivity converter, XP calculator, keybinds, weapon stats, and practical Battle Royale strategy."
+    "title": "FortniteTools – Free Fortnite Guides, Tools & Leaks",
+    "description": "Free Fortnite tools, guides, and leaks for Treasure Hunters — map, player stats, Item Shop, loadout builder, Lil Uzi Vert / Pirate Shop datamine pages, and Crossbones Isle strategy."
   },
   "tools": {
     "sensitivityCalculator": {
