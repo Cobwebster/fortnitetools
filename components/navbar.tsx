@@ -3,6 +3,7 @@
 import Link from '@/components/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { AuthNavLinks } from '@/components/auth-nav-links'
+import { CreatorCodeChip } from '@/components/creator-code-chip'
 import { LanguageFlagLinks } from '@/components/language-flag-links'
 import { BRAND_ICON } from '@/lib/site-icons'
 import {
@@ -181,6 +182,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
+      <CreatorCodeChip variant="strip" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Bar 1 — brand, primary links, flags, actions */}
         <nav className="flex h-14 items-center justify-between gap-3 sm:h-16" aria-label={t('mainNav')}>
@@ -205,6 +207,7 @@ export function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <CreatorCodeChip variant="nav" />
             <LanguageFlagLinks className="hidden md:flex" />
             <div className="hidden md:block">
               <AuthNavLinks />

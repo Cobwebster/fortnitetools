@@ -1,16 +1,31 @@
 'use client'
 
 import Link from '@/components/link'
+import { usePathname } from 'next/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import { categories } from '@/lib/posts'
 import { BRAND_ICON } from '@/lib/site-icons'
-import { EPIC_DISCLAIMER } from '@/lib/site'
+import { EPIC_DISCLAIMER, SITE_CREATOR_CODE } from '@/lib/site'
+import { CreatorCodeChip } from '@/components/creator-code-chip'
 import {
   defaultLocale,
   isLocaleSurfaceHref,
   localizeHref,
+  stripLocaleFromPathname,
   type AppLocale,
 } from '@/i18n/config'
+
+function creatorSupportKind(
+  pathname: string | null
+): 'guide' | 'tool' | 'map' | null {
+  if (!pathname) return null
+  const path = stripLocaleFromPathname(pathname)
+  if (path === '/fortnite-map' || path.startsWith('/fortnite-map/')) return 'map'
+  if (path === '/tools' || path.startsWith('/tools/')) return 'tool'
+  const parts = path.split('/').filter(Boolean)
+  if (parts[0] === 'guides' && parts.length >= 3) return 'guide'
+  return null
+}
 
 const CAT_KEYS: Record<string, 'catHowTo' | 'catWeapons' | 'catSeason' | 'catMap'> = {
   'how-to': 'catHowTo',
@@ -22,6 +37,8 @@ const CAT_KEYS: Record<string, 'catHowTo' | 'catWeapons' | 'catSeason' | 'catMap
 export function Footer() {
   const t = useTranslations('footer')
   const locale = useLocale() as AppLocale
+  const pathname = usePathname()
+  const supportKind = creatorSupportKind(pathname)
   const homeHref = localizeHref(locale, '/')
   const toolsHref = localizeHref(locale, '/tools')
   const guidesHref = localizeHref(locale, '/guides')
@@ -88,7 +105,13 @@ export function Footer() {
   }))
 
   return (
-    <footer className="border-t border-border bg-card mt-16">
+    <>
+      {supportKind ? (
+        <div className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-8">
+          <CreatorCodeChip variant="support" kind={supportKind} />
+        </div>
+      ) : null}
+      <footer className={`border-t border-border bg-card ${supportKind ? 'mt-8' : 'mt-16'}`}>
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-2">
@@ -104,6 +127,15 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t('tagline')}</p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Creator code{' '}
+              <Link href="/creator-code" className="font-bold text-primary hover:underline">
+                {SITE_CREATOR_CODE}
+              </Link>
+            </p>
+            <div className="mt-2">
+              <CreatorCodeChip variant="nav" />
+            </div>
           </div>
 
           <div className="lg:col-span-2">
@@ -326,5 +358,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   )
 }

@@ -8,6 +8,9 @@ export const siteConfig = {
   contactEmail: 'thederpywhale@hotmail.com',
 } as const
 
+/** Support-A-Creator slug for FortniteTools — enter in Item Shop → Enter Code. */
+export const SITE_CREATOR_CODE = 'TOOLS' as const
+
 export const EPIC_DISCLAIMER =
   'FortniteTools is an independent fan site. We are not affiliated with, endorsed by, sponsored by, or connected to Epic Games, Inc. Fortnite® is a trademark of Epic Games, Inc. All game assets and trademarks belong to their respective owners.'
 

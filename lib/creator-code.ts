@@ -8,9 +8,14 @@ export type CreatorCodeResult = {
   verified: boolean
 }
 
-export const CREATOR_CODE_EXAMPLES = ['ninja', 'clix', 'bugha', 'sypherpk', 'tfue'] as const
+export const CREATOR_CODE_EXAMPLES = ['TOOLS', 'ninja', 'clix', 'bugha', 'sypherpk', 'tfue'] as const
 
 export const CREATOR_CODE_FAQS = [
+  {
+    question: 'What is FortniteTools’ creator code?',
+    answer:
+      'TOOLS. Enter it in Fortnite → Item Shop → Enter Code. The price you pay stays the same; a cut of eligible purchases supports this site. You can copy it from the big card at the top of this page.',
+  },
   {
     question: 'What does a Support-A-Creator code actually do?',
     answer:

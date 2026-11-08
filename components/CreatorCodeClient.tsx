@@ -4,6 +4,7 @@ import { useState, useTransition } from 'react'
 import Link from '@/components/link'
 import { FortniteIcon } from '@/components/fortnite-icon'
 import { CREATOR_CODE_EXAMPLES, type CreatorCodeResult } from '@/lib/creator-code'
+import { SITE_CREATOR_CODE } from '@/lib/site'
 
 export function CreatorCodeClient() {
   const [name, setName] = useState('')
@@ -83,16 +84,23 @@ export function CreatorCodeClient() {
 
       <p className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
         <span>Try a known slug:</span>
-        {CREATOR_CODE_EXAMPLES.map((example) => (
-          <button
-            key={example}
-            type="button"
-            onClick={() => lookup(example)}
-            className="rounded-full border border-border bg-background px-2.5 py-1 font-semibold uppercase tracking-wider text-foreground hover:border-primary/60"
-          >
-            {example}
-          </button>
-        ))}
+        {CREATOR_CODE_EXAMPLES.map((example) => {
+          const isOurs = example.toUpperCase() === SITE_CREATOR_CODE
+          return (
+            <button
+              key={example}
+              type="button"
+              onClick={() => lookup(example)}
+              className={
+                isOurs
+                  ? 'rounded-full border border-primary/50 bg-primary/15 px-2.5 py-1 font-bold uppercase tracking-wider text-primary hover:bg-primary/25'
+                  : 'rounded-full border border-border bg-background px-2.5 py-1 font-semibold uppercase tracking-wider text-foreground hover:border-primary/60'
+              }
+            >
+              {isOurs ? `${example} · us` : example}
+            </button>
+          )
+        })}
       </p>
 
       {error ? <p className="text-sm text-destructive">{error}</p> : null}
@@ -101,6 +109,11 @@ export function CreatorCodeClient() {
         <div className="space-y-3 rounded-xl border border-border bg-background px-4 py-4">
           <div className="flex flex-wrap items-center gap-2">
             <p className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">{result.code}</p>
+            {result.code.toUpperCase() === SITE_CREATOR_CODE ? (
+              <span className="rounded-full border border-primary/50 bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
+                FortniteTools
+              </span>
+            ) : null}
             <span
               className={`rounded-full border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
                 active
