@@ -11,6 +11,9 @@ export const siteConfig = {
 /** Support-A-Creator slug for FortniteTools — enter in Item Shop → Enter Code. */
 export const SITE_CREATOR_CODE = 'TOOLS' as const
 
+/** Flip to `true` when Epic approves the TOOLS Support-A-Creator code. */
+export const SITE_CREATOR_CODE_LIVE = false
+
 export const EPIC_DISCLAIMER =
   'FortniteTools is an independent fan site. We are not affiliated with, endorsed by, sponsored by, or connected to Epic Games, Inc. Fortnite® is a trademark of Epic Games, Inc. All game assets and trademarks belong to their respective owners.'
 

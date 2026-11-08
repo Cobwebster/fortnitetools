@@ -5,7 +5,7 @@ import { FortniteIcon } from '@/components/fortnite-icon'
 import { CreatorCodeClient } from '@/components/CreatorCodeClient'
 import { CreatorCodeChip } from '@/components/creator-code-chip'
 import { CREATOR_CODE_FAQS } from '@/lib/creator-code'
-import { SITE_CREATOR_CODE } from '@/lib/site'
+import { SITE_CREATOR_CODE, SITE_CREATOR_CODE_LIVE } from '@/lib/site'
 
 const CODE_KINDS = [
   {
@@ -77,14 +77,15 @@ export default function CreatorCodePage() {
               <span className="text-foreground">Creator Code</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              Support-A-Creator · our code is {SITE_CREATOR_CODE}
+              Support-A-Creator · last reviewed 17 Aug 2026
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Creator Code</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Look up any Support-A-Creator slug — or use ours. Players also search “Fortnite code” for gift-card
-              PINs and island codes; this page is the overlay slug you type in the Item Shop.
+              Look up any Support-A-Creator slug. Players also search “Fortnite code” for gift-card PINs and island
+              codes; this page is the overlay slug you type in the Item Shop. It is not a coupon, not a V-Bucks PIN,
+              and not a Creative island.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/guides/how-to/how-to-redeem-fortnite-code" className="text-primary hover:underline">
@@ -103,42 +104,45 @@ export default function CreatorCodePage() {
         </section>
 
         <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 sm:px-6">
-          <section
-            aria-labelledby="our-code-heading"
-            className="relative overflow-hidden rounded-2xl border-2 border-primary/50 bg-linear-to-br from-primary/20 via-card to-card p-6 sm:p-8"
-          >
-            <div
-              className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-primary/20 blur-3xl"
-              aria-hidden="true"
-            />
-            <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="min-w-0">
-                <p className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
-                  Featured · FortniteTools
-                </p>
-                <h2
-                  id="our-code-heading"
-                  className="mt-3 font-display text-sm font-bold uppercase tracking-[0.2em] text-muted-foreground"
-                >
-                  Support this site
-                </h2>
-                <p className="mt-2 font-display text-5xl font-extrabold uppercase tracking-wider text-primary sm:text-6xl lg:text-7xl">
-                  {SITE_CREATOR_CODE}
-                </p>
-                <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
-                  Item Shop → Enter Code → paste <strong className="text-foreground">{SITE_CREATOR_CODE}</strong>.
-                  Price stays the same. A cut of eligible shop / Pass / Crew purchases keeps the map, guides, and
-                  tools free.
-                </p>
+          {SITE_CREATOR_CODE_LIVE ? (
+            <section
+              aria-labelledby="our-code-heading"
+              className="relative overflow-hidden rounded-2xl border-2 border-primary/50 bg-linear-to-br from-primary/20 via-card to-card p-6 sm:p-8"
+            >
+              <div
+                className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-primary/20 blur-3xl"
+                aria-hidden="true"
+              />
+              <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <div className="min-w-0">
+                  <p className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+                    Featured · FortniteTools
+                  </p>
+                  <h2
+                    id="our-code-heading"
+                    className="mt-3 font-display text-sm font-bold uppercase tracking-[0.2em] text-muted-foreground"
+                  >
+                    Support this site
+                  </h2>
+                  <p className="mt-2 font-display text-5xl font-extrabold uppercase tracking-wider text-primary sm:text-6xl lg:text-7xl">
+                    {SITE_CREATOR_CODE}
+                  </p>
+                  <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+                    Item Shop → Enter Code → paste{' '}
+                    <strong className="text-foreground">{SITE_CREATOR_CODE}</strong>. Price stays the same. A cut of
+                    eligible shop / Pass / Crew purchases keeps the map, guides, and tools free.
+                  </p>
+                </div>
+                <div className="shrink-0 space-y-3">
+                  <CreatorCodeChip variant="page" className="border-primary/50 bg-background/80" />
+                  <p className="text-center text-[11px] text-muted-foreground sm:text-left">
+                    Or look us up below — slug{' '}
+                    <span className="font-semibold text-foreground">{SITE_CREATOR_CODE}</span>
+                  </p>
+                </div>
               </div>
-              <div className="shrink-0 space-y-3">
-                <CreatorCodeChip variant="page" className="border-primary/50 bg-background/80" />
-                <p className="text-center text-[11px] text-muted-foreground sm:text-left">
-                  Or look us up below — slug <span className="font-semibold text-foreground">{SITE_CREATOR_CODE}</span>
-                </p>
-              </div>
-            </div>
-          </section>
+            </section>
+          ) : null}
 
           <section className="grid gap-3 sm:grid-cols-3">
             {CODE_KINDS.map((kind) => (
@@ -171,7 +175,9 @@ export default function CreatorCodePage() {
                 },
                 {
                   icon: '/images/icons/vbucks.png',
-                  text: `Item Shop → Enter Code. Paste ${SITE_CREATOR_CODE} (us) or any slug from the lookup / stream overlay. Confirm until the creator name shows.`,
+                  text: SITE_CREATOR_CODE_LIVE
+                    ? `Item Shop → Enter Code. Paste ${SITE_CREATOR_CODE} (us) or any slug from the lookup / stream overlay. Confirm until the creator name shows.`
+                    : 'Item Shop → Enter Code. Paste the slug from the lookup (or the stream overlay). Confirm until the creator name shows.',
                 },
                 {
                   icon: '/images/icons/battle_pass.png',

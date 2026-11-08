@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import { categories } from '@/lib/posts'
 import { BRAND_ICON } from '@/lib/site-icons'
-import { EPIC_DISCLAIMER, SITE_CREATOR_CODE } from '@/lib/site'
+import { EPIC_DISCLAIMER, SITE_CREATOR_CODE, SITE_CREATOR_CODE_LIVE } from '@/lib/site'
 import { CreatorCodeChip } from '@/components/creator-code-chip'
 import {
   defaultLocale,
@@ -38,7 +38,7 @@ export function Footer() {
   const t = useTranslations('footer')
   const locale = useLocale() as AppLocale
   const pathname = usePathname()
-  const supportKind = creatorSupportKind(pathname)
+  const supportKind = SITE_CREATOR_CODE_LIVE ? creatorSupportKind(pathname) : null
   const homeHref = localizeHref(locale, '/')
   const toolsHref = localizeHref(locale, '/tools')
   const guidesHref = localizeHref(locale, '/guides')
@@ -127,15 +127,19 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t('tagline')}</p>
-            <p className="mt-3 text-sm text-muted-foreground">
-              Creator code{' '}
-              <Link href="/creator-code" className="font-bold text-primary hover:underline">
-                {SITE_CREATOR_CODE}
-              </Link>
-            </p>
-            <div className="mt-2">
-              <CreatorCodeChip variant="nav" />
-            </div>
+            {SITE_CREATOR_CODE_LIVE ? (
+              <>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  Creator code{' '}
+                  <Link href="/creator-code" className="font-bold text-primary hover:underline">
+                    {SITE_CREATOR_CODE}
+                  </Link>
+                </p>
+                <div className="mt-2">
+                  <CreatorCodeChip variant="nav" />
+                </div>
+              </>
+            ) : null}
           </div>
 
           <div className="lg:col-span-2">

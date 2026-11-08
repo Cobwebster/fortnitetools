@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from '@/components/link'
-import { SITE_CREATOR_CODE } from '@/lib/site'
+import { SITE_CREATOR_CODE, SITE_CREATOR_CODE_LIVE } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 type Variant = 'strip' | 'nav' | 'page' | 'support'
@@ -38,6 +38,8 @@ export function CreatorCodeChip({
       // Clipboard can fail in locked-down embeds — leave label unchanged
     }
   }
+
+  if (!SITE_CREATOR_CODE_LIVE) return null
 
   if (variant === 'strip') {
     return (
