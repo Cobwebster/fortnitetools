@@ -153,14 +153,14 @@ Earlier 7 Nov window:
 - Weekly Gold Outfit: **7.5×**
 - Weekly Vehicle & Decal: **10×**
 
-Tonight **9–11 PM ET** (7 Nov):
+7 Nov window — **9–11 PM ET** (**02:00–04:00 UK on 8 Nov**):
 - Pirate Shop Access: **2.0×** (~1 : 68,750)
 - Weekly Gold Outfit: **10.0×**
 
 Status said future Hours may go higher and they will announce it.
 
 Canonical how-to: [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).  
-Also: [Power Hours / tonight’s window](/leaks/pirate-shop-power-hours) · [AFK ban](/leaks/pirate-shop-afk-squad-fill-ban)
+Also: [Power Hours — 7 Nov window](/leaks/pirate-shop-power-hours) · [AFK ban](/leaks/pirate-shop-afk-squad-fill-ban)
 
 **Shipped:** 7 November 2026 (Fortnite Status).
 `,
@@ -413,9 +413,9 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
   },
   {
     slug: 'pirate-shop-power-hours',
-    title: 'Pirate Shop Power Hours — 2× Access Tonight (9–11pm ET)',
+    title: 'Pirate Shop Power Hours — Confirmed 2× Access & 10× Gold Outfit Boost',
     excerpt:
-      'Confirmed: 7 Nov 9–11pm ET Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
+      'Confirmed past window: 7 Nov 2026, 9–11pm ET (02:00–04:00 UK on 8 Nov) with Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-04',
@@ -440,17 +440,17 @@ Weekend Treasure Hours previously boosted other Treasure Hunt prizes (on top of 
 - **Weekly Gold Outfit:** 7.5×
 - **Weekly Vehicle & Decal:** 10×
 
-## Tonight’s Pirate Shop window
-**7 Nov 2026, 9–11pm ET** (**02:00–04:00 GMT / UK on 8 Nov**)
+## Confirmed 7 Nov window (past)
+**7 Nov 2026, 9–11pm ET** (**02:00–04:00 UK on 8 Nov**)
 - **Pirate Shop Access:** **2.0×**
 - **Weekly Gold Outfit:** **10.0×**
 
 Full base table: [Pirate Shop odds](/leaks/pirate-shop-odds).  
 How-to guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
-We’ll keep this page updated for future Power Hours and multiplier confirmations.
+We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** until the window ends.
+**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** for future announced windows.
 `,
   },
   {
