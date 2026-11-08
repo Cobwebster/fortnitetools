@@ -74,8 +74,7 @@ export default function LeaksPage() {
               Fortnite Leaks
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Fresh: AFK squad fills for the Pirate Shop Token can get you matchmaking banned. Also Lil
-              Uzi Vert Stronghold / Lil’ SMG, gold swaps, shop rows, Power Hours, Chapter 8 finishers.
+              Fresh: Brutal Beachhead as Buggy’s POI is being watched; Solid Gold Lil Uzi Vert chest prize is now live.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link
