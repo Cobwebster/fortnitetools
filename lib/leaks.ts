@@ -59,6 +59,47 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'brutal-beachhead-buggy-poi',
+    title: 'Brutal Beachhead Returns as Buggy’s POI in Fortnite',
+    excerpt:
+      'According to leaks, Brutal Beachhead is coming back soon as Buggy’s named POI — a circus-striped ship and tent overhaul matching the One Piece collab. An exact enable date has not been given.',
+    category: 'season',
+    status: 'watching',
+    date: '2026-11-08',
+    readTime: 3,
+    featured: true,
+    image: '/images/guides/treasure-hunters.jpg',
+    tags: [
+      'brutal beachhead fortnite',
+      'buggy fortnite poi',
+      'buggy one piece fortnite',
+      'fortnite brutal beachhead leak',
+      'treasure hunters buggy',
+    ],
+    content: `
+## What was reported
+
+According to leaks on 8 November 2026, **Brutal Beachhead is returning soon as Buggy’s POI**.
+
+The leaked look is a circus-and-ship overhaul of the old beachhead: red-and-white striped tents, carnival bunting, and a huge tilted ship hull painted in matching circus stripes, with Buggy’s clown-skull Jolly Roger flying over the lot. It reads as Buggy the Clown’s Big Top rather than the military landing that used to sit there.
+
+## What this means
+
+Buggy is the next One Piece crossover beat after the Straw Hats. Epic’s Treasure Hunters shop calendar already pointed at a **Buggy** Item Shop night on **13 November** — that shop date is separate from when the named POI itself might flip. A captain POI usually becomes the place to find that week’s boss, loot, or quests, the same pattern as other Treasure Hunters captain spots (for example [Lil Uzi Vert’s Stronghold](/leaks/lil-uzi-vert-stronghold-update)).
+
+Map / season context: [interactive map](/fortnite-map) · [season hub](/season) · [One Piece set](/sets/one-piece)
+
+## What is not confirmed
+
+- An exact in-game enable date or time (the leak only said “soon”)
+- Whether Buggy is a boss you can fight there, what he drops, or if the rename is only cosmetic
+- Whether the map change lands with the 13 November shop row or on a different day
+- Loot tables, vaults, or quests tied to the location
+
+**Filed:** 8 November 2026. Status: **Watching**.
+`,
+  },
+  {
     slug: 'pirate-shop-afk-squad-fill-ban',
     title: 'AFK Squad Fill for Pirate Shop Token = Matchmaking Ban',
     excerpt:
@@ -153,14 +194,14 @@ Earlier 7 Nov window:
 - Weekly Gold Outfit: **7.5×**
 - Weekly Vehicle & Decal: **10×**
 
-Tonight **9–11 PM ET** (7 Nov):
+7 Nov window — **9–11 PM ET** (**02:00–04:00 UK on 8 Nov**):
 - Pirate Shop Access: **2.0×** (~1 : 68,750)
 - Weekly Gold Outfit: **10.0×**
 
 Status said future Hours may go higher and they will announce it.
 
 Canonical how-to: [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).  
-Also: [Power Hours / tonight’s window](/leaks/pirate-shop-power-hours) · [AFK ban](/leaks/pirate-shop-afk-squad-fill-ban)
+Also: [Power Hours — 7 Nov window](/leaks/pirate-shop-power-hours) · [AFK ban](/leaks/pirate-shop-afk-squad-fill-ban)
 
 **Shipped:** 7 November 2026 (Fortnite Status).
 `,
@@ -261,12 +302,13 @@ Launch-day Epic marketing already teased Lil Uzi as a later captain, but the **g
   },
   {
     slug: 'gold-lil-uzi-vert-sprite',
-    title: 'Gold Lil’ Uzi Vert Replaces Gold A$AP Rocky',
+    title: 'Gold Lil’ Uzi Vert Replaces Gold A$AP Rocky — Now Live',
     excerpt:
-      'One more day on Gold A$AP Rocky — then Gold Lil’ Uzi Vert + back bling take the gold chest prize. Pirate Shop Access stays in the pool.',
+      'Gold Lil’ Uzi Vert and the Diamond and Gold back bling replaced Gold A$AP Rocky in the Treasure Hunt chest prizes on 8 November 2026. Pirate Shop Access stays in the pool. A So Kawaii loading screen also joined the prize list.',
     category: 'cosmetics',
-    status: 'watching',
+    status: 'shipped',
     date: '2026-11-07',
+    confirmedDate: '2026-11-08',
     readTime: 3,
     featured: true,
     image: '/images/guides/sprites-collect.webp',
@@ -277,37 +319,31 @@ Launch-day Epic marketing already teased Lil Uzi as a later captain, but the **g
       'pirate shop token stays',
     ],
     content: `
-## The post (7 Nov)
+## Live swap (8 Nov)
 
-> You have **one more day** to find **Gold A$AP Rocky**
->
-> Tomorrow he will be replaced by **Gold Lil Uzi Vert** & his **back bling**, but the **Pirate Shop Token will stay**
+Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (around 13:59 UTC / 1:59pm UK) leaks said the replacement was minutes away, then that **Lil Uzi Vert had replaced A$AP Rocky** in the chest prizes.
 
-## What that means
+## What’s live now
 
-| Prize | Window |
-| --- | --- |
-| Gold A$AP Rocky (+ related gold drops) | Through ~7 Nov — last day to farm |
-| Gold Lil Uzi Vert + back bling | From the swap (tied to Lil Uzi week) |
-| Pirate Shop Access | **Stays** in the weekly Treasure Hunt pool |
-
-Solid Gold A$AP Rocky was already a rare chest prize week one. This is the **rotation**, not a new system.
+- Gold outfit: **Solid Gold Lil Uzi Vert** (diamonds-and-gold flavor)
+- Back bling: **Diamond and Gold**
+- A **So Kawaii** loading screen (pink / anime-style; flavor text credits artist Golden Wolf) also entered the prize pool around the same time
+- **Pirate Shop Access** / Token stays in the weekly Treasure Hunt pool
 
 ## Farm notes
 
 - Open **BR chests** — no fixed POI for gold outfits
-- Squads: reported that one teammate rolling the prize can grant the squad (same pattern as other Treasure Hunt prizes)
-- Pirate Shop how-to: [Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite)
-- Sprite catalog after the swap: [sprites](/sprites)
+- Squads are widely reported to share a Treasure Hunt prize
+- Guides and odds: [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite) · [sprites](/sprites) · [Pirate Shop odds](/leaks/pirate-shop-odds)
 
-**Filed:** 7 November 2026. Status: **Watching**.
+**Shipped:** 8 November 2026.
 `,
   },
   {
     slug: 'upcoming-item-shop-leaks',
     title: 'Upcoming Item Shop Leaks — Nemia, Ben 10, Zoro, Star Wars & More',
     excerpt:
-      'Shop-row dump: Nemia bundle, Ben 10 + brainrot returns, Tung Tung Tung Sahur, Zoro/Sanji/Chopper renders, Deadpool mashups, Bugatti, Samurai Star Wars and Honkai Star Rail on Nov 8.',
+      'Shop-row dump: Nemia bundle, Ben 10 + brainrot returns, Tung Tung Tung Sahur — and now Zoro/Sanji/Chopper are in the shop (Chopper 1,500 VB; bundle 3,200 VB). Other listed rows remain unconfirmed/upcoming.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-07',
@@ -334,8 +370,12 @@ Dataminer shop posts stacked a lot of rows in one night:
 - **ICON emotes** refresh
 - **Gothic Lookbook**
 
+**Now live (8 Nov)**
+- **Chopper** — **1,500 V-Bucks**
+- **Zoro, Sanji & Chopper** bundle — **3,200 V-Bucks**
+- Individual Zoro / Sanji solo prices were not listed in the same posts — check live tracker
+
 **Tomorrow**
-- **Zoro, Sanji & Chopper** (render releasing / shop)
 - **Deadpool** mashups
 - **Bugatti Centodieci**
 
@@ -347,7 +387,7 @@ Dataminer shop posts stacked a lot of rows in one night:
 
 Shop leaks shuffle. Treat the list as a **watch order**, then confirm on the live [Item Shop tracker](/tools/item-shop) after reset (**~00:00 UTC** / Epic’s 7 PM ET collab drops for some Treasure Hunters sets).
 
-Epic’s own Treasure Hunters shop calendar still owns the big collab nights (A$AP 5 Nov, Straw Hat pieces 7 Nov, **Lil Uzi Vert 12 Nov**, Buggy 13 Nov, Miku/Teto 14 Nov).
+  Epic’s own Treasure Hunters shop calendar still owns the big collab nights (A$AP 5 Nov, Straw Hat pieces 7 Nov, **Lil Uzi Vert 12 Nov**, Buggy 13 Nov, Miku/Teto 14 Nov).
 
 **Filed:** 7 November 2026.
 `,
@@ -413,9 +453,9 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
   },
   {
     slug: 'pirate-shop-power-hours',
-    title: 'Pirate Shop Power Hours — 2× Access Tonight (9–11pm ET)',
+    title: 'Pirate Shop Power Hours — Confirmed 2× Access & 10× Gold Outfit Boost',
     excerpt:
-      'Confirmed: 7 Nov 9–11pm ET Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
+      'Confirmed past window: 7 Nov 2026, 9–11pm ET (02:00–04:00 UK on 8 Nov) with Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-04',
@@ -440,17 +480,17 @@ Weekend Treasure Hours previously boosted other Treasure Hunt prizes (on top of 
 - **Weekly Gold Outfit:** 7.5×
 - **Weekly Vehicle & Decal:** 10×
 
-## Tonight’s Pirate Shop window
-**7 Nov 2026, 9–11pm ET** (**02:00–04:00 GMT / UK on 8 Nov**)
+## Confirmed 7 Nov window (past)
+**7 Nov 2026, 9–11pm ET** (**02:00–04:00 UK on 8 Nov**)
 - **Pirate Shop Access:** **2.0×**
 - **Weekly Gold Outfit:** **10.0×**
 
 Full base table: [Pirate Shop odds](/leaks/pirate-shop-odds).  
 How-to guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
-We’ll keep this page updated for future Power Hours and multiplier confirmations.
+We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** until the window ends.
+**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** for future announced windows.
 `,
   },
   {
@@ -651,7 +691,7 @@ Live catalog: [sprites](/sprites)
     slug: 'treasure-hours-fortune-sprites',
     title: 'Treasure Hours Fortune Sprite Boost',
     excerpt:
-      'Weekend Treasure Hours with boosted Fortune Sprites — from Power Hour chatter to live MOTD windows. Not the same as Pirate Shop Power Hours.',
+      'Next Treasure Hours are 14 November 2026. The leaked schedule lists 7–9pm UK on 14 Nov and 2–4am UK on 15 Nov, plus later windows on 21–22 November, at 7.5× Gold Outfit / 1.5× Pirate Shop Access / 10× Vehicle & Decal.',
     category: 'season',
     status: 'shipped',
     date: '2026-11-02',
@@ -660,13 +700,21 @@ Live catalog: [sprites](/sprites)
     image: '/images/guides/treasure-hunters.jpg',
     tags: ['fortnite treasure hours', 'fortune sprites', 'power hour'],
     content: `
-## Leak → live
+## What are Treasure Hours?
+Epic’s live weekend-style boost windows (Fortune Sprites plus Treasure Hunt prize multipliers). They are not the same as the rarer Pirate Shop Power Hours 2.0× Access windows — those live on [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
 
-Override-style Power Hour chatter became Epic **Treasure Hours** with **Fortune Sprite** boosts (plus Mastery Mondays).
+## What’s next (leaked)
+According to leaks on **8 November 2026**, the **next Treasure Hours are 14 November 2026**.
 
-Treasure Hours also multiply **Pirate Shop Access** and other treasures — official base rates + multipliers: [Pirate Shop odds](/leaks/pirate-shop-odds) · [guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+The leaked schedule listed these UK (GMT) windows, all with **Gold Outfit 7.5×**, **Pirate Shop Access 1.5×**, and **Vehicle & Decal 10×**:
+- Saturday 14 November 2026, 7:00–9:00pm UK (2:00–4:00pm ET)
+- Sunday 15 November 2026, 2:00–4:00am UK (Saturday 14 November, 9:00–11:00pm ET)
+- Saturday 21 November 2026, 7:00–9:00pm UK
+- Sunday 22 November 2026, 2:00–4:00am UK
 
-**Shipped:** early November 2026 — check [news](/news) / MOTD for this week’s clocks.
+Phrase the times as leaked/reported, not as an Epic blog announcement, unless you independently find Epic MOTD/Status text that matches.
+
+Links: [Pirate Shop odds](/leaks/pirate-shop-odds) · [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 `,
   },
 ]
