@@ -74,7 +74,7 @@ export default function LeaksPage() {
               Fortnite Leaks
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Fresh: Brutal Beachhead as Buggy’s POI is being watched; Solid Gold Lil Uzi Vert chest prize is now live.
+              Fresh: Chapter 8 dates point to Dec 5 and Mar 4; three Lil Uzi Vert Jam Tracks land Nov 12.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link

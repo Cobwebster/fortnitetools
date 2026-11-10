@@ -59,6 +59,104 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'fortnite-chapter-8-season-2-release-date',
+    title: 'Fortnite Chapter 8 Season 1 & Season 2 Release Dates (Dec 5 & Mar 4)',
+    excerpt:
+      'According to leaks on 10 Nov 2026, Chapter 8 Season 1 is scheduled for 5 December 2026 and Season 2 for 4 March 2027 — putting Season 1 at roughly 89 days. These come from Epic scheduling, not a public announcement, and could still shift.',
+    category: 'chapter',
+    status: 'watching',
+    date: '2026-11-10',
+    readTime: 3,
+    featured: true,
+    image: '/images/guides/hit-by-chaos.webp',
+    tags: [
+      'fortnite chapter 8 release date',
+      'fortnite chapter 8 season 1 release date',
+      'fortnite chapter 8 season 2 release date',
+      'when does chapter 8 start fortnite',
+      'fortnite c8s2',
+    ],
+    content: `
+## What was reported
+
+According to leaks on **10 November 2026**, **Chapter 8 Season 1** is scheduled for **5 December 2026** and **Chapter 8 Season 2** for **4 March 2027**. That puts Chapter 8 Season 1 at roughly **89 days**.
+
+These dates are described as coming from Epic's internal scheduling rather than a public blog or Status post and could still change.
+
+## What this means
+
+Timing-wise, this points to **Treasure Hunters** (Chapter 7) wrapping around early December with downtime leading into Chapter 8. Exact end times and maintenance windows were not included in the reports. Season context lives on the [season hub](/season); Chapter 8 gameplay shaping so far: [Chapter 8 finishing moves](/leaks/chapter-8-finishing-moves).
+
+## Date summary
+
+| Season | Date |
+| --- | --- |
+| Chapter 8 Season 1 | 5 December 2026 |
+| Chapter 8 Season 2 | 4 March 2027 |
+
+## What is not confirmed
+
+- Exact launch time or downtime window
+- Any live event or end-of-chapter event
+- Chapter 8 theme and battle pass contents
+- Whether these dates move
+
+**Filed:** 10 November 2026. Status: **Watching**.
+`,
+  },
+  {
+    slug: 'lil-uzi-vert-fortnite-jam-tracks',
+    title: 'Lil Uzi Vert Fortnite Jam Tracks — Poured, Say It Was & What You Saying (Nov 12)',
+    excerpt:
+      'According to leaks on 10 Nov 2026, three Lil Uzi Vert Jam Tracks — Poured, Say It Was, and What You Saying — are slated for 12 November 2026. That lines up with Epic’s calendar slot for the Lil Uzi Vert set (7 PM ET). Leaks also say another Lil Uzi Vert outfit is planned; details and date were not given.',
+    category: 'cosmetics',
+    status: 'watching',
+    date: '2026-11-10',
+    readTime: 3,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'lil uzi vert jam tracks fortnite',
+      'lil uzi vert fortnite festival',
+      'poured fortnite jam track',
+      'say it was fortnite',
+      'what you saying fortnite',
+      'new lil uzi vert fortnite skin',
+    ],
+    content: `
+## What was reported
+
+According to leaks on **10 November 2026**, three **Lil Uzi Vert Jam Tracks** are slated to arrive on **12 November 2026**:
+
+- **Poured**
+- **Say It Was**
+- **What You Saying**
+
+That timing matches Epic’s **Item Shop calendar** slot for the **Lil Uzi Vert** set on **12 November** (**7 PM ET** — midnight UK rolling into **13 November**), already noted on our [Pink Star Lil Uzi Vert outfit](/leaks/pink-star-lil-uzi-vert-outfit) page.
+
+## Jam Tracks 101
+
+Jam Tracks are playable songs in **Fortnite Festival** and can also be equipped as **lobby music** or used in other supported modes. Pricing and bundles vary by track and were not part of the reports referenced here.
+
+## Also noted
+
+Leaks the same day said **another Lil Uzi Vert outfit** is planned beyond the current set. **Name, look, price, and release date were not provided**, so treat it as a heads-up only.
+
+## Links
+
+- [Pink Star Lil Uzi Vert outfit](/leaks/pink-star-lil-uzi-vert-outfit)
+- [Lil Uzi Vert Stronghold update](/leaks/lil-uzi-vert-stronghold-update)
+- Live tracker: [Item Shop](/tools/item-shop)
+
+## What is not confirmed
+
+- V-Bucks prices for the Jam Tracks
+- Whether the tracks ship bundled or individually
+- The second outfit’s name, look, price, or date
+
+**Filed:** 10 November 2026. Status: **Watching**.
+`,
+  },
+  {
     slug: 'brutal-beachhead-buggy-poi',
     title: 'Brutal Beachhead Returns as Buggy’s POI in Fortnite',
     excerpt:
@@ -552,7 +650,9 @@ Epic’s shop calendar puts the **Lil Uzi Vert** set on **12 November, 7 PM ET**
 | --- | --- |
 | 1 Nov | Outfit string in v43.00 files |
 | 8 Nov | Stronghold / Lil’ SMG / Sprite week ([update post](/leaks/lil-uzi-vert-stronghold-update)) |
+| 10 Nov | Leaks said another Lil Uzi Vert outfit is planned (details unknown) |
 | 12 Nov | Item Shop set (Epic calendar) |
+| 12 Nov | Jam Tracks "Poured", "Say It Was", "What You Saying" — see [Jam Tracks page](/leaks/lil-uzi-vert-fortnite-jam-tracks) |
 
 Track live rows: [Item Shop](/tools/item-shop) · [new cosmetics](/new-cosmetics)
 
