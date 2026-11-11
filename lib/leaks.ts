@@ -59,6 +59,67 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'kasane-teto-fortnite-music-pass-friendship-villa',
+    title:
+      'Kasane Teto in Fortnite — TWINDRILL DIVA Music Pass (Nov 12) & Friendship Villa (Nov 15)',
+    excerpt:
+      'Kasane Teto headlines the TWINDRILL DIVA Music Mini-Pass on 12 November 2026 (1,000 V-Bucks, included with Fortnite Crew), then she and Cap’n Hatsune Miku take over a new Crossbones Isle POI, Friendship Villa, on 15 November.',
+    category: 'cosmetics',
+    status: 'watching',
+    date: '2026-11-11',
+    readTime: 4,
+    featured: true,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'kasane teto fortnite',
+      'kasane teto fortnite release date',
+      'twindrill diva music pass',
+      'fortnite music pass kasane teto',
+      'friendship villa fortnite',
+      'kasane teto fortnite skin',
+      'birdbrain fortnite jam track',
+    ],
+    content: `
+## What was reported
+
+Leaks on **11 November 2026** showed the full **Kasane Teto** set — outfit, **Pearto** Back Bling, and a **music‑reactive edit style**. That style sits as the final tier of the upcoming Music Pass. **Epic has since announced** the pass officially as **TWINDRILL DIVA**.
+
+**Epic**: the **TWINDRILL DIVA Music Mini‑Pass** starts **12 November 2026**, costs **1,000 V‑Bucks** (or is **included with an active Fortnite Crew** subscription), and **buying it unlocks the Kasane Teto Outfit immediately**.
+
+Pass rewards called out by Epic include:
+- **Baguette Bonker** Pickaxe
+- **Pearto** Back Bling
+- **Hue Futura** Instrument
+- **Miku & Teto Slippers** Kicks
+- Final‑tier: **Kasane Teto’s music‑reactive style**
+
+Jam Tracks in the pass:
+- "**BIRDBRAIN**" (Jamie Paige, OK Glass feat. Kasane Teto)
+- "**Shut Up and Dance**" (Walk the Moon)
+- "**Chronicles of Destiny**" (The Home of Happy, James Corbin)
+- "**Sa‑Sen!**" (MONT, Risa, Musashi)
+
+In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **Crossbones Isle**. Players can find **Kasane Teto** and **Cap’n Hatsune Miku** at a new POI named **Friendship Villa** (Treasure Hunters week 3).
+
+## What this means
+
+- The Music Pass hits right alongside the season’s collab cadence. For the same 12 Nov reset, see the [Lil Uzi Vert Jam Tracks](/leaks/lil-uzi-vert-fortnite-jam-tracks).
+- Friendship Villa should show up on Crossbones Isle map pins once it flips — keep an eye on the [interactive map](/fortnite-map) and the [season hub](/season) for the enable. Captain week context lives on [Captain’s Days](/leaks/captain-days-content-stack).
+
+## What is not confirmed
+
+- Exact unlock time in UK timezones
+- What Teto or Miku drop at Friendship Villa, or whether there are quests/weapons there
+- Whether separate Item Shop Teto cosmetics appear
+
+## Sources
+
+- Epic Games: Kasane Teto headlines the next Fortnite Music Pass — https://www.fortnite.com/news/kasane-teto-headlines-the-next-fortnite-music-pass
+
+**Filed:** 11 November 2026. Status: **Watching**.
+`,
+  },
+  {
     slug: 'fortnite-chapter-8-season-2-release-date',
     title: 'Fortnite Chapter 8 Season 1 & Season 2 Release Dates (Dec 5 & Mar 4)',
     excerpt:
@@ -108,7 +169,7 @@ Timing-wise, this points to **Treasure Hunters** (Chapter 7) wrapping around ear
     slug: 'lil-uzi-vert-fortnite-jam-tracks',
     title: 'Lil Uzi Vert Fortnite Jam Tracks — Poured, Say It Was & What You Saying (Nov 12)',
     excerpt:
-      'According to leaks on 10 Nov 2026, three Lil Uzi Vert Jam Tracks — Poured, Say It Was, and What You Saying — are slated for 12 November 2026. That lines up with Epic’s calendar slot for the Lil Uzi Vert set (7 PM ET). Leaks also say another Lil Uzi Vert outfit is planned; details and date were not given.',
+      'According to leaks on 10 Nov 2026, three Lil Uzi Vert Jam Tracks — Poured, Say It Was, and What You Saying — are slated for 12 November 2026. On 11 Nov, leaks also showed a new Lil Uzi Vert outfit, and the leaked shop schedule lists Lil Uzi Vert Icon Series outfits for 12 November 2026. Name/price still unannounced.',
     category: 'cosmetics',
     status: 'watching',
     date: '2026-11-10',
@@ -137,9 +198,9 @@ That timing matches Epic’s **Item Shop calendar** slot for the **Lil Uzi Vert*
 
 Jam Tracks are playable songs in **Fortnite Festival** and can also be equipped as **lobby music** or used in other supported modes. Pricing and bundles vary by track and were not part of the reports referenced here.
 
-## Also noted
+## Also noted (11 Nov update)
 
-Leaks the same day said **another Lil Uzi Vert outfit** is planned beyond the current set. **Name, look, price, and release date were not provided**, so treat it as a heads-up only.
+Leaks on **11 November 2026** showed a **new Lil Uzi Vert outfit** in the works, and the **leaked shop schedule lists Lil Uzi Vert Icon Series outfits for 12 November 2026** (same day as these Jam Tracks). **Name and V‑Bucks price remain unannounced**.
 
 ## Links
 
@@ -439,9 +500,10 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   },
   {
     slug: 'upcoming-item-shop-leaks',
-    title: 'Upcoming Item Shop Leaks — Nemia, Ben 10, Zoro, Star Wars & More',
+    title:
+      'Upcoming Item Shop Leaks — Teto Music Pass, Lil Uzi, Buggy, VW Golf GTI, Beach Bod Batman',
     excerpt:
-      'Shop-row dump: Nemia bundle, Ben 10 + brainrot returns, Tung Tung Tung Sahur — and now Zoro/Sanji/Chopper are in the shop (Chopper 1,500 VB; bundle 3,200 VB). Other listed rows remain unconfirmed/upcoming.',
+      'New rows added for 11 Nov: Kasane Teto Music Pass items and Lil Uzi Vert outfits (12 Nov), Buggy + Volkswagen Golf II GTI (13 Nov), Beach Bod Batman (15 Nov), and The Odyssey / High Stakes Summer / Golden Tactical Pack (16 Nov). Leaked/unconfirmed — times and prices unknown.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-07',
@@ -456,6 +518,15 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'honkai star rail fortnite',
     ],
     content: `
+## Upcoming shop dates (leaked 11 Nov)
+
+Leaked/unconfirmed shop schedule — **times and prices unknown**:
+
+- **12 November 2026:** **Kasane Teto** Music Pass items (see [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)); **Lil Uzi Vert** Icon Series outfits
+- **13 November 2026:** **Buggy** (One Piece) — POI context: [Buggy POI](/leaks/brutal-beachhead-buggy-poi); **Volkswagen Golf II GTI** (car)
+- **15 November 2026:** **Beach Bod Batman**
+- **16 November 2026:** **The Odyssey**; **High Stakes Summer**; **Golden Tactical Pack**
+
 ## Tonight / tomorrow rows (7 Nov dump)
 
 Dataminer shop posts stacked a lot of rows in one night:

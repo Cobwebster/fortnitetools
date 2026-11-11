@@ -74,7 +74,7 @@ export default function LeaksPage() {
               Fortnite Leaks
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Fresh: Chapter 8 dates point to Dec 5 and Mar 4; three Lil Uzi Vert Jam Tracks land Nov 12.
+              Fresh: Kasane Teto’s Music Pass lands Nov 12 with Friendship Villa on Nov 15; leaked shop dates through Nov 16.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link
