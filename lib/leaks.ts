@@ -59,14 +59,225 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
-    slug: 'kasane-teto-fortnite-music-pass-friendship-villa',
-    title:
-      'Kasane Teto in Fortnite — TWINDRILL DIVA Music Pass (Nov 12) & Friendship Villa (Nov 15)',
+    slug: 'scott-pilgrim-fortnite-collab-leak',
+    title: 'Scott Pilgrim x Fortnite? Scott & Ramona Skins Leak (LEGO styles)',
     excerpt:
-      'Kasane Teto headlines the TWINDRILL DIVA Music Mini-Pass on 12 November 2026 (1,000 V-Bucks, included with Fortnite Crew), then she and Cap’n Hatsune Miku take over a new Crossbones Isle POI, Friendship Villa, on 15 November.',
+      '12 Nov files reportedly add two comic/anime‑shaded skins with LEGO styles: a bass‑playing male believed to be Scott Pilgrim and a goggles/hammer‑themed female believed to be Ramona Flowers — plus an emote and 3 pickaxes. Not announced by Epic.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-12',
+    readTime: 5,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'scott pilgrim fortnite',
+      'ramona flowers fortnite',
+      'fortnite scott pilgrim skins',
+      'fortnite lego style collab',
+      'power of love sword fortnite emote',
+    ],
+    content: `
+## What was reportedly found (12 Nov files)
+
+- Hidden **male skin** thought to be **Scott Pilgrim**
+  - **Custom lobby pose** and a **LEGO** style
+  - **Bass guitar** cosmetic (Scott plays bass)
+  - **Comic/anime‑style shading**
+  - An **emote** that uses a **sword prop** with **hearts** floating off it (echoing the “Power of Love” sword), with **Love**, **Energy**, and **Hilt** effects
+  - A **back bling** with a matching **hilt effect**
+- Hidden **female skin** thought to be **Ramona Flowers**
+  - **Custom lobby pose** and **LEGO** style
+  - **Goggles Off** style, plus **Blue** and **Teal** styles
+  - Comes with **drums**, a **back bling**, and **two pickaxes**; the second pickaxe shows **star** and **speed‑line** effects (fans think this nods to her giant hammer)
+
+## Set overview
+
+- Cosmetics listed across the set: **2 back blings, 3 pickaxes, 1 emote**
+- **Release date and price are unknown**. This has not been announced by Epic.
+
+## Confidence & caveats
+
+These are **unconfirmed** collaboration reads based on file labels and effects. Names, looks, and pricing could change before release — or be cut.
+
+Related trackers: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · Season beat cadence: [Captain’s Days stack](/leaks/captain-days-content-stack)
+
+**Filed:** 12 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'puss-in-boots-fortnite-collab-leak',
+    title: 'Puss in Boots Fortnite Collab Leak — Sidekick Voice Lines, Wolf Warrior Skin',
+    excerpt:
+      '12 Nov files reportedly add a two‑legged furry Sidekick (feathered hat, Sword & Hat Off styles) with its own emote, voice lines in 12 languages, and Kicks — plus a hooded wolf warrior skin (possibly Death), LEGO style, glowing head/body effects, custom head skeleton. Not announced.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-12',
+    readTime: 5,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'puss in boots fortnite',
+      'death wolf fortnite',
+      'fortnite sidekick leak',
+      'fortnite voice lines leak',
+      'pirate themed shop tiles',
+    ],
+    content: `
+## What was reportedly found (12 Nov files)
+
+**Sidekick (likely Puss)**
+- **Furry, two‑legged Sidekick** with **feather** and **beard** materials
+- **Sword** and **Hat Off** styles
+- Its **own emote**
+- **Voice lines in 12 languages** (happy, angry, etc.)
+- Matching **Kicks**
+
+**Male skin (fans think “Death,” the wolf)**
+- **Custom lobby pose**
+- **Fur** and **tail**, **Hood** style
+- **LEGO** style
+- **Custom non‑human head skeleton**
+- **Glowing head** and **body** effects
+- Matching **back bling** and **pickaxe** with custom effects
+- **Traversal emote** with a **prop**, **spin** effects, and **music** (special version when used with the skin)
+
+## Bundle & shop
+
+- Files suggest the **Sidekick and the skin are bundled**, with **pirate‑themed shop tiles**
+- **Release date/price unknown**. Not announced by Epic.
+
+Links for context: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · Season cadence: [Captain’s Days](/leaks/captain-days-content-stack)
+
+**Filed:** 12 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'doki-doki-literature-club-fortnite-leak',
+    title: 'Doki Doki Literature Club x Fortnite? 4 Hidden Anime Skins Leaked',
+    excerpt:
+      '12 Nov update reportedly hides 4 cel‑shaded anime female skins, each with a custom lobby animation; at least 2 with cloth physics and 1 with special hair physics. Sold as a 4‑pack bundle and separately. Fans think DDLC — NOTHING confirmed.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-12',
+    readTime: 4,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'doki doki literature club fortnite',
+      'ddlc fortnite',
+      'anime skins fortnite leak',
+      'cel shaded fortnite skins',
+      'fortnite four anime skins',
+    ],
+    content: `
+## What was reportedly found (12 Nov files)
+
+- **4 hidden anime / cel‑shaded female skins**
+- Each has a **custom lobby animation**
+- **At least 2** show **cloth physics** and **1** shows **special hair physics**
+- Sell‑through noted as **one bundle of all 4**, plus **individual** purchase options
+- **No other cosmetics** were referenced in the same notes
+
+## Is this DDLC?
+
+Fans immediately linked "four anime girls" to **Doki Doki Literature Club** (**Sayori, Natsuki, Yuri, Monika**), but there is **no confirmation** in names, voice, or marketing — treat this as **speculation only** until Epic announces it.
+
+**Release date unknown.** Keep an eye on [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+
+**Filed:** 12 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'fortnite-winterfest-2026-dates',
+    title: 'Fortnite Winterfest 2026 Dates Leak (Dec 17–Jan 7) + Seasonal Locker Filter',
+    excerpt:
+      'According to leaks, Winterfest 2026 runs 17 Dec 2026 to 7 Jan 2027. Files also reference a “Seasonal Locker Filter” with winterfest/christmas tags. Not announced; usual cabin/presents are not confirmed.',
+    category: 'season',
+    status: 'active',
+    date: '2026-11-12',
+    readTime: 4,
+    image: '/images/guides/treasure-hunters-teaser.jpg',
+    tags: [
+      'fortnite winterfest 2026 dates',
+      'winterfest start date',
+      'seasonal locker filter',
+      'fortnite christmas event 2026',
+      'fortnite winter event dates',
+    ],
+    content: `
+## Dates (leaked)
+
+Reports say **Winterfest 2026** runs **17 December 2026 → 7 January 2027**. This window would fall **inside Chapter 8 Season 1** (which is slated to start **5 December 2026** per the [Chapter 8 dates page](/leaks/fortnite-chapter-8-season-2-release-date)).
+
+## New feature reference
+
+Files also reference a **“Seasonal Locker Filter”** tagged **winterfest / christmas / winter**. Its exact behavior is **unknown**; our best read is a **locker filter grouping seasonal cosmetics** (guess, not confirmed).
+
+## Not confirmed
+
+- Epic has **not** announced these dates
+- The traditional **cabin / daily presents** are **not confirmed** for 2026
+
+Season context: [Season hub](/season) · [Captain’s Days cadence](/leaks/captain-days-content-stack)
+
+**Filed:** 12 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'fortnite-pirate-chest-prizes-week-3-4',
+    title: 'Pirate Chest Prizes Week 3–4 — Gold Miku & Gold Teto, Corvette, Urus',
+    excerpt:
+      'Leaked prize pools: Week 3 adds Solid Gold Hatsune Miku, Miku’s Takarabako, PPPP Jam Track, May Fortune Find You loading screen, Gold Corvette ZR1; Week 4 adds Solid Gold Kasane Teto, Rogue Wave & Tidewalker back bling, Sea Shanty, Oscar’s Wraps, Gold Lamborghini Urus SE.',
     category: 'cosmetics',
     status: 'watching',
+    date: '2026-11-12',
+    readTime: 4,
+    image: '/images/guides/pirate-shop-access.jpg',
+    tags: [
+      'fortnite pirate chest prizes week 3',
+      'fortnite pirate chest prizes week 4',
+      'solid gold hatsune miku',
+      'solid gold kasane teto',
+      'pirate shop token effects',
+    ],
+    content: `
+## Leaked prize pools
+
+**Week 3**
+- **Solid Gold Hatsune Miku** outfit
+- **Miku’s Takarabako** Back Bling
+- **"PPPP"** Jam Track
+- **"May Fortune Find You"** loading screen
+- **Gold Chevrolet Corvette ZR1**
+
+**Week 4**
+- **Solid Gold Kasane Teto** outfit
+- **Rogue Wave** and **Tidewalker** Back Bling
+- **"Sea Shanty"** Jam Track
+- **"Oscar’s Wraps"** loading screen
+- **Gold Lamborghini Urus SE**
+
+## Visual effects update (12 Nov)
+
+In‑game change noted on **12 Nov**: **chest prize drop effects now differ** — a **Pirate Shop Token** prize keeps the **gold** effect, while the **weekly skin prize** now shows a **silver** effect.
+
+## Dates and links
+
+- Exact week start dates were **not** given
+- Context: Teto/Miku weekend at Friendship Villa — see [Kasane Teto Music Pass & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
+- Previous swap: [Gold Lil’ Uzi Vert Jr.](/leaks/gold-lil-uzi-vert-sprite)
+- Odds: [Pirate Shop odds](/leaks/pirate-shop-odds)
+
+**Filed:** 12 November 2026. Status: **Watching**.
+`,
+  },
+  {
+    slug: 'kasane-teto-fortnite-music-pass-friendship-villa',
+    title:
+      'Kasane Teto in Fortnite — TWINDRILL DIVA Music Pass Live (Nov 12) & Friendship Villa (Nov 15)',
+    excerpt:
+      'Kasane Teto’s TWINDRILL DIVA Music Mini‑Pass is live from 12 November 2026 (1,000 V‑Bucks or included with Fortnite Crew) and runs until 20 January 2027. On 15 November, Teto and Cap’n Hatsune Miku arrive at Friendship Villa on Crossbones Isle.',
+    category: 'cosmetics',
+    status: 'shipped',
     date: '2026-11-11',
+    confirmedDate: '2026-11-12',
     readTime: 4,
     featured: true,
     image: '/images/guides/stars-of-the-show.webp',
@@ -84,7 +295,10 @@ export const leaks: LeakPost[] = [
 
 Leaks on **11 November 2026** showed the full **Kasane Teto** set — outfit, **Pearto** Back Bling, and a **music‑reactive edit style**. That style sits as the final tier of the upcoming Music Pass. **Epic has since announced** the pass officially as **TWINDRILL DIVA**.
 
-**Epic**: the **TWINDRILL DIVA Music Mini‑Pass** starts **12 November 2026**, costs **1,000 V‑Bucks** (or is **included with an active Fortnite Crew** subscription), and **buying it unlocks the Kasane Teto Outfit immediately**.
+**Now live (12 Nov)** — **TWINDRILL DIVA Music Mini‑Pass**
+- Starts **12 November 2026**, ends **20 January 2027**
+- Costs **1,000 V‑Bucks** (or is **included with an active Fortnite Crew** subscription)
+- **Buying it unlocks the Kasane Teto Outfit immediately**
 
 Pass rewards called out by Epic include:
 - **Baguette Bonker** Pickaxe
@@ -101,6 +315,14 @@ Jam Tracks in the pass:
 
 In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **Crossbones Isle**. Players can find **Kasane Teto** and **Cap’n Hatsune Miku** at a new POI named **Friendship Villa** (Treasure Hunters week 3).
 
+## What the 12 Nov update also added
+
+- **Cap’n Hatsune Miku** bundle references: **emote** (likely “Mesmerizer,” with a **special version when used with her**), **back bling**, **pickaxe**, and **mic**
+- **Teto/Miku NPC interactions** were added
+- **Leekcapper** (Miku’s item) and the **Flapjack Rifle** join the loot pool with this weekend’s enable
+- A **third Map Fragment** lands the same weekend
+- **Gold Teto** and **Gold Miku** come via chest prizes — see: [Chest prizes week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4)
+
 ## What this means
 
 - The Music Pass hits right alongside the season’s collab cadence. For the same 12 Nov reset, see the [Lil Uzi Vert Jam Tracks](/leaks/lil-uzi-vert-fortnite-jam-tracks).
@@ -116,7 +338,7 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
 
 - Epic Games: Kasane Teto headlines the next Fortnite Music Pass — https://www.fortnite.com/news/kasane-teto-headlines-the-next-fortnite-music-pass
 
-**Filed:** 11 November 2026. Status: **Watching**.
+**Filed:** 11 November 2026. **Updated / confirmed:** 12 November 2026. Status: **Shipped** (watching for the 15 Nov POI flip).
 `,
   },
   {
@@ -167,7 +389,7 @@ Timing-wise, this points to **Treasure Hunters** (Chapter 7) wrapping around ear
   },
   {
     slug: 'lil-uzi-vert-fortnite-jam-tracks',
-    title: 'Lil Uzi Vert Fortnite Jam Tracks — Poured, Say It Was & What You Saying (Nov 12)',
+    title: 'Lil Uzi Vert Fortnite Jam Tracks — Poured, Say It Was & What You Sayin’ (Nov 12)',
     excerpt:
       'According to leaks on 10 Nov 2026, three Lil Uzi Vert Jam Tracks — Poured, Say It Was, and What You Saying — are slated for 12 November 2026. On 11 Nov, leaks also showed a new Lil Uzi Vert outfit, and the leaked shop schedule lists Lil Uzi Vert Icon Series outfits for 12 November 2026. Name/price still unannounced.',
     category: 'cosmetics',
@@ -201,6 +423,17 @@ Jam Tracks are playable songs in **Fortnite Festival** and can also be equipped 
 ## Also noted (11 Nov update)
 
 Leaks on **11 November 2026** showed a **new Lil Uzi Vert outfit** in the works, and the **leaked shop schedule lists Lil Uzi Vert Icon Series outfits for 12 November 2026** (same day as these Jam Tracks). **Name and V‑Bucks price remain unannounced**.
+
+## Also added (12 Nov update)
+
+Update files on **12 November 2026** include a fresh **Lil Uzi Vert set** beyond the tracks:
+- **2 outfits** (one **Reactive**)
+- **2 emotes** — "**XO Tour Lif3**" and "**What You Sayin’**"
+- **2 back blings**
+- **Pickaxe**
+- **Guitar**
+- **Wrap**
+- **Loading screen**
 
 ## Links
 
