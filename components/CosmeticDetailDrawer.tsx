@@ -94,7 +94,6 @@ export function CosmeticDetailDrawer({ cosmeticId, onClose, onSelectId, wished, 
     let cancelled = false
     setLoading(true)
     setError(null)
-    setShowRaw(false)
     setVariantPreview(null)
 
     fetch(`/api/fortnite/cosmetics/${encodeURIComponent(cosmeticId)}`)
