@@ -59,6 +59,114 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'ishowspeed-pirate-speedy-fortnite-skin',
+    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Bundle, Shop Time (Leaked)',
+    excerpt:
+      'According to leaks on 13 Nov 2026, a One Piece–themed IShowSpeed outfit called Pirate Speedy is headed to the Item Shop with a back bling, pickaxe, and emote. The leaked shop schedule points to Friday 13 Nov at 7pm ET — midnight UK on Saturday 14 Nov. Prices are not confirmed.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-13',
+    readTime: 4,
+    featured: true,
+    image: '/images/guides/treasure-hunters.jpg',
+    tags: [
+      'ishowspeed fortnite skin',
+      'pirate speedy fortnite',
+      'ishowspeed one piece skin release date',
+      'ishowspeed fortnite bundle',
+      'ishowspeed item shop time',
+    ],
+    content: `
+## What leaked on 13 Nov
+
+A new IShowSpeed collab skin named **Pirate Speedy** is circulating in today’s update coverage as part of the Treasure Hunters / One Piece mini‑season. A showcase clip and the matching emote reportedly appeared alongside shop metadata.
+
+## Bundle contents (leaked)
+
+- **1 Outfit** — Pirate Speedy
+- **1 Back Bling**
+- **1 Pickaxe**
+- **1 Emote**
+
+## When does it hit the Item Shop?
+
+Leaked shop timing points to the standard collab reset: **Friday 13 November 2026, 7:00 PM ET** — which is **Saturday 14 November, 12:00 AM (midnight) UK**. Regional times:
+
+| Region | Local time |
+| --- | --- |
+| PT | Fri 13 Nov, 4:00 PM PT |
+| ET | Fri 13 Nov, 7:00 PM ET |
+| GMT | Sat 14 Nov, 12:00 AM GMT |
+| CET | Sat 14 Nov, 1:00 AM CET |
+
+Track the flip on the [Item Shop tracker](/tools/item-shop) and our rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+
+## Price expectations (estimates only)
+
+Community estimates float around **1,500 V‑Bucks** for the outfit and roughly **2,400–2,600 V‑Bucks** for the full bundle. These are **not confirmed** — wait for the live shop tile.
+
+## Not the old Icon Series skin
+
+This is a **separate** collab outfit from Speed’s **original Icon Series skin** (released December 2025) and is unrelated to **Monkey D. Luffy**.
+
+## Pirate Shop Access token note
+
+Players who already activated a **Pirate Shop Access** token are widely reporting that they can **claim Item Shop cosmetics** with it (real‑money offers and gifting are excluded). Treat that as anecdotal until you see the **Claim** button on your account. New to the system? See [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+
+## What is not confirmed
+
+- Final **prices** for the outfit or bundle
+- How **long** Pirate Speedy will stay in the shop rotation
+
+**Filed:** 13 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'fortnite-overwatch-wave-2-kiriko-widowmaker',
+    title: 'Fortnite x Overwatch Wave 2 — Kiriko in Files; Second Hero Teased',
+    excerpt:
+      'Encrypted Overwatch x Fortnite cosmetics were added in the 13 Nov update. According to leaks, Kiriko is in the files with glowing VFX, physics clothing, a LEGO style, lobby animation, emote with a special Kiriko version, back bling and pickaxe. A second female hero is also present and most signs point to Widowmaker — still speculation. No date or prices.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-13',
+    readTime: 4,
+    featured: true,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'kiriko fortnite',
+      'fortnite overwatch collab wave 2',
+      'widowmaker fortnite skin',
+      'overwatch wave 2 fortnite',
+      'kiriko fortnite release date',
+    ],
+    content: `
+## What today’s update added (13 Nov)
+
+Update files reference a **second Overwatch x Fortnite set**, still encrypted. **Wave 1** (D.Va, Mercy, Tracer, Genji) launched on **14 May 2026**; this looks like **Wave 2**.
+
+## Kiriko — confirmed in the files
+
+- **Outfit** with **glowing** effects on body and head
+- **Flowing clothing** with **cloth physics**
+- **LEGO** style
+- **Custom lobby animation**
+- **Emote** that uses a **prop** and has a **special version when used as Kiriko**
+- **Glowing back bling**
+- **Glowing pickaxe**
+- New **Kicks** — fox/kitsune‑themed footwear that leaves **footprints** and a small **trail**
+
+## Who is the second hero? (speculation)
+
+The same encrypted set includes a **second female Overwatch hero**. The trait list (glowing body/headpiece, a **long head attachment** with physics like a ponytail, an **animated pickaxe** with a custom ready sound and trail that may **double as a back bling**, an **animated back bling**, lobby animation, spray, and wrap) **most closely matches Widowmaker**. **Juno** is the other community guess. Treat the identity as **speculation** until decrypted or announced.
+
+## Release date and pricing
+
+There is **no confirmed date** or price info. Encrypted collabs typically appear **within days to a couple of weeks** of their file drop, but timing can slip. Keep an eye on the [Item Shop tracker](/tools/item-shop).
+
+**Filed:** 13 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
     slug: 'scott-pilgrim-fortnite-collab-leak',
     title: 'Scott Pilgrim x Fortnite? Scott & Ramona Skins Leak (LEGO styles)',
     excerpt:
@@ -797,9 +905,9 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Item Shop Leaks — Teto Music Pass, Lil Uzi, Buggy, VW Golf GTI, Beach Bod Batman',
+      'Upcoming Item Shop Leaks — Pirate Speedy, KATSEYE “Pinky Up”, Jason Returns, Lil Uzi Bundle',
     excerpt:
-      'New rows added for 11 Nov: Kasane Teto Music Pass items and Lil Uzi Vert outfits (12 Nov), Buggy + Volkswagen Golf II GTI (13 Nov), Beach Bod Batman (15 Nov), and The Odyssey / High Stakes Summer / Golden Tactical Pack (16 Nov). Leaked/unconfirmed — times and prices unknown.',
+      '13 Nov refresh: KATSEYE “Pinky Up” ICON emote, a new Lil Uzi Vert outfit and full bundle are live, and Jason Voorhees returned. Next up (leaked): Pirate Speedy (IShowSpeed) expected at midnight UK on 14 Nov. Also in files today: an encrypted Overwatch Wave 2 — see Kiriko/Widowmaker. Older rows remain below.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-07',
@@ -808,12 +916,24 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
     image: '/images/guides/stars-of-the-show.webp',
     tags: [
       'fortnite item shop leaks',
+      'ishowspeed pirate speedy',
+      'katseye pinky up emote',
+      'jason voorhees fortnite',
       'nemia fortnite',
       'zoro sanji chopper shop',
       'fortnite star wars leak',
       'honkai star rail fortnite',
     ],
     content: `
+## 13 November 2026 — Shop reset (12:00am UK / 7:00pm ET 12 Nov)
+
+- **KATSEYE “Pinky Up”** **ICON Series emote** dropped in tonight’s reset (KATSEYE x Fortnite)
+- **Lil Uzi Vert** — a **new outfit** and a **full bundle** are in the shop (see [Lil Uzi Vert Jam Tracks](/leaks/lil-uzi-vert-fortnite-jam-tracks) for the wider set)
+- **Jason Voorhees** returned
+- **Upcoming (no date):** new **Hope**, **Kitsune**, and **Whale** Kicks
+- **Expected next:** **Pirate Speedy (IShowSpeed)** — targeted for **12:00am UK, Saturday 14 Nov** (leaked schedule; see [Pirate Speedy page](/leaks/ishowspeed-pirate-speedy-fortnite-skin))
+- Also in today’s files: an **encrypted Overwatch Wave 2** set — details on [Kiriko / Widowmaker wave 2](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
+
 ## Upcoming shop dates (leaked 11 Nov)
 
 Leaked/unconfirmed shop schedule — **times and prices unknown**:
@@ -823,30 +943,9 @@ Leaked/unconfirmed shop schedule — **times and prices unknown**:
 - **15 November 2026:** **Beach Bod Batman**
 - **16 November 2026:** **The Odyssey**; **High Stakes Summer**; **Golden Tactical Pack**
 
-## Tonight / tomorrow rows (7 Nov dump)
+## Earlier (7 Nov dump)
 
-Dataminer shop posts stacked a lot of rows in one night:
-
-**Tonight**
-- New **Nemia** skin / full bundle (**1,200 VB** listed on the solo drop post)
-- **Ben 10** skins return
-- **Brainrot** skins return
-- **Tung Tung Tung Sahur** returns
-- **ICON emotes** refresh
-- **Gothic Lookbook**
-
-**Now live (8 Nov)**
-- **Chopper** — **1,500 V-Bucks**
-- **Zoro, Sanji & Chopper** bundle — **3,200 V-Bucks**
-- Individual Zoro / Sanji solo prices were not listed in the same posts — check live tracker
-
-**Tomorrow**
-- **Deadpool** mashups
-- **Bugatti Centodieci**
-
-**Nov 8**
-- **Samurai Star Wars**
-- **Honkai Star Rail**
+A long 7 Nov stack included **Nemia**, **Ben 10** returns, **Brainrot** returns, **Tung Tung Tung Sahur**, **ICON emotes** refresh, **Gothic Lookbook**; then **Chopper (1,500 VB)** and a **Zoro, Sanji & Chopper (3,200 VB)** bundle. Later callouts included **Deadpool** mashups, **Bugatti Centodieci**, **Samurai Star Wars**, and **Honkai Star Rail**. Treat all as **leaked/unconfirmed** — confirm on the live [Item Shop tracker](/tools/item-shop).
 
 ## How to use this
 

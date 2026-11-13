@@ -75,7 +75,7 @@ export default function LeaksPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
-              Fresh collab chatter (Doki Doki?, Scott Pilgrim, Puss in Boots), Winterfest dates, Pirate Shop, and
+              Fresh collab chatter (IShowSpeed Pirate Speedy, Overwatch wave 2, Doki Doki?, Scott Pilgrim, Puss in Boots), Winterfest dates, Pirate Shop, and
               Chapter 8 calendar finds. Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
