@@ -57,7 +57,7 @@ export async function lookupCreatorCode(name: string): Promise<CreatorCodeResult
   if (!code) return null
   const qs = new URLSearchParams({ name: code })
   const res = await fetch(`${API_BASE}/v2/creatorcode?${qs.toString()}`, {
-    next: { revalidate: 0 },
+    next: { revalidate: 3600 },
   })
   if (res.status === 404) return null
   if (!res.ok) throw new Error(`Creator code lookup failed (${res.status})`)

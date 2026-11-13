@@ -20,7 +20,7 @@ import {
 } from '@/lib/fortnite-status'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 300
+export const revalidate = 900
 
 function resolveTone(indicator: string, ok: boolean): StatusToneKind {
   if (!ok) return 'unknown'

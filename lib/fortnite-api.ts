@@ -259,7 +259,7 @@ export function normalizeShopOffers(entries: ApiShopEntry[] = []): ShopOffer[] {
 
 export async function fetchShop() {
   const res = await fetch(`${API_BASE}/v2/shop?language=en`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: 7200 },
   })
   if (!res.ok) throw new Error(`Shop API failed (${res.status})`)
   const json = await res.json()
@@ -273,7 +273,7 @@ export async function fetchShop() {
 
 export async function fetchNewCosmetics() {
   const res = await fetch(`${API_BASE}/v2/cosmetics/new?language=en`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: 7200 },
   })
   if (!res.ok) throw new Error(`New cosmetics API failed (${res.status})`)
   const json = await res.json()

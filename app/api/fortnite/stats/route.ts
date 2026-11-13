@@ -1,15 +1,17 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 import {
   FortniteStatsError,
   fetchPlayerStats,
   type StatsAccountType,
   type StatsTimeWindow,
 } from '@/lib/fortnite-stats'
-
-export const dynamic = 'force-dynamic'
+import { jsonCached, jsonError } from '@/lib/http-cache'
 
 const ACCOUNT_TYPES = new Set(['epic', 'psn', 'xbl'])
 const WINDOWS = new Set(['lifetime', 'season'])
+
+/** Edge-cache identical lookups; avoid regenerating on every poll. */
+export const revalidate = 300
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
@@ -22,12 +24,14 @@ export async function GET(req: NextRequest) {
 
   try {
     const data = await fetchPlayerStats({ name, accountType, timeWindow, includeImage: true })
-    return NextResponse.json(data)
+    return jsonCached(data, { sMaxAge: 300, swr: 900 })
   } catch (error) {
     if (error instanceof FortniteStatsError) {
-      return NextResponse.json({ error: error.message }, { status: error.status })
+      return jsonError(error.message, error.status, {
+        sMaxAge: error.status === 404 ? 600 : 30,
+      })
     }
     const message = error instanceof Error ? error.message : 'Failed to load stats'
-    return NextResponse.json({ error: message }, { status: 502 })
+    return jsonError(message, 502, { sMaxAge: 30 })
   }
 }

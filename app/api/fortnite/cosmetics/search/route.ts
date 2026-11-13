@@ -1,5 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 import { searchCosmetics } from '@/lib/fortnite-api'
+import { jsonCached, jsonError } from '@/lib/http-cache'
 
 export const revalidate = 86400
 
@@ -10,21 +11,21 @@ export async function GET(request: NextRequest) {
   const rarity = searchParams.get('rarity')?.trim() || undefined
 
   if (!name && !type) {
-    return NextResponse.json(
-      { error: 'Provide a name search and/or cosmetic type.' },
-      { status: 400 }
-    )
+    return jsonError('Provide a name search and/or cosmetic type.', 400, { sMaxAge: 300 })
   }
 
   try {
     const items = await searchCosmetics({ name, type, rarity })
-    return NextResponse.json({
-      count: items.length,
-      items: items.slice(0, 240),
-      truncated: items.length > 240,
-    })
+    return jsonCached(
+      {
+        count: items.length,
+        items: items.slice(0, 240),
+        truncated: items.length > 240,
+      },
+      { sMaxAge: 86_400, swr: 172_800 }
+    )
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Search failed'
-    return NextResponse.json({ error: message }, { status: 502 })
+    return jsonError(message, 502, { sMaxAge: 60 })
   }
 }
