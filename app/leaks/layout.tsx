@@ -3,16 +3,18 @@ import { createMetadata, faqJsonLd } from '@/lib/seo'
 import { LEAKS_FAQS } from '@/lib/leaks'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Leaks – Treasure Hunters & Chapter 8 File Finds',
+  title: 'Fortnite Leaks – Collabs, Winterfest & Chapter 8 File Finds',
   description:
-    'Fortnite leaks hub with individual write-ups: Pirate Shop Power Hours, Chapter 8 finishing moves, Sprite swaps, and past leaks that shipped. Status marked on every page — unconfirmed until Epic ships it.',
+    'Fortnite leaks hub: Doki Doki, Scott Pilgrim, Puss in Boots collab chatter, Winterfest dates, Pirate Shop, and Chapter 8 file finds. Status marked on every page.',
   path: '/leaks',
   keywords: [
     'fortnite leaks',
     'fortnite datamine',
-    'pirate shop power hours',
+    'doki doki fortnite',
+    'scott pilgrim fortnite',
+    'puss in boots fortnite',
+    'fortnite winterfest 2026',
     'fortnite chapter 8 leaks',
-    'fortnite finishing moves',
     'treasure hunters leaks',
   ],
 })

@@ -6,7 +6,7 @@ import { SITE_CREATOR_CODE, SITE_CREATOR_CODE_LIVE } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 type Variant = 'strip' | 'nav' | 'page' | 'support'
-type SupportKind = 'guide' | 'tool' | 'map'
+type SupportKind = 'guide' | 'tool' | 'map' | 'leak'
 
 const SUPPORT_COPY: Record<SupportKind, string> = {
   guide:
@@ -15,6 +15,8 @@ const SUPPORT_COPY: Record<SupportKind, string> = {
     'If this tool helped you, consider using our creator code on your next Fortnite purchase to support the site.',
   map:
     'If this interactive map helped you, consider using our creator code on your next Fortnite purchase to support the site.',
+  leak:
+    'Use our creator code to support our leak finding — keeps these write-ups coming.',
 }
 
 export function CreatorCodeChip({

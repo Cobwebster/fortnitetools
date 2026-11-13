@@ -19,28 +19,28 @@ export function LeakCard({ leak, featured = false }: { leak: LeakPost; featured?
   const href = `/leaks/${leak.slug}`
 
   return (
-    <article
-      className={`group relative overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-primary/50 ${
-        featured ? '' : ''
-      }`}
-    >
-      <Link href={href} className="block">
+    <article className="group relative h-full overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-primary/50">
+      <Link href={href} className="flex h-full flex-col">
         {leak.image ? (
-          <div className={`relative w-full overflow-hidden ${featured ? 'h-52 sm:h-64' : 'h-40'}`}>
+          <div className={`relative w-full shrink-0 overflow-hidden ${featured ? 'h-48 sm:h-56' : 'h-40'}`}>
             <Image
               src={leak.image}
               alt={leak.title}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes={featured ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 768px) 100vw, 33vw'}
+              sizes={
+                featured
+                  ? '(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw'
+                  : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+              }
             />
-            <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-card via-card/35 to-transparent" />
             <div className="absolute top-3 left-3 flex flex-wrap gap-2">
               <span className="rounded bg-primary px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
                 {getLeakCategoryLabel(leak.category)}
               </span>
               <span
-                className={`rounded border px-2 py-0.5 text-xs font-semibold uppercase tracking-wider ${STATUS_CLASS[leak.status]}`}
+                className={`rounded border px-2 py-0.5 text-xs font-semibold uppercase tracking-wider backdrop-blur-sm ${STATUS_CLASS[leak.status]}`}
               >
                 {LEAK_STATUS_LABEL[leak.status]}
               </span>
@@ -58,15 +58,15 @@ export function LeakCard({ leak, featured = false }: { leak: LeakPost; featured?
             </span>
           </div>
         )}
-        <div className="p-5">
+        <div className="flex flex-1 flex-col p-5">
           <h2
             className={`font-display font-bold uppercase leading-tight text-foreground transition-colors group-hover:text-primary text-balance ${
-              featured ? 'text-2xl' : 'text-lg'
+              featured ? 'text-xl sm:text-2xl' : 'text-lg'
             }`}
           >
             {leak.title}
           </h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-2">
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground line-clamp-2">
             {leak.excerpt}
           </p>
           <div className="mt-3 flex items-center gap-3 text-xs text-muted-foreground">

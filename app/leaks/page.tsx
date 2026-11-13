@@ -42,7 +42,7 @@ export default function LeaksPage() {
             name: 'Fortnite Leaks',
             url: `${siteConfig.url}/leaks`,
             description:
-              'Fortnite leak write-ups for Treasure Hunters and Chapter 8 — individual pages with clear unconfirmed / shipped status.',
+              'Fortnite leak write-ups for collabs, Winterfest, Pirate Shop, and Chapter 8 — individual pages with clear unconfirmed / shipped status.',
             mainEntity: {
               '@type': 'ItemList',
               numberOfItems: all.length,
@@ -74,22 +74,28 @@ export default function LeaksPage() {
               Fortnite Leaks
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Fresh: Kasane Teto’s Music Pass lands Nov 12 with Friendship Villa on Nov 15; leaked shop dates through Nov 16.
+              Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
+              Fresh collab chatter (Doki Doki?, Scott Pilgrim, Puss in Boots), Winterfest dates, Pirate Shop, and
+              Chapter 8 calendar finds. Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link
-                href="/leaks/pirate-shop-afk-squad-fill-ban"
+                href="/leaks/doki-doki-literature-club-fortnite-leak"
                 className="font-semibold text-primary hover:underline"
               >
-                AFK Pirate Shop ban
+                Doki Doki?
               </Link>
               {' · '}
-              <Link href="/leaks/lil-uzi-vert-stronghold-update" className="text-primary hover:underline">
-                Lil Uzi Stronghold
+              <Link href="/leaks/scott-pilgrim-fortnite-collab-leak" className="text-primary hover:underline">
+                Scott Pilgrim
               </Link>
               {' · '}
-              <Link href="/guides" className="text-primary hover:underline">
-                Guides
+              <Link href="/leaks/puss-in-boots-fortnite-collab-leak" className="text-primary hover:underline">
+                Puss in Boots
+              </Link>
+              {' · '}
+              <Link href="/leaks/fortnite-winterfest-2026-dates" className="text-primary hover:underline">
+                Winterfest
               </Link>
               {' · '}
               <Link href="/news" className="text-primary hover:underline">
@@ -120,9 +126,9 @@ export default function LeaksPage() {
           {featured.length > 0 ? (
             <section className="mb-12">
               <h2 className="mb-4 font-display text-xl font-bold uppercase tracking-wide text-foreground">
-                Active & watching
+                Fresh file finds
               </h2>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
                 {featured.map((leak) => (
                   <LeakCard key={leak.slug} leak={leak} featured />
                 ))}

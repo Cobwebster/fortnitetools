@@ -17,11 +17,12 @@ import {
 
 function creatorSupportKind(
   pathname: string | null
-): 'guide' | 'tool' | 'map' | null {
+): 'guide' | 'tool' | 'map' | 'leak' | null {
   if (!pathname) return null
   const path = stripLocaleFromPathname(pathname)
   if (path === '/fortnite-map' || path.startsWith('/fortnite-map/')) return 'map'
   if (path === '/tools' || path.startsWith('/tools/')) return 'tool'
+  if (path === '/leaks' || path.startsWith('/leaks/')) return 'leak'
   const parts = path.split('/').filter(Boolean)
   if (parts[0] === 'guides' && parts.length >= 3) return 'guide'
   return null

@@ -9,9 +9,18 @@ type MetaInput = {
   keywords?: string[]
   type?: 'website' | 'article'
   publishedTime?: string
+  modifiedTime?: string
   tags?: string[]
+  /** Site-relative path or absolute URL for Open Graph / Twitter */
+  image?: string
   index?: boolean
   video?: PostVideo
+}
+
+function absoluteMetaImage(image?: string): string {
+  if (!image) return `${siteConfig.url}${siteConfig.ogImage}`
+  if (image.startsWith('http://') || image.startsWith('https://')) return image
+  return `${siteConfig.url}${image.startsWith('/') ? image : `/${image}`}`
 }
 
 export function createMetadata({
@@ -21,13 +30,16 @@ export function createMetadata({
   keywords = [],
   type = 'website',
   publishedTime,
+  modifiedTime,
   tags,
+  image,
   index = true,
   video,
 }: MetaInput): Metadata {
   const url = `${siteConfig.url}${path}`
-  const ogImage = `${siteConfig.url}${siteConfig.ogImage}`
-  const poster = video ? absoluteAssetUrl(video.poster) : ogImage
+  const defaultOg = `${siteConfig.url}${siteConfig.ogImage}`
+  const shareImage = absoluteMetaImage(image)
+  const poster = video ? absoluteAssetUrl(video.poster) : shareImage
 
   return {
     title,
@@ -49,9 +61,9 @@ export function createMetadata({
       images: video
         ? [
             { url: poster, width: video.width, height: video.height, alt: video.title },
-            { url: ogImage, width: 1200, height: 630, alt: siteConfig.name },
+            { url: shareImage !== poster ? shareImage : defaultOg, width: 1200, height: 630, alt: title },
           ]
-        : [{ url: ogImage, width: 1200, height: 630, alt: siteConfig.name }],
+        : [{ url: shareImage, width: 1200, height: 630, alt: title }],
       ...(video
         ? {
             videos: [
@@ -66,6 +78,7 @@ export function createMetadata({
           }
         : {}),
       ...(publishedTime ? { publishedTime } : {}),
+      ...(modifiedTime ? { modifiedTime } : {}),
       ...(tags ? { tags } : {}),
     },
     twitter: {
@@ -92,16 +105,27 @@ export function articleJsonLd({
   description,
   path,
   datePublished,
+  dateModified,
   image,
+  keywords,
+  articleSection,
   video,
 }: {
   title: string
   description: string
   path: string
   datePublished: string
+  dateModified?: string
   image?: string
+  keywords?: string[]
+  articleSection?: string
   video?: PostVideo
 }) {
+  const imageUrl =
+    image && (image.startsWith('http://') || image.startsWith('https://'))
+      ? image
+      : `${siteConfig.url}${image || siteConfig.ogImage}`
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -109,7 +133,10 @@ export function articleJsonLd({
     description,
     url: `${siteConfig.url}${path}`,
     datePublished,
-    image: `${siteConfig.url}${image || siteConfig.ogImage}`,
+    dateModified: dateModified || datePublished,
+    image: imageUrl,
+    ...(keywords?.length ? { keywords: keywords.join(', ') } : {}),
+    ...(articleSection ? { articleSection } : {}),
     author: {
       '@type': 'Organization',
       name: siteConfig.name,

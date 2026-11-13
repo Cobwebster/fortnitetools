@@ -67,9 +67,11 @@ export const leaks: LeakPost[] = [
     status: 'active',
     date: '2026-11-12',
     readTime: 5,
-    image: '/images/guides/stars-of-the-show.webp',
+    featured: true,
+    image: '/images/guides/block-party.webp',
     tags: [
       'scott pilgrim fortnite',
+      'scott pilgrim fortnite leak',
       'ramona flowers fortnite',
       'fortnite scott pilgrim skins',
       'fortnite lego style collab',
@@ -94,11 +96,20 @@ export const leaks: LeakPost[] = [
 - Cosmetics listed across the set: **2 back blings, 3 pickaxes, 1 emote**
 - **Release date and price are unknown**. This has not been announced by Epic.
 
-## Confidence & caveats
+## Confidence table
 
-These are **unconfirmed** collaboration reads based on file labels and effects. Names, looks, and pricing could change before release — or be cut.
+| Claim | Status |
+| --- | --- |
+| Two comic/anime‑shaded skins + LEGO styles in files | Leak |
+| Bass / drums / sword‑heart emote / pickaxes attached | Leak |
+| Officially Scott Pilgrim vs. the World / Ramona | **Guess** (prop tells are strong, still unannounced) |
+| Release date / V‑Buck price | Unknown |
 
-Related trackers: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · Season beat cadence: [Captain’s Days stack](/leaks/captain-days-content-stack)
+## What to watch next
+
+- Shop calendar rows: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- Live confirm after reset: [Item Shop tracker](/tools/item-shop) · [News](/news)
+- Same‑day collab chatter: [Doki Doki?](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
 
 **Filed:** 12 November 2026. Status: **Unconfirmed**.
 `,
@@ -112,13 +123,15 @@ Related trackers: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) ·
     status: 'active',
     date: '2026-11-12',
     readTime: 5,
-    image: '/images/guides/stars-of-the-show.webp',
+    featured: true,
+    image: '/images/guides/treasure-hunters.jpg',
     tags: [
       'puss in boots fortnite',
+      'puss in boots fortnite leak',
       'death wolf fortnite',
       'fortnite sidekick leak',
       'fortnite voice lines leak',
-      'pirate themed shop tiles',
+      'puss in boots fortnite skin',
     ],
     content: `
 ## What was reportedly found (12 Nov files)
@@ -144,7 +157,20 @@ Related trackers: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) ·
 - Files suggest the **Sidekick and the skin are bundled**, with **pirate‑themed shop tiles**
 - **Release date/price unknown**. Not announced by Epic.
 
-Links for context: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · Season cadence: [Captain’s Days](/leaks/captain-days-content-stack)
+## Confidence table
+
+| Claim | Status |
+| --- | --- |
+| Furry Sidekick + voice lines + Kicks in files | Leak |
+| Hooded wolf warrior skin + LEGO + glow effects | Leak |
+| Characters are Puss / Death from *The Last Wish* | **Guess** (strong theming, unannounced) |
+| Pirate shop tiles / bundle packaging | Leak read |
+
+## What to watch next
+
+- [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · [Item Shop tracker](/tools/item-shop)
+- Season cadence: [Captain’s Days](/leaks/captain-days-content-stack)
+- Same dump: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Doki Doki?](/leaks/doki-doki-literature-club-fortnite-leak)
 
 **Filed:** 12 November 2026. Status: **Unconfirmed**.
 `,
@@ -157,10 +183,12 @@ Links for context: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) �
     category: 'cosmetics',
     status: 'active',
     date: '2026-11-12',
-    readTime: 4,
-    image: '/images/guides/stars-of-the-show.webp',
+    readTime: 5,
+    featured: true,
+    image: '/images/guides/select-character.webp',
     tags: [
       'doki doki literature club fortnite',
+      'doki doki fortnite leak',
       'ddlc fortnite',
       'anime skins fortnite leak',
       'cel shaded fortnite skins',
@@ -169,19 +197,40 @@ Links for context: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) �
     content: `
 ## What was reportedly found (12 Nov files)
 
-- **4 hidden anime / cel‑shaded female skins**
+Dataminer dump for a hidden cosmetics set:
+
+- **4 anime / cel‑shaded female skins**
 - Each has a **custom lobby animation**
-- **At least 2** show **cloth physics** and **1** shows **special hair physics**
-- Sell‑through noted as **one bundle of all 4**, plus **individual** purchase options
-- **No other cosmetics** were referenced in the same notes
+- **At least 2** show **cloth physics**; **1** shows **special hair physics**
+- Sell‑through: **one 4‑pack bundle** plus **individual** purchase options
+- Notes referenced **no pickaxes / back blings / wraps** in the same set — skins only
 
-## Is this DDLC?
+## Is this Doki Doki Literature Club?
 
-Fans immediately linked "four anime girls" to **Doki Doki Literature Club** (**Sayori, Natsuki, Yuri, Monika**), but there is **no confirmation** in names, voice, or marketing — treat this as **speculation only** until Epic announces it.
+Fans mapped “four anime girls” onto **DDLC** (**Monika, Sayori, Yuri, Natsuki**). That read is **community speculation** — the leak posts themselves do **not** confirm character names, voice lines, or Team Salvato marketing.
 
-**Release date unknown.** Keep an eye on [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+Same‑day dump also floated **Scott Pilgrim** and **Puss in Boots** as separate hidden sets with stronger prop/effect tells — see:
 
-**Filed:** 12 November 2026. Status: **Unconfirmed**.
+- [Scott Pilgrim / Ramona leak](/leaks/scott-pilgrim-fortnite-collab-leak)
+- [Puss in Boots / wolf warrior leak](/leaks/puss-in-boots-fortnite-collab-leak)
+
+## Confidence
+
+| Claim | Status |
+| --- | --- |
+| Four cel‑shaded female skins in files | Leak |
+| Custom lobby poses + cloth / hair physics | Leak |
+| Sold as 4‑pack + singles, no extra cosmetics | Leak |
+| Actually DDLC characters | **Guess only** |
+| Release date / price | Unknown |
+
+## What to watch next
+
+- Bundle/pricing still blank — track [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) and [Item Shop](/tools/item-shop)
+- Lobby MOTD / blog confirmation: [News](/news)
+- Same‑day dump siblings: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
+
+**Release date unknown.** Status: **Unconfirmed**. Filed 12 November 2026.
 `,
   },
   {
@@ -193,7 +242,8 @@ Fans immediately linked "four anime girls" to **Doki Doki Literature Club** (**S
     status: 'active',
     date: '2026-11-12',
     readTime: 4,
-    image: '/images/guides/treasure-hunters-teaser.jpg',
+    featured: true,
+    image: '/images/guides/cold-welcome.webp',
     tags: [
       'fortnite winterfest 2026 dates',
       'winterfest start date',
@@ -215,7 +265,20 @@ Files also reference a **“Seasonal Locker Filter”** tagged **winterfest / ch
 - Epic has **not** announced these dates
 - The traditional **cabin / daily presents** are **not confirmed** for 2026
 
-Season context: [Season hub](/season) · [Captain’s Days cadence](/leaks/captain-days-content-stack)
+## Quick facts
+
+| Item | Leaked value |
+| --- | --- |
+| Winterfest 2026 window | **17 Dec 2026 – 7 Jan 2027** |
+| Chapter 8 Season 1 (context) | **5 Dec 2026** (separate leak) |
+| Seasonal Locker Filter tags | winterfest / christmas / winter |
+| Cabin / daily presents | **Not confirmed** |
+
+## What to watch next
+
+- [Season hub](/season) · [Chapter 8 calendar leak](/leaks/fortnite-chapter-8-season-2-release-date)
+- Live announce path: [News](/news)
+- Mid‑season cadence: [Captain’s Days](/leaks/captain-days-content-stack)
 
 **Filed:** 12 November 2026. Status: **Unconfirmed**.
 `,
@@ -229,7 +292,7 @@ Season context: [Season hub](/season) · [Captain’s Days cadence](/leaks/capta
     status: 'watching',
     date: '2026-11-12',
     readTime: 4,
-    image: '/images/guides/pirate-shop-access.jpg',
+    image: '/images/guides/capn-hatsune-miku-featured.webp',
     tags: [
       'fortnite pirate chest prizes week 3',
       'fortnite pirate chest prizes week 4',
@@ -280,7 +343,7 @@ In‑game change noted on **12 Nov**: **chest prize drop effects now differ** �
     confirmedDate: '2026-11-12',
     readTime: 4,
     featured: true,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/kasane-teto-featured.webp',
     tags: [
       'kasane teto fortnite',
       'kasane teto fortnite release date',
@@ -396,7 +459,7 @@ Timing-wise, this points to **Treasure Hunters** (Chapter 7) wrapping around ear
     status: 'watching',
     date: '2026-11-10',
     readTime: 3,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/lil-uzi-vert-featured.webp',
     tags: [
       'lil uzi vert jam tracks fortnite',
       'lil uzi vert fortnite festival',
@@ -608,7 +671,7 @@ Also: [Power Hours — 7 Nov window](/leaks/pirate-shop-power-hours) · [AFK ban
     date: '2026-11-07',
     readTime: 5,
     featured: true,
-    image: '/images/guides/treasure-hunters.jpg',
+    image: '/images/guides/lil-uzi-vert-featured.webp',
     tags: [
       'lil uzi vert fortnite',
       'lil smg fortnite',
@@ -703,7 +766,7 @@ Launch-day Epic marketing already teased Lil Uzi as a later captain, but the **g
     confirmedDate: '2026-11-08',
     readTime: 3,
     featured: true,
-    image: '/images/guides/sprites-collect.webp',
+    image: '/images/guides/solid-gold-lil-uzi-featured.webp',
     tags: [
       'gold lil uzi vert',
       'gold asap rocky fortnite',
@@ -935,7 +998,7 @@ Shop cosmetics for finishers = community guess only. Wait for a trailer / patch 
     status: 'watching',
     date: '2026-11-01',
     readTime: 3,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/pink-star-lil-uzi-featured.webp',
     tags: [
       'pink star lil uzi vert',
       'lil uzi vert fortnite skin',
@@ -1127,12 +1190,27 @@ export const LEAKS_FAQS = [
   {
     question: 'What is the FortniteTools leaks hub?',
     answer:
-      'A guides-style index of individual Fortnite leak write-ups — shop, Sprites, gameplay, and Chapter 8 file finds. Each leak has its own page with status (unconfirmed, watching, shipped, or likely cut). It is not Epic patch notes.',
+      'A guides-style index of individual Fortnite leak write-ups — collab chatter, shop rows, Sprites, gameplay, and Chapter 8 file finds. Each leak has its own page with status (unconfirmed, watching, shipped, or likely cut). It is not Epic patch notes.',
   },
   {
     question: 'Are these leaks guaranteed to ship?',
     answer:
       'No. Files get vaulted, renamed, delayed, or deleted. When something goes live we flip the page to Shipped and point at news, map, sprites, shop, or loadout tools instead.',
+  },
+  {
+    question: 'What do Unconfirmed, Watching, Shipped, and Likely cut mean?',
+    answer:
+      'Unconfirmed = file find or community report with no Epic announce. Watching = partially live or waiting on a known window. Shipped = confirmed in-game or by Epic. Likely cut = files removed or the beat never landed.',
+  },
+  {
+    question: 'When is Fortnite Winterfest 2026 according to leaks?',
+    answer:
+      'Leaks point to 17 December 2026 through 7 January 2027, overlapping Chapter 8 Season 1. Epic has not announced those dates, and cabin/presents are not confirmed.',
+  },
+  {
+    question: 'Is Doki Doki Literature Club coming to Fortnite?',
+    answer:
+      'Unknown. 12 Nov files reportedly hide four cel-shaded anime female skins sold as a 4-pack. Fans mapped them to DDLC, but names and licensing are not confirmed — treat it as speculation until Epic announces.',
   },
   {
     question: 'Where should I go once a leak is real?',
@@ -1145,6 +1223,48 @@ export const LEAKS_FAQS = [
       'No. Independent fan site. We summarize public datamine and press reports in our own words and mark confidence clearly.',
   },
 ]
+
+export type LeakRelatedLink = { href: string; label: string; note: string }
+
+/** Live tools / hubs to surface beside a leak by category */
+export function getLeakRelatedLinks(category: LeakCategory): LeakRelatedLink[] {
+  switch (category) {
+    case 'shop':
+      return [
+        { href: '/tools/item-shop', label: 'Item Shop tracker', note: 'Confirm after reset' },
+        { href: '/news', label: 'News', note: 'Lobby MOTD / blogs' },
+        { href: '/guides', label: 'Guides', note: 'How-tos once live' },
+      ]
+    case 'cosmetics':
+      return [
+        { href: '/tools/item-shop', label: 'Item Shop tracker', note: 'Shop rows' },
+        { href: '/sprites', label: 'Sprites', note: 'Season collectibles' },
+        { href: '/news', label: 'News', note: 'Official confirms' },
+      ]
+    case 'gameplay':
+      return [
+        { href: '/weapons', label: 'Weapons', note: 'Live loadouts' },
+        { href: '/fortnite-map', label: 'Map', note: 'POI enables' },
+        { href: '/news', label: 'News', note: 'Patch notes' },
+      ]
+    case 'season':
+      return [
+        { href: '/season', label: 'Season hub', note: 'Calendar & beats' },
+        { href: '/fortnite-map', label: 'Map', note: 'Named locations' },
+        { href: '/news', label: 'News', note: 'Epic posts' },
+      ]
+    case 'chapter':
+      return [
+        { href: '/season', label: 'Season hub', note: 'Current chapter context' },
+        { href: '/season-countdown', label: 'Season countdown', note: 'Timing helpers' },
+        { href: '/news', label: 'News', note: 'When Epic talks' },
+      ]
+  }
+}
+
+export function getLeakModifiedDate(leak: LeakPost): string {
+  return leak.confirmedDate ?? leak.date
+}
 
 export function getLeakBySlug(slug: string): LeakPost | undefined {
   return leaks.find((l) => l.slug === slug)
