@@ -59,13 +59,100 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
-    slug: 'ishowspeed-pirate-speedy-fortnite-skin',
-    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Bundle, Shop Time (Leaked)',
+    slug: 'hello-neighbor-fortnite-collab',
+    title: 'Hello Neighbor x Fortnite Collab Leak — Coming Soon to the Item Shop',
     excerpt:
-      'According to leaks on 13 Nov 2026, a One Piece–themed IShowSpeed outfit called Pirate Speedy is headed to the Item Shop with a back bling, pickaxe, and emote. The leaked shop schedule points to Friday 13 Nov at 7pm ET — midnight UK on Saturday 14 Nov. Prices are not confirmed.',
+      'According to leaks on 14 Nov 2026, a Hello Neighbor x Fortnite collaboration is coming soon, with an Item Shop release and an Epic Games Store gift-with-purchase tie-in. An announcement teaser surfaced the same day. No release date or prices yet.',
     category: 'cosmetics',
     status: 'active',
+    date: '2026-11-14',
+    readTime: 3,
+    featured: true,
+    tags: [
+      'hello neighbor fortnite',
+      'hello neighbor fortnite skin',
+      'hello neighbor x fortnite collab',
+      'fortnite hello neighbor release date',
+      'hello neighbor epic games store gift',
+    ],
+    content: `
+## What leaked on 14 Nov
+
+On the evening of **14 November 2026** (around **5:25pm UK**), leaks said a **Hello Neighbor x Fortnite** collaboration is **coming soon**. Two parts were reported: an **Item Shop** release, and an **Epic Games Store gift‑with‑purchase** — buying a Hello Neighbor game on the Epic Games Store is expected to come with a Fortnite reward. Shortly after, an **announcement teaser** for the collab circulated.
+
+## What this means
+
+Hello Neighbor is the stealth‑horror series about sneaking into a creepy neighbour’s house. The Neighbor is the obvious outfit candidate, but which characters become cosmetics is **not confirmed**. Gift‑with‑purchase deals on the Epic Games Store usually grant a **Fortnite cosmetic** when you buy the partner game on the same Epic account. Track the live flip on the [Item Shop tracker](/tools/item-shop) and the rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+
+## What is not confirmed
+
+- The **release date**
+- Which **characters/cosmetics** are included
+- **Prices**
+- Which **game(s)** qualify for the gift and what the gift item is
+- Whether **Epic has officially announced** it yet
+
+**Filed:** 14 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'pirate-hatsune-miku-fortnite-bundle',
+    title: 'Cap’n Hatsune Miku Fortnite Bundle — New Emote, Gold Back Bling Free',
+    excerpt:
+      'Cap’n (Pirate) Hatsune Miku’s Fortnite bundle was revealed for the 14 Nov 2026 shop (7pm ET, midnight UK into 15 Nov), alongside a new emote set to “Miku Miku ni Shite Ageru”. Leaks say the gold back bling is free with Solid Gold Miku for a week from 15 Nov, until Gold Kasane Teto arrives.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-14',
+    readTime: 3,
+    featured: true,
+    image: '/images/guides/capn-hatsune-miku-featured.webp',
+    tags: [
+      'pirate hatsune miku fortnite',
+      'capn hatsune miku fortnite',
+      'hatsune miku fortnite bundle',
+      'miku miku ni shite ageru fortnite emote',
+      'gold hatsune miku back bling',
+      'hatsune miku fortnite release date',
+    ],
+    content: `
+## Bundle reveal
+
+Late on **13 November 2026** leaks revealed **Cap’n Hatsune Miku’s** pirate‑themed bundle, listed for the **14 November** shop (US date). Collab shops in Treasure Hunters typically flip at **7:00 PM ET**, which is **midnight UK** rolling into **Sunday 15 November**.
+
+| Zone | Local time |
+| --- | --- |
+| ET | Sat 14 Nov, **7:00 PM ET** |
+| UK/GMT | Sun 15 Nov, **12:00 AM** |
+| CET | Sun 15 Nov, **1:00 AM** |
+
+The bundle reportedly includes an **outfit**, **back bling**, **pickaxe**, and **emote** — treat contents as **leaked** until live; full item list / prices are **not confirmed**.
+
+## New Miku emote
+
+A new **Hatsune Miku emote** set to the song **“Miku Miku ni Shite Ageru”** (also known as “Miku Miku ni Shite Ageru♪ [Shite Yan yo]”) was leaked on **14 Nov**. Whether it is sold separately or part of the bundle is **not confirmed**. Our earlier page also mentioned a likely separate “Mesmerizer” emote with a special version — see [Kasane Teto & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
+
+## Free gold back bling
+
+According to leaks, the **gold back bling** comes **free** with the **Solid Gold Hatsune Miku** outfit from the **Treasure Hunt chest prizes** starting **15 November**, for about a week until **Solid Gold Kasane Teto** replaces it. See [Chest prizes week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4) and [Pirate Shop odds](/leaks/pirate-shop-odds).
+
+## What is not confirmed
+
+- **Prices** and exact bundle contents
+- Whether the **emote** is separate or bundled
+- The exact **gold rotation** time
+
+**Filed:** 14 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'ishowspeed-pirate-speedy-fortnite-skin',
+    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Out Now, Price (1,500 / 1,800 V-Bucks)',
+    excerpt:
+      'IShowSpeed’s One Piece–themed Pirate Speedy outfit hit the Fortnite Item Shop at midnight UK on 14 Nov 2026 (7pm ET 13 Nov). The skin costs 1,500 V-Bucks and the full bundle 1,800 V-Bucks.',
+    category: 'cosmetics',
+    status: 'shipped',
     date: '2026-11-13',
+    confirmedDate: '2026-11-14',
     readTime: 4,
     featured: true,
     image: '/images/guides/treasure-hunters.jpg',
@@ -75,8 +162,14 @@ export const leaks: LeakPost[] = [
       'ishowspeed one piece skin release date',
       'ishowspeed fortnite bundle',
       'ishowspeed item shop time',
+      'ishowspeed fortnite price',
     ],
     content: `
+## Out now — prices
+
+Released **14 November 2026, 00:00 UK** (**7:00 PM ET** on 13 Nov).
+**Prices (confirmed):** **1,500 V‑Bucks** for the outfit; **1,800 V‑Bucks** for the full bundle.
+
 ## What leaked on 13 Nov
 
 A new IShowSpeed collab skin named **Pirate Speedy** is circulating in today’s update coverage as part of the Treasure Hunters / One Piece mini‑season. A showcase clip and the matching emote reportedly appeared alongside shop metadata.
@@ -88,9 +181,9 @@ A new IShowSpeed collab skin named **Pirate Speedy** is circulating in today’s
 - **1 Pickaxe**
 - **1 Emote**
 
-## When does it hit the Item Shop?
+## Item Shop timing (past)
 
-Leaked shop timing points to the standard collab reset: **Friday 13 November 2026, 7:00 PM ET** — which is **Saturday 14 November, 12:00 AM (midnight) UK**. Regional times:
+This collab landed on the standard reset: **Friday 13 November 2026, 7:00 PM ET** — which was **Saturday 14 November, 12:00 AM (midnight) UK**. Regional times:
 
 | Region | Local time |
 | --- | --- |
@@ -100,10 +193,6 @@ Leaked shop timing points to the standard collab reset: **Friday 13 November 202
 | CET | Sat 14 Nov, 1:00 AM CET |
 
 Track the flip on the [Item Shop tracker](/tools/item-shop) and our rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
-
-## Price expectations (estimates only)
-
-Community estimates float around **1,500 V‑Bucks** for the outfit and roughly **2,400–2,600 V‑Bucks** for the full bundle. These are **not confirmed** — wait for the live shop tile.
 
 ## Not the old Icon Series skin
 
@@ -115,10 +204,9 @@ Players who already activated a **Pirate Shop Access** token are widely reportin
 
 ## What is not confirmed
 
-- Final **prices** for the outfit or bundle
 - How **long** Pirate Speedy will stay in the shop rotation
 
-**Filed:** 13 November 2026. Status: **Unconfirmed**.
+**Shipped:** 14 November 2026.
 `,
   },
   {
@@ -905,9 +993,9 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Item Shop Leaks — Pirate Speedy, KATSEYE “Pinky Up”, Jason Returns, Lil Uzi Bundle',
+      'Upcoming Item Shop Leaks — Pirate Miku, Shohei Ohtani, Madison Beer, Kaiju No. 8',
     excerpt:
-      '13 Nov refresh: KATSEYE “Pinky Up” ICON emote, a new Lil Uzi Vert outfit and full bundle are live, and Jason Voorhees returned. Next up (leaked): Pirate Speedy (IShowSpeed) expected at midnight UK on 14 Nov. Also in files today: an encrypted Overwatch Wave 2 — see Kiriko/Widowmaker. Older rows remain below.',
+      '14 Nov refresh — IShowSpeed (Pirate Speedy) and One Piece’s Buggy skin landed; leaked next: Cap’n Hatsune Miku + ICON emote refresh (14 Nov US date), Shohei Ohtani + Gotham City Summer (15 Nov), Madison Beer, Kaiju No. 8 and The Odyssey (16 Nov).',
     category: 'shop',
     status: 'watching',
     date: '2026-11-07',
@@ -923,15 +1011,28 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'zoro sanji chopper shop',
       'fortnite star wars leak',
       'honkai star rail fortnite',
+      'shohei ohtani fortnite',
+      'madison beer fortnite',
+      'kaiju no 8 fortnite',
+      'buggy fortnite skin',
     ],
     content: `
+## 14 November 2026 — Shop reset and leaked schedule
+
+- Tonight’s reset (**midnight UK 14 Nov** / **7pm ET 13 Nov**): new **Buggy** (One Piece) outfit and **IShowSpeed** skin & emote — see [Pirate Speedy](/leaks/ishowspeed-pirate-speedy-fortnite-skin) and [Buggy POI](/leaks/brutal-beachhead-buggy-poi)
+- **Leaked schedule** (US dates; collab nights usually flip ~7pm ET = midnight UK the next calendar day):
+  - **14 Nov:** **Cap’n Hatsune Miku** ([page](/leaks/pirate-hatsune-miku-fortnite-bundle)); **ICON emotes** refresh
+  - **15 Nov:** **Shohei Ohtani**; **Gotham City Summer** (likely the same set as the earlier‑leaked Beach Bod Batman)
+  - **16 Nov:** **Madison Beer**; **Kaiju No. 8**; **The Odyssey**
+- Also: [Hello Neighbor x Fortnite](/leaks/hello-neighbor-fortnite-collab) is “coming soon” to the shop.
+
 ## 13 November 2026 — Shop reset (12:00am UK / 7:00pm ET 12 Nov)
 
 - **KATSEYE “Pinky Up”** **ICON Series emote** dropped in tonight’s reset (KATSEYE x Fortnite)
 - **Lil Uzi Vert** — a **new outfit** and a **full bundle** are in the shop (see [Lil Uzi Vert Jam Tracks](/leaks/lil-uzi-vert-fortnite-jam-tracks) for the wider set)
 - **Jason Voorhees** returned
 - **Upcoming (no date):** new **Hope**, **Kitsune**, and **Whale** Kicks
-- **Expected next:** **Pirate Speedy (IShowSpeed)** — targeted for **12:00am UK, Saturday 14 Nov** (leaked schedule; see [Pirate Speedy page](/leaks/ishowspeed-pirate-speedy-fortnite-skin))
+- **Released next:** **Pirate Speedy (IShowSpeed)** — landed **12:00am UK, Saturday 14 Nov** (see [Pirate Speedy page](/leaks/ishowspeed-pirate-speedy-fortnite-skin))
 - Also in today’s files: an **encrypted Overwatch Wave 2** set — details on [Kiriko / Widowmaker wave 2](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
 
 ## Upcoming shop dates (leaked 11 Nov)
@@ -953,7 +1054,7 @@ Shop leaks shuffle. Treat the list as a **watch order**, then confirm on the liv
 
   Epic’s own Treasure Hunters shop calendar still owns the big collab nights (A$AP 5 Nov, Straw Hat pieces 7 Nov, **Lil Uzi Vert 12 Nov**, Buggy 13 Nov, Miku/Teto 14 Nov).
 
-**Filed:** 7 November 2026.
+**Filed:** 7 November 2026. **Updated:** 14 November 2026.
 `,
   },
   {
@@ -1019,7 +1120,7 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
     slug: 'pirate-shop-power-hours',
     title: 'Pirate Shop Power Hours — Confirmed 2× Access & 10× Gold Outfit Boost',
     excerpt:
-      'Confirmed past window: 7 Nov 2026, 9–11pm ET (02:00–04:00 UK on 8 Nov) with Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
+      'Two Treasure Hours on 14 Nov 2026: 7–9pm UK and 2–4am UK (15 Nov), with Pirate Shop Access expected at 1.5× and Gold Outfit at 7.5×. Past 7 Nov window ran 2.0× Access / 10× Gold.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-04',
@@ -1033,10 +1134,19 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
       'fortnite power hour',
       'pirate shop 2x boost',
       'treasure hours 2.0x',
+      'treasure hours today',
     ],
     content: `
 ## What are Power Hours?
 Short, scheduled windows later in the season that temporarily boost the chance to roll the **Pirate Shop Access** prize from Battle Royale chests.
+
+## 2× Treasure Hours — 14 Nov 2026
+Two boosted windows on **Saturday 14 November 2026**, with leaked/expected boosts of **Pirate Shop Access token 1.5×** and **Weekly Gold Outfit 7.5×** (expected, not confirmed multipliers):
+
+| Window | ET | UK (GMT) |
+| --- | --- | --- |
+| First | Sat 14 Nov **2–4pm ET** | Sat 14 Nov **7–9pm** |
+| Second | Sat 14 Nov **9–11pm ET** | Sun 15 Nov **2–4am** |
 
 ## Confirmed Treasure Hours multipliers
 Weekend Treasure Hours previously boosted other Treasure Hunt prizes (on top of the base odds):
@@ -1054,7 +1164,7 @@ How-to guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-s
 
 We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** for future announced windows.
+**Filed:** 4 November 2026. **Updated:** 14 November 2026. Status: **Watching** for future announced windows.
 `,
   },
   {
