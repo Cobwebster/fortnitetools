@@ -9,6 +9,8 @@ import { AdSenseUnit } from '@/components/adsense-unit'
 import { CreatorCodeChip } from '@/components/creator-code-chip'
 import { GuideMarkdown } from '@/components/guide-markdown'
 import { LeakCard } from '@/components/leak-card'
+import { ShareLeakButton } from '@/components/share-leak-button'
+import { siteConfig } from '@/lib/site'
 import {
   leaks,
   getLeakBySlug,
@@ -214,10 +216,17 @@ export default async function LeakPostPage({ params }: Props) {
                     change or get cut before they ship.
                   </p>
                 ) : null}
-                <div className="mt-4 text-sm text-muted-foreground">
-                  <span itemProp="author" itemScope itemType="https://schema.org/Organization">
-                    <span itemProp="name">FortniteTools.com</span>
-                  </span>
+                <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+                  <p className="text-sm text-muted-foreground">
+                    <span itemProp="author" itemScope itemType="https://schema.org/Organization">
+                      <span itemProp="name">FortniteTools.com</span>
+                    </span>
+                  </p>
+                  <ShareLeakButton
+                    url={`${siteConfig.url}/leaks/${leak.slug}`}
+                    title={leak.title}
+                    text={leak.excerpt}
+                  />
                 </div>
               </header>
 

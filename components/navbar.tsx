@@ -180,84 +180,88 @@ export function Navbar() {
     (link) => link.external || isLocaleSurfaceHref(locale, link.href)
   )
 
+  // Only the primary bar is sticky. Creator strip + secondary links scroll away so
+  // AdSense side rails (~600px) keep enough viewport and stop vanishing under a tall sticky header.
   return (
-    <header
-      // Tell AdSense Auto side rails not to draw under this sticky bar (border line cut-off).
-      {...{ 'google-side-rail-overlap': 'false' }}
-      className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm"
-    >
+    <>
       <CreatorCodeChip variant="strip" />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Bar 1 — brand, primary links, flags, actions */}
-        <nav className="flex h-14 items-center justify-between gap-3 sm:h-16" aria-label={t('mainNav')}>
-          <Link href={homeHref} className="flex items-center gap-2 shrink-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={BRAND_ICON}
-              alt="FortniteTools"
-              className="h-9 w-9 object-contain drop-shadow-sm sm:h-10 sm:w-10"
-            />
-            <span className="font-display text-lg font-bold uppercase tracking-wider text-foreground sm:text-xl">
-              Fortnite<span className="text-primary">Tools</span>
-            </span>
-          </Link>
 
-          <ul className="hidden md:flex items-center gap-0.5 lg:gap-1" role="list">
-            {primary.map((link) => (
-              <li key={link.href}>
-                <NavLinkItem link={link} />
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            <CreatorCodeChip variant="nav" />
-            <LanguageFlagLinks className="hidden md:flex" />
-            <div className="hidden md:block">
-              <AuthNavLinks />
-            </div>
-            <Link
-              href={guidesHref}
-              className="hidden sm:inline-flex rounded-md bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground hover:opacity-90 transition-opacity sm:px-4 sm:text-sm"
-            >
-              {isEnglish ? t('allGuides') : t('guides')}
+      <div
+        // Tell AdSense Auto side rails not to draw under this sticky bar.
+        {...{ 'google-side-rail-overlap': 'false' }}
+        className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <nav className="flex h-14 items-center justify-between gap-3 sm:h-16" aria-label={t('mainNav')}>
+            <Link href={homeHref} className="flex items-center gap-2 shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={BRAND_ICON}
+                alt="FortniteTools"
+                className="h-9 w-9 object-contain drop-shadow-sm sm:h-10 sm:w-10"
+              />
+              <span className="font-display text-lg font-bold uppercase tracking-wider text-foreground sm:text-xl">
+                Fortnite<span className="text-primary">Tools</span>
+              </span>
             </Link>
-            <div className="flex items-center gap-2 md:hidden">
-              <LanguageFlagLinks />
-              <AuthNavLinks />
-            </div>
-          </div>
-        </nav>
 
-        {/* Bar 2 — remaining links (desktop) + full wrap on mobile */}
-        <nav
-          className="flex flex-wrap items-center gap-1 border-t border-border py-2"
-          aria-label={t('mobileNav')}
-        >
-          <ul className="flex flex-wrap gap-1 md:hidden" role="list">
-            {[
-              ...primary,
-              ...secondary,
-              {
-                href: guidesHref,
-                label: isEnglish ? t('allGuides') : t('guides'),
-                emphasis: true,
-              },
-            ].map((link) => (
-              <li key={`m-${link.href}`}>
-                <NavLinkItem link={link} compact />
-              </li>
-            ))}
-          </ul>
-          <ul className="hidden md:flex flex-wrap gap-1" role="list">
-            {secondary.map((link) => (
-              <li key={`d-${link.href}`}>
-                <NavLinkItem link={link} compact />
-              </li>
-            ))}
-          </ul>
-        </nav>
+            <ul className="hidden md:flex items-center gap-0.5 lg:gap-1" role="list">
+              {primary.map((link) => (
+                <li key={link.href}>
+                  <NavLinkItem link={link} />
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+              <CreatorCodeChip variant="nav" />
+              <LanguageFlagLinks className="hidden md:flex" />
+              <div className="hidden md:block">
+                <AuthNavLinks />
+              </div>
+              <Link
+                href={guidesHref}
+                className="hidden sm:inline-flex rounded-md bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground hover:opacity-90 transition-opacity sm:px-4 sm:text-sm"
+              >
+                {isEnglish ? t('allGuides') : t('guides')}
+              </Link>
+              <div className="flex items-center gap-2 md:hidden">
+                <LanguageFlagLinks />
+                <AuthNavLinks />
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
-    </header>
+
+      <div className="border-b border-border bg-background">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <nav className="flex flex-wrap items-center gap-1 py-2" aria-label={t('mobileNav')}>
+            <ul className="flex flex-wrap gap-1 md:hidden" role="list">
+              {[
+                ...primary,
+                ...secondary,
+                {
+                  href: guidesHref,
+                  label: isEnglish ? t('allGuides') : t('guides'),
+                  emphasis: true,
+                },
+              ].map((link) => (
+                <li key={`m-${link.href}`}>
+                  <NavLinkItem link={link} compact />
+                </li>
+              ))}
+            </ul>
+            <ul className="hidden md:flex flex-wrap gap-1" role="list">
+              {secondary.map((link) => (
+                <li key={`d-${link.href}`}>
+                  <NavLinkItem link={link} compact />
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </>
   )
 }
