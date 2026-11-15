@@ -133,28 +133,28 @@ export function HomePageContent({
                     Is Fortnite down? <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
                   <Link
-                    href="/season-countdown"
-                    className="inline-flex items-center gap-2 rounded-md border border-primary/50 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/15 transition-colors"
-                  >
-                    Nov 1 countdown
-                  </Link>
-                  <Link
                     href="/guides/season/fortnite-treasure-hunters"
-                    className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                    className="inline-flex items-center gap-2 rounded-md border border-primary/50 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/15 transition-colors"
                   >
                     Treasure Hunters
                   </Link>
                   <Link
-                    href="/leaks/pirate-shop-afk-squad-fill-ban"
+                    href="/season-countdown"
                     className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
                   >
-                    Pirate Shop AFK ban
+                    Season countdown
+                  </Link>
+                  <Link
+                    href="/tools/item-shop"
+                    className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
+                  >
+                    Item Shop
                   </Link>
                   <Link
                     href="/leaks"
                     className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary transition-colors"
                   >
-                    All leaks
+                    Leaks
                   </Link>
                 </>
               ) : (
@@ -181,47 +181,46 @@ export function HomePageContent({
       {isEnglish ? (
         <section
           className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8"
-          aria-labelledby="flip-heading"
+          aria-labelledby="season-now-heading"
         >
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">1 November ET</p>
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">Live now</p>
           <h2
-            id="flip-heading"
+            id="season-now-heading"
             className="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-foreground sm:text-3xl"
           >
-            Override ends. Treasure Hunters is the name Epic posted.
+            Treasure Hunters is live — captains, Pirate Shop, and weekly beats
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            Official Fortnite account, 24 Oct: “The greatest adventure of all! 11.1”, then a Fortnite ×
-            One Piece logo teaser. No hour yet. Sit on status if the client queues, and the countdown
-            for the calendar clock.
+            One Piece collabs, Captain’s Days, Friendship Villa, and Pirate Shop Access are in season.
+            Use the tools below for the map, shop, sprites, and the clock until the next chapter flip.
           </p>
           <div className="mt-6 rounded-2xl border border-border bg-card/70 p-5 sm:p-6">
             <SeasonCountdownClient compact />
           </div>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
-              href="/status"
+              href="/fortnite-map"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90"
             >
-              Is Fortnite down?
+              Live map
             </Link>
             <Link
-              href="/season-countdown"
+              href="/tools/item-shop"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
             >
-              Full countdown
+              Item Shop
             </Link>
             <Link
               href="/guides/season/fortnite-treasure-hunters"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
             >
-              What Epic has shown
+              Season hub
             </Link>
             <Link
               href="/leaks"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary/60 hover:text-primary"
             >
-              Fortnite Leaks
+              Leaks
             </Link>
           </div>
         </section>

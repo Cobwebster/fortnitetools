@@ -61,7 +61,7 @@ export const posts: Post[] = [
     slug: 'how-to-get-pirate-shop-access-fortnite',
     title: 'How to Get Pirate Shop Access in Fortnite (Free Item Shop for 14 Days)',
     excerpt:
-      'Pirate Shop Access is a Treasure Hunters chest prize at official 1:137,500 per chest (2.0× in tonight’s Treasure Hours). Activate once in 2026 and once in 2027 for 14-day free V-Bucks shop claims.',
+      'Pirate Shop Access is a Treasure Hunters chest prize at official 1:137,500 per chest (higher during Treasure Hours). Activate once in 2026 and once in 2027 for 14-day free V-Bucks shop claims.',
     category: 'how-to',
     image: '/images/guides/pirate-shop-access.jpg',
     date: '2026-11-07',
@@ -123,8 +123,8 @@ Fortnite Status published the Treasure Hunt chest table after the **#ReleaseTheO
 Other notes from the same Status post:
 
 - Other than **Gizmos**, you **cannot get the same treasure twice**.
-- **Treasure Hours** boost these rates. Status listed earlier today: Pirate Shop Access **1.5×**, Weekly Gold Outfit **7.5×**, Weekly Vehicle & Decal **10×**.
-- Tonight’s **9–11 PM ET** Treasure Hour (7 Nov): Pirate Shop Access **2.0×**, Weekly Gold Outfit **10.0×**. Future Hours may go higher — Status said they will announce it.
+- **Treasure Hours** boost these rates. Status examples from early November: Pirate Shop Access **1.5×** / **2.0×**, Weekly Gold Outfit **7.5×** / **10.0×**, Weekly Vehicle & Decal **10×**.
+- Multipliers change per window — check [Fortnite Status](https://status.epicgames.com/) / in-game MOTD when a Treasure Hour is live, and our [Treasure Hours leak page](/leaks/treasure-hours-fortune-sprites) for the leaked calendar.
 
 **During a 2.0× Pirate Shop window that is ~1 : 68,750 per chest.** At 1.5× it is ~1 : 91,667. Still rare — just not the fake **1 : 700,000** figure that circulated all week.
 
@@ -249,7 +249,7 @@ Unknown. It is a Treasure Hunters prize as of 1 Nov 2026. Do not bank on a Chapt
 
 ### Do Treasure Hours boost the Pirate Shop Token?
 
-**Yes.** Status confirmed Treasure Hours raise Pirate Shop Access (and other treasures). Example: earlier 7 Nov window **1.5×**; tonight **9–11 PM ET** **2.0×** for Pirate Shop Access. That is separate from older “Power Hours later this season” chatter — see [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
+**Yes.** Status confirmed Treasure Hours raise Pirate Shop Access (and other treasures). Early‑November examples included **1.5×** and **2.0×** Pirate Shop Access windows. Live multipliers are announced per window — see Status / MOTD and [Treasure Hours](/leaks/treasure-hours-fortune-sprites). Separate from rarer “Power Hours” chatter: [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
 
 ## Sources
 

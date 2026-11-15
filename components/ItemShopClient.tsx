@@ -582,7 +582,11 @@ export function ItemShopClient() {
             </div>
           )}
           {!loading && filteredShop.length === 0 && (
-            <p className="text-sm text-muted-foreground">{t('shop.noMatch')}</p>
+            <p className="text-sm text-muted-foreground">
+              {shopOffers.length === 0
+                ? 'Could not load today’s shop rotation. Tap Refresh shop above, or try again in a minute.'
+                : t('shop.noMatch')}
+            </p>
           )}
         </>
       )}

@@ -64,11 +64,18 @@ export function LockerGrid({
         }`}
       >
         <p className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
-          {highlight ? 'Drop to add' : 'Your locker is empty'}
+          {highlight ? 'Drop to add' : canDrop ? 'Your locker is empty' : 'This locker is empty'}
         </p>
         <p className="mt-2 text-sm text-muted-foreground">
-          Search above, then click <strong className="text-foreground">Add</strong> on a result — or
-          drag it here.
+          {canDrop ? (
+            <>
+              Search above, then click <strong className="text-foreground">Add</strong> on a result —
+              or drag it here.
+            </>
+          ) : (
+            <>This player has not added cosmetics yet. Check back later or build yours at{' '}
+              <span className="text-foreground">/locker</span>.</>
+          )}
         </p>
       </div>
     )

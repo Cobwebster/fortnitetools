@@ -40,6 +40,19 @@ export default function SkinRarityCalculatorPage() {
         </section>
 
         <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 space-y-10">
+          <section aria-labelledby="try-heading" className="space-y-3">
+            <h2
+              id="try-heading"
+              className="font-display text-xl font-bold uppercase tracking-wide text-foreground"
+            >
+              Check any Fortnite skin
+            </h2>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
+              Search an outfit for live shop history and a scarcity score. Results update below after you search.
+            </p>
+            <SkinRarityClient />
+          </section>
+
           {STATIC_SKIN_EXAMPLES.map((ex) => (
             <section key={ex.heading} aria-labelledby={ex.item.id} className="space-y-3">
               <div>
@@ -64,19 +77,6 @@ export default function SkinRarityCalculatorPage() {
               />
             </section>
           ))}
-
-          <section aria-labelledby="try-heading" className="space-y-3">
-            <h2
-              id="try-heading"
-              className="font-display text-xl font-bold uppercase tracking-wide text-foreground"
-            >
-              Check any Fortnite skin
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
-              Search another outfit for live shop history and a scarcity score. Results update below after you search.
-            </p>
-            <SkinRarityClient />
-          </section>
 
           <section aria-labelledby="famous-heading" className="space-y-4">
             <h2

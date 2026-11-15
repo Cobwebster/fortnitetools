@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import {
   LOCKER_DIRECTORY_LIMIT,
   LOCKER_PREVIEW_COUNT,
+  isOffensiveLockerName,
   isValidLockerSlug,
   slugifyLockerName,
   type LockerRow,
@@ -119,11 +120,13 @@ export async function ensureMyLocker(): Promise<
   if (existing.setupMissing) return { error: LOCKERS_SETUP_HINT }
   if (existing.locker) return { locker: existing.locker }
 
-  const display =
+  const rawDisplay =
     (user.user_metadata?.display_name as string | undefined)?.trim()?.slice(0, 40) ||
     user.email?.split('@')[0]?.slice(0, 40) ||
     'Locker'
+  const display = isOffensiveLockerName(rawDisplay) ? 'Locker' : rawDisplay
   const slug = await uniqueSlug(supabase, slugifyLockerName(display))
+  const publicOk = !isOffensiveLockerName(display) && !isOffensiveLockerName(slug)
 
   const { data, error } = await supabase
     .from('lockers')
@@ -131,7 +134,7 @@ export async function ensureMyLocker(): Promise<
       user_id: user.id,
       slug,
       display_name: display,
-      is_public: true,
+      is_public: publicOk,
     })
     .select('*')
     .single()

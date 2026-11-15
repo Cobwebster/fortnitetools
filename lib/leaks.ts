@@ -60,13 +60,14 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 export const leaks: LeakPost[] = [
   {
     slug: 'ishowspeed-pirate-speedy-fortnite-skin',
-    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Bundle, Shop Time (Leaked)',
+    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Live in Item Shop',
     excerpt:
-      'According to leaks on 13 Nov 2026, a One Piece–themed IShowSpeed outfit called Pirate Speedy is headed to the Item Shop with a back bling, pickaxe, and emote. The leaked shop schedule points to Friday 13 Nov at 7pm ET — midnight UK on Saturday 14 Nov. Prices are not confirmed.',
+      'Pirate Speedy (also listed as Pirate D. Speedy) is live in the Fortnite Item Shop with Speed’s Coin, Speed’s Pirate Blade, and IShowFlip. One Piece–themed IShowSpeed collab — confirm prices on the live shop tracker.',
     category: 'cosmetics',
-    status: 'active',
+    status: 'shipped',
     date: '2026-11-13',
-    readTime: 4,
+    confirmedDate: '2026-11-14',
+    readTime: 3,
     featured: true,
     image: '/images/guides/treasure-hunters.jpg',
     tags: [
@@ -77,48 +78,30 @@ export const leaks: LeakPost[] = [
       'ishowspeed item shop time',
     ],
     content: `
-## What leaked on 13 Nov
+## Live in the Item Shop
 
-A new IShowSpeed collab skin named **Pirate Speedy** is circulating in today’s update coverage as part of the Treasure Hunters / One Piece mini‑season. A showcase clip and the matching emote reportedly appeared alongside shop metadata.
+**Pirate Speedy** / **Pirate D. Speedy** hit the shop with the Treasure Hunters / One Piece collab wave. Check the live tile on the [Item Shop tracker](/tools/item-shop).
 
-## Bundle contents (leaked)
+## Bundle contents (shop)
 
-- **1 Outfit** — Pirate Speedy
-- **1 Back Bling**
-- **1 Pickaxe**
-- **1 Emote**
+- **Outfit** — Pirate Speedy / Pirate D. Speedy
+- **Back Bling** — Speed’s Coin
+- **Pickaxe** — Speed’s Pirate Blade
+- **Emote** — IShowFlip
 
-## When does it hit the Item Shop?
+## Timing
 
-Leaked shop timing points to the standard collab reset: **Friday 13 November 2026, 7:00 PM ET** — which is **Saturday 14 November, 12:00 AM (midnight) UK**. Regional times:
-
-| Region | Local time |
-| --- | --- |
-| PT | Fri 13 Nov, 4:00 PM PT |
-| ET | Fri 13 Nov, 7:00 PM ET |
-| GMT | Sat 14 Nov, 12:00 AM GMT |
-| CET | Sat 14 Nov, 1:00 AM CET |
-
-Track the flip on the [Item Shop tracker](/tools/item-shop) and our rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
-
-## Price expectations (estimates only)
-
-Community estimates float around **1,500 V‑Bucks** for the outfit and roughly **2,400–2,600 V‑Bucks** for the full bundle. These are **not confirmed** — wait for the live shop tile.
+Leaks pointed at the **13 Nov 7 PM ET** collab reset (**midnight UK 14 Nov**). The set was in the **15 Nov** shop history alongside Cap’n Hatsune Miku.
 
 ## Not the old Icon Series skin
 
-This is a **separate** collab outfit from Speed’s **original Icon Series skin** (released December 2025) and is unrelated to **Monkey D. Luffy**.
+This is a **separate** collab outfit from Speed’s **original Icon Series skin** (December 2025) and is unrelated to **Monkey D. Luffy**.
 
-## Pirate Shop Access token note
+## Pirate Shop Access
 
-Players who already activated a **Pirate Shop Access** token are widely reporting that they can **claim Item Shop cosmetics** with it (real‑money offers and gifting are excluded). Treat that as anecdotal until you see the **Claim** button on your account. New to the system? See [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+If you have an active **Pirate Shop Access** window, look for the **Claim** button in-game. Guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
-## What is not confirmed
-
-- Final **prices** for the outfit or bundle
-- How **long** Pirate Speedy will stay in the shop rotation
-
-**Filed:** 13 November 2026. Status: **Unconfirmed**.
+**Filed:** 13 November 2026. **Shipped:** 14 November 2026.
 `,
   },
   {
@@ -509,7 +492,7 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
 
 - Epic Games: Kasane Teto headlines the next Fortnite Music Pass — https://www.fortnite.com/news/kasane-teto-headlines-the-next-fortnite-music-pass
 
-**Filed:** 11 November 2026. **Updated / confirmed:** 12 November 2026. Status: **Shipped** (watching for the 15 Nov POI flip).
+**Filed:** 11 November 2026. **Updated / confirmed:** 12 November 2026. **Friendship Villa / week‑3 captains:** 15 November 2026. Status: **Shipped**.
 `,
   },
   {
@@ -905,55 +888,52 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Item Shop Leaks — Pirate Speedy, KATSEYE “Pinky Up”, Jason Returns, Lil Uzi Bundle',
+      'Upcoming Item Shop Leaks — Cap’n Miku & Pirate Speedy Live; 16 Nov Watch List',
     excerpt:
-      '13 Nov refresh: KATSEYE “Pinky Up” ICON emote, a new Lil Uzi Vert outfit and full bundle are live, and Jason Voorhees returned. Next up (leaked): Pirate Speedy (IShowSpeed) expected at midnight UK on 14 Nov. Also in files today: an encrypted Overwatch Wave 2 — see Kiriko/Widowmaker. Older rows remain below.',
+      '15 Nov shop: Cap’n Hatsune Miku set and Pirate Speedy (IShowSpeed) are live. Captain’s Day / Friendship Villa for Miku + Teto is the BR beat. Leaked next (unconfirmed): Beach Bod Batman / Gotham City Summer leftovers, then 16 Nov Odyssey / High Stakes Summer / Golden Tactical Pack. Confirm on the live tracker.',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-07',
+    date: '2026-11-15',
     readTime: 4,
     featured: true,
     image: '/images/guides/stars-of-the-show.webp',
     tags: [
       'fortnite item shop leaks',
+      'capn hatsune miku fortnite',
       'ishowspeed pirate speedy',
-      'katseye pinky up emote',
-      'jason voorhees fortnite',
-      'nemia fortnite',
-      'zoro sanji chopper shop',
-      'fortnite star wars leak',
-      'honkai star rail fortnite',
+      'beach bod batman fortnite',
+      'fortnite shop november 16',
+      'friendship villa fortnite',
     ],
     content: `
-## 13 November 2026 — Shop reset (12:00am UK / 7:00pm ET 12 Nov)
+## Live now (15 November 2026)
 
-- **KATSEYE “Pinky Up”** **ICON Series emote** dropped in tonight’s reset (KATSEYE x Fortnite)
-- **Lil Uzi Vert** — a **new outfit** and a **full bundle** are in the shop (see [Lil Uzi Vert Jam Tracks](/leaks/lil-uzi-vert-fortnite-jam-tracks) for the wider set)
-- **Jason Voorhees** returned
-- **Upcoming (no date):** new **Hope**, **Kitsune**, and **Whale** Kicks
-- **Expected next:** **Pirate Speedy (IShowSpeed)** — targeted for **12:00am UK, Saturday 14 Nov** (leaked schedule; see [Pirate Speedy page](/leaks/ishowspeed-pirate-speedy-fortnite-skin))
-- Also in today’s files: an **encrypted Overwatch Wave 2** set — details on [Kiriko / Widowmaker wave 2](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
+Confirm every tile on the [Item Shop tracker](/tools/item-shop) — prices and leave times are live there.
 
-## Upcoming shop dates (leaked 11 Nov)
+- **Cap’n Hatsune Miku** bundle / set (outfit, back bling, pickaxe, emote, mic, jam track, car pieces)
+- **Pirate Speedy** / **Pirate D. Speedy** (IShowSpeed) — [detail page](/leaks/ishowspeed-pirate-speedy-fortnite-skin)
+- BR beat the same weekend: **Friendship Villa** on Crossbones Isle with **Kasane Teto** + Cap’n Miku — see [Teto / Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
 
-Leaked/unconfirmed shop schedule — **times and prices unknown**:
+## Leaked next (unconfirmed)
 
-- **12 November 2026:** **Kasane Teto** Music Pass items (see [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)); **Lil Uzi Vert** Icon Series outfits
-- **13 November 2026:** **Buggy** (One Piece) — POI context: [Buggy POI](/leaks/brutal-beachhead-buggy-poi); **Volkswagen Golf II GTI** (car)
-- **15 November 2026:** **Beach Bod Batman**
-- **16 November 2026:** **The Odyssey**; **High Stakes Summer**; **Golden Tactical Pack**
+| Window | What leakers flagged | Status |
+| --- | --- | --- |
+| 15 Nov (shop) | **Beach Bod Batman** / Gotham City Summer return | Leak — verify on tracker; may overlap Cap’n Miku night |
+| 16 Nov | **The Odyssey**; **High Stakes Summer**; **Golden Tactical Pack** | Leak |
+| No firm date | **Madison Beer**, **Kaiju No. 8**, **Shohei Ohtani** (some dumps) | Leak / watch |
+| Files | **Overwatch Wave 2** (Kiriko + likely Widowmaker) | [Wave 2 page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
 
-## Earlier (7 Nov dump)
+## Already shipped (recent)
 
-A long 7 Nov stack included **Nemia**, **Ben 10** returns, **Brainrot** returns, **Tung Tung Tung Sahur**, **ICON emotes** refresh, **Gothic Lookbook**; then **Chopper (1,500 VB)** and a **Zoro, Sanji & Chopper (3,200 VB)** bundle. Later callouts included **Deadpool** mashups, **Bugatti Centodieci**, **Samurai Star Wars**, and **Honkai Star Rail**. Treat all as **leaked/unconfirmed** — confirm on the live [Item Shop tracker](/tools/item-shop).
+- **12 Nov:** Kasane Teto Music Pass + Lil Uzi Vert Icon sets
+- **13 Nov:** Buggy (One Piece) — [Buggy POI](/leaks/brutal-beachhead-buggy-poi); VW Golf II GTI (car)
+- **13–14 Nov:** KATSEYE “Pinky Up”, Jason return, then Pirate Speedy
 
 ## How to use this
 
-Shop leaks shuffle. Treat the list as a **watch order**, then confirm on the live [Item Shop tracker](/tools/item-shop) after reset (**~00:00 UTC** / Epic’s 7 PM ET collab drops for some Treasure Hunters sets).
+Treat dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season calendar context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-  Epic’s own Treasure Hunters shop calendar still owns the big collab nights (A$AP 5 Nov, Straw Hat pieces 7 Nov, **Lil Uzi Vert 12 Nov**, Buggy 13 Nov, Miku/Teto 14 Nov).
-
-**Filed:** 7 November 2026.
+**Updated:** 15 November 2026.
 `,
   },
   {

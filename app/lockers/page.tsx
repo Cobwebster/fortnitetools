@@ -77,8 +77,7 @@ export default async function PlayerLockersPage() {
               Player <span className="text-primary">Lockers</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Public lockers people built here — outfits, pickaxes, wraps, the lot. Open a link, or
-              submit yours.
+              Browse public player lockers, or sign in and share yours with a link right away.
             </p>
           </div>
         </section>
@@ -88,17 +87,18 @@ export default async function PlayerLockersPage() {
             className="block overflow-hidden rounded-2xl border border-primary/40 bg-linear-to-br from-primary/20 via-card to-card p-5 sm:p-6 transition-colors hover:border-primary/70"
           >
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">
-              Submit yours
+              Share link works now
             </p>
             <h2 className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-              Put your locker on this page
+              Build your locker
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-              Sign in, add cosmetics at <span className="text-foreground">/locker</span>, and share
-              the link anytime. This directory only lists lockers from the last site build.
+              Sign in at <span className="text-foreground">/locker</span>, add cosmetics, and copy
+              your public URL anytime. The directory below is a snapshot of public lockers from the
+              latest site build — your share link still works even if you are not listed yet.
             </p>
             <span className="mt-4 inline-flex rounded-lg bg-primary px-4 py-2 text-xs font-bold uppercase tracking-wider text-primary-foreground">
-              Build at /locker
+              Open /locker
             </span>
           </Link>
 

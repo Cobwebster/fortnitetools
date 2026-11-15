@@ -91,6 +91,14 @@ export function isValidLockerSlug(slug: string) {
   return LOCKER_SLUG_RE.test(slug) && !RESERVED_LOCKER_SLUGS.has(slug)
 }
 
+/** Block obvious hate / sexual / drug / self-harm locker names before they go public. */
+const OFFENSIVE_LOCKER_NAME_RE =
+  /\b(nigg|fag|kike|chink|tranny|retard|rape|pedophil|paedophil|nazi|hitler|heil\b|kkk\b|kill\s*(your|ur|my)?self|kys\b|suicide|slut|whore|cunt|fuck|porn|onlyfans|heroin|meth\b|cocaine|fentanyl)\b/i
+
+export function isOffensiveLockerName(raw: string) {
+  return OFFENSIVE_LOCKER_NAME_RE.test(raw.replace(/[-_./]+/g, ' '))
+}
+
 export function isValidCosmeticId(id: string) {
   return LOCKER_COSMETIC_ID_RE.test(id)
 }

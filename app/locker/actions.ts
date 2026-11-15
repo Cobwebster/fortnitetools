@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 import {
   LOCKER_ITEM_CAP,
   cosmeticExists,
+  isOffensiveLockerName,
   isValidCosmeticId,
   isValidLockerSlug,
   sanitizeLockerSlug,
@@ -114,10 +115,16 @@ export async function updateLockerSettingsAction(form: {
 
   const displayName = form.displayName.trim().slice(0, 40)
   if (displayName.length < 1) return { ok: false, error: 'Give the locker a name.' }
+  if (isOffensiveLockerName(displayName) || isOffensiveLockerName(form.slug)) {
+    return { ok: false, error: 'Pick a different locker name — that one is not allowed.' }
+  }
 
   const slug = sanitizeLockerSlug(form.slug)
   if (!isValidLockerSlug(slug)) {
     return { ok: false, error: 'Slug must be 3–32 letters or numbers (hyphens ok in the middle).' }
+  }
+  if (isOffensiveLockerName(slug)) {
+    return { ok: false, error: 'Pick a different share URL — that one is not allowed.' }
   }
 
   const nextSlug = slug === locker.slug ? slug : await allocateLockerSlug(slug, mine.userId)
