@@ -59,15 +59,96 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
-    slug: 'ishowspeed-pirate-speedy-fortnite-skin',
-    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Live in Item Shop',
+    slug: 'hello-neighbor-fortnite-collab',
+    title: 'Hello Neighbor x Fortnite Collab Leak — Coming Soon to the Item Shop',
     excerpt:
-      'Pirate Speedy (also listed as Pirate D. Speedy) is live in the Fortnite Item Shop with Speed’s Coin, Speed’s Pirate Blade, and IShowFlip. One Piece–themed IShowSpeed collab — confirm prices on the live shop tracker.',
+      'According to leaks on 14 Nov 2026, a Hello Neighbor x Fortnite collaboration is coming soon, with an Item Shop release and an Epic Games Store gift-with-purchase tie-in. An announcement teaser surfaced the same day. No release date or prices yet.',
+    category: 'cosmetics',
+    status: 'active',
+    date: '2026-11-14',
+    readTime: 3,
+    featured: true,
+    tags: [
+      'hello neighbor fortnite',
+      'hello neighbor fortnite skin',
+      'hello neighbor x fortnite collab',
+      'fortnite hello neighbor release date',
+      'hello neighbor epic games store gift',
+    ],
+    content: `
+## What leaked on 14 Nov
+
+On the evening of **14 November 2026** (around **5:25pm UK**), leaks said a **Hello Neighbor x Fortnite** collaboration is **coming soon**. Two parts were reported: an **Item Shop** release, and an **Epic Games Store gift‑with‑purchase** — buying a Hello Neighbor game on the Epic Games Store is expected to come with a Fortnite reward. Shortly after, an **announcement teaser** for the collab circulated.
+
+## What this means
+
+Hello Neighbor is the stealth‑horror series about sneaking into a creepy neighbour’s house. The Neighbor is the obvious outfit candidate, but which characters become cosmetics is **not confirmed**. Gift‑with‑purchase deals on the Epic Games Store usually grant a **Fortnite cosmetic** when you buy the partner game on the same Epic account. Track the live flip on the [Item Shop tracker](/tools/item-shop) and the rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+
+## What is not confirmed
+
+- The **release date**
+- Which **characters/cosmetics** are included
+- **Prices**
+- Which **game(s)** qualify for the gift and what the gift item is
+- Whether **Epic has officially announced** it yet
+
+**Filed:** 14 November 2026. Status: **Unconfirmed**.
+`,
+  },
+  {
+    slug: 'pirate-hatsune-miku-fortnite-bundle',
+    title: 'Cap’n Hatsune Miku Fortnite Bundle — Out Now (2,200 V-Bucks), New Emote 500 V-Bucks',
+    excerpt:
+      'Cap’n Hatsune Miku hit the Item Shop at midnight UK on 15 Nov 2026 (7pm ET 14 Nov): bundle 2,200 V-Bucks, new emote sold separately for 500 V-Bucks; Solid Gold Miku joined the Treasure Hunt chest prizes at 2pm UK the same day.',
+    category: 'cosmetics',
+    status: 'shipped',
+    date: '2026-11-14',
+    confirmedDate: '2026-11-15',
+    readTime: 3,
+    featured: true,
+    image: '/images/guides/capn-hatsune-miku-featured.webp',
+    tags: [
+      'pirate hatsune miku fortnite',
+      'capn hatsune miku fortnite',
+      'hatsune miku fortnite price',
+      'capn hatsune miku price',
+      'hatsune miku fortnite bundle',
+      'miku miku ni shite ageru fortnite emote',
+      'gold hatsune miku back bling',
+      'hatsune miku fortnite release date',
+    ],
+    content: `
+## Out now — prices
+
+Released **15 November 2026, 00:00 UK** (**7:00 PM ET**, Sat **14 Nov**), alongside an **ICON emotes refresh**.
+
+**Prices (confirmed):** **2,200 V‑Bucks** for the **Cap’n Hatsune Miku bundle**; the new **Hatsune Miku emote** is **sold separately** for **500 V‑Bucks**.
+
+## Official trailer and artwork
+
+At **2:00 PM UK** on **15 November**, Epic released an arrival **trailer** and **key art** for **Hatsune Miku & Kasane Teto**, and the game was themed around the pair — see [Kasane Teto & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
+
+## Solid Gold Miku + gold back bling from chests
+
+From **15 November**, the **Week 3 Treasure Prizes** include the **Solid Gold Hatsune Miku** outfit and the "**Miku’s Takarabako**" back bling as **Treasure Hunt chest prizes** — see [chest prizes week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4).
+
+## What is not confirmed
+
+- How **long** the bundle and emote stay in the shop rotation
+
+**Shipped:** 15 November 2026.
+`,
+  },
+  {
+    slug: 'ishowspeed-pirate-speedy-fortnite-skin',
+    title: 'IShowSpeed Pirate Speedy Fortnite Skin — Out Now, Price (1,500 / 1,800 V-Bucks)',
+    excerpt:
+      'IShowSpeed’s One Piece–themed Pirate Speedy outfit hit the Fortnite Item Shop at midnight UK on 14 Nov 2026 (7pm ET 13 Nov). The skin costs 1,500 V-Bucks and the full bundle 1,800 V-Bucks.',
     category: 'cosmetics',
     status: 'shipped',
     date: '2026-11-13',
     confirmedDate: '2026-11-14',
-    readTime: 3,
+    readTime: 4,
     featured: true,
     image: '/images/guides/treasure-hunters.jpg',
     tags: [
@@ -76,22 +157,23 @@ export const leaks: LeakPost[] = [
       'ishowspeed one piece skin release date',
       'ishowspeed fortnite bundle',
       'ishowspeed item shop time',
+      'ishowspeed fortnite price',
     ],
     content: `
-## Live in the Item Shop
+## Out now — prices
 
-**Pirate Speedy** / **Pirate D. Speedy** hit the shop with the Treasure Hunters / One Piece collab wave. Check the live tile on the [Item Shop tracker](/tools/item-shop).
+Released **14 November 2026, 00:00 UK** (**7:00 PM ET** on 13 Nov). Still in the **15 Nov** shop alongside Cap’n Miku.
 
-## Bundle contents (shop)
+**Prices (confirmed):** **1,500 V‑Bucks** for the outfit; **1,800 V‑Bucks** for the full bundle.
+
+## Bundle contents
 
 - **Outfit** — Pirate Speedy / Pirate D. Speedy
 - **Back Bling** — Speed’s Coin
 - **Pickaxe** — Speed’s Pirate Blade
 - **Emote** — IShowFlip
 
-## Timing
-
-Leaks pointed at the **13 Nov 7 PM ET** collab reset (**midnight UK 14 Nov**). The set was in the **15 Nov** shop history alongside Cap’n Hatsune Miku.
+Live tiles: [Item Shop tracker](/tools/item-shop) · rolling list: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
 ## Not the old Icon Series skin
 
@@ -101,7 +183,7 @@ This is a **separate** collab outfit from Speed’s **original Icon Series skin*
 
 If you have an active **Pirate Shop Access** window, look for the **Claim** button in-game. Guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
-**Filed:** 13 November 2026. **Shipped:** 14 November 2026.
+**Shipped:** 14 November 2026.
 `,
   },
   {
@@ -328,7 +410,7 @@ Same‑day dump also floated **Scott Pilgrim** and **Puss in Boots** as separate
     slug: 'fortnite-winterfest-2026-dates',
     title: 'Fortnite Winterfest 2026 Dates Leak (Dec 17–Jan 7) + Seasonal Locker Filter',
     excerpt:
-      'According to leaks, Winterfest 2026 runs 17 Dec 2026 to 7 Jan 2027. Files also reference a “Seasonal Locker Filter” with winterfest/christmas tags. Not announced; usual cabin/presents are not confirmed.',
+      'According to leaks, Winterfest 2026 runs 17 Dec 2026 to 7 Jan 2027. A present list also leaked: 2 outfits, 2 collab pickaxes + 2 matching back blings, 1 contrail, 1 emoji, 3 sprays. Files reference a “Seasonal Locker Filter” with winterfest/christmas tags. Not announced; rewards could still change.',
     category: 'season',
     status: 'active',
     date: '2026-11-12',
@@ -337,6 +419,8 @@ Same‑day dump also floated **Scott Pilgrim** and **Puss in Boots** as separate
     image: '/images/guides/cold-welcome.webp',
     tags: [
       'fortnite winterfest 2026 dates',
+      'fortnite winterfest 2026 presents',
+      'winterfest 2026 rewards',
       'winterfest start date',
       'seasonal locker filter',
       'fortnite christmas event 2026',
@@ -346,6 +430,18 @@ Same‑day dump also floated **Scott Pilgrim** and **Puss in Boots** as separate
 ## Dates (leaked)
 
 Reports say **Winterfest 2026** runs **17 December 2026 → 7 January 2027**. This window would fall **inside Chapter 8 Season 1** (which is slated to start **5 December 2026** per the [Chapter 8 dates page](/leaks/fortnite-chapter-8-season-2-release-date)).
+
+## Winterfest 2026 presents (leaked)
+
+According to **leaks on 14 Nov 2026**, the **planned Winterfest 2026 presents** are:
+- **2 outfits**
+- **2 pickaxes** from a **collaboration**
+- **2 back blings** that match those collab pickaxes
+- **1 contrail**
+- **1 emoji**
+- **3 sprays**
+
+More presents are likely (for example an **emote** and **glider**), and rewards could still **change before release** — this is what is currently planned. The **collab partner** and the **item names** are **not known**.
 
 ## New feature reference
 
@@ -371,14 +467,14 @@ Files also reference a **“Seasonal Locker Filter”** tagged **winterfest / ch
 - Live announce path: [News](/news)
 - Mid‑season cadence: [Captain’s Days](/leaks/captain-days-content-stack)
 
-**Filed:** 12 November 2026. Status: **Unconfirmed**.
+**Filed:** 12 November 2026. **Updated:** 15 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
     slug: 'fortnite-pirate-chest-prizes-week-3-4',
     title: 'Pirate Chest Prizes Week 3–4 — Gold Miku & Gold Teto, Corvette, Urus',
     excerpt:
-      'Leaked prize pools: Week 3 adds Solid Gold Hatsune Miku, Miku’s Takarabako, PPPP Jam Track, May Fortune Find You loading screen, Gold Corvette ZR1; Week 4 adds Solid Gold Kasane Teto, Rogue Wave & Tidewalker back bling, Sea Shanty, Oscar’s Wraps, Gold Lamborghini Urus SE.',
+      'Week 3 is live from 2pm UK (9am ET) Sun 15 Nov: Solid Gold Hatsune Miku, Miku’s Takarabako, PPPP Jam Track, May Fortune Find You loading screen, Gold Corvette ZR1. Week 4 (upcoming): Solid Gold Kasane Teto, Rogue Wave & Tidewalker back bling, Sea Shanty, Oscar’s Wraps, Gold Lamborghini Urus SE.',
     category: 'cosmetics',
     status: 'watching',
     date: '2026-11-12',
@@ -389,9 +485,27 @@ Files also reference a **“Seasonal Locker Filter”** tagged **winterfest / ch
       'fortnite pirate chest prizes week 4',
       'solid gold hatsune miku',
       'solid gold kasane teto',
+      'solid gold miku fortnite',
+      'pppp jam track fortnite',
+      'fortnite week 3 treasure prizes',
       'pirate shop token effects',
     ],
     content: `
+## Week 3 Treasure Prizes — live 15 Nov 2026
+
+Went live around **2:00 PM UK** (**9:00 AM ET**) on **Sunday 15 November 2026**.
+
+Prizes now in the pool:
+- **Solid Gold Hatsune Miku** outfit
+- **Miku's Takarabako** back bling
+- **PPPP** Jam Track ("TAK - PPPP ft. Hatsune Miku and Kasane Teto") — a brand‑new Jam Track obtainable **free** through Treasure Prizes
+- **May Fortune Find You** loading screen
+- **Gold Chevrolet Corvette ZR1** car
+
+Also that afternoon:
+- **Mini Hatsune Miku** Sprite and the **Leekcapper** item went live around **2pm UK** (Leekcapper was bugged for roughly two hours and became properly available about **4:20pm UK**)
+- A new Sprite named **"Zee"** went live around **2:15pm UK**
+
 ## Leaked prize pools
 
 **Week 3**
@@ -419,7 +533,7 @@ In‑game change noted on **12 Nov**: **chest prize drop effects now differ** �
 - Previous swap: [Gold Lil’ Uzi Vert Jr.](/leaks/gold-lil-uzi-vert-sprite)
 - Odds: [Pirate Shop odds](/leaks/pirate-shop-odds)
 
-**Filed:** 12 November 2026. Status: **Watching**.
+**Filed:** 12 November 2026. **Updated:** 15 November 2026. Status: **Watching** (Week 4 still upcoming).
 `,
   },
   {
@@ -448,6 +562,10 @@ In‑game change noted on **12 Nov**: **chest prize drop effects now differ** �
 ## What was reported
 
 Leaks on **11 November 2026** showed the full **Kasane Teto** set — outfit, **Pearto** Back Bling, and a **music‑reactive edit style**. That style sits as the final tier of the upcoming Music Pass. **Epic has since announced** the pass officially as **TWINDRILL DIVA**.
+
+## 15 Nov takeover went live
+
+On **15 November 2026** the **Hatsune Miku & Kasane Teto** takeover **went live** — Epic released an **arrival trailer** and **artwork** at **2:00 PM UK**. The new **PPPP** Jam Track featuring both is a **free Treasure Prize** — see [chest prizes](/leaks/fortnite-pirate-chest-prizes-week-3-4).
 
 **Now live (12 Nov)** — **TWINDRILL DIVA Music Mini‑Pass**
 - Starts **12 November 2026**, ends **20 January 2027**
@@ -492,7 +610,7 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
 
 - Epic Games: Kasane Teto headlines the next Fortnite Music Pass — https://www.fortnite.com/news/kasane-teto-headlines-the-next-fortnite-music-pass
 
-**Filed:** 11 November 2026. **Updated / confirmed:** 12 November 2026. **Friendship Villa / week‑3 captains:** 15 November 2026. Status: **Shipped**.
+**Filed:** 11 November 2026. **Updated / confirmed:** 12 November 2026. **Updated:** 15 November 2026. Status: **Shipped** (Friendship Villa arrived 15 Nov).
 `,
   },
   {
@@ -890,7 +1008,7 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
     title:
       'Upcoming Item Shop Leaks — Cap’n Miku & Pirate Speedy Live; 16 Nov Watch List',
     excerpt:
-      '15 Nov shop: Cap’n Hatsune Miku set and Pirate Speedy (IShowSpeed) are live. Captain’s Day / Friendship Villa for Miku + Teto is the BR beat. Leaked next (unconfirmed): Beach Bod Batman / Gotham City Summer leftovers, then 16 Nov Odyssey / High Stakes Summer / Golden Tactical Pack. Confirm on the live tracker.',
+      '15 Nov shop is live: Cap’n Hatsune Miku (bundle 2,200 VB, emote 500) and Pirate Speedy (1,500 / 1,800). Friendship Villa / Miku+Teto is the BR beat. Leaked next (unconfirmed): Madison Beer, Kaiju No. 8, The Odyssey (16 Nov), plus Shohei Ohtani / Gotham City Summer if they still flip. Confirm on the tracker.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-15',
@@ -901,37 +1019,41 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'fortnite item shop leaks',
       'capn hatsune miku fortnite',
       'ishowspeed pirate speedy',
-      'beach bod batman fortnite',
-      'fortnite shop november 16',
-      'friendship villa fortnite',
+      'shohei ohtani fortnite',
+      'madison beer fortnite',
+      'kaiju no 8 fortnite',
+      'hello neighbor fortnite',
+      'buggy fortnite skin',
     ],
     content: `
 ## Live now (15 November 2026)
 
-Confirm every tile on the [Item Shop tracker](/tools/item-shop) — prices and leave times are live there.
+Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 
-- **Cap’n Hatsune Miku** bundle / set (outfit, back bling, pickaxe, emote, mic, jam track, car pieces)
-- **Pirate Speedy** / **Pirate D. Speedy** (IShowSpeed) — [detail page](/leaks/ishowspeed-pirate-speedy-fortnite-skin)
-- BR beat the same weekend: **Friendship Villa** on Crossbones Isle with **Kasane Teto** + Cap’n Miku — see [Teto / Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
+- **Cap’n Hatsune Miku** — bundle **2,200 V‑Bucks**, emote **500 V‑Bucks** · [detail page](/leaks/pirate-hatsune-miku-fortnite-bundle)
+- **Pirate Speedy** / **Pirate D. Speedy** — outfit **1,500**, bundle **1,800** · [detail page](/leaks/ishowspeed-pirate-speedy-fortnite-skin)
+- Still in rotation from earlier: **Buggy**, **Lil Uzi Vert**, and more One Piece tiles
+- BR beat: **Friendship Villa** (Miku + Teto week) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
 
 ## Leaked next (unconfirmed)
 
 | Window | What leakers flagged | Status |
 | --- | --- | --- |
-| 15 Nov (shop) | **Beach Bod Batman** / Gotham City Summer return | Leak — verify on tracker; may overlap Cap’n Miku night |
-| 16 Nov | **The Odyssey**; **High Stakes Summer**; **Golden Tactical Pack** | Leak |
-| No firm date | **Madison Beer**, **Kaiju No. 8**, **Shohei Ohtani** (some dumps) | Leak / watch |
+| 15 Nov (shop) | **Shohei Ohtani**; **Gotham City Summer** / Beach Bod Batman | Leak — **did not** lead the live 15 Nov rotation (Miku did); watch for a later flip |
+| 16 Nov | **Madison Beer**; **Kaiju No. 8**; **The Odyssey** (some dumps also list High Stakes Summer / Golden Tactical Pack) | Leak |
+| Coming soon | [Hello Neighbor x Fortnite](/leaks/hello-neighbor-fortnite-collab) | Leak / teaser |
 | Files | **Overwatch Wave 2** (Kiriko + likely Widowmaker) | [Wave 2 page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
 
 ## Already shipped (recent)
 
 - **12 Nov:** Kasane Teto Music Pass + Lil Uzi Vert Icon sets
-- **13 Nov:** Buggy (One Piece) — [Buggy POI](/leaks/brutal-beachhead-buggy-poi); VW Golf II GTI (car)
-- **13–14 Nov:** KATSEYE “Pinky Up”, Jason return, then Pirate Speedy
+- **13 Nov:** Buggy · VW Golf II GTI · KATSEYE “Pinky Up” · Jason return
+- **14 Nov:** Pirate Speedy
+- **15 Nov:** Cap’n Hatsune Miku + ICON emotes refresh
 
 ## How to use this
 
-Treat dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season calendar context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
+Treat future dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
 **Updated:** 15 November 2026.
 `,
@@ -999,7 +1121,7 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
     slug: 'pirate-shop-power-hours',
     title: 'Pirate Shop Power Hours — Confirmed 2× Access & 10× Gold Outfit Boost',
     excerpt:
-      'Confirmed past window: 7 Nov 2026, 9–11pm ET (02:00–04:00 UK on 8 Nov) with Pirate Shop Access at 2.0× and Weekly Gold Outfit at 10.0×. Earlier Treasure Hours used 1.5× Access / 7.5× Gold / 10× Vehicle.',
+      'Two Treasure Hours ran on 14 Nov 2026: the first window was extended to 7–11pm UK (2–6pm ET), and the second ran 2–4am UK (9–11pm ET 14 Nov). In-game, Pirate Shop Access was 1.5× and Weekly Gold Outfit 7.5×. Past 7 Nov window ran 2.0× Access / 10× Gold.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-04',
@@ -1013,10 +1135,19 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
       'fortnite power hour',
       'pirate shop 2x boost',
       'treasure hours 2.0x',
+      'treasure hours today',
     ],
     content: `
 ## What are Power Hours?
 Short, scheduled windows later in the season that temporarily boost the chance to roll the **Pirate Shop Access** prize from Battle Royale chests.
+
+## 2× Treasure Hours — 14 Nov 2026
+Two boosted windows on **Saturday 14 November 2026**. The **first window was extended by 2 hours on the day**, and the **second** started on schedule at about **2am UK** (**9pm ET** Sat **14 Nov**) for two hours. **In‑game multipliers confirmed:** **Pirate Shop Access token 1.5×** and **Weekly Gold Outfit 7.5×**.
+
+| Window | ET | UK (GMT) |
+| --- | --- | --- |
+| First | Sat 14 Nov **2–6pm ET** | Sat 14 Nov **7–11pm** |
+| Second | Sat 14 Nov **9–11pm ET** | Sun 15 Nov **2–4am** |
 
 ## Confirmed Treasure Hours multipliers
 Weekend Treasure Hours previously boosted other Treasure Hunt prizes (on top of the base odds):
@@ -1034,7 +1165,7 @@ How-to guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-s
 
 We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated / confirmed:** 7 November 2026. Status: **Watching** for future announced windows.
+**Filed:** 4 November 2026. **Updated:** 15 November 2026. Status: **Watching** for future announced windows.
 `,
   },
   {
@@ -1237,11 +1368,11 @@ Live catalog: [sprites](/sprites)
     slug: 'treasure-hours-fortune-sprites',
     title: 'Treasure Hours Fortune Sprite Boost',
     excerpt:
-      'Next Treasure Hours are 14 November 2026. The leaked schedule lists 7–9pm UK on 14 Nov and 2–4am UK on 15 Nov, plus later windows on 21–22 November, at 7.5× Gold Outfit / 1.5× Pirate Shop Access / 10× Vehicle & Decal.',
+      '14 Nov Treasure Hours ran (one window extended to 7–11pm UK). Leaked next: 21–22 November at 7.5× Gold Outfit / 1.5× Pirate Shop Access / 10× Vehicle & Decal. Confirm live multipliers in Status / MOTD.',
     category: 'season',
-    status: 'shipped',
+    status: 'watching',
     date: '2026-11-02',
-    confirmedDate: '2026-11-04',
+    confirmedDate: '2026-11-14',
     readTime: 2,
     image: '/images/guides/treasure-hunters.jpg',
     tags: ['fortnite treasure hours', 'fortune sprites', 'power hour'],
@@ -1249,18 +1380,22 @@ Live catalog: [sprites](/sprites)
 ## What are Treasure Hours?
 Epic’s live weekend-style boost windows (Fortune Sprites plus Treasure Hunt prize multipliers). They are not the same as the rarer Pirate Shop Power Hours 2.0× Access windows — those live on [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
 
+## 14 November 2026 (shipped)
+
+The **14 Nov** windows ran. Reports said the first UK evening window was **extended to 7–11pm UK**, with in-game multipliers around **Pirate Shop Access 1.5×** and **Weekly Gold Outfit 7.5×** — always trust Status / MOTD for the live numbers.
+
 ## What’s next (leaked)
-According to leaks on **8 November 2026**, the **next Treasure Hours are 14 November 2026**.
 
-The leaked schedule listed these UK (GMT) windows, all with **Gold Outfit 7.5×**, **Pirate Shop Access 1.5×**, and **Vehicle & Decal 10×**:
-- Saturday 14 November 2026, 7:00–9:00pm UK (2:00–4:00pm ET)
-- Sunday 15 November 2026, 2:00–4:00am UK (Saturday 14 November, 9:00–11:00pm ET)
-- Saturday 21 November 2026, 7:00–9:00pm UK
-- Sunday 22 November 2026, 2:00–4:00am UK
+| Window (UK) | Notes |
+| --- | --- |
+| Sat **21 Nov**, 7:00–9:00pm | Leaked |
+| Sun **22 Nov**, 2:00–4:00am | Leaked |
 
-Phrase the times as leaked/reported, not as an Epic blog announcement, unless you independently find Epic MOTD/Status text that matches.
+Leaked multipliers for those slots: **Gold Outfit 7.5×**, **Pirate Shop Access 1.5×**, **Vehicle & Decal 10×**.
 
 Links: [Pirate Shop odds](/leaks/pirate-shop-odds) · [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+
+**Updated:** 15 November 2026.
 `,
   },
 ]
