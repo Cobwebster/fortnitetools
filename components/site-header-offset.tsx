@@ -15,100 +15,82 @@ function setCssVar(px: number) {
   document.documentElement.style.setProperty('--site-header-height', `${px}px`)
 }
 
-function looksLikeAdShell(el: HTMLElement) {
-  if (el.closest(HEADER_SELECTOR) || el.closest('[role="dialog"]')) return false
-  if (el.id === 'site-header' || el.tagName === 'HEADER' || el.tagName === 'NAV') return false
-
-  const cls = typeof el.className === 'string' ? el.className : ''
-  if (
-    el.tagName === 'INS' ||
-    cls.includes('adsbygoogle') ||
-    cls.includes('google') ||
-    el.id.includes('google') ||
-    el.querySelector(
-      'iframe[src*="googlesyndication"], iframe[id*="google_ads"], ins.adsbygoogle, .adsbygoogle'
-    )
-  ) {
-    return true
-  }
-  return false
-}
-
-/** AdSense auto side-rails: fixed/sticky, hug left or right, not full-width anchors. */
-function isAdSenseFixedRail(el: HTMLElement) {
-  if (!looksLikeAdShell(el)) return false
-  const style = window.getComputedStyle(el)
-  if (style.position !== 'fixed' && style.position !== 'sticky') return false
-
-  const rect = el.getBoundingClientRect()
-  if (rect.height < 40 || rect.width < 40) return false
-  const sideHug = rect.left <= 16 || rect.right >= window.innerWidth - 16
-  const notFullBleed = rect.width < window.innerWidth * 0.45
-  return sideHug && notFullBleed
+/** AdSense Auto side rails use this class on a position:fixed <ins>. */
+function sideRailNodes(): HTMLElement[] {
+  return Array.from(
+    document.querySelectorAll<HTMLElement>('ins.adsbygoogle-noablate, ins.adsbygoogle')
+  ).filter((el) => {
+    if (el.closest(HEADER_SELECTOR) || el.closest('[role="dialog"]')) return false
+    const style = window.getComputedStyle(el)
+    if (style.position !== 'fixed') return false
+    const rect = el.getBoundingClientRect()
+    // Rails are narrow vertical units hugging a side — skip anchors / in-page units
+    if (rect.width < 80 || rect.width > 400) return false
+    if (rect.height < 80) return false
+    return rect.left <= 120 || rect.right >= window.innerWidth - 120
+  })
 }
 
 function applyRailOffset(el: HTMLElement, offset: number) {
   const top = `${offset}px`
-  if (el.style.top === top) return
-  el.style.setProperty('top', top, 'important')
-  el.style.setProperty('max-height', `calc(100vh - ${offset}px - 8px)`, 'important')
-}
-
-function walkAndPatch(root: ParentNode, offset: number) {
-  if (root instanceof HTMLElement && isAdSenseFixedRail(root)) {
-    applyRailOffset(root, offset)
+  const maxH = `calc(100vh - ${offset}px - 8px)`
+  // AdSense writes top with !important — we must match that or it wins.
+  if (el.style.getPropertyValue('top') !== top || el.style.getPropertyPriority('top') !== 'important') {
+    el.style.setProperty('top', top, 'important')
   }
-  if (!(root instanceof Element) && !(root instanceof DocumentFragment)) return
+  el.style.setProperty('max-height', maxH, 'important')
+  el.style.setProperty('overflow', 'hidden', 'important')
 
-  const candidates = root.querySelectorAll<HTMLElement>(
-    'ins.adsbygoogle, .adsbygoogle, [id*="google"], [class*="google"], iframe[src*="googlesyndication"]'
-  )
-  for (const node of candidates) {
-    let cur: HTMLElement | null = node
-    // Walk up a few parents — AdSense wraps the iframe in fixed shells
-    for (let i = 0; i < 6 && cur; i++) {
-      if (isAdSenseFixedRail(cur)) applyRailOffset(cur, offset)
-      cur = cur.parentElement
-    }
+  const host = el.querySelector<HTMLElement>('[id$="_host"]')
+  if (host) {
+    host.style.setProperty('max-height', maxH, 'important')
+    host.style.setProperty('overflow', 'hidden', 'important')
+  }
+  const iframe = el.querySelector('iframe')
+  if (iframe) {
+    iframe.style.setProperty('max-height', maxH, 'important')
   }
 }
 
 function patchRails() {
   const offset = headerOffsetPx()
   setCssVar(offset)
-  walkAndPatch(document.body, offset)
+  for (const el of sideRailNodes()) applyRailOffset(el, offset)
 }
 
 /**
- * Keeps AdSense auto side-rail ads (and our sticky panels via CSS var) below
- * the sticky navbar + creator strip so they don't tuck under the header.
+ * Keeps AdSense Auto side-rail ads below the sticky navbar + creator strip.
+ * AdSense rewrites `top` with !important on scroll, so we re-assert after layout.
  */
 export function SiteHeaderOffset() {
   useEffect(() => {
     let raf = 0
+    let scheduled = false
     const schedule = () => {
-      cancelAnimationFrame(raf)
-      raf = requestAnimationFrame(patchRails)
+      if (scheduled) return
+      scheduled = true
+      raf = requestAnimationFrame(() => {
+        scheduled = false
+        patchRails()
+      })
     }
 
     schedule()
-    // AdSense injects asynchronously — re-check a few times after load
-    const timers = [400, 1200, 3000, 6000].map((ms) => window.setTimeout(schedule, ms))
+    const timers = [300, 800, 1600, 3200, 6000, 10000].map((ms) => window.setTimeout(schedule, ms))
 
     const header = document.querySelector(HEADER_SELECTOR)
     const ro = header ? new ResizeObserver(schedule) : null
     if (header) ro?.observe(header)
 
-    const mo = new MutationObserver((mutations) => {
-      for (const m of mutations) {
-        if (m.addedNodes.length > 0) {
-          schedule()
-          return
-        }
-      }
+    const mo = new MutationObserver(schedule)
+    mo.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['style', 'class'],
     })
-    mo.observe(document.body, { childList: true, subtree: true })
 
+    window.addEventListener('scroll', schedule, { passive: true })
     window.addEventListener('resize', schedule)
     window.addEventListener('orientationchange', schedule)
 
@@ -117,6 +99,7 @@ export function SiteHeaderOffset() {
       timers.forEach(clearTimeout)
       ro?.disconnect()
       mo.disconnect()
+      window.removeEventListener('scroll', schedule)
       window.removeEventListener('resize', schedule)
       window.removeEventListener('orientationchange', schedule)
     }

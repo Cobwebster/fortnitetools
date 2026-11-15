@@ -183,6 +183,7 @@ export function Navbar() {
   return (
     <header
       id="site-header"
+      google-side-rail-overlap="false"
       className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm"
     >
       <CreatorCodeChip variant="strip" />
