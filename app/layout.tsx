@@ -3,7 +3,6 @@ import { Barlow, Barlow_Condensed } from 'next/font/google'
 import Script from 'next/script'
 import { CookieConsent } from '@/components/cookie-consent'
 import { IntlProvider } from '@/components/intl-provider'
-import { SiteHeaderOffset } from '@/components/site-header-offset'
 import { ADSENSE_CLIENT } from '@/lib/adsense'
 import { websiteJsonLd } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
@@ -112,7 +111,6 @@ export default async function RootLayout({
         <IntlProvider locale={defaultLocale} messages={messages}>
           {children}
           <CookieConsent />
-          <SiteHeaderOffset />
         </IntlProvider>
         {process.env.NODE_ENV === 'production' && (
           <>

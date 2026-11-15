@@ -181,11 +181,7 @@ export function Navbar() {
   )
 
   return (
-    <header
-      id="site-header"
-      google-side-rail-overlap="false"
-      className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm"
-    >
+    <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
       <CreatorCodeChip variant="strip" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Bar 1 — brand, primary links, flags, actions */}
