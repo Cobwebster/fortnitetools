@@ -93,6 +93,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  :root {
+    /* Sticky navbar + creator strip; SiteHeaderOffset keeps this live. */
+    --site-header-height: 7rem;
+  }
 }
 
 @layer utilities {

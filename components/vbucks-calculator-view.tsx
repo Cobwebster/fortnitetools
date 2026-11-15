@@ -264,7 +264,7 @@ export function VBucksCalculatorView() {
           {/* Sidebar summary */}
           <div className="flex flex-col gap-4">
             {/* Cart summary */}
-            <div className="rounded-xl border border-border bg-card p-5 sticky top-20">
+            <div className="rounded-xl border border-border bg-card p-5 sticky top-[var(--site-header-height,7rem)]">
               <div className="flex items-center gap-2 mb-4">
                 <ShoppingCart className="h-4 w-4 text-primary" aria-hidden="true" />
                 <h2 className="text-sm font-bold uppercase tracking-wider text-foreground">{t('yourTotalTitle')}</h2>

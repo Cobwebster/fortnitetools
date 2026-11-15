@@ -149,7 +149,7 @@ export default async function LeakPostPage({ params }: Props) {
                     alt={leak.title}
                     fill
                     priority
-                    className="object-cover"
+                    className="object-cover object-top"
                     sizes="(max-width: 1024px) 100vw, 66vw"
                     itemProp="image"
                   />

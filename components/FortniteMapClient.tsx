@@ -227,7 +227,7 @@ export function FortniteMapClient() {
 
   return (
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-[260px_minmax(0,1fr)]">
-      <aside className="rounded-xl border border-border bg-card overflow-hidden h-fit lg:sticky lg:top-20">
+      <aside className="rounded-xl border border-border bg-card overflow-hidden h-fit lg:sticky lg:top-[var(--site-header-height,7rem)]">
         <div className="border-b border-border p-3 space-y-3">
           <label className="block">
             <span className="mb-1.5 block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">

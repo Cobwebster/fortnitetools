@@ -97,16 +97,16 @@ Hello Neighbor is the stealth‑horror series about sneaking into a creepy neigh
   },
   {
     slug: 'pirate-hatsune-miku-fortnite-bundle',
-    title: 'Cap’n Hatsune Miku Fortnite Bundle — Out Now (2,200 V-Bucks), New Emote 500 V-Bucks',
+    title: 'Cap’n Hatsune Miku Fortnite Bundle — Out Now (2,200 V-Bucks), Emote 500',
     excerpt:
-      'Cap’n Hatsune Miku hit the Item Shop at midnight UK on 15 Nov 2026 (7pm ET 14 Nov): bundle 2,200 V-Bucks, new emote sold separately for 500 V-Bucks; Solid Gold Miku joined the Treasure Hunt chest prizes at 2pm UK the same day.',
+      'Cap’n Hatsune Miku is live in the Item Shop: outfit + Miku’s Treasure for 1,500 V-Bucks, full Miku Sets Sail! bundle 2,200 (saves 1,900 vs singles). Emote Miku Miku ni Shite Ageru♪ is 500. Shop data lists the section through 14 Dec 2026. Friendship Villa + Solid Gold Miku chests are the BR beat.',
     category: 'cosmetics',
     status: 'shipped',
     date: '2026-11-14',
     confirmedDate: '2026-11-15',
-    readTime: 3,
+    readTime: 6,
     featured: true,
-    image: '/images/guides/capn-hatsune-miku-featured.webp',
+    image: '/images/guides/capn-hatsune-miku-hero.webp',
     tags: [
       'pirate hatsune miku fortnite',
       'capn hatsune miku fortnite',
@@ -114,27 +114,57 @@ Hello Neighbor is the stealth‑horror series about sneaking into a creepy neigh
       'capn hatsune miku price',
       'hatsune miku fortnite bundle',
       'miku miku ni shite ageru fortnite emote',
-      'gold hatsune miku back bling',
+      'miku sets sail fortnite',
       'hatsune miku fortnite release date',
     ],
     content: `
-## Out now — prices
+## Out now
 
-Released **15 November 2026, 00:00 UK** (**7:00 PM ET**, Sat **14 Nov**), alongside an **ICON emotes refresh**.
+**Cap’n Hatsune Miku** (set: **Miku Sets Sail!**) flipped with the shop reset at **00:00 UK on 15 November 2026** (**7:00 PM ET / 4:00 PM PT on 14 Nov**). Icon Series pirate-captain look — in-game line: “All aboard the friend ship!” — with an **Emissive** style option for the glow.
 
-**Prices (confirmed):** **2,200 V‑Bucks** for the **Cap’n Hatsune Miku bundle**; the new **Hatsune Miku emote** is **sold separately** for **500 V‑Bucks**.
+Confirm live tiles and leave times on the [Item Shop tracker](/tools/item-shop).
 
-## Official trailer and artwork
+## Prices (confirmed)
 
-At **2:00 PM UK** on **15 November**, Epic released an arrival **trailer** and **key art** for **Hatsune Miku & Kasane Teto**, and the game was themed around the pair — see [Kasane Teto & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
+| Offer | What’s in it | V‑Bucks |
+| --- | --- | --- |
+| Cap’n Hatsune Miku | Outfit + **Miku’s Treasure** back bling | **1,500** |
+| Cap’n Hatsune Miku **bundle** | Outfit, Treasure, **Miku’s Anchor Floatie**, **Miku Miku ni Shite Ageru♪**, **Miku’s Mic**, **CONNECT:COMMUNE** Jam Track | **2,200** (was 4,100) |
+| Miku Miku ni Shite Ageru♪ | Emote (also in the big bundle) | **500** |
+| Miku’s Anchor Floatie | Pickaxe | **800** |
+| Miku’s Mic | Mic / Festival kit pieces | **800** |
+| CONNECT:COMMUNE | Jam Track (FLAVOR FOLEY ft. Hatsune Miku) | **500** |
+| Miku’s Treasure | Back bling alone | **400** |
+| Miku’s Beam Wheels | Car wheels | **700** |
+| Hatsune Miku Cyclone Bundle | Car body pack (separate from the outfit bundle) | **1,500** |
 
-## Solid Gold Miku + gold back bling from chests
+**Bundle math:** buying the main extras à la carte lands around **4,100 V‑Bucks**; the **2,200** bundle saves about **1,900**. Outfit-only shoppers can stay on the **1,500** offer. Short on V‑Bucks? [V‑Bucks calculator](/tools/vbucks-calculator).
 
-From **15 November**, the **Week 3 Treasure Prizes** include the **Solid Gold Hatsune Miku** outfit and the "**Miku’s Takarabako**" back bling as **Treasure Hunt chest prizes** — see [chest prizes week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4).
+## How long is she in shop?
 
-## What is not confirmed
+Shop feed data currently lists the Hatsune Miku section through **14 December 2026** (leave at that day’s reset — **7:00 PM ET**). Epic can change rotations; treat the date as the plan, not a promise.
 
-- How **long** the bundle and emote stay in the shop rotation
+## Friendship Villa + Week 3 captains
+
+Same weekend, **Hatsune Miku & Kasane Teto** take over BR: **Friendship Villa** on Crossbones Isle, arrival trailer/key art around **2:00 PM UK on 15 Nov**. Full beat: [Kasane Teto & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa) · [map](/fortnite-map).
+
+## Solid Gold Miku from chests (not the shop skin)
+
+**Week 3 Treasure Prizes** include **Solid Gold Hatsune Miku** and **Miku’s Takarabako** as **chest** rewards — separate from Cap’n Miku in the Item Shop. Details: [chest prizes week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4) · odds: [Pirate Shop odds](/leaks/pirate-shop-odds).
+
+## Not the 2025 Miku outfit
+
+The original **Hatsune Miku** (Jan 2025) is a different cosmetic. Cap’n is a **new** outfit — owning the old one does not unlock this look.
+
+## Pirate Shop Access
+
+If your **Pirate Shop Access** window is active, look for **Claim** on eligible shop rows in-client. Guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+
+## Related
+
+- [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- [TWINDRILL DIVA / Kasane Teto Music Pass](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
+- [Captain’s Days stack](/leaks/captain-days-content-stack)
 
 **Shipped:** 15 November 2026.
 `,
@@ -479,7 +509,7 @@ Files also reference a **“Seasonal Locker Filter”** tagged **winterfest / ch
     status: 'watching',
     date: '2026-11-12',
     readTime: 4,
-    image: '/images/guides/capn-hatsune-miku-featured.webp',
+    image: '/images/guides/capn-hatsune-miku-hero.webp',
     tags: [
       'fortnite pirate chest prizes week 3',
       'fortnite pirate chest prizes week 4',
