@@ -5,9 +5,8 @@ import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { ToolsCatalogClient } from '@/components/ToolsCatalogClient'
 import { defaultLocale, localizeHref, type AppLocale } from '@/i18n/config'
-import type { ToolFirePageState } from '@/lib/tool-fires-server'
 
-export function ToolsPageContent({ fires }: { fires: ToolFirePageState }) {
+export function ToolsPageContent() {
   const t = useTranslations('toolsPage')
   const locale = useLocale() as AppLocale
   const homeHref = localizeHref(locale, '/')
@@ -52,11 +51,7 @@ export function ToolsPageContent({ fires }: { fires: ToolFirePageState }) {
 
       <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <AdSenseUnit variant="toolsPage" className="mb-10" />
-        <ToolsCatalogClient
-          fireCounts={fires.counts}
-          myFires={fires.mine}
-          loggedIn={fires.loggedIn}
-        />
+        <ToolsCatalogClient />
       </section>
 
       <section>

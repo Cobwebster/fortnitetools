@@ -307,8 +307,8 @@
         "description": "Named-POI landing pages with contest, extract, third-party, and rotate paths for returning Override POIs."
       },
       "sets": {
-        "title": "Live Cosmetic Sets",
-        "description": "Tonight’s Item Shop sets plus current-build sets, capped, with shop history. Not a page per outfit."
+        "title": "Cosmetic Sets",
+        "description": "Search the full Fortnite BR set catalog — filter by tonight’s shop or new-build, open a set for shop-history counts."
       },
       "locker": {
         "title": "Fortnite Locker",
@@ -321,6 +321,10 @@
       "news": {
         "title": "Fortnite News",
         "description": "Live Battle Royale lobby headlines with FortniteTools takes that point at the map, shop, freebies, and season countdown."
+      },
+      "leaks": {
+        "title": "Fortnite Leaks",
+        "description": "Guides-style leak hub — Pirate Shop, collabs, Sprites, Winterfest, and Chapter 8 file finds. Status marked on every page."
       },
       "modes": {
         "title": "Game Modes",
@@ -386,6 +390,10 @@
         "title": "All Fortnite Weapons",
         "description": "Override pool after v42.40 — Pump, 8-Bit, Sweeper, Heavy AR, plus vaulted history (Midas, Drum Gun) with DPS, damage, fire rate, mag, and reload by rarity."
       },
+      "weapons-spawn-rates": {
+        "title": "Weapon Spawn Rates",
+        "description": "Treasure Hunters chest, floor, rare chest, and supply drop odds per roll — Battle Royale, Ranked, and Zero Build."
+      },
       "weapon-changes": {
         "title": "Weapon Changes",
         "description": "Fortnite weapon buffs and nerfs through v42.40 — Sweeper fire rate, Midas vault, Fortnitemares pool flips, with Old / New / Change."
@@ -416,7 +424,7 @@
       },
       "lobby-hacks": {
         "title": "Lobby Hacks",
-        "description": "Click to copy Override Admin Panel codes for Sprites, XP, Sprite Dust, locker items, and lobby effects. Marks used in this browser."
+        "description": "Override Admin Panel archive — Lobby Hack codes left with Treasure Hunters (1 Nov 2026). No new codes this season."
       }
     }
   },

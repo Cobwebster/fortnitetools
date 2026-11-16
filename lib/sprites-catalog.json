@@ -1,6 +1,6 @@
 {
-  "capturedAt": "2026-11-07",
-  "note": "Chapter 7 companion Sprite icons hosted on FortniteTools. Treasure Hunters (v43.00) families added 1 Nov 2026. Not PNG sprite sheets.",
+  "capturedAt": "2026-11-16",
+  "note": "Chapter 7 companion Sprite icons hosted on FortniteTools. Treasure Hunters families through 15 Nov 2026 (Mini Miku, Squiplash, Zee). Not PNG sprite sheets.",
   "sprites": [
     {
       "id": 191,
@@ -3141,6 +3141,76 @@
       "variant": "Quack",
       "theme": "quack",
       "image": "/images/sprites/quack-zero-point-sprite.webp"
+    },
+    {
+      "id": 315,
+      "slug": "mini-miku-sprite",
+      "name": "Mini Miku",
+      "shortName": "Mini Miku",
+      "family": "Mini Miku",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/mini-miku-sprite.webp"
+    },
+    {
+      "id": 316,
+      "slug": "fortune-mini-miku-sprite",
+      "name": "Fortune Mini Miku",
+      "shortName": "Fortune Mini Miku",
+      "family": "Mini Miku",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-mini-miku-sprite.webp"
+    },
+    {
+      "id": 317,
+      "slug": "cursed-mini-miku-sprite",
+      "name": "Cursed Mini Miku",
+      "shortName": "Cursed Mini Miku",
+      "family": "Mini Miku",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-mini-miku-sprite.webp"
+    },
+    {
+      "id": 318,
+      "slug": "squiplash-sprite",
+      "name": "Squiplash",
+      "shortName": "Squiplash",
+      "family": "Squiplash",
+      "variant": "Epic",
+      "theme": "epic",
+      "image": "/images/sprites/squiplash-sprite.webp"
+    },
+    {
+      "id": 319,
+      "slug": "fortune-squiplash-sprite",
+      "name": "Fortune Squiplash",
+      "shortName": "Fortune Squiplash",
+      "family": "Squiplash",
+      "variant": "Fortune",
+      "theme": "fortune",
+      "image": "/images/sprites/fortune-squiplash-sprite.webp"
+    },
+    {
+      "id": 320,
+      "slug": "cursed-squiplash-sprite",
+      "name": "Cursed Squiplash",
+      "shortName": "Cursed Squiplash",
+      "family": "Squiplash",
+      "variant": "Cursed",
+      "theme": "cursed",
+      "image": "/images/sprites/cursed-squiplash-sprite.webp"
+    },
+    {
+      "id": 321,
+      "slug": "zee-sprite",
+      "name": "Zee",
+      "shortName": "Zee",
+      "family": "Zee",
+      "variant": "Mythic",
+      "theme": "mythic",
+      "image": "/images/sprites/zee-sprite.webp"
     }
   ]
 }

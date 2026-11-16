@@ -84,6 +84,7 @@ These change with patches / seasons. Treat as first-class checklist items, not a
 ### Weapons encyclopedia & balance — `/weapons`, `/weapon-changes`, damage calculator
 
 - [ ] `lib/weapons-catalog.ts` (+ wiki/pages helpers) — live vs vaulted flags for the current pool
+- [ ] `lib/weapon-spawn-rates-data.json` / `/weapons/spawn-rates` — chest / floor / rare / supply % after pool flips; Reload/Blitz/OG when curated
 - [ ] `lib/weapon-changes.ts` / `/weapon-changes` — new buff/nerf/vault rows when a patch notes them
 - [ ] Damage calculator default / picker still resolves (`lib/weapons.ts` ids); no dead default weapon id
 - [ ] Tools-catalog + page meta no longer name the previous season as “live”

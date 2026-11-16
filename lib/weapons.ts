@@ -61,6 +61,19 @@ export const WEAPONS: WeaponStat[] = [
     image: '/images/loadout/warforged_ar.png',
     note: 'Classic AR · still in TH planning pool',
   },
+  {
+    id: 'flapjack_rifle',
+    name: 'Flapjack Rifle',
+    category: 'AR',
+    rarity: 'Legendary',
+    dmg: 31,
+    hs: 1.6,
+    fireRate: 6.3,
+    mag: 45,
+    reload: 2.93,
+    image: '/images/loadout/warforged_ar.png',
+    note: 'Live 15 Nov · 45-mag LMG-style AR · high structure damage',
+  },
 
   // ── Shotguns ─────────────────────────────────────────────────────────
   {

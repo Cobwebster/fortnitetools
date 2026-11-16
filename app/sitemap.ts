@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { posts, categories } from '@/lib/posts'
 import { siteConfig } from '@/lib/site'
 import { localizedGuidePaths, localizedToolSlugs, prefixedLocales } from '@/i18n/config'
-import { fetchLiveSets } from '@/lib/cosmetic-sets'
+import { fetchCatalogSets, SETS_SITEMAP_CAP } from '@/lib/cosmetic-sets'
 import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
@@ -15,6 +15,7 @@ const FLAGSHIP = new Set([
   '/fortnite-map',
   '/stats',
   '/weapons',
+  '/weapons/spawn-rates',
   '/weapon-changes',
   '/ranked',
   '/status',
@@ -63,7 +64,7 @@ function toolPriority(path: string): number {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url
-  const liveSets = await fetchLiveSets()
+  const liveSets = (await fetchCatalogSets()).slice(0, SETS_SITEMAP_CAP)
   const hubModified = new Date(SEASON_HUB_REVIEWED_ISO)
 
   const localeRoutes: MetadataRoute.Sitemap = prefixedLocales.flatMap((locale) => [
@@ -110,6 +111,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/fortnite-map',
     '/stats',
     '/weapons',
+    '/weapons/spawn-rates',
     '/weapon-changes',
     '/ranked',
     '/status',

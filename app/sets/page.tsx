@@ -1,14 +1,15 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
-import { fetchLiveSets, LIVE_SET_CAP, SETS_HOWTO, SETS_INDEX_FAQS } from '@/lib/cosmetic-sets'
+import { SetsCatalogClient } from '@/components/SetsCatalogClient'
+import { fetchCatalogSets, SETS_HOWTO, SETS_INDEX_FAQS } from '@/lib/cosmetic-sets'
 import { CURRENT_SEASON } from '@/lib/season'
 import { breadcrumbJsonLd, faqJsonLd } from '@/lib/seo'
 
 export const revalidate = 86400
 
 export default async function SetsIndexPage() {
-  const sets = await fetchLiveSets()
+  const sets = await fetchCatalogSets()
   const shopCount = sets.filter((s) => s.inShop).length
 
   return (
@@ -48,16 +49,15 @@ export default async function SetsIndexPage() {
               <span className="text-foreground">Sets</span>
             </nav>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · live list · cap {LIVE_SET_CAP}
+              {CURRENT_SEASON.shortLabel} · full set catalog
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Sets</span>
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              {sets.length} sets from tonight&apos;s Item Shop
-              {shopCount ? ` (${shopCount} in shop)` : ''} plus cosmetics added in the current game
-              build. Shop-first, then new-build, cap {LIVE_SET_CAP} on this index. A real set URL
-              still opens if Fortnite-API has the name — this is not 10k outfit pages.
+              Search {sets.length.toLocaleString()} cosmetic sets from the Fortnite-API BR catalog
+              {shopCount ? ` — ${shopCount} with something in tonight’s Item Shop` : ''}. Open a
+              card for the full roster and shop-history counts.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/tools/item-shop" className="text-primary hover:underline">
@@ -89,65 +89,24 @@ export default async function SetsIndexPage() {
               ))}
             </div>
           </section>
+
           {sets.length === 0 ? (
             <p className="rounded-xl border border-border bg-card px-4 py-6 text-sm text-muted-foreground">
-              Shop / new-cosmetics APIs did not return sets. Try the Item Shop tracker.
+              Cosmetics catalog API did not return sets. Try the Item Shop tracker.
             </p>
           ) : (
-            <section>
-              <h2 className="mb-4 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
-                Live sets tonight
+            <section className="space-y-4">
+              <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                Browse sets
               </h2>
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-              {sets.map((set) => (
-                <Link
-                  key={set.slug}
-                  href={`/sets/${set.slug}`}
-                  className="group overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/60"
-                >
-                  <div className="aspect-square bg-muted/40">
-                    {set.thumb ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={set.thumb}
-                        alt=""
-                        className="h-full w-full object-contain p-3"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="flex h-full items-center justify-center text-xs text-muted-foreground">
-                        No art
-                      </div>
-                    )}
-                  </div>
-                  <div className="space-y-1.5 p-3">
-                    <p className="text-sm font-semibold leading-snug text-foreground group-hover:text-primary">
-                      {set.name}
-                    </p>
-                    <div className="flex flex-wrap gap-1">
-                      {set.inShop ? (
-                        <span className="rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-primary/15 text-primary">
-                          In shop
-                        </span>
-                      ) : null}
-                      {set.fromNew ? (
-                        <span className="rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-muted text-muted-foreground">
-                          New build
-                        </span>
-                      ) : null}
-                    </div>
-                    <p className="text-[11px] text-muted-foreground">
-                      {set.sampleCount} item{set.sampleCount === 1 ? '' : 's'} in tonight&apos;s lists
-                    </p>
-                  </div>
-                </Link>
-              ))}
-              </div>
+              <SetsCatalogClient sets={sets} />
             </section>
           )}
 
           <section className="space-y-4 border-t border-border pt-10">
-            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">FAQ</h2>
+            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+              FAQ
+            </h2>
             {SETS_INDEX_FAQS.map((faq) => (
               <div key={faq.question} className="rounded-xl border border-border bg-card px-4 py-3">
                 <h3 className="text-sm font-bold text-foreground">{faq.question}</h3>

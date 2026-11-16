@@ -1,0 +1,179 @@
+{
+  "season": "Treasure Hunters",
+  "patch": "v43.00",
+  "capturedAt": "2026-11-15",
+  "note": "Percent chance that one loot-container roll yields this weapon at any rarity. Chests and rare chests roll multiple times per open — these are per-roll odds, not per-chest guarantees. Curated planning figures for Battle Royale; confirm in-game after hotfixes.",
+  "modes": {
+    "br": {
+      "label": "Battle Royale",
+      "available": true,
+      "weapons": [
+        {
+          "id": "machine_smg",
+          "name": "Machine SMG",
+          "category": "SMG",
+          "image": "/images/loadout/machine_smg.png",
+          "chest": 12.4,
+          "floor": 5.6,
+          "rareChest": 14.6,
+          "supply": 14.6
+        },
+        {
+          "id": "tactical_smg",
+          "name": "Tactical Submachine Gun",
+          "category": "SMG",
+          "image": "/images/loadout/tactical_smg.png",
+          "chest": 12.4,
+          "floor": 5.6,
+          "rareChest": 14.6,
+          "supply": 14.6
+        },
+        {
+          "id": "bundlebuss",
+          "name": "Bundlebuss Repeater Rifle",
+          "category": "AR",
+          "image": "/images/loadout/warforged_ar.png",
+          "chest": 11.3,
+          "floor": 1.5,
+          "rareChest": 10.3,
+          "supply": 10.3
+        },
+        {
+          "id": "usopp_slingshot",
+          "name": "Usopp's Slingshot",
+          "category": "Pistol",
+          "image": "/images/loadout/flint_knock.png",
+          "chest": 10.4,
+          "floor": 1.4,
+          "rareChest": 9.9,
+          "supply": 9.9
+        },
+        {
+          "id": "hammer_ar",
+          "name": "Hammer Assault Rifle",
+          "category": "AR",
+          "image": "/images/loadout/hammer_ar.png",
+          "chest": 9.1,
+          "floor": 9.9,
+          "rareChest": 8.5,
+          "supply": 8.5
+        },
+        {
+          "id": "gilded_dragoon",
+          "name": "Gilded Dragoon Shotgun",
+          "category": "Shotgun",
+          "image": "/images/loadout/striker_pump.png",
+          "chest": 8.5,
+          "floor": 1.3,
+          "rareChest": 8.3,
+          "supply": 8.3
+        },
+        {
+          "id": "flint_knock",
+          "name": "Flint-Knock Pistol",
+          "category": "Pistol",
+          "image": "/images/loadout/flint_knock.png",
+          "chest": 7.7,
+          "floor": 4.3,
+          "rareChest": 5.4,
+          "supply": 5.4
+        },
+        {
+          "id": "sidearm_pistol",
+          "name": "Sidearm Pistol",
+          "category": "Pistol",
+          "image": "/images/loadout/sidearm_pistol.png",
+          "chest": 7.0,
+          "floor": 4.0,
+          "rareChest": 8.3,
+          "supply": 8.3
+        },
+        {
+          "id": "auto_shotgun",
+          "name": "Auto Shotgun",
+          "category": "Shotgun",
+          "image": "/images/loadout/auto_shotgun.png",
+          "chest": 7.0,
+          "floor": 4.1,
+          "rareChest": 6.8,
+          "supply": 6.8
+        },
+        {
+          "id": "lever_action",
+          "name": "Lever Action Shotgun",
+          "category": "Shotgun",
+          "image": "/images/loadout/striker_pump.png",
+          "chest": 7.0,
+          "floor": 4.1,
+          "rareChest": 6.8,
+          "supply": 6.8
+        },
+        {
+          "id": "sentinel_pump",
+          "name": "Sentinel Pump Shotgun",
+          "category": "Shotgun",
+          "image": "/images/loadout/sentinel_pump.png",
+          "chest": 7.0,
+          "floor": 4.1,
+          "rareChest": 6.8,
+          "supply": 6.8
+        },
+        {
+          "id": "leekcapper",
+          "name": "Leekcapper",
+          "category": "Other",
+          "image": "/images/icons/pickaxe.png",
+          "chest": 5.6,
+          "floor": 0.4,
+          "rareChest": null,
+          "supply": null
+        },
+        {
+          "id": "flapjack_rifle",
+          "name": "Flapjack Rifle",
+          "category": "AR",
+          "image": "/images/loadout/warforged_ar.png",
+          "chest": 5.3,
+          "floor": 0.8,
+          "rareChest": null,
+          "supply": null
+        },
+        {
+          "id": "explosive_cannon_ball",
+          "name": "Explosive Cannon Ball",
+          "category": "Explosive",
+          "image": "/images/loadout/chaos_exploder.png",
+          "chest": 9.1,
+          "floor": 0.6,
+          "rareChest": 12.0,
+          "supply": 12.0
+        }
+      ]
+    },
+    "ranked": {
+      "label": "Ranked",
+      "available": true,
+      "sameAs": "br"
+    },
+    "zb": {
+      "label": "Zero Build",
+      "available": true,
+      "sameAs": "br"
+    },
+    "reload": {
+      "label": "Reload",
+      "available": false,
+      "weapons": []
+    },
+    "blitz": {
+      "label": "Blitz",
+      "available": false,
+      "weapons": []
+    },
+    "og": {
+      "label": "OG",
+      "available": false,
+      "weapons": []
+    }
+  }
+}

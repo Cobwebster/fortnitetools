@@ -4,7 +4,14 @@ import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { SetMembersClient } from '@/components/SetMembersClient'
-import { fetchLiveSets, fetchSetMembers, formatSetDay, resolveSetBySlug, SET_DETAIL_FAQS, summarizeSetMembers } from '@/lib/cosmetic-sets'
+import {
+  buildSetEditorial,
+  fetchHighlightedSets,
+  fetchSetMembers,
+  formatSetDay,
+  resolveSetBySlug,
+  summarizeSetMembers,
+} from '@/lib/cosmetic-sets'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
@@ -16,7 +23,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const sets = await fetchLiveSets()
+  const sets = await fetchHighlightedSets()
   return sets.map((s) => ({ slug: s.slug }))
 }
 
@@ -24,32 +31,48 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const set = await resolveSetBySlug(slug)
   if (!set) return { robots: { index: false, follow: false } }
+  const members = await fetchSetMembers(set)
+  const editorial = buildSetEditorial(set, members, summarizeSetMembers(members))
+  const outfitNames = members
+    .filter((m) => m.typeValue === 'outfit')
+    .slice(0, 4)
+    .map((m) => m.name)
   return createMetadata({
     title: `${set.name} Set – Fortnite Cosmetics & Shop History`,
-    description: `Members of the Fortnite ${set.name} set${set.inShop ? ' (in tonight’s Item Shop)' : set.fromNew ? ' (on the current game build)' : ''}, with shop-history counts.`,
+    description: editorial.metaDescription,
     path: `/sets/${set.slug}`,
-    keywords: [`${set.name} fortnite`, `${set.name} set`, 'fortnite cosmetic set', 'fortnite shop set'],
+    keywords: [
+      `${set.name} fortnite`,
+      `${set.name} set`,
+      'fortnite cosmetic set',
+      'fortnite shop set',
+      ...outfitNames.map((n) => `${n} fortnite`),
+    ],
   })
 }
 
 export default async function SetDetailPage({ params }: Props) {
   const { slug } = await params
-  const [set, sets] = await Promise.all([resolveSetBySlug(slug), fetchLiveSets()])
+  const [set, highlighted] = await Promise.all([
+    resolveSetBySlug(slug),
+    fetchHighlightedSets(),
+  ])
   if (!set) notFound()
 
   const members = await fetchSetMembers(set)
   const summary = summarizeSetMembers(members)
+  const editorial = buildSetEditorial(set, members, summary)
   const typeLine = Object.entries(summary.byType)
     .sort((a, b) => b[1] - a[1])
     .map(([type, n]) => `${n} ${type}${n === 1 ? '' : 's'}`)
     .join(' · ')
-  const others = sets.filter((s) => s.slug !== set.slug).slice(0, 8)
+  const others = highlighted.filter((s) => s.slug !== set.slug).slice(0, 8)
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(SET_DETAIL_FAQS)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(editorial.faqs)) }}
       />
       <script
         type="application/ld+json"
@@ -93,13 +116,13 @@ export default async function SetDetailPage({ params }: Props) {
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               {set.name} <span className="text-primary">Set</span>
             </h1>
-            {set.setText ? (
-              <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">{set.setText}</p>
-            ) : null}
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
+              {editorial.hero}
+            </p>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
               {set.inShop ? 'In tonight’s Item Shop' : 'Not in tonight’s shop'}
               {set.fromNew ? ' · also on the current-build new list' : ''}. Click a member for
-              styles. Prices stay on the Item Shop tracker.
+              styles and variants. Prices stay on the Item Shop tracker.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link href="/tools/item-shop" className="text-primary hover:underline">
@@ -149,6 +172,46 @@ export default async function SetDetailPage({ params }: Props) {
               </div>
             </section>
           ) : null}
+
+          {editorial.paragraphs.length ? (
+            <section className="space-y-3">
+              <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                About the {set.name} set
+              </h2>
+              {editorial.paragraphs.map((p) => (
+                <p key={p.slice(0, 48)} className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
+                  {p}
+                </p>
+              ))}
+            </section>
+          ) : null}
+
+          {editorial.highlights.length ? (
+            <section className="space-y-3">
+              <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">
+                Notable members
+              </h2>
+              <p className="max-w-3xl text-sm text-muted-foreground">
+                Same descriptions and history you see when you open a tile — surfaced here so the page
+                has readable text without an extra click.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {editorial.highlights.map((h) => (
+                  <article
+                    key={h.name}
+                    className="rounded-xl border border-border bg-card px-4 py-3"
+                  >
+                    <p className="text-sm font-bold text-foreground">{h.name}</p>
+                    <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                      {h.type} · {h.rarity}
+                    </p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{h.blurb}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
           {members.length === 0 ? (
             <p className="rounded-xl border border-border bg-card px-4 py-6 text-sm text-muted-foreground">
               No catalog members returned for this set name. It may only exist as a shop bundle tile —
@@ -200,7 +263,7 @@ export default async function SetDetailPage({ params }: Props) {
               </Link>
               .
             </p>
-            {SET_DETAIL_FAQS.map((faq) => (
+            {editorial.faqs.map((faq) => (
               <div key={faq.question} className="rounded-xl border border-border bg-card px-4 py-3">
                 <h3 className="text-sm font-bold text-foreground">{faq.question}</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>

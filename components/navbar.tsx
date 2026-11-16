@@ -126,14 +126,14 @@ export function Navbar() {
     { href: '/upload', label: t('upload') },
     { href: '/tools/fortnite-build-simulator', label: t('buildSim') },
     { href: localizeHref(locale, '/tools/player-stats'), label: t('playerTracker') },
-    { href: '/stats', label: t('stats'), emphasis: true },
     { href: localizeHref(locale, '/fortnite-map'), label: t('map') },
     { href: localizeHref(locale, '/tools/item-shop'), label: t('itemShop') },
-    { href: '/leaks', label: t('leaks'), badge: 'new' },
+    { href: '/leaks', label: t('leaks') },
     { href: '/lockers', label: t('locker') },
   ]
 
   const englishSecondary: NavLink[] = [
+    { href: '/stats', label: t('stats'), emphasis: true },
     { href: '/season', label: t('season') },
     { href: '/drops', label: t('drops') },
     { href: '/news', label: t('news') },
@@ -214,7 +214,6 @@ export function Navbar() {
             </ul>
 
             <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-              <CreatorCodeChip variant="nav" />
               <LanguageFlagLinks className="hidden md:flex" />
               <div className="hidden md:block">
                 <AuthNavLinks />

@@ -1,4 +1,3 @@
-import { CURRENT_SEASON } from '@/lib/season'
 import { spriteByShortName } from '@/lib/sprites'
 
 export type LobbyHackCategory = 'sprites' | 'locker' | 'consumables' | 'effects'
@@ -15,7 +14,12 @@ export type LobbyHack = {
 }
 
 export const LOBBY_HACKS_CAPTURED_AT = '2026-10-27'
-export const LOBBY_HACKS_REVIEWED = '27 Oct 2026'
+export const LOBBY_HACKS_REVIEWED = '16 Nov 2026'
+
+/** Admin Panel Lobby Hacks shipped with Override and left with Treasure Hunters (v43.00). */
+export const LOBBY_HACKS_LIVE = false
+export const LOBBY_HACKS_STATUS =
+  'No new Lobby Hack codes. The Override Admin Panel was removed when Treasure Hunters launched (1 Nov 2026). List below is an archive only.'
 
 export const LOBBY_HACK_CATEGORY_META: {
   id: LobbyHackCategory | 'all'
@@ -162,48 +166,44 @@ export const LOBBY_HACK_COUNTS = {
 
 export const LOBBY_HACKS_HOWTO = [
   {
-    title: 'BR pubs lobby',
-    body: 'Stay in Battle Royale with Ranked off. Creative / Discover / Ranked usually hide the Admin Panel.',
+    title: 'System removed',
+    body: 'Treasure Hunters (v43.00, 1 Nov 2026) dropped the Override Admin Panel. There is nowhere to paste these codes in the current lobby.',
   },
   {
-    title: 'Open Admin Panel',
-    body: 'Use the ⋯ / Admin Panel control (top-right of the lobby UI), paste a code, Submit. One redeem per account for XP / Dust / Sprites.',
+    title: 'Archive only',
+    body: 'The list below is the last Override snapshot (27 Oct 2026) for history / SEO. Codes are not expected to redeem.',
   },
   {
-    title: 'Click copies + marks used',
-    body: 'Tap a code on this page to copy it and flag it in this browser. Used marks do not sync to Epic — unmark if you misclick.',
+    title: 'What to use instead',
+    body: 'Free / seasonal stuff now: Sprites, Wanted Posters, Pirate Shop Access chests, Mastery Monday, Item Shop tracker — not Admin Panel strings.',
   },
 ]
 
 export const LOBBY_HACKS_FAQS = [
   {
-    question: 'How do I redeem Fortnite Lobby Hack codes?',
+    question: 'Are there new Lobby Hack codes in Treasure Hunters?',
     answer:
-      'Launch Fortnite, sit in the Battle Royale pubs lobby (Ranked off), open Admin Panel, paste the string, Submit. Claim whatever prompt the client shows.',
+      'No. Reliable coverage and the Fortnite Wiki report the Admin Panel / Lobby Hack system left with Override when Treasure Hunters launched on 1 November 2026. No Cap’n Miku (or other) Lobby Hack codes have shipped this season.',
+  },
+  {
+    question: 'Can I still redeem Override Lobby Hack codes?',
+    answer:
+      'Almost certainly not. The Admin Panel UI is gone from the BR lobby. Old strings on this page are an archive — do not expect Submit to work.',
   },
   {
     question: 'Do Lobby Hack codes give free V-Bucks?',
     answer:
-      'No. Override Admin Panel codes grant XP, Sprite Dust, Sprites, match tools, locker items, and lobby effects. Any site selling “free V-Bucks Admin codes” is a scam.',
+      'No. Even when Override was live, Admin Panel codes never printed V-Bucks. Any site selling “free V-Bucks Admin codes” is a scam.',
   },
   {
-    question: 'Why does a valid-looking code fail?',
+    question: 'When did Override Lobby Hacks expire?',
     answer:
-      'Already redeemed, mistyped, retired by Epic, or quest-locked. GatherAndCraft needs Wrixel’s Get Crafty. YourThoughtsAreMine and S7H-50P-R03 need the Geno story line.',
-  },
-  {
-    question: 'When do Override Lobby Hacks expire?',
-    answer: `Seasonal Admin Panel strings are tied to ${CURRENT_SEASON.label} (${CURRENT_SEASON.codename}), scheduled through 1 November 2026. Epic can disable a code without notice — redeem leftovers this week.`,
+      'With the Treasure Hunters launch on 1 November 2026 (end of Override / Chapter 7 Season 4). Epic removed the feature rather than rotating a new code list.',
   },
   {
     question: 'Does “mark as used” sync to my Epic account?',
     answer:
-      'No. It only saves in this browser so you can see what you already copied. In-game progress still comes from Epic.',
-  },
-  {
-    question: 'Are lobby transforms one-time?',
-    answer:
-      'Music and body-swap effects are usually reusable. This page still marks them used when you copy so the list stays tidy — tap Used to unmark.',
+      'No. It only saves in this browser. With the panel gone, the marks are just for browsing the archive.',
   },
 ]
 

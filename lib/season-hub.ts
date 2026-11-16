@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '7 Nov 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-11-07'
+export const SEASON_HUB_REVIEWED = '16 Nov 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-11-16'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -30,24 +30,24 @@ export const SEASON_HUB_LINKS = [
 
 export const RESET_WEEK_PLAYBOOK = [
   {
+    title: 'Mastery Monday — today (16 Nov)',
+    body: 'Every Monday from 9 AM ET: 2× Sprite XP and Sprite Dust, with more Wanted Posters / Sprite Chests. Best day to bank Mini Miku, Squiplash, or catch-up masters. Does not boost Pirate Shop Access odds.',
+  },
+  {
+    title: 'Captain’s Day just landed — Miku & Teto (15 Nov)',
+    body: 'Friendship Villa hosts Hatsune Miku and Kasane Teto (peaceful Captains — no boss fight). Leekcapper + Flapjack Rifle joined the loot pool. Sprites: Mini Miku, Squiplash, and secret rare Zee. Third Map Fragment is live this weekend.',
+  },
+  {
+    title: 'Next Captain’s Day — Oscar (~22 Nov)',
+    body: 'Epic’s season calendar points at Sunday 22 Nov for Oscar. Expect Frenzy Auto Shotgun callouts, Gold Sprite finishes for recent families (including Mini Miku / Squiplash on the Nov 22 list), and Sir Oscar the Second Sprite when that window opens. Trust Compete / MOTD for the exact hour.',
+  },
+  {
     title: 'Pirate Shop Access is live',
-    body: 'Rare BR chest prize. Epic’s MOTD grants two activations (2026 and 2027). Each one claims V-Bucks Item Shop rows for 14 days from the moment you activate. Real-money offers, gifting, pass levels, and extra Sidekicks are excluded. Drop odds unpublished.',
+    body: 'Rare BR chest prize at official 1 : 137,500 (higher in Treasure Hours). Two activations (2026 / 2027), 14-day V-Bucks shop claims. Real-money, gifting, and pass levels excluded. Gold chest FX marks the token (silver = weekly skin). How-to on the Pirate Shop Access guide.',
   },
   {
-    title: 'Week-2 Captain’s Day — Lil Uzi (8 Nov)',
-    body: 'Sunday 8 Nov at 9 AM ET. Lil Uzi + Cuddle Team Leader claim Fortune’s Fort. Lil’ Uzi Vert Jr. joins the Sprite hunt. Cursed Sprite finishes returned Saturday 7 Nov. Shop that night: Zoro, Sanji, Chopper Sidekick (7 PM ET).',
-  },
-  {
-    title: 'Sprites are Wanted Posters now',
-    body: 'Tear down a poster → Sprite Treasure Map → buried Sprite Chest. Mastery Monday (every Monday 9 AM ET) is 2× Sprite XP and Dust. Master 40 Sprites for Navigator’s Nosedive. Gold Sprite variant is 12 Nov.',
-  },
-  {
-    title: 'Pass vs shop',
-    body: 'Ace and Nico Robin are on the Treasure Hunters Battle Pass. Luffy, Nami, and Usopp are Item Shop (launch). Gift the pass to a friend and you both get Dark Kawaii Team Leader. Pirate Shop cannot buy pass pages.',
-  },
-  {
-    title: 'Crossbones Isle (80 players)',
-    body: 'Cannons to rotate. Live Fortnite-API names include The $.$. Rocky, Arlong Park, Fortune’s Fort, Rubber Resort, Loguetown, Lantern Landing, Plunder Port, Busy Bay, Loot Lagoon, Windmill Village, Cursed Cavern, and The Chest. Trust the in-game minimap if a label disagrees.',
+    title: 'Sprites are Wanted Posters',
+    body: 'Tear down a poster → Sprite Treasure Map → buried Sprite Chest. Master 40 Sprites for Navigator’s Nosedive. Cursed finishes water-damage you; Fortune reveals chests.',
   },
   {
     title: 'Countdown',
@@ -59,7 +59,8 @@ export const LIVE_NAMED_POIS = [
   { name: 'The $.$. Rocky', href: '/guides/how-to/how-to-get-shock-rocket-fortnite', note: 'Boss ship · Shock Rocket / Lil’ Flacko' },
   { name: 'Arlong Park', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'One Piece · fish-man stronghold' },
   { name: "Fortune's Fort", href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Week-2 fort · Lil Uzi / Cuddle Team Leader' },
-  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · Miku/Teto 15 Nov' },
+  { name: 'Friendship Villa', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: '15 Nov Captain’s Day · Miku & Teto (peaceful)' },
+  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · resort coast' },
   { name: 'Loguetown', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Harbor town · contested' },
   { name: 'Lantern Landing', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lantern maze (Epic also said Lantern Lanes)' },
   { name: 'Plunder Port', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Two docked ships' },
@@ -76,28 +77,28 @@ export const SEASON_CHANGE_CARDS = [
     id: 'island',
     title: 'Island',
     live: 'Crossbones Isle. 80-player Battle Royale. Cannons to launch across. Headline names: Arlong Park, Windmill Village, The $.$. Rocky, Fortune’s Fort. Full live list is on the map & loot guide.',
-    incoming: `Captain’s Days on 8, 12, 15, and 22 Nov change POIs and loot. Chapter 7 end event is dated ${formatSeasonLongDate(nextSeasonStartDate())}.`,
+    incoming: `Oscar’s Captain’s Day is next (~22 Nov). Chapter 7 end event is dated ${formatSeasonLongDate(nextSeasonStartDate())}.`,
     extra:
-      'The interactive map loads Fortnite-API’s Crossbones Isle dump (updated after launch). Pirate Shop Access is still a chest prize, not a pin.',
+      'Friendship Villa hosted Miku & Teto on 15 Nov. Pirate Shop Access is still a chest prize, not a pin. Interactive map follows Fortnite-API.',
     href: '/guides/map/fortnite-crossbones-isle-map-loot',
     linkLabel: 'Map & loot guide',
   },
   {
     id: 'loot',
     title: 'Loot pool',
-    live: 'Gum-Gum Fruit, Flame-Flame Fruit, Zoro’s Three Sword Style, Usopp’s Slingshot, Bundlebuss Repeater, Gilded Dragoon, Nami’s Tangerine, Meat on a Stick, Wanted Posters, Explosive Cannon Balls (non-Competitive). Shock Rocket is a Boss drop.',
-    incoming: 'Later Epic list: Lever Action, Frenzy Auto, Flapjack Rifle. Oscar’s 22 Nov Captain’s Day calls out Frenzy Auto.',
+    live: 'Gum-Gum / Flame-Flame / Zoro / Usopp powers, Bundlebuss, Gilded Dragoon, Hammer AR, pumps / SMGs, Wanted Posters, Explosive Cannon Balls (non-Competitive). Shock Rocket is a Boss drop. Live since 15 Nov: Flapjack Rifle + Leekcapper. Lever Action / Special Buggy Ball from Buggy’s week.',
+    incoming: 'Oscar’s ~22 Nov Captain’s Day calls out Frenzy Auto Shotgun. Confirm Compete / MOTD for the exact enable hour.',
     extra:
-      'Unvaulted pumps, SMGs, Hammer AR, Flint-Knock, fish/Slurp. Gold Bars vaulted — follower services free, vending machines gone.',
+      'Gold Bars vaulted — follower services free, vending machines gone. Boss weapons are a guaranteed Boss elim drop as of v43.10.',
     href: '/guides/map/fortnite-crossbones-isle-map-loot',
     linkLabel: 'Loot sheet',
   },
   {
     id: 'mythics',
     title: 'Boss / mythic-style',
-    live: 'A$AP Rocky on The $.$. Rocky can drop Shock Rocket and Lil’ Flacko. Neither is guaranteed. Shock Rocket is pubs / Zero Build, not Ranked.',
-    incoming: 'Weekly captains: Lil Uzi (8 Nov), Miku & Teto (15 Nov), Oscar (22 Nov). Map Fragments / Captain X’s mega chest are teased, not documented.',
-    extra: 'Pirate Shop Access is a chest prize, not a Boss drop.',
+    live: 'A$AP Rocky on The $.$. Rocky can drop Shock Rocket and Lil’ Flacko. Buggy’s Beachhead held Special Buggy Ball + Lever Action (12 Nov). Miku & Teto (15 Nov) are peaceful Captains at Friendship Villa — Leekcapper / Flapjack are loot-pool adds, not a boss mythic.',
+    incoming: 'Next weekly captain: Oscar (~22 Nov). Map Fragments (third is live) / Captain X’s mega chest stay lightly documented.',
+    extra: 'Pirate Shop Access is a chest prize, not a Boss drop. Shock Rocket stays pubs / ZB only.',
     href: '/guides/how-to/how-to-get-shock-rocket-fortnite',
     linkLabel: 'Shock Rocket how-to',
   },
@@ -105,7 +106,7 @@ export const SEASON_CHANGE_CARDS = [
     id: 'ranked',
     title: 'Ranked',
     live: 'New ranked season on Crossbones Isle. Rewards Epic named: Gold AHOY! emoticon, Platinum By Order of Geno loading screen, Diamond This Must Be the Spot spray, Elite Par-Rot back bling, Unreal Double-Duty Duelist pickaxe. New Elite / Champion / Unreal icons.',
-    incoming: 'Zoro Cup 6 Nov and Buggy Cup 13 Nov can award those outfits to top regional players. Compete tab for rules.',
+    incoming: 'Zoro Cup (6 Nov) and Buggy Cup (13 Nov) windows may still show results on Compete. Watch for Oscar-week cups.',
     extra:
       'Null was Override and locked. Shock Rocket is not in Competitive. Placement still beats spawn-island K/D.',
     href: '/ranked',
@@ -114,10 +115,10 @@ export const SEASON_CHANGE_CARDS = [
   {
     id: 'pass',
     title: 'Battle Pass',
-    live: 'Treasure Hunters Battle Pass is live: Portgas D. Ace, Nico Robin, anime Jonesy / Cuddle Team Leader / Charlotte. Gift the pass and both of you get Dark Kawaii Team Leader. Luffy / Nami / Usopp are shop, not the pass.',
+    live: 'Treasure Hunters Battle Pass is live: Portgas D. Ace, Nico Robin, anime Jonesy / Cuddle Team Leader / Charlotte. Gift the pass and both of you get Dark Kawaii Team Leader. Cap’n Hatsune Miku is Item Shop; Teto headlines Festival Music Pass.',
     incoming: `Epic’s Chapter 7 end event is ${formatSeasonLongDate(seasonEndDate())}. Unclaimed nodes will not outlive that flip.`,
     extra:
-      'Pirate Shop MOTD excludes Battle Pass levels. Sprite Mastery is a separate Treasure-tab track (40 masters = Navigator’s Nosedive).',
+      'Pirate Shop can claim the V-Bucks pass purchase when active — not level packs. Sprite Mastery is a separate Treasure-tab track (40 masters = Navigator’s Nosedive). Mastery Monday = 2× XP/Dust.',
     href: '/guides/season/fortnite-treasure-hunters-battle-pass',
     linkLabel: 'Pass & shop guide',
   },
@@ -140,7 +141,7 @@ export const SEASON_HUB_FAQS = [
   {
     question: 'What is new in Fortnite Treasure Hunters?',
     answer:
-      'Crossbones Isle (80 players), One Piece powers, A$AP Rocky as the first Boss, Sprites via Wanted Posters (Cursed finishes live as of 7 Nov; Lil’ Uzi Vert Jr. with the 8 Nov Captain’s Day), a Treasure Hunters Battle Pass (Ace / Nico Robin), Pirate Shop Access, and a new ranked track. Last reviewed 7 Nov 2026.',
+      'Crossbones Isle (80 players), One Piece powers, Boss Captains (A$AP, Buggy, peaceful Miku & Teto at Friendship Villa), Sprites via Wanted Posters (Mini Miku / Squiplash / Zee with 15 Nov; Lil’ Uzi Vert Jr. since 8 Nov), Flapjack Rifle + Leekcapper, Treasure Hunters Battle Pass, Pirate Shop Access, and a new ranked track. Last reviewed 16 Nov 2026.',
   },
   {
     question: 'What is the current Fortnite map?',

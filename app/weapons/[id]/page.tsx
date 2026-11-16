@@ -13,6 +13,12 @@ import { allWeaponIds, buildWeaponPage } from '@/lib/weapon-pages'
 import { WeaponCombatPanel } from '@/components/WeaponCombatPanel'
 import { getWeaponFalloff, headshotDamage } from '@/lib/weapon-combat'
 import { changeTone, formatChangeValue, formatDelta } from '@/lib/weapon-changes'
+import {
+  SPAWN_SOURCE_META,
+  formatSpawnPct,
+  getSpawnRowByCatalogId,
+  getSpawnRowByName,
+} from '@/lib/weapon-spawn-rates'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
@@ -70,6 +76,7 @@ export default async function WeaponDetailPage({ params }: Props) {
   } = model
 
   const falloffPack = getWeaponFalloff(weapon.id)
+  const spawn = getSpawnRowByCatalogId(weapon.id) ?? getSpawnRowByName(weapon.name)
 
   return (
     <>
@@ -261,6 +268,41 @@ export default async function WeaponDetailPage({ params }: Props) {
           </section>
 
           <WeaponCombatPanel weapon={weapon} initialRarity={top.rarity} />
+
+          {spawn ? (
+            <section className="space-y-3">
+              <div className="flex flex-wrap items-end justify-between gap-2">
+                <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
+                  Spawn rates
+                </h2>
+                <Link
+                  href="/weapons/spawn-rates"
+                  className="text-sm text-primary hover:underline"
+                >
+                  Full loot table
+                </Link>
+              </div>
+              <p className="max-w-3xl text-sm text-muted-foreground">
+                Chance one Battle Royale loot roll yields {weapon.name} (any rarity). Ranked /
+                Zero Build use the same BR table on our spawn-rates page.
+              </p>
+              <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {SPAWN_SOURCE_META.map((src) => (
+                  <div
+                    key={src.key}
+                    className="rounded-xl border border-border bg-card px-4 py-3"
+                  >
+                    <dt className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                      {src.label}
+                    </dt>
+                    <dd className="mt-1 font-display text-xl font-bold tabular-nums text-foreground">
+                      {formatSpawnPct(spawn[src.key])}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          ) : null}
 
           {wiki && (wiki.firstAdded || wiki.vaultHistory) ? (
             <section className="space-y-3">

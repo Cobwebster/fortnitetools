@@ -118,11 +118,11 @@ export const SPRITE_COUNTS = {
 export const SPRITES_HOWTO = [
   {
     title: 'Companions, not PNG sheets',
-    body: `Sprites are Chapter 7 collectible companions. Treasure Hunters (1 Nov 2026) added a new roster — Halfpeel'd, Lil' Flacko, Plundarrgh, Transponder Snail, and the rest — each with its own ability page.`,
+    body: `Sprites are Chapter 7 collectible companions. Treasure Hunters added a live roster — launch twelve, Lil' Uzi Vert Jr., Mini Miku, Squiplash, secret rare Zee, and more — each with its own ability page.`,
   },
   {
     title: `${SPRITE_COUNTS.total} icons, ${SPRITE_COUNTS.families} families`,
-    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. Hunt Wanted Posters for Sprite Treasure Maps, then dig buried Sprite Chests on Crossbones Isle. Fortune finishes are live; Cursed finishes returned 7 Nov; Lil’ Uzi Vert Jr. lands with the 8 Nov Captain’s Day; Gold returns 12 Nov.`,
+    body: `Catalog snapshot ${SPRITES_CAPTURED_AT}. Hunt Wanted Posters → Sprite Treasure Maps → buried Sprite Chests. Fortune / Cursed finishes are live. Mini Miku + Squiplash + Zee joined with the 15 Nov Captain’s Day. Mastery Monday (Mon 9 AM ET) is 2× Sprite XP / Dust. Oscar week (~22 Nov) is next for Gold / Sir Oscar.`,
   },
   {
     title: 'Icons hosted here',
@@ -134,12 +134,12 @@ export const SPRITES_FAQS = [
   {
     question: 'What are Fortnite Sprites?',
     answer:
-      'Chapter 7 Battle Royale companions you find, carry, and extract. Treasure Hunters finishes (Fortune, Cursed) and older ones (Gold, Gummy, Galaxy, Holofoil, Cube, Cheat Master, Loot Hacker, Quack) each count as a separate collection entry.',
+      'Chapter 7 Battle Royale companions you find, carry, and extract. Treasure Hunters finishes (Fortune, Cursed, Gold) and older ones (Gummy, Galaxy, Holofoil, Cube, Cheat Master, Loot Hacker, Quack) each count as a separate collection entry.',
   },
   {
-    question: 'What are the 12 new Treasure Hunters Sprites?',
+    question: 'What are the Treasure Hunters Sprites?',
     answer:
-      "Launch twelve (1 Nov 2026): Halfpeel'd, Re-Pete, Barry O'Fish, Chester, Exmarks, Wayfinder, Kelper, Sweet Dreams, Lil' Squibbly, Lil' Flacko, Plundarrgh, and Transponder Snail — plus Fortune finishes. Cursed finishes returned 7 Nov. Lil' Uzi Vert Jr. lands with the 8 Nov Captain’s Day. Gold returns 12 Nov.",
+      "Launch twelve (1 Nov): Halfpeel'd, Re-Pete, Barry O'Fish, Chester, Exmarks, Wayfinder, Kelper, Sweet Dreams, Lil' Squibbly, Lil' Flacko, Plundarrgh, Transponder Snail. Then Lil' Uzi Vert Jr. (8 Nov), Mini Miku + Squiplash + Zee (15 Nov). Sir Oscar the Second / more Gold finishes are listed for ~22 Nov.",
   },
   {
     question: 'Is /sprites a PNG sprite-sheet dump?',
@@ -149,7 +149,7 @@ export const SPRITES_FAQS = [
   {
     question: 'How do I get Sprites in Treasure Hunters?',
     answer:
-      "Tear down a Wanted Poster for a Sprite Treasure Map, follow it, and dig the buried Sprite Chest. Regular chests can also roll a Sprite. Extract (pad, Portable Extractor, or a win) to bank it. Lil' Flacko can drop from the A$AP Rocky fight on the $.$. Rocky.",
+      "Tear down a Wanted Poster for a Sprite Treasure Map, follow it, and dig the buried Sprite Chest. Regular chests can also roll a Sprite. Extract (pad, Portable Extractor, or a win) to bank it. Mastery Monday doubles XP/Dust. Lil' Flacko can drop from the A$AP Rocky fight on the $.$. Rocky.",
   },
   {
     question: 'Where do the pictures come from?',

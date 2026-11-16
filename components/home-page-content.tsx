@@ -12,7 +12,6 @@ import { PostCard } from '@/components/post-card'
 import { categories, getFeaturedPosts, getLocalizedPosts, getPostsSorted } from '@/lib/posts'
 import { siteConfig } from '@/lib/site'
 import { CATEGORY_ICONS, toolIcon } from '@/lib/site-icons'
-import { getPublishedToolFireCounts, toolFireId } from '@/lib/tool-fires'
 import {
   defaultLocale,
   localizeHref,
@@ -82,10 +81,7 @@ export function HomePageContent({
   const toolsHref = localizeHref(locale, '/tools')
   const guidesHref = localizeHref(locale, '/guides')
   const secondaryCtaHref = isEnglish ? '/weapons' : guidesHref
-  const fireCounts = getPublishedToolFireCounts()
-  const popularTools = [...(isEnglish ? EN_POPULAR_TOOLS : LOCALE_POPULAR_TOOLS)].sort(
-    (a, b) => (fireCounts[toolFireId(b.href)] ?? 0) - (fireCounts[toolFireId(a.href)] ?? 0)
-  )
+  const popularTools = isEnglish ? EN_POPULAR_TOOLS : LOCALE_POPULAR_TOOLS
 
   const browseCategories = isEnglish
     ? categories
@@ -324,12 +320,6 @@ export function HomePageContent({
               />
               <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
                 {t(tool.key)}
-              </span>
-              <span className="inline-flex items-center gap-1 text-sm font-bold tabular-nums text-orange-200">
-                <span aria-hidden="true" className="text-xl leading-none">
-                  🔥
-                </span>
-                {fireCounts[toolFireId(tool.href)] ?? 0}
               </span>
             </Link>
           ))}

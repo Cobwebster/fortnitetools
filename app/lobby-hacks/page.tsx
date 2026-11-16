@@ -10,6 +10,7 @@ import {
   LOBBY_HACKS_FAQS,
   LOBBY_HACKS_HOWTO,
   LOBBY_HACKS_REVIEWED,
+  LOBBY_HACKS_STATUS,
 } from '@/lib/lobby-hacks'
 
 export default function LobbyHacksPage() {
@@ -34,16 +35,19 @@ export default function LobbyHacksPage() {
               <span>/</span>
               <span className="text-foreground">Lobby Hacks</span>
             </nav>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              {CURRENT_SEASON.shortLabel} · {LOBBY_HACK_COUNTS.total} codes · updated {LOBBY_HACKS_REVIEWED}
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-amber-300">
+              Archive · Override only · updated {LOBBY_HACKS_REVIEWED}
             </p>
             <h1 className="font-display text-4xl font-extrabold uppercase tracking-wide text-foreground sm:text-5xl">
               Fortnite <span className="text-primary">Lobby Hacks</span>
             </h1>
+            <p className="mt-3 max-w-2xl rounded-lg border border-amber-500/35 bg-amber-500/10 px-4 py-3 text-sm leading-relaxed text-amber-100/90">
+              {LOBBY_HACKS_STATUS}
+            </p>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Click a code to copy it and mark it as used. Override Admin Panel strings for Sprites,
-              XP, Sprite Dust, locker items, and lobby effects — never V-Bucks. Snapshot{' '}
-              {LOBBY_HACKS_CAPTURED_AT}; Epic can retire a string without notice.
+              Last Override snapshot ({LOBBY_HACKS_CAPTURED_AT}): {LOBBY_HACK_COUNTS.total} Admin Panel
+              strings for Sprites, XP, Sprite Dust, locker items, and lobby effects — never V-Bucks.
+              Kept for history while {CURRENT_SEASON.shortLabel} is live.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link

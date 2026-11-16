@@ -2,16 +2,17 @@ import type { Metadata } from 'next'
 import { createMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fortnite Item Shop Sets – Live Rotation & Current Season',
+  title: 'Fortnite Cosmetic Sets – Search Every Skin Set',
   description:
-    'Tonight’s Fortnite Item Shop sets plus sets from cosmetics added in the current game build. Capped at 40 live URLs with shop-history counts — not a page per outfit. Last reviewed with C7S3 shop data.',
+    'Search the full Fortnite Battle Royale set catalog — outfits, back blings, pickaxes, and more. Filter by tonight’s Item Shop or new-build cosmetics, then open a set for shop-history counts.',
   path: '/sets',
   keywords: [
-    'fortnite item shop sets',
+    'fortnite sets',
     'fortnite skin sets',
-    'fortnite current shop sets',
     'fortnite cosmetic sets',
     'fortnite set browser',
+    'fortnite item shop sets',
+    'search fortnite sets',
   ],
 })
 

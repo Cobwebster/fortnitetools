@@ -47,25 +47,25 @@ export function CreatorCodeChip({
     return (
       <div
         className={cn(
-          'flex flex-wrap items-center justify-center gap-x-2 gap-y-1 border-b border-primary/25 bg-primary/10 px-3 py-1.5 text-center text-xs sm:text-sm',
+          'flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 border-b border-amber-400/40 bg-linear-to-r from-amber-950/90 via-amber-900/70 to-amber-950/90 px-3 py-2 text-center text-xs sm:text-sm',
           className
         )}
       >
         <Link
           href="/creator-code"
-          className="font-medium text-muted-foreground transition-colors hover:text-primary"
+          className="font-semibold text-amber-100/90 transition-colors hover:text-amber-50"
         >
           Support us
         </Link>
-        <span className="text-muted-foreground" aria-hidden="true">
+        <span className="text-amber-300/50" aria-hidden="true">
           ·
         </span>
-        <span className="text-muted-foreground">use creator code</span>
+        <span className="font-semibold tracking-wide text-amber-50">use creator code</span>
         <button
           type="button"
           onClick={copyCode}
           aria-label={`Copy creator code ${SITE_CREATOR_CODE}`}
-          className="inline-flex items-center rounded-md border border-primary/40 bg-background/80 px-2 py-0.5 font-display text-sm font-bold uppercase tracking-wider text-primary transition-colors hover:border-primary hover:bg-primary/15"
+          className="inline-flex items-center rounded-md border border-amber-300/70 bg-linear-to-b from-amber-300 to-amber-500 px-2.5 py-0.5 font-display text-sm font-extrabold uppercase tracking-wider text-amber-950 shadow-[0_0_18px_rgba(251,191,36,0.35)] transition hover:from-amber-200 hover:to-amber-400"
         >
           {copied ? 'Copied!' : SITE_CREATOR_CODE}
         </button>
@@ -73,7 +73,7 @@ export function CreatorCodeChip({
           type="button"
           onClick={copyCode}
           aria-label={`Copy creator code ${SITE_CREATOR_CODE}`}
-          className="font-semibold text-primary underline-offset-2 hover:underline"
+          className="font-semibold text-amber-200 underline-offset-2 hover:text-amber-50 hover:underline"
         >
           {copied ? 'Copied' : 'Copy'}
         </button>
@@ -89,14 +89,14 @@ export function CreatorCodeChip({
         aria-label={`Copy creator code ${SITE_CREATOR_CODE}`}
         title={`Creator code ${SITE_CREATOR_CODE} — click to copy`}
         className={cn(
-          'inline-flex items-center gap-1 rounded-md border border-primary/40 bg-primary/10 px-2 py-1.5 text-xs font-bold uppercase tracking-wider text-primary transition-colors hover:border-primary/60 hover:bg-primary/15 sm:gap-1.5 sm:px-2.5 sm:py-2 sm:text-sm',
+          'inline-flex items-center gap-1.5 rounded-md border border-amber-400/35 bg-amber-500/10 px-2 py-1.5 text-xs font-semibold uppercase tracking-wider text-amber-200/90 transition-colors hover:border-amber-400/55 hover:bg-amber-500/15 hover:text-amber-100 sm:px-2.5 sm:py-2 sm:text-sm',
           className
         )}
       >
-        <span className="text-[9px] font-semibold normal-case tracking-normal text-muted-foreground sm:text-[10px]">
-          Creator code
+        <span className="text-[9px] font-medium normal-case tracking-normal text-amber-200/55 sm:text-[10px]">
+          Code
         </span>
-        <span className="font-display">{copied ? 'Copied!' : SITE_CREATOR_CODE}</span>
+        <span className="font-display font-bold text-amber-300">{copied ? 'Copied!' : SITE_CREATOR_CODE}</span>
       </button>
     )
   }

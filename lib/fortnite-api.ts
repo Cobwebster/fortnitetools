@@ -294,10 +294,28 @@ export async function fetchNewCosmetics() {
   return { build, lastAdditions, byType, all }
 }
 
-/** Full BR cosmetics catalog with shop history (responseFlags=7). Heavy — cache aggressively. */
+/**
+ * Full BR cosmetics catalog with shop history (responseFlags=7).
+ * ~38MB — Next.js Data Cache rejects entries over 2MB, so this cannot use fetch revalidate
+ * caching. Prefer {@link fetchBrCosmeticsLite} for set indexes; keep this for shop-history stats.
+ */
 export async function fetchAllBrCosmetics(): Promise<CosmeticItem[]> {
   const res = await fetch(`${API_BASE}/v2/cosmetics/br?language=en&responseFlags=7`, {
-    next: { revalidate: 86400 },
+    cache: 'no-store',
+  })
+  if (!res.ok) throw new Error(`Cosmetics catalog API failed (${res.status})`)
+  const json = await res.json()
+  const list = Array.isArray(json.data) ? json.data : []
+  return (list as ApiCosmetic[]).map(normalizeCosmetic).filter(Boolean) as CosmeticItem[]
+}
+
+/**
+ * BR catalog without shop-history flags (~17MB raw). Still over Next’s 2MB fetch cache limit —
+ * callers must slim + `unstable_cache` the derived payload (see cosmetic-sets).
+ */
+export async function fetchBrCosmeticsLite(): Promise<CosmeticItem[]> {
+  const res = await fetch(`${API_BASE}/v2/cosmetics/br?language=en`, {
+    cache: 'no-store',
   })
   if (!res.ok) throw new Error(`Cosmetics catalog API failed (${res.status})`)
   const json = await res.json()

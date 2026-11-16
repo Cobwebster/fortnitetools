@@ -40,6 +40,7 @@ export const TOOL_ICONS: Record<string, string> = {
   '/tools/keybinds': '/images/icons/pickaxe.png',
   '/tools/weapon-damage-calculator': '/images/loadout/surgical_burst.png',
   '/weapons': '/images/loadout/maven_auto.png',
+  '/weapons/spawn-rates': '/images/loadout/cluster_clinger.png',
   '/weapon-changes': '/images/loadout/chaos_exploder.png',
   '/season-countdown': '/images/loadout/pepper.png',
   '/xp-calculator': '/images/icons/xp.png',

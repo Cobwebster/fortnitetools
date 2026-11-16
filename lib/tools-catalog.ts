@@ -111,9 +111,9 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     href: '/sets',
-    title: 'Live Cosmetic Sets',
+    title: 'Cosmetic Sets',
     description:
-      'Tonight’s Item Shop sets plus current-build sets, capped, with shop history. Not a page per outfit.',
+      'Search 1,600+ Fortnite BR sets from the full catalog — filter by tonight’s shop or new-build, open a set for shop-history counts.',
     tags: ['Sets', 'Shop', 'Skins'],
     category: 'cosmetics',
   },
@@ -169,8 +169,8 @@ export const TOOLS: ToolEntry[] = [
     href: '/lobby-hacks',
     title: 'Lobby Hacks',
     description:
-      'Click to copy Override Admin Panel codes for Sprites, XP, Sprite Dust, locker items, and lobby effects. Marks used in this browser.',
-    tags: ['Codes', 'Sprites', 'Free'],
+      'Override Admin Panel archive — Lobby Hack codes left with Treasure Hunters (1 Nov 2026). No new codes this season.',
+    tags: ['Archive', 'Override', 'Codes'],
     category: 'cosmetics',
   },
   {
@@ -227,6 +227,14 @@ export const TOOLS: ToolEntry[] = [
     description:
       'Override encyclopedia after v42.40 — Pump, 8-Bit, Sweeper, Heavy AR, plus vaulted history (Midas, Drum Gun) with DPS, damage, fire rate, mag, and reload.',
     tags: ['Weapons', 'DPS', 'Stats'],
+    category: 'weapons',
+  },
+  {
+    href: '/weapons/spawn-rates',
+    title: 'Weapon Spawn Rates',
+    description:
+      'Treasure Hunters chest, floor, rare chest, and supply drop odds per roll — Battle Royale, Ranked, and Zero Build. Reload / Blitz / OG coming soon.',
+    tags: ['Loot', 'Spawn', 'Chests'],
     category: 'weapons',
   },
   {

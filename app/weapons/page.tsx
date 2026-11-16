@@ -105,6 +105,10 @@ export default function WeaponsPage() {
             <p className="mt-3 text-sm text-muted-foreground">
               <strong className="text-foreground">{liveCount}</strong> current ·{' '}
               <strong className="text-foreground">{vaultedCount}</strong> vaulted ·{' '}
+              <Link href="/weapons/spawn-rates" className="text-primary hover:underline">
+                Spawn rates
+              </Link>
+              {' · '}
               <Link href="/weapon-changes" className="text-primary hover:underline">
                 Buffs / nerfs
               </Link>

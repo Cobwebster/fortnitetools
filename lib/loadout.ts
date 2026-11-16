@@ -325,6 +325,15 @@ export const MOBILITY: UtilityItem[] = [
     score: 4,
   },
   {
+    id: 'leekcapper',
+    name: 'Leekcapper',
+    slot: 'mobility',
+    rarity: 'Epic',
+    image: '/images/loadout/lancehead.png',
+    note: 'Miku melee · combo + charged smash · sprint jump / fall-negation · breaks on durability',
+    score: 4,
+  },
+  {
     id: 'usopp_slingshot',
     name: "Usopp's Slingshot",
     slot: 'mobility',

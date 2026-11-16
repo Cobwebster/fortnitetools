@@ -55,6 +55,9 @@ const TREASURE_HUNTER_FAMILIES = new Set([
   'Plundarrgh',
   'Transponder Snail',
   "Lil' Uzi Vert Jr.",
+  'Mini Miku',
+  'Squiplash',
+  'Zee',
 ])
 
 const TREASURE_HUNTER_LOCATION =
@@ -333,9 +336,32 @@ const FAMILY_ABILITY: Record<
     ability: 'Generates a Chug Splash effect when restoring shields.',
     abilityScale: 'Cooldown decreases with each level (community reports ~18s → ~10s by level 5).',
     location:
-      'Week-2 Treasure Hunters Sprite (Captain’s Day 8 Nov). Hunt Wanted Posters / Sprite Chests on Crossbones Isle — Fortune’s Fort is the live fort POI. Fortune finish shares the same hunt. Trust the collection screen if a finish is still grey.',
-    live: false,
-    upcoming: true,
+      'Week-2 Treasure Hunters Sprite (Captain’s Day 8 Nov). Hunt Wanted Posters / Sprite Chests on Crossbones Isle — Fortune’s Fort is the live fort POI.',
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  'Mini Miku': {
+    ability: 'Grants a Friendship Bubble when you emote with other players.',
+    abilityScale: 'Cooldown decreases with each level.',
+    location:
+      'Captain’s Day 15 Nov (Miku & Teto at Friendship Villa). Wanted Posters / Sprite Chests on Crossbones Isle. Fortune + Cursed finishes share the same hunt; Gold is later (Oscar week / 22 Nov list).',
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Squiplash: {
+    ability: 'Deploys a Healing Smoke Bomb when your health is low.',
+    abilityScale: 'Cooldown drops; duration and healing increase with each level.',
+    location:
+      'Captain’s Day 15 Nov with Mini Miku. Wanted Posters / Sprite Chests. Fortune + Cursed finishes in the same hunt; Gold later.',
+    live: true,
+    pool: 'Treasure Hunters',
+  },
+  Zee: {
+    ability: 'Grants regenerating Zero Point dash charges.',
+    abilityScale: 'Max charges increase and recharge time decreases with each level.',
+    location:
+      'Secret rare Sprite enabled with the 15 Nov Captain’s Day window (Zero Point–style). Hard to find — Lucky Locator / trade / rare chest rolls. Collection entry may stay hidden until you own it.',
+    live: true,
     pool: 'Treasure Hunters',
   },
 }
@@ -426,7 +452,19 @@ function howToGetSteps(sprite: SpriteEntry, lobbyHack?: { code: string; note?: s
     if (family === "Lil' Uzi Vert Jr.") {
       steps.push({
         title: 'Week-2 Captain’s Day Sprite',
-        body: "Lil' Uzi Vert Jr. (base + Fortune) lands with the 8 Nov Captain’s Day. Open Sprite Chests / Wanted Poster digs on Crossbones Isle — Fortune’s Fort is the live fort POI. Trust the collection screen if a finish is still grey.",
+        body: "Lil' Uzi Vert Jr. landed with the 8 Nov Captain’s Day. Open Sprite Chests / Wanted Poster digs on Crossbones Isle — Fortune’s Fort is the live fort POI.",
+      })
+    }
+    if (family === 'Mini Miku' || family === 'Squiplash') {
+      steps.push({
+        title: '15 Nov Captain’s Day Sprite',
+        body: `${family} joined with Miku & Teto at Friendship Villa (15 Nov). Farm Wanted Posters / Sprite Chests island-wide — not a lobby code.`,
+      })
+    }
+    if (family === 'Zee') {
+      steps.push({
+        title: 'Secret rare (Zero Point style)',
+        body: 'Zee is the season’s ultra-rare regenerating dash Sprite. Expect sparse rolls — Locators and rare chests help more than a named POI.',
       })
     }
     if (variant === 'Cursed') {
