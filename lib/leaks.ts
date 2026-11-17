@@ -59,6 +59,81 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'jurassic-park-jeep-wrangler-fortnite',
+    title: 'Jurassic Park x Jeep Wrangler Fortnite Collab — Item Shop Release Date',
+    excerpt:
+      'According to leaks on 17 Nov 2026, a Jurassic Park x Jeep Wrangler x Fortnite collaboration is set to hit the Item Shop at the 00:00 UK reset on 18 Nov (7pm ET on 17 Nov). The specific items and prices are not confirmed yet.',
+    category: 'shop',
+    status: 'active',
+    date: '2026-11-17',
+    readTime: 2,
+    featured: true,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'jurassic park fortnite',
+      'jurassic park jeep fortnite',
+      'fortnite jeep wrangler',
+      'fortnite item shop 18 november',
+    ],
+    content: `
+## When is it coming?
+
+According to **leaks on 17 November 2026**, the **Jurassic Park x Jeep Wrangler x Fortnite** tie‑in is expected to land in the **Item Shop at 00:00 UK on 18 November** (**7:00 PM ET on Tuesday 17 Nov**). Track the flip on the [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) page and confirm live tiles on the [Item Shop tracker](/tools/item-shop).
+
+## What this collab is
+
+This collaboration pairs **Jurassic Park** with **Jeep Wrangler** — the film’s iconic tour vehicles are Jeep Wranglers. The exact Fortnite content has **not** been confirmed yet.
+
+## What is not confirmed
+
+- Whether this includes a **drivable car body**, **wraps**, **styles**, or other cosmetics
+- **V‑Bucks prices** and bundle structure
+- How **long** the set will stay in rotation
+
+## Links
+
+- Rolling calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- Live confirmation after reset: [Item Shop tracker](/tools/item-shop)
+
+**Reported:** 17 November 2026.
+`,
+  },
+  {
+    slug: 'fortnite-game-awards-2026-nominations',
+    title: 'Fortnite at The Game Awards 2026: Best Ongoing Game Nomination',
+    excerpt:
+      'Fortnite is officially nominated for Best Ongoing Game at The Game Awards 2026. The other nominees are Arc Raiders, No Man’s Sky, Final Fantasy XIV, and The Witcher 3: Wild Hunt. Fortnite did not receive a Best Community Support nomination.',
+    category: 'season',
+    status: 'watching',
+    date: '2026-11-17',
+    readTime: 2,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'fortnite game awards 2026',
+      'best ongoing game 2026',
+      'the game awards 2026 nominees',
+      'fortnite best ongoing game',
+    ],
+    content: `
+## Nomination (official)
+
+Fortnite is nominated for **Best Ongoing Game** at **The Game Awards 2026**.
+
+**Category nominees:**
+- Fortnite
+- Arc Raiders
+- No Man’s Sky
+- Final Fantasy XIV
+- The Witcher 3: Wild Hunt
+
+Fortnite did **not** receive a nomination for **Best Community Support** this year.
+
+We are not including the ceremony date or predictions here. It has been a busy year for Fortnite seasons and collaborations — we will update this page if Epic or TGA post new details.
+
+**Updated:** 17 November 2026.
+`,
+  },
+  {
     slug: 'hello-neighbor-fortnite-collab',
     title: 'Hello Neighbor x Fortnite Collab Leak — Coming Soon to the Item Shop',
     excerpt:
@@ -1036,9 +1111,9 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Item Shop Leaks — Cap’n Miku & Pirate Speedy Live; 16 Nov Watch List',
+      'Upcoming Item Shop Leaks — 17 Nov Shop Live; 18 Nov Watch List',
     excerpt:
-      '15 Nov shop is live: Cap’n Hatsune Miku (bundle 2,200 VB, emote 500) and Pirate Speedy (1,500 / 1,800). Friendship Villa / Miku+Teto is the BR beat. Leaked next (unconfirmed): Madison Beer, Kaiju No. 8, The Odyssey (16 Nov), plus Shohei Ohtani / Gotham City Summer if they still flip. Confirm on the tracker.',
+      '17 Nov shop is live: Kaiju No. 8, The Odyssey, Madison Beer and Summer High Stakes returned, plus another ICON emotes refresh. Leaked next (unconfirmed): Naruto and Bruno Mars returns, and the new Jurassic Park x Jeep Wrangler collab in the 18 Nov reset. Confirm after reset on the tracker.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-15',
@@ -1056,21 +1131,26 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'buggy fortnite skin',
     ],
     content: `
-## Live now (15 November 2026)
+## 17 November shop (live)
 
 Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 
-- **Cap’n Hatsune Miku** — bundle **2,200 V‑Bucks**, emote **500 V‑Bucks** · [detail page](/leaks/pirate-hatsune-miku-fortnite-bundle)
-- **Pirate Speedy** / **Pirate D. Speedy** — outfit **1,500**, bundle **1,800** · [detail page](/leaks/ishowspeed-pirate-speedy-fortnite-skin)
-- Still in rotation from earlier: **Buggy**, **Lil Uzi Vert**, and more One Piece tiles
-- BR beat: **Friendship Villa** (Miku + Teto week) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
+- **Kaiju No. 8**, **The Odyssey**, **Madison Beer**, and **Summer High Stakes** returned
+- Another **ICON emotes refresh** rotated in
+- Earlier “leaked next” text for Madison Beer / Kaiju No. 8 / The Odyssey landed on **17 Nov** (not the 16 Nov window)
 
-## Leaked next (unconfirmed)
+BR beat context remains **Friendship Villa** (Miku + Teto week) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
+
+## 18 November shop (leaked)
+
+According to **leaks**, the next reset (**00:00 UK on 18 Nov** / **7:00 PM ET on 17 Nov**) brings back **Naruto** and **Bruno Mars** items, and adds the new **Jurassic Park x Jeep Wrangler** collab — see the page: [Jurassic Park x Jeep Wrangler](/leaks/jurassic-park-jeep-wrangler-fortnite). Treat as **unconfirmed** until the shop flips.
+
+## Recent / coming windows
 
 | Window | What leakers flagged | Status |
 | --- | --- | --- |
-| 15 Nov (shop) | **Shohei Ohtani**; **Gotham City Summer** / Beach Bod Batman | Leak — **did not** lead the live 15 Nov rotation (Miku did); watch for a later flip |
-| 16 Nov | **Madison Beer**; **Kaiju No. 8**; **The Odyssey** (some dumps also list High Stakes Summer / Golden Tactical Pack) | Leak |
+| 17 Nov (shop) | **Kaiju No. 8**, **The Odyssey**, **Madison Beer**, **Summer High Stakes**, ICON emotes refresh | Live |
+| 18 Nov (shop) | **Naruto**, **Bruno Mars**, **Jurassic Park x Jeep Wrangler** | Leak |
 | Coming soon | [Hello Neighbor x Fortnite](/leaks/hello-neighbor-fortnite-collab) | Leak / teaser |
 | Files | **Overwatch Wave 2** (Kiriko + likely Widowmaker) | [Wave 2 page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
 
@@ -1080,31 +1160,73 @@ Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 - **13 Nov:** Buggy · VW Golf II GTI · KATSEYE “Pinky Up” · Jason return
 - **14 Nov:** Pirate Speedy
 - **15 Nov:** Cap’n Hatsune Miku + ICON emotes refresh
+- **17 Nov:** Kaiju No. 8 / The Odyssey / Madison Beer · Summer High Stakes
 
 ## How to use this
 
 Treat future dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 15 November 2026.
+**Updated:** 17 November 2026.
 `,
   },
   {
     slug: 'usopp-slingshot-nerf',
-    title: 'Usopp’s Slingshot Nerf — Full Damage Table',
+    title: 'Usopp’s Slingshot Nerfed Again — 16 Nov Hotfix Stats (Plus Devil Fruit Buffs)',
     excerpt:
-      'Usopp’s Slingshot got hit: body up to −3, headshots up to −10, long/max range trimmed. Full before/after table from the 7 Nov balance dump.',
+      'Second nerf on 16 Nov: Slingshot body 75–90 → 68–83, headshot ~131–190 → ~129–188, full charge now 1.0s (was 0.7s), charge time 1.05s (was 0.75s). Flame‑Flame and Gum‑Gum were buffed; exotic drop chances increased. Full tables below (7 Nov first nerf retained).',
     category: 'gameplay',
     status: 'shipped',
     date: '2026-11-07',
-    confirmedDate: '2026-11-07',
+    confirmedDate: '2026-11-16',
     readTime: 3,
     image: '/images/guides/secret-weapon.webp',
     tags: [
       'usopp slingshot nerf',
       'fortnite treasure hunters balance',
       'fortnite weapon nerf',
+      'usopp slingshot nerf again',
+      'fortnite hotfix 16 november',
+      'flame flame fruit buff',
+      'gum gum fruit buff',
+      'fortnite exotic drop chance',
     ],
     content: `
+## Second nerf — 16 Nov 2026 hotfix
+
+### Usopp’s Slingshot
+
+| Stat | Before | After |
+| --- | --- | --- |
+| Body damage (Uncommon–Mythic) | 75–90 | **68–83** |
+| Headshot (approx., Uncommon–Mythic) | ~131–190 | **~129–188** |
+| Full charge time | 0.7s | **1.0s** |
+| Charge time | 0.75s | **1.05s** |
+
+### Flame‑Flame Fruit (buffs)
+
+| Change | Before | After |
+| --- | --- | --- |
+| Damage (per hit, tiered) | 9–15 | **12–16** |
+| Damage falloff range | 75m | **150m** |
+| Fire Fist building damage | 95 | **105** |
+
+### Gum‑Gum Fruit (buffs)
+
+| Change | Before | After |
+| --- | --- | --- |
+| Uncharged damage | 50 | **60** |
+| Uncharged building damage | 50 | **60** |
+| Air attack (uncharged) building damage | 100 | **125** |
+
+### Exotic drop chances (increased)
+
+- Any **Exotic** from chests and rare chests: **+100%**
+- **Super Flint‑Knock Pistol**: **+150%**
+- **A$AP Rocky’s Shock Rocket**: **+150%**
+- **Lil Uzi Vert’s Lil’ SMG**: **+2–7%** (see one early gameplay page: [Lil Uzi Vert SMG gameplay](/leaks/lil-uzi-vert-smg-gameplay))
+
+—
+
 ## The patch dump
 
 | Stat | Before | After |
