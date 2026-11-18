@@ -293,9 +293,9 @@ If you have an active **Pirate Shop Access** window, look for the **Claim** butt
   },
   {
     slug: 'fortnite-overwatch-wave-2-kiriko-widowmaker',
-    title: 'Fortnite x Overwatch Wave 2 — Kiriko in Files; Second Hero Teased',
+    title: 'Kiriko & Widowmaker Fortnite Release Date: Overwatch Wave 2 Leaked for 20 Nov',
     excerpt:
-      'Encrypted Overwatch x Fortnite cosmetics were added in the 13 Nov update. According to leaks, Kiriko is in the files with glowing VFX, physics clothing, a LEGO style, lobby animation, emote with a special Kiriko version, back bling and pickaxe. A second female hero is also present and most signs point to Widowmaker — still speculation. No date or prices.',
+      'According to leaks on 18 Nov 2026, Overwatch Wave 2 brings Kiriko and Widowmaker to the Fortnite Item Shop at the 00:00 UK reset on 20 November. The leaked set lists an Emote, 2 Pickaxes, 2 Back Blings, a Wrap and Kicks (plus the two outfits). A new Jam Track, "Perfect Night" by LE SSERAFIM, was also leaked. Prices are not known.',
     category: 'cosmetics',
     status: 'active',
     date: '2026-11-13',
@@ -308,8 +308,29 @@ If you have an active **Pirate Shop Access** window, look for the **Claim** butt
       'widowmaker fortnite skin',
       'overwatch wave 2 fortnite',
       'kiriko fortnite release date',
+      'widowmaker fortnite',
+      'kiriko widowmaker fortnite release date',
+      'overwatch fortnite november 20',
+      'perfect night fortnite jam track',
+      'le sserafim fortnite',
     ],
     content: `
+## Release date: 20 November (leaked)
+
+According to **leaks on 18 November 2026**, **Kiriko and Widowmaker** are slated to hit the **Fortnite Item Shop at 00:00 UK on Friday 20 November 2026** (**7:00 PM ET on Thursday 19 Nov**). Treat the date as **unconfirmed** until the shop flips.
+
+Leaked set contents for the wave list:
+- **Emote**
+- **2 Pickaxes**
+- **2 Back Blings**
+- **Wrap**
+- **Kicks**
+- Plus the **two outfits** (Kiriko, Widowmaker)
+
+### Perfect Night Jam Track
+
+An **Overwatch x Fortnite Jam Track** was also leaked: **"Perfect Night" by LE SSERAFIM**.
+
 ## What today’s update added (13 Nov)
 
 Update files reference a **second Overwatch x Fortnite set**, still encrypted. **Wave 1** (D.Va, Mercy, Tracer, Genji) launched on **14 May 2026**; this looks like **Wave 2**.
@@ -325,15 +346,15 @@ Update files reference a **second Overwatch x Fortnite set**, still encrypted. *
 - **Glowing pickaxe**
 - New **Kicks** — fox/kitsune‑themed footwear that leaves **footprints** and a small **trail**
 
-## Who is the second hero? (speculation)
+## Who is the second hero? Widowmaker (leaked)
 
-The same encrypted set includes a **second female Overwatch hero**. The trait list (glowing body/headpiece, a **long head attachment** with physics like a ponytail, an **animated pickaxe** with a custom ready sound and trail that may **double as a back bling**, an **animated back bling**, lobby animation, spray, and wrap) **most closely matches Widowmaker**. **Juno** is the other community guess. Treat the identity as **speculation** until decrypted or announced.
+Leaks now point to **Widowmaker** as the second hero in Wave 2. Earlier reads had floated **Juno** as an alternative guess; current reports specifically name **Widowmaker**.
 
 ## Release date and pricing
 
-There is **no confirmed date** or price info. Encrypted collabs typically appear **within days to a couple of weeks** of their file drop, but timing can slip. Keep an eye on the [Item Shop tracker](/tools/item-shop).
+The **leaked date is 20 November 2026 at 00:00 UK** (Item Shop reset). **V‑Bucks prices are still unknown**. Track the flip on the [Item Shop tracker](/tools/item-shop) and our rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
-**Filed:** 13 November 2026. Status: **Unconfirmed**.
+**Filed:** 13 November 2026. **Updated:** 18 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
@@ -1145,6 +1166,10 @@ BR beat context remains **Friendship Villa** (Miku + Teto week) — [Kasane Teto
 
 According to **leaks**, the next reset (**00:00 UK on 18 Nov** / **7:00 PM ET on 17 Nov**) brings back **Naruto** and **Bruno Mars** items, and adds the new **Jurassic Park x Jeep Wrangler** collab — see the page: [Jurassic Park x Jeep Wrangler](/leaks/jurassic-park-jeep-wrangler-fortnite). Treat as **unconfirmed** until the shop flips.
 
+## 20 November shop (leaked)
+
+According to **leaks**, **Overwatch Wave 2** lands at the **00:00 UK reset on 20 November** with **Kiriko and Widowmaker** — details on the page: [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker). Treat as **unconfirmed** until tiles appear.
+
 ## Recent / coming windows
 
 | Window | What leakers flagged | Status |
@@ -1166,7 +1191,7 @@ According to **leaks**, the next reset (**00:00 UK on 18 Nov** / **7:00 PM ET on
 
 Treat future dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 17 November 2026.
+**Updated:** 18 November 2026.
 `,
   },
   {
