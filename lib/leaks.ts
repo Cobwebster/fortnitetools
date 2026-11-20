@@ -756,6 +756,8 @@ In‑game change noted on **12 Nov**: **chest prize drop effects now differ** �
 - Previous swap: [Gold Lil’ Uzi Vert Jr.](/leaks/gold-lil-uzi-vert-sprite)
 - Odds: [Pirate Shop odds](/leaks/pirate-shop-odds)
 
+**Heads‑up:** **Solid Gold Hatsune Miku** reportedly gets a **boosted drop chance** during the two **21 Nov Treasure Hours** windows — see [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
+
 **Filed:** 12 November 2026. **Updated:** 15 November 2026. Status: **Watching** (Week 4 still upcoming).
 `,
   },
@@ -1228,9 +1230,10 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   },
   {
     slug: 'upcoming-item-shop-leaks',
-    title: 'Upcoming Fortnite Item Shop Leaks — 19–24 Nov: Regular Show, Kiriko, Crash & Spyro, Persona 5',
+    title:
+      'Upcoming Fortnite Item Shop Leaks — 20–24 Nov: Kid LAROI returns, Kiriko, Crash & Spyro, Persona 5',
     excerpt:
-      '19 Nov shop is live: Regular Show return, ICON emotes refresh, Lazarbeam & CourageJD. Next: 20 Nov Kiriko & Widowmaker (leak), 21 Nov Crash & Spyro + Privateer Oscar + Overwatch Wave 1 (leak), 22 Nov Cardamom Sidekick (leak), 24 Nov Persona 5 Royal (shown in Epic’s shop reel).',
+      '20 Nov shop is live: The Kid LAROI returns (first time in about three years), Kim Kardashian and Cowboy Bebop return, The Sidekick Squad set, and returning Save the World packs. Watch list stays for 20–24 Nov: Kiriko & Widowmaker (leak), 21 Nov Crash & Spyro + Privateer Oscar + Overwatch Wave 1 (leak), 22 Nov Cardamom Sidekick (leak), 24 Nov Persona 5 Royal (shown in Epic’s shop reel).',
     category: 'shop',
     status: 'watching',
     date: '2026-11-15',
@@ -1249,15 +1252,21 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'regular show fortnite',
       'persona 5 fortnite',
       'crash bandicoot fortnite',
+      'kid laroi fortnite skin return',
+      'kim kardashian fortnite',
+      'cowboy bebop fortnite return',
+      'save the world packs return',
     ],
     content: `
-## 19 November shop (live)
+## 20 November shop (live)
 
 Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 
-- **Regular Show** returned
-- Another **ICON emotes refresh** rotated in
-- **Lazarbeam** & **CourageJD** cycled in the same window
+- **The Kid LAROI** returned — his first **Item Shop** appearance in about **three years**
+- **Kim Kardashian** returned
+- **Cowboy Bebop** returned
+- **The Sidekick Squad** set featured
+- Returning **Save the World** packs
 
 Season beat context remains **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
 
@@ -1274,6 +1283,7 @@ Treat all leaks as **unconfirmed** until tiles appear in‑client. Persona 5 Roy
 
 ## Already shipped (recent)
 
+- **19 Nov:** **Regular Show** returned · **ICON** emotes refresh rotated in · **Lazarbeam** & **CourageJD** cycled in
 - **18 Nov:** **Naruto**, **Bruno Mars**, **Jurassic Park x Jeep Wrangler** (see page: [Jurassic Park x Jeep Wrangler](/leaks/jurassic-park-jeep-wrangler-fortnite))
 - **17 Nov:** **Kaiju No. 8** / **The Odyssey** / **Madison Beer** · **Summer High Stakes**
 - **15 Nov:** **Cap’n Hatsune Miku** + ICON emotes refresh
@@ -1283,7 +1293,7 @@ Treat all leaks as **unconfirmed** until tiles appear in‑client. Persona 5 Roy
 
 Treat future dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 19 November 2026.
+**Updated:** 20 November 2026.
 `,
   },
   {
@@ -1388,9 +1398,10 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
   },
   {
     slug: 'pirate-shop-power-hours',
-    title: 'Pirate Shop Power Hours — Confirmed 2× Access & 10× Gold Outfit Boost',
+    title:
+      'Fortnite Treasure Hours 21 Nov: Pirate Shop Token & Gold Miku Boost Times',
     excerpt:
-      'Two Treasure Hours ran on 14 Nov 2026: the first window was extended to 7–11pm UK (2–6pm ET), and the second ran 2–4am UK (9–11pm ET 14 Nov). In-game, Pirate Shop Access was 1.5× and Weekly Gold Outfit 7.5×. Past 7 Nov window ran 2.0× Access / 10× Gold.',
+      'Next up: two Treasure Hours on Sat 21 Nov — 2–4pm ET (7–9pm UK) and 9–11pm ET (2–4am UK Sun). Expected multipliers match 14 Nov in‑game: Pirate Shop Token 1.5×, Weekly Gold Outfit 7.5× (to be confirmed in‑game). 7 Nov ran 2.0× / 10×.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-04',
@@ -1405,12 +1416,28 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
       'pirate shop 2x boost',
       'treasure hours 2.0x',
       'treasure hours today',
+      'treasure hours november 21',
+      'fortnite token boost times',
+      'solid gold hatsune miku boost',
+      'pirate shop token boost',
     ],
     content: `
 ## What are Power Hours?
 Short, scheduled windows later in the season that temporarily boost the chance to roll the **Pirate Shop Access** prize from Battle Royale chests.
 
-## 2× Treasure Hours — 14 Nov 2026
+## 2× Treasure Hours — Saturday 21 Nov 2026
+According to leaks (reported **20 Nov 2026**), the next **two Treasure Hours** land on **Saturday 21 November** and will boost both the **Pirate Shop Token (Access)** and the **weekly gold outfit** (this week: **Solid Gold Hatsune Miku** — see [Pirate Chest Prizes Week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4)).
+
+**Expected multipliers** (match the **14 Nov** in‑game numbers, to be confirmed live):
+- **Pirate Shop Token:** **1.5×**
+- **Weekly Gold Outfit:** **7.5×**
+
+| Window | ET | UK (GMT) |
+| --- | --- | --- |
+| First | Sat 21 Nov **2–4pm ET** | Sat 21 Nov **7–9pm** |
+| Second | Sat 21 Nov **9–11pm ET** | Sun 22 Nov **2–4am** |
+
+## 2× Treasure Hours — 14 Nov 2026 (past)
 Two boosted windows on **Saturday 14 November 2026**. The **first window was extended by 2 hours on the day**, and the **second** started on schedule at about **2am UK** (**9pm ET** Sat **14 Nov**) for two hours. **In‑game multipliers confirmed:** **Pirate Shop Access token 1.5×** and **Weekly Gold Outfit 7.5×**.
 
 | Window | ET | UK (GMT) |
@@ -1432,9 +1459,20 @@ Weekend Treasure Hours previously boosted other Treasure Hunt prizes (on top of 
 Full base table: [Pirate Shop odds](/leaks/pirate-shop-odds).  
 How-to guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
+## Quick FAQ
+
+**When are today’s boost windows in UK time?**
+Today’s slots are **7–9pm UK** and **2–4am UK (Sun 22 Nov)**.
+
+**What is boosted?**
+The **Pirate Shop Token (Access)** and the **weekly gold outfit** (**Solid Gold Hatsune Miku** this week), plus other Treasure prizes per window.
+
+**Are the multipliers confirmed?**
+They are **expected** to match **14 Nov** (**1.5× Token**, **7.5× Gold**) and will be **confirmed in‑game** via Status / the MOTD when live.
+
 We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated:** 15 November 2026. Status: **Watching** for future announced windows.
+**Filed:** 4 November 2026. **Updated:** 20 November 2026. Status: **Watching** for future announced windows.
 `,
   },
   {
