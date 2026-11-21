@@ -91,7 +91,7 @@ Times below are the daily **Item Shop reset at 00:00 UK (GMT)** = **7:00 PM ET t
 
 | Date (UK reset) | What’s slated | Status |
 | --- | --- | --- |
-| Fri **20 Nov** | Overwatch Wave 2 — **Kiriko & Widowmaker** | **Shipped** · [page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
+| Sat **21 Nov** | Overwatch Wave 2 — **Kiriko & Widowmaker** | **Shipped** · [page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
 | Sat **21 Nov** | **Crash & Spyro** · **Privateer Oscar** · Wave 1 BR return | **Missed this reset** — still watching |
 | Sun **22 Nov** | **"Cardamom" Sidekick** | Leak (codename only) |
 | Tue **24 Nov** | **Persona 5 Royal** | Shown in Epic’s shop reel |
@@ -387,11 +387,11 @@ If you have an active **Pirate Shop Access** window, look for the **Claim** butt
     slug: 'fortnite-overwatch-wave-2-kiriko-widowmaker',
     title: 'Kiriko & Widowmaker Fortnite — Out Now (Overwatch Wave 2 Prices)',
     excerpt:
-      'Shipped 20 Nov: Kiriko and Widowmaker are live. Outfit rows 1,600 V-Bucks each; combined Widowmaker & Kiriko bundle 2,400 (was 5,000). Perfect Night (LE SSERAFIM) Jam Track is 500. Still in the 21 Nov shop.',
+      'Out now: Kiriko and Widowmaker went live with the 21 Nov 00:00 UK reset (7 PM ET on 20 Nov) after an evening trailer on the 20th. Outfit rows 1,600 V-Bucks each; combined Widowmaker & Kiriko bundle 2,400 (was 5,000). Perfect Night (LE SSERAFIM) Jam Track is 500. Still in the 21 Nov shop.',
     category: 'cosmetics',
     status: 'shipped',
     date: '2026-11-13',
-    confirmedDate: '2026-11-20',
+    confirmedDate: '2026-11-21',
     readTime: 4,
     featured: true,
     image: '/images/guides/kiriko-featured.webp',
@@ -410,9 +410,9 @@ If you have an active **Pirate Shop Access** window, look for the **Claim** butt
       'overwatch wave 1 fortnite return',
     ],
     content: `
-## Out now — 20 November
+## Out now — 21 November
 
-**Kiriko** and **Widowmaker** (Overwatch Wave 2) flipped with the **20 November 2026** Item Shop reset (**00:00 UK** / **7:00 PM ET on 19 Nov**). Still live in the **21 Nov** shop.
+**Kiriko** and **Widowmaker** (Overwatch Wave 2) flipped with the **21 November 2026** Item Shop reset (**00:00 UK** / **7:00 PM ET on 20 Nov**) following a release trailer on the evening of **20 Nov**. Still live in the **21 Nov** shop.
 
 Confirm tiles: [Item Shop tracker](/tools/item-shop).
 
@@ -440,7 +440,7 @@ Standalone **D.Va / Mercy / Tracer / Genji** BR outfits did **not** return on **
 
 Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko kit, kitsune kicks with footprints, cloth physics / LEGO style, and Widowmaker as the second hero (earlier guesses had floated Juno).
 
-**Shipped:** 20 November 2026. **Updated:** 21 November 2026.
+**Shipped:** 21 November 2026. **Updated:** 21 November 2026.
 `,
   },
   {
@@ -1222,7 +1222,7 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
     title:
       'Upcoming Fortnite Item Shop Leaks — 21–24 Nov: Crash miss, Cardamom, Persona 5',
     excerpt:
-      '21 Nov shop is live with Kiriko & Widowmaker still up (Wave 2 shipped 20 Nov). Crash, Spyro, and Privateer Oscar did not land on the 21 Nov reset. Watch 22 Nov Cardamom Sidekick and 24 Nov Persona 5 Royal (Epic reel).',
+      '21 Nov shop is live — Kiriko & Widowmaker debuted with this reset after a trailer on the 20th. Ice Spice returned; ICON emotes refreshed; Metro Station “Shake It” emote is up. Crash, Spyro, and Privateer Oscar did not land on the 21 Nov reset. Watch 22 Nov Cardamom Sidekick and 24 Nov Persona 5 Royal (Epic reel).',
     category: 'shop',
     status: 'watching',
     date: '2026-11-15',
@@ -1246,13 +1246,18 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'cowboy bebop fortnite return',
       'kiriko fortnite',
       'widowmaker fortnite',
+      'ice spice fortnite return',
+      'metro station shake it fortnite emote',
     ],
     content: `
 ## 21 November shop (live)
 
 Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 
-- **Kiriko & Widowmaker** still live (shipped **20 Nov**) — [prices](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
+- **Kiriko & Widowmaker** debuted with this reset (**21 Nov 00:00 UK** / **7 PM ET on 20 Nov**) — [prices](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
+- **Ice Spice** returned — items include **Rap Princess Ice Spice** (**1,500**), **Ice Spice Mini** (**300**), **In Ha Mood** (**500**), **Iced Out Mic** (**800**)
+- **ICON emotes refresh** — multiple music emotes rotated in
+- **“Shake It”** emote (**500**) — Metro Station
 - **Perfect Night** (LE SSERAFIM) Jam Track — **500**
 - **The Kid LAROI** still up from the **20 Nov** return
 - **Jurassic Jeep® Wrangler** car body still up — [page](/leaks/jurassic-park-jeep-wrangler-fortnite)
@@ -1270,7 +1275,8 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 
 ## Already shipped (recent)
 
-- **20 Nov:** **Kiriko & Widowmaker** · **Kid LAROI** return · Kim Kardashian / Cowboy Bebop / Sidekick Squad / StW packs (same window)
+- **21 Nov:** **Kiriko & Widowmaker** (Overwatch Wave 2) · **Ice Spice** returned · ICON emotes refresh · Metro Station **“Shake It”** emote
+- **20 Nov:** **The Kid LAROI** return · Kim Kardashian / Cowboy Bebop / Sidekick Squad / StW packs (same window)
 - **19 Nov:** **Regular Show** · ICON emotes · Lazarbeam & CourageJD
 - **18 Nov:** **Naruto**, **Bruno Mars**, **Jurassic Jeep Wrangler**
 - **17 Nov:** **Kaiju No. 8** / **The Odyssey** / **Madison Beer** · Summer High Stakes
