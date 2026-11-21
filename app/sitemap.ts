@@ -7,6 +7,8 @@ import { DROP_GUIDES } from '@/lib/drop-guides'
 import { SEASON_HUB_REVIEWED_ISO } from '@/lib/season-hub'
 import { WEAPON_CATALOG } from '@/lib/weapons-catalog'
 import { guidesPageHref, guidesTotalPages } from '@/lib/guides-pagination'
+import { listPublicLockers } from '@/lib/lockers-db'
+import { lockersPageHref, lockersTotalPages } from '@/lib/lockers-pagination'
 import { sitemapVideo } from '@/lib/guide-video'
 import { SPRITES, SPRITES_CAPTURED_AT } from '@/lib/sprites'
 import { leaks } from '@/lib/leaks'
@@ -241,6 +243,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   )
 
+  const publicLockers = await listPublicLockers().catch(() => [])
+  const lockerPageRoutes: MetadataRoute.Sitemap = Array.from(
+    { length: Math.max(0, lockersTotalPages(publicLockers.length) - 1) },
+    (_, i) => ({
+      url: `${base}${lockersPageHref(i + 2)}`,
+      lastModified: hubModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.5,
+    })
+  )
+
   const postRoutes: MetadataRoute.Sitemap = posts
     .filter((post) => !post.noindex)
     .map((post) => ({
@@ -279,6 +292,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...localeRoutes,
     ...categoryRoutes,
     ...guidePageRoutes,
+    ...lockerPageRoutes,
     ...postRoutes,
     ...weaponRoutes,
     ...spriteRoutes,

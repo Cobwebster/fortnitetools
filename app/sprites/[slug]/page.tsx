@@ -3,6 +3,7 @@ import Link from '@/components/link'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { SPRITE_THEME_STYLES } from '@/lib/sprites'
 import {
@@ -213,6 +214,8 @@ export default async function SpriteDetailPage({ params }: Props) {
             </article>
           </section>
 
+          <AdSenseUnit variant="blog" />
+
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               How to get {sprite.shortName}
@@ -322,6 +325,8 @@ export default async function SpriteDetailPage({ params }: Props) {
               </div>
             </section>
           ) : null}
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

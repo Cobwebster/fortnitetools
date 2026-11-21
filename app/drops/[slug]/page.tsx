@@ -3,6 +3,7 @@ import Link from '@/components/link'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import {
   DROP_GUIDES,
   DROP_GUIDE_FAQS,
@@ -174,6 +175,8 @@ export default async function DropGuidePage({ params }: Props) {
             </p>
           </section>
 
+          <AdSenseUnit variant="blog" />
+
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               Bus and landing
@@ -275,6 +278,8 @@ export default async function DropGuidePage({ params }: Props) {
             </Link>
             .
           </p>
+
+          <AdSenseUnit variant="endOfBlog" />
 
           {faqs.length ? (
             <section className="space-y-4 border-t border-border pt-10">

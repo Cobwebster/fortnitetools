@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { XpCalculatorClient } from '@/components/XpCalculatorClient'
 import { CURRENT_SEASON } from '@/lib/season'
 import { XP_PER_LEVEL, formatXp, totalXpToLevel } from '@/lib/xp-calculator'
@@ -62,7 +63,11 @@ export default function XpCalculatorPage() {
         </section>
 
         <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 space-y-12">
+          <AdSenseUnit variant="inTool" />
+
           <XpCalculatorClient />
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-3 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

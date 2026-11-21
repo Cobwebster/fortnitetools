@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import {
   LAST_NIGHT,
   LP_RULES,
@@ -115,6 +116,8 @@ export default async function RankedPage() {
         </section>
 
         <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="blog" />
+
           <section className="overflow-hidden rounded-xl border border-primary/40 bg-card ring-1 ring-primary/20">
             <div className="relative h-36 sm:h-44">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -408,6 +411,8 @@ export default async function RankedPage() {
               ))}
             </div>
           </section>
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">FAQ</h2>

@@ -105,15 +105,18 @@ export function CreatorCodeChip({
     return (
       <aside
         className={cn(
-          'flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card/80 px-4 py-3 sm:px-5',
+          'flex flex-wrap items-center gap-3 rounded-xl border border-amber-400/45 bg-linear-to-r from-amber-950/90 via-amber-900/75 to-amber-950/90 px-4 py-3 shadow-[0_0_24px_rgba(251,191,36,0.12)] sm:px-5',
           className
         )}
       >
         <div className="min-w-0 flex-1">
-          <p className="text-sm leading-relaxed text-muted-foreground">{SUPPORT_COPY[kind]}</p>
-          <p className="mt-1 text-xs text-muted-foreground">
+          <p className="text-sm leading-relaxed text-amber-50/95">{SUPPORT_COPY[kind]}</p>
+          <p className="mt-1 text-xs text-amber-200/75">
             Item Shop → Enter Code →{' '}
-            <Link href="/creator-code" className="font-semibold text-primary hover:underline">
+            <Link
+              href="/creator-code"
+              className="font-semibold text-amber-300 hover:text-amber-100 hover:underline"
+            >
               {SITE_CREATOR_CODE}
             </Link>
             . Price stays the same.
@@ -123,7 +126,7 @@ export function CreatorCodeChip({
           type="button"
           onClick={copyCode}
           aria-label={`Copy creator code ${SITE_CREATOR_CODE}`}
-          className="inline-flex shrink-0 items-center rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 font-display text-sm font-bold uppercase tracking-wider text-primary transition-colors hover:bg-primary/15"
+          className="inline-flex shrink-0 items-center rounded-lg border border-amber-300/70 bg-linear-to-b from-amber-300 to-amber-500 px-3 py-2 font-display text-sm font-extrabold uppercase tracking-wider text-amber-950 shadow-[0_0_18px_rgba(251,191,36,0.35)] transition hover:from-amber-200 hover:to-amber-400"
         >
           {copied ? 'Copied!' : `Copy ${SITE_CREATOR_CODE}`}
         </button>
@@ -135,22 +138,22 @@ export function CreatorCodeChip({
   return (
     <div
       className={cn(
-        'flex flex-wrap items-center gap-3 rounded-xl border border-primary/35 bg-primary/10 px-4 py-3',
+        'flex flex-wrap items-center gap-3 rounded-xl border border-amber-400/45 bg-linear-to-r from-amber-950/90 via-amber-900/75 to-amber-950/90 px-4 py-3 shadow-[0_0_24px_rgba(251,191,36,0.12)]',
         className
       )}
     >
       <div className="min-w-0 flex-1">
-        <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Our code</p>
-        <p className="mt-0.5 text-sm text-muted-foreground">
+        <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">Our code</p>
+        <p className="mt-0.5 text-sm text-amber-100/85">
           Support FortniteTools in the Item Shop — Enter Code →{' '}
-          <span className="font-semibold text-foreground">{SITE_CREATOR_CODE}</span>
+          <span className="font-semibold text-amber-50">{SITE_CREATOR_CODE}</span>
         </p>
       </div>
       <button
         type="button"
         onClick={copyCode}
         aria-label={`Copy creator code ${SITE_CREATOR_CODE}`}
-        className="inline-flex shrink-0 items-center rounded-lg border border-primary/40 bg-background px-3 py-2 font-display text-sm font-bold uppercase tracking-wider text-primary transition-colors hover:bg-primary/15"
+        className="inline-flex shrink-0 items-center rounded-lg border border-amber-300/70 bg-linear-to-b from-amber-300 to-amber-500 px-3 py-2 font-display text-sm font-extrabold uppercase tracking-wider text-amber-950 shadow-[0_0_18px_rgba(251,191,36,0.35)] transition hover:from-amber-200 hover:to-amber-400"
       >
         {copied ? 'Copied!' : `Copy ${SITE_CREATOR_CODE}`}
       </button>

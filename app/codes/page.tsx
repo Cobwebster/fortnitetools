@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { CommunitySubmitCta } from '@/components/community-submit-cta'
 import { CreativeCodesClient } from '@/components/CreativeCodesClient'
 import { CREATIVE_MAPS, genreLabel, uniqueMapsByCode, type CreativeMapLive, type CreativeGenre } from '@/lib/creative-codes'
@@ -96,6 +97,8 @@ export default async function CodesPage() {
         </section>
 
         <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
+
           <section aria-labelledby="codes-playbook-heading">
             <h2
               id="codes-playbook-heading"
@@ -214,6 +217,8 @@ export default async function CodesPage() {
               </p>
             </div>
           </section>
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

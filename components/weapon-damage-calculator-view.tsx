@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { Info } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
@@ -73,7 +74,9 @@ export function WeaponDamageCalculatorView() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-4xl space-y-10 px-4 py-10 sm:px-6">
+        <AdSenseUnit variant="inTool" />
+
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
 
           {/* Left: weapon selector + options */}
@@ -278,6 +281,8 @@ export function WeaponDamageCalculatorView() {
             </div>
           </div>
         </div>
+
+        <AdSenseUnit variant="endOfBlog" className="mt-10" />
 
         <section className="mt-10 space-y-4">
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{t('faqTitle')}</h2>

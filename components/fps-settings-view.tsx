@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { Check } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
@@ -192,7 +193,9 @@ export function FpsSettingsView() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-5xl space-y-10 px-4 py-10 sm:px-6">
+        <AdSenseUnit variant="inTool" />
+
         <div className="mb-8">
           <h2 className="font-display text-sm font-bold uppercase tracking-wider text-muted-foreground mb-3">
             {t('presetTitle')}
@@ -308,6 +311,8 @@ export function FpsSettingsView() {
             ))}
           </div>
         </section>
+
+        <AdSenseUnit variant="endOfBlog" className="mt-10" />
 
         <section className="mt-12 border-t border-border pt-10">
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">{t('faqTitle')}</h2>

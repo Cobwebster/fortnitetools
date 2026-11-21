@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { WeaponChangesClient } from '@/components/WeaponChangesClient'
 import {
   WEAPON_CHANGE_ENTRY_COUNT,
@@ -93,7 +94,11 @@ export default function WeaponChangesPage() {
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 space-y-12">
+          <AdSenseUnit variant="inTool" />
+
           <WeaponChangesClient />
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-3 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

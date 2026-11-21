@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { SeasonCountdownClient } from '@/components/SeasonCountdownClient'
 import {
   CURRENT_SEASON,
@@ -138,6 +139,8 @@ export default function SeasonCountdownPage() {
         </section>
 
         <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 space-y-12">
+          <AdSenseUnit variant="blog" />
+
           <section className="space-y-3">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               {CURRENT_SEASON.label} end date
@@ -193,6 +196,8 @@ export default function SeasonCountdownPage() {
               .
             </p>
           </section>
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

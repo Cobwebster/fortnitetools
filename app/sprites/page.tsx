@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { SpritesGallery } from '@/components/SpritesGallery'
 import {
   SPRITE_COUNTS,
@@ -61,12 +62,16 @@ export default function SpritesPage() {
         </section>
 
         <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
+
           <section>
             <h2 className="mb-4 font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               All Sprite icons
             </h2>
             <SpritesGallery />
           </section>
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

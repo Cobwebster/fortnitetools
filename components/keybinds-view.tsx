@@ -2,6 +2,7 @@
 
 import { Fragment, useState } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { localizeHref, type AppLocale } from '@/i18n/config'
 
@@ -147,7 +148,9 @@ export function KeybindsView() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-6xl space-y-10 px-4 py-10 sm:px-6">
+        <AdSenseUnit variant="inTool" />
+
         <div className="mb-6 flex flex-wrap gap-2">
           <button
             type="button"
@@ -253,6 +256,8 @@ export function KeybindsView() {
             ))}
           </div>
         </section>
+
+        <AdSenseUnit variant="endOfBlog" className="mt-10" />
 
         <section className="mt-12 border-t border-border pt-10">
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">{t('faqTitle')}</h2>

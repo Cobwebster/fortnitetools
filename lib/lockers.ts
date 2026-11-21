@@ -5,7 +5,8 @@ import {
 } from '@/lib/fortnite-api'
 
 export const LOCKER_ITEM_CAP = 300
-export const LOCKER_DIRECTORY_LIMIT = 60
+/** Cap for the public directory snapshot (paginated at LOCKERS_PAGE_SIZE). */
+export const LOCKER_DIRECTORY_LIMIT = 600
 export const LOCKER_PREVIEW_COUNT = 6
 
 export const LOCKER_SLUG_RE = /^[a-z0-9][a-z0-9-]{1,30}[a-z0-9]$/

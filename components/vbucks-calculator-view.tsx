@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { ShoppingCart, TrendingUp, Info, Star } from 'lucide-react'
 import { loadShopWishlist, type ShopWishlistItem } from '@/lib/shop-wishlist'
@@ -160,7 +161,9 @@ export function VBucksCalculatorView() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-5xl space-y-10 px-4 py-10 sm:px-6">
+        <AdSenseUnit variant="inTool" />
+
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {/* Item picker */}
           <div className="lg:col-span-2 flex flex-col gap-6">
@@ -379,6 +382,8 @@ export function VBucksCalculatorView() {
             </div>
           </div>
         </div>
+
+        <AdSenseUnit variant="endOfBlog" className="mt-10" />
 
         <section className="mt-10 space-y-4">
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-foreground">{t('faqTitle')}</h2>

@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { SetsCatalogClient } from '@/components/SetsCatalogClient'
 import { fetchCatalogSets, SETS_HOWTO, SETS_INDEX_FAQS } from '@/lib/cosmetic-sets'
 import { CURRENT_SEASON } from '@/lib/season'
@@ -76,6 +77,8 @@ export default async function SetsIndexPage() {
         </section>
 
         <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
+
           <section>
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
               How this list is built
@@ -102,6 +105,8 @@ export default async function SetsIndexPage() {
               <SetsCatalogClient sets={sets} />
             </section>
           )}
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">

@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { ArrowRight, RotateCcw, Info } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
@@ -122,7 +123,9 @@ export function SensitivityCalculatorView() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+      <section className="mx-auto max-w-3xl space-y-10 px-4 py-10 sm:px-6">
+        <AdSenseUnit variant="inTool" />
+
         <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
           <div className="mb-6">
             <label htmlFor="dpi" className="block text-sm font-semibold text-foreground mb-1">
@@ -310,6 +313,8 @@ export function SensitivityCalculatorView() {
             ))}
           </section>
         ))}
+
+        <AdSenseUnit variant="endOfBlog" className="mt-10" />
 
         <section className="mt-12 border-t border-border pt-10">
           <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground mb-6">

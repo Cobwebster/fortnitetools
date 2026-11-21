@@ -38,23 +38,19 @@ export function FortniteMapView() {
           {isEnglish ? (
             <div className="mt-4 max-w-2xl rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm leading-relaxed text-foreground">
               <p>
-                <span className="font-semibold">Crossbones Isle is on the canvas.</span>{' '}
-                Fortnite-API now serves live names (Arlong Park, Fortune&apos;s Fort, The
-                $.$. Rocky, Rubber Resort, and more). Spawn rings are approximate planning
-                markers around those POIs.
+                <span className="font-semibold">Draw a drop plan</span>
+                {' — '}
+                sketch routes and pins on the map, then download a PNG for your squad. Switch
+                back to <span className="font-semibold">Pan</span> to move around.
               </p>
               <p className="mt-2">
-                <span className="font-semibold">Pirate Shop Access</span> is not a map
-                location. It rolls from Battle Royale chests.{' '}
+                Looking for <span className="font-semibold">Pirate Shop Access</span>? It
+                isn&apos;t a POI — it drops from Battle Royale chests.{' '}
                 <Link
                   href="/guides/how-to/how-to-get-pirate-shop-access-fortnite"
                   className="font-semibold text-primary hover:opacity-80"
                 >
-                  How to get Pirate Shop Access
-                </Link>
-                {' · '}
-                <Link href="/sprites" className="font-semibold text-primary hover:opacity-80">
-                  Sprites (Cursed + Lil&apos; Uzi Vert Jr.)
+                  How to get it
                 </Link>
               </p>
             </div>

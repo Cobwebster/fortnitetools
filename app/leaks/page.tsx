@@ -75,8 +75,8 @@ export default function LeaksPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
-              Fresh collab chatter (Jurassic Park x Jeep Wrangler, Hello Neighbor, Cap’n Hatsune Miku, Overwatch wave 2 — Kiriko & Widowmaker on 20 Nov, Crash & Spyro on 21 Nov, Persona 5 Royal on 24 Nov, Doki Doki?, Scott Pilgrim, Puss in Boots), Winterfest dates, Pirate Shop, Game Awards nomination news, and
-              Chapter 8 calendar finds. Each page links out to live tools once something ships.
+              Live now: Kiriko & Widowmaker, Jurassic Jeep Wrangler. Still watching: Crash/Spyro (missed 21 Nov), Persona 5 Royal (24 Nov), Cardamom, Hello Neighbor, Winterfest, Pirate Shop hours, Chapter 8 calendar finds.
+              Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link

@@ -63,13 +63,13 @@ export const leaks: LeakPost[] = [
     title:
       'Crash Bandicoot, Spyro & Persona 5 Royal Return to Fortnite: Shop Dates (21–24 Nov)',
     excerpt:
-      'According to leaks, Crash Bandicoot and Spyro return on 21 Nov at the 00:00 UK reset alongside Overwatch Wave 1 and a new Privateer Oscar outfit. Epic’s own shop reel shows Persona 5 Royal back on 24 Nov. Prices for the returns are unconfirmed.',
+      '21 Nov reset did not add Crash, Spyro, or Privateer Oscar (leak miss / delay). Overwatch Wave 2 (Kiriko & Widowmaker) is live. Epic’s shop reel still points Persona 5 Royal at 24 Nov. Cardamom Sidekick still flagged for 22 Nov.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-19',
     readTime: 5,
     featured: true,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/crash-bandicoot-featured.webp',
     tags: [
       'crash bandicoot fortnite return',
       'spyro fortnite return',
@@ -81,118 +81,122 @@ export const leaks: LeakPost[] = [
       'overwatch wave 1 fortnite return',
     ],
     content: `
-Fortnite’s late‑November shop window is shaping up to be busy. According to leaks reported 18–19 November, **Crash Bandicoot and Spyro** are expected to return with the **21 November** reset, bundled into a night that also brings back **Overwatch Wave 1** and introduces a new **Privateer Oscar** outfit. Then on **24 November**, **Persona 5 Royal** returns — this one appears in **Epic’s own next‑wave shop sizzle reel** published 18 November, effectively confirming the date. As always, treat the schedule as provisional until the tiles flip in‑client.
+Leaks on **18–19 November** put **Crash Bandicoot**, **Spyro**, **Privateer Oscar**, and an **Overwatch Wave 1** BR return on the **21 November** reset, with **Persona 5 Royal** on **24 November** (shown in Epic’s **18 Nov** shop reel).
 
-All times below refer to the daily **Item Shop reset at 00:00 UK (GMT)**, which is **7:00 PM ET the previous evening**.
+**Check after the 21 Nov 00:00 UK reset:** Crash, Spyro, and Privateer Oscar were **not** in the live shop. Wave 1 outfits also did **not** return as standalone BR rows — **D.Va / Mercy / Tracer / Genji** only showed as **Rocket Racing car skins** inside the **Porsche Cayenne Turbo Electric + Overwatch** pack. **Kiriko & Widowmaker** (Wave 2) remain live — [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker).
 
-## At a glance — the late‑November shop window
+Times below are the daily **Item Shop reset at 00:00 UK (GMT)** = **7:00 PM ET the previous evening**.
 
-| Date (UK reset) | What’s slated |
-| --- | --- |
-| Fri **20 Nov** | Overwatch Wave 2 — **Kiriko & Widowmaker** (leaked). Details: [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
-| Sat **21 Nov** | **Crash Bandicoot & Spyro** return (leaked) · **Privateer Oscar** outfit (leaked) · **Overwatch Wave 1** return (D.Va, Mercy, Tracer, Genji — leaked) |
-| Sun **22 Nov** | **"Cardamom" Sidekick** (leaked — nothing else known) |
-| Tue **24 Nov** | **Persona 5 Royal** return — shown in Epic’s shop reel |
+## At a glance — late November
 
-Track each flip after reset on the [Item Shop tracker](/tools/item-shop). Rolling calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+| Date (UK reset) | What’s slated | Status |
+| --- | --- | --- |
+| Fri **20 Nov** | Overwatch Wave 2 — **Kiriko & Widowmaker** | **Shipped** · [page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
+| Sat **21 Nov** | **Crash & Spyro** · **Privateer Oscar** · Wave 1 BR return | **Missed this reset** — still watching |
+| Sun **22 Nov** | **"Cardamom" Sidekick** | Leak (codename only) |
+| Tue **24 Nov** | **Persona 5 Royal** | Shown in Epic’s shop reel |
 
-## Crash Bandicoot & Spyro — 21 Nov (leaked)
+Confirm tiles on the [Item Shop tracker](/tools/item-shop). Calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
-The **Crash x Spyro** drop first arrived **28 Aug 2026** (8pm ET) and left **11 Sep 2026**. **Crash** is an **outfit** with a modern look plus a **"Crash Classic"** retro style and a **LEGO** style. **Spyro** is a **Sidekick**, not an outfit, with unlockable colour styles.
+## Crash Bandicoot & Spyro — still watching
 
-Last time’s menu (for context; **return prices are unconfirmed**):
+First drop: **28 Aug 2026** → left **11 Sep 2026**. **Crash** = outfit (+ **Crash Classic** / **LEGO** styles). **Spyro** = **Sidekick**, not an outfit.
+
+Last shop menu (reference only; return prices unconfirmed):
 - Crash outfit (with Bandicoot wrap) — **1,500 V‑Bucks**
 - Spyro Sidekick — **1,500**
-- Crash’s **Wumpa Mace** pickaxe — **800**
+- **Wumpa Mace** pickaxe — **800**
 - **Aku Aku** back bling — **600**
 - Bandicoot wrap — **500**
 - Crash’s Victory emote — **500**
 - Full bundle — **3,000**
 
-Expect the same broad structure (outfit + Sidekick + accessories), but **treat bundle math and prices as unconfirmed** until the reset.
+## Persona 5 Royal — 24 Nov (Epic reel)
 
-## Persona 5 Royal — 24 Nov (shown in Epic’s reel)
+Epic’s **18 Nov** next‑wave reel shows **Persona 5 Royal** on **24 November**. First sold **25 Sep 2026** (7pm ET); last seen **20 Oct 2026**.
 
-Epic’s **next shop‑wave sizzle reel** posted **18 Nov 2026** shows the **Persona 5 Royal** outfits returning on **24 November**, which is as close to confirmed as it gets without a full blog. The collab first arrived on **25 Sep 2026** (7pm ET; **26 Sep UK**) during Chapter 7 Season 4 and was last seen on **20 Oct 2026**.
+Original catalogue: **Joker**, **Ann Takamaki (Panther)**, transformation / Showtime emotes, **Shujin Academy** / **Carmen’s Heart** back blings, **Silver Dagger** / **Carmen’s Heart Flail** pickaxes, Eyes wraps, **Morgana** Sidekick, **Morgana Slippers**, Festival kit pieces, **"Life Will Change"** Jam Track. Last **Persona 5 Royal Bundle** was **3,800 V‑Bucks**. Return prices unconfirmed.
 
-The original catalogue included **Joker** and **Ann Takamaki (Panther)** outfits, **Joker’s Transformation** and **Panther’s Showtime** emotes, **Shujin Academy Backpack** and **Carmen’s Heart** back blings, **Silver Dagger** and **Carmen’s Heart Flail** pickaxes, **Joker’s Eyes** and **Panther’s Eyes** wraps, a **Morgana** Sidekick, **Morgana Slippers** kicks, **Phantom Thieves Guitar**, **Carmen’s Microphone**, and the **"Life Will Change"** Jam Track. The **Persona 5 Royal Bundle** was **3,800 V‑Bucks** last time. **Return prices are not confirmed** and could differ.
+## Privateer Oscar + Captain’s Day
 
-## Overwatch Wave 1 return + Privateer Oscar — 21 Nov (leaked)
-
-Reports put **Overwatch Wave 1** — **D.Va, Mercy, Tracer, Genji** — back in the shop on **21 November**, one day after Wave 2 launches. The same night is expected to add a new **Privateer Oscar** outfit. Buying Oscar is **not needed** to take part in **Captain’s Day** the following day (**22 Nov**). Season cadence explainer: [Captain’s Days](/leaks/captain-days-content-stack).
-
-If you are catching both Overwatch waves, pencil in **Wave 2** on **20 Nov**: [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker).
+Oscar was leaked for **21 Nov** shop ahead of **Captain’s Day** on **22 Nov**. Buying the outfit is **not required** for Captain’s Day. Cadence: [Captain’s Days](/leaks/captain-days-content-stack).
 
 ## What we don’t know yet
 
-- **Prices and bundles** for the returns (Crash/Spyro, Persona 5 Royal, Overwatch Wave 1)
-- Whether **Spyro** adds any **new styles** on the rerun
-- How long each set **stays** in rotation
-- Any **bonus quests** or **packaging tweaks** on Persona 5 Royal
-- What **"Cardamom"** is on **22 Nov** — only the codename is circulating
+- Whether Crash / Spyro / Oscar **slip to a later reset** or get cut
+- Return **prices** for Crash/Spyro and Persona 5 Royal
+- What **"Cardamom"** is on **22 Nov**
+- Whether Wave 1 **BR outfits** return separately from the Porsche car pack
 
 ## Quick FAQ
 
-**What time do these shop changes land?**
-The **00:00 UK** reset each date (that’s **7:00 PM ET** the previous evening). Use the [Item Shop tracker](/tools/item-shop) to confirm tiles right after the flip.
+**Did Crash and Spyro return on 21 Nov?**
+**No** — not in the live **21 Nov** shop feed. Keep watching later resets.
 
-**Do I need the Oscar outfit for Captain’s Day?**
-No — buying the outfit is **not required** to participate in **Captain’s Day**. See [Captain’s Days](/leaks/captain-days-content-stack) for how those weekends work.
+**Do I need Oscar for Captain’s Day?**
+**No.** See [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Are Persona 5 Royal prices the same as last time?**
-Unknown. The last **3,800 V‑Bucks** bundle is a reference point only. **Return prices are unconfirmed** and may differ.
+**Is Spyro a skin?**
+**Sidekick**, not a wearable outfit. **Crash** is the outfit.
 
-**Is Spyro a skin or a Sidekick?**
-**Spyro is a Sidekick**, not a wearable outfit. **Crash** is the **outfit**.
-
-**Updated:** 19 November 2026.
+**Updated:** 21 November 2026.
 `,
   },
   {
     slug: 'jurassic-park-jeep-wrangler-fortnite',
-    title: 'Jurassic Park x Jeep Wrangler Fortnite Collab — Item Shop Release Date',
+    title: 'Jurassic Park x Jeep Wrangler Fortnite Collab — Out Now (Car Body)',
     excerpt:
-      'According to leaks on 17 Nov 2026, a Jurassic Park x Jeep Wrangler x Fortnite collaboration is set to hit the Item Shop at the 00:00 UK reset on 18 Nov (7pm ET on 17 Nov). The specific items and prices are not confirmed yet.',
+      'Shipped: Jurassic Jeep Wrangler is live as a Rocket Racing / car body with Staff and Tour wheels. Body offer around 2,000 V-Bucks; individual wheels 400. Still in the 21 Nov shop rotation.',
     category: 'shop',
-    status: 'active',
+    status: 'shipped',
     date: '2026-11-17',
+    confirmedDate: '2026-11-18',
     readTime: 2,
     featured: true,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/jurassic-jeep-wrangler-featured.webp',
     tags: [
       'jurassic park fortnite',
       'jurassic park jeep fortnite',
       'fortnite jeep wrangler',
       'fortnite item shop 18 november',
+      'jurassic jeep wrangler fortnite',
     ],
     content: `
-## When is it coming?
+## Out now
 
-According to **leaks on 17 November 2026**, the **Jurassic Park x Jeep Wrangler x Fortnite** tie‑in is expected to land in the **Item Shop at 00:00 UK on 18 November** (**7:00 PM ET on Tuesday 17 Nov**). Track the flip on the [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) page and confirm live tiles on the [Item Shop tracker](/tools/item-shop).
+**Jurassic Jeep® Wrangler** hit the Item Shop with the **18 November 2026** reset (**00:00 UK** / **7:00 PM ET on 17 Nov**). Still listed in the **21 Nov** shop feed.
 
-## What this collab is
+Live tiles: [Item Shop tracker](/tools/item-shop).
 
-This collaboration pairs **Jurassic Park** with **Jeep Wrangler** — the film’s iconic tour vehicles are Jeep Wranglers. The exact Fortnite content has **not** been confirmed yet.
+## What’s in it (confirmed)
 
-## What is not confirmed
+| Offer | Contents | V‑Bucks (shop feed) |
+| --- | --- | --- |
+| Jurassic Jeep® Wrangler | Car **body** + wheel | **~2,000** |
+| Jurassic Jeep® Wrangler wheel | Default wheel | **400** |
+| Staff wheel | Style wheel | **400** |
+| Tour wheel | Style wheel | **400** |
 
-- Whether this includes a **drivable car body**, **wraps**, **styles**, or other cosmetics
-- **V‑Bucks prices** and bundle structure
-- How **long** the set will stay in rotation
+This is a **vehicle / Rocket Racing body**, not a BR outfit. No Jurassic Park character skins shipped with this drop.
+
+## Still open
+
+- How long the Jeep stays in rotation
+- Whether Epic adds more Jurassic cosmetics later
 
 ## Links
 
-- Rolling calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
-- Live confirmation after reset: [Item Shop tracker](/tools/item-shop)
+- [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- [Item Shop tracker](/tools/item-shop)
 
-**Reported:** 17 November 2026.
+**Shipped:** 18 November 2026. **Updated:** 21 November 2026.
 `,
   },
   {
     slug: 'fortnite-game-awards-2026-nominations',
     title: 'Fortnite at The Game Awards 2026: Best Ongoing Game Nomination',
     excerpt:
-      'Fortnite is officially nominated for Best Ongoing Game at The Game Awards 2026. The other nominees are Arc Raiders, No Man’s Sky, Final Fantasy XIV, and The Witcher 3: Wild Hunt. Fortnite did not receive a Best Community Support nomination.',
+      'Fortnite is nominated for Best Ongoing Game at The Game Awards 2026 alongside Arc Raiders, No Man’s Sky, Final Fantasy XIV, and The Witcher 3: Wild Hunt. No Best Community Support nomination.',
     category: 'season',
     status: 'watching',
     date: '2026-11-17',
@@ -216,11 +220,11 @@ Fortnite is nominated for **Best Ongoing Game** at **The Game Awards 2026**.
 - Final Fantasy XIV
 - The Witcher 3: Wild Hunt
 
-Fortnite did **not** receive a nomination for **Best Community Support** this year.
+Fortnite did **not** receive a **Best Community Support** nomination.
 
-We are not including the ceremony date or predictions here. It has been a busy year for Fortnite seasons and collaborations — we will update this page if Epic or TGA post new details.
+No ceremony predictions here — update if Epic or TGA post new details that matter for players.
 
-**Updated:** 17 November 2026.
+**Updated:** 21 November 2026.
 `,
   },
   {
@@ -243,21 +247,19 @@ We are not including the ceremony date or predictions here. It has been a busy y
     content: `
 ## What leaked on 14 Nov
 
-On the evening of **14 November 2026** (around **5:25pm UK**), leaks said a **Hello Neighbor x Fortnite** collaboration is **coming soon**. Two parts were reported: an **Item Shop** release, and an **Epic Games Store gift‑with‑purchase** — buying a Hello Neighbor game on the Epic Games Store is expected to come with a Fortnite reward. Shortly after, an **announcement teaser** for the collab circulated.
+On **14 November 2026** (~**5:25pm UK**), leaks said a **Hello Neighbor x Fortnite** collab is **coming soon**: an **Item Shop** release plus an **Epic Games Store gift‑with‑purchase** (buy Hello Neighbor on EGS → Fortnite reward). An announcement teaser circulated the same day.
 
-## What this means
-
-Hello Neighbor is the stealth‑horror series about sneaking into a creepy neighbour’s house. The Neighbor is the obvious outfit candidate, but which characters become cosmetics is **not confirmed**. Gift‑with‑purchase deals on the Epic Games Store usually grant a **Fortnite cosmetic** when you buy the partner game on the same Epic account. Track the live flip on the [Item Shop tracker](/tools/item-shop) and the rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+Which characters / cosmetics ship is **not confirmed**. Track flips on the [Item Shop tracker](/tools/item-shop) and [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
 ## What is not confirmed
 
-- The **release date**
-- Which **characters/cosmetics** are included
+- **Release date**
+- Cosmetics roster
 - **Prices**
-- Which **game(s)** qualify for the gift and what the gift item is
-- Whether **Epic has officially announced** it yet
+- Which EGS game(s) qualify and what the gift is
+- Full Epic announcement details
 
-**Filed:** 14 November 2026. Status: **Unconfirmed**.
+**Filed:** 14 November 2026. **Updated:** 21 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
@@ -345,7 +347,7 @@ If your **Pirate Shop Access** window is active, look for **Claim** on eligible 
     confirmedDate: '2026-11-14',
     readTime: 4,
     featured: true,
-    image: '/images/guides/treasure-hunters.jpg',
+    image: '/images/guides/pirate-speedy-featured.webp',
     tags: [
       'ishowspeed fortnite skin',
       'pirate speedy fortnite',
@@ -357,9 +359,9 @@ If your **Pirate Shop Access** window is active, look for **Claim** on eligible 
     content: `
 ## Out now — prices
 
-Released **14 November 2026, 00:00 UK** (**7:00 PM ET** on 13 Nov). Still in the **15 Nov** shop alongside Cap’n Miku.
+Released **14 November 2026, 00:00 UK** (**7:00 PM ET** on 13 Nov).
 
-**Prices (confirmed):** **1,500 V‑Bucks** for the outfit; **1,800 V‑Bucks** for the full bundle.
+**Prices (confirmed):** **1,500 V‑Bucks** for the outfit; **1,800 V‑Bucks** for the full bundle. Check the [Item Shop tracker](/tools/item-shop) if the row is still up.
 
 ## Bundle contents
 
@@ -383,15 +385,16 @@ If you have an active **Pirate Shop Access** window, look for the **Claim** butt
   },
   {
     slug: 'fortnite-overwatch-wave-2-kiriko-widowmaker',
-    title: 'Kiriko & Widowmaker Fortnite Release Date: Overwatch Wave 2 Leaked for 20 Nov',
+    title: 'Kiriko & Widowmaker Fortnite — Out Now (Overwatch Wave 2 Prices)',
     excerpt:
-      'According to leaks on 18 Nov 2026, Overwatch Wave 2 brings Kiriko and Widowmaker to the Fortnite Item Shop at the 00:00 UK reset on 20 November. The leaked set lists an Emote, 2 Pickaxes, 2 Back Blings, a Wrap and Kicks (plus the two outfits). A new Jam Track, "Perfect Night" by LE SSERAFIM, was also leaked. Prices are not known.',
+      'Shipped 20 Nov: Kiriko and Widowmaker are live. Outfit rows 1,600 V-Bucks each; combined Widowmaker & Kiriko bundle 2,400 (was 5,000). Perfect Night (LE SSERAFIM) Jam Track is 500. Still in the 21 Nov shop.',
     category: 'cosmetics',
-    status: 'active',
+    status: 'shipped',
     date: '2026-11-13',
+    confirmedDate: '2026-11-20',
     readTime: 4,
     featured: true,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/kiriko-featured.webp',
     tags: [
       'kiriko fortnite',
       'fortnite overwatch collab wave 2',
@@ -407,51 +410,37 @@ If you have an active **Pirate Shop Access** window, look for the **Claim** butt
       'overwatch wave 1 fortnite return',
     ],
     content: `
-## Release date: 20 November (leaked)
+## Out now — 20 November
 
-According to **leaks on 18 November 2026**, **Kiriko and Widowmaker** are slated to hit the **Fortnite Item Shop at 00:00 UK on Friday 20 November 2026** (**7:00 PM ET on Thursday 19 Nov**). Treat the date as **unconfirmed** until the shop flips.
+**Kiriko** and **Widowmaker** (Overwatch Wave 2) flipped with the **20 November 2026** Item Shop reset (**00:00 UK** / **7:00 PM ET on 19 Nov**). Still live in the **21 Nov** shop.
 
-## 19 Nov: full sets leaked ahead of release
+Confirm tiles: [Item Shop tracker](/tools/item-shop).
 
-On **19 November 2026**, the **full Kiriko and Widowmaker cosmetic sets** and a short **showcase of both outfits** leaked, including a look at **Kiriko’s emote**. Reports also suggest **Epic will give Widowmaker her own reveal** separately.
-Separately, **Overwatch Wave 1** (**D.Va, Mercy, Tracer, Genji**) is reportedly returning on **21 November** — see the page: [Crash, Spyro & Persona 5 return dates](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates).
+## Prices (confirmed)
 
-Leaked set contents for the wave list:
-- **Emote**
-- **2 Pickaxes**
-- **2 Back Blings**
-- **Wrap**
-- **Kicks**
-- Plus the **two outfits** (Kiriko, Widowmaker)
+| Offer | What’s in it | V‑Bucks |
+| --- | --- | --- |
+| Kiriko | Outfit + **Kiriko’s Kitsune** + **Kiriko’s Kunai** | **1,600** |
+| Widowmaker | Outfit + **Widowmaker’s Fang** + **Widow’s Kiss** | **1,600** |
+| Widowmaker & Kiriko bundle | Both outfits + kits + **Kitsune Slippers** + **Ofuda Whirlwind** + **Widowmaker’s Salute** | **2,400** (was **5,000**) |
+| Ofuda Whirlwind | Emote | **300** |
+| Kitsune Slippers | Kicks | **1,000** |
+| Kiriko’s Kitsune | Back bling | **400** |
+| Kiriko’s Kunai | Pickaxe | **500** |
+| Widowmaker’s Salute | Wrap | **500** |
+| Widowmaker’s Fang + Widow’s Kiss | Pickaxe + back bling | **800** |
+| Perfect Night | Jam Track — **LE SSERAFIM** | **500** |
+| Porsche Cayenne Turbo Electric + Overwatch | Car pack (includes Wave 1 **car skins**) | **2,400** |
 
-### Perfect Night Jam Track
+## Wave 1 note (21 Nov)
 
-An **Overwatch x Fortnite Jam Track** was also leaked: **"Perfect Night" by LE SSERAFIM**.
+Standalone **D.Va / Mercy / Tracer / Genji** BR outfits did **not** return on **21 Nov**. Those names appear as **Rocket Racing car skins** inside the Porsche + Overwatch pack. Crash / Spyro / Oscar also missed that reset — [watch page](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates).
 
-## What today’s update added (13 Nov)
+## File history (pre-ship)
 
-Update files reference a **second Overwatch x Fortnite set**, still encrypted. **Wave 1** (D.Va, Mercy, Tracer, Genji) launched on **14 May 2026**; this looks like **Wave 2**.
+Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko kit, kitsune kicks with footprints, cloth physics / LEGO style, and Widowmaker as the second hero (earlier guesses had floated Juno).
 
-## Kiriko — confirmed in the files
-
-- **Outfit** with **glowing** effects on body and head
-- **Flowing clothing** with **cloth physics**
-- **LEGO** style
-- **Custom lobby animation**
-- **Emote** that uses a **prop** and has a **special version when used as Kiriko**
-- **Glowing back bling**
-- **Glowing pickaxe**
-- New **Kicks** — fox/kitsune‑themed footwear that leaves **footprints** and a small **trail**
-
-## Who is the second hero? Widowmaker (leaked)
-
-Leaks now point to **Widowmaker** as the second hero in Wave 2. Earlier reads had floated **Juno** as an alternative guess; current reports specifically name **Widowmaker**.
-
-## Release date and pricing
-
-The **leaked date is 20 November 2026 at 00:00 UK** (Item Shop reset). **V‑Bucks prices are still unknown**. Track the flip on the [Item Shop tracker](/tools/item-shop) and our rolling [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
-
-**Filed:** 13 November 2026. **Updated:** 19 November 2026. Status: **Unconfirmed**.
+**Shipped:** 20 November 2026. **Updated:** 21 November 2026.
 `,
   },
   {
@@ -1155,7 +1144,7 @@ That pairs with Epic’s week-two calendar (Lil Uzi + Cuddle Team Leader claimin
     date: '2026-11-01',
     readTime: 4,
     featured: true,
-    image: '/images/guides/secret-weapon.webp',
+    image: '/images/guides/lil-uzi-vert-featured.webp',
     tags: [
       'lil uzi vert smg',
       'fortnite exotic smg leak',
@@ -1231,15 +1220,15 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 20–24 Nov: Kid LAROI returns, Kiriko, Crash & Spyro, Persona 5',
+      'Upcoming Fortnite Item Shop Leaks — 21–24 Nov: Crash miss, Cardamom, Persona 5',
     excerpt:
-      '20 Nov shop is live: The Kid LAROI returns (first time in about three years), Kim Kardashian and Cowboy Bebop return, The Sidekick Squad set, and returning Save the World packs. Watch list stays for 20–24 Nov: Kiriko & Widowmaker (leak), 21 Nov Crash & Spyro + Privateer Oscar + Overwatch Wave 1 (leak), 22 Nov Cardamom Sidekick (leak), 24 Nov Persona 5 Royal (shown in Epic’s shop reel).',
+      '21 Nov shop is live with Kiriko & Widowmaker still up (Wave 2 shipped 20 Nov). Crash, Spyro, and Privateer Oscar did not land on the 21 Nov reset. Watch 22 Nov Cardamom Sidekick and 24 Nov Persona 5 Royal (Epic reel).',
     category: 'shop',
     status: 'watching',
     date: '2026-11-15',
     readTime: 4,
     featured: true,
-    image: '/images/guides/stars-of-the-show.webp',
+    image: '/images/guides/kiriko-featured.webp',
     tags: [
       'fortnite item shop leaks',
       'capn hatsune miku fortnite',
@@ -1255,45 +1244,44 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'kid laroi fortnite skin return',
       'kim kardashian fortnite',
       'cowboy bebop fortnite return',
-      'save the world packs return',
+      'kiriko fortnite',
+      'widowmaker fortnite',
     ],
     content: `
-## 20 November shop (live)
+## 21 November shop (live)
 
 Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 
-- **The Kid LAROI** returned — his first **Item Shop** appearance in about **three years**
-- **Kim Kardashian** returned
-- **Cowboy Bebop** returned
-- **The Sidekick Squad** set featured
-- Returning **Save the World** packs
+- **Kiriko & Widowmaker** still live (shipped **20 Nov**) — [prices](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
+- **Perfect Night** (LE SSERAFIM) Jam Track — **500**
+- **The Kid LAROI** still up from the **20 Nov** return
+- **Jurassic Jeep® Wrangler** car body still up — [page](/leaks/jurassic-park-jeep-wrangler-fortnite)
+- **Crash / Spyro / Privateer Oscar** — **not** in this reset (leak miss / delay)
 
-Season beat context remains **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
+Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa). Treasure Hours today: [21 Nov boost windows](/leaks/pirate-shop-power-hours).
 
-## 20–24 November (watch list)
+## Watch list
 
 | Date | What leakers flagged | Status |
 | --- | --- | --- |
-| **20 Nov (shop)** | **Overwatch Wave 2** — Kiriko & Widowmaker | Leak · details: [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
-| **21 Nov (shop)** | **Crash Bandicoot & Spyro** return · **Privateer Oscar** outfit · **Overwatch Wave 1** returns | Leak · full context: [Crash, Spyro & Persona 5 return dates](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) |
-| **22 Nov (shop)** | **"Cardamom"** Sidekick | Leak (no further detail yet) |
-| **24 Nov (shop)** | **Persona 5 Royal** returns (Joker & Panther) | Shown in **Epic’s shop reel** |
-
-Treat all leaks as **unconfirmed** until tiles appear in‑client. Persona 5 Royal’s slot is effectively confirmed by Epic’s own reel.
+| **21 Nov (shop)** | Crash & Spyro · Privateer Oscar · Wave 1 BR return | **Missed this reset** · [context](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) |
+| **22 Nov (shop)** | **"Cardamom"** Sidekick | Leak (codename only) |
+| **24 Nov (shop)** | **Persona 5 Royal** (Joker & Panther) | Shown in **Epic’s shop reel** |
 
 ## Already shipped (recent)
 
-- **19 Nov:** **Regular Show** returned · **ICON** emotes refresh rotated in · **Lazarbeam** & **CourageJD** cycled in
-- **18 Nov:** **Naruto**, **Bruno Mars**, **Jurassic Park x Jeep Wrangler** (see page: [Jurassic Park x Jeep Wrangler](/leaks/jurassic-park-jeep-wrangler-fortnite))
-- **17 Nov:** **Kaiju No. 8** / **The Odyssey** / **Madison Beer** · **Summer High Stakes**
-- **15 Nov:** **Cap’n Hatsune Miku** + ICON emotes refresh
+- **20 Nov:** **Kiriko & Widowmaker** · **Kid LAROI** return · Kim Kardashian / Cowboy Bebop / Sidekick Squad / StW packs (same window)
+- **19 Nov:** **Regular Show** · ICON emotes · Lazarbeam & CourageJD
+- **18 Nov:** **Naruto**, **Bruno Mars**, **Jurassic Jeep Wrangler**
+- **17 Nov:** **Kaiju No. 8** / **The Odyssey** / **Madison Beer** · Summer High Stakes
+- **15 Nov:** **Cap’n Hatsune Miku**
 - **12 Nov:** **Kasane Teto** Music Pass + **Lil Uzi Vert** Icon sets
 
 ## How to use this
 
-Treat future dates as a **watch order**, then confirm after reset (**~00:00 UTC** / Epic’s **7 PM ET** collab drops). Season context: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
+Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 20 November 2026.
+**Updated:** 21 November 2026.
 `,
   },
   {
@@ -1306,7 +1294,7 @@ Treat future dates as a **watch order**, then confirm after reset (**~00:00 UTC*
     date: '2026-11-07',
     confirmedDate: '2026-11-16',
     readTime: 3,
-    image: '/images/guides/secret-weapon.webp',
+    image: '/images/guides/usopp-slingshot-featured.webp',
     tags: [
       'usopp slingshot nerf',
       'fortnite treasure hunters balance',
@@ -1472,7 +1460,7 @@ They are **expected** to match **14 Nov** (**1.5× Token**, **7.5× Gold**) and 
 
 We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated:** 20 November 2026. Status: **Watching** for future announced windows.
+**Filed:** 4 November 2026. **Updated:** 21 November 2026. Status: **Watching** — confirm multipliers in‑client when the windows open.
 `,
   },
   {
@@ -1583,7 +1571,7 @@ Archive receipt. Live playbook: [Treasure Hunters guide](/guides/season/fortnite
     date: '2026-11-01',
     confirmedDate: '2026-11-01',
     readTime: 4,
-    image: '/images/guides/treasure-hunters.jpg',
+    image: '/images/guides/privateer-oscar-featured.webp',
     tags: [
       'fortnite captain days',
       'asap rocky shock rocket',

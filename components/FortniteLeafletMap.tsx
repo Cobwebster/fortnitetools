@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from '@/components/link'
 import { useLocale } from 'next-intl'
 import {
@@ -12,6 +12,13 @@ import {
 } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import {
+  downloadMapPlan,
+  MapPlanLayer,
+  MapPlanToolbar,
+  type PlanShape,
+  type PlanTool,
+} from '@/components/MapPlanTools'
 import {
   MAP_HALF,
   contestLabels,
@@ -212,6 +219,12 @@ export function FortniteLeafletMap({
   const [error, setError] = useState<string | null>(null)
   const [selection, setSelection] = useState<Selection | null>(null)
   const [flyTo, setFlyTo] = useState<[number, number] | null>(null)
+  const [planTool, setPlanTool] = useState<PlanTool>('pan')
+  const [planColor, setPlanColor] = useState('#fbbf24')
+  const [planWidth, setPlanWidth] = useState(4)
+  const [planShapes, setPlanShapes] = useState<PlanShape[]>([])
+  const [planDownloading, setPlanDownloading] = useState(false)
+  const [planError, setPlanError] = useState<string | null>(null)
 
   const isLive = mapVersionId === 'live'
   const historical = !isLive ? findMapById(mapVersionId) : null
@@ -381,6 +394,22 @@ export function FortniteLeafletMap({
   const spawnLayerLabel = (id: SpawnLayerId) =>
     SPAWN_LAYERS.find((l) => l.id === id)?.label ?? id
 
+  const handlePlanDownload = useCallback(async () => {
+    setPlanError(null)
+    setPlanDownloading(true)
+    try {
+      await downloadMapPlan({
+        mapUrl,
+        shapes: planShapes,
+        filename: `fortnite-drop-plan-${Date.now()}.png`,
+      })
+    } catch {
+      setPlanError('Download failed — try again in a moment.')
+    } finally {
+      setPlanDownloading(false)
+    }
+  }, [mapUrl, planShapes])
+
   return (
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_220px]">
       <div className="space-y-4">
@@ -408,6 +437,13 @@ export function FortniteLeafletMap({
               <ImageOverlay key={mapUrl} url={mapUrl} bounds={bounds} />
               <FitBounds />
               <Recenter latlng={isLive ? flyTo : null} />
+              <MapPlanLayer
+                tool={planTool}
+                color={planColor}
+                width={planWidth}
+                shapes={planShapes}
+                setShapes={setPlanShapes}
+              />
               {isLive && filteredPois.map((poi) => {
                 const en = poi.enrichment
                 const active = selection?.kind === 'poi' && poi.id === selection.id
@@ -487,6 +523,44 @@ export function FortniteLeafletMap({
             </MapContainer>
           )}
 
+          {!loading && !error ? (
+            <div className="pointer-events-none absolute inset-x-0 top-0 z-[500] flex flex-col gap-2 p-2 sm:p-3">
+              <MapPlanToolbar
+                className="max-w-full self-start"
+                tool={planTool}
+                setTool={setPlanTool}
+                color={planColor}
+                setColor={setPlanColor}
+                width={planWidth}
+                setWidth={setPlanWidth}
+                shapes={planShapes}
+                onUndo={() => setPlanShapes((prev) => prev.slice(0, -1))}
+                onClear={() => {
+                  setPlanShapes([])
+                  setPlanTool('pan')
+                }}
+                onDownload={handlePlanDownload}
+                downloading={planDownloading}
+              />
+              {planTool !== 'pan' ? (
+                <p className="pointer-events-none max-w-md rounded-lg border border-border/60 bg-background/80 px-2.5 py-1.5 text-[11px] text-muted-foreground backdrop-blur-sm">
+                  {planTool === 'draw'
+                    ? 'Draw freehand drop routes. Switch back to Pan to move the map.'
+                    : planTool === 'line'
+                      ? 'Click start, then end — arrow marks a rotate.'
+                      : planTool === 'pin'
+                        ? 'Click to drop numbered meet-up pins.'
+                        : 'Click a stroke, route, or pin to erase it.'}
+                </p>
+              ) : null}
+              {planError ? (
+                <p className="pointer-events-none rounded-lg border border-red-500/40 bg-red-500/10 px-2.5 py-1.5 text-[11px] text-red-200">
+                  {planError}
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+
           <div className="flex flex-wrap items-center gap-3 border-t border-border/60 px-3 py-2 text-[11px] text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -505,6 +579,9 @@ export function FortniteLeafletMap({
               <img src={MAP_EXTRACT_ICON} alt="" className="h-4 w-4 object-contain" /> Extract
             </span>
             <span className="ml-auto">
+              {planShapes.length
+                ? `${planShapes.length} plan mark${planShapes.length === 1 ? '' : 's'} · `
+                : ''}
               {isLive
                 ? `${markerCount} markers · ${filteredSpawns.length} spawns · ${filteredExtracts.length} extracts`
                 : historical

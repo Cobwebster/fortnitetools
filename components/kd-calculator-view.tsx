@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from '@/components/link'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { useTranslations, useLocale } from 'next-intl'
 import { TrendingUp, Minus } from 'lucide-react'
 import { localizeHref, type AppLocale } from '@/i18n/config'
@@ -155,7 +156,9 @@ export function KDCalculatorView() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+        <div className="mx-auto max-w-4xl space-y-10 px-4 py-10 sm:px-6">
+          <AdSenseUnit variant="inTool" />
+
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
             {/* Inputs */}
             <div className="lg:col-span-2 flex flex-col gap-6">
@@ -286,6 +289,8 @@ export function KDCalculatorView() {
               </div>
             </div>
           </div>
+
+          <AdSenseUnit variant="endOfBlog" className="mt-10" />
 
           {/* SEO content */}
           <section className="mt-12 border-t border-border pt-10">

@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AdSenseUnit } from '@/components/adsense-unit'
 import { PlayerCountClient } from '@/components/PlayerCountClient'
 import { loadPlayerCountData, PLAYER_COUNT_FAQS } from '@/lib/player-count'
 import { CURRENT_SEASON } from '@/lib/season'
@@ -71,6 +72,8 @@ export default async function PlayerCountPage() {
         </section>
 
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 space-y-12">
+          <AdSenseUnit variant="inTool" />
+
           <PlayerCountClient
             epicRows={data.epicRows}
             creativeRows={data.creativeRows}
@@ -78,6 +81,8 @@ export default async function PlayerCountPage() {
             updatedAt={data.updatedAt}
             sourceNote={data.sourceNote}
           />
+
+          <AdSenseUnit variant="endOfBlog" />
 
           <section className="space-y-4 border-t border-border pt-10">
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-foreground">
