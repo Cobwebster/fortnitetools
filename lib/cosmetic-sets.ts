@@ -7,8 +7,13 @@ import {
   type CosmeticItem,
 } from '@/lib/fortnite-api'
 
-/** Soft cap for sitemap / static params only — index search shows the full catalog. */
-export const SETS_SITEMAP_CAP = 2000
+/**
+ * Cap for sitemap + static params. Keep these equal: sitemap URLs that are not
+ * prebuilt become on-demand ISR writes (the main Vercel write-unit burn).
+ * Full catalog search still lives on /sets.
+ */
+export const SETS_SITEMAP_CAP = 800
+export const SETS_STATIC_PARAMS_CAP = SETS_SITEMAP_CAP
 
 export type LiveSet = {
   slug: string

@@ -6,6 +6,7 @@ import { Footer } from '@/components/footer'
 import { AdSenseUnit } from '@/components/adsense-unit'
 import { SetMembersClient } from '@/components/SetMembersClient'
 import {
+  SETS_STATIC_PARAMS_CAP,
   buildSetEditorial,
   fetchCatalogSets,
   fetchHighlightedSets,
@@ -17,9 +18,14 @@ import {
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
-/** Weekly — set membership rarely changes; on-demand long-tail still ISR-writes once then sleeps. */
+/**
+ * Fully static at build — no on-demand ISR. dynamicParams false stops Google
+ * (and random long-tail hits) from minting thousands of write units per day.
+ * Weekly revalidate only refreshes the prebuilt set; /sets search covers the rest.
+ */
+export const dynamic = 'force-static'
 export const revalidate = 604800
-export const dynamicParams = true
+export const dynamicParams = false
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -27,8 +33,7 @@ interface Props {
 
 export async function generateStaticParams() {
   const all = await fetchCatalogSets().catch(() => fetchHighlightedSets())
-  // Prefetch a large slice at build so Google’s crawl is less “cold write per slug”.
-  return all.slice(0, 800).map((s) => ({ slug: s.slug }))
+  return all.slice(0, SETS_STATIC_PARAMS_CAP).map((s) => ({ slug: s.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
