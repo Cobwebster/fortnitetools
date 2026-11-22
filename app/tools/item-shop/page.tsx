@@ -7,7 +7,8 @@ import { ItemShopClient } from '@/components/ItemShopClient'
 import { fetchShop } from '@/lib/fortnite-api'
 import { ITEM_SHOP_FAQS } from '@/lib/item-shop-seo'
 
-export const revalidate = 7200
+/** Shop tiles refresh via client fetch to /api; page shell can sit longer. */
+export const revalidate = 21600
 
 export default async function ItemShopPage() {
   const shop = await fetchShop().catch(() => null)

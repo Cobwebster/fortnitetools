@@ -12,6 +12,9 @@ import {
   SPRITE_PAGES_REVIEWED,
 } from '@/lib/sprite-pages'
 
+/** Fully static encyclopedia — no ISR churn. */
+export const dynamic = 'force-static'
+export const revalidate = false
 export const dynamicParams = false
 
 interface Props {

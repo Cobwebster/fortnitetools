@@ -7,6 +7,7 @@ import { AdSenseUnit } from '@/components/adsense-unit'
 import { SetMembersClient } from '@/components/SetMembersClient'
 import {
   buildSetEditorial,
+  fetchCatalogSets,
   fetchHighlightedSets,
   fetchSetMembers,
   formatSetDay,
@@ -16,7 +17,8 @@ import {
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 86400
+/** Weekly — set membership rarely changes; on-demand long-tail still ISR-writes once then sleeps. */
+export const revalidate = 604800
 export const dynamicParams = true
 
 interface Props {
@@ -24,8 +26,9 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const sets = await fetchHighlightedSets()
-  return sets.map((s) => ({ slug: s.slug }))
+  const all = await fetchCatalogSets().catch(() => fetchHighlightedSets())
+  // Prefetch a large slice at build so Google’s crawl is less “cold write per slug”.
+  return all.slice(0, 800).map((s) => ({ slug: s.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

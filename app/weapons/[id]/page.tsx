@@ -23,6 +23,9 @@ import {
 import { breadcrumbJsonLd, createMetadata, faqJsonLd } from '@/lib/seo'
 import { CURRENT_SEASON } from '@/lib/season'
 
+/** Fully static encyclopedia — no ISR churn. */
+export const dynamic = 'force-static'
+export const revalidate = false
 export const dynamicParams = false
 
 interface Props {

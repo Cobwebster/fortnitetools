@@ -21,7 +21,8 @@ import {
 } from '@/lib/fortnite-status'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 900
+/** Hourly ISR — Epic’s board is linked for panic-refresh; page copy does not need 15m rebuilds. */
+export const revalidate = 3600
 
 function resolveTone(indicator: string, ok: boolean): StatusToneKind {
   if (!ok) return 'unknown'

@@ -16,6 +16,10 @@ interface Props {
   params: Promise<{ category: string; slug: string }>
 }
 
+export const dynamic = 'force-static'
+export const revalidate = false
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   return posts.map((post) => ({
     category: post.category,

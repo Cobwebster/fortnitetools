@@ -41,6 +41,10 @@ const STATUS_NEXT: Record<LeakPost['status'], string> = {
   dead: 'Files look cut or the beat never landed. Keep the page as history only.',
 }
 
+export const dynamic = 'force-static'
+export const revalidate = false
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   return leaks.map((leak) => ({ slug: leak.slug }))
 }

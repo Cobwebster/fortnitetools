@@ -7,6 +7,9 @@ import { isPrefixedLocale, type PrefixedLocale } from '@/i18n/config'
 import { getMessages } from '@/i18n/get-messages'
 import { absoluteLocaleUrl, hreflangAlternates } from '@/i18n/pathnames'
 
+export const dynamic = 'force-static'
+export const revalidate = false
+
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -6,7 +6,7 @@ import { NewCosmeticsClient } from '@/components/NewCosmeticsClient'
 import { fetchNewCosmetics } from '@/lib/fortnite-api'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 7200
+export const revalidate = 21600
 
 const faqs = [
   {

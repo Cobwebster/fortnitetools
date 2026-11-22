@@ -156,7 +156,7 @@ async function buildCatalogSets(): Promise<LiveSet[]> {
  * Use for /sets search and detail resolution.
  */
 export const fetchCatalogSets = unstable_cache(buildCatalogSets, ['fortnite-catalog-sets-v2'], {
-  revalidate: 86400,
+  revalidate: 604800,
   tags: ['fortnite-sets'],
 })
 
@@ -229,26 +229,36 @@ export async function resolveSetBySlug(slug: string): Promise<LiveSet | null> {
   })
 }
 
-export async function fetchSetMembers(set: LiveSet): Promise<CosmeticItem[]> {
-  let items = await searchCosmetics({ set: set.name, matchMethod: 'full' }).catch(
+async function loadSetMembers(slug: string, name: string, backend?: string) {
+  let items = await searchCosmetics({ set: name, matchMethod: 'full' }).catch(
     () => [] as CosmeticItem[]
   )
-  if (items.length <= 1 && set.backend) {
-    const byBackend = await searchCosmetics({ set: set.backend, matchMethod: 'full' }).catch(
+  if (items.length <= 1 && backend) {
+    const byBackend = await searchCosmetics({ set: backend, matchMethod: 'full' }).catch(
       () => [] as CosmeticItem[]
     )
     if (byBackend.length > items.length) items = byBackend
   }
   if (items.length <= 1) {
-    const loose = await searchCosmetics({ set: set.name, matchMethod: 'contains' }).catch(
+    const loose = await searchCosmetics({ set: name, matchMethod: 'contains' }).catch(
       () => [] as CosmeticItem[]
     )
     const filtered = loose.filter(
-      (item) => item.set && slugifySetName(item.set) === set.slug
+      (item) => item.set && slugifySetName(item.set) === slug
     )
     if (filtered.length > items.length) items = filtered
   }
   return items
+}
+
+/** Cached per set — cuts Fortnite-API search spam on ISR regenerations. */
+export async function fetchSetMembers(set: LiveSet): Promise<CosmeticItem[]> {
+  const cached = unstable_cache(
+    () => loadSetMembers(set.slug, set.name, set.backend),
+    ['set-members-v1', set.slug],
+    { revalidate: 604800, tags: ['fortnite-sets', `set-${set.slug}`] }
+  )
+  return cached()
 }
 
 export function summarizeSetMembers(items: CosmeticItem[]) {
