@@ -161,7 +161,8 @@ async function buildCatalogSets(): Promise<LiveSet[]> {
  * Use for /sets search and detail resolution.
  */
 export const fetchCatalogSets = unstable_cache(buildCatalogSets, ['fortnite-catalog-sets-v2'], {
-  revalidate: 604800,
+  // Daily — list carries inShop/fromNew flags used by /sets UI.
+  revalidate: 86400,
   tags: ['fortnite-sets'],
 })
 

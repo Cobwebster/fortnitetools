@@ -21,10 +21,11 @@ import { CURRENT_SEASON } from '@/lib/season'
 /**
  * Fully static at build — no on-demand ISR. dynamicParams false stops Google
  * (and random long-tail hits) from minting thousands of write units per day.
- * Weekly revalidate only refreshes the prebuilt set; /sets search covers the rest.
+ * Daily revalidate refreshes “in shop tonight” flags; member lists stay on a
+ * weekly Data Cache (see fetchSetMembers).
  */
 export const dynamic = 'force-static'
-export const revalidate = 604800
+export const revalidate = 86400
 export const dynamicParams = false
 
 interface Props {

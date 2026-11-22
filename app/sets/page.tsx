@@ -7,7 +7,8 @@ import { fetchCatalogSets, SETS_HOWTO, SETS_INDEX_FAQS } from '@/lib/cosmetic-se
 import { CURRENT_SEASON } from '@/lib/season'
 import { breadcrumbJsonLd, faqJsonLd } from '@/lib/seo'
 
-export const revalidate = 604800
+/** Daily — index badges (“In shop” / “New”) track tonight’s rotation. */
+export const revalidate = 86400
 
 export default async function SetsIndexPage() {
   const sets = await fetchCatalogSets()

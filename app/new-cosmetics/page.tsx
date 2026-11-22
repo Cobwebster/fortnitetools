@@ -6,7 +6,8 @@ import { NewCosmeticsClient } from '@/components/NewCosmeticsClient'
 import { fetchNewCosmetics } from '@/lib/fortnite-api'
 import { CURRENT_SEASON } from '@/lib/season'
 
-export const revalidate = 21600
+/** SSR-only list (no client refetch) — keep aligned with /api cosmetics/new. */
+export const revalidate = 7200
 
 const faqs = [
   {
