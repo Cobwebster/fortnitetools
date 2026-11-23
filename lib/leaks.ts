@@ -59,11 +59,147 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'fortnite-community-day-golden-umbrella',
+    title:
+      'Fortnite Community Day Returns Next Week — Free Golden Umbrella & Rewards',
+    excerpt:
+      'According to reports on 23 Nov 2026, Fortnite Community Day returns next week (week of 30 Nov). Rewards include a free golden umbrella glider plus other new golden cosmetics — exact day and full reward list still TBC.',
+    category: 'cosmetics',
+    status: 'watching',
+    date: '2026-11-23',
+    readTime: 4,
+    featured: true,
+    image: '/images/guides/stars-of-the-show.webp',
+    tags: [
+      'fortnite community day',
+      'fortnite golden umbrella',
+      'fortnite community day rewards',
+      'free fortnite umbrella',
+      'fortnite community day date',
+    ],
+    content: `
+## What's coming
+
+According to reports on **23 November 2026** — and teased by an Epic community staff member — **Fortnite Community Day** is returning **next week**, meaning the week starting **30 November 2026**. The exact day has **not** been stated.
+
+Rewards are expected to include a **free golden umbrella** glider and **other new golden rewards**. Details of those other golden cosmetics are **not known** yet. The event was reportedly planned weeks ago.
+
+[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date) is reported to start on **5 December 2026**, so Community Day would land in the **final days of the current season**. Do not treat that as a fixed Community Day calendar date — only the “next week” window is on the table so far.
+
+## The golden umbrella
+
+The new glider looks like a **gold version** of the Community 'Brella design from the first Community Day: a **gold canopy** with **silver trim** and a **gold‑and‑grey handle**. According to leaks, it is earned free during the event window once Epic announces that window — it is **not** described as an Item Shop purchase.
+
+## What last Community Day gave (guide only — not confirmed for this one)
+
+The first Fortnite Community Day ran on **Saturday 30 May 2026** during Chapter 7 Season 2. Logging in between **9 AM ET on 30 May** and **9 AM ET on 31 May** unlocked:
+
+- The free **Community 'Brella** — an all‑black common umbrella glider (in‑game description: "Squad up, together.") with a **"Prime (May 30)"** style
+- The silver **Reflector** wrap (originally from the 2020 Silver Surfer set files; never released before)
+
+Battle Pass / Crew owners also received an office‑style tie variant of **The Foundation (Reforged)**. Winning a Battle Royale match that day unlocked the **Lemmie Axe** pickaxe, **Space Blaster** wrap, and **Loons** back bling (the Loons back bling dated back to 2019 files). Twitch drops covered Metal Menace bundle accessories.
+
+Gameplay extras that day included golden fireworks guns, finger guns, supercharged pizza, blue chests across the map, and a **Power Hour** (**12:30–1:30 PM PT**) where everyone started with a self‑res, a Cube Rifle, and an Infinity Blade. That Community Day landed a week before Chapter 7 Season 3.
+
+Treat the list above as **last time’s rewards** — a guide to what a Community Day *can* look like — **not** a confirmed reward sheet for the upcoming golden edition.
+
+## How to make sure you get it
+
+When Epic announces the event window, **log in during that period**. Last time it was a **24‑hour login window** from **9 AM ET** (**2 PM UK**). Match‑win rewards and Twitch drops were separate tracks in May; we do **not** know yet whether this edition repeats that structure.
+
+Watch the [News](/news) hub and the in‑game MOTD for the official day and times. Confirm any shop‑adjacent cosmetics on the [Item Shop tracker](/tools/item-shop) if Epic also rotates related offers.
+
+## Quick FAQ
+
+**Is the golden umbrella free?**
+According to reports, **yes** — earned during Community Day, not sold in the Item Shop.
+
+**When is Fortnite Community Day?**
+**Next week** (the week starting **30 November 2026**). Exact day not stated.
+
+**Will the Community 'Brella return?**
+**Unknown.** The new glider is described as a gold version of that umbrella design; whether the original black Community 'Brella comes back has not been confirmed.
+
+**Filed:** 23 November 2026. Status: **Watching**.
+`,
+  },
+  {
+    slug: 'fortnite-aim-assist-update-november-2026',
+    title:
+      'Fortnite Aim Assist Update (Nov 2026): PC Controller Buff & Precision Changes',
+    excerpt:
+      'Epic’s aim assist changes reported 23 Nov 2026: more consistent close-range assist, a small PC controller buff to match consoles, and less sticky precision tracking on fast-moving targets. How to tweak strength in Settings.',
+    category: 'gameplay',
+    status: 'shipped',
+    date: '2026-11-23',
+    confirmedDate: '2026-11-23',
+    readTime: 3,
+    image: '/images/guides/secret-weapon.webp',
+    tags: [
+      'fortnite aim assist update',
+      'fortnite aim assist nerf',
+      'fortnite pc controller aim assist',
+      'fortnite precision aim assist',
+      'fortnite aim assist settings',
+    ],
+    content: `
+## What changed
+
+Epic’s aim assist changes, reported on **23 November 2026**, adjust how controller assist feels in close fights and how precision tracking sticks to fast targets. No patch number or percentage figures were published with the notes summarised here — just the behaviour changes below.
+
+## More consistent close range
+
+Aim assist is now **more consistent at close range**. In practice that should make shotgun and SMG fights feel steadier when you are already on top of an opponent: less of the old “sometimes sticky, sometimes floaty” variance when both players are in each other’s face.
+
+That does **not** mean every close fight is easier. Consistency cuts both ways — opponents on controller get the same closer‑range stabilisation. Expect fewer wild swings from assist alone and more of the outcome decided by movement, peeks, and shot timing.
+
+## PC controller now matches consoles
+
+**PC controller** aim assist received a **small buff** so its strength **matches consoles**. Previously, PC controller assist was **weaker** than console assist. If you play Fortnite with a pad on PC, this is the change aimed at you: parity with console strength rather than a brand‑new PC‑only system.
+
+Console players should not expect a large console‑side buff from this line item — the headline is bringing PC pad strength up to the console baseline.
+
+## Precision assist is less sticky on fast targets
+
+**Precision** aim assist is less “sticky” on **fast‑moving** targets. The **maximum tracking speed is unchanged**, but you may need **larger right‑stick movements** to stay on quick targets.
+
+Read that as a trade‑off, not a simple nerf or buff: tracking ceiling stays the same, but the stick work to hold a strafing or jump‑peeking opponent is more on you. Slow, predictable peeks should feel closer to before; high‑speed tracking will feel less magnetised.
+
+## How to adjust aim assist strength
+
+From Epic’s help article:
+
+1. Open **Settings**
+2. Go to **Controller** options
+3. Open **Sensitivity**
+4. Set **Use Advanced Options** to **ON**
+5. Set **Aim Assist strength**
+6. Hit **Apply**
+
+Not all settings appear on every platform. If you do not see Advanced Options or Aim Assist strength, check you are on a controller profile and that your platform exposes those toggles.
+
+After tweaking, run a few Creative or Team Rumble fights before ranked — small strength changes feel bigger once precision stickiness is reduced.
+
+## Quick FAQ
+
+**Was aim assist nerfed or buffed?**
+Both, depending on the layer: **close‑range consistency** improved, **PC controller** got a **small buff** toward console parity, and **precision** tracking on **fast** targets feels **less sticky** (same max tracking speed, more stick input needed).
+
+**Does PC controller aim assist now match console?**
+According to Epic’s notes as reported, **yes** — PC controller strength was brought in line with consoles.
+
+**How do I change aim assist strength?**
+**Settings → Controller → Sensitivity → Use Advanced Options ON → Aim Assist strength → Apply.** Availability varies by platform.
+
+**Shipped / reported:** 23 November 2026.
+`,
+  },
+  {
     slug: 'fortnite-crash-spyro-persona-5-royal-return-dates',
     title:
-      'Crash Bandicoot, Spyro & Persona 5 Royal Return to Fortnite: Shop Dates (21–24 Nov)',
+      'Crash Bandicoot, Spyro & Persona 5 Royal Return to Fortnite: Shop Dates (22–24 Nov)',
     excerpt:
-      '21 Nov reset did not add Crash, Spyro, or Privateer Oscar (leak miss / delay). Overwatch Wave 2 (Kiriko & Widowmaker) is live. Epic’s shop reel still points Persona 5 Royal at 24 Nov. Cardamom Sidekick still flagged for 22 Nov.',
+      'According to the leaked 22 Nov shop, Crash Bandicoot & Spyro, Overwatch Wave 1, and Privateer Oscar (full bundle) arrived with the 22 Nov reset — a day later than first reported. Gorillaz and ICON Lachlan & Rubius were also in that shop. Cardamom Sidekick landed 23 Nov. Persona 5 Royal still expected 24 Nov.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-19',
@@ -75,34 +211,35 @@ export const leaks: LeakPost[] = [
       'spyro fortnite return',
       'persona 5 fortnite return',
       'joker fortnite skin return',
-      'fortnite item shop november 21',
+      'fortnite item shop november 22',
       'fortnite item shop november 24',
       'privateer oscar fortnite skin',
       'overwatch wave 1 fortnite return',
     ],
     content: `
-Leaks on **18–19 November** put **Crash Bandicoot**, **Spyro**, **Privateer Oscar**, and an **Overwatch Wave 1** BR return on the **21 November** reset, with **Persona 5 Royal** on **24 November** (shown in Epic’s **18 Nov** shop reel).
+## 22 Nov update — Crash, Spyro, Wave 1 & Oscar landed a day late
 
-**Check after the 21 Nov 00:00 UK reset:** Crash, Spyro, and Privateer Oscar were **not** in the live shop. Wave 1 outfits also did **not** return as standalone BR rows — **D.Va / Mercy / Tracer / Genji** only showed as **Rocket Racing car skins** inside the **Porsche Cayenne Turbo Electric + Overwatch** pack. **Kiriko & Widowmaker** (Wave 2) remain live — [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker).
+According to the leaked **22 November** shop, **Crash Bandicoot & Spyro**, **Overwatch Wave 1**, and **Privateer Oscar** (now as a full bundle) arrived with the **22 Nov** reset — **one day later** than the first **21 Nov** reports. **Gorillaz** and **ICON Lachlan & Rubius** were also in that shop. **Persona 5 Royal** is still expected **24 Nov**. Full shop rundown: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
-Times below are the daily **Item Shop reset at 00:00 UK (GMT)** = **7:00 PM ET the previous evening**.
+Leaks on **18–19 November** had originally put Crash, Spyro, Privateer Oscar, and Wave 1 on the **21 November** reset. After that reset: Crash, Spyro, and Privateer Oscar were **not** in the live shop, and Wave 1 outfits did **not** return as standalone BR rows that day — **D.Va / Mercy / Tracer / Genji** only showed as **Rocket Racing car skins** inside the **Porsche Cayenne Turbo Electric + Overwatch** pack. **Kiriko & Widowmaker** (Wave 2) remain live — [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker).
+
+Times below are the daily **Item Shop reset at 00:00 UK (GMT)** = **7:00 PM ET the previous evening**. Confirm tiles on the [Item Shop tracker](/tools/item-shop).
 
 ## At a glance — late November
 
 | Date (UK reset) | What’s slated | Status |
 | --- | --- | --- |
 | Sat **21 Nov** | Overwatch Wave 2 — **Kiriko & Widowmaker** | **Shipped** · [page](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker) |
-| Sat **21 Nov** | **Crash & Spyro** · **Privateer Oscar** · Wave 1 BR return | **Missed this reset** — still watching |
-| Sun **22 Nov** | **"Cardamom" Sidekick** | Leak (codename only) |
+| Sat **21 Nov** | **Crash & Spyro** · **Privateer Oscar** · Wave 1 BR return | **Missed 21 Nov** — landed **22 Nov** |
+| Sun **22 Nov** | Crash & Spyro · Privateer Oscar bundle · Wave 1 · Gorillaz · Lachlan & Rubius | **Landed** (leaked shop) |
+| Mon **23 Nov** | **Cardamom** Sidekick (plus Phineas & Ferb / PotC / Harvest) | **Landed** · [shop page](/leaks/upcoming-item-shop-leaks) |
 | Tue **24 Nov** | **Persona 5 Royal** | Shown in Epic’s shop reel |
 
-Confirm tiles on the [Item Shop tracker](/tools/item-shop). Calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
-
-## Crash Bandicoot & Spyro — still watching
+## Crash Bandicoot & Spyro — 22 Nov return
 
 First drop: **28 Aug 2026** → left **11 Sep 2026**. **Crash** = outfit (+ **Crash Classic** / **LEGO** styles). **Spyro** = **Sidekick**, not an outfit.
 
-Last shop menu (reference only; return prices unconfirmed):
+Last shop menu (reference only; return prices unconfirmed — check the [Item Shop tracker](/tools/item-shop)):
 - Crash outfit (with Bandicoot wrap) — **1,500 V‑Bucks**
 - Spyro Sidekick — **1,500**
 - **Wumpa Mace** pickaxe — **800**
@@ -119,19 +256,17 @@ Original catalogue: **Joker**, **Ann Takamaki (Panther)**, transformation / Show
 
 ## Privateer Oscar + Captain’s Day
 
-Oscar was leaked for **21 Nov** shop ahead of **Captain’s Day** on **22 Nov**. Buying the outfit is **not required** for Captain’s Day. Cadence: [Captain’s Days](/leaks/captain-days-content-stack).
+Oscar was first leaked for the **21 Nov** shop ahead of **Captain’s Day** on **22 Nov**, then landed as a **full bundle** with the **22 Nov** reset according to the leaked shop. Buying the outfit is **not required** for Captain’s Day. Cadence: [Captain’s Days](/leaks/captain-days-content-stack).
 
 ## What we don’t know yet
 
-- Whether Crash / Spyro / Oscar **slip to a later reset** or get cut
-- Return **prices** for Crash/Spyro and Persona 5 Royal
-- What **"Cardamom"** is on **22 Nov**
-- Whether Wave 1 **BR outfits** return separately from the Porsche car pack
+- Return **prices** for Crash/Spyro and Persona 5 Royal (confirm on the tracker)
+- Exact leave times for the 22–23 Nov returns
 
 ## Quick FAQ
 
 **Did Crash and Spyro return on 21 Nov?**
-**No** — not in the live **21 Nov** shop feed. Keep watching later resets.
+**No** — they missed that reset and landed with the **22 Nov** shop according to leaks.
 
 **Do I need Oscar for Captain’s Day?**
 **No.** See [Captain’s Days](/leaks/captain-days-content-stack).
@@ -139,7 +274,7 @@ Oscar was leaked for **21 Nov** shop ahead of **Captain’s Day** on **22 Nov**.
 **Is Spyro a skin?**
 **Sidekick**, not a wearable outfit. **Crash** is the outfit.
 
-**Updated:** 21 November 2026.
+**Updated:** 22 November 2026.
 `,
   },
   {
@@ -445,11 +580,11 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
   },
   {
     slug: 'scott-pilgrim-fortnite-collab-leak',
-    title: 'Scott Pilgrim x Fortnite? Scott & Ramona Skins Leak (LEGO styles)',
+    title: 'Scott Pilgrim x Fortnite Skins Teased — Scott & Ramona Coming Soon',
     excerpt:
-      '12 Nov files reportedly add two comic/anime‑shaded skins with LEGO styles: a bass‑playing male believed to be Scott Pilgrim and a goggles/hammer‑themed female believed to be Ramona Flowers — plus an emote and 3 pickaxes. Not announced by Epic.',
+      'Teaser art for Scott Pilgrim x Fortnite dropped ~5:10 PM UK on 23 Nov: Scott Pilgrim and Ramona Flowers skydiving in their anime-style look with the tagline “Romanticizing the dive.” First teaser after the earlier file leak — strongly suggests the collab is close. No release date or prices yet.',
     category: 'cosmetics',
-    status: 'active',
+    status: 'watching',
     date: '2026-11-12',
     readTime: 5,
     featured: true,
@@ -457,12 +592,21 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
     tags: [
       'scott pilgrim fortnite',
       'scott pilgrim fortnite leak',
+      'scott pilgrim fortnite teaser',
       'ramona flowers fortnite',
+      'ramona flowers fortnite skin',
+      'scott pilgrim fortnite release date',
       'fortnite scott pilgrim skins',
       'fortnite lego style collab',
       'power of love sword fortnite emote',
     ],
     content: `
+## Teaser revealed — 23 Nov
+
+Around **5:10 PM UK on 23 November 2026**, teaser artwork for the **Scott Pilgrim x Fortnite** skins appeared. It shows **Scott Pilgrim** and **Ramona Flowers** in their anime‑style look skydiving through the sky, with the tagline **"Romanticizing the dive"**.
+
+This is the **first teaser** after the earlier file leak and strongly suggests the collab is close. **No release date or prices** were given.
+
 ## What was reportedly found (12 Nov files)
 
 - Hidden **male skin** thought to be **Scott Pilgrim**
@@ -496,7 +640,7 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
 - Live confirm after reset: [Item Shop tracker](/tools/item-shop) · [News](/news)
 - Same‑day collab chatter: [Doki Doki?](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
 
-**Filed:** 12 November 2026. Status: **Unconfirmed**.
+**Filed:** 12 November 2026. **Updated:** 23 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -684,30 +828,51 @@ Files also reference a **“Seasonal Locker Filter”** tagged **winterfest / ch
   },
   {
     slug: 'fortnite-pirate-chest-prizes-week-3-4',
-    title: 'Pirate Chest Prizes Week 3–4 — Gold Miku & Gold Teto, Corvette, Urus',
+    title:
+      'Pirate Chest Prizes Week 4 Live — Solid Gold Kasane Teto, Gold Blades & Urus SE (Week 3 Gold Miku)',
     excerpt:
-      'Week 3 is live from 2pm UK (9am ET) Sun 15 Nov: Solid Gold Hatsune Miku, Miku’s Takarabako, PPPP Jam Track, May Fortune Find You loading screen, Gold Corvette ZR1. Week 4 (upcoming): Solid Gold Kasane Teto, Rogue Wave & Tidewalker back bling, Sea Shanty, Oscar’s Wraps, Gold Lamborghini Urus SE.',
+      'Week 4 Pirate Chest Prizes went live ~2pm UK (9am ET) Sun 22 Nov: Solid Gold Kasane Teto, Solid Gold High Tide and Wavecut blades, Oscar’s Wraps loading screen, and Lamborghini Urus SE. Week 3 (15 Nov) still covers Solid Gold Hatsune Miku, Takarabako, PPPP, May Fortune Find You, and the Gold Corvette ZR1.',
     category: 'cosmetics',
-    status: 'watching',
+    status: 'shipped',
     date: '2026-11-12',
-    readTime: 4,
+    confirmedDate: '2026-11-22',
+    readTime: 5,
     image: '/images/guides/capn-hatsune-miku-hero.webp',
     tags: [
       'fortnite pirate chest prizes week 3',
       'fortnite pirate chest prizes week 4',
+      'fortnite chest prizes week 4',
       'solid gold hatsune miku',
       'solid gold kasane teto',
+      'solid gold kasane teto fortnite',
+      'gold teto fortnite how to get',
       'solid gold miku fortnite',
+      'solid gold high tide and wavecut',
+      'oscars wraps loading screen',
       'pppp jam track fortnite',
       'fortnite week 3 treasure prizes',
       'pirate shop token effects',
     ],
     content: `
+## Week 4 Treasure Prizes — live 22 Nov
+
+Went live around **2:00 PM UK** (**9:00 AM ET**) on **Sunday 22 November 2026**. Epic also released a **Treasure Hunters Week 4** trailer that afternoon.
+
+Official Week 4 prize art shows four rewards:
+- **Solid Gold Kasane Teto** outfit — flavour text: "Your favorite chimera, all in gold!"
+- **Solid Gold High Tide and Wavecut** — a pair of gold blades; flavour text: "Treasured blades made even more desirable."
+- **Oscar's Wraps** loading screen — a free Oscar loading screen ("Geno's personal privateer", art by Golden Wolf), arriving the same day as Oscar's Captain's Day weekend
+- **Lamborghini Urus SE** car
+
+Earlier leaks had also listed **Rogue Wave** and **Tidewalker** back blings and a **"Sea Shanty"** Jam Track for Week 4. Those items are **not** shown in the official Week 4 prize art, so treat them as **unconfirmed / not shown** rather than confirmed prizes.
+
+Odds and how chest rolls work: [Pirate Shop odds](/leaks/pirate-shop-odds). Captain weekend context: [Captain’s Days](/leaks/captain-days-content-stack).
+
 ## Week 3 Treasure Prizes — live 15 Nov 2026
 
 Went live around **2:00 PM UK** (**9:00 AM ET**) on **Sunday 15 November 2026**.
 
-Prizes now in the pool:
+Prizes in the Week 3 pool:
 - **Solid Gold Hatsune Miku** outfit
 - **Miku's Takarabako** back bling
 - **PPPP** Jam Track ("TAK - PPPP ft. Hatsune Miku and Kasane Teto") — a brand‑new Jam Track obtainable **free** through Treasure Prizes
@@ -718,36 +883,41 @@ Also that afternoon:
 - **Mini Hatsune Miku** Sprite and the **Leekcapper** item went live around **2pm UK** (Leekcapper was bugged for roughly two hours and became properly available about **4:20pm UK**)
 - A new Sprite named **"Zee"** went live around **2:15pm UK**
 
-## Leaked prize pools
+## Rotation dates
 
-**Week 3**
-- **Solid Gold Hatsune Miku** outfit
-- **Miku’s Takarabako** Back Bling
-- **"PPPP"** Jam Track
-- **"May Fortune Find You"** loading screen
-- **Gold Chevrolet Corvette ZR1**
+Weekly Treasure / Pirate Chest Prizes rotate at **2:00 PM UK** (**9:00 AM ET**) on Sundays.
 
-**Week 4**
-- **Solid Gold Kasane Teto** outfit
-- **Rogue Wave** and **Tidewalker** Back Bling
-- **"Sea Shanty"** Jam Track
-- **"Oscar’s Wraps"** loading screen
-- **Gold Lamborghini Urus SE**
+| Week | Live from | Status |
+| --- | --- | --- |
+| **Week 3** | **15 November 2026** | Shipped |
+| **Week 4** | **22 November 2026** | Shipped |
 
 ## Visual effects update (12 Nov)
 
 In‑game change noted on **12 Nov**: **chest prize drop effects now differ** — a **Pirate Shop Token** prize keeps the **gold** effect, while the **weekly skin prize** now shows a **silver** effect.
 
-## Dates and links
+## Context and links
 
-- Exact week start dates were **not** given
-- Context: Teto/Miku weekend at Friendship Villa — see [Kasane Teto Music Pass & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
-- Previous swap: [Gold Lil’ Uzi Vert Jr.](/leaks/gold-lil-uzi-vert-sprite)
+- Friendship Villa / Teto‑Miku weekend: [Kasane Teto Music Pass & Friendship Villa](/leaks/kasane-teto-fortnite-music-pass-friendship-villa)
+- Previous gold swap: [Gold Lil’ Uzi Vert Jr.](/leaks/gold-lil-uzi-vert-sprite)
 - Odds: [Pirate Shop odds](/leaks/pirate-shop-odds)
+- Treasure Hours context (Week 3 Gold Miku boost windows): [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours)
 
-**Heads‑up:** **Solid Gold Hatsune Miku** reportedly gets a **boosted drop chance** during the two **21 Nov Treasure Hours** windows — see [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
+## Quick FAQ
 
-**Filed:** 12 November 2026. **Updated:** 15 November 2026. Status: **Watching** (Week 4 still upcoming).
+**How do you get Solid Gold Kasane Teto?**
+It is a **chance‑based prize** from Pirate / Treasure Chests during **Week 4**. See the [Pirate Shop odds](/leaks/pirate-shop-odds) page for how chest rolls work.
+
+**Is Solid Gold Kasane Teto free?**
+Yes in the sense that it is **earned in‑game** from chests — it is **not** sold as an Item Shop offer.
+
+**When did Week 4 go live?**
+Around **2:00 PM UK** (**9:00 AM ET**) on **Sunday 22 November 2026**.
+
+**Are Rogue Wave, Tidewalker, and Sea Shanty confirmed?**
+**No.** Earlier leaks listed them for Week 4, but they do **not** appear in the official Week 4 prize art.
+
+**Filed:** 12 November 2026. **Updated:** 22 November 2026. Status: **Shipped** (Week 3 and Week 4 both live).
 `,
   },
   {
@@ -844,6 +1014,7 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
       'fortnite chapter 8 season 2 release date',
       'when does chapter 8 start fortnite',
       'fortnite c8s2',
+      'fortnite chapter 8 graphics',
     ],
     content: `
 ## What was reported
@@ -863,14 +1034,23 @@ Timing-wise, this points to **Treasure Hunters** (Chapter 7) wrapping around ear
 | Chapter 8 Season 1 | 5 December 2026 |
 | Chapter 8 Season 2 | 4 March 2027 |
 
+## What will Chapter 8 look like?
+
+According to a report on **23 November 2026**, Chapter 8’s visuals are expected to look **closer to Chapter 4’s art style**, and **more stylised than Chapter 7**. This is a report, not an Epic confirmation.
+
+Chapter 4 was the first chapter to launch on **Unreal Engine 5.1** with Nanite/Lumen‑era visuals (December 2022). The comparison here is about overall look and stylisation, not a feature checklist.
+
+Epic has **not** shown Chapter 8 visuals officially yet. Treat the Chapter 4 comparison as unconfirmed until Epic posts concept art, a trailer, or in‑game previews.
+
 ## What is not confirmed
 
 - Exact launch time or downtime window
 - Any live event or end-of-chapter event
 - Chapter 8 theme and battle pass contents
+- Official Chapter 8 art direction or POIs
 - Whether these dates move
 
-**Filed:** 10 November 2026. Status: **Watching**.
+**Filed:** 10 November 2026. **Updated:** 23 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -1220,62 +1400,88 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 21–24 Nov: Crash miss, Cardamom, Persona 5',
+      'Upcoming Fortnite Item Shop Leaks — 22–24 Nov: Phineas & Ferb, Privateer Oscar, Gorillaz, Persona 5',
     excerpt:
-      '21 Nov shop is live — Kiriko & Widowmaker debuted with this reset after a trailer on the 20th. Ice Spice returned; ICON emotes refreshed; Metro Station “Shake It” emote is up. Crash, Spyro, and Privateer Oscar did not land on the 21 Nov reset. Watch 22 Nov Cardamom Sidekick and 24 Nov Persona 5 Royal (Epic reel).',
+      'Leaked 23 Nov shop: Phineas and Ferb and Pirates of the Caribbean returns, Harvest Season autumn set, Nemia & Lexa Hexbringer, and the new Cardamom Sidekick. 22 Nov leaked shop: Privateer Oscar bundle, Overwatch Wave 1, Crash & Spyro, Gorillaz, ICON Lachlan & Rubius. Persona 5 Royal still pointed at 24 Nov. Confirm prices on the Item Shop tracker.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-15',
-    readTime: 4,
+    readTime: 5,
     featured: true,
     image: '/images/guides/kiriko-featured.webp',
     tags: [
       'fortnite item shop leaks',
-      'capn hatsune miku fortnite',
-      'ishowspeed pirate speedy',
-      'shohei ohtani fortnite',
-      'madison beer fortnite',
-      'kaiju no 8 fortnite',
-      'hello neighbor fortnite',
-      'buggy fortnite skin',
-      'regular show fortnite',
+      'fortnite item shop november 22',
+      'fortnite item shop november 23',
+      'phineas and ferb fortnite return',
+      'pirates of the caribbean fortnite shop',
+      'cardamom sidekick fortnite',
+      'fortnite harvest season skins',
+      'gorillaz fortnite return',
+      'privateer oscar fortnite bundle',
+      'lachlan fortnite skin',
+      'rubius fortnite skin',
+      'overwatch wave 1 fortnite return',
       'persona 5 fortnite',
       'crash bandicoot fortnite',
-      'kid laroi fortnite skin return',
-      'kim kardashian fortnite',
-      'cowboy bebop fortnite return',
+      'capn hatsune miku fortnite',
       'kiriko fortnite',
       'widowmaker fortnite',
       'ice spice fortnite return',
       'metro station shake it fortnite emote',
     ],
     content: `
-## 21 November shop (live)
+## 23 November shop
+
+Leaked Item Shop for the **23 November 2026** reset (**00:00 UK** / **7pm ET on 22 Nov**). Confirm every tile and price on the [Item Shop tracker](/tools/item-shop) — prices below are **not** known from the leak grid alone.
+
+- **Phineas and Ferb collab returns** — leaked grid includes **Buff Perry** and **Dr. Doofenshmirtz** outfits, **Perry the Inaction Figure**, and the **Doof's High Kicks** emote
+- **Pirates of the Caribbean returns** — Jack Sparrow‑themed items including **Jack's Ship**, **Jack's Compass**, **Jack's Prize**, **Jack Sparrow's Sword**, **Jack's Cutlass and Bane**, and **Skull and Crossed Swords**
+- **Harvest Season** (autumn) set — including **Baba Yaga**, **The Autumn Queen**, **Cobb**, **Hayseed**, **Sunflower**, and **Haystacks** outfits, plus **Oakworn Wings**, **Wand of Oak**, **Bark Basher**, **Rootcarver**, and a **Pumpkin Season** wrap
+- **Nemia** and **Lexa Hexbringer** returned in the same reset
+- **Cardamom** Sidekick — a white ferret/stoat‑like pet — went on sale for the **first time** with this reset
+
+## 22 November shop
+
+Leaked Item Shop for the **22 November 2026** reset (**00:00 UK** / **7pm ET on 21 Nov**). Confirm on the [Item Shop tracker](/tools/item-shop).
+
+- **New Privateer Oscar bundle** — pirate Oscar outfit (white‑tiger captain look) with a matching set. Items in the leaked shop grid around it include **Privateer's Pistols**, **Brawler's Bounty Blades**, and the **Hunter of the Seas** wrap, plus an emote and a banner/icon in the bundle art. Lands alongside Oscar's Captain's Day weekend. Prices not known.
+- **Overwatch Wave 1 return** — **D.Va**, **Genji**, **Mercy**, **Tracer**, with items such as Mercy's Valkyrie Wings, Tracer's Pulse Bomb, Tracer's Pulse Knives, Caduceus Pickaxe, Ryū Ichimonji, Tokki's Slicer, Travel Tokki Model, Mark of Mercy wrap, and the Blinkin' Amazing and Mercy's Reach emotes
+- **Crash Bandicoot & Spyro return** — Crash Bandicoot outfit, Spyro the Dragon, Aku Aku, Crash's Wumpa Mace, Bandicoot wrap, Crash's Victory emote
+- **Gorillaz return** — 2D, Murdoc, Noodle, and Russel outfits, with 2D's Megaphone, 2D's Mic, Noodle's Case, Noodle's Axe, Murdoc's Bass, One‑Eyed Octopus, Gorillaz Camo wrap
+- **ICON Series: Lachlan** and **Rubius** outfits
+
+Crash/Spyro, Privateer Oscar, and Overwatch Wave 1 — which earlier reports pointed at **21 Nov** and which missed that reset — landed **one day later** on **22 Nov** according to the leaked shop. Full date context: [Crash, Spyro & Persona 5 return dates](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates).
+
+## 21 November shop
 
 Confirm every tile on the [Item Shop tracker](/tools/item-shop).
 
 - **Kiriko & Widowmaker** debuted with this reset (**21 Nov 00:00 UK** / **7 PM ET on 20 Nov**) — [prices](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker)
 - **Ice Spice** returned — items include **Rap Princess Ice Spice** (**1,500**), **Ice Spice Mini** (**300**), **In Ha Mood** (**500**), **Iced Out Mic** (**800**)
 - **ICON emotes refresh** — multiple music emotes rotated in
-- **“Shake It”** emote (**500**) — Metro Station
+- **"Shake It"** emote (**500**) — Metro Station
 - **Perfect Night** (LE SSERAFIM) Jam Track — **500**
 - **The Kid LAROI** still up from the **20 Nov** return
 - **Jurassic Jeep® Wrangler** car body still up — [page](/leaks/jurassic-park-jeep-wrangler-fortnite)
-- **Crash / Spyro / Privateer Oscar** — **not** in this reset (leak miss / delay)
+- **Crash / Spyro / Privateer Oscar** — **not** in this reset (landed **22 Nov** instead)
 
-Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa). Treasure Hours today: [21 Nov boost windows](/leaks/pirate-shop-power-hours).
+Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/kasane-teto-fortnite-music-pass-friendship-villa).
 
 ## Watch list
 
-| Date | What leakers flagged | Status |
+| Date | What was flagged | Status |
 | --- | --- | --- |
-| **21 Nov (shop)** | Crash & Spyro · Privateer Oscar · Wave 1 BR return | **Missed this reset** · [context](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) |
-| **22 Nov (shop)** | **"Cardamom"** Sidekick | Leak (codename only) |
+| **21 Nov (shop)** | Crash & Spyro · Privateer Oscar · Wave 1 BR return | **Missed 21 Nov** — landed **22 Nov** · [context](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) |
+| **22 Nov (shop)** | Privateer Oscar bundle · Wave 1 · Crash & Spyro · Gorillaz · Lachlan & Rubius | **Landed 22 Nov** (leaked shop) |
+| **23 Nov (shop)** | Phineas & Ferb · PotC · Harvest Season · Nemia/Lexa · **Cardamom** Sidekick | **Landed 23 Nov** (leaked shop) |
 | **24 Nov (shop)** | **Persona 5 Royal** (Joker & Panther) | Shown in **Epic’s shop reel** |
 
 ## Already shipped (recent)
 
-- **21 Nov:** **Kiriko & Widowmaker** (Overwatch Wave 2) · **Ice Spice** returned · ICON emotes refresh · Metro Station **“Shake It”** emote
+- **23 Nov:** Phineas & Ferb · Pirates of the Caribbean · Harvest Season · Nemia & Lexa Hexbringer · **Cardamom** Sidekick (new)
+- **22 Nov:** Privateer Oscar bundle · Overwatch Wave 1 · Crash & Spyro · Gorillaz · ICON Lachlan & Rubius
+- **21 Nov:** **Kiriko & Widowmaker** (Overwatch Wave 2) · **Ice Spice** returned · ICON emotes refresh · Metro Station **"Shake It"** emote
 - **20 Nov:** **The Kid LAROI** return · Kim Kardashian / Cowboy Bebop / Sidekick Squad / StW packs (same window)
 - **19 Nov:** **Regular Show** · ICON emotes · Lazarbeam & CourageJD
 - **18 Nov:** **Naruto**, **Bruno Mars**, **Jurassic Jeep Wrangler**
@@ -1285,9 +1491,9 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 
 ## How to use this
 
-Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
+Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Prices: [Item Shop tracker](/tools/item-shop). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 21 November 2026.
+**Updated:** 23 November 2026.
 `,
   },
   {

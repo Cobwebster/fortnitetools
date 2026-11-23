@@ -75,27 +75,27 @@ export default function LeaksPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
-              Live now: Kiriko & Widowmaker, Jurassic Jeep Wrangler. Still watching: Crash/Spyro (missed 21 Nov), Persona 5 Royal (24 Nov), Cardamom, Hello Neighbor, Winterfest, Pirate Shop hours, Chapter 8 calendar finds.
+              Fresh: Community Day golden umbrella (next week), 23 Nov shop (Phineas & Ferb, Cardamom), Week 4 Gold Teto chest prizes, Scott Pilgrim teaser, aim assist update. Still watching: Persona 5 Royal (24 Nov), Winterfest, Chapter 8 calendar finds.
               Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Link
-                href="/leaks/doki-doki-literature-club-fortnite-leak"
+                href="/leaks/fortnite-community-day-golden-umbrella"
                 className="font-semibold text-primary hover:underline"
               >
-                Doki Doki?
+                Community Day
+              </Link>
+              {' · '}
+              <Link href="/leaks/upcoming-item-shop-leaks" className="text-primary hover:underline">
+                23 Nov shop
+              </Link>
+              {' · '}
+              <Link href="/leaks/fortnite-pirate-chest-prizes-week-3-4" className="text-primary hover:underline">
+                Week 4 Gold Teto
               </Link>
               {' · '}
               <Link href="/leaks/scott-pilgrim-fortnite-collab-leak" className="text-primary hover:underline">
                 Scott Pilgrim
-              </Link>
-              {' · '}
-              <Link href="/leaks/puss-in-boots-fortnite-collab-leak" className="text-primary hover:underline">
-                Puss in Boots
-              </Link>
-              {' · '}
-              <Link href="/leaks/fortnite-winterfest-2026-dates" className="text-primary hover:underline">
-                Winterfest
               </Link>
               {' · '}
               <Link href="/news" className="text-primary hover:underline">
