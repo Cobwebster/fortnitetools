@@ -75,7 +75,7 @@ export default function LeaksPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
-              Fresh: Community Day golden umbrella (next week), 23 Nov shop (Phineas & Ferb, Cardamom), Week 4 Gold Teto chest prizes, Scott Pilgrim teaser, aim assist update. Still watching: Persona 5 Royal (24 Nov), Winterfest, Chapter 8 calendar finds.
+              Fresh: Golden Week from 28 Nov, free Treasure Hunter / Gilded Hunter Hope bonus skins, Puss in Boots on 26 Nov, Community Day 5 Dec, Scott Pilgrim official trailer. Still watching: DDLC (within a week), Winterfest, Chapter 8 on 5 Dec.
               Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">

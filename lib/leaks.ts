@@ -59,15 +59,187 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
-    slug: 'fortnite-community-day-golden-umbrella',
+    slug: 'fortnite-golden-week-november-2026',
     title:
-      'Fortnite Community Day Returns Next Week — Free Golden Umbrella & Rewards',
+      'Fortnite Golden Week Starts 28 November — All Gold Outfits Back in Chests',
     excerpt:
-      'According to reports on 23 Nov 2026, Fortnite Community Day returns next week (week of 30 Nov). Rewards include a free golden umbrella glider plus other new golden cosmetics — exact day and full reward list still TBC.',
+      'Epic announced Golden Week for 28 Nov–5 Dec 2026: every Captain week’s golden goods return to chests, 2× Sprite Dust and XP, and 15× Gold Outfit odds during 28 Nov Treasure Hours. Leads into Community Day on 5 December.',
+    category: 'gameplay',
+    status: 'watching',
+    date: '2026-11-24',
+    confirmedDate: '2026-11-23',
+    readTime: 6,
+    featured: true,
+    image: '/images/guides/treasure-hunters.jpg',
+    tags: [
+      'fortnite golden week',
+      'gold outfits back in chests fortnite',
+      'treasure hours 28 november odds',
+      'fortnite golden week 2026',
+      'fortnite 15x gold outfits',
+      'golden charlotte fortnite',
+      'fortnite 2x sprite dust',
+    ],
+    content: `
+## What Epic announced
+
+On **23 November 2026**, Epic officially announced **Golden Week** for Fortnite Treasure Hunters. It starts **Saturday 28 November 2026 at 9 AM ET** (**2 PM UK**) and runs through the **end-of-chapter event on 5 December**. That is the final week of **Chapter 7**, and Epic’s own post points players onward to **Community Day on 5 December** (“hop aboard for Community Day on 12/5”).
+
+Golden Week refreshes the treasure pool and **unvaults** previous Captain weeks’ golden goods back into **chests**. Alongside the loot shuffle, Epic is running **2× Sprite Dust** and **2× Sprite XP** for the whole week (Mastery Monday benefits all week), with more Sprite chests on the map and Sprite variants appearing more often.
+
+## What’s back in chests
+
+According to Epic, **all Gold Outfits**, **Vehicles**, **Back Blings / Pickaxes**, **Jam Tracks**, and **Loading Screens** from earlier Captain weeks return to the chest pool. New treasure such as the **Solid Gold Captain X** outfit is also in the mix (Epic says it arrives a day early relative to the usual Captain cadence).
+
+Because the pool is fuller, Epic says the chance that a chest holds **any** treasure rises from **1 in 62** to **1 in 21** (excluding duplicates you already own). Squadmates can still roll treasure at those rates even if you already own the item. Each **specific** treasure keeps its standard rate unless Epic lists a multiplier for that category.
+
+Gold Outfits also get a **2× base drop-rate boost** for the whole of Golden Week, with **higher** multipliers during Treasure Hours.
+
+## Treasure Hours on 28 November — odds
+
+Epic published the **28 November Treasure Hours** multipliers:
+
+- **Gold Outfits: 15×** (vs the usual Treasure Hours **7.5×**; Epic notes this as 7.5× with the 2× Golden Week boost stacked)
+- **Vehicles & Decals: 10×** (unchanged from the usual Treasure Hours vehicle boost)
+- **Pirate Shop Access: 1.5×** (same as recent Access boost windows)
+
+**All Gold Outfits** are in the chests during Golden Week — not just the current weekly prize. For context on earlier weekly gold prizes, see [Pirate Chest Prizes Week 3–4](/leaks/fortnite-pirate-chest-prizes-week-3-4) (**Gold Miku** in week 3, **Solid Gold Kasane Teto** in week 4) and the [Gold Lil Uzi Vert sprite](/leaks/gold-lil-uzi-vert-sprite) page. Base odds live on [Pirate Shop odds](/leaks/pirate-shop-odds); prior Treasure Hours windows are on [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
+
+Exact Treasure Hours clock times for 28 Nov follow the recent Saturday pattern (**2–4 PM ET / 7–9 PM UK** and **9–11 PM ET / 2–4 AM UK Sunday**) unless Epic posts a different MOTD — confirm in-client when the day opens.
+
+## Golden Series & Golden Charlotte (24 Nov)
+
+On **24 November 2026**, a **Golden Series** was added in-game, and **Golden Charlotte** became **free for Battle Pass owners**. Charlotte’s anime Battle Pass look (Charlotte-Sensei) is part of the Treasure Hunters pass lineup; the gold variant is a separate free grant for owners, not an Item Shop purchase.
+
+## How to take part
+
+1. Play **Battle Royale** from **28 Nov 9 AM ET / 2 PM UK** onward and open **chests** (and Sprite chests) as usual.
+2. Prioritise **Treasure Hours** on **28 Nov** if you are hunting Gold Outfits — that is when the **15×** outfit multiplier is live.
+3. Keep grinding Sprites for the week-long **2× Dust / 2× XP**.
+4. Plan ahead for **[Community Day on 5 December](/leaks/fortnite-community-day-golden-umbrella)** — Golden Week leads straight into that login / Twitch Drops day.
+
+Pirate Shop Access remains a separate chest prize with its own **1.5×** Treasure Hours boost. Guide: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite) · feature page: [Pirate Shop Access](/leaks/pirate-shop-access-feature).
+
+## Quick FAQ
+
+**When does Fortnite Golden Week start?**
+**Saturday 28 November 2026 at 9 AM ET** (**2 PM UK**), through the **5 December** end-of-chapter event.
+
+**Are all gold outfits in chests?**
+**Yes** — Epic says every Gold Outfit from previous Captain weeks is back in the pool, plus new gold treasure such as Solid Gold Captain X.
+
+**What are the 28 Nov Treasure Hours outfit odds?**
+**15×** for Gold Outfits (vs usual **7.5×**). Vehicles & Decals stay **10×**; Pirate Shop Access stays **1.5×**.
+
+**Does Golden Week include 2× XP?**
+**Yes** — Epic is applying Mastery Monday benefits all week: **2× Sprite Dust** and **2× Sprite XP**.
+
+**What comes after Golden Week?**
+**[Community Day on 5 December](/leaks/fortnite-community-day-golden-umbrella)** — Golden Community ’Brella for logging in, Golden Jonesy via Twitch Drops, and the Chapter wrap.
+
+**Filed:** 24 November 2026. Status: **Watching**.
+
+`,
+  },
+  {
+    slug: 'fortnite-treasure-hunter-hope-gilded-hunter-hope-bonus-skins',
+    title:
+      'Free Treasure Hunter Hope & Gilded Hunter Hope — V-Bucks Bonus & Pirate Shop Access',
+    excerpt:
+      'Buy 800 V-Bucks for Treasure Hunter Hope or 2,400 for Gilded Hunter Hope (both thresholds) — purchases from 1 Nov through 5 Dec count. Activating Pirate Shop Access by 5 Dec 3 PM ET / 8 PM UK also grants both skins (up to 72 hours). Gift cards and V-Bucks bundles do not count.',
     category: 'cosmetics',
     status: 'watching',
-    date: '2026-11-23',
-    readTime: 4,
+    date: '2026-11-24',
+    readTime: 6,
+    featured: true,
+    image: '/images/guides/select-character.webp',
+    tags: [
+      'treasure hunter hope fortnite',
+      'gilded hunter hope how to get',
+      'fortnite free hope skin v-bucks',
+      'treasure hunter hope free',
+      'gilded hunter hope fortnite',
+      'fortnite hope bonus skins',
+      'pirate shop access hope skins',
+    ],
+    content: `
+## What’s on offer
+
+Fortnite is running a **bonus skins** promotion tied to **V-Bucks purchases** and **Pirate Shop Access** during Treasure Hunters. The two outfits are **Treasure Hunter Hope** and **Gilded Hunter Hope** — anime-styled looks for **Hope**, a long-running Fortnite original character who has appeared across recent chapters and seasons.
+
+Neither skin is sold as a normal Item Shop tile. You unlock them by hitting purchase thresholds or by activating Pirate Shop Access before the season ends.
+
+## V-Bucks thresholds
+
+- Buy **800 V-Bucks** → unlock **Treasure Hunter Hope**
+- Buy **2,400 V-Bucks** → unlock **Gilded Hunter Hope** (and **Treasure Hunter Hope** as well, because **2,400** covers both thresholds)
+
+Purchases made from **1 November through 5 December 2026** count. Totals are **cumulative** on the same Epic account: if earlier buys since 1 Nov already sum to **2,400+**, you may already own both; if you are part-way there, one more pack that pushes you over the line can unlock the missing skin(s). For example, if you already bought **1,600**, an **800** pack can finish the **2,400** total and grant both.
+
+**V-Bucks purchases stack across all platforms** on the same Epic account — PC, console, and mobile tallies add together.
+
+## What does not count
+
+**Gift cards** and **bundles that include V-Bucks** do **not** count toward the thresholds. Only direct V-Bucks purchases that Epic’s promotion tracks apply. If you are buying specifically for these skins, use a plain V-Bucks pack rather than a gift card or a mixed content bundle.
+
+## Free route: Pirate Shop Access
+
+Activating **Pirate Shop Access** by **5 December 2026 at 3 PM ET** (**8 PM UK**) also grants **both** Hope skins. Delivery can take **up to 72 hours** after you activate Access, so do not expect an instant Locker update the second the token clears.
+
+If you already redeemed Access earlier in the season, you should still receive both outfits under this promotion — wait out the delivery window before buying V-Bucks just for the skins. How Access works: [Pirate Shop Access feature](/leaks/pirate-shop-access-feature) · step-by-step: [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+
+## Dates and times (UK / ET)
+
+| Milestone | ET | UK (GMT) |
+| --- | --- | --- |
+| Purchases start counting | **1 Nov 2026** | **1 Nov 2026** |
+| Access deadline for both skins | **5 Dec 3 PM ET** | **5 Dec 8 PM UK** |
+| Season / promo end context | Chapter wrap **5 Dec** | same day |
+
+Item Shop still resets at **00:00 UK**; that reset clock is separate from the Access deadline above.
+
+## How to claim
+
+1. Check your Locker after any qualifying V-Bucks purchase or Access activation — skins may appear automatically once Epic’s grant job runs.
+2. If nothing shows, wait up to **72 hours** (especially for the Access path).
+3. Confirm you used a **qualifying V-Bucks purchase** (not a gift card / V-Bucks-in-bundle) if you are on the spend path.
+4. Make sure every platform purchase is on the **same Epic account**.
+
+## Context
+
+Hope’s bonus skins sit alongside the season’s wider gold push — [Golden Week](/leaks/fortnite-golden-week-november-2026) from **28 Nov**, weekly gold chest prizes, and [Community Day](/leaks/fortnite-community-day-golden-umbrella) on **5 Dec**. Gilded Hunter Hope is a gold-styled variant; it is **not** described as a Pirate Chest drop in the facts we have, so treat chests and this promo as separate tracks.
+
+## Quick FAQ
+
+**How do I get Treasure Hunter Hope for free?**
+Either buy **800 V-Bucks** (cumulative from 1 Nov) or activate **Pirate Shop Access** by **5 Dec 3 PM ET / 8 PM UK**. Access grants both skins.
+
+**Does 2,400 V-Bucks give both skins?**
+**Yes** — **2,400** covers the **800** and **2,400** thresholds, so you get Treasure Hunter Hope and Gilded Hunter Hope.
+
+**Do gift cards count?**
+**No.** Gift cards and bundles that include V-Bucks do not count.
+
+**Do purchases on different platforms add up?**
+**Yes**, if they are on the **same Epic account**.
+
+**How long after Pirate Shop Access do the skins arrive?**
+Up to **72 hours**.
+
+**Filed:** 24 November 2026. Status: **Watching**.
+
+`,
+  },
+  {
+    slug: 'fortnite-community-day-golden-umbrella',
+    title:
+      'Fortnite Community Day 5 December — Golden Jonesy, Golden Umbrella & More',
+    excerpt:
+      'Community Day is 5 December 2026. Golden Jonesy via Twitch Drops from 5 Dec 9 AM ET (2 PM UK) to 7 Dec 9 AM ET (2 PM UK); Golden Community Umbrella and more for logging in on 5 Dec from 9 AM ET until the end-of-chapter event wraps. Golden Week starts 28 Nov.',
+    category: 'cosmetics',
+    status: 'watching',
+    date: '2026-11-24',
+    readTime: 5,
     featured: true,
     image: '/images/guides/stars-of-the-show.webp',
     tags: [
@@ -76,51 +248,62 @@ export const leaks: LeakPost[] = [
       'fortnite community day rewards',
       'free fortnite umbrella',
       'fortnite community day date',
+      'golden jonesy fortnite',
+      'fortnite twitch drops golden jonesy',
     ],
     content: `
-## What's coming
+## Update — 24 November
 
-According to reports on **23 November 2026** — and teased by an Epic community staff member — **Fortnite Community Day** is returning **next week**, meaning the week starting **30 November 2026**. The exact day has **not** been stated.
+**Community Day is confirmed for Saturday 5 December 2026.** Epic’s Golden Week / Community Day post lays out the rewards and windows below. Earlier “next week / week of 30 Nov” reporting is superseded by this date.
 
-Rewards are expected to include a **free golden umbrella** glider and **other new golden rewards**. Details of those other golden cosmetics are **not known** yet. The event was reportedly planned weeks ago.
+## What’s confirmed for 5 December
 
-[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date) is reported to start on **5 December 2026**, so Community Day would land in the **final days of the current season**. Do not treat that as a fixed Community Day calendar date — only the “next week” window is on the table so far.
+**Golden Community Umbrella (’Brella) and more** — log in on **5 December** any time from **9 AM ET** (**2 PM UK**) until the **end-of-chapter event wraps**. Epic has not published the event’s exact end minute yet, so treat “until it wraps” as the live window.
+
+**Golden Jonesy outfit** — earn it via **Twitch Drops** from **5 December 9 AM ET** (**2 PM UK**) to **7 December 9 AM ET** (**2 PM UK**). Watch eligible Fortnite streams with drops enabled and link your Epic account as usual.
+
+[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date) still starts **5 December 2026**, so Community Day lands on the same calendar day as the chapter wrap / new season transition.
+
+## Golden Week lead-in
+
+**[Golden Week](/leaks/fortnite-golden-week-november-2026)** starts **28 November 2026 at 9 AM ET** (**2 PM UK**) and runs through the end-of-chapter event on **5 December**. All prior Captain-week gold goods return to chests, with **2× Sprite Dust / 2× Sprite XP** and boosted Treasure Hours on **28 Nov**. Epic frames Golden Week as the runway into Community Day.
 
 ## The golden umbrella
 
-The new glider looks like a **gold version** of the Community 'Brella design from the first Community Day: a **gold canopy** with **silver trim** and a **gold‑and‑grey handle**. According to leaks, it is earned free during the event window once Epic announces that window — it is **not** described as an Item Shop purchase.
+The new glider is the **Golden Community ’Brella** — a gold take on the Community ’Brella design from the first Community Day. It is earned by **logging in during the 5 Dec window**, not sold as an Item Shop purchase.
 
-## What last Community Day gave (guide only — not confirmed for this one)
+## What last Community Day gave (guide only)
 
 The first Fortnite Community Day ran on **Saturday 30 May 2026** during Chapter 7 Season 2. Logging in between **9 AM ET on 30 May** and **9 AM ET on 31 May** unlocked:
 
 - The free **Community 'Brella** — an all‑black common umbrella glider (in‑game description: "Squad up, together.") with a **"Prime (May 30)"** style
 - The silver **Reflector** wrap (originally from the 2020 Silver Surfer set files; never released before)
 
-Battle Pass / Crew owners also received an office‑style tie variant of **The Foundation (Reforged)**. Winning a Battle Royale match that day unlocked the **Lemmie Axe** pickaxe, **Space Blaster** wrap, and **Loons** back bling (the Loons back bling dated back to 2019 files). Twitch drops covered Metal Menace bundle accessories.
+Battle Pass / Crew owners also received an office‑style tie variant of **The Foundation (Reforged)**. Winning a Battle Royale match that day unlocked the **Lemmie Axe** pickaxe, **Space Blaster** wrap, and **Loons** back bling. Twitch drops covered Metal Menace bundle accessories.
 
-Gameplay extras that day included golden fireworks guns, finger guns, supercharged pizza, blue chests across the map, and a **Power Hour** (**12:30–1:30 PM PT**) where everyone started with a self‑res, a Cube Rifle, and an Infinity Blade. That Community Day landed a week before Chapter 7 Season 3.
-
-Treat the list above as **last time’s rewards** — a guide to what a Community Day *can* look like — **not** a confirmed reward sheet for the upcoming golden edition.
+Treat the May list as **last time’s rewards** — useful context, not a copy-paste sheet for 5 December beyond what Epic has already named (Golden ’Brella, Golden Jonesy, “and more”).
 
 ## How to make sure you get it
 
-When Epic announces the event window, **log in during that period**. Last time it was a **24‑hour login window** from **9 AM ET** (**2 PM UK**). Match‑win rewards and Twitch drops were separate tracks in May; we do **not** know yet whether this edition repeats that structure.
-
-Watch the [News](/news) hub and the in‑game MOTD for the official day and times. Confirm any shop‑adjacent cosmetics on the [Item Shop tracker](/tools/item-shop) if Epic also rotates related offers.
+1. **Log in** on **5 December** from **9 AM ET / 2 PM UK** until the end-of-chapter event ends for the **Golden Community ’Brella** and more.
+2. For **Golden Jonesy**, enable Twitch Drops and watch eligible streams between **5 Dec 9 AM ET** and **7 Dec 9 AM ET**.
+3. Watch the [News](/news) hub and in‑game MOTD for any extra surprise rewards Epic adds closer to the day.
 
 ## Quick FAQ
 
 **Is the golden umbrella free?**
-According to reports, **yes** — earned during Community Day, not sold in the Item Shop.
+**Yes** — log in during the **5 December** Community Day window.
 
 **When is Fortnite Community Day?**
-**Next week** (the week starting **30 November 2026**). Exact day not stated.
+**Saturday 5 December 2026**, from **9 AM ET / 2 PM UK** until the end-of-chapter event wraps.
 
-**Will the Community 'Brella return?**
-**Unknown.** The new glider is described as a gold version of that umbrella design; whether the original black Community 'Brella comes back has not been confirmed.
+**How do I get Golden Jonesy?**
+**Twitch Drops** from **5 Dec 9 AM ET** to **7 Dec 9 AM ET** (same times in UK: **2 PM** start / end).
 
-**Filed:** 23 November 2026. Status: **Watching**.
+**What is Golden Week?**
+The final treasure week starting **28 Nov** — details on the [Golden Week page](/leaks/fortnite-golden-week-november-2026).
+
+**Filed:** 23 November 2026. **Updated:** 24 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -580,19 +763,21 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
   },
   {
     slug: 'scott-pilgrim-fortnite-collab-leak',
-    title: 'Scott Pilgrim x Fortnite Skins Teased — Scott & Ramona Coming Soon',
+    title:
+      'Scott Pilgrim x Fortnite Official Trailer — Scott & Ramona Outfits Revealed',
     excerpt:
-      'Teaser art for Scott Pilgrim x Fortnite dropped ~5:10 PM UK on 23 Nov: Scott Pilgrim and Ramona Flowers skydiving in their anime-style look with the tagline “Romanticizing the dive.” First teaser after the earlier file leak — strongly suggests the collab is close. No release date or prices yet.',
+      'On 24 Nov (~2 PM UK) Epic released the official Scott Pilgrim x Fortnite trailer and revealed the Scott Pilgrim and Ramona Flowers outfits with in-game images. Coming this week per Epic; exact release date and V-Bucks price not yet announced.',
     category: 'cosmetics',
     status: 'watching',
-    date: '2026-11-12',
+    date: '2026-11-24',
+    confirmedDate: '2026-11-24',
     readTime: 5,
     featured: true,
     image: '/images/guides/block-party.webp',
     tags: [
       'scott pilgrim fortnite',
       'scott pilgrim fortnite leak',
-      'scott pilgrim fortnite teaser',
+      'scott pilgrim fortnite trailer',
       'ramona flowers fortnite',
       'ramona flowers fortnite skin',
       'scott pilgrim fortnite release date',
@@ -601,56 +786,62 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
       'power of love sword fortnite emote',
     ],
     content: `
-## Teaser revealed — 23 Nov
+## Update — 24 November
 
-Around **5:10 PM UK on 23 November 2026**, teaser artwork for the **Scott Pilgrim x Fortnite** skins appeared. It shows **Scott Pilgrim** and **Ramona Flowers** in their anime‑style look skydiving through the sky, with the tagline **"Romanticizing the dive"**.
+Around **2 PM UK on 24 November 2026**, Epic released the **official Scott Pilgrim x Fortnite trailer** and revealed the **Scott Pilgrim** and **Ramona Flowers** outfits with **in-game images**. Epic’s own post says they are **coming to Fortnite this week**. An **exact shop day** and **V-Bucks price** have **not** been announced yet — outlets covering the trailer (including IGN) repeat the “this week” window without a timed reset.
 
-This is the **first teaser** after the earlier file leak and strongly suggests the collab is close. **No release date or prices** were given.
+These are the **graphic novel** looks for Scott and Ramona, not live-action likenesses.
+
+## Earlier teaser — 23 Nov
+
+Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim** and **Ramona Flowers** in their anime‑style look skydiving, with the tagline **"Romanticizing the dive."** That was the first public teaser after the file leak; the **24 Nov** trailer is the official confirmation.
 
 ## What was reportedly found (12 Nov files)
 
-- Hidden **male skin** thought to be **Scott Pilgrim**
+- Hidden **male skin** (now confirmed as **Scott Pilgrim**)
   - **Custom lobby pose** and a **LEGO** style
   - **Bass guitar** cosmetic (Scott plays bass)
   - **Comic/anime‑style shading**
   - An **emote** that uses a **sword prop** with **hearts** floating off it (echoing the “Power of Love” sword), with **Love**, **Energy**, and **Hilt** effects
   - A **back bling** with a matching **hilt effect**
-- Hidden **female skin** thought to be **Ramona Flowers**
+- Hidden **female skin** (now confirmed as **Ramona Flowers**)
   - **Custom lobby pose** and **LEGO** style
   - **Goggles Off** style, plus **Blue** and **Teal** styles
-  - Comes with **drums**, a **back bling**, and **two pickaxes**; the second pickaxe shows **star** and **speed‑line** effects (fans think this nods to her giant hammer)
+  - Comes with **drums**, a **back bling**, and **two pickaxes**; the second pickaxe shows **star** and **speed‑line** effects
 
 ## Set overview
 
-- Cosmetics listed across the set: **2 back blings, 3 pickaxes, 1 emote**
-- **Release date and price are unknown**. This has not been announced by Epic.
+- Cosmetics listed across the set in files: **2 back blings, 3 pickaxes, 1 emote** (plus instruments)
+- **Release date:** Epic says **this week** — no exact day/time yet
+- **Price:** **not announced**
 
 ## Confidence table
 
 | Claim | Status |
 | --- | --- |
-| Two comic/anime‑shaded skins + LEGO styles in files | Leak |
-| Bass / drums / sword‑heart emote / pickaxes attached | Leak |
-| Officially Scott Pilgrim vs. the World / Ramona | **Guess** (prop tells are strong, still unannounced) |
-| Release date / V‑Buck price | Unknown |
+| Official Scott Pilgrim & Ramona Flowers outfits | **Confirmed** (Epic trailer, 24 Nov) |
+| Coming this week | **Official** (Epic) |
+| Exact shop reset / V‑Buck price | **Not announced** |
+| Bass / drums / sword‑heart emote / pickaxes / LEGO styles | Leak (pre‑trailer files) |
 
 ## What to watch next
 
 - Shop calendar rows: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
 - Live confirm after reset: [Item Shop tracker](/tools/item-shop) · [News](/news)
-- Same‑day collab chatter: [Doki Doki?](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
+- Same‑week collab chatter: [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
 
-**Filed:** 12 November 2026. **Updated:** 23 November 2026. Status: **Watching**.
+**Filed:** 12 November 2026. **Updated:** 24 November 2026. Status: **Watching**.
 `,
   },
   {
     slug: 'puss-in-boots-fortnite-collab-leak',
-    title: 'Puss in Boots Fortnite Collab Leak — Sidekick Voice Lines, Wolf Warrior Skin',
+    title:
+      'Puss in Boots x Fortnite 26 November — Death Outfit & Puss Sidekick',
     excerpt:
-      '12 Nov files reportedly add a two‑legged furry Sidekick (feathered hat, Sword & Hat Off styles) with its own emote, voice lines in 12 languages, and Kicks — plus a hooded wolf warrior skin (possibly Death), LEGO style, glowing head/body effects, custom head skeleton. Not announced.',
+      'According to leaks, Puss in Boots x Fortnite lands 26 November 2026: a Death outfit (the wolf from The Last Wish) with back bling, pickaxe, custom lobby pose and traversal emote, plus a Puss Sidekick with matching kicks, Sword/Hat Off styles, an emote, and voice lines in 12 languages. Full bundle expected; pricing ~24 hours before.',
     category: 'cosmetics',
     status: 'active',
-    date: '2026-11-12',
+    date: '2026-11-24',
     readTime: 5,
     featured: true,
     image: '/images/guides/treasure-hunters.jpg',
@@ -661,18 +852,40 @@ This is the **first teaser** after the earlier file leak and strongly suggests t
       'fortnite sidekick leak',
       'fortnite voice lines leak',
       'puss in boots fortnite skin',
+      'death fortnite outfit',
+      'puss in boots fortnite 26 november',
     ],
     content: `
+## Update — 24 November
+
+**Puss in Boots x Fortnite** is now dated for **26 November 2026**. Earlier file posts called the wolf skin a “Wolf Warrior”; the outfit is now reported as **Death** — the wolf from *Puss in Boots: The Last Wish*. Status stays **Unconfirmed / active** until it actually hits the shop.
+
+### What’s included (according to leaks)
+
+**Death outfit**
+- The wolf **Death** look from *The Last Wish*
+- Matching **back bling** and **pickaxe**
+- **Custom lobby pose**
+- A **traversal emote** with a **special version** when used with Death
+
+**Puss Sidekick**
+- Matching **kicks**
+- Styles: **Sword**, **Hat Off**
+- Its **own emote**
+- **Voice lines in 12 languages**, with moods such as **happy** and **angry**
+
+A **full bundle** containing both is expected. **Pricing** is expected to be revealed about **24 hours before** release. Confirm tiles on the [Item Shop tracker](/tools/item-shop) once Epic posts them.
+
 ## What was reportedly found (12 Nov files)
 
-**Sidekick (likely Puss)**
+**Sidekick (Puss)**
 - **Furry, two‑legged Sidekick** with **feather** and **beard** materials
 - **Sword** and **Hat Off** styles
 - Its **own emote**
 - **Voice lines in 12 languages** (happy, angry, etc.)
 - Matching **Kicks**
 
-**Male skin (fans think “Death,” the wolf)**
+**Male skin (Death, the wolf)**
 - **Custom lobby pose**
 - **Fur** and **tail**, **Hood** style
 - **LEGO** style
@@ -683,35 +896,37 @@ This is the **first teaser** after the earlier file leak and strongly suggests t
 
 ## Bundle & shop
 
-- Files suggest the **Sidekick and the skin are bundled**, with **pirate‑themed shop tiles**
-- **Release date/price unknown**. Not announced by Epic.
+- Files suggested the **Sidekick and the skin are bundled**, with **pirate‑themed shop tiles**
+- **Release date (reported):** **26 November 2026**
+- **Price:** expected ~**24 hours** before launch — not published yet
 
 ## Confidence table
 
 | Claim | Status |
 | --- | --- |
 | Furry Sidekick + voice lines + Kicks in files | Leak |
-| Hooded wolf warrior skin + LEGO + glow effects | Leak |
-| Characters are Puss / Death from *The Last Wish* | **Guess** (strong theming, unannounced) |
-| Pirate shop tiles / bundle packaging | Leak read |
+| Death wolf outfit + lobby pose + traversal emote | Leak (reconciled from earlier “Wolf Warrior” label) |
+| Shop date **26 Nov 2026** | Leak |
+| Bundle + pricing ~24h before | Leak / expected |
+| Official Epic announcement | **Not yet** |
 
 ## What to watch next
 
 - [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · [Item Shop tracker](/tools/item-shop)
-- Season cadence: [Captain’s Days](/leaks/captain-days-content-stack)
-- Same dump: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Doki Doki?](/leaks/doki-doki-literature-club-fortnite-leak)
+- Same dump: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)
 
-**Filed:** 12 November 2026. Status: **Unconfirmed**.
+**Filed:** 12 November 2026. **Updated:** 24 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
     slug: 'doki-doki-literature-club-fortnite-leak',
-    title: 'Doki Doki Literature Club x Fortnite? 4 Hidden Anime Skins Leaked',
+    title:
+      'Doki Doki Literature Club x Fortnite Leak — Sayori, Natsuki, Yuri & Monika',
     excerpt:
-      '12 Nov update reportedly hides 4 cel‑shaded anime female skins, each with a custom lobby animation; at least 2 with cloth physics and 1 with special hair physics. Sold as a 4‑pack bundle and separately. Fans think DDLC — NOTHING confirmed.',
+      'According to leaks, Doki Doki Literature Club x Fortnite is coming within about a week of 24 Nov 2026: four outfits — Sayori, Natsuki, Yuri and Monika — with no other cosmetics in the set.',
     category: 'cosmetics',
     status: 'active',
-    date: '2026-11-12',
+    date: '2026-11-24',
     readTime: 5,
     featured: true,
     image: '/images/guides/select-character.webp',
@@ -722,8 +937,15 @@ This is the **first teaser** after the earlier file leak and strongly suggests t
       'anime skins fortnite leak',
       'cel shaded fortnite skins',
       'fortnite four anime skins',
+      'sayori natsuki yuri monika fortnite',
     ],
     content: `
+## Update — 24 November
+
+According to leaks, **Doki Doki Literature Club x Fortnite** is now reported as coming **within about a week of 24 November 2026**. The set is described as **four outfits only**: **Sayori**, **Natsuki**, **Yuri**, and **Monika**, with **no other cosmetics** (no pickaxes, back blings, or wraps called out in the same set).
+
+This remains a **leak**, not an Epic announcement — treat the character names and timing as unconfirmed until they appear in the shop or an official trailer.
+
 ## What was reportedly found (12 Nov files)
 
 Dataminer dump for a hidden cosmetics set:
@@ -734,32 +956,31 @@ Dataminer dump for a hidden cosmetics set:
 - Sell‑through: **one 4‑pack bundle** plus **individual** purchase options
 - Notes referenced **no pickaxes / back blings / wraps** in the same set — skins only
 
-## Is this Doki Doki Literature Club?
+## Character read
 
-Fans mapped “four anime girls” onto **DDLC** (**Monika, Sayori, Yuri, Natsuki**). That read is **community speculation** — the leak posts themselves do **not** confirm character names, voice lines, or Team Salvato marketing.
+Fans mapped the four skins onto **DDLC** leads **Monika, Sayori, Yuri, and Natsuki**. The **24 Nov** update reports those names explicitly as the leaked outfit lineup. Still **not** confirmed by Epic or Team Salvato marketing.
 
-Same‑day dump also floated **Scott Pilgrim** and **Puss in Boots** as separate hidden sets with stronger prop/effect tells — see:
+Same‑week collab pages:
 
-- [Scott Pilgrim / Ramona leak](/leaks/scott-pilgrim-fortnite-collab-leak)
-- [Puss in Boots / wolf warrior leak](/leaks/puss-in-boots-fortnite-collab-leak)
+- [Scott Pilgrim / Ramona](/leaks/scott-pilgrim-fortnite-collab-leak) (official trailer out)
+- [Puss in Boots / Death](/leaks/puss-in-boots-fortnite-collab-leak) (dated **26 Nov**)
 
 ## Confidence
 
 | Claim | Status |
 | --- | --- |
 | Four cel‑shaded female skins in files | Leak |
-| Custom lobby poses + cloth / hair physics | Leak |
-| Sold as 4‑pack + singles, no extra cosmetics | Leak |
-| Actually DDLC characters | **Guess only** |
-| Release date / price | Unknown |
+| Outfits are Sayori, Natsuki, Yuri, Monika | Leak (reported 24 Nov) |
+| No other cosmetics in the set | Leak |
+| Coming within ~a week of 24 Nov | Leak |
+| Official announcement / price | Unknown |
 
 ## What to watch next
 
 - Bundle/pricing still blank — track [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) and [Item Shop](/tools/item-shop)
 - Lobby MOTD / blog confirmation: [News](/news)
-- Same‑day dump siblings: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
 
-**Release date unknown.** Status: **Unconfirmed**. Filed 12 November 2026.
+**Updated:** 24 November 2026. Status: **Unconfirmed**. Filed 12 November 2026.
 `,
   },
   {
@@ -1001,10 +1222,10 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
     slug: 'fortnite-chapter-8-season-2-release-date',
     title: 'Fortnite Chapter 8 Season 1 & Season 2 Release Dates (Dec 5 & Mar 4)',
     excerpt:
-      'According to leaks on 10 Nov 2026, Chapter 8 Season 1 is scheduled for 5 December 2026 and Season 2 for 4 March 2027 — putting Season 1 at roughly 89 days. These come from Epic scheduling, not a public announcement, and could still shift.',
+      'v43.11, the final Chapter 7 update, rolled out 24 Nov 2026 at 9 AM UTC (4 AM ET) for the end event and Community Day plus bug fixes — no new cosmetics expected. Chapter 8 Season 1 still 5 Dec; Season 2 still 4 Mar 2027 per earlier scheduling leaks.',
     category: 'chapter',
     status: 'watching',
-    date: '2026-11-10',
+    date: '2026-11-24',
     readTime: 3,
     featured: true,
     image: '/images/guides/hit-by-chaos.webp',
@@ -1017,6 +1238,12 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
       'fortnite chapter 8 graphics',
     ],
     content: `
+## Update — 24 November
+
+**v43.11**, the **final update of Chapter 7**, rolled out on **24 November 2026 at 9 AM UTC** (**4 AM ET**). It is aimed at the **end event** and **Community Day**, plus **bug fixes**. **No new cosmetics** are expected from this patch.
+
+**Chapter 8 Season 1** is still slated for **5 December 2026**.
+
 ## What was reported
 
 According to leaks on **10 November 2026**, **Chapter 8 Season 1** is scheduled for **5 December 2026** and **Chapter 8 Season 2** for **4 March 2027**. That puts Chapter 8 Season 1 at roughly **89 days**.
@@ -1050,7 +1277,7 @@ Epic has **not** shown Chapter 8 visuals officially yet. Treat the Chapter 4 com
 - Official Chapter 8 art direction or POIs
 - Whether these dates move
 
-**Filed:** 10 November 2026. **Updated:** 23 November 2026. Status: **Watching**.
+**Filed:** 10 November 2026. **Updated:** 24 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -1400,12 +1627,12 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 22–24 Nov: Phineas & Ferb, Privateer Oscar, Gorillaz, Persona 5',
+      'Upcoming Fortnite Item Shop Leaks — 24 Nov Onward: Lucien West, One Punch Man, Ferrari, Collabs',
     excerpt:
-      'Leaked 23 Nov shop: Phineas and Ferb and Pirates of the Caribbean returns, Harvest Season autumn set, Nemia & Lexa Hexbringer, and the new Cardamom Sidekick. 22 Nov leaked shop: Privateer Oscar bundle, Overwatch Wave 1, Crash & Spyro, Gorillaz, ICON Lachlan & Rubius. Persona 5 Royal still pointed at 24 Nov. Confirm prices on the Item Shop tracker.',
+      '24 Nov shop (00:00 UK): Lucien West, One Punch Man, and Ferrari skins & cars return. Coming soon: Puss in Boots (26 Nov), Doki Doki Literature Club (within a week), Ember & Blade x Fortnite on 1 Dec (EGS gift-with-purchase or 1,500 V-Bucks). Confirm prices on the Item Shop tracker.',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-15',
+    date: '2026-11-24',
     readTime: 5,
     featured: true,
     image: '/images/guides/kiriko-featured.webp',
@@ -1431,6 +1658,25 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'metro station shake it fortnite emote',
     ],
     content: `
+## Update — 24 November
+
+### 24 November shop
+
+Item Shop for the **24 November 2026** reset (**00:00 UK** / **7 PM ET on 23 Nov**):
+
+- **Lucien West** returns
+- **One Punch Man** returns
+- **Ferrari** skins and cars return
+
+Confirm every tile and price on the [Item Shop tracker](/tools/item-shop).
+
+### Coming soon
+
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **26 November 2026** (Death outfit + Puss Sidekick; pricing expected ~24 hours before)
+- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — within about a week of **24 Nov** (Sayori, Natsuki, Yuri, Monika — outfits only)
+- **Ember & Blade x Fortnite** — **1 December**: available as a **gift-with-purchase** when you buy *Ember & Blade* (LINE Games’ survivors-like action RPG) on the **Epic Games Store**, or for **1,500 V-Bucks** in the Item Shop
+- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — official trailer out **24 Nov**; Epic says **this week** (exact day/price TBC)
+
 ## 23 November shop
 
 Leaked Item Shop for the **23 November 2026** reset (**00:00 UK** / **7pm ET on 22 Nov**). Confirm every tile and price on the [Item Shop tracker](/tools/item-shop) — prices below are **not** known from the leak grid alone.
@@ -1475,10 +1721,15 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 | **21 Nov (shop)** | Crash & Spyro · Privateer Oscar · Wave 1 BR return | **Missed 21 Nov** — landed **22 Nov** · [context](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) |
 | **22 Nov (shop)** | Privateer Oscar bundle · Wave 1 · Crash & Spyro · Gorillaz · Lachlan & Rubius | **Landed 22 Nov** (leaked shop) |
 | **23 Nov (shop)** | Phineas & Ferb · PotC · Harvest Season · Nemia/Lexa · **Cardamom** Sidekick | **Landed 23 Nov** (leaked shop) |
-| **24 Nov (shop)** | **Persona 5 Royal** (Joker & Panther) | Shown in **Epic’s shop reel** |
+| **24 Nov (shop)** | **Lucien West** · **One Punch Man** · **Ferrari** skins & cars | **24 Nov reset** |
+| **26 Nov** | **Puss in Boots** (Death + Puss Sidekick) | Leak · [page](/leaks/puss-in-boots-fortnite-collab-leak) |
+| **~week of 24 Nov** | **DDLC** four outfits | Leak · [page](/leaks/doki-doki-literature-club-fortnite-leak) |
+| **1 Dec** | **Ember & Blade** collab outfit | EGS GWP or **1,500** V-Bucks |
+| **This week** | **Scott Pilgrim** / Ramona | Official trailer · day TBC |
 
 ## Already shipped (recent)
 
+- **24 Nov:** Lucien West · One Punch Man · Ferrari skins & cars
 - **23 Nov:** Phineas & Ferb · Pirates of the Caribbean · Harvest Season · Nemia & Lexa Hexbringer · **Cardamom** Sidekick (new)
 - **22 Nov:** Privateer Oscar bundle · Overwatch Wave 1 · Crash & Spyro · Gorillaz · ICON Lachlan & Rubius
 - **21 Nov:** **Kiriko & Widowmaker** (Overwatch Wave 2) · **Ice Spice** returned · ICON emotes refresh · Metro Station **"Shake It"** emote
@@ -1493,7 +1744,7 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 
 Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Prices: [Item Shop tracker](/tools/item-shop). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 23 November 2026.
+**Updated:** 24 November 2026.
 `,
   },
   {
@@ -1599,12 +1850,12 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
   {
     slug: 'pirate-shop-power-hours',
     title:
-      'Fortnite Treasure Hours 21 Nov: Pirate Shop Token & Gold Miku Boost Times',
+      'Fortnite Treasure Hours: 28 Nov Golden Week Odds (15× Outfits) & Past Windows',
     excerpt:
-      'Next up: two Treasure Hours on Sat 21 Nov — 2–4pm ET (7–9pm UK) and 9–11pm ET (2–4am UK Sun). Expected multipliers match 14 Nov in‑game: Pirate Shop Token 1.5×, Weekly Gold Outfit 7.5× (to be confirmed in‑game). 7 Nov ran 2.0× / 10×.',
+      'Next: Golden Week Treasure Hours on 28 Nov with 15× Gold Outfits (Epic). Past: two Treasure Hours on Sat 21 Nov — 2–4pm ET (7–9pm UK) and 9–11pm ET (2–4am UK Sun) at 1.5× Token / 7.5× Gold. Full Golden Week rundown on the Golden Week page.',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-04',
+    date: '2026-11-24',
     confirmedDate: '2026-11-07',
     readTime: 4,
     featured: true,
@@ -1622,6 +1873,10 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
       'pirate shop token boost',
     ],
     content: `
+## Update — 24 November
+
+**Golden Week Treasure Hours on 28 November** boost **Gold Outfits to 15×** (vs the usual Treasure Hours **7.5×**), with **Vehicles & Decals at 10×** and **Pirate Shop Access at 1.5×**. Full schedule, pool details, and Community Day lead-in: [Fortnite Golden Week](/leaks/fortnite-golden-week-november-2026).
+
 ## What are Power Hours?
 Short, scheduled windows later in the season that temporarily boost the chance to roll the **Pirate Shop Access** prize from Battle Royale chests.
 
@@ -1672,7 +1927,7 @@ They are **expected** to match **14 Nov** (**1.5× Token**, **7.5× Gold**) and 
 
 We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated:** 21 November 2026. Status: **Watching** — confirm multipliers in‑client when the windows open.
+**Filed:** 4 November 2026. **Updated:** 24 November 2026. Status: **Watching** — confirm multipliers in‑client when the windows open.
 `,
   },
   {
