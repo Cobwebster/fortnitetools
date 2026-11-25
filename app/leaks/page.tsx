@@ -75,7 +75,7 @@ export default function LeaksPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
-              Fresh: Golden Week from 28 Nov, free Treasure Hunter / Gilded Hunter Hope bonus skins, Puss in Boots on 26 Nov, Community Day 5 Dec, Scott Pilgrim official trailer. Still watching: DDLC (within a week), Winterfest, Chapter 8 on 5 Dec.
+              Fresh: Fortnite Crew changes + final Crew skin N.E.K.O. from 5 Dec, Puss in Boots on 26 Nov, Scott Pilgrim on 29 Nov, Golden Week from 28 Nov, Community Day 5 Dec. Still watching: DDLC (within a week), Winterfest, Chapter 8 on 5 Dec.
               Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">

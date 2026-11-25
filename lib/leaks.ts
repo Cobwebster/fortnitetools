@@ -59,6 +59,113 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'fortnite-crew-changes-december-2026-neko-final-crew-skin',
+    title:
+      'Fortnite Crew Changes 5 December — N.E.K.O. Is the Final Crew Pack Skin',
+    excerpt:
+      'Epic’s official Crew overhaul lands 5 December 2026: tiered monthly V-Bucks (1,000–1,600), OG Pass ends, XP boosts for you and your squad, and Crew Pack outfits end with December’s N.E.K.O. — the last Crew Pack outfit ever. N.E.K.O. became viewable in-game on 25 Nov.',
+    category: 'cosmetics',
+    status: 'watching',
+    date: '2026-11-25',
+    confirmedDate: '2026-11-25',
+    readTime: 7,
+    featured: true,
+    image: '/images/guides/select-character.webp',
+    tags: [
+      'fortnite crew changes december 5',
+      'last fortnite crew skin',
+      'neko crew skin fortnite',
+      'fortnite og pass ending',
+      'december 2026 crew pack',
+      'n.e.k.o. fortnite',
+      'fortnite crew vbucks tiers',
+      'fortnite crew legacy styles',
+    ],
+    content: `
+## What’s happening
+
+On **25 November 2026** around **6 PM UK**, the **N.E.K.O.** outfit became **viewable in-game**. It is the **December 2026 Fortnite Crew Pack** outfit — and, per Epic’s official announcement, the **last Crew Pack outfit** Fortnite will ship.
+
+The same day, Epic published **[Big Changes to Fortnite Crew Launching December 5](https://www.fortnite.com/news/big-changes-to-fortnite-crew-launching-december-5)**. The overhaul starts **5 December 2026**. That date also lines up with **[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date)** and **[Community Day](/leaks/fortnite-community-day-golden-umbrella)**.
+
+## N.E.K.O. — December 2026 Crew Pack (final outfit)
+
+**N.E.K.O.** is a **Crew Series** outfit in the **N.E.K.O.** set. In-game selectable styles include **N.E.K.O.**, **T.Y.G.R.**, **G.O.L.D.I.E.**, **P.E.A.R.L.**, **I.C.Y.**, and **O.R.I.O.N.**, plus a **Hood** on/off option. Epic’s post is clear: **Crew Pack outfits are ending**, and **December’s pack is the final one**.
+
+Epic’s FAQ adds that the **final December Crew Pack will be granted for subscribers throughout all of December** — so you do not need to be subscribed only on day one of the month to receive it if you stay (or join) as a Crew member during December.
+
+Fortnite Crew remains **$11.99 USD**. That price is **not** changing with the 5 December update.
+
+## What changes on 5 December (official)
+
+Epic lists four headline changes:
+
+1. **Monthly V-Bucks** start at **1,000** and rise the longer you stay subscribed, topping out at **1,600** at **12 months**.
+2. **OG Pass ends on 5 December** with a dramatic conclusion at the end of **Chapter 1: OG Season X**. The **next era of Fortnite OG** drops in **late 2027**.
+3. **+20% XP** for the Crew subscriber, and **+10% XP** for squad members playing with you.
+4. **Crew Pack outfits end** with December’s pack; **all Legacy Styles** for Crew Pack outfits you already own **will be granted**.
+
+### What is not changing
+
+Epic is explicit about the keepers:
+
+- **Price** stays **$11.99 USD**
+- The **Fortnite Battle Pass**, **Music Pass**, **LEGO Pass**, and **Rocket Pass Premium** are **still included** with Crew
+
+Pass calendar Epic called out through year-end: **Music Mini-Pass** (12 Nov), then **LEGO Mini-Pass** and the **Fortnite Battle Pass** both on **5 December**.
+
+## V-Bucks tiers (official)
+
+| Tier | Tenure | Monthly V-Bucks |
+| --- | --- | --- |
+| **Core** | 1–2 months | **1,000** |
+| **Bronze** | 3–5 months | **1,200** |
+| **Silver** | 6–11 months | **1,400** |
+| **Gold** | 12+ months | **1,600** |
+
+If you previously subscribed and want credit for past tenure, Epic says: **resubscribe between 6 December and 31 December 2026 at 11:59 PM ET**, and your starting tier will reflect your **most recent continuous subscription period over the past 12 months**. Check the **in-game Crew tab on 5 December** for your starting tier.
+
+Already subscribed? Epic says you **do not need to do anything** to keep the subscription when the changes roll out.
+
+## XP boosts
+
+Crew members earn **+20% Fortnite XP**. Party up, and members **without** Crew get a **+10%** boost while playing with you. Epic’s FAQ: Crew XP boosts **do not stack** with each other, and neither do party boosts — players without Crew get **one** 10% boost no matter how many Crew members are in the party.
+
+## Legacy Styles for outfits you already own
+
+Epic’s wording: **All Legacy Styles will be granted in December** for Crew Packs (**Outfits, Pickaxes, and Back Blings**) you own, **whether or not you’re currently subscribed**. You keep the Crew cosmetics you already unlocked; the December grant fills in remaining Legacy Styles for packs you own.
+
+## Same day: Chapter 8 & Community Day
+
+**5 December 2026** is crowded:
+
+- **Crew changes** go live (official)
+- **[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date)** is the reported chapter start
+- **[Community Day](/leaks/fortnite-community-day-golden-umbrella)** — Golden Community ’Brella login reward, Golden Jonesy Twitch Drops, and the chapter wrap window
+
+Plan V-Bucks, Battle Pass, and login rewards around that single calendar day.
+
+## FAQ
+
+**Is N.E.K.O. the last Crew skin?**
+**Yes.** Epic states Crew Pack outfits are ending and **December’s pack is the final one**. N.E.K.O. is that December 2026 Crew Pack outfit.
+
+**When do Crew changes start?**
+**5 December 2026**, per Epic’s official post.
+
+**How many V-Bucks will Crew give?**
+**1,000** per month at Core (1–2 months), rising to **1,200** (Bronze), **1,400** (Silver), and **1,600** at Gold (**12+ months**).
+
+**Is OG Pass ending?**
+**Yes.** Epic says OG Pass ends **5 December** with a conclusion at the end of **Chapter 1: OG Season X**. The next era of Fortnite OG is set for **late 2027**.
+
+**Do I keep my old Crew skins / styles?**
+You keep what you own. Epic will **grant all remaining Legacy Styles in December** for Crew Pack Outfits, Pickaxes, and Back Blings you already own — even if you are not currently subscribed.
+
+**Filed / updated:** 25 November 2026. Status: **Watching** (official announcement; N.E.K.O. viewable, Crew changes go live 5 Dec).
+`,
+  },
+  {
     slug: 'fortnite-golden-week-november-2026',
     title:
       'Fortnite Golden Week Starts 28 November — All Gold Outfits Back in Chests',
@@ -380,12 +487,12 @@ According to Epic’s notes as reported, **yes** — PC controller strength was 
   {
     slug: 'fortnite-crash-spyro-persona-5-royal-return-dates',
     title:
-      'Crash Bandicoot, Spyro & Persona 5 Royal Return to Fortnite: Shop Dates (22–24 Nov)',
+      'Crash Bandicoot, Spyro & Persona 5 Royal Return to Fortnite: Shop Dates (22–25 Nov)',
     excerpt:
-      'According to the leaked 22 Nov shop, Crash Bandicoot & Spyro, Overwatch Wave 1, and Privateer Oscar (full bundle) arrived with the 22 Nov reset — a day later than first reported. Gorillaz and ICON Lachlan & Rubius were also in that shop. Cardamom Sidekick landed 23 Nov. Persona 5 Royal still expected 24 Nov.',
+      'Crash Bandicoot & Spyro, Overwatch Wave 1, and Privateer Oscar landed with the 22 Nov reset. Cardamom Sidekick landed 23 Nov. Persona 5 Royal actually returned with the 25 Nov shop (00:00 UK) — a day later than the 24 Nov window first expected from Epic’s reel.',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-19',
+    date: '2026-11-25',
     readTime: 5,
     featured: true,
     image: '/images/guides/crash-bandicoot-featured.webp',
@@ -395,14 +502,18 @@ According to Epic’s notes as reported, **yes** — PC controller strength was 
       'persona 5 fortnite return',
       'joker fortnite skin return',
       'fortnite item shop november 22',
-      'fortnite item shop november 24',
+      'fortnite item shop november 25',
       'privateer oscar fortnite skin',
       'overwatch wave 1 fortnite return',
     ],
     content: `
+## 25 Nov update — Persona 5 Royal returned
+
+**Persona 5 Royal** returned with the **25 November 2026** Item Shop reset (**00:00 UK** / **7 PM ET on 24 Nov**) — **one day later** than the **24 Nov** window first expected from Epic’s shop reel. Live shop data lists the **Persona 5 Royal Bundle** at **3,800 V‑Bucks**, with **Joker** and **Panther** at **1,800** each and **Morgana** Sidekick at **1,500**. Full 25 Nov shop rundown: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks). Confirm leave timers on the [Item Shop tracker](/tools/item-shop).
+
 ## 22 Nov update — Crash, Spyro, Wave 1 & Oscar landed a day late
 
-According to the leaked **22 November** shop, **Crash Bandicoot & Spyro**, **Overwatch Wave 1**, and **Privateer Oscar** (now as a full bundle) arrived with the **22 Nov** reset — **one day later** than the first **21 Nov** reports. **Gorillaz** and **ICON Lachlan & Rubius** were also in that shop. **Persona 5 Royal** is still expected **24 Nov**. Full shop rundown: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+According to the leaked **22 November** shop, **Crash Bandicoot & Spyro**, **Overwatch Wave 1**, and **Privateer Oscar** (now as a full bundle) arrived with the **22 Nov** reset — **one day later** than the first **21 Nov** reports. **Gorillaz** and **ICON Lachlan & Rubius** were also in that shop.
 
 Leaks on **18–19 November** had originally put Crash, Spyro, Privateer Oscar, and Wave 1 on the **21 November** reset. After that reset: Crash, Spyro, and Privateer Oscar were **not** in the live shop, and Wave 1 outfits did **not** return as standalone BR rows that day — **D.Va / Mercy / Tracer / Genji** only showed as **Rocket Racing car skins** inside the **Porsche Cayenne Turbo Electric + Overwatch** pack. **Kiriko & Widowmaker** (Wave 2) remain live — [Kiriko & Widowmaker](/leaks/fortnite-overwatch-wave-2-kiriko-widowmaker).
 
@@ -416,13 +527,14 @@ Times below are the daily **Item Shop reset at 00:00 UK (GMT)** = **7:00 PM ET t
 | Sat **21 Nov** | **Crash & Spyro** · **Privateer Oscar** · Wave 1 BR return | **Missed 21 Nov** — landed **22 Nov** |
 | Sun **22 Nov** | Crash & Spyro · Privateer Oscar bundle · Wave 1 · Gorillaz · Lachlan & Rubius | **Landed** (leaked shop) |
 | Mon **23 Nov** | **Cardamom** Sidekick (plus Phineas & Ferb / PotC / Harvest) | **Landed** · [shop page](/leaks/upcoming-item-shop-leaks) |
-| Tue **24 Nov** | **Persona 5 Royal** | Shown in Epic’s shop reel |
+| Tue **24 Nov** | **Persona 5 Royal** (Epic reel expectation) | **Missed 24 Nov** — landed **25 Nov** |
+| Wed **25 Nov** | **Persona 5 Royal** return | **Landed** · [shop page](/leaks/upcoming-item-shop-leaks) |
 
 ## Crash Bandicoot & Spyro — 22 Nov return
 
 First drop: **28 Aug 2026** → left **11 Sep 2026**. **Crash** = outfit (+ **Crash Classic** / **LEGO** styles). **Spyro** = **Sidekick**, not an outfit.
 
-Last shop menu (reference only; return prices unconfirmed — check the [Item Shop tracker](/tools/item-shop)):
+Last shop menu (reference only; confirm return prices on the [Item Shop tracker](/tools/item-shop)):
 - Crash outfit (with Bandicoot wrap) — **1,500 V‑Bucks**
 - Spyro Sidekick — **1,500**
 - **Wumpa Mace** pickaxe — **800**
@@ -431,25 +543,23 @@ Last shop menu (reference only; return prices unconfirmed — check the [Item Sh
 - Crash’s Victory emote — **500**
 - Full bundle — **3,000**
 
-## Persona 5 Royal — 24 Nov (Epic reel)
+## Persona 5 Royal — returned 25 Nov
 
-Epic’s **18 Nov** next‑wave reel shows **Persona 5 Royal** on **24 November**. First sold **25 Sep 2026** (7pm ET); last seen **20 Oct 2026**.
+Epic’s **18 Nov** next‑wave reel had pointed at **24 November**; the set actually returned on **25 November** (**00:00 UK**). First sold **25 Sep 2026** (7pm ET); previously last seen around **early October 2026**.
 
-Original catalogue: **Joker**, **Ann Takamaki (Panther)**, transformation / Showtime emotes, **Shujin Academy** / **Carmen’s Heart** back blings, **Silver Dagger** / **Carmen’s Heart Flail** pickaxes, Eyes wraps, **Morgana** Sidekick, **Morgana Slippers**, Festival kit pieces, **"Life Will Change"** Jam Track. Last **Persona 5 Royal Bundle** was **3,800 V‑Bucks**. Return prices unconfirmed.
+Catalogue: **Joker**, **Ann Takamaki (Panther)**, transformation / Showtime emotes, **Shujin Academy** / **Carmen’s Heart** back blings, **Silver Dagger** / **Carmen’s Heart Flail** pickaxes, Eyes wraps, **Morgana** Sidekick, **Morgana Slippers**, Festival kit pieces, **"Life Will Change"** Jam Track. Current **Persona 5 Royal Bundle** price: **3,800 V‑Bucks**.
 
 ## Privateer Oscar + Captain’s Day
 
 Oscar was first leaked for the **21 Nov** shop ahead of **Captain’s Day** on **22 Nov**, then landed as a **full bundle** with the **22 Nov** reset according to the leaked shop. Buying the outfit is **not required** for Captain’s Day. Cadence: [Captain’s Days](/leaks/captain-days-content-stack).
 
-## What we don’t know yet
-
-- Return **prices** for Crash/Spyro and Persona 5 Royal (confirm on the tracker)
-- Exact leave times for the 22–23 Nov returns
-
 ## Quick FAQ
 
 **Did Crash and Spyro return on 21 Nov?**
 **No** — they missed that reset and landed with the **22 Nov** shop according to leaks.
+
+**Did Persona 5 Royal return on 24 Nov?**
+**No** — it returned with the **25 Nov** shop (**00:00 UK**), a day after the reel expectation.
 
 **Do I need Oscar for Captain’s Day?**
 **No.** See [Captain’s Days](/leaks/captain-days-content-stack).
@@ -457,7 +567,7 @@ Oscar was first leaked for the **21 Nov** shop ahead of **Captain’s Day** on *
 **Is Spyro a skin?**
 **Sidekick**, not a wearable outfit. **Crash** is the outfit.
 
-**Updated:** 22 November 2026.
+**Updated:** 25 November 2026.
 `,
   },
   {
@@ -764,14 +874,14 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
   {
     slug: 'scott-pilgrim-fortnite-collab-leak',
     title:
-      'Scott Pilgrim x Fortnite Official Trailer — Scott & Ramona Outfits Revealed',
+      'Scott Pilgrim x Fortnite 29 November — Scott & Ramona Hit the Item Shop',
     excerpt:
-      'On 24 Nov (~2 PM UK) Epic released the official Scott Pilgrim x Fortnite trailer and revealed the Scott Pilgrim and Ramona Flowers outfits with in-game images. Coming this week per Epic; exact release date and V-Bucks price not yet announced.',
+      'Scott Pilgrim and Ramona Flowers arrive in the Fortnite Item Shop on 29 November 2026 at 8 PM ET (1 AM UK on 30 Nov), per major outlet reports. Epic’s 24 Nov trailer confirmed the graphic-novel looks; a full in-game showcase leaked 24 Nov evening. Scott Pilgrim Cup (25 Nov) can unlock Scott early.',
     category: 'cosmetics',
     status: 'watching',
-    date: '2026-11-24',
+    date: '2026-11-25',
     confirmedDate: '2026-11-24',
-    readTime: 5,
+    readTime: 6,
     featured: true,
     image: '/images/guides/block-party.webp',
     tags: [
@@ -782,15 +892,26 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
       'ramona flowers fortnite skin',
       'scott pilgrim fortnite release date',
       'fortnite scott pilgrim skins',
+      'scott pilgrim cup fortnite',
       'fortnite lego style collab',
       'power of love sword fortnite emote',
     ],
     content: `
-## Update — 24 November
+## Update — 25 November: shop date & Scott Pilgrim Cup
 
-Around **2 PM UK on 24 November 2026**, Epic released the **official Scott Pilgrim x Fortnite trailer** and revealed the **Scott Pilgrim** and **Ramona Flowers** outfits with **in-game images**. Epic’s own post says they are **coming to Fortnite this week**. An **exact shop day** and **V-Bucks price** have **not** been announced yet — outlets covering the trailer (including IGN) repeat the “this week” window without a timed reset.
+**Scott Pilgrim** and **Ramona Flowers** are now dated for the **Item Shop on 29 November 2026**. Major outlets (including Beebom) report the drop at **8 PM ET on 29 Nov**, which is **1:00 AM UK on 30 November** (UK is on GMT). Epic’s trailer still framed the window as “this week”; the timed shop day comes from outlet coverage of the competitive / shop calendar rather than a separate fortnite.com blog timestamp — confirm the live countdown in-client.
 
-These are the **graphic novel** looks for Scott and Ramona, not live-action likenesses.
+On **25 November 2026**, Fortnite Competitive ran a **Scott Pilgrim Cup**. Top finishers can earn the **Scott Pilgrim** outfit, **Scott’s 1-UP** Back Bling, and a **Scott!** emoticon **early**, before the shop drop. Formats reported: Solo / Duos across Reload (Mobile) and Battle Royale / Zero Build. Eligibility notes from outlet coverage of the Compete tab: age **13+**, account level **50+**, and **2FA** enabled. Exact session times and reward thresholds vary by region — check the **Compete** tab in-game.
+
+A **full in-game showcase** of Scott and Ramona also circulated on the evening of **24 November**, after Epic’s trailer.
+
+## Creator background (24 Nov)
+
+Creator **Bryan Lee O’Malley** shared how the collab came together: talks between **Epic** and **Universal** started in **2024**, and the actual work came together over the past **~6 months**. Whether there is a **Wave 2** is up to Epic, not him. Context: in **July 2024** he had publicly said he told Universal to pursue a Fortnite collab if they wanted to.
+
+## Update — 24 November: official trailer
+
+Around **2 PM UK on 24 November 2026**, Epic released the **official Scott Pilgrim x Fortnite trailer** and revealed the **Scott Pilgrim** and **Ramona Flowers** outfits with **in-game images**. These are the **graphic novel** looks, not live-action likenesses.
 
 ## Earlier teaser — 23 Nov
 
@@ -812,25 +933,31 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
 ## Set overview
 
 - Cosmetics listed across the set in files: **2 back blings, 3 pickaxes, 1 emote** (plus instruments)
-- **Release date:** Epic says **this week** — no exact day/time yet
-- **Price:** **not announced**
+- **Release date:** **29 November 2026**, **8 PM ET** / **1 AM UK on 30 Nov** (outlet-reported shop time)
+- **Price:** **not announced** yet — confirm on the [Item Shop tracker](/tools/item-shop)
 
 ## Confidence table
 
 | Claim | Status |
 | --- | --- |
 | Official Scott Pilgrim & Ramona Flowers outfits | **Confirmed** (Epic trailer, 24 Nov) |
-| Coming this week | **Official** (Epic) |
-| Exact shop reset / V‑Buck price | **Not announced** |
-| Bass / drums / sword‑heart emote / pickaxes / LEGO styles | Leak (pre‑trailer files) |
+| Shop date **29 Nov 2026**, **8 PM ET** | **Outlet-reported** (Beebom et al.) |
+| Scott Pilgrim Cup rewards (outfit / 1-UP / emoticon) | **Reported** via Fortnite Competitive coverage (25 Nov) |
+| Exact V‑Buck price | **Not announced** |
+| Bass / drums / sword‑heart emote / pickaxes / LEGO styles | Leak (pre‑trailer files) / trailer-supported |
+
+## FAQ
+
+**When is Scott Pilgrim coming to Fortnite?**
+**29 November 2026** in the Item Shop, reported at **8 PM ET** (**1 AM UK on 30 Nov**). Confirm the in-game timer. Competitive players may unlock **Scott** early via the **Scott Pilgrim Cup** on **25 Nov**.
 
 ## What to watch next
 
-- Shop calendar rows: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
-- Live confirm after reset: [Item Shop tracker](/tools/item-shop) · [News](/news)
-- Same‑week collab chatter: [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
+- Shop calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- Live confirm: [Item Shop tracker](/tools/item-shop) · [News](/news)
+- Same‑week collabs: [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
 
-**Filed:** 12 November 2026. **Updated:** 24 November 2026. Status: **Watching**.
+**Filed:** 12 November 2026. **Updated:** 25 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -838,10 +965,10 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
     title:
       'Puss in Boots x Fortnite 26 November — Death Outfit & Puss Sidekick',
     excerpt:
-      'According to leaks, Puss in Boots x Fortnite lands 26 November 2026: a Death outfit (the wolf from The Last Wish) with back bling, pickaxe, custom lobby pose and traversal emote, plus a Puss Sidekick with matching kicks, Sword/Hat Off styles, an emote, and voice lines in 12 languages. Full bundle expected; pricing ~24 hours before.',
+      'According to leaks, a teaser trailer and full in-game showcase of Death and the Puss Sidekick dropped 25 Nov; the collab is due in the Item Shop tomorrow — 26 Nov 2026 at the 00:00 UK reset (7 PM ET on 25 Nov). Puss Sidekick has its own emote and voice lines. Still unconfirmed by Epic until it ships.',
     category: 'cosmetics',
     status: 'active',
-    date: '2026-11-24',
+    date: '2026-11-25',
     readTime: 5,
     featured: true,
     image: '/images/guides/treasure-hunters.jpg',
@@ -856,9 +983,17 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
       'puss in boots fortnite 26 november',
     ],
     content: `
+## Update — 25 November: teaser + showcase
+
+On **25 November 2026**, according to leaks, a **teaser trailer** and a **full in-game showcase** of **Death** and the **Puss Sidekick** circulated. The collab is reported as available **tomorrow** — the **26 November 2026** Item Shop reset at **00:00 UK (GMT)**, which is **7:00 PM ET on 25 November**.
+
+Epic has **not** posted an official fortnite.com / news teaser for this collab as of this update, so it stays **Unconfirmed / active** until the tiles actually appear in the shop. New detail from the showcase: the **Puss Sidekick** has its **own emote** and **voice lines** (happy / angry moods among them), matching earlier file reports of lines in **12 languages**.
+
+Confirm live tiles on the [Item Shop tracker](/tools/item-shop) after the reset.
+
 ## Update — 24 November
 
-**Puss in Boots x Fortnite** is now dated for **26 November 2026**. Earlier file posts called the wolf skin a “Wolf Warrior”; the outfit is now reported as **Death** — the wolf from *Puss in Boots: The Last Wish*. Status stays **Unconfirmed / active** until it actually hits the shop.
+**Puss in Boots x Fortnite** was dated for **26 November 2026**. Earlier file posts called the wolf skin a “Wolf Warrior”; the outfit is now reported as **Death** — the wolf from *Puss in Boots: The Last Wish*.
 
 ### What’s included (according to leaks)
 
@@ -874,7 +1009,7 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
 - Its **own emote**
 - **Voice lines in 12 languages**, with moods such as **happy** and **angry**
 
-A **full bundle** containing both is expected. **Pricing** is expected to be revealed about **24 hours before** release. Confirm tiles on the [Item Shop tracker](/tools/item-shop) once Epic posts them.
+A **full bundle** containing both is expected. **Pricing** is expected around the shop window — confirm on the tracker once Epic posts tiles.
 
 ## What was reportedly found (12 Nov files)
 
@@ -897,8 +1032,8 @@ A **full bundle** containing both is expected. **Pricing** is expected to be rev
 ## Bundle & shop
 
 - Files suggested the **Sidekick and the skin are bundled**, with **pirate‑themed shop tiles**
-- **Release date (reported):** **26 November 2026**
-- **Price:** expected ~**24 hours** before launch — not published yet
+- **Release date (reported):** **26 November 2026** — **00:00 UK** / **7 PM ET on 25 Nov**
+- **Price:** not published yet — check the tracker after reset
 
 ## Confidence table
 
@@ -906,8 +1041,9 @@ A **full bundle** containing both is expected. **Pricing** is expected to be rev
 | --- | --- |
 | Furry Sidekick + voice lines + Kicks in files | Leak |
 | Death wolf outfit + lobby pose + traversal emote | Leak (reconciled from earlier “Wolf Warrior” label) |
+| Teaser trailer + in‑game showcase (25 Nov) | Leak |
 | Shop date **26 Nov 2026** | Leak |
-| Bundle + pricing ~24h before | Leak / expected |
+| Bundle + pricing | Leak / expected |
 | Official Epic announcement | **Not yet** |
 
 ## What to watch next
@@ -915,7 +1051,7 @@ A **full bundle** containing both is expected. **Pricing** is expected to be rev
 - [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · [Item Shop tracker](/tools/item-shop)
 - Same dump: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)
 
-**Filed:** 12 November 2026. **Updated:** 24 November 2026. Status: **Unconfirmed**.
+**Filed:** 12 November 2026. **Updated:** 25 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
@@ -1222,10 +1358,10 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
     slug: 'fortnite-chapter-8-season-2-release-date',
     title: 'Fortnite Chapter 8 Season 1 & Season 2 Release Dates (Dec 5 & Mar 4)',
     excerpt:
-      'v43.11, the final Chapter 7 update, rolled out 24 Nov 2026 at 9 AM UTC (4 AM ET) for the end event and Community Day plus bug fixes — no new cosmetics expected. Chapter 8 Season 1 still 5 Dec; Season 2 still 4 Mar 2027 per earlier scheduling leaks.',
+      'v43.11, the final Chapter 7 update, rolled out 24 Nov 2026 at 9 AM UTC (4 AM ET) for the end event and Community Day plus bug fixes — no new cosmetics expected. Chapter 8 Season 1 still 5 Dec; Season 2 still 4 Mar 2027 per earlier scheduling leaks. Same day: Crew changes + final Crew skin N.E.K.O.',
     category: 'chapter',
     status: 'watching',
-    date: '2026-11-24',
+    date: '2026-11-25',
     readTime: 3,
     featured: true,
     image: '/images/guides/hit-by-chaos.webp',
@@ -1238,6 +1374,10 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
       'fortnite chapter 8 graphics',
     ],
     content: `
+## Update — 25 November
+
+**5 December 2026** is also when Epic’s official **[Fortnite Crew changes](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin)** land — tiered V‑Bucks, OG Pass ending, XP boosts, and **N.E.K.O.** as the final Crew Pack outfit.
+
 ## Update — 24 November
 
 **v43.11**, the **final update of Chapter 7**, rolled out on **24 November 2026 at 9 AM UTC** (**4 AM ET**). It is aimed at the **end event** and **Community Day**, plus **bug fixes**. **No new cosmetics** are expected from this patch.
@@ -1277,7 +1417,7 @@ Epic has **not** shown Chapter 8 visuals officially yet. Treat the Chapter 4 com
 - Official Chapter 8 art direction or POIs
 - Whether these dates move
 
-**Filed:** 10 November 2026. **Updated:** 24 November 2026. Status: **Watching**.
+**Filed:** 10 November 2026. **Updated:** 25 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -1627,55 +1767,64 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 24 Nov Onward: Lucien West, One Punch Man, Ferrari, Collabs',
+      'Upcoming Fortnite Item Shop Leaks — 25 Nov Onward: Digital Circus, Persona 5, Collabs',
     excerpt:
-      '24 Nov shop (00:00 UK): Lucien West, One Punch Man, and Ferrari skins & cars return. Coming soon: Puss in Boots (26 Nov), Doki Doki Literature Club (within a week), Ember & Blade x Fortnite on 1 Dec (EGS gift-with-purchase or 1,500 V-Bucks). Confirm prices on the Item Shop tracker.',
+      '25 Nov shop (00:00 UK): Pomni & Jax (Amazing Digital Circus), ICON emotes refresh, Persona 5 Royal return, Addison Rae, Hoppers, TheGrefg & MrSavage, plus Tyla & Zara Larsson’s “She Did It Again” emote. Coming soon: Puss in Boots (26 Nov), Scott Pilgrim (29 Nov), DDLC, Ember & Blade (1 Dec).',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-24',
+    date: '2026-11-25',
     readTime: 5,
     featured: true,
     image: '/images/guides/kiriko-featured.webp',
     tags: [
       'fortnite item shop leaks',
+      'fortnite item shop november 25',
       'fortnite item shop november 22',
       'fortnite item shop november 23',
-      'phineas and ferb fortnite return',
-      'pirates of the caribbean fortnite shop',
-      'cardamom sidekick fortnite',
-      'fortnite harvest season skins',
-      'gorillaz fortnite return',
-      'privateer oscar fortnite bundle',
-      'lachlan fortnite skin',
-      'rubius fortnite skin',
-      'overwatch wave 1 fortnite return',
+      'pomni fortnite',
+      'jax fortnite',
+      'amazing digital circus fortnite',
       'persona 5 fortnite',
+      'addison rae fortnite',
+      'thegrefg fortnite',
+      'mrsavage fortnite',
+      'she did it again fortnite',
+      'tyla zara larsson fortnite',
+      'phineas and ferb fortnite return',
+      'privateer oscar fortnite bundle',
       'crash bandicoot fortnite',
-      'capn hatsune miku fortnite',
-      'kiriko fortnite',
-      'widowmaker fortnite',
-      'ice spice fortnite return',
-      'metro station shake it fortnite emote',
     ],
     content: `
-## Update — 24 November
+## Update — 25 November
 
-### 24 November shop
+### 25 November shop
+
+Item Shop for the **25 November 2026** reset (**00:00 UK** / **7 PM ET on 24 Nov**):
+
+- **Pomni** & **Jax** from **The Amazing Digital Circus** return
+- **ICON Series emotes** refresh
+- **Persona 5 Royal** returns — [return dates page](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates)
+- **Addison Rae** returns
+- **Hoppers** return
+- **TheGrefg** & **MrSavage** Icon Series items return
+- **Tyla** & **Zara Larsson** — **"She Did It Again"** emote (new Icon Series dance, **500** V‑Bucks)
+
+Confirm every tile and price on the [Item Shop tracker](/tools/item-shop).
+
+### Coming soon
+
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **26 November 2026** (Death outfit + Puss Sidekick; **00:00 UK** / **7 PM ET on 25 Nov**)
+- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — **29 November 2026** at **8 PM ET** / **1 AM UK on 30 Nov** (Scott & Ramona)
+- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — within about a week of **24 Nov** (Sayori, Natsuki, Yuri, Monika — outfits only)
+- **Ember & Blade x Fortnite** — **1 December**: available as a **gift-with-purchase** when you buy *Ember & Blade* (LINE Games’ survivors-like action RPG) on the **Epic Games Store**, or for **1,500 V-Bucks** in the Item Shop
+
+## 24 November shop
 
 Item Shop for the **24 November 2026** reset (**00:00 UK** / **7 PM ET on 23 Nov**):
 
 - **Lucien West** returns
 - **One Punch Man** returns
 - **Ferrari** skins and cars return
-
-Confirm every tile and price on the [Item Shop tracker](/tools/item-shop).
-
-### Coming soon
-
-- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **26 November 2026** (Death outfit + Puss Sidekick; pricing expected ~24 hours before)
-- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — within about a week of **24 Nov** (Sayori, Natsuki, Yuri, Monika — outfits only)
-- **Ember & Blade x Fortnite** — **1 December**: available as a **gift-with-purchase** when you buy *Ember & Blade* (LINE Games’ survivors-like action RPG) on the **Epic Games Store**, or for **1,500 V-Bucks** in the Item Shop
-- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — official trailer out **24 Nov**; Epic says **this week** (exact day/price TBC)
 
 ## 23 November shop
 
@@ -1721,14 +1870,16 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 | **21 Nov (shop)** | Crash & Spyro · Privateer Oscar · Wave 1 BR return | **Missed 21 Nov** — landed **22 Nov** · [context](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) |
 | **22 Nov (shop)** | Privateer Oscar bundle · Wave 1 · Crash & Spyro · Gorillaz · Lachlan & Rubius | **Landed 22 Nov** (leaked shop) |
 | **23 Nov (shop)** | Phineas & Ferb · PotC · Harvest Season · Nemia/Lexa · **Cardamom** Sidekick | **Landed 23 Nov** (leaked shop) |
-| **24 Nov (shop)** | **Lucien West** · **One Punch Man** · **Ferrari** skins & cars | **24 Nov reset** |
+| **24 Nov (shop)** | **Lucien West** · **One Punch Man** · **Ferrari** skins & cars | **Landed 24 Nov** |
+| **25 Nov (shop)** | Digital Circus · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** | **Landed 25 Nov** |
 | **26 Nov** | **Puss in Boots** (Death + Puss Sidekick) | Leak · [page](/leaks/puss-in-boots-fortnite-collab-leak) |
+| **29 Nov** | **Scott Pilgrim** / Ramona | Outlet-reported shop · [page](/leaks/scott-pilgrim-fortnite-collab-leak) |
 | **~week of 24 Nov** | **DDLC** four outfits | Leak · [page](/leaks/doki-doki-literature-club-fortnite-leak) |
 | **1 Dec** | **Ember & Blade** collab outfit | EGS GWP or **1,500** V-Bucks |
-| **This week** | **Scott Pilgrim** / Ramona | Official trailer · day TBC |
 
 ## Already shipped (recent)
 
+- **25 Nov:** Pomni & Jax (Digital Circus) · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** emote · ICON emotes refresh
 - **24 Nov:** Lucien West · One Punch Man · Ferrari skins & cars
 - **23 Nov:** Phineas & Ferb · Pirates of the Caribbean · Harvest Season · Nemia & Lexa Hexbringer · **Cardamom** Sidekick (new)
 - **22 Nov:** Privateer Oscar bundle · Overwatch Wave 1 · Crash & Spyro · Gorillaz · ICON Lachlan & Rubius
@@ -1744,7 +1895,7 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 
 Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Prices: [Item Shop tracker](/tools/item-shop). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 24 November 2026.
+**Updated:** 25 November 2026.
 `,
   },
   {
