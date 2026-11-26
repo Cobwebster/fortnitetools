@@ -657,13 +657,14 @@ No ceremony predictions here — update if Epic or TGA post new details that mat
   },
   {
     slug: 'hello-neighbor-fortnite-collab',
-    title: 'Hello Neighbor x Fortnite Collab Leak — Coming Soon to the Item Shop',
+    title: 'Hello Neighbor x Fortnite — Confirmed Coming Soon (Theodore Teased)',
     excerpt:
-      'According to leaks on 14 Nov 2026, a Hello Neighbor x Fortnite collaboration is coming soon, with an Item Shop release and an Epic Games Store gift-with-purchase tie-in. An announcement teaser surfaced the same day. No release date or prices yet.',
+      'Official: Hello Neighbor is coming to Fortnite. Epic Games Store and Neighbor Games teased Theodore Peterson on 14 Nov 2026; coverage also points at an EGS gift-with-purchase plus a possible Item Shop route. No release date, prices, or full cosmetic roster yet — still not in the shop as of 26 Nov.',
     category: 'cosmetics',
-    status: 'active',
+    status: 'watching',
     date: '2026-11-14',
-    readTime: 3,
+    confirmedDate: '2026-11-14',
+    readTime: 5,
     featured: true,
     tags: [
       'hello neighbor fortnite',
@@ -671,23 +672,81 @@ No ceremony predictions here — update if Epic or TGA post new details that mat
       'hello neighbor x fortnite collab',
       'fortnite hello neighbor release date',
       'hello neighbor epic games store gift',
+      'theodore peterson fortnite',
+      'hello neighbor fortnite when',
     ],
     content: `
-## What leaked on 14 Nov
+## Status — 26 November
 
-On **14 November 2026** (~**5:25pm UK**), leaks said a **Hello Neighbor x Fortnite** collab is **coming soon**: an **Item Shop** release plus an **Epic Games Store gift‑with‑purchase** (buy Hello Neighbor on EGS → Fortnite reward). An announcement teaser circulated the same day.
+**Hello Neighbor x Fortnite is confirmed as coming soon** — not a pure datamine guess. As of **26 November 2026** there is still **no** live Item Shop tile, **no** public V‑Buck price, and **no** dated shop day from Epic. Treat every “drops on X date” post as speculation until tiles appear on the [Item Shop tracker](/tools/item-shop).
 
-Which characters / cosmetics ship is **not confirmed**. Track flips on the [Item Shop tracker](/tools/item-shop) and [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+## What was announced (14 Nov)
 
-## What is not confirmed
+On **14 November 2026**, the **Epic Games Store** posted a short teaser framed like a Fortnite loading screen, with **Theodore Peterson** (the Neighbor) climbing through a window. The official **Hello Neighbor / Neighbor Games** account followed up asking where Theodore is dropping and stating **Hello Neighbor is coming to Fortnite**. Publisher **tinyBuild** amplified the same tease.
 
-- **Release date**
-- Cosmetics roster
-- **Prices**
-- Which EGS game(s) qualify and what the gift is
-- Full Epic announcement details
+That moves this out of “encrypted set only” territory: the **IP crossover is official**. What is **not** official yet is the exact cosmetic list, the shop day, or the EGS offer fine print.
 
-**Filed:** 14 November 2026. **Updated:** 21 November 2026. Status: **Unconfirmed**.
+## How you might unlock it
+
+Coverage of the same-day tease points at two possible routes (details still incomplete):
+
+1. **Epic Games Store gift‑with‑purchase** — buy / claim a Hello Neighbor title (or related offer) on EGS → Fortnite reward  
+2. **Item Shop** — a paid V‑Buck row if Epic also sells the set normally  
+
+Neither path has a published start date, qualifying SKU list, or reward name from Epic’s Fortnite news blog yet. Similar recent GWP-style collabs on this site: **[Ember & Blade](/leaks/upcoming-item-shop-leaks)** (flagged for **1 Dec** as EGS GWP **or** **1,500** V‑Bucks).
+
+## Who is Theodore?
+
+**Theodore Peterson** is the Neighbor — purple sweater, moustache, the antagonist from the Hello Neighbor games. The teaser and key art put him front and centre, so he is the safe headline expectation for whatever ships. Epic has **not** said whether he is:
+
+- a playable **Outfit**
+- an **NPC** / limited-time map presence
+- only a **promotional** cosmetic via EGS
+
+Do not buy V‑Bucks or an EGS game solely on fan bundle mockups — wait for Epic’s offer text.
+
+## What is still unknown
+
+| Claim | Status |
+| --- | --- |
+| Hello Neighbor is coming to Fortnite | **Confirmed** (EGS + Neighbor Games, 14 Nov) |
+| Theodore is the teaser focus | **Confirmed** in the tease |
+| Exact release date | **Unknown** |
+| Full cosmetic roster / prices | **Unknown** |
+| EGS GWP rules (which purchase, what reward) | **Unconfirmed** |
+| Item Shop row in addition to GWP | **Unconfirmed** |
+| Tie-in to **5 Dec** chapter wrap | **Speculation only** — same calendar week is crowded ([Community Day](/leaks/fortnite-community-day-golden-umbrella) / [Chapter 8](/leaks/fortnite-chapter-8-season-2-release-date)), but Epic has not linked Hello Neighbor to that day |
+
+## What to ignore
+
+- Viral “Hello Neighbor Fortnite trailers” that are Blender / UEFN fan edits  
+- Fake early-access codes or “free unlock” Creative maps  
+- Specific shop dates that are not on Epic, EGS, or the live tracker  
+
+## Quick FAQ
+
+**Is Hello Neighbor coming to Fortnite?**
+**Yes** — officially teased as **coming soon** on **14 Nov 2026**.
+
+**When does it release?**
+**Not announced.** Still absent from the live shop as of **26 Nov**.
+
+**Is Theodore a skin?**
+**Expected** to headline the collab, but Epic has not published an outfit card yet.
+
+**Is it free?**
+Possibly via an **EGS gift‑with‑purchase** — or paid in the Item Shop — or both. Rules are not published.
+
+**Will it land before Chapter 8?**
+Unknown. Do not assume a **5 Dec** drop just because the chapter flips that day.
+
+## What to watch next
+
+1. EGS store page / Fortnite news for the real GWP terms  
+2. Live tiles on the [Item Shop tracker](/tools/item-shop)  
+3. Rolling calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+
+**Filed:** 14 November 2026. **Updated:** 26 November 2026. Status: **Watching** (crossover confirmed; cosmetics / date pending).
 `,
   },
   {
@@ -965,11 +1024,11 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
     title:
       'Puss in Boots x Fortnite 26 November — Death Outfit & Puss Sidekick',
     excerpt:
-      'According to leaks, a teaser trailer and full in-game showcase of Death and the Puss Sidekick dropped 25 Nov; the collab is due in the Item Shop tomorrow — 26 Nov 2026 at the 00:00 UK reset (7 PM ET on 25 Nov). Puss Sidekick has its own emote and voice lines. Still unconfirmed by Epic until it ships.',
+      'Death (Puss in Boots) + Puss Sidekick are in new cosmetics (25 Nov) with Sickles, Bounty in Boots, Stalking Death, slippers. Not in the 26 Nov 00:00 UK shop — first window missed; next check is 26 Nov evening ET / 27 Nov 00:00 UK. Prices still unannounced; Epic blog teaser still missing.',
     category: 'cosmetics',
     status: 'active',
-    date: '2026-11-25',
-    readTime: 5,
+    date: '2026-11-26',
+    readTime: 6,
     featured: true,
     image: '/images/guides/treasure-hunters.jpg',
     tags: [
@@ -981,77 +1040,109 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
       'puss in boots fortnite skin',
       'death fortnite outfit',
       'puss in boots fortnite 26 november',
+      'puss in boots fortnite price',
+      'death fortnite back bling',
     ],
     content: `
+## Update — 26 November: files in, first shop window missed
+
+**Death (Puss in Boots)** and the **Puss in Boots** Sidekick are in Fortnite’s **new cosmetics** feed (added **25 November 2026**), so the set is decrypted in-game data — not just a rumour name. Named rows currently include:
+
+- **Death (Puss in Boots)** outfit · **Death's Sickles** pickaxe · **Bounty in Boots** back bling · **Stalking Death** emote  
+- **Puss in Boots** Sidekick · **Puss in Slippers** kicks · **Puss in Boots** emoticon  
+
+They are **not** in the live **26 November 2026 00:00 UK** Item Shop (that rotation still holds **Pomni / Jax**, **Persona 5 Royal**, **Crash & Spyro**, **Addison Rae**, etc.). So the early “26 Nov” read that meant the **00:00 UK / 7 PM ET 25 Nov** reset **missed**. Next check: the **26 Nov evening ET** reset (**00:00 UK on 27 Nov**), then later windows if it slips again.
+
+Confirm on the [Item Shop tracker](/tools/item-shop). Full calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
+
 ## Update — 25 November: teaser + showcase
 
-On **25 November 2026**, according to leaks, a **teaser trailer** and a **full in-game showcase** of **Death** and the **Puss Sidekick** circulated. The collab is reported as available **tomorrow** — the **26 November 2026** Item Shop reset at **00:00 UK (GMT)**, which is **7:00 PM ET on 25 November**.
+On **25 November 2026**, according to leaks, a **teaser trailer** and a **full in-game showcase** of **Death** and the **Puss Sidekick** circulated. The collab was reported for the **26 November 2026** shop window (see timezone note below).
 
-Epic has **not** posted an official fortnite.com / news teaser for this collab as of this update, so it stays **Unconfirmed / active** until the tiles actually appear in the shop. New detail from the showcase: the **Puss Sidekick** has its **own emote** and **voice lines** (happy / angry moods among them), matching earlier file reports of lines in **12 languages**.
+Epic has **not** posted an official fortnite.com / news teaser for this collab as of this update, so it stays **Unconfirmed / active** until the tiles actually appear. Showcase detail worth calling out: the **Puss Sidekick** has its **own emote** and **voice lines** (happy / angry moods among them), matching earlier file reports of lines in **12 languages**.
 
-Confirm live tiles on the [Item Shop tracker](/tools/item-shop) after the reset.
+## Why Death is the outfit and Puss is the Sidekick
 
-## Update — 24 November
+*Puss in Boots: The Last Wish* gives Fortnite two very different body types:
 
-**Puss in Boots x Fortnite** was dated for **26 November 2026**. Earlier file posts called the wolf skin a “Wolf Warrior”; the outfit is now reported as **Death** — the wolf from *Puss in Boots: The Last Wish*.
+- **Death** — tall hooded wolf → fits a normal **Outfit** skeleton (fur, tail, hood, custom head)
+- **Puss** — small bipedal cat → fits Fortnite’s **Sidekick** companion slot (follows you; not a playable skin)
 
-### What’s included (according to leaks)
+Epic has used the same split before: **Spyro**, **Morgana** (Persona), and other licensed critters as Sidekicks while a humanoid lead takes the outfit row. So “Puss in Boots collab” here does **not** mean Puss is a wearable skin — **Death** is the locker outfit; **Puss** is the companion.
+
+## Shop timing — read “26 Nov” carefully
+
+Leak trackers and posts say **26 November 2026**. Fortnite’s Item Shop resets daily around **00:00 UK (GMT)** = **7:00 PM ET the previous evening**, and Epic preview cards often use a **US calendar date**. That means “26 Nov” can be either:
+
+| If “26 Nov” means… | UK (GMT) | US Eastern (ET) |
+| --- | --- | --- |
+| The **26 Nov UK / UTC** shop reset | **00:00 Thu 26 Nov** | **7:00 PM Wed 25 Nov** |
+| The **US evening of 26 Nov** (next UTC morning) | **00:00 Fri 27 Nov** | **7:00 PM Thu 26 Nov** |
+
+Recent precedent: Epic’s reel dated **Persona 5 Royal** “Nov 24”, and it actually returned on the **25 Nov 00:00 UK** shop — see [Crash / Spyro / Persona returns](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates). **Check both resets** rather than camping one clock.
+
+## What’s included (according to leaks)
 
 **Death outfit**
-- The wolf **Death** look from *The Last Wish*
+- The wolf **Death** look from *The Last Wish* (earlier file label: “Wolf Warrior”)
 - Matching **back bling** and **pickaxe**
-- **Custom lobby pose**
+- **Custom lobby pose** · **LEGO** style · **Hood** style
+- **Glowing** head / body effects · custom non‑human head skeleton
 - A **traversal emote** with a **special version** when used with Death
 
 **Puss Sidekick**
+- Furry two‑legged companion (feather / beard materials)
 - Matching **kicks**
 - Styles: **Sword**, **Hat Off**
 - Its **own emote**
-- **Voice lines in 12 languages**, with moods such as **happy** and **angry**
+- **Voice lines in 12 languages**, moods such as **happy** and **angry**
 
-A **full bundle** containing both is expected. **Pricing** is expected around the shop window — confirm on the tracker once Epic posts tiles.
+A **full bundle** containing both is expected (files also mentioned **pirate‑themed shop tiles**). Whether every piece sells separately is not locked.
 
-## What was reportedly found (12 Nov files)
+## Price guidance (estimate only)
 
-**Sidekick (Puss)**
-- **Furry, two‑legged Sidekick** with **feather** and **beard** materials
-- **Sword** and **Hat Off** styles
-- Its **own emote**
-- **Voice lines in 12 languages** (happy, angry, etc.)
-- Matching **Kicks**
-
-**Male skin (Death, the wolf)**
-- **Custom lobby pose**
-- **Fur** and **tail**, **Hood** style
-- **LEGO** style
-- **Custom non‑human head skeleton**
-- **Glowing head** and **body** effects
-- Matching **back bling** and **pickaxe** with custom effects
-- **Traversal emote** with a **prop**, **spin** effects, and **music** (special version when used with the skin)
-
-## Bundle & shop
-
-- Files suggested the **Sidekick and the skin are bundled**, with **pirate‑themed shop tiles**
-- **Release date (reported):** **26 November 2026** — **00:00 UK** / **7 PM ET on 25 Nov**
-- **Price:** not published yet — check the tracker after reset
+**No V‑Buck prices are in the files.** For budgeting only, recent Sidekick + outfit collab bundles in the live shop have often landed around the **~3,000 V‑Buck** band (e.g. Crash/Spyro-style packs) — that is a **comparison**, not a leak number. Wait for tiles on the [Item Shop tracker](/tools/item-shop).
 
 ## Confidence table
 
 | Claim | Status |
 | --- | --- |
-| Furry Sidekick + voice lines + Kicks in files | Leak |
-| Death wolf outfit + lobby pose + traversal emote | Leak (reconciled from earlier “Wolf Warrior” label) |
+| Death / Puss rows in **new cosmetics** (25 Nov) | **In files** (named API rows) |
+| Furry Sidekick + voice lines + Kicks | Leak / file-backed |
+| Death outfit + Sickles + Bounty in Boots + Stalking Death | **In files** |
 | Teaser trailer + in‑game showcase (25 Nov) | Leak |
-| Shop date **26 Nov 2026** | Leak |
-| Bundle + pricing | Leak / expected |
+| Shop on **26 Nov 00:00 UK** | **Missed** — not in that rotation |
+| Shop on **26 Nov evening ET** / **27 Nov 00:00 UK** | **Still possible** — confirm live |
+| Bundle + pirate shop tiles | Leak / expected |
+| Exact V‑Buck price | **Unknown** |
 | Official Epic announcement | **Not yet** |
+
+## Quick FAQ
+
+**Is Puss in Boots a Fortnite skin?**
+**Death** is the **outfit**. **Puss** is a **Sidekick** (companion), not a wearable skin.
+
+**Is it in the shop yet?**
+**Not** in the **26 Nov 00:00 UK** shop. Files are in; wait for the next reset(s) on the tracker.
+
+**When does it come out?**
+Originally flagged **26 November 2026** — the first clock for that date **missed**. Watch the **26 Nov evening ET** reset next.
+
+**What is a Sidekick?**
+A companion cosmetic that follows your character. It is not an outfit and does not replace your skin.
+
+**Will there be a bundle?**
+Files suggest **yes** — Death + Puss together, with possible individual rows. Pricing unannounced.
+
+**Is this confirmed by Epic?**
+**Not yet.** Trailer / showcase circulating in leak channels ≠ a fortnite.com blog post.
 
 ## What to watch next
 
-- [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) · [Item Shop tracker](/tools/item-shop)
-- Same dump: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)
+- Live tiles: [Item Shop tracker](/tools/item-shop) · calendar dump: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- Same-week collabs: [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) · [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)
 
-**Filed:** 12 November 2026. **Updated:** 25 November 2026. Status: **Unconfirmed**.
+**Filed:** 12 November 2026. **Updated:** 26 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
@@ -1059,11 +1150,11 @@ A **full bundle** containing both is expected. **Pricing** is expected around th
     title:
       'Doki Doki Literature Club x Fortnite Leak — Sayori, Natsuki, Yuri & Monika',
     excerpt:
-      'According to leaks, Doki Doki Literature Club x Fortnite is coming within about a week of 24 Nov 2026: four outfits — Sayori, Natsuki, Yuri and Monika — with no other cosmetics in the set.',
+      'According to leaks, Doki Doki Literature Club x Fortnite within ~1 week of 24 Nov 2026 — four outfits only (Sayori, Natsuki, Yuri, Monika). Earlier files: cel-shaded looks, custom lobby poses, cloth/hair physics, 4-pack + individuals. No pickaxes/back blings. Epic & Team Salvato have not confirmed.',
     category: 'cosmetics',
     status: 'active',
     date: '2026-11-24',
-    readTime: 5,
+    readTime: 6,
     featured: true,
     image: '/images/guides/select-character.webp',
     tags: [
@@ -1074,49 +1165,100 @@ A **full bundle** containing both is expected. **Pricing** is expected around th
       'cel shaded fortnite skins',
       'fortnite four anime skins',
       'sayori natsuki yuri monika fortnite',
+      'ddlc fortnite release date',
+      'monika fortnite skin',
     ],
     content: `
-## Update — 24 November
+## What’s leaked
 
-According to leaks, **Doki Doki Literature Club x Fortnite** is now reported as coming **within about a week of 24 November 2026**. The set is described as **four outfits only**: **Sayori**, **Natsuki**, **Yuri**, and **Monika**, with **no other cosmetics** (no pickaxes, back blings, or wraps called out in the same set).
+According to leaks on **24 November 2026**, **Doki Doki Literature Club x Fortnite** lands **within about a week** of that report — so a window through roughly **1 December 2026** if the timing holds. The set is described as **four outfits only**: **Sayori**, **Natsuki**, **Yuri**, and **Monika**, with **no other cosmetics** in the same set (no pickaxes, back blings, wraps, or emotes called out).
 
-This remains a **leak**, not an Epic announcement — treat the character names and timing as unconfirmed until they appear in the shop or an official trailer.
+This is still a **leak**, not an Epic or Team Salvato announcement. Names, timing, and the “skins only” sell-through can still slip, get cut, or change before tiles appear.
+
+## Why this collab matters in Fortnite
+
+**Doki Doki Literature Club** (Team Salvato) is a visual novel whose cast is almost entirely the four club members above. A Fortnite read that ships **all four leads as outfits** is the full main cast — unusual for anime/game crossovers that often drop one hero skin and a thin accessory pack.
+
+Treasure Hunters has already leaned hard into **anime / cel-shaded** locker rows (Hope bonus skins, Golden Charlotte, Persona returns, etc.). DDLC fits that lane if the encrypted set is the real match — but until Epic posts art or a trailer, the files could still belong to another cel-shaded property.
 
 ## What was reportedly found (12 Nov files)
 
-Dataminer dump for a hidden cosmetics set:
+Dataminer dump for a hidden cosmetics set (before the names were attached):
 
 - **4 anime / cel‑shaded female skins**
-- Each has a **custom lobby animation**
+- Each has a **custom lobby animation / pose**
 - **At least 2** show **cloth physics**; **1** shows **special hair physics**
 - Sell‑through: **one 4‑pack bundle** plus **individual** purchase options
-- Notes referenced **no pickaxes / back blings / wraps** in the same set — skins only
+- Notes referenced **no pickaxes / back blings / wraps** in the same set — **outfits only**
 
-## Character read
+The **24 Nov** leak update is what pins those four skins to **Sayori / Natsuki / Yuri / Monika** and restates the skins-only pack. Custom lobby poses plus cloth/hair physics suggest Epic is treating them as more than flat “sticker” cel-shades — still a leak observation, not a feature promise.
 
-Fans mapped the four skins onto **DDLC** leads **Monika, Sayori, Yuri, and Natsuki**. The **24 Nov** update reports those names explicitly as the leaked outfit lineup. Still **not** confirmed by Epic or Team Salvato marketing.
+## Roster (leaked)
 
-Same‑week collab pages:
+| Outfit | Role in DDLC | Fortnite note |
+| --- | --- | --- |
+| **Monika** | Club president | Leaked as one of the four outfits |
+| **Sayori** | Club member | Leaked as one of the four outfits |
+| **Natsuki** | Club member | Leaked as one of the four outfits |
+| **Yuri** | Club member | Leaked as one of the four outfits |
 
-- [Scott Pilgrim / Ramona](/leaks/scott-pilgrim-fortnite-collab-leak) (official trailer out)
-- [Puss in Boots / Death](/leaks/puss-in-boots-fortnite-collab-leak) (dated **26 Nov**)
+No Sidekick, jam track, or Festival kit has been attached to this set in the same leak thread. Compare that to fuller kits like [Persona 5 Royal](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) (outfits + Sidekick + pickaxes + jam) or [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak) (outfits + instruments + emote + pickaxes).
+
+## Skins-only: what that means for your V-Bucks
+
+If the “no other cosmetics” line holds:
+
+- You are buying **locker looks**, not a full harvest kit with matching tools
+- A **4-pack bundle** is the efficient path if you want everyone; individuals matter if you only want one club member
+- Prices are **unannounced**. Do **not** treat outlet guesses (e.g. 1,200–1,600 each) as file data — wait for live tiles on the [Item Shop tracker](/tools/item-shop)
+
+## Timing against the chapter calendar
+
+If the “within 1 week of 24 Nov” window is real, DDLC would need to hit the shop **before** Treasure Hunters wraps on **[5 December](/leaks/fortnite-community-day-golden-umbrella)** — the same crowded day as [Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date), [Crew changes / N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin), and Community Day login rewards.
+
+Same-week collab pages to keep side-by-side:
+
+- [Scott Pilgrim / Ramona](/leaks/scott-pilgrim-fortnite-collab-leak) — **official trailer**; shop dated **29 Nov**
+- [Puss in Boots / Death](/leaks/puss-in-boots-fortnite-collab-leak) — dated **26 Nov** (leak)
+- Shop calendar dump: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
 
 ## Confidence
 
 | Claim | Status |
 | --- | --- |
-| Four cel‑shaded female skins in files | Leak |
-| Outfits are Sayori, Natsuki, Yuri, Monika | Leak (reported 24 Nov) |
+| Four cel‑shaded female skins in files | Leak (12 Nov) |
+| Outfits are Sayori, Natsuki, Yuri, Monika | Leak (24 Nov) |
+| Custom lobby poses + cloth / hair physics | Leak |
+| 4-pack bundle + individuals | Leak |
 | No other cosmetics in the set | Leak |
-| Coming within ~a week of 24 Nov | Leak |
-| Official announcement / price | Unknown |
+| Coming within ~a week of 24 Nov (~by 1 Dec) | Leak |
+| Official announcement / price / exact shop day | **Unknown** |
+
+## Quick FAQ
+
+**Is Doki Doki Literature Club coming to Fortnite?**
+**Reportedly yes**, as four outfits, per leaks on **24 Nov 2026**. Epic and Team Salvato have **not** confirmed.
+
+**Which DDLC characters are leaked?**
+**Sayori, Natsuki, Yuri, and Monika** — the four main club members.
+
+**Will there be pickaxes or back blings?**
+Leaks say **no** — **outfits only** in this set. That can still change before ship.
+
+**When does it release?**
+Only a **“within 1 week of 24 Nov”** window is reported — treat that as **through ~1 Dec**, not a locked shop hour. Confirm on the [Item Shop tracker](/tools/item-shop).
+
+**Is it the same encrypted set from 12 Nov?**
+That is the leaker’s read: the earlier four cel-shaded skins, now named. Until Epic shows art, a different IP is still possible.
 
 ## What to watch next
 
-- Bundle/pricing still blank — track [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks) and [Item Shop](/tools/item-shop)
-- Lobby MOTD / blog confirmation: [News](/news)
+1. Epic trailer / MOTD / fortnite.com post naming DDLC or showing the four outfits
+2. Live shop tiles + V-Buck prices on the [Item Shop tracker](/tools/item-shop)
+3. Whether a “skins only” pack stays true or Epic adds a late tool / emote
+4. [News](/news) for official wording once it exists
 
-**Updated:** 24 November 2026. Status: **Unconfirmed**. Filed 12 November 2026.
+**Filed:** 12 November 2026. **Updated:** 26 November 2026. Status: **Unconfirmed**.
 `,
   },
   {
@@ -1358,11 +1500,11 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
     slug: 'fortnite-chapter-8-season-2-release-date',
     title: 'Fortnite Chapter 8 Season 1 & Season 2 Release Dates (Dec 5 & Mar 4)',
     excerpt:
-      'v43.11, the final Chapter 7 update, rolled out 24 Nov 2026 at 9 AM UTC (4 AM ET) for the end event and Community Day plus bug fixes — no new cosmetics expected. Chapter 8 Season 1 still 5 Dec; Season 2 still 4 Mar 2027 per earlier scheduling leaks. Same day: Crew changes + final Crew skin N.E.K.O.',
+      'Chapter 8 Season 1 still dated 5 Dec 2026; Season 2 still 4 Mar 2027 (~89 days) per scheduling leaks. v43.11 (24 Nov) was the final Chapter 7 update for the end event / Community Day. Same crowded 5 Dec: Crew overhaul, N.E.K.O., Community Day rewards. Art-direction chatter points at a Chapter 4–like stylised look — unconfirmed.',
     category: 'chapter',
     status: 'watching',
     date: '2026-11-25',
-    readTime: 3,
+    readTime: 5,
     featured: true,
     image: '/images/guides/hit-by-chaos.webp',
     tags: [
@@ -1372,52 +1514,96 @@ In **Battle Royale**, on **15 November 2026** Kasane Teto’s crew arrives on **
       'when does chapter 8 start fortnite',
       'fortnite c8s2',
       'fortnite chapter 8 graphics',
+      'fortnite chapter 7 end date',
+      'treasure hunters end date',
     ],
     content: `
-## Update — 25 November
-
-**5 December 2026** is also when Epic’s official **[Fortnite Crew changes](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin)** land — tiered V‑Bucks, OG Pass ending, XP boosts, and **N.E.K.O.** as the final Crew Pack outfit.
-
-## Update — 24 November
-
-**v43.11**, the **final update of Chapter 7**, rolled out on **24 November 2026 at 9 AM UTC** (**4 AM ET**). It is aimed at the **end event** and **Community Day**, plus **bug fixes**. **No new cosmetics** are expected from this patch.
-
-**Chapter 8 Season 1** is still slated for **5 December 2026**.
-
-## What was reported
-
-According to leaks on **10 November 2026**, **Chapter 8 Season 1** is scheduled for **5 December 2026** and **Chapter 8 Season 2** for **4 March 2027**. That puts Chapter 8 Season 1 at roughly **89 days**.
-
-These dates are described as coming from Epic's internal scheduling rather than a public blog or Status post and could still change.
-
-## What this means
-
-Timing-wise, this points to **Treasure Hunters** (Chapter 7) wrapping around early December with downtime leading into Chapter 8. Exact end times and maintenance windows were not included in the reports. Season context lives on the [season hub](/season); Chapter 8 gameplay shaping so far: [Chapter 8 finishing moves](/leaks/chapter-8-finishing-moves).
-
 ## Date summary
 
-| Season | Date |
-| --- | --- |
-| Chapter 8 Season 1 | 5 December 2026 |
-| Chapter 8 Season 2 | 4 March 2027 |
+| Milestone | Date | Confidence |
+| --- | --- | --- |
+| **Chapter 8 Season 1** | **5 December 2026** | Scheduling leak (10 Nov) — still holding through late-Nov updates |
+| **Chapter 8 Season 2** | **4 March 2027** | Same scheduling leak (~**89 days** for C8S1) |
+| Final Chapter 7 patch (**v43.11**) | **24 November 2026**, **9 AM UTC** / **4 AM ET** | Shipped |
+| Treasure Hunters / Community Day wrap day | **5 December 2026** | Epic-confirmed Community Day date |
+
+These season start dates are described as coming from **Epic’s internal scheduling**, not a public fortnite.com blog timestamp. They can still move.
+
+## Update — 25 November
+
+**5 December 2026** is also when Epic’s official **[Fortnite Crew changes](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin)** land — tiered monthly V‑Bucks (1,000–1,600), **OG Pass ends**, XP boosts, and **N.E.K.O.** as the **final Crew Pack outfit**.
+
+If you care about Crew tenure tiers, Epic’s resubscribe credit window for past tenure is **6–31 December 2026** — details on the Crew page.
+
+## Update — 24 November: last Chapter 7 patch
+
+**v43.11**, the **final update of Chapter 7**, rolled out on **24 November 2026 at 9 AM UTC** (**4 AM ET**). It is aimed at the **end event** and **[Community Day](/leaks/fortnite-community-day-golden-umbrella)**, plus **bug fixes**. **No new cosmetics** are expected from this patch itself — shop collabs that week (Scott Pilgrim trailer, Puss / DDLC leak chatter) are separate Item Shop tracks.
+
+**Chapter 8 Season 1** remains slated for **5 December 2026** after that patch.
+
+## What was reported (10 Nov)
+
+According to leaks on **10 November 2026**:
+
+- **Chapter 8 Season 1** → **5 December 2026**
+- **Chapter 8 Season 2** → **4 March 2027**
+
+That spacing is roughly **89 days** for Season 1 — a normal-length Fortnite season, not a mini. Treasure Hunters (the late Chapter 7 stretch) is the runway into that launch, not a replacement for it.
+
+## Crowded calendar: 28 Nov → 5 Dec
+
+Plan V-Bucks, logins, and Crew around the same week — these are **different systems** landing on overlapping days:
+
+| When | What | Page |
+| --- | --- | --- |
+| **28 Nov 9 AM ET** | **[Golden Week](/leaks/fortnite-golden-week-november-2026)** starts — all gold chest goods back, 2× Sprite Dust/XP, 15× Gold Outfits in Treasure Hours | Gameplay |
+| **5 Dec** | **[Community Day](/leaks/fortnite-community-day-golden-umbrella)** — Golden Community ’Brella (login) + Golden Jonesy (Twitch Drops) | Cosmetics |
+| **5 Dec** | **Chapter 8 Season 1** (leaked start) + expected chapter transition / downtime | This page |
+| **5 Dec** | **[Crew overhaul](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin)** + Battle Pass / LEGO Mini-Pass cadence Epic called out | Crew |
+
+Exact maintenance / live-event minutes for the chapter flip are **not** in the scheduling leak. Watch in-client timers and [News](/news) / [Status](/status) closer to the day.
+
+## What this means for players
+
+1. **Finish Treasure Hunters goals** (Pirate Shop Access, Hope bonus skins, gold chests) before the **5 Dec** Access / promo deadlines where they apply — see [Hope bonus skins](/leaks/fortnite-treasure-hunter-hope-gilded-hunter-hope-bonus-skins).
+2. **Log in on Community Day** even if you are mostly waiting for Chapter 8 cosmetics — the Golden ’Brella is a login reward, not a shop tile.
+3. **Do not assume** Chapter 8 Battle Pass contents from C7 themes. Theme, POIs, and pass rows are still unconfirmed.
+4. Season context hub: [/season](/season). Early Chapter 8 systems chatter: [finishing moves](/leaks/chapter-8-finishing-moves).
 
 ## What will Chapter 8 look like?
 
-According to a report on **23 November 2026**, Chapter 8’s visuals are expected to look **closer to Chapter 4’s art style**, and **more stylised than Chapter 7**. This is a report, not an Epic confirmation.
+According to a report on **23 November 2026**, Chapter 8’s visuals are expected to look **closer to Chapter 4’s art style**, and **more stylised than Chapter 7**. That is a **report**, not an Epic confirmation.
 
-Chapter 4 was the first chapter to launch on **Unreal Engine 5.1** with Nanite/Lumen‑era visuals (December 2022). The comparison here is about overall look and stylisation, not a feature checklist.
+Chapter 4 was the first chapter to launch on **Unreal Engine 5.1** with Nanite/Lumen‑era visuals (December 2022). The comparison here is about overall look and stylisation, not a “Nanite checklist” or a promise that C8 copies C4 POIs.
 
-Epic has **not** shown Chapter 8 visuals officially yet. Treat the Chapter 4 comparison as unconfirmed until Epic posts concept art, a trailer, or in‑game previews.
+Epic has **not** shown Chapter 8 concept art or a season trailer yet. Treat the Chapter 4 comparison as unconfirmed until Epic posts visuals.
 
 ## What is not confirmed
 
-- Exact launch time or downtime window
-- Any live event or end-of-chapter event
-- Chapter 8 theme and battle pass contents
-- Official Chapter 8 art direction or POIs
-- Whether these dates move
+- Exact launch hour or downtime / queue window on 5 Dec
+- Live-event script or end-of-chapter show length
+- Chapter 8 theme, map, mythics, or Battle Pass contents
+- Official art direction / POI names
+- Whether the **5 Dec / 4 Mar** dates move
 
-**Filed:** 10 November 2026. **Updated:** 25 November 2026. Status: **Watching**.
+## Quick FAQ
+
+**When does Fortnite Chapter 8 start?**
+**5 December 2026** for **Season 1**, according to the scheduling leak that has held through late November updates.
+
+**When is Chapter 8 Season 2?**
+**4 March 2027** in the same leak (~**89 days** after Season 1).
+
+**Is v43.11 the Chapter 8 update?**
+**No** — **v43.11** is the **final Chapter 7** patch (24 Nov) for the end event / Community Day prep. Chapter 8 is the **5 Dec** transition.
+
+**Is the Chapter 8 date official?**
+**Not via a public “Chapter 8 launches at…” blog line** in the sources we are tracking — it is a **scheduling leak**, while Community Day / Crew / Golden Week pieces on the same calendar **are** Epic-confirmed.
+
+**Will Chapter 8 look like Chapter 4?**
+Only a **report** says a more stylised, Chapter 4–like direction. Wait for Epic art.
+
+**Filed:** 10 November 2026. **Updated:** 26 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -1767,12 +1953,12 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 25 Nov Onward: Digital Circus, Persona 5, Collabs',
+      'Upcoming Fortnite Item Shop Leaks — 26 Nov: Puss Missed First Window, Scott 29 Nov',
     excerpt:
-      '25 Nov shop (00:00 UK): Pomni & Jax (Amazing Digital Circus), ICON emotes refresh, Persona 5 Royal return, Addison Rae, Hoppers, TheGrefg & MrSavage, plus Tyla & Zara Larsson’s “She Did It Again” emote. Coming soon: Puss in Boots (26 Nov), Scott Pilgrim (29 Nov), DDLC, Ember & Blade (1 Dec).',
+      '26 Nov 00:00 UK shop: Digital Circus, Persona 5 Royal, Crash & Spyro, Addison Rae still up — Puss in Boots not in this rotation (Death/Puss are in new cosmetics files). Next check: 26 Nov evening ET / 27 Nov 00:00 UK. Coming: Scott Pilgrim 29 Nov, DDLC window, Ember & Blade 1 Dec.',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-25',
+    date: '2026-11-26',
     readTime: 5,
     featured: true,
     image: '/images/guides/kiriko-featured.webp',
@@ -1795,9 +1981,29 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'crash bandicoot fortnite',
     ],
     content: `
-## Update — 25 November
+## Update — 26 November
 
-### 25 November shop
+### 26 November shop (00:00 UK) — Puss missed this window
+
+Live Item Shop for the **26 November 2026** reset (**00:00 UK** / **7 PM ET on 25 Nov**):
+
+- **Pomni** & **Jax** (Amazing Digital Circus) still up
+- **Persona 5 Royal** still up — [return dates](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates)
+- **Crash Bandicoot & Spyro** still up
+- **Addison Rae** still up
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **not** in this rotation
+
+**Death (Puss in Boots)** and the **Puss in Boots** Sidekick **are** in the **new cosmetics** feed (added **25 Nov**), so the set exists in files. The early “lands 26 Nov” read for the **00:00 UK** clock did **not** ship. Next check: **26 Nov evening ET** (**00:00 UK on 27 Nov**). Confirm on the [Item Shop tracker](/tools/item-shop).
+
+### Coming soon
+
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — files in; shop day still pending after the missed **26 Nov 00:00 UK** window
+- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — **29 November 2026** at **8 PM ET** / **1 AM UK on 30 Nov** (Scott & Ramona; also in new cosmetics)
+- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — within about a week of **24 Nov** (Sayori, Natsuki, Yuri, Monika — outfits only)
+- **[Hello Neighbor](/leaks/hello-neighbor-fortnite-collab)** — officially teased **coming soon** (EGS + Theodore); no shop day yet
+- **Ember & Blade x Fortnite** — **1 December**: EGS gift‑with‑purchase **or** **1,500 V-Bucks** in the Item Shop
+
+## 25 November shop
 
 Item Shop for the **25 November 2026** reset (**00:00 UK** / **7 PM ET on 24 Nov**):
 
@@ -1808,15 +2014,6 @@ Item Shop for the **25 November 2026** reset (**00:00 UK** / **7 PM ET on 24 Nov
 - **Hoppers** return
 - **TheGrefg** & **MrSavage** Icon Series items return
 - **Tyla** & **Zara Larsson** — **"She Did It Again"** emote (new Icon Series dance, **500** V‑Bucks)
-
-Confirm every tile and price on the [Item Shop tracker](/tools/item-shop).
-
-### Coming soon
-
-- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **26 November 2026** (Death outfit + Puss Sidekick; **00:00 UK** / **7 PM ET on 25 Nov**)
-- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — **29 November 2026** at **8 PM ET** / **1 AM UK on 30 Nov** (Scott & Ramona)
-- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — within about a week of **24 Nov** (Sayori, Natsuki, Yuri, Monika — outfits only)
-- **Ember & Blade x Fortnite** — **1 December**: available as a **gift-with-purchase** when you buy *Ember & Blade* (LINE Games’ survivors-like action RPG) on the **Epic Games Store**, or for **1,500 V-Bucks** in the Item Shop
 
 ## 24 November shop
 
@@ -1872,14 +2069,17 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 | **23 Nov (shop)** | Phineas & Ferb · PotC · Harvest Season · Nemia/Lexa · **Cardamom** Sidekick | **Landed 23 Nov** (leaked shop) |
 | **24 Nov (shop)** | **Lucien West** · **One Punch Man** · **Ferrari** skins & cars | **Landed 24 Nov** |
 | **25 Nov (shop)** | Digital Circus · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** | **Landed 25 Nov** |
-| **26 Nov** | **Puss in Boots** (Death + Puss Sidekick) | Leak · [page](/leaks/puss-in-boots-fortnite-collab-leak) |
+| **26 Nov (00:00 UK shop)** | Carry-over: Digital Circus · Persona · Crash/Spyro · Addison | **Live** — **Puss not in this shop** |
+| **26 Nov evening ET / 27 Nov 00:00 UK** | **Puss in Boots** (Death + Puss Sidekick) | Files in · shop pending · [page](/leaks/puss-in-boots-fortnite-collab-leak) |
 | **29 Nov** | **Scott Pilgrim** / Ramona | Outlet-reported shop · [page](/leaks/scott-pilgrim-fortnite-collab-leak) |
 | **~week of 24 Nov** | **DDLC** four outfits | Leak · [page](/leaks/doki-doki-literature-club-fortnite-leak) |
+| **TBD** | **Hello Neighbor** / Theodore | Official tease · [page](/leaks/hello-neighbor-fortnite-collab) |
 | **1 Dec** | **Ember & Blade** collab outfit | EGS GWP or **1,500** V-Bucks |
 
 ## Already shipped (recent)
 
-- **25 Nov:** Pomni & Jax (Digital Circus) · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** emote · ICON emotes refresh
+- **26 Nov (00:00 UK):** carry-over shop (Digital Circus · Persona · Crash/Spyro · Addison) — **no Puss**
+- **25 Nov:** Pomni & Jax (Digital Circus) · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** emote · ICON emotes refresh · **Death/Puss added to new cosmetics**
 - **24 Nov:** Lucien West · One Punch Man · Ferrari skins & cars
 - **23 Nov:** Phineas & Ferb · Pirates of the Caribbean · Harvest Season · Nemia & Lexa Hexbringer · **Cardamom** Sidekick (new)
 - **22 Nov:** Privateer Oscar bundle · Overwatch Wave 1 · Crash & Spyro · Gorillaz · ICON Lachlan & Rubius
@@ -1895,7 +2095,7 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 
 Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Prices: [Item Shop tracker](/tools/item-shop). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
 
-**Updated:** 25 November 2026.
+**Updated:** 26 November 2026.
 `,
   },
   {

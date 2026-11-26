@@ -46,7 +46,7 @@ export const FREE_COSMETIC_OFFERS: FreeCosmeticOffer[] = [
       'Rare Battle Royale chest prize. Claim All grants two activations (2026 and 2027). Each one lets you claim V-Bucks Item Shop offers for free for 14 days. Epic has not published drop odds.',
     details: [
       'Epic MOTD exclusions: real-money offers, gifting, Battle Pass levels/rewards, one new Sidekick you do not already own, not transferable.',
-      'Recap coverage (Dexerto / HYPEX): 2026 token usable through 15 Dec 2026; 2027 token 1 Jan–15 Dec 2027. Trust the in-game tooltip if it disagrees.',
+      'Recap coverage: 2026 token usable through 15 Dec 2026; 2027 token 1 Jan–15 Dec 2027. Trust the in-game tooltip if it disagrees.',
       'Turn on Epic 2FA before you sit on a token — the MOTD itself links fn.gg/2FA.',
     ],
     href: '/guides/how-to/how-to-get-pirate-shop-access-fortnite',
