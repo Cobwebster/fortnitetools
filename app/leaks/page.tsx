@@ -75,7 +75,21 @@ export default function LeaksPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
-              Fresh: Fortnite Crew changes + final Crew skin N.E.K.O. from 5 Dec, Puss in Boots on 26 Nov, Scott Pilgrim on 29 Nov, Golden Week from 28 Nov, Community Day 5 Dec. Still watching: DDLC (within a week), Winterfest, Chapter 8 on 5 Dec.
+              Fresh:{' '}
+              <Link
+                href="/leaks/fortnite-pirate-shop-access-cheaters-banned-items-removed"
+                className="font-semibold text-primary hover:underline"
+              >
+                Pirate Shop Access cheater bans
+              </Link>
+              {' '}(Access + items removed),{' '}
+              <Link
+                href="/leaks/doki-doki-literature-club-fortnite-leak"
+                className="font-semibold text-primary hover:underline"
+              >
+                Doki Doki Literature Club
+              </Link>
+              {' '}arriving 27 Nov, Scott Pilgrim on 29 Nov, Golden Week from 28 Nov, Crew changes + N.E.K.O. from 5 Dec, Community Day 5 Dec. Still watching: Puss in Boots (missed 26 Nov window), Winterfest, Chapter 8 on 5 Dec.
               Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">

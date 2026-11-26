@@ -59,6 +59,82 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'fortnite-pirate-shop-access-cheaters-banned-items-removed',
+    title:
+      'Fortnite Pirate Shop Access Cheaters Banned: Access and Items Removed',
+    excerpt:
+      'Official Fortnite Status (25 Nov 2026): anyone who cheated for Pirate Shop Access — or partied with someone who did — lost Access and items bought with it; cheaters are being banned. Squad Fill-only matches with a cheater are not affected.',
+    category: 'gameplay',
+    status: 'shipped',
+    date: '2026-11-25',
+    confirmedDate: '2026-11-25',
+    readTime: 6,
+    featured: true,
+    image: '/images/guides/pirate-shop-access.jpg',
+    tags: [
+      'pirate shop access cheaters banned',
+      'fortnite pirate shop access removed',
+      'pirate shop token cheat ban',
+      'fortnite cheaters banned pirate shop',
+      'pirate shop access items removed',
+      'fortnite status pirate shop',
+      'squad fill pirate shop access',
+    ],
+    content: `
+## What Epic said (25 November)
+
+On **25 November 2026** around **6:46 PM UK**, the **Fortnite Status** account posted an **official** statement on Pirate Shop Access abuse.
+
+The rules are clear: **using cheats of any kind is against the rules**. Anyone who **cheated to get Pirate Shop Access**, or **partied up with someone who did**, has **lost that access** and **any items bought with it**. Players who were **simply matched with a cheater through Squad Fill** are **not affected**. Players who cheated are also **being banned from Fortnite**.
+
+This is a **shipped** enforcement action from Epic — not a leak.
+
+## What Pirate Shop Access is
+
+**Pirate Shop Access** (also called the Pirate Shop Token) is the rare **Treasure Hunt** prize that unlocks the Pirate Shop for the season. In a normal Battle Royale match it rolls at **1 in 137,500** per chest — full table on the [Pirate Shop odds](/leaks/pirate-shop-odds) page. Scheduled [Treasure Hours / Power Hours](/leaks/pirate-shop-power-hours) temporarily boost Access and other chest prizes.
+
+Squads are widely reported to **share** the prize when one teammate finds it, which is why party-based abuse mattered for this crackdown. Epic had already warned that going AFK in squad fills so randoms farm the token for you can earn a [matchmaking ban](/leaks/pirate-shop-afk-squad-fill-ban). Legitimate steps stay the same: open BR chests yourself — [How to get Pirate Shop Access](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
+
+## How the cheat worked (widely reported)
+
+In the days before the Status post, reports described cheaters attaching themselves to a **cannon** and **teleporting** around the map to every chest. The cannon’s weight **instantly broke chests open**, so they could farm Pirate Shop Access tokens extremely fast. Some players **paid cheaters** to join their games or parties to benefit from that farm.
+
+That pattern is active cheating — outside normal play and outside the earlier AFK-fill warning — and Fortnite Status has answered it with removals and bans.
+
+## Who is affected / who is safe
+
+| Situation | Outcome (per Fortnite Status) |
+| --- | --- |
+| You **cheated** to get Pirate Shop Access | Access removed · items bought with it removed · **banned from Fortnite** |
+| You **partied** with someone who cheated to get Access | Access removed · items bought with it removed |
+| You only matched a cheater via **Squad Fill** | **Not affected** |
+
+## What we do not know yet
+
+Fortnite Status did **not** spell out an appeals process, a ban-length schedule, or whether removed items can ever return through a later legitimate roll. Those details are **unknown** until Epic says more.
+
+## Related pages
+
+- [Pirate Shop odds](/leaks/pirate-shop-odds)
+- [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours)
+- [AFK Squad Fill matchmaking ban](/leaks/pirate-shop-afk-squad-fill-ban)
+- How-to: [Pirate Shop Access guide](/guides/how-to/how-to-get-pirate-shop-access-fortnite)
+
+## Quick FAQ
+
+**Will I lose items if a cheater was in my Squad Fill?**
+**No** — Fortnite Status says players who were simply matched with a cheater through Squad Fill are **not** affected.
+
+**Can I get Pirate Shop Access back?**
+If Access was removed because you cheated or partied with a cheater, Epic has **not** said you can get it back that way. A later **legitimate** chest roll is still how Access works for everyone else — see [odds](/leaks/pirate-shop-odds). Whether a stripped account can roll Access again is **unknown**.
+
+**Are cheaters banned?**
+**Yes** — Fortnite Status says players who cheated are being **banned from Fortnite**. Ban length and appeals are **unknown**.
+
+**Shipped:** 25 November 2026 (Fortnite Status, ~6:46 PM UK).
+`,
+  },
+  {
     slug: 'fortnite-crew-changes-december-2026-neko-final-crew-skin',
     title:
       'Fortnite Crew Changes 5 December — N.E.K.O. Is the Final Crew Pack Skin',
@@ -1148,9 +1224,9 @@ Files suggest **yes** — Death + Puss together, with possible individual rows. 
   {
     slug: 'doki-doki-literature-club-fortnite-leak',
     title:
-      'Doki Doki Literature Club x Fortnite Leak — Sayori, Natsuki, Yuri & Monika',
+      'Doki Doki Literature Club x Fortnite — Expected 27 Nov Item Shop (Leak)',
     excerpt:
-      'According to leaks, Doki Doki Literature Club x Fortnite within ~1 week of 24 Nov 2026 — four outfits only (Sayori, Natsuki, Yuri, Monika). Earlier files: cel-shaded looks, custom lobby poses, cloth/hair physics, 4-pack + individuals. No pickaxes/back blings. Epic & Team Salvato have not confirmed.',
+      'Leak update 26 Nov ~5 PM UK: Doki Doki Literature Club x Fortnite (Sayori, Natsuki, Yuri & Monika outfits) expected in the 27 Nov 2026 Item Shop (00:00 UK / 7 PM ET on 26 Nov). Four outfits only; price still unknown. Epic & Team Salvato have not confirmed.',
     category: 'cosmetics',
     status: 'active',
     date: '2026-11-24',
@@ -1167,13 +1243,18 @@ Files suggest **yes** — Death + Puss together, with possible individual rows. 
       'sayori natsuki yuri monika fortnite',
       'ddlc fortnite release date',
       'monika fortnite skin',
+      'ddlc fortnite 27 november',
     ],
     content: `
-## What’s leaked
+## Update — 26 November: expected tomorrow’s shop
 
-According to leaks on **24 November 2026**, **Doki Doki Literature Club x Fortnite** lands **within about a week** of that report — so a window through roughly **1 December 2026** if the timing holds. The set is described as **four outfits only**: **Sayori**, **Natsuki**, **Yuri**, and **Monika**, with **no other cosmetics** in the same set (no pickaxes, back blings, wraps, or emotes called out).
+According to a leak on **26 November 2026** around **5 PM UK**, **Doki Doki Literature Club x Fortnite** is coming to Fortnite **tomorrow** — the **27 November 2026** Item Shop reset (**00:00 UK on 27 Nov** = **7 PM ET on 26 Nov**). The set is still described as **four outfits only**: **Sayori**, **Natsuki**, **Yuri**, and **Monika**.
 
-This is still a **leak**, not an Epic or Team Salvato announcement. Names, timing, and the “skins only” sell-through can still slip, get cut, or change before tiles appear.
+This is still a **leak**, not an Epic or Team Salvato announcement. The expected shop day can still slip or change before tiles appear. Price remains **unknown**.
+
+## What’s leaked (roster + pack)
+
+Earlier leaks on **24 November 2026** first pinned the collab to **Sayori**, **Natsuki**, **Yuri**, and **Monika**, with **no other cosmetics** in the same set (no pickaxes, back blings, wraps, or emotes called out). The **26 Nov** update keeps that roster and moves the timing from a vague “within a week” window to a specific **27 Nov** shop clock.
 
 ## Why this collab matters in Fortnite
 
@@ -1214,12 +1295,12 @@ If the “no other cosmetics” line holds:
 
 ## Timing against the chapter calendar
 
-If the “within 1 week of 24 Nov” window is real, DDLC would need to hit the shop **before** Treasure Hunters wraps on **[5 December](/leaks/fortnite-community-day-golden-umbrella)** — the same crowded day as [Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date), [Crew changes / N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin), and Community Day login rewards.
+If the **27 Nov** shop read holds, DDLC lands **before** Treasure Hunters wraps on **[5 December](/leaks/fortnite-community-day-golden-umbrella)** — ahead of [Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date), [Crew changes / N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin), and Community Day login rewards.
 
 Same-week collab pages to keep side-by-side:
 
 - [Scott Pilgrim / Ramona](/leaks/scott-pilgrim-fortnite-collab-leak) — **official trailer**; shop dated **29 Nov**
-- [Puss in Boots / Death](/leaks/puss-in-boots-fortnite-collab-leak) — dated **26 Nov** (leak)
+- [Puss in Boots / Death](/leaks/puss-in-boots-fortnite-collab-leak) — was expected **26 Nov**; first **00:00 UK** window missed (leak)
 - Shop calendar dump: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
 
 ## Confidence
@@ -1231,13 +1312,13 @@ Same-week collab pages to keep side-by-side:
 | Custom lobby poses + cloth / hair physics | Leak |
 | 4-pack bundle + individuals | Leak |
 | No other cosmetics in the set | Leak |
-| Coming within ~a week of 24 Nov (~by 1 Dec) | Leak |
-| Official announcement / price / exact shop day | **Unknown** |
+| Expected **27 Nov 2026** Item Shop (00:00 UK) | Leak (26 Nov ~5 PM UK) |
+| Official announcement / price | **Unknown** |
 
 ## Quick FAQ
 
 **Is Doki Doki Literature Club coming to Fortnite?**
-**Reportedly yes**, as four outfits, per leaks on **24 Nov 2026**. Epic and Team Salvato have **not** confirmed.
+**Reportedly yes**, as four outfits, per leaks. Epic and Team Salvato have **not** confirmed.
 
 **Which DDLC characters are leaked?**
 **Sayori, Natsuki, Yuri, and Monika** — the four main club members.
@@ -1246,15 +1327,15 @@ Same-week collab pages to keep side-by-side:
 Leaks say **no** — **outfits only** in this set. That can still change before ship.
 
 **When does it release?**
-Only a **“within 1 week of 24 Nov”** window is reported — treat that as **through ~1 Dec**, not a locked shop hour. Confirm on the [Item Shop tracker](/tools/item-shop).
+Latest leak (26 Nov ~5 PM UK) points at the **27 November 2026** Item Shop (**00:00 UK** / **7 PM ET on 26 Nov**). Still unconfirmed — verify on the [Item Shop tracker](/tools/item-shop).
 
 **Is it the same encrypted set from 12 Nov?**
 That is the leaker’s read: the earlier four cel-shaded skins, now named. Until Epic shows art, a different IP is still possible.
 
 ## What to watch next
 
-1. Epic trailer / MOTD / fortnite.com post naming DDLC or showing the four outfits
-2. Live shop tiles + V-Buck prices on the [Item Shop tracker](/tools/item-shop)
+1. Live shop tiles at the **27 Nov 00:00 UK** reset on the [Item Shop tracker](/tools/item-shop)
+2. Epic trailer / MOTD / fortnite.com post naming DDLC or showing the four outfits
 3. Whether a “skins only” pack stays true or Epic adds a late tool / emote
 4. [News](/news) for official wording once it exists
 
@@ -1759,6 +1840,8 @@ Play the matches. Open chests yourself in BR. Steps: [How to get Pirate Shop Acc
 
 Still watching later-season odds boosts: [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
 
+Related: [Pirate Shop Access cheaters banned — Access and items removed](/leaks/fortnite-pirate-shop-access-cheaters-banned-items-removed) (Fortnite Status, 25 Nov).
+
 **Filed:** 7 November 2026 (same-day post). Status: **Watching** until Epic prints it on Status / MOTD.
 `,
   },
@@ -1953,9 +2036,9 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 26 Nov: Puss Missed First Window, Scott 29 Nov',
+      'Upcoming Fortnite Item Shop Leaks — 26 Nov Returns, DDLC 27 Nov, Scott 29 Nov',
     excerpt:
-      '26 Nov 00:00 UK shop: Digital Circus, Persona 5 Royal, Crash & Spyro, Addison Rae still up — Puss in Boots not in this rotation (Death/Puss are in new cosmetics files). Next check: 26 Nov evening ET / 27 Nov 00:00 UK. Coming: Scott Pilgrim 29 Nov, DDLC window, Ember & Blade 1 Dec.',
+      '26 Nov 00:00 UK shop: Kizuna AI (~126 days), NFL Touchdown Time (≈289–1,085 days), John Cena (~449 days), Becky Lynch & Bianca Belair (~478 days). Puss missed this window. Coming: DDLC 27 Nov, Scott Pilgrim 29 Nov, Ember & Blade 1 Dec. New store discount text live on Mainframe Break Pack.',
     category: 'shop',
     status: 'watching',
     date: '2026-11-26',
@@ -1964,9 +2047,15 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
     image: '/images/guides/kiriko-featured.webp',
     tags: [
       'fortnite item shop leaks',
+      'fortnite item shop november 26',
       'fortnite item shop november 25',
       'fortnite item shop november 22',
       'fortnite item shop november 23',
+      'kizuna ai fortnite',
+      'john cena fortnite',
+      'nfl fortnite touchdown time',
+      'becky lynch fortnite',
+      'bianca belair fortnite',
       'pomni fortnite',
       'jax fortnite',
       'amazing digital circus fortnite',
@@ -1979,29 +2068,34 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'phineas and ferb fortnite return',
       'privateer oscar fortnite bundle',
       'crash bandicoot fortnite',
+      'mainframe break pack discount',
     ],
     content: `
 ## Update — 26 November
 
-### 26 November shop (00:00 UK) — Puss missed this window
+### 26 November shop (00:00 UK)
 
 Live Item Shop for the **26 November 2026** reset (**00:00 UK** / **7 PM ET on 25 Nov**):
 
-- **Pomni** & **Jax** (Amazing Digital Circus) still up
-- **Persona 5 Royal** still up — [return dates](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates)
-- **Crash Bandicoot & Spyro** still up
-- **Addison Rae** still up
-- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **not** in this rotation
+- **Kizuna AI** returned — first time in about **126 days**
+- **NFL “Touchdown Time”** items returned — gone between roughly **289** and **1,085 days** depending on the item
+- **WWE**: **John Cena** returned (about **449 days**); **Becky Lynch** & **Bianca Belair** returned (about **478 days**)
+- Carry-overs still up: **Pomni** & **Jax** (Amazing Digital Circus), **Persona 5 Royal**, **Crash Bandicoot & Spyro**, **Addison Rae**
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — **not** in this rotation (was expected **26 Nov**; first **00:00 UK** window missed)
 
-**Death (Puss in Boots)** and the **Puss in Boots** Sidekick **are** in the **new cosmetics** feed (added **25 Nov**), so the set exists in files. The early “lands 26 Nov” read for the **00:00 UK** clock did **not** ship. Next check: **26 Nov evening ET** (**00:00 UK on 27 Nov**). Confirm on the [Item Shop tracker](/tools/item-shop).
+**Death (Puss in Boots)** and the **Puss in Boots** Sidekick **are** in the **new cosmetics** feed (added **25 Nov**), so the set exists in files. Next check: **26 Nov evening ET** (**00:00 UK on 27 Nov**). Confirm on the [Item Shop tracker](/tools/item-shop).
+
+### Store discount text (hotfix)
+
+Epic hotfixed in new store copy: **“Discount for new and select returning players; full price applies to all others.”** It is currently only used on the **Mainframe Break Pack**, which is **50% off ($4.49)** for new and some returning players.
 
 ### Coming soon
 
-- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — files in; shop day still pending after the missed **26 Nov 00:00 UK** window
+- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — expected **27 November 2026** Item Shop (**00:00 UK** / **7 PM ET on 26 Nov**) — Sayori, Natsuki, Yuri, Monika (outfits only)
 - **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — **29 November 2026** at **8 PM ET** / **1 AM UK on 30 Nov** (Scott & Ramona; also in new cosmetics)
-- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — within about a week of **24 Nov** (Sayori, Natsuki, Yuri, Monika — outfits only)
-- **[Hello Neighbor](/leaks/hello-neighbor-fortnite-collab)** — officially teased **coming soon** (EGS + Theodore); no shop day yet
 - **Ember & Blade x Fortnite** — **1 December**: EGS gift‑with‑purchase **or** **1,500 V-Bucks** in the Item Shop
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** — files in; shop day still pending after the missed **26 Nov 00:00 UK** window
+- **[Hello Neighbor](/leaks/hello-neighbor-fortnite-collab)** — officially teased **coming soon** (EGS + Theodore); no shop day yet
 
 ## 25 November shop
 
@@ -2069,16 +2163,16 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 | **23 Nov (shop)** | Phineas & Ferb · PotC · Harvest Season · Nemia/Lexa · **Cardamom** Sidekick | **Landed 23 Nov** (leaked shop) |
 | **24 Nov (shop)** | **Lucien West** · **One Punch Man** · **Ferrari** skins & cars | **Landed 24 Nov** |
 | **25 Nov (shop)** | Digital Circus · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** | **Landed 25 Nov** |
-| **26 Nov (00:00 UK shop)** | Carry-over: Digital Circus · Persona · Crash/Spyro · Addison | **Live** — **Puss not in this shop** |
+| **26 Nov (00:00 UK shop)** | Kizuna AI · NFL Touchdown Time · John Cena · Becky Lynch & Bianca Belair · carry-overs | **Live** — **Puss not in this shop** |
+| **27 Nov (00:00 UK)** | **DDLC** four outfits | Leak · [page](/leaks/doki-doki-literature-club-fortnite-leak) |
 | **26 Nov evening ET / 27 Nov 00:00 UK** | **Puss in Boots** (Death + Puss Sidekick) | Files in · shop pending · [page](/leaks/puss-in-boots-fortnite-collab-leak) |
 | **29 Nov** | **Scott Pilgrim** / Ramona | Outlet-reported shop · [page](/leaks/scott-pilgrim-fortnite-collab-leak) |
-| **~week of 24 Nov** | **DDLC** four outfits | Leak · [page](/leaks/doki-doki-literature-club-fortnite-leak) |
 | **TBD** | **Hello Neighbor** / Theodore | Official tease · [page](/leaks/hello-neighbor-fortnite-collab) |
 | **1 Dec** | **Ember & Blade** collab outfit | EGS GWP or **1,500** V-Bucks |
 
 ## Already shipped (recent)
 
-- **26 Nov (00:00 UK):** carry-over shop (Digital Circus · Persona · Crash/Spyro · Addison) — **no Puss**
+- **26 Nov (00:00 UK):** Kizuna AI · NFL Touchdown Time · John Cena · Becky Lynch & Bianca Belair · carry-overs (Digital Circus · Persona · Crash/Spyro · Addison) — **no Puss** · Mainframe Break Pack discount text live
 - **25 Nov:** Pomni & Jax (Digital Circus) · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** emote · ICON emotes refresh · **Death/Puss added to new cosmetics**
 - **24 Nov:** Lucien West · One Punch Man · Ferrari skins & cars
 - **23 Nov:** Phineas & Ferb · Pirates of the Caribbean · Harvest Season · Nemia & Lexa Hexbringer · **Cardamom** Sidekick (new)
