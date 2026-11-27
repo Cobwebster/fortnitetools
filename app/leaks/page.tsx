@@ -77,19 +77,19 @@ export default function LeaksPage() {
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
               Fresh:{' '}
               <Link
-                href="/leaks/fortnite-pirate-shop-access-cheaters-banned-items-removed"
+                href="/leaks/fortnite-first-person-mode-battle-royale-leak"
                 className="font-semibold text-primary hover:underline"
               >
-                Pirate Shop Access cheater bans
+                first-person Battle Royale mode leak
               </Link>
-              {' '}(Access + items removed),{' '}
+              {' '}(BrotherBouquet playlists),{' '}
               <Link
                 href="/leaks/doki-doki-literature-club-fortnite-leak"
                 className="font-semibold text-primary hover:underline"
               >
                 Doki Doki Literature Club
               </Link>
-              {' '}arriving 27 Nov, Scott Pilgrim on 29 Nov, Golden Week from 28 Nov, Crew changes + N.E.K.O. from 5 Dec, Community Day 5 Dec. Still watching: Puss in Boots (missed 26 Nov window), Winterfest, Chapter 8 on 5 Dec.
+              {' '}confirmed for 28 Nov, Puss in Boots shipped 27 Nov, Scott Pilgrim on 29 Nov, Golden Week from 28 Nov, Crew changes + N.E.K.O. from 5 Dec, Community Day 5 Dec. Still watching: Winterfest, Chapter 8 on 5 Dec.
               Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
