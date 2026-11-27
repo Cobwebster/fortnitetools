@@ -51,15 +51,15 @@ function around(
   }))
 }
 
+/** Must match live Fortnite-API /v1/map named POIs (checked 27 Nov 2026). */
 const MAJOR_POIS = [
   'The $.$. Rocky',
   'Arlong Park',
   'Loguetown',
-  "Fortune's Fort",
+  "Buggy's Beachhead",
   'Rubber Resort',
   'Windmill Village',
   'Lantern Landing',
-  'Loot Lagoon',
   'Plunder Port',
   'Busy Bay',
   'Cursed Cavern',
@@ -70,7 +70,7 @@ const COASTAL_POIS = [
   'The $.$. Rocky',
   'Plunder Port',
   'Busy Bay',
-  'Loot Lagoon',
+  "Buggy's Beachhead",
   'Rubber Resort',
   'Windmill Village',
 ]
@@ -107,7 +107,7 @@ export const SPAWN_POINTS: SpawnPointDef[] = [
   // —— Vaults (planning rings on hot POIs) ——
   { id: 'vault-rocky', layer: 'vaults', nearPoi: 'The $.$. Rocky', offsetX: 5000, offsetY: 2000, label: 'Vault', guaranteed: true },
   { id: 'vault-arlong', layer: 'vaults', nearPoi: 'Arlong Park', offsetX: -4000, offsetY: 3000, label: 'Vault', guaranteed: true },
-  { id: 'vault-fort', layer: 'vaults', nearPoi: "Fortune's Fort", offsetX: 3000, offsetY: -4000, label: 'Vault', guaranteed: true },
+  { id: 'vault-buggy', layer: 'vaults', nearPoi: "Buggy's Beachhead", offsetX: 3000, offsetY: -4000, label: 'Vault', guaranteed: true },
   { id: 'vault-loguetown', layer: 'vaults', nearPoi: 'Loguetown', offsetX: 6000, offsetY: 2000, label: 'Vault', guaranteed: true },
   { id: 'vault-rubber', layer: 'vaults', nearPoi: 'Rubber Resort', offsetX: -3500, offsetY: 4500, label: 'Vault', guaranteed: true },
   { id: 'vault-plunder', layer: 'vaults', nearPoi: 'Plunder Port', offsetX: 4000, offsetY: -5000, label: 'Vault', guaranteed: true },

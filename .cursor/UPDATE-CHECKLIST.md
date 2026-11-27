@@ -2,7 +2,7 @@
 
 Private ops list (not a site page). When the user says **check for updates**, **round of updates**, **anything new**, or similar: work this list top-to-bottom, skip sections that clearly do not apply, then report what changed vs what stayed current.
 
-**Last full pass:** 7 Nov 2026 (Treasure Hunters week 2 — map/sprites/calendar + loadout TH refresh)
+**Last full pass:** 27 Nov 2026 (map POI re-anchor to live Fortnite-API; season hub calendar past Oscar week → Golden Week / Community Day)
 
 ---
 

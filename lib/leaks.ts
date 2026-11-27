@@ -63,11 +63,11 @@ export const leaks: LeakPost[] = [
     title:
       'Fortnite First-Person Battle Royale Mode Leak: Playlists, Codename & What We Know',
     excerpt:
-      'Dataminer reports on 27 Nov 2026 point to a first-person mode, possibly for Battle Royale, under the internal codename BrotherBouquet. Leaked playlist rows list Zero Build Solo/Duo/Squad and Build Solo/Squad. No Epic announcement or release date — present as a leak only.',
+      'Dataminer reports on 27 Nov 2026 point to a first-person mode, possibly for Battle Royale, under the internal codename BrotherBouquet. Leaked playlist rows list Zero Build Solo/Duo/Squad and Build Solo/Squad. Chapter 8 timing chatter is speculation only — no Epic announcement or release date.',
     category: 'gameplay',
     status: 'active',
     date: '2026-11-27',
-    readTime: 6,
+    readTime: 7,
     featured: true,
     image: '/images/guides/secret-weapon.webp',
     tags: [
@@ -87,36 +87,62 @@ Around **3 PM UK on 27 November 2026**, dataminer reports described Epic working
 
 This is a **file / dataminer leak** — not a fortnite.com post, trailer, or MOTD. Playlist names, the BR framing, and the codename can change, or the project can be **cut**, before anything ships. Standard Battle Royale today remains **third-person**.
 
-## What playlists are in the files
+Some follow-up posts framed the work as arriving **“very soon”** and speculated **Chapter 8**. That timing is **not** in the core playlist dump — treat “ships with Chapter 8” as **speculation**, not a dated leak. Confirmed chapter calendar (separate page): **[Chapter 8 Season 1 on 5 December 2026](/leaks/fortnite-chapter-8-season-2-release-date)**.
 
-The leaked playlist setup reportedly lists:
+## Playlist table (as reported)
 
-- **Zero Build** — **Solo**, **Duo**, and **Squad**
-- **Build** — **Solo** and **Squad**
+| Perspective | Build rules | Queues named in the dump |
+| --- | --- | --- |
+| First-person (BrotherBouquet) | **Zero Build** | **Solo**, **Duo**, **Squad** |
+| First-person (BrotherBouquet) | **Build** | **Solo**, **Squad** |
+| Standard BR today | Zero Build / Build | Third-person matchmaking (unchanged) |
 
-Zero Build has three queue sizes; Build only shows Solo and Squad in the same dump (no Duo Build row was named). Incomplete leak grids are common — do **not** treat a missing row as a cancelled playlist. The leak also does not lock map rotation, ranked support, or whether first-person would replace or sit beside third-person queues.
+Zero Build shows three party sizes; Build only shows Solo and Squad in the same dump (no Duo Build row was named). Incomplete leak grids are common — do **not** treat a missing row as a cancelled playlist.
+
+Still unknown from the same dump:
+
+- Ranked / Arena support
+- Map / POI set (current island vs a dedicated FP map)
+- Whether FP queues **replace** any third-person tabs or sit **beside** them
+- Cross-play, input modes, or platform limits
+- Separate loot / FOV / ADS tuning for first-person
 
 ## How this would differ from Ballistic and Creative first-person
 
 Fortnite already has first-person play — just **not** as standard Battle Royale.
 
-**[Fortnite Ballistic](https://www.fortnite.com/news/fortnite-goes-first-person-with-ballistic-a-tactical-5v5-shooter-launching-in-early-access-dec-11)** launched in **early access on 11 December 2024** as a **first-person 5v5 tactical shooter**: round-based attackers vs defenders, no builds, plant / defend a Rift Point Device. It is a separate competitive mode, not a full Battle Royale island drop.
+| Product | Camera | Format | Status |
+| --- | --- | --- | --- |
+| **Battle Royale (live)** | Third-person | 100-player island drop, Build / Zero Build | Live |
+| **[Ballistic](https://www.fortnite.com/news/fortnite-goes-first-person-with-ballistic-a-tactical-5v5-shooter-launching-in-early-access-dec-11)** | First-person | **5v5** round-based tactical (plant / defend Rift Point Device), **no builds** | Live (early access since **11 Dec 2024**) |
+| **[UEFN / Creative FP](https://www.fortnite.com/news/fortnite-first-person-now-available-as-an-experimental-feature-in-uefn-and-creative)** | First-person | Creator islands using the First Person Camera Mode device | Live for published islands |
+| **BrotherBouquet (leak)** | First-person | Reported **BR** Build / Zero Build playlists | **Unconfirmed** |
 
-**[UEFN / Creative first-person](https://www.fortnite.com/news/fortnite-first-person-now-available-as-an-experimental-feature-in-uefn-and-creative)** arrived as an **experimental** First Person Camera Mode device for creators (later moved toward Beta for publishable islands). Players can join Creative islands built for first-person; that is **not** Epic’s core BR matchmaking product.
+If BrotherBouquet is real, it is the first time Epic’s **core Battle Royale matchmaking** would offer a first-person viewpoint — a different product bucket from Ballistic’s short rounds or Creative’s island picker.
 
-A BrotherBouquet-style mode, if real, would be **Battle Royale playlists** (Build / Zero Build) from the player’s viewpoint — a different bucket from Ballistic or creator islands. Until Epic confirms, treat that comparison as **context only**.
+## What first-person BR would change for players (context only)
+
+Nothing below is confirmed tuning — only why the leak matters if it ships:
+
+- **Awareness** — no over-the-shoulder peek the same way; corner fights and builds read differently
+- **Aim / tracking** — closer to traditional FPS feel; controller aim-assist behaviour would need its own pass (see recent [aim assist notes](/leaks/fortnite-aim-assist-update-november-2026) for how Epic already tweaks pad assist in third-person)
+- **Builds** — piece placement and cone peeks are built around third-person visibility today; a Build FP playlist implies Epic is willing to retune that feel, not just flip a camera flag
+- **Discovery** — a parallel FP tab keeps third-person mains intact; a replacement tab would be a much bigger product bet (leak does **not** say which)
 
 ## Age-rating listing note (reported, not proof)
 
-Fortnite’s age-rating listings were **reportedly updated on 18 November 2026** to **ESRB Teen** / **PEGI 12**. That report circulated **alongside** this leak. A rating refresh can happen for many reasons and is **not** proof that a first-person Battle Royale mode is shipping.
+Fortnite’s age-rating listings were **reportedly updated on 18 November 2026** to **ESRB Teen** / **PEGI 12**. That report circulated **alongside** this leak. A rating refresh can happen for many reasons (other modes, store copy, regional paperwork) and is **not** proof that a first-person Battle Royale mode is shipping.
 
-## What is not confirmed
+## Confidence
 
-- **No release date**
-- **No Epic announcement** naming BrotherBouquet or a first-person BR playlist
-- Playlist mix, platforms, and scope can still change — or the work can be **cut**
-
-Chapter timing context only: Treasure Hunters wraps into **[Chapter 8 Season 1 on 5 December 2026](/leaks/fortnite-chapter-8-season-2-release-date)**. Nothing in the 27 Nov dump ties BrotherBouquet to that date.
+| Claim | Status |
+| --- | --- |
+| Internal work on a first-person mode (codename **BrotherBouquet**) | Leak |
+| Mode is **possibly** Battle Royale | Leak |
+| Zero Build Solo / Duo / Squad + Build Solo / Squad rows | Leak |
+| Ships with / in Chapter 8 | **Speculation only** |
+| Replaces third-person BR | **Unknown** |
+| Epic announcement / release date | **None** |
 
 ## Quick FAQ
 
@@ -124,10 +150,13 @@ Chapter timing context only: Treasure Hunters wraps into **[Chapter 8 Season 1 o
 **Possibly**, per **27 Nov 2026** dataminer reports (codename **BrotherBouquet**). Epic has **not** confirmed it — present as a **leak**.
 
 **When does it release?**
-**Unknown.** No ship day was attached to the leak.
+**Unknown.** No ship day was attached to the core leak. “Chapter 8 / very soon” chatter is **speculation**.
 
 **Will it have Build and Zero Build?**
 Leaked rows list **Zero Build** Solo / Duo / Squad and **Build** Solo / Squad. That can still change.
+
+**Is this just Ballistic again?**
+**No.** Ballistic is a **5v5 tactical** mode. This leak points at **Battle Royale** playlist rows.
 
 **Can I play first-person Fortnite now?**
 **Yes, elsewhere:** [Ballistic](https://www.fortnite.com/news/fortnite-goes-first-person-with-ballistic-a-tactical-5v5-shooter-launching-in-early-access-dec-11) (first-person 5v5) and **Creative / UEFN** islands using the [First Person Camera Mode](https://www.fortnite.com/news/fortnite-first-person-now-available-as-an-experimental-feature-in-uefn-and-creative). Standard Battle Royale remains **third-person**.
@@ -136,7 +165,8 @@ Leaked rows list **Zero Build** Solo / Duo / Squad and **Build** Solo / Squad. T
 
 1. Any **Epic** blog, trailer, or MOTD naming a first-person Battle Royale playlist
 2. Whether BrotherBouquet rows survive later dumps or vanish
-3. [News](/news) for official wording once it exists
+3. Chapter 8 reveal window around **[5 December](/leaks/fortnite-chapter-8-season-2-release-date)** — watch for official mode talk, but do not assume this leak is tied to it
+4. [News](/news) · [Modes](/modes) once Epic publishes something real
 
 **Filed:** 27 November 2026. Status: **Unconfirmed**.
 `,
@@ -1092,14 +1122,14 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
   {
     slug: 'scott-pilgrim-fortnite-collab-leak',
     title:
-      'Scott Pilgrim x Fortnite 29 November — Scott & Ramona Hit the Item Shop',
+      'Scott Pilgrim x Fortnite: Official Shop Date 29 Nov UK (Scott & Ramona)',
     excerpt:
-      'Scott Pilgrim and Ramona Flowers arrive in the Fortnite Item Shop on 29 November 2026 at 8 PM ET (1 AM UK on 30 Nov), per major outlet reports. Epic’s 24 Nov trailer confirmed the graphic-novel looks; a full in-game showcase leaked 24 Nov evening. Scott Pilgrim Cup (25 Nov) can unlock Scott early.',
+      'Official: Epic’s weekly Item Shop preview dates Scott Pilgrim & Ramona Flowers for “November 28” US — that is 7 PM ET on 28 Nov / 00:00 UK on 29 Nov 2026. Graphic-novel looks confirmed in the 24 Nov trailer. Named file cosmetics include Power of Love, Scott’s Bass, Large Hammer, Titanium Baseball Bat, Love’s Level Up. Prices still unannounced. Scott Pilgrim Cup (25 Nov) could unlock Scott early.',
     category: 'cosmetics',
     status: 'watching',
     date: '2026-11-25',
     confirmedDate: '2026-11-24',
-    readTime: 6,
+    readTime: 7,
     featured: true,
     image: '/images/guides/block-party.webp',
     tags: [
@@ -1115,9 +1145,14 @@ Wave 2 first showed in **13 Nov** files. Pre-launch dumps listed glowing Kiriko 
       'power of love sword fortnite emote',
     ],
     content: `
-## Update — 25 November: shop date & Scott Pilgrim Cup
+## Update — 27 November: official shop date (29 Nov UK)
 
-**Scott Pilgrim** and **Ramona Flowers** are now dated for the **Item Shop on 29 November 2026**. Major outlets (including Beebom) report the drop at **8 PM ET on 29 Nov**, which is **1:00 AM UK on 30 November** (UK is on GMT). Epic’s trailer still framed the window as “this week”; the timed shop day comes from outlet coverage of the competitive / shop calendar rather than a separate fortnite.com blog timestamp — confirm the live countdown in-client.
+**Scott Pilgrim** and **Ramona Flowers** are **officially** dated by Epic’s **weekly Item Shop preview** (posted **26 November 2026**) for **“November 28”** on Epic’s **US** shop card:
+
+- **7 PM ET on 28 November 2026**
+- = **00:00 UK on 29 November 2026**
+
+Earlier outlet posts that said **8 PM ET on 29 Nov** (**1 AM UK on 30 Nov**) are **superseded** by Epic’s preview dating — confirm the in-game countdown when the tab appears. The set is **not** in the live **27 Nov 00:00 UK** shop yet (that window shipped **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** instead). **V-Bucks prices** are still **unannounced**.
 
 On **25 November 2026**, Fortnite Competitive ran a **Scott Pilgrim Cup**. Top finishers can earn the **Scott Pilgrim** outfit, **Scott’s 1-UP** Back Bling, and a **Scott!** emoticon **early**, before the shop drop. Formats reported: Solo / Duos across Reload (Mobile) and Battle Royale / Zero Build. Eligibility notes from outlet coverage of the Compete tab: age **13+**, account level **50+**, and **2FA** enabled. Exact session times and reward thresholds vary by region — check the **Compete** tab in-game.
 
@@ -1148,34 +1183,58 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
   - **Goggles Off** style, plus **Blue** and **Teal** styles
   - Comes with **drums**, a **back bling**, and **two pickaxes**; the second pickaxe shows **star** and **speed‑line** effects
 
-## Set overview
+## Named cosmetics (in new cosmetics / files)
 
-- Cosmetics listed across the set in files: **2 back blings, 3 pickaxes, 1 emote** (plus instruments)
-- **Release date:** **29 November 2026**, **8 PM ET** / **1 AM UK on 30 Nov** (outlet-reported shop time)
-- **Price:** **not announced** yet — confirm on the [Item Shop tracker](/tools/item-shop)
+Outfits and matching gear already named in Fortnite’s cosmetics feed (added **24 November 2026**):
+
+| Item | Type |
+| --- | --- |
+| **Scott Pilgrim** | Outfit |
+| **Ramona Flowers** | Outfit |
+| **The Power of Love** | Pickaxe |
+| **Scott's Bass** | Pickaxe / back bling rows |
+| **Large Hammer** | Pickaxe |
+| **Titanium Baseball Bat** | Pickaxe |
+| **Ramona's Drumsticks** | Pickaxe / back bling rows |
+| **Power of Love Portal** | Back bling |
+| **Scott's 1-UP!** | Back bling |
+| **Subspace Suitcase** | Back bling |
+| **Love's Level Up** | Emote |
+| **Scott!** | Emoticon |
+
+Trailer / showcase still support **LEGO** styles, Ramona **Goggles Off** / colour styles, and comic-style shading. Exact shop bundling waits on live tiles. **Prices** are **not announced**.
 
 ## Confidence table
 
 | Claim | Status |
 | --- | --- |
 | Official Scott Pilgrim & Ramona Flowers outfits | **Confirmed** (Epic trailer, 24 Nov) |
-| Shop date **29 Nov 2026**, **8 PM ET** | **Outlet-reported** (Beebom et al.) |
-| Scott Pilgrim Cup rewards (outfit / 1-UP / emoticon) | **Reported** via Fortnite Competitive coverage (25 Nov) |
-| Exact V‑Buck price | **Not announced** |
-| Bass / drums / sword‑heart emote / pickaxes / LEGO styles | Leak (pre‑trailer files) / trailer-supported |
+| Shop: Epic “November 28” US = **00:00 UK 29 Nov** | **Official** dating (preview) |
+| Named pickaxes / blings / Love's Level Up in cosmetics feed | **In files** |
+| Scott Pilgrim Cup early unlocks | **Reported** (25 Nov Compete) |
+| Exact V‑Buck price / leave timer | **Not announced** |
 
 ## FAQ
 
 **When is Scott Pilgrim coming to Fortnite?**
-**29 November 2026** in the Item Shop, reported at **8 PM ET** (**1 AM UK on 30 Nov**). Confirm the in-game timer. Competitive players may unlock **Scott** early via the **Scott Pilgrim Cup** on **25 Nov**.
+**00:00 UK on 29 November 2026** (**7 PM ET on 28 Nov**), per Epic’s Item Shop preview. Confirm the in-game timer. Competitive players may unlock **Scott** early via the **25 Nov** Cup.
+
+**Is the 8 PM ET on 29 Nov time still right?**
+Treat that as an **older outlet clock**. Prefer Epic’s **“November 28”** US preview card → **29 Nov 00:00 UK**.
+
+**How much will it cost?**
+**Not announced.** Wait for the [Item Shop tracker](/tools/item-shop).
+
+**Graphic novel or live-action?**
+**Graphic novel** looks — confirmed in Epic’s trailer.
 
 ## What to watch next
 
-- Shop calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
-- Live confirm: [Item Shop tracker](/tools/item-shop) · [News](/news)
-- Same‑week collabs: [Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)
+- Live tiles at the **29 Nov 00:00 UK** reset: [Item Shop tracker](/tools/item-shop)
+- Calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
+- Same‑week: [DDLC 28 Nov UK](/leaks/doki-doki-literature-club-fortnite-leak) · [Puss shipped](/leaks/puss-in-boots-fortnite-collab-leak)
 
-**Filed:** 12 November 2026. **Updated:** 25 November 2026. Status: **Watching**.
+**Filed:** 12 November 2026. **Updated:** 27 November 2026. Status: **Watching**.
 `,
   },
   {
@@ -1183,7 +1242,7 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
     title:
       'Puss in Boots x Fortnite — Death Outfit & Puss Sidekick Now in the Item Shop',
     excerpt:
-      'Shipped: Epic’s 26 Nov release promo said Puss in Boots was available that night, and the collab went live in the Item Shop at 00:00 UK on 27 Nov 2026 (7 PM ET 26 Nov). Full bundle is 2,400 V-Bucks. Death outfit + Puss Sidekick with Sickles, Bounty in Boots, Stalking Death, slippers, and more.',
+      'Shipped: Puss in Boots live since 00:00 UK 27 Nov 2026. Bundle 2,400 V-Bucks; Death+Sickles 1,500; Sidekick 1,500; Slippers 1,000; Sickles 500; Stalking Death 400; Bounty in Boots 300. Listed through 3 Dec 23:59 UTC.',
     category: 'cosmetics',
     status: 'shipped',
     date: '2026-11-26',
@@ -1206,14 +1265,7 @@ Around **5:10 PM UK on 23 November 2026**, teaser artwork showed **Scott Pilgrim
     content: `
 ## Update — 27 November: shipped
 
-**Puss in Boots x Fortnite is live.** Epic posted a **release promo on 26 November 2026** saying the collab was available that night, and the set hit the Item Shop at **00:00 UK on 27 November 2026** (**7 PM ET on 26 Nov**). The **full bundle** costs **2,400 V-Bucks**. Confirm live tiles and any individual rows on the [Item Shop tracker](/tools/item-shop).
-
-Named cosmetics in the set:
-
-- **Death (Puss in Boots)** outfit · **Death's Sickles** pickaxe · **Bounty in Boots** back bling · **Stalking Death** emote  
-- **Puss in Boots** Sidekick · **Puss in Slippers** kicks · **Puss in Boots** emoticon  
-
-Individual item prices beyond the **2,400** bundle total are **not** listed here — check the tracker for per-row costs if Epic offers them separately.
+**Puss in Boots x Fortnite is live.** Epic posted a **release promo on 26 November 2026** saying the collab was available that night, and the set hit the Item Shop at **00:00 UK on 27 November 2026** (**7 PM ET on 26 Nov**). Live shop data lists the set under a **Puss In Boots** tab through **3 December 2026, 23:59 UTC** (**6:59 PM ET**). Confirm leave timers on the [Item Shop tracker](/tools/item-shop).
 
 Shop calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
@@ -1246,10 +1298,23 @@ Epic has used the same split before: **Spyro**, **Morgana** (Persona), and other
 - Its **own emote**
 - **Voice lines in 12 languages**, moods such as **happy** and **angry**
 
-## Price
+## Live prices (27 Nov shop)
 
-- **Full bundle:** **2,400 V-Bucks** (live shop)
-- Per-item prices if sold separately: confirm on the [Item Shop tracker](/tools/item-shop) — not inventing individual costs here
+From the live Item Shop feed. The **Puss in Boots Bundle** is **2,400 V-Bucks** (shop “regular” sum **4,700** if you bought the separate rows — about **2,300** saved on paper).
+
+| Offer | Contents | V-Bucks |
+| --- | --- | --- |
+| **Puss in Boots Bundle** | Death + Sickles + Puss Sidekick + Slippers + Stalking Death + Bounty in Boots | **2,400** |
+| **Death (Puss in Boots)** | Outfit **+ Death's Sickles** | **1,500** |
+| **Puss in Boots** | Sidekick alone | **1,500** |
+| **Puss in Slippers** | Kicks | **1,000** |
+| **Death's Sickles** | Pickaxe alone | **500** |
+| **Stalking Death** | Emote | **400** |
+| **Bounty in Boots** | Back bling | **300** |
+
+**Leaving (shop listing):** **3 December 2026, 23:59 UTC** — two days before the **[5 Dec](/leaks/fortnite-community-day-golden-umbrella)** chapter wrap / Community Day cluster. Timers can still change; trust the in-game leave clock.
+
+**Pirate Shop Access note:** Access can cover a Sidekick you do not already own — it does **not** grant the Death outfit for free. Legitimate Access path: [Pirate Shop Access](/leaks/pirate-shop-access-feature) · [how-to](/guides/how-to/how-to-get-pirate-shop-access-fortnite).
 
 ## Confidence table
 
@@ -1257,9 +1322,9 @@ Epic has used the same split before: **Spyro**, **Morgana** (Persona), and other
 | --- | --- |
 | Death / Puss in Item Shop | **Shipped** (27 Nov 00:00 UK) |
 | Epic release promo (26 Nov) | **Official** |
-| Full bundle **2,400** V-Bucks | **Live** |
+| Bundle **2,400** · Death+Sickles **1,500** · Sidekick **1,500** | **Live** |
+| Leaves **3 Dec 23:59 UTC** | **Live shop outDate** |
 | Furry Sidekick + voice lines + Kicks | **Shipped** |
-| Death outfit + Sickles + Bounty in Boots + Stalking Death | **Shipped** |
 
 ## Quick FAQ
 
@@ -1270,7 +1335,10 @@ Epic has used the same split before: **Spyro**, **Morgana** (Persona), and other
 **Yes** — live since **00:00 UK on 27 November 2026**.
 
 **How much does the bundle cost?**
-**2,400 V-Bucks** for the full bundle.
+**2,400 V-Bucks** for the full **Puss in Boots Bundle**. Death + Sickles is **1,500** alone; Sidekick is **1,500** alone.
+
+**When does it leave?**
+Shop listing shows **3 December 2026, 23:59 UTC** — confirm in-client.
 
 **What is a Sidekick?**
 A companion cosmetic that follows your character. It is not an outfit and does not replace your skin.
@@ -1290,7 +1358,7 @@ A companion cosmetic that follows your character. It is not an outfit and does n
     excerpt:
       'Official: Epic’s weekly Item Shop preview (26 Nov 2026) showed Monika, Sayori, Yuri and Natsuki releasing “November 27” (US date) — that is 7 PM ET on 27 Nov / 00:00 UK on 28 Nov 2026. Outfits segment only; V-Bucks pricing and extras unannounced. In-game Monika look (27 Nov): “A really, really convincing Club President.”',
     category: 'cosmetics',
-    status: 'active',
+    status: 'watching',
     date: '2026-11-24',
     confirmedDate: '2026-11-26',
     readTime: 6,
@@ -1319,7 +1387,7 @@ In the preview, the DDLC segment is labelled **“Outfits”**, while some other
 
 On **27 November 2026**, a new **in-game look** at **Monika** also surfaced, with her description line: **“A really, really convincing Club President.”**
 
-Status stays **active** until the tiles actually ship at the **28 Nov 00:00 UK** reset. Confirm on the [Item Shop tracker](/tools/item-shop).
+Status is **watching** (officially confirmed, awaiting the **28 Nov 00:00 UK** reset). Confirm on the [Item Shop tracker](/tools/item-shop).
 
 ## What’s confirmed (roster)
 
@@ -1397,7 +1465,7 @@ Epic’s card says **“November 27”** (US) → **7 PM ET on 27 Nov** = **00:0
 2. Whether Epic adds late tools / emotes beyond the four outfits
 3. [News](/news) for any further official wording
 
-**Filed:** 12 November 2026. **Updated:** 27 November 2026. Status: **Active** (confirmed, awaiting shop).
+**Filed:** 12 November 2026. **Updated:** 27 November 2026. Status: **Watching** (confirmed, awaiting shop).
 `,
   },
   {
@@ -2138,7 +2206,7 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
 
 Live Item Shop for the **27 November 2026** reset (**00:00 UK** / **7 PM ET on 26 Nov**):
 
-- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** collab arrived — full bundle **2,400 V-Bucks** (Death outfit + Puss Sidekick set)
+- **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** collab arrived — **Puss in Boots Bundle 2,400** V-Bucks (Death+Sickles **1,500**, Sidekick **1,500**, Slippers **1,000**, Sickles alone **500**, Stalking Death **400**, Bounty in Boots **300**); listed through **3 Dec 23:59 UTC**
 - **10 “Chapter 7 Highlights”** shop tabs were added
 - **Winter-themed** outfits returned
 - **Original (default-era)** outfits returned

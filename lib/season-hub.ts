@@ -2,8 +2,8 @@ import { CURRENT_SEASON, formatSeasonLongDate, nextSeasonStartDate, seasonEndDat
 import { WEAPONS } from '@/lib/weapons'
 
 /** Calendar date this hub was last checked against live files / lobby MOTDs. */
-export const SEASON_HUB_REVIEWED = '16 Nov 2026'
-export const SEASON_HUB_REVIEWED_ISO = '2026-11-16'
+export const SEASON_HUB_REVIEWED = '27 Nov 2026'
+export const SEASON_HUB_REVIEWED_ISO = '2026-11-27'
 
 export const SEASON_MYTHICS = WEAPONS.filter((w) => w.rarity === 'Mythic')
 
@@ -55,20 +55,22 @@ export const RESET_WEEK_PLAYBOOK = [
   },
 ] as const
 
+/** Live Fortnite-API /v1/map named pins (27 Nov 2026) + non-POI loops we still call out. */
 export const LIVE_NAMED_POIS = [
   { name: 'The $.$. Rocky', href: '/guides/how-to/how-to-get-shock-rocket-fortnite', note: 'Boss ship · Shock Rocket / Lil’ Flacko' },
   { name: 'Arlong Park', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'One Piece · fish-man stronghold' },
-  { name: "Fortune's Fort", href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Week-2 fort · Lil Uzi / Cuddle Team Leader' },
-  { name: 'Friendship Villa', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: '15 Nov Captain’s Day · Miku & Teto (peaceful)' },
-  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · resort coast' },
+  { name: "Buggy's Beachhead", href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Buggy Captain week POI (Brutal Beachhead return)' },
+  { name: 'Rubber Resort', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Duck yacht · Miku/Teto week history' },
   { name: 'Loguetown', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Harbor town · contested' },
-  { name: 'Lantern Landing', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lantern maze (Epic also said Lantern Lanes)' },
+  { name: 'Lantern Landing', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lantern maze streets' },
   { name: 'Plunder Port', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Two docked ships' },
   { name: 'Busy Bay', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'South-east bay · Baratie landmark nearby' },
-  { name: 'Loot Lagoon', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Lagoon loot dens' },
   { name: 'Windmill Village', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Quieter village drop' },
   { name: 'Cursed Cavern', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Cave POI · mid-fight third parties' },
-  { name: 'The Chest', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Named chest landmark' },
+  { name: 'The Chest', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'Named chest island group' },
+  { name: "Nami's Tangerine Grove", href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'API landmark' },
+  { name: "Giant's Battlefield", href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'API landmark · open fight space' },
+  { name: 'The Salty Skull', href: '/guides/map/fortnite-crossbones-isle-map-loot', note: 'API coastal landmark' },
   { name: 'Wanted Posters', href: '/guides/how-to/how-to-hunt-sprites-treasure-hunters', note: 'Not a POI · Sprite hunt loop' },
 ] as const
 
@@ -76,18 +78,18 @@ export const SEASON_CHANGE_CARDS = [
   {
     id: 'island',
     title: 'Island',
-    live: 'Crossbones Isle. 80-player Battle Royale. Cannons to launch across. Headline names: Arlong Park, Windmill Village, The $.$. Rocky, Fortune’s Fort. Full live list is on the map & loot guide.',
-    incoming: `Oscar’s Captain’s Day is next (~22 Nov). Chapter 7 end event is dated ${formatSeasonLongDate(nextSeasonStartDate())}.`,
+    live: 'Crossbones Isle. 80-player Battle Royale. Live API headlines: Arlong Park, Windmill Village, The $.$. Rocky, Buggy’s Beachhead, Rubber Resort, Loguetown, Busy Bay. Full pin list is on the interactive map.',
+    incoming: `Golden Week runs 28 Nov–5 Dec, then Community Day + Chapter 7 end event on ${formatSeasonLongDate(nextSeasonStartDate())}.`,
     extra:
-      'Friendship Villa hosted Miku & Teto on 15 Nov. Pirate Shop Access is still a chest prize, not a pin. Interactive map follows Fortnite-API.',
+      'Pirate Shop Access is still a chest prize, not a pin. Interactive map follows Fortnite-API (Fortune’s Fort / Loot Lagoon labels left the live dump).',
     href: '/guides/map/fortnite-crossbones-isle-map-loot',
     linkLabel: 'Map & loot guide',
   },
   {
     id: 'loot',
     title: 'Loot pool',
-    live: 'Gum-Gum / Flame-Flame / Zoro / Usopp powers, Bundlebuss, Gilded Dragoon, Hammer AR, pumps / SMGs, Wanted Posters, Explosive Cannon Balls (non-Competitive). Shock Rocket is a Boss drop. Live since 15 Nov: Flapjack Rifle + Leekcapper. Lever Action / Special Buggy Ball from Buggy’s week.',
-    incoming: 'Oscar’s ~22 Nov Captain’s Day calls out Frenzy Auto Shotgun. Confirm Compete / MOTD for the exact enable hour.',
+    live: 'Gum-Gum / Flame-Flame / Zoro / Usopp powers, Bundlebuss, Gilded Dragoon, Hammer AR, pumps / SMGs, Wanted Posters, Explosive Cannon Balls (non-Competitive). Shock Rocket is a Boss drop. Flapjack Rifle + Leekcapper (15 Nov). Lever Action / Special Buggy Ball from Buggy’s week; Oscar week brought Frenzy Auto into the cadence.',
+    incoming: 'Golden Week (from 28 Nov) unvaults prior gold chest goods with boosted Treasure Hours — see the Golden Week leak page.',
     extra:
       'Gold Bars vaulted — follower services free, vending machines gone. Boss weapons are a guaranteed Boss elim drop as of v43.10.',
     href: '/guides/map/fortnite-crossbones-isle-map-loot',
@@ -96,8 +98,8 @@ export const SEASON_CHANGE_CARDS = [
   {
     id: 'mythics',
     title: 'Boss / mythic-style',
-    live: 'A$AP Rocky on The $.$. Rocky can drop Shock Rocket and Lil’ Flacko. Buggy’s Beachhead held Special Buggy Ball + Lever Action (12 Nov). Miku & Teto (15 Nov) are peaceful Captains at Friendship Villa — Leekcapper / Flapjack are loot-pool adds, not a boss mythic.',
-    incoming: 'Next weekly captain: Oscar (~22 Nov). Map Fragments (third is live) / Captain X’s mega chest stay lightly documented.',
+    live: 'A$AP Rocky on The $.$. Rocky can drop Shock Rocket and Lil’ Flacko. Buggy’s Beachhead held Special Buggy Ball + Lever Action (12 Nov). Miku & Teto (15 Nov) were peaceful Captains — Leekcapper / Flapjack are loot-pool adds, not a boss mythic. Oscar’s Captain week (~22 Nov) is done.',
+    incoming: 'Final stretch is Golden Week + Community Day (5 Dec), not another mid-season captain tease.',
     extra: 'Pirate Shop Access is a chest prize, not a Boss drop. Shock Rocket stays pubs / ZB only.',
     href: '/guides/how-to/how-to-get-shock-rocket-fortnite',
     linkLabel: 'Shock Rocket how-to',
@@ -141,17 +143,17 @@ export const SEASON_HUB_FAQS = [
   {
     question: 'What is new in Fortnite Treasure Hunters?',
     answer:
-      'Crossbones Isle (80 players), One Piece powers, Boss Captains (A$AP, Buggy, peaceful Miku & Teto at Friendship Villa), Sprites via Wanted Posters (Mini Miku / Squiplash / Zee with 15 Nov; Lil’ Uzi Vert Jr. since 8 Nov), Flapjack Rifle + Leekcapper, Treasure Hunters Battle Pass, Pirate Shop Access, and a new ranked track. Last reviewed 16 Nov 2026.',
+      'Crossbones Isle (80 players), One Piece powers, Boss Captains (A$AP, Buggy, peaceful Miku & Teto week), Sprites via Wanted Posters, Flapjack Rifle + Leekcapper, Treasure Hunters Battle Pass, Pirate Shop Access, Golden Week into Community Day on 5 Dec, and a new ranked track. Last reviewed 27 Nov 2026.',
   },
   {
     question: 'What is the current Fortnite map?',
     answer:
-      'Crossbones Isle. Live API names include The $.$. Rocky, Arlong Park, Fortune’s Fort, Rubber Resort, Loguetown, Lantern Landing, Plunder Port, Busy Bay, Loot Lagoon, Windmill Village, Cursed Cavern, and The Chest. The interactive map follows Fortnite-API.',
+      'Crossbones Isle. Live Fortnite-API pins (27 Nov 2026) include The $.$. Rocky, Arlong Park, Buggy’s Beachhead, Rubber Resort, Loguetown, Lantern Landing, Plunder Port, Busy Bay, Windmill Village, Cursed Cavern, The Chest, plus landmarks like Baratie, Giant’s Battlefield, Henry, Nami’s Tangerine Grove, and The Salty Skull. Fortune’s Fort / Loot Lagoon are no longer in that dump. The interactive map follows Fortnite-API.',
   },
   {
     question: 'Did ranked reset?',
     answer:
-      'Yes — a new ranked season started with Treasure Hunters. You do not keep Override LP or Null styles. Confirm the ranked tab in-game.',
+      'Yes — a new ranked season started with Treasure Hunters. You do not keep Override LP or Null styles. Confirm the ranked tab in-game. Last reviewed 27 Nov 2026.',
   },
   {
     question: 'Where is the Pirate Shop?',
