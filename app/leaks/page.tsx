@@ -77,19 +77,19 @@ export default function LeaksPage() {
               Individual Fortnite leak write-ups with clear status — Unconfirmed, Watching, Shipped, or Likely cut.
               Fresh:{' '}
               <Link
-                href="/leaks/fortnite-first-person-mode-battle-royale-leak"
+                href="/leaks/fortnite-out-of-time-live-event-captain-x-reveal"
                 className="font-semibold text-primary hover:underline"
               >
-                first-person Battle Royale mode leak
+                Out of Time finale / Captain X reveal
               </Link>
-              {' '}(BrotherBouquet playlists),{' '}
+              {' '}on 5 Dec,{' '}
               <Link
                 href="/leaks/doki-doki-literature-club-fortnite-leak"
                 className="font-semibold text-primary hover:underline"
               >
                 Doki Doki Literature Club
               </Link>
-              {' '}confirmed for 28 Nov, Puss in Boots shipped 27 Nov, Scott Pilgrim on 29 Nov, Golden Week from 28 Nov, Crew changes + N.E.K.O. from 5 Dec, Community Day 5 Dec. Still watching: Winterfest, Chapter 8 on 5 Dec.
+              {' '}out now (1,800 VB bundle), Scott Pilgrim on 29 Nov, Golden Week live, Puss in Boots shipped 27 Nov, Crew changes + N.E.K.O. + Community Day on 5 Dec. Still watching: Winterfest, Chapter 8 on 5 Dec.
               Each page links out to live tools once something ships.
             </p>
             <p className="mt-3 text-sm text-muted-foreground">

@@ -59,6 +59,122 @@ export const LEAK_STATUS_LABEL: Record<LeakStatus, string> = {
 
 export const leaks: LeakPost[] = [
   {
+    slug: 'fortnite-out-of-time-live-event-captain-x-reveal',
+    title:
+      'Fortnite Out of Time Live Event — Dec 5 Captain X Reveal, Times & Treasure Hour',
+    excerpt:
+      'Epic’s Out of Time finale is 5 Dec 2026 at 2 PM ET (7 PM UK). Special Treasure Hour 11 AM–1:20 PM ET; Captain X’s masked identity is revealed. Watching — Chapter 8 same day; attendance rewards unannounced.',
+    category: 'season',
+    status: 'watching',
+    date: '2026-11-28',
+    readTime: 8,
+    featured: true,
+    image: '/images/guides/treasure-hunters.jpg',
+    tags: [
+      'fortnite live event december 5',
+      'fortnite out of time event',
+      'who is captain x fortnite',
+      'fortnite chapter 7 finale event time',
+      'fortnite out of time time uk',
+      'captain x reveal fortnite',
+      'fortnite special treasure hour december 5',
+      'fortnite finale 2 pm et',
+      'fortnite chapter 8 live event',
+    ],
+    content: `
+## Update — 28 November: Out of Time locked for 5 December
+
+Epic’s own promo copy on **28 November 2026** puts the season/chapter wrap in plain language: **“We’re Almost Out of Time. Don’t be late!”** The finale **“can’t wait,”** the end of an era **“never sounded so good,”** and players will **find out who’s behind the mask on Dec 5.** In short: a **live event on Saturday 5 December 2026** where the masked **Captain X** identity is revealed.
+
+Epic also confirmed the day’s combat-loot beat: a **special Treasure Hour from 11 AM to 1:20 PM ET** (**16:00–18:20 UK**), then the **Out of Time** event itself at **2 PM ET**.
+
+## When is the Fortnite Out of Time event?
+
+| Region | Out of Time start |
+| --- | --- |
+| **US Eastern (ET, UTC−5)** | **5 Dec · 2:00 PM** |
+| **US Pacific (PT, UTC−8)** | **5 Dec · 11:00 AM** |
+| **UK (GMT, UTC+0)** | **5 Dec · 7:00 PM** |
+| **Central Europe (CET, UTC+1)** | **5 Dec · 8:00 PM** |
+| **Mexico City (UTC−6)** | **5 Dec · 1:00 PM** |
+| **Manila (PHT, UTC+8)** | **6 Dec · 3:00 AM** |
+
+Same-day special Treasure Hour (before the show):
+
+| Region | Special Treasure Hour |
+| --- | --- |
+| **ET** | **11:00 AM – 1:20 PM** |
+| **UK (GMT)** | **16:00 – 18:20** |
+
+Odds / multipliers for that special window are **not announced** — see [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours).
+
+## What’s confirmed vs rumoured
+
+**Confirmed (Epic / in-game systems we already cover):**
+- A **5 December** finale live event branded **Out of Time**
+- **Captain X’s** masked identity is part of that reveal (“who’s behind the mask”)
+- Special **Treasure Hour** **11 AM–1:20 PM ET**, event at **2 PM ET**
+- **[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date)** is still dated **5 December 2026** (scheduling leak that has held through late November) — treat the finale as ending the current Treasure Hunters / Chapter 7 stretch **ahead of** Chapter 8. Exact downtime / queue minutes for the chapter flip are **not announced**
+- Same crowded calendar day: **[Crew changes + N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin)** and **[Community Day](/leaks/fortnite-community-day-golden-umbrella)** (Golden Community ’Brella login window from **9 AM ET**, Golden Jonesy Twitch Drops)
+- **Solid Gold Captain X** is in the **[Golden Week](/leaks/fortnite-golden-week-november-2026)** chest pool (28 Nov–5 Dec) — also covered on [Pirate Shop Power Hours](/leaks/pirate-shop-power-hours)
+
+**Not confirmed:**
+- Exact event length, script beats, or map set pieces
+- Whether attendance grants a free cosmetic / XP / loading screen — **rewards for attending are unannounced**
+- Exact maintenance start after the show
+
+## Captain X teasers (reported 27–28 Nov)
+
+Captain X teasers have been showing up on big streamer broadcasts. On **28 November**, Captain X appeared on **Kai Cenat’s** stream with the message **“December 5th — Don’t Be Late.”** Earlier, Captain X had been seen alongside **Lil Wayne**. Treat those as public teaser appearances, not as a name reveal — the mask stays on until the **5 Dec** show.
+
+## Fan theory (speculation only — not a leak)
+
+**Label clearly:** the following is a **fan theory**, **not** a datamine confirmation and **not** an Epic announcement.
+
+Many players theorise Captain X is a **music artist**, with **Drake** often named, because of the **Lil Wayne** teaser pairing and because a Jam Track tied to Captain X is **“I Follow Rivers”** by **Lykke Li** — a song Drake samples on **“Janice STFU.”** That chain is community speculation only. **Nothing is confirmed** about who is under the mask until Epic shows it on **5 December**.
+
+## How to watch / tips
+
+1. Be **logged in early** on **5 December** — Community Day login rewards start at **9 AM ET** ([details](/leaks/fortnite-community-day-golden-umbrella)), and the special Treasure Hour opens at **11 AM ET**.
+2. Queue for the event lobby with time to spare before **2 PM ET**. Past Fortnite finales **may** have limited capacity; join early rather than at the last minute.
+3. Finish Treasure Hunters goals you care about (Pirate Shop Access, gold chests, weekly quests) before the wrap — Golden Week chest hunting notes: [Golden Week](/leaks/fortnite-golden-week-november-2026).
+4. Watch in-client MOTD / [News](/news) and [Status](/status) on the day for any last-minute playlist or downtime wording.
+5. Do **not** plan around attendance rewards until Epic names them — they are **unannounced**.
+
+## Same-day stack (5 December)
+
+| Beat | What we know | Page |
+| --- | --- | --- |
+| Special Treasure Hour | **11 AM–1:20 PM ET** · multipliers **not announced** | [Power Hours](/leaks/pirate-shop-power-hours) |
+| Out of Time live event | **2 PM ET** · Captain X reveal | This page |
+| Community Day | Login from **9 AM ET** until the end-of-chapter event wraps; Golden Jonesy Twitch Drops through **7 Dec 9 AM ET** | [Community Day](/leaks/fortnite-community-day-golden-umbrella) |
+| Crew overhaul | Official **5 Dec** start; **N.E.K.O.** final Crew Pack | [Crew / N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin) |
+| Chapter 8 Season 1 | Still dated **5 Dec** (scheduling leak); downtime timing cautious / unannounced | [Chapter 8 dates](/leaks/fortnite-chapter-8-season-2-release-date) |
+
+## Quick FAQ
+
+**When is the Fortnite live event?**
+**Saturday 5 December 2026 at 2 PM ET** (**7 PM UK / 11 AM PT**). Epic brands it **Out of Time**.
+
+**What time is it in the UK?**
+**7:00 PM GMT** on **5 December**. The special Treasure Hour before it is **16:00–18:20 UK**.
+
+**Who is Captain X?**
+**Unknown.** Epic says the **5 December** finale reveals who’s behind the mask. Streamer teasers (including Kai Cenat’s **“Don’t Be Late”** note) do not name the person. Music-artist / Drake chatter is **fan speculation only**.
+
+**Is there a special Treasure Hour?**
+**Yes** — Epic lists **11 AM to 1:20 PM ET** on **5 December**, right before Out of Time. Multipliers for that window are **not announced**.
+
+**Is this the end of Chapter 7?**
+Treat Out of Time as the **end-of-era / Treasure Hunters finale** ahead of **[Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date)** on the **same calendar day**. Exact downtime timing for the chapter flip is **not announced**.
+
+**Do you get rewards for attending?**
+**Unannounced.** Do not assume a free skin or umbrella from the live event itself — Community Day login / Twitch rewards are a **separate** Epic track.
+
+**Filed / updated:** 28 November 2026. Status: **Watching**.
+`,
+  },
+  {
     slug: 'fortnite-first-person-mode-battle-royale-leak',
     title:
       'Fortnite First-Person Battle Royale Mode Leak: Playlists, Codename & What We Know',
@@ -1263,6 +1379,10 @@ Treat that as an **older outlet clock**. Prefer Epic’s **“November 28”** U
       'death fortnite back bling',
     ],
     content: `
+## Update — 27 November: Death fur graphics note
+
+Epic acknowledged that **Death’s fur** looks worse on **low graphics** settings and called it **“a known issue that we are looking into.”** No fix date has been announced yet.
+
 ## Update — 27 November: shipped
 
 **Puss in Boots x Fortnite is live.** Epic posted a **release promo on 26 November 2026** saying the collab was available that night, and the set hit the Item Shop at **00:00 UK on 27 November 2026** (**7 PM ET on 26 Nov**). Live shop data lists the set under a **Puss In Boots** tab through **3 December 2026, 23:59 UTC** (**6:59 PM ET**). Confirm leave timers on the [Item Shop tracker](/tools/item-shop).
@@ -1354,13 +1474,13 @@ A companion cosmetic that follows your character. It is not an outfit and does n
   {
     slug: 'doki-doki-literature-club-fortnite-leak',
     title:
-      'Doki Doki Literature Club x Fortnite: Confirmed for 28 Nov (UK) Item Shop',
+      'Doki Doki Literature Club x Fortnite — Out Now: Price (1,800 VB) & How to Get Monika',
     excerpt:
-      'Official: Epic’s weekly Item Shop preview (26 Nov 2026) showed Monika, Sayori, Yuri and Natsuki releasing “November 27” (US date) — that is 7 PM ET on 27 Nov / 00:00 UK on 28 Nov 2026. Outfits segment only; V-Bucks pricing and extras unannounced. In-game Monika look (27 Nov): “A really, really convincing Club President.”',
+      'Shipped: DDLC hit the Item Shop at 00:00 UK on 28 Nov 2026 with an official trailer. Bundle 1,800 V-Bucks; Monika 1,200 separately (also granted by buying Doki Doki Literature Club Plus! on the Epic Games Store or Epic Games Mobile). Sayori, Natsuki, Yuri, Monika.',
     category: 'cosmetics',
-    status: 'watching',
+    status: 'shipped',
     date: '2026-11-24',
-    confirmedDate: '2026-11-26',
+    confirmedDate: '2026-11-28',
     readTime: 6,
     featured: true,
     image: '/images/guides/select-character.webp',
@@ -1368,104 +1488,89 @@ A companion cosmetic that follows your character. It is not an outfit and does n
       'doki doki literature club fortnite',
       'doki doki fortnite',
       'ddlc fortnite',
-      'ddlc fortnite confirmed',
-      'anime skins fortnite',
-      'cel shaded fortnite skins',
-      'sayori natsuki yuri monika fortnite',
-      'ddlc fortnite release date',
+      'ddlc fortnite out now',
+      'ddlc fortnite price',
+      'ddlc fortnite 1800',
       'monika fortnite skin',
+      'monika fortnite free epic games store',
+      'sayori natsuki yuri monika fortnite',
       'ddlc fortnite 28 november',
     ],
     content: `
-## Update — 27 November: official shop date (28 Nov UK)
+## Update — 28 November: shipped
 
-**Doki Doki Literature Club x Fortnite is officially confirmed.** Epic’s **weekly Item Shop preview** video — posted on Fortnite’s official social channels on **26 November 2026** — showed the **Doki Doki Literature Club** outfits **Monika**, **Sayori**, **Yuri**, and **Natsuki** releasing on **“November 27”** (Epic’s **US** shop date).
+**Doki Doki Literature Club x Fortnite is live.** The set hit the Item Shop at **00:00 UK on 28 November 2026** (**7 PM ET on 27 Nov**), alongside an **official trailer** and shop renders for all four club members.
 
-Timezone read (same rule as other Epic preview cards): an item Epic dates **November 27** lands at **7 PM ET on 27 November** = **00:00 UK on 28 November 2026**. The collab was **not** in the **00:00 UK on 27 November** shop — that earlier leak clock was wrong.
-
-In the preview, the DDLC segment is labelled **“Outfits”**, while some other collabs in the same video were labelled **“Bundle”**. **V-Bucks pricing** and any **extra items** (back blings, pickaxes, emotes) are **not announced**.
-
-On **27 November 2026**, a new **in-game look** at **Monika** also surfaced, with her description line: **“A really, really convincing Club President.”**
-
-Status is **watching** (officially confirmed, awaiting the **28 Nov 00:00 UK** reset). Confirm on the [Item Shop tracker](/tools/item-shop).
-
-## What’s confirmed (roster)
-
-The preview names the four club members as outfits:
-
-| Outfit | Role in DDLC | Fortnite note |
+| Offer | V-Bucks | Notes |
 | --- | --- | --- |
-| **Monika** | Club president | Official preview + in-game description (27 Nov) |
-| **Sayori** | Club member | Official preview |
-| **Natsuki** | Club member | Official preview |
-| **Yuri** | Club member | Official preview |
+| **Doki Doki Literature Club! Bundle** | **1,800** | Epic lists original combined price **3,600** |
+| **Monika** (separate) | **1,200** | Also granted by buying **Doki Doki Literature Club Plus!** on the **Epic Games Store** or **Epic Games Mobile** |
 
-No Sidekick, jam track, or Festival kit was shown in the preview segment summarised here. Compare fuller kits like [Persona 5 Royal](/leaks/fortnite-crash-spyro-persona-5-royal-return-dates) or [Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak).
+Confirm live tiles, leave timers, and exact bundle contents on the [Item Shop tracker](/tools/item-shop) and Epic’s [bundle](https://www.fortnite.com/item-shop/offers/doki-doki-literature-club-bundle-34f958d4) / [Monika](https://www.fortnite.com/item-shop/outfits/monika-388342c8) pages. We are **not** inventing extra tools or emotes beyond the outfit roster Epic showed.
 
-## File history (how we got here)
+Shop calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks).
 
-Earlier leaks on **24 November 2026** first pinned the collab to **Sayori**, **Natsuki**, **Yuri**, and **Monika**. A **26 Nov** leak had pointed at the **27 Nov 00:00 UK** shop — that window **did not** include DDLC. Epic’s preview then locked the **US “November 27”** card, which maps to **00:00 UK on 28 Nov**.
+## Characters in the set
 
-Pre-name dataminer notes (12 Nov) described **4 anime / cel‑shaded** female skins with custom lobby poses, cloth / hair physics on some rows, and sell-through as a pack plus individuals. Those file notes are historical context; the **official** confirmation is the **26 Nov** shop preview.
+Official shop renders cover the full Literature Club:
 
-## Why this collab matters in Fortnite
+| Outfit | Role |
+| --- | --- |
+| **Sayori** | Club member |
+| **Natsuki** | Club member |
+| **Yuri** | Club member |
+| **Monika** | Club president — in-game line: **“A really, really convincing Club President.”** |
 
-**Doki Doki Literature Club** (Team Salvato) is a visual novel whose cast is almost entirely the four club members above. Shipping **all four leads as outfits** is the full main cast — unusual for anime/game crossovers that often drop one hero skin and a thin accessory pack.
+## How to get Monika without (or as well as) V-Bucks
 
-Treasure Hunters has already leaned hard into **anime / cel-shaded** locker rows (Hope bonus skins, Golden Charlotte, Persona returns, etc.). DDLC fits that lane.
+Buying **Doki Doki Literature Club Plus!** on the **Epic Games Store** or **Epic Games Mobile** grants the **Monika** outfit in Fortnite. That is why Monika is sold **separately** in the Item Shop at **1,200** V-Bucks rather than only as a bundle-only unlock. Use the **same Epic account** you play Fortnite on, and restart the client if the grant is slow to appear.
 
-## Pricing & extras — still open
+Monika’s Fortnite shop page: [fortnite.com/item-shop/outfits/monika](https://www.fortnite.com/item-shop/outfits/monika-388342c8).
 
-- The preview labels DDLC as **“Outfits”**, not **“Bundle”** — that may mean outfits-only sell-through, but Epic has not published a price card
-- **V-Bucks pricing** is **unannounced**
-- Extra cosmetics (back blings, pickaxes, emotes) are **not announced** — do not invent them
-- Wait for live tiles on the [Item Shop tracker](/tools/item-shop)
+## Path to ship (short history)
+
+- **24 Nov** — file / leak chatter first named Sayori, Natsuki, Yuri, and Monika
+- **26 Nov** — Epic’s weekly Item Shop preview dated the set **“November 27”** US (= **00:00 UK 28 Nov**)
+- **27 Nov** — in-game Monika look + description line; **not** in the **27 Nov 00:00 UK** shop (that reset shipped [Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak))
+- **28 Nov 00:00 UK** — **shipped** with trailer + live prices
 
 ## Timing against the chapter calendar
 
-DDLC lands **00:00 UK on 28 November 2026** — still **before** Treasure Hunters wraps on **[5 December](/leaks/fortnite-community-day-golden-umbrella)**, ahead of [Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date), [Crew changes / N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin), and Community Day login rewards.
+DDLC is live **before** Treasure Hunters wraps on **[5 December](/leaks/fortnite-out-of-time-live-event-captain-x-reveal)** (Out of Time finale / Captain X reveal), ahead of [Chapter 8 Season 1](/leaks/fortnite-chapter-8-season-2-release-date), [Crew changes / N.E.K.O.](/leaks/fortnite-crew-changes-december-2026-neko-final-crew-skin), and [Community Day](/leaks/fortnite-community-day-golden-umbrella).
 
 Same-week collab pages:
 
-- [Scott Pilgrim / Ramona](/leaks/scott-pilgrim-fortnite-collab-leak) — **official trailer**; shop dated **29 Nov**
+- [Scott Pilgrim / Ramona](/leaks/scott-pilgrim-fortnite-collab-leak) — shop dated **00:00 UK 29 Nov**
 - [Puss in Boots / Death](/leaks/puss-in-boots-fortnite-collab-leak) — **shipped** **27 Nov 00:00 UK**
-- Shop calendar: [Upcoming Item Shop leaks](/leaks/upcoming-item-shop-leaks)
 
 ## Confidence
 
 | Claim | Status |
 | --- | --- |
-| Monika, Sayori, Yuri, Natsuki outfits | **Official** (Epic Item Shop preview, 26 Nov) |
-| Shop: Epic “November 27” US = **00:00 UK 28 Nov** | **Official** dating |
-| Not in **27 Nov 00:00 UK** shop | **Confirmed** (missed that reset) |
-| Preview segment labelled **“Outfits”** | **Official** preview |
-| V-Bucks price / extra cosmetics | **Not announced** |
-| Monika description line (27 Nov) | **In-game** look |
+| Sayori, Natsuki, Yuri, Monika in Item Shop | **Shipped** (28 Nov 00:00 UK) |
+| Bundle **1,800** V-Bucks | **Live** |
+| Monika **1,200** V-Bucks separately | **Live** |
+| Monika grant via DDLC Plus! on EGS / Epic Games Mobile | **Official** promo / store path |
+| Official trailer + shop renders | **Shipped** |
 
 ## Quick FAQ
 
-**Is Doki Doki Literature Club coming to Fortnite?**
-**Yes — officially.** Epic’s weekly Item Shop preview showed the four outfits.
+**Is Doki Doki Literature Club in Fortnite yet?**
+**Yes** — live since **00:00 UK on 28 November 2026**.
 
-**Which DDLC characters are in the set?**
-**Monika, Sayori, Yuri, and Natsuki.**
+**How much does the bundle cost?**
+**1,800 V-Bucks** for the **Doki Doki Literature Club! Bundle**.
 
-**When does it release?**
-Epic’s card says **“November 27”** (US) → **7 PM ET on 27 Nov** = **00:00 UK on 28 November 2026**. It was **not** in the **27 Nov 00:00 UK** shop.
+**How much is Monika?**
+**1,200 V-Bucks** in the Item Shop, or granted when you buy **Doki Doki Literature Club Plus!** on the **Epic Games Store** or **Epic Games Mobile**.
 
-**Will there be pickaxes or back blings?**
-**Not announced.** The preview labelled the segment **“Outfits”**; extras and V-Bucks prices are unknown until tiles appear.
+**Which characters are available?**
+**Sayori, Natsuki, Yuri, and Monika.**
 
-**Is the price known?**
-**No.** Wait for the [Item Shop tracker](/tools/item-shop).
+**Are pickaxes or back blings included?**
+Do not assume extras — confirm every row on the [Item Shop tracker](/tools/item-shop). This page only commits to the **outfit** roster and the **prices above**.
 
-## What to watch next
-
-1. Live shop tiles at the **28 Nov 00:00 UK** reset on the [Item Shop tracker](/tools/item-shop)
-2. Whether Epic adds late tools / emotes beyond the four outfits
-3. [News](/news) for any further official wording
-
-**Filed:** 12 November 2026. **Updated:** 27 November 2026. Status: **Watching** (confirmed, awaiting shop).
+**Filed:** 12 November 2026. **Shipped:** 28 November 2026. Status: **Shipped**.
 `,
   },
   {
@@ -2162,22 +2267,27 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
   {
     slug: 'upcoming-item-shop-leaks',
     title:
-      'Upcoming Fortnite Item Shop Leaks — 27 Nov Puss Live, DDLC 28 Nov, Scott 29 Nov',
+      'Upcoming Fortnite Item Shop Leaks — 28 Nov DDLC Live, Scott 29 Nov, Finale 5 Dec',
     excerpt:
-      '27 Nov 00:00 UK shop: Puss in Boots collab live (2,400 V-Bucks bundle), 10 Chapter 7 Highlights shop tabs, winter-themed and original (default-era) outfits returned. Coming: DDLC officially 28 Nov 00:00 UK, Scott Pilgrim 28 Nov US = 00:00 UK 29 Nov, Ember & Blade 1 Dec.',
+      '28 Nov 00:00 UK shop: Doki Doki Literature Club live (bundle 1,800; Monika 1,200), plus Daft Punk, Clix & Chica, and Solo Leveling: ARISE items. Coming: Scott Pilgrim & Ramona 00:00 UK 29 Nov, Ember & Blade 1 Dec, Out of Time finale 5 Dec.',
     category: 'shop',
     status: 'watching',
-    date: '2026-11-27',
+    date: '2026-11-28',
     readTime: 5,
     featured: true,
     image: '/images/guides/kiriko-featured.webp',
     tags: [
       'fortnite item shop leaks',
+      'fortnite item shop november 28',
       'fortnite item shop november 27',
       'fortnite item shop november 26',
       'fortnite item shop november 25',
       'fortnite item shop november 22',
       'fortnite item shop november 23',
+      'ddlc fortnite shop',
+      'daft punk fortnite',
+      'clix chica fortnite',
+      'solo leveling arise fortnite',
       'puss in boots fortnite shop',
       'chapter 7 highlights fortnite',
       'kizuna ai fortnite',
@@ -2200,7 +2310,27 @@ Filed 7 Nov as “one more day” on Gold A$AP Rocky; on **8 November 2026** (ar
       'mainframe break pack discount',
     ],
     content: `
-## Update — 27 November
+## Update — 28 November
+
+### 28 November shop (00:00 UK)
+
+Live Item Shop for the **28 November 2026** reset (**00:00 UK** / **7 PM ET on 27 Nov**):
+
+- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** arrived — **bundle 1,800** V-Bucks; **Monika 1,200** separately (also granted by buying **Doki Doki Literature Club Plus!** on the Epic Games Store or Epic Games Mobile); Sayori, Natsuki, Yuri, Monika
+- **Daft Punk** items were in the shop
+- **Clix & Chica** items were in the shop
+- **Solo Leveling: ARISE** items were in the shop
+
+Confirm every tile and price on the [Item Shop tracker](/tools/item-shop).
+
+### Coming next
+
+- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** & **Ramona Flowers** — **00:00 UK on 29 November** (Epic preview **28 Nov** US = **7 PM ET on 28 Nov**)
+- **Ember & Blade x Fortnite** — **1 December**: EGS gift‑with‑purchase **or** **1,500 V-Bucks** in the Item Shop
+- **[Out of Time live event / Captain X reveal](/leaks/fortnite-out-of-time-live-event-captain-x-reveal)** — **5 December** at **2 PM ET** (**7 PM UK**), with a special Treasure Hour **11 AM–1:20 PM ET**
+- **[Hello Neighbor](/leaks/hello-neighbor-fortnite-collab)** — officially teased **coming soon** (EGS + Theodore); no shop day yet
+
+## 27 November shop
 
 ### 27 November shop (00:00 UK)
 
@@ -2212,13 +2342,6 @@ Live Item Shop for the **27 November 2026** reset (**00:00 UK** / **7 PM ET on 2
 - **Original (default-era)** outfits returned
 
 Confirm every tile and price on the [Item Shop tracker](/tools/item-shop).
-
-### Coming soon
-
-- **[Doki Doki Literature Club](/leaks/doki-doki-literature-club-fortnite-leak)** — **officially** **28 November 2026** at **00:00 UK** (Epic preview “November 27” US date = **7 PM ET on 27 Nov**) — Monika, Sayori, Yuri, Natsuki
-- **[Scott Pilgrim](/leaks/scott-pilgrim-fortnite-collab-leak)** — officially dated by Epic as **28 Nov** US = **00:00 UK on 29 Nov** (Scott & Ramona)
-- **Ember & Blade x Fortnite** — **1 December**: EGS gift‑with‑purchase **or** **1,500 V-Bucks** in the Item Shop
-- **[Hello Neighbor](/leaks/hello-neighbor-fortnite-collab)** — officially teased **coming soon** (EGS + Theodore); no shop day yet
 
 ## 26 November shop
 
@@ -2304,13 +2427,15 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 | **25 Nov (shop)** | Digital Circus · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** | **Landed 25 Nov** |
 | **26 Nov (00:00 UK shop)** | Kizuna AI · NFL Touchdown Time · John Cena · Becky Lynch & Bianca Belair · carry-overs | **Landed** — **Puss not in this shop** |
 | **27 Nov (00:00 UK)** | **Puss in Boots** · Chapter 7 Highlights tabs · winter + original outfits | **Landed** · [Puss page](/leaks/puss-in-boots-fortnite-collab-leak) |
-| **28 Nov (00:00 UK)** | **DDLC** four outfits | **Official** · [page](/leaks/doki-doki-literature-club-fortnite-leak) |
+| **28 Nov (00:00 UK)** | **DDLC** · Daft Punk · Clix & Chica · Solo Leveling: ARISE | **Landed** · [DDLC page](/leaks/doki-doki-literature-club-fortnite-leak) |
 | **29 Nov (00:00 UK)** | **Scott Pilgrim** / Ramona (Epic **28 Nov** US date) | **Official** dating · [page](/leaks/scott-pilgrim-fortnite-collab-leak) |
-| **TBD** | **Hello Neighbor** / Theodore | Official tease · [page](/leaks/hello-neighbor-fortnite-collab) |
 | **1 Dec** | **Ember & Blade** collab outfit | EGS GWP or **1,500** V-Bucks |
+| **5 Dec** | **[Out of Time](/leaks/fortnite-out-of-time-live-event-captain-x-reveal)** finale / Captain X · Community Day / Chapter 8 day | Event **2 PM ET** · not a shop tile |
+| **TBD** | **Hello Neighbor** / Theodore | Official tease · [page](/leaks/hello-neighbor-fortnite-collab) |
 
 ## Already shipped (recent)
 
+- **28 Nov (00:00 UK):** **[DDLC](/leaks/doki-doki-literature-club-fortnite-leak)** (**1,800** bundle · Monika **1,200**) · **Daft Punk** · **Clix & Chica** · **Solo Leveling: ARISE**
 - **27 Nov (00:00 UK):** **[Puss in Boots](/leaks/puss-in-boots-fortnite-collab-leak)** (**2,400** V-Bucks bundle) · **10 Chapter 7 Highlights** shop tabs · winter-themed + original (default-era) outfits
 - **26 Nov (00:00 UK):** Kizuna AI · NFL Touchdown Time · John Cena · Becky Lynch & Bianca Belair · carry-overs (Digital Circus · Persona · Crash/Spyro · Addison) · Mainframe Break Pack discount text live
 - **25 Nov:** Pomni & Jax (Digital Circus) · Persona 5 Royal · Addison Rae · Hoppers · TheGrefg & MrSavage · **She Did It Again** emote · ICON emotes refresh · **Death/Puss added to new cosmetics**
@@ -2327,9 +2452,9 @@ Season beat: **Friendship Villa** (Miku + Teto) — [Kasane Teto page](/leaks/ka
 
 ## How to use this
 
-Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Prices: [Item Shop tracker](/tools/item-shop). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack).
+Watch order only — confirm after reset (**~00:00 UK** / Epic’s **7 PM ET** collab drops). Prices: [Item Shop tracker](/tools/item-shop). Season: [Treasure Hunters guide](/guides/season/fortnite-treasure-hunters) · [Captain’s Days](/leaks/captain-days-content-stack) · [Out of Time finale](/leaks/fortnite-out-of-time-live-event-captain-x-reveal).
 
-**Updated:** 27 November 2026.
+**Updated:** 28 November 2026.
 `,
   },
   {
@@ -2458,6 +2583,10 @@ Map context: [interactive map](/fortnite-map) · season loot notes: [season hub]
       'pirate shop token boost',
     ],
     content: `
+## Update — 28 November: special Treasure Hour on 5 December
+
+Epic announced a **special Treasure Hour** on **Saturday 5 December 2026** from **11 AM to 1:20 PM ET** (**16:00–18:20 UK**), immediately before the **[Out of Time](/leaks/fortnite-out-of-time-live-event-captain-x-reveal)** live event at **2 PM ET**. Odds / multipliers for this special window are **not announced** — confirm in-client if Epic posts them closer to the day.
+
 ## Update — 24 November
 
 **Golden Week Treasure Hours on 28 November** boost **Gold Outfits to 15×** (vs the usual Treasure Hours **7.5×**), with **Vehicles & Decals at 10×** and **Pirate Shop Access at 1.5×**. Full schedule, pool details, and Community Day lead-in: [Fortnite Golden Week](/leaks/fortnite-golden-week-november-2026).
@@ -2512,7 +2641,7 @@ They are **expected** to match **14 Nov** (**1.5× Token**, **7.5× Gold**) and 
 
 We’ll keep this page updated — future Power Hours windows and multipliers will be added here when Epic announces them.
 
-**Filed:** 4 November 2026. **Updated:** 24 November 2026. Status: **Watching** — confirm multipliers in‑client when the windows open.
+**Filed:** 4 November 2026. **Updated:** 28 November 2026. Status: **Watching** — confirm multipliers in‑client when the windows open.
 `,
   },
   {
